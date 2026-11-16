@@ -1,0 +1,88 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-wizard-flow {
+  height: 70px;
+  background-color: white;
+  margin-left: -16px;
+  margin-right: -16px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #D5D5D5;
+}
+
+.binf-widgets .d2-wizard-flow > .d2-flow-item {
+  height: 100%;
+  width: 172px;
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.binf-widgets .d2-wizard-flow > .d2-flow-item:hover {
+  background-color: #66D4D626;
+}
+
+.binf-widgets .d2-wizard-flow > .d2-flow-item:active {
+  background-color: #09BCEF33;
+}
+
+.binf-widgets .d2-wizard-flow > .d2-flow-item.flow-disabled,
+.binf-widgets .d2-wizard-flow > .d2-flow-item.flow-disabled:hover,
+.binf-widgets .d2-wizard-flow > .d2-flow-item.flow-disabled:active {
+  background-color: white;
+  cursor: initial;
+  pointer-events: none;
+}
+
+.binf-widgets .d2-wizard-flow > .d2-flow-item > .d2-progress-icon-group {
+  display: flex;
+}
+
+.binf-widgets .d2-wizard-flow > .d2-flow-item > .d2-progress-icon-group > .d2-progress-icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+
+}
+
+.binf-widgets .d2-wizard-flow > .d2-flow-item > .d2-progress-icon-group > .d2-progress-icon-bar {
+  height: 1px;
+  flex: 1 1 auto;
+  align-self: center;
+  border-top: #2E3D98 solid 1px;
+}
+
+.binf-widgets .d2-wizard-flow > .d2-flow-item > .d2-progress-icon-group > .d2-progress-icon-bar.first-bar,
+.binf-widgets .d2-wizard-flow > .d2-flow-item > .d2-progress-icon-group > .d2-progress-icon-bar.last-bar {
+  border-top: none;
+}
+
+.binf-widgets .d2-wizard-flow > .d2-flow-item .d2-progress-title {
+  margin: auto;
+  text-align: center;
+  line-height: 28px;
+  font-size: 14px;
+  position: relative;
+}
+
+.binf-widgets .d2-wizard-flow > .d2-flow-item .d2-progress-title .d2-flow-item-required.binf-glyphicon-star::before {
+  text-indent: -15px;
+  position: absolute;
+  top: -6px;
+}
+
+.binf-widgets .d2-wizard-flow > .d2-flow-item .d2-progress-title .d2-progress-label.active {
+  font-weight: bold;
+}
+
+.binf-widgets .d2-wizard-flow > .d2-flow-item > .d2-progress-icon-group > .d2-progress-icon.active {
+  background: url(../images/active.svg) no-repeat;
+}
+
+.binf-widgets .d2-wizard-flow > .d2-flow-item > .d2-progress-icon-group > .d2-progress-icon.not-visited {
+  background: url(../images/not_visited.svg) no-repeat;
+}
+
+.binf-widgets .d2-wizard-flow > .d2-flow-item > .d2-progress-icon-group > .d2-progress-icon.complete {
+  background: url(../images/complete.svg) no-repeat;
+}

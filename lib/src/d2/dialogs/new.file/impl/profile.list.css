@@ -1,0 +1,216 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-profile-list-view {
+  height: 100%;
+  width: 100%;
+}
+
+.binf-widgets .d2-profile-list-view .list-scroll-container {
+  height: calc(100% - 36px);
+  width: inherit;
+}
+
+.binf-widgets .d2-profile-list-view .list-scroll-container .cs-list-group{
+  height: auto;
+  width: inherit;
+}
+
+.binf-widgets .d2-profile-list-view .list-header {
+  position: relative;
+  display: block;
+  width: inherit;
+  padding: 10px 0 3px 0;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.binf-widgets .d2-profile-list-view .list-header .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem:hover,
+.binf-widgets .d2-profile-list-view .d2-profile-listitem.selected:hover{
+  background-color: #B2BEC5;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading {
+  height: 48px;
+  padding: 0;
+  display: flex;
+  
+  align-items: center;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .selection-control {
+  width: 14px;
+  height: 14px;
+  margin: 0 0 0 10px;
+  visibility: hidden;
+  display: none;
+  flex-shrink: 0;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem.selectable .profile-heading .selection-control {
+  display: block;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem.selectable:hover .profile-heading .selection-control,
+.binf-widgets .d2-profile-list-view .d2-profile-listitem.selectable.selected .profile-heading .selection-control,
+.binf-widgets .d2-profile-list-view .d2-profile-listitem.selectable.active .profile-heading .selection-control{
+  visibility: visible;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .selection-control .csui-checkbox-view {
+  width: inherit;
+  height: inherit;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .selection-control .csui-checkbox-view .csui-checkbox:focus {
+  outline-offset: 1px;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .selection-control .csui-checkbox-view .csui-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .selection-control .csui-checkbox-view .csui-checkbox:not([disabled])[aria-checked='true'] > .csui-icon {
+  background: transparent url("images/checkmark.svg") no-repeat -2px -1px;
+  background-size: auto;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .profile-avatar {
+  width: 32px;
+  height: 32px;
+  margin: 0 0 0 5px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem:not(.selectable) .profile-heading .profile-avatar {
+  margin-left: 10px;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .profile-title {
+  flex: 1 0 50%;
+  margin: 0 0 0 8px;
+  display: flex;
+  height: inherit;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .profile-title .cs-title {
+  font-size: 14px;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .profile-title .artifact-summary {
+  font-size: 10px;
+  line-height: 16px;
+  margin-left: 1px;
+  margin-bottom: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .profile-title .error-message-invalid {
+  padding-left: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,.3);
+  border-left: 2px solid #df3324;
+  margin-top: 4px;
+  padding-top: 0;
+  padding-right: 8px;
+  font-size: 10px;
+  line-height: 16px;
+  width: inherit;
+  color: #df3324;
+  display: inline-block;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .profile-actions {
+  display: flex;
+  flex-direction: row;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .profile-actions .csui-button-icon {
+  cursor: pointer;
+  margin: 0 10px;
+  display: none;
+  width: 32px;
+  height: 32px;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .profile-actions .csui-button-icon.action-expand-collapse {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem:hover .profile-heading .profile-actions .csui-button-icon.action-expand-collapse:not(:only-child),
+.binf-widgets .d2-profile-list-view .d2-profile-listitem.active .profile-heading .profile-actions .csui-button-icon.action-expand-collapse:not(:only-child){
+  margin-top: 7px;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .profile-actions .csui-button-icon.show-always,
+.binf-widgets .d2-profile-list-view:not(.selection-only) .d2-profile-listitem:hover .profile-heading .profile-actions .csui-button-icon,
+.binf-widgets .d2-profile-list-view:not(.selection-only) .d2-profile-listitem.active .profile-heading .profile-actions .csui-button-icon{
+  display: block;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .profile-actions .csui-button-icon:first-child {
+  margin-left: 0;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading .profile-actions .csui-button-icon:last-child {
+  margin-right: 10px;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .inheritance-section {
+  padding: 0 0 8px 51px;
+  margin: -8px 0 0 0;
+  height: auto;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .profile-heading.no-artifacts + .inheritance-section {
+  margin-top: -16px;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem.selectable .inheritance-section {
+  padding-left: 70px;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .inheritance-section .inheritance-label {
+  line-height: 16px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.binf-widgets .d2-profile-list-view .d2-profile-listitem .inheritance-section .inheritance-value {
+  line-height: 16px;
+  font-size: 10px;
+}
+
+.binf-widgets .d2-profile-listitem.selectable .profile-heading .selection-control .csui-control-view.csui-checkbox-view .csui-control.csui-checkbox{
+  padding-left: 0;
+}
+

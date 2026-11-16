@@ -1,0 +1,54 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-workflow-item-notes-popup .d2-workflow-notes-popover .d2-toolbar-workflow-popover-notes {
+  height: 31px;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.binf-widgets .d2-workflow-item-notes-popup .d2-workflow-notes-popover .more-link-container{
+  height: 26px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  text-align: right;
+  color: #232E72;
+  width: 100%;
+  margin-top: 6px;
+}
+.d2-workflow-item-notes-popup .d2-workflow-notes-popover .more-link{
+  cursor: pointer;
+  padding-right: 16px;
+}
+.d2-workflow-item-notes-popup .d2-workflow-notes-popover .d2-workflow-notes-popover-container{
+  max-height: 358px;
+}
+.d2-workflow-item-notes-popup .d2-workflow-notes-popover .d2-workflow-notes-popover-container.show-more,
+.d2-workflow-item-notes-popup .d2-workflow-notes-popover .d2-workflow-notes-popover-container.show-add-button {
+  max-height: 326px;
+}
+.d2-workflow-item-notes-popup .d2-workflow-notes-popover .d2-workflow-notes-popover-container.show-more.show-add-button {
+  max-height: 294px;
+}
+.d2-workflow-notes-popover-container .d2-task-note .d2-task-note-header-container{
+  padding-top: 8px;
+}
+.d2-workflow-show-note-dialog .d2-task-expanded-note-region .d2-task-note .d2-task-note-content{
+  max-height: none;
+  display: block;
+}
+.binf-widgets .d2-workflow-add-note-dialog.d2-stepper-wizard.binf-modal.binf-fade .binf-modal-dialog{
+  width: 448px;
+  min-width: 448px;
+}
+.binf-widgets .d2-workflow-show-note-dialog.d2-stepper-wizard.binf-modal.binf-fade .binf-modal-dialog {
+  width: 448px;
+  min-width: 448px;
+}
+.rtl.binf-widgets .binf-popover.d2-workflow-item-notes-popup.binf-fade.binf-right .binf-arrow:after{
+  border-left-color: #0084ce;
+}
+.rtl.binf-widgets .binf-popover.d2-workflow-item-notes-popup.binf-fade.binf-right .binf-arrow{
+  right: -3px;
+}

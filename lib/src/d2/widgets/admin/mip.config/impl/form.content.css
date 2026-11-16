@@ -1,0 +1,27 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.mip-config-form-content .cs-form .alpaca-field-checkbox{
+    display: inline-flex;
+}
+.mip-config-form-content .cs-form .question-info-tip{
+    cursor: pointer;
+    float: left;
+    height: 18px;
+    margin-left: 410px;
+    margin-top: -25px;
+    width: 18px;
+}
+.mip-config-form-content .cs-form .alpaca-field-password{
+    width: 95%;
+    padding-bottom: 10px;
+
+}
+.mip-config-form-content .cs-passwordfield .cs-field-write-inner {
+    display: inline-block;
+    width: 400px;
+}
+
+.mip-config-form-content .mip-component-button{
+    padding-left: 15px;
+}

@@ -1,0 +1,59 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-full-page-modal .d2-docmergeview {
+  height: 100%;
+}
+.d2-docmergeview .d2-docmerge {
+  width: 100%;
+  height: 100%;
+}
+.d2-docmergeview .d2-bravadocmergeviewer {
+  width: 100%;
+  height: calc(100% - 92px);
+  margin-top: 42px;
+}
+
+.d2-docmergeview .d2-docmerge-header {
+  height: 50px;
+  background-color: #212121d9;
+}
+
+.d2-docmergeview .d2-merge-header-title {
+  color: #ffffff;
+  padding: 15px 50px 15px 18px;
+}
+
+.d2-docmergeview .d2-merge-close {
+  position: absolute;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  top: 0;
+  right: 10px;
+  padding: 12px;
+}
+
+.d2-docmergeview .d2-merge-close:hover {
+  background-color: #7b9ab0;
+  opacity: 0.8
+}
+
+.d2-docmergeview .d2-merge-close-icon {
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNSA1TDE5IDE5IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTE5IDVMNSAxOSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvc3ZnPg==) no-repeat center transparent;
+  height: 24px;
+  width: 24px;
+}
+
+.d2-docmergeview .d2-docmerge-toolbar .d2-button-toolbar .d2-button-set .binf-btn {
+  width: auto
+}
+
+.d2-docmergeview .d2-docmerge-toolbar {
+  height: 42px;
+  position: absolute;
+}
+
+.d2-docmergeview .d2-docmerge-toolbar .d2-button-toolbar .d2-button-set .text-button {
+  padding: 0 4px;
+}

@@ -1,0 +1,104 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-task-attachments {
+  height: 100%;
+  width: 100%;
+}
+
+.d2-task-attachments .d2-task-attachments-container {
+  height: calc(100% - 37px);
+}
+
+.binf-widgets .d2-task-details-container .d2-task-attachments .d2-task-attachments-container .cs-emptylist-text {
+  position: initial;
+}
+
+.d2-task-attachments .d2-toolbar-task-attachments.binf-hidden+.d2-task-attachments-container {
+  height: 100%;
+}
+
+.d2-task-attachments .d2-toolbar-task-attachments {
+  height: 47px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.binf-widgets .d2-task-attachments .d2-toolbar-task-attachments .csui-tabletoolbar {
+  background-color: #dce4e8;
+  color: #333333;
+  border-bottom: 1px solid #d5d5d5;
+  display: flex;
+  width: 100%;
+  height: 52px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.d2-task-attachments .d2-button-toolbar .region-right .icon.icon-show-attachments-details {
+  transform: scaleX(-1);
+}
+
+html[dir=rtl] .d2-task-attachments .d2-button-toolbar .region-right .icon.icon-show-attachments-details {
+  transform: scaleX(1);
+}
+
+.d2-toolbar-task-attachments.binf-hidden+.d2-task-attachments-container .cs-list.d2-task-files-list .tile-content .binf-list-group .cs-emptylist-container:not(.csui-state-loading) {
+  padding-top: calc(44% - 0.5px);
+}
+
+.binf-widgets.csui-on-ipad .d2-task-attachments .d2-task-attachments-container .cs-list .csui-item-standard.csui-tile-with-more-btn {
+  background-color: #FFFFFF;
+}
+
+.binf-widgets .d2-task-details-container .d2-split-panel .d2-task-metadata-container .binf-tab-content .d2-task-attachments .d2-toolbar-task-attachments .csui-tabletoolbar .csui-toolbar.binf-nav>li>a:not(.binf-dropdown-toggle) {
+  padding: 4px 20px;
+}
+
+.binf-widgets .d2-task-details-container .d2-split-panel .d2-task-metadata-container .binf-tab-content .d2-task-attachments .d2-toolbar-task-attachments .csui-tabletoolbar .csui-toolbar.binf-nav>li>a.csui-toolitem.csui-toolitem-icononly {
+  padding: 0;
+}
+
+.binf-widgets .csui-toolbar.binf-nav>li>a {
+  align-items: center;
+  display: flex;
+  height: auto;
+  min-height: 32px;
+  min-width: 32px;
+  margin: auto 0;
+}
+
+.binf-widgets .d2-task-details-container .d2-split-panel .d2-task-metadata-container .binf-tab-content .d2-task-attachments .d2-toolbar-task-attachments .csui-toolbar.binf-nav>li>a:hover {
+  background-color: #eef2f4;
+  border-radius: 3px;
+  color: #5c707d;
+}
+
+.binf-widgets .d2-task-details-container .d2-split-panel .d2-task-metadata-container .binf-tab-content .d2-task-attachments .d2-toolbar-task-attachments .csui-toolbar>li>a.csui-toolitem.csui-toolitem-icononly:hover,
+.binf-widgets .d2-task-details-container .d2-split-panel .d2-task-metadata-container .binf-tab-content .d2-task-attachments .d2-toolbar-task-attachments .csui-toolbar>li>a.binf-dropdown-toggle:hover {
+  background-color: transparent;
+}
+
+.csui-otherToolbar>ul {
+  max-width: 650px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .csui-otherToolbar>ul {
+    max-width: 500px;
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .csui-otherToolbar>ul {
+    max-width: 350px;
+  }
+}
+
+
+@media (max-width: 479px) {
+  .csui-otherToolbar>ul {
+    max-width: 300px;
+  }
+}

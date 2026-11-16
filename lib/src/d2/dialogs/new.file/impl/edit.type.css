@@ -1,0 +1,49 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-new-content-edit-type {
+  position: relative;
+  height: 100%;
+}
+
+.d2-new-content-edit-type .profile-scroll-container {
+  height: 100%;
+  position: relative;
+}
+
+.d2-new-content-edit-type .category_selection_section {
+  height: auto;
+}
+
+.d2-new-content-edit-type .separator {
+  display: none;
+  visibility: hidden;
+}
+
+.d2-stepper-wizard .d2-new-content-edit-type .cs-form.csui-general-form.d2-form {
+  margin: 0;
+  width: 100%;
+}
+
+.d2-stepper-wizard .d2-new-content-edit-type .cs-form.csui-general-form.d2-form:first-child {
+  margin-top: 40px;
+}
+
+.d2-stepper-wizard .d2-new-content-edit-type .cs-form.csui-general-form.d2-form .alpaca-container-item {
+  margin-left: 64px;
+  width: 52%;
+}
+
+.d2-stepper-wizard .d2-new-content-edit-type.csui-top-align-label .cs-form.csui-general-form.d2-form .alpaca-container-item {
+  margin-left: 48px;
+  width: 54%;
+}
+
+.d2-stepper-wizard .d2-new-content-edit-type .cs-form.csui-general-form.d2-form .d2-profile-form-field-source_content {
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+}
+
+.d2-stepper-wizard .d2-new-content-edit-type .cs-form.csui-general-form.d2-form .d2-profile-form-field-source_content .binf-form-group.alpaca-field {
+  margin-top: 24px;
+}

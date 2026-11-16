@@ -1,0 +1,12 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-signin.binf-modal .binf-modal-dialog {
+  width: 760px;
+}
+
+.csui-signin.binf-modal .binf-modal-content {
+  background: linear-gradient(to bottom, #004b71 0%, #00a4d8 100%);
+  box-shadow: none;
+  border: none;
+}

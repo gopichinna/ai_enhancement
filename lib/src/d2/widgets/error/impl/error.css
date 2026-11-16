@@ -1,0 +1,39 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-error {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.binf-widgets .csui-error.content-tile {
+  background-color: #edf1fa;
+}
+
+.binf-widgets .csui-error .csui-message {
+  color: #3F4950;
+}
+
+.binf-widgets .csui-error .csui-error-icon-div {
+  padding: 0;
+}
+
+.binf-widgets .csui-error .csui-error-icon-div .csui-error-icon {
+  background-image: url('icons/notification_warning.svg') !important;
+  background-size: contain;
+}
+
+.binf-widgets div[data-csui-widget_type=error] .csui-error {
+  padding: 25% 1em 1em 1em;
+  justify-content: flex-start;
+}
+
+.binf-widgets div[data-csui-widget_type=error] .csui-error .csui-error-icon-div .csui-error-icon {
+  width: 48px;
+  height: 48px;
+  margin: 16px;
+}
+
+.binf-widgets .csui-error.d2-error-widget .binf-popover-content{
+  width:250px;
+}

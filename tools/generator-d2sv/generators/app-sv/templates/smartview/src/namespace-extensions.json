@@ -1,0 +1,17 @@
+{
+  "d2/sdk/models/module.collection": {
+    "modules": {
+      "<%= namespace %>": {
+        "title": "<%= pluginName %>",
+        "version": "<%= pluginVersion %>"
+      }
+    }
+  },
+  "d2/sdk/controls/action.icons/action.icons": {
+    "extensions": {
+      "<%= namespace %>": [
+        "<%= namespace %>/utils/theme/action.icons"
+      ]
+    }
+  }
+}

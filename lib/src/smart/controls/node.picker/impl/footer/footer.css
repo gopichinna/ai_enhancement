@@ -1,0 +1,26 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .binf-modal.smart-target-browse .binf-modal-dialog .binf-modal-footer {
+  padding: 0px 24px 0 16px;
+}
+
+.binf-widgets .binf-modal.smart-target-browse .binf-modal-dialog .binf-modal-footer .cs-footer-control {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.binf-widgets .smart-target-browse .binf-modal-footer .cs-footer-control .csui-selected-items {
+  float: left;
+  padding: 8px 0;
+}
+
+.binf-widgets .smart-target-browse .binf-modal-footer .cs-footer-control .csui-footer-buttons {
+  flex: 1;
+}
+
+.binf-widgets .smart-target-browse .binf-modal-footer .cs-footer-control .csui-footer-buttons > div {
+  display: flex;
+  justify-content: flex-end;
+}

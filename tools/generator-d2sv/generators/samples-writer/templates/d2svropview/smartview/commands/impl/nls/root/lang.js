@@ -1,0 +1,3 @@
+define({
+  cmdViewPermission: 'View permissions'
+});

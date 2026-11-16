@@ -1,0 +1,142 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view {
+  width: 400px;
+  border: 1px solid #A9AEB9;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 0;
+  transition: min-height .2s ease-in-out;
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view:focus {
+  outline: none;
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view:focus:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  outline: 1px dotted black;
+  z-index: -1;
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-group-header {
+  height: 42px;
+  line-height: 42px;
+  background-color: #EDF1FA;
+  display: flex;
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-group-header .signee-group-title {
+  margin-left: 16px;
+  color: #333333;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-group-header .signee-remove-group {
+  background: url(images/remove.svg) no-repeat center;
+  height: 42px;
+  width: 20px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-group-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 11px;
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-group-body.show-border {
+  margin: 11px;
+  border: 1px solid #CCCCCC;
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-group-droppable-region .signee-drop-placeholder {
+  display: none;
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-group-droppable-region.ui-droppable.ui-droppable-active.ui-droppable-hover.acceptable-hover .signee-drop-placeholder {
+  background: rgba(35, 64, 119, 0.9);
+  height: calc(100% - 42px);
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-group-droppable-region.ui-droppable.ui-droppable-active.ui-droppable-hover .signee-drop-placeholder span {
+  margin: auto;
+  color: white;
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-group-body .signee-list {
+  width: 100%;
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-group-body .signee-list .d2-signee-list-empty .d2-signee-list-empty-icon {
+  margin-top: 15px;
+  margin-bottom: -9px;
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-group-footer {
+  text-align: center;
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-group-footer button {
+  height: 32px;
+  padding: 0 24px;
+  margin-left: 16px;
+  vertical-align: middle;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 12px;
+  background-color: #ffffff;
+  border: 1px solid #232E72;
+  color: #232E72;
+  margin-bottom: 20px;
+  margin-top: 13px;
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-group-footer button[disabled] {
+  border: 1px solid #999999;
+  color: #999999;
+  pointer-events: none;
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-group-footer button:hover {
+  background-color: #ffffff;
+  border: 1px solid #171f4c;
+  color: #171f4c;
+  box-shadow: inset 0 0 0 1px rgb(23,31,76);
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-form {
+  position: absolute;
+  width: 100%;
+  background: white;
+  bottom: 0;
+  box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view .signee-form .d2-signature-signee-form {
+  width: 100%
+}
+
+.signature-signee-group-layout .signee-group-view .signee-group-footer .signature-drag-drop-message {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: -4px;
+  color: #333333;
+  margin-bottom: 16px;
+}

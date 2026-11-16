@@ -1,0 +1,122 @@
+{
+  "definitions": [
+    {
+      "key": "container",
+      "name": "Container",
+      "read_only": true,
+      "type": 5,
+      "type_name": "Boolean"
+    },
+    {
+      "include_time": true,
+      "key": "create_date",
+      "name": "Created",
+      "read_only": true,
+      "sort": true,
+      "type": -7,
+      "type_name": "Date"
+    },
+    {
+      "key": "create_user_id",
+      "name": "Created By",
+      "read_only": false,
+      "sort": true,
+      "type": -1,
+      "type_name": "String"
+    },
+    {
+      "key": "id",
+      "name": "ID",
+      "read_only": true,
+      "type": -1,
+      "type_name": "String"
+    },
+    {
+      "key": "mime_type",
+      "name": "Content Type",
+      "read_only": true,
+      "type": -1,
+      "type_name": "String"
+    },
+    {
+      "include_time": true,
+      "key": "modify_date",
+      "name": "Modified",
+      "read_only": true,
+      "sort": true,
+      "type": -7,
+      "type_name": "Date"
+    },
+    {
+      "key": "modify_user_id",
+      "name": "Modified By",
+      "read_only": true,
+      "type": -1,
+      "type_name": "String"
+    },
+    {
+      "key": "name",
+      "multilingual": true,
+      "name": "Name",
+      "sort": true,
+      "type": -1,
+      "type_name": "String"
+    },
+    {
+      "key": "owner_user_id",
+      "name": "Owned By",
+      "type": -1,
+      "type_name": "String"
+    },
+    {
+      "key": "parent_id",
+      "name": "Parent ID",
+      "type": -1,
+      "type_name": "String"
+    },
+    {
+      "key": "size",
+      "name": "Size",
+      "read_only": true,
+      "sort": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    {
+      "key": "type",
+      "name": "Type",
+      "read_only": true,
+      "sort": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    {
+      "key": "type_name",
+      "name": "Type",
+      "read_only": true,
+      "type": -1,
+      "type_name": "String"
+    },
+    {
+      "key": "version_number",
+      "name": "Version",
+      "read_only": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    {
+      "key": "wnd_comments",
+      "name": "Comments",
+      "read_only": true,
+      "type": 2,
+      "type_name": "Integer"
+    },
+    {
+      "key": "favorite",
+      "name": "Favorite",
+      "read_only": true,
+      "type": 5,
+      "type_name": "Boolean"
+    }
+  ]
+}

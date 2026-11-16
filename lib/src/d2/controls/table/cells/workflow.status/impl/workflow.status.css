@@ -1,0 +1,18 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-table-cell-status-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.binf-widgets .d2-table-cell-status-container .icon {
+  height: 14px;
+  width: 14px;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+  margin-top: 2px;
+}

@@ -1,0 +1,22 @@
+<div class="csui-type-icon file-icon {{fileIcon}}"></div>
+<div class="file-details">
+  <div class="file-name" title="{{name}}" aria-label="{{name}}">{{name}}</div>
+  {{#if sizeValue}}
+  <div class="file-size" title="{{sizeLabel}} {{sizeValue}}" aria-label="{{sizeLabel}} {{sizeValue}}">
+    <span class="size-lable">{{sizeLabel}}</span>
+    <span class="size-value">{{sizeValue}}</span>
+  </div>
+  {{/if}}
+{{#if haveErrorMessage}}
+  <div class="csui-inlineform-group-error" role="alert" id="{{errorMsgId}}">
+    <div class="binf-text-danger" role="alert" title="{{errorMessage}}"><span class="csui-text-danger">{{errorMessage}}</span></div>
+  </div>
+{{else}}
+  <div class="file-format">
+    <div class="format-lable">{{fileFormatLabel}}</div>
+    <div class="format-value" style="display:none"></div>
+    <div class="format-menu"></div>
+  </div>
+{{/if}}
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

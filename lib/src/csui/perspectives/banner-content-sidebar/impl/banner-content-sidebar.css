@@ -1,0 +1,641 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .cs-perspective-panel .cs-perspective.banner-content-sidebar-perspective {
+    height: 100%;  
+  }
+
+.binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective.banner-content-sidebar-perspective {
+    height: auto; 
+    overflow: visible !important; 
+}
+
+.binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective.banner-content-sidebar-perspective.csui-sidepanel-right-layout #content-region{
+    margin-right: 16px;
+}
+
+.binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective.banner-content-sidebar-perspective.csui-sidepanel-left-layout #content-region{
+    margin-left: 16px;
+    padding: 8px 0 0 0;
+}
+
+.binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective.banner-content-sidebar-perspective #main {
+    background-color: transparent;
+}
+.binf-widgets.perspective-editing .csui-perspective-view .banner-content-sidebar-perspective #main {
+    padding: 0px 8px 8px 8px;
+}
+
+.binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective.banner-content-sidebar-perspective #main{
+    display:flex;
+}
+
+.binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective.banner-content-sidebar-perspective.csui-sidepanel-right-layout #content-region,
+.binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective.banner-content-sidebar-perspective.csui-sidepanel-left-layout #sidebar-region{
+    order:1;
+}
+
+.binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective.banner-content-sidebar-perspective.csui-sidepanel-right-layout #sidebar-region,
+.binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective.banner-content-sidebar-perspective.csui-sidepanel-left-layout #content-region{
+    order:2;
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main {
+    padding:0px 25px 25px 25px;
+    min-height: calc(100% - 0px);
+    margin: 0;
+    display: flex;
+    background-color: #F3F6FB;
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-banner .cui-rich-editor-widget-wrapper,
+.binf-widgets .cs-bcs-perspective-banner .csui-html-editor-grand-parent {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.binf-widgets.perspective-editing .csui-perspective-view .banner-content-sidebar-perspective #main {
+    padding: 0px 25px 25px 25px;
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective > #banner-region + div#main {
+    min-height: calc(100vh - 260px);
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #content-region,
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #sidebar-region {
+    margin: 0;    
+    padding-top: 16px;
+    background: #F3F6FB;
+}
+
+.binf-widgets.perspective-editing  .csui-perspective-view .banner-content-sidebar-perspective #content-region,
+.binf-widgets.perspective-editing  .csui-perspective-view .banner-content-sidebar-perspective #sidebar-region {
+    background-color: rgba(249, 249, 249, 0.2);
+    border: 1px solid #ffffff;
+    padding: 8px 0 0 0;
+}
+
+@media (min-width: 1920px) {
+    .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main {
+        padding: 0 200px;
+    }
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective > #banner-region {
+    min-height: 160px;
+    
+    overflow: visible;
+    margin: 0;
+    background-color: #0D1442;
+    padding: 0;
+}
+
+.binf-widgets.perspective-editing  .csui-perspective-view .banner-content-sidebar-perspective > #banner-region { 
+    background-color: rgba(249, 249, 249, 0.2);
+    border: 1px solid #ffffff;
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-banner,
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-content,
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-sidebar {
+    height: 100%;
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .widget-column {
+    min-height: 200px;
+}
+
+.binf-widgets .banner-content-sidebar-perspective #banner-region .csui-html-editor-no-header.csui-html-editor-wrapper .csui-richtext-message-wrapper {
+    padding: 0;
+}
+.binf-widgets .cs-bcs-perspective.grid-rows .csui-html-editor-wrapper .csui-newlayout-template .contact {
+    margin: 0;
+
+}
+
+.binf-widgets .cs-bcs-perspective.grid-rows .csui-html-editor-no-header.csui-html-editor-wrapper .csui-richtext-message-wrapper {
+    padding: 0;
+}
+
+#content-region .binf-row div[data-csui-widget_type].csui-heroTile:not(.csui-pman-editable-widget), 
+#sidebar-region .binf-row div.csui-widget:not([data-csui-widget_type='shortcuts']):not([data-csui-widget_type='classificationvolume']):not([data-csui-widget_type='configurationvolume']):not([data-csui-widget_type='xdomea']):not([data-csui-widget_type='info']):not([data-csui-widget_type='conv']):not([data-csui-widget_type='calendar']):not([data-csui-widget_type='onenote']):not(.csui-pman-editable-widget):not(.csui-maximized-column):not(.csui-action-button) {
+    height: auto;
+    margin: 0;
+    min-height: calc(50vh - 50px);
+}
+
+.binf-widgets.perspective-editing #sidebar-region .binf-row div.csui-widget[data-csui-widget_type=tilereport].binf-col-xl-6,
+.binf-widgets.perspective-editing #sidebar-region .binf-row div.csui-widget[data-csui-widget_type].binf-col-xl-6 {
+    width: calc(100% - 16px);
+}
+
+.binf-widgets #sidebar-region .binf-row div.csui-widget[data-csui-widget_type=tilereport].binf-col-xl-6,
+.binf-widgets #sidebar-region .binf-row div.csui-widget[data-csui-widget_type].binf-col-xl-6,
+.binf-widgets #sidebar-region .binf-row .pman-dnd-hover-placeholder.binf-col-xl-6,
+.binf-widgets #sidebar-region .binf-row div[data-csui-widget_type='perspective.placeholder'].binf-col-xl-6,
+.binf-widgets #banner-region .binf-row div[data-csui-widget_type='perspective.placeholder'].binf-col-xl-6 {
+    width: 100%;
+}
+
+@media screen and (-webkit-max-device-pixel-ratio: 0.99)  {
+    #sidebar-region .binf-row div.csui-widget:not([data-csui-widget_type='shortcuts']):not(.csui-pman-editable-widget):not(.csui-maximized-column):not(.csui-action-button) {
+        min-height: auto;
+    }
+}
+
+#sidebar-region .binf-row div[data-csui-widget_type]:not(.csui-pman-editable-widget).csui-action-button { 
+    min-height: 40px;
+    height: auto;
+}
+
+#content-region .binf-row div[data-csui-widget_type].csui-heroTile .csui-html-editor-wrapper-parent,
+#sidebar-region .binf-row div[data-csui-widget_type] .csui-html-editor-wrapper-parent {
+    height: auto !important;
+	max-height: 500px;
+    min-height: calc(50vh - 65px);
+}
+
+#content-region .binf-row div[data-csui-widget_type].csui-heroTile:not(.csui-pman-editable-widget), 
+#content-region .binf-row div[data-csui-widget_type].csui-heroTile .csui-html-editor-wrapper-parent,
+.perspective-editing #content-region .csui-pman-editable-widget.csui-heroTile:not(.csui-pman-placeholder-container).csui-heroTile {
+    min-height: 100px;
+}
+
+#sidebar-region .binf-row div[data-csui-widget_type].csui-action-button .csui-html-editor-wrapper-parent {
+    min-height: 55px;
+}
+
+#sidebar-region .binf-row div[data-csui-widget_type] .cs-list .tile-content,
+#sidebar-region .binf-row div[data-csui-widget_type] .cs-list .tile-content .csui-error {
+    min-height: calc(50vh - 120px);
+    max-height: calc(600px - 64px);
+}
+ 
+#sidebar-region .binf-row div[data-csui-widget_type] .cs-list .tile-header + .tile-content {
+    max-height: calc(600px - 164px); 
+}
+
+#content-region .binf-row div[data-csui-widget_type].csui-heroTile .cs-list .tile-content {
+    min-height: 245px;
+}
+
+.perspective-editing #content-region .csui-pman-editable-widget.csui-heroTile:not(.csui-pman-placeholder-container), 
+.binf-widgets:not(.perspective-editing) #sidebar-region .csui-pman-editable-widget:not([data-csui-widget_type='shortcuts']):not([data-csui-widget_type='classificationvolume']):not([data-csui-widget_type='configurationvolume']):not([data-csui-widget_type='xdomea']):not([data-csui-widget_type='info']):not([data-csui-widget_type='conv']):not([data-csui-widget_type='calendar']):not([data-csui-widget_type='onenote']):not(.csui-pman-placeholder-container):not(.csui-shortcut-item) {
+    height: auto;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    min-height: calc(50vh - 65px);
+    padding: 0;
+    margin: 0;
+    border-radius: 6px;
+}
+
+.binf-widgets.perspective-editing .banner-content-sidebar-perspective .csui-pman-editable-widget .csui-shortcut-container .csui-shortcut-item,
+.perspective-editing #content-region .csui-pman-editable-widget:not(.csui-pman-placeholder-container) .csui-pman-widget,
+.perspective-editing #content-region .csui-pman-editable-widget.csui-heroTile:not(.csui-pman-placeholder-container) .csui-pman-widget,
+.perspective-editing #sidebar-region .csui-pman-editable-widget:not(.csui-pman-placeholder-container) .csui-pman-widget {
+    border-radius: 6px;    
+}
+
+.perspective-editing #content-region .csui-pman-editable-widget:not(.csui-pman-placeholder-container) .csui-pman-widget .tile-header,
+.perspective-editing #content-region .csui-pman-editable-widget.csui-heroTile:not(.csui-pman-placeholder-container) .csui-pman-widget .tile-header,
+.perspective-editing #sidebar-region .csui-pman-editable-widget:not(.csui-pman-placeholder-container) .csui-pman-widget .tile-header {
+    border-radius: 6px 6px 0 0;
+}
+
+#content-region .binf-row div[data-csui-widget_type].csui-heroTile .csui-html-editor-wrapper-parent,
+.perspective-editing #content-region .csui-pman-editable-widget.csui-heroTile:not(.csui-pman-placeholder-container) {
+    max-height: inherit;
+}
+
+.perspective-editing #sidebar-region .csui-pman-editable-widget[data-csui-widget_type]:not([data-csui-widget_type='perspective.placeholder']) {
+    margin: 0;
+    padding: 0;
+}
+.perspective-editing #sidebar-region .csui-pman-editable-widget[data-csui-widget_type]:not(.csui-pman-placeholder-container):not(.csui-shortcut-item) {
+    margin: 8px;
+    width: calc(100% - 16px);
+    min-height: calc(50vh - 50px);
+    background-color: #fff;
+}
+.perspective-editing #sidebar-region .csui-pman-editable-widget[data-csui-widget_type]:not(.csui-pman-placeholder-container):not(.csui-shortcut-item):not([data-csui-widget_type='shortcuts']) {
+    height: auto;
+}
+
+.perspective-editing #sidebar-region .csui-pman-editable-widget[data-csui-widget_type]:not(.csui-pman-placeholder-container):not(.csui-shortcut-item).csui-action-button {
+  height: auto;
+}
+
+.perspective-editing #sidebar-region .binf-row div[data-csui-widget_type] .csui-html-editor-wrapper-parent {
+  height: inherit !important;
+}
+
+.perspective-editing #content-region .csui-pman-editable-widget.csui-heroTile:not(.csui-pman-placeholder-container).csui-heroTile {
+    padding: 8px;
+    background-color: transparent;
+    margin: 0;
+}
+
+.perspective-editing #sidebar-region .csui-pman-editable-widget:not(.csui-pman-placeholder-container) .cs-list,
+.perspective-editing #content-region .csui-pman-editable-widget.csui-heroTile:not(.csui-pman-placeholder-container) .cs-list {
+    height: inherit;
+}
+
+.binf-widgets .cs-bcs-perspective-banner .csui-html-editor-grand-parent {
+    border-radius: 6px 6px 0 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.perspective-editing .cs-bcs-perspective-banner .csui-configure-perspective-widget .csui-pman-perspective-actions,
+.perspective-editing .cs-bcs-perspective-banner .csui-configure-perspective-widget:hover .csui-pman-perspective-actions {
+    top: -15px;
+    right: -16px;
+  }
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-banner > .binf-row {
+    margin: 0;
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-banner > .binf-row > div {
+    padding: 0;
+    margin: 0;
+}
+
+.perspective-editing .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-banner .csui-pman-editable-widget {
+    position: relative;
+    width: calc(100% - 0px);
+    min-height: 142px;
+}
+.perspective-editing .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-banner .csui-pman-editable-widget:not(.csui-pman-placeholder-container) {
+  background-color: #fff;
+}
+
+.perspective-editing .csui-perspective-view .banner-content-sidebar-perspective .csui-pman-editable-widget,
+.perspective-editing .csui-perspective-view .banner-content-sidebar-perspective .csui-pman-editable-widget .csui-pman-widget {
+    border-radius: 6px;
+}
+
+.perspective-editing .csui-perspective-view .banner-content-sidebar-perspective .csui-pman-editable-widget .csui-pman-widget .tile-header {
+    border-radius: 6px 6px 0 0;
+}
+
+.perspective-editing .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-banner .csui-perspective-placeholder {
+    height: 160px;
+}
+
+.binf-widgets .cs-bcs-perspective-banner .cs-tile.cui-rich-editor-widget-wrapper .tile-content .csui-html-editor-wrapper .csui-richtext-message-wrapper {
+    padding: 0;
+}
+
+.binf-widgets.perspective-editing .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-sidebar > .binf-row,
+.binf-widgets.perspective-editing .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-content > .binf-row  {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main .tile {
+    border-radius: 6px;
+    box-shadow: 0px 4px 12px rgb(152 168 178 / 25%);
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main .tile .tile-header {
+    border-radius: 6px 6px 0 0;
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main .tile .tile-content{
+    border-radius:0 0 6px 6px;
+}
+
+.banner-content-sidebar-perspective .csui-newlayout-template h2,
+.banner-content-sidebar-perspective .csui-newlayout-template h3,
+.banner-content-sidebar-perspective .csui-newlayout-template h4,
+.banner-content-sidebar-perspective .csui-newlayout-template h5,
+.banner-content-sidebar-perspective .csui-newlayout-template h6,
+.banner-content-sidebar-perspective .csui-newlayout-template p,
+.banner-content-sidebar-perspective .csui-newlayout-template ul,
+.banner-content-sidebar-perspective .csui-newlayout-template ol,
+.banner-content-sidebar-perspective .csui-newlayout-template blockquote {
+  padding: 0;
+  margin: 0 16px;
+  font-weight: normal;
+}
+
+
+
+body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template #banner {
+  min-height: 160px;
+}
+
+.binf-widgets.perspective-editing  .banner-content-sidebar-perspective .cs-bcs-perspective-banner .csui-html-editor-wrapper .csui-richtext-message {
+    color: #333333;
+}
+
+.binf-widgets .banner-content-sidebar-perspective .cs-bcs-perspective-banner .csui-html-editor-wrapper .csui-richtext-message {
+    color: #ffffff;
+}
+
+.binf-widgets .banner-content-sidebar-perspective .csui-html-editor-wrapper .csui-richtext-message p.execImage {
+    padding: 0;
+    margin: 0 16px;
+    font-weight: normal;
+    color: #333;
+}
+
+.binf-widgets .banner-content-sidebar-perspective .csui-html-editor-wrapper .csui-newlayout-template #banner #execInfo h2,
+.binf-widgets .banner-content-sidebar-perspective .csui-html-editor-wrapper .csui-newlayout-template #banner #execInfo p {
+    margin-bottom: 0;
+  }
+.binf-widgets .banner-content-sidebar-perspective .csui-html-editor-wrapper .csui-newlayout-template #banner #execInfo p {
+    line-height: 18px;
+}   
+.binf-widgets .banner-content-sidebar-perspective .csui-html-editor-wrapper .csui-newlayout-template #banner #deptName h3 {
+    padding: 0 40px 0 0;
+}
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-banner .tile:hover {
+    outline: none;
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-banner .execImage img {
+    margin: 16px;
+}
+
+
+
+#content-region .binf-row div[data-csui-widget_type].csui-heroTile img.logo {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .csui-richtext-message .csui-newlayout-template .quicklinkTiles h2 {
+    font-size: 18px;
+    margin: 0 0 4px 0;
+}
+
+.binf-widgets.perspective-editing .csui-perspective-view .banner-content-sidebar-perspective .csui-richtext-message .csui-newlayout-template .quicklinkTiles h2 {
+    color: #ffffff;
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .csui-richtext-message .csui-newlayout-template .quicklinkTiles {
+    padding: 0 8px;
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .csui-richtext-message .csui-newlayout-template .quicklinkTiles ul {
+    padding: 0;
+    margin: 0 -8px;
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .csui-richtext-message .csui-newlayout-template .quicklinkTiles ul li {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .csui-newlayout-template #LinkContainer {
+    padding: 0 13px;
+}
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .csui-html-editor-wrapper .csui-newlayout-template .linkGroup {
+    width: 100%;
+    margin: 16px 0;
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .csui-html-editor-wrapper .csui-newlayout-template .linkGroup:first-child {
+    border: none;
+    padding: 0;
+}
+
+
+.banner-content-sidebar-perspective #sidebar-region p {
+    margin: 0;
+}
+
+.banner-content-sidebar-perspective #sidebar-region p.contactImage {
+    border-radius: 0;
+}
+
+.binf-widgets .cs-perspective.banner-content-sidebar-perspective .csui-newlayout-template a.actionButton img {
+    margin: 0 11px 0 0;
+}
+
+.binf-widgets .cs-perspective.banner-content-sidebar-perspective .csui-newlayout-template a.actionButton:hover,
+.binf-widgets .cs-perspective.banner-content-sidebar-perspective .csui-newlayout-template a.actionButton:focus {
+     color: #fff;
+}
+
+.binf-widgets .banner-content-sidebar-perspective .csui-html-editor-wrapper .csui-richtext-message,
+.binf-widgets .banner-content-sidebar-perspective .csui-html-editor-no-header,
+.binf-widgets .banner-content-sidebar-perspective .csui-html-editor-grand-parent {
+    background-color: transparent;
+}
+
+.binf-widgets .banner-content-sidebar-perspective .csui-nodestable {
+    box-shadow: 0px 4px 12px rgb(152 168 178 / 25%);
+    border-radius: 6px;
+}
+
+.binf-widgets .banner-content-sidebar-perspective .cs-bcs-perspective-sidebar .csui-html-editor-wrapper .csui-richtext-message p {
+    margin-bottom: 1em;
+}
+.perspective-editing #sidebar-region .csui-pman-editable-widget[data-csui-widget_type='perspective.widget']:not(.csui-pman-placeholder-container) {
+    min-height: calc(250px - 46px);
+}
+
+#content-region .binf-row div[data-csui-widget_type].csui-transparent-background .csui-html-editor-grand-parent,
+#content-region .binf-row div[data-csui-widget_type].csui-transparent-background .csui-html-editor-grand-parent .tile,
+#content-region .binf-row div[data-csui-widget_type].csui-transparent-background .csui-html-editor-grand-parent .csui-html-editor-wrapper,
+#content-region .binf-row div[data-csui-widget_type].csui-transparent-background .csui-html-editor-grand-parent .csui-html-editor-wrapper .csui-richtext-message-wrapper,
+#content-region .binf-row div[data-csui-widget_type].csui-transparent-background .csui-html-editor-grand-parent .csui-html-editor-wrapper .csui-richtext-message-wrapper .csui-richtext-message,
+#sidebar-region .binf-row div[data-csui-widget_type].csui-action-button .csui-html-editor-grand-parent,
+#sidebar-region .binf-row div[data-csui-widget_type].csui-action-button .csui-html-editor-grand-parent .tile,
+#sidebar-region .binf-row div[data-csui-widget_type].csui-action-button .csui-html-editor-grand-parent .csui-html-editor-wrapper,
+#sidebar-region .binf-row div[data-csui-widget_type].csui-action-button .csui-html-editor-grand-parent .csui-html-editor-wrapper .csui-richtext-message-wrapper,
+#sidebar-region .binf-row div[data-csui-widget_type].csui-action-button .csui-html-editor-grand-parent .csui-html-editor-wrapper .csui-richtext-message-wrapper .csui-richtext-message,
+.perspective-editing #sidebar-region .csui-pman-editable-widget:not(.csui-pman-placeholder-container).csui-action-button  {   
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.perspective-editing #sidebar-region .csui-pman-editable-widget:not([data-csui-widget_type='shortcuts']):not(.csui-pman-placeholder-container):not(.csui-shortcut-item).csui-action-button,
+#sidebar-region .binf-row div[data-csui-widget_type]:not(.csui-pman-editable-widget).csui-action-button .csui-html-editor-wrapper-parent{
+    min-height: 55px;
+    background: transparent;
+}
+
+.binf-widgets .banner-content-sidebar-perspective .csui-binf-dropdown-open .csui-html-editor-grand-parent .csui-html-editor-tile-controls.tile-controls {
+    z-index: 1042;
+}
+
+.binf-widgets .cs-bcs-perspective-sidebar .csui-configure-perspective-widget .csui-pman-perspective-actions {
+    right: -16px;
+    top: -16px;
+}
+
+.perspective-editing #sidebar-region .csui-pman-editable-widget[data-csui-widget_type='shortcuts']:not(.csui-pman-placeholder-container):not(.csui-shortcut-item) {
+    background: transparent;
+    min-height: auto;
+    padding: 0;
+}
+
+.binf-widgets .banner-content-sidebar-perspective .csui-shortcut-container .csui-shortcut-item {
+    border-radius: 6px;
+}
+
+#sidebar-region .binf-row div[data-csui-widget_type='myworkplace']:not(.csui-pman-editable-widget),
+#sidebar-region .binf-row div[data-csui-widget_type='myworkplace'].csui-pman-editable-widget,
+#sidebar-region .binf-row div[data-csui-widget_type='transmittal.header'].csui-pman-editable-widget,
+#sidebar-region .binf-row div[data-csui-widget_type='transmittal.header']:not(.csui-pman-editable-widget),
+#sidebar-region .binf-row div[data-csui-widget_type='perspective.placeholder'].csui-pman-placeholder-container:not(.csui-pman-editable-widget),
+.perspective-editing #sidebar-region .binf-row div[data-csui-widget_type='myworkplace']:not(.csui-pman-editable-widget),
+.perspective-editing #sidebar-region .binf-row div[data-csui-widget_type='myworkplace'].csui-pman-editable-widget,
+.perspective-editing #sidebar-region .binf-row div[data-csui-widget_type='transmittal.header'].csui-pman-editable-widget,
+.perspective-editing #sidebar-region .binf-row div[data-csui-widget_type='transmittal.header']:not(.csui-pman-editable-widget) {
+    height: calc(100vh - 425px);
+    min-height: 90px;
+}
+
+#sidebar-region .binf-row div[data-csui-widget_type='myworkplace.perspective']:not(.csui-pman-editable-widget),
+#sidebar-region .binf-row div[data-csui-widget_type='myworkplace.perspective'].csui-pman-editable-widget {
+    padding-bottom: 7.5px;
+}
+
+#sidebar-region .binf-row div[data-csui-widget_type] .cs-list .tile-content .customsearch-attr-container {
+    position: relative;
+}
+
+#sidebar-region .binf-row div[data-csui-widget_type] .cs-list .tile-content .csui-custom-view-search .csui-saved-search-form {
+    padding-bottom: 42px;
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main div[data-csui-widget_type='search.custom'] .tile .tile-content {
+    position: static;
+}
+
+.binf-widgets.perspective-editing .cs-bcs-perspective-banner .csui-configure-perspective-widget .wrapper-button:focus,
+.binf-widgets.perspective-editing .cs-bcs-perspective-sidebar .csui-configure-perspective-widget .wrapper-button:focus {
+    outline-offset: 8px;
+    border-radius: 1px;
+}
+
+.perspective-editing .cs-bcs-perspective-banner .binf-row > .csui-pman-editable-widget > .csui-configure-perspective-widget,
+.perspective-editing .cs-bcs-perspective-sidebar .binf-row > .csui-pman-editable-widget > .csui-configure-perspective-widget {
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.binf-widgets.perspective-editing .cs-bcs-perspective-content .csui-pman-widget-personalize-mask,
+.binf-widgets.perspective-editing .cs-bcs-perspective-sidebar .csui-pman-widget-personalize-mask{
+    border-radius: 6px;
+}
+
+.binf-widgets #sidebar-region .xecm4egov-myworkplace .myworkplace-breadcrumbs .binf-breadcrumb {
+    min-width: 100%;
+}
+
+#content-region .binf-row div[data-csui-widget_type].csui-transparent-background .csui-html-editor-grand-parent .csui-newlayout-template.csui-html-editor-wrapper-parent,
+#sidebar-region .binf-row div[data-csui-widget_type].csui-action-button .csui-html-editor-grand-parent .csui-newlayout-template.csui-html-editor-wrapper-parent {
+    background: transparent;
+}
+
+.perspective-editing .banner-content-sidebar-perspective .csui-pman-editable-widget .tile-content {
+    position: relative;
+}
+
+.binf-widgets .banner-content-sidebar-perspective.cs-perspective {
+    overflow: visible;
+}
+
+.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .csui-expanded-view {
+  width: 100%;
+  height: 100%;
+}
+
+.binf-widgets.csui-maximized-widget-mode .csui-perspective-view .banner-content-sidebar-perspective #main {
+    padding: 0;
+}
+
+.binf-widgets .banner-content-sidebar-perspective .csui-maximized-column .csui-nodestable {
+  border-radius: 0;
+}
+
+.binf-widgets.csui-maximized-widget-mode .csui-perspective-view .banner-content-sidebar-perspective #main,
+.binf-widgets.csui-maximized-widget-mode .csui-perspective-view .banner-content-sidebar-perspective #content-region,
+.binf-widgets.csui-maximized-widget-mode .csui-perspective-view .banner-content-sidebar-perspective #sidebar-region {
+    background-color: transparent;
+    background: transparent;
+}
+
+.binf-widgets.csui-maximized-widget-mode .cs-perspective-panel .cs-perspective.csui-breadcrumbs-visible .csui-expanded-view .csui-maximized-column {
+    margin-top: -1px;
+    padding: 0;
+}
+
+#sidebar-region .binf-row div[data-csui-widget_type] .cs-list .tile-header + .tile-content .csui-richtext-message .csui-newlayout-template .quicklinkTiles,
+#content-region .binf-row div[data-csui-widget_type] .cs-list .tile-header + .tile-content .csui-richtext-message .csui-newlayout-template .quicklinkTiles {
+    padding: 0;
+    margin: 0 -8px;
+}
+
+.binf-widgets:not(.perspective-editing) .banner-content-sidebar-perspective .binf-row div[data-csui-widget_type=shortcuts] .load-container.smart-loading-state-dark-theme .csui-common-loading-parent-wrapper .placeholder {
+    color: #666666;
+  }
+
+ .binf-widgets .banner-content-sidebar-perspective .binf-row div.csui-widget[data-csui-widget_type='nodestable'] {
+    padding-bottom: 7.5px;
+}
+
+.binf-widgets #sidebar-region .binf-row div.csui-widget[data-csui-widget_type='nodestable'] > div,
+.binf-widgets #sidebar-region .binf-row div.csui-widget[data-csui-widget_type='error'] > div,
+#sidebar-region .binf-row div[data-csui-widget_type] .csui-html-editor-wrapper-parent .csui-error {
+    min-height: calc(50vh - 65px);
+}
+
+.binf-widgets #sidebar-region .binf-row div.csui-widget[data-csui-widget_type='search.custom'] .csui-custom-view-search,
+.binf-widgets #sidebar-region .binf-row div.csui-widget[data-csui-widget_type='search.results.tile'] .binf-list-group .content-tile {
+    min-height: calc(50vh - 120px);
+}
+
+.binf-widgets .banner-content-sidebar-perspective .csui-shortcut-container a.csui-shortcut-item:first-of-type {
+    margin-top: 0;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), 
+(min-resolution: 1.5dppx),                               
+(min-resolution: 144dpi) {
+    #sidebar-region .binf-row div[data-csui-widget_type] .cs-list .tile-content,
+    #sidebar-region .binf-row div[data-csui-widget_type]:not(.csui-action-button) .csui-html-editor-wrapper-parent.tile,
+    .binf-widgets #sidebar-region .binf-row div.csui-widget[data-csui-widget_type='nodestable'] > div,
+    .binf-widgets #sidebar-region .binf-row div.csui-widget[data-csui-widget_type='search.custom'] .csui-custom-view-search,
+    .binf-widgets #sidebar-region .binf-row div.csui-widget[data-csui-widget_type='search.results.tile'] .binf-list-group .content-tile,
+    .binf-widgets #sidebar-region .binf-row div.csui-widget[data-csui-widget_type='error'] > div {
+        min-height: 245px;
+    }
+
+    #sidebar-region .binf-row div[data-csui-widget_type] .csui-html-editor-wrapper .csui-error,
+    #sidebar-region .binf-row div[data-csui-widget_type] .cs-list .tile-content .csui-error {
+        min-height: 245px;
+    }    
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.75), 
+(min-resolution: 1.75dppx),                               
+(min-resolution: 264dpi) { 
+    .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main {
+        padding: 0px 5px 5px 5px;
+    }
+    .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main .tile-nav .binf-dropdown-menu,
+    .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main .tile-nav .binf-dropdown-menu li a {
+        max-width: 150px;
+        min-width: 110px;
+    }
+}

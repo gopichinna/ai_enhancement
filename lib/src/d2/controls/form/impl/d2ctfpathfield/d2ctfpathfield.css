@@ -1,0 +1,101 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.d2-ctf-path-field .cs-field-read .cs-field-read-inner,
+.d2-ctf-path-field .cs-field-write .cs-field-write-inner {
+  display: flex;
+}
+
+.d2-ctf-path-field .cs-field-write input[type=text] {
+  padding-left: 8px;
+  padding-right: 25px;
+  border-radius: 3px;
+  border: 1px solid #a7a9ac;
+  height: 28px;
+  width: 320px;
+}
+
+.d2-ctf-path-field .cs-field-write input[type=text]:focus,
+.d2-ctf-path-field .cs-field-write input[type=text].browse-focused {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid #666666;
+  border-radius: 3px;
+  margin: 0;
+}
+
+.d2-ctf-path-field .cs-field-write .browse-button {
+  background-image: url("../d2nodepicker/images/action_browse20.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: -30px;
+  margin-right: 5px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.d2-ctf-path-field .cs-field-write .browse-button:hover {
+  background-image: url("../d2nodepicker/images/action_browse20_mo.svg");
+}
+
+.d2-ctf-path-field .cs-field-write .browse-button:active {
+  background-image: url("../d2nodepicker/images/action_browse20_md.svg");
+}
+
+.d2-ctf-path-field .cs-field-read {
+  max-width: calc(100% - 30px);
+}
+
+.d2-ctf-path-field .cs-field-read .btn-container button {
+  width: inherit;
+  border: 0;
+  background: none;
+  max-width: 100%;
+  padding: 2px;
+}
+
+.d2-ctf-path-field .cs-field-read .btn-container button:focus {
+  outline: 0;
+  box-shadow: none;
+  border-radius: 3px;
+  padding: 1px;
+  border: 1px dotted #666;
+  cursor: default;
+}
+
+.d2-ctf-path-field .cs-field-read .btn-container button > span {
+  font-size: 14px;
+}
+
+.d2-ctf-path-field .cs-field-write .cs-field-write-inner .icon-container {
+  position: relative;
+  right: 0;
+  top: 0;
+  display: flex;
+}
+
+.d2-ctf-path-field.cs-formfield .icon-container .csui-icon-edit.inline-edit-icon {
+  height: 32px;
+  width: 32px;
+  max-width: 32px;
+  margin-top: -3px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.d2-ctf-path-field.cs-formfield .icon-container .csui-icon-edit{
+  outline:none;
+}
+
+.d2-ctf-path-field.cs-formfield .cs-field-read .read-only-label{
+  font-size: 14px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.d2-ctf-path-field.cs-formfield.binf-has-error .cs-field-write button.csui-icon-edit {
+  background-color: transparent;
+  border: 0;
+}

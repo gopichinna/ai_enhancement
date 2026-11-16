@@ -1,0 +1,9 @@
+<div class="{{#if options.isMultiRowSetEnabled}} cs-form-set {{else}}csui-multivalue-container {{#if options
+.isEditMode}} csui-multivalue-block csui-multivalue-read-block {{/if}} {{/if}} cs-form-set-container
+cs-form-set-container-{{options.uniqueId}}" {{#if options.isTabable}}tabindex="0"{{/if}}>
+  {{#each items}}
+    {{#item}}{{/item}}
+  {{/each}}
+ <div class='alpaca-marker-array-field-toolbar' data-alpaca-array-field-toolbar-field-id={{this.id}}></div>
+</div>
+

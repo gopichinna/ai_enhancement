@@ -1,0 +1,76 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+
+.binf-widgets .binf-navbar-brand > .csui-logo > .csui-logo-image {
+  background-image: url("image/csui/headerbar_content_suite_platform_li.svg");
+}
+
+.binf-widgets .csui-about-box.cs-dialog .csui-logo-image {
+  background-image: url("image/csui/headerbar_content_suite_platform.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.csui-mime-compound-release {
+  background-image: url("image/csui/icons/mime_compound_release32.svg");
+  background-repeat: no-repeat;
+}
+
+.csui-mime-compound-revision {
+  background-image: url("image/csui/icons/mime_compound_revision32.svg");
+  background-repeat: no-repeat;
+}
+
+
+.binf-widgets .cs-list .tile-content:not(.csui-perfect-scrolling),
+.binf-widgets .csui-inline-menu .binf-dropdown .binf-dropdown-menu:not(.csui-perfect-scrolling),
+.binf-widgets .cs-perspective-panel .csui-normal-scrolling,
+.binf-widgets :not(.cs-perspective-panel) .csui-normal-scrolling,
+.binf-widgets .metadata-content .cs-metadata .cs-metadata-properties .binf-tab-content:not(.csui-perfect-scrolling),
+.binf-widgets .cs-form-set-container.csui-native-scrollbar .csui-scrollablecols,
+.binf-widgets .csui-thumbcarousel-dialog.cs-dialog .csui-carousel-film-strip .binf-filmstrip-container {
+  overflow-y: auto !important; 
+  overflow-y: overlay !important;  
+}
+
+.binf-widgets .cs-list .tile-content:not(.csui-perfect-scrolling).csui-no-scrolling,
+.binf-widgets .csui-inline-menu .binf-dropdown .binf-dropdown-menu:not(.csui-perfect-scrolling).csui-no-scrolling,
+.binf-widgets .cs-perspective-panel .csui-no-scrolling,
+.binf-widgets :not(.cs-perspective-panel) .csui-no-scrolling,
+.binf-widgets .metadata-content .cs-metadata .cs-metadata-properties .binf-tab-content:not(.csui-perfect-scrolling).csui-no-scrolling,
+.binf-widgets .cs-form-set-container.csui-native-scrollbar .csui-scrollablecols.csui-no-scrolling,
+.binf-widgets .csui-thumbcarousel-dialog.cs-dialog .csui-carousel-film-strip .binf-filmstrip-container.csui-no-scrolling {
+  overflow: hidden !important;
+}
+
+
+.binf-widgets .cs-perspective-panel .csui-normal-scrolling.csui-no-scroll-x,
+.binf-widgets :not(.cs-perspective-panel) .csui-normal-scrolling.csui-no-scroll-x{
+  overflow-x: hidden !important;
+}
+
+.binf-widgets .csui-thumbcarousel-dialog.cs-dialog .csui-carousel-film-strip .binf-filmstrip-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.binf-widgets *:not(.cs-list) .csui-shortcut-container.tile {
+  position: relative;
+  box-shadow: 0 0 5px 0 rgb(0 0 0 / 30%)
+}
+
+.binf-widgets .csui-tabletoolbar .csui-toolbar-settings:focus-visible,
+.binf-widgets .tile-content .csui-icon-group:focus-visible,
+.binf-widgets .tile .tile-expand:focus-visible {
+  box-shadow: none;
+}
+
+
+.binf-widgets.csui-pre-loading nav.csui-navbar,
+.binf-widgets.csui-pre-loading .smart-app-header-wrapper,
+.binf-widgets .smart-app-header-wrapper.smart-app-header-hide,
+.binf-widgets.csui-pre-loading .cs-perspective-panel {
+  opacity: 0;
+}

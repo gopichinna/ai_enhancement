@@ -1,0 +1,79 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.d2-navbar .binf-container-fluid[role="menubar"] {
+  display: flex;
+  padding: 0 1.5em;
+  max-height: 62px;
+  min-height: 62px;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav {
+  margin: 0;
+  max-height: inherit;
+}
+
+.d2-navbar .binf-container-fluid[role=menubar] .binf-navbar-nav .csui-favorites .csui-favorites-view .csui-favorites-icon-container:focus {
+  outline: 0;
+}
+
+.d2-navbar .binf-container-fluid[role=menubar] .binf-navbar-nav .csui-favorites .csui-favorites-view .csui-favorites-icon-container .csui-icon-favorites.favorite_header_icon::before {
+  font-family: 'smartview-icon';
+  content: "\e903";
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+.d2-navbar .binf-container-fluid[role=menubar] .binf-navbar-nav .csui-favorites .csui-favorites-view .csui-favorites-icon-container .csui-icon-favorites.favorite_header_icon {
+  height: 2.625em;
+  width: 2.625em;
+  background: none;
+  border-radius: 50%;
+  border: 1px solid #004A70;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.d2-navbar .binf-container-fluid[role=menubar] .binf-navbar-nav .csui-favorites .csui-favorites-view .csui-favorites-icon-container .csui-icon-favorites.favorite_header_icon:hover,
+.d2-navbar .binf-container-fluid[role=menubar] .binf-navbar-nav .csui-favorites .csui-favorites-view .csui-favorites-icon-container:focus .csui-icon-favorites.favorite_header_icon{
+  border: 1px solid #7B9AB0;
+}
+
+.d2-navbar .binf-container-fluid[role=menubar] .binf-navbar-nav .csui-favorites .csui-favorites-view.showing-favorites-view .csui-favorites-icon-container .csui-icon-favorites.favorite_header_icon {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav.binf-navbar-left .d2-branding .d2-brand-container {
+  padding: 0 16px 0 8px;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-center {
+  flex: 1 0 200px;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-right {
+  flex: 1 1 1px;
+  padding-right: 0;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-left {
+  flex: 1 0 1px;
+  min-width: 555px;
+  overflow: hidden;
+}
+
+
+.d2-navbar .binf-container-fluid[role=menubar] .binf-navbar-nav .csui-profile .nav-profile:focus{
+  padding: 10px 11px;
+}
+
+@media (max-width: 1440px) {
+  .d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-left {
+    flex: 1 0 1px;
+    min-width: 390px;
+    overflow: hidden;
+  }
+}

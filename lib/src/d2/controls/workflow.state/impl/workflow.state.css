@@ -1,0 +1,32 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-workflow-state-view {
+  display: flex;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #EDF1FA;
+}
+
+.binf-widgets .d2-workflow-state-view:focus,
+.binf-widgets .d2-workflow-state-view:active {
+  outline: 1px dotted;
+  outline-offset: 2px;
+}
+
+.binf-widgets .d2-workflow-state-view .csui-icon {
+  background-size: auto;
+  width: 14px;
+  height: 14px;
+  margin: 4px 4px 4px 8px;
+}
+
+.binf-widgets .d2-workflow-state-view .d2-workflow-state {
+  height: 14px;
+  margin: 4px 8px 4px 0;
+  line-height: 14px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #333333;
+}

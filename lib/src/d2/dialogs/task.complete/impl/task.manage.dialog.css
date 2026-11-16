@@ -1,0 +1,104 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-task-manage-dialog,
+.d2-task-manage-dialog-tabs-container {
+  height: 100%;
+}
+
+.d2-stepper-wizard .d2-task-manage-dialog .cs-form.csui-general-form.d2-form {
+  padding-top: 32px;
+  margin-top: 0;
+  margin-left: 48px;
+  width: 58%;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-task-manage-dialog .d2-task-update-performers-form.cs-form.csui-general-form.d2-form {
+  padding-left: 48px;
+}
+
+.d2-stepper-wizard .d2-task-manage-dialog .cs-form.csui-general-form.d2-form .binf-help-block.alpaca-message {
+  margin-left: 16px;
+  width: calc(100% - 16px);
+}
+
+.d2-task-manage-dialog .cs-form .binf-col-md-6,
+.d2-task-manage-dialog .csui-metadata-low-resolution .cs-form .binf-col-md-6 {
+  width: 100%;
+  padding: 0;
+}
+
+.d2-task-manage-dialog .d2-next-tasks-form.cs-form .d2-checkbox-group .d2-checkbox-container label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 17px;
+}
+
+.binf-widgets .d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container:after {
+  content: none;
+}
+
+
+.binf-widgets .d2-task-manage-dialog .d2-next-tasks-form .d2-listfield .cs-field-read .d2-list-toolbar {
+  display: none;
+}
+
+.binf-widgets .d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container {
+  padding-bottom: 0;
+}
+
+.d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.d2-checkbox-group .d2-cb-container-parent li {
+  padding-left: 0;
+}
+
+.d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.d2-checkbox-group .d2-checkbox-container {
+  margin-bottom: 0;
+}
+
+.binf-widgets .d2-task-manage-dialog .alpaca-field-d2label .cs-formfield .cs-field-read,
+.d2-task-manage-dialog .alpaca-field-d2label .cs-formfield.cs-formfield-readonly .cs-field-read .btn-container {
+  width: 100%;
+}
+
+.d2-task-manage-dialog .d2-next-tasks-form .alpaca-field-d2label .cs-formfield.cs-formfield-readonly .cs-field-read button {
+  background: #EEEEEE;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+
+.d2-task-manage-dialog .d2-next-tasks-form .alpaca-field-d2label .cs-formfield.cs-formfield-readonly .cs-field-read button:focus {
+  border: 1px dotted #666666;
+  outline: none;
+  line-height: 28px;
+}
+
+.d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.d2-listfield .cs-field-read button > span {
+  line-height: 17px;
+  margin-bottom: 12px;
+}
+
+.d2-task-manage-dialog .d2-next-tasks-form .cs-textareafield textarea {
+  height: auto;
+  min-height: 46px;
+  max-height: none;
+  overflow: hidden;
+}
+
+.d2-task-manage-dialog .cs-formfield.cs-textareafield {
+  max-height: none;
+}
+
+.d2-stepper-wizard .d2-task-manage-dialog .csui-top-align-label .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+  width: calc(100% - 59px);
+  text-align: left;
+  padding: 0;
+  padding-left: 16px;
+  font-size: 12px;
+  text-overflow: initial;
+  overflow: inherit;
+  white-space: inherit;
+  word-break: normal;
+  overflow-wrap: break-word;
+  height: 100%;
+}

@@ -1,0 +1,18 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .cs-perspective-panel .cs-perspective.cs-zone-perspective .mip-admin-widget-container {
+    padding-top: 32px;
+    padding-left: 24px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.binf-widgets .mip-config-view {
+    width: 100%;
+    height: 100%;
+}
+
+.mip-config-view .rgn-mip-config-content {
+    width: inherit;
+}

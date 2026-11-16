@@ -1,0 +1,50 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.document-esignature-dialog,
+.document-esignature-dialog-container {
+  height: 100%;
+}
+
+.document-esignature-dialog .document-esign-file-container {
+  margin: 32px 0 0 61px;
+  width: 58%;
+  white-space: nowrap;
+}
+
+.document-esignature-dialog .document-esign-file-container .csui-icon-group {
+  display: inline-block;
+}
+
+.document-esignature-dialog .document-esign-file-container .document-esign-file-name {
+  line-height: 32px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: calc(100% - 32px);
+}
+
+.d2-stepper-wizard .document-esignature-dialog .cs-form.csui-general-form.d2-form {
+  width: 58%;
+  overflow-x: visible;
+}
+
+.d2-stepper-wizard .document-esignature-dialog .document-esign-file-container:not(.binf-hidden) ~ .document-esign-form-container .cs-form.csui-general-form.d2-form {
+  margin-top: 20px;
+}
+
+.d2-stepper-wizard .document-esignature-dialog .document-esign-form-container .cs-form.csui-general-form.d2-form {
+  margin-left: 48px;
+}
+
+.d2-stepper-wizard .document-esignature-dialog .d2-form.csui-top-align-label .cs-form .binf-help-block.alpaca-message {
+  margin-left: 16px;
+  width: calc(100% - 16px);
+}
+
+.document-esignature-dialog .cs-form .binf-col-md-6,
+.document-esignature-dialog .csui-metadata-low-resolution .cs-form .binf-col-md-6 {
+  width: 100%;
+  padding: 0;
+}

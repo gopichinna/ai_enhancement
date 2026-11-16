@@ -1,0 +1,86 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-savedsearch-widget-container,
+.binf-widgets .d2-savedsearch-widget-container .d2-savedsearch-widget .d2-savedsearch-explorer,
+.binf-widgets .d2-savedsearch-widget-container .d2-savedsearch-widget .d2-savedsearch-content-container {
+  height: calc(100vh - 64px);
+}
+
+.binf-widgets .d2-savedsearch-widget-container .d2-savedsearch-widget .d2-savedsearch-explorer > .tree-view {
+  height: calc(100% - 48px);
+}
+
+.binf-widgets .d2-savedsearch-widget-container .d2-savedsearch-widget,
+.binf-widgets .d2-savedsearch-widget-container .d2-savedsearch-widget .d2-savedsearch-explorer .d2-tree-panel,
+.binf-widgets .d2-savedsearch-widget-container .d2-savedsearch-widget .d2-savedsearch-explorer .d2-tree-container,
+.binf-widgets .d2-savedsearch-widget-container .d2-savedsearch-widget .d2-savedsearch-zero-state-container,
+.binf-widgets .d2-savedsearch-widget-container .d2-savedsearch-widget .saved-searches-data-view {
+  height: 100%;
+}
+
+.binf-widgets .d2-savedsearch-widget-container .d2-savedsearch-widget .d2-split-panel-container .d2-split-panel .primary-pane {
+  max-width: 50vw;
+}
+
+.binf-widgets .d2-savedsearch-widget-container .d2-savedsearch-widget .d2-savedsearch-explorer > .toolbar {
+  height: 48px;
+  background-color: #dce4e8;
+}
+
+.binf-widgets .d2-savedsearch-explorer > .toolbar .d2-button-toolbar .region-left .d2-savedsearch-tree-header-label {
+  margin-left: 20px;
+  font-size: 18px;
+  box-shadow: none;
+}
+
+.d2-savedsearch-widget-container .csui-nodestable .d2-table-view > div {
+  overflow: hidden;
+}
+
+.binf-widgets.rtl .d2-savedsearch-widget-container .d2-savedsearch-explorer > .toolbar .icon-searches-go-back {
+  transform: scaleX(-1);
+}
+
+.binf-widgets .d2-savedsearch-widget .saved-searches-data-view .csui-table-cell-no-default-action {
+  display: flex;
+}
+
+.binf-widgets .d2-savedsearch-widget .csui-nodetable .binf-table.dataTable > tbody > tr.csui-table-row-shows-inlineform > td.csui-table-cell-type {
+  padding-top: 5px;
+}
+
+.binf-widgets .d2-savedsearch-widget .csui-tabletoolbar.tile-nav .csui-item-name > .csui-item-name-edit {
+  margin-left: 5px;
+}
+
+.binf-widgets .d2-savedsearch-widget .d2-savedsearch-zero-state-container {
+  overflow-y: scroll;
+}
+
+.binf-widgets .d2-savedsearch-widget .d2-savedsearch-zero-state-wrapper {
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.binf-widgets .d2-savedsearch-widget .d2-savedsearch-zero-state-wrapper > div {
+  padding: 8px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.binf-widgets .d2-savedsearch-widget .d2-savedsearch-zero-state-wrapper .d2-savedsearch-error-icon {
+  width: 220px;
+  height: 220px;
+  background: url(images/emptyView.svg) no-repeat center;
+  background-size: 220px;
+}
+
+.binf-widgets .d2-savedsearch-widget .d2-savedsearch-zero-state-wrapper .homeLink {
+  color: #2F4ED1;
+}

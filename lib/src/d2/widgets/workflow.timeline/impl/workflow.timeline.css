@@ -1,0 +1,150 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-workflow-timeline {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.binf-widgets .d2-workflow-timeline > div {
+  flex: 0 0 40px;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-filter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-filter .cs-tab-links.binf-dropdown {
+  position: absolute;
+  top: 53px;
+  right: 0;
+  height: 30px;
+  width: auto;
+  display: inline-block;
+  background: transparent;
+  border: none;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-filter .cs-tab-links.binf-dropdown .binf-dropdown-toggle {
+  height: inherit;
+  background-color: transparent;
+  padding: 0 23px;
+  border: none;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-filter .cs-tab-links.binf-dropdown .binf-dropdown-toggle + .binf-dropdown-menu {
+  margin: 0;
+  top: 32px;
+  left: auto;
+  right: 0;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-filter .cs-tab-links.binf-dropdown .binf-dropdown-toggle + .binf-dropdown-menu [data-csui-tab="events"]{
+  border-top: 1px solid #cccccc;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-filter .cs-tab-links.binf-dropdown .cs-label {
+  font-size: 14px;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100% - 40px);
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph .terminal-step {
+  flex: 0 0 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph .terminal-step.timeline-end {
+  justify-content: flex-start;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph .terminal-step > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph.filter-group-tasks .terminal-step > * {
+  max-width: 360px;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph .terminal-step .terminal-label:before {
+  content: attr(title);
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph .timeline-begin .terminal-label {
+  margin-bottom: 6px;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph .timeline-end .terminal-label {
+  margin-top: 6px;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph .terminal-step .terminal-marker:before {
+  content: ' ';
+  width: 12px;
+  height: 12px;
+  background-color: #111B58;
+  border-radius: 50%;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph .terminal-step .terminal-marker:after {
+  content: ' ';
+  height: 18px;
+  border-right: 2px dashed #98A8B2;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph .timeline-end .terminal-marker {
+  flex-direction: column-reverse;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph.filter-group-tasks .timeline-nodes {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph .timeline-nodes > .d2-workflow-timeline-item-container.first-child {
+  border-top: none;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph .timeline-nodes > .d2-workflow-timeline-item-container.last-child {
+  border-bottom: none;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph.d2-wf-state-aborted .d2-workflow-timeline-item .inline-context-menu {
+  visibility: hidden;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph.loading .timeline-nodes {
+  border: none;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-graph:not(.loading) .timeline-nodes .d2-workflow-timeline-loading-container {
+  display: none;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-error-container {
+  flex: 1 1;
+}
+
+.binf-widgets .d2-workflow-timeline.loading-error .timeline-filter,
+.binf-widgets .d2-workflow-timeline.loading-error .timeline-graph,
+.binf-widgets .d2-workflow-timeline:not(.loading-error) .timeline-error-container {
+  display: none;
+}
+

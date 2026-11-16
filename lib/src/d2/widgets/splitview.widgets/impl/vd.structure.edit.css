@@ -1,0 +1,144 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.vd-edit--header {
+    height: 4.5rem;
+    background: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.vd-edit--header .vd-edit--title {
+    display: flex;
+    align-items: center;
+    margin-left: .5rem;
+    
+    gap: .5rem;
+    
+}
+
+.vd-edit--header .vd-edit--close .cs-icon-cross {
+    width: 2rem;
+    height: 2rem;
+    background-image: url("./images/close.svg");
+    background-repeat: no-repeat; 
+}
+
+.vd-edit--title .d2-icon-type-virtualDoc {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.binf-widgets .vd-structure-edit .vd-structure--container {
+    position: relative;
+    height: calc(100vh - 8.5rem);
+}
+
+.binf-widgets .vd-structure-edit .vd-structure--container .d2-tree-container.fancytree-grid-container {
+    display: flex;
+}
+
+.binf-widgets .vd-structure-edit .vd-structure--container .d2-vd-structure table {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    min-height: 0;
+    font-size: 14px;
+}
+
+.binf-widgets .vd-structure-edit .vd-structure--container .d2-vd-structure table thead {
+    background-color: #ccc;
+    display: block;
+}
+
+.binf-widgets .vd-structure-edit .vd-structure--container .d2-vd-structure table thead tr{
+    height: 2rem;
+    background: #ccc;
+    font-weight: bold;
+}
+
+.binf-widgets .vd-structure-edit .vd-structure--container .d2-vd-structure table tbody {
+    display: block;
+    flex: 1 1 auto;
+    position: relative;
+    overflow-y: overlay !important;
+     
+     scrollbar-width: thin;
+     
+}
+
+.vd-structure-edit .vd-structure--container .d2-vd-structure table thead tr {
+    display: flex;
+}
+
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tbody tr {
+    display: flex;
+
+}
+
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr th,
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr td  {
+    display: flex;
+    align-items: center;
+    padding:.25rem;
+}
+
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr th {
+    display: flex;
+    align-items: center;
+}
+
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr th:first-child {
+    min-width: 9rem;
+    flex-grow: 1;
+    align-items: center;
+    padding-left: 1.4rem;
+}
+
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr td:first-child {
+    min-width: 9rem;
+    flex-grow: 1;
+}
+
+
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr th:nth-child(3),
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr td:nth-child(3) {
+    min-width: 9rem;
+    flex-grow: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+} 
+
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr td:nth-child(3){
+    padding-left: 1rem;
+}
+
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr th:nth-child(2),
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr td:nth-child(2) {
+    min-width: 2.625rem;
+    max-width: 2.625rem;
+}
+
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr th:nth-child(4),
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr td:nth-child(4) {
+    min-width: 3.75rem;
+    max-width: 3.75rem;
+}
+
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr th:nth-child(5),
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr td:nth-child(5) {
+    min-width: 4rem;
+    max-width: 4rem;
+}
+
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr th:nth-child(6),
+.vd-structure-edit .vd-structure--container .d2-vd-structure table tr td:nth-child(6) {
+    min-width: 2.5rem;
+    max-width: 2.5rem;
+}

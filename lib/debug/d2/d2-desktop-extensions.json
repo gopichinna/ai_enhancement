@@ -1,0 +1,222 @@
+{
+  "csui/utils/commands": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/commands/create.relations",
+        "d2/commands/rendition.delete",
+        "d2/commands/versions.delete",
+        "d2/commands/versions.properties",
+        "d2/commands/node.tree",
+        "d2/commands/table.settings",
+        "d2/commands/user.settings",
+        "d2/commands/favorite",       
+        "d2/commands/cut",
+        "d2/commands/mass.update/mass.update",
+        "d2/commands/mass.update/apply.to.all.files",
+        "d2/commands/mass.update/remove.from.files",
+        "d2/commands/download.c2.override",
+        "d2/commands/view.native",
+        "d2/commands/view.c2.override",
+        "d2/commands/browse.help",
+        "d2/commands/about.d2",
+        "d2/commands/create.file",
+        "d2/commands/import.file",
+        "d2/commands/create.linked.doc",
+        "d2/commands/create.email.attachments",
+        "d2/commands/create.folder",
+        "d2/commands/import.folder",
+        "d2/commands/create.content",
+        "d2/commands/share.to.core.create",
+        "d2/commands/share.to.core.manage",
+        "d2/commands/stop.share",
+        "d2/commands/open.virtual.document",
+        "d2/commands/edit.virtual.document",
+        "d2/commands/open.vdoc.snapshot",
+        "d2/commands/convert.to.vdoc",
+        "d2/commands/convert.to.vdoc.folder",
+        "d2/commands/create.snapshot",
+        "d2/commands/restore.miniviewer",
+        "d2/commands/savedsearch/create.search.category",
+        "d2/commands/savedsearch/cut.savedsearch",
+        "d2/commands/savedsearch/paste.savedsearch",
+        "d2/commands/savedsearch/delete.savedsearch",
+        "d2/commands/savedsearch/open.savedsearch.group",
+        "d2/commands/savedsearch/rename.search.category",
+        "d2/commands/savedsearch/run.savedsearch",
+        "d2/commands/vdoc/add.children.browse",
+        "d2/commands/vdoc/add.children.create",
+        "d2/commands/vdoc/add.children.import",
+        "d2/commands/vdoc/insert.inherited.children",
+        "d2/commands/vdoc/remove.children",
+        "d2/commands/vdoc/replace.child.browse",
+        "d2/commands/vdoc/replace.child.create",
+        "d2/commands/vdoc/replace.child.import",
+        "d2/commands/vdoc/set.child.version",
+        "d2/commands/vdoc/vdoc.add.version",
+        "d2/commands/vdoc/convert.to.simple.doc",
+        "d2/commands/vdoc/add.replace.vdoc.child",
+        "d2/commands/vdoc/compare.virtual.document",
+        "d2/commands/workflow/delegate.task",
+        "d2/commands/workflow/prioritize.task",
+        "d2/commands/workflow/manage.attachments",
+        "d2/commands/workflow/open.task.files",
+        "d2/commands/workflow/update.performers",
+        "d2/commands/workflow/open.workflow.files",
+        "d2/commands/workflow/start.workflow",
+        "d2/commands/workflow/resume.workflow",
+        "d2/commands/workflow/pause.workflow",
+        "d2/commands/workflow/change.supervisor",
+        "d2/commands/workflow/email.supervisor",
+        "d2/commands/workflow/email.performers",
+        "d2/commands/workflow/add.workflow.note",
+        "d2/commands/workflow/workflow.audit",
+        "d2/commands/workflow/allworkflows.queryform",
+        "d2/commands/workflow/show.workflow.history",
+        "d2/integration/commands/embed.search",
+        "d2/integration/commands/embed.create.folder",
+        "d2/commands/go.back",
+        "d2/commands/refresh.list",
+        "d2/commands/tableview.close",
+        "d2/commands/dump",
+        "d2/commands/open.relations",
+        "d2/commands/viewer",
+        "d2/commands/widgettable.query.form",
+        "d2/commands/viewer/compare.text",
+        "d2/commands/viewer/compare.graphical",
+        "d2/commands/viewer/compare.with",
+        "d2/commands/viewer/document.merge",
+        "d2/commands/viewer/direct.view.link",
+        "d2/commands/advanced.search",
+        "d2/commands/show.dialog",
+        "d2/commands/d2collections/add.to.d2collections",
+        "d2/commands/d2collections/panel.split",
+        "d2/commands/d2collections/remove.item.d2collections",
+        "d2/commands/d2collections/move.collection.item",
+        "d2/commands/d2collections/share.collection",
+        "d2/commands/d2collections/manageshare.collection",
+        "d2/commands/d2collections/delete.d2collections",
+        "d2/commands/d2collections/goto.d2collections",
+        "d2/commands/d2collections/rename.d2collection",
+        "d2/commands/switch.landing.page",
+        "d2/commands/aviator/goto.location",
+        "d2/commands/aviator/add.assignments",
+        "d2/commands/aviator/remove.assignments",
+        "d2/commands/aviator/reset.config",
+        "d2/commands/aviator/save.config",
+        "d2/commands/aviator/launch.aviator.chat",
+        "d2/commands/mip/reset.config",
+        "d2/commands/mip/save.config",
+        "d2/commands/d2-locations",
+        "d2/commands/d2-audits",
+        "d2/commands/d2-renditions",
+        "d2/commands/doc.preview",
+        "d2/commands/content-annotations",
+        "d2/commands/collaborative.edit.consolidated",
+        "d2/commands/collaborative.edit.personal",
+        "d2/commands/collaborative.checkout.merge",
+        "d2/commands/show.external"
+      ]
+    }
+  },
+  "csui/utils/contexts/perspective/search.perspectives": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/extensions/advanced.search.perspectives"
+      ]
+    }
+  },
+  "csui/utils/contexts/perspective/node.perspectives": {
+    "extensions": {
+      "d2": [
+        "d2/extensions/node.perspectives"
+      ]
+    }
+  },
+  "csui/widgets/metadata/metadata.panels": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/extensions/metadata.panels"
+      ]
+    }
+  },
+  "csui/widgets/metadata/metadata.general.panels": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/widgets/metadata/metadata.general.panels.rules"
+      ]
+    }
+  },
+  "csui/widgets/navigation.header/controls/user.profile/user.profile.view": {
+    "extensions": {
+      "csui": []
+    }
+  },
+  "csui/controls/table/cells/cell.factory": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/extensions/controls.table.cell.factory"
+      ]
+    }
+  },
+  "csui/controls/thumbnail/content/content.factory": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/controls/thumbnail/content/attribute/attribute.view"
+      ]
+    }
+  },
+  "csui/pages/start/perspective.routing": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/extensions/vdoc.perspective.router",
+        "d2/pages/start/impl/task.perspectives.router",
+        "d2/pages/start/impl/workflow.perspectives.router"
+      ]
+    }
+  },
+  "csui/utils/contexts/perspective/perspective.context": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/extensions/vdoc.perspective.context.plugin",
+        "d2/utils/contexts/perspective/impl/task.perspectives.context.plugin",
+        "d2/utils/contexts/perspective/impl/workflow.perspectives.context.plugin"
+      ]
+    }
+  },
+  "d2/utils/commands/vdoc.default.actions": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/commands/vdoc/view"
+      ]
+    }
+  },
+  "csui/controls/icons.v2": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/utils/theme/action_icons"
+      ]
+    }
+  },
+  "d2/widgets/task.details/task.additional.panels": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/widgets/workflow.details/workflow.additional.panels"
+      ]
+    }
+  },
+
+  "d2/utils/landingpage/tiles": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/extensions/desktop.landing.tiles"
+      ]
+    }
+  },
+  "d2/utils/perspectives/app.scope.perspectives": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/extensions/desktop.app.scope.perspectives"
+      ]
+    }
+  }
+}

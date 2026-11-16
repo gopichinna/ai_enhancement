@@ -1,0 +1,29 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-table-view .csui-nodetable.csui-table-empty,
+.binf-widgets .csui-table-tableview .csui-nodetable.csui-table-empty {
+  position: relative;
+}
+
+.binf-widgets .csui-table-view .csui-nodetable.csui-table-empty .dataTables_wrapper.no-footer,
+.binf-widgets .csui-table-tableview .csui-nodetable.csui-table-empty .dataTables_wrapper.no-footer{
+  height: 100%;
+  z-index: 1;
+}
+
+.binf-widgets .csui-table-view .csui-nodetable.csui-table-empty .dataTables_wrapper.no-footer .dataTable.csui-table-empty .dataTables_empty,
+.binf-widgets .csui-table-tableview .csui-nodetable.csui-table-empty .dataTables_wrapper.no-footer .dataTable.csui-table-empty .dataTables_empty{
+  display: none !important;
+}
+
+.binf-widgets .csui-table-view .csui-nodetable.csui-table-empty .dataTables_wrapper.no-footer + .csui-table-empty,
+.binf-widgets .csui-table-tableview .csui-nodetable.csui-table-empty .dataTables_wrapper.no-footer ~ .csui-table-empty{
+  position: absolute;
+  top: 42px;
+  height: 270px;
+  right: 0;
+  left: 0;
+  z-index: 0;
+}
+

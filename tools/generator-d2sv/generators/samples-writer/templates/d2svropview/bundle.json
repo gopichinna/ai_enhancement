@@ -1,0 +1,7 @@
+{
+  "bundle": [
+    "commands/node.actions.rules",
+    "commands/view.permission",
+    "dialogs/permissions/permissions.dialog"
+  ]
+}

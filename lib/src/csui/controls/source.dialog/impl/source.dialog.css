@@ -1,0 +1,28 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .fr-source-code-view .binf-modal-dialog .binf-modal-content .binf-modal-body {
+    height:calc(100vh - 274px);
+}
+
+.binf-widgets .fr-source-code-view .binf-modal-body .cs-formfield.cs-textareafield {
+    max-height: 100%;
+    height: 100%;
+    display: flex;
+    padding: 16px 24px 16px 24px;
+}
+
+.binf-widgets .fr-source-code-view .cs-formfield.cs-textareafield .cs-field-write {
+    width:100%;
+}
+
+.binf-widgets .fr-source-code-view .cs-formfield.cs-textareafield textarea {
+    resize: none;
+    min-height:100%;
+}
+
+@media (max-width: 767px) {
+    .binf-widgets .fr-source-code-view .binf-modal-dialog .binf-modal-content .binf-modal-body {
+        height:calc(100vh - 216px);
+    }
+}

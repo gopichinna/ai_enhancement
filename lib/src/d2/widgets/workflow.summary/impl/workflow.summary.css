@@ -1,0 +1,19 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-my-wfsummary .wfstatus-donut-chart,
+.binf-widgets .d2-my-wfsummary .wfstatus-donut-chart > * {
+  height: 100%;
+  position: relative;
+}
+.binf-widgets .cs-list.d2-my-wfsummary .tile-content .binf-list-group .cs-emptylist-container:not(.csui-state-loading){
+  background-image: url(./images/no-wf-summary-illustration.svg);
+}
+
+.cs-list.d2-my-wfsummary .tile-header .tile-controls .cs-icon-container{
+  margin-left: 32px;
+}
+
+.binf-widgets .d2-my-wfsummary.wf-wfstatus .wfstatus-donut-chart{
+    min-height: 250px;
+}

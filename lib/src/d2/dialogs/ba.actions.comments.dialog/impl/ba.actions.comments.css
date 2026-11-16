@@ -1,0 +1,43 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .dctm-alert-custom-content .d2-ba-comments-view .ba-comments-form .cs-form .alpaca-field > div {
+    width: 100%;
+    padding: 0;
+}
+
+.binf-widgets .dctm-alert-custom-content .d2-ba-comments-view .ba-comments-form .cs-form .alpaca-container-label {
+    display: none;
+}
+
+.binf-widgets .dctm-alert-custom-content .d2-ba-comments-view .ba-comments-form .cs-form .alpaca-field .binf-form-group .binf-control-label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.binf-widgets .dctm-alert-custom-content .d2-ba-comments-view .ba-comments-form .cs-form .cs-formfield .cs-field-write {
+    padding: 0;
+}
+
+.binf-widgets .dctm-alert-custom-content .d2-ba-comments-view .ba-comments-form .cs-form .alpaca-field  .binf-help-block {
+    margin-left: 16px;
+    padding-left: 8px;
+    width: calc(100% - 17px);
+    max-width: calc(100% - 17px);
+}
+
+.binf-widgets .dctm-alert-custom-content .d2-ba-comments-view .ba-comments-form {
+    padding-right: 16px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.ba-comments-dialog .binf-modal-dialog .binf-modal-body .custom-content-container {
+    height: auto;
+    max-height: 400px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.ba-comments-dialog .binf-modal-dialog .binf-modal-body {
+    padding: 16px 24px 24px 24px;
+    overflow:scroll;
+}

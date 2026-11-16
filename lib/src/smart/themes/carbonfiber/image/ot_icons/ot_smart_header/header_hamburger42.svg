@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 42 42" xml:space="preserve" class="ot-svg ot-svg--header">
+<circle class="ot-state" fill="none" stroke="none" cx="21" cy="21" r="20.0" /><style type="text/css">
+.metaphor--header-header_hamburger42{fill:#FFFFFF;}
+</style>
+<g class="ot-metaphor">
+	<path class="metaphor--header-header_hamburger42" d="M10.88,13h20.24c0.528,0,0.88-0.4,0.88-1s-0.352-1-0.88-1H10.88C10.352,11,10,11.4,10,12S10.352,13,10.88,13z" />
+	<path class="metaphor--header-header_hamburger42" d="M31.12,20H10.88C10.352,20,10,20.4,10,21s0.352,1,0.88,1h20.24c0.528,0,0.88-0.4,0.88-1S31.648,20,31.12,20z" />
+	<path class="metaphor--header-header_hamburger42" d="M31.12,29H10.88C10.352,29,10,29.4,10,30s0.352,1,0.88,1h20.24c0.528,0,0.88-0.4,0.88-1S31.648,29,31.12,29z" />
+</g>
+<circle class="ot-focus" fill="none" stroke="none" cx="21" cy="21" r="21.0" /></svg>

@@ -1,0 +1,39 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-color-picker-ctrl {
+    display: flex;
+}
+
+.csui-color-picker-ctrl .csui-color-picker-wrapper {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #757575;
+    border-radius: 14px;
+    margin-top: 5px;
+}
+
+.csui-color-picker-ctrl .csui-color-picker-wrapper.no-color-overlay {
+    background: url(./images/colour-swatch.svg) no-repeat center;
+    width:24px;
+    height: 24px;
+    border: none;
+    margin-top: 2px;
+}
+.csui-color-picker-ctrl div.csui-color-picker-wrapper.no-color-overlay + label{
+   margin: 0;
+}
+
+.csui-color-picker-ctrl .csui-color-picker-wrapper .csui-color-picker {
+    width: 85px;
+    opacity: 0;
+}
+
+.binf-widgets .csui-color-picker-ctrl .csui-color-label {
+    margin-left: 8px;
+    color: #333333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 183px;
+}

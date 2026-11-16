@@ -1,0 +1,26 @@
+<div role="alertdialog" {{#if dialogSize}} class="binf-modal-dialog binf-modal-{{dialogSize}}" {{else}}
+    class="binf-modal-dialog" {{/if}} {{#if showHeader}} aria-labelledby="{{dlgTitleId}}" {{/if}} {{#if message}}
+    aria-describedby="{{dlgMsgId}}" {{/if}}>
+    <div class="binf-modal-content">
+        {{#if showHeader}}
+        <div class="binf-modal-header {{headerClass}}">
+            <h4 class="binf-modal-title">
+                <span class="title-text" title="{{title}}" id="{{dlgTitleId}}">{{title}}</span>
+            </h4>
+        </div>
+        {{/if}}
+        {{#if message}}
+            <div class="status-container {{#if isAlertTypeWarning}}warn{{/if}}">
+            <span class="icon {{titleIcon}}" {{#if isAlertTypeWarning}}tabindex="0"{{/if}}></span>
+            <span class="body-message" id="{{dlgMsgId}}" title="{{message}}">{{message}}</span>
+        </div>
+        {{/if}}
+        <div class="binf-modal-body">
+            {{#if hasCustomContent}}
+            <div class="custom-content-container"></div>
+            {{/if}}
+        </div>
+        <div class="binf-modal-footer"></div>
+    </div>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

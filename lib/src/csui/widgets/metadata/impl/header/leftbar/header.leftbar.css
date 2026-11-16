@@ -1,0 +1,13 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.metadata-header-left-bar .cs-go-back {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  margin-top: calc((64px - 18px)/2);
+  margin-left: calc((3em - 18px)/2);
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+{{#if showFileIcon}}
+    <div class="csui-type-icon file-icon {{fileIcon}}"></div>
+{{/if}}
+<div class="file-details">
+  <div class="file-name" title="{{name}}" aria-label="{{name}}">{{name}}</div>
+  {{#if isCreationSupported}}
+    <div class="file-size" title="{{sizeLabel}} {{sizeValue}}" aria-label="{{sizeLabel}} {{sizeValue}}">
+      <span class="size-lable">{{sizeLabel}}</span>
+      <span class="size-value">{{sizeValue}}</span>
+    </div>
+    <div class="file-format">
+      <div class="format-lable">{{fileFormatLabel}}</div>
+      <div class="format-value" style="display:none"></div>
+      <div class="format-menu"></div>
+    </div>
+  {{else}}
+    <div class="attachment-exclusion-warning {{#unless showFileIcon}}no-file-icon{{/unless}}">
+      <span class="exclusion-message" title="{{exclusionMessage}}" aria-label="{{exclusionMessage}}">{{exclusionMessage}}</span>
+    </div>
+  {{/if}}
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

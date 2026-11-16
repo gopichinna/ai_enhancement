@@ -1,0 +1,542 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-icon-cut {
+  background-image: url('icons/toolbar_cut.svg');
+}
+
+.d2-icon-cut:hover {
+  background-image: url('icons/toolbar_cut_mo.svg');
+}
+
+.d2-icon-cut:active {
+  background-image: url('icons/toolbar_cut_md.svg');
+}
+
+
+.binf-widgets .csui-tabletoolbar .csui-toolbar.binf-nav > li > a {
+  padding: 0;
+  margin: 8px 6px;
+  border-radius: 50%;
+}
+
+
+.binf-widgets .csui-table-actionbar-bubble ul.binf-nav {
+  padding-left: 0;
+}
+
+.binf-widgets .csui-table-actionbar-bubble .binf-nav > li {
+  width: 32px;
+  height: 32px;
+}
+
+.binf-widgets .csui-table-actionbar-bubble .binf-nav > li.csui-loading-parent-wrapper {
+  position: relative;
+  margin-left: -30px;
+}
+
+.binf-widgets .csui-table-actionbar-bubble .icon {
+  width: 32px;
+  height: 32px;
+  background-size: 20px;
+}
+
+
+.binf-widgets .csui-toolbar.binf-nav > li > a > .icon.d2-icon-node-tree {
+  width: 32px;
+  height: 32px;
+}
+
+.d2-icon-node-tree {
+  background-image: url('icons/toolbar_node_tree.svg');
+}
+
+.d2-icon-node-tree:hover {
+  background-image: url('icons/toolbar_node_tree_mo.svg');
+}
+
+.d2-icon-node-tree:active {
+  background-image: url('icons/toolbar_node_tree_md.svg');
+}
+
+.d2-icon-node-tree.active {
+  background-image: url('icons/toolbar_node_tree_active.svg');
+}
+
+.d2-icon-node-tree.active:hover {
+  background-image: url('icons/toolbar_node_tree_active_mo.svg');
+}
+
+.d2-icon-node-tree.active:active {
+  background-image: url('icons/toolbar_node_tree_active_md.svg');
+}
+
+.d2-icon-view-native {
+  background-image: url('icons/toolbar_view_native.svg');
+}
+
+.d2-icon-view-native:hover {
+  background-image: url('icons/toolbar_view_native_mo.svg');
+}
+
+.d2-icon-view-native:active {
+  background-image: url('icons/toolbar_view_native_md.svg');
+}
+
+.d2-icon-print {
+  background-image: url('icons/toolbar_print.svg');
+}
+
+.d2-icon-print:hover {
+  background-image: url('icons/toolbar_print_mo.svg');
+}
+
+.d2-icon-print:active {
+  background-image: url('icons/toolbar_print_md.svg');
+}
+
+.d2-icon-open-url {
+  background-image: url('icons/toolbar_open_url.svg');
+}
+
+.d2-icon-open-url:hover {
+  background-image: url('icons/toolbar_open_url_mo.svg');
+}
+
+.d2-icon-open-url:active {
+  background-image: url('icons/toolbar_open_url_md.svg');
+}
+
+.d2-icon-upload {
+  background-image: url('icons/toolbar_import_file.svg');
+}
+
+.d2-icon-upload:hover {
+  background-image: url('icons/toolbar_import_file_mo.svg');
+}
+
+.d2-icon-upload:active {
+  background-image: url('icons/toolbar_import_file_md.svg');
+}
+
+.d2-icon-upload-folder {
+  background-image: url('icons/toolbar_import_folder.svg');
+}
+
+.d2-icon-upload-folder:hover {
+  background-image: url('icons/toolbar_import_folder_mo.svg');
+}
+
+.d2-icon-upload-folder:active {
+  background-image: url('icons/toolbar_import_folder_active.svg');
+}
+
+.d2-icon-newcontent {
+  background-image: url('icons/toolbar_add_file.svg');
+}
+
+.d2-icon-newcontent:hover {
+  background-image: url('icons/toolbar_add_file_mo.svg');
+}
+
+.d2-icon-newcontent:active {
+  background-image: url('icons/toolbar_add_file_md.svg');
+}
+
+.d2-icon-vd-outline {
+  background-image: url("icons/icon-toolbar-outline-vd.svg");
+}
+
+.d2-icon-vd-outline:hover {
+  background-image: url("icons/icon-toolbar-outline-vd_mo.svg");
+}
+
+.d2-icon-vd-outline:active {
+  background-image: url("icons/icon-toolbar-outline-vd_md.svg");
+}
+
+.d2-icon-restore-miniviewer {
+  background-image: url("icons/icon-restore-miniviewer.svg");
+}
+
+.d2-icon-restore-miniviewer:hover {
+  background-image: url("icons/icon-restore-miniviewer_mo.svg");
+}
+
+.d2-icon-restore-miniviewer:active {
+  background-image: url("icons/icon-restore-miniviewer_md.svg");
+}
+
+.d2-icon-vd-createsnapshot {
+  background-image: url('icons/toolbar_vd_createsnapshot.svg');
+}
+
+.d2-icon-vd-createsnapshot:hover {
+  background-image: url('icons/toolbar_vd_createsnapshot_mo.svg');
+}
+
+.d2-icon-vd-createsnapshot:active {
+  background-image: url('icons/toolbar_vd_createsnapshot_md.svg');
+}
+
+.d2-icon-vd-doctovd {
+  background-image: url('icons/toolbar_vd_doctovd.svg');
+}
+
+.d2-icon-vd-doctovd:hover {
+  background-image: url('icons/toolbar_vd_doctovd_mo.svg');
+}
+
+.d2-icon-vd-doctovd:active {
+  background-image: url('icons/toolbar_vd_doctovd_md.svg');
+}
+
+.d2-icon-vd-foldertovd {
+  background-image: url('icons/toolbar_vd_foldertovd.svg');
+}
+
+.d2-icon-vd-foldertovd:hover {
+  background-image: url('icons/toolbar_vd_foldertovd_mo.svg');
+}
+
+.d2-icon-vd-foldertovd:active {
+  background-image: url('icons/toolbar_vd_foldertovd_md.svg');
+}
+
+.d2-icon-vd-vdtodoc {
+  background-image: url('icons/toolbar_vd_vdtodoc.svg');
+}
+
+.d2-icon-vd-vdtodoc:hover {
+  background-image: url('icons/toolbar_vd_vdtodoc_mo.svg');
+}
+
+.d2-icon-vd-vdtodoc:active {
+  background-image: url('icons/toolbar_vd_vdtodoc_md.svg');
+}
+
+.d2-icon-vd-setbindingversion {
+  background-image: url('icons/toolbar_vd_setbindingversion.svg');
+}
+
+.d2-icon-vd-setbindingversion:hover {
+  background-image: url('icons/toolbar_vd_setbindingversion_mo.svg');
+}
+
+.d2-icon-vd-setbindingversion:active {
+  background-image: url('icons/toolbar_vd_setbindingversion_md.svg');
+}
+
+.d2-icon-tableview-close {
+  background-image: url("icons/d2-icon-vd-tableview-close.svg");
+}
+
+.d2-icon-tableview-close:hover {
+  background-image: url("icons/d2-icon-vd-tableview-close_mo.svg");
+}
+
+.d2-icon-tableview-close:active {
+  background-image: url("icons/d2-icon-vd-tableview-close_md.svg");
+}
+
+html[dir=rtl] .d2-icon-tableview-close{
+  transform: scaleX(-1);
+}
+
+.d2-icon-vd-add-child-browse {
+  background-image: url("icons/toolbar-vd-add-child-browse.svg");
+}
+
+.d2-icon-vd-add-child-browse:hover {
+  background-image: url("icons/toolbar-vd-add-child-browse_mo.svg");
+}
+
+.d2-icon-vd-add-child-browse:active {
+  background-image: url("icons/toolbar-vd-add-child-browse_md.svg");
+}
+
+.d2-icon-vd-add-child-create {
+  background-image: url("icons/toolbar-vd-add-child-create.svg");
+}
+
+.d2-icon-vd-add-child-create:hover {
+  background-image: url("icons/toolbar-vd-add-child-create_mo.svg");
+}
+
+.d2-icon-vd-add-child-create:active {
+  background-image: url("icons/toolbar-vd-add-child-create_md.svg");
+}
+
+.d2-icon-vd-add-child-import {
+  background-image: url("icons/toolbar-vd-add-child-import.svg");
+}
+
+.d2-icon-vd-add-child-import:hover {
+  background-image: url("icons/toolbar-vd-add-child-import_mo.svg");
+}
+
+.d2-icon-vd-add-child-import:active {
+  background-image: url("icons/toolbar-vd-add-child-import_md.svg");
+}
+
+.d2-icon-vd-add-child-template {
+  background-image: url("icons/toolbar-vd-add-child-template.svg");
+}
+
+.d2-icon-vd-add-child-template:hover {
+  background-image: url("icons/toolbar-vd-add-child-template_mo.svg");
+}
+
+.d2-icon-vd-add-child-template:active {
+  background-image: url("icons/toolbar-vd-add-child-template_md.svg");
+}
+
+.d2-icon-vd-replace-child-browse {
+  background-image: url("icons/toolbar-vd-replace-child-browse.svg");
+}
+
+.d2-icon-vd-replace-child-browse:hover {
+  background-image: url("icons/toolbar-vd-replace-child-browse_mo.svg");
+}
+
+.d2-icon-vd-replace-child-browse:active {
+  background-image: url("icons/toolbar-vd-replace-child-browse_md.svg");
+}
+
+.d2-icon-vd-replace-child-create {
+  background-image: url("icons/toolbar-vd-replace-child-create.svg");
+}
+
+.d2-icon-vd-replace-child-create:hover {
+  background-image: url("icons/toolbar-vd-replace-child-create_mo.svg");
+}
+
+.d2-icon-vd-replace-child-create:active {
+  background-image: url("icons/toolbar-vd-replace-child-create_md.svg");
+}
+
+.d2-icon-vd-replace-child-import {
+  background-image: url("icons/toolbar-vd-replace-child-import.svg");
+}
+
+.d2-icon-vd-replace-child-import:hover {
+  background-image: url("icons/toolbar-vd-replace-child-import_mo.svg");
+}
+
+.d2-icon-vd-replace-child-import:active {
+  background-image: url("icons/toolbar-vd-replace-child-import_md.svg");
+}
+
+.d2-icon-vd-add-child {
+  background-image: url("icons/toolbar-vd-add-child.svg");
+}
+
+.d2-icon-vd-add-child:hover {
+  background-image: url("icons/toolbar-vd-add-child_mo.svg");
+}
+
+.d2-icon-vd-add-child:active {
+  background-image: url("icons/toolbar-vd-add-child_md.svg");
+}
+
+.d2-icon-vd-replace-child {
+  background-image: url("icons/toolbar-vd-replace-child.svg");
+}
+
+.d2-icon-vd-replace-child:hover {
+  background-image: url("icons/toolbar-vd-replace-child_mo.svg");
+}
+
+.d2-icon-vd-replace-child:active {
+  background-image: url("icons/toolbar-vd-replace-child_md.svg");
+}
+
+.d2-icon-vd-remove-children {
+  background-image: url("icons/toolbar-vd-remove-children.svg");
+}
+
+.d2-icon-vd-remove-children:hover {
+  background-image: url("icons/toolbar-vd-remove-children_mo.svg");
+}
+
+.d2-icon-vd-remove-children:active {
+  background-image: url("icons/toolbar-vd-remove-children_md.svg");
+}
+
+.d2-icon-vd-outline,
+.d2-icon-vd-createsnapshot,
+.d2-icon-vd-doctovd,
+.d2-icon-vd-foldertovd,
+.d2-icon-vd-vdtodoc,
+.d2-icon-vd-setbindingversion,
+.d2-icon-vd-add-child-browse,
+.d2-icon-vd-add-child-create,
+.d2-icon-vd-add-child-import,
+.d2-icon-vd-add-child-template,
+.d2-icon-vd-replace-child-browse,
+.d2-icon-vd-replace-child-create,
+.d2-icon-vd-replace-child-import,
+.d2-icon-vd-add-child,
+.d2-icon-vd-replace-child,
+.d2-icon-vd-remove-children {
+  background-size: 28px !important;
+}
+
+.d2-icon-tableview-close {
+  background-size: 32px !important;
+}
+
+.d2-icon-table-settings {
+  background-image: url('icons/standard_settings32_sprite.svg');
+  background-position: 0 0 !important;
+}
+
+.d2-icon-table-settings:hover {
+  background-position: 0 -32px !important;
+}
+
+.d2-icon-table-settings:active {
+  background-position: 0 -64px !important;
+}
+
+.d2-icon-table-settings.active {
+  background-position: 0 -96px !important;
+}
+
+.binf-widgets .csui-toolbar.binf-nav > li > a > .icon.d2-icon-table-settings {
+  height: 32px;
+  width: 32px;
+}
+.d2-icon-export {
+  background-image: url("icons/icon-export.svg");
+}
+.d2-icon-refresh {
+  background-image: url("icons/icon-refresh.svg");
+}
+
+.d2-icon-acquire-task {
+  background-image: url('icons/toolbar_acquire_task.svg');
+}
+.d2-icon-acquire-task:hover {
+  background-image: url('icons/toolbar_acquire_task_mo.svg');
+}
+.d2-icon-acquire-task:active {
+  background-image: url('icons/toolbar_acquire_task_md.svg');
+}
+
+.d2-icon-forward-task {
+  background-image: url('icons/toolbar_forward_task.svg');
+}
+.d2-icon-forward-task:hover {
+  background-image: url('icons/toolbar_forward_task_mo.svg');
+}
+.d2-icon-forward-task:active {
+  background-image: url('icons/toolbar_forward_task_md.svg');
+}
+
+.d2-icon-reject-task {
+  background-image: url('icons/toolbar_reject_task.svg');
+}
+.d2-icon-reject-task:hover {
+  background-image: url('icons/toolbar_reject_task_mo.svg');
+}
+.d2-icon-reject-task:active {
+  background-image: url('icons/toolbar_reject_task_md.svg');
+}
+
+.d2-icon-delegate-task {
+  background-image: url('icons/toolbar_delegate_task.svg');
+}
+.d2-icon-delegate-task:hover {
+  background-image: url('icons/toolbar_delegate_task_mo.svg');
+}
+.d2-icon-delegate-task:active {
+  background-image: url('icons/toolbar_delegate_task_md.svg');
+}
+
+.d2-icon-update-performers {
+  background-image: url('icons/toolbar_update_performers.svg');
+}
+.d2-icon-update-performers:hover {
+  background-image: url('icons/toolbar_update_performers_mo.svg');
+}
+.d2-icon-update-performers:active {
+  background-image: url('icons/toolbar_update_performers_md.svg');
+}
+
+.d2-icon-change-task-priority {
+  background-image: url('icons/toolbar_change_task_priority.svg');
+}
+.d2-icon-change-task-priority:hover {
+  background-image: url('icons/toolbar_change_task_priority_mo.svg');
+}
+.d2-icon-change-task-priority:active {
+  background-image: url('icons/toolbar_change_task_priority_md.svg');
+}
+
+.d2-icon-read-task {
+  background-image: url('icons/toolbar_read_task.svg');
+}
+.d2-icon-read-task:hover {
+  background-image: url('icons/toolbar_read_task_mo.svg');
+}
+.d2-icon-read-task:active {
+  background-image: url('icons/toolbar_read_task_md.svg');
+}
+
+.d2-icon-unread-task {
+  background-image: url('icons/toolbar_unread_task.svg');
+}
+.d2-icon-unread-task:hover {
+  background-image: url('icons/toolbar_unread_task_mo.svg');
+}
+.d2-icon-unread-task:active {
+  background-image: url('icons/toolbar_unread_task_md.svg');
+}
+
+.d2-icon-add-task-note {
+  background-image: url('icons/toolbar_add_task_note.svg');
+}
+.d2-icon-add-task-note:hover {
+  background-image: url('icons/toolbar_add_task_note_mo.svg');
+}
+.d2-icon-add-task-note:active {
+  background-image: url('icons/toolbar_add_task_note_md.svg');
+}
+
+.d2-icon-abort-workflow {
+  background-image: url('icons/toolbar_abort_workflow.svg');
+}
+.d2-icon-abort-workflow:hover {
+  background-image: url('icons/toolbar_abort_workflow_mo.svg');
+}
+.d2-icon-abort-workflow:active {
+  background-image: url('icons/toolbar_abort_workflow_md.svg');
+}
+
+.d2-icon-acquire-task,
+.d2-icon-forward-task,
+.d2-icon-reject-task,
+.d2-icon-delegate-task,
+.d2-icon-update-performers,
+.d2-icon-manage-supporting-files,
+.d2-icon-change-task-priority,
+.d2-icon-read-task,
+.d2-icon-unread-task,
+.d2-icon-add-task-note,
+.d2-icon-abort-workflow {
+  background-size: cover !important;
+}
+.icon-d2-create-relations{
+  background-image: url('icons/toolbar-create-relation32-action.svg');
+}
+.icon-d2-create-relations:hover{
+  background-image: url('icons/toolbar-create-relation32-action-hover.svg');
+}
+.icon-d2-create-relations:active{
+  background-image: url('icons/toolbar-create-relation32-action-active.svg');
+}
+.binf-widgets.rtl .csui-filterToolbar .task-toolbar-back-button,
+.binf-widgets.rtl .csui-rightToolbar .task-toolbar-open-panel{
+  transform: scaleX(-1);
+}

@@ -1,0 +1,19 @@
+{
+  "name": "<%= namespace %>",
+  "version": "1.0.0",
+  "description": "D2 Smart View plugin - <%= pluginName %>",
+  "private": true,
+  "scripts": {
+    "setup": "node <%= namespace %>.setup.js && grunt ensureDirSymlink && grunt generateBuildConfig",
+    "build": "grunt package",
+    "compile": "grunt compile",
+    "test": "grunt test",
+    "start": "dctmw-serve"
+  },
+  "svf": {
+    "name": "<%= namespace %>",
+    "deps": [
+      "d2"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+<div role="dialog" class="binf-modal-dialog"
+      {{#if showHeader}}
+       aria-labelledby="{{dlgTitleId}}"
+      {{/if}}
+      {{#if message}}
+       aria-describedby="{{dlgMsgId}}"
+      {{/if}}>
+      <div class="binf-modal-content">
+            {{#if showHeader}}
+                  <div class="binf-modal-header question-header">
+                    <span class="icon csui-icon-notification-confirmation-white"></span>
+                    <span class="title-text" title="{{title}}" id="{{dlgTitleId}}">{{title}}</span>
+                  </div>
+            {{/if}}
+
+            {{#if message}}
+                  <div class="binf-modal-message question-message">
+                    <span class="message-text" title="{{message}}">{{message}}</span>
+                  </div>
+            {{/if}}
+
+
+            <div class = 'export-properties-subfolder-choice'>
+                {{#if isExportDialog}}
+                   <div class="exportChoice">
+                      <div class="csui-checkbox-primary">
+                        <input type="checkbox" title="{{includeSubFolderProperties}}" tabindex="0"
+                           id="export-include-sub-folder">
+                           <label for="export-include-sub-folder">{{includeSubFolderProperties}}</label>
+                      </div>
+                   </div>
+                {{/if}}
+            </div>
+
+             <div class="binf-modal-footer">
+                <otc-button type="primary" class="d2-otc-btn csui-yes csui-default" tabindex="0"
+                          data-binf-dismiss="modal"
+                          title="{{ExportButtonLabel}}" ariaLabel="{{ExportButtonLabel}}">{{ExportButtonLabel}}</otc-button>
+                <otc-button type="secondary" class="d2-otc-btn csui-cancel" tabindex="0" data-binf-dismiss="modal"
+                          title="{{CancelButtonLabel}}" ariaLabel="{{CancelButtonLabel}}">{{CancelButtonLabel}}</otc-button>
+              </div>
+      </div>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

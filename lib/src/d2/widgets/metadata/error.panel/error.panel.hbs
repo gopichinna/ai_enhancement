@@ -1,0 +1,27 @@
+{{#xif "this.errorList.length > 0"}}
+  {{#xif "this.showMobileContainer"}}
+    <div class="header">
+      <span class="header-icon"></span>
+      <span class="header-text">{{header}}</span>
+    </div>
+  {{ else }}
+    <div class="header">
+      <span class="header-icon"></span>
+      <span class="header-text">{{header}}</span>
+      <span class="{{#xif "this.state === 'collapse'"}}icon-expand{{/xif}}{{#xif
+          "this.state === 'expand'"}}icon-collapse{{/xif}}"></span>
+    </div>
+    <ul class="error-list{{#xif "this.state === 'collapse'"}} binf-hidden{{/xif}}">
+      {{#each errorList}}
+        <li class="error-item">
+          <a href="javascript:return false;" class="error-text" title="{{label}}: {{message}}" data-id="{{fieldViewCid}}">
+            <span class="error-field">{{label}}</span>:
+            <span class="error-message">{{message}}</span>
+            <span class="fadeout"></span>
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  {{/xif}}
+{{/xif}}
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

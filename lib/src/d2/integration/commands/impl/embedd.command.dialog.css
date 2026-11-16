@@ -1,0 +1,52 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets.d2-embed.only-dialog,
+.binf-widgets.d2-embed.only-dialog .binf-modal {
+  min-width: 688px;
+}
+
+.binf-widgets.d2-embed.only-dialog .d2-stepper-wizard.binf-modal .binf-modal-dialog {
+  transform: none;
+  transition: none;
+}
+
+.binf-widgets.d2-embed.only-dialog .csui-message-container {
+  position: absolute;
+  top: 0;
+}
+
+.binf-widgets.d2-embed.only-dialog.d2-responsive-dialog .d2-stepper-wizard.binf-modal .binf-modal-dialog {
+  width: 100%;
+}
+.binf-widgets.d2-embed.only-dialog.hide-dialog-close .d2-stepper-wizard.binf-modal .binf-modal-dialog .binf-modal-header .cs-close {
+  display: none;
+}
+
+
+.binf-widgets.d2-embed.only-dialog.d2-responsive-dialog .d2-stepper-wizard.binf-modal .binf-modal-dialog .list-selection .item-details.right-pane {
+  width: calc(100% - 240px);
+}
+
+.binf-widgets.d2-embed.only-dialog.d2-responsive-dialog .d2-stepper-wizard.binf-modal .binf-modal-dialog .list-selection .item-details.right-pane .d2-metadata-properties .d2-singlecolumn-tab-section {
+  width: calc(100% - 242px);
+}
+
+.binf-widgets.d2-embed.only-dialog.d2-responsive-dialog .d2-stepper-wizard.binf-modal .binf-modal-dialog .d2-metadata-properties .d2-singlecolumn-tab-section{
+  width: 100%;
+}
+
+.binf-widgets.d2-embed.only-dialog.d2-responsive-dialog .d2-stepper-wizard.binf-modal.d2-addversion-modal .binf-modal-dialog .cs-form.csui-general-form.d2-form .metadata-pane-container {
+  max-width: 688px;
+}
+
+.binf-widgets.d2-embed.only-dialog.d2-responsive-dialog.d2-embed-checkin .csui-message-container .csui-progresspanel {
+  position: fixed;
+  min-width: calc(100% - 20px);
+  margin:0 10px 0 10px;
+}
+
+.binf-widgets.d2-embed.only-dialog.d2-responsive-dialog.d2-embed-import .d2-import-file-wizard.d2-stepper-wizard .binf-modal-dialog{
+  max-width: 100%;
+  width: 100%;
+}

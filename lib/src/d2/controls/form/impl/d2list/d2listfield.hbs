@@ -1,0 +1,20 @@
+{{#if writeonlyMode}}
+  <div class="cs-field-write">
+    <div class="cs-field-write-inner">
+      <div class="d2-listfield-search-box"></div>
+      <div class="d2-listfield-selected-container"></div>
+      {{#if isMobile}}
+        <div class="drop-down-button binf-hidden"></div>
+      {{/if}}
+      <div class="d2-listfield-options-container"></div>
+    </div>
+  </div>
+{{else}}
+  <div class="cs-field-read">
+    <div class="cs-field-read-inner">
+      <div class="d2-listfield-selected-container"></div>
+    </div>
+  </div>
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,45 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .metadata-task-performers .csui-table-view .d2-table-cell-inline-row-actions .csui-table-actionbar .csui-toolitem .icon {
+  height: 32px;
+  width: 32px;
+}
+
+.binf-widgets .metadata-task-performers .csui-table-view .csui-table-actionbar.csui-table-actionbar-bubble {
+  width: calc(100% - 2px);
+}
+
+.binf-widgets .metadata-task-performers .csui-metadata-basepanel-rowselection-toolbar-view {
+  display: none;
+}
+
+.binf-widgets .metadata-task-performers tr .d2-table-cell-inline-row-actions .d2-inline-row-action{
+  padding-top: 1px;
+}
+
+.binf-widgets .metadata-task-performers tr .csui-table-cell-generic-text .csui-table-cell-text {
+  line-height: 34px;
+}
+
+.binf-widgets .metadata-task-performers tr .csui-table-cell-type .csui-table-cell-no-default-action,
+.binf-widgets .metadata-task-performers tr .csui-table-cell-name .csui-table-cell-name-div,
+.binf-widgets .metadata-task-performers tr .csui-table-cell-generic-text .csui-table-cell-text{
+  height: 34px;
+  min-height: 34px;
+}
+
+.binf-widgets .metadata-task-performers tr.row-expanded .csui-table-cell-type .csui-table-cell-no-default-action,
+.binf-widgets .metadata-task-performers tr.row-expanded .csui-table-cell-name .csui-table-cell-name-div,
+.binf-widgets .metadata-task-performers tr.row-expanded .csui-table-cell-generic-text .csui-table-cell-text{
+  height: initial;
+}
+
+.binf-widgets .metadata-task-performers .csui-nodetable:not(.csui-wrap-text) .binf-table.dataTable > tbody > tr > * {
+  padding-top:1px;
+  vertical-align: top;
+}
+
+.binf-widgets .metadata-task-performers .csui-nodetable .csui-saved-item .d2-table-cell-inline-row-actions .d2-inline-row-action {
+  width: 50px;
+}

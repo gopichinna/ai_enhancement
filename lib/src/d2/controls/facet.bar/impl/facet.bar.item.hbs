@@ -1,0 +1,17 @@
+<a href="#" role="button" class="d2-facet-item-content" aria-label="{{facetItemAria}}">
+  <div>
+
+    <span class="d2-label">
+     {{#xif 'this.facetName !== ""'}}
+      <span class="d2-facet-item-facet-name">{{facetName}}:</span>
+     {{/xif}}
+      {{#topics}}
+        <span title="{{this.topicTitle}}" class="d2-facet-item-topic-name">{{this.topicName}}
+            <span class="d2-icon d2-icon-chiclet-close" data-unique-id="{{../id}}" data-d2-facet="{{../facetId}}" data-d2-topic="{{topicId}}"></span>
+        </span>
+      {{/topics}}
+   </span>
+  </div>
+</a>
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,57 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-tasks .tile-header {
+  cursor: pointer;
+}
+
+.binf-widgets .d2-tasks.cs-list .csui-item-standard .list-item-duedate {
+  display: block;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 14px;
+  padding-top: 3px;
+  color: #666;
+}
+
+.binf-widgets .d2-tasks.cs-list .csui-item-standard .list-item-duedate.overdue {
+  color: #A7261B;
+}
+
+.binf-widgets .d2-tasks.cs-list .csui-item-standard .list-item-title .list-item-title-content {
+  white-space: normal;
+  line-height: 16px;
+  max-height: 32px;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.binf-widgets .d2-tasks.cs-list .d2-task-list-item.csui-item-standard .list-item-title.unread .list-item-title-content {
+  font-weight: bold;
+}
+
+.binf-widgets .d2-tasks.cs-list .csui-item-standard.binf-list-group-item {
+  padding: 5px 10px 6px;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 48px;
+}
+
+.binf-widgets .d2-tasks.cs-list .csui-item-standard.binf-list-group-item:first-child {
+  padding-top: 8px;
+}
+
+.binf-widgets .d2-tasks.cs-list .csui-item-standard.binf-list-group-item > a {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+
+
+
+.binf-widgets .d2-tasks.cs-list  .tile-content .binf-list-group .cs-emptylist-container:not(.csui-state-loading){
+  background-image: url(./images/no-assignment-illustration.svg);
+}

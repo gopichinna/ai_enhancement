@@ -1,0 +1,241 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-facet-bar {
+  font-size: 0.875em;
+  border-bottom: 1px solid #d5d5d5;
+  background-color: #ffffff;
+  min-width: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 3.7em;
+  transition: height 0.3s ease-in;
+}
+
+.binf-widgets .d2-facet-bar.d2-facet-bar-hidden {
+  height: 0;
+  border-bottom: 0;
+  transition: height 0.2s ease-out;
+}
+
+.binf-widgets .d2-facet-bar a:hover, .binf-widgets .d2-facet-bar a:focus {
+  color: #333333;
+  text-decoration: none;
+}
+
+.binf-widgets .d2-facet-bar a {
+  color: #333333;
+  height: 24px; 
+  line-height: 13px;
+  vertical-align: middle;
+}
+
+.d2-facet-bar > .d2-facet-list-bar {
+  display: flex;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.d2-facet-bar .d2-mover {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  position: relative; 
+}
+
+.d2-facet-bar .d2-mover > a {
+  display: flex;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 1.0em; 
+}
+
+.d2-facet-bar .d2-mover .d2-icon {
+  width: 1em;
+  height: 1em;
+  align-self: center;
+}
+
+.d2-facet-bar .d2-facet-list-area-wrapper {
+  position: relative;
+}
+
+.d2-facet-bar .d2-facet-list-fadein {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); 
+  position: absolute;
+  top: 0;
+  left: 3em; 
+  width: 2.5em;
+  height: 100%;
+  z-index: 9;
+}
+
+.d2-facet-bar .d2-facet-list-fadeout {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); 
+  position: absolute;
+  top: 0;
+  right: 3em; 
+  width: 2.5em;
+  height: 100%;
+  z-index: 9;
+}
+
+.d2-facet-bar .d2-facet-list-area {
+  flex: 1 10 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  height: inherit;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  width: 1px;
+}
+
+.d2-facet-bar .d2-facet-list-area.d2-facet-list-overflowed {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.d2-facet-bar .d2-facet-list-area > ol {
+  display: inline-flex;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+}
+
+.d2-facet-bar .d2-clear-all {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  cursor: pointer;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  margin-right: 3.5em;
+}
+
+.d2-facet-bar .d2-clear-all > .clear-label {
+  font-size: inherit;
+  white-space: nowrap;
+  float: left;
+}
+
+.d2-facet-bar .d2-clear-all > .cs-icon {
+  font-size: inherit;
+  width: 0.714em; 
+  height: 0.714em;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 0.429em; 
+}
+
+.d2-facet-bar .d2-facet-item {
+  display: inline-flex;
+  margin: 0;
+  margin-right: 4px;
+  font: inherit;
+  flex: 1 0 auto; 
+}
+
+.d2-facet-item .d2-facet-item-content {
+  background-color: #E7F8F8;
+  border: 1px solid #33C6C8;
+  border-radius: 3px;
+  align-items: center;
+  padding: 4px 0 4px 7px;
+}
+
+.d2-facet-item .d2-facet-item-content > div {
+  display: inline-flex;
+  align-items: center;
+}
+
+.d2-facet-item a.d2-facet-item-content,
+.d2-facet-item a.d2-facet-item-content:focus {
+  text-decoration: none;
+}
+
+.d2-facet-bar .d2-facet-item span.d2-label {
+  font-size: 11px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 13px;
+}
+
+.d2-facet-bar .d2-facet-item .d2-facet-item-seperator {
+  height: 1em !important;
+  width: 1em !important;
+}
+
+.d2-facet-bar .d2-facet-item span.d2-label > .d2-facet-item-facet-name {
+  color: #005C5D;
+}
+
+.d2-facet-bar .d2-facet-item span.d2-label .d2-facet-item-topic-name:nth-child(2) {
+  margin-left: 0;
+}
+
+.d2-facet-bar .d2-facet-item span.d2-label > .d2-facet-item-topic-name {
+  color: #333333;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.d2-facet-bar .d2-facet-item .d2-icon {
+  font-size: inherit;
+  width: 8px;
+  height: 7px;
+  padding: 0;
+}
+
+.d2-facet-bar .d2-filter-save {
+  width: auto;
+  margin-right: 16px;
+  bottom: 4px;
+  right: 23px;
+  border-radius: 14px;
+  height: 1.8em;
+  line-height: 14px;
+  padding: 0 21px;
+  color: #ffffff;
+  border: none;
+  font-size: 0.875rem;
+}
+
+.d2-facet-list-area .d2-icon {
+  display: inline-block;
+  float: none;
+  margin-left: 4px;
+  margin-right: 5px;
+  position: relative;
+}
+
+.d2-icon-chiclet-close {
+  color: #333333;
+  background: url('./images/chiclet-close.svg') no-repeat center;
+  background-size: 25px;
+}
+
+.d2-icon-chiclet-close:hover {
+  color: #333333;
+  background: url('./images/chiclet-close_mo.svg') no-repeat center;
+  background-size: 25px;
+}
+
+.d2-icon-chiclet-close:active {
+  color: #333333;
+  background: url('./images/chiclet-close_md.svg') no-repeat center;
+  background-size: 25px;
+}
+
+.d2-facet-bar .d2-facet-item.d2-task-facet-date-item span.d2-label .d2-facet-item-facet-name:nth-child(3){
+  margin-left: 5px;
+}
+
+.d2-facet-bar .d2-facet-item.d2-task-facet-date-item span.d2-label .d2-facet-item-topic-name{
+  margin-left: 0;
+}
+

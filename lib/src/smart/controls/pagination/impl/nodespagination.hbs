@@ -1,0 +1,30 @@
+{{#if showPageSizeMenu}}
+  <div class="expanded-pager pager-filter csui-pagesize-menu">
+    <div class="smart-dropdown csui-dropdown">
+      <a id="menuButton" tabindex="0" aria-expanded="false" role="button" class="smart-dropdown-toggle csui-acc-focusable"
+      aria-label="{{pageSizeMenuAria}} {{totalItemsAria}}">
+        <div class="csui-pageSize binf-hidden-xs">{{itemsPerPage}}</div>
+        <div class="csui-icon icon-expandArrowDown" title="{{pageSizeMenuAria}}"></div>
+      </a>
+      <otc-menu buttonId="menuButton" alignment="left" class="smart-dropdown-menu csui-dropdown-list" role="menu">
+        <otc-menugroup class="smart-menu-group">
+        {{#each items}}
+        <otc-menuradio class="{{className}}" data-pagesize="{{ddListItem}}" {{ariaCurrent}}
+        aria-label="{{ariaTxt}}" {{checked}}>{{txt}}</otc-menuradio>
+        {{/each}}
+        </otc-menugroup>
+      </otc-menu>
+    </div>
+  </div>
+{{/if}}
+  <div></div>
+  <div class="csui-pagination binf-pagination">
+    <div class="csui-paging-navbar">
+      <ul class="binf-hidden">
+        <li class="csui-overflow"></li>
+      </ul>
+    </div>
+  </div>
+<div class="csui-total-container-items {{#if checkForPageLinks}}binf-hidden-xs{{/if}}">{{totalItems}}</div>
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

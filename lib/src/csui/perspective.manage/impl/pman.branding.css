@@ -1,0 +1,130 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.pman-container .pman-header .pman-left-tools {
+  z-index: 1;
+}
+.perspective-editing .branding-pman .csui-navbar,
+.perspective-editing .branding-pman .breadcrumb-wrap-visible {
+  visibility: visible;
+}
+
+.binf-widgets .pman-header-config {
+  display: none;
+  margin-top: 64px;
+  height: calc(100vh - 64px);
+  width: 100%;
+}
+
+.binf-widgets.csui-pman-header-config .cs-perspective-panel {
+  display: none;
+}
+
+.binf-widgets.csui-pman-header-config .pman-header-config {
+  display: flex;
+}
+
+.binf-widgets.csui-pman-header-config .pman-header-config .csui-newLogo-image {
+  max-width: 100%;
+  max-height: 64px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 256px;
+  height: 64px;
+}
+.binf-widgets.csui-pman-header-config .pman-header-preview-panel {
+  flex-grow: 1; 
+  width: calc(100% - 320px);
+}
+
+.binf-widgets.csui-pman-header-config .pman-header-settings-container {
+  width: 320px;
+  overflow: hidden auto;
+  background: #fafafa;
+}
+
+.binf-widgets.csui-pman-header-config .pman-header-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin: 4px 20px;
+}
+
+.binf-widgets.csui-pman-header-config .pman-container-header-container {
+  
+  
+}
+
+.binf-widgets.csui-pman-header-config .pman-header-container {
+  pointer-events: none;
+}
+
+.binf-widgets.csui-pman-header-config .pman-left-tools .toolbarAddContainer,
+.binf-widgets.csui-pman-header-config .pman-top-ribbon{
+  visibility: hidden;
+}
+
+.binf-widgets .pman-center-tools {
+  height: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+}
+
+.binf-widgets .pman-center-tools .pman-tabs-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.binf-widgets .pman-center-tools .pman-tab {
+  position: relative;
+  font-size: 14px;
+  line-height: 32px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.csui-sidebar-enabled .pman-center-tools .pman-tab{
+  color: #000;
+}
+
+.binf-widgets .pman-center-tools .pman-tab:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.csui-sidebar-enabled .pman-center-tools .pman-tab:hover{
+  color: #232E72;
+}
+
+.binf-widgets .pman-center-tools .pman-tab.binf-active {
+  font-weight: bold;
+  border-bottom: 4px solid #ffffff;
+}
+
+.csui-sidebar-enabled .pman-center-tools .pman-tab.binf-active {
+  border-bottom: 4px solid #232E72;
+}
+
+.binf-widgets .pman-header .pman-center-tools li {
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+.binf-widgets.csui-sidebar-enabled.perspective-editing .pman-container .pman-top-ribbon {
+  top: 64px;
+  position: absolute;
+  width: 100%;
+  z-index: 1151;
+}
+
+.binf-widgets.csui-sidebar-enabled.perspective-editing.csui-top-ribbon-enabled .cs-perspective-with-breadcrumb-view{
+  margin-top: 115px;
+}

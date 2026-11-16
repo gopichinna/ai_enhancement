@@ -1,0 +1,95 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-alert.d2-share-collection-model {
+  display: flex;
+}
+
+.binf-widgets .csui-alert.d2-share-collection-model.dctm-alert-custom-content .binf-modal-dialog {
+  width: 720px;
+  height: 460px;
+  margin: auto;
+}
+
+.csui-alert.d2-share-collection-model .binf-modal-dialog .binf-modal-content {
+  width: 720px;
+  height: 460px;
+  margin-top: unset !important;
+}
+
+.binf-widgets .csui-alert.d2-share-collection-model .binf-modal-dialog .binf-modal-content  .binf-modal-body .custom-content-container {
+  height: unset;
+  max-height: 475px;
+}
+
+.csui-alert.d2-share-collection-model .binf-modal-dialog .binf-modal-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.share-collection-form .csui-field-d2list .d2-listfield-selected-container .d2-listfield-selection-wrapper {
+  width: 500px;
+}
+
+.share-collection-form .csui-field-d2list .d2-listfield-selection-wrapper ul.d2-listfield-selectedvalues {
+  display: flex;
+  flex-wrap: wrap;
+  
+  gap: 0.5rem;
+  
+  padding: 0.25rem;
+  max-height: 185px !important;
+}
+
+.share-collection-form .csui-field-d2list ul.d2-add-new-option {
+  display: none;
+}
+
+.share-collection-form .csui-field-d2list .d2-listfield-selection-wrapper ul.d2-listfield-selectedvalues li.ui-sortable-handle {
+  width: calc(50% - 0.5rem);
+  border: 1px solid #a7a9ac;
+  background-color: #D9D9D9;
+  border-radius: 3px;
+}
+
+.share-collection-form .csui-field-d2list .d2-listfield-selection-wrapper ul.d2-listfield-selectedvalues li .d2-icon-drag {
+  display: none;
+}
+
+.share-collection-form .csui-field-d2list .d2-listfield-selection-wrapper ul.d2-listfield-selectedvalues li .d2-listfield-selectedlabel {
+  width: calc(100% - 18px);
+}
+.share-collection-form .alpaca-container-label {
+  display: none;
+}
+
+.share-collection-form .binf-col-md-6.cs-form-doublecolumn.cs-form-leftcolumn {
+  width: 75%;
+  float: none;
+}
+
+.d2-add-to-collection-model .csui-icon-notification-confirmation-white {
+  display: none;
+}
+
+.d2-share-collection-model .binf-modal-header.question-header {
+  background-color: #dce4e8;
+}
+
+.csui-alert .binf-modal-header .binf-modal-title .title-text {
+  color: #333333;
+}
+
+.d2-share-collection-model .binf-modal-footer {
+  background-color: #f4f4f4;
+}
+
+.d2-share-collection-model .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+  width: 100%;
+  text-align: left;
+}
+
+.d2-share-collection-model .alpaca-container-item .binf-help-block.alpaca-message {
+  margin-left: 0;
+}

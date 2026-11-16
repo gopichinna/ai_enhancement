@@ -1,0 +1,194 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.d2-task-item-relation-popup .list-item-relation {
+  font-size: 12px;
+  line-height: 170%;
+  color: #5F6E77;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.d2-task-item-relation-popup .csui-type-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.d2-task-item-relation-popup .binf-popover-content .d2-task-list-relation .tile-content .binf-list-group .d2-task-relation-item .list-item-title-container {
+  display: inline-block;
+  overflow: hidden;
+  line-height: 16px;
+  margin-left: 4px;
+  width: calc(100% - 30px);
+}
+
+.d2-task-item-relation-popup .binf-popover-content .d2-task-list-relation .tile-content .binf-list-group .d2-task-relation-item .list-item-title-container .list-item-title {
+  line-height: 17px;
+  color: #333333;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+
+.d2-task-list-relation .more-link-container {
+  height: 18px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  text-align: right;
+  color: #232E72;
+  width: 100%;
+  margin-top: 13px;
+  padding-right: 12px;
+}
+
+.d2-task-list-relation .more-link {
+  cursor: pointer;
+}
+
+.binf-popover.d2-task-item-relation-popup {
+  width: 259px;
+  max-width: 259px;
+  padding: 0;
+}
+
+.binf-popover.d2-task-item-relation-popup.binf-right,
+.rtl.binf-widgets .binf-popover.d2-task-item-relation-popup.binf-left{
+  border-left: 4px solid #0084CE;
+}
+
+.binf-popover.d2-task-item-relation-popup.binf-left,
+.rtl.binf-widgets .binf-popover.d2-task-item-relation-popup.binf-right{
+  border-right: 4px solid #0084CE;
+}
+
+.rtl.binf-widgets .binf-popover.d2-task-item-relation-popup.binf-right{
+  border-left: 0;
+}
+
+.rtl.binf-widgets .binf-popover.d2-task-item-relation-popup.binf-left{
+  border-right: 0;
+}
+
+.binf-widgets .binf-popover.d2-task-item-relation-popup.binf-left > .binf-arrow{
+  margin-top: -7px;
+  border-width: 9px;
+  right: -21px;
+}
+
+.rtl.binf-widgets .binf-popover.d2-task-item-relation-popup.binf-right>.binf-arrow {
+  right: -3px;
+}
+
+.binf-widgets .binf-popover.d2-task-item-relation-popup.binf-left > .binf-arrow,
+.d2-task-item-relation-popup.binf-popover.binf-left > .binf-arrow:after,
+.rtl.binf-widgets .d2-task-item-relation-popup.binf-popover.binf-right > .binf-arrow:after{
+  border-left-color: #0084CE;
+}
+
+.d2-task-item-relation-popup.binf-popover.binf-left > .binf-arrow:after,
+.rtl.binf-widgets .d2-task-item-relation-popup.binf-popover.binf-right > .binf-arrow:after {
+  right: 0;
+}
+
+.binf-widgets .binf-popover.d2-task-item-relation-popup.binf-right > .binf-arrow,
+.rtl.binf-widgets .binf-popover.d2-task-item-relation-popup.binf-left > .binf-arrow{
+  margin-top: 0;
+  border-width: 0;
+  left: -14px;
+}
+
+.d2-task-item-relation-popup.binf-popover.binf-right > .binf-arrow:after,
+.rtl.binf-widgets .d2-task-item-relation-popup.binf-popover.binf-left > .binf-arrow:after{
+  border-right-color: #0084CE;
+  left: 0;
+}
+
+.d2-task-item-relation-popup.binf-popover .binf-popover-content .d2-task-list-relation .tile-content .binf-list-group .d2-task-relation-item:not(:first-child):before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 32px);
+  margin-left: 20px;
+  border-top: 1px solid #DCDCDC;
+  top: -1px;
+  left: 0;
+  z-index: -1;
+}
+
+.d2-task-item-relation-popup.binf-popover .binf-popover-content .d2-task-list-relation .tile-content .binf-list-group .d2-task-relation-item {
+  position: relative;
+  background: unset;
+  padding: 0 12px 0 20px;
+  display: block;
+  height: auto;
+  width: 100%;
+  border-top: 1px solid transparent;
+  margin: 0;
+}
+
+.d2-task-item-relation-popup.binf-popover .binf-popover-content .d2-task-list-relation .tile-content .binf-list-group .d2-task-relation-item:first-child{
+  border-top: none;
+}
+
+.d2-task-item-relation-popup.binf-popover .binf-popover-content .d2-task-list-relation .tile-content .binf-list-group .d2-task-relation-item:hover {
+  background: #DFE7EA;
+}
+
+.d2-task-item-relation-popup .binf-popover-content {
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.d2-task-item-relation-popup .tile-content {
+  margin: 0;
+  background: unset;
+  padding: 0;
+}
+
+.d2-task-item-relation-popup.binf-popover .binf-popover-content .d2-task-list-relation .d2-relation-name-container {
+  margin-top: 8px;
+}
+
+.d2-task-item-relation-popup.binf-popover .binf-popover-content .d2-task-list-relation .d2-relation-details-container {
+  margin-top: 2px;
+  padding-bottom: 3px;
+  display: block;
+  overflow: auto;
+  height: 100%;
+}
+
+.binf-widgets .d2-task-item-relation-popup.binf-popover .binf-popover-content .binf-list-group {
+  margin-bottom: 0;
+  padding-left: 0;
+  max-height: 275px;
+  display: block;
+}
+
+.binf-widgets .d2-task-item-relation-popup.binf-popover .binf-popover-content .binf-list-group:focus {
+  outline: none;
+}
+
+.binf-widgets .d2-task-item-relation-popup.binf-popover .binf-popover-content .d2-task-relation-empty {
+  height: 38px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.binf-widgets .d2-task-item-relation-popup.binf-popover .binf-popover-content .d2-task-relation-empty .csui-loading-parent-wrapper::marker {
+  content: none;
+}

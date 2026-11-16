@@ -1,0 +1,25 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .smart-app-header-otc-skiplinks {
+  position: relative;
+  z-index: 4; 
+}
+
+.binf-widgets .smart-app-header-wrapper otc-header-bar>otc-button {
+  margin-left: 0;
+}
+
+.binf-widgets .smart-app-header-wrapper otc-header-bar {
+  z-index: 3;
+  position: relative;
+}
+
+div.binf-widgets.svf-binf-widgets.svf-app-header{
+  padding: 0 0 32px 0;
+}
+
+otc-avatar{
+  width: 42px;
+  height: 42px;
+}

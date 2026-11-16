@@ -1,0 +1,66 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-task-zero-state-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.binf-widgets .d2-task-zero-state-view .d2-task-zero-state-view-content {
+  margin: auto;
+  width: 100%;
+  min-height: 356px;
+  padding: 0 16px;
+  position: relative;
+  top: calc(50% - 178px);
+}
+
+.binf-widgets .d2-task-zero-state-view .d2-task-zero-state-view-content > div {
+  margin: 16px auto 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.binf-widgets .d2-task-zero-state-view .d2-task-zero-state-view-content > div:first-child {
+  margin-top: 0;
+}
+
+.binf-widgets .d2-task-zero-state-view .d2-task-zero-state-view-content .d2-task-splash-icon {
+  width: 220px;
+  height: 220px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.binf-widgets .d2-task-zero-state-view .d2-task-zero-state-view-content .d2-task-splash-icon.state-aborted,
+.binf-widgets .d2-task-zero-state-view .d2-task-zero-state-view-content .d2-task-splash-icon.state-paused,
+.binf-widgets .d2-task-zero-state-view .d2-task-zero-state-view-content .d2-task-splash-icon.state-unavailable {
+  background-image: url("images/splash-zero-state-aborted.svg");
+}
+
+.binf-widgets .d2-task-zero-state-view .d2-task-zero-state-view-content .d2-task-splash-icon.state-finished {
+  background-image: url("images/splash-zero-state-completed.svg");
+}
+
+.binf-widgets .d2-task-zero-state-view .d2-task-zero-state-view-content .d2-task-splash-icon.state-delegated {
+  background-image: url("images/splash-zero-state-delegated.svg");
+}
+
+.binf-widgets .d2-task-zero-state-view .d2-task-zero-state-view-content .d2-task-splash-icon.state-acquired {
+  background-image: url("images/splash-zero-state-acquired.svg");
+}
+
+.binf-widgets .d2-task-zero-state-view .d2-task-zero-message,
+.binf-widgets .d2-task-zero-state-view .d2-task-zero-instruction {
+  width: 100%;
+  height: 24px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  color: #666666;
+}

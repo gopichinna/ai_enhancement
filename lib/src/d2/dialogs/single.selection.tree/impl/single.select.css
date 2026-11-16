@@ -1,0 +1,96 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-single-select-view {
+  min-height: 418px;
+  max-height: 418px;
+}
+
+.binf-widgets .d2-single-select-view .d2-single-select-tree-filter {
+  height: 60px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.binf-widgets .d2-single-select-view .d2-single-select-tree-region,
+.binf-widgets .d2-single-select-view .d2-single-select-tree-empty-region {
+  min-height: 358px;
+  max-height: 358px;
+}
+
+.binf-widgets .d2-single-select-view .d2-single-select-tree-region{
+  min-width: 678px;
+  max-width: 678px;
+  overflow: auto;
+}
+
+.binf-widgets .d2-single-select-view .d2-single-select-tree-filter input.d2-single-select-tree-search {
+  margin: 16px;
+  margin-right: 0;
+  height: 28px;
+  width: 400px;
+  padding-left: 0.5em;
+  padding-right: 30px;
+  border: 1px solid #757575;
+  border-radius: 3px;
+}
+
+.binf-widgets .d2-single-select-view .d2-single-select-tree-filter input.d2-single-select-tree-search:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid #666666;
+  border-radius: 3px;
+}
+
+.binf-widgets .d2-single-select-view .d2-single-select-tree-filter .d2-single-select-tree-search-icon,
+.binf-widgets .d2-single-select-view .d2-single-select-tree-filter .d2-single-select-tree-clear-icon {
+  background: url('./images/search_icon.svg') no-repeat center;
+  position: absolute;
+  top: 22px;
+  display: inline-block;
+  height: 15px;
+  width: 20px;
+  margin-left: -28px;
+  cursor: pointer;
+}
+
+.binf-widgets .d2-single-select-view .d2-single-select-tree-filter .d2-single-select-tree-clear-icon {
+  background: url('./images/formfield_clear24.svg') no-repeat center;
+}
+
+.binf-widgets .d2-single-select-view .d2-single-select-tree-filter .d2-single-select-tree-clear-icon:focus,
+.binf-widgets .d2-single-select-view .d2-single-select-tree-filter .d2-single-select-tree-clear-icon:hover {
+  background: url('./images/formfield_clear24_mo.svg') no-repeat center;
+}
+
+.binf-widgets .d2-single-select-view .d2-single-select-tree-filter .d2-single-select-tree-clear-icon:active {
+  background: url('./images/formfield_clear24_md.svg') no-repeat center;
+}
+
+.binf-widgets .d2-single-select-view .d2-single-select-tree-filter .d2-single-select-tree-clear-icon:not(.show),
+.binf-widgets .d2-single-select-view .d2-single-select-tree-filter .d2-single-select-tree-clear-icon.show + .d2-single-select-tree-search-icon {
+  display: none;
+}
+
+.binf-widgets .d2-single-select-view .d2-single-select-tree-empty-region:not(.show),
+.binf-widgets .d2-single-select-view .d2-single-select-tree-empty-region.show + .d2-single-select-tree-region {
+  display: none;
+}
+
+.binf-widgets .d2-single-select-view .d2-single-select-tree-empty-region {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.binf-widgets .d2-single-select-view .d2-single-select-tree-empty-region .no-results-icon {
+  background: url('./images/no_results_illustration.svg');
+  height: 220px;
+  width: 220px;
+  margin-top: 19px;
+}
+
+.binf-widgets .d2-single-select-view .d2-single-select-tree-empty-region .message {
+  font-size: 18px;
+  color: #333333;
+  margin-top: -10px;
+}

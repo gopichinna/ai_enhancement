@@ -1,0 +1,28 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-email_attachments-custom-profile {
+  height: 100%;
+}
+
+.binf-widgets .d2-email_attachments-custom-profile .attachments-custom-profile-container {
+  height: inherit;
+}
+
+.d2-stepper-wizard .d2-email_attachments-custom-profile .cs-form.csui-general-form.d2-form {
+  width: 72%;
+  margin: 32px 0 40px 32px;
+}
+
+.d2-stepper-wizard .d2-email_attachments-custom-profile .cs-form.csui-general-form.d2-form.category_selection_section {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.d2-stepper-wizard .d2-email_attachments-custom-profile .d2-newfile-custom_profile .separator {
+  display: none;
+}
+
+.d2-stepper-wizard .d2-email_attachments-custom-profile .cs-form.csui-general-form.d2-form.data_section {
+  margin-top: 0;
+}

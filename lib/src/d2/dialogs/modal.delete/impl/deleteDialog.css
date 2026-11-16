@@ -1,0 +1,82 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-version-to-delete .binf-modal-content {
+  background-color: #fff;
+  border-radius: 3px;
+  border-bottom: 0 none;
+  overflow: hidden;
+}
+
+.binf-widgets .d2-version-to-delete .binf-modal-header {
+  border-bottom: 0 none;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 18px 24px 8px;
+}
+
+.binf-widgets .d2-version-to-delete .binf-modal-header .icon {
+  float: left;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 24px;
+  width: 24px;
+}
+
+.binf-widgets .d2-version-to-delete .binf-modal-header .title-text {
+  padding-left: 13px;
+  padding-right: 24px;
+  width: calc(100% - 24px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.binf-widgets .d2-version-to-delete .binf-modal-footer {
+  padding: 15px 24px;
+  border-top: 0 none;
+  border-bottom: 4px solid #111B58;
+  border-radius: 3px;
+}
+
+.d2-version-to-delete .delete-choices-group,
+.d2-version-to-delete .binf-modal-message.question-message {
+  margin: 16px 24px 24px;
+  font-size: 14px;
+  padding: 0;
+}
+
+.d2-version-to-delete .binf-modal-message.question-message {
+  margin-bottom: 0;
+}
+
+.binf-widgets .d2-version-to-delete .horizontal-line-separator {
+  border: 1px solid #eeeeee;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.d2-version-to-delete .delete-selection-group-label {
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.binf-widgets .d2-version-to-delete .csui-checkbox-primary {
+  margin-bottom: 12px;
+}
+
+.binf-widgets .d2-version-to-delete .csui-checkbox-primary > input {
+  width: 18px;
+  height: 18px;
+  margin-top: 0;
+  vertical-align: middle;
+}
+
+.binf-widgets .d2-version-to-delete .csui-checkbox-primary > label {
+  padding-left: 6px;
+  line-height: 20px;
+}

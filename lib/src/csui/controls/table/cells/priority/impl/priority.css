@@ -1,0 +1,30 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-table-cell-priority {
+  max-width: 7em;
+  min-width: 7em;
+}
+
+.csui-table-cell-priority-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.csui-table-cell-priority .icon {
+  height: 1em;
+  width: 1em;
+  background-repeat: no-repeat;
+  margin-right: 0.5em;
+}
+
+.csui-table-cell-priority .icon-priorityHigh {
+}
+
+.csui-table-cell-priority .icon-priorityMedium {
+}
+
+.csui-table-cell-priority .icon-priorityLow {
+}

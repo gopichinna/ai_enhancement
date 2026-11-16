@@ -1,0 +1,63 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.markup-migration {
+  background-color: #ffffff;
+}
+.markup-migration .markup-migration-content {
+  display: flex;
+  padding: 11px 16px 10px 16px;
+}
+.markup-migration .markup-migration-content.migration-content-info {
+  background-color: #f4f5fa;
+  border-bottom: 1px solid #2e3d98;
+}
+.markup-migration .markup-migration-content.migration-content-success {
+  background-color: #f2f8f3;
+  border-bottom: 1px solid #067d14;
+}
+
+.markup-migration .markup-migration-content.migration-content-error {
+  background-color: rgba(223,51,36,0.05);
+  border-bottom: 1px solid #df3324;
+}
+.markup-migration .information-icon {
+  height: 18px;
+  width: 18px;
+  background: url('../images/information.svg');
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.markup-migration .success-icon {
+  height: 18px;
+  width: 18px;
+  background: url('../images/success.svg');
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.markup-migration .error-icon {
+  height: 18px;
+  width: 18px;
+  background: url('../images/error.svg');
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.markup-migration .iconBox {
+  width: 30px;
+}
+
+.markup-migration .messageBox {
+  width: calc(100% - 30px);
+}
+
+.binf-widgets .markup-migration .reload {
+  color: #2e3d98;
+  border-bottom: 1px solid #2e3d98;
+}
+
+.migration-info {
+  min-height: 40px;
+}

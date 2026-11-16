@@ -1,0 +1,51 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-table-cell-version_number .d2-cell-version-wrapper {
+  height: 18px;
+}
+
+.d2-table-cell-version_number .d2-cell-version-container {
+  width: auto;
+  height: inherit;
+  padding: 0 6px;
+  text-align: center;
+  border: 1px solid #627783;
+  border-radius: 2px;
+  cursor: default;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+
+.d2-table-cell-version_number .d2-cell-version-container:hover {
+  background-color: #627783;
+  border-color: #FFFFFF;
+}
+
+.d2-table-cell-version_number .d2-cell-version-container.active {
+  cursor: pointer;
+}
+
+.d2-table-cell-version_number .d2-cell-version-container.current-version {
+  background-color: #078DB3;
+  border-color: #078DB3;
+}
+
+.d2-table-cell-version_number .d2-cell-version-container.current-version:hover {
+  border-color: #FFFFFF;
+}
+
+.d2-table-cell-version_number .d2-cell-version-container .version-text {
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  top: -1px;
+  color: #627783;
+}
+
+.d2-table-cell-version_number .d2-cell-version-container:hover .version-text,
+.d2-table-cell-version_number .d2-cell-version-container.current-version .version-text {
+  color: #FFFFFF;
+}
+
+

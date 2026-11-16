@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<delta>
+  <insert position-after="menuContextCopyLink">
+    <menuitem id="ai_summary">
+      <dynamic-action class="com.emc.d2fs.dctm.ui.dynamicactions.actions.U4Generic"
+                      eService="com.opentext.d2.smartview.d2svaisummary.actions.AiSummaryAction"
+                      eMethod="execute"
+                      eMode="SINGLE"
+                      rAction="d2svaisummary/commands/ai.summary.command:execute"
+                      rType="JS"/>
+    </menuitem>
+  </insert>
+</delta>

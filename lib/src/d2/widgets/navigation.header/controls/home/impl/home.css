@@ -1,0 +1,52 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .d2-branding {
+  height: 100%;
+  width: 100%
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .d2-branding .d2-brand-container {
+  height: inherit;
+  max-height: inherit;
+  padding: 0;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .d2-branding .d2-brand-container .d2-brand-logo {
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto 40px;
+  background-image: url('../image/header_d2_li.svg');
+  display: block;
+  cursor: default;
+  overflow-y: hidden;
+  position: relative;
+  top: 12px;
+  left: 0;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .d2-branding .d2-brand-container.home-active .d2-brand-logo {
+  cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  .d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .d2-branding .d2-brand-container .d2-brand-logo {
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto 25px;
+    background-image: url('../image/header_d2_li_1.svg');
+    display: block;
+    cursor: default;
+    overflow-y: hidden;
+    position: relative;
+    top: 12px;
+    left: 0;
+  }
+
+  .d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-center {
+    flex: 1 0 200px;
+    position: initial;
+  }
+}

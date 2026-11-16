@@ -1,0 +1,17 @@
+{
+  "id": "ObjectOnClickActions",
+  "name": "D2SV Object On Click Sample",
+  "descriptors": [
+    {
+      "name": "app",
+      "properties": {
+        "pluginsGroupId": "com.opentext.d2.smartview",
+        "pluginArtifactId": "D2SV-Object-OnClick-Actions",
+        "pluginVersion": "1.0.0",
+        "pluginDesc": "D2SV Object On Click Sample",
+        "pluginPackage": "ObjectOnClickActions",
+        "includeSVSupport": true
+      }
+    }
+  ]
+}

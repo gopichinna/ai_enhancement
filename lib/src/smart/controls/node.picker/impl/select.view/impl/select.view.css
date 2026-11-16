@@ -1,0 +1,152 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-np-header.tile-header {
+  height: 30px;
+  overflow: hidden;
+}
+
+.binf-widgets .smart-target-browse .csui-np-content {
+  height: calc(100% - 2em) !important;
+}
+
+.binf-modal-body .csui-node-picker .csui-select-lists .csui-panel {
+  height: calc(100% - 32px);
+}
+
+.binf-modal-body .csui-node-picker .csui-select-lists .csui-panel:not(:first-child) {
+   
+  box-shadow: -2px 0px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.csui-np-content .cs-list {
+  height: 100%;
+}
+
+.binf-widgets .smart-target-browse .csui-targetbrowse-history {
+  display: none;
+  float: none;
+  margin: 0 -6px 0 18px;
+  height: 32px;
+  opacity: 0;
+  animation: iconOpacity 300ms ease-in forwards;
+  animation-iteration-count: 1;
+  animation-fill-mode: ease-in forwards;
+  -webkit-animation: iconOpacity 300ms ease-in forwards;
+  -moz-animation: iconOpacity 300ms ease-in forwards;
+  -moz-animation-fill-mode: ease-in forwards;
+  -o-animation: iconOpacity 300ms;
+  -o-animation-fill-mode: ease-in forwards;
+}
+
+@keyframes iconOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes iconOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes iconOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes iconOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.csui-slideMidLeft .csui-targetbrowse-history, .csui-slideMidLeft .cs-go-back {
+  display: none;
+}
+
+.csui-targetbrowse-history .arrow_back,
+.csui-targetbrowse-history .arrow_back_mouse_over,
+.csui-targetbrowse-history .arrow_back_mouse_down {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  float: left;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.csui-targetbrowse-history .csui-targetbrowse-arrow-back {
+  display: inline-block;
+}
+
+.binf-widgets .csui-np-header .csui-search-item-left-panel {
+  width: calc(50% - 22px);
+  line-height: 1.2;
+  height: 32px;   
+  margin-left: 14px;
+}
+
+
+.binf-widgets .smart-target-browse .search-left-item .binf-list-group-item > span > span{
+  font-size: 14px;
+}
+
+.binf-widgets .smart-target-browse .cs-list .search-left-item .csui-item-standard.binf-list-group-item span.csui-browsable {
+  width: calc(50% - 23.5px);  
+}
+
+.binf-widgets .smart-target-browse .cs-list .search-left-item .csui-item-standard.binf-list-group-item span.csui-browsable:-moz-read-only {
+  width: calc(50% - 31px);  
+}
+
+.binf-widgets .smart-target-browse .cs-list .search-left-item .csui-item-standard.binf-list-group-item span.smart-location-group {
+  width: calc(50% - 58px);
+  padding-right: 14px;
+}
+
+.binf-widgets .csui-np-header .csui-search-item-right-panel {
+  line-height: 32px;
+  width: calc(50% - 30px);
+  float: right;
+  padding-right: 24px;
+  padding-left: 16px;
+}
+
+.binf-widgets .csui-np-header .csui-form-control-search,
+.binf-widgets .csui-np-header .csui-form-control-search:active,
+.binf-widgets .csui-np-header .csui-form-control-search:focus,
+.binf-widgets .csui-np-header .csui-form-control-search:hover {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  line-height: normal;
+  box-shadow: none;
+}
+
+
+
+@media only screen and (max-height: 400px) {
+  .binf-widgets .csui-np-content {
+    height: 100% !important; 
+  }
+}

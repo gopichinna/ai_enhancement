@@ -1,0 +1,36 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .import-metadata-properties {
+  height: 100%;
+}
+
+.binf-widgets .import-metadata-properties .import-metadata {
+  height: 100%;
+}
+
+.d2-stepper-wizard .import-metadata-properties .d2-metadata-properties.profile-metadata-properties .tab-links ~ .binf-tab-content {
+  height: calc(100% - 48px);
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-footer .binf-btn.nextBtn {
+  font-weight: normal;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-footer .binf-btn.nextFileBtn {
+  font-weight: normal;
+  margin-left: 40px;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-footer .footer-button-container .binf-btn.primaryBtn {
+  font-weight: bold;
+}
+
+.binf-widgets .binf-modal-dialog .d2-wizard-step-view .import-metadata-properties .smart-tab-contents-header-content h4 {
+  padding-left: 32px ;
+}
+
+.binf-widgets .binf-modal-dialog .d2-wizard-step-view .import-metadata-properties .list-selection .item-details{
+  width: 100%;
+  max-width: 100%;
+}

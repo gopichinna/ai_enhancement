@@ -1,0 +1,39 @@
+<div class="binf-dropdown csui-dropdown">
+  <otc-button
+    class="binf-dropdown-toggle"
+    data-binf-toggle="dropdown"
+    tabindex="0"
+    arialabel="{{moreButtonsAria}}"
+    title="{{moreButtonsAria}}"
+    icon="smart_action:action_more32"
+    id="dropdownButton"
+  >
+  </otc-button>
+  <otc-menu
+    class="smart-dropdown-menu"
+    buttonalignment="right"
+    buttonid="dropdownButton"
+    forceopenup=""
+    role="none"
+  >
+    {{#each list}}
+      {{#if this.attributes.disabled}}
+        <otc-menuitem
+          class="smart-dropdown-menuitem"
+          icon=""
+          role="none"
+          disabled
+          arialabel="{{this.attributes.label}}"
+        >{{this.attributes.label}}</otc-menuitem>
+      {{else}}
+        <otc-menuitem
+          class="smart-dropdown-menuitem"
+          icon=""
+          role="none"
+          arialabel="{{this.attributes.label}}"
+        >{{this.attributes.label}}</otc-menuitem>
+      {{/if}}
+    {{/each}}
+  </otc-menu>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

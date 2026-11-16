@@ -1,0 +1,24 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-edit-content,
+.d2-edit-content .button-region {
+  height: 100%;
+  width: 100%;
+}
+
+.d2-edit-content .button-region {
+  min-height: 450px;
+}
+
+.d2-edit-content .d2-header-message-container + .button-region {
+  height: calc(100% - 42px);
+}
+
+.d2-edit-content .d2-header-message-container + .d2-header-message-container + .button-region {
+  height: calc(100% - 84px);
+}
+
+.d2-edit-content .d2-header-message-container + .d2-header-message-container + .d2-header-message-container + .button-region {
+  height: calc(100% - 126px);
+}

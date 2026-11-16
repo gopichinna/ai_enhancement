@@ -1,0 +1,20 @@
+{{#if enabled}}
+  <div class='csui-favorite-star-view-container csui-favorite-popover-container'>
+    {{#if selected}}
+      <button type="button" class="csui-favorite-star selected csui-acc-focusable"
+        {{#if focusable}}tabindex="0" {{else}}tabindex="-1"{{/if}}
+              title="{{removeFav}}" aria-label="{{removeFavAria}}">
+        {{{icon-v2 iconName=iconName theme=iconTheme states='true'}}}
+      </button>
+    {{else}}
+      <button type="button" class="csui-favorite-star csui-acc-focusable"
+        {{#if focusable}}tabindex="0" {{else}}tabindex="-1"{{/if}}
+        {{#unless showInFavoritesTable}}aria-haspopup="dialog"{{/unless}}
+              title="{{addFav}}" aria-label="{{addFavAria}}">
+        {{{icon-v2 iconName=iconName theme=iconTheme states='true'}}}
+      </button>
+    {{/if}}
+  </div>
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

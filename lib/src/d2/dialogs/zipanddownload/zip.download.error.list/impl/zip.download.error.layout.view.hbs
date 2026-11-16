@@ -1,0 +1,30 @@
+<div class="table-header">
+  <div class="body-message">{{headerMessage}}</div>
+  {{#if showCopyIcon}}
+    <div class="d2-validation-copy" title="{{copyTooltip}}" tabindex="0">{{{icon-v2 iconName='csui_action_copy32'
+                                                                                    states='true'}}}</div>{{/if}}
+</div>
+<table class="error-items">
+  {{#each errorNodeItems}}
+    <tr data-cs-id="{{r_object_id}}" data-cs-status="{{status}}" class="error-detail-row" tabindex="0">
+      <td class="type"><span class="{{iconClass}}"></span></td>
+      <td class="name" title="{{object_name}}">{{object_name}}</td>
+      <td class="error-data">
+        <div class="each-error">
+          <div class="status">
+            <div class="status-icon"></div>
+          </div>
+          <div class="message" title="{{message}}">{{message}}</div>
+        </div>
+      </td>
+    </tr>
+  {{/each}}
+</table>
+{{#if showFilesInfo}}
+  <div class="show-file-Info">
+    <div class="info-icon"></div>
+    <div class="files-info-message">{{filesInfoMessage}}</div>
+  </div>
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,18 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-metadata-edit-properties {
+  float: right;
+  position: relative;
+  width: auto;
+  height: 3rem;
+  margin-right: 20px;
+}
+
+.d2-metadata-edit-properties .d2-metadata-edit-properties-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

@@ -1,0 +1,7 @@
+.d2-tile-admingroups-members .tile-header {
+  cursor: default;
+}
+
+.cs-left-center-right-perspective .d2-tile-admingroups-members .tile-header .search-box .icon-search-placeholder {
+  left: 16px;
+}

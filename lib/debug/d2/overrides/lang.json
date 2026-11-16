@@ -1,0 +1,66 @@
+{
+  "i18n": {
+    "overrides": {
+      "csui/pages/start/nls/root/lang": {
+        "ProductName": "Documentum Content Management CE 24.4",
+        "FavoritesNodeTitle": "{0} - {1}"
+      },
+      "csui/pages/start/nls/ar/lang": {
+        "ProductName": "Documentum Content Management CE 24.4",
+        "FavoritesNodeTitle": "{0} - {1}"
+      },
+      "csui/pages/start/nls/he/lang": {
+        "ProductName": "Documentum Content Management CE 24.4",
+        "FavoritesNodeTitle": "{0} - {1}"
+      },
+      "csui/pages/start/nls/fr/lang": {
+        "ProductName": "Documentum Content Management CE 24.4",
+        "FavoritesNodeTitle": "{0} - {1}"
+      },
+      "csui/pages/start/nls/de/lang": {
+        "ProductName": "Documentum Content Management CE 24.4",
+        "FavoritesNodeTitle": "{0} - {1}"
+      },
+      "csui/pages/start/nls/es/lang": {
+        "ProductName": "Documentum Content Management CE 24.4",
+        "FavoritesNodeTitle": "{0} - {1}"
+      },
+      "csui/pages/start/nls/ja/lang": {
+        "ProductName": "Documentum Content Management CE 24.4",
+        "FavoritesNodeTitle": "{0} - {1}"
+      },
+      "csui/pages/start/nls/ko/lang": {
+        "ProductName": "Documentum Content Management CE 24.4",
+        "FavoritesNodeTitle": "{0} - {1}"
+      },
+      "csui/pages/start/nls/nl/lang": {
+        "ProductName": "Documentum Content Management CE 24.4",
+        "FavoritesNodeTitle": "{0} - {1}"
+      },
+      "csui/pages/start/nls/pt/lang": {
+        "ProductName": "Documentum Content Management CE 24.4",
+        "FavoritesNodeTitle": "{0} - {1}"
+      },
+      "csui/pages/start/nls/pt_BR/lang": {
+        "ProductName": "Documentum Content Management CE 24.4",
+        "FavoritesNodeTitle": "{0} - {1}"
+      },
+      "csui/pages/start/nls/ru/lang": {
+        "ProductName": "Documentum Content Management CE 24.4",
+        "FavoritesNodeTitle": "{0} - {1}"
+      },
+      "csui/pages/start/nls/sv/lang": {
+        "ProductName": "Documentum Content Management CE 24.4",
+        "FavoritesNodeTitle": "{0} - {1}"
+      },
+      "csui/pages/start/nls/zh/lang": {
+        "ProductName": "Documentum Content Management CE 24.4",
+        "FavoritesNodeTitle": "{0} - {1}"
+      },
+      "csui/pages/start/nls/it/lang": {
+        "ProductName": "Documentum Content Management CE 24.4",
+        "FavoritesNodeTitle": "{0} - {1}"
+      }
+    }
+  }
+}

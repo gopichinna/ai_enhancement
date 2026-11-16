@@ -1,0 +1,353 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.d2-table-settings {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1050;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.d2-table-settings .container-main {
+  z-index: 1050;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+  width: 280px;
+  overflow: hidden;
+}
+
+.d2-table-settings .container-main .card {
+  right: -280px;
+}
+
+
+.binf-widgets .d2-table-settings .binf-list-group {
+  overflow: auto;
+  min-height: 75px;
+  margin-bottom: 0;
+}
+
+.binf-widgets .d2-table-settings .binf-list-group-item {
+  cursor: default;
+  color: #333;
+  background-color: transparent;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.binf-widgets .d2-table-settings .binf-list-group-item:hover,
+.binf-widgets .d2-table-settings .binf-list-group-item:focus {
+  background-color: transparent;
+}
+
+.d2-table-settings .binf-list-group-item.has-next {
+  cursor: pointer;
+  background-image: url(images/next_card.svg);
+  background-repeat: no-repeat;
+  background-position: center right 16px;
+  background-size: 10px 10px;
+}
+
+.rtl .d2-table-settings .binf-list-group-item.has-next {
+  background-image: url(images/prev_card.svg);
+}
+
+.d2-table-settings .card {
+  background-color: #fff;
+  position: absolute;
+  width: inherit;
+}
+
+.d2-table-settings .card .header {
+  background-color: #eaeff2;
+  height: 37px;
+  line-height: 37px;
+  display: flex;
+}
+
+.d2-table-settings .card .header > .title {
+  font-size: 14px;
+  font-weight: bold;
+  flex: 1 1 auto;
+  max-width: calc(100% - 32px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.d2-table-settings .card .header > .title:only-child {
+  margin-left: 16px;
+}
+
+.d2-table-settings .card .header > .back-button {
+  flex: 0 0 16px;
+  position: relative;
+  height: 37px;
+  width: 16px;
+  margin-left: 16px;
+  margin-right: 8px;
+  background: url(images/arrow_back.svg) no-repeat center center;
+  background-size: 16px 16px;
+  cursor: pointer;
+}
+
+.d2-table-settings .card .header > .back-button + .title {
+  max-width: calc(100% - 56px);
+}
+
+.rtl .d2-table-settings .card .header > .back-button {
+  background-image: url(images/arrow_fwd.svg);
+}
+
+.d2-table-settings .card.card-columns-list .header .add-count {
+  flex: 0 0 20px;
+  margin: 8px 16px 9px 0;
+}
+
+
+
+.d2-table-settings .card.card-initial {
+  right: 0;
+}
+
+.d2-table-settings .card.card-initial .binf-list-group {
+  padding: 5px 0;
+}
+
+.d2-table-settings .card-initial .binf-list-group-item {
+  padding: 4px 16px;
+  line-height: 24px;
+  min-height: 32px;
+  height: auto;
+}
+
+.d2-table-settings .card-initial .binf-list-group-item.has-next:hover {
+  background-color: #b9c4cb;
+}
+
+.d2-table-settings .card-initial .all-version-column-toggle {
+  display: inline-flex;
+  padding: 0 10px 0 16px;
+  width: 100%;
+}
+
+.d2-table-settings .card-initial .all-version-column-toggle label {
+  padding: 4px 0;
+}
+
+.d2-table-settings .card-initial .all-version-column-toggle .version-column-toggle-switch {
+  float: right;
+}
+
+.d2-table-settings .card-initial .all-version-column-toggle .all-version-column-toggle-switch {
+  margin: auto;
+}
+
+.d2-table-settings .card-initial .all-version-column-toggle .all-version-column-toggle-switch .cs-booleanfield {
+  display: block;
+  width: auto;
+  min-height: 32px;
+  min-width: auto;
+}
+
+.d2-table-settings .card-initial .markup-status-column-toggle {
+  display: inline-flex;
+  padding: 0 10px 0 16px;
+  width: 100%;
+}
+
+.d2-table-settings .card-initial .markup-status-column-toggle label {
+  padding: 4px 0;
+}
+
+.d2-table-settings .card-initial .markup-status-column-toggle .all-version-column-toggle-switch {
+  float: right;
+}
+
+.d2-table-settings .card-initial .markup-status-column-toggle .markup-status-column-toggle-switch {
+  margin: auto;
+}
+
+.d2-table-settings .card-initial .markup-status-column-toggle .markup-status-column-toggle-switch .cs-booleanfield {
+  display: block;
+  width: auto;
+  min-height: 32px;
+  min-width: auto;
+}
+
+.d2-table-settings .card-columns-settings .add-button {
+  height: 32px;
+  width: 16px;
+  margin: 2px 0 2px 17px;
+  background: url(images/add_column.svg) no-repeat center center;
+  background-size: 16px 16px;
+  cursor: pointer;
+}
+
+.d2-table-settings .card-columns-settings .item-label {
+  height: auto;
+  min-height: 32px;
+  line-height: 1.33;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 14px;
+}
+
+.d2-table-settings .card-columns-list .binf-list-group > div {
+  padding: 2px 0 2px 0;
+}
+
+.d2-table-settings .card-columns-list .binf-list-group-item {
+  padding: 7px 26px 7px 24px;
+  height: 100%;
+  line-height: 1.33;
+}
+
+.d2-table-settings .card-columns-list .binf-list-group-item.selected {
+  background-image: url(images/tick_mark.svg);
+  background-repeat: no-repeat;
+  background-position: center left 7px;
+  background-size: 12px 12px;
+}
+
+.binf-widgets .d2-table-settings .card-columns-list .binf-list-group-item:hover,
+.binf-widgets .d2-table-settings .card-columns-list .binf-list-group-item:focus {
+  background-color: #b9c4cb;
+}
+
+.d2-table-settings .card-columns-list .binf-list-group-item.has-parent div {
+  line-height: 18px;
+}
+
+.d2-table-settings .card-columns-list .binf-list-group-item small {
+  display: block;
+  font-size: 9px;
+  line-height: 10px;
+  color: #666;
+}
+
+.d2-table-settings .card-columns-list .add-count {
+  width: 20px;
+  height: 20px;
+  margin: 8px 0 9px 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  float: right;
+  background-color: #627783;
+  border-radius: 10px;
+}
+
+.d2-table-settings .card-columns-list .search-box {
+  padding: 2px 16px 2px 16px;
+}
+
+.d2-table-settings .card-columns-list .search-box input {
+  background-image: url(images/search.svg);
+  background-repeat: no-repeat;
+  background-position: top 7px left 0;
+  background-size: 16px 16px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  padding-left: 24px;
+  color: #333;
+  height: 30px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.d2-table-settings .card-columns-list .search-box input:focus {
+  border-bottom: 2px solid #232e72;
+}
+
+.d2-table-settings .card-columns-list .search-box input::placeholder {
+  color: #757575;
+}
+
+.d2-table-settings .card-columns-list .search-box input:-ms-input-placeholder {
+  color: #757575;
+}
+
+.d2-table-settings .card-initial .all-version-column-toggle .all-version-column-toggle-switch .cs-field-write {
+  padding-top: 4px;
+}
+
+.d2-table-settings .card-initial .markup-status-column-toggle .markup-status-column-toggle-switch .cs-field-write {
+  padding-top: 4px;
+}
+
+.binf-widgets .d2-table-settings .d2-sortable-list .sub-item.non-removable-item {
+  padding-left: 0;
+}
+
+.binf-widgets .d2-table-settings .d2-sortable-list .sub-item.non-removable-item .sub-item-container{
+  padding-left: 16px;
+}
+
+.binf-widgets .d2-table-settings .d2-sortable-list .sub-item.non-removable-item .remove-button {
+  display: none;
+}
+
+.binf-widgets .d2-table-settings .binf-list-group .table-mode-item input.table-mode[type="radio"] ~ span {
+  visibility: hidden;
+}
+
+.binf-widgets .d2-table-settings .binf-list-group .table-mode-item input.table-mode[type="radio"] ~ span .csui-icon-v2{
+  height: 16px;
+  width: 16px;
+}
+
+.binf-widgets .d2-table-settings .binf-list-group .table-mode-item input.table-mode[type="radio"]:checked ~ span {
+  visibility: visible;
+}
+
+.binf-widgets .d2-table-settings .binf-list-group .table-mode-item {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+}
+
+.binf-widgets .d2-table-settings .binf-list-group .table-mode-item:hover {
+  background-color: #b9c4cb;
+}
+
+.binf-widgets .d2-table-settings .binf-list-group .table-mode-item label {
+  width: 100%;
+  line-height: 32px;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+
+.binf-widgets .d2-table-settings .binf-list-group .table-mode-item .tick-icon-container {
+  height: 16px;
+  width: 16px;
+  margin: 8px 8px 8px 0;
+}
+
+.binf-widgets .d2-table-settings .binf-list-group .table-mode-item input.table-mode[type="radio"]{
+  margin: 0;
+  opacity: 0;
+  width: 0;
+}
+
+.binf-widgets .d2-table-settings .binf-list-group .table-mode-item.last-item{
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.binf-widgets .d2-table-settings .card-initial .binf-list-group .binf-list-group-item.table-mode-item {
+  padding: 0 16px;
+}

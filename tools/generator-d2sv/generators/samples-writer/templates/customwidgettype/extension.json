@@ -1,0 +1,8 @@
+{
+  "d2/sdk/utils/landingpage/tiles": [
+        "extensions/custom.type.tiles"
+  ],
+  "d2/sdk/widgets/shortcut.tile/shortcut.tile.behaviors": [
+        "extensions/custom.type.tile.behaviors"
+  ]
+}

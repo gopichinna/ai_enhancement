@@ -1,0 +1,6 @@
+{
+  "bundle": [
+    "extensions/dialog.actions",
+    "utils/utils"
+  ]
+}

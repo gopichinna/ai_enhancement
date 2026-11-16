@@ -1,0 +1,30 @@
+<div class="markup-migration-content {{#if statusSuccess}}migration-content-success{{else if statusInprogress}}migration-content-info{{else}}migration-content-error{{/if}}">
+  <div class="iconBox">
+    <span class="{{#if statusSuccess}}success-icon{{else if statusInprogress}}information-icon{{else}}error-icon{{/if}}"></span>
+  </div>
+  <div class="messageBox">
+    <span>{{text}}</span>
+    {{#if isMigrationBannerForBravaGCompare}}
+       <div class="csui-icon-group csui-loading-parent-wrapper binf-disabled" style="height:16px;width:16px;" role="presentation" ></div>
+    {{/if}}
+    {{#if isMigrationBannerForBravaViewer}}
+       <div class="csui-icon-group csui-loading-parent-wrapper binf-disabled" style="height:16px;width:16px;" role="presentation" ></div>
+    {{/if}}
+    {{#if statusInprogress}}
+      <div class="csui-icon-group csui-loading-parent-wrapper binf-disabled" style="height:16px;width:16px;" role="presentation" >
+        <div class="csui-loading-dots-wrapper">
+          <span class="csui-loading-dot"></span>
+          <span class="csui-loading-dot"></span>
+          <span class="csui-loading-dot"></span>
+        </div>
+      </div>
+    {{/if}}
+    {{#if statusSuccess}}
+      <a class="reload" href="javascript:void(0);">{{reloadText}}</a>
+    {{/if}}
+    {{#if statusTitleUpdateFailed}}
+       <a class="reload" href="javascript:void(0);">{{titleUpdateRetryText}}</a>
+    {{/if}}
+  </div>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

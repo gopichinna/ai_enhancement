@@ -1,0 +1,26 @@
+<table class="error-items">
+<div class="table-header">{{headerMessage}}
+<div class="copy-section">
+    <div class="copy-icon"></div>
+    <div class="title">{{title}}</div>
+</div>
+</div>
+  {{#each errorNodeItems}}
+    <tr data-cs-id="{{id}}" data-cs-status="{{status}}" class="error-detail-row" tabindex="0">
+      <td class="type"><span class="{{iconClass}}"></span></td>
+      <td class="name" title="{{name}}">{{this.name}}</td>
+      <td class="error-data">
+      <div class="each-error">
+        <div class="status">
+            <div class="status-icon"></div></div>
+            <div class="message" title="{{message}}">{{this.message}}</div>
+        </div>
+    </td>
+    </tr>
+  {{/each}}
+</table>
+{{#if filesInfo}}
+  <div class="show-more">{{filesInfoMessage}}</div>
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,105 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.alpaca-control .cs-formfield.cs-richtextfield {
+  height: auto;
+  line-height: 1.6em;
+  max-height: none;
+}
+
+
+.cs-formfield.cs-richtextfield .cs-field-read button {
+  height: auto;
+  max-height: none;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-read h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-read h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-read h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-read h4 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-read h5 {
+  font-size: 0.83em;
+  font-weight: bold;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-read h6 {
+  font-size: .67em;
+  font-weight: bold;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-read b {
+  font-weight: bold;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-read strong {
+  font-weight: bold;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-read i {
+  font-style: italic;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-read em {
+  font-style: italic;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-read big {
+  font-size: larger;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-read > span {
+  white-space: normal;
+  user-select: text;
+  word-wrap: break-word;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-read :focus {
+  border: 0;
+  cursor: default;
+}
+
+
+
+.cs-formfield.cs-richtextfield span.cs-field-richtext-data {
+  width: calc(100%);
+  padding-right: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  word-wrap: normal;
+  height: auto;
+}
+
+.cs-field-text-nospace .cs-richtextfield .cs-field-read .cs-field-richtext-data {
+  width: 100%;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+.cs-form .alpaca-container-item > .binf-form-group.alpaca-field > .binf-col-sm-9.d2-richtext-field-width {
+  width: 100%;
+}
+
+.cs-formfield.cs-formfield-readonly.cs-richtextfield .cs-field-read .btn-container:focus {
+  border: none;
+  cursor: default;
+  padding: 0;
+  outline: 1px solid #2e3d98;
+  outline-offset: 3px;
+}
+

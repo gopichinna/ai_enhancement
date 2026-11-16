@@ -1,0 +1,37 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-table-rowselection-toolbar-view {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 100%;
+}
+
+.csui-table-rowselection-toolbar-view > .csui-toolbar-region {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  white-space: nowrap;
+  min-width: 0;
+  align-items: center;
+}
+
+.csui-table-rowselection-toolbar-view > .csui-right-toolbar-region {
+  display: flex;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.csui-table-rowselection-toolbar-view > .csui-selected-items-counter-region {
+  display: flex;
+  align-items: center;
+  margin-left: 22px;
+}
+
+@media only screen and (max-width: 640px) {
+  .csui-table-rowselection-toolbar-view > .csui-selected-items-counter-region {
+    margin-left: 0;
+  }
+}

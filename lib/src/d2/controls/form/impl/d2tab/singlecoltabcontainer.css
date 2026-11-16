@@ -1,0 +1,95 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-container .d2-singlecolumn-tab-container, .d2-singlecolumn-tab-container .binf-col-md-12, .d2-singlecolumn-tab-container .binf-col-md-6 {
+  padding: 0;
+}
+
+.d2-disable-scroll {
+  overflow: hidden !important;
+}
+
+.d2-singlecolumn-tab-section {
+  background: white;
+  position: fixed;
+  top: 64px;
+  
+  z-index: 1002;
+  right: 0;
+  height: calc(100% - 112px);
+  width: 688px;
+}
+
+.binf-widgets .d2-queryform-modal.d2-stepper-wizard .d2-singlecolumn-tab-section {
+  width: 400px;
+  min-width: 400px;
+}
+
+.import-metadata-properties .item-details.right-pane .d2-singlecolumn-tab-section {
+  width: 447px;
+}
+
+.binf-widgets .d2-create-file-wizard.d2-stepper-wizard .binf-modal-dialog.wide-modal-dialog .d2-singlecolumn-tab-section,
+.binf-widgets .d2-create-folder-wizard.d2-stepper-wizard .binf-modal-dialog.wide-modal-dialog .d2-singlecolumn-tab-section,
+.binf-widgets .d2-addversion-modal.d2-stepper-wizard .binf-modal-dialog.wide-modal-dialog .d2-singlecolumn-tab-section,
+.binf-widgets .d2-import-file-wizard.d2-stepper-wizard .binf-modal-dialog.wide-modal-dialog .d2-singlecolumn-tab-section {
+  width: 766px;
+}
+
+@media (max-width: 768px) {
+  .csui-on-ipad .binf-widgets .d2-import-file-wizard.d2-stepper-wizard .binf-modal-dialog.wide-modal-dialog .d2-singlecolumn-tab-section {
+    width: 506px;
+  }
+}
+
+.d2-singlecolumn-tab-section .d2-singlecolumn-tab-content-header {
+  height: 3rem;
+}
+
+.d2-singlecolumn-tab-section .d2-singlecolumn-tab-content-header .tile-title {
+  display: block;
+  width: 100%;
+  max-width: calc(100% - 32px);
+  margin: 0;
+  padding: 8px 0 8px 10px;
+}
+
+.d2-singlecolumn-tab-section .d2-singlecolumn-tab-content-header .tile-title .main-title {
+  line-height: 2rem;
+  color: #333333;
+  margin: 0;
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.d2-singlecolumn-tab-section .d2-singlecolumn-tab-content-header {
+  padding: 0 1rem;
+  border-bottom: none;
+  background-color: rgba(219, 241, 254, 1);
+}
+
+.d2-singlecolumn-tab-section .d2-singlecolumn-tab-content-header .icon.d2-singlecolumn-back {
+  background-image: url('images/back.svg');
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  margin: 16px 0 0 0;
+  cursor: pointer;
+}
+
+.rtl .d2-singlecolumn-tab-section .d2-singlecolumn-tab-content-header .icon.d2-singlecolumn-back {
+  transform: rotate(-180deg);
+}
+
+.d2-singlecolumn-tab-section .d2-singlecolumn-tab-content {
+  padding: 25px 32px 6px 32px;
+  height: calc(100% - 48px);
+}
+
+
+

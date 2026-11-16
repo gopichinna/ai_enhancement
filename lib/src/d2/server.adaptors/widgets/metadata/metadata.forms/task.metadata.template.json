@@ -1,0 +1,126 @@
+{
+  "title": "Property Page",
+  "page-content": {
+    "dialog": {
+      "initial_invalid": false,
+      "auto_smartview_edit_mode": false,
+      "label": "'Properties of {{name}}'",
+      "mapping_format": "yyyy-MM-dd'T'HH:mm:ss.SSSZZ",
+      "value_format": "yyyy-MM-dd'T'HH:mm:ss.SSSZZ",
+      "content": {
+        "order": 1,
+        "fieldset": {
+          "label": "{{lang.fieldSet}}",
+          "order": 1,
+          "list": [
+            {
+              "id": "sent_by",
+              "label": "{{lang.sentBy}}",
+              "value": "{{sent_by}}",
+              "field_content_type": "USER_OR_GROUP",
+              "assistance_type": "custom",
+              "repeating": false,
+              "order": 6,
+              "condition_visible": "(getValue(sent_by).notEquals(''))"
+            },
+            {
+              "id": "supervisor_name",
+              "label": "{{lang.supervisorName}}",
+              "value": "{{supervisor_name}}",
+              "field_content_type": "USER_OR_GROUP",
+              "assistance_type": "custom",
+              "repeating": false,
+              "order": 8,
+              "condition_visible": "(getValue(supervisor_name).notEquals(''))"
+            }
+          ],
+          "combo": {
+            "id": "d2_task_priority",
+            "assistance_type": "dictionary",
+            "label": "{{lang.d2TaskPriority}}",
+            "property_type": "integer",
+            "repeating": false,
+            "order": 3,
+            "condition_visible": "(getValue(d2_task_priority).isGreaterThan('0'))",
+            "o": [{
+              "v": 0,
+              "l": "",
+              "s": "{{d2_task_priority}} === 0"
+            }, {
+              "v": "1",
+              "l": "{{lang.priorityLowest}}",
+              "s": "{{d2_task_priority}} === 1"
+            }, {
+              "v": "2",
+              "l": "{{lang.priorityLow}}",
+              "s": "{{d2_task_priority}} === 2"
+            }, {
+              "v": "3",
+              "l": "{{lang.priorityNormal}}",
+              "s": "{{d2_task_priority}} === 3"
+            }, {
+              "v": "4",
+              "l": "{{lang.priorityHigh}}",
+              "s": "{{d2_task_priority}} === 4"
+            }, {
+              "v": "5",
+              "l": "{{lang.priorityHighest}}",
+              "s": "{{d2_task_priority}} === 5"
+            }
+            ]
+          },
+          "date": [
+            {
+              "id": "d2_task_due_date",
+              "display_time": true,
+              "label": "{{lang.d2TaskDueDate}}",
+              "mapping_format": "yyyy-MM-dd'T'HH:mm:ss.SSSZZ",
+              "value_format": "yyyy-MM-dd'T'HH:mm:ss.SSSZZ",
+              "value": "{{d2_task_due_date}}",
+              "mapping_value": "{{d2_task_due_date}}",
+              "property_type": "date",
+              "repeating": false,
+              "order": 2,
+              "condition_visible": "(getValue(d2_task_due_date).notEquals(''))"
+            },
+            {
+              "id": "date_sent",
+              "display_time": true,
+              "label": "{{lang.sentDate}}",
+              "mapping_format": "yyyy-MM-dd'T'HH:mm:ss.SSSZZ",
+              "value_format": "yyyy-MM-dd'T'HH:mm:ss.SSSZZ",
+              "value": "{{date_sent}}",
+              "mapping_value": "{{date_sent}}",
+              "property_type": "date",
+              "repeating": false,
+              "order": 9,
+              "condition_visible": "(getValue(date_sent).notEquals(''))"
+            }
+          ],
+          "html-editor": [
+            {
+              "id": "task_subject",
+              "label": "{{lang.subject}}",
+              "value": "{{name}}",
+              "maxlength": 800,
+              "property_type": "string",
+              "repeating": false,
+              "order": 1,
+              "condition_visible": "(getValue(task_subject).notEquals(''))"
+            },
+            {
+              "id": "task_instructions",
+              "label": "{{lang.taskInstruction}}",
+              "value": "{{task_instructions}}",
+              "maxlength": 800,
+              "property_type": "string",
+              "repeating": false,
+              "order": 5,
+              "condition_visible": "(getValue(task_instructions).notEquals(''))"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

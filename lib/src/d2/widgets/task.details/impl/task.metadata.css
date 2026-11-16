@@ -1,0 +1,203 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-task-metadata.cs-metadata .metadata-header-right-bar .csui-extra-header-wrapper {
+  margin: 10px 0;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .metadata-header-right-bar .csui-tabletoolbar,
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-actionbar {
+  padding-right: 20px;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-actionbar .binf-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 16px;
+  padding: 0;
+  width: auto;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  cursor: default;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-actionbar .binf-btn:first-child {
+  margin-left: 0;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-actionbar .binf-btn:hover,
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-actionbar .binf-btn:active {
+  border: none;
+  box-shadow: none;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-actionbar .binf-btn > .csui-toolitem {
+  width: auto;
+  height: 32px;
+  margin: 0;
+  padding: 0 16px;
+  max-width: 260px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+  line-height: 30px;
+  font-size: 14px;
+  border-radius: 16px;
+  vertical-align: middle;
+  background: #FFFFFF;
+  border: 1px solid #232E72;
+  color: #232E72;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-actionbar .binf-btn[data-csui-command="d2-acquiretask"] > .csui-toolitem {
+  max-width: 160px;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-actionbar .binf-btn > .csui-toolitem:active,
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-actionbar .binf-btn > .csui-toolitem:focus {
+  box-shadow: none;
+  outline-offset: 1px;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-actionbar .binf-btn > .csui-toolitem:hover {
+  border: 1px solid #232E72;
+  box-shadow: inset 0 0 0 1px rgba(0, 75, 113, 1);
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-actionbar .binf-btn.binf-btn-primary > .csui-toolitem {
+  background: #232E72;
+  color: #FFFFFF;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-actionbar .binf-btn.binf-btn-primary ~ .binf-btn.binf-btn-primary > .csui-toolitem {
+  background: #FFFFFF;
+  color: #232E72;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-header-dropdown {
+  align-items: center;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-header-dropdown li.binf-dropdown > a.binf-dropdown-toggle {
+  margin: 0;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-header-dropdown li.binf-dropdown.binf-open > a {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .d2-task-details-header-dropdown > .binf-dropdown > .binf-dropdown-menu {
+  margin-top: 10px;
+  left: auto;
+  bottom: auto;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata > .metadata-content-header .binf-dropdown-menu {
+  z-index: 1002;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .metadata-content-header .metadata-header.with-right-bar {
+  min-width: 40%;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .metadata-content-header .metadata-header-right-bar-container {
+  max-width: 60%;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata > .metadata-content-wrapper {
+  width: 50%;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata.expanded-view > .metadata-content-wrapper {
+  width: 100%;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata > .metadata-content-wrapper .metadata-inner-wrapper {
+  height: calc(100vh - 96px - 2em);
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata > .d2-task-additional-panels {
+  float: right;
+  width: 50%;
+  height: calc(100% - 62px);
+  border-left: 1px solid #DCDCDC;
+}
+
+
+.binf-widgets .d2-task-metadata.cs-metadata.expanded-view > .d2-task-additional-panels {
+  display: none;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .tab-links .tab-links-bar .binf-nav-pills > li.binf-active > a > .cs-tablink-text,
+.binf-widgets .d2-task-metadata.cs-metadata .tab-links .tab-links-bar .binf-nav-pills > li.binf-active > a:hover > .cs-tablink-text {
+  border-color: #232E72;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .alpaca-container-item[data-alpaca-container-item-name$="d2_task_priority"] .cs-formfield .cs-field-read-inner .selected-label[data-id] {
+  position: relative;
+  padding-left: 16px;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .alpaca-container-item[data-alpaca-container-item-name$="d2_task_priority"] .cs-formfield .cs-field-read-inner .selected-label[data-id="0"] {
+  padding-left: 0;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .alpaca-container-item[data-alpaca-container-item-name$="d2_task_priority"] .cs-formfield .cs-field-read-inner .selected-label[data-id]:before {
+  content: ' ';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 0;
+  top: calc(50% - 7px);
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .alpaca-container-item[data-alpaca-container-item-name$="d2_task_priority"] .cs-formfield .cs-field-read-inner .selected-label[data-id="0"]:before {
+  content: '';
+  width: 0;
+  height: 0;
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .alpaca-container-item[data-alpaca-container-item-name$="d2_task_priority"] .cs-formfield .cs-field-read-inner .selected-label[data-id="1"]:before {
+  background-image: url('../../../utils/icons/impl/status_lowest.svg');
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .alpaca-container-item[data-alpaca-container-item-name$="d2_task_priority"] .cs-formfield .cs-field-read-inner .selected-label[data-id="2"]:before {
+  background-image: url('../../../utils/icons/impl/status_low.svg');
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .alpaca-container-item[data-alpaca-container-item-name$="d2_task_priority"] .cs-formfield .cs-field-read-inner .selected-label[data-id="3"]:before {
+  background-image: url('../../../utils/icons/impl/status_medium.svg');
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .alpaca-container-item[data-alpaca-container-item-name$="d2_task_priority"] .cs-formfield .cs-field-read-inner .selected-label[data-id="4"]:before {
+  background-image: url('../../../utils/icons/impl/status_high.svg');
+}
+
+.binf-widgets .d2-task-metadata.cs-metadata .alpaca-container-item[data-alpaca-container-item-name$="d2_task_priority"] .cs-formfield .cs-field-read-inner .selected-label[data-id="5"]:before {
+  background-image: url('../../../utils/icons/impl/status_highest.svg');
+}
+
+.binf-widgets .d2-task-details-panel .d2-task-metadata .d2-listfield-sortable .d2-icon-drag {
+  display: none;
+}
+
+.binf-widgets .d2-task-details-panel .d2-task-metadata .d2-listfield-sortable .user-info.only-id,
+.binf-widgets .d2-task-details-panel .d2-task-metadata .d2-listfield-sortable .user-selection-item {
+  padding-left: 0;
+}
+
+.binf-widgets .d2-task-details-panel .user-info-container .user-info {
+  padding: 0;
+}
+
+.binf-widgets .d2-task-details-panel .user-selection-item,
+.binf-widgets .d2-task-details-panel .user-selection-item .d2-userinfo-profile-pic {
+  cursor: default;
+}

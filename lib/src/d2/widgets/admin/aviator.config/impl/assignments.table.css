@@ -1,0 +1,60 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .av4r-assignments-table-toolbar .csui-tabletoolbar {
+    height: 32px;
+    padding: 4px 15px !important;
+    background-color: rgb(249, 249, 249);
+}
+
+.binf-widgets .av4r-assignments-table-toolbar .csui-tabletoolbar .csui-toolitem {
+    font-size: 14px;
+}
+
+.binf-widgets .av4r-assignments-table-toolbar .csui-tabletoolbar .icon-menu-av4r-add-assignments {
+    background-image: url(images/menu_add_assignment.svg);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 15px;
+    width: 20px;
+    height: 16px;
+}
+
+.binf-widgets .av4r-assignments-table-toolbar .csui-tabletoolbar > div:not(.csui-rightToolbar) .csui-toolbar.binf-nav > li > a {
+    margin: 0;
+    padding: 6px 12px;
+    min-height: unset;
+    border-radius: unset;
+}
+
+.binf-widgets .av4r-assignments-table-toolbar .csui-tabletoolbar > div:not(.csui-rightToolbar):not(.csui-addToolbar) .csui-toolbar.binf-nav > li > a:hover {
+    color: #627783;
+    text-decoration: none;
+    background-color: #f3fbff;
+    box-shadow: 0 0 1px 0 #000000b2;
+    border-radius: 3px;
+}
+
+.binf-widgets .av4r-assignments-table-toolbar .csui-tabletoolbar > div:not(.csui-rightToolbar):not(.csui-addToolbar) .csui-toolbar.binf-nav > li > a:active {
+    background-color: #cccccc;
+    color: #333333;
+}
+
+.binf-widgets .av4r-assignments-table-view .csui-table-view {
+    height: 420px;
+}
+
+.binf-widgets .av4r-assignments-table-view .csui-table-view thead {
+    background-color: #F9F9F9;
+}
+
+.binf-widgets .av4r-assignments-table-view .csui-table-view thead > tr,
+.binf-widgets .av4r-assignments-table-view .csui-table-view thead th {
+    background-color: unset;
+}
+
+.binf-widgets .av4r-assignments-table-toolbar .csui-tabletoolbar .csui-addToolbar .disable-add-button {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+}

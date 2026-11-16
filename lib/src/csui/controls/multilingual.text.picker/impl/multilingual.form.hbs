@@ -1,0 +1,32 @@
+<div class="cs-ml-form-container csui-normal-scrolling alpaca-container-item">
+  <div class="csui-inlineform-group csui-inlineform-required-error" role="alert">
+    <div class="binf-text-danger" title="{{valueRequired}}">
+      <span class="csui-text-danger">{{valueRequired}}</span>
+    </div>
+  </div>
+  {{#each languages}}
+    <div class="binf-row">
+      <label class="binf-control-label alpaca-control-label binf-col-sm-6 text-right {{#if
+          this.default}}bold{{/if}}" for="input-{{this.language_code}}"
+             title="{{this.display_name}}"
+             lang="{{this.language_code}}">{{this.display_name}} </label>
+      <div class="binf-col-sm-12 input-container">
+        {{#if @root.textFieldRequired}}
+          <label lang="{{this.language_code}}">
+            <input id="input-{{this.language_code}}" type="text" value="{{this.value}}"
+                   title="{{this.display_name}}"
+                   lang="{{this.language_code}}"/>
+          </label>
+        {{else}}
+          <label lang="{{this.language_code}}">
+          <textarea id="input-{{this.language_code}}"
+                    title="{{this.display_name}}">{{this.value}}</textarea>
+          </label>
+        {{/if}}
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

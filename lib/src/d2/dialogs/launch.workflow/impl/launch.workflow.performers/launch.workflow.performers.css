@@ -1,0 +1,26 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-launch-workflow-performers-dialog,
+.d2-launch-workflow-performers-dialog-container,
+.d2-launch-workflow-performers-form-container {
+    height: 100%;
+    width: 100%;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-launch-workflow-performers-dialog .d2-task-update-performers-form.cs-form.csui-general-form.d2-form {
+    padding: 24px 224px 0 48px;
+}
+
+.d2-launch-workflow-performers-dialog .d2-task-update-performers-form.cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+    line-height: 24px;
+    color: #666666;
+}
+
+.d2-stepper-wizard .d2-launch-workflow-performers-dialog .d2-task-update-performers-form.cs-form.csui-general-form.d2-form .alpaca-container-item {
+    margin-bottom: 16px;
+}
+
+.d2-launch-workflow-performers-dialog .alpaca-field-object.alpaca-top .d2-container .d2-fieldset-layout.d2-nested-fieldset-layout {
+    margin-top: 8px;
+}

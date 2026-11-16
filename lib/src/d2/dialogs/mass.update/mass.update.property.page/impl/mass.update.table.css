@@ -1,0 +1,286 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-mass-update-table {
+  padding: 32px 64px 0 64px;
+}
+
+.binf-widgets .d2-mass-update-table.reorder-table,
+.binf-widgets .d2-mass-update-table.list-table,
+.binf-widgets .d2-mass-update-table.error-table {
+  padding-top: 48px;
+}
+
+.binf-widgets .d2-mass-update-table.reorder-table.list-table,
+.binf-widgets .d2-mass-update-table.reorder-table.error-table {
+  padding-top: 90px;
+}
+
+.d2-mass-update-table .csui-table-cell-name-value.csui-table-cell-no-default-action {
+  color: #333333;
+}
+
+.binf-widgets .csui-nodetable.d2-mass-update-table .binf-table {
+  font-size: 14px;
+}
+
+.binf-widgets .d2-mass-update-table .binf-table > tbody > tr.binf-active > td {
+  background-color: initial;
+}
+
+.binf-widgets .d2-mass-update-table .binf-table.dataTable > tbody > .ui-sortable-handle .csui-table-cell-name-div:hover::before {
+  background: url('../../impl/images/drag.svg') no-repeat center;
+}
+
+.binf-widgets .d2-mass-update-table .binf-table > tbody > tr.ui-sortable-handle > td,
+.binf-widgets .d2-mass-update-table .binf-table > tbody > tr.ui-sortable-handle > td .csui-table-cell-name-div p {
+  cursor: pointer;
+}
+
+.binf-widgets .d2-mass-update-table .binf-table.dataTable > tbody > .ui-sortable-handle .csui-table-cell-name-div::before {
+  content: ' ';
+  align-self: stretch;
+  width: 9px;
+  margin-left: 12px;
+}
+
+.binf-widgets .d2-mass-update-table .binf-table.dataTable > tbody > tr > td.d2-inline-mass-update-actions {
+  min-width: 46px;
+}
+
+
+.binf-widgets .d2-mass-update-table .binf-table.dataTable > tbody {
+  position: static;
+}
+
+.binf-widgets .d2-mass-update-table .binf-table > tbody > .dragged-item {
+  display: table;
+}
+
+
+.binf-widgets .d2-mass-update-table .binf-table > tbody > tr.d2-mass-update-no-value {
+  background-color: #F5F5FA;
+}
+
+.binf-widgets .d2-mass-update-table .binf-table > tbody > tr.d2-mass-update-error-value .binf-help-block {
+  margin-left: 12px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+  border-left: 2px solid #DF3324;
+  margin-bottom: 10px;
+  margin-top: -2px;
+  padding: 0 8px;
+  font-size: 10px;
+  line-height: 16px;
+  color: #DF3324;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+
+}
+
+.d2-mass-update-table .binf-table.dataTable > thead {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.binf-widgets .d2-mass-update-table .binf-table > tbody > tr > td {
+  border-top: 1px solid #E6E6E6;
+}
+
+.binf-widgets .d2-mass-update-table .binf-table > tbody > tr {
+  position: relative;
+}
+
+.binf-widgets .d2-mass-update-table .binf-table > tbody > tr.d2-mass-update-no-value > td {
+  border-top: 1px solid #999999;
+}
+
+.d2-mass-update-table.csui-nodetable:not(.csui-wrap-text) td > div .csui-table-cell-name-value {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  line-height: 17px;
+  margin: 11px 0 12px 0;
+}
+
+.d2-mass-update-table.csui-nodetable .binf-table tr > .csui-table-cell-_select:first-child .csui-checkbox {
+  padding-left: 10px;
+}
+
+.binf-widgets .d2-mass-update-table.csui-nodetable.csui-table-spacing-medium .csui-table-cell-_select:first-child,
+.binf-widgets .d2-mass-update-table.csui-nodetable.csui-table-spacing-medium .csui-table-cell-_select.csui-table-cell-last-visible {
+  min-width: 34px;
+  max-width: 34px;
+}
+
+.binf-widgets .d2-mass-update-table .d2-table-cell-value-count .csui-focusable-table-column-header,
+.binf-widgets .d2-mass-update-table .csui-table-cell-name .csui-focusable-table-column-header {
+  font-weight: bold;
+}
+
+.d2-mass-update-table.csui-nodetable .binf-table > tbody > tr > * {
+  height: auto;
+}
+
+.d2-inline-mass-update-actions .csui-icon-v2-view.disabled .csui-icon-v2-metaphor0 {
+  fill: #999999;
+}
+
+.binf-widgets .d2-mass-update-field .d2-mass-update-table-wrapper .d2-mass-update-table .binf-table.dataTable > tbody > tr.csui-table-row-shows-inlineform {
+  background: #DDE4E7;
+}
+
+.binf-widgets .d2-mass-update-field .d2-mass-update-table-wrapper .d2-mass-update-table .csui-field-size-1 .csui-inlineform-group div.csui-inlineform-field-container {
+  width: 272px;
+}
+
+.binf-widgets .d2-mass-update-field .d2-mass-update-table-wrapper .d2-mass-update-table .binf-table.dataTable > tbody > tr.csui-table-row-shows-inlineform .csui-table-cell-_select {
+  display: table-column;
+}
+
+.binf-widgets .d2-mass-update-field .d2-mass-update-table-wrapper .d2-mass-update-table .binf-table.dataTable > tbody > tr {
+  height: 42px;
+}
+
+.binf-widgets .d2-mass-update-field .d2-mass-update-table-wrapper .d2-massupdate-table-error-header {
+  background-color: rgba(46, 61, 152, 0.05);
+  border-top: 1px solid #999999;
+}
+
+.binf-widgets .d2-mass-update-field .d2-mass-update-table-wrapper .d2-massupdate-table-error-header > th {
+  flex: 1 1 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.d2-mass-update-field .d2-mass-update-table-wrapper .d2-massupdate-table-error-header .d2-mass-update-error-header-exclamation-sign,
+.d2-mass-update-table .reorder-warning .info-icon {
+  background: url('../../impl/images/information.svg') no-repeat;
+}
+
+.d2-mass-update-field .d2-mass-update-table-wrapper .d2-massupdate-table-error-header .d2-mass-update-error-header-exclamation-sign {
+  background-size: contain;
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: top;
+}
+
+.d2-mass-update-table .table-message-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.d2-mass-update-table .reorder-warning, .d2-mass-update-table .validation-error {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  padding-left: 64px;
+  background-color: rgba(46, 61, 152, 0.05);
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #2E3D98;
+}
+
+.d2-mass-update-table .reorder-warning .info-icon {
+  height: 18px;
+  width: 18px;
+  margin-right: 10px;
+}
+
+.d2-mass-update-table .reorder-warning .label, d2-mass-update-table .validation-error .label {
+  font-size: 14px;
+}
+
+.d2-mass-update-table .validation-error {
+  background-color: rgba(223, 51, 36, 0.05);
+  border-bottom: 1px solid #DF3324;
+}
+
+.d2-mass-update-table .validation-error .error-icon {
+  height: 18px;
+  width: 18px;
+  background: url('../../impl/images/error.svg');
+  margin-right: 10px;
+}
+
+.d2-mass-update-table .multi-select-switch-area .binf-switch,
+.d2-mass-update-table .multi-select-switch-area .binf-switch.binf-switch-off {
+  border-radius: 12px;
+  width: 46px !important;
+  font-size: 13px;
+  border-color: #a9a9a9;
+  height: 24px !important;
+  float: right;
+  margin-top: 9px;
+  margin-right: 16px;
+  margin-left: 9px;
+}
+
+.d2-mass-update-table .multi-select-switch-area .binf-switch .binf-switch-handle-on {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 16px !important;
+  height: 16px;
+  color: #fff;
+  font-size: 0;
+  margin: 4px 3px;
+  padding: 8px;
+}
+
+.d2-mass-update-table .multi-select-switch-area .binf-switch .binf-switch-handle-off {
+  background: #fff;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 0;
+  width: 16px !important;
+  height: 16px;
+  margin: 2px 3px 2px 5px;
+  padding: 8px;
+}
+
+.d2-mass-update-table .multi-select-switch-area {
+  height: 42px;
+  background-color: #F9F9F9;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #999999;
+  color: #333;
+  font-size: 14px;
+  text-align: right;
+  line-height: 42px;
+}
+
+.d2-mass-update-table.reorder-table .multi-select-switch-area {
+  top: 42px;
+}
+
+.binf-widgets .d2-mass-update-table.csui-nodetable .binf-table.dataTable > tbody > tr td.d2-table-cell-value-count.center-align .d2-field-value-count:focus:before {
+  height: 0;
+  width: 0;
+  outline: none;
+}
+
+.binf-widgets .d2-mass-update-table.csui-nodetable .binf-table.dataTable > tbody > tr td:first-child,
+.binf-widgets .d2-mass-update-table.csui-nodetable .binf-table.dataTable > tbody > tr td.d2-table-cell-value-count.center-align {
+  vertical-align: top;
+}
+
+.binf-widgets .d2-mass-update-table.csui-nodetable .binf-table.dataTable > tbody > tr td:first-child .csui-control-view.csui-checkbox-view,
+.binf-widgets .d2-mass-update-table.csui-nodetable .binf-table.dataTable > tbody > tr td.d2-table-cell-value-count .d2-field-value-count {
+  margin-top: 12px;
+}
+
+.binf-widgets .d2-mass-update-table.csui-nodetable .center-align .d2-field-value-count {
+  position: relative;
+  top: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+}

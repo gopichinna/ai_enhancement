@@ -1,0 +1,8 @@
+{
+  "bundle": [
+    "utils/startup",
+    "extensions/object.onclick.actions.rules",
+    "commands/open.modal.alert",
+    "commands/open.toast.message"
+  ]
+}

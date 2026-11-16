@@ -1,0 +1,72 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-fileupload-field .file-select-area {
+  position: relative;
+}
+
+.d2-fileupload-field .file-select-area input:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid #666666;
+  border-radius: 3px;
+}
+
+.d2-fileupload-field .file-select-area .d2-icon-fileupload-clear, .d2-fileupload-field .file-select-area .d2-icon-fileupload-browse {
+  position: absolute;
+}
+
+.d2-fileupload-field .file-select-area .d2-icon-fileupload-clear, .d2-fileupload-field .file-select-area .d2-icon-fileupload-browse:hover {
+  cursor: pointer;
+}
+
+.d2-fileupload-field .file-select-area input {
+  height: 2em;
+  padding-right: 20px;
+}
+
+.d2-fileupload-field .d2-icon {
+  color: #333333;
+}
+
+.d2-fileupload-field .d2-icon-fileupload-browse {
+  width: 20px;
+  height: 20px;
+  right: 6px;
+  top: 5px;
+  background: url('./images/browse.svg') no-repeat center;
+}
+
+.d2-fileupload-field .d2-icon-fileupload-clear {
+  right: 6px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  color: #333333;
+  background: url('./images/close16.svg') no-repeat center;
+  background-size: contain;
+}
+
+.d2-fileupload-field .d2-icon-fileupload-clear:hover {
+  background: url('./images/close_mo16.svg') no-repeat center;
+  background-size: contain;
+}
+
+.d2-fileupload-field .d2-icon-fileupload-clear:active {
+  background: url('./images/close_md16.svg') no-repeat center;
+  background-size: contain;
+}
+
+
+.d2-fileupload-field .d2-field-disabled .file-select-area input.csui-formfield-disabled{
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+.d2-fileupload-field .d2-field-disabled .file-select-area input.csui-formfield-disabled:focus{
+  border: 2px solid #666666;
+}
+
+.d2-fileupload-field .d2-field-disabled .file-select-area .d2-icon-fileupload-clear {
+  display: none;
+}

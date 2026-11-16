@@ -1,0 +1,17 @@
+{
+  "bundle": [
+    "utils/startup",
+    "commands/node.actions.rules",
+    "commands/manage.group",
+    "dialogs/manage.group/manage.group.dialog",
+    "extensions/admin.groups.icon.sprites",
+    "extensions/admin.groups.perspective",
+    "extensions/admin.groups.tile",
+    "widgets/admin.groups/admin.groups.view",
+    "widgets/admin.groups.members/admin.groups.members.view",
+
+    "json!utils/perspectives/admin.groups.perspective.json",
+    "json!widgets/admin.groups/admin.groups.manifest.json",
+    "i18n!widgets/admin.groups/impl/nls/admin.groups.manifest"
+  ]
+}

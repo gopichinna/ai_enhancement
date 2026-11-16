@@ -1,0 +1,47 @@
+<div class="cs-field-write">
+  <div class="cs-field-write-inner">
+    <div class="node-selection-area">
+      <input type="text" id="{{id}}"  placeholder="{{placeholder}}"
+        {{#if labelledBy }}aria-labelledby="{{labelledBy}}"{{else}}aria-label = "{{placeholder}}"{{/if}}
+        {{#if ariaRequired}} aria-required="{{ariaRequired}}"{{/if}}
+        value="{{data}}">
+      {{#if this.enabled}}
+        {{#if this.hasData}}
+            <span id="clearfilebtn" role="button" aria-label="{{clearTitle}}" tabindex="0" class="icon-clear" title="{{clearTitle}}"></span>
+        {{else}}
+            <span id="openfilebtn" role="button" aria-label="{{browseTitle}}" tabindex="0" class="icon-browse" title="{{browseTitle}}"></span>
+        {{/if}}
+      {{/if}}
+    </div>
+    <div class="multi-node-selection"></div>
+    <span class="validation-error-message {{#if
+        validationErrorMsg}}{{else}}binf-hidden{{/if}}">{{validationErrorMsg}}</span>
+  </div>
+</div>
+
+<div class="cs-field-read">
+  <div class="cs-field-read-inner">
+    <div class="btn-container">
+      <button {{#if this.hasData}} title="{{name}}"{{else}} title="{{noValue}}"{{/if}} {{#if
+          schema.readonly}}tabindex="-1" data-cstabindex="-1"{{/if}}>
+        {{#if this.hasData}}
+          <span class="selected-label">{{data}}</span>
+        {{else}}
+          <span class="selected-label placeholder">{{emptyLabel}}</span>
+        {{/if}}
+      </button>
+    </div>
+    <div class="multiple-selected">
+      <ul class="multiple-selected-list">
+        {{#each multipleSelectObjects}}
+          <li class="multiple-selected-item" tabindex="-1">{{this}}</li>
+        {{/each}}
+      </ul>
+      <div class="d2-list-toolbar">
+        <a href="#" class="d2-list-toolbar-action binf-hidden" data-d2-list-toolbar-action="showMore">{{showMoreLabel}}</a>
+        <a href="#" class="d2-list-toolbar-action binf-hidden" data-d2-list-toolbar-action="showLess">{{showLessLabel}}</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

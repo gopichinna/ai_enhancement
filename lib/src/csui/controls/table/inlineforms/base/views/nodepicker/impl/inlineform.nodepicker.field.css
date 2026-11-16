@@ -1,0 +1,76 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field {
+  position: relative;
+}
+
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field .csui-inlineform-nodepicker-icon-container {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  margin-right: 0;
+}
+.binf-widgets .csui-thumbnail-item-form.csui-new-thumbnail-item .csui-inlineform-field-container .csui-inlineform-text-field .csui-inlineform-nodepicker-icon-container {
+ top: 18px;
+}
+
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field>input,
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field>input.binf-form-control.csui-inlineform-error {
+  padding-right: 27px;
+  background-color: #fff;
+}
+
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field .csui-inlineform-nodepicker-icon {
+  margin-right: 0;
+}
+
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field .csui-inlineform-nodepicker-icon.csui-icon {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border: none;
+
+}
+
+
+.binf-widgets .cs-inline-nodepicker .csui-nodepicker-hasvalue+.csui-inlineform-nodepicker-icon-container .csui-icon.cs-browse-icon {
+  display: none;
+}
+
+.binf-widgets .cs-inline-nodepicker+.csui-inlineform-nodepicker-icon-container .csui-icon.formfield_clear {
+  border-radius: 50%;
+  display: none;
+}
+
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field .cs-inline-nodepicker.csui-inline-nodepicker-hasvalue:not(.csui-nodepicker-required)+.csui-inlineform-nodepicker-icon-container .csui-icon.formfield_clear {
+  display: block;
+  opacity: 0;
+}
+
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field .cs-inline-nodepicker.csui-inline-nodepicker-hasvalue.csui-nodepicker-required+.csui-inlineform-nodepicker-icon-container .csui-icon.icon-cs-browse {
+  display: block;
+  opacity: 0;
+}
+
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field .cs-inline-nodepicker.csui-inline-nodepicker-hasvalue:not(.csui-nodepicker-required) input:hover+.csui-inlineform-nodepicker-icon-container .csui-icon.formfield_clear,
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field .cs-inline-nodepicker.csui-inline-nodepicker-hasvalue:not(.csui-nodepicker-required)+.csui-inlineform-nodepicker-icon-container:hover .csui-icon.formfield_clear,
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field .cs-inline-nodepicker.csui-inline-nodepicker-hasvalue:not(.csui-nodepicker-required)+.csui-inlineform-nodepicker-icon-container .csui-icon.formfield_clear:hover,
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field .cs-inline-nodepicker.csui-inline-nodepicker-hasvalue:not(.csui-nodepicker-required)+.csui-inlineform-nodepicker-icon-container .csui-icon.formfield_clear:focus {
+  opacity: 1;
+}
+
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field .cs-inline-nodepicker.csui-inline-nodepicker-hasvalue.csui-nodepicker-required input:hover+.csui-inlineform-nodepicker-icon-container .csui-icon.icon-cs-browse,
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field .cs-inline-nodepicker.csui-inline-nodepicker-hasvalue.csui-nodepicker-required+.csui-inlineform-nodepicker-icon-container:hover .csui-icon.icon-cs-browse,
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field .cs-inline-nodepicker.csui-inline-nodepicker-hasvalue.csui-nodepicker-required+.csui-inlineform-nodepicker-icon-container .csui-icon.icon-cs-browse:hover,
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field .cs-inline-nodepicker.csui-inline-nodepicker-hasvalue.csui-nodepicker-required+.csui-inlineform-nodepicker-icon-container .csui-icon.icon-cs-browse:focus {
+  opacity: 1;
+}
+
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field .cs-inline-nodepicker.csui-inline-nodepicker-hasvalue:not(.csui-nodepicker-required) input+.csui-inlineform-nodepicker-icon-container .csui-icon.icon-cs-browse,
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field .cs-inline-nodepicker.csui-inline-nodepicker-hasvalue:not(.csui-nodepicker-required)+.csui-inlineform-nodepicker-icon-container .csui-icon.icon-cs-browse {
+  display: none;
+}

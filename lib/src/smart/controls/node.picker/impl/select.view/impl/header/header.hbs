@@ -1,0 +1,49 @@
+<div class="csui-targetbrowse-history">
+      <otc-button icon="smart_action:action_back32" class="csui-targetbrowse-arrow-back cs-go-back
+      icon smart-v2-icon-parent"
+        title="{{backButtonTooltip}}" arialabel="{{backButtonAria}}" data-cstabindex="-1"></otc-button>
+</div>
+{{#if searchView}}
+  <div class="csui-search-item-left-panel">
+    <div class="csui-search-item-type smart-v2-icon-parent">{{{icon-v2 iconName="csui_smart_action_mime32" size="normal"}}}
+    </div>
+    <div class="csui-search-item">
+      <div class="csui-search-item-name">
+        {{name}}
+      </div>
+    </div>
+  </div>
+  <div class="csui-search-item-right-panel">
+    <div class="csui-search-item-location">
+      <div class="csui-search-toolbar-container">
+        {{location}}
+      </div>
+    </div>
+  </div>
+{{else}}
+  <div class="csui-folder-name">
+    <h3 class="folder-name" title="{{title}}">{{title}}</h3>
+    {{#if enableSearch}}
+    <otc-button icon="smart_action:action_search32" class="cs-icon icon-sv-search
+    csui-acc-focusable" tabindex="0" data-cstabindex="-1" 
+      title="{{searchInButtonAria}}" arialabel="{{searchInButtonAria}}"></otc-button>
+    {{/if}}
+    <div class="smart-header-tools"></div>
+  </div>
+
+  <form class="cs-modal-filter">
+    <div class="binf-form-group">
+        <span class="icon-search-placeholder">{{{icon-v2 iconName="csui_smart_action_search32" size="normal"}}}</span>
+      <input class="binf-form-control cs-filter-input smart-persistant-search-small" placeholder="{{search_placeholder}}"
+        tabindex="0" data-cstabindex="-1" aria-label="{{search_aria}}">
+      <otc-button icon="smart_action_16:action_close16" class="smart-inline-search-clear"
+        title="{{clearSearchButtonAria}}" arialabel="{{clearSearchButtonAria}}" tabindex="0"
+        data-cstabindex="-1"></otc-button>
+      <otc-button icon="smart_action:action_close_mid32" class="csui-form-control-search
+      icon-sv-search-hide" title="{{collapseSearch}}" arialabel="{{collapseSearch}}"
+         aria-haspopup="true" tabindex="0" data-cstabindex="-1"></otc-button>
+    </div>
+  </form>
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

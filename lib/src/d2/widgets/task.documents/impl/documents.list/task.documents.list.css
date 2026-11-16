@@ -1,0 +1,105 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel .cs-tab-links.binf-dropdown {
+  height: 62px;
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel .binf-tab-content {
+  width: inherit;
+  height: calc(100% - 62px);
+  border-top: 1px solid #cccccc;
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel .cs-tab-links > .binf-btn-default {
+  height: inherit;
+  border-radius: 0;
+  width: 100%;
+  text-align: left;
+  padding: 19px 16px 19px 20px;
+  background: #EEF2F4;
+  display: flex;
+  border: none;
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel .cs-tab-links > .binf-btn-default:active,
+.binf-widgets .d2-task-documents-list.cs-tabpanel .cs-tab-links > .binf-btn-default.binf-active {
+  box-shadow: none;
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel.dropdown-inactive .cs-tab-links > .binf-btn-default {
+  pointer-events: none;
+  outline: none;
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel .cs-tab-links > .binf-btn-default .cs-label {
+  font-size: 18px;
+  font-weight: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 24px);
+  line-height: 22px;
+  display: inline-block;
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel .cs-tab-links > .binf-btn-default .icon-caret-down {
+  margin: 4px 0 0 6px;
+  background-position: center -2px;
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel.dropdown-inactive .cs-tab-links > .binf-btn-default .icon-caret-down {
+  display: none;
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel .cs-tab-links.binf-dropdown .binf-dropdown-menu.csui-perfect-scrolling {
+  overflow: hidden;
+  position: absolute;
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel .cs-tab-links.binf-dropdown .binf-dropdown-menu {
+  margin-left: 2em;
+  min-width: 5em;
+  padding: 0;
+  margin-top: 1px;
+  max-height: calc(100vh - 220px);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel.dropdown-inactive .cs-tab-links.binf-dropdown .binf-dropdown-menu {
+  display: none;
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel .cs-tab-links.binf-dropdown .binf-dropdown-menu li a:hover {
+  background-color: #9ab3c2;
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel .d2-task-working-files-listview,
+.binf-widgets .d2-task-documents-list.cs-tabpanel .d2-task-supporting-files-listview,
+.binf-widgets .d2-task-documents-list.cs-tabpanel .d2-task-supporting-files-listview .d2-supporting-files-container {
+  width: 100%;
+  height: 100%;
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel .d2-task-supporting-files-listview .d2-toolbar-task-supporting-files {
+  display: none;
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel .d2-listview .cs-list-group .binf-list-group-item.new-file-highlight:not(.binf-active):not(:hover) {
+  background-color: #E7F0D9;
+}
+
+.binf-widgets .d2-task-documents-list.cs-tabpanel .d2-listview .csui-perfect-scrolling .cs-list-group .list-item-title {
+  width: calc(100% - 52px); 
+}
+
+.binf-widgets .d2-task-attachments .d2-listview.cs-simplelist.binf-panel.binf-panel-default {
+  overflow-y: auto;
+}

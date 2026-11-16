@@ -1,0 +1,29 @@
+<div class='binf-row'>
+  
+<div class="binf-col-sm-12 csui-version-warning {{#if hideWarningMessage }} binf-hidden {{/if}}" id = "{{warningMessageId}}">
+    {{warningMessage}}
+  </div>
+  <div class="binf-col-sm-12 csui-version-update {{#if hideSelectVersion }} binf-hidden {{/if}}">
+  <div class="binf-control-label">
+  {{selectVersionlabel}}
+  </div>
+    <label class="binf-radio-inline">
+      <input type="radio" name="version" value="true" checked aria-label="{{minorVersionlabel}}"> {{minorVersion}} </input>
+    </label>
+    <label class="binf-radio-inline">
+      <input type="radio" name="version" value="false" aria-label="{{majorVersionlabel}}"> {{majorVersion}} </input>
+    </label>
+  </div>
+  <div class="binf-col-sm-12 csui-version-reserve {{#if isNotReserved }} binf-hidden {{/if}}">
+    <label class="binf-checkbox-inline">
+      <input type="checkbox" name="reserve" aria-label="{{unreserve}}"> {{keepDocumentReserved}}
+    </label>
+  </div>
+  <div class="binf-col-sm-12 csui-version-description" >
+    <label class=" binf-control-label" for="{{descriptionFieldId}}" id = "{{descriptionLabelId}}">{{description}}</label>
+    <div class="version-description"></div>
+  <div/>
+</div>
+
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

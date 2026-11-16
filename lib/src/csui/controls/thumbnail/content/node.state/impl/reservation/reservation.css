@@ -1,0 +1,12 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-thumbnail-nodestate .csui-node-state-reservation > button {
+  border: none;
+  background: none;
+  padding: 1px 0;
+}
+
+.csui-thumbnail-nodestate .csui-node-state-reservation > button:focus {
+  outline: 1px dotted #333333;
+}

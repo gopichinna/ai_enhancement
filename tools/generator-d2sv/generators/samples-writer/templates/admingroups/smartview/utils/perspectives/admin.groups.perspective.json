@@ -1,0 +1,15 @@
+{
+  "type": "left-center-right",
+  "options": {
+    "NoBreadCrumbsSupport": true,
+    "left": {
+      "type": "<%= namespace %>/widgets/admin.groups",
+      "options": {
+        "enableSelectionHighlight": true
+      }
+    },
+    "center": {
+      "type": "<%= namespace %>/widgets/admin.groups.members"
+    }
+  }
+}

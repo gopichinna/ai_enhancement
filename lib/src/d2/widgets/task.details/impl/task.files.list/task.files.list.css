@@ -1,0 +1,54 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-task-files-list.content-tile {
+  background-color: #FFFFFF;
+}
+
+.binf-widgets .d2-task-files-list.tile
+{
+  box-shadow: none;
+}
+
+.d2-task-files-list.cs-list .tile-content {
+  height: 100%;
+}
+
+.binf-widgets .d2-task-files-list .tile-content
+{
+  background-color: #FFFFFF;
+}
+
+.binf-widgets .d2-task-files-list.tile:hover {
+  outline: none;
+  outline-offset: none;
+}
+
+.binf-widgets .d2-task-files-list.tile:active {
+  outline: none;
+  outline-offset: none;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .binf-widgets .d2-task-files-list.tile:hover {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .binf-widgets .d2-task-files-list.tile:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.cs-list.d2-task-files-list .tile-content .binf-list-group .cs-emptylist-container:not(.csui-state-loading) {
+  padding-top: 35%;
+  background-size: auto auto;
+  background-position: center bottom;
+  background-color: transparent;
+}
+
+.binf-widgets .d2-task-files-list .cs-emptylist-text .csui-no-result-message {
+  font-size: 17px;
+}

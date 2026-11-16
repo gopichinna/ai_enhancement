@@ -1,0 +1,6 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-workflow-details-widget .d2-task-simple-list .d2-task-simple-list-container > .d2-listview .list-item-title.unread {
+  font-weight: normal;
+}

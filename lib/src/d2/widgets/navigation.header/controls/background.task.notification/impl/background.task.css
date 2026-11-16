@@ -1,0 +1,59 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav div[role="menuitem"].d2-toolbar-background-task {
+  margin-right: .5em;
+}
+
+.d2-toolbar-background-task .d2-toolbar-background-task-view {
+  width: auto;
+  height: auto;
+}
+
+.d2-toolbar-background-task .d2-toolbar-background-task-view  .d2-toolbar-taskview-icon-container {
+  padding: 11px 8px 10px 8px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.csui-navbar .d2-toolbar-background-task .d2-toolbar-background-task-view  .d2-toolbar-taskview-icon-container {
+  padding: 9px 8px;
+}
+
+.d2-toolbar-background-task .d2-toolbar-background-task-view  .d2-toolbar-taskview-icon-container .d2-icon-toolbar-taskview {
+  width: 42px;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.d2-toolbar-background-task .d2-toolbar-background-task-view[aria-hidden="true"]  .d2-toolbar-taskview-icon-container .d2-icon-toolbar-taskview {
+  height: 0;
+}
+
+.d2-toolbar-background-task .d2-toolbar-background-task-view[aria-hidden="false"]  .d2-toolbar-taskview-icon-container .d2-icon-toolbar-taskview {
+  height: 42px;
+}
+
+.d2-toolbar-background-task .d2-toolbar-background-task-view  .d2-toolbar-taskview-icon-container .d2-icon-toolbar-taskview {
+  background-image: url("images/processingcomplete42.svg");
+  animation: none;
+}
+
+.d2-toolbar-background-task .d2-toolbar-background-task-view  .d2-toolbar-taskview-icon-container .d2-icon-toolbar-taskview.pending {
+  background-image: url("images/processing42.svg");
+  animation: taskview-icon-rotation 1.5s infinite linear;
+}
+
+@keyframes taskview-icon-rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+

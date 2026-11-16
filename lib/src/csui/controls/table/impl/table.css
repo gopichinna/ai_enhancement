@@ -1,0 +1,1066 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-nodetable {
+  background-color: #ffffff;
+  opacity: 1.0;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  min-width: 0;
+  min-height: 0; 
+}
+
+.binf-widgets .csui-nodetable.csui-not-in-flex-container {
+  height: 100%; 
+  overflow: hidden;
+}
+
+.csui-nodetable .dataTables_wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
+
+.csui-nodetable .dataTables_wrapper.csui-nowrap-table {
+  display: block; 
+  overflow: auto;
+}
+
+.csui-nodetable:not(.csui-table-empty) .dataTables_wrapper.csui-nowrap-table {
+  overflow: overlay;
+}
+.csui-nodetable .dataTables_wrapper.csui-nowrap-table::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.csui-nodetable.csui-table-empty .dataTables_wrapper {
+  flex: 0 0 auto;
+  
+  
+}
+
+.dataTables_wrapper > div {
+  
+  display: none;
+}
+
+.dataTables_empty {
+  
+  display: none;
+}
+
+
+.csui-nodetable.csui-not-ready .dataTables_wrapper,
+  
+.csui-nodetable.csui-not-ready .dataTables_wrapper .binf-collapse.binf-in {
+  visibility: hidden !important;
+}
+
+
+
+
+.binf-widgets table.binf-table.csui-nowrap-table {
+  flex: unset;
+  flex-direction: unset;
+  width: auto;
+  min-width: 100%;
+  overflow-x: scroll;
+  table-layout: fixed;
+  display: table;
+  border-collapse: separate; 
+}
+
+.binf-widgets .binf-table.csui-nowrap-table thead {
+  display: table-header-group;
+  width: unset;
+  height: unset;
+  min-width: unset;
+  max-width: unset;
+}
+
+.binf-widgets .binf-table.csui-nowrap-table tbody {
+  display: table-row-group;
+  width: unset;
+  min-width: unset;
+  max-width: unset;
+}
+
+.binf-widgets .binf-table.csui-nowrap-table > thead > tr,
+.binf-widgets .binf-table.csui-nowrap-table > tbody > tr {
+  display: table-row;
+  width: unset;
+  min-width: unset;
+  max-width: unset;
+}
+
+
+.binf-widgets .binf-table.csui-nowrap-table > thead > tr {
+  z-index: 2;
+  position: sticky;
+  top: 0; 
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, .3);
+}
+
+.binf-widgets .binf-table.csui-nowrap-table > thead > tr > th,
+.binf-widgets .binf-table.csui-nowrap-table > tbody > tr > td {
+  display: table-cell;
+  width: unset;
+  min-width: unset;
+  max-width: unset;
+}
+
+
+.binf-widgets .binf-table.csui-nowrap-table .csui-nowrap-table__column_sticky {
+  z-index: 1;
+  position: sticky;
+  left: 0; 
+}
+
+.binf-widgets .binf-table.csui-nowrap-table > thead > tr > th {
+  vertical-align: middle;
+
+  
+  margin-top: unset;
+  margin-bottom: unset;
+}
+
+.csui-nodetable .binf-table > tbody > tr > td {
+  border-top: var(--csui-table-row-seperator-width) solid #ddd;
+}
+
+.csui-nodetable .csui-nowrap-table > tbody > tr > td {
+  border-top: 0;
+  border-bottom: var(--csui-table-row-seperator-width) solid #e6e6e6;
+}
+
+.csui-nodetable .csui-nowrap-table > tbody > tr > td.csui-nowrap-table__column_sticky {
+  border-bottom-color: #e0e0e0;
+}
+
+.binf-widgets .binf-table.csui-nowrap-table tr.odd {
+  background-color: white;
+}
+
+.binf-widgets .binf-table.csui-nowrap-table tr.even {
+  background-color: #f4f4f4;
+}
+
+.binf-widgets .binf-table.csui-nowrap-table .odd:not(.csui-state-hover):not(.csui-table-row-shows-inlineform):not(.binf-active) .csui-nowrap-table__column_sticky:not(.csui-column-highlight) {
+    background-color: #f8f9fd;
+}
+
+.binf-widgets .binf-table.csui-nowrap-table .even:not(.csui-state-hover):not(.csui-table-row-shows-inlineform):not(.binf-active) .csui-nowrap-table__column_sticky:not(.csui-column-highlight) {
+  background-color: #eff0f4;
+}
+
+.binf-widgets .binf-table.csui-nowrap-table tr.odd.csui-new-item.csui-saved-item:not(.csui-state-hover):not(.csui-table-row-shows-inlineform) > td:not(.csui-column-highlight),
+.binf-widgets .binf-table.csui-nowrap-table tr.even.csui-new-item.csui-saved-item:not(.csui-state-hover):not(.csui-table-row-shows-inlineform) > td:not(.csui-column-highlight) {
+  background-color: #e7efda;
+}
+
+.binf-widgets .binf-table.csui-nowrap-table > tbody > tr.csui-state-hover > td {
+  background-color: #b2bec5;
+}
+
+
+.binf-widgets .binf-table.csui-nowrap-table > tbody > tr > td.csui-table-actionbar-shown {
+  z-index: 2;
+}
+
+
+
+.binf-widgets .binf-table.csui-nowrap-table .csui-nowrap-table__cell-wrapper {
+  display: flex;
+  align-items: center;
+  height: 26px;
+}
+
+.binf-table.csui-nowrap-table:not(.csui-table-horizontally-scrolled) > thead > tr > th.csui-nowrap-table__column_last-sticky,
+.binf-table.csui-nowrap-table:not(.csui-table-horizontally-scrolled) > tbody > tr > td.csui-nowrap-table__column_last-sticky {
+  border-right: 1px solid #98a8b2;
+}
+
+.binf-table.csui-nowrap-table > thead > tr > th.csui-nowrap-table__column_last-sticky {
+  overflow-y: visible;
+}
+
+.binf-widgets .binf-table.csui-nowrap-table > thead > tr > th .csui-vertical-sticky-divider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  height: 100vh; 
+  width: 1px;
+  background-color: #98a8b2;
+  box-shadow: -1px 0 0 rgba(255, 255, 255, .15), 1px 0 3px rgba(0, 0, 0, .7);
+  clip-path: inset(0 -3px 0 0);
+  display: none;
+}
+
+.binf-table.csui-nowrap-table.csui-table-horizontally-scrolled > thead > tr > th .csui-vertical-sticky-divider {
+  display: block;
+}
+
+.binf-widgets .binf-table.csui-nowrap-table tr .csui-table-cell-last-visible {
+  width: 100%;
+}
+
+
+
+.binf-widgets .csui-nodetable .dataTables_wrapper.csui-accessibility-table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.binf-widgets .csui-accessibility-table .binf-table.dataTable {
+  display: table;
+}
+
+.binf-widgets .csui-accessibility-table .binf-table.dataTable thead {
+  display: table-header-group;
+}
+.binf-widgets .csui-accessibility-table .binf-table.dataTable tbody {
+  display: table-row-group;
+}
+.binf-widgets .csui-accessibility-table .binf-table.dataTable tr {
+  display: table-row;
+}
+.binf-widgets .csui-accessibility-table .binf-table.dataTable td,
+.binf-widgets .csui-accessibility-table .binf-table.dataTable th {
+  display: table-cell;
+}
+.binf-widgets .csui-accessibility-table .binf-table.dataTable td.dataTables_empty {
+  display: none;
+}
+.binf-widgets .csui-accessibility-table .binf-table.dataTable .csui-accessibility-table__cell-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.binf-table.dataTable {
+  margin: 0; 
+}
+
+.binf-table.dataTable > tbody > tr.csui-state-hover td {
+  background-color: #bac9ce;
+  cursor: pointer;
+}
+
+.binf-table.dataTable > tbody > tr:active {
+  background-color: #bac9ce;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-state-hover:active a:focus {
+  outline: 0 none;
+}
+
+.binf-table.dataTable .DTTT.binf-btn-group {
+  display: none;
+}
+
+.binf-table.dataTable.csui-nowrap-table th.csui-align-left .csui-focusable-table-column-header,
+.binf-table.dataTable .csui-align-left {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.binf-table.dataTable.csui-nowrap-table th.csui-align-right .csui-focusable-table-column-header,
+.binf-table.dataTable .csui-align-right {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.binf-table.dataTable.csui-nowrap-table th.csui-align-center .csui-focusable-table-column-header,
+.binf-table.dataTable .csui-align-center {
+  justify-content: center;
+  text-align: center;
+}
+
+.binf-table.dataTable .icon-sortArrowUp,
+.binf-table.dataTable .icon-sortArrowDown {
+  margin-left: 6px;
+  margin-right: 6px;
+  vertical-align: sub;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+}
+
+.csui-nodetable .cellview_warning {
+  color: #cd3632;
+  font-weight: bolder;
+}
+
+.binf-table.dataTable > thead .sorting,
+.binf-table.dataTable > thead .sorting_asc,
+.binf-table.dataTable > thead .sorting_desc,
+.binf-table.dataTable > thead .sorting_asc_disabled,
+.binf-table.dataTable > thead .sorting_desc_disabled {
+  cursor: pointer;
+}
+
+.binf-widgets .binf-table.dataTable {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  min-height: 0;
+}
+
+.binf-widgets .binf-table {
+  font-size: 13px;
+}
+
+.binf-table.dataTable > thead {
+  display: block;
+  flex: 0 0 auto;
+  position: relative;
+  height: 42px;
+}
+
+.binf-table.dataTable > thead > tr {
+  display: flex;
+  flex: 1 1 100%;
+}
+
+.binf-table.dataTable > thead > tr,
+.binf-table.dataTable > thead th {
+  background-color: #eef2f4;
+}
+
+.binf-table.dataTable > tbody {
+  display: block;
+  flex: 1 1 auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+ .binf-table.dataTable > tbody {
+   padding-bottom: 1px;
+ }
+}
+
+
+
+.csui-nodetable .binf-table > thead > tr > th {
+  border-bottom: none;
+  display: inline-flex;
+}
+
+.csui-nodetable.csui-wrap-text .binf-table > thead > tr > th {
+  vertical-align: top;
+}
+
+
+
+
+.csui-nodetable .binf-table > thead > tr > th {
+  height: 42px;
+  line-height: 37px; 
+}
+
+.csui-nodetable .binf-table > tbody > tr.csui-no-border > *,
+.csui-nodetable .binf-table > tbody > tr:first-child > * {
+  height: var(--csui-table-row-height);
+}
+
+.csui-nodetable .csui-nowrap-table > tbody > tr.csui-no-border > *,
+.csui-nodetable .csui-nowrap-table > tbody > tr:first-child > *,
+.csui-nodetable .binf-table > tbody > tr > * {
+  height: calc(var(--csui-table-row-height) + var(--csui-table-row-seperator-width));
+}
+
+.accessibility .csui-nodetable .binf-table > tbody > tr > * {
+  height: 54px;
+}
+
+
+
+
+.csui-nodetable .binf-table tr > * {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr > * {
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+.csui-nodetable .binf-table tr:not(.csui-details-row) > * > * {
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 8px;
+}
+
+.csui-nodetable .binf-table tr.csui-details-row-description > * > *,
+.csui-nodetable .binf-table tr:not(.csui-details-row) > * > * {
+  padding-left: 8px;
+}
+
+.binf-table.csui-nowrap-table tr:not(.csui-details-row) > * >* {
+  margin-left: 8px;
+}
+
+.csui-nowrap-table tr:not(.csui-details-row) .csui-column-resizable > * {
+  margin-right: 8px;
+}
+
+.csui-nowrap-table tr:not(.csui-details-row) > .csui-table-cell-_select > *,
+.csui-nowrap-table tr:not(.csui-details-row) > .csui-table-cell-type > *,
+.csui-nowrap-table tr:not(.csui-details-row) > .csui-table-cell-name > * {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.binf-table tr:not(.csui-details-row) > * > .csui-nowrap-table__cell-wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.binf-table tr:not(.csui-details-row) > * > .csui-nowrap-table__cell-wrapper > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+@media(forced-colors:active) {
+  .csui-nodetable .binf-table tr:not(.csui-details-row) > * > *>a:focus{
+    outline: 1px solid black;
+  }
+  .csui-nodetable .binf-table tr:not(.csui-details-row) > * > *>button:focus{
+    outline: 1px solid black;
+    outline-offset: -2px;
+  }
+  .binf-widgets div:focus{
+    outline: 1px solid black;
+  }
+  .csui-nodetable  tr:not(.csui-details-row) th[data-csui-attribute$="name"] >div:focus,
+  .csui-nodetable  tr:not(.csui-details-row) th[data-csui-attribute$="name"] >div .csui-table-search-icon:focus,
+  .csui-nodetable  tr:not(.csui-details-row) th[data-csui-attribute$="Name"] >div:focus,
+  .csui-nodetable  tr:not(.csui-details-row) th[data-csui-attribute$="Name"] >div .csui-table-search-icon:focus{
+    margin: 2px;
+  }
+  .binf-widgets .binf-table.dataTable > tbody > tr > *>a:focus{
+    outline: 1px solid black;
+  }
+}
+
+
+.csui-nodetable .binf-table tr:not(.csui-details-row) > * > span {
+    display: block;
+}
+
+.csui-nodetable.csui-wrap-text .binf-table tr > * > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.csui-nodetable.csui-wrap-text .csui-nowrap-table tr > * > * {
+  padding-left: 16px;
+}
+
+.csui-wrap-text .csui-nowrap-table tr > .csui-table-cell-type > *,
+.csui-wrap-text .csui-nowrap-table tr > .csui-table-cell-name > * {
+  padding-left: 8px;
+}
+
+
+.csui-nodetable .binf-table tr > :first-child > * {
+  padding-left: 12px;
+}
+
+
+.csui-nodetable .binf-table tr:not(.csui-details-row) > .csui-table-cell-last-visible > * {
+  padding-right: 12px;
+}
+
+.binf-table.dataTable > tbody > tr > td.csui-table-actionbar-shown {
+  padding-right: 0; 
+}
+
+.binf-widgets .binf-table.dataTable > thead > tr > th {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 8px 0 8px 0;
+}
+
+
+
+.csui-nodetable .csui-table-header-icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
+
+.csui-nodetable .binf-table > tbody .csui-icon-group {
+  width: 26px;
+  height: 26px;
+}
+
+.csui-nodetable .binf-table > tbody .csui-icon-group > .csui-icon,
+.csui-nodetable .binf-table > tbody .csui-icon-group > .csui-icon-v2 {
+  width: 26px;
+  height: 26px;
+}
+
+
+
+.binf-widgets .binf-table.dataTable > thead > tr > th > .csui-nowrap-table__cell-wrapper > div,
+.binf-widgets .binf-table.dataTable > thead > tr > th > div {
+  overflow: hidden;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > * .csui-icon-group > .csui-icon {
+  left: 0;
+}
+
+.binf-widgets .binf-table.dataTable > thead > tr > th .csui-table-column-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: normal;
+}
+
+.binf-widgets .binf-table.dataTable > thead > tr > th.sorting_asc .csui-table-column-text,
+.binf-widgets .binf-table.dataTable > thead > tr > th.sorting_desc .csui-table-column-text {
+  font-weight: bold;
+}
+
+.binf-widgets .csui-focusable-table-column-header {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.binf-widgets .csui-nodetable:not(.csui-wrap-text) .csui-focusable-table-column-header {
+  align-items: center;
+  justify-content: start;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr .csui-table-cell-name .csui-focusable-table-column-header {
+  align-items: center;
+}
+
+.binf-widgets .csui-focusable-table-column-header.csui-empty {
+  width: 39px;
+  margin: 0;
+}
+
+.binf-widgets .csui-table-cell-node-state.csui-column-adapt .csui-focusable-table-column-header.csui-empty {
+  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.binf-widgets .csui-nowrap-table > thead > tr > th > .csui-nowrap-table__cell-wrapper > .csui-table-column-search:not(.csui-searchbox-shown),
+.binf-widgets .binf-table.dataTable > thead > tr > th > .csui-table-column-search:not(.csui-searchbox-shown) {
+  flex: 0 0 auto;
+}
+
+.binf-widgets .csui-nowrap-table > thead > tr > th > .csui-nowrap-table__cell-wrapper > .csui-table-column-search,
+.binf-widgets .binf-table.dataTable > thead > tr > th > .csui-table-column-search {
+  height: 100%;
+  align-items: center;
+}
+
+.binf-widgets .csui-nowrap-table > thead > tr > th > .csui-nowrap-table__cell-wrapper > .csui-table-column-search.csui-searchbox-shown:focus,
+.binf-widgets .binf-table.dataTable > thead > tr > th > .csui-table-column-search.csui-searchbox-shown:focus {
+  outline-style: none;
+  outline-width: 0;
+}
+
+.binf-widgets .binf-table.dataTable > thead > tr > th:focus,
+.binf-widgets .binf-table.dataTable > tbody > tr > :focus {
+  outline: 1px dotted #333333;
+  outline-offset: -2px;
+}
+
+@media(forced-colors:active){
+  .binf-widgets .binf-table.dataTable > thead > tr > th:focus, .binf-widgets .binf-table.dataTable > tbody > tr > :focus{
+    outline: 1px solid black;
+    outline-offset: -2px;
+  }
+  .binf-widgets .binf-table.dataTable > thead > tr > th:focus, .binf-widgets .binf-table.dataTable > tbody > tr > :hover{
+    outline: 1px solid black;
+    outline-offset: -2px;
+  }
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > * {
+  cursor: default;
+  outline: none;
+  line-height: normal;
+}
+
+
+.binf-widgets .csui-nodetable:not(.csui-wrap-text) .binf-table.dataTable > tbody > tr > *,
+.binf-widgets.accessibility .binf-table.dataTable > tbody > tr > * {
+  vertical-align: middle;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+
+.binf-widgets .csui-nodetable .binf-table.csui-nowrap-table > tbody > tr > .csui-column-sized > *,
+.binf-widgets .csui-nodetable .binf-table.csui-nowrap-table > tbody > tr > .csui-column-resizing > * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets.accessibility .binf-table.dataTable > thead > tr > th > * {
+  align-items: center;
+}
+
+.binf-widgets.accessibility .binf-table.dataTable > thead > tr > th > div {
+  height: 42px;
+}
+
+.accessibility  .csui-table-column-search > .csui-table-search-icon {
+  height: 32px;
+}
+
+.csui-nodetable .binf-table.csui-nowrap-table > thead th .csui-table-column-search > .csui-table-search-icon .csui-icon-v2-view {
+  display: flex;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-table-row-shows-inlineform > td.csui-table-cell-type {
+  vertical-align: middle;
+  padding-top: 0;
+}
+
+.binf-widgets .binf-table.csui-nowrap-table > tbody > tr.csui-table-row-shows-inlineform > td,
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-table-row-shows-inlineform {
+  background: #dce4e8;
+}
+
+.binf-widgets .csui-nodetable.csui-wrap-text .binf-table > tbody > tr > * {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-state-hover {
+  background-color: #b2bec5;
+  cursor: pointer;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-state-hover:active,
+.binf-widgets .binf-table.dataTable > tbody > tr:active {
+  background-color: #98a8b2;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > td.binf-active,
+.binf-widgets .binf-table.dataTable > tbody > tr > th.binf-active,
+.binf-widgets .binf-table.dataTable > tbody > tr.binf-active > td,
+.binf-widgets .binf-table.dataTable > tbody > tr.binf-active > th {
+  background-color: #cbd3d9;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-no-border > * {
+  border-top: none;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr:first-child > td {
+  border-top: none;
+}
+
+tr.csui-new-item {
+  background-color: rgb(223, 231, 234); 
+}
+
+tr.csui-new-item.csui-saved-item {
+  background-color: rgb(231, 240, 217); 
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-has-details-row > * {
+  border-bottom: none;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-details-row {
+  line-height: 169px;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-details-row.csui-cut-row,
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-details-row-metadata.csui-cut-row .binf-form-group label,
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-details-row-metadata.csui-cut-row .binf-form-group input {
+  color: #a7a7a7;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-details-row > * {
+  border-top: none;
+  padding-bottom: 13px;
+  height: auto;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr.csui-details-row.csui-details-row-metadata > td {
+  width: 100%;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > td.csui-details-row > div {
+  padding-top: 0;
+  white-space: normal;
+  overflow-y: hidden;
+  height: auto;
+  display: flex;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > td.csui-details-row > div.cs-description {
+  flex-direction: column;
+  max-width: 864px;
+}
+
+.binf-widgets .binf-table.dataTable>tbody>tr>td.csui-details-row>div.cs-description .csui-description-colunm,
+.binf-widgets .binf-table.dataTable>tbody>tr>td.csui-details-row>div.cs-description .csui-summary-colunm {
+  width : 100%
+}
+
+@media (max-device-width: 768px) and (orientation: portrait) {
+  .binf-widgets .binf-table.dataTable > tbody > tr > td.csui-details-row > div.cs-description {
+    max-width: 60%;
+  }
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > .csui-column-type #icon_group {
+  position: relative;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > .csui-column-type #reserved_indicator {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > .csui-column-type #overlay {
+  position: absolute;
+  top: -4px;
+  left: -1px;
+}
+
+.binf-widgets .binf-table.dataTable > tbody > tr > .csui-column-type img {
+  border-style: none;
+}
+
+.binf-widgets .csui-td-content {
+  position: absolute;
+  width: inherit;
+  max-width: 100%;
+  line-height: 18px;
+}
+
+.binf-widgets .csui-nodetable:not(.csui-wrap-text) .csui-td-content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.csui-nodetable td > a,
+.csui-nodetable th > a,
+.csui-nodetable td div > a,
+.csui-nodetable th div > a {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.binf-widgets .csui-nodetable:not(.csui-wrap-text) .binf-table.dataTable .csui-nowrap {
+  white-space: nowrap;
+}
+
+.binf-widgets .binf-table.dataTable .csui-truncate {
+  text-overflow: ellipsis;
+}
+
+.csui-nodetable #menuAction {
+  margin-left: 6px;
+}
+
+.csui-nodetable .csui-menutrigger {
+  display: inline-block;
+  height: 12px;
+  width: 13px;
+  background-position: -66px -18px;
+}
+
+.csui-nodetable #disabling_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 0;
+  background-color: #aaaaaa;
+  opacity: .2;
+  filter: Alpha(Opacity=20);
+  z-index: 998;
+  cursor: progress;
+}
+
+.fg-toolbar .custom {
+  float: left;
+  margin-right: .5em;
+}
+
+.fg-toolbar .csui-backbutton {
+  margin-top: -1px;
+}
+
+.csui-nodetable .dataTables_filter input {
+  line-height: 1.4em;
+  padding-left: .3em;
+  padding-right: .3em;
+}
+
+
+.csui-nodetable a,
+.csui-nodetable a:link,
+.csui-nodetable a:hover,
+.csui-nodetable a:visited {
+  text-decoration: none;
+  color: #333333;
+}
+
+.binf-widgets .csui-nodetable a:focus {
+  outline-offset: -2px;
+}
+
+
+.dataTables_wrapper {
+  display: table;
+  width: 100%;
+}
+
+
+
+.binf-widgets .csui-nodetable > div.csui-table-empty {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+  color: #757575;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: inherit;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.binf-widgets .csui-table-empty-default.csui-table-empty:not(.csui-state-loading) {
+  background-image: url("../../../themes/carbonfiber/image/icons/es_folder_noperms220.svg");
+  background-repeat: no-repeat;
+  background-position: center 16px;
+}
+
+.binf-widgets .csui-table-empty-default.csui-table-empty.csui-can-add-items:not(.csui-state-loading) {
+  background-image: url("../../../themes/carbonfiber/image/icons/es_folder220.svg");
+  background-repeat: no-repeat;
+  background-position: center 16px;
+}
+
+.binf-widgets .csui-fav2-table .csui-favorite-masterdetail-view .csui-table-view .csui-table-empty.csui-table-empty-default:not(.csui-state-loading) {
+  background-image: url("../../../themes/carbonfiber/image/icons/es_favorites220.svg");
+  background-repeat: no-repeat;
+  background-position: center 16px;
+}
+
+.binf-widgets .csui-myassignmentstable .csui-table-empty.csui-table-empty-default:not(.csui-state-loading) {
+  background-image: url("../../../themes/carbonfiber/image/icons/es_assignments220.svg");
+  background-repeat: no-repeat;
+  background-position: center 16px;
+}
+
+.binf-widgets .csui-table-empty.csui-table-empty-default .csui-no-result-message,
+.binf-widgets .csui-favorite-masterdetail-view .csui-table-empty .csui-no-result-message {
+  font-size: 18px;
+  font-style: normal;
+  top: 252px;
+  position: relative;
+  color: #333333;
+}
+
+.binf-widgets .binf-table.dataTable.csui-table-empty > tbody > tr.csui-details-row {
+  height: 0;
+  display: flex;
+}
+
+
+
+
+.binf-widgets .csui-nodetable .csui-table-alternative-header {
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 0; 
+  width: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  transition: flex-basis 0.3s; 
+}
+
+.binf-widgets .csui-nodetable .csui-table-alternative-header.csui-table-alternative-header-visible {
+  font-size: 14px; 
+  flex-basis: 3em;
+  visibility: visible;
+  overflow: visible;
+  transition: flex-basis 0.3s;
+}
+
+.csui-single-select th.csui-table-cell-_select {
+  visibility: hidden;
+}
+
+.binf-widgets .csui-table-cell-generic-text[data-csui-attribute="order"] {
+  min-width:75px;
+  text-align: center;
+}
+
+.binf-widgets .csui-table-cell-generic-text[data-csui-attribute="order"] .csui-table-cell-text {
+  background-color: #f0f2ff;
+  border-radius: 3px;
+  font-size: 13px;
+  line-height: 24px;
+  color: #111b58;
+  display: inline-block;
+  max-height: 24px;
+  min-width: 24px;
+}
+
+.binf-widgets .csui-order-shortname-colomn[data-csui-attribute="order"] .csui-table-cell-text {
+  font-size: 0;
+  max-width: 24px;
+}
+
+.binf-widgets .csui-order-shortname-colomn[data-csui-attribute="order"] div.csui-table-cell-text::first-letter {
+  font-size: 13px;
+}
+
+.binf-widgets .csui-nodetable:not(.csui-wrap-text) .csui-truncate[data-csui-attribute="order"] > div.csui-table-cell-text {
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-right: 22px;
+  text-overflow: initial;
+  white-space: normal;
+}
+
+.binf-widgets .csui-nodetable .csui-table-actionbar-bubble.csui-state-loading {
+  display: none;
+}
+
+
+.csui-nodetable .binf-table.csui-nowrap-table > thead > tr > th.csui-resize-handle-spacing {
+  min-width: calc(24px + 12px);
+}
+
+
+.csui-nodetable .binf-table.csui-nowrap-table > thead > tr > th.csui-resize-handle-spacing > .csui-focusable-table-column-header,
+.csui-nodetable .binf-table.csui-nowrap-table > thead > tr > th.csui-resize-handle-spacing > .csui-nowrap-table__cell-wrapper,
+.csui-nodetable .binf-table.csui-nowrap-table > thead > tr > th.csui-resize-handle-padding > .csui-focusable-table-column-header,
+.csui-nodetable .binf-table.csui-nowrap-table > thead > tr > th.csui-resize-handle-padding > .csui-nowrap-table__cell-wrapper {
+  margin-right: calc(24px + 12px);
+}
+
+.csui-nodetable .binf-table.csui-nowrap-table > thead > tr > th {
+  position: relative;
+}
+
+.csui-nodetable .binf-table.csui-nowrap-table > thead > tr > th > .csui-column-header-menu {
+  position: absolute;
+  right: 12px;
+  top: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.binf-widgets .csui-column-header-menu > .csui-toolbar > .binf-dropdown > .binf-dropdown-toggle > * {
+  visibility: hidden;
+}
+
+.binf-widgets .csui-column-highlight > .csui-column-header-menu > .csui-toolbar > .binf-dropdown > .binf-dropdown-toggle > *,
+.binf-widgets .csui-column-header-menu.csui-visible > .csui-toolbar > .binf-dropdown > .binf-dropdown-toggle > *,
+.binf-widgets .csui-column-header-menu > .csui-toolbar > .binf-dropdown > .binf-dropdown-toggle[aria-expanded="true"] > * {
+  visibility: visible;
+}
+
+.csui-nodetable .binf-table.csui-nowrap-table > thead > tr > th > .csui-column-header-menu > .csui-toolbar > .csui-more-dropdown-wrapper > .binf-dropdown-toggle {
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.csui-nodetable .binf-table.csui-nowrap-table > thead > tr > th > .csui-column-header-menu > .csui-toolbar > .csui-more-dropdown-wrapper > .binf-dropdown-toggle > * {
+  width: 24px;
+  height: 24px;
+}
+
+.csui-nodetable .binf-table.csui-nowrap-table > thead > tr > th .csui-column-resize-handle {
+  cursor: col-resize;
+  height: 100%;
+  position: absolute;
+  max-width: 24px;
+  min-width: 24px;
+  width: 24px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  
+  right: -12.5px;
+  top: 0;
+  background: transparent;
+  visibility: visible;
+}
+
+.csui-nodetable .binf-table.csui-nowrap-table tr .csui-column-resizable:not(.csui-nowrap-table__column_last-sticky) {
+  border-right: 1px solid rgba(102, 102, 102, .3);
+}
+
+.csui-nodetable .binf-table.csui-nowrap-table > thead > tr > th.csui-column-highlight:focus {
+  outline: unset;
+}
+
+.csui-nodetable .binf-table.csui-nowrap-table > thead > tr > .csui-column-highlight.csui-resize-start.csui-resize-end,
+.csui-nodetable .binf-table.csui-nowrap-table > tbody > tr > .csui-column-highlight.csui-resize-start.csui-resize-end,
+.csui-nodetable .binf-table.csui-nowrap-table > thead > tr > .csui-column-highlight:not(.csui-resize-span),
+.csui-nodetable .binf-table.csui-nowrap-table > tbody > tr > .csui-column-highlight:not(.csui-resize-span) {
+  box-shadow: inset -1px 0 0 0 #98a8b2, inset 1px 0 0 0 #98a8b2;
+}
+
+.csui-nodetable .binf-table.csui-nowrap-table > thead > tr > .csui-column-highlight.csui-resize-start,
+.csui-nodetable .binf-table.csui-nowrap-table > tbody > tr > .csui-column-highlight.csui-resize-start {
+  box-shadow: inset 1px 0 0 0 #98a8b2;
+}
+
+.csui-nodetable .binf-table.csui-nowrap-table > thead > tr > .csui-column-highlight.csui-resize-end,
+.csui-nodetable .binf-table.csui-nowrap-table > tbody > tr > .csui-column-highlight.csui-resize-end {
+  box-shadow: inset -1px 0 0 0 #98a8b2;
+}
+
+.csui-nodetable .binf-table.csui-nowrap-table > tbody > tr > .csui-column-highlight {
+  background-color: #e1e8f6;
+}
+
+@media only screen and (max-height: 400px) {
+  .csui-nodetable .binf-table > tbody > tr > * {
+    height: 32px;
+  }
+}

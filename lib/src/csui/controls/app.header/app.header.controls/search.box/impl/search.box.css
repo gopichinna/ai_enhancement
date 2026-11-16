@@ -1,0 +1,23 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-search-popover-label,
+.binf-widgets .csui-searchforms-popover-row .cs-label {
+  width: calc(100% - 24px);
+  line-height: 34px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.csui-search-form-collection .csui-icon-query-form-search,
+.csui-search-form-collection .csui-icon-standard-search {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  background-size: 18px;
+  background-position: center left;
+  margin-right: 8px;
+} 

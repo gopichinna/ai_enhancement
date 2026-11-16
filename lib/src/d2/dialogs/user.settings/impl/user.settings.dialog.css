@@ -1,0 +1,449 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .cs-dialog.d2-stepper-wizard.d2-user-settings .binf-modal-dialog {
+  width: 448px;
+  min-width: 448px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog {
+  height: 100%;
+  border-bottom: 4px solid #3DC6C7;
+}
+
+.binf-widgets .d2-user-settings.d2-stepper-wizard .binf-modal-body {
+  padding: 0;
+}
+
+.binf-widgets.pushBodyDown .d2-user-settings .d2-user-settings-dialog {
+  height: calc(100% - 48px);
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-body {
+  height: calc(100% - 206px);
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-container {
+  height: 100%;
+}
+
+.binf-widgets .d2-user-settings.cs-dialog .cs-close {
+  margin: 0;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  z-index: 1;
+  height: 16px;
+  width: 16px;
+}
+
+.binf-widgets .d2-user-settings .icon.d2-icon-close {
+  background-image: url('images/close.svg');
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+}
+
+.binf-widgets .d2-user-settings .icon.d2-icon-close:hover {
+  background-image: url('images/close_mo.svg');
+}
+
+.binf-widgets .d2-user-settings .icon.d2-icon-close:active {
+  background-image: url('images/close_md.svg');
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #666666;
+  margin-bottom: 8px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-ctf .addon-enable {
+  margin: 24px 0 0 0;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-ctf .current-version-container {
+  margin-top: 24px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-ctf .current-version-details {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-ctf .path-container {
+  margin-top: 24px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .toggle-switch-container .toggle-switch {
+  display: flex;
+  height: 28px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .toggle-switch-container .toggle-switch .cs-booleanfield {
+  width: 46px;
+  min-width: 46px;
+  margin-left: 20px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .toggle-switch-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .enable-file-grouping {
+  margin-top: 16px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .enable-last-navigation {
+  margin-top: 16px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .accessible-compliant-mode {
+  margin-top: 24px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .default-language-container {
+  margin-top: 24px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .default-language-container .default-language-field,
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .default-language-container .error-panel {
+  margin-left: -2px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .field-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #757575;
+}
+
+.binf-widgets .d2-user-settings .error-panel {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-left: 2px solid #DF3324;
+  background: #FFFFFF;
+  margin-top: 10px;
+  width: 320px;
+}
+
+.binf-widgets .d2-user-settings .toggle-switch-container .error-panel {
+  width: 100%;
+}
+
+.binf-widgets .d2-user-settings .error-panel .error-message {
+  font-size: 10px;
+  line-height: 16px;
+  color: #DF3324;
+  margin: 2px 8px 3px 8px;
+}
+
+.binf-widgets .d2-user-settings .refresh-container {
+  display: flex;
+  padding: 6px 19px 6px 32px;
+  position: absolute;
+  width: 100%;
+  background: #FEF4C3;
+  z-index: 1;
+  border-bottom: 1px solid #F3794E;
+  align-items: center;
+}
+
+.binf-widgets .d2-user-settings .refresh-container .refresh-button {
+  margin-left: 8px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.binf-widgets .d2-user-settings .refresh-container .refresh-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .d2-user-settings-body.refresh-visible .ctf-container {
+  padding-top: 36px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-ctf .addon-installer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-ctf .download-button {
+  background: #232E72;
+  border-radius: 16px;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  padding: 4px 24px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-ctf .addon-installer-container .download-button:hover,
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-ctf .addon-installer-container .download-button:focus {
+  background: #171F4C;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-ctf .addon-installer-icon {
+  background: url(images/ctf-download-icon.svg) no-repeat center;
+  background-size: contain;
+  height: 138px;
+  width: 138px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-ctf .addon-installer-label {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  text-align: center;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-ctf .addon-upgrade-installer-container .addon-upgrade-installer-message {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-ctf .addon-upgrade-installer-container .addon-upgrade-installer-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-ctf .addon-upgrade-installer-container .addon-upgrade-installer-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #2E3D98;
+  cursor: pointer;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .user-settings-ctf .addon-upgrade-installer-container .addon-upgrade-installer-icon {
+  background: url(images/information.svg) no-repeat center;
+  background-size: contain;
+  height: 16px;
+  width: 16px;
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+.binf-widgets .d2-user-settings .settings-container {
+  border-bottom: 1px solid #CCCCCC;
+  padding: 24px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.binf-widgets .d2-user-settings .settings-container.dateformat-settings-container {
+  border-bottom: 0;
+}
+
+.binf-widgets .d2-user-settings .user-settings-ctf .binf-popover {
+  border: 0;
+  padding: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-size: 11px;
+  line-height: 16px;
+  max-width: 200px;
+}
+
+.binf-widgets .d2-user-settings .user-settings-ctf .binf-popover > .binf-arrow:after {
+  border-right-color: #09BCEF;
+}
+
+.binf-widgets .d2-user-settings .user-settings-ctf .binf-popover .binf-popover-content {
+  padding: 9px 8px 9px 8px;
+  background: #F5F5F5;
+  color: #333333;
+}
+
+.binf-widgets .d2-user-settings .user-settings-ctf .binf-popover .binf-popover-content {
+  border-left: 4px solid #09BCEF;
+}
+
+.binf-widgets .d2-user-settings .user-settings-ctf .dots-loader {
+  position: relative;
+  margin: 24px 46% 0 46%;
+  height: 10px;
+}
+
+.binf-widgets .d2-user-settings .user-settings-ctf .dots-loader .csui-loading-dots-wrapper .csui-loading-dot {
+  top: auto;
+}
+
+.binf-widgets .d2-user-settings .cs-formfield.binf-has-error .cs-field-write input,
+.binf-widgets .d2-user-settings .cs-formfield.binf-has-error .cs-field-write button {
+  color: #000;
+  background-color: #fae9ea;
+  border: 1px solid #df3324;
+}
+
+.binf-widgets .d2-user-settings .cs-field-read .btn-container button > span {
+  color: #333333;
+}
+
+.binf-widgets .d2-user-settings .default-language-container {
+  margin-bottom: 16px;
+}
+
+.binf-widgets .d2-user-settings .user-profile-container{
+  min-height: 206px;
+  background: #66d4d6;
+  position: relative;
+  padding-top: 32px;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .esoc-user-container.d2-userinfo-profile-pic,
+.binf-widgets .d2-user-settings .user-settings-profile .esoc-user-container.d2-userinfo-profile-pic:hover,
+.binf-widgets .d2-user-settings .user-settings-profile .esoc-user-container.d2-userinfo-profile-pic:focus,
+.binf-widgets .d2-user-settings .user-settings-profile .esoc-user-container.d2-userinfo-profile-pic:active {
+  text-decoration: none;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .esoc-user-widget-avatar,
+.binf-widgets .d2-user-settings .user-settings-profile .esoc-userwidget-default-avatar {
+  height: 112px;
+  width: 112px;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .esoc-userwidget-default-avatar {
+  display: inline-flex;
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 72px;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .user-profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .user-avatar-container {
+  display: flex;
+  justify-content: center;
+  height: 112px;
+  width: 112px;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .d2-user-title {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 38px;
+  color: #333333;
+  width: 100%;
+  padding-top: 8px;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .user-avatar {
+  position: relative;
+  width: 112px;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .user-avatar .edit-user {
+  position: absolute;
+  width: 112px;
+  height: 112px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .user-avatar.disabled .esoc-user-container{
+  cursor: default;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .user-avatar.disabled .esoc-user-container:focus{
+  outline: 0;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .user-avatar.disabled .edit-user.edititable {
+  opacity: 0;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .user-avatar .edit-user.edititable,
+.binf-widgets .d2-user-settings .user-settings-profile .user-profile .user-avatar.focused .edit-user {
+  opacity: 1;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .user-avatar .edit-user-image-placeholder {
+  background: url(images/edit.svg) no-repeat center;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .user-avatar .binf-popover .binf-popover-content {
+  padding: 0;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .user-avatar .user-avatar-action {
+  padding: 6px 16px;
+  color: #333;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.binf-widgets .d2-user-settings .user-settings-profile .user-avatar .dots-loader {
+  height: 10px;
+  position: absolute;
+  top: calc(50% - 4px);
+  left: calc(50% - 12px);
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .dateformat-container {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .dateformat-container .datetimeformat-field-container,
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .dateformat-container .error-panel {
+  margin-left: -2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .dateformat-container .datetimeformat-field-container .d2-select.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a {
+  height: auto;
+}

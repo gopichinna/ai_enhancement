@@ -1,0 +1,6 @@
+{
+  "bundle": [
+    "overrides/widgets/savedsearch/savedsearch.group.model",
+    "utils/startup"
+  ]
+}

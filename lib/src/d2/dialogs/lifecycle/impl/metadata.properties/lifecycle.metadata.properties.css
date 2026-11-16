@@ -1,0 +1,19 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.cs-metadata-properties.lifecycle-metadata-properties .binf-nav-pills > li:first-child{
+  padding-left: 64px;
+}
+
+.binf-modal-dialog .lifecycle-metadata-properties.cs-metadata-properties .csui-tab-contents-header-content {
+  padding-left: 64px;
+}
+
+.binf-widgets .d2-stepper-wizard .lifecycle-metadata-properties.cs-metadata-properties .tab-links .tab-links-bar ul.binf-nav {
+  margin-left: 0;
+}
+
+.lifecycle-metadata-properties.cs-metadata-properties.d2-metadata-properties .binf-tab-content > div:not(.ps-scrollbar-x-rail):not(.ps-scrollbar-y-rail),
+.lifecycle-metadata-properties.cs-metadata-properties.d2-metadata-properties .binf-tab-content.ps-container > div:not(.ps-scrollbar-x-rail):not(.ps-scrollbar-y-rail) {
+  padding-left: 48px;
+}

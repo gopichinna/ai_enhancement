@@ -1,0 +1,19 @@
+{{#if showLocationBar}}
+<div class="smart-node-picker">
+  <div class="csui-target-controls">
+    {{#if locationSelector}}
+    <div class="smart-start-locations  binf-dropdown"></div>
+    {{/if}}
+  </div>
+  <div id="csui-np-breadcrumbs" class="cs-breadcrumb">
+    <div class="breadcrumb-inner" role="navigation" aria-label="{{breadcrumbAria}}"></div>
+    <div class="searchheader-inner binf-hidden"></div>
+  </div>   
+  <div class="smart-view-toggler binf-hidden"> </div>
+</div>
+ {{/if}}
+<div id="csui-np-selectviews"></div>
+<div class="smart-np-anouncement" aria-live="polite" role="status" >
+  <p class="smart-np-anouncement-text"></p>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,45 @@
+<div class="profile-heading{{#unless artifacts}} no-artifacts{{/unless}}">
+  <div class="selection-control"></div>
+  <div class="profile-avatar"></div>
+  <div class="profile-title">
+    <div class="cs-title d2-overflow-tooltip">{{name}}</div>
+    {{#if artifacts}}
+      <div class="artifact-summary d2-overflow-tooltip"></div>
+    {{/if}}
+    {{#if isInvalid}}
+      <div class="error-message-invalid">{{lang.messageSelectTypeErrorInvalidType}}</div>
+    {{/if}}
+  </div>
+  <div class="profile-actions">
+    {{#if editable}}
+    <div class="profile-action action-edit csui-button-icon edit-icon" tabindex="0" title="{{lang.tooltipSelectTypeEditType}}"></div>
+    {{/if}}
+    {{#if importable}}
+    <div class="profile-action action-import csui-button-icon import-icon" tabindex="0" title="{{lang.tooltipSelectTypeImportFile}}"></div>
+    {{/if}}
+    {{#if addable}}
+    <div class="profile-action action-add csui-button-icon add-icon" tabindex="0" title="{{lang.tooltipSelectTypeNewFile}}"></div>
+    {{/if}}
+    {{#if expandable}}
+    <div class="action-expand-collapse csui-button-icon dropdown-icon icon-expandArrowDown show-always" tabindex="0" title="{{lang.tooltipSelectTypeProfileExpand}}"></div>
+    {{/if}}
+  </div>
+</div>
+
+{{#if expandable}}
+<div class="cs-content inheritance-section binf-hidden">
+  {{#if inheritanceSource}}
+  <div class="inheritance-source">
+    <span class="inheritance-label">{{lang.labelSelectTypeInheritanceSource}}</span>
+    <span class="inheritance-value">{{inheritanceSource}}</span>
+  </div>
+  {{/if}}
+  {{#if inheritanceBlueprint}}
+  <div class="inheritance-blueprint">
+    <span class="inheritance-label">{{lang.labelSelectTypeInheritanceBlueprint}}</span>
+    <span class="inheritance-value">{{inheritanceBlueprint}}</span>
+  </div>
+  {{/if}}
+</div>
+{{/if}}
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

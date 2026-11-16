@@ -1,0 +1,20 @@
+<a href="#{{uniqueTabId}}" id="{{linkId}}" role="tab" aria-selected="{{selected}}" aria-controls="{{uniqueTabId}}" class="cs-tablink" data-binf-toggle="tab" title="{{csui-l10n title}}"
+  {{#if required}}
+    aria-label="{{required_tooltip}} {{tabTitle}}"
+  {{else}}
+    aria-label="{{tabTitle}}"
+  {{/if}}>
+  {{#if required}}
+    <span class="cs-icon-required category_required"></span>
+  {{/if}}
+  <span class="cs-tablink-text">{{tabTitle}}</span>
+</a>
+{{#if allow_delete}}
+  <div class="cs-tablink-delete" title="{{delete_tooltip}}">
+    <span class="icon {{delete_icon}} cs-delete-icon" role="button"
+          {{#if removeable}}data-cstabindex="0"{{/if}}
+          aria-label="{{deleteTabAria}}"></span>
+  </div>
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

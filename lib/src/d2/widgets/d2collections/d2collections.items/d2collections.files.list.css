@@ -1,0 +1,72 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+
+
+.binf-widgets .d2-collections-files-list.tile
+{
+  box-shadow: none;
+  padding-left: 21px;
+}
+
+.d2-collections-files-list.cs-list .tile-content {
+  height: 100%;
+}
+
+.binf-widgets .d2-collections-files-list.tile:hover {
+  outline: none;
+  outline-offset: none;
+}
+
+.binf-widgets .d2-collections-files-list.tile:active {
+  outline: none;
+  outline-offset: none;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .binf-widgets .d2-collections-files-list.tile:hover {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .binf-widgets .d2-collections-files-list.tile:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.cs-list.d2-collections-files-list .tile-content .binf-list-group .cs-emptylist-container:not(.csui-state-loading) {
+  padding-top: 35%;
+  background-size: auto auto;
+  background-position: center bottom;
+}
+
+.binf-widgets .d2-collections-files-list .cs-emptylist-text .csui-no-result-message {
+  font-size: 17px;
+}
+
+.binf-widgets .d2-collections-files-list .d2-version-container{
+  display: flex;
+  padding: 3px 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  color: #000000;
+  text-align: center;
+  font-family: OpenText Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 8px;
+
+}
+
+.binf-widgets .d2-collections-files-list  .d2-collections-reserve{
+  width: 22px;
+  height: 22px;
+  margin-left: 4px;
+  margin-bottom: 1px;
+}

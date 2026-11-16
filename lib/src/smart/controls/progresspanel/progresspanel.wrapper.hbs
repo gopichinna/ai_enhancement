@@ -1,0 +1,20 @@
+{{#if enableMinimiseButton}}
+  <div class="miniprogressbar-btn-wrapper">
+    <div class="csui-minimize csui-minimizecell">
+      <button type="button" class="icon-progresspanel-minimize binf-btn binf-btn-default"
+              aria-label="{{minimizeAria}}" title="{{minimizeTitle}}" tabindex="-1">
+        {{{icon-v2 iconName="csui_smart_action_minimize_progress32" states="true" size="small"}}}
+      </button>
+    </div>
+  </div>
+{{/if}}
+<div class="progresspanel-container csui-normal-scrolling"></div>
+<div class="progresspanel-btn-wrapper">
+  <button class="binf-btn binf-btn-default showless smart-hide-behind" tabindex="-1">{{showLess}}
+  </button>
+  <button class="binf-btn binf-btn-default showmore smart-hide-behind" tabindex="-1">{{showMore}}
+  </button>
+  <button class="binf-btn binf-btn-default closeall smart-hide-behind" tabindex="-1">{{closeAll}}
+  </button>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

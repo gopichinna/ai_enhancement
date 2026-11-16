@@ -1,0 +1,13 @@
+{{#if generation}}
+<span title="{{generationTooltip}}" aria-label="{{generationAria}}" class='csui-icon-group'>
+{{#if iconName}}
+    {{{icon-v2 iconName=iconName theme=iconTheme states='true' size=size}}}
+{{else}}
+{{#if className}}
+    <span class="csui-node-type-icon {{className}}"></span>
+  {{/if}}
+{{/if}}
+{{{icon-v2 iconName="csui_generation-overlay" theme=iconTheme states='true' size=size}}}
+</span>
+{{/if}}
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

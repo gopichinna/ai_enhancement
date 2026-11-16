@@ -1,0 +1,108 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.d2-stepper-wizard.d2-addversion-modal .cs-form.csui-general-form.d2-form {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin:0;
+  padding-left: 64px;
+}
+
+.d2-stepper-wizard.d2-addversion-modal .cs-form.csui-general-form.d2-form .metadata-pane-container {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.d2-stepper-wizard.d2-addversion-modal .cs-form.csui-general-form.d2-form .alpaca-container-item {
+  width: 58%;
+}
+
+.d2-stepper-wizard.d2-addversion-modal .cs-form.csui-general-form.d2-form .alpaca-container-item.add-version-option{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.d2-stepper-wizard.d2-addversion-modal .cs-form.csui-general-form.d2-form .alpaca-container-item.add-version-option .alpaca-field-d2checkbox{
+  margin: 0;
+  padding: 0;
+}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .d2-stepper-wizard.d2-addversion-modal .cs-form.csui-general-form.d2-form .alpaca-container-item[data-alpaca-container-item-name=checkin_version] {
+    width: 97%;
+  }
+}
+
+.d2-addversion-modal .d2-form .cs-form-doublecolumn{
+  width: 100% !important;
+  padding: 0;
+  height: initial;
+}
+
+.d2-addversion-modal  .cs-formfield.d2-radio-group div.d2-radio-item-container {
+  width:150px;
+  display: inline-block;
+}
+
+.binf-widgets .d2-addversion-modal.d2-stepper-wizard .cs-metadata-properties .csui-tab-contents-header-wrapper {
+  padding-left: 32px;
+  width: calc(100% - 32px);
+}
+
+.binf-widgets .d2-addversion-modal.d2-stepper-wizard .cs-metadata-properties .tab-links.scrollspy {
+  padding-left: 24px;
+}
+
+.binf-widgets .d2-stepper-wizard.d2-addversion-modal .cs-metadata-properties > .binf-tab-content > [role="tabpanel"]{
+  padding-left: 48px;
+}
+
+.binf-widgets .d2-stepper-wizard.d2-addversion-modal .cs-form.csui-general-form.d2-form .binf-help-block.alpaca-message{
+  margin-left: 16px;
+}
+
+.binf-widgets .d2-stepper-wizard.d2-addversion-modal .cs-form.csui-general-form.d2-form .binf-help-block.d2-core-path-message {
+  padding-left: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+  border-left: 2px solid #2E3D98;
+  margin-top: 8px;
+  padding-top: 0;
+  padding-right: 8px;
+  font-size: 11px;
+  line-height: 16px;
+  display: block;
+  margin-left: 16px;
+  color: #333333;
+}
+
+.binf-widgets .d2-stepper-wizard.d2-addversion-modal .cs-form.csui-general-form.d2-form .binf-help-block.d2-core-path-message .binf-glyphicon {
+  display: none;
+}
+
+.binf-widgets .d2-stepper-wizard.d2-addversion-modal .cs-form.csui-general-form.d2-form .binf-help-block.d2-invalid-ending-message {
+  padding-left: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+  border-left: 2px solid #df3324;
+  margin-top: 8px;
+  padding-top: 0;
+  padding-right: 8px;
+  font-size: 11px;
+  line-height: 16px;
+  display: block;
+  margin-left: 16px;
+  color: #df3324;
+}
+
+.binf-widgets .d2-stepper-wizard.d2-addversion-modal .cs-form.csui-general-form.d2-form .binf-help-block.d2-invalid-ending-message .binf-glyphicon {
+  display: none;
+}
+
+
+
+
+
+

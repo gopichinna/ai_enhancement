@@ -1,0 +1,57 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-start-locations > .binf-dropdown-toggle .cs-label,
+.csui-start-locations > .binf-dropdown-menu .cs-label {
+  vertical-align: text-bottom;
+}
+
+.csui-start-locations > .binf-dropdown-toggle .cs-label,
+.csui-start-locations > .binf-dropdown-menu .cs-label,
+.csui-start-locations > .binf-dropdown-toggle > .binf-caret {
+  margin-left: 0.5em;
+}
+
+
+.cs-dialog .cs-header-control .csui-start-locations > .binf-dropdown-toggle .cs-label {
+  vertical-align: middle;
+}
+
+.binf-widgets .cs-dialog .binf-modal-header .csui-start-locations .cs-icon {
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: 50% 50%;
+  
+}
+
+.cs-dialog .binf-modal-header .csui-start-locations .cs-icon.icon-caret-down {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+
+.csui-start-locations button .cs-icon {
+  margin-bottom: 0;
+}
+
+.binf-widgets .csui-start-locations .dropdown-locations .csui-separator {
+  z-index: 1001;
+  background: inherit;
+  position: absolute;
+  height: 5px;
+  bottom: 0;
+  width: 100%;
+}
+.d2-target-controls .csui-start-locations .dropdown-locations .dropdown-single-select,
+.d2-target-controls .csui-start-locations .dropdown-locations .binf-btn.binf-dropdown-toggle {
+  white-space: nowrap;
+  padding: 5px 12px 5px 15px;
+  margin: 12px auto;
+  height: 32px;
+  line-height: 1.42857143;
+}
+.binf-widgets .cs-dialog .binf-modal-header .csui-start-locations .dropdown-single-select .cs-icon {
+  margin-bottom: 2px;
+}
+

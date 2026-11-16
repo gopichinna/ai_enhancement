@@ -1,0 +1,63 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.signature-signee-groups-layout .signature-signee-add-group {
+  width: 400px;
+  text-align: center;
+}
+
+.signature-signee-groups-layout .signature-signee-add-group button {
+  height: 32px;
+  padding: 0 24px;
+  margin-left: 16px;
+  vertical-align: middle;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 12px;
+  background-color: #ffffff;
+  border: 1px solid #232E72;
+  color: #232E72;
+}
+
+.signature-signee-groups-layout .signature-signee-add-group button:hover {
+  background-color: #ffffff;
+  border: 1px solid #171f4c;
+  color: #171f4c;
+  box-shadow: inset 0 0 0 1px rgb(23,31,76);
+}
+
+.signature-signee-groups-layout .signature-signee-groups-header {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 18px;
+  color: #5F6E77;
+}
+
+.signature-signee-groups-layout .d2-signature-signee-form {
+  background-color: #F9F9F9;
+}
+
+.binf-widgets .signature-signee-groups-layout .signee-group-separator-container {
+  height: 60px;
+  width: 400px
+}
+
+.binf-widgets .signature-signee-groups-layout .signature-signee-groups .signature-signee-group-layout:first-child .signee-group-separator-container {
+  display: none;
+}
+
+.binf-widgets .signature-signee-groups-layout .signee-group-separator-container .signee-group-seprator-arrow {
+  margin: auto;
+  border-style: solid;
+  width: 0;
+  border-color: #98A8B2 transparent transparent transparent;
+  border-width: 10px 10px 0 10px;
+}
+
+.binf-widgets .signature-signee-groups-layout .signee-group-separator-container .signee-group-seprator-dashed {
+  width: 1px;
+  height: 100%;
+  border: 1px dashed #98A8B2;
+  margin: auto;
+}

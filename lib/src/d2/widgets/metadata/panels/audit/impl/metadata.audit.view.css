@@ -1,0 +1,85 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.reload-action {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.d2-reload-action {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.binf-widgets .cs-metadata .metadata-navigation .metadata-content:not(.d2-content-region) {
+    width: calc(100% - 290px);
+}
+
+.binf-widgets .cs-metadata .csui-nodetable .dataTables_wrapper {
+    overflow: auto;
+    display: grid;
+}
+
+.binf-widgets .cs-metadata .d2-audit-wdg .binf-table.dataTable > thead > tr > th,
+.binf-widgets .cs-metadata .d2-audit-wdg .binf-table.dataTable > tbody > tr > td {
+    min-width: 150px !important;
+    max-width: 150px !important;
+}
+
+.binf-widgets .cs-metadata .d2-audit-wdg {
+    width: calc(100% - 30px);
+    overflow-x: auto;
+}
+
+.binf-widgets .cs-metadata .d2-audit-wdg .csui-metadata-basepanel {
+    padding-right: 0;
+}
+
+.binf-widgets .cs-metadata .d2-audit-wdg .csui-metadata-basepanel .csui-pagination-view .csui-pagination {
+    width: calc(100% - 36px);
+}
+.binf-widgets .cs-metadata .d2-audit-wdg .csui-metadata-basepanel .csui-pagination-view .csui-total-container-items:not(:last-child) {
+    position: absolute;
+    right: 36px;
+}
+
+.binf-table.dataTable > thead > tr > th:nth-child(1) .csui-table-column-text {
+    padding-left: 12px;
+}
+
+.binf-widgets .csui-alert .binf-modal-header {
+    background-color: #dce4e8;
+  }
+  .binf-modal-content .date-note{
+    display: flex;
+    height: 49px;
+    background: #2E3D980D;
+    padding-top: 10px;
+    justify-content: center;
+}
+.binf-modal-content .date-note  .note-text{
+    margin-left: 9px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.binf-widgets  .csui-alert.dctm-alert-custom-content.export-file .binf-modal-dialog .binf-modal-body{
+    padding: 0;
+}
+.binf-widgets  .csui-alert.dctm-alert-custom-content.export-file .binf-modal-content .binf-modal-body .custom-content-container .export-data-form .alpaca-field-object.alpaca-top {
+  padding: 0 0 0 35px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content .binf-modal-dialog .binf-modal-body .custom-content-container .type-label-note{
+    padding-left: 42px;
+    color: #4A4A4A;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content .binf-modal-dialog .binf-modal-body .custom-content-container .type-label-note .text-bold{
+    font-weight: bold;
+}

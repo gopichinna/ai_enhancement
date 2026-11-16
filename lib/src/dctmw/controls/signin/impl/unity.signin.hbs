@@ -1,0 +1,50 @@
+<div class="login-container">
+  <div class="logged-out-panel">
+    <div class="separator"></div>
+    <div class="logged-out-message">{{haveBeenLoggedOut}}</div>
+    <div class="close-browser-message">{{closeBrowser}}</div>
+    <div class="separator"></div>
+    <button type="button" class="show-login-form-btn">{{loginPage}}</button>
+  </div>
+  <main role="main">
+    <div class="login-panel">
+      <div class="login-error" style="display: none"></div>
+      <div class="{{#if isMobileSeperator}} d2mobile-input-separator{{/if}} separator"></div>
+      <div class="login-form-wrapper">
+        <form>
+          <div class="outer-border">
+            <div class="loader">
+            </div>
+          </div>
+          <div class="binf-form-group binf-has-feedback">
+            <input type="text" class="input-username textbox binf-form-control binf-input-lg"
+                   placeholder="{{placeholderusername}}" autocapitalize="none" aria-label="Enter user name" style="display: none">
+          </div>
+          <div class="binf-form-group binf-has-feedback">
+            <input type="password" class="input-password textbox binf-form-control binf-input-lg"
+                   placeholder="{{placeholderpassword}}" aria-label="Enter password" style="display: none">
+          </div>
+          <div class="separator separator1" style="display: none"></div>
+          <div class="binf-form-group">
+            <div class="d2-repositories" style="display: none"></div>
+          </div>
+          <div class="separator separator2" style="display: none"></div>
+          <div class="binf-form-group">
+            <div class="d2-application" style="display: none"></div>
+          </div>
+          <div class="binf-form-group">
+            <input type="text" class="input-domain textbox binf-form-control binf-input-lg"
+                   placeholder="{{placeholderdomain}}" aria-label="Enter domain" style="display: none">
+          </div>
+          <div class="binf-form-group">
+            <div class="d2-location" style="display: none"></div>
+          </div>
+          <div class="{{#if isMobileSeperator}} d2mobile-signin-separator{{/if}} separator"></div>
+          <button type="button" class="login-btn btn-submit" disabled style="display: none">{{buttontext}}</button>
+          <button type="button" class="login-btn btn-retry" disabled style="display: none">{{retrytext}}</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

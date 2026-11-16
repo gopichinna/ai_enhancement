@@ -1,0 +1,17 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+
+.cs-tile .tile-content {
+  margin: 0;
+  padding: 0;
+  height: calc(100% - 64px);
+}
+
+.cs-expanded.binf-modal .binf-modal-header .tile-type-icon,
+.cs-expanded.binf-modal .binf-modal-header .tile-type-image {
+  width: 1em;
+  
+  line-height: 1em;
+}

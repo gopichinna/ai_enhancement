@@ -1,0 +1,58 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .target-browse.cs-permission-group-picker .csui-add-member {
+  height: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.binf-widgets .csui-member-picker-container .csui-user-search-bar > div {
+  display: inline-flex;
+  vertical-align: middle;
+  flex-direction: row;
+  width: 100%;
+  padding: 0px 0 0 16px;
+}
+
+.binf-widgets .csui-member-picker-container .csui-user-search-bar .csui-control-userpicker .cs-search-icon {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  right: 0.25em;
+  top: 0.5625em;
+  background-repeat: no-repeat;
+}
+
+.binf-widgets .csui-member-picker-container .csui-user-search-bar .csui-control-userpicker .cs-search-clear {
+  position: absolute;
+  height: 1em;
+  width: 1em;
+  top: 25%;
+}
+
+.binf-widgets .csui-member-picker-container .csui-user-search-bar .csui-control-userpicker .scroll-container .binf-dropdown-menu {
+  position: static;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.binf-widgets .csui-member-picker-container .csui-user-search-bar .csui-control-userpicker .scroll-container {
+  width: calc(100% - 18px);
+  position: absolute;
+}
+
+.binf-widgets .csui-member-picker-container .csui-user-lookup .csui-user-search-container .csui-userpicker-item .member-info .name {
+  line-height: 18px;
+}
+
+.cs-modal-filter .cs-filter-input {
+  padding-left: 30px;
+}
+
+.binf-widgets .csui-mp-header .cs-modal-filter .icon-search-placeholder {
+  position: absolute;
+}

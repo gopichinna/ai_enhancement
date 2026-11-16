@@ -1,0 +1,169 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.d2-task-external-esign-dialog .d2-task-external-esign-dialog-container {
+  padding-top: 24px;
+  padding-right: 64px;
+  padding-left: 64px;
+}
+
+.d2-stepper-wizard .cs-form.csui-general-form.d2-form {
+  margin-top:8px;
+}
+
+.d2-task-external-esign-dialog .d2-task-esign-custom-message,
+.d2-task-external-esign-dialog .d2-task-esign-file-select-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.d2-task-external-esign-dialog .d2-task-esign-custom-message {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-top:12px;
+}
+
+
+.d2-stepper-wizard .d2-task-external-esign-dialog .cs-form.csui-general-form.d2-form .binf-help-block.alpaca-message{
+  margin-left: 0;
+  width: 100%;
+}
+
+.d2-stepper-wizard .d2-task-external-esign-dialog .d2-task-validation-error-container{
+  padding-left: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+  border-left: 2px solid #df3324;
+  margin-top: 8px;
+  padding-top: 0;
+  padding-right: 8px;
+  font-size: 10px;
+  line-height: 16px;
+  max-width: 420px;
+  width: fit-content;
+  display: inline-block;
+  white-space: normal;
+  word-wrap: break-word;
+  background: #ffffff;
+  color: #DF3324;
+  border-radius: 2px;
+  padding: 0 8px;
+  text-align: left;
+}
+
+
+.d2-stepper-wizard .d2-task-external-esign-dialog .cs-form .binf-form-group.alpaca-field,
+.d2-stepper-wizard  .d2-task-external-esign-dialog .cs-form.csui-general-form.d2-form .alpaca-container-item,
+.d2-stepper-wizard  .d2-task-external-esign-dialog .cs-form.csui-general-form.d2-form,
+.d2-stepper-wizard  .d2-task-external-esign-dialog .csui-top-align-label .cs-form .binf-form-group
+{
+  margin-bottom: 0;
+  margin-left:0;
+  margin-top:0;
+}
+
+.d2-stepper-wizard  .d2-task-external-esign-dialog .csui-top-align-label .cs-form .binf-form-group{
+  margin-top:8px;
+}
+
+.d2-task-esign-file-list-container .d2-task-esignature-doc-container {
+  margin-bottom: 32px;
+}
+
+.d2-task-external-esign-dialog .d2-task-esignature-doc-container .d2-task-esign-file-item-container{
+  height:28px;
+}
+
+.d2-task-external-esign-dialog .d2-task-esignature-doc-container .d2-task-esign-file-item-container .csui-icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  float: left;
+}
+
+.d2-task-external-esign-dialog .d2-task-esignature-doc-container .d2-task-esign-doc-name {
+  display: inline-block;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  vertical-align: -webkit-baseline-middle;
+  vertical-align: middle;
+  margin-left: 11px;
+}
+
+.d2-task-esign-file-list-container .d2-task-esignature-doc-container .d2-task-esign-file-item-container {
+  display: inline-block;
+}
+
+.d2-stepper-wizard .d2-task-external-file-message {
+  height: 32px;
+  padding-top: 7px;
+  padding-left: 11px;
+  margin-top:8px;
+}
+
+.d2-stepper-wizard .d2-task-external-file-message.d2-task-external-file-message-success-banner {
+  background: #f3f8f3;
+  border-bottom: 1px solid #067D14;
+}
+
+.d2-stepper-wizard .d2-task-external-file-message.d2-task-external-file-message-error-banner {
+  background: #FDF5F4;
+  border-bottom: 1px solid #DF3324;
+}
+
+
+.d2-stepper-wizard .d2-task-external-file-message .d2-task-doc-message {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17.92px;
+  color: #333333;
+}
+
+.d2-stepper-wizard .d2-task-external-file-message .d2-task-doc-message:before {
+  content: "";
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+}
+
+.d2-stepper-wizard .d2-task-external-file-message .d2-task-doc-message-success:before {
+  background-image: url(images/notification_success.svg);
+}
+
+.d2-stepper-wizard .d2-task-external-file-message .d2-task-doc-message-error:before {
+  background-image: url(images/notification_error.svg);
+}
+
+.d2-stepper-wizard .d2-task-external-file-message .d2-task-doc-message {
+  padding-left: 30px;
+  position: relative;
+}
+
+.d2-stepper-wizard .d2-task-external-file-message .d2-task-doc-message:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 18px;
+  width: 18px;
+}
+
+
+.d2-stepper-wizard .d2-task-external-esign-dialog .cs-form.csui-general-form.d2-form .alpaca-field .binf-form-group .binf-control-label {
+  padding-left: 16px;
+  margin-left: -16px;
+}
+
+
+.d2-stepper-wizard .d2-task-external-esign-dialog .csui-top-align-label .cs-formfield .cs-field-write {
+  padding-left: 0;
+  margin-left: -16px;
+}

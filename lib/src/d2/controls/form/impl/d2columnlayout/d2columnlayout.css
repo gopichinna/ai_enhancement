@@ -1,0 +1,16 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-spy-container .d2-column-layout,
+.d2-container .d2-column-layout,
+.d2-column-layout .binf-col-md-12,
+.d2-column-layout .binf-col-md-6 {
+  padding: 0;
+  max-width: 928px;
+}
+
+.d2-column-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

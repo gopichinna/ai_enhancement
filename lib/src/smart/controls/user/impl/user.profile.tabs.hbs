@@ -1,0 +1,54 @@
+{{#if extraTabs}}
+  <div class="binf-col-lg-12 binf-col-md-12 binf-col-sm-12 binf-col-xs-12 esoc-profile-tabs
+  esoc-nopadding-right tab-links smart-tab-links">
+
+    <div class="tab-links-header smart-tab-links-bar-toolbar-wrapper">
+      <div class="left-toolbar smart-left-toolbar">
+        <div class="goto_previous_div"><otc-icon disableEffects="true" icon="smart_action:action_caret_left32"
+            class="cs-icon smart-goto-previous-page" title="{{previousTooltip}}" arialabel="{{previousTooltip}}"></otc-icon>
+        </div>
+      </div>
+
+       <div class="tab-links-bar  smart-tab-links-bar">
+        <ul class='binf-nav binf-nav-tabs binf-nav-pills esoc-user-profile-tabcontainer' role="tablist">
+
+        {{#each extraTabs}}
+          {{#this}}
+            {{#if show}}
+              <li role="presentation" class="esoc-user-profile-tab smart-tab-panel-item"
+                  id="esoc-user-profile-{{tabName}}-tab">
+                <a href="#{{tabName}}" data-binf-toggle="tab" role="tab"
+                        class="esoc-user-profile-{{tabName}}-tab-label cs-tablink"  tabindex="-1" title= {{tabDisplayName}}>
+              <span class="esoc-user-{{tabName}}-tab-label esoc-user-profile-tab-label"
+                    title="{{tabDisplayName}}">{{tabDisplayName}}</span>
+                </a>
+                 {{#if tabCount}}
+                    <span class="esoc-user-{{tabName}}-count
+              esoc-user-profile-tab-count esoc-user-profile-tab-label"
+                          title="{{tabCount.count}}">{{tabCount.count}}</span>
+                  {{/if}}
+              </li>
+            {{/if}}
+          {{/this}}
+        {{/each}}
+      </ul>
+       </div>
+      <div class="right-toolbar smart-right-toolbar">
+        <div class="goto_next_div">
+          <otc-icon disableEffects="true" icon="smart_action:action_caret_right32" class="cs-icon smart-goto-next-page"
+            title="{{nextTooltip}}" arialabel="{{nextTooltip}}"></otc-icon>
+        </div>
+
+      </div>
+      </div>
+     
+
+    
+  </div>
+   <div id="esoc-simple-user-widget-form-body-{{uniqueId}}"
+      class="esoc-simple-user-widget-form-body" role="tabpanel"></div>
+{{else}}
+  <div id="esoc-simple-user-widget-form-body-{{uniqueId}}" class="esoc-simple-user-widget-form-body" role="tabpanel"></div>
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

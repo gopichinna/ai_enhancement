@@ -1,0 +1,41 @@
+<div class="d2-workflow-timeline-item d2-wf-timeline-task" tabindex="0">
+  <div class="item-summary-container">
+    <div class="summary-icon d2-icon-wf-performer-{{#xif "this.performer_type"}}{{performer_type}}{{else}}tracker{{/xif}}"></div>
+    <div class="linkage"></div>
+    <span class="summary-text binf-line-clamp d2-overflow-tooltip">{{assignee}}</span>
+    <div class="selection-control"></div>
+  </div>
+  <div class="item-details-container">
+    <div class="item-details">
+      <div class="header">
+        <div class="title d2-overflow-tooltip">{{#if event_name}}{{event_name}}{{else}}{{name}}{{/if}}</div>
+        <div class="{{#xif "!this.hasComment"}}binf-hidden{{/xif}}" title="{{lang.commentTooltip}}">
+        <div class="comments" tabindex="0"></div>
+        </div>
+      </div>
+      <div class="status"></div>
+      <div class="item-property-list">
+        {{#each itemProperties}}
+          {{#xif "this.value"}}
+          <div class="item-property" aria-label="{{ariaLabel}}">
+            <span class="property-label">{{label}}:</span>
+            <span class="property-value">{{value}}</span>
+          </div>
+        {{/xif}}
+        {{/each}}
+      </div>
+    </div>
+    <div class="inline-context-menu {{#xif "!this.hasMenu"}}no-menu{{/xif}}"></div>
+    <div class="item-expand-collapse csui-button-icon {{#if has_events}}enabled icon-expandArrowDown{{/if}}" {{#if has_events}}title="{{lang.tooltipExpand}}" tabindex="0"{{/if}}></div>
+    <div class="csui-icon-group csui-loading-parent-wrapper binf-disabled binf-hidden"
+         title="{{loadingTitle}}" role="presentation" tabindex="-1">
+      <div class="csui-loading-dots-wrapper">
+        <span class="csui-loading-dot"></span>
+        <span class="csui-loading-dot"></span>
+        <span class="csui-loading-dot"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="d2-workflow-timeline-subitems notransition"></div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

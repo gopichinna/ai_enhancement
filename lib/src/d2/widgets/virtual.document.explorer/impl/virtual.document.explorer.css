@@ -1,0 +1,89 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-vd-explorer {
+  height: 100%;
+  width: 100%;
+}
+
+.binf-widgets .d2-vd-explorer .d2-toolbar-vd-main {
+  height: 40px;
+  background: #FFFFFF;
+  
+}
+
+.binf-widgets .d2-vd-explorer .d2-toolbar-vd-main .region-left {
+  padding-left: 0;
+}
+
+.binf-widgets .d2-vd-explorer .d2-toolbar-vd-main .d2-button-toolbar .icon {
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: none;
+}
+
+.binf-widgets .d2-vd-explorer .d2-toolbar-vd-main .d2-button-toolbar .icon:active {
+  box-shadow: none;
+}
+
+.binf-widgets .d2-vd-explorer .d2-toolbar-vd-main .d2-button-toolbar .icon-vd-go-back {
+   margin-left: 5px;
+}
+
+html[dir=rtl] .binf-widgets .d2-vd-explorer .d2-toolbar-vd-main .d2-button-toolbar .icon-vd-show-expanded-view {
+  transform: scaleX(-1);
+}
+
+.binf-widgets .d2-vd-explorer .d2-toolbar-vd-node {
+  height: 34px;
+  background: #EEF2F4;
+  border: 1px solid #cccccc;
+  border-right: none;
+}
+
+.binf-widgets .d2-vd-explorer .d2-toolbar-vd-node .csui-table-rowselection-toolbar-view,
+.binf-widgets .d2-vd-explorer .d2-toolbar-vd-node .csui-table-rowselection-toolbar-view .csui-toolbar-region {
+  height: inherit;
+}
+
+.binf-widgets .d2-vd-explorer .d2-toolbar-vd-node .csui-table-rowselection-toolbar-view > .csui-selected-items-counter-region {
+  margin-left: 1px;
+}
+
+.binf-widgets .d2-vd-explorer .d2-toolbar-vd-node .csui-toolbar-region {
+  position: relative;
+}
+
+.binf-widgets .d2-vd-explorer .d2-toolbar-vd-node .csui-toolbar-region .csui-toolbar .binf-dropdown.binf-open > .binf-dropdown-menu.csui-more-dropdown-menu {
+  left: auto;
+  position: fixed;
+  top: 142px;
+  margin-top: 0;
+}
+
+.binf-widgets .d2-vd-explorer .d2-toolbar-vd-node .binf-nav.binf-nav-pills > li > a {
+  line-height: 32px;
+  font-size: 13px;
+  padding: 0 20px;
+  margin: -2px 0 0 0;
+  background-color: transparent;
+}
+
+.binf-widgets .d2-vd-explorer .d2-toolbar-vd-node .binf-nav.binf-nav-pills > .csui-more-dropdown-wrapper {
+  margin-top: -1px;
+}
+
+.binf-widgets .d2-vd-explorer .d2-toolbar-vd-node .binf-nav.binf-nav-pills > .csui-more-dropdown-wrapper .icon-toolbar-more {
+  background-size: 20px;
+}
+
+.binf-widgets .d2-vd-explorer .d2-vd-structure-wrapper {
+  height: calc(100% - 74px);
+}
+
+.binf-widgets.rtl .d2-vd-explorer .d2-button-toolbar .icon-vd-go-back,
+.binf-widgets.rtl .d2-vd-explorer .d2-button-toolbar .icon-vd-show-expanded-view,
+.binf-widgets.rtl .csui-rightToolbar .vdoc-close-panel-icon{
+  transform: scaleX(-1);
+}

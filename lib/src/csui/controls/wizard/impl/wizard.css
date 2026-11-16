@@ -1,0 +1,66 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.binf-widgets .cs-wizard .cs-wizard-step.csui-permissions-level .binf-modal-dialog.right,
+.binf-widgets .cs-wizard .cs-wizard-step.csui-permissions-apply-dialog .binf-modal-dialog.right {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+.binf-widgets .cs-wizard .cs-wizard-step.csui-permissions-level .binf-modal-dialog.left,
+.binf-widgets .cs-wizard .cs-wizard-step.cs-permission-group-picker .binf-modal-dialog.left {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}

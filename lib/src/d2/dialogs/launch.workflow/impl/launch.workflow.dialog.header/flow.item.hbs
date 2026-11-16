@@ -1,0 +1,11 @@
+<div class="d2-progress-icon-group">
+  <div class="d2-progress-icon-bar {{#if isFirst}}first-bar{{/if}}"></div>
+  <div class="d2-progress-icon {{progressStateClass}}"></div>
+  <div class="d2-progress-icon-bar {{#if isLast}}last-bar{{/if}}"></div>
+</div>
+<div class="d2-progress-title">
+  {{#if required}}<span class="d2-flow-item-required binf-glyphicon-star"></span>{{/if}}
+  <span class="d2-progress-label {{progressStateClass}}" title="{{label}}"
+        aria-label="{{ariaLabelStep}}">{{label}}</span>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

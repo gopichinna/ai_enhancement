@@ -1,0 +1,21 @@
+<div class="smart-tab-links-bar-toolbar-wrapper">
+  {{#if toolbar}}
+    <div class="left-toolbar smart-left-toolbar">
+      <div class="goto_previous_div" ><otc-icon disableEffects="true" icon="{{leftArrowIconName}}" class="cs-icon smart-goto-previous-page"  title="{{previousTooltip}}"  arialabel="{{previousTooltip}}"></otc-icon></div>
+    </div>
+  {{/if}}
+
+  <div class="tab-links-bar smart-tab-links-bar">
+    <span class="fadeout"></span>
+    <ul class="binf-nav {{tab_type}}" role="tablist"></ul>
+  </div>
+
+  {{#if toolbar}}
+    <div class="right-toolbar smart-right-toolbar">
+      <div class="goto_next_div">
+        <otc-icon disableEffects="true" icon="{{rightArrowIconName}}" class="cs-icon smart-goto-next-page"  title="{{nextTooltip}}"  arialabel="{{nextTooltip}}"></otc-icon>
+      </div>
+    </div>
+  {{/if}}
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

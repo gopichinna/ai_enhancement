@@ -1,0 +1,40 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .av4r-config-form {
+    padding-bottom: 32px;
+}
+
+.binf-widgets .av4r-config-form .rgn-av4r-config-form-content {
+    padding-bottom: 16px;
+}
+
+.binf-widgets .av4r-config-form .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label,
+.binf-widgets .av4r-config-form .alpaca-control {
+    padding-left: 0;
+}
+
+.binf-widgets .av4r-config-form .cs-form .d2-user-list-field .d2-user-listfield-selection-wrapper .d2-user-list-selection .user-selection-item,
+.binf-widgets .av4r-config-form .cs-form .d2-user-list-field .d2-user-listfield-selection-wrapper .d2-user-list-selection .user-selection-item .user-info{
+    padding: 0;
+}
+
+.binf-widgets .av4r-config-form .cs-form .alpaca-container-label,
+.binf-widgets .av4r-config-form .cs-form .d2-user-list-field .user-selection-item .d2-icon-drag,
+.binf-widgets .av4r-config-form .cs-form .d2-user-list-field .d2-list-toolbar {
+    display: none;
+}
+
+.binf-widgets .av4r-config-form .av4r-config-form-tnc-link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1a6aff;
+    text-decoration: none;
+}
+
+.binf-widgets .av4r-config-form .av4r-config-form-tnc-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 20%;
+}
+

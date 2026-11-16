@@ -1,0 +1,58 @@
+{{#if isSeparator}}
+{{else}}
+  {{#if hasIcon }}
+    {{#if renderIconAndText}}
+      <a title="{{title}}" href="#"
+                         {{#if linkRole}} role="{{linkRole}}" {{/if}}
+                         class="csui-toolitem {{disabledClass}} csui-toolitem-icon-text" data-cstabindex="-1">
+        {{#if iconName}}
+          {{{icon-v2 iconName=iconName theme=iconTheme states='true' on=iconStateIsOn}}}{{name}}
+        {{else}}
+          <span class="{{icon}}"></span>{{name}}
+        {{/if}}
+      </a>
+    {{else}}
+      {{#if renderTextOnly}}
+        <a  href="#"
+                          {{#if linkRole}} role="{{linkRole}}" {{/if}}
+                          class="csui-toolitem {{disabledClass}} csui-toolitem-textonly"
+                          data-cstabindex="-1">{{name}}
+          {{#if menuWithMoreOptions}}
+            <span class="csui-button-icon csui-icon-rightArrow icon-expandArrowUp"></span>
+          {{/if}}
+        </a>
+      {{else}}
+        <a href="#" title="{{title}}"
+                    {{#if linkRole}} role="{{linkRole}}" {{/if}}
+                    class="csui-toolitem {{disabledClass}} csui-acc-focusable csui-toolitem-icononly"
+                    data-cstabindex="-1" {{#if
+            toolItemAria}}aria-label="{{toolItemAria}}" {{else}}
+                           aria-label="{{title}}" {{/if}}
+          {{#if hasToolItemAriaExpand}}aria-expanded="{{toolItemAriaExpand}}" {{/if}}>
+          {{#if iconName}}
+            {{{icon-v2 iconName=iconName theme=iconTheme states='true' on=iconStateIsOn}}}
+          {{else}}
+            <span class="{{icon}}"></span>
+          {{/if}}
+        </a>
+      {{/if}}
+    {{/if}}
+  {{else}}
+      {{#if isLabel}}
+          <div
+             class="csui-toolitem-textonly csui-label">{{name}}
+          </div>
+      {{else}}
+          <a href="#"
+              {{#if linkRole}} role="{{linkRole}}" {{/if}}
+             class="csui-toolitem {{disabledClass}} csui-toolitem-textonly {{#if isSubItem}}csui-subitem{{/if}}"
+             data-cstabindex="-1">{{name}}
+              {{#if menuWithMoreOptions}}
+                  <span class="csui-button-icon csui-icon-rightArrow icon-expandArrowUp"></span>
+              {{/if}}
+          </a>
+      {{/if}}
+  {{/if}}
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

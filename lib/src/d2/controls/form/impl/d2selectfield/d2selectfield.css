@@ -1,0 +1,212 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-select {
+  width: 100%;
+}
+
+.d2-select .cs-field-write .cs-field-write-inner {
+  display: flex;
+}
+
+
+
+.d2-select .binf-btn-default:hover {
+  background-color: transparent;
+}
+
+.d2-select .binf-btn-default {
+  background-color: transparent;
+}
+
+.d2-select .cs-field-write button > .cs-label {
+  display: inline-block;
+  max-width: calc(100% - 1.4rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.d2-select .cs-field-write button {
+  border: 1px solid #a7a9ac;
+  border-radius: 3px;
+  background-color: transparent;
+  overflow: hidden;
+  line-height: 20px;
+  text-align: left;
+  
+  padding: 5px 4px 5px 4px;
+  white-space: normal;
+  height: 28px;
+  width: 320px;
+}
+
+.cs-form-set .d2-select .cs-field-write button {
+  background-color: white;
+}
+
+.d2-select .cs-field-write button:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid #666666;
+  border-radius: 3px;
+  margin: 0;
+  padding: 4px 3px 4px 3px;
+}
+
+.d2-select .cs-field-write button:-moz-focusring {
+  outline: 2px solid #666666;
+  border-radius: 3px;
+}
+
+.d2-select .cs-field-write button .cs-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 3px 0;
+  float: right;
+}
+
+.d2-select .cs-field-write.binf-open button .cs-icon {
+  margin-top: -2px;
+}
+
+
+
+.d2-select .binf-dropdown-menu {
+  margin-bottom: 5px;
+}
+
+.d2-select .dropup-menu {
+  top: auto;
+  bottom: 100%;
+}
+
+.d2-select .binf-dropdown-menu > li > a {
+  line-height: 1.75em;
+}
+
+.d2-select .binf-dropdown-menu li.binf-active a {
+  color: #333333;
+  background-color: #bac9ce;
+}
+
+.d2-select .binf-dropdown-toggle:focus {
+  outline: #666666 auto 2px;
+}
+
+.d2-select .binf-dropdown-toggle:-moz-focusring {
+  outline: 2px solid #666666;
+}
+
+
+.cs-form .alpaca-field.binf-has-error .cs-field-write button {
+  color: #000000;
+  background-color: #fae9ea;
+  border: 1px solid #df3324;
+}
+
+.d2-select.binf-dropdown .cs-field-write ul.binf-dropdown-menu {
+  width: inherit;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+  font-size: 0.875rem;
+  z-index: 1002;
+  max-width: inherit;
+}
+
+.d2-select.binf-dropdown .cs-field-write ul.binf-dropdown-menu li {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.d2-select.binf-dropdown .cs-field-write ul.binf-dropdown-menu li:first-child {
+  border-top: 2px solid transparent;
+}
+
+.d2-select.binf-dropdown .cs-field-write ul.binf-dropdown-menu li:last-child {
+  border-bottom: 2px solid transparent;
+}
+
+.d2-select.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 32px;
+  line-height: 26px;
+  padding: 3px 16px;
+  color: #333333;
+}
+
+.d2-select.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a:hover,
+.d2-select.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a:focus {
+  
+  background-color: #b2bec5;
+  color: #333333;
+}
+
+.d2-select.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a:active {
+  
+  background-color: #cbd4d9;
+  color: #333333;
+}
+
+.d2-select.binf-dropdown .cs-field-read .cs-field-read-inner {
+  display: flex;
+}
+
+.d2-select .cs-field-read .btn-container button {
+  width: inherit;
+  border: 0;
+  background: none;
+  max-width: 100%;
+  padding: 2px;
+}
+
+.d2-select .cs-field-read .btn-container button:focus {
+  outline: 0;
+  box-shadow: none;
+  border-radius: 3px;
+  padding: 1px;
+  border: 1px dotted #666;
+  cursor: default;
+}
+
+.d2-select .cs-field-read .btn-container button > span {
+  font-size: 14px;
+}
+
+.d2-select .cs-field-write .cs-field-write-inner .icon-container {
+  position: relative;
+  right: 0;
+  top: 0;
+  display: flex;
+}
+
+.d2-select.cs-formfield .icon-container .csui-icon-edit.inline-edit-icon {
+  height: 32px;
+  width: 32px;
+  max-width: 32px;
+  min-width: 32px;
+  margin-top: -3px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.d2-select.cs-formfield .icon-container .csui-icon-edit:focus {
+  outline:none;
+}
+
+.d2-select.cs-formfield .cs-field-read .read-only-label{
+  font-size: 14px;
+  line-height: 28px;
+  color: #333333;
+}

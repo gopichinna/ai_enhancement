@@ -1,0 +1,76 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .smart-indicator-wrapper {
+    margin-left: 2px;
+}
+
+.binf-widgets .smart-indicator-wrapper otc-icon {
+    border-radius: 50%;
+    background: #fff;  
+    margin: 0 2px;
+    cursor: default;
+}
+
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item .smart-list-title {
+    white-space: nowrap;    
+    overflow: hidden;
+    max-width: calc(100% - 64px);
+    margin-left: -3px;
+    padding: 8px 0;
+    max-height: 55px;
+}
+
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item .smart-grid .smart-list-title {
+    margin-left: 0px;
+}
+
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item .smart-location-title {
+    white-space: nowrap;    
+    overflow: hidden;
+    max-width: calc(100% - 46px);
+}
+
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item .smart-list-title .smart-flex-guard {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.binf-widgets .smart-target-browse .smart-np-gridview .csui-np-content .cs-list .binf-list-group-item .smart-list-title .smart-flex-guard {
+    align-items: flex-start;
+}
+
+.binf-widgets .smart-np-gridview .smart-indicator-wrapper{
+    margin: 4px 0;
+} 
+
+.binf-widgets .smart-target-browse .smart-np-gridview .smart-indicator-icons  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.binf-widgets .smart-target-browse .smart-np-gridview .csui-np-content .cs-list .binf-list-group-item .smart-list-title .smart-flex-guard otc-icon:first-of-type {
+    margin: 0;
+}
+
+.binf-widgets .smart-target-browse .smart-np-gridview .csui-np-content .cs-list .binf-list-group-item .smart-list-title .smart-flex-guard otc-icon:not(:first-of-type) {
+    margin: 0 0 0 4px;
+}
+
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item .smart-list-title .smart-flex-guard span {
+    flex: 0 1 auto;
+}
+
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item .smart-list-title .smart-flex-guard span.csui-list-item-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: none;
+    margin: 0;
+}
+
+.binf-widgets .smart-indicator-icons > *{
+    vertical-align: middle;
+}

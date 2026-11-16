@@ -1,0 +1,36 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-task-expanded-note-header-container {
+  width: calc(100% - 62px);
+}
+
+.d2-task-notes .d2-toolbar-task-notes .d2-button-toolbar.expanded-note-toolbar > div {
+  flex-grow: 0;
+}
+
+.d2-task-notes .d2-toolbar-task-notes .d2-button-toolbar.expanded-note-toolbar .region-left {
+  padding-right: 8px;
+}
+
+.d2-task-notes .d2-toolbar-task-notes .d2-button-toolbar.expanded-note-toolbar .d2-task-expanded-note-header-container {
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.d2-task-expanded-note {
+  height: 100%;
+  overflow: hidden;
+}
+
+.d2-task-expanded-note-container {
+  height: 100%;
+}
+
+.d2-task-expanded-note .d2-task-expanded-note-content {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 24px 18px 0 28px;
+  white-space: pre-wrap;
+}

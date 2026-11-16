@@ -1,0 +1,101 @@
+<div role="dialog" class="binf-modal-dialog"
+      {{#if showHeader}}
+       aria-labelledby="{{dlgTitleId}}"
+      {{/if}}
+      {{#if message}}
+       aria-describedby="{{dlgMsgId}}"
+      {{/if}}>
+  <div class="binf-modal-content">
+    {{#if showHeader}}
+      <div class="binf-modal-header question-header">
+        <span class="icon csui-icon-notification-confirmation-white"></span>
+        <span class="title-text" title="{{title}}" id="{{dlgTitleId}}">{{title}}</span>
+      </div>
+    {{/if}}
+
+    {{#if message}}
+      <div class="binf-modal-message question-message">
+        <span class="message-text" title="{{message}}">{{message}}</span>
+      </div>
+    {{/if}}
+
+    <div class="delete-choices-group">
+      {{#if isMultiLink}}
+        <div class="deleteChoice">
+          <div class="delete-selection-group-label">{{Links}}</div>
+          <div class="csui-checkbox-primary">
+            <input type="checkbox" title="{{DeleteFileAndLinks}}" tabindex="0" id="delete-file-and-links">
+            <label for="delete-file-and-links">{{DeleteFileAndLinks}}</label>
+          </div>
+        </div>
+      {{/if}}
+
+      {{#if showMultiLinkSeparator}}
+        <div class="horizontal-line-separator"></div>
+      {{/if}}
+
+      {{#if isContainer}}
+        <div class="deleteChoice">
+          <div class="delete-selection-group-label">{{Folders}}</div>
+          <div class="csui-checkbox-primary">
+            <input type="checkbox" title="{{DeleteFolderAndDecendants}}" tabindex="0" id="delete-folder-and-decendants">
+            <label for="delete-folder-and-decendants">{{DeleteFolderAndDecendants}}</label>
+          </div>
+        </div>
+      {{/if}}
+
+      {{#if showFolderSeparator}}
+        <div class="horizontal-line-separator"></div>
+      {{/if}}
+
+      {{#if isExportDialog}}
+        <div class="deleteChoice">
+          <div class="csui-checkbox-primary">
+             <input type="checkbox" title="{{includeSubFolderProperties}}" tabindex="0"
+                id="export-include-sub-folder">
+             <label for="export-include-sub-folder">{{includeSubFolderProperties}}</label>
+          </div>
+        </div>
+      {{/if}}
+
+      {{#if isFile}}
+        <div class="deleteChoice">
+          <div class="delete-selection-group-label">{{Files}}</div>
+          <div class="csui-checkbox-primary">
+            <input type="checkbox" title="{{DeleteFileAndVersions}}" tabindex="0" id="delete-file-and-versions">
+            <label for="delete-file-and-versions">{{DeleteFileAndVersions}}</label>
+          </div>
+
+          {{#if isVirtualDoc}}
+            <div class="csui-checkbox-primary">
+              <input type="checkbox" title="{{DeleteVDocAndDecendants}}" tabindex="0" id="delete-vdoc-and-decendants"/>
+              <label for="delete-vdoc-and-decendants">{{DeleteVDocAndDecendants}}</label>
+            </div>
+          {{/if}}
+
+        </div>
+      {{/if}}
+
+      {{#if isSavedSearchCategory}}
+        <div class="deleteChoice">
+          <div class="csui-checkbox-primary">
+            <input type="checkbox" title="{{DeleteSearchGroupAndDescendants}}" tabindex="0"
+                   id="delete-search-group-and-descendants">
+            <label for="delete-search-group-and-descendants">{{DeleteSearchGroupAndDescendants}}</label>
+          </div>
+        </div>
+      {{/if}}
+    </div>
+
+    <div class="binf-modal-footer">
+      <otc-button type="primary" class="d2-otc-btn csui-yes csui-default" tabindex="0"
+              data-binf-dismiss="modal"
+              title="{{DeleteButtonLabel}}" ariaLabel="{{DeleteButtonLabel}}">{{DeleteButtonLabel}}</otc-button>
+      <otc-button type="secondary" class="d2-otc-btn csui-cancel" tabindex="0" data-binf-dismiss="modal"
+              title="{{CancelButtonLabel}}" ariaLabel="{{CancelButtonLabel}}">{{CancelButtonLabel}}</otc-button>
+    </div>
+  </div>
+</div>
+
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,138 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .binf-panel-heading {
+    height: 40px;
+    background-color: #F5F9FF;
+    border-top: 1px solid #ffffff;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .binf-panel-heading:hover {
+    background-color: #b2bec5;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem[aria-expanded="true"] .binf-panel-heading {
+    background-color: #E1E8F6;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .binf-panel-heading .container-icon {
+    margin: 0 14px 0 39px;
+    height: 24px;
+    min-height: 24px;
+    width: 24px;
+    min-width: 24px;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .binf-panel-heading .dropdown-icon { 
+    min-height: 16px;  
+    min-width: 16px;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content {
+    min-height: 42px;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem div.cs-content li.binf-list-group-item {
+    height: 42px;
+    padding-left: 41px;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem.flatten-tree .cs-content .cs-list-group>a {
+    padding: 0 16px 0 16px;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem.flatten-tree .cs-content .cs-list-group>li {
+    padding: 0 16px 0 5px;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content .cs-list-group .binf-active {
+    background-color: #f7f7f7;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content .cs-list-group li.inactive,
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content .cs-list-group li.inactive .csui-icon,
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content .cs-list-group li.inactive .list-item-title {
+    cursor: default;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content .cs-list-group li.inactive .csui-icon {
+    opacity: 0.5;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content .cs-list-group li.inactive .list-item-title {
+    color: #757575;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content .cs-list-group .binf-list-group-item .csui-icon.csui-end-icon {
+    min-width: 16px;
+    max-width: 16px;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content .cs-list-group .binf-list-group-item .csui-icon.csui-node-type-icon {
+    min-width: 24px;
+    max-width: 24px;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content .cs-list-group .binf-list-group-item .csui-icon.csui-node-type-image {
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group .cs-simpletreelistitem .cs-emptylist-container {
+    display: block;
+    max-height: 42px;
+    min-height: 42px;
+    overflow: hidden;
+    padding-left: 101px;
+    background-color: #ffffff;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content .cs-list-group .cs-emptylist-container .cs-emptylist-text {
+    font-size: 18px;
+    height: 22px;
+    line-height: 1.2;
+    margin: 8px 0;
+    padding: 0;
+    text-align: left;
+    position: inherit;
+  }
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content .cs-list-group .cs-emptylist-container .cs-emptylist-text {
+    font-size: 16px;
+    height: 36px;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group .cs-simpletreelistitem .cs-content .binf-list-group-item span {
+    vertical-align: middle;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group .cs-simpletreelistitem .cs-content .binf-list-group-item .smart-flex-guard {
+    margin-right: 0px;
+}
+
+.binf-widgets .smart-target-browse .cs-list .cs-simpletreelistitem .binf-list-group-item .smart-target-browse-checkbox {
+    line-height: 24px;
+    margin-left: 16px;
+    margin-right: 12px;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem  .cs-content .cs-list-group .binf-list-group-item .csui-list-item-title {
+    margin-left: 5px;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem  .cs-content .cs-list-group .binf-list-group-item:not(.csui-disabled) .csui-list-item-title:not([disabled]):hover {    
+    margin-left: 1px;
+}
+
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem.binf-panel:focus .cs-header {
+    box-shadow: none;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem.binf-panel:focus-visible .cs-header {
+    box-shadow: inset 0 0 0 1px #2e3d98, inset 0 0 0 2px #fff;
+    outline: 0;
+}  

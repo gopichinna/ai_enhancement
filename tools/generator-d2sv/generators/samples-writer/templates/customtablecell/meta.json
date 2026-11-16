@@ -1,0 +1,17 @@
+{
+  "id": "tableCustomCell",
+  "name": "Custom Table Cell Sample",
+  "descriptors": [
+    {
+      "name": "app",
+      "properties": {
+        "pluginsGroupId": "com.opentext.d2.smartview",
+        "pluginArtifactId": "D2-CustomTableCell",
+        "pluginVersion": "1.0.0",
+        "pluginDesc": "D2 Custom Table Sample",
+        "pluginPackage": "CustomTableCell",
+        "includeSVSupport": true
+      }
+    }
+  ]
+}

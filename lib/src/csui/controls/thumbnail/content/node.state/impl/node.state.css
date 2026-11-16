@@ -1,0 +1,24 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-thumbnail-nodestate .csui-node-state {
+  min-width: 56px;
+  max-width: 152px;
+}
+
+.binf-widgets .csui-thumbnail-nodestate .csui-node-state-reservation > ul {
+  display: block;
+}
+
+.binf-widgets .csui-thumbnail-nodestat .csui-node-state-reservation > ul > li {
+  display: inline-block;
+}
+
+.binf-widgets .csui-thumbnail-nodestate .csui-node-state-reservation .icon {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}

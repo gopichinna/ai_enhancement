@@ -1,0 +1,19 @@
+{
+  "name": "d2svaisummary",
+  "version": "1.0.0",
+  "description": "D2 Smart View plugin - D2SV-AI-Summary",
+  "private": true,
+  "scripts": {
+    "setup": "node d2svaisummary.setup.js && grunt ensureDirSymlink && grunt generateBuildConfig",
+    "build": "grunt package",
+    "compile": "grunt compile",
+    "test": "grunt test",
+    "start": "dctmw-serve"
+  },
+  "svf": {
+    "name": "d2svaisummary",
+    "deps": [
+      "d2"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-suppporting-wrapper{
+  height:100%;
+}
+
+.d2-suppporting-wrapper .d2-supporting-docs{
+  height:100%;
+}
+
+.d2-supporting-docs-info .d2-header-message .header-message-label{
+  font-size:13px;
+}
+
+.d2-supporting-docs-info .d2-header-message .header-message-icon{
+  margin:0 8px 0 24px;
+}
+
+
+.d2-supporting-docs .d2-supporting-docs-body th.csui-table-cell-name{
+  padding-left:10px;
+}
+
+.d2-supporting-docs .d2-supporting-docs-body {
+  padding:13px 18px 0 25px;
+}
+
+.d2-supporting-docs .d2-supporting-docs-body table.binf-table tbody tr{
+  height:55px;
+}
+
+.d2-supporting-docs .d2-supporting-docs-body table.binf-table thead tr th.csui-table-cell-name,
+.d2-supporting-docs .d2-supporting-docs-body table.binf-table tbody tr td.csui-table-cell-name
+{
+  padding-left:15px;
+}
+
+.d2-supporting-docs .d2-supporting-docs-body table.binf-table tbody tr td.csui-table-cell-type span.csui-icon-group {
+  height:32px;
+  width:32px;
+}
+
+
+.d2-supporting-docs .d2-supporting-docs-body table.binf-table tbody tr td.csui-table-cell-type span.csui-icon-group span.csui-node-type-icon {
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  margin-right: 5px;
+}
+
+

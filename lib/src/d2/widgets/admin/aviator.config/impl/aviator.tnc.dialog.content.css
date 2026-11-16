@@ -1,0 +1,21 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .av4r-tnc-dialog-view.csui-sidepanel-custom .csui-sidepanel-container {
+    width: 500px;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+.binf-widgets .av4r-tnc-dialog-content {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.binf-widgets .av4r-tnc-dialog-content p {
+    margin: 10px 0 0;
+}
+
+.binf-widgets .av4r-tnc-dialog-content p b {
+    font-weight: 700;
+}

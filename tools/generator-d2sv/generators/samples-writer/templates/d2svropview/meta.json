@@ -1,0 +1,17 @@
+{
+  "id": "d2svropview",
+  "name": "D2SV Read-only permission display",
+  "descriptors": [
+    {
+      "name": "app",
+      "properties": {
+        "pluginsGroupId": "com.opentext.d2.smartview",
+        "pluginArtifactId": "D2SV-ReadOnlyPermission-View",
+        "pluginVersion": "1.0.0",
+        "pluginDesc": "D2SV-ReadOnlyPermission-View",
+        "pluginPackage": "D2SVROPView",
+        "includeSVSupport": true
+      }
+    }
+  ]
+}

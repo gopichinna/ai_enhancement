@@ -1,0 +1,29 @@
+.binf-tab-content .d2-task-<%= viewName.toLowerCase() %>-wrapper {
+  height: 100%;
+}
+
+.binf-tab-content .d2-task-<%= viewName.toLowerCase() %> {
+  height: 100%;
+}
+
+.d2-task-<%= viewName.toLowerCase() %> .helloworld {
+  padding: 6px 16px 0 16px;
+  color: red;
+}
+
+.d2-task-<%= viewName.toLowerCase() %> .helloworld .helloworld-div h3 {
+  font: inherit;
+  font-size: 32px;
+  padding-top: 24px;
+}
+
+.d2-task-<%= viewName.toLowerCase() %> .helloworld .helloworld-div ul {
+  font: inherit;
+  list-style-type: circle;
+  padding-left: 24px;
+}
+
+.d2-task-<%= viewName.toLowerCase() %> .helloworld .helloworld-div ul li {
+  font: inherit;
+  padding: 4px 0 4px 0;
+}

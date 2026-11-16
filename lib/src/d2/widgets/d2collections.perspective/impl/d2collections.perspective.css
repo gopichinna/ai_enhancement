@@ -1,0 +1,158 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-widget-collectionwidget .tile-header {
+  cursor: pointer;
+}
+
+.d2-collections-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.csui-table-empty .addItems {
+  position: relative;
+  top: 250px;
+}
+
+.d2-widget-collectionwidget .csui-table-empty.csui-table-empty-default:not(.csui-state-loading),
+.empty-collection-icon {
+  background-image: url("../impl/images/emptyCollection.svg");
+}
+
+.csui-table-empty .addItems .add-items-label {
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.csui-table-empty .addItems .addItemIcon {
+  margin-left: 0;
+}
+
+.d2-widget-collectionwidget .csui-table-empty.csui-table-empty-default .csui-no-result-message {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+
+
+.collections-empty-view {
+  display: none;
+  flex: 1 1 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #FFF;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.collections-empty-view.collections-empty-view--show {
+  display: flex;
+}
+
+.collections-empty-view-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.empty-collection-icon {
+  width: 220px;
+  height: 220px;
+  background-repeat: no-repeat;
+}
+
+.collections-empty-view-content .start-org-message {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 1rem;
+}
+
+.collections-empty-view-content .create-col-message {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.collections-empty-view-content .create-btn .create-collection-btn{
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content .binf-modal-dialog .binf-modal-body {
+  padding: 0 24px;
+}
+
+.csui-nodestable.d2-widget-table-view .csui-facet-table-container.csui-facet-table-empty-container {
+  display: none;
+}
+
+.d2-widget-collectionwidget .csui-tabletoolbar .editCollectionForm {
+  font-size: 24px;
+  color: #333333;
+  flex: 1 1 100%;
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.binf-widgets .d2-collections-wrapper{
+  background: #fff;
+}
+.binf-widgets .d2-collections-wrapper .d2-collection-simple-list-search{
+  height: 48px;
+  background: #ffffff;
+  padding: 0.5rem 1rem;
+}
+
+.binf-widgets .d2-collections-wrapper .d2-collection-simple-list-search .search-box {
+  display: flex;
+}
+
+.binf-widgets .d2-collections-wrapper .d2-collection-simple-list-search .search-box .icon-search-placeholder{
+  position: absolute;
+}
+.binf-widgets .d2-collections-wrapper .d2-collection-simple-list-search .search-box input{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid #757575;
+  background: #FFF;
+  padding:4px 28px;
+}
+.binf-widgets .d2-collections-wrapper .d2-collection-simple-list-search .search-box .i-close {
+  display: none;
+  z-index: 1;
+  position: relative;
+  right: 1.5rem;
+  top: 0.25rem;
+}
+
+.binf-widgets .d2-collections-wrapper .d2-collection-simple-list-search .search-box .i-close::before {
+  font-family: 'smartview-icon';
+  content: "\e902";
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  width: 10px;
+  left: 5px;
+  top: 4px;
+  font-weight: bold;
+  color: #333333;
+}
+.binf-btn.d2-collections-simple-list-header-label{
+  width: auto !important;
+}
+
+.binf-widgets .d2-collections-list-view-scroll .d2-collection-simple-list.no-footer .d2-collection-simple-list-container .empty-state{
+  min-height: 200px;
+}
+

@@ -1,0 +1,106 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .smart-target-browse .csui-np-header .csui-folder-name,
+.binf-widgets .smart-target-browse .csui-np-header > div,
+.binf-widgets .smart-target-browse .csui-np-header > div > form{
+  height: 100%;
+  flex: 1 1 0;
+}
+.binf-widgets .smart-target-browse .csui-np-header > div {
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .smart-target-browse .csui-np-header .csui-folder-name {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(100% - 48px);
+  z-index: 1;
+}
+
+.binf-widgets .smart-target-browse .csui-np-header .binf-form-group > input::-ms-clear,
+.binf-widgets .smart-target-browse .csui-np-header .binf-form-group > input::-ms-reveal {
+  display: none;
+}
+
+.binf-widgets .smart-target-browse .csui-np-header .csui-search-item{
+  display: inline-block;
+  margin: 0;
+  margin-left: 12px;
+  line-height: 2em;
+  width: calc(100% - 48px);
+  float: none;
+}
+
+.binf-widgets .smart-target-browse .csui-np-header .csui-search-item-type {
+  display: inline-block;
+  height: 32px;
+  float: none;
+  margin: 0;
+}
+
+.binf-widgets .smart-target-browse .csui-np-header .csui-np-header .csui-search-item-left-panel {
+  width: 50%;
+  float: left;
+}
+
+.binf-widgets .smart-target-browse .csui-np-header .csui-np-header .csui-search-item-right-panel {
+  width: 50%;
+  float: right;
+}
+
+.binf-widgets .smart-target-browse .csui-np-header .csui-search-item-location,
+.binf-widgets .smart-target-browse .csui-np-header .csui-search-item-location-disabled {
+  height: 2em;
+  line-height: 2em;
+  width: 100%;
+  margin: 0px;
+}
+
+.binf-widgets .smart-target-browse .csui-search-item .csui-np-header .csui-search-item-name,
+.binf-widgets .smart-target-browse .csui-search-item .csui-np-header .csui-search-item-name-disabled {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.binf-widgets .smart-target-browse .csui-np-header .csui-search-results-header {
+  margin: 5px 0px 0px 0px;
+}
+
+.binf-widgets .smart-target-browse .csui-np-header .binf-dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+.binf-widgets .smart-target-browse .csui-np-header .binf-dropdown-menu.csui-more-dropdown-menu {
+  left: auto !important;
+  right: 8px !important;
+  top: 40px !important;
+  position: absolute !important;
+}
+
+.binf-widgets .smart-target-browse .csui-np-header .smart-header-tools {
+  margin-left: auto;
+}
+
+.binf-widgets .csui-node-picker .csui-np-header .smart-header-tools .csui-tabletoolbar {
+  background-color: transparent;
+  border: none;
+}
+.binf-widgets .csui-node-picker .csui-np-header .smart-header-tools .smart-addable-types {
+  padding: 0 24px 0 0;
+  height: 32px;
+}
+
+.binf-widgets .smart-target-browse .csui-slideMidLeft .csui-np-header .smart-header-tools, .binf-widgets .smart-target-browse .left-only .csui-np-header .smart-header-tools {
+  display: block;
+}

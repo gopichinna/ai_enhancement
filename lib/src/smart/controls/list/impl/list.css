@@ -1,0 +1,346 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .cs-list.smart-cs-list {
+  position: relative;
+}
+
+
+.binf-widgets .smart-cs-list.smart-list-light {
+  background: #ffffff;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.binf-widgets .smart-cs-list.smart-list-light .tile-header {
+  border-radius: 6px 6px 0px 0px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.binf-widgets .smart-cs-list.smart-list-light .tile-content {
+  
+  border-radius: 6px;
+}
+
+.binf-widgets .smart-cs-list.smart-list-light .cs-emptylist-container {
+  background-color: #ffffff;
+}
+
+
+
+
+
+
+.binf-widgets .smart-cs-list:hover {
+  outline: 1px solid #94bbea;
+  outline-offset: 2px;
+}
+
+.binf-widgets .smart-cs-list:active:hover {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+}
+
+.binf-widgets .smart-cs-list .tile-header {
+  height: 48px;
+  background: #ffffff;
+  font-size: 20px;
+  color: #333333;
+  border-bottom: 1px solid #cbd3d9;
+}
+
+.binf-widgets .smart-cs-list.cs-tile-header-hover .tile-header,
+.binf-widgets .smart-cs-list.cs-has-focus .tile-header {
+  background-color: #DCE4E8;
+}
+
+.binf-widgets .smart-cs-list .tile-header .tile-type-icon {
+  flex: 0 0 44px;
+}
+
+.binf-widgets .smart-cs-list .tile-title .csui-heading {
+  line-height: 47px;
+  font-weight: 400;
+}
+
+
+.cs-list.smart-cs-list .binf-panel-heading {
+  height: 64px;
+  padding: 5px 0 0 0;
+}
+
+.cs-list.smart-cs-list .binf-panel-heading .binf-panel-title {
+  font-size: 22px;
+  padding: 5px 5px 0 15px;
+  display: inline-block;
+}
+
+.binf-widgets .smart-empty-list .tile-content .binf-list-group {
+  height: 100%;
+}
+
+.cs-list.smart-cs-list .binf-panel-heading .binf-panel-title .cs-icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  vertical-align: middle;
+  float: left;
+  margin-top: -5px;
+  margin-left: -10px;
+}
+
+html[dir="rtl"] .cs-list.smart-cs-list .binf-panel-heading .binf-panel-title .cs-icon {
+  float: right;
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+.cs-list.smart-cs-list .cs-toolbar {
+  
+  margin-right: 5px;
+}
+
+.cs-list.smart-cs-list .cs-toolbar .binf-btn {
+  float: right;
+  padding: 0;
+  height: 38px;
+  border-color: transparent;
+}
+
+.cs-list.smart-cs-list .cs-toolbar .cs-icon {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2),
+(min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .binf-widgets .cs-list.smart-cs-list .tile-content {
+    -webkit-overflow-scrolling: auto;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .binf-widgets .cs-list.smart-cs-list .tile-content {
+    padding-bottom: 1px;
+  }
+}
+
+.smart-cs-list .tile-content {
+  padding: 0;
+  margin: 0;
+  height: calc(100% - 49px);
+}
+
+.cs-list.smart-cs-list .tile-content .binf-list-group {
+  margin-bottom: 0;
+}
+
+.csui-favorites-view-container .cs-list.smart-cs-list .tile-content .binf-list-group .cs-emptylist-container:not(.csui-state-loading) {
+  background-image: none;
+}
+
+.csui-favorites-view-container .cs-list.smart-cs-list .tile-content .binf-list-group .cs-emptylist-container .cs-emptylist-text {
+  top: 0;
+}
+
+.binf-widgets .cs-list.smart-cs-list .tile-controls .search-box .clearer {
+  right: 54px;
+  top: 14px;
+}
+
+.binf-widgets .cs-list.smart-cs-list .search-box .clearer {
+  color: rgb(211, 211, 211);
+  position: absolute;
+  top: 14px;
+  right: 4px;
+  pointer-events: auto;
+  width: 20px;
+  height: 20px;
+  z-index: 10 !important;
+}
+
+.binf-widgets .cs-list.smart-cs-list .search-box .fadeout {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  cursor: text;
+  width: 35px;
+  height: 20px;
+  z-index: 9;
+  display: none;
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 100%);
+  
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 100%);
+  
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 100%);
+  
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1);
+  
+}
+
+.binf-widgets .cs-list.smart-cs-list .tile-controls .search-box .fadeout {
+  top: 15px;
+  right: 60px;
+}
+
+.cs-list.smart-cs-list .search {
+  text-indent: 2px;
+  
+}
+
+.binf-widgets .cs-list.smart-cs-list .search::-ms-clear {
+  display: none;
+}
+
+
+
+.binf-widgets .cs-list.smart-cs-list .tile-controls {
+  height: 32px;
+}
+
+.binf-widgets .cs-list.smart-cs-list .tile-controls .search-box {
+  height: 28px;
+  align-self: center;
+  flex-grow: 1;
+}
+
+.binf-widgets .cs-list.smart-cs-list .search-enabled.tile-controls .tile-icons {
+  display: none;
+}
+
+.binf-widgets .cs-list.smart-cs-list .tile-controls .close-search-icon {
+  display: none;
+}
+
+.binf-widgets .cs-list.smart-cs-list .search-enabled.tile-controls .close-search-icon {
+  display: flex;
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+.binf-widgets .cs-list.smart-cs-list .csui-list-view-error .tile-header:hover {
+  cursor: default;
+  background-color: #ffffff;
+}
+
+
+.binf-widgets .cs-list.smart-cs-list .csui-list-view-error .tile-footer,
+.binf-widgets .cs-list.smart-cs-list .csui-list-view-error .tile-icons,
+.binf-widgets .cs-list.smart-cs-list .csui-list-view-error:hover .tile-icons {
+  display: none;
+}
+
+.binf-widgets .cs-list.smart-cs-list .tile-header .tile-controls .search-box .search {
+  font-style: normal;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .binf-widgets.csui-on-ipad .cs-list.smart-cs-list .tile-controls .search-box {
+    right: 60px;
+  }
+
+  .binf-widgets.csui-on-ipad .cs-list.smart-cs-list .tile-header .tile-controls .search-box .search {
+    line-height: 28px;
+  }
+}
+
+.binf-widgets .cs-list.smart-cs-list .tile-controls .search-box.expanded {
+  width: 100%;
+}
+
+.binf-widgets .cs-list.smart-cs-list .tile-controls .icon-search,
+.binf-widgets .cs-list.smart-cs-list .cs-no-expanding .icon-search.icon-search-hide {
+  cursor: pointer;
+  display: inline-block;
+  background-repeat: no-repeat;
+  font-size: 1.2em;
+  position: relative;
+  
+  float: none;
+  transform: none;
+}
+
+.binf-widgets .cs-list.smart-cs-list .tile-controls .icon-search {
+  margin: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.binf-widgets .cs-list.smart-cs-list.cs-no-expanding .icon-search.icon-search-hide {
+  top: 0;
+  left: 2px;
+}
+
+.binf-widgets .cs-list.smart-cs-list .tile-controls .search {
+  left: 60px;
+  z-index: 9;
+  outline: 0;
+  border: 1px solid #a7a9ac;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 30px;
+  right: 34px;
+  height: 28px;
+  width: 100%;
+  top: 6px;
+  font-weight: 300;
+}
+
+.binf-widgets .cs-list.smart-cs-list .tile-controls .search:focus,
+.binf-widgets .cs-list.smart-cs-list input[type="search"]:focus{
+  border: 2px solid #666666;
+}
+
+.binf-widgets .cs-list.smart-cs-list .tile-controls .search-box .search {
+  padding-left: 28px;
+  padding-right: 1.75em;
+  font-size: 0.875em;
+}
+
+
+
+.binf-widgets .cs-list.smart-cs-list input[disabled] {
+  color: #757575;
+}
+
+.binf-widgets .cs-list.smart-cs-list input[readonly] {
+  color: #333333;
+}
+
+.binf-widgets .cs-list.smart-cs-list .tile-icons {
+  display: flex;
+  margin: auto;
+  float: right;
+  padding-left: 8px;
+}
+
+.binf-widgets .cs-list.smart-cs-list .cs-no-expanding .tile-header {
+  padding-right: 8px;
+}
+
+.binf-widgets .cs-list.smart-cs-list .tile-controls .cs-icon-container:focus {
+  outline: none;
+  
+}
+
+.binf-widgets .cs-list.smart-cs-list .cs-icon-container {
+  width: 32px;
+  height: 40px;
+}
+
+.binf-widgets .cs-list.smart-cs-list .tile-controls .search-box .icon-search-placeholder {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  z-index: 10;
+  cursor: default;
+}
+
+.binf-widgets .cs-list.smart-cs-list .tile-controls .search-box .icon-search-placeholder .csui-icon-v2-size-normal {
+  width: 28px;
+  height: 28px;
+}

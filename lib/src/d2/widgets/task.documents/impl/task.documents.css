@@ -1,0 +1,105 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-task-documents-widget-container .d2-task-documents-widget {
+  height: 100%;
+  width: 100%;
+}
+
+.binf-widgets .d2-task-documents-widget-container .binf-dropdown-menu {
+  overflow: hidden;
+}
+
+.binf-widgets .d2-task-documents-widget .d2-task-documents {
+  height: inherit;
+  width: inherit;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.binf-widgets .d2-task-documents-widget .d2-task-documents .d2-task-documents-title-container {
+  flex: 0 0 48px;
+}
+
+.binf-widgets .d2-task-documents-widget .d2-task-documents .d2-task-documents-panel-container {
+  flex: 1 1 auto;
+  display: flex;
+  height: calc(100% - 48px);
+  width: inherit;
+}
+
+.binf-widgets .d2-task-documents-widget .d2-task-documents .d2-task-documents-panel-container > .d2-task-documents-panels {
+  flex: 1 1 auto;
+  overflow: hidden;
+  border-top: 1px solid #cccccc;
+}
+
+.binf-widgets .d2-task-documents-widget .d2-task-documents .d2-task-documents-panel-container .d2-task-documents-panels .cs-metadata .metadata-inner-wrapper {
+  height: calc(100vh - 145px - 2em);
+}
+
+.binf-widgets .d2-task-documents-widget .d2-task-documents .cs-metadata .metadata-header-right-bar .csui-tabletoolbar {
+  padding-right: 20px;
+}
+
+.binf-widgets .d2-task-documents-widget:not(.show-miniviewer) .d2-task-documents-panel-container .d2-task-documents-panels .tertiary-pane,
+.binf-widgets .d2-task-documents-widget:not(.show-miniviewer) .cs-metadata .metadata-header-right-bar .csui-tabletoolbar .csui-rightToolbar [data-csui-command="d2-restoreminiviewer"] {
+  display: none;
+}
+
+.binf-widgets .d2-task-documents-widget .d2-task-documents .cs-metadata .metadata-header-right-bar .csui-tabletoolbar .csui-rightToolbar [data-csui-command="d2-restoreminiviewer"],
+.binf-widgets .d2-task-documents-widget .d2-task-documents .cs-metadata .metadata-header-right-bar .csui-tabletoolbar .csui-rightToolbar [data-csui-command="d2-restoreminiviewer"]:hover {
+  width: 32px;
+  border: none;
+  border-radius: 50%;
+}
+
+.binf-widgets .d2-task-documents-widget .d2-task-documents .cs-metadata .metadata-header-right-bar .csui-tabletoolbar .csui-rightToolbar [data-csui-command="d2-restoreminiviewer"] > .csui-toolitem {
+  margin: 0;
+}
+
+.binf-widgets .d2-task-documents-widget .d2-task-documents .cs-metadata .metadata-header-right-bar .csui-tabletoolbar .csui-rightToolbar [data-csui-command="d2-restoreminiviewer"] > .csui-toolitem > .icon {
+  background-size: 28px;
+}
+
+.binf-widgets .d2-task-documents-widget .d2-task-documents .cs-metadata.d2-task-metadata-rightbar-active .metadata-content-header .metadata-header.with-right-bar > .d2-property-page-mask {
+  width: calc(100% + 7px);
+}
+
+.binf-widgets .d2-task-documents-widget .d2-task-documents .cs-metadata .metadata-content-header .metadata-header.with-right-bar > .d2-property-page-mask {
+  width: calc(100% + 60px);
+}
+
+.binf-widgets .d2-task-documents-widget .d2-task-documents .cs-metadata .metadata-content-header .csui-toggle-wrapper .cs-go-back {
+  display: none !important;
+}
+
+
+.binf-widgets .d2-task-documents-widget.metadata-edit .d2-task-documents .d2-task-documents-title-container {
+  position: relative;
+}
+
+.binf-widgets .d2-task-documents-widget.metadata-edit .d2-task-documents .d2-task-documents-title-container > .d2-property-page-mask {
+  height: calc(100% + 1px);
+}
+
+.binf-widgets .d2-task-documents-widget .d2-task-documents .d2-task-documents-panels > .d2-split-panel-container.d2-lowest-resolution-split-panel .tertiary-pane,
+.binf-widgets .d2-task-documents-widget .d2-task-documents .d2-task-documents-panels > .d2-split-panel-container.d2-low-resolution-split-panel .tertiary-pane,
+.binf-widgets .d2-task-documents-widget .d2-task-documents .d2-task-documents-panels > .d2-split-panel-container.d2-medium-resolution-split-panel .tertiary-pane,
+.binf-widgets .d2-task-documents-widget .d2-task-documents .d2-task-documents-panels > .d2-split-panel-container.d2-above-medium-resolution-split-panel .tertiary-pane {
+  min-width: 350px;
+  max-width: calc(100% - 650px);
+}
+
+.binf-widgets .d2-task-documents-widget .d2-task-documents .d2-task-documents-panels > .d2-split-panel-container.d2-high-resolution-split-panel .tertiary-pane {
+  max-width: calc(100% - 924px);
+}
+
+.binf-widgets .d2-task-document-accessibility {
+  margin-left: 6px;
+}
+
+
+

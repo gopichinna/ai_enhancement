@@ -1,0 +1,57 @@
+
+<div class="smart-facet-item-collapsed {{#if isSingleFacetValue}}smart-facet-item-single-value{{else}}smart-facet-item-multi-value{{/if}} {{#if readOnlyFilter}}smart-readonly{{/if}}">
+  <div {{#unless isSingleFacetValue}}role="button"{{/unless}}
+    class="csui-facet-item-content {{#if readOnlyFilter}}csui-facet-item-content-readonly{{/if}}"
+    aria-label="{{facetItemAria}}" {{#if readOnlyFilter}} aria-readonly="true"{{/if}} {{#unless isSingleFacetValue}} aria-expanded="false" {{/unless}} tabindex="-1">
+    <div class="smart-facet-item-inner-container">
+      <div class="csui-facet-item-facet-name" title="{{facetName}}">{{facetName}}</div><span
+        class="smart-facet-item-colon">:</span>
+      <div class="csui-facet-item-topic">
+        {{#each topics}}
+        <span class="csui-facet-item-topic-name" title="{{topicName}}">{{#if @first}}{{topicName}}{{else}};
+          {{topicName}}{{/if}}</span>
+        {{/each}}
+      </div>
+    </div>
+    <span class="csui-facet-item-overflow-count binf-hidden"></span>
+    {{#unless isSingleFacetValue}}
+    <span title="{{expandTitle}}" class="csui-icon binf-caret-down smart-facet-more-dd-expand {{downCaretClasses}}">
+      {{{icon-v2 iconName="csui_smart_ot_action_caret_down32" states="true" size="small"}}}
+    </span>
+    {{/unless}}
+    {{#if enableCloseIcon}}
+    <span title="{{clearTitle}}" role="button" class="csui-icon binf-caret-down smart-facet-close {{clearIconClasses}}" data-csui-facet="{{facetId}}"
+      data-csui-topic="{{topicId}}" aria-label="{{singleValueFacetClearAria}}">
+      {{{icon-v2 iconName="csui_smart_ot_action_close_mid32" states="true" size="small"}}}
+    </span>
+    {{/if}}
+  </div>
+</div>
+    
+
+{{#unless isSingleFacetValue}}
+
+<div class="smart-facet-item-expanded binf-visibility-hidden smart-facet-dd-expanded csui-facet-bar-dropdown {{#if readOnlyFilter}}smart-readonly{{/if}}">
+  <div class="csui-facet-item-content {{#if readOnlyFilter}} csui-facet-item-content-readonly {{/if}}" {{#if readOnlyFilter}} aria-readonly="true" {{/if}}>
+    <ul class="smart-multi-value-facets csui-normal-scrolling" aria-label="{{facetExpandedItemAria}}" role="menu">
+      <li role="none" aria-hidden="true" class="csui-facet-item-facet-name">{{facetName}}</li>
+      {{#each topics}}
+      <li class="csui-facet-item-topic {{#if ../readOnlyFilter}}smart-facet-item-topic-readonly{{/if}}" role="menuitem" tabindex="-1" aria-label="{{ariaLabel}}">
+        <span class="csui-facet-item-topic-name" aria-hidden="true" title="{{topicName}}">{{topicName}}</span>
+        {{#unless ../readOnlyFilter}}
+        <span title="{{clearTitle}}" role="button" class="csui-icon smart-facet-close" data-csui-facet="{{facetId}}" data-csui-topic="{{topicId}}"
+          aria-label="{{ariaLabel}}">
+          {{{icon-v2 iconName="csui_smart_ot_action_close_mid32" states="true" size="small"}}}
+        </span>
+        {{/unless}}
+      </li>
+      {{/each}}
+    </ul>
+    <div title="{{collapseTitle}}" role="button" class="csui-icon binf-caret-down  smart-facet-more-dd-collapse smart-v2-icon-parent" tabindex="-1"
+      aria-label="{{collapseFacetBtnAria}}">
+      {{{icon-v2 iconName="csui_smart_ot_action_caret_up32" states="true" size="small"}}}
+    </div>
+  </div>
+</div>
+{{/unless}}
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,99 @@
+<div class="{{className}} csui-normal-scrolling smart-mini-profile-inner smart-simple-mini-profile">
+
+  <div class="smart-mini-profile-right">
+
+    {{#if otherUser}}
+    <div id="smart-mini-profile-chat-comment-{{contentparams.id}}" class="smart-mini-profile-chat-action-{{contentparams.id}}
+        smart-mini-profile-chat-comment binf-hidden">
+      <div class="smart-mini-profile-social-chat-control smart-v2-icon-parent" tabindex="0" title="{{messages.chat}}" role="button">
+        {{{icon-v2 iconName='csui_action_chat24' states='true' size='large'}}}
+      </div>
+    </div>
+    {{/if}}
+
+    <div class="smart-mini-profile-user-img">
+
+      <div class="smart-mini-profile-img">
+        <span class="smart-mini-profile-avatar">
+          <a href="javascript:void(0);" class="smart-mini-profile-pic" tabindex="0">
+            <span class="image_user_placeholder smart-user-show-profilepic smart-miniprofile-default-avatar
+                smart-user-default-avatar-{{contentparams.id}} esoc-user-default-avatar-{{contentparams.id}}"
+              title="{{contentparams.display_name}}">{{contentparams.initials}}</span>
+            <img id="smart-mini-profile-pic-{{contentparams.id}}" class="binf-hidden smart-userprofile-img-{{contentparams.id}}
+                esoc-userprofile-img-{{contentparams.id}} binf-img-circle" title="{{contentparams.display_name}}" alt="{{contentparams.display_name}}" src="#">
+          </a>
+        </span>
+      </div>
+
+      <div id="smart-mini-profile-presence-indicator" class="smart-mini-profile-presence-indicator binf-hidden">
+        <div id="smart-chat-presence-indicator-{{userid}}" class="smart-chat-presence-indicator" title="" aria-label=""
+          role="status" tabindex="0"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="smart-mini-profile-left">
+
+
+    <div class="smart-mini-profile-field smart-mini-profile-field-displayname">
+      <a href="javascript:void(0);" class="smart-mini-profile-field-displayname-link"
+        title="{{contentparams.display_name}}">{{contentparams.display_name}}</a>
+    </div>
+
+    {{#if hasSecondaryFields}}
+    <div class="smart-mini-profile-secondary-fields">
+      {{#if title}}
+      <div class="smart-mini-profile-field smart-mini-profile-secondary-field smart-mini-profile-secondary-field-title"
+        title="{{contentparams.title}}">
+        {{contentparams.title}}
+      </div>
+      {{/if}}
+
+      {{#if department_name}}
+      <div class="smart-mini-profile-field smart-mini-profile-secondary-field"
+        title="{{contentparams.department_name}}">
+        {{contentparams.department_name}}
+      </div>
+      {{/if}}
+    </div>
+    {{/if}}
+
+
+    {{#if office_location}}
+    <div class="smart-mini-profile-field smart-mini-profile-field-location" title="{{contentparams.office_location}}">
+      {{contentparams.office_location}}
+    </div>
+    {{/if}}
+
+    {{#if business_email}}
+    <div class="smart-mini-profile-field smart-mini-profile-field-displayemail">
+      <a class="smart-mini-profile-field-email" href="mailto:{{contentparams.business_email}}"
+        title="{{contentparams.business_email}}">{{contentparams.business_email}}</a>
+    </div>
+    {{/if}}
+
+    {{#if business_phone}}
+    <div class="smart-mini-profile-field">
+      <div class="smart-mini-profile-field-label">{{contentparams.business_phone_label}}</div>
+      <div class="smart-mini-profile-field-value" title="{{contentparams.business_phone}}">
+        {{contentparams.business_phone}}
+      </div>
+    </div>
+    {{/if}}
+
+    {{#if cell_phone}}
+    <div class="smart-mini-profile-field">
+      <div class="smart-mini-profile-field-label">{{contentparams.cell_phone_label}}</div>
+      <div class="smart-mini-profile-field-value" title="{{contentparams.cell_phone_label}}">
+        {{contentparams.cell_phone}}
+      </div>
+    </div>
+    {{/if}}
+  </div>
+
+
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

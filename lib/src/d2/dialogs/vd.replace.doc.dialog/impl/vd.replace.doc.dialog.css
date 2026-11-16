@@ -1,0 +1,80 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.vd-replace-doc--dialog .binf-modal-header, .vd-replace-doc--dialog .binf-modal-footer {
+    background-color: #DCE4E8;
+}
+
+.vd-replace-doc--dialog .binf-modal-header .csui-icon-notification-question24 {
+    display: none;
+}
+
+.vd-replace-doc--dialog .vd-replace-dialog {
+    padding: 1rem;
+}
+
+.vd-replace-doc--dialog .vd-replace-selected--node-container,
+.vd-replace-doc--dialog .vd-replace-target--node-container {
+    display: flex;
+    padding: .25rem;
+    align-items: center;
+    margin-bottom: .75rem;
+}
+
+.vd-replace-selected--node-container .doc-metadata,
+.vd-replace-target--node-container .doc-metadata {
+    padding: 0 .25rem;
+}
+
+.vd-replace-selected--node-container .doc-metadata .doc-name,
+.vd-replace-target--node-container .doc-metadata .doc-name {
+    font-weight: bold;
+}
+
+.vd-replace-selected--node-container .doc-metadata .doc-modified-data,
+.vd-replace-target--node-container .doc-metadata .doc-modified-data
+ {
+    font-size: .75rem;
+}
+
+.vd-replace-doc--dialog .file-label {
+    font-size: .75rem;
+    margin-bottom: .25rem;
+}
+
+.vd-replace-doc--dialog .vd-replace-dialog .vd-replace-dialog--query {
+    margin-bottom: 1rem;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.vd-replace-doc--dialog .binf-modal-dialog .binf-modal-body .custom-content-container {
+    height: auto;
+    max-height: none;
+}
+
+.vd-replace-doc--dialog .AddReplaceForm .option-block {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: .5rem 0;
+    padding: .5rem;
+}
+
+.vd-replace-doc--dialog .AddReplaceForm .option-block .radio-block {
+    padding: .5rem;
+}
+
+.vd-replace-doc--dialog .AddReplaceForm .option-block .title-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.vd-replace-doc--dialog .AddReplaceForm .option-block .title-block .title {
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.vd-replace-doc--dialog .AddReplaceForm .option-block .title-block .title-desc {
+    font-size: 0.875rem;
+}
+

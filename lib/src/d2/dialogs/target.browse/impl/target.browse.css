@@ -1,0 +1,650 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.cs-dialog.d2-target-browse {
+  overflow: auto;
+}
+
+.cs-dialog.d2-target-browse .binf-modal-lg {
+  
+  width: calc(100% - 16px); 
+  height: calc(100% - 200px);
+  margin-top: 2rem;
+  max-width: 68rem;
+  max-height: 42rem;
+  min-width: 40rem;
+  min-height: 27rem;
+}
+
+.binf-widgets .cs-dialog.d2-target-browse.csui-save-filter-browse .csui-start-locations .binf-dropdown-menu {
+  top: 99%;
+}
+
+.d2-target-browse-searchIcon {
+  background-image: url('image/es_search220.svg');
+  background-position: center 16px;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+  color: #757575;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  
+  justify-content: inherit;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.d2-target-browse-noSearchResultText {
+  color: #333333;
+  font-size: 18px !important;
+  display: block;
+  vertical-align: baseline;
+  font-style: normal;
+  top: 215px;
+  position: relative;
+  text-align: center;
+  margin: 0 auto 32px auto;
+}
+
+.d2-target-browse-searchInProgressText {
+  color: #757575;
+  font-size: 18px !important;
+  display: block;
+  vertical-align: baseline;
+  font-style: normal;
+  top: 60%;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  width: auto;
+  left: 42%;
+  animation: csui-search-loading-fade-in-and-out 1.5s ease-in-out;
+}
+
+.d2-target-browse-empty-no-search {
+  color: #757575;
+  font-size: 18px !important;
+  display: block;
+  vertical-align: baseline;
+  font-style: normal;
+  top: 60%;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  width: auto;
+  left: 43%;
+}
+
+.d2-target-browse .d2-node-picker .csui-table-column-search .icon.icon-search {
+  width: 28px;
+}
+
+.d2-target-browse .d2-node-picker .csui-table-column-search .icon {
+  height: 28px !important;
+}
+
+.cs-dialog.d2-target-browse.csui-save-filter-browse .csui-start-locations.binf-dropdown > div.binf-open .binf-dropdown-toggle {
+  z-index: 1002;
+  position: relative;
+}
+
+.d2-target-browse .binf-modal-content {
+  border-radius: 0;
+  border: 0;
+  box-sizing: border-box;
+  height: calc(100% - 7em);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.binf-widgets .d2-target-browse .d2-node-picker #csui-np-selectviews {
+  height: calc(100% - 35px);
+}
+
+.d2-target-browse .binf-modal-header {
+  padding: 0;
+  border: 0;
+  height: 3.5em;
+  border-bottom: 1px solid #a9a9a9;
+  background-color: #f5f5f5;
+  flex: 0 0 auto;
+  width: calc(100%);
+}
+
+.d2-target-browse.csui-save-filter-browse .binf-modal-header {
+  height: 4.5em;
+}
+
+.binf-widgets .d2-target-browse .binf-modal-header div {
+  height: 100%;
+}
+
+.binf-widgets .d2-target-browse .csui-start-locations.binf-dropdown {
+  height: 3em;
+  float: left;
+  width: auto;
+}
+
+.d2-target-browse .csui-title {
+  font-size: 1.0rem;
+  line-height: 1.5rem;
+}
+
+.d2-target-browse span.csui-separator {
+  display: inline-block;
+  margin-left: 1em;
+  height: 24px;
+  width: 1px;
+  background-color: #cccccc;
+  vertical-align: middle;
+}
+
+.d2-target-browse .cs-header-control .csui-title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@-moz-document url-prefix() {
+  .binf-widgets .d2-target-browse .csui-start-locations > .binf-widgets div.dropdown-locations > .binf-widgets button {
+    display: block;
+  }
+}
+
+.binf-widgets .csui-start-locations > .binf-widgets div.dropdown-locations > .binf-widgets button > .binf-widgets div {
+  display: flex;
+  align-items: center;
+}
+
+.csui-start-locations.binf-dropdown > div.dropdown-locations {
+  z-index: 10;
+  position: absolute;
+  width: auto;
+  top: 0;
+  
+}
+
+.csui-start-locations .dropdown-locations.binf-open button.binf-dropdown-toggle:focus {
+  outline: 0;
+}
+
+.csui-start-locations.binf-dropdown > div .binf-dropdown-toggle:hover {
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.csui-start-locations.binf-dropdown > div.binf-open .binf-dropdown-toggle {
+  background-color: #ffffff !important;
+}
+
+.csui-start-locations .binf-dropdown-menu {
+  z-index: 1000;
+  border-radius: 0;
+  margin: 0;
+  padding: 0.25em 0;
+  background-clip: border-box;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+}
+
+.csui-start-locations .binf-dropdown-menu li a {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.csui-start-locations .binf-dropdown-menu .binf-divider {
+  margin: 0.25em 0;
+}
+
+.csui-start-locations .cs-icon,
+.cs-pane-view .cs-icon {
+  width: 1em;
+}
+
+.csui-start-locations .binf-dropdown-toggle .cs-label,
+.csui-start-locations .dropdown-single-select .cs-label,
+.csui-start-locations .binf-dropdown-menu .cs-label {
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.csui-start-locations .binf-dropdown-toggle .cs-label,
+.csui-start-locations .dropdown-single-select .cs-label,
+.csui-start-locations .binf-dropdown-menu .cs-label {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.csui-start-locations .binf-dropdown-toggle .cs-label.select-prompt {
+  color: #333333;
+  font-style: italic;
+}
+
+.d2-target-browse .binf-modal-body {
+  padding: 0;
+  overflow: hidden;
+  flex: 1 1000 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.cs-modal-filter .binf-form-group {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  margin-left: 24px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  width: calc(100% - 62px)
+}
+
+.cs-modal-filter .cs-filter-input {
+  box-sizing: border-box;
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid #a7a9ac;
+  vertical-align: middle;
+  width: 100%;
+  padding-right: 30px;
+}
+
+.cs-modal-filter .cs-filter-input:focus {
+  border: 2px solid #666666;
+}
+
+.cs-modal-filter .cs-filter-input::-ms-clear {
+  display: none;
+}
+
+.cs-modal-filter .cs-filter-input::-moz-placeholder {
+  color: #666666;
+  font-style: italic;
+  font-size: 0.875em;
+}
+
+.cs-modal-filter .cs-filter-input:-moz-placeholder {
+  color: #666666;
+  font-style: italic;
+  font-size: 0.875em;
+}
+
+.cs-modal-filter .cs-filter-input::-webkit-input-placeholder {
+  color: #666666;
+  font-style: italic;
+  font-size: 0.875em;
+}
+
+.cs-modal-filter .cs-filter-input:-ms-input-placeholder {
+  color: #666666;
+  font-style: italic;
+  font-size: 0.875em;
+}
+
+.cs-modal-filter .form-control-search {
+  display: block;
+  margin-left: 16px;
+  margin-right: 16px;
+  background-repeat: no-repeat;
+  z-index: 10 !important;
+  pointer-events: auto;
+}
+
+.cs-modal-filter .binf-form-control-feedback {
+  margin-right: .5em;
+  margin-left: .5em;
+  display: block;
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 53px;
+  cursor: pointer;
+  z-index: 10 !important;
+  pointer-events: auto;
+}
+
+.cs-modal-filter .binf-form-control-feedback.icon-formfield-clear {
+  margin-right: 0;
+}
+
+.cs-modal-filter .binf-form-control-feedback:hover,
+.cs-modal-filter .binf-form-control-feedback:focus {
+  width: 1em;
+  height: 1em;
+  top: calc(50% - 8px);
+}
+
+.d2-target-browse .binf-modal-footer {
+  padding: 1em 1.5em;
+  flex: 0 0 auto;
+}
+
+.d2-target-browse .cs-breadcrumb .csui-icon {
+  width: 20px;
+  float: left;
+  margin-right: 0.5em;
+}
+
+.binf-widgets .d2-node-picker {
+  overflow: hidden;
+  width: 100%;
+
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#csui-np-selectviews.csui-full-height {
+  height: 100%;
+}
+
+#csui-table-view {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  flex: 1 1000 auto;
+}
+
+.d2-target-browse .csui-table-view {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  flex: 1 1000 auto;
+}
+
+#csui-np-actionbar {
+  height: 45px;
+}
+
+.cs-dialog .modal-md {
+  width: 50%;
+  top: 70px;
+}
+
+.cs-dialog .modal-md .binf-modal-body {
+  padding: 0;
+  margin: 0;
+}
+
+.cs-dialog .modal-md .tile-title {
+  padding: 0;
+  margin: 0 0 0 5px;
+}
+
+.cs-dialog .modal-md .tile-title .csui-heading {
+  padding-top: 12px !important;
+}
+
+.cs-dialog .modal-md .binf-close {
+  padding: 0;
+  margin: 0 15px 0 15px;
+  font-size: 1.1em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000000;
+  opacity: 0.5;
+}
+
+.cs-dialog .modal-md .binf-close .icon-tileCollapse {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.cs-dialog .modal-md .binf-close .cs-icon-cross {
+  padding: 18px;
+  vertical-align: middle;
+}
+
+.cs-dialog .modal-md .binf-close:hover {
+  opacity: 1;
+}
+
+.d2-target-browse.cs-dialog .binf-modal-footer {
+  background-color: #f5f5f5;
+  padding: 0.75rem 1.5rem;
+  border: none;
+}
+
+.d2-node-picker .tile-header {
+  height: 27px;
+  border: 0;
+}
+
+.d2-target-browse .tile-title {
+  margin: 0;
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+.binf-widgets .d2-target-browse.cs-dialog .cs-header-control {
+  margin: 0;
+  padding: 0 0 0 1.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.binf-widgets .d2-target-browse.cs-dialog input.search {
+  width: 90%;
+  padding-right: 30px;
+}
+
+
+.binf-widgets .d2-target-browse.cs-dialog .cs-header-control .d2-target-controls {
+  flex: 1;
+  margin-left: 16px;
+  height: 100%;
+  display: flex;
+  position: relative;
+  width: calc(20% - 210px);
+}
+
+.binf-widgets .d2-target-browse.cs-dialog .cs-header-control .d2-target-search-property-container {
+  position: relative;
+  right: 0;
+  width: calc(80% - 210px);
+}
+
+.binf-widgets .d2-target-browse.cs-dialog .cs-header-control .d2-target-search-property-container .search-bar {
+  position: relative;
+}
+
+.binf-widgets .d2-target-browse.cs-dialog .cs-header-control .d2-target-search-property-container .d2-search-box {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  padding-right: 0;
+  width: auto;
+}
+
+.binf-widgets .d2-target-browse.cs-dialog .cs-header-control .d2-target-search-property-container .d2-search-input-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  flex: 1 1 auto;
+  margin-right: 1em;
+  height: 32px;
+  padding-left: 0;
+}
+
+.binf-widgets .d2-target-browse .binf-modal-header .d2-search-options-dropdown {
+  height: auto;
+  z-index: 12;
+}
+
+.binf-widgets .csui-targetbrowse-history {
+  display: none;
+  float: left;
+  margin: 16px 0 0 25px;
+}
+
+.d2-target-browse .arrow_back,
+.d2-target-browse .arrow_back_mouse_over,
+.d2-target-browse .arrow_back_mouse_down {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  display: inline-block;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  padding-right: 40px !important;
+  margin-top: 4px !important;
+}
+
+.close_icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  display: inline-block;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  padding-top: 20px;
+  vertical-align: middle;
+}
+
+.d2-header-search-icon .icon-search {
+  background-size: 32px 32px;
+}
+
+.csui-targetbrowse-arrow-back {
+  display: inline-block;
+}
+
+.d2-target-browse .cs-header-control .csui-title {
+  font-size: 20px;
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.d2-target-browse .cs-header-control .csui-title-search-config {
+  width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 20px;
+  line-height: 2.5rem;
+}
+
+@media all and (max-width: 1023px) {
+  .d2-target-browse .tile-header .cs-header-control .csui-title {
+    min-width: 30px;
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.binf-widgets .binf-modal:not(.csui-alert).d2-target-browse .binf-modal-header h2{
+  font-size: 20px;
+}
+
+@media all and (max-width: 992px) {
+
+  .binf-modal-dialog .metadata-content .metadata-content-header .metadata-header-right-bar-container {
+    top: 50px;
+    padding-top: 0;
+  }
+
+  .binf-modal-dialog .metadata-content .metadata-content-header.shortcut-object .metadata-header-right-bar-container,
+  .binf-modal-dialog .metadata-content .metadata-content-header.with-close-icon .metadata-header-right-bar-container {
+    top: 0;
+    padding-top: 16px;
+  }
+
+  .binf-widgets .d2-target-browse .metadata-content .cs-metadata-properties {
+    top: 0;
+    padding-top: 16px;
+  }
+
+  .binf-widgets .metadata-content .cs-add-item-metadata-form .cs-metadata-properties {
+    margin-top: 16px;
+    height: calc(100% - 76px);
+  }
+
+  .metadata-wrapper .metadata-navigation .cs-add-item-metadata-form .cs-metadata-properties .binf-tab-content {
+    height: calc(100% - 64px);
+  }
+
+  .metadata-wrapper .metadata-navigation .cs-add-item-metadata-form .cs-metadata-properties .binf-tab-content.show-validation-error {
+    height: calc(100% - 120px);
+  }
+
+  .d2-target-browse .metadata-content .metadata-header.with-right-bar {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.d2-target-browse .cs-breadcrumb .tb-breadcrumb-inner {
+  width: 80%; 
+  float: left;
+}
+
+
+
+.d2-target-browse .csui-table-view .csui-table-empty .empty_no_search_performed {
+  background-image: url("image/empty_no_search_performed.svg");
+  background-repeat: no-repeat;
+  background-position: center 50px;
+}
+
+.binf-widgets .d2-target-browse.cs-dialog .tile-header .cs-header-control {
+  padding: 0 0 0 0.75em;
+}
+
+.d2-target-browse .d2-node-picker .csui-table-view .binf-table.dataTable > tbody > tr:not(.row-not-selectable) > *,
+.d2-target-browse .d2-node-picker .csui-table-view .binf-table.dataTable > tbody > tr:not(.row-not-selectable) label,
+.d2-target-browse .d2-node-picker .csui-table-view .binf-table.dataTable > tbody > tr:not(.row-not-selectable) input {
+  cursor: pointer;
+}
+
+.d2-target-browse .d2-node-picker .un-clickable-table-data .csui-table-view .csui-table-cell-name-div,
+.d2-target-browse .d2-node-picker .un-clickable-table-data .csui-table-view .csui-table-cell-default-action,
+.d2-target-browse .d2-node-picker .un-clickable-table-data .csui-table-view .d2-cell-version-wrapper,
+.d2-target-browse .d2-node-picker .un-clickable-table-data .csui-table-view .csui-parent-location,
+.d2-target-browse .d2-node-picker .csui-details-row .binf-control-label {
+  pointer-events: none;
+}
+
+.binf-widgets .d2-target-browse .d2-node-picker .cs-breadcrumb {
+  height: 32px;
+}
+
+.binf-widgets .d2-target-browse .d2-node-picker .cs-breadcrumb .searchheader-inner {
+  float: left;
+  padding-left: 1.5em;
+}
+
+.binf-widgets .d2-target-browse .d2-node-picker .cs-breadcrumb .csui-selected-count-parent .csui-selected-count {
+  float: right;
+  padding-right: 1.5em;
+}
+
+.d2-target-browse .binf-modal-content {
+  height: 100%;
+}
+
+.binf-widgets .d2-target-browse.cs-dialog .csui-selected-count .csui-dropmenu-container {
+  right: 24px;
+}

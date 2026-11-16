@@ -1,0 +1,235 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .smart-mini-profile {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  min-height: 132px;
+  width: 448px;
+  padding: 0;
+  margin: 0;
+  border-bottom: 4px solid #33c6c8;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-inner {
+  width: 100%;
+  padding: 0 32px 16px 32px;
+  margin: 0;
+  position: relative;
+  max-height: 32vh; 
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-right {
+  padding: 16px 0 0 16px;
+  float: right;
+  z-index: 1;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-left,
+.binf-widgets .smart-mini-profile .smart-mini-profile-right {
+  height: auto;
+  position: relative;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-left {
+  z-index: 0;
+  width: 100%;
+  padding-top: 24px;
+}
+
+
+
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-field {
+  height: auto;
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  word-break: break-word;
+  white-space: normal;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-field:last-child {
+  margin-bottom: 0;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-field.smart-mini-profile-field-displayname a.smart-mini-profile-field-displayname-link {
+  font-size: 28px;
+  line-height: 38px;
+  text-decoration: none;
+  color: #333333;
+  outline-offset: 0;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-field.smart-mini-profile-field-displayname,
+.binf-widgets .smart-mini-profile .smart-mini-profile-field.smart-mini-profile-secondary-field {
+  margin: 0;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-secondary-fields {
+  margin-bottom: 26px;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-field.smart-mini-profile-secondary-field {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-field.smart-mini-profile-secondary-field:first-child {
+  margin-bottom: 8px;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-field-email:link,
+.binf-widgets .smart-mini-profile .smart-mini-profile-field-displayemail:link {
+  color: #232e72;
+  text-decoration: none;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-field-email:visited,
+.binf-widgets .smart-mini-profile .smart-mini-profile-field-displayemail:visited {
+  color: #4f3690;
+  text-decoration: none;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-field-email:hover,
+.binf-widgets .smart-mini-profile .smart-mini-profile-field-displayemail:hover {
+  color: #0084ce;
+  text-decoration: underline;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-field-email:active,
+.binf-widgets .smart-mini-profile .smart-mini-profile-field-displayemail:active {
+  color: #2e3d98;
+  text-decoration: none;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-field .smart-mini-profile-field-label,
+.binf-widgets .smart-mini-profile .smart-mini-profile-field .smart-mini-profile-field-value {
+  display: inline-block;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-field .smart-mini-profile-field-label {
+  color: #666;
+  font-size: 14px;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-field .smart-mini-profile-field-value {
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+
+
+
+
+
+
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-right:hover {
+  
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-right .smart-mini-profile-chat-comment,
+.binf-widgets .smart-mini-profile .smart-mini-profile-right .smart-mini-profile-user-img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-img {
+  width: 96px;
+  height: 96px;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-user-img a.smart-mini-profile-pic:hover {
+  text-decoration: none;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-user-img .smart-mini-profile-avatar img,
+.binf-widgets .smart-mini-profile-user-img .smart-miniprofile-default-avatar {
+  width: 96px;
+  height: 96px;
+  display: inline-flex;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-avatar .image_user_placeholder {
+  font-size: 48px;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-user-img .smart-mini-profile-presence-indicator {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 82px;
+  right: 2px;
+  width: 28px;
+  height: 28px;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-user-img .smart-mini-profile-presence-indicator .smart-chat-presence-indicator {
+  width: 28px;
+  height: 28px;
+  background-size: 100%;
+}
+
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-social-chat-control {
+  cursor: pointer;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-user .smart-mini-profile-chat-comment,
+.binf-widgets .smart-mini-profile .smart-mini-profile-social-chat-control {
+  width: 40px;
+  height: 40px;
+}
+
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-presence-indicator .smart-chat-presence-indicator {
+  width: 12px;
+  height: 12px;
+  margin: 0px;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-presence-indicator .smart-chat-presence-Away {
+  background: url(../images/away.svg) no-repeat center;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-presence-indicator .smart-chat-presence-Online {
+  background: url(../images/online.svg) no-repeat center;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-presence-indicator .smart-chat-presence-Busy {
+  background: url(../images/busy.svg) no-repeat center;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-presence-indicator .smart-chat-presence-Offline {
+  background: url(../images/offline.svg) no-repeat center;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-presence-indicator .binf-widgets .smart-chat-presence-Unknown {
+  background: url(../images/unknown.svg) no-repeat center;
+}
+
+.binf-widgets .smart-mini-profile .smart-mini-profile-presence-indicator .smart-chat-presence-donotdisturb {
+  background: url(../images/do_not_disturb.svg) no-repeat center;
+}
+
+.binf-widgets .smart-mini-profile .smart-social-chat-icon {
+  background: url(../images/chat24.svg) no-repeat center;
+}
+
+.binf-widgets .smart-mini-profile .smart-social-chat-icon:hover {
+  background: url(../images/chat24_mo.svg) no-repeat center;
+}
+
+.binf-widgets .smart-mini-profile .smart-social-chat-icon:active,
+.binf-widgets .smart-mini-profile .smart-social-chat-icon:focus {
+  background: url(../images/chat24_md.svg) no-repeat center;
+}
+
+
+

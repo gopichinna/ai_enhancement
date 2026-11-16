@@ -1,0 +1,45 @@
+
+{{#xif showCheckBox}}
+<span class="icon icon-checkbox {{showOnHover}} " role="checkbox" aria-checked="false" aria-label="{{filterCheckboxAria}}" tabindex="-1">
+   <input id="input-{{id}}" type="checkbox" class="d2-facet-checkbox" itemid="{{itemid}}" aria-label="{{filterCheckboxAria}}" tabindex="-1"/>
+</span>
+{{/xif}}
+
+{{#xif showRadio}}
+    <span class="icon icon-radio {{showOnHover}} " role="radio" aria-checked="false" aria-label="{{filterCheckboxAria}}" tabindex="-1">
+        <input id="input-{{id}}" type="radio" class="d2-facet-radio" name="d2-filter" itemid="{{itemid}}" aria-label="{{filterCheckboxAria}}" tabindex="-1"/>
+    </span>
+{{/xif}}
+
+
+{{#if isFirstChild}}
+ <div class="d2-facet-category-label">{{label}}</div>
+{{/if}}
+
+{{#xif showRadio}}
+<label for="input-{{id}}" class="d2-filter-name" tabindex="-1" aria-label="{{filterTitleAria}}">
+ <div title="{{name}}" class="csui-name"></div>
+ {{#if showTotal}}<div class="csui-total">{{total}}</div>{{/if}}
+</label>
+{{/xif}}
+
+{{#xif showCheckBox}}
+<div class="d2-filter-name" tabindex="-1" aria-label="{{filterTitleAria}}">
+ <div title="{{name}}" class="csui-name"></div>
+ {{#if showTotal}}<div class="csui-total">{{total}}</div>{{/if}}
+</div>
+{{/xif}}
+
+
+ <div  class="d2-filter-more more binf-hidden">
+     <span class="d2-more-text">{{showMore}} <span class="cs-icon icon-expandArrowDown"></span></span>
+ </div>
+
+ <div  class="d2-filter-more less binf-hidden">
+     <span class="d2-more-text">{{showLess}}  <span class="cs-icon icon-expandArrowUp"></span></span>
+ </div>
+
+
+
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,64 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-task-notes {
+  height: 100%;
+  width: 100%;
+}
+
+.d2-task-notes .d2-toolbar-task-notes {
+  height: 37px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.csui-on-ipad .d2-task-notes.d2-task-note-expanded .d2-toolbar-task-notes {
+  height: 54px;
+}
+
+.csui-on-ipad .d2-task-notes.d2-task-note-expanded .d2-task-notes-container {
+  height: calc(100% - 54px);
+}
+
+.d2-task-notes .d2-toolbar-task-notes.binf-hidden + .d2-task-notes-container {
+  height: 100%;
+}
+
+.d2-task-notes .d2-task-notes-container {
+  height: calc(100% - 37px);
+  overflow: hidden;
+}
+
+.d2-task-notes .d2-task-expanded-note-region {
+  height: calc(100% - 37px);
+  overflow: hidden;
+}
+
+.d2-task-notes .d2-task-notes-container .d2-task-notes-list {
+  height: 100%;
+  overflow: hidden;
+}
+
+.d2-task-notes .d2-task-notes-container .d2-task-notes-list-container {
+  height: 100%;
+}
+
+.d2-task-notes .d2-task-notes-container .d2-task-notes-list .d2-task-notes-empty-list {
+  width: 100%;
+}
+
+.d2-task-notes .d2-task-notes-container .d2-task-notes-list .d2-task-note-empty-splash {
+  background: url(../images/splash-empty-notes-list.svg) center bottom no-repeat;
+  height: 220px;
+  width: 100%;
+  margin-top: 14.6%;
+}
+
+.d2-task-notes .d2-toolbar-task-notes.binf-hidden + .d2-task-notes-container .d2-task-notes-list .d2-task-note-empty-splash {
+  margin-top: calc(14.6% + 37px);
+}
+
+.d2-task-notes .d2-task-notes-container .d2-task-notes-list .d2-task-note-empty-text {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 200;
+}

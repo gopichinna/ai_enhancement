@@ -1,0 +1,15 @@
+{{#if isFacetLabel}}
+<div class="csui-facet-item-facet-name">{{facetName}}</div>
+{{/if}}
+{{#if isTopic}}
+<div class="csui-facet-item-topic {{#if readOnlyFilter}}smart-facet-item-topic-readonly{{/if}}" aria-label="{{ariaLabel}}" tabindex="-1" {{#if readOnlyFilter}} aria-readonly="true" {{/if}}>
+  <span class="csui-facet-item-topic-name" aria-hidden="true" title="{{topicName}}">{{topicName}}</span>
+  {{#if enableCloseIcon}}
+  <span title="{{clearTitle}}" role="button" class="csui-icon smart-facet-close" data-csui-facet="{{facetId}}" data-csui-topic="{{topicId}}" aria-label="{{ariaLabel}}">
+    {{{icon-v2 iconName="csui_smart_ot_action_close_mid32" states="true" size="small"}}}
+  </span>
+  {{/if}}
+</div>
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

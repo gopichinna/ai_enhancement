@@ -1,0 +1,73 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.smart-target-browse .binf-modal-body .csui-panel {
+  border: 0;
+  opacity: 1;
+  min-width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  transition: width 300ms ease-in;
+  flex: 1 1 auto;
+
+}
+
+.csui-select-lists > div.cs-pane-view.csui-slideMidLeft .csui-np-content {
+  background-color: #ffffff;
+}
+
+.binf-modal-body .cs-start-locations.selected {
+  width: 50%;
+  float: left;
+}
+.binf-widgets .cs-pane-view {
+  float: left;
+}
+.cs-pane-view .cs-list .binf-list-group {
+  box-sizing: border-box;
+  padding-top: calc(0.25em - 2px);
+}
+.binf-widgets .csui-select-lists {
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  opacity: 1;
+  transition: opacity 150ms ease-in;
+  transition-delay: 150ms;
+  display: flex;
+}
+
+.binf-widgets .csui-select-lists.csui-fadeOut {
+  opacity: 0;
+  transition: opacity 0ms;
+}
+
+.csui-select-lists > div {
+  width: 50%;
+  height: 100%;
+  position:absolute;
+  left:0px;
+}
+
+.binf-modal-body .csui-panel.left-only {
+  width: 100%;
+}
+
+.binf-widgets .csui-extended-width {
+  width: 150%;
+}
+
+.csui-select-lists > div.csui-panel-compress {
+  width: calc(100% / 3);
+}
+
+.csui-select-lists > div.zeroWidth {
+  width: 0px;
+}

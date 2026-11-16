@@ -1,0 +1,28 @@
+<div class = "parent-section">
+    <div class="parent-section-header">{{parentHeader}}</div>
+    <div class="relation-parent"></div>
+</div>
+{{#if noRelationSelected}}
+<div class="empty-view-area">
+<div class = "empty-relations-view"></div>
+<div class="relation-type-selection"></div>
+</div>
+{{else}}
+<div class = "relation-direction" title="{{RelationDirectionTooltip}}" tabindex="0"></div>
+<div class = "relation-toolbar-panel">
+    <div class = "relation-sub-toolbar">
+        <div class="relation-type-selection"></div>
+        <div class="empty-panel"></div>
+        <div class="relation-add-child-button binf-hidden" title="{{AddbuttonToolTip}}" tabindex="0"></div>
+    </div>
+    <div class="binf-help-block alpaca-message alpaca-message-notOptional binf-hidden d2-mulitple-object-message-container" role="alert">
+            {{MulitpleRelationsNotSupportErrorMsg}}
+    </div>
+</div>
+    <div class = "relation-child-section">
+    <div class="child-list-view"></div>
+    <div class="relations-description-box"></div>
+    </div>
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,27 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-workflow-details-panel .cs-metadata .cs-metadata-item-name .title-edit-icon-div,
+.binf-widgets .d2-workflow-details-panel .cs-metadata .cs-metadata-item-name .csui-metadata-item-name-dropdown,
+.binf-widgets .d2-workflow-details-panel .cs-metadata .cs-metadata-item-name .title-edit-div {
+  display: none;
+}
+
+.binf-widgets .d2-workflow-details-panel .cs-metadata .cs-metadata-item-name .d2-workflow-state-view {
+  margin-left: 16px;
+}
+
+.binf-widgets .d2-workflow-details-panel .cs-metadata .metadata-header-right-bar .csui-tabletoolbar {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.binf-widgets .d2-workflow-details-panel .cs-metadata .metadata-content-wrapper > .cs-tab-links {
+  border-right: none;
+}
+
+.binf-widgets .d2-workflow-details-panel .cs-metadata .metadata-content-wrapper > .cs-tab-links > button,
+.binf-widgets .d2-workflow-details-panel .cs-metadata .metadata-content-wrapper > .cs-tab-links > button:hover {
+  background-color: #EEF2F4;
+  cursor: default;
+}

@@ -1,0 +1,41 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.add-to-collection-form .alpaca-container-label {
+  display: none;
+}
+
+.add-to-collection-form .binf-col-md-6.cs-form-doublecolumn.cs-form-leftcolumn {
+  width: 75%;
+  float: none;
+}
+
+.d2-add-to-collection-model .csui-icon-notification-confirmation-white {
+  display: none;
+}
+
+.binf-modal-header.question-header {
+  background-color: #dce4e8;
+}
+
+.csui-alert .binf-modal-header .binf-modal-title .title-text {
+  color: #333333;
+}
+
+.d2-add-to-collection-model .binf-modal-footer {
+  background-color: #f4f4f4;
+}
+
+.d2-add-to-collection-model .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+  width: 100%;
+  text-align: left;
+}
+
+.d2-add-to-collection-model .cs-form .alpaca-container-item > .binf-form-group.alpaca-field > .binf-col-sm-9 {
+  display: block;
+  width: 100%;
+}
+
+.d2-add-to-collection-model .alpaca-container-item .binf-help-block.alpaca-message {
+  margin-left: 0;
+}

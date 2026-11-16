@@ -1,0 +1,45 @@
+.d2-permissions-view,
+.d2-permissions-view .permissions-container {
+    height: 100%;
+}
+
+.d2-permissions-view .permissions-container {
+    padding: 30px 30px 0 30px;
+}
+
+.d2-permissions-view .d2-table,
+.d2-permissions-view .d2-table .csui-table-view,
+.d2-permissions-view .d2-table .csui-table-view .csui-nodetable,
+.d2-permissions-view .permissions-container .permission-table-container {
+    height: inherit;
+}
+
+.d2-permissions-view .d2-table tbody {
+    max-height: 100%;
+    height: auto;
+}
+
+.d2-permissions-view .d2-table .binf-table.dataTable tr > :first-child {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    flex: unset;
+    min-width: 2em;
+}
+
+.d2-permissions-view .d2-table .binf-table.dataTable > tbody > tr.csui-has-details-row > * {
+    border-top: none;
+}
+
+.d2-permissions-view .d2-table .csui-table-view .csui-nodetable .binf-table > thead > tr > th:first-child .csui-table-column-text {
+    padding-left: 12px;
+}
+
+.d2-permissions-view .d2-table .binf-table > tbody > tr {
+    font-size: 14px;
+    line-height: 16px;
+    height: 40px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+

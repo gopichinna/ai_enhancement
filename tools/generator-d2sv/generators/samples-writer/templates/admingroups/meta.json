@@ -1,0 +1,18 @@
+{
+  "id": "admingroups",
+  "name": "D2 Admin Groups Sample",
+  "finishInstruction": "Remember to put a \n<widget-container>\n<widget type=\"AdminGroupsWidget\" name=\"<as_created_in_D2-Config>\"/>\n</widget-container>\n in Smartview landing page before trying it out.",
+  "descriptors": [
+    {
+      "name": "app",
+      "properties": {
+        "pluginsGroupId": "com.opentext.d2.smartview",
+        "pluginArtifactId": "D2-AdminGroups",
+        "pluginVersion": "1.0.0",
+        "pluginDesc": "Minimal D2 AdminGroups widget",
+        "pluginPackage": "AdminGroups",
+        "includeSVSupport": true
+      }
+    }
+  ]
+}

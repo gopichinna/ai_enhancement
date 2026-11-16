@@ -1,0 +1,3 @@
+.d2-widget-<%= typedNamePrefix.toLowerCase(); %> .tile-header {
+  cursor: pointer;
+}

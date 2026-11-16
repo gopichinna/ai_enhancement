@@ -1,0 +1,17 @@
+<div class="column-item-container" title="{{name}}">
+  <span class="icon icon-draggable-handle6"></span>
+  {{#if hasAttribute}}
+  <span class="column-label" data-csui-key="{{label}}">
+    <span class="csui-column-label-category">{{categoryName}}</span>
+    <span class="csui-column-label-attribute">{{attributeName}}</span>
+  </span>
+  {{else}}
+  <span class="column-label" data-csui-key="{{label}}">{{name}}</span>
+  {{/if}}
+</div>
+{{#if isRemovable}}
+  <div class="remove-button icon circle_delete csui-icon-v2-state-el" tabindex="0" role="button" aria-label="{{removeColumnAria}}"  title="{{removeColumn}}">
+    {{{icon-v2 iconName="csui_action_close32" size='xsmall' states='true'}}}
+  </div>
+{{/if}}
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

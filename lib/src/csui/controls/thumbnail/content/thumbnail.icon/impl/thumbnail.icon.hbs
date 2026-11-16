@@ -1,0 +1,19 @@
+{{#if thumbnailAction}}
+  <div
+      class="csui-thumbnail-content-icon csui-thumbnail-content-no-default-action thumbnail-{{cid}}"
+      aria-label="{{typeAndNameAria}}" tabindex="-1"></div>
+{{else}}
+  {{#if inactive}}
+    <div class="csui-thumbnail-content-icon csui-thumbnail-content-no-default-action inactive"
+         aria-label="{{typeAndNameAria}}"></div>
+  {{else}}
+    {{#if inCreateMode}}
+      <div class="csui-thumbnail-content-icon csui-thumbnail-content-default-action"
+           aria-label="{{typeAndNameAria}}" tabindex="-1"></div>
+    {{else}}
+      <a class="csui-thumbnail-content-icon csui-thumbnail-content-default-action thumbnail-{{cid}}"
+         href="{{defaultActionUrl}}" aria-label="{{typeAndNameAria}}" tabindex="-1"></a>
+    {{/if}}
+  {{/if}}
+{{/if}}
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

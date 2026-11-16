@@ -1,0 +1,194 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+
+.binf-widgets .csui-sidepanel.smart-app-header-left-menu-panel .csui-sidepanel-body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.35);
+}
+
+
+.binf-widgets .smart-groups-wrapper {
+    width: 100%;
+    background-color: #2E3D98;
+}
+
+.binf-widgets .smart-groups-search-wrapper {
+    padding: 0 2px 4px 24px;
+    display: none;
+}
+
+.binf-widgets .smart-groups-menu-search {
+    display: flex;
+}
+
+.binf-widgets .smart-groups-list-wrapper {
+    color: #333333;
+}
+
+.binf-widgets .smart-apply-invert-color.smart-apply-invert-color-for-brightness .smart-groups-list-wrapper {
+    color: #000;
+}
+
+.binf-widgets .smart-group-standalone-header-icon,
+.binf-widgets .smart-group-card-header-icon {
+    width: 16px;
+    height: 16px;
+    background-color: #ccc;
+    display: none;
+}
+
+.binf-widgets .smart-group-standalone-header-title,
+.binf-widgets .smart-group-card-header-title {
+    padding-left: 6px;
+    font-size: 14px;
+    line-height: 16px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.binf-widgets .smart-group-menu-item-wrapper:hover {
+    cursor: pointer;
+}
+
+.binf-widgets .smart-group-menu-item-standalone:hover,
+.binf-widgets .smart-group-card-header:hover,
+.binf-widgets .smart-group-cards-list-item:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.binf-widgets .smart-group-menu-item-standalone:active,
+.binf-widgets .smart-group-card-header:active,
+.binf-widgets .smart-group-cards-list-item:active {
+    background: rgba(102, 102, 102, 0.3);
+}
+
+.binf-widgets .smart-group-menu-item-standalone.smart-group-cards-list-active-item,
+.binf-widgets .smart-group-cards-list-item.smart-group-cards-list-active-item {
+    background: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    color: #333333;
+    box-shadow: 4px 0px 0px 0px rgba(46, 61, 152, 0.4) inset;
+}
+.binf-widgets .smart-apply-invert-color.smart-apply-invert-color-for-brightness .smart-group-menu-item-standalone.smart-group-cards-list-active-item.smart-group-cards-list-dark-active-item,
+.binf-widgets .smart-apply-invert-color.smart-apply-invert-color-for-brightness .smart-group-cards-list-item.smart-group-cards-list-active-item.smart-group-cards-list-dark-active-item {
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+.binf-widgets .smart-group-menu-item-standalone:focus-visible,
+.binf-widgets .smart-group-card-header:focus-visible,
+.binf-widgets .smart-group-cards-list-item:focus-visible {
+    box-shadow: inset 0px 0px 0px 2px #FFFFFF, inset 0px 0px 0px 3px #2E3D98;
+    outline: none;
+}
+
+
+
+
+.binf-widgets .smart-group-menu-item-standalone {
+    display: flex;
+    padding: 2px 2px 2px 32px;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    height: 40px;
+}
+
+
+
+
+.binf-widgets .smart-group-menu-item-standalone,
+.binf-widgets .smart-group-menu-item-card {
+    color: #ffffff;
+}
+
+.binf-widgets .smart-apply-invert-color.smart-apply-invert-color-for-brightness .smart-group-menu-item-standalone,
+.binf-widgets .smart-apply-invert-color.smart-apply-invert-color-for-brightness .smart-group-menu-item-card,
+.binf-widgets .smart-apply-invert-color.smart-apply-invert-color-for-brightness .smart-group-cards-list-item {
+    color: #000;
+}
+
+.binf-widgets .smart-group-card-header {
+    display: flex;
+    align-items: center;
+}
+.binf-widgets .smart-group-card-header[aria-expanded = true] {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+
+.binf-widgets .smart-group-cards-list-item {
+    padding-left: 52px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 16px;
+    height: 38px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.binf-widgets .smart-group-card-header-toggle-btn {
+    width: 16px;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.binf-widgets .smart-group-card-header-toggle-btn otc-icon {
+    width: 16px;
+    height: 16px;
+}
+
+
+
+
+
+.binf-widgets .smart-panel-header {
+    display: flex;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.binf-widgets .smart-groups-header-wrapper {
+    height: 64px;
+}
+
+.binf-widgets .smart-groups-list-wrapper {
+    height: calc(100% - 64px);
+}
+
+.binf-widgets .smart-panel-header-logo {
+    vertical-align: middle;
+    display: flex;
+    padding-left: 12px;
+    align-items: center;
+}
+
+.binf-widgets .smart-panel-header-logo otc-brand {
+    margin-left: 8px;
+}
+
+.binf-widgets .smart-panel-header-collapse-btn:hover {
+    cursor: pointer;
+}
+
+
+.binf-widgets .smart-left-panel-group-rtl-icon,
+.binf-widgets .smart-panel-header-logo .smart-hamburger-close-rtl-btn {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+}
+

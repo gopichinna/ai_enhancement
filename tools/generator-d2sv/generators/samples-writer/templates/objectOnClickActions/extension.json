@@ -1,0 +1,9 @@
+{
+  "d2/sdk/utils/commands": [
+    "commands/open.modal.alert",
+    "commands/open.toast.message"
+  ],
+  "d2/sdk/commands/default.actions.rules": [
+    "extensions/object.onclick.actions.rules"
+  ]
+}

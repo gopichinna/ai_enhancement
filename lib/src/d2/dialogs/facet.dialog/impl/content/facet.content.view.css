@@ -1,0 +1,90 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.d2-facet-dialog .facet-column-view {
+    display: flex;
+    overflow: auto;
+    height: 100%;
+    padding: 10px 0 10px 16px;
+}
+
+.d2-facet-dialog .facet-column-items-wrapper {
+    flex: 1 1;
+    min-width: 200px;
+    max-width: 350px;
+}
+
+
+
+
+.d2-facet-dialog .d2-facet-item span.icon {
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 13px;
+    margin: 3px 8px 0 0;
+}
+
+.d2-facet-dialog .d2-facet-item span>input {
+    cursor: pointer;
+    display: block;
+    height: inherit;
+    margin: 0;
+    opacity: 0;
+    width: inherit;
+}
+
+.d2-facet-dialog .d2-facet-item span.icon-radio>input {
+    height: 14px;
+    width: 14px;
+    opacity: 1;
+}
+
+
+.d2-facet-dialog .d2-facet-item {
+    padding: 8px;
+}
+
+.d2-facet-dialog .d2-facet-item .csui-name {
+    margin-right: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333333;
+    cursor: pointer;
+}
+
+.d2-facet-dialog .d2-facet-item .csui-name .highlight {
+    font-weight: bold;
+}
+
+.d2-facet-dialog .d2-facet-item>.icon {
+    float: left;
+}
+
+
+.d2-facet-dialog .d2-facet-item>.d2-filter-name {
+    display: flex;
+}
+
+.d2-facet-dialog .d2-facet-item>.d2-filter-name>.csui-total {
+    border-radius: 0.75em;
+    padding: 0.25em 0.75em;
+    background-color: #CCEAE8;
+    height: 16px;
+    margin-top: -2px;
+    font-size: 11px;
+}
+
+
+.d2-facet-dialog .cs-emptylist-text {
+    top: 210px;
+}
+
+.d2-facet-dialog .cs-emptylist-container:not(.csui-state-loading) {
+    background-size: 220px 220px;
+    width: 100%;
+}

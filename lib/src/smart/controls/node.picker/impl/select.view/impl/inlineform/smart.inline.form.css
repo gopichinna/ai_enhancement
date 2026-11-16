@@ -1,0 +1,158 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .smart-inlineform-group .smart-inlineform-text-field:first-child .binf-form-control.smart-inlineform-error,
+.binf-widgets .smart-inlineform-group .smart-inlineform-text-field .smart-inlineform-type-url.smart-inlineform-error  {
+  border: 1px solid #df3324;
+  width: 100%;
+  padding: 0px 8px;
+}
+
+.binf-widgets .smart-inlineform-group,
+.binf-widgets form.smart-inlineform-group {
+  display: flex;
+}
+
+.binf-widgets .smart-inline-editform .smart-inline-action-button-wrapper otc-button:not(:first-child) {
+ margin-left: 0;
+}
+
+.binf-widgets .smart-inlineform-text-field .smart-inlineform-type-name {
+  width: 100%;
+}
+
+.binf-widgets  .smart-inlineform-group .smart-inlineform-field-container > div {
+  display: inline-block;
+  width: 100%;
+  margin-right: 0;
+}
+
+.binf-widgets .smart-inline-editform .smart-inlineform-field-container {
+  max-width: 648px;  
+  width: calc(100% - 156px);   
+}
+
+.binf-widgets .smart-inline-editform .smart-inlineform-grid-container {
+  width: 100%;
+}
+
+.binf-widgets .smart-inline-editform .smart-inlineform-field-container .smart-inlineform-text-field {  
+  position: relative;
+  padding: 0 8px;  
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets  .smart-target-browse .smart-inlineform-field-container .smart-grid-inlineform .smart-multilingual-icon-label {
+  position: absolute;
+  right: 0;
+}
+
+.binf-widgets  .smart-target-browse .smart-inlineform-field-container .smart-grid-inlineform .smart-multilingual-icon-grid {
+  position: absolute;
+  right: 8px;
+  top: 36px;
+}
+
+.binf-widgets .smart-target-browse .smart-inlineform-field-container .smart-inlineform-text-field .smart-multilingual-icon,
+.binf-widgets .smart-target-browse .smart-inlineform-field-container .smart-grid-inlineform .smart-multilingual-icon {
+  width: 24px;
+  vertical-align: middle;
+}
+
+.binf-widgets .smart-inline-editform .smart-inline-action-button-wrapper {
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .smart-inline-editform .smart-inlineform-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.binf-widgets .smart-inline-editform .smart-inlineform-field-container .smart-list-add-input {
+  width: 100%;
+  
+  border: none;
+  border-block-end: 1px solid rgb(102, 102, 102);
+  border-radius: 3px 3px 0px 0px;
+  font-size: 14px;
+  height: 32px;
+  padding: 0px 26px 0 8px;
+}
+
+
+.binf-widgets .smart-inline-editform .smart-inlineform-field-container .smart-list-add-input:focus {
+  border-color: rgb(17, 27, 88);
+  box-shadow: rgb(17 27 88) 0px 1px 0px 0px;
+  outline: none;
+}
+
+.binf-widgets .smart-inline-editform .smart-inlineform-field-container .smart-list-add-input.smart-inlineform-error {
+  border: 1px solid #df3324;
+  border-radius: 4px 4px 0 0;
+}
+
+.binf-widgets .smart-inline-editform {  
+  display: flex;
+  align-items: flex-start;
+}
+
+.binf-widgets .csui-item-standard.binf-list-group-item .smart-inline-editform .csui-type-icon{
+  margin-left: 3px;
+  margin-right: 3px;  
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .smart-inline-editform .smart-inlineform-group-error {
+  padding-bottom: 8px;
+  padding-left: 8px;
+}
+
+.binf-widgets .csui-has-grid-inlineform .smart-inline-editform .smart-inlineform-group-error {
+  padding-top: 8px;
+  padding-left: 0px;
+}
+
+
+.binf-widgets .smart-inlineform-group .smart-inline-action-container {
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .cs-thumbnail-wrapper .smart-thumbnail-item .smart-inlineform-group.smart-inlineform-group-error .binf-text-danger {
+  margin: 0;
+}
+
+.binf-widgets .smart-inlineform-group .smart-inline-action-button-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .smart-inlineform-group-error .binf-text-danger {
+  background: #fff;
+  border-left: 2px solid #df3324;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 30%);
+  color: #df3324;
+  font-size: 11px;
+  line-height: 12px;
+  margin-top: 2px;
+  max-width: calc(100% - 8px);
+  
+  padding: 2px 6px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-has-grid-inlineform {
+  background: white;
+  padding: 12px 8px !important;
+  box-shadow:  0px 0px 4px 0px rgba(0, 0, 0, 0.30);
+}

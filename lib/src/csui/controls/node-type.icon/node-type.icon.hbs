@@ -1,0 +1,22 @@
+{{#if imageUrl}}
+  {{! don't set src here. set in render, as we need to catch load and error events}}
+  <img class="csui-icon csui-node-type-image" alt="" aria-hidden="true">
+{{/if}}
+{{#if mainIconName}}
+  {{{icon-v2 iconName=mainIconName size=size colorTheme=colorTheme }}}
+{{else}}
+  {{#if mainClassName}}
+    <span class="csui-node-type-icon {{mainClassName}}"></span>
+  {{/if}}
+{{/if}}
+{{#if overlayIconNames}}
+  {{#each overlayIconNames}}
+    {{{icon-v2 iconName=this size=../size }}}
+  {{/each}}
+{{else}}
+  {{#each overlayClassNames}}
+    <span class="{{this}}"></span>
+  {{/each}}
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

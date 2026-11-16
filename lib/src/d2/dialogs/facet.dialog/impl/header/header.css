@@ -1,0 +1,130 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-facet-dialog .tile-header.binf-modal-header>div {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.d2-facet-dialog .d2-target-search-property-container {
+    position: relative;
+    right: 0;
+    width: calc(80% - 210px);
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.binf-widgets .binf-modal:not(.csui-alert).d2-facet-dialog .binf-modal-header h2 {
+    font-size: 20px;
+}
+
+.d2-facet-dialog .d2-search-input-container .d2-text-placeholder {
+    align-items: center;
+    color: #666;
+    display: flex;
+    left: .7em;
+    pointer-events: none;
+    position: absolute;
+    right: 1px;
+    top: .55em;
+    vertical-align: middle;
+}
+
+.d2-facet-dialog .close-icon {
+    display: none;
+    position: absolute;
+    right: .375em;
+    top: .65em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 1;
+    height: 12px;
+    width: 12px;
+}
+
+.d2-facet-dialog .d2-search-box .search-bar,
+.d2-facet-dialog .d2-search-box .csui-clearer,
+.d2-facet-dialog .close-icon,
+.d2-facet-dialog .d2-search-box .d2-input:not([data-value=""])~.d2-text-placeholder {
+    display: none;
+}
+
+.d2-facet-dialog .d2-search-box .d2-input:not([data-value=""])~.close-icon {
+    display: block;
+}
+
+.d2-facet-dialog .d2-search-box>a {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+.d2-facet-dialog .d2-search-box.close-focused>a {
+    padding: 8px;
+}
+
+
+.d2-facet-dialog .d2-search-box .d2-input {
+    background-color: #fff;
+    border: 1px solid #fff !important;
+    border-radius: 3px 3px 0 0;
+    color: #333;
+    display: inline-block;
+    font-size: 1em;
+    font: inherit;
+    height: 32px;
+    opacity: .8;
+    padding: 8px;
+    vertical-align: middle;
+    width: 388px;
+}
+
+.d2-facet-dialog .d2-search-box .d2-input:focus {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+
+.d2-facet-dialog .d2-target-search-property-container .d2-search-input-container {
+    display: inline-block;
+    flex: 1 1 auto;
+    height: 32px;
+    margin-right: 1em;
+    padding-left: 0;
+    position: relative;
+    vertical-align: middle;
+}
+
+
+.d2-facet-dialog .d2-search-box .search-bar-content {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 0 10px 16px;
+    right: 15px;
+
+}
+
+.d2-facet-dialog .transitional-content {
+    background: #232e72;
+    height: 2px;
+}
+

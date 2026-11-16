@@ -1,0 +1,21 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-newfile-custom_profile {
+  position: relative;
+  height: 100%;
+}
+
+.d2-newfile-custom_profile .profile-scroll-container {
+  height: 100%;
+  position: relative;
+}
+
+.d2-newfile-custom_profile .category_selection_section {
+  height: auto;
+}
+
+.d2-newfile-custom_profile .separator {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}

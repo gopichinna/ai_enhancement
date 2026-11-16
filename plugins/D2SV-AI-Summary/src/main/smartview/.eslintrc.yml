@@ -1,0 +1,39 @@
+# Comment to disable auto re-generation, check grunt-support/utils/create.eslintrc.js for an update
+plugins:
+  - '@smartui/checks'
+extends:
+  - plugin:@smartui/checks/productive
+rules:
+  no-unused-vars: error
+  no-extra-boolean-cast: error
+  no-prototype-builtins: error
+  no-self-assign: error
+  no-useless-escape: off
+  no-empty: error
+  no-control-regex: off
+  no-constant-condition: error
+  no-dupe-else-if: error
+  no-unexpected-multiline: error
+  no-debugger: error
+  no-undef: error
+overrides:
+  -
+    files:
+      - "**/test/*.js"
+      - "**/*.spec.js"
+      - "**/*.mspec.js"
+    extends:
+      - plugin:@smartui/checks/test
+    rules:
+      no-unused-vars: off
+      no-extra-boolean-cast: off
+      no-prototype-builtins: off
+      no-self-assign: off
+      no-useless-escape: off
+      no-empty: off
+      no-control-regex: off
+      no-constant-condition: off
+      no-dupe-else-if: off
+      no-unexpected-multiline: off
+      no-debugger: off
+      no-undef: off

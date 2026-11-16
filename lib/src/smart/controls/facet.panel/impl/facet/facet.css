@@ -1,0 +1,278 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.smart-facet-panel .csui-facet > .csui-facet-content  {
+  padding: 8px 16px 0px;
+}
+
+.smart-facet-panel .csui-facet-content {
+  color: #333333;
+  display: inline-block;
+  width: 100%;
+}
+
+.smart-facet-panel .csui-facet .cs-filter-group {
+  padding-bottom: 16px;
+}
+
+.smart-facet-panel .csui-facet-header.binf-disabled,
+.smart-facet-panel .csui-facet-content.facet-disabled a,
+.smart-facet-panel .csui-facet-content.facet-disabled,
+.smart-facet-panel .csui-facet-footer.facet-disabled,
+.smart-facet-panel .csui-facet-footer.facet-disabled .csui-filter-more .binf-btn,
+.smart-facet-panel .csui-facet-content.facet-disabled .csui-facet-item>.csui-filter-name>.csui-total {
+  pointer-events: none;
+  color: #999999 !important;
+  cursor: default;
+}
+
+
+.smart-facet-panel .csui-facet-header {
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  display: -ms-flexbox;
+  display: flexbox;
+  width: 100%;
+  min-height: 32px;
+  padding: 0px 12px 0px 16px;
+  background-color: #E6F7F7;
+  border-bottom: 1px solid #CBF7F3;
+  line-height: 16px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.binf-widgets .smart-facet-panel .csui-facet:not(.csui-facet-collapsed) .csui-facet-header{
+  background-color: #99E3E3;
+}
+
+.smart-facet-panel .csui-facet-header:hover{
+  background: #6BD5D5;
+}
+
+.smart-facet-panel .csui-facet-header:active{
+  background: #33C6C8;
+}
+
+.smart-facet-panel .csui-facet-header > div {
+  flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.smart-facet-panel .csui-facet-header .header-label {
+  flex: 1 1000 auto;
+  -ms-flex: 1 1000 auto;
+  -webkit-flex: 1 1000 auto;
+  min-width: 30px;
+  margin-right: 16px;
+  padding: 8px 0px;
+}
+
+.smart-facet-panel .csui-facet-header .cs-icon {
+  height: 28px;
+  width: 28px;
+  margin: 2px;
+}
+
+.smart-facet-panel .csui-facet-header.binf-disabled .cs-icon {
+  opacity: 0.5;
+}
+.smart-facet-panel .csui-facet-header .cs-icon:focus {
+  box-shadow: none;
+}
+
+.smart-facet-panel .csui-facet .header-count {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 1em;
+  text-align: center;
+  font-size: 12px;
+  color: #333333;
+  margin: 6px 0px;
+  line-height: 16px;
+  padding: 2px;
+}
+
+.smart-facet-panel .csui-facet.multi-select .header-count {
+  opacity: 1;
+}
+
+.smart-facet-panel  .csui-facet-collapsed .csui-facet-header .smart-indicator-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #2E3D98;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.smart-facet-panel .csui-facet-collapsed .csui-facet-header:hover .smart-indicator-dot,
+.smart-facet-panel .csui-facet-collapsed .csui-facet-header:active .smart-indicator-dot {
+  background-color: #171F4C;
+}
+
+.smart-facet-panel .csui-filter-more {
+  display: inline-flex;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.smart-facet-panel .csui-facet div:focus {
+  outline-offset: 3px;
+}
+
+
+.smart-facet-panel .csui-facet:focus-visible {
+  outline: 1px solid #232E72;
+  outline-offset: -2px;
+  box-shadow: none;
+}
+
+.smart-facet-panel .csui-filter-more > div {
+  font-size: 0.75em;
+}
+
+.smart-facet-panel .csui-filter-more .cs-icon.icon-expandArrowUp {
+  margin-top: 2px;
+}
+
+.smart-facet-panel .csui-filter-more.binf-disabled,
+.smart-facet-panel .csui-filter-more.binf-disabled:hover,
+.smart-facet-panel .csui-facet-item.binf-disabled > input,
+.smart-facet-panel .csui-filter-more:disabled,
+.smart-facet-panel .csui-filter-more:disabled:hover {
+  cursor: default;
+  border: 0px;
+  color: #a9a9a9;
+}
+
+.smart-facet-panel .csui-facet-header div {
+  font-size: 14px;
+}
+
+.smart-facet-panel .cs-icon {
+  cursor: pointer;
+}
+
+.smart-facet-panel .csui-facet-footer {
+  padding: 0px 8px 16px 16px;
+}
+
+.smart-facet-panel .csui-facet-collapse-controls,
+.smart-facet-panel .csui-facet-controls {
+  color: #0000ed;
+  display: none;
+  flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.smart-facet-panel .csui-facet-collapse-controls.multi-select,
+.smart-facet-panel .csui-facet-controls.csui-multi-select {
+  display: flex;
+  justify-content: end;
+  margin-top: 12px;
+}
+
+.smart-facet-panel .csui-facet-collapse-controls > div,
+.smart-facet-panel .csui-facet-controls > div {
+  float: right;
+  padding: 8px;
+}
+
+.smart-facet-panel .csui-facet .csui-footer-group {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  padding-bottom: 16px;
+  align-items: center;
+  padding-right: 16px;
+  flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+}
+
+.smart-facet-panel .csui-facet .binf-btn {
+  height: 18px;
+  min-height: 18px;
+  padding: 0 12px;
+  margin: 0 8px 0 8px;
+  vertical-align: middle;
+  font-size: 12px;
+  border-radius: 16px;
+  min-width: 52px;
+  line-height: 9px;
+  padding: 0px 8px;
+}
+
+.smart-facet-panel .csui-facet .binf-btn svg {
+  vertical-align: middle;
+}
+
+.smart-facet-panel .csui-facet .binf-btn svg {
+  vertical-align: middle;
+}
+
+.smart-facet-panel .csui-filter-more .binf-btn {
+  height: 20px;
+  vertical-align: middle;
+  font-size: 12px;
+  border-radius: 16px;
+  line-height: 14px;
+  padding: 3px 10px 3px 14px;
+  outline: 2px solid transparent;
+  background: transparent;
+  margin: 4px 2px;
+  border: none;
+}
+
+.smart-facet-panel .csui-filter-more .binf-btn-default:hover{
+  color: #171F4C;
+  outline: 2px solid #171F4C;
+  background-color: #ffffff;
+}
+
+.smart-facet-panel .csui-filter-more .binf-btn-default:focus-visible{
+  color: #171F4C;
+  outline: 2px solid #171F4C;
+}
+
+.smart-facet-panel .csui-filter-more .binf-btn-default:active{
+  color: #2E3D98;
+  outline: 2px solid #2E3D98;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+
+@media (forced-colors: active) {
+  
+   .smart-facet-panel .csui-facet-header .cs-icon:hover, .smart-facet-panel .csui-facet-header .cs-icon:focus {
+    outline: 1px solid black;
+    outline-offset: 3px;
+  }
+  .smart-facet-panel .csui-filter-more:hover, .smart-facet-panel .csui-filter-more:focus{
+    outline: 1px solid black;
+    outline-offset: 3px;
+  }
+  .smart-facet-panel .csui-facet .binf-btn:hover, .smart-facet-panel .csui-facet .binf-btn:focus {
+    outline: 1px solid black;
+    outline-offset: 3px;
+  }
+  .smart-facet-panel .csui-facet-item > .csui-facet-item-checkbox > .csui-checkbox-view > button:hover,
+  .smart-facet-panel .csui-facet-item > .csui-facet-item-checkbox > .csui-checkbox-view > button:focus {
+    outline: 1px solid black;
+    outline-offset: 3px;
+}
+  
+}

@@ -1,0 +1,37 @@
+{
+  "csui/models/server.module/server.module.collection": {
+    "modules": {
+      "dctmw": {
+        "title": "Documentum-Web-Core",
+        "version": "1.0"
+      }
+    }
+  },
+  "nuc/utils/authenticators/authenticators": {
+    "extensions": {
+      "dctmw": [
+        "dctmw/extensions/authenticators"
+      ]
+    }
+  },
+  "csui/utils/nodesprites": {
+    "extensions": {
+      "dctmw": [
+        "dctmw/utils/icons/icons"
+      ]
+    }
+  },
+  "csui/utils/commands": {
+    "extensions": {
+      "dctmw": [
+        "dctmw/commands/open",
+        "dctmw/commands/refresh.list"
+      ]
+    }
+  },
+  "csui/widgets/navigation.header/controls/user.profile/user.profile.view": {
+    "extensions": {
+      "csui": []
+    }
+  }
+}

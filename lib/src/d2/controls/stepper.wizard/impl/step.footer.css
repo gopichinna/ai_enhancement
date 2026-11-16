@@ -1,0 +1,40 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-footer {
+  background-color: #F4F4F4;
+  padding: 0 24px 0 8px!important;
+  max-height: 48px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  border:1px solid rgba(51, 51, 51, 0.2);
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-footer .d2-otc-btn{
+  padding-top: 8px;
+}
+
+.rtl.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-footer .default-back-button {
+  transform: scaleX(-1);
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-footer .binf-btn.binf-icon {
+  background-color: transparent;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-footer .binf-btn.binf-icon[disabled] {
+  cursor: default;
+  color: #999999;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-footer .binf-btn.binf-icon:active {
+  background-color: #98A8B2;
+  box-shadow: none;
+}

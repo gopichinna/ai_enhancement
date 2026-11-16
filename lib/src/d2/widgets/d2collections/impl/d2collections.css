@@ -1,0 +1,48 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-tile-collectionwidget .tile-header {
+  cursor: pointer;
+}
+
+.d2-tile-collectionwidget .tile-header .tile-controls .cs-search-button {
+  display: none;
+}
+
+.d2-tile.d2-tile-collectionwidget .show-all-link-wrapper, 
+.d2-tile.d2-tile-collectionwidget .tile-footer-inner{
+  display: block;
+  padding: 8px 4px;
+}
+
+.d2-tile.d2-tile-collectionwidget .show-all-link-wrapper .show-all-link,
+.d2-tile.d2-tile-collectionwidget .tile-footer-inner .show-all-link-inner{
+  color: #2F4ED1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 18px;
+  cursor: pointer;
+}
+
+.binf-widgets .content-tile .tile-content .show-all-link-wrapper {
+  padding: 0 0 5px 18px;
+}
+.show-all-link{
+ cursor: pointer;
+}
+
+.binf-widgets .content-tile .tile-content .tile-footer-inner {
+ padding: 4px 0 4px 18px ;
+}
+.show-all-link-inner {
+ cursor: pointer;
+}
+.d2-widget-tile-group-content .d2-widget-tile-content-header-view .d2-group-panel-container {
+  width: 100%;
+}
+
+.d2-tile-collectionwidget .cs-emptylist-container:not(.csui-state-loading) {
+  background-image: url("../../d2collections.perspective/impl/images/emptyCollection.svg");
+}

@@ -1,0 +1,168 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-task-files-list-item.binf-list-group-item {
+  background-color: #FFFFFF;
+  color: #333333;
+}
+
+.binf-widgets .d2-task-files-list-item.binf-list-group-item.attachment-highlight {
+  background-color: #E7F0D9;
+}
+
+.binf-widgets .d2-task-files-list-item.binf-list-group-item:hover {
+  color: #333333;
+}
+
+.cs-list .d2-task-files-list-item.csui-item-standard.binf-list-group-item:hover,
+.cs-list .d2-task-files-list-item.csui-item-standard.binf-list-group-item:active,
+.cs-list .d2-task-files-list-item.csui-item-standard.csui-tile-with-more-btn {
+  background-color: #DFE7EA;
+}
+
+.d2-task-files-list-item.csui-item-standard.binf-list-group-item {
+  border-radius: 0;
+}
+
+.binf-widgets .d2-task-files-list-item.binf-list-group-item hr {
+  border: 0;
+  border-bottom: 1px solid #DCDCDC;
+  margin: 9px 0 0 3px;
+}
+
+.binf-widgets .d2-task-files-list-item.binf-list-group-item:last-child hr {
+  visibility: hidden;
+}
+
+.d2-task-files-list.cs-list .d2-task-files-list-item.binf-list-group-item {
+  margin: 0;
+  padding: 13px 18px 0 25px;
+  height: auto;
+}
+
+.d2-task-files-list-item.csui-item-standard.binf-list-group-item span.list-item-title {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.d2-task-files-list-item .d2-task-file-relation {
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 9px;
+  margin-left: 30px;
+}
+
+.d2-task-files-list-item .d2-task-file-relation .d2-task-file-relation-icon {
+  height: 20px;
+  width: 20px;
+  background-image: url('../images/icon-task-file-relation.svg');
+}
+
+.d2-task-files-list-item.csui-item-standard.binf-list-group-item span.d2-task-file-relation-icon {
+  margin-right: 0;
+}
+
+.d2-task-files-list-item.csui-item-standard.binf-list-group-item span.d2-task-file-relation-title {
+  margin-right: 9px;
+}
+
+.d2-task-files-list-item .d2-task-file-relation .d2-task-file-relation-count {
+  height: 18px;
+  width: 21px;
+  border: 1px solid #627783;
+  border-radius: 2px;
+  text-align: center;
+  background: #FFFFFF;
+  cursor: pointer;
+  position: relative;
+}
+
+.d2-task-files-list-item .d2-task-file-relation .d2-task-file-relation-count>div {
+  color: #627783;
+}
+
+.d2-task-files-list-item .d2-task-file-relation .d2-task-file-relation-count:hover,
+.d2-task-files-list-item .d2-task-file-relation .d2-task-file-relation-count:active {
+  background-color: #627783;
+  border: 1px solid #FFFFFF;
+}
+
+.d2-task-files-list-item .d2-task-file-relation .d2-task-file-relation-count:focus {
+  outline: none;
+}
+
+.d2-task-files-list-item .d2-task-file-relation .d2-task-file-relation-count:focus:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  outline: 1px dotted black;
+}
+
+.d2-task-files-list-item .d2-task-file-relation .d2-task-file-relation-count:hover>div,
+.d2-task-files-list-item .d2-task-file-relation .d2-task-file-relation-count:active>div {
+  color: #FFFFFF;
+}
+
+.d2-task-files-list-item.csui-item-standard.binf-list-group-item span.list-item-title {
+  margin-right: 30px;
+  width: calc(100% - 72px);
+}
+
+.d2-task-files-list-item .inline-action-bar-container {
+  width: fit-content;
+  position: absolute;
+  top: 13px;
+  right: 18px;
+}
+
+.cs-list .d2-task-files-list-item.csui-item-standard.binf-list-group-item .inline-action-bar-container span {
+  vertical-align: baseline;
+  line-height: inherit;
+  margin-right: 0;
+}
+
+.cs-list .d2-task-files-list-item.csui-item-standard.binf-list-group-item .csui-tileview-more-btn {
+  position: absolute;
+  top: 13px;
+  right: 18px;
+}
+
+.binf-widgets .cs-list .d2-task-files-list-item.binf-list-group-item .csui-tileview-more-btn span.icon-toolbar-more {
+  height: 32px;
+  width: 32px;
+  margin-left: 0;
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cs-list .d2-task-files-list-item.binf-list-group-item .csui-tileview-more-btn .icon-toolbar-more:hover {
+  height: 32px;
+  width: 32px;
+}
+
+.binf-widgets .d2-task-files-list-item.csui-tile-with-more-btn .csui-table-actionbar .binf-dropdown-menu {
+  margin-top: 0;
+}
+
+.binf-widgets .d2-task-files-list-item .csui-tileview-more-btn .binf-nav .binf-dropdown,
+.d2-task-files-list-item .csui-tileview-more-btn .csui-table-actionbar>ul.binf-nav,
+.d2-task-files-list-item .csui-tileview-more-btn .csui-table-actionbar>ul.binf-nav>li>a {
+  padding: 0;
+}
+
+.binf-widgets .d2-task-files-list-item:not(.accessible):not(.msie) .tile-nav .binf-dropdown-menu {
+  overflow: hidden;
+}
+
+.binf-widgets .d2-task-files-list-item .csui-inline-menu .csui-loading-parent-wrapper .csui-loading-dots-wrapper {
+  width: 24px;
+}
+
+.d2-icon-checkbox {
+  display: flex;
+}

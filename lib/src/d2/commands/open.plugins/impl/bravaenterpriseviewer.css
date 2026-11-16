@@ -1,0 +1,35 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-bravaenterpriseviewer {
+  width: 100%;
+  height: 100%;
+}
+
+.d2-dirty-markup .d2-task-documents-widget .d2-task-documents-title-container {
+  position: relative;
+}
+
+.d2-be-sm-dialog.csui-alert .binf-modal-header{
+  padding: 20px 24px;
+  font-size: 20px;
+}
+
+.d2-be-sm-dialog.csui-alert .binf-modal-header .icon {
+  height: 24px;
+  width: 24px;
+}
+
+.d2-be-sm-dialog.csui-alert .binf-modal-header .binf-modal-title .title-text {
+  margin-left: 10px;
+}
+
+.d2-be-sm-dialog .binf-modal-content {
+  width: 540px;
+}
+
+.d2-be-sm-dialog.csui-alert .binf-modal-body {
+  padding: 0 0 24px 24px;
+  margin: 0;
+  color: #000000;
+}

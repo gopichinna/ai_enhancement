@@ -1,0 +1,3 @@
+.d2-tile-<%= typedNamePrefix.toLowerCase(); %> .tile-header {
+  cursor: pointer;
+}

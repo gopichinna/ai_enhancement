@@ -1,0 +1,12 @@
+# Comment to disable auto re-generation, check grunt-support/utils/create.eslintrc.js for an update
+plugins:
+  - '@smartui/checks'
+  - html
+extends:
+  - plugin:@smartui/checks/productive
+overrides:
+  -
+    files:
+      - "**/test/**/*.js"
+    extends:
+      - plugin:@smartui/checks/test

@@ -1,0 +1,69 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-sortable-list .binf-list-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.d2-sortable-list .sub-item {
+  display: table;
+  width: 100%;
+  flex: none;
+  padding: 0 0 0 16px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.d2-sortable-list .sub-item:hover, .d2-sortable-list .sub-item.select {
+  background: #b9c4cb url(images/drag_dots.svg) left no-repeat;
+  background-size: 16px 16px;
+  cursor: default;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+
+.csui-on-ipad .d2-sortable-list .sub-item:hover {
+  background-image: none;
+}
+
+.d2-sortable-list .sub-item.focus {
+  background-color: #f5f5f5;
+}
+
+.d2-sortable-list .sub-item.newly-added {
+  font-weight: bold;
+  background-color: #e7f0d9;
+}
+
+.d2-sortable-list .sub-item.newly-added:hover {
+  background-color: #b9c4cb;
+}
+
+.d2-sortable-list .sub-item-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.d2-sortable-list .remove-button, .d2-sortable-list .sub-item.select .remove-button {
+  display: table-cell;
+  background: none;
+  width: 26px;
+  height: 16px;
+}
+
+.d2-sortable-list .sub-item:hover .remove-button, .d2-sortable-list .sub-item.focus .remove-button {
+  background: url(images/remove.svg) center center no-repeat;
+  background-size: 16px 16px;
+  cursor: pointer;
+}
+
+.d2-sortable-list .csui-dragline {
+  width: 100%;
+  background-color: #627783;
+  box-shadow: 0 0 2px 1px #627783;
+}

@@ -1,0 +1,24 @@
+<div id="{{options.uniqueId}}" class="d2-container d2-set-container d2tabcontainer binf-col-md-12 {{#xif "this.options.tabLevel <= 2"}}d2tabcontainerpadding{{/xif}}" style="display:flex">
+ {{#each items}}
+    <div class="d2tabcontaineritemwrapper
+    {{#xif 'this.isControlField ||  this.options.multiCheck'}}
+    	{{#xif 'this.options.stretch===true'}}
+    	    binf-col-md-12
+    	{{else}}
+    	     binf-col-md-6
+    	{{/xif}}
+        d2-control
+    {{else}}
+        {{#xif "this.options._d2Containertype != null && this.options._d2Containertype === 'd2grid'"}}
+    	     csui-form-set-array-wrapper cs-form-set
+        {{else}}
+    	  {{#xif "this.type === 'array'"}}
+             cs-form-set
+          {{/xif}}
+       {{/xif}}
+     binf-col-md-12
+     {{/xif}}">
+    {{#item}}{{/item}}
+    </div>
+ {{/each}}
+</div>

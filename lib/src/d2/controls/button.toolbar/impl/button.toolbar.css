@@ -1,0 +1,86 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-button-toolbar {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.binf-widgets .d2-button-toolbar > div {
+  flex: 1 0 auto;
+  padding: 0 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.binf-widgets .d2-button-toolbar .region-left {
+  justify-content: flex-start;
+}
+
+.binf-widgets .d2-button-toolbar .region-center {
+  justify-content: center;
+}
+
+.binf-widgets .d2-button-toolbar .region-right {
+  justify-content: flex-end;
+}
+
+.binf-widgets .d2-button-toolbar .binf-btn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.binf-widgets .d2-button-toolbar .binf-btn.round-button {
+  border-radius: 50%;
+}
+
+.binf-widgets .d2-button-toolbar .binf-btn.button-3d,
+.binf-widgets .d2-button-toolbar .binf-btn[aria-selected="false"] {
+  box-shadow: 1px 1px 3px 0 #888888;
+}
+
+.binf-widgets .d2-button-toolbar .binf-btn.button-3d.animation-hint:not(:active):hover {
+  animation: button-3d-animation-hint 1s linear 500ms 1;
+}
+
+@keyframes button-3d-animation-hint {
+  from {
+    box-shadow: 1px 1px 3px 0 #888888;
+  }
+  to {
+    box-shadow: 1px 1px 2px 0 #888888 inset;
+  }
+}
+
+.binf-widgets .d2-button-toolbar .binf-btn.button-3d.animation-breathing:not(:active):hover {
+  animation: button-3d-animation-breathing 1s linear 500ms infinite alternate;
+}
+
+@keyframes button-3d-animation-breathing {
+  from {
+    box-shadow: 1px 1px 3px 0 #888888;
+  }
+  to {
+    box-shadow: 1px 1px 7px 0 #888888;
+  }
+}
+
+.binf-widgets .d2-button-toolbar .binf-btn.button-3d:active,
+.binf-widgets .d2-button-toolbar .binf-btn[aria-selected="true"] {
+  box-shadow: 1px 1px 2px 0 #888888 inset;
+}
+
+.binf-widgets .d2-button-toolbar .binf-btn:last-child {
+  margin-right: 0;
+}
+.binf-widgets .d2-button-toolbar .binf-btn .svg-toolbar-buttons{
+  height: 32px;
+}

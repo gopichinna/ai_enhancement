@@ -1,0 +1,50 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-widget-tile-group-content .d2-widget-tile-content-header-view {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+
+.binf-widgets .d2-widget-tile-group-content .d2-widget-tile-content-header-view .d2-group-panel-container{
+  display: flex;
+}
+
+.d2-widget-tile-group-content .d2-widget-tile-content-header-view .csui-type-icon {
+  display: flex;
+  padding: 2.438px 1.625px;
+  justify-content: center;
+  align-items: center;
+}
+
+.d2-widget-tile-group-content .d2-widget-tile-content-header-view .d2-group-name {
+  height: 32px;
+  color: #333;
+  font-family: OpenText Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; 
+  max-width: calc(100% - 4.5rem);
+  margin-left: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.d2-widget-tile-group-content .d2-widget-tile-content-header-view .d2-group-expandCollapse {
+  position: absolute;
+  background: url('images/caret-down.svg');
+  transform: rotate(180deg);
+  height: 20px;
+  width: 20px;
+  bottom: 10px;
+  right: 16px;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.d2-widget-tile-group-content .d2-widget-tile-content-header-view .d2-group-expandCollapse.expand {
+  transform: none;
+}

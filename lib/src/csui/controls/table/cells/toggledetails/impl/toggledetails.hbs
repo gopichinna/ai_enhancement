@@ -1,0 +1,14 @@
+{{#if hasMetadataRow}}
+  <a class="expand-details-row-toggle" title="{{expandToggleTooltip}}"
+     aria-label="{{expandToggleAria}}"
+     href="#csui-details-row-{{id}}" data-binf-toggle="collapse" aria-expanded="{{ariaExpanded}}"
+     aria-controls="csui-details-row-{{id}}">
+    {{#if ariaExpanded}}
+      {{{icon-v2 iconName='csui_caret_up' size='xsmall' }}}
+    {{else}}
+      {{{icon-v2 iconName='csui_caret_down' size='xsmall' }}}
+    {{/if}}
+  </a>
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

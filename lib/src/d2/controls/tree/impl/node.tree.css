@@ -1,0 +1,66 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-nodestable .d2-table-treeview {
+  background-color: #fff;
+}
+
+.binf-widgets .csui-facet-table-container .csui-table-facetview.csui-facetview-hidden,
+.csui-nodestable .d2-table-treeview.d2-table-treeview-hidden {
+  max-width: 0;
+  overflow: hidden;
+}
+
+.csui-nodestable .d2-table-treeview .d2-tree-panel {
+  height: 100%;
+  width: 240px;
+  max-width: 50vw;
+}
+
+.binf-widgets .csui-facet-table-container .d2-table-treeview.ui-resizable {
+  position: relative;
+}
+
+.binf-widgets .csui-facet-table-container .d2-table-treeview .ui-resizable-handle {
+  position: absolute;
+  font-size: 0.1px;
+  display: block;
+}
+
+.binf-widgets .csui-facet-table-container .d2-table-treeview .ui-resizable-disabled .ui-resizable-handle {
+  display: none;
+}
+
+.binf-widgets .csui-facet-table-container .d2-table-treeview .ui-resizable-e,
+.binf-widgets .csui-facet-table-container .d2-table-treeview .ui-resizable-w {
+  cursor: col-resize;
+  width: 3px;
+  right: 1px;
+  top: 0;
+  height: 100%;
+  margin-right: -3px;
+}
+
+.binf-widgets.rtl .csui-facet-table-container .d2-table-treeview.ui-resizable {
+  right: 0 !important; 
+}
+
+.binf-widgets .csui-facet-table-container .d2-table-treeview .ui-resizable-e:hover,
+.binf-widgets .csui-facet-table-container .d2-table-treeview .ui-resizable-w:hover {
+  background-color: #232E72;
+}
+
+.binf-widgets .csui-facet-table-container .d2-table-treeview .ui-resizable-e::before,
+.binf-widgets .csui-facet-table-container .d2-table-treeview .ui-resizable-w::before {
+  content: '';
+  cursor: col-resize;
+  width: 9px;
+  position: absolute;
+  right: -3px;
+  top: 0;
+  height: 100%;
+}
+
+.d2-tree .fancytree-node .fancytree-title.perspective-load-error {
+    color: #DF3324;
+}

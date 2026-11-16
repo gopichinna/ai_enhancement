@@ -1,0 +1,62 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.d2-drop-file-folder-message-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  box-shadow: inset 0 0 0 2px #09BCEF;
+  background-color: rgba(35, 64, 119, 0.9);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.csui-shortcut-region:not(.csui-region-large) .csui-shortcut-item > .d2-drop-file-folder-message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.d2-drop-file-folder-message-container .d2-drop-file-folder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cs-flow-perspective > .d2-drop-file-folder-message-container .d2-drop-file-folder {
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 94px;
+  left: 0;
+}
+
+.cs-flow-perspective > .d2-drop-file-folder-message-container .d2-drop-file-folder .d2-drop-file-folder-icon,
+.csui-region-large .csui-shortcut-item > .d2-drop-file-folder-message-container .d2-drop-file-folder .d2-drop-file-folder-icon {
+  background: url(../../file.uploader/impl/images/drag-target-white.svg) no-repeat;
+}
+
+.cs-flow-perspective > .d2-drop-file-folder-message-container .d2-drop-file-folder .d2-drop-file-folder-icon {
+  height: 140px;
+  width: 220px;
+  background-size: 100% 100%;
+}
+
+.csui-region-large .csui-shortcut-item > .d2-drop-file-folder-message-container .d2-drop-file-folder .d2-drop-file-folder-icon {
+  height: 112px;
+  width: 176px;
+  background-size: 100% 100%;
+  margin-top: 16px;
+}
+
+.d2-drop-file-folder-message-container .d2-drop-file-folder .d2-drop-file-folder-message {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  width: 95%;
+}

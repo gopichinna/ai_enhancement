@@ -1,0 +1,26 @@
+{{#if isZeroState}}
+  <div class="zero-state-wrapper">
+    <div class="zero-state-icon"></div>
+    <div class="action-title">
+      <div class="cs-title">{{lang.labelSelectTypeZeroStateMessage}}</div>
+    </div>
+    <div class="custom-actions">
+      <div class="action-import csui-button-icon import-icon" tabindex="0" title="{{lang.tooltipSelectTypeImportFile}}"></div>
+      <div class="action-add csui-button-icon add-icon" tabindex="0" title="{{lang.tooltipSelectTypeNewFile}}"></div>
+    </div>
+  </div>
+{{else}}
+  <div class="custom-profile-heading {{#if nameInteractive}}name-interactive{{/if}}" {{#if nameInteractive}}tabindex="0"{{/if}} title="{{lang.tooltipSelectTypeCreateUsingCustom}}">
+    <div class="action-icon csui-button-icon create-custom-icon"></div>
+    <div class="action-title">
+      <div class="cs-title">{{lang.labelSelectTypeCreateUsingCustom}}</div>
+    </div>
+    {{#unless nameInteractive}}
+      <div class="custom-actions">
+        <div class="action-import csui-button-icon import-icon" tabindex="0" title="{{lang.tooltipSelectTypeImportFile}}"></div>
+        <div class="action-add csui-button-icon add-icon" tabindex="0" title="{{lang.tooltipSelectTypeNewFile}}"></div>
+      </div>
+    {{/unless}}
+  </div>
+{{/if}}
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

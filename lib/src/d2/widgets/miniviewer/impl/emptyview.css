@@ -1,0 +1,31 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-empty-view {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 4px;
+  position: relative;
+}
+
+.binf-widgets .d2-empty-view .btn-close-viewer {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.binf-widgets .d2-empty-view .icon.d2-close-icon {
+  background: #FFFFFF url("images/icon-close-viewer.svg") no-repeat center;
+}
+
+.d2-empty-view .no-preview-download {
+  padding-top: 16px;
+}

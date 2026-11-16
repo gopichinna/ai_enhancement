@@ -1,0 +1,113 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-resizable .ui-resizable-e,
+.binf-widgets .csui-resizable .ui-resizable-w {
+    cursor: col-resize;
+    width: 3px;
+    right: 1px;
+    top: 0;
+    height: 100%;
+    margin-right: -1px;
+}
+
+html[dir="rtl"] .binf-widgets .csui-resizable .ui-resizable-w {
+    right: 1px;
+    margin-left: -1px;
+    left: 100%;
+}
+
+.binf-widgets .csui-resizable .ui-resizable-e:hover,
+.binf-widgets .csui-resizable .ui-resizable-w:hover {
+    background-color: #232E72;
+}
+
+.binf-widgets .csui-resizable .ui-resizable-e::before,
+.binf-widgets .csui-resizable .ui-resizable-w::before {
+    content: '';
+    cursor: col-resize;
+    width: 9px;
+    position: absolute;
+    right: -3px;
+    top: 0;
+    height: 100%;
+}
+
+.binf-widgets .csui-resizable .ui-resizable.csui-no-transition {
+    transition: none;
+}
+
+
+
+html[dir="rtl"] .binf-widgets .csui-resizable .ui-resizable.csui-favorite-groups-view,
+html[dir="rtl"] .binf-widgets .csui-search-results .csui-resizable .ui-resizable.csui-is-visible,
+html[dir="rtl"] .binf-widgets .csui-resizable .ui-resizable.metadata-sidebar {
+    left: 0!important;
+}
+
+.binf-widgets .csui-resizable .ui-resizable.csui-favorite-groups-view,
+.binf-widgets .csui-resizable .ui-resizable.metadata-sidebar{
+    max-width: 50%;
+    flex: 0 0 auto;
+    display: flex;
+}
+
+
+.binf-widgets .csui-search-results .csui-resizable .ui-resizable.csui-is-visible {
+    max-width: 50%;
+    flex: 0 0 auto;
+    display: flex;
+    width: 248px;
+}
+
+.csui-facet-table-container.csui-resizable .csui-search-results-body.csui-search-results-body-right{
+    max-width: 100%;
+}
+
+.binf-widgets .csui-search-results .csui-resizable .csui-popover-panel.csui-is-visible div#facetview {
+    width: inherit;
+    max-width: inherit;
+}
+
+.binf-widgets .csui-search-results .csui-resizable .ui-resizable .csui-search-results-custom {
+    width: inherit;
+    max-width: inherit;
+    
+}
+
+.binf-widgets .csui-search-results .csui-resizable .csui-popover-panel.csui-is-visible .csui-search-custom-container,
+.binf-widgets .csui-resizable .ui-resizable .csui-search-custom-container {
+    width: inherit;
+    max-width: inherit;
+}
+
+.binf-widgets .csui-search-results .csui-resizable .csui-popover-panel.csui-is-visible .csui-saved-search-submit-container {
+    max-width: inherit;
+}
+
+.binf-widgets .csui-resizable .ui-resizable .smart-facet-panel {
+    max-width: inherit;
+}
+
+
+
+.binf-widgets .csui-nodestable .csui-resizable .ui-resizable.csui-side-panel.csui-sidepanel-hidden {
+    width: 0px !important;
+    min-width: 0px;
+}
+
+
+
+.binf-widgets .csui-resizable .metadata-content {
+    width: inherit;
+    overflow-x: hidden;
+
+}
+
+.binf-widgets .cs-metadata-add-items .csui-resizable .metadata-content {
+    overflow-x: hidden;
+}
+
+.binf-widgets .csui-resizable {
+    display: flex;
+}

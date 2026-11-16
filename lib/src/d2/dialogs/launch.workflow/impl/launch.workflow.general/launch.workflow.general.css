@@ -1,0 +1,49 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-launch-workflow-general-dialog,
+.d2-launch-workflow-general-dialog-container,
+.d2-launch-workflow-general-form-container {
+    height: 100%;
+    width: 100%;
+}
+
+.d2-stepper-wizard .d2-launch-workflow-general-form-container .cs-form.csui-general-form.d2-form.d2-launch-workflow-general-form {
+    padding-top: 24px;
+    margin-top: 0;
+    margin-left: 48px;
+    width: 62%;
+}
+
+.d2-launch-workflow-general-form-container .d2-launch-workflow-general-form.csui-top-align-label .cs-form .binf-col-md-6 {
+    width: 416px;
+    padding: 0;
+}
+
+.d2-launch-workflow-general-dialog .d2-launch-workflow-general-form .cs-textareafield textarea {
+    height: auto;
+    min-height: 46px;
+    max-height: none;
+    overflow: hidden;
+}
+
+.d2-launch-workflow-general-dialog .cs-formfield.cs-textareafield {
+    max-height: none;
+}
+
+.d2-launch-workflow-general-dialog .d2-launch-workflow-general-form.csui-top-align-label .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.d2-stepper-wizard .d2-launch-workflow-general-dialog .cs-form.csui-general-form.d2-form .binf-help-block.alpaca-message {
+    margin-left: 16px;
+    width: calc(100% - 16px);
+}
+
+.d2-stepper-wizard .d2-group-content-view-region .d2-launch-workflow-general-form-container.d2-launch-workflow-general-form {
+
+    width: 82%;
+
+}

@@ -1,0 +1,96 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-target-browse .searchheader-inner .d2-search-data-header {
+  margin: 0;
+  height: 100%;
+  padding-top:5px;
+}
+
+.binf-widgets .d2-target-browse .searchheader-inner.d2-non-container-padding {
+  padding-top: 0;
+}
+
+.d2-target-browse .d2-node-picker .searchheader-inner .d2-search-header-title .headerImg {
+  display: inline-flex;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  padding: 4px;
+}
+
+.binf-widgets .d2-target-browse .d2-node-picker .searchheader-inner .d2-search-header {
+  position: relative;
+}
+
+.binf-widgets .d2-target-browse .d2-node-picker .searchheader-inner .d2-search-header-title {
+  display: inline-block;
+  font-weight: inherit;
+  font-size: 14px;
+  margin-left: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 0 1 auto;
+  margin-right: 0;
+  width: auto;
+  height: 35px;
+}
+
+.binf-widgets .d2-target-browse .d2-node-picker .d2-search-header-title .results-title {
+  line-height: 0;
+}
+
+.binf-widgets .d2-target-browse .searchheader-inner .d2-search-header {
+  padding: 8px 24px;
+}
+
+.binf-widgets .d2-target-browse .d2-node-picker .d2-search-item .d2-search-item-name {
+  font-weight: normal;
+  overflow: hidden;
+}
+
+.d2-target-browse .csui-search-header .csui-search-header-title {
+  display: inline-block;
+  font-weight: 400;
+  font-size: initial;
+  margin-right: 0;
+  margin-left: 0 !important;
+  overflow: hidden;
+  vertical-align: top;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  flex: 0 1 auto !important;
+  padding-left: 0;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.d2-target-browse .csui-search-header .csui-search-header-title .searchHeaderCount {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 1em;
+}
+
+.binf-widgets .d2-target-browse .csui-node-picker .searchheader-inner .csui-search-header {
+  position: relative;
+}
+
+.d2-target-browse .csui-search-header .d2-total-notification-icon {
+  display: inline-flex;
+  margin-left: 8px;
+  width: 23px;
+}
+
+.d2-target-browse .csui-search-header .d2-total-notification-icon .icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 18px;
+  width: 18px;
+}
+.binf-widgets .d2-target-browse .searchheader-inner .csui-search-header {
+  padding: 2px 0;
+  line-height: 16px;
+}

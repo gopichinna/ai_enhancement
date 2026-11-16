@@ -1,0 +1,176 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-reserve-confirm-dialog .binf-modal-dialog {
+  width: 720px;
+}
+
+.d2-reserve-confirm-dialog .binf-modal-content {
+  border-radius: 3px;
+  border: 0 none;
+  border-bottom: 4px solid #00639B;
+  overflow: hidden;
+  width: 720px;
+  padding: 0;
+}
+
+.binf-widgets .d2-reserve-confirm-dialog .binf-modal-header.tile-header {
+  height: 64px;
+  border: 0 none;
+  padding: 0 16px 0 16px;
+}
+
+.binf-widgets .d2-reserve-confirm-dialog .binf-modal-header .confirm-dialog-header {
+  font-size: 0;
+}
+
+.binf-widgets .d2-reserve-confirm-dialog .binf-modal-header .confirm-dialog-header .icon {
+  display: inline-block;
+  width: 24px;
+  height: 64px;
+  background-image: url(images/checkout_header_icon.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.binf-widgets .d2-reserve-confirm-dialog .binf-modal-header .confirm-dialog-header .title {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  line-height: 64px;
+  margin-left: 10px;
+}
+
+.d2-reserve-confirm-dialog.cs-dialog .binf-modal-body {
+  margin: 0;
+  padding: 0 16px 0 16px;
+}
+
+.d2-reserve-confirm-dialog.cs-dialog.binf-modal:not(.csui-alert) .binf-modal-dialog {
+  top: auto;
+}
+
+.d2-reserve-confirm-dialog.dialog-hidden {
+  visibility: hidden;
+}
+
+.d2-reserve-confirm-dialog .binf-modal-footer {
+  border-top: 0;
+}
+
+.binf-widgets .d2-reserve-confirm-dialog .binf-modal-footer .binf-btn {
+  margin-left: 10px !important;
+  min-width: 5rem;
+}
+
+.d2-reserve-confirm-dialog table.checkout-items {
+  width: 100%;
+}
+
+.d2-reserve-confirm-dialog table.checkout-items td {
+  vertical-align: middle;
+}
+
+.d2-reserve-confirm-dialog table.checkout-items tr {
+  height: 64px;
+  border-bottom: 1px solid #eee;
+}
+
+.d2-reserve-confirm-dialog table.checkout-items td.type,
+.d2-reserve-confirm-dialog table.checkout-items td.status,
+.d2-reserve-confirm-dialog table.checkout-items td.remove {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.d2-reserve-confirm-dialog table.checkout-items td.type {
+  width: 32px;
+}
+
+.d2-reserve-confirm-dialog table.checkout-items td.status {
+  width: 16px;
+}
+
+.d2-reserve-confirm-dialog table.checkout-items td.remove {
+  width: 24px;
+}
+
+.d2-reserve-confirm-dialog table.checkout-items td.name {
+  position: relative;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 14px;
+  line-height: 16px;
+  width: 320px;
+  max-width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.d2-reserve-confirm-dialog table.checkout-items td.name > .fadeout {
+  position: absolute;
+  width: 35px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 75%,rgba(255,255,255,1) 100%)
+}
+
+.d2-reserve-confirm-dialog table.checkout-items td.message {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  width: 288px;
+}
+
+.d2-reserve-confirm-dialog table.checkout-items td.message > div {
+  position: relative;
+  max-height: 32px;
+  overflow: hidden;
+}
+
+.d2-reserve-confirm-dialog table.checkout-items td.message > div > .fadeout {
+  position: absolute;
+  width: 35px;
+  bottom: 0;
+  right: 0;
+  height: 16px;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 75%,rgba(255,255,255,1) 100%)
+}
+
+.d2-reserve-confirm-dialog table.checkout-items tr[data-cs-status=ERROR] td.message {
+  color: #DF3324;
+}
+
+.d2-reserve-confirm-dialog table.checkout-items tr[data-cs-status=WARNING] td.message {
+  color: #067D14;
+}
+
+.d2-reserve-confirm-dialog table.checkout-items .status-icon,
+.d2-reserve-confirm-dialog table.checkout-items .remove-item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.d2-reserve-confirm-dialog table.checkout-items .status-icon.checkout-blocked {
+  width: 16px;
+  height: 16px;
+  background-image: url(images/checkout_blocked.svg);
+}
+
+.d2-reserve-confirm-dialog table.checkout-items .status-icon.checkout-allowed {
+  width: 16px;
+  height: 16px;
+  background-image: url(images/checkout_allowed.svg);
+}
+
+.d2-reserve-confirm-dialog table.checkout-items .remove-item {
+  width: 24px;
+  height: 24px;
+  border: 0;
+  background-image: url(images/remove_item.svg);
+}

@@ -1,0 +1,10 @@
+{
+  "type": "flow",
+  "options": {
+    "widgets": [
+      {
+        "type": "csui/widgets/document.overview"
+      }
+    ]
+  }
+}

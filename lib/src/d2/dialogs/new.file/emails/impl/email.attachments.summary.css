@@ -1,0 +1,253 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary {
+  padding: 52px 0 0 0;
+  height: 100%;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .binf-list-group,
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list {
+  height: inherit;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .binf-list-group {
+  width: 100%;
+  padding: 0 64px;
+  margin-bottom: 0;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item {
+  display: block;
+  width: 100%;
+  margin: 1px 0 0 0;
+  border-radius: 3px;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item:first-of-type,
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item:hover + .sub-item,
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item.select + .sub-item {
+  border-top: none;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item:hover,
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item.select {
+  background-image: url("images/drag-handle20.svg");
+  background-color: #b9c4cb;
+  border-left: none;
+  cursor: move;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary.single-item .d2-sortable-list .binf-list-group .sub-item:hover {
+  background-image: none;
+  border: none;
+  cursor: default;
+  margin: 1px 0 0 0;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .sub-item:hover .sub-item-container {
+  cursor: default;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .csui-dragline + .sub-item {
+  margin: 2px 0;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item-container {
+  display: flex;
+  margin: 0 8px;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item-container + .remove-button {
+  display: none;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .cs-emptylist-container {
+  margin-bottom: 0;
+  margin-top: 99px;
+  height: auto;
+  background-image: url('images/no_attachment.svg');
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 220px 220px;
+  min-height: 220px;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .cs-emptylist-container .csui-no-result-message {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 76px;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-item {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item:hover .d2-email-item,
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item.focus:hover .d2-email-item {
+  border-color: #b9c4cb;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item.focus .d2-email-item {
+  border-color: #f5f5f5;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-item .binf-panel-heading {
+  padding: 0;
+  height: 48px;
+  border: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-item .binf-panel-heading .container-icon {
+  height: 32px;
+  width: 32px;
+  margin: 11px 8px 0 0;
+  background-repeat: no-repeat;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-item .binf-panel-heading .cs-title {
+  font-size: 14px;
+  margin: 22px 8px 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-item .cs-content {
+  
+  padding: 0;
+}
+
+.binf-widgets .d2-email-item .d2-email-attachment {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 0 40px;
+}
+
+.binf-widgets .d2-email-item .d2-email-attachment:first-child {
+  padding-top: 14px;
+}
+
+.binf-widgets .d2-email-item .attachment-details {
+  display: flex;
+  margin: 0 0 8px 0;
+  width: calc(100% - 20px);
+}
+
+.binf-widgets .d2-email-item .attachment-remove {
+  height: 16px;
+  width: 16px;
+  padding: 1px;
+  margin: 14px 0;
+  display: flex;
+  cursor: default;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item:hover .d2-email-attachment .attachment-remove,
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item:active .d2-email-attachment .attachment-remove,
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item.focus .d2-email-attachment .attachment-remove {
+  background-image: url("images/delete-item16.svg");
+  cursor: pointer;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item:hover .d2-email-attachment .attachment-remove:hover,
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item:active .d2-email-attachment .attachment-remove:hover,
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item.focus .d2-email-attachment .attachment-remove:hover {
+  background-image: url("images/delete-item16_mo.svg");
+  cursor: pointer;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item:hover .d2-email-attachment .attachment-remove:active,
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item:active .d2-email-attachment .attachment-remove:active,
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item.focus .d2-email-attachment .attachment-remove:active {
+  background-image: url("images/delete-item16_md.svg");
+  cursor: pointer;
+}
+
+.binf-widgets .d2-email-item .attachment-details .file-details .file-size {
+  display: none;
+}
+
+.binf-widgets .d2-email-item .attachment-details .file-icon {
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  margin-top: 2px;
+}
+
+.binf-widgets .d2-email-item .attachment-details .file-details {
+  width: calc(100% - 50px);
+  margin-left: 6px;
+}
+
+.binf-widgets .d2-email-item .attachment-details .file-details .file-name {
+  line-height: 22px;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: calc(100% - 30px);
+  margin-bottom: 5px;
+}
+
+.binf-widgets .d2-email-item .attachment-details .file-details .file-size,
+.binf-widgets .d2-email-item .attachment-details .file-details .file-format {
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.binf-widgets .d2-email-item .attachment-details .file-details .file-size .size-lable,
+.binf-widgets .d2-email-item .attachment-details .file-details .file-format .format-lable {
+  font-weight: bold;
+}
+
+.binf-widgets .d2-email-item .attachment-details .file-details .file-format .selected-format {
+  margin-left: 10px;
+}
+
+.binf-widgets .d2-email-item .attachment-details .file-details .file-format {
+  display: flex;
+  width: 100%;
+}
+
+.binf-widgets .d2-email-item .attachment-details .file-details .file-format .format-menu {
+  width: auto;
+  margin-left: 4px;
+}
+
+.binf-widgets .d2-email-item .attachment-details .attachment-exclusion-warning {
+  display: flex;
+  margin-left: -23px;
+  margin-top: 5px;
+}
+
+
+.binf-widgets .d2-email-item .attachment-details .attachment-exclusion-warning.no-file-icon {
+  margin-left: -5px;
+}
+
+.binf-widgets .d2-email-item .attachment-details .attachment-exclusion-warning .exclusion-message {
+  font-size: 10px;
+  line-height: 12px;
+  margin-left: 1px;
+  color: #df3324;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-left: 2px solid #DF3324;
+  padding: 2px 10px 2px 13px;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-email-attachments-summary .d2-sortable-list .binf-list-group .sub-item:hover .d2-email-item .attachment-details .attachment-exclusion-warning .exclusion-message {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: none;
+}

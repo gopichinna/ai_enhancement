@@ -1,0 +1,32 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-workflow-timeline-task-alert {
+  height: 42px;
+  border-bottom: 1px solid #DF3324;
+  border-top: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+.binf-widgets .d2-workflow-timeline-task-alert.type-info {
+  border-bottom: 1px solid #2E3D98;
+}
+
+.binf-widgets .d2-workflow-timeline-task-alert .d2-icon-alert {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.binf-widgets .d2-workflow-timeline-task-alert .alert-text {
+  height: 42px;
+  max-width: calc(100% - 32px);
+  overflow: hidden;
+  text-align: center;
+  line-height: 42px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

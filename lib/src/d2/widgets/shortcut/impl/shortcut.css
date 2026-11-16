@@ -1,0 +1,333 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-shortcut-container .csui-shortcut-item {
+  position: relative;
+  flex-grow: 1;
+  background-color: rgba(247, 247, 247, 0.82);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #333333;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item:active,
+.binf-widgets .d2-shortcut-container .csui-shortcut-item:focus {
+  text-decoration: none;
+  color: #333333;
+  outline: 1px solid #ffffff;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item:hover {
+  outline: 1px solid #94bbea;
+  outline-offset: 2px;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item:active {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item:not(.csui-disabled) {
+  cursor: pointer;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-disabled {
+  pointer-events: none;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-disabled .tile-title {
+  opacity: 0.75;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-disabled .tile-icon {
+  opacity: 0.75;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon {
+  display: flex;
+  align-items: flex-end;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon {
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: contain;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-default {
+  background-image: url('icons/default_shortcut.svg') !important;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-folders {
+  background-image: url('icons/folder.svg') !important;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-cabinet {
+  background-image: url('icons/cabinet.svg') !important;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-repository {
+  background-image: url('icons/repository.svg') !important;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-saved-search {
+  background-image: url('icons/saved_search.svg') !important;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-saved-search.icon-saved-search-form {
+  background-image: url('icons/saved_search_form.svg') !important;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-query-form {
+  background-image: url('icons/query_form.svg') !important;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-new {
+  background-image: url('icons/new_content.svg');
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-new-preset {
+  background-image: url('icons/preset_new_content.svg');
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-upload-file {
+  background-image: url('icons/upload_file.svg');
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-upload-file-preset {
+  background-image: url('icons/preset_upload_file.svg');
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-upload-folder {
+  background-image: url('icons/upload_folder.svg');
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-action-tile-combined {
+  background-image: url('icons/new_content_combined.svg');
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-open-url {
+  background-image: url('icons/open_url.svg') !important;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-all-workflows {
+  background-image: url('icons/all_workflows.svg') !important;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-aviator-administration {
+  background-image: url('icons/tile_aviator.svg');
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-mip-administration {
+  background-image: url('icons/tile_mip.svg');
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-stone1-shade1 {
+  background: #5f6e77;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-stone1-shade2 {
+  background: #3f4950;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-stone1-shade3 {
+  background: #71747b;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-stone1-shade4 {
+  background: #5f6e77;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-stone2-shade1 {
+  background: #71747b;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-stone2-shade2 {
+  background: #5f6e77;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-stone2-shade3 {
+  background: #70769b;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-stone2-shade4 {
+  background: #3f4950;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-teal1-shade1 {
+  background: #005873;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-teal1-shade2 {
+  background: #078db3;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-teal1-shade3 {
+  background: #00639b;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-teal1-shade4 {
+  background: #005c5d;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-teal2-shade1 {
+  background: #008a8b;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-teal2-shade2 {
+  background: #007599;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-teal2-shade3 {
+  background: #00639b;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-teal2-shade4 {
+  background: #004267;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-pink1-shade1 {
+  background: #780050;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-pink1-shade2 {
+  background: #c83370;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-pink1-shade3 {
+  background: #a8003d;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-pink1-shade4 {
+  background: #780050;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-pink2-shade1 {
+  background: #4f3690;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-pink2-shade2 {
+  background: #a0006b;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-pink2-shade3 {
+  background: #ba004c;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-pink2-shade4 {
+  background: #8b0039;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-indigo1-shade1 {
+  background: #4f3690;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-indigo1-shade2 {
+  background: #2e3d98;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-indigo1-shade3 {
+  background: #232e72;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-indigo1-shade4 {
+  background: #111b58;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-indigo2-shade1 {
+  background: #2e3d98;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-indigo2-shade2 {
+  background: #4f3690;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-indigo2-shade3 {
+  background: #232e72;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-indigo2-shade4 {
+  background: #414979;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-pink3-shade1 {
+  background: #a0006b;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-pink4-shade1 {
+  background: #780050;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-pink5-shade1 {
+  background: #3b296c;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-indigo3-shade1 {
+  background: #2e3d98;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-indigo4-shade1 {
+  background: #232e72;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-stone3-shade1 {
+  background: #3f4950;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-teal3-shade1 {
+  background: #078db3;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-teal4-shade1 {
+  background: #055e78;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-teal5-shade1 {
+  background: #00639b;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-teal6-shade1 {
+  background: #004267;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-teal7-shade1 {
+  background: #005c5d;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-orange1-shade1 {
+  background: #df3324;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-orange1-shade2 {
+  background: #b4421a;
+}
+
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-orange2-shade1 {
+  background: #df3324;
+}
+
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-orange3-shade1 {
+  background: #b4421a;
+}

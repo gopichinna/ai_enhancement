@@ -1,0 +1,59 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-table-cell-inline-row-actions > *,
+.binf-widgets .csui-saved-item.csui-state-hover.focused .d2-table-cell-inline-row-actions > * {
+  opacity: 0;
+}
+
+.binf-widgets .csui-saved-item.focused .d2-table-cell-inline-row-actions > * {
+  opacity: 1;
+}
+
+.binf-widgets .csui-nodetable.touch-browser .csui-saved-item .d2-table-cell-inline-row-actions > * {
+  opacity: 1;
+}
+
+.binf-widgets .csui-nodetable.touch-browser .csui-saved-item .d2-table-cell-inline-row-actions {
+  pointer-events: initial;
+}
+
+.binf-widgets .csui-nodetable .csui-saved-item .d2-table-cell-inline-row-actions {
+  pointer-events: none;
+}
+
+.binf-widgets.csui-on-ipad .csui-nodetable .binf-table.dataTable > tbody > tr.csui-saved-item .d2-table-cell-inline-row-actions {
+  overflow-x: visible;
+}
+
+.binf-widgets .csui-nodetable .csui-saved-item .d2-table-cell-inline-row-actions .d2-inline-row-action {
+  width: 62px;
+}
+
+.binf-widgets .csui-nodetable .csui-saved-item .d2-table-cell-inline-row-actions .show-more-action-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.binf-widgets .csui-nodetable .d2-table-cell-inline-row-actions .d2-inline-row-action .csui-table-actionbar.csui-state-loading .csui-toolbar-state > p {
+  color: #333;
+  font-size: 11px;
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.rtl.binf-widgets .csui-nodetable .csui-saved-item .d2-table-cell-inline-row-actions .d2-inline-row-action .csui-table-actionbar .binf-dropdown > .binf-dropdown-menu {
+  left: auto;
+}
+
+.rtl.binf-widgets .csui-nodetable .csui-saved-item .d2-table-cell-inline-row-actions .d2-inline-row-action .csui-table-actionbar .binf-dropdown > .binf-dropdown-menu .binf-dropdown-submenu.binf-open.binf-dropdown-menu-left > .binf-dropdown-menu{
+  width: 100%;
+}
+
+.binf-widgets .csui-nodetable .d2-table-cell-inline-row-actions .dots-loader {
+  position: relative;
+  left: 15px;
+}

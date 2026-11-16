@@ -1,0 +1,32 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .cs-metadata-navigation-wrapper {
+  background-color: #ffffff;
+}
+
+.binf-widgets .cs-metadata-navigation-wrapper.cs-metadata-no-bg-color {
+  background-color: transparent;
+}
+
+.binf-widgets .cs-metadata-navigation-wrapper,
+.binf-widgets .cs-metadata-navigation-wrapper > .cs-metadata,
+.binf-widgets .cs-metadata-navigation-wrapper > .cs-metadata .metadata-navigation > .metadata-content > .cs-metadata {
+  height: 100%;
+}
+
+@media only screen and (max-height: 400px) {
+  .binf-widgets .cs-metadata-navigation-wrapper,
+  .binf-widgets .cs-metadata-navigation-wrapper > .cs-metadata,
+  .binf-widgets .cs-metadata-navigation-wrapper > .cs-metadata .metadata-navigation > .metadata-content > .cs-metadata {
+    height: auto;
+  }
+}
+
+.binf-widgets .cs-metadata-navigation-wrapper > .cs-metadata {
+  overflow: hidden;
+}
+
+.binf-widgets .cs-metadata-navigation-wrapper .metadata-inner-wrapper {
+  height:100%;
+}

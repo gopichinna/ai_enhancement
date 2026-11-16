@@ -1,0 +1,225 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .cs-formfield.d2-checkbox-group {
+  height: auto;
+  padding-left: 1px;
+}
+
+.cs-formfield.d2-checkbox-group .d2-cb-container-parent {
+  display: block;
+  width: 100%;
+}
+
+.cs-formfield.d2-checkbox-group .d2-checkbox-container {
+  position: relative;
+  align-items: unset;
+  line-height: initial;
+  display: inline-flex;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.cs-formfield.d2-checkbox-group .d2-checkbox-container.cb-item-error {
+  
+  padding: 2px 2px 2px 0;
+}
+
+.cs-form .d2-checkbox-group .d2-checkbox-container label {
+  color: #333333;
+  text-align: left;
+  border-bottom: 0;
+  display: block;
+  position: relative;
+  cursor: default;
+  padding-left: 8px;
+  left: .1em;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.d2-checkbox-group .d2-checkbox-container.cb-item-error label {
+  color: #df3324;
+}
+
+.d2-checkbox-group .d2-checkbox-container label:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.d2-checkbox-group .d2-checkbox-container .checkbox-item {
+  opacity: 0;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin: 0;
+  min-width: 18px;
+  min-height: 18px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.binf-widgets .d2-checkbox-group li:not(.d2-active-checkbox) .d2-checkbox-container.show-on-hover:not(:hover) .checkbox-item:not(:checked) ~ .d2-checkbox-icon-container:before {
+  opacity: 0;
+}
+
+.binf-widgets.csui-on-ipad .d2-checkbox-group li:not(.d2-active-checkbox) .d2-checkbox-container.show-on-hover:not(:hover) .checkbox-item:not(:checked) ~ .d2-checkbox-icon-container:before {
+  opacity: 1;
+}
+
+.d2-checkbox-group .d2-checkbox-container .d2-checkbox-icon-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.d2-checkbox-group .d2-checkbox-container .d2-checkbox-icon-container:before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  outline: 0;
+  cursor: pointer;
+  background-image: url('images/checkbox.svg');
+}
+
+.d2-checkbox-group .d2-checkbox-container.cb-item-error .d2-checkbox-icon-container:before {
+  background-image: url('images/checkbox_invalid.svg');
+}
+
+.d2-checkbox-group .d2-checkbox-container.cb-item-error .d2-checkbox-icon-container:before {
+  top: 2px;
+}
+
+.d2-checkbox-group .d2-checkbox-container .checkbox-item:not([disabled]):hover + .d2-checkbox-icon-container:before {
+  border: 1px solid #757575;
+}
+
+.d2-checkbox-group .d2-checkbox-container.cb-item-error .checkbox-item:not([disabled]):hover + .d2-checkbox-icon-container:before {
+  border: 1px solid #df3324;
+}
+
+.d2-checkbox-group .d2-checkbox-container .checkbox-item:checked + .d2-checkbox-icon-container:before {
+  background-color: #ffffff;
+}
+
+.d2-checkbox-group .d2-checkbox-container .checkbox-item:disabled + .d2-checkbox-icon-container:before {
+  content: url('images/checkbox_disabled.svg');
+}
+
+.d2-checkbox-group .d2-checkbox-container.cb-item-error .checkbox-item:disabled + .d2-checkbox-icon-container:before {
+  content: url('images/checkbox_disabled_invalid.svg');
+}
+
+.d2-checkbox-group .d2-checkbox-container .d2-checkbox-icon-container:after {
+  display: inline-block;
+  position: absolute;
+  color: #ffffff;
+  background-color: #757575;
+  width: 18px;
+  height: 18px;
+}
+
+.d2-checkbox-group .d2-checkbox-container.cb-item-error .d2-checkbox-icon-container:after {
+  top: 2px;
+}
+
+.d2-checkbox-group .d2-checkbox-container .checkbox-item:checked + .d2-checkbox-icon-container:after {
+  content: " ";
+  content: url('images/checkbox_selected.svg');
+  border-radius: 3px;
+}
+
+.d2-checkbox-group .d2-checkbox-container.cb-item-error .checkbox-item:checked + .d2-checkbox-icon-container:after {
+  content: url('images/checkbox_selected_invalid.svg');
+}
+
+.d2-checkbox-group .d2-checkbox-container .checkbox-item:checked:disabled + .d2-checkbox-icon-container:after {
+  content: url('images/checkbox_on24_dis.svg');
+}
+
+.d2-checkbox-group .d2-checkbox-container.cb-item-error .checkbox-item:checked:disabled + .d2-checkbox-icon-container:after {
+  content: url('images/checkbox_on24_dis_invalid.svg');
+}
+
+.d2-checkbox-group .cs-field-write-inner .validation-error-message {
+  display: block;
+  color: #df3324;
+  font-size: .75rem;
+  margin-top: -6px;
+  line-height: 1.25rem;
+}
+
+.binf-widgets .d2-checkbox-group input[type="checkbox"][disabled] {
+  cursor: context-menu;
+}
+
+.binf-widgets .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container {
+  overflow: hidden;
+  max-height: 32px;
+  padding-bottom: 6px;
+  width: 100%;
+}
+
+.binf-widgets .cs-formfield.d2-checkbox-group div.d2-full-height {
+  max-height: none;
+}
+
+.binf-widgets .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: calc(100% - 3em);
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 65%);
+  width: 3em;
+  height: 1.25em;
+}
+
+.binf-widgets .cs-formfield.nested-fieldset-background.d2-checkbox-group div.d2-checkbox-item-container:after {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), #F5F5F5 65%);
+}
+
+.binf-widgets .cs-formfield.d2-checkbox-group span.d2-text-overflow {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: calc(100% - 1em);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.binf-widgets .cs-formfield.d2-checkbox-group span.d2-more-text {
+  background: url("images/caret_down.svg") no-repeat right bottom;
+}
+
+.binf-widgets .cs-formfield.d2-checkbox-group span.d2-less-text {
+  background: url("images/caret_up.svg") no-repeat right bottom;
+}
+
+.binf-widgets .d2-checkbox-group ul.d2-cb-container-parent li.d2-active-checkbox {
+  border: 1px dotted #666666;
+}
+
+.cs-formfield.d2-checkbox-group .d2-cb-container-parent li {
+  padding: 6px 0 0 2px;
+  border: 1px solid transparent;
+}
+
+.cs-formfield.d2-checkbox-group .cs-field-write .d2-checkbox-item-container,
+.cs-formfield.d2-checkbox-group .cs-field-write .d2-checkbox-item-container > label {
+  cursor: pointer;
+}
+

@@ -1,0 +1,193 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-popover.d2-mass-update-info-flyout {
+    width: 252px;
+    max-width: 252px;
+    padding: 0;
+    cursor: default;
+}
+
+.binf-popover.d2-mass-update-info-flyout.show-version {
+    width: 326px;
+    max-width: 326px;
+}
+
+.binf-popover.d2-mass-update-info-flyout.binf-right,
+.rtl.binf-widgets .binf-popover.d2-mass-update-info-flyout.binf-left{
+    border-left: 4px solid #0084CE;
+}
+
+.binf-popover.d2-mass-update-info-flyout.binf-left,
+.rtl.binf-widgets .binf-popover.d2-mass-update-info-flyout.binf-right{
+    border-right: 4px solid #0084CE;
+}
+
+.rtl.binf-widgets .binf-popover.d2-mass-update-info-flyout.binf-right{
+    border-left: 0;
+}
+
+.rtl.binf-widgets .binf-popover.d2-mass-update-info-flyout.binf-left{
+    border-right: 0;
+}
+
+.binf-widgets .binf-popover.d2-mass-update-info-flyout.binf-left > .binf-arrow{
+    margin-top: -7px;
+    border-width: 9px;
+    right: -21px;
+}
+
+.rtl.binf-widgets .binf-popover.d2-mass-update-info-flyout.binf-right>.binf-arrow {
+    right: -3px;
+}
+
+.binf-widgets .binf-popover.d2-mass-update-info-flyout.binf-left > .binf-arrow,
+.d2-mass-update-info-flyout.binf-popover.binf-left > .binf-arrow:after,
+.rtl.binf-widgets .d2-mass-update-info-flyout.binf-popover.binf-right > .binf-arrow:after{
+    border-left-color: #0084CE;
+}
+
+.d2-mass-update-info-flyout.binf-popover.binf-left > .binf-arrow:after,
+.rtl.binf-widgets .d2-mass-update-info-flyout.binf-popover.binf-right > .binf-arrow:after {
+    right: 0;
+}
+
+.binf-widgets .binf-popover.d2-mass-update-info-flyout.binf-right > .binf-arrow,
+.rtl.binf-widgets .binf-popover.d2-mass-update-info-flyout.binf-left > .binf-arrow{
+    margin-top: 0;
+    border-width: 0;
+    left: -14px;
+}
+
+.d2-mass-update-info-flyout.binf-popover.binf-right > .binf-arrow:after,
+.rtl.binf-widgets .d2-mass-update-info-flyout.binf-popover.binf-left > .binf-arrow:after{
+    border-right-color: #0084CE;
+    left: 0;
+}
+
+.binf-widgets .d2-mass-update-info-flyout .binf-popover-content {
+    padding: 0;
+}
+
+.binf-widgets .d2-mass-update-flyout {
+    max-height: 255px;
+    display: flex;
+    flex-direction: column;
+}
+
+.binf-widgets .d2-mass-update-flyout.max-items-shown {
+    max-height: 249px;
+}
+
+.d2-mass-update-flyout .d2-mass-update-info {
+    padding: 11px 16px 4px 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.d2-mass-update-flyout.flyout-for-items .d2-mass-update-info {
+    background: #E7EDF8;
+}
+
+.d2-mass-update-flyout .d2-mass-update-flyout-list {
+    padding: 0 16px 0 16px;
+    width: 100%;
+}
+
+.d2-mass-update-flyout .d2-mass-update-flyout-list .d2-mass-update-flyout-item {
+    padding: 12px 0 11px 0;
+    min-height: 40px;
+    max-height: 72px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.d2-mass-update-flyout .d2-mass-update-flyout-list .d2-mass-update-flyout-item .flyout-item {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    flex-grow: 1;
+}
+
+.d2-mass-update-flyout .d2-mass-update-flyout-list .d2-mass-update-flyout-item:nth-last-child(3) {
+    padding-bottom: 12px;
+    border-bottom: 0;
+}
+
+.d2-mass-update-flyout .d2-mass-update-flyout-max-banner {
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    background: #E7EDF8;
+}
+
+.d2-mass-update-flyout .d2-mass-update-flyout-max-banner .info-icon {
+    margin-left: 16px;
+    height: 18px;
+    width: 18px;
+    background: url('../../impl/images/information.svg');
+    margin-right: 8px;
+}
+
+.d2-mass-update-flyout .d2-mass-update-flyout-max-banner .max-banner-message {
+    font-size: 12px;
+    color: #333333;
+}
+
+.d2-mass-update-flyout.flyout-for-items .d2-mass-update-flyout-list .d2-mass-update-flyout-item {
+    display: flex;
+}
+
+.d2-mass-update-flyout.flyout-for-items .d2-mass-update-flyout-list .d2-mass-update-flyout-item .csui-icon-group {
+    height: 16px;
+    width: 16px;
+    min-width: 16px;
+    margin-right: 3px;
+}
+
+.d2-mass-update-flyout.flyout-for-items .d2-mass-update-flyout-list .d2-mass-update-flyout-item .csui-icon-group .csui-icon {
+    height: 16px;
+    width: 16px;
+}
+
+.d2-mass-update-flyout.flyout-for-items .d2-mass-update-flyout-list .d2-mass-update-flyout-item .csui-icon-group .csui-icon {
+    left: -2px;
+}
+
+.d2-mass-update-flyout .d2-mass-update-flyout-list .d2-mass-update-flyout-item .flyout-item-version {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d2-mass-update-flyout .d2-mass-update-flyout-list .d2-mass-update-flyout-item .flyout-item-version .version-label {
+    position: relative;
+    margin: 0 8px 0 8px;
+    padding: 0 4px 0 4px;
+    outline: 1px solid #627783;
+    color: #627783;
+    border-radius: 1px;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.d2-mass-update-flyout .d2-mass-update-flyout-list .d2-mass-update-flyout-item .flyout-item-version .version-label:focus {
+    outline: 1px solid #627783;
+    outline-offset: 0;
+    border-radius: 1px;
+}
+
+.d2-mass-update-flyout .d2-mass-update-flyout-list .d2-mass-update-flyout-item .flyout-item-version .version-label:focus:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    outline: 1px dotted black;
+}

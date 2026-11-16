@@ -1,0 +1,266 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.proxy-settings-field-view .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+  width: 60%;
+  text-align: left;
+}
+
+.proxy-settings-field-view .header-row {
+  display: block;
+  width: 100%;
+}
+
+.proxy-settings-field-view .header-row .my-proxies{
+  display: inline-block;
+  font-weight: bold;
+  vertical-align: text-top;
+}
+
+.proxy-settings-field-view a.btn-add-proxy,
+.proxy-settings-field-view a.btn-add-workflow-proxy{
+ text-decoration: none;
+  cursor: pointer;
+}
+
+.proxy-settings-field-view .add-button-group{
+  margin-top: 16px;
+  margin-left: 12px;
+}
+
+.proxy-settings-field-view .add-button-group .csui-icon-v2-metaphor0{
+  fill: #ffffff;
+}
+
+.proxy-settings-field-view .add-button-group .csui-icon-v2-state,
+.proxy-settings-field-view .add-button-group *:not(button):not(.csui-icon-v2-view) > .csui-icon-v2.csui-icon-v2-with-states:hover .csui-icon-v2-state{
+  fill: #2e3d98;
+}
+
+.proxy-settings-field-view .add-user-label{
+  font-size: 14px;
+  vertical-align: text-top;
+  margin-left: 4px;
+}
+.proxy-settings-field-view .header-row .icon{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+.proxy-settings-field-view .footer {
+  min-height: 1.5em;
+}
+
+.proxy-settings-field-view .footer .add-proxy-button-group {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em 0;
+}
+
+.proxy-settings-field-view .footer .add-proxy-button-group .btn-cancel-proxy,
+.proxy-settings-field-view .footer .add-proxy-button-group .btn-cancel-update-proxy{
+  margin-left: 1.5em;
+}
+
+.proxy-settings-field-view .proxy-list .proxy-item .user-form .cs-form-doublecolumn,
+.proxy-settings-field-view .workflow-proxy-list .proxy-item .user-form .cs-form-doublecolumn{
+  padding: 0;
+}
+.proxy-settings-field-view .proxy-list .proxy-user,
+.proxy-settings-field-view .workflow-proxy-list .proxy-user{
+  display: flex;
+  position:relative;
+}
+.proxy-settings-field-view .proxy-list .proxy-user .csui-proxy-actions,
+.proxy-settings-field-view .workflow-proxy-list .proxy-user .csui-proxy-actions{
+  height: 1.75em;
+  justify-content: center;
+  margin-top: 0.2em;
+  right: 0;
+  width: 4em;
+  position: absolute;
+  opacity: 0;
+}
+
+.proxy-settings-field-view .proxy-list .proxy-user .user-form,
+.proxy-settings-field-view .workflow-proxy-list .proxy-user .user-form{
+  width: 100%;
+}
+
+.proxy-settings-field-view .cs-form .alpaca-container-item > .binf-form-group.alpaca-field.workflow-proxy-label .alpaca-control-label {
+  width: auto;
+}
+
+
+.proxy-settings-field-view .proxy-item .cs-form-read .csui-field-date{
+  display: inline-block;
+  width: auto;
+  padding-right: 7px;
+}
+
+.proxy-settings-field-view .proxy-item .cs-form-read .proxy-item-timeperiod{
+  margin: 0;
+}
+
+.proxy-settings-field-view .proxy-item .cs-form-read .proxy-item-timeperiod > .alpaca-control-label{
+  width: auto !important;
+  padding-right: 7px;
+}
+
+.proxy-settings-field-view .proxy-item .cs-form-read .proxy-item-timeperiod > .binf-col-sm-9{
+  width: auto;
+}
+
+.proxy-settings-field-view .empty-proxy{
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #999999;
+}
+
+.proxy-settings-field-view .cs-form-read .csui-field-otcs_user .binf-control-label{
+  display: none !important;
+}
+
+.proxy-settings-field-view .proxy-container,
+.proxy-settings-field-view .workflow-proxy-container,
+.proxy-settings-field-view .proxy-item
+{
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #F4F4F4;
+  padding: 16px;
+  box-shadow: 0 0 4px 1px #CCCCCC;
+}
+
+.proxy-settings-field-view .proxy-item{
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.proxy-settings-field-view .proxy-item .cs-form-read .cs-userfield .field-picture .user-photo,
+.proxy-settings-field-view .proxy-item .cs-form-read  .cs-userfield .field-picture .user-default-image{
+  width: 32px;
+  height: 32px;
+}
+
+.proxy-settings-field-view .proxy-item .cs-form-read .cs-userfield .cs-name .esoc-user-container{
+  margin-left:20px;
+}
+
+.proxy-settings-field-view .proxy-item .cs-form-read .start-timeperiod{
+  margin-left: 43px !important;
+}
+
+.proxy-settings-field-view .proxy-item .cs-form-read .csui-field-date{
+  margin-top: -7px;
+}
+
+.proxy-settings-field-view .proxy-item .cs-form-read .user-with-timeperiod{
+  margin-top:-5px !important;
+}
+
+.proxy-settings-field-view .proxy-item .cs-form-read .user-with-timeperiod .cs-userfield .field-picture .user-photo,
+.proxy-settings-field-view .proxy-item .cs-form-read .user-with-timeperiod .cs-userfield .field-picture .user-default-image{
+  margin-top:29px;
+}
+
+.proxy-settings-field-view a.btn-add-proxy .csui-icon-v2,
+.proxy-settings-field-view a.btn-add-workflow-proxy .csui-icon-v2{
+  width: 20px;
+  height: 20px;
+}
+
+.proxy-settings-field-view .proxy-item .cs-form-read .csui-field-otcs_user .binf-form-group{
+  margin-top: 4px;
+}
+
+.proxy-settings-field-view .add-proxy-button-group a {
+  width: auto;
+  min-width: 40px;
+  padding: 5px 15px 0px 15px;
+  padding-right: 15px;
+  height: 24px;
+  border: 1px solid #232E72;
+  border-radius: 16px;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.proxy-settings-field-view .add-proxy-button-group .btn-save-proxy,
+.proxy-settings-field-view .add-proxy-button-group .btn-update-proxy{
+  background: #232E72;
+  color: white;
+}
+
+.proxy-settings-field-view .add-proxy-button-group .btn-cancel-proxy,
+.proxy-settings-field-view .add-proxy-button-group .btn-cancel-update-proxy{
+  color: #232E72;
+  min-width: 59px;
+}
+
+.proxy-settings-field-view .proxy-item a.btn-edit-proxy,
+.proxy-settings-field-view .proxy-item a.btn-remove-proxy{
+  text-decoration: none;
+  cursor: pointer;
+  margin-left:6px;
+}
+
+.proxy-settings-field-view .add-proxy-form .alpaca-container-item > .binf-form-group.alpaca-field > .binf-col-sm-9{
+  width: 100%;
+}
+
+.proxy-settings-field-view .proxy-item .cs-form-read .alpaca-field-otcs_user:not(.user-with-timeperiod) {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.proxy-settings-field-view .add-proxy-form .alpaca-message{
+    margin-left:0;
+}
+
+.proxy-settings-field-view .add-proxy-button-group .btn-save-proxy.disabled,
+.proxy-settings-field-view .add-proxy-button-group .btn-update-proxy.disabled{
+    background: none;
+    color: #999999;
+    border-color:#999999;
+    cursor: default;
+}
+
+.proxy-settings-field-view .cs-form .alpaca-container-item > .binf-form-group.alpaca-field.alpaca-field-otcs_user > .binf-col-sm-9{
+    width: calc(100% - 32px - 4em);
+}
+
+.proxy-settings-field-view .cs-form.cs-form-update .alpaca-container-item > .binf-form-group.alpaca-field.alpaca-field-otcs_user > .binf-col-sm-9{
+    width: calc(100% - 32px);
+}
+
+
+.proxy-settings-field-view .binf-popover.binf-right{
+  top: 20px;
+  left: 170px;
+  display: block;
+  padding:0
+}
+
+.proxy-settings-field-view .binf-popover.binf-right .binf-arrow{
+  left: -11px;
+  border-right-color:#33c6c8;
+}
+
+.proxy-settings-field-view .binf-popover.binf-right .binf-arrow::after{
+  border-right-color:#33c6c8;
+}
+
+.proxy-settings-field-view .binf-popover.binf-right .binf-popover-content{
+  border-left: 4px solid #33c6c8;
+}
+
+.proxy-settings-field-view .csui-icon-notification-information-white{
+  cursor: pointer;
+}

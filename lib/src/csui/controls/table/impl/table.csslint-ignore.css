@@ -1,0 +1,65 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+
+
+
+
+
+
+
+
+
+
+.csui-nodetable .binf-table tr:not(.csui-details-row) > th .csui-table-column-search {
+  padding-left: 0;
+}
+.csui-nodetable .binf-table tr:not(.csui-details-row) > th:has(.csui-table-column-search) .csui-focusable-table-column-header:has(.csui-sort-arrow) {
+  padding-right: 0;
+}
+
+
+
+
+.csui-nodetable:has(.binf-table.csui-nowrap-table) {
+  position: relative;
+}
+
+.csui-nodetable:has(.binf-table.csui-nowrap-table) .csui-column-resize-indicator {
+  position: absolute;
+  width: 3px;
+  background-color: transparent;
+  visibility: hidden;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.csui-nodetable:has(.binf-table.csui-nowrap-table) .csui-column-resize-indicator.csui-state-hover {
+  visibility: visible;
+  background-color: #3B57FF;
+}
+
+.csui-nodetable:has(.binf-table.csui-nowrap-table) .csui-column-resize-indicator.csui-state-active {
+  visibility: visible;
+  background-color: #232E72;
+}
+
+
+
+
+.csui-nodetable:has(.binf-table.csui-nowrap-table) .csui-column-menu-container {
+  position: relative;
+}
+
+.csui-nodetable:has(.binf-table.csui-nowrap-table) .csui-column-menu-container > *  {
+  position: absolute;
+}
+
+
+.binf-widgets .csui-resize-span:not(.csui-resize-end):has(:focus-visible) + .csui-resize-span:not(.csui-resize-end) + .csui-resize-span:not(.csui-resize-end) + .csui-resize-span > .csui-column-header-menu > .csui-toolbar > .binf-dropdown > .binf-dropdown-toggle > *,
+.binf-widgets .csui-resize-span:not(.csui-resize-end):has(:focus-visible) + .csui-resize-span:not(.csui-resize-end) + .csui-resize-span > .csui-column-header-menu > .csui-toolbar > .binf-dropdown > .binf-dropdown-toggle > *,
+.binf-widgets .csui-resize-span:not(.csui-resize-end):has(:focus-visible) + .csui-resize-span > .csui-column-header-menu > .csui-toolbar > .binf-dropdown > .binf-dropdown-toggle > *,
+.binf-widgets th:has(:focus-visible) > .csui-column-header-menu > .csui-toolbar > .binf-dropdown > .binf-dropdown-toggle > * {
+  visibility: visible;
+}

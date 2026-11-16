@@ -1,0 +1,14 @@
+{{#if singleItem}}
+  <div class="drag-single-assignee drag-chicklet">
+    <div class="chicklet-text">{{chickletText}}</div>
+  </div>
+{{else}}
+  <div class="drag-multiple-assignee">
+    <div class="front-layer drag-chicklet">
+      <div class="chicklet-count">{{chickletCount}}</div>
+      <div class="chicklet-text">{{chickletText}}</div>
+    </div>
+    <div class="back-layer drag-chicklet"></div>
+  </div>
+{{/if}}
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

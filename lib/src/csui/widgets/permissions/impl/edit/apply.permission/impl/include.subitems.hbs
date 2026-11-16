@@ -1,0 +1,13 @@
+{{#each subItems}}
+  <div class="csui-selected-checkbox csui-slice-checkbox csui-checkbox-primary
+  csui-permisison-subItem">
+    <input type="checkbox" class="csui-subtypes-option" name="{{itemName}}" id="{{value}}"
+           value="{{value}}">
+    <label class="csui-subtype-name" for="{{itemName}}" title="{{itemName}}">
+      <span class="cs-ellipsis">{{itemName}}
+        ({{total}} {{itemTitle}})
+  </span>
+    </label>
+  </div>
+{{/each}}
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

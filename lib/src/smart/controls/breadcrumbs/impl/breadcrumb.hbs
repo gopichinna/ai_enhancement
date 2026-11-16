@@ -1,0 +1,28 @@
+{{#if hasSubCrumbs}}
+  <otc-button icon="smart_action_16:action_more16" class="csui-subcrumb csui-acc-focusable" tabindex="-1" arialabel="{{subcrumbAria}}" title="{{subcrumbTooltip}}" iconappearance="{{bcMoreBtnTheme}}" id="smart-breadcrumb-more-{{btnId}}"></otc-button>
+  <otc-menu buttonid="smart-breadcrumb-more-{{btnId}}" scrollable="">
+    {{#each subcrumbs}}
+      {{#if inactive}}
+        <otc-menuitem data-id="{{this.id}}" title="{{this.name}}">{{this.name}}</otc-menuitem>
+      {{else}}
+        <otc-menuitem class='csui-breadcrumb csui-acc-focusable' href="{{this.url}}" title="{{this.name}}" data-id="{{this.id}}">{{this.name}}</otc-menuitem>
+      {{/if}}
+    {{/each}}
+  </otc-menu>
+{{else}}
+  {{#if inactive}}
+    <span title="{{name}}" {{#if honorCustomizations}} {{{styleObj}}} {{/if}}>{{name}}</span>
+  {{else}}
+    <a {{{styleObj}}} class='csui-breadcrumb csui-acc-focusable {{#if isHome}} csui-home-breadcrumb {{/if}}'
+        href="{{url}}" data-id="{{id}}" tabindex="-1"
+       title="{{name}}" aria-label="{{name}}">
+      {{#if isHome}}
+        {{{icon-v2 iconName=homeIconName states="true" size="xsmall"}}}
+      {{else}}
+        {{name}}
+      {{/if}}
+    </a>
+  {{/if}}
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

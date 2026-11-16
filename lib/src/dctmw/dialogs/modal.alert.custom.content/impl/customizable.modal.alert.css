@@ -1,0 +1,120 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .csui-alert.dctm-alert-custom-content .binf-modal-dialog {
+  width: 400px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content .binf-modal-dialog .binf-modal-body {
+  position: relative;
+  margin: 0;
+  padding: 0 15px;
+  overflow: auto;
+  white-space: normal;
+  line-height: normal;
+  font-weight: normal;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content .binf-modal-dialog .binf-modal-body .body-message {
+  margin: 0 30px 15px;
+  white-space: pre-wrap;
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 300;
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content .binf-modal-dialog .binf-modal-body .custom-content-container + .body-message {
+  margin: 15px 0 20px 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content .binf-modal-dialog .binf-modal-body .custom-content-container {
+  position: relative;
+  height: 200px;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content .binf-modal-dialog .binf-modal-footer .binf-btn,
+.binf-widgets .csui-alert.dctm-alert-custom-content .binf-modal-dialog .binf-modal-footer .binf-btn.binf-btn-default:hover {
+  border-color: #232E72;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content .binf-modal-dialog .binf-modal-footer .binf-btn.binf-btn-primary {
+  background: #232E72;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content .binf-modal-dialog .binf-modal-footer .binf-btn.binf-btn-default {
+  color: #232E72;
+}
+.binf-widgets .csui-alert.dctm-alert-custom-content .binf-modal-dialog .binf-modal-footer .binf-btn.binf-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content .binf-modal-dialog .binf-modal-footer .binf-btn.binf-btn-primary.binf-disabled{
+  background-color: #999999;
+  border-color: #999999;
+}
+.binf-widgets .csui-alert.dctm-alert-custom-content .binf-modal-dialog .binf-modal-footer .binf-btn.binf-btn-default.binf-disabled{
+  color: #999999;
+  border-color: #999999;
+}
+
+
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.alert-node-processing-error .binf-modal-dialog {
+  width: 478px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.alert-node-processing-error .binf-modal-dialog .binf-modal-header {
+  padding: 19px 16px 21px 16px;
+  height: 64px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.alert-node-processing-error .binf-modal-dialog .binf-modal-header .binf-modal-title {
+  line-height: 24px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.alert-node-processing-error .binf-modal-dialog .binf-modal-header .binf-modal-title .icon {
+  height: 24px;
+  width: 24px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.alert-node-processing-error .binf-modal-dialog .binf-modal-header.warning-header .binf-modal-title .csui-icon-notification-warning-white {
+  transform: rotate(180deg);
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.alert-node-processing-error .binf-modal-dialog .binf-modal-header .binf-modal-title .title-text {
+  width: calc(100% - 56px);
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.alert-node-processing-error .binf-modal-dialog .binf-modal-body {
+  padding: 0 24px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.alert-node-processing-error .binf-modal-dialog .binf-modal-body .custom-content-container {
+  height: 176px;
+  max-height: 176px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.alert-node-processing-error .binf-modal-dialog .binf-modal-body .custom-content-container + .body-message {
+  margin: 16px 24px 24px 24px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.alert-node-processing-error .binf-modal-dialog .binf-modal-footer {
+  border-bottom: none;
+  background: #f4f4f4;
+  height: 72px;
+  padding: 20px 24px;
+}

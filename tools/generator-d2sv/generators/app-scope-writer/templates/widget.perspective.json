@@ -1,0 +1,9 @@
+{
+  "type": "left-center-right",
+  "options": {
+    "NoBreadCrumbsSupport": true,
+    "center": {
+      "type": "<%= namespace %>/widgets/<%= srcDir %>"
+    }
+  }
+}

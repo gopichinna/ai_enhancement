@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#333333;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#333333;fill-opacity:0.7;}
+	.st3{fill:none;stroke:#2E3D98;}
+</style>
+<circle id="state" class="st0" cx="16" cy="16" r="14"/>
+<g id="metaphor">
+	<path class="st1" d="M11.941,6L11,8h-1c-1.105,0-2,0.895-2,2v13c0,1.105,0.895,2,2,2h2.814c-0.294-0.306-0.559-0.641-0.789-1H10
+		c-0.552,0-1-0.448-1-1V10c0-0.552,0.448-1,1-1h10c0.552,0,1,0.448,1,1v5.025c0.359,0.23,0.694,0.495,1,0.789V10
+		c0-1.105-0.895-2-2-2h-1l-0.941-2H11.941z M18.971,14.168C18.99,14.115,19,14.059,19,14c0-0.276-0.224-0.5-0.5-0.5h-7
+		c-0.276,0-0.5,0.224-0.5,0.5s0.224,0.5,0.5,0.5H15c0.77-0.322,1.615-0.5,2.5-0.5C18.006,14,18.498,14.058,18.971,14.168z M11,11.5
+		c0-0.276,0.224-0.5,0.5-0.5h7c0.276,0,0.5,0.224,0.5,0.5S18.776,12,18.5,12h-7C11.224,12,11,11.776,11,11.5z"/>
+	<path class="st2" d="M12,20.5c0,3.033,2.467,5.5,5.5,5.5s5.5-2.467,5.5-5.5S20.533,15,17.5,15S12,17.467,12,20.5z M21,20.5l-5,3v-6
+		L21,20.5z"/>
+</g>
+<circle id="focus" class="st3" cx="16" cy="16" r="15.5"/>
+</svg>

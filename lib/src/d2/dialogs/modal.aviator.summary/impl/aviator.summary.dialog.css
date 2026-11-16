@@ -1,0 +1,79 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.alert-av4r-summary-view .binf-modal-dialog .binf-modal-body .custom-content-container {
+    max-height: 250px;
+    height: 250px;
+}
+
+.binf-widgets .alert-av4r-summary-view.csui-alert.dctm-alert-custom-content .binf-modal-dialog,
+.binf-widgets .alert-av4r-summary-view.csui-alert.dctm-alert-custom-content .binf-modal-dialog .binf-modal-content {
+    width: 600px;
+}
+
+.alert-av4r-summary-view .binf-tab-content {
+    height: calc(100% - 48px);
+    margin-top: 10px;
+}
+
+
+.binf-widgets .alert-av4r-summary-view .binf-modal-header {
+    background-color: #dce4e8;
+}
+
+.alert-av4r-summary-view .status-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.alert-av4r-summary-view.message-dialog .status-container {
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.alert-av4r-summary-view:not(.message-dialog) .status-container {
+    background-color: #F5F5FA;
+    border-bottom: 1px solid #2E3D98;
+}
+
+.alert-av4r-summary-view:not(.message-dialog) .status-container.warn {
+    background-color: rgba(223,104,0,0.05);
+    border-bottom: 1px solid #DF6800;
+}
+
+.alert-av4r-summary-view .status-container .icon {
+    display: inline-block;
+}
+
+.alert-av4r-summary-view .status-container.warn .icon {
+    cursor: pointer;
+}
+
+.alert-av4r-summary-view .status-container .body-message {
+    max-width: calc(100% - 50px);
+    padding-left: 10px;
+}
+
+.binf-widgets .alert-av4r-summary-view .d2-listview .cs-list-group .binf-list-group-item.binf-active {
+    border: none;
+    background: none;
+}
+
+.alert-av4r-summary-view .cs-tabpanel.smart-tab-panel.tab-panel.csui-acc-tab-region {
+    height: 100%;
+}
+
+.alert-av4r-summary-view .binf-tab-content .d2-listview .cs-content {
+    overflow: auto;
+}
+
+.alert-av4r-summary-view.message-dialog .custom-content-container {
+    display: none;
+}
+
+.binf-widgets .binf-popover.av4r-disabling-warn-popover {
+    z-index: 1090;
+}

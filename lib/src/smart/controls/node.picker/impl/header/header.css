@@ -1,0 +1,183 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .smart-target-browse .title-section {
+  float: left;
+}
+
+.binf-widgets .smart-target-browse .apply-properties-selector {
+  position: relative;
+  
+  width: 240px;
+  float: left;
+}
+@media only screen and (max-width: 640px) {
+  .binf-widgets .smart-target-browse .apply-properties-selector {
+    width: 200px;
+  }
+
+}
+
+.binf-widgets .smart-target-browse .csui-global-search {
+  width: 100%;
+}
+
+.binf-widgets .smart-target-browse .csui-global-search .csui-search-input-container {
+  margin-right: 1.5em;
+}
+
+.binf-widgets .smart-target-browse .csui-global-search .csui-search-box .csui-search-box-slice-popover {
+  display: none;
+}
+
+.binf-widgets .smart-target-browse .csui-global-search .csui-search-box .csui-input {
+  font-size: 12px;
+  width: 100%;
+}
+
+.binf-widgets .smart-target-browse .cs-apply-properties-selector.binf-dropdown {
+  padding: 0px
+}
+
+.binf-widgets .smart-target-browse .csui-target-search-property-container {
+  width: 100%;
+}
+
+.binf-widgets .smart-target-browse .csui-target-search-property-container .apply-properties-selector,  .binf-widgets .smart-target-browse .csui-target-search-property-container .csui-separator {
+  float: right;
+}
+
+.binf-widgets .smart-target-browse .smart-node-picker {
+  justify-content: flex-start;
+  display: flex;
+  z-index: 2;
+  min-height: 36px;
+  align-items: center;
+  padding: 0px 24px;
+}
+
+.binf-widgets .smart-target-browse .smart-node-picker .smart-start-locations {
+  margin-left: -8px;
+}
+
+.binf-widgets .smart-target-browse .smart-node-picker .smart-view-toggler {
+  margin-left: 24px;
+}
+
+.binf-widgets .smart-target-browse .csui-target-controls .csui-separator {
+  margin-right: 16px;
+}
+
+.binf-widgets .smart-target-browse .csui-target-search-property-container .csui-global-search .csui-search-input-container {
+  margin-right: 0;
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  .binf-widgets .smart-target-browse .apply-properties-selector {
+    min-width: 220px;
+  }
+  .binf-widgets .smart-target-browse .apply-properties-selector .cs-apply-properties-selector button {
+    float: left;
+  }
+}
+
+.binf-widgets .smart-target-browse .csui-filtername-container {
+  line-height: 24px;
+  padding: 0px 10px;
+  width: calc(55% - 130px);
+}
+
+.binf-widgets .smart-target-browse .csui-filtername-container input {
+  line-height: 11px;
+}
+
+.binf-widgets .smart-target-browse .cs-header-control .csui-filtername-container.csui-multilingual-input .smart-multilingual-icon-label {
+  position: relative;
+  bottom: 1px;
+}
+
+.binf-widgets .smart-target-browse .smart-multilingual-icon-label {
+  margin-left: -28px;
+  margin-right: 5px;
+}
+
+.binf-widgets .smart-target-browse .binf-modal-header otc-button.smart-multilingual-icon {
+  padding: 0;
+  background-color: transparent;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+  vertical-align: text-bottom;
+  border: none;
+}
+
+.binf-widgets .smart-target-browse .csui-filtername-container .cs-icon-required {
+  height: 8px;
+  width: 8px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 3px;
+  float: left;
+}
+
+.binf-widgets .smart-target-browse .csui-filtername {
+  border-radius: 5px;
+  font-size: 12px;
+  width: calc(100% - 20px);
+  border: 1px solid #757575;
+  height: 32px;
+  padding: 8px 14px;
+}
+.binf-widgets .binf-modal-header .csui-filtername-container .csui-filtername-error-wrapper{
+  display: inline-block;
+  width: auto;
+  position: relative;
+  left:8px;
+  height: auto;
+  max-width: calc(100% - 20px);
+  white-space: normal;
+  word-break: break-word;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background: #ffffff;
+  color: #df3324;
+  font-size: 11px;
+  line-height: 12px;
+  border-radius: 2px;
+  border-left: 2px solid #df3324;
+  padding: 2px 6px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+}
+  .binf-widgets .smart-target-browse .csui-filtername-container .csui-filtername-error span.binf-text-danger {
+  margin-right: 0;
+  line-height: 12px;
+}
+
+.binf-widgets .smart-target-browse .csui-filtername::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.binf-widgets .smart-target-browse .csui-target-search-property-container .binf-dropdown-toggle.binf-btn-default:hover,
+.binf-widgets .smart-target-browse .csui-target-search-property-container .binf-dropdown-toggle.binf-btn-default:active,
+.binf-widgets .smart-target-browse .csui-target-search-property-container .binf-dropdown-toggle.binf-btn-default:focus,
+.binf-widgets .smart-target-browse .csui-target-search-property-container .binf-dropdown-toggle.binf-btn-default.binf-active,
+.binf-widgets .smart-target-browse .csui-target-search-property-container .binf-dropdown-toggle.binf-btn-default {
+  background-color: transparent;
+}
+
+@media (forced-colors: active) {
+  
+  .binf-widgets .smart-target-browse .csui-target-search-property-container .binf-dropdown-toggle.binf-btn-default:hover,
+  .binf-widgets .smart-target-browse .csui-target-search-property-container .binf-dropdown-toggle.binf-btn-default:focus{
+    outline: 1px solid black;
+    outline-offset: -1px;
+   }
+
+}

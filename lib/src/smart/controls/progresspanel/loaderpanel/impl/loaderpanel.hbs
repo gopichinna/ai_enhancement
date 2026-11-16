@@ -1,0 +1,17 @@
+<div class="csui-loaderpanel">
+  <div class="csui-loaderpanel-content binf-row">
+    <div class="binf-col-sm-6" id="csui-loading-stage">
+      {{label}}
+    </div>
+    <div {{#if enableCancel}}class="binf-col-sm-4"{{else}}class="binf-col-sm-6"{{/if}}>
+      <div class="csui-loaderpanel-inner"></div>
+    </div>
+    {{!-- As per UX suggestion, updating cancel from link to button styling as part of SVF-2359 --}}
+    {{#if enableCancel}}
+    <div class="binf-col-sm-3 bin-pull-right">
+      <button aria-label="{{cancel}}" class="binf-btn binf-btn-default binf-btn-sm binf-pull-right csui-loader-cancel" tabindex="0">{{cancel}}</button>
+    </div>
+    {{/if}}
+  </div>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

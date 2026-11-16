@@ -1,0 +1,52 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-alert .binf-modal-content.smart-light-content {
+  width: 352px;
+}
+
+.binf-widgets .csui-alert .binf-modal-content .smart-light-container {
+  height: auto;
+  border-bottom: 0px none;
+  font-size: 24px;
+  margin-bottom: 18px;
+  padding: 24px 24px 0px 24px;
+ }
+
+.binf-widgets .csui-alert .binf-modal-content .smart-light-container .smart-light-message .icon {
+  float: left;
+  margin-right: 8px;
+}
+
+.binf-widgets .csui-alert .binf-modal-content .smart-light-container .smart-light-message .message-text {
+  width: calc(100% - 47px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: normal;
+  font-size: 14px;
+  padding: 3px 0px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.binf-widgets .csui-alert .binf-modal-body.smart-light-body {
+  min-height: 42px;
+}
+
+.binf-widgets .csui-alert .binf-modal-footer.smart-light-footer {
+  border-top: 0 solid #e5e5e5;
+  margin: 0;
+}
+
+.binf-widgets .binf-modal-footer.smart-light-footer {
+  padding: 0px 24px 16px 24px;
+  height: 43.2px;
+  border-radius: 2px;
+}
+
+ .binf-widgets .binf-modal-footer.smart-light-footer .smart-dropdown{ 
+  vertical-align: middle;
+  display: inline-block;
+  height: 41px;
+} 

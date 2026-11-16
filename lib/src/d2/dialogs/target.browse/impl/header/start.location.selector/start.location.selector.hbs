@@ -1,0 +1,21 @@
+{{#if isSingleLocation}}
+  <div id="{{id}}" class="dropdown-single-select"
+          aria-haspopup="true" aria-expanded="false"
+          aria-label="{{labelSelectLocation}}">
+    <span class="{{iconClass}}"></span>
+    <span class="cs-label">{{name}}</span>
+  </div>
+{{else}}
+  <button id="{{id}}" class="binf-btn binf-btn-default binf-dropdown-toggle csui-acc-focusable"
+          data-binf-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false"
+          aria-label="{{labelSelectLocation}}">
+    <span class="{{iconClass}}"></span>
+    <span class="cs-label">{{name}}</span>
+    <span class="cs-icon icon-caret-down"></span>
+  </button>
+{{/if}}
+<div class="csui-separator"></div>
+<ul class="binf-dropdown-menu" role="menu" aria-labelledby="{{id}}"></ul>
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,10 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-type-icon.smart-bulk-selection > .csui-icon-group {
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	margin-inline-end: 6px;
+	vertical-align: middle;
+}

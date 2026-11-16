@@ -1,0 +1,45 @@
+<div class="cs-field-write">
+  <div class="cs-field-write-inner">
+    <input type="text" class="path-text-field" id="{{id}}" placeholder="{{placeholder}}" aria-label="{{writeModeAria}}"
+           value="{{data}}" autocomplete="off" maxlength="2000"/>
+    <div class="browse-button" role="button" aria-label="{{browseAria}}"
+         title="{{browseTitle}}" tabindex="-1">
+    </div>
+    {{#if this.isNotWriteOnly}}
+      <div class="icon-container">
+        <button class="csui-icon-edit inline-edit-icon d2-edit-save" title="{{save}}" tabindex="-1">
+          {{{icon-v2 iconName="csui_action_confirm32" size='normal' states='true'}}}
+        </button>
+        <button class="csui-icon-edit inline-edit-icon d2-edit-cancel" title="{{cancel}}" tabindex="-1">
+          {{{icon-v2 iconName="csui_action_cancel32" size='normal' states='true'}}}
+        </button>
+      </div>
+    {{/if}}
+  </div>
+</div>
+{{#if this.isNotWriteOnly}}
+  <div class="cs-field-read">
+    <div class="cs-field-read-inner">
+      <div class="read-only-label">
+        <div aria-label="{{readModeAria}}"
+          {{#if this.hasData}}
+                title="{{data}}"
+          {{else}}
+                title="{{noValue}}"
+          {{/if}}>
+          {{#if this.hasData}}
+            <span>{{data}}</span>
+          {{else}}
+            <span class="placeholder">{{emptyLabel}}</span>
+          {{/if}}
+        </div>
+      </div>
+      <div class="icon-container">
+        <button class="csui-icon-edit inline-edit-icon d2-icon-edit" title="{{edit}}" tabindex="0">
+          {{{icon-v2 iconName="csui_action_edit32" size='normal' states='true'}}}
+        </button>
+      </div>
+    </div>
+  </div>
+{{/if}}
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

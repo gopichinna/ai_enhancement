@@ -1,0 +1,67 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-dialog {
+  width: 356px;
+  margin: 30px auto;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-header {
+  font-size: 18px;
+  padding: 20px 16px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-header .binf-modal-title {
+  height: 24px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-header .binf-modal-title > .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-header .binf-modal-title > .title-text {
+  margin-left: 16px;
+  width: calc(100% - 40px);
+  line-height: 24px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-footer {
+  margin-top: 0;
+  padding: 16px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-dialog .binf-modal-body {
+  padding: 0 16px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-dialog .binf-modal-body .custom-content-container {
+  height: initial;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-body .cs-form .binf-col-md-6 {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-body .cs-form .binf-form-group.alpaca-field > .binf-control-label,
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-body .cs-form .binf-form-group.alpaca-field > .binf-control-label + div{
+  width: 100%;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-body .cs-form .binf-form-group.alpaca-field > .binf-control-label,
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-body .cs-form .binf-form-group.alpaca-field .cs-formfield .cs-field-read-inner,
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-body .cs-form .binf-form-group.alpaca-field .cs-formfield .cs-field-write {
+  padding-left: 0;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-body .cs-form .binf-form-group {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-body .cs-form .alpaca-container-item:not(.alpaca-container-item-first) .binf-form-group {
+  margin-top: -8px;
+}

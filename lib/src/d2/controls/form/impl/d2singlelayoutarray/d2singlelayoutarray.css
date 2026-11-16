@@ -1,0 +1,111 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.cs-form .cs-form-set .alpaca-container .d2-single-array.alpaca-container-item .alpaca-field-object .alpaca-container {
+  flex-direction: column;
+}
+
+.cs-form .cs-form-set .alpaca-container .d2-single-array.alpaca-container-item .alpaca-field-object .alpaca-container .alpaca-container-item {
+  -ms-flex: 1 0 auto; 
+}
+
+.cs-form .cs-form-set .d2-single-array.alpaca-container-item.alpaca-container-item-first .alpaca-field.alpaca-field-object.d2-grid-row-invalid .alpaca-container::before,
+.cs-form .cs-form-set .d2-single-array.alpaca-container-item.alpaca-container-item-first .alpaca-field.alpaca-field-object.d2-grid-row-invalid .alpaca-container::after {
+  margin-top: 0;
+}
+
+.cs-form .cs-form-set .alpaca-container .d2-single-array.alpaca-container-item .alpaca-field-object .alpaca-container .alpaca-field .alpaca-control-label {
+  border-bottom: none;
+  background-color: inherit;
+  color: #666666;
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  flex-basis: auto;
+}
+
+.cs-form .cs-form-set .alpaca-container .d2-single-array.alpaca-container-item .binf-form-group .binf-help-block.alpaca-message {
+  margin-left: 16px;
+  width: calc(100% - 32px);
+}
+
+.csui-top-align-label .cs-form .cs-form-set .alpaca-container .d2-single-array.alpaca-container-item .alpaca-field-object .alpaca-container .alpaca-field .alpaca-control-label {
+  padding-left: 16px;
+}
+
+.cs-form .cs-form-set .alpaca-container .d2-single-array.alpaca-container-item .binf-form-group .cs-formfield {
+  padding-left: 0;
+}
+
+.cs-form .cs-form-set .alpaca-container .d2-single-array.alpaca-container-item .cs-array-item-field-wrapper {
+  background-color: #dddddd;
+  border-top: 2px #999999 solid;
+  flex: 1;
+}
+
+.cs-form .alpaca-field-d2singlearray {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cs-form .cs-form-set .alpaca-field.alpaca-field-d2singlearray .cs-form-set-container.alpaca-container-has-items {
+  width: calc(100% - 38px);
+  max-width: 424px;
+}
+
+.cs-form .alpaca-field-d2singlearray .cs-form-set .alpaca-array-toolbar {
+  width: calc(100% - 24px);
+  background-color: #dddddd;
+  padding: 13px 0 13px 16px;
+  display: flex;
+}
+
+.cs-form .cs-form-set .alpaca-container.cs-form-set-container .d2-single-array.alpaca-container-item .cs-pull-right button .csui-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.cs-form .cs-form-set .alpaca-container.cs-form-set-container .d2-single-array.alpaca-container-item .cs-pull-right button[data-alpaca-array-actionbar-action="remove"],
+.cs-form .cs-form-set .alpaca-container.cs-form-set-container .d2-single-array.alpaca-container-item .cs-pull-right button[data-alpaca-array-actionbar-action="add"] {
+  width: 20px;
+  height: 20px;
+}
+
+.cs-form .cs-form-set .alpaca-field-d2singlearray .alpaca-container .alpaca-container-item.alpaca-container-item-first .cs-pull-right {
+  margin: 0;
+}
+
+.cs-form .alpaca-field-d2singlearray .cs-form-set .alpaca-array-toolbar > a::after {
+  content: '';
+  background: url('images/show-more.svg') no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+  float: right;
+  margin-top: 1px;
+  margin-left: 3px;
+}
+
+.cs-form .alpaca-field-d2singlearray .cs-form-set .alpaca-array-toolbar > a[data-alpaca-array-toolbar-action="showLess"]::after {
+  background: url('images/show-less.svg') no-repeat;
+  background-size: contain;
+}
+
+.cs-form .cs-form-set .alpaca-container .d2-single-array .alpaca-container-item > .binf-form-group > div.binf-col-sm-9 {
+  margin: 0 0 8px 0;
+}
+
+.cs-form .alpaca-field-d2singlearray .cs-form-set .alpaca-array-toolbar .alpaca-array-toolbar-action {
+  font-size: 14px;
+  color: #232E72;
+}
+
+.cs-form .cs-form-set .alpaca-container.cs-form-set-container .d2-single-array.alpaca-container-item .cs-pull-right.csui-set-action-bar {
+  background-color: transparent;
+}
+
+
+
+
+

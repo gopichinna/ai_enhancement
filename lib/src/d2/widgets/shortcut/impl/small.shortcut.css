@@ -1,0 +1,84 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-small {
+  margin-top: 8px;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-small:first-child {
+  margin-top: 0;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-small {
+  display: flex;
+  flex-direction: row;
+  padding: 1em 1em 1em 0.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-small .tile-title {
+  height: auto;
+  width: 100%;
+  margin-left: 0.5em;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-small .tile-title .csui-heading {
+  font-family: inherit;
+  font-size: 1.125em;
+  line-height: 1.25em;
+  text-align: left;
+  color: #FFFFFF;
+  white-space: inherit;
+  display: inline-block;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-small .tile-title .tile-overflow {
+  height: 0;
+  width: 100%;
+  background: transparent;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-small:hover {
+  text-decoration: none;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-small .tile-icon {
+  justify-content: flex-start;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-small .tile-icon .icon {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-small .csui-error {
+  display: flex;
+  flex-direction: row;
+  padding: 1em 1em 1em 0.5em;
+  align-items: center;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-small .csui-error .csui-error-icon-parent {
+  height: 42px;
+  width: 42px;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-small .csui-error .csui-error-icon {
+  width: 26px;
+  height: 26px;
+  margin: 8px;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-small .csui-error .csui-message {
+  font-size: 20px;
+  margin-top: 0;
+  margin-left: 11px;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-small .csui-error .csui-error-icon-div {
+  width: 42px;
+}

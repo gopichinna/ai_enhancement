@@ -1,0 +1,10 @@
+{
+  "type": "left-center-right",
+  "options": {
+    "center": {
+      "type": "d2/widgets/workflow.documents",
+      "className": "d2-task-documents-widget-container",
+      "options": {}
+    }
+  }
+}

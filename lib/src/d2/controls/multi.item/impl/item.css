@@ -1,0 +1,84 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .list-selection .list-region .list .list-item .item-info {
+  border-radius: 0;
+  display: flex;
+}
+
+.binf-widgets .list-selection .list-region .list .list-item .parent-info {
+  display: flex;
+  margin-left: 5px;
+}
+
+.binf-widgets .list-selection .list-region .list .list-item .parent-info .parent-title {
+  color: #333333;
+}
+
+.binf-widgets .list-selection .list-region .list .list-item .csui-icon {
+  margin: 5px 0 5px 0;
+  background-size: contain;
+  flex: 0 0 35px;
+  height: 35px;
+}
+
+
+.binf-widgets .list-selection .list-region .list .list-item .item-info {
+  cursor: pointer;
+  height: 46px;
+}
+
+.binf-widgets .list-selection .list-region .list .list-item .item-info.selected-item {
+  background-color: #CBD3D9;
+  position: relative;
+}
+
+.binf-widgets .list-selection .list-region .list .list-item .list-item-title {
+  line-height: 22px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  color: #333333;
+  margin: 13px 0 13px 7px;
+}
+
+.binf-widgets .list-selection .list-region .list .list-item .item-info.selected-item .list-item-title {
+  font-weight: bold;
+}
+
+.binf-widgets .list-selection .list-region .list .list-item .item-info .item-status-icon {
+  height: 14px;
+  flex: 0 0 14px;
+  margin: 15px 4px 17px 8px;
+  background-size: cover;
+}
+
+.binf-widgets .list-selection .list-region .list .list-item .item-info[itemState=validated] .item-status-icon {
+  background: url(images/verified14.svg) no-repeat;
+}
+
+.binf-widgets .list-selection .list-region .list .list-item .item-info[itemState=notValidated] .item-status-icon {
+  background: url(images/applied14.svg) no-repeat;
+}
+
+.binf-widgets .list-selection .list-region .list .list-item .item-info[itemState=notVisited] {
+  cursor:default;
+}
+
+.binf-widgets .list-selection .list-region .list .list-item.sub-item[draggable=true]:hover .item-info .item-status-icon,
+.binf-widgets .list-selection .list-region .list .list-item.sub-item.select[draggable=true] .item-info .item-status-icon{
+  background: url(../../file.uploader/impl/images/drag-handle20.svg) no-repeat;
+  cursor:move;
+  background-position: center;
+  background-size: 18px;
+  height: 18px;
+}
+
+.binf-widgets .list-selection .list-region .list .d2-sortable-list .sub-item.focus[draggable=false] {
+  background-color: transparent;
+}
+
+.binf-widgets .list-selection .list-region .list .d2-sortable-list .sub-item[draggable=true]:hover .item-info.selected-item {
+  background-color: transparent;
+}

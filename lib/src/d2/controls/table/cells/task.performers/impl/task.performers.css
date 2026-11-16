@@ -1,0 +1,78 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .metadata-task-performers tr.row-expanded .d2-table-cell-task-performers .task-performers {
+  margin-bottom: 6px;
+}
+
+.binf-widgets .metadata-task-performers .d2-table-cell-task-performers .task-performers-list {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.binf-widgets .metadata-task-performers .d2-table-cell-task-performers .task-performers-list .task-performers-expand {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 11px;
+  line-height: 24px;
+  margin-top: 4px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.binf-widgets .metadata-task-performers .d2-table-cell-task-performers .task-performers-list .task-performers-expand,
+.binf-widgets .metadata-task-performers .d2-table-cell-task-performers .task-performers-list .task-performers-expand:hover {
+  color: #232e72;
+  text-decoration: none;
+}
+
+.binf-widgets .metadata-task-performers tr.row-expanded .d2-table-cell-task-performers .task-performers-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.binf-widgets .metadata-task-performers .d2-table-cell-task-performers .task-performers-list .task-performers-item {
+  background: #E7F8F8;
+  border: 1px solid #33C6C8;
+  box-sizing: border-box;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 4px 4px 0 0;
+  font-size: 11px;
+  height: 24px;
+  max-width: 200px;
+}
+
+.binf-widgets .metadata-task-performers .d2-table-cell-task-performers .task-performers-list .task-performers-item .task-performer-id {
+  font-size: 11px;
+  line-height: 22px;
+  padding: 0 8px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.binf-widgets .metadata-task-performers .d2-table-cell-task-performers .task-performers-list .focusable-item:focus {
+  outline: 1px dotted #333333;
+  outline-offset: -1px;
+}
+
+.binf-widgets .metadata-task-performers .d2-table-cell-task-performers .task-performers > .user-info {
+  position: absolute;
+  visibility: hidden;
+  max-width: 270px;
+}
+
+.binf-widgets .metadata-task-performers .d2-table-cell-task-performers .task-performers > .user-info .info-text {
+  white-space: normal;
+}
+
+.binf-widgets .metadata-task-performers .d2-table-cell-task-performers .task-performers > .user-info .info-text.user-id {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.binf-widgets .metadata-task-performers .d2-table-cell-task-performers .task-performers > .user-info .info-text.user-address {
+  word-break: break-all;
+}

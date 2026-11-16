@@ -1,0 +1,5 @@
+<a class="binf-list-group-item {{#unless model.parent}}has-next{{/unless}}{{#xif
+    "this.model.selected === true"}} selected{{/xif}}{{#xif "!this.typeSelected && this.model.parentLabel"}} has-parent{{/xif}}"
+    data-d2-name="{{model.name}}" data-d2-parent="{{model.parent}}">
+  {{#xif "!this.typeSelected && this.model.parentLabel"}}<small>{{model.parentLabel}}</small>{{/xif}}<div>{{model.label}}</div></a>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

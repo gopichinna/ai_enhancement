@@ -1,0 +1,22 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-template-table .d2-thumbnail-attr {
+  color: #757575;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  line-height: 11px;
+  font-size: 10px;
+  letter-spacing: -0.01em;
+  font-style: normal;
+}
+
+.d2-template-table .d2-thumbnail-attr .d2-thumbnail-attr-label {
+  font-weight: bold;
+}
+
+.d2-template-table .d2-thumbnail-attr .d2-thumbnail-attr-value {
+  font-style: normal;
+}

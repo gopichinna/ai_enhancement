@@ -1,0 +1,74 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header {
+  padding: 0 1rem;
+  border-bottom: none;
+  background: #66D4D6;
+  height: 72px;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header .header-primary {
+  height: 64px;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header .tile-title {
+  display: block;
+  width: 100%;
+  max-width: calc(100% - 32px);
+  margin: 0;
+  padding: 5px 0;
+  float: left;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header .binf-modal-title {
+  color: #333333;
+  margin: 0;
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header .binf-modal-title:focus,
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header .binf-modal-title:active {
+  outline: 1px dotted;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header .binf-modal-title.main-title {
+  line-height: 30px;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header .binf-modal-title.subtitle {
+  font-size: 16px;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header .main-title-only .binf-modal-title.main-title {
+  line-height: 54px;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header .main-title-only .binf-modal-title.subtitle {
+  display: none;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header .cs-close {
+  margin: 8px 0 0 0;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header .icon.d2-stepper-close {
+  background-image: url('images/close16.svg');
+  width: 32px;
+  height: 32px;
+  background-position: center;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header .icon.d2-stepper-close:hover {
+  background-image: url('images/close_mo16.svg');
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header .icon.d2-stepper-close:active {
+  background-image: url('images/close_md16.svg');
+}

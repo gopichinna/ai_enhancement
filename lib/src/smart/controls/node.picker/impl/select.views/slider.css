@@ -1,0 +1,329 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-select-lists>div.cs-start-locations.csui-slideLeft {
+  left: 50%;
+  animation: slideFarLeft 300ms ease-in forwards;
+  animation-iteration-count: 1;
+  animation-fill-mode: ease-in forwards;
+  -webkit-animation: slideFarLeft 300ms ease-in forwards;
+  -moz-animation: slideFarLeft 300ms ease-in forwards;
+  -moz-animation-fill-mode: ease-in forwards;
+  -o-animation: slideFarLeft 300ms;
+  -o-animation-fill-mode: ease-in forwards;
+}
+
+.csui-select-lists>div.cs-start-locations.csui-slideLeft.csui-slideRight2Left {
+  left: 0%;
+  width: 100%;
+  animation: takeFullWidth 300ms ease-in forwards;
+  animation-iteration-count: 1;
+  animation-fill-mode: ease-in forwards;
+  -webkit-animation: takeFullWidth 300ms ease-in forwards;
+  -moz-animation: takeFullWidth 300ms ease-in forwards;
+  -moz-animation-fill-mode: ease-in forwards;
+  -o-animation: takeFullWidth 300ms;
+  -o-animation-fill-mode: ease-in forwards;
+}
+
+.csui-select-lists>div.cs-pane-view.csui-slideMidLeft:not(.smart-back-anime) {
+  left: 101%;
+  animation: slideMidLeft 300ms ease-in forwards;
+  animation-iteration-count: 1;
+  animation-fill-mode: ease-in forwards;
+  -webkit-animation: slideMidLeft 300ms ease-in forwards;
+  -moz-animation: slideMidLeft 300ms ease-in forwards;
+  -moz-animation-fill-mode: ease-in forwards;
+  -o-animation: slideMidLeft 300ms;
+  -o-animation-fill-mode: ease-in forwards;
+}
+
+.csui-select-lists>div.cs-pane-view.csui-slideMidLeft.csui-slideRight2Left:not(.smart-back-anime) {
+  animation: slideRight2Left 300ms ease-in forwards;
+  animation: slideRight2Left 300ms ease-in forwards;
+  -webkit-animation: slideRight2Left 300ms ease-in forwards;
+  -moz-animation: slideRight2Left 300ms ease-in forwards;
+  -o-animation: slideRight2Left 300ms;
+}
+
+.csui-select-lists>div.cs-pane-view.csui-slideMidLeft.smart-back-anime {
+  left: 50%;
+  width: 50%;
+}
+
+
+
+.csui-select-lists > div.cs-pane-view.csui-slideMidLeft .csui-np-header .csui-folder-name,
+.csui-select-lists > div.cs-pane-view.csui-slideMidLeft .csui-np-content .binf-list-group-item {
+  opacity: 0;
+  animation: textOpacity 300ms ease-in forwards;
+  animation-iteration-count: 1;
+  animation-fill-mode: ease-in forwards;
+  -webkit-animation: textOpacity 300ms ease-in forwards;
+  -moz-animation: textOpacity 300ms ease-in forwards;
+  -moz-animation-fill-mode: ease-in forwards;
+  -o-animation: textOpacity 300ms;
+  -o-animation-fill-mode: ease-in forwards;
+}
+
+.csui-select-lists>div.cs-pane-view.csui-slideRight {
+  animation: slideRight 300ms ease-in forwards;
+  animation-iteration-count: 1;
+  animation-fill-mode: ease-in forwards;
+
+  -webkit-animation: slideRight 300ms ease-in forwards;
+  -moz-animation: slideRight 300ms ease-in forwards;
+  -moz-animation-fill-mode: ease-in forwards;
+  -o-animation: slideRight 300ms;
+  -o-animation-fill-mode: ease-in forwards;
+}
+
+@-webkit-keyframes slideFarLeft {
+  0% {
+    left: 50%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+@-moz-keyframes slideFarLeft {
+  0% {
+    left: 50%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+@-o-keyframes slideFarLeft {
+  0% {
+    left: 50%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes slideFarLeft {
+  from {
+    left: 50%;
+  }
+
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes slideFarLeft {
+  0% {
+    left: 50%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+@-webkit-keyframes slideMidLeft {
+  0% {
+    left: 100%;
+    width: 0%;
+  }
+
+  100% {
+    left: 50%;
+    width: 50%;
+  }
+}
+
+@-moz-keyframes slideMidLeft {
+  0% {
+    left: 100%;
+    width: 0%;
+  }
+
+  100% {
+    left: 50%;
+    width: 50%;
+  }
+}
+
+@-o-keyframes slideMidLeft {
+  0% {
+    left: 100%;
+    width: 0%;
+  }
+
+  100% {
+    left: 50%;
+    width: 50%;
+  }
+}
+
+@keyframes slideMidLeft {
+  0% {
+    left: 100%;
+    width: 0%;
+  }
+
+  100% {
+    left: 50%;
+    width: 50%;
+  }
+}
+
+
+
+@-webkit-keyframes slideRight2Left {
+  0% {
+    left: 100%;
+    width: 0%;
+  }
+
+  100% {
+    left: 0%;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes slideRight2Left {
+  0% {
+    left: 100%;
+    width: 0%;
+  }
+
+  100% {
+    left: 0%;
+    width: 100%;
+  }
+}
+
+@-o-keyframes slideRight2Left {
+  0% {
+    left: 100%;
+    width: 0%;
+  }
+
+  100% {
+    left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideRight2Left {
+  0% {
+    left: 100%;
+    width: 0%;
+  }
+
+  100% {
+    left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+@-webkit-keyframes textOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes textOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes textOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes textOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 50%;
+  }
+}
+
+@-moz-keyframes slideRight {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 50%;
+  }
+}
+
+@-o-keyframes slideRight {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 50%;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 50%;
+  }
+}

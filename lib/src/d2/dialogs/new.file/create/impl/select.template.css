@@ -1,0 +1,665 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-body .d2-wizard-step-view .d2-templates {
+  height: 100%;
+  min-width: 200px;
+  padding-left: 16px;
+}
+
+.d2-templates .d2-toolbar {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.template-icon-search {
+  background-image: url('image/icons/search.svg');
+}
+
+.d2-templates .template-title {
+  height: 24px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  padding-bottom: 3px;
+  font-weight: bold;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-body .d2-wizard-step-view .d2-templates .d2-template-container {
+  margin-bottom: 16px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.d2-templates .d2-preset-templates .d2-table tbody {
+  max-height: 100%;
+}
+
+.d2-templates .d2-recent-templates .d2-table tbody {
+  height: auto;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-body .d2-wizard-step-view .d2-templates .d2-template-container .binf-table.dataTable > thead {
+  background-color: #ffffff;
+}
+
+.binf-widgets .d2-templates .csui-checkbox:not([disabled])[aria-checked='true'] > span {
+  background: url('images/Checkmark.svg');
+}
+
+.binf-widgets .d2-templates .csui-checkbox:not([disabled])[aria-checked='false'] > span {
+  background: none;
+}
+
+.binf-widgets .d2-templates tr:hover .csui-checkbox:not([disabled])[aria-checked='false'] > span {
+  background: url('images/checkbox.svg');
+}
+
+
+
+.binf-widgets .d2-templates .csui-checkbox > span {
+  width: 14px;
+  height: 14px;
+  margin-left: 3px;
+}
+
+.binf-widgets .d2-templates .binf-table.dataTable tr .csui-table-cell-_select .csui-control-view.csui-checkbox-view {
+  margin: 0;
+  padding: 0;
+  flex: unset;
+}
+
+.binf-widgets .d2-templates .binf-table.dataTable tr > :first-child {
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  flex: unset;
+  min-width: 2em;
+}
+
+.binf-widgets .d2-templates .binf-table.dataTable > tbody > tr.csui-has-details-row > * {
+  border-top: none;
+}
+
+.binf-widgets .d2-templates .d2-template-container .d2-table .csui-table-view .csui-nodetable .binf-table > thead > tr > th {
+  border-bottom: 1px solid #CCCCCC;
+  height: 32px;
+}
+
+.binf-widgets .d2-templates .binf-table > tbody > tr {
+  font-size: 14px;
+  line-height: 16px;
+  height: 40px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.d2-templates .binf-table.dataTable > thead > tr > th {
+  height: 2em;
+}
+
+.d2-templates .d2-toolbar {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.binf-widgets .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data {
+  padding: 0 22px;
+  height: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data .csui-selected-checkbox input[type="checkbox"] {
+  margin: 0;
+  width: 14px;
+  height: 15px;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data .csui-selected-checkbox .csui-selectlabel::before,
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data .csui-selected-checkbox .csui-selectlabel::after {
+  width: 19px;
+  height: 19px;
+  top: -2px;
+  left: -3px;
+  border: 5px solid transparent;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-position: center;
+  background-color: transparent;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data .csui-selected-checkbox input[type="checkbox"] + .csui-selectlabel:hover::before,
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data .csui-selected-checkbox input:hover + .csui-selectlabel::before,
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data .csui-selected-checkbox input[type="checkbox"] + .csui-selectlabel:focus::before,
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data .csui-selected-checkbox input:focus + .csui-selectlabel::before {
+  border: 4px solid #909090;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data .csui-selected-checkbox input[type="checkbox"]:disabled + .csui-selectlabel:hover::before,
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data .csui-selected-checkbox input[disabled]:hover + .csui-selectlabel::before,
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data .csui-selected-checkbox input[type="checkbox"]:disabled + .csui-selectlabel:focus::before,
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data .csui-selected-checkbox input[disabled]:focus + .csui-selectlabel::before {
+  border: none;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data .csui-selected-checkbox.csui-checkbox-selectAll input[type="checkbox"]:checked + .csui-selectlabel::after {
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header {
+  background-color: #eef2f4;
+  display: block;
+  position: relative;
+  height: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: -3px;
+  padding-top: 3px;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-selected-checkbox.csui-checkbox-atleastone {
+  background-color: transparent;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-selected-checkbox span {
+  margin-left: 5px;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-select {
+  padding: 0 5px;
+  width: 33.3%;
+  font-size: 14px;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-select.csui-checkbox {
+  display: block;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data .csui-thumbnail-itemcount {
+  width: 33.3%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.binf-widgets .d2-templates .d2-template-sort-search-container {
+  width: 33.3%;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container {
+  text-align: right;
+  display: inline-flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+  align-items: center;
+}
+
+.binf-widgets .d2-templates .d2-template-column-search {
+  right: 0;
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  min-width: 32px;
+  justify-content: center;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .cs-sort-links {
+  position: relative;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .csui-search-sort-options {
+  display: inline;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, .7);
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .d2-search-sort-options .dropdown-backdrop {
+  display: none;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .d2-search-sort-options button.binf-btn {
+  border: none;
+  box-shadow: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 0;
+  background: transparent;
+  font-weight: bold;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .d2-search-sort-options .csui-button-icon {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .d2-search-sort-options.binf-open .csui-button-icon {
+  background-image: none;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .d2-search-sort-options.binf-open .binf-btn.binf-btn-default {
+  background-color: #ffffff;
+  outline: 0;
+  box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, .7);
+  z-index: 1001;
+  position: relative;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .d2-search-sort-options .csui-sort-arrow {
+  vertical-align: middle;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+.binf-widgets d2-sorting-container .icon-search {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 19px;
+  width: 19px;
+}
+
+.binf-widgets d2-sorting-container .binf-dropdown-menu {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+  border: 0;
+  border-radius: 0;
+  top: auto;
+  margin: 0;
+  padding: 3px 0 0 0;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .binf-dropdown-menu > li span.cs-icon {
+  background-repeat: no-repeat;
+  min-width: 16px;
+  min-height: 16px;
+  top: calc(50% - 8px);
+  position: absolute;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .binf-dropdown-menu > li.binf-active span.cs-icon {
+  display: block;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .binf-dropdown-menu li {
+  padding: 2px 0;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .binf-dropdown-menu > li > a {
+  padding: 0 1em;
+  line-height: 2em;
+  display: flex;
+  position: relative;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .binf-dropdown-menu > li.binf-active > a {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .binf-dropdown-menu > li > a:hover {
+  background-color: #bac9ce;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .binf-dropdown-menu > li span.cs-label {
+  margin-left: 24px;
+  font: 14px Lato;
+  line-height: 32px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.binf-widgets d2-sorting-container .csui-thumbnail-column-search {
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.binf-widgets .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data .csui-thumbnail-column-search .csui-table-column-search .csui-table-searchbox {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  margin-left: -1em;
+  margin-right: 0.5em;
+  max-width: 100%;
+  align-items: center;
+  padding: 2px 0;
+}
+
+.binf-widgets .cs-thumbnail-wrapper .csui-thumbnail-header .csui-thumbnail-header-data .csui-thumbnail-column-search .csui-table-column-search .csui-table-searchbox .fadeout {
+  top: 6px;
+}
+
+.binf-widgets d2-sorting-container .csui-thumbnail-column-search .csui-thumbnail-search-input {
+  display: inline-flex;
+  flex: 1 1 auto;
+  height: 28px;
+  font-style: italic;
+  line-height: normal;
+  outline: 0;
+  border: 1px solid #a7a9ac;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 30px;
+  width: calc(100% - 28px);
+  margin: 0;
+  max-width: 100%;
+}
+
+.binf-widgets d2-sorting-container .csui-thumbnail-column-search > .csui-thumbnail-search-icon {
+  display: inline-flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-collection .csui-thumbnail-select .csui-selectlabel::before, .binf-widgets .cs-thumbnail-wrapper .csui-thumbnail-collection .csui-thumbnail-select .csui-selectlabel::after, .binf-widgets .cs-thumbnail-wrapper .csui-thumbnail-collection .csui-thumbnail-select input[type="checkbox"] {
+  border: unset;
+}
+
+.d2-template-sort-search-container > div {
+  display: inline-block;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper {
+  margin-top: 18px;
+}
+
+.binf-widgets .cs-thumbnail-wrapper .csui-thumbnail-item .csui-thumbnail-content-container {
+  background-color: #EFF2F4;
+}
+
+.binf-widgets .d2-templates .csui-table-column-search > .csui-table-search-icon {
+  padding-top: 0;
+}
+
+.binf-widgets .d2-templates .d2-template-sort-search-container {
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  width: 98%;
+  padding-top: 5px;
+}
+
+.binf-widgets .d2-templates .d2-template-header-data {
+  display: flex;
+  width: 100%;
+}
+
+.binf-widgets .d2-templates .d2-sorting-container .binf-btn-default {
+  border: none;
+}
+
+.binf-widgets .d2-templates .d2-layout-swtich {
+  margin: 3px 0 0 2px;
+}
+
+.binf-widgets .d2-templates .d2-layout-swtich span.icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.binf-widgets .d2-templates .d2-layout-swtich .switch-view-link {
+  display: block;
+}
+
+.binf-widgets .d2-templates .d2-layout-swtich .switch-view-link:focus,
+.binf-widgets .d2-templates .d2-layout-swtich .switch-view-link:active {
+  outline: 1px dotted #333333;
+}
+
+.binf-widgets .d2-templates .d2-layout-swtich span.icon-switch_list {
+  background-image: url('images/List.svg');
+}
+
+.binf-widgets .d2-templates .d2-layout-swtich span.icon-switch_thumbnails {
+  background: url('images/Tiles.svg');
+}
+
+.binf-widgets .d2-templates .csui-sort-arrow {
+  vertical-align: middle;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+.binf-widgets .d2-templates .binf-dropdown-menu {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .7);
+  border: 0;
+  border-radius: 0;
+  top: auto;
+  left: auto;
+  margin: 0;
+  padding: 3px 0 0;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-container {
+  height: 100%;
+  flex: 0 0 auto;
+}
+
+.d2-templates .template-title.d2-grid-border {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.binf-widgets .d2-templates .binf-table > tbody > tr.binf-active > td {
+  background-color: unset;
+}
+
+.binf-widgets .d2-templates .csui-nodetable.csui-table-empty tbody {
+  border-top: none;
+  display: none;
+}
+
+.binf-widgets .d2-templates .binf-table > tbody > tr > td.dataTables_empty {
+  border-top: none;
+}
+
+.binf-widgets .d2-templates-wrapper {
+  height: 100%;
+}
+
+.binf-widgets .d2-templates .d2-template-container .d2-table, .binf-widgets .d2-templates .d2-template-container .d2-template-table {
+  
+  display: block;
+  flex: 0 0 auto;
+}
+
+.binf-widgets .d2-templates .d2-template-container .d2-table .csui-table-view .csui-table-empty .csui-table-empty-default {
+  top: 0;
+  height:250px;
+}
+
+.binf-widgets .d2-templates .d2-template-container .csui-table-view {
+  height: 100%;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-results .csui-thumbnail-collection > div.csui-thumbnail-empty {
+  margin: 0;
+  height: 270px;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-results .csui-thumbnail-collection > div.csui-thumbnail-empty p {
+  top: 200px;
+}
+
+.binf-widgets .d2-templates .csui-table-empty.csui-table-empty-default .csui-no-result-message, .binf-widgets .csui-favorite-masterdetail-view .csui-table-empty .csui-no-result-message {
+  top: 200px;
+}
+
+.binf-widgets .d2-templates .d2-recent-empty .cs-thumbnail-wrapper .csui-thumbnail-results .csui-thumbnail-collection > div.csui-thumbnail-empty p {
+  top: 20px;
+}
+
+.binf-widgets .d2-templates .d2-recent-empty .csui-table-empty.csui-table-empty-default .csui-no-result-message, .binf-widgets .csui-favorite-masterdetail-view .csui-table-empty .csui-no-result-message {
+  top: 20px;
+}
+
+.binf-widgets .d2-templates .csui-thumbnail-empty.icon-thumbnail-empty-page {
+  background-image: url('images/es_folder_noperms220.svg');
+  background-repeat: no-repeat;
+  background-position: center 16px;
+}
+
+.d2-templates .binf-table.dataTable  >  thead  >  tr  >  th {
+  height: 3em;
+}
+
+.binf-widgets .d2-templates .binf-table.dataTable tr td {
+  border-top: none;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-collection .csui-thumbnail-content .csui-thumbnail-name::after {
+  width: 0;
+}
+
+.binf-widgets .d2-templates .binf-table.dataTable tbody tr td {
+  cursor: pointer;
+}
+
+.binf-widgets .d2-templates .csui-thumbnail-thumbnailIcon > div {
+  max-height: inherit;
+}
+
+.binf-widgets .d2-templates .csui-thumbnail-thumbnailIcon .csui-thumbnail-content-default-action, .binf-widgets .d2-templates .csui-thumbnail-thumbnailIcon .csui-thumbnail-content-no-default-action {
+  max-height: inherit;
+}
+
+.binf-widgets .d2-templates .csui-thumbnail-thumbnailIcon .csui-thumbnail-content-default-action .csui-icon-group, .binf-widgets .d2-templates .csui-thumbnail-thumbnailIcon .csui-thumbnail-content-no-default-action .csui-icon-group {
+  max-height: inherit;
+  min-height: 120px;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-content-icon.csui-thumbnail-content-default-action .csui-icon-group .csui-icon, .binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-content-icon.csui-thumbnail-content-no-default-action .csui-icon-group .csui-icon {
+  height: 130px;
+  background-size: 65px;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-item .csui-thumbnail-content-icon {
+  min-height: 120px;
+}
+
+.d2-templates .d2-template-body {
+  height: calc(100% - 54px);
+  display: grid;
+}
+
+.d2-templates .d2-template-header {
+  height: 42px;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-body .d2-wizard-step-view .d2-templates .d2-template-container.d2-full-screen {
+  max-height: 95%;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-container .csui-thumbnail-results {
+  height: 100%;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-container .csui-thumbnail-results .csui-thumbnail-collection {
+  height: 100%;
+}
+
+.binf-widgets .binf-table.dataTable > thead > tr > th .csui-table-column-text.d2-template-table-bold {
+  font-weight: bold;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-container .csui-thumbnail-results {
+  border-top: none;
+}
+
+.d2-templates .csui-nodetable .binf-table tr > .csui-table-cell-_select:first-child .csui-checkbox {
+  padding-left: 0;
+}
+
+.d2-templates .csui-table-cell-name-value.csui-table-cell-no-default-action {
+  color: inherit;
+  cursor: inherit;
+  font-style: inherit;
+}
+
+.d2-templates .csui-nodetable .binf-table tr > .csui-table-cell-name > .csui-table-cell-name-div {
+  width: 100%;
+}
+
+.d2-templates .csui-nodetable.csui-table-spacing-medium .binf-table tr > .csui-table-cell-name .csui-table-cell-name-justify-div {
+  width: 100%;
+}
+
+.binf-widgets .d2-templates .binf-table.dataTable > thead > tr > th .csui-table-column-text {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-collection .csui-thumbnail-content.csui-thumbnail-title,
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-collection .csui-thumbnail-content.csui-thumbnail-subject {
+  padding: 4px 0 0 0;
+  min-height: 12px;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-item {
+  height: 196px;
+  margin: 4px;
+  padding: 0;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-item .csui-thumbnail-item-container {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-collection .csui-thumbnail-select {
+  left: 8px;
+  top: 8px;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-item .csui-thumbnail-icon-container {
+  height: 120px;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-item .csui-thumbnail-content-container .csui-thumbnail-content {
+  min-height: 14px;
+}
+
+.binf-widgets .d2-templates .cs-thumbnail-wrapper .csui-thumbnail-collection .csui-thumbnail-content.csui-thumbnail-subject {
+  margin-bottom: 5px;
+}
+
+
+.binf-widgets .d2-templates .d2-template-container .d2-table,
+.binf-widgets.accessibility .d2-templates .d2-template-container .d2-table{
+  max-width: 100%;
+}
+
+.binf-widgets .d2-templates .search-box.csui-table-searchbox{
+  margin-top: 2px;
+}
+
+.binf-widgets .d2-templates .search-box.csui-table-searchbox,
+.binf-widgets .d2-templates .search-box.csui-table-searchbox .csui-table-search-input{
+  height: 28px;
+}
+
+.binf-widgets .d2-templates .search-box.csui-table-searchbox .csui-table-search-input{
+  border-radius: 3px;
+}

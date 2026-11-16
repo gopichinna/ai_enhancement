@@ -1,0 +1,48 @@
+{{#if mobile}}
+  <div class="failed-nodes-container {{#if onlyOne}}only-one-file{{/if}}">
+  <div class="description-text">{{descMessage}}</div>
+  <div class="error-items">
+    {{#each errorNodeItems}}
+      <div data-cs-id="{{id}}" data-cs-status="{{status}}" class="error-detail-row" tabindex="0">
+        <div class="names">
+          <div class="type"><span class="{{iconClass}}"></span></div>
+          <div class="name" title="{{name}}">{{this.name}}</div>
+        </div>
+        <div class="error-data">
+          {{#each this.errorMessages}}
+            {{#if this.message}}
+              <div class="each-error">
+                <div class="status">
+                  <div class="status-icon"></div>
+                </div>
+                <div class="message" title="{{message}}">{{this.message}}</div>
+              </div>
+            {{/if}}
+          {{/each}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  </div>
+{{else}}
+  <table class="error-items">
+    {{#each errorNodeItems}}
+      <tr data-cs-id="{{id}}" data-cs-status="{{status}}" class="error-detail-row" tabindex="0">
+        <td class="type"><span class="{{iconClass}}"></span></td>
+        <td class="name" title="{{name}}">{{this.name}}</td>
+        <td class="error-data">
+          {{#each this.errorMessages}}
+            <div class="each-error">
+              <div class="status">
+                <div class="status-icon"></div>
+              </div>
+              <div class="message" title="{{message}}">{{this.message}}</div>
+            </div>
+          {{/each}}
+        </td>
+      </tr>
+    {{/each}}
+  </table>
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

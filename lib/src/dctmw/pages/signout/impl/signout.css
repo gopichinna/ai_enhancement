@@ -1,0 +1,91 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.signout-view {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+
+.signout-view .main-area {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.signout-view .signout-page-navbar .binf-navbar-nav {
+  float: none;
+  overflow: hidden;
+  min-width: 390px;
+  height: 64px;
+}
+
+.d2-navbar.signout-page-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .d2-branding,
+.d2-navbar.signout-page-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .d2-branding .d2-brand-container {
+  height: inherit;
+}
+
+.d2-navbar.signout-page-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .d2-branding .d2-brand-container .d2-brand-logo {
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 40px;
+  background-image: url(../../../pages/signin/impl/image/header_d2_li.svg);
+  display: block;
+  cursor: default;
+  overflow-y: hidden;
+  position: relative;
+  top: 12px;
+  left: 0;
+}
+
+.signout-view .message-wrapper p {
+  font-size: 20px;
+  color: #fff;
+  line-height: 32px;
+  margin-bottom: 28px;
+}
+
+.signout-view .message-wrapper p:last-child {
+  margin: 0;
+}
+
+.signout-view .message-wrapper p > b {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.signout-view .main-area .button-container .img-button {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  margin-bottom: 17px;
+  cursor: pointer;
+}
+
+.signout-view .main-area .button-container .img-button.signout-img {
+  background-image: url(images/signout.svg);
+}
+
+.signout-view .main-area .buttons-container {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.signout-view .main-area .buttons-container .button-container {
+  margin: 0 60px;
+}
+
+.signout-view .main-area .img-button-text {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #fff;
+  cursor: pointer;
+}

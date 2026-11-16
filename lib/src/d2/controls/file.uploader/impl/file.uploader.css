@@ -1,0 +1,218 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-file-uploader {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.binf-widgets .d2-file-uploader .header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #CCCCCC;
+  width: calc(100% - 19px);
+}
+
+.binf-widgets .d2-file-uploader .header .title {
+  font-size: 18px;
+  color: #333333;
+}
+
+.binf-widgets .d2-file-uploader .header .uploader {
+  position: relative;
+}
+
+.binf-widgets .d2-file-uploader .header .uploader .add-file {
+  cursor: pointer;
+  background-size: contain;
+}
+
+.binf-widgets .d2-file-uploader .upload-drop-zone {
+  width: 100%;
+  height: 100%;
+  position: inherit;
+  padding: 30px 45px 0 64px;
+}
+
+.binf-widgets .d2-wizard-step-view .d2-file-uploader .upload-file-container {
+  height: calc(100% - 30px)
+}
+
+.binf-widgets .d2-file-uploader .upload-file-container,
+.binf-widgets .d2-file-uploader .upload-file-container > div,
+.binf-widgets .d2-file-uploader .upload-file-container .d2-sortable-list,
+.binf-widgets .d2-file-uploader .upload-file-container .d2-sortable-list .binf-list-group {
+  width: 100%;
+  height: 100%;
+  position: inherit;
+}
+
+.binf-widgets .d2-file-uploader .d2-sortable-list .binf-list-group {
+  margin: 0;
+}
+
+.binf-widgets .upload-file-container .d2-sortable-list .sub-item:hover,
+.binf-widgets .upload-file-container .d2-sortable-list .sub-item.select {
+  cursor: move;
+  background-color: #B2BEC5;
+  background-size: 24px 16px;
+}
+
+.binf-widgets .upload-file-container .d2-sortable-list .remove-button,
+.binf-widgets .upload-file-container .d2-sortable-list .sub-item.select .remove-button {
+  height: 14px;
+  width: 14px;
+  display: block;
+  position: absolute;
+  float: right;
+  top: 40%;
+  right: 12px;
+}
+
+.binf-widgets .upload-file-container .d2-sortable-list .sub-item:hover .remove-button,
+.binf-widgets .upload-file-container .d2-sortable-list .sub-item.focus .remove-button {
+  background-size: 14px 14px;
+}
+
+.binf-widgets .d2-file-uploader .upload-file-container .d2-sortable-list .sub-item {
+  padding-left: 26px;
+  width: calc(100% - 19px);
+  border-radius: 3px;
+  height: 72px;
+}
+
+.binf-widgets .d2-file-uploader .d2-sortable-list .sub-item-container {
+  width: 100%;
+  display: block;
+}
+
+.binf-widgets .d2-file-uploader .d2-sortable-list .sub-item {
+  display: inline;
+  position: relative;
+}
+
+.binf-widgets .d2-file-uploader .d2-sortable-list .sub-item:hover,
+.binf-widgets .d2-file-uploader .d2-sortable-list .sub-item.select {
+  background: #b9c4cb url(images/drag-handle20.svg) left no-repeat;
+  background-size: 28px 22px;
+}
+
+.binf-widgets .d2-file-uploader .d2-sortable-list .sub-item:only-child:hover,
+.binf-widgets .d2-file-uploader .d2-sortable-list .sub-item.select:only-child {
+  background: #b9c4cb;
+}
+
+.binf-widgets .d2-file-uploader .d2-sortable-list .sub-item:hover .remove-button,
+.binf-widgets .d2-file-uploader .d2-sortable-list .sub-item.focus .remove-button {
+  background: url(images/delete-item16.svg) no-repeat center;
+  background-size: 16px 16px;
+}
+
+.binf-widgets .d2-file-uploader .d2-sortable-list .sub-item:hover .remove-button:hover,
+.binf-widgets .d2-file-uploader .d2-sortable-list .sub-item.focus .remove-button:hover {
+  background: url(images/delete-item16_mo.svg) no-repeat center;
+  background-size: 16px 16px;
+}
+
+.binf-widgets .d2-file-uploader .d2-sortable-list .sub-item:hover .remove-button:active,
+.binf-widgets .d2-file-uploader .d2-sortable-list .sub-item.focus .remove-button:active {
+  background: url(images/delete-item16_md.svg) no-repeat center;
+  background-size: 16px 16px;
+}
+
+.binf-widgets .d2-file-uploader .drop-file-message-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  border: 2px solid #09BCEF;
+  background-color: rgba(35, 64, 119, 0.9);
+}
+
+.binf-widgets .d2-file-uploader .upload-drop-zone .drop-file-message-container .drop-file {
+  padding-top: 127px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.binf-widgets .d2-file-uploader .drop-file-message-container .icon {
+  background: url(images/drag-target-white.svg) no-repeat;
+  height: 140px;
+  width: 220px;
+}
+
+.binf-widgets .d2-file-uploader .drop-file-message-container .drop-file-message {
+  color: #FFFFFF;
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+.binf-widgets .d2-file-uploader .d2-sortable-list .empty-file-list {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.binf-widgets .d2-file-uploader .d2-sortable-list .empty-file-list .empty-file {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.binf-widgets .d2-file-uploader .d2-sortable-list .empty-file-list .icon {
+  background: url(images/drag-target-black.svg) no-repeat;
+  height: 140px;
+  width: 220px;
+}
+
+.binf-widgets .d2-file-uploader .d2-sortable-list .empty-file-list .empty-file-list-message {
+  color: #333333;
+  width: 275px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.binf-widgets .d2-file-uploader .empty-file-list .empty-add-file {
+  height: 48px;
+  width: 48px;
+  background: url(images/add_48.svg) no-repeat;
+  background-size: contain;
+  margin-top: 24px;
+}
+
+.binf-widgets .d2-file-uploader .empty-file-list .empty-add-file:hover {
+  background: url(images/add_mo48.svg) no-repeat;
+  background-size: contain;
+}
+
+.binf-widgets .d2-file-uploader .empty-file-list .empty-add-file:active {
+  background: url(images/add_md48.svg) no-repeat;
+  background-size: contain;
+}
+
+.binf-widgets .d2-file-uploader .upload-drop-zone.empty-list {
+  height: 100%;
+}
+
+.binf-widgets .d2-file-uploader.fixed-file-import .header .add-file,
+.binf-widgets .d2-file-uploader.fixed-file-import .empty-file .empty-add-file,
+.binf-widgets .d2-file-uploader.fixed-file-import .upload-file-container .d2-sortable-list .sub-item .remove-button {
+  display: none;
+}

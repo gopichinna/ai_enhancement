@@ -1,0 +1,36 @@
+<h2 class="csui-title">{{title}}
+{{#if showTargetLocationName}}
+  <span class="target-location-name-container binf-hidden">
+    '<span class="target-location-name">{{targetLocationName}}</span>'
+  </span>
+{{/if}}
+</h2>
+{{#if saveFilter}}
+<div class='csui-filtername-container'>
+  <span class="cs-icon-required category_required" title=""></span>
+  <input type='text' class='csui-filtername' placeholder="{{placeHolderName}}" tabindex="-1" value="{{initialFilter}}"
+    data-cstabindex="-1" required aria-invalid="false" aria-errormessage="csui-filtername-error-id" />
+  {{#if isMlDataEnabled}}
+  <span class="smart-multilingual-icon-label">
+    <otc-button icon="smart_action:action_localize32" class="icon smart-multilingual-icon" arialabel="{{multilingualTooltip}}"
+          title="{{multilingualTooltip}}" tabindex="0"></otc-button>
+  </span>
+  {{/if}}
+  <div class="csui-filtername-error-wrapper binf-hidden">
+    <span class="binf-text-danger csui-filtername-error" id="csui-filtername-error-id"></span>
+  </div>
+</div>
+{{/if}}
+
+<div class='csui-selected-count-parent'></div>
+<div class="csui-target-controls {{#xif " this.globalSearch !==false"}}csui-no-search{{/xif}}">
+  <div class="csui-target-search-property-container">
+    {{#xif "this.globalSearch !== false"}}
+    <div class="csui-global-search {{#if saveFilter}}csui-save-filter {{/if}}{{#if
+          propertiesSeletor}}{{else}}csui-no-properties-selector for-shortcut{{/if}}"></div>
+    {{/xif}}
+    <span class="csui-separator {{#if
+        propertiesSeletor}}{{else}}csui-no-properties-selector{{/if}}"></span>
+  </div>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

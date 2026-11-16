@@ -1,0 +1,130 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-widgettable {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+
+.binf-widgets .binf-modal-dialog .d2-widgettable {
+  height: calc(100vh - 183px);
+  width: 100%;
+  position: static;
+}
+
+.binf-widgets .d2-widgettable > .d2-table-view {
+  display: flex;
+  flex: 1 1 100%;
+  min-height: 90px;
+}
+
+.binf-widgets .d2-widgettable > .d2-pagination-view {
+  flex: 0 0 auto;
+}
+
+.binf-widgets .d2-widgettable > .d2-pagination-view .binf-pagination {
+  margin: 0;
+}
+
+
+.binf-widgets .d2-widget-table-view.csui-nodestable .d2-table-queryformview.d2-queryformview-hidden {
+  width: 0;
+}
+
+.binf-widgets .d2-widget-table-view.csui-nodestable.csui-no-animation .d2-table-queryformview,
+.binf-widgets .d2-widget-table-view.csui-nodestable.csui-no-animation .d2-table-queryformview.d2-queryformview-hidden {
+  transition: none;
+}
+
+.binf-widgets .d2-widget-table-view.csui-nodestable .d2-table-queryformview.d2-queryformview-visibility {
+  visibility: hidden;
+}
+
+
+.binf-widgets .d2-widget-table-view.csui-nodestable .csui-facet-table-container .d2-table-queryformview {
+  display: block;
+  flex: none;
+  max-width: 400px;
+  width: 300px;
+  transition: max-width 0.3s ease-in;
+}
+
+
+.binf-widgets .d2-widget-table-view.csui-nodestable .csui-facet-table-container .d2-table-queryformview.d2-queryformview-hidden {
+  max-width: 0;
+  transition: max-width 0.2s ease-out;
+}
+
+.binf-widgets .d2-widget-table-view.csui-nodestable.d2-search-table .csui-tabletoolbar .csui-item-title .csui-item-title-name {
+  flex-direction: column;
+}
+
+.binf-widgets .d2-widget-table-view.csui-nodestable.d2-search-table .csui-tabletoolbar .csui-item-title .csui-item-title-name .csui-item-name {
+  display: block;
+}
+
+.binf-widgets .d2-widget-table-view.csui-nodestable.d2-search-table .csui-tabletoolbar .csui-item-title .csui-item-title-icon {
+  display: none;
+}
+
+.binf-widgets .d2-widget-table-view.csui-nodestable.d2-search-table .csui-tabletoolbar .csui-item-title .csui-item-name .csui-item-name-readonly {
+  height: initial;
+  flex: initial;
+  -webkit-flex: initial;
+  padding: 0;
+  border: 0;
+}
+
+.binf-widgets .d2-widget-table-view.csui-nodestable.d2-search-table .csui-tabletoolbar .csui-item-title .csui-item-name .csui-item-name-block {
+  font-size: 20px;
+}
+.binf-widgets .d2-widget-table-view.csui-nodestable .csui-tabletoolbar .csui-item-title .csui-item-name .csui-item-name-readonly:disabled,
+.binf-widgets .d2-widget-table-view.csui-nodestable .csui-tabletoolbar .csui-item-title .csui-item-name .csui-item-name-readonly:disabled > .csui-item-name-block{
+  cursor: default;
+}
+
+.binf-widgets .d2-widget-table-view.csui-nodestable .csui-tabletoolbar .csui-item-title .csui-item-title-name .search-header-count {
+  display: none;
+}
+
+.binf-widgets .d2-widget-table-view.csui-nodestable.d2-search-table .csui-tabletoolbar .csui-item-title .csui-item-title-name .search-header-count {
+  display: inline-block;
+  font-size: 11px;
+  line-height: 13px;
+  margin-top: 2px;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+  text-align: center;
+  position: relative;
+  top: -4px;
+}
+
+.binf-widgets .d2-widget-table-view.d2-workflows-table-view.d2-search-table .csui-item-title {
+  width: calc(100% - 300px);
+  justify-content: center;
+}
+
+.binf-widgets .d2-widget-table-view.d2-workflows-table-view.d2-search-table .csui-tabletoolbar .csui-item-title .csui-item-name .csui-item-name-readonly {
+  width: 100%;
+}
+
+.csui-nodestable.d2-widget-table-view .csui-facet-table-container {
+  position: relative;
+}
+
+@media only screen and (max-width: 1023px) {
+  .binf-widgets .csui-nodestable.d2-widget-table-view .d2-popover-panel {
+    z-index: 3;
+    position: absolute;
+    max-width: 250px;
+    height: auto;
+    bottom: 0;
+    top: 0;
+  }
+}

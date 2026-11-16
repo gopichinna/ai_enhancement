@@ -1,0 +1,33 @@
+<div>
+<div class="csui-global-message"></div>
+    <nav class="d2-navbar start-page-error-navbar">
+        <div class="binf-container-fluid" role="menubar">
+            <div class="binf-navbar-nav">
+                <div class="d2-branding">
+                    <div class="d2-brand-container">
+                      {{#if isMobile}}
+                      {{mobileErrorTitle}}
+                      {{else}}
+                      <span class="d2-brand-logo"></span>
+                      {{/if}}
+                    </div>
+                </div>
+            </div>
+         </div>
+    </nav>
+</div>
+<div class="main-area">
+    <div class="server-error-img-container"><span class="server-error-img"></span></div>
+    <div class="error-message-wrapper">
+        {{#each errorMsgs}}
+        <h3>{{this}}</h3>
+        {{/each}}
+    </div>
+    <div class="reload-container">
+        <span class="reload-page reload-img" title="{{reload}}" aria-label="{{reload}}" tabindex="0"></span>
+        <div>
+            <span class="reload-page reload-text" title="{{reload}}" tabindex="0">{{reload}}</span>
+        </div>
+    </div>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

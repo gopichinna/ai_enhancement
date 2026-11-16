@@ -1,0 +1,10 @@
+{{#if status_late}}
+  <span class="cellview_warning" title="{{status_name}}">{{status_name}}</span>
+{{else}}
+  {{#if icon}}
+    <span class="csui-icon {{icon}}"></span>
+  {{/if}}
+  <span title="{{status_name}}">{{status_name}}</span>
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

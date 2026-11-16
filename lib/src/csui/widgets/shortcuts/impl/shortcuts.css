@@ -1,0 +1,91 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-shortcut-container.tile {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.binf-widgets .csui-shortcut-group-container.tile:hover {
+  box-shadow: 0px 0px 0px 0px #ffffff;
+  outline: none;
+}
+
+.binf-widgets .csui-shortcut-group-container.tile:active {
+  box-shadow: 0px 0px 0px 0px #ffffff;
+  outline: none;
+}
+
+.binf-widgets .csui-shortcut-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 0.5em;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item:first-child {
+  margin-top: 0px;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium {
+  flex-grow: 0;
+  height: calc(50% - 0.25em);
+}
+
+
+
+
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.cs-background-custom.cs-background-image {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.perspective-editing .binf-row > .csui-pman-editable-widget .shortcut-group-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: transparent;
+  z-index: 1;
+  top: 0;
+}
+
+.perspective-editing .binf-row > .csui-pman-editable-widget .shortcut-group-button-wrapper {
+  position: absolute;
+}
+
+.perspective-editing .binf-row > .csui-pman-editable-widget .shortcut-group-button-wrapper {
+  top: 7px; 
+  bottom: 7px;
+  right: 7px;
+  left: 7px;
+}
+
+.binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-shortcut-item.csui-pman-shortcut-new {
+  background-image: unset !important; 
+}
+
+
+
+
+@media(forced-colors:active) {
+
+  .binf-widgets .csui-shortcut-container .csui-shortcut-item {
+    outline: 1px solid black;
+    outline-offset: 3px;
+  }
+
+  .binf-widgets .csui-shortcut-container.tile .csui-shortcut-item:focus {
+      outline: 2px solid black;
+  }
+
+}

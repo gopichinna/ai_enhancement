@@ -1,0 +1,38 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+  "title": "{{title}}",
+  "description": "{{description}}",
+  "kind": "tile",
+  "schema": {
+    "type": "object",
+    "properties": {}
+  },
+  "actions": [
+    {
+      "toolItems": "d2/widgets/widgettable/toolbaritems",
+      "toolItemMasks": "d2/widgets/widgettable/toolbaritems.masks",
+      "toolbars": [
+        {
+          "id": "tableHeaderToolbar",
+          "title": "{{tableHeaderToolbarTitle}}",
+          "description": "{{tableHeaderToolbarDescription}}"
+        },
+        {
+          "id": "inlineActionbar",
+          "title": "{{inlineActionbarTitle}}",
+          "description": "{{inlineActionbarDescription}}"
+        },
+        {
+          "id": "leftToolbar",
+          "title": "{{leftToolbarTitle}}",
+          "description": "{{leftToolbarDescription}}"
+        },
+        {
+          "id": "rightToolbar",
+          "title": "{{rightToolbarTitle}}",
+          "description": "{{rightToolbarDescription}}"
+        }
+      ]
+    }
+  ]
+}

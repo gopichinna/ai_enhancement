@@ -1,0 +1,13 @@
+<div class="csui-icon-group csui-loading-parent-wrapper binf-disabled {{#unless expanding}}binf-hidden{{/unless}}"
+     role="presentation" tabindex="-1">
+  <div class="csui-loading-dots-wrapper">
+    <span class="csui-loading-dot"></span>
+    <span class="csui-loading-dot"></span>
+    <span class="csui-loading-dot"></span>
+  </div>
+</div>
+<div class="expand-tree-row-toggle {{#if expanding}}binf-hidden{{else}}{{#unless hasChildren}}binf-hidden{{/unless}}{{/if}}"
+      title="{{expandToggleTooltip}}" aria-label="{{expandToggleAria}}">
+  <span class="toggle-icon {{#if expanded}}caret-down{{else}}caret-right{{/if}}"></span>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

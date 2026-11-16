@@ -1,0 +1,10 @@
+<input type="text" placeholder="{{emptyLabel}}" value="{{data}}"
+       {{#if idBtnLabel}}aria-labelledby="{{idBtnLabel}}"{{/if}}
+  {{#if ariaRequired}}aria-required="{{ariaRequired}}"{{/if}} id="{{id}}" aria-autocomplete="list" autocomplete="off"
+       role="combobox">
+<div class="d2list-search-toolbar">
+  <a class="options-view-button" tabindex="0" title="{{lang.select}}" aria-label="{{lang.select}}"></a>
+  <a class="consolidated-view-button" tabindex="0"></a>
+</div>
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,46 @@
+<div class="binf-row">
+  \{{#if options.label }}
+  <div class="binf-col-md-12 alpaca-container-label">
+    <h4>\{{ options.label }}</h4>
+  </div>
+  \{{/if}}
+  <div class="metadata-pane-container">
+    <div class="metadata-pane-left binf-col-md-6  cs-form-doublecolumn
+    cs-form-leftcolumn">
+      \{{#if options.showitemId }}
+      <div class="owner_section general-information"></div>
+      \{{/if}}
+      <div class="typename_section general-information"></div>
+      <div class="systemattributes_section general-information"></div>
+      <div class="csui-extra-general-fields"></div>
+    </div>
+    <div class="metadata-pane-right binf-col-md-6 cs-form-doublecolumn cs-form-rightcolumn">
+      <div class="metadata-tab">
+        \{{#if options.showThumbnail }}
+        <div class="thumbnail_section metadata-preview preview-section" title="\{{options.title}}">
+          \{{#if options.generation }}
+            {{#with data}}
+            <span class='csui-icon-group csui-icon-v2-size-contain' data-cstabindex="0" role="button" aria-label="\{{options.title}}">
+              
+                {{#if ClassName}}
+                  <span class="thumbnail_not_loaded thumbnail-generation {{ClassName}}" ></span>
+                {{/if}}
+              {{{icon-v2 iconName="csui_generation-overlay" theme=IconTheme states='true' size='contain'}}}
+            </span>
+            {{/with}}
+          \{{ else}}
+          <span class="default_thumbnail thumbnail_empty" data-cstabindex="0" role="button"
+            aria-label="\{{options.title}}"></span>
+          \{{/if}}
+        </div>
+        \{{/if}}
+        \{{#if options.showShortcutSection }}
+        <div class="shortcut_section general-information"></div>
+        \{{/if}}
+        <div class="description_section general-information"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

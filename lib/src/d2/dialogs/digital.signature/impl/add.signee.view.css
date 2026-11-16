@@ -1,0 +1,105 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-add-signee-view {
+  height: 100%;
+  width: 100%;
+  padding: 16px 0 16px 0;
+  overflow: auto;
+  position: relative;
+}
+
+.binf-widgets .d2-add-signee-view > div {
+  padding-left: 64px;
+  padding-right: 48px;
+}
+
+.binf-widgets .d2-add-signee-view .signature-signee.ui-draggable.ui-draggable-handle.ui-draggable-dragging {
+  width: 400px;
+}
+
+.d2-add-signee-view .d2-define-signee-order {
+  display: flex;
+  padding-top: 19px;
+}
+
+.d2-add-signee-view .d2-define-signee-order .d2-define-signee-order-label {
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.d2-add-signee-view .d2-define-signee-order-info {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  margin-bottom: 28px;
+}
+
+.d2-add-signee-view .d2-define-signee-order .d2-define-signee-order-checkbox-container .csui-checkbox:focus {
+  outline-offset: 1px;
+}
+
+.d2-add-signee-view .d2-define-signee-order .d2-define-signee-order-checkbox-container .csui-checkbox:hover {
+  outline: 1px solid #757575;
+}
+
+.d2-add-signee-view .d2-define-signee-order .d2-define-signee-order-checkbox-container:not(.checked) .csui-checkbox:hover {
+  outline: 1px solid #757575;
+  outline-offset: 0;
+}
+
+.d2-add-signee-view .d2-define-signee-order .d2-define-signee-order-checkbox-container .csui-checkbox-icon-container span {
+  opacity: 0;
+}
+
+.d2-add-signee-view .d2-define-signee-order .d2-define-signee-order-checkbox-container .csui-checkbox-icon-container {
+  height: 18px;
+  width: 18px;
+  background: url('images/checkbox.svg');
+}
+
+.d2-add-signee-view .d2-define-signee-order .d2-define-signee-order-checkbox-container.checked .csui-checkbox-icon-container {
+  background: url('images/checkbox_selected.svg');
+}
+
+.d2-add-signee-view .d2-signature-email-container {
+  margin-top: 24px;
+  border-top: 1px solid #CCCCCC;
+}
+
+.d2-stepper-wizard .d2-add-signee-view .d2-signature-email-container .cs-form.csui-general-form.d2-form.d2-signature-email-form {
+  margin: 0;
+  width: 400px;
+}
+
+.d2-stepper-wizard .d2-add-signee-view .cs-form.csui-general-form.d2-form.d2-signature-email-form .alpaca-container-item {
+  margin-bottom: 0;
+}
+
+.binf-widgets .d2-add-signee-view .csui-top-align-label.d2-signature-email-form .cs-form .binf-col-md-6 {
+  width: 100%;
+  padding-right: 0;
+}
+
+.d2-add-signee-view .csui-top-align-label.d2-signature-email-form .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label,
+.d2-add-signee-view .csui-top-align-label.d2-signature-email-form .cs-formfield .cs-field-write {
+  padding-left: 0;
+}
+
+.d2-stepper-wizard .d2-add-signee-view .cs-form.csui-general-form.d2-form.d2-signature-email-form .binf-help-block.alpaca-message {
+  width: 100%;
+}
+
+.d2-add-signee-view .d2-signature-email-form .cs-textareafield textarea {
+  height: auto;
+  min-height: 74px;
+  max-height: none;
+  overflow: hidden;
+}
+
+.d2-add-signee-view .d2-signature-email-form .cs-textareafield {
+  max-height: none;
+}

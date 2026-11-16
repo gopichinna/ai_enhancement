@@ -1,0 +1,74 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+ .binf-widgets .csui-image-picker input.csui-logo-upload-input {
+	opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+.binf-widgets .csui-image-picker .csui-logo-upload-label {
+	border: 0;
+	display: inline-block;
+	padding: 8px 0;
+	cursor: pointer;
+	color: #232E72;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+}
+
+
+.binf-widgets .csui-field-image-picker .csui-image-picker .csui-logo-upload-label {
+	padding: 0;
+	border: none;
+	background: none;
+	color: #232E72;
+	padding-left: 6px;
+}
+
+.binf-widgets .csui-image-picker .csui-logo-btns {
+	float: right;
+	margin-top: 10px;
+}
+
+.cs-form .binf-form-group.alpaca-field.alpaca-field-csui-image-picker{
+	width: 256px;
+}
+.binf-widgets .csui-image-picker .csui-brand-image-logo {
+	height: 65px;
+	width: 100%;
+	overflow: hidden;
+	background-color:#111b58;
+	display: flex;
+    align-items: center;
+}
+
+.binf-widgets .csui-image-picker .csui-brand-image-logo .csui-logo-image {
+	width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+	background-image: url(../../../themes/carbonfiber/image/csui/headerbar_content_suite_platform_li.svg);
+}
+
+.binf-widgets .pman-header-config .binf-navbar-brand > .csui-logo > .csui-logo-image {
+	background-position: left;
+    background-size: contain;
+}
+
+.binf-widgets .csui-logo-upload-icon{	
+	background-image: url(../../../themes/carbonfiber/image/icons/action_section_upload16.svg);
+	background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    padding: 0 0 0 25px;
+    background-position: center;
+}
+
+.binf-widgets .csui-image-picker .csui-help-text {
+	margin: 10px 0px 0px 0px;
+    display: inline-block;
+    font-size: 12px;
+}

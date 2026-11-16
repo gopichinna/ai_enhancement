@@ -1,0 +1,17 @@
+<div class="binf-row cs-form">
+  {{#each fields}}
+    {{#if this.isSetType}}
+      <div class="binf-col-md-12 cs-form-singlecolumn csui-form-set-array-wrapper cs-form-set"
+           id="csfSingleCol_{{../modelId}}{{@index}}"></div>
+    {{else if this.isContainerType}}
+      <div class="binf-col-md-12 d2-spy-container cs-form-singlecolumn csui-form-set-array-wrapper"
+           id="csfSingleCol1_{{../modelId}}{{@index}}"></div>
+    {{else}}
+      <div class="binf-col-md-6 cs-form-doublecolumn cs-form-leftcolumn"
+           id="csfLeftCol_{{../modelId}}{{@index}}"></div>
+      <div class="binf-col-md-6 cs-form-doublecolumn cs-form-rightcolumn"
+           id="csfRightCol_{{../modelId}}{{@index}}"></div>
+    {{/if}}
+  {{/each}}
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

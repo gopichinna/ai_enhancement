@@ -1,0 +1,74 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-mass-update-field {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.d2-mass-update-field .d2-mass-update-table-wrapper {
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+}
+
+.d2-mass-update-field .d2-mass-update-summary-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+
+.d2-mass-update-field .d2-mass-update-table-wrapper .d2-mass-update-table,
+.d2-mass-update-field .d2-mass-update-summary-wrapper .d2-mass-update-table {
+    max-width: 688px;
+}
+
+.d2-mass-update-field .d2-mass-update-update-form-wrapper {
+    width: 100%;
+    outline: 1px solid #CCCCCC;
+    box-shadow: 0 -2px 4px 0 #CCC;
+    z-index: 1;
+}
+
+.d2-mass-update-field .d2-mass-update-update-form-wrapper .cs-form > .binf-row > .alpaca-container-label {
+    display: none;
+}
+
+.d2-mass-update-field .d2-mass-update-update-form-wrapper .cs-form.csui-general-form.d2-form {
+    margin: 0 0 10px 0;
+}
+
+.d2-mass-update-field .d2-mass-update-update-form-wrapper .cs-form .cs-form-leftcolumn {
+    margin: 14px 0 24px 55px;
+    width: 400px;
+}
+
+.d2-mass-update-field .d2-mass-update-update-form-wrapper .cs-form.csui-general-form.d2-form .alpaca-container-item {
+    margin-bottom: 0;
+}
+
+.d2-mass-update-field .d2-mass-update-update-form-wrapper .cs-form .binf-form-group {
+    margin-top: 0;
+}
+
+.d2-mass-update-field .d2-mass-update-update-form-wrapper .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+    padding-right: 0;
+    padding-left: 9px;
+    font-size: 12px;
+}
+
+.d2-mass-update-field .d2-mass-update-update-form-wrapper .csui-top-align-label .cs-formfield .cs-field-write {
+    padding-left: 9px;
+}
+
+.d2-mass-update-field .d2-mass-update-update-form-wrapper .cs-form.csui-general-form.d2-form .binf-help-block.alpaca-message {
+    position: absolute;
+    width: calc(100% - 9px);
+    margin-left: 9px;
+}
+
+.binf-widgets .d2-mass-update-field .d2-mass-update-update-form-wrapper .binf-col-md-6 {
+    padding: 0;
+}

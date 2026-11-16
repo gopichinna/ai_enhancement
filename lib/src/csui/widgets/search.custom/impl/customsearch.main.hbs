@@ -1,0 +1,15 @@
+<div class="csui-saved-search-form {{scrolling}}" id="{{searchFormId}}"></div>
+
+{{#unless hideSearchButton}}
+  <div class="csui-saved-search-submit-container">
+    <otc-button class="csui-custom-search-form-submit" title="{{messages.search}}" id="{{searchButton}}"
+      aria-label="{{messages.search}}" type="primary">{{messages.search}}
+    </otc-button>
+    {{#if showResetButton}}
+      <otc-button class="csui-custom-reset-form-submit" title="{{messages.reset}}" id="{{resetButton}}"
+        aria-label="{{messages.reset}}" type="secondary">{{messages.reset}}
+      </otc-button>
+    {{/if}}
+  </div>
+{{/unless}}
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

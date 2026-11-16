@@ -1,0 +1,17 @@
+{
+  "id": "d2customsearchlist",
+  "name": "D2SV Custom SearchCategory List",
+  "descriptors": [
+    {
+      "name": "app",
+      "properties": {
+        "pluginsGroupId": "com.opentext.d2.smartview",
+        "pluginArtifactId": "D2CustomSearchList",
+        "pluginVersion": "1.0.0",
+        "pluginDesc": "Custom plugin to list saved search as tree view",
+        "pluginPackage": "D2CustomSearchList",
+        "includeSVSupport": true
+      }
+    }
+  ]
+}

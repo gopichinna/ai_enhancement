@@ -1,0 +1,31 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-spy-container {
+  padding: 0;
+}
+
+.binf-widgets .binf-col-md-6.d2-control .alpaca-field {
+  min-height: 36px;
+}
+
+.cs-metadata-properties > .binf-tab-content > .d2nonspy {
+  padding: 0 32px 0 32px;
+  border-top: none !important;
+}
+
+.cs-form .cs-form-set.cs-form-set-container .alpaca-container-item .alpaca-field.alpaca-field-object.d2-grid-row-invalid .alpaca-container::before,
+.cs-form .cs-form-set.cs-form-set-container .alpaca-container-item .alpaca-field.alpaca-field-object.d2-grid-row-invalid .alpaca-container::after {
+  content: '';
+  flex: 0 0 0;
+  border: red solid 1px;
+}
+
+.cs-form .cs-form-set.cs-form-set-container .alpaca-container-item.alpaca-container-item-first .alpaca-field.alpaca-field-object.d2-grid-row-invalid .alpaca-container::before,
+.cs-form .cs-form-set.cs-form-set-container .alpaca-container-item.alpaca-container-item-first .alpaca-field.alpaca-field-object.d2-grid-row-invalid .alpaca-container::after {
+  margin-top: 32px;
+}
+
+.cs-form .cs-form-set .alpaca-field.alpaca-field-array .cs-form-set-container.alpaca-container-has-items {
+  float: none;
+}

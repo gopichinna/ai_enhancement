@@ -1,0 +1,18 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-top-ribbon {
+    background-color: #EEF2F4;
+    display: inline-flex;
+    height: 116px;
+    width: 100%;
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item {
+    margin: 20px;
+    
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout:hover {
+    cursor: pointer;
+}

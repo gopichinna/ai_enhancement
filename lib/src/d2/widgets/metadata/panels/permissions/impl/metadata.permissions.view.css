@@ -1,0 +1,171 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-tab-content .d2-metadata-permissions-wrapper {
+  height: calc(100% - 56px);
+}
+
+.binf-tab-content .csui-metadata-permissions {
+  margin-top: 48px;
+  height: 100%;
+}
+
+.csui-metadata-permissions > .d2-metadata-my-permissions-form {
+  font-size: 16px;
+  font-weight: normal;
+  flex: 1 1000 auto;
+  display: flex;
+  flex-direction: row;
+  border-top: none;
+  padding: 6px 16px 0 16px;
+}
+
+.csui-metadata-permissions > .d2-metadata-security-template-form {
+  font-size: 16px;
+  font-weight: normal;
+  flex: 1 1000 auto;
+  display: flex;
+  flex-direction: row;
+  border-top: none;
+  padding: 0 16px 0 16px;
+}
+
+.csui-metadata-permissions > .d2-metadata-security-template-form .cs-form.csui-general-form:not(.csui-required-fields-only) {
+  
+  min-height: 4em;
+}
+
+.d2-metadata-my-permissions-form > .csui-top-align-label.cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label,
+.d2-metadata-security-template-form > .csui-top-align-label.cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+  width: 100%;
+  text-align: left;
+  padding-left: 16px;
+  font-size: 12px;
+  min-width: fit-content;
+}
+
+.d2-metadata-my-permissions-form > .csui-top-align-label.cs-form .alpaca-container-item > .binf-form-group.alpaca-field .cs-formfield .btn-container,
+.d2-metadata-security-template-form > .csui-top-align-label.cs-form .alpaca-container-item > .binf-form-group.alpaca-field .cs-formfield .btn-container {
+  max-width: inherit;
+}
+
+.d2-metadata-my-permissions-form > .csui-top-align-label.cs-form .alpaca-container-item > .binf-form-group.alpaca-field .cs-formfield .placeholder,
+.d2-metadata-security-template-form > .csui-top-align-label.cs-form .alpaca-container-item > .binf-form-group.alpaca-field .cs-formfield .placeholder {
+  display: none;
+}
+
+.d2-metadata-my-permissions-form > .csui-top-align-label.cs-form .alpaca-container-item > .binf-form-group.alpaca-field .cs-formfield .btn-container > button,
+.d2-metadata-security-template-form > .csui-top-align-label.cs-form .alpaca-container-item > .binf-form-group.alpaca-field .cs-formfield .btn-container > button {
+  overflow-y: auto;
+}
+
+.d2-metadata-my-permissions-form > .csui-top-align-label.cs-form .alpaca-container-item > .binf-form-group.alpaca-field .cs-formfield .btn-container > button > span,
+.d2-metadata-security-template-form > .csui-top-align-label.cs-form .alpaca-container-item > .binf-form-group.alpaca-field .cs-formfield .btn-container > button > span {
+  white-space: normal;
+}
+
+.d2-metadata-my-permissions-form > .csui-top-align-label.cs-form .alpaca-container-item > .binf-form-group.alpaca-field .binf-col-sm-9,
+.d2-metadata-security-template-form > .csui-top-align-label.cs-form .alpaca-container-item > .binf-form-group.alpaca-field .binf-col-sm-9,
+.d2-search-user-permissions-form > .csui-top-align-label.cs-form .alpaca-container-item > .binf-form-group.alpaca-field .binf-col-sm-9 {
+  width: 95%;
+}
+
+.d2-metadata-my-permissions-form .cs-form .binf-col-md-6,
+.d2-metadata-security-template-form .cs-form .binf-col-md-6,
+.d2-search-user-permissions-form .cs-form .binf-col-md-6 {
+  width: 100%;
+}
+
+.d2-metadata-my-permissions-form .cs-form .binf-col-md-6.cs-form-rightcolumn,
+.d2-metadata-security-template-form .cs-form .binf-col-md-6.cs-form-rightcolumn,
+.d2-search-user-permissions-form .cs-form .binf-col-md-6.cs-form-rightcolumn {
+  padding: 0;
+}
+
+.d2-metadata-permission-set-table .metadata-permission-set-table {
+  margin-top: -48px;
+  margin-left: -16px;
+}
+
+.csui-metadata-permissions > .d2-search-user-permissions-form {
+  flex: 1 1000 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: none;
+  padding: 0 16px 0 16px;
+}
+
+.csui-metadata-permissions > .d2-search-user-permissions-form > .cs-form.csui-general-form:not(.csui-required-fields-only) {
+  min-height: 2em;
+}
+
+.csui-metadata-permissions > .d2-search-user-permissions-form .csui-top-align-label.cs-form .alpaca-container-item > .binf-form-group.alpaca-field .binf-col-sm-9 {
+  min-width: 368px;
+}
+
+.csui-metadata-permissions .user-permissions-div {
+  margin: 0 48px 0 32px;
+}
+
+.csui-metadata-permissions .user-permissions-div-inner {
+  flex: 1 1000 auto;
+  display: flex;
+  flex-direction: row;
+  border-top: none;
+  background-color: #eef2f4;
+  align-items: center;
+}
+
+.csui-metadata-permissions .user-permissions-div-inner > .user-permissions-value {
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 9px 16px 7px 10px;
+}
+
+.csui-metadata-permissions .user-permissions-div-inner > .user-permissions-value .d2-highlight-text {
+  font-weight: 700;
+}
+
+.csui-metadata-permissions .user-permissions-div-inner > .csui-icon.d2-icon-notification-information-blue {
+  height: 18px;
+  width: 18px;
+  min-height: 18px;
+  min-width: 18px;
+  position: relative;
+  left: 16px;
+  margin-right: 16px;
+}
+
+.csui-metadata-permissions .user-permissions-div:after {
+  content: "";
+  border-top: 1px solid #2E3D98;
+  display: block;
+  width: 100%;
+}
+
+.more-than-10-rows {
+  height: 100%;
+}
+
+.d2-table-cell-with-flyout .d2-permissions-flyout-header {
+  font-size: 12px;
+  color: #757575;
+}
+
+.d2-table-cell-with-flyout .d2-permissions-flyout-body {
+  font-size: 13px;
+}
+
+@media (min-width: 1400px) {
+  .csui-metadata-permissions > .d2-metadata-security-template-form {
+    margin-top: -16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .csui-metadata-permissions > .user-permissions-div {
+    margin-top: 7.5px;
+  }
+}

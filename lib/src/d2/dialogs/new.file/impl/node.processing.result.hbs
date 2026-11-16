@@ -1,0 +1,29 @@
+{{#if title}}
+<div class="tile-header">
+
+  {{#if icon}}
+    <div class="tile-type-icon">
+      <span class="icon title-icon {{icon}}" aria-label="{{expandAria}}"></span>
+    </div>
+  {{else}}
+    {{#if imageUrl}}
+      <div class="tile-type-image {{imageClass}}">
+        <span class="tile-type-icon tile-type-icon-img"><img src="{{imageUrl}}"
+                                                             alt="{{expandAria}}"></span>
+      </div>
+    {{/if}}
+  {{/if}}
+
+  <div class="tile-title">
+    <h4 class="csui-heading">{{title}}</h4>
+  </div>
+
+</div>
+{{/if}}
+
+<div class="tile-content" role="listbox">
+  <div class="binf-list-group"></div>
+  
+</div>
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,58 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-search-header .d2-query-form-search-span {
+  display: inline-block;
+  width: 32px;
+}
+
+.csui-search-header .d2-query-form-search-span .icon {
+  background-repeat: no-repeat;
+  display: block;
+  height: 32px;
+  width: 32px;
+}
+
+.csui-search-header .d2-query-form-search-span .icon-query-form-search {
+  background-image: url('./image/queryform-default.png') !important;
+}
+
+.csui-search-header .d2-query-form-search-span .icon-query-form-search:active {
+  background-image: url('./image/queryform-default-md.png') !important;
+}
+
+.csui-search-header .d2-query-form-search-span .icon-query-form-search:hover {
+  background-image: url('./image/queryform-default-mo.png') !important;
+}
+
+.csui-search-header .d2-query-form-search-span .icon-query-form-search.active {
+  background-image: url('./image/queryform-active.png') !important;
+}
+
+.csui-search-header .d2-query-form-search-span .icon-query-form-search.active:active {
+  background-image: url('./image/queryform-active-md.png') !important;
+}
+
+.csui-search-header .d2-query-form-search-span .icon-query-form-search.active:hover {
+  background-image: url('./image/queryform-active-mo.png') !important;
+}
+
+.d2-query-form-view .cs-metadata-properties .ps-scrollbar-y-rail {
+  right: 0 !important;
+}
+
+.d2-query-form-view .csui-perfect-scrolling.ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+  margin-right: 3px;
+}
+
+.csui-search-header .d2-query-form-search-span:hover {
+  cursor: pointer;
+}
+
+.csui-search-results .d2-query-form-main-view {
+  height: calc(100vh - 190px);
+  position: relative; 
+  flex: 1 1 100%;
+  transition: max-width 1s ease-in;
+}
+

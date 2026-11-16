@@ -1,0 +1,8 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .perspective-module-view .binf-navbar-brand > .csui-logo > .csui-logo-image {
+    background-image: url('../../pages/signin/impl/image/header_d2_li.svg');
+    background-size: auto 40px;
+    height: 40px;
+}

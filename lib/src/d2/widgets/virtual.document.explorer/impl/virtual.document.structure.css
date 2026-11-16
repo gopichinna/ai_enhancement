@@ -1,0 +1,314 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-vd-structure {
+  width: 100%;
+  height: 100%;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree-container {
+  width: inherit;
+  height: inherit;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree-container:not(.csui-normal-scrolling) {
+  overflow: hidden;
+}
+
+.binf-widgets .d2-vd-structure .csui-perfect-scrolling.ps-container > .ps-scrollbar-y-rail {
+  right: 2px;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree .fancytree-level-2[aria-expanded=true] {
+  border-bottom: none;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree.fancytree-container {
+  width: 100%;
+  height: auto;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree.fancytree-container,
+.binf-widgets .d2-vd-structure .d2-tree.fancytree-container tbody {
+  display: block;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree:focus {
+  outline: none;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree tr {
+  width: 100%;
+  display: flex;
+}
+
+.binf-widgets .d2-vd-structure .csui-perfect-scrolling .d2-tree tr {
+  padding-right: 8px;
+}
+
+.binf-widgets .d2-vd-structure .csui-normal-scrolling .d2-tree tr {
+  padding-right: 16px;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td {
+  flex: 0 0 0;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td:first-child {
+  padding-left: 4px;
+  flex: 1 1 auto;
+  width: 32px;
+}
+
+.binf-widgets .d2-vd-structure.fix-msie .d2-tree td:first-child {
+  width: 100%;
+}
+
+
+
+.binf-widgets .d2-vd-structure:not(.show-versions) .d2-tree td:nth-child(4) {
+  display: none;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td .icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td .icon.drag-dots {
+  width: 18px;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td .icon-reserve {
+  background-size: 16px;
+  background-image: url("images/icon_reserve.svg");
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td .d2-table-cell-version_number {
+  display: block;
+  position: relative;
+  padding: 7px 4px;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td .d2-table-cell-version_number .d2-cell-version-wrapper {
+  height: 16px;
+  display: flex;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td .d2-table-cell-version_number .d2-cell-version-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 1px;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td .d2-table-cell-version_number .version-text {
+  font-size: 10px;
+  font-weight: normal;
+  top: 0;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td .inline-context-menu {
+  visibility: hidden;
+  padding-left: 2px;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td .inline-context-menu .csui-inline-menu {
+  display: inline-flex;
+}
+
+.binf-widgets .d2-vd-structure.fix-msie .d2-tree td .inline-context-menu {
+  display: inline-block;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td .drag-dots {
+  visibility: hidden;
+  background-image: url("images/drag_dots21.svg");
+  background-position: 8px center;
+  background-size: 8px 18px;
+  position: absolute;
+  left: 0;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree:not(.fancytree-d2-multiselect) tr:not(.fancytree-focused):hover td .inline-context-menu,
+.binf-widgets .d2-vd-structure .d2-tree:not(.fancytree-d2-multiselect) tr.fancytree-focused td .inline-context-menu,
+.binf-widgets .d2-vd-structure .d2-tree.fancytree-d2-multiselect tr:not(.fancytree-selected):hover td .inline-context-menu {
+  visibility: visible;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree:not(.fancytree-d2-multilevelselect) tr:not(:first-child):hover,
+.binf-widgets .d2-vd-structure .d2-tree.fancytree-d2-multilevelselect tr:not(.fancytree-selected):not(:first-child):hover {
+  cursor: pointer;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree:not(.fancytree-ext-vdoc-snapshot):not(.fancytree-d2-multilevelselect) tr:not(:first-child):hover td .drag-dots,
+.binf-widgets .d2-vd-structure .d2-tree.fancytree-d2-multilevelselect:not(.fancytree-ext-vdoc-snapshot) tr:not(.fancytree-selected):not(:first-child):hover td .drag-dots {
+  visibility: visible;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree tr:hover {
+  background-color: #B2BEC5;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td .inline-context-menu .csui-inline-menu .csui-menu-btn,
+.binf-widgets .d2-vd-structure .d2-tree td .inline-context-menu .csui-inline-menu .binf-dropdown .binf-dropdown-menu a {
+  display: flex;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td .inline-context-menu .csui-inline-menu .csui-menu-btn {
+  align-items: center;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td .inline-context-menu .icon.icon-toolbar-more {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-size: 18px;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree td .inline-context-menu .icon.icon-toolbar-more:hover {
+  background-color: #F3FBFF;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree .csui-table-actionbar {
+  height: 32px;
+  display: flex;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree .csui-table-actionbar > ul.binf-nav {
+  padding: 0;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree .csui-table-actionbar > ul.binf-nav > li > a {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree .csui-table-actionbar > ul.binf-nav > li.binf-open > a {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+
+.binf-widgets .d2-vd-structure .d2-tree .csui-inline-menu .csui-table-actionbar .binf-dropdown > .binf-dropdown-menu {
+  margin-top: 0;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree .fancytree-active,
+.binf-widgets .d2-vd-structure .d2-tree .fancytree-selected {
+  background-color: #CBD3D9;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree .fancytree-active {
+  font-weight: bold;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree .fancytree-node {
+  display: flex;
+  width: 100%;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree .fancytree-node > span {
+  flex: 0 0 20px;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree .fancytree-node .fancytree-title {
+  width: 1px;
+  flex: 1 1 auto;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree.fancytree-container.fancytree-ext-vdoc tr {
+  padding-left: 0;
+}
+
+.binf-widgets #fancytree-drop-marker.fancytree-drop-after,
+.binf-widgets #fancytree-drop-marker.fancytree-drop-before {
+  position: fixed;
+  height: 2px;
+  background: #2E3D98;
+  
+  left: var(--vd-dropover-pos-left) !important;
+  
+}
+
+
+.binf-widgets #fancytree-drop-marker.drop-marker-hide {
+  height: 0;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree.fancytree-container.fancytree-ext-vdoc tr.drag-start {
+  opacity: 0.5;
+  background-color: #CBD3D9;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree tr.drag-over {
+  box-shadow: inset 0 0 0 1px #2E3D98;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree .drag-item {
+  position: absolute;
+  height: 150px;
+  width: 100vw;
+  z-index: 9999;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree .drag-item tr {
+  margin-top: 14px;
+  height: 32px;
+  width: 330px;
+  background-color: #B2BEC5;
+  border: 1px dashed #627783;
+  box-sizing: border-box;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree .drag-item tr td .drag-dots {
+  visibility: visible;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree .drag-item tr.multiple-drag .back-layer {
+  position: absolute;
+  margin-top: 14px;
+  height: 32px;
+  width: 330px;
+  border: 1px dashed #627783;
+  box-sizing: border-box;
+  background-color: #B2BEC5;
+  left: 5px;
+  top: 5px;
+  z-index: -1;
+}
+
+.binf-widgets .d2-vd-structure .d2-tree .drag-item tr.multiple-drag .node-count {
+  position: absolute;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #333333;
+  background: #FFFFFF;
+  height: 20px;
+  width: 20px;
+  top: 2px;
+  left: 17px;
+  border: 1px solid #627783;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+
+.d2-vd-structure .d2-tree tbody td:nth-child(5){
+  flex: 0 0 0 ;
+}
+
+
+  
+
+

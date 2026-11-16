@@ -1,0 +1,18 @@
+{
+  "id": "c2slogging",
+  "name": "D2SV client to server logging",
+  "finishInstruction": "Remember to add pattern\n\"/clientlog\"\nto the value of property\n\"rest.security.anonymous.url.patterns\"\nin \"rest-api-runtime.properties\" file of your D2-Smartview deployment",
+  "descriptors": [
+    {
+      "name": "app",
+      "properties": {
+        "pluginsGroupId": "com.opentext.d2.smartview",
+        "pluginArtifactId": "D2SV-Client2Server-Logging",
+        "pluginVersion": "1.0.0",
+        "pluginDesc": "Smartview client to server logging",
+        "pluginPackage": "C2SLogging",
+        "includeSVSupport": true
+      }
+    }
+  ]
+}

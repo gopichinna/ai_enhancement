@@ -1,0 +1,18 @@
+<ul class="{{#if showHorizontal}}d2-listfield-chicklets{{/if}} d2-listfield-selectedvalues {{#if isSortable}}d2-listfield-sortable{{/if}}">
+  {{#if readOnly}}
+    {{#if noData}}
+      <li>
+      <div class="btn-container">
+        <button aria-disabled="true" title="{{noValue}}"">
+        <span class="placeholder" title="{{emptyLabel}}">{{emptyLabel}}</span>
+        </button>
+      </div>
+       </li>
+    {{/if}}
+  {{/if}}
+</ul>
+<div class="d2-list-toolbar">
+  <a href="#" class="d2-list-toolbar-action" data-d2-list-toolbar-action="showMore">{{showMoreLabel}}</a>
+  <a href="#" class="d2-list-toolbar-action" data-d2-list-toolbar-action="showLess">{{showLessLabel}}</a>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

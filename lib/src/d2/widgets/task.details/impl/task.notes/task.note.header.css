@@ -1,0 +1,57 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-task-note-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.d2-task-note-header .note-author-container {
+  display: flex;
+  flex: 1 1 auto;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+.d2-task-note-header .note-author-profile-container {
+  margin-right: 8px;
+  align-self: center;
+}
+
+.d2-task-note-header .note-author-name-email {
+  width: calc(100% - 24px);
+}
+
+.d2-task-note-header .note-author-name-email span.note-author,
+.d2-task-note-header .note-author-name-email span.note-author-email {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.d2-task-note-header .note-author-name-email span.note-author-email,
+.d2-task-note-header .note-date-container span.note-time {
+  font-size: 12px;
+  line-height: 18px;
+  color: #757575;
+
+}
+
+.d2-task-note-header .note-date-container .note-date,
+.d2-task-note-header .note-date-container .note-time {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+}
+
+.d2-task-note-header .note-date-container {
+  margin: 0 16px;
+  flex: 0 0 auto;
+}
+
+.d2-task-note-header .d2-note-userprofile-pic .esoc-userwidget-default-avatar {
+  display: inline-flex;
+  height: 24px;
+  width: 24px;
+}

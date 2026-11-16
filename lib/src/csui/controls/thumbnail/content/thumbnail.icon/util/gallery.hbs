@@ -1,0 +1,40 @@
+<div class="csui-current-total-items">{{currentItem}} / {{totalItems}}</div>
+<div class="cs-close csui-thumbcarousel-dialog-close smart-v2-icon-parent" title="{{lang.galleryCloseButtonTooltip}}"
+          tabindex="0" aria-label="{{lang.galleryCloseButtonAria}}" role="button">
+    {{{icon-v2 iconName="csui_action_close32" states="true" theme="dark"}}}
+</div>
+<div class="csui-active-item-name">
+  <span class="item-name">{{currentItemName}}</span>
+  <span title="{{lang.downloadTitle}}" class="icon icon-download-white csui-download-gallery"
+        tabindex="0" aria-label="{{lang.downloadTitle}}" role="button"></span>
+  {{#if enableZoomAndRotation}}
+    <span title="{{lang.rotateLeftTitle}}" id="leftRotation"  class="csui-image-icons csui-rotate-gallery icon-rotate-left  csui-left-rotation"tabindex="0" aria-label="{{lang.rotateLeftTitle}}" role="button"></span>
+    <span title="{{lang.rotateRightTitle}}" id="rightRotation"  class="csui-image-icons csui-rotate-gallery icon-rotate-right  csui-right-rotation"tabindex="0" aria-label="{{lang.rotateRightTitle}}" role="button"></span>
+    <span title="{{lang.zoomInTitle}}" id="zoomInButton" class="csui-image-icons csui-zoom-gallery icon-zoom-in"tabindex="0" aria-label="{{lang.zoomInTitle}}" role="button"></span>
+    <span title="{{lang.zoomOutTitle}}"  id="zoomOutButton" class="csui-image-icons csui-zoom-gallery icon-zoom-out"tabindex="0" aria-label="{{lang.zoomOutTitle}}" role="button"></span>
+  {{/if}}
+</div>
+<div class="csui-carousel-container">
+  <div class="csui-preview-carousal-container">
+    <div id="binf-carousel" class="binf-carousel binf-slide" data-binf-ride="carousel" {{#if onlyVideos}} data-interval="false"{{/if}}>
+      <a class="binf-left binf-carousel-control" href="#binf-carousel" data-binf-slide="binf-prev"
+         title="{{lang.previousTitle}}" tabindex="0" aria-label="{{lang.previousTitle}}">
+        <span class="icon-previous-gallery" aria-hidden="true"></span>
+      </a>
+      <div class="csui-preview-carousal"></div>
+      <a class="binf-right binf-carousel-control" href="#binf-carousel" data-binf-slide="binf-next"
+         title="{{lang.nextTitle}}" tabindex="0" aria-label="{{lang.nextTitle}}">
+        <span class="icon-next-gallery" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+  <div class="csui-carousel-film-strip">
+    <div class="binf-carousel binf-slide binf-filmstrip-container" data-interval="false"></div>
+    <div class="binf-left binf-carousel-control csui-thumb-toggle-control">
+    <span class="binf-glyphicon binf-glyphicon-menu-down" aria-hidden="true"
+          title="{{lang.hideTitle}}"></span>
+    </div>
+  </div>
+</div>
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,73 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-table-cell-type {
+  padding: 0;
+}
+
+.binf-widgets .binf-table .csui-table-cell-type {
+  min-width: 42px;
+  max-width: 42px;
+}
+
+.binf-widgets .binf-table .csui-table-cell-type:first-child {
+  min-width: 62px;
+  max-width: 62px;
+}
+
+.binf-widgets .binf-table .csui-table-cell-type.csui-table-cell-last-visible {
+  min-width: 56px;
+  max-width: 56px;
+}
+
+.binf-widgets .binf-table .csui-table-cell-type > * {
+  padding: 0;
+}
+
+.binf-widgets .csui-table-cell-type .csui-table-cell-default-action {
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.binf-widgets.accessibility .csui-table-cell-type .csui-table-cell-default-action {
+  justify-content: flex-start;
+}
+
+.binf-widgets .csui-nodetable:not(.csui-wrap-text) .csui-table-cell-type .csui-table-cell-default-action {
+  align-items: center;
+}
+
+.binf-widgets .binf-table.dataTable .csui-table-cell-type .icon-sortArrowUp,
+.binf-widgets .binf-table.dataTable .csui-table-cell-type .icon-sortArrowDown {
+  margin-left: 0;
+}
+
+.binf-widgets .csui-table-cell-type > .icon-sortArrowUp,
+.binf-widgets .csui-table-cell-type > .icon-sortArrowDown {
+  margin-left: 0;
+}
+
+.binf-widgets .csui-table-cell-type > span {
+  vertical-align: middle;
+}
+
+.binf-widgets .csui-table-cell-type.csui-table-cell-no-default-action {
+  cursor: auto;
+}
+
+.binf-widgets .csui-table-cell-type.csui-table-cell-no-default-action .csui-icon,
+tr.csui-cut-row > td.csui-table-cell-type .csui-icon {
+  opacity: 0.5;
+}
+
+.binf-widgets .csui-table-cell-type .csui-table-cell-no-default-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.binf-widgets .binf-table.dataTable > thead > tr > th.csui-table-cell-type {
+  text-overflow: clip;
+}

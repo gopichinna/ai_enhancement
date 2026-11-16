@@ -1,0 +1,308 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-wf-timeline-task-container {
+  border-top: 1px solid #cccccc;
+}
+
+.binf-widgets .d2-wf-timeline-task-container.subitems-alert {
+  background-color: rgba(223, 51, 36, .1);
+}
+
+.binf-widgets .d2-wf-timeline-task-container.subitems-alert.type-info {
+  background-color: rgba(46, 61, 152, .1);
+}
+
+.binf-widgets .d2-wf-timeline-task-container:last-child {
+  border-bottom: 1px solid #cccccc;
+}
+
+.binf-widgets .d2-wf-timeline-task-container .d2-wf-timeline-task-container:last-child {
+  border-bottom: none;
+}
+
+.binf-widgets .d2-wf-timeline-task-container.item-expanded .d2-wf-timeline-task {
+  background-color: #EDF0F2;
+}
+
+.binf-widgets .d2-wf-timeline-task-container.subitems-alert.item-expanded .d2-wf-timeline-task,
+.binf-widgets .d2-wf-timeline-task-container.subitems-alert .d2-wf-timeline-task.selected {
+  background-color: transparent;
+}
+
+.binf-widgets .d2-wf-timeline-task-container .d2-wf-timeline-task:hover,
+.binf-widgets .d2-wf-timeline-task-container.subitems-alert .d2-wf-timeline-task:hover,
+.binf-widgets .d2-wf-timeline-task-container .d2-wf-timeline-task.selected:hover {
+  background-color: #B2BEC5;
+}
+
+.binf-widgets .d2-wf-timeline-task-container .d2-wf-timeline-task.selected {
+  background-color: #CBD3D9;
+}
+
+.binf-widgets .d2-wf-timeline-task {
+  height: 118px;
+  cursor: pointer;
+}
+
+.binf-widgets.csui-on-ipad .d2-wf-timeline-task {
+  height: 150px;
+}
+
+.binf-widgets .d2-workflow-timeline-subitems > .d2-wf-timeline-task-container .d2-wf-timeline-task {
+  height: 96px;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-summary-container {
+  flex-basis: 181px;
+}
+
+.binf-widgets .fix-msie .d2-wf-timeline-task > .item-summary-container {
+  flex-basis: 179px;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-summary-container > .summary-icon {
+  top: 32px;
+  right: 70px;
+  width: 40px;
+  height: 40px;
+  background-size: 28px;
+}
+
+.binf-widgets .d2-workflow-timeline-subitems > .d2-wf-timeline-task-container .d2-wf-timeline-task > .item-summary-container > .summary-icon {
+  width: 32px;
+  height: 32px;
+  top: 18px;
+  right: 57px;
+  background-size: 22px;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-summary-container .linkage {
+  flex-basis: calc(50% - 20px);
+  max-height: 52px;
+}
+
+.binf-widgets .d2-workflow-timeline-subitems > .d2-wf-timeline-task-container .d2-wf-timeline-task > .item-summary-container .linkage {
+  flex-basis: calc(50% - 32px);
+  max-height: 36px;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-summary-container .summary-text {
+  padding-top: 76px;
+  word-break: break-all;
+}
+
+.binf-widgets .d2-workflow-timeline-subitems > .d2-wf-timeline-task-container .d2-wf-timeline-task > .item-summary-container .summary-text {
+  padding-left: 45px;
+  padding-top: 56px;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-summary-container .selection-control {
+  position: absolute;
+  left: 12px;
+  top: 44px;
+  width: 14px;
+  height: 14px;
+  z-index: 1;
+}
+
+.binf-widgets .d2-workflow-timeline-subitems > .d2-wf-timeline-task-container .d2-wf-timeline-task > .item-summary-container .selection-control {
+  top: 27px;
+}
+
+.binf-widgets .d2-wf-timeline-task-container .d2-wf-timeline-task > .item-summary-container .selection-control .csui-checkbox-view {
+  visibility: hidden;
+}
+
+.binf-widgets .d2-wf-timeline-task-container .d2-wf-timeline-task:hover > .item-summary-container .selection-control .csui-checkbox-view,
+.binf-widgets .d2-wf-timeline-task-container .d2-wf-timeline-task.selected > .item-summary-container .selection-control .csui-checkbox-view,
+.binf-widgets .d2-wf-timeline-task-container .d2-wf-timeline-task.focused > .item-summary-container .selection-control .csui-checkbox-view {
+  visibility: visible;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-summary-container .selection-control .csui-checkbox-view .csui-checkbox:focus {
+  outline-offset: 1px;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-details-container {
+  position: relative;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-details-container .item-details {
+  max-width: calc(100%);
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-details-container .item-details .header {
+  max-width: calc(100% - 74px);
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  padding-right: 14px;
+}
+
+.binf-widgets .d2-wf-state-finished .d2-wf-timeline-task > .item-details-container .item-details .header,
+.binf-widgets .d2-wf-state-aborted .d2-wf-timeline-task > .item-details-container .item-details .header {
+  max-width: calc(100% - 42px);
+}
+
+.binf-widgets .d2-wf-timeline-task-container .d2-wf-timeline-task-container .d2-wf-timeline-task > .item-details-container .item-details .header {
+  max-width: calc(100%);
+  padding-right: 0;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-details-container .item-details .header .title {
+  height: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-details-container .item-details .header .comments {
+  flex: 0 0 20px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 2px;
+  cursor: pointer;
+  position: relative;
+  top: -6px;
+  height: 32px;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-details-container .item-details .status {
+  height: 14px;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-details-container .item-details .status .d2-workflow-state-view {
+  height: inherit;
+  background-color: transparent;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-details-container .item-details .status .d2-workflow-state-view .csui-icon {
+  flex: 0 0 14px;
+  margin: 0 6px 0 0;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-details-container .item-details .status .d2-workflow-state-view .d2-workflow-state{
+  margin: 0;
+}
+
+.binf-widgets .d2-wf-timeline-task-container.item-expanded .d2-wf-timeline-task > .item-details-container .item-details .item-property-list > .item-property .property-label,
+.binf-widgets .d2-wf-timeline-task-container.subitems-alert .d2-wf-timeline-task > .item-details-container .item-details .item-property-list > .item-property .property-label,
+.binf-widgets .d2-wf-timeline-task-container .d2-wf-timeline-task:hover > .item-details-container .item-details .item-property-list > .item-property .property-label,
+.binf-widgets .d2-wf-timeline-task-container .d2-wf-timeline-task.selected > .item-details-container .item-details .item-property-list > .item-property .property-label {
+  color: #333333;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-details-container .inline-context-menu {
+  position: absolute;
+  right: 58px;
+  top: 10px;
+  height: 32px;
+  width: 32px;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-details-container .inline-context-menu .csui-inline-menu,
+.binf-widgets .d2-wf-timeline-task > .item-details-container .inline-context-menu.no-menu .csui-inline-menu {
+  visibility: hidden;
+}
+
+.binf-widgets .d2-workflow-timeline:not(.item-selected) .d2-wf-timeline-task:hover > .item-details-container .inline-context-menu .csui-inline-menu,
+.binf-widgets .d2-workflow-timeline:not(.item-selected) .d2-wf-timeline-task.focused > .item-details-container .inline-context-menu .csui-inline-menu,
+.binf-widgets.csui-on-ipad .d2-workflow-timeline:not(.item-selected) .d2-wf-timeline-task > .item-details-container .inline-context-menu .csui-inline-menu,
+.binf-widgets .d2-workflow-timeline.item-selected .d2-wf-timeline-task.selected > .item-details-container .inline-context-menu .csui-inline-menu {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-details-container .inline-context-menu .csui-inline-menu .csui-menu-btn-region .binf-nav .binf-dropdown .binf-dropdown-menu a {
+  display: flex;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-details-container .item-expand-collapse {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  max-width: 18px;
+  margin-left: 16px;
+  margin-right: 8px;
+}
+
+.binf-widgets .d2-wf-timeline-task > .item-details-container .item-expand-collapse.enabled {
+  cursor: pointer;
+}
+
+.binf-widgets .d2-workflow-timeline-subitems {
+  height: 0;
+  overflow: hidden;
+  transition: height .3s ease-in-out;
+}
+
+.binf-widgets .d2-workflow-timeline-subitems.notransition {
+  transition: none;
+}
+
+.d2-workflow-timeline-notes-popup.binf-popover.binf-bottom {
+  min-width: 284px;
+  max-width: 284px;
+  border-top: 4px solid #0084CE;
+}
+.d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-popover-content{
+  padding: 0;
+}
+.d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-popover-content .d2-task-note{
+  padding: 0 16px 8px 16px;
+  cursor: auto;
+}
+.d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-popover-content .d2-task-note:hover{
+  background-color: unset;
+}
+.d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-arrow:after{
+  top: -3px;
+  border-bottom-color: #0084CE;
+}
+.d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-popover-content .d2-workflow-notes-popover .more-link-container{
+  height: 28px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  text-align: right;
+  color: #232E72;
+  width: 100%;
+  padding: 0 16px 0 16px;
+}
+.d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-popover-content .d2-workflow-notes-popover .more-link-container .more-link{
+  cursor: pointer;
+}
+.d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-popover-content .d2-task-note .d2-task-note-content{
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 0;
+  display: -webkit-box;
+}
+.d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-popover-content .d2-task-note .d2-task-note-header .note-date-container{
+  margin: 0;
+}
+
+.binf-widgets .d2-workflow-timeline-item .csui-loading-parent-wrapper {
+  padding-left: 4px;
+  margin: 8px 0 0 8px;
+  position: absolute;
+  right: 16px;
+}
+
+.binf-widgets .d2-wf-timeline-task:focus,
+.binf-widgets .d2-wf-timeline-task > .item-details-container .item-details .header .comments:focus,
+.binf-widgets .d2-wf-timeline-task > .item-details-container .inline-context-menu .csui-menu-btn:focus,
+.binf-widgets .d2-wf-timeline-task > .item-details-container .item-expand-collapse:focus {
+  outline: 1px dotted;
+}
+
+
+

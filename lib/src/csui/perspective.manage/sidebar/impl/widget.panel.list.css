@@ -1,0 +1,18 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets.perspective-editing.csui-sidebar-enabled .csui-sidebar .csui-empty-search-results{
+    min-height: 150px;
+    background-repeat: no-repeat;
+    background-position: center 16px;
+    background-size: 112px 112px;
+    background-image: url('../../../themes/carbonfiber/image/icons/smart_ill_list220.svg')
+}
+
+.binf-widgets.perspective-editing.csui-sidebar-enabled .csui-sidebar .csui-no-search-result-message{
+    position: relative;
+    top: 128px;
+    padding: 8px;
+    text-align: center;
+    font-size: 12px;
+}

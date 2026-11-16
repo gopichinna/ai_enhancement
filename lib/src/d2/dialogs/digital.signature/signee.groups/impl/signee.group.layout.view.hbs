@@ -1,0 +1,24 @@
+<div class="signee-group-separator-container">
+  <div class="signee-group-seprator-arrow"></div>
+  <div class="signee-group-seprator-dashed"></div>
+</div>
+<div class="signee-group-view" tabindex="0">
+  <div class="signee-group-header">
+    <span class="signee-group-title">{{groupTitle}}</span>
+    {{#if showRemoveIcon}}
+      <span class="signee-remove-group" tabindex="-1" title="{{lang.RemoveGroup_Tooltip}}"></span>
+    {{/if}}
+  </div>
+  <div class="signee-group-droppable-region">
+    <div class="signee-drop-placeholder"><span>{{lang.SigneeDropPlaceHolderText}}</span></div>
+    <div class="signee-group-body">
+      <div class='signee-list'></div>
+    </div>
+    <div class="signee-group-footer">
+      <button class="add-signer-button" tabindex="-1" title="{{lang.AddSigneeButton_Label}}">{{lang.AddSigneeButton_Label}}</button>
+      {{#if showDragDropMessage}}<div class="signature-drag-drop-message">{{lang.DragAndDropMessage}}</div>{{/if}}
+    </div>
+  </div>
+  <div class='signee-form'></div>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,56 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-task-item-title {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #FFFFFF;
+  padding: 0 16px 0 19px;
+}
+
+.binf-widgets .d2-task-item-title > * {
+  flex: 0 0 32px;
+}
+
+.binf-widgets .d2-task-item-title .icon-task-go-back {
+  flex-basis: 32px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.binf-widgets .d2-task-item-title .icon-task-go-back:focus,
+.binf-widgets .d2-task-item-title .icon-task-go-back:active {
+  outline: none;
+}
+
+.binf-widgets .d2-task-item-title .icon-task-go-back svg {
+  position: relative;
+  left: -4px;
+}
+
+.binf-widgets .d2-task-item-title .item-title-container {
+  display: flex;
+  max-width: calc(100% - 32px);
+  flex: 1 1 auto;
+}
+
+.binf-widgets .d2-task-item-title .item-title-container .csui-item-title {
+  margin: 0;
+}
+
+.binf-widgets .d2-task-item-title .item-title-container .csui-item-name .title {
+  color: #323232;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 21px;
+  padding: 0 6px 0 4px;
+}
+
+.binf-widgets .d2-task-item-title .item-title-container .csui-item-name .title .csui-item-name-block {
+  white-space: normal;
+}

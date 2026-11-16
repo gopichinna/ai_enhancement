@@ -1,0 +1,62 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-combofield.d2-user-combofield .d2-combofield-options > li > a {
+  padding: 0 4px;
+}
+
+.binf-widgets .d2-combofield.d2-user-combofield .d2-combofield-options > li.d2-none-item > a {
+  padding: 16px 14px;
+}
+
+.binf-widgets .d2-combofield.d2-user-combofield .cs-field-write .binf-popover {
+  position: fixed;
+}
+
+.binf-widgets .d2-combofield.d2-user-combofield .cs-field-write.popover-hidden .binf-popover {
+  display: none !important;
+}
+
+.binf-widgets .d2-combofield.d2-user-combofield .d2-combofield-options > li.d2-searchResultCountDetails.active {
+  background: initial;
+}
+
+.binf-widgets .d2-combofield.d2-user-combofield .d2-combofield-options .d2-combo-selected .user-info .info-text {
+  color: #FFF;
+}
+
+.binf-widgets .d2-combofield.d2-user-combofield .d2-add-new-option {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+}
+
+.binf-widgets .d2-combofield.d2-user-combofield .d2-add-new-option .d2-select-add-new-option > a {
+  color: #333;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.binf-widgets .alpaca-field-d2usercombo .d2-combofield.d2-user-combofield .cs-field-write .binf-help-block.alpaca-message.d2-user-error-message {
+  margin-left: 0;
+  width: 100%;
+}
+
+.binf-widgets .alpaca-field-d2usercombo .d2-combofield.d2-user-combofield .cs-field-write > .user-info {
+  position: absolute;
+  visibility: hidden;
+  max-width: 270px;
+}
+
+.binf-widgets .alpaca-field-d2usercombo .d2-combofield.d2-user-combofield .cs-field-write > .user-info .info-text {
+  white-space: normal;
+}
+
+.binf-widgets .alpaca-field-d2usercombo .d2-combofield.d2-user-combofield .cs-field-write > .user-info .info-text.user-id {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.binf-widgets .alpaca-field-d2usercombo .d2-combofield.d2-user-combofield .cs-field-write > .user-info .info-text.user-address {
+  word-break: break-all;
+}

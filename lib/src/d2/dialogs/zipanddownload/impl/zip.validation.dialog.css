@@ -1,0 +1,175 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.enable-sub-folder-disabled{
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .cs-form.csui-general-form.d2-form .alpaca-container-item{
+  margin-bottom: 8px;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .d2-zip-form-wrapper .csui-general-form.d2-form,
+.d2-stepper-wizard .d2-zip-validation-dialog-view .toggle-switch-container {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding-left: 64px;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .d2-zip-form-wrapper .csui-general-form.d2-form{
+  padding-left: 56px;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .d2-zip-form-wrapper .csui-general-form.d2-form .alpaca-control{
+  padding-left:8px;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .cs-form.csui-general-form.d2-form .alpaca-field .binf-form-group .binf-control-label {
+  padding-left: 10px;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .cs-form.csui-general-form.d2-form .alpaca-field .cs-formfield .cs-field-write {
+  padding-left: 0;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .toggle-switch-container .toggle-switch {
+  display: flex;
+  height: 28px;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .toggle-switch-container .toggle-switch-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  padding-top: 4px;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .separator {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #CCCCCC;
+  margin-top: 15px;
+  height:1px;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .processing-label {
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  height: 36px;
+}
+.d2-stepper-wizard .d2-zip-validation-dialog-view .processing-icon {
+  background: transparent url("images/validation-progress.svg") no-repeat center;
+  background-size: contain;
+  height: 220px;
+  margin-top: 47px;
+}
+
+.binf-widgets .d2-zip-validation-dialog-view .d2-zip-validation-progress .dots-loader {
+  position: relative;
+  margin: 4px 46% 0 46%;
+}
+
+.binf-widgets .d2-zip-validation-dialog-view .show-file-Info {
+  height: 35px;
+  display: flex;
+}
+
+.binf-widgets .d2-zip-validation-dialog-view .show-file-Info .files-info-message {
+  height: 18px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #333333;
+  margin-left: 6px;
+  padding-top: 6px;
+}
+
+.binf-widgets .d2-zip-validation-dialog-view .show-file-Info .info-icon {
+  background-image: url(images/information.svg);
+  width: 18px;
+  height: 18px;
+  margin-left: 0;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .download-icon {
+  background: transparent url("images/full-download.svg") no-repeat center;
+  background-size: contain;
+  height: 220px;
+  margin-top: 68px;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .d2-zip-validation-download-container .d2-zip-validation-download-wrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .d2-zip-validation-download-container .d2-zip-validation-download-wrapper .download-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-top: 12px;
+  width:100%;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .d2-zip-validation-download-container .d2-zip-validation-download-wrapper .button-wrapper{
+  width:100%;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .d2-zip-validation-download-container .d2-zip-validation-download-wrapper .binf-btn {
+  background-color: #232E72;
+  border-radius: 16px;
+  margin-top: 14px;
+  width: 114px;
+  height: 32px;
+  color: #ffffff;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .d2-zip-generic-error-container{
+  width: 100%;
+  height: 68px;
+  display:flex;
+  align-items: center;
+  background: #FDF7F2;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .d2-zip-generic-error-container .generic-error-message {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  padding-left:16px;
+}
+
+.d2-stepper-wizard .d2-zip-validation-dialog-view .d2-zip-generic-error-container .generic-status-icon {
+  background-image: url('images/status-icon.svg');
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 32px;
+}
+
+.d2-zip-validation-dialog-view.csui-acc-tab-region.csui-acc-tab-region-active {
+  height: inherit;
+}
+
+.d2-zip-dialog-body-wrapper {
+  height: inherit;
+}

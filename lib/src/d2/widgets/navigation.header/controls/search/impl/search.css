@@ -1,0 +1,275 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-navbar .search-container .search-wrapper .i-search div::before {
+  font-family: 'smartview-icon';
+  content: "\e905";
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.d2-navbar .search-menu-container .csui-toolitem .tick-icon-container {
+  background-image: url("images/checkmark_cerulean16.svg");
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container {
+  float: none;
+  padding: 1em 10px;
+  margin: 0;
+  position: initial;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container.attention .search-wrapper .search-menu-container {
+  display: block;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper {
+  width: 100%;
+  max-width: 28.5rem;
+  margin: auto;
+  position: relative;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container.active .search-wrapper.ms-fix .transitional-content .text-placeholder,
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container:not([data-value=""]) .search-wrapper.ms-fix .transitional-content .text-placeholder {
+  left: 0;
+  transform: translateX(2.25em);
+  transition: transform 250ms linear;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container.active .search-wrapper.ms-fix .transitional-content .i-search,
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container:not([data-value=""]) .search-wrapper.ms-fix .transitional-content .i-search {
+  left: -0.25em;
+  transform: translateX(0.5em);
+  transition: transform 250ms linear;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper.ms-fix .transitional-content .text-placeholder {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  left: 0;
+  transition: transform 250ms linear;
+  transform: translateX(50%) translateX(-1.5em);
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper.ms-fix .transitional-content .i-search {
+  left: -0.25em;
+  width: inherit;
+  transition: transform 250ms linear;
+  transform: translateX(50%) translateX(-2.75em);
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .textbox {
+  background: #283c6e;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0 2em;
+  height: 2em;
+  width: 100%;
+  top: -2em;
+  font-size: 1em;
+  color: #ffffff;
+  margin: auto;
+  border: 0 solid #94bbea;
+  border-bottom-width: 1px;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .textbox::-ms-clear {
+  display: none;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .textbox:focus {
+  border-width: 0 0 2px 0;
+  border-color: #ffffff;
+  outline: none;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container.active .search-wrapper .transitional-content .text-placeholder,
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container:not([data-value=""]) .search-wrapper .transitional-content .text-placeholder {
+  left: 2.25em;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container.active .search-wrapper .transitional-content .i-search,
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container:not([data-value=""]) .search-wrapper .transitional-content .i-search {
+  transition: left .200s linear;
+  left: 0.25em;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container:not([data-value=""]) .search-wrapper .transitional-content .text-placeholder {
+  display: none;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container:not([data-value=""]) .search-wrapper .i-close {
+  display: block;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .i-close {
+  display: none;
+  position: absolute;
+  right: .375em;
+  top: .3em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  z-index: 1;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .i-close::before {
+  font-family: 'smartview-icon';
+  content: "\e902";
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  width: 10px;
+  left: 5px;
+  top: 4px;
+  font-weight: bold;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .transitional-content {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 2em;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .transitional-content .text-placeholder {
+  position: relative;
+  height: inherit;
+  top: .4em;
+  left: calc(50% - 1.5em);
+  font-style: italic;
+  font-size: 1em;
+  color: #94bbea;
+  transition: left 250ms linear;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .transitional-content .i-search {
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0 .25em;
+  position: absolute;
+  transition: left .300s linear;
+  top: .3em;
+  left: calc(50% - 3em);
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .transitional-content .i-search div {
+  width: 1em;
+  height: 1em;
+  display: block;
+  position: relative;
+  left: 3px;
+  top: 2px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  max-width: inherit;
+  margin: auto;
+  top: -2em;
+  display: none;
+  z-index: 3;
+  background: white;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: none;
+  display: block;
+  border-radius: 0;
+  padding: 5px 0;
+  max-width: initial;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu li[role="separator"] {
+  border-top: 1px solid #DCDCDC;
+  margin-top: 4px;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu li[role="menuitem"] {
+  padding-left: .75em;
+  display: block;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu li[role="menuitem"]:hover {
+  background-color: #b1bdc4;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu li[role="menuitem"]:focus,
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu li[role="menuitem"].focus-active {
+  outline: 1px dotted #333333;
+  outline-offset: -1px;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu li[role="menuitem"] .csui-toolitem {
+  padding: 1px 0;
+  font-weight: normal;
+  line-height: 2em;
+  font-size: 1em;
+  display: inline-flex;
+  width: 100%;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu li[role="menuitem"].command-option .csui-toolitem {
+  margin-left: 16px;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu li[role="menuitem"] .csui-toolitem:focus,
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu li[role="menuitem"] .csui-toolitem:hover {
+  background-color: transparent;
+  outline: initial;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu li[role="menuitem"] .csui-toolitem label {
+  width: 100%;
+  position: relative;
+  left: -0.35rem;
+  line-height: 2rem;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu li[role="menuitem"] .csui-toolitem label span {
+  font-style: italic;
+  font-weight: inherit;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu li[role="menuitem"] .csui-toolitem input[type="radio"] {
+  opacity: 0;
+  margin-top: 12px;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu li[role="menuitem"] .csui-toolitem input[type="radio"]:checked + .tick-icon-container {
+  visibility: visible;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu li[role="menuitem"] .csui-toolitem input[type="radio"]:checked ~ label {
+  font-weight: bold;
+}
+
+.d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .search-container .search-wrapper .search-menu-container .d2-header-search-menu li[role="menuitem"] .csui-toolitem .tick-icon-container {
+  display: block;
+  visibility: hidden;
+  width: 1rem;
+  height: auto;
+  min-height: 1rem;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: center;
+  position: relative;
+  left: -14px;
+  margin: 8px 0;
+}

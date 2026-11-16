@@ -1,0 +1,42 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.dctm-core-login-dialog .binf-modal-header {
+  border-radius: 3px 3px 0 0;
+}
+
+.dctm-core-login-dialog .binf-modal-body {
+  border-radius: 0 0 3px 3px;
+}
+
+.dctm-core-login-dialog .dctm-icon-core-login {
+  background-image: url(images/core_login_title_icon.svg);
+  background-size: 24px 24px;
+}
+
+.cs-dialog.dctm-core-login-dialog .binf-modal-dialog div.tile-title {
+  padding-left: 4px;
+}
+
+.binf-widgets .dctm-core-login-dialog .tile-title {
+  font-size: 18px;
+  line-height: 64px;
+}
+
+.dctm-core-login-dialog .binf-modal-body {
+  background-color: white;
+  min-height: 300px;
+  height: calc(100vh - 185px);
+}
+
+.dctm-core-login-dialog .binf-modal-body iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.cs-dialog.dctm-core-login-dialog .binf-modal-header .cs-close .cs-icon-cross {
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}

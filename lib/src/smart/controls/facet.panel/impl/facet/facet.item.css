@@ -1,0 +1,160 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.smart-facet-panel .csui-facet-item {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.smart-facet-panel .csui-facet-item > .csui-filter-name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.smart-facet-panel .csui-facet-item > .csui-filter-name > div {
+  font-size: 0.75em;
+}
+
+.smart-facet-panel .csui-facet-item > .csui-facet-item-checkbox {
+  padding-right: 16px;
+}
+
+.smart-facet-panel .csui-facet-item > .csui-facet-item-checkbox > .csui-checkbox-view > button {
+  outline-offset: .25em;
+}
+
+.smart-facet-panel .csui-facet-item > .csui-filter-name > .csui-name {
+  flex: 0 1 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: inherit;
+  line-height: 32px;
+}
+
+.smart-facet-panel .csui-facet-item > .csui-filter-name > .csui-name.smart-selected-name {
+  font-weight: bold;
+}
+
+.smart-facet-panel .csui-facet-item > .csui-filter-name > .csui-name span {
+  display: block;
+}
+
+.smart-facet-panel .csui-facet-item>.csui-filter-name>.csui-total {
+  flex: 0 0 auto;
+  margin-left: 6px;
+  line-height: 16px;
+  background: #CCEAE8;
+  border-radius: 8px;
+  padding: 1px 5px;
+  font-size: 11px;
+  color: #000000;
+
+}
+
+.smart-facet-panel .csui-facet-item.binf-disabled > .csui-filter-name {
+  color: #a9a9a9;
+  cursor: default;
+}
+
+.smart-facet-panel .csui-facet-item span {
+  margin: 0;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  min-width: 18px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.smart-facet-panel .csui-facet-item .csui-facet-item-checkbox .csui-checkbox {
+  opacity: 0;
+}
+
+.smart-facet-panel span.csui-showAlways,
+.smart-facet-panel .csui-facet.multi-select .csui-checkbox,
+.smart-facet-panel .csui-facet.single-select .csui-checkbox,
+.smart-facet-panel .csui-facet:not(.single-select-card):hover .csui-checkbox,
+.smart-facet-panel .single-select-card .single-select-facet-item:hover .csui-checkbox,
+.smart-facet-panel .csui-facet.csui-focus .csui-checkbox,
+.smart-facet-panel .csui-facet:focus .csui-checkbox {
+  opacity: 1;
+}
+
+.smart-facet-panel .csui-facet-item .csui-facet-item-checkbox .csui-checkbox.single-select-facet.csui-showAlways {
+  opacity: 1;
+  place-content: start;
+}
+
+
+.smart-facet-panel .csui-facet .facet-disabled .csui-facet-item-checkbox .csui-checkbox {
+  opacity: 0;
+}
+
+
+.smart-facet-panel span:focus {
+  outline-offset: 3px;
+  outline: 1px dotted #333333;
+}
+
+.smart-facet-panel .csui-filter-name:focus {
+  outline-offset: 3px;
+}
+
+
+@media (forced-colors: active) {
+
+  .smart-facet-panel .csui-facet-item span:focus, .smart-facet-panel .csui-facet-item span:hover {
+    outline: 1px solid black;
+    outline-offset: 3px;
+  }
+}
+
+
+.csui-facet-item-checkbox otc-checkbox.csui-checkbox {
+  -webkit-appearance: none;
+  padding-left: 0;
+  appearance: none;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+.csui-facet-item-checkbox input[type="checkbox"]::before {
+  content: "";
+  width: 8.56px;
+  height: 6.69px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.csui-facet-item-checkbox input[type="checkbox"]:not(.single-select-facet):checked {
+  background-color: #111b58;
+}
+
+.csui-facet-item-checkbox input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.csui-facet-item-checkbox input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.csui-facet-item-checkbox input[type="checkbox"]:focus-visible { 
+  outline: 1px solid #232E72;  
+  outline-offset: 4px;
+  border-radius: 0;
+}
+

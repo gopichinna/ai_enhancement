@@ -1,0 +1,17 @@
+{
+  "d2/sdk/commands/node.actions.rules":[
+    "commands/node.actions.rules"
+  ],
+  "d2/sdk/utils/commands": [
+    "commands/manage.group"
+  ],
+  "d2/sdk/utils/landingpage/tiles": [
+    "extensions/admin.groups.tile"
+  ],
+  "d2/sdk/utils/perspectives/app.scope.perspectives": [
+    "extensions/admin.groups.perspective"
+  ],
+  "d2/sdk/controls/icon.sprites/node.icon.sprites": [
+    "extensions/admin.groups.icon.sprites"
+  ]
+}

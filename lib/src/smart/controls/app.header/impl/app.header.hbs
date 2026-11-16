@@ -1,0 +1,13 @@
+<div class="csui-global-message ot-section"></div>
+<div class="smart-app-header-otc-skiplinks binf-hidden"></div>
+<div class="smart-app-header-otc-burger-menu-view binf-hidden"></div>
+<otc-header-bar {{{transparentAttribute}}} class="smart-application-header">
+  {{#if enableHamburger}}
+  <otc-button class="smart-app-header-burger-menu-btn" arialabel="{{burgerAriaLabel}}" headeritem="" title="{{burgerTitle}}"
+    icon="smart_action_header:header_hamburger42" slot="hamburger" iconappearance="{{iconApperance}}">
+  </otc-button>
+  {{/if}}
+  <otc-overflow-container slot="rightToolbar" maxitems="0" wrapwideitems="" overflowmenuarialabel="{{overflowAria}}"
+    overflowmenutitle="{{overflowAria}}"></otc-overflow-container>
+</otc-header-bar>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,33 @@
+<div class="binf-col-md-12 cs-form-singlecolumn d2-set-container d2-container d2-column-layout">
+  {{#each items}}
+    {{#xif "this.options._d2Containertype != null"}}
+      {{#xif "this.options._d2Containertype === 'd2grid'"}}
+      <div class='binf-col-md-12 csui-form-set-array-wrapper cs-form-set d2-control'>
+      {{else}}
+      <div class='binf-col-md-12'>
+      {{/xif}}
+      {{#item}}{{/item}}
+    </div>
+    {{else}}
+      {{#if ../../options.singleColumn}}
+        <div class='binf-col-md-12'>
+         {{#xif "this.options.stretch"}}
+            <div class='binf-col-md-12 d2-control cs-form-doublecolumn'>
+          {{else}}
+            <div class='binf-col-md-6 d2-control cs-form-doublecolumn'>
+          {{/xif}}
+            {{#item}}{{/item}}
+          </div>
+        </div>
+      {{else}}
+       {{#xif "this.options.stretch"}}
+        <div class='binf-col-md-12 d2-control cs-form-doublecolumn'>
+        {{else}}
+        <div class='binf-col-md-6 d2-control cs-form-doublecolumn'>
+        {{/xif}}
+          {{#item}}{{/item}}
+        </div>
+      {{/if}}
+    {{/xif}}
+  {{/each}}
+</div>

@@ -1,0 +1,33 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-sidebar-slide-body .csui-list-pannel .csui-widget-item.csui-search-widget-item .csui-search-result-widget{
+    display: flex;
+    flex-direction: column;
+}
+
+.binf-widgets .csui-sidebar-slide-body .csui-list-pannel .csui-widget-item.csui-search-widget-item.csui-draggable-widget-item.icon-draggable-handle{
+    margin: 0 2px
+}
+
+.binf-widgets .csui-sidebar-slide-body .csui-list-pannel .csui-widget-item.csui-search-widget-item.csui-draggable-widget-item.icon-draggable-handle:hover{
+    background-position: 6px;
+} 
+
+.binf-widgets .csui-sidebar-slide-body .csui-list-pannel .csui-widget-item.csui-search-widget-item {
+    padding: 8px 5px 12px 31px;
+    height: 48px;
+}
+
+
+.binf-widgets .csui-sidebar-slide-body .csui-list-pannel .csui-widget-item.csui-search-widget-item .csui-search-result-group-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 30px);
+    display: inline-block;
+}
+
+.binf-widgets .csui-sidebar-slide-body .csui-list-pannel .csui-widget-item.csui-search-widget-item .csui-search-bold-character {
+    font-weight: bold;
+}

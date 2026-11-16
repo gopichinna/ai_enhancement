@@ -1,0 +1,55 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d4-simple-table-toolbar .csui-tabletoolbar {
+    height: 32px;
+    padding: 4px 15px !important;
+    background-color: rgb(249, 249, 249);
+    border-bottom: none;
+}
+
+.binf-widgets .d4-simple-table-toolbar .csui-tabletoolbar .csui-toolitem {
+    font-size: 14px;
+}
+
+.binf-widgets .d4-simple-table-toolbar .csui-tabletoolbar > div:not(.csui-rightToolbar) .csui-toolbar.binf-nav > li > a {
+    margin: 0;
+    padding: 6px 12px;
+    min-height: unset;
+    border-radius: unset;
+}
+
+.binf-widgets .d4-simple-table-toolbar .csui-tabletoolbar > div:not(.csui-rightToolbar):not(.csui-addToolbar) .csui-toolbar.binf-nav > li > a:hover {
+    color: #627783;
+    text-decoration: none;
+    background-color: #f3fbff;
+    box-shadow: 0 0 1px 0 #000000b2;
+    border-radius: 3px;
+}
+
+.binf-widgets .d4-simple-table-toolbar .csui-tabletoolbar > div:not(.csui-rightToolbar):not(.csui-addToolbar) .csui-toolbar.binf-nav > li > a:active {
+    background-color: #cccccc;
+    color: #333333;
+}
+
+.binf-widgets .d4-simple-table-view .csui-table-view {
+    height: 402px;
+}
+
+.binf-widgets .d4-simple-table-view .csui-table-view thead {
+    background-color: #F9F9F9;
+    border-bottom: 1px solid #8f8f8f;
+    height: 33px;
+}
+
+.binf-widgets .d4-simple-table-view .csui-table-view .binf-table.dataTable thead > tr,
+.binf-widgets .d4-simple-table-view .csui-table-view .binf-table.dataTable thead >tr > th {
+    background-color: unset;
+    padding: 0;
+    height: 32px;
+}
+
+.binf-widgets .d4-simple-table-view .csui-table-view .binf-table.dataTable>tbody>tr:hover {
+    background-color: #b2bec5;
+}
+

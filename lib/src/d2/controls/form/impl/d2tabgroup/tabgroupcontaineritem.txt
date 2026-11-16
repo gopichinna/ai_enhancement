@@ -1,0 +1,3 @@
+<div class = "d2tabgroupcontaineritem alpaca-marker-container-field-item-field binf-col-md-12">
+    {{#itemField}}{{/itemField}}
+</div>

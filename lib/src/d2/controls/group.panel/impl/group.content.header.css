@@ -1,0 +1,48 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-group-content-header-view {
+  position: relative;
+}
+
+.d2-group-content-header-view .d2-group-name {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 0 9px 16px;
+}
+
+.d2-group-content-header-view .d2-group-subtitle {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0 0 10px 16px;
+  width: calc(100% - 36px);
+}
+
+.d2-group-content-header-view .d2-group-required {
+  content: url('images/required.svg');
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  left: 7px;
+  top: 12px;
+}
+
+.d2-group-content-header-view .d2-group-expandCollapse {
+  position: absolute;
+  background: url('images/caret-down.svg');
+  transform: rotate(180deg);
+  height: 20px;
+  width: 20px;
+  bottom: 10px;
+  right: 16px;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.d2-group-content-header-view .d2-group-expandCollapse.expand {
+  transform: none;
+}
+
+.d2-group-content-header-view .d2-group-separator {
+  border-top: 1px solid #E6E6E6;
+}

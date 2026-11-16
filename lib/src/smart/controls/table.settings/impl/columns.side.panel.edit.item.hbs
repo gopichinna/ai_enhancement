@@ -1,0 +1,19 @@
+
+<div class="smart-table-settings-column-selection{{#if selected}} column--is-selected{{/if}}"
+     {{#if tabstop}}tabindex="0"{{else}}tabindex="-1"{{/if}} aria-label="{{ariaLabel}}"
+     role="menuitemcheckbox" aria-checked="{{selected}}">
+  <otc-icon disableEffects icon="smart_action:action_confirm32"
+            class="smart-table-settings-column-selection-icon{{#unless selected}} smart-table-settings-column-selection-icon--is-hidden{{/unless}}">
+  </otc-icon>
+  <div class="smart-table-settings-column-label-name {{#unless nameMatch}}smart-table-settings-column-no-filter{{/unless}}">
+    <div class="smart-table-settings-column-name">
+      {{#if nameMatch}}
+        <span class="match-prefix">{{namePrefix}}</span><span class="match">{{nameMatch}}</span><span class="match-suffix">{{nameSuffix}}</span>
+      {{else}}
+        {{name}}
+      {{/if}}
+    </div>
+  </div>
+</div>
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,119 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-wf-timeline-event {
+  height: 90px;
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-summary-container {
+  flex-basis: calc(50% + 1px);
+}
+
+.binf-widgets .fix-msie .d2-wf-timeline-event > .item-summary-container {
+  flex-basis: calc(50% - 1px);
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-summary-container > .summary-icon {
+  top: 24px;
+  right: 25px;
+  width: 24px;
+  height: 24px;
+  background-size: 16px;
+  border-color: #CBD3D9;
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-summary-container .linkage {
+  max-height: 37px;
+  flex: 0 0 50px;
+  position: relative;
+  left: 25px;
+  border: none;
+  background: transparent url('images/workflow_event_link_bg.svg') no-repeat 2px bottom;
+  background-size: 100% 2px;
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-summary-container .linkage:after {
+  content: ' ';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #70769B;
+  position: absolute;
+  top: 32px;
+  right: 20px;
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-summary-container .summary-text {
+  padding: 52px 25px 0 35px;
+  text-align: right;
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-details-container {
+  padding: 0 25px 16px 25px;
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details {
+  max-width: initial;
+  padding-top: 24px;
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container {
+  height: 24px;
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .d2-simple-wf-event-performer {
+  width: auto;
+  height: 100%;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .d2-simple-wf-event-performer:focus {
+  outline: 1px dotted;
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .d2-simple-wf-event-performer .user-icon {
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  float: left;
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .d2-simple-wf-event-performer .user-name {
+  padding-left: 8px;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .esoc-userwidget-wrapper,
+.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .esoc-user-container {
+  display: flex;
+  height: 24px;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .esoc-user-container .esoc-userwidget-default-avatar,
+.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .esoc-user-container .esoc-user-widget-avatar {
+  width: 24px;
+  height: 24px;
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .esoc-user-container .esoc-user-display-name {
+  margin-left: 8px;
+  height: 24px;
+  line-height: 24px;
+  vertical-align: bottom;
+}
+
+.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .item-property-list > .item-property:first-child {
+  margin-top: 8px;
+}
+

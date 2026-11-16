@@ -1,0 +1,127 @@
+<div class="cs-content-wrapper">
+
+  <div class="cs-content-header">
+    {{#if back_button}}
+      <div class="overview-page-backbutton icon arrow_back cs-go-back csui-acc-focusable-active"
+           aria-label="Go back" title="Go back" role="link" tabindex="0">
+      </div>
+    {{/if}}
+    <div class="title-container"></div>
+    <div class="actions-container">
+      <div class="commentRegion"></div>
+      <div class="favoriteRegion"></div>
+    </div>
+  </div>
+  <div class="cs-content-container">
+    <div class="description-container cs-content">
+
+      <div class="created_by_section doc-overview-general-information">
+        <div class="doc-overview-form-group">
+          <label class="doc-overview-control-label"
+                 title="{{lang.ownedBy}}">{{lang.ownedBy}}</label>
+          <div class="binf-col-sm-9">
+            <div class="csui-doc-overview-created-by-pic"></div>
+            <div class="csui-doc-overview-created-by-user"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modified_section doc-overview-general-information">
+        <div class="doc-overview-form-group">
+          <label class="doc-overview-control-label"
+                 title="{{modify_label}}">
+            {{modify_label}}
+          </label>
+          <div class="binf-col-sm-9">
+            <button aria-disabled="true" aria-label="{{modify_label}}: {{modify_date}}">
+              <span title="{{modify_date}}">{{modify_date}}</span>
+            </button>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+
+      <div class="type_section doc-overview-general-information">
+        <div class="doc-overview-form-group">
+          <label class="doc-overview-control-label"
+                 title="{{type_label}}">{{type_label}}</label>
+          <div class="binf-col-sm-9">
+            <button title="Microsoft Word" aria-disabled="true"
+                    aria-label="{{type_label}}: {{mime_type}}">
+              <span>{{mime_type}}</span>
+            </button>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+
+      <div class="size_section doc-overview-general-information">
+        <div class="doc-overview-form-group">
+          <label class="doc-overview-control-label"
+                 title="{{size_label}}">{{size_label}}</label>
+          <div class="binf-col-sm-9">
+            <button title="{{size_full_value}}" aria-disabled="true"
+                    aria-label="{{size_label}}: {{size_value}}">
+              <span>{{size_value}}</span>
+            </button>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+
+      <div class="version_section doc-overview-general-information">
+        <div class="doc-overview-form-group">
+          <label class="doc-overview-control-label">
+            {{lang.version}}
+          </label>
+          <div class="binf-col-sm-9 versions-view"></div>
+        </div>
+      </div>
+
+      <div class="reserve_info doc-overview-general-information binf-hidden">
+        <div class="doc-overview-form-group">
+          <label class="doc-overview-control-label" title="Reserved by">Reserved by</label>
+          <div class="binf-col-sm-9">
+            <div class="doc-overview-reserve">
+              <div class="csui-doc-overview-reserve-btn"></div>
+              <div class="csui-doc-overview-reserve-user"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="location-container doc-overview-general-information">
+        <div class="doc-overview-form-group">
+          <label class="doc-overview-control-label">
+            {{lang.location}}
+          </label>
+          <div class="binf-col-sm-9 location-view"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="binf-col-md-4 thumbnail-container binf-hidden binf-text-left cs-content">
+      <div class="metadata-tab">
+        <div class="thumbnail_section metadata-preview preview-section" title="{{lang.ToolbarItemOpen}}">
+          <span class="thumbnail_not_loaded thumbnail_empty" data-cstabindex="0"></span>
+          <img src="{{imgSrc}}" class="img-doc-preview binf-hidden" alt="{{imgAlt}}"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cs-top-fadeout-container"></div>
+  <div class="cs-fadeout-container"></div>
+  <div class="cs-content-footer">
+    <otc-button class="d2-otc-btn command-btn" type="primary"
+            data-signature="Open">{{lang.ToolbarItemOpen}}</otc-button>
+    <otc-button class="d2-otc-btn command-btn csui-doc-overview-download-btn" type="secondary"
+            data-signature="Download">{{lang.ToolbarItemDownload}}</otc-button>
+    <otc-button class="d2-otc-btn command-btn edit-btn" type="secondary"
+            data-signature="D2-Edit">{{lang.ToolbarItemEdit}}</otc-button>
+    <otc-button class="d2-otc-btn command-btn" type="secondary"
+            data-signature="Properties">{{lang.ToolbarItemProperties}}</otc-button>
+    <otc-button class="d2-otc-btn command-btn" type="secondary"
+            data-signature="CopyLink">{{lang.ToolbarItemCopyLink}}</otc-button>
+  </div>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

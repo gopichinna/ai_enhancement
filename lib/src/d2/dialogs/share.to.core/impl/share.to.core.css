@@ -1,0 +1,301 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-wizard-step-view .share-to-core {
+  height: 100%
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .share-to-core-container {
+  height: 100%;
+  padding-right: 64px;
+  padding-left: 64px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .error-panel {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-left: 2px solid #DF3324;
+  background: #FFFFFF;
+  display: flex;
+  margin-top: 10px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .error-panel .error-message {
+  font-size: 10px;
+  line-height: 12px;
+  color: #DF3324;
+  margin: 2px 8px 3px 8px;
+  flex-grow: 1;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .error-panel .error-action-wrapper {
+  display: flex;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .error-panel .error-action {
+  font-size: 10px;
+  line-height: 12px;
+  color: #232E72;
+  font-weight: bold;
+  margin: 2px 8px 3px 8px;
+  cursor: pointer;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .error-panel .error-cancel {
+  font-size: 10px;
+  line-height: 12px;
+  color: #232E72;
+  margin: 2px 10px 3px 8px;
+  cursor: pointer;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .assignee-select.droppable .typeahead-chicklets-container {
+  background: rgba(123, 154, 176, 0.2);
+  border: 2px solid #627783;
+  padding: 4px 0 0 4px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .assignee-select.droppable .typeahead-chicklets-container.empty-list {
+  padding: 1px 3px 0 3px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .assignee-select .typeahead-options-container {
+  width: 390px;
+  margin-left: 1px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .assignee-select .d2-typeahead .typeahead-options-container .typeahead-option-item {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .assignee-select .d2-typeahead .typeahead-options-container .typeahead-option-item .assignee-avatar {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
+  display: flex;
+  color: #FFFFFF;
+  flex: 0 0 auto;
+  margin: 5px 8px 5px 8px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .assignee-select .typeahead-options-container,
+.binf-widgets .d2-wizard-step-view .share-to-core .assignee-select .typeahead-options-container .d2-scrollable-options,
+.binf-widgets .d2-wizard-step-view .share-to-core .assignee-select .typeahead-options-container .typeahead-options,
+.binf-widgets .d2-wizard-step-view .share-to-core .assignee-select .typeahead-options-container .typeahead-options .ps-scrollbar-y-rail {
+  max-height: 210px !important;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .assignee-select .typeahead-options-container .typeahead-options > li:hover,
+.binf-widgets .d2-wizard-step-view .share-to-core .assignee-select .typeahead-options-container .typeahead-options > li.focus {
+  background: #B2BEC5;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .assignee-select .typeahead-options-container .typeahead-option-item .assignee-details {
+  margin: 6px 0 7px 0;
+  width: calc(100% - 45px);
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .assignee-select .typeahead-options-container .typeahead-option-item .typeahead-text-container {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .assignee-select .typeahead-options-container .typeahead-option-item .typeahead-text-container.assignee-name {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .assignee-select .typeahead-options-container .typeahead-option-item .typeahead-text-container.assignee-email {
+  font-size: 10px;
+  line-height: 12px;
+  color: #757575;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .permission {
+  display: flex;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .permission .permission-message {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  margin-left: 0;
+  margin-top: 3px;
+  background: url(images/information.svg) no-repeat center;
+  background-size: contain;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .permission .binf-popover {
+  border: 0;
+  padding: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .permission .binf-popover > .binf-arrow:after {
+  border-right-color: #09BCEF;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .permission .binf-popover .binf-popover-content {
+  padding: 9px 8px 9px 8px;
+  background: #F5F5F5;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .permission .binf-popover .binf-popover-content {
+  border-left: 4px solid #09BCEF;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .share-to-core-permissions.non-checkout {
+  margin-top: 24px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .share-to-core-permission {
+  margin-bottom: 32px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .share-to-core-permission:first-child {
+  margin-top: 10px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .share-to-core-permission:last-child {
+  margin-bottom: 10px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .share-to-core-permission .permission-header {
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  cursor: pointer;
+  margin: 0 6px 4px 0;
+  padding-bottom: 4px;
+  padding-right: 2px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .share-to-core-permission .permission-header:before {
+  content: " ";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  margin-right: 6px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .share-to-core-permission .permission-header[collapsed='false']:before {
+  background-image: url(images/caret_down.svg);
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .share-to-core-permission .permission-header[collapsed='true']:before {
+  background-image: url(images/caret_right.svg);
+}
+
+.rtl.binf-widgets .d2-wizard-step-view .share-to-core .share-to-core-permission .permission-header[collapsed='true']:before {
+  background-image: url(images/caret_left.svg);
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .checkout-container {
+  margin-top: 12px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .checkout-toggle-container {
+  display: flex;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .checkout-toggle-container .checkout-toggle-message {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  margin: 3px 12px 3px 0;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .checkout-error-container {
+  height: 46px;
+  background-color: #FDF7F2;
+  width: 100%;
+  border-bottom: 2px solid #DF6800;
+  margin-top: 8px;
+  margin-bottom: 28px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .checkout-error-container .checkout-error-message {
+  color: #333333;
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .checkout-error-container .checkout-error-message:before {
+  content: " ";
+  display: inline-block;
+  width: 24px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(images/warning.svg);
+  margin-right: 16px;
+  position: relative;
+  top: 10px;
+}
+
+.binf-widgets .d2-share-to-core-create-wizard .share-btn,
+.binf-widgets .d2-share-to-core-manage-wizard .update-btn {
+  font-weight: bold;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .drag-item .drag-chicklet {
+  background: #99E3E3;
+  border: 1px dashed #008383;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  height: 24px;
+  width: calc(100% - 4px);
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .drag-item .chicklet-text {
+  font-size: 11px;
+  line-height: 13px;
+  color: #333333;
+  padding: 5px 8px 4px 8px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .back-layer {
+  z-index: -1;
+  position: relative;
+  top: -20px;
+  left: 4px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .drag-multiple-assignee {
+  height: 28px;
+  position: relative;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .drag-multiple-assignee .chicklet-text {
+  padding: 4px 8px 5px 8px;
+}
+
+.binf-widgets .d2-wizard-step-view .share-to-core .drag-multiple-assignee .chicklet-count {
+  position: absolute;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #333333;
+  background: #FFFFFF;
+  height: 20px;
+  width: 20px;
+  top: 2px;
+  left: -7px;
+  border: 1px solid #008383;
+  box-sizing: border-box;
+  border-radius: 50px;
+}

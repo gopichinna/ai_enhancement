@@ -1,0 +1,12 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+
+.csui-general-form-fields > .cs-form > .alpaca-field-object {
+  margin: 0;
+}
+
+.csui-general-form-fields > .cs-form > .alpaca-field-object > * {
+  padding: 0;
+}

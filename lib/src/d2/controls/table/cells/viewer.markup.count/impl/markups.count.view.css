@@ -1,0 +1,22 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-cell-markup-count-container {
+  height: 18px;
+  width: 18px;
+}
+
+.d2-cell-markup-count-container .markup-status-icon {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background-image: url('images/status_markup_available_24.svg');
+}
+
+.binf-widgets .d2-table-cell-markup-status {
+  min-width: 56px;
+  max-width: 152px;
+}
+
+
+

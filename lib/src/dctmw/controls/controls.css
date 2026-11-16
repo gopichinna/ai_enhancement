@@ -1,0 +1,59 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+
+.binf-popover.bordered-popover.binf-right,
+.rtl.binf-widgets .binf-popover.bordered-popover.binf-left{
+    border-left: 4px solid #0084CE;
+}
+
+.binf-popover.bordered-popover.binf-left,
+.rtl.binf-widgets .binf-popover.bordered-popover.binf-right{
+    border-right: 4px solid #0084CE;
+}
+
+.rtl.binf-widgets .binf-popover.bordered-popover.binf-right{
+    border-left: 0;
+}
+
+.rtl.binf-widgets .binf-popover.bordered-popover.binf-left{
+    border-right: 0;
+}
+
+.binf-widgets .binf-popover.bordered-popover.binf-left > .binf-arrow{
+    border-width: 9px;
+    right: -21px;
+}
+
+.rtl.binf-widgets .binf-popover.bordered-popover.binf-right>.binf-arrow {
+    right: -3px;
+}
+
+.binf-widgets .binf-popover.bordered-popover.binf-left > .binf-arrow,
+.bordered-popover.binf-popover.binf-left > .binf-arrow:after,
+.rtl.binf-widgets .bordered-popover.binf-popover.binf-right > .binf-arrow:after{
+    border-left-color: #0084CE;
+}
+
+.bordered-popover.binf-popover.binf-left > .binf-arrow:after,
+.rtl.binf-widgets .bordered-popover.binf-popover.binf-right > .binf-arrow:after {
+    right: 0;
+}
+
+.binf-widgets .binf-popover.bordered-popover.binf-right > .binf-arrow,
+.rtl.binf-widgets .binf-popover.bordered-popover.binf-left > .binf-arrow{
+    margin-top: 0;
+    border-width: 0;
+    left: -14px;
+}
+
+.bordered-popover.binf-popover.binf-right > .binf-arrow:after,
+.rtl.binf-widgets .bordered-popover.binf-popover.binf-left > .binf-arrow:after{
+    border-right-color: #0084CE;
+    left: 0;
+}
+
+.bordered-popover.binf-popover .binf-popover-content{
+    line-height: 16px;
+}

@@ -1,0 +1,126 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-query-form-view {
+  width: 398px;
+  height: 100%;
+  position: relative;
+  flex: 1 1 100%;
+  transition: max-width 0.3s ease-in;
+}
+
+.queryformview .csui-top-align-label .cs-form .alpaca-container-item > .binf-form-group.alpaca-field > .binf-col-sm-9 {
+  width: 100%;
+}
+
+.d2-query-form-view .queryformheaderview {
+  position: relative;
+}
+
+.d2-query-form-view .queryformheaderview .title {
+  left: 16px;
+  width: 315px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: absolute;
+  height: 31px;
+  top: 15px;
+  font-size: 24px;
+  line-height: normal;
+  color: #003939;
+}
+
+.csui-search-left-panel .d2-query-form-view .queryformheaderview .title {
+  position: absolute;
+  height: 19px;
+  left: 36px;
+  top: 10px;
+  font-size: 16px;
+  line-height: normal;
+  color: #333333;
+}
+
+.d2-query-form-view .queryformbtn {
+  display: flex;
+  margin: 8px 24px 8px 16px;
+  justify-content: flex-end;
+}
+.d2-query-form-view .queryformfooterview {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #ededed;
+  height: 48px;
+  border-top:1px solid rgba(51, 51, 51, 0.2);
+}
+
+.d2-query-form-view .queryformheaderview {
+  height: 64px;
+  background: #66D4D6;
+}
+
+.csui-search-left-panel .d2-query-form-view .queryformheaderview {
+  height: 48px !important;
+}
+
+.d2-query-form-view .cs-metadata-properties .tab-links .tab-links-bar .fadeout {
+  display: none;
+}
+
+.d2-query-form-view .cs-form-doublecolumn {
+  width: 95% !important;
+  padding: 20px;
+}
+
+.d2-query-form-view .cs-metadata-properties .tab-links, .d2-query-form-view .csui-tab-contents-header-wrapper {
+  display: none !important;
+}
+
+.d2-query-form-view .csui-acc-tab-region {
+  height: 100%;
+}
+
+.queryformview {
+  height: calc(100% - 96px);
+}
+
+.d2-query-form-view .csui-perfect-scrolling {
+  height: 90vh;
+}
+
+.csui-search-results .d2-query-form-main-view .csui-perfect-scrolling,
+.csui-search-results .d2-query-form-main-view .binf-tab-content {
+  height: 100%;
+}
+
+.d2-query-form-view .icon.d2-queryform-close {
+  background-image: url('images/close16.svg');
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+}
+
+.d2-query-form-view .icon.d2-queryform-close:hover {
+  background-image: url('images/close_mo16.svg');
+}
+
+.d2-query-form-view .icon.d2-queryform-close:active {
+  background-image: url('images/close_md16.svg');
+}
+
+.d2-queryform-modal .cs-metadata-properties .last-tab-panel, .d2-query-form-view .cs-metadata-properties .last-tab-panel {
+  min-height: unset !important;
+}
+
+.queryformview .cs-tabpanel.smart-tab-panel.tab-panel.cs-metadata-properties.binf-panel.binf-panel-default.csui-top-align-label.d2-metadata-properties.d2-set-container.csui-acc-tab-region.csui-metadata-low-resolution .smart-tab-contents-wrapper {
+  height: 100%;
+}
+
+.queryformview .cs-tabpanel.smart-tab-panel.tab-panel.cs-metadata-properties.binf-panel.binf-panel-default.csui-top-align-label.d2-metadata-properties.d2-set-container.csui-acc-tab-region.csui-metadata-low-resolution .smart-tab-contents-wrapper .binf-tab-content.smart-tab-content {
+  height: 100%;
+}
+
+
+
+

@@ -1,0 +1,20 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.csui-thumbnail > p {
+  text-align: center;
+}
+
+.csui-thumbnail > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

@@ -1,0 +1,159 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-launch-workflow-attachments-dialog,
+.d2-launch-workflow-attachments-container {
+    height: 100%;
+    width: 100%;
+}
+
+.binf-widgets .d2-launch-workflow-attachments-dialog .d2-task-additional-panels .tab-links .tab-links-bar .binf-nav-pills > li:first-child {
+    padding-left: 0;
+}
+
+.binf-widgets .d2-launch-workflow-attachments-dialog .d2-task-additional-panels .tab-links {
+    padding-left: 64px;
+    border-top: none;
+}
+
+.binf-widgets .d2-launch-workflow-attachments-dialog .d2-task-additional-panels .d2-button-toolbar .region-left,
+.d2-launch-workflow-attachments-dialog .d2-task-files-list.cs-list .d2-task-files-list-item.binf-list-group-item {
+    padding-left: 0;
+    margin-left: 64px;
+}
+
+.d2-launch-workflow-attachments-dialog .d2-task-files-list.cs-list .d2-task-files-list-item.binf-list-group-item {
+    padding-right: 0;
+    margin-right: 64px;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+
+.d2-launch-workflow-attachments-dialog .d2-task-files-list.cs-list .binf-list-group > a:first-child {
+    margin-top: 10px;
+    border-top: 1px solid #CCCCCC;
+}
+
+.d2-launch-workflow-attachments-dialog .d2-task-attachments .d2-task-attachments-container {
+    height: calc(100% - 54px);
+}
+
+.d2-launch-workflow-attachments-dialog .d2-task-attachments .d2-toolbar-task-attachments {
+    margin-top: 30px;
+    height: 24px;
+    border-bottom: none;
+}
+
+.binf-widgets .d2-launch-workflow-attachments-dialog .d2-button-toolbar .binf-btn.icon-launch-workflow-add-attachments {
+    height: 24px;
+    width: 24px;
+}
+
+.binf-widgets .d2-launch-workflow-attachments-dialog .d2-button-toolbar .binf-btn.d2-launch-workflow-attachments-label {
+    width: auto;
+    line-height: 24px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.binf-widgets .d2-launch-workflow-attachments-dialog .d2-task-additional-panels .d2-button-toolbar .region-right {
+    padding-right: 58px;
+}
+
+.d2-launch-workflow-attachments-dialog .icon.icon-launch-workflow-add-attachments {
+    background: url("../images/icon_launch_workflow_add_attachments.svg") center no-repeat;
+}
+
+.d2-launch-workflow-attachments-dialog .icon.icon-launch-workflow-add-related-files-as-attachments {
+    background: url("../images/icon_launch_workflow_add_related_files_as_attachments.svg") center no-repeat;
+}
+
+.binf-widgets .d2-launch-workflow-attachments-dialog .d2-button-toolbar .binf-btn.icon-launch-workflow-add-related-files-as-attachments {
+    margin-right: 0;
+}
+
+.d2-launch-workflow-attachments-dialog .icon.icon-launch-workflow-remove-attachment {
+    background: url("../images/icon_launch_workflow_remove_attachment.svg") center no-repeat;
+}
+
+.d2-launch-workflow-attachments-dialog .d2-task-files-list-item.csui-item-standard.binf-list-group-item span.list-item-title {
+    font-size: 14px;
+}
+
+.d2-launch-workflow-attachments-dialog .cs-list .csui-item-standard.binf-list-group-item span {
+    margin-right: 2px;
+}
+
+.binf-widgets .d2-launch-workflow-attachments-dialog .d2-task-files-list-item.binf-list-group-item hr {
+    margin-top: 4px;
+    margin-left: -12px;
+}
+
+.d2-launch-workflow-attachments-dialog .inline-toolbar-container {
+    position: absolute;
+    height: 42px;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.binf-widgets .d2-launch-workflow-attachments-dialog .d2-task-additional-panels .inline-toolbar-container .d2-button-toolbar .region-right {
+    padding-right: 0;
+}
+
+.d2-launch-workflow-attachments-dialog .cs-list .d2-task-files-list-item.csui-item-standard.binf-list-group-item:hover,
+.d2-launch-workflow-attachments-dialog .cs-list .d2-task-files-list-item.csui-item-standard.binf-list-group-item:active {
+    background-color: #B2BEC5;
+}
+
+.d2-launch-workflow-attachments-dialog .d2-task-files-list-item.csui-item-standard.binf-list-group-item span.list-item-title {
+    width: calc(100% - 90px);
+}
+
+.d2-launch-workflow-attachments-dialog .launch-workflow-empty-attachments-list {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.d2-launch-workflow-attachments-dialog .launch-workflow-empty-attachments-list .launch-workflow-empty-attachments {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.d2-launch-workflow-attachments-dialog .launch-workflow-empty-attachments-list .launch-workflow-empty-attachments-icon {
+    background: url("../images/drag-target-black.svg") no-repeat;
+    height: 140px;
+    width: 220px;
+}
+
+.d2-launch-workflow-attachments-dialog .launch-workflow-empty-attachments-list .launch-workflow-empty-attachments-message {
+    color: #333333;
+    width: 275px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.d2-launch-workflow-attachments-dialog .launch-workflow-empty-attachments-list .launch-workflow-empty-add-attachments {
+    height: 48px;
+    width: 48px;
+    background: url("../images/add_48.svg") no-repeat;
+    background-size: contain;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.d2-launch-workflow-attachments-dialog .launch-workflow-empty-attachments-list .launch-workflow-empty-add-attachments:hover {
+    background: url("../images/add_mo48.svg") no-repeat;
+    background-size: contain;
+}
+
+.d2-launch-workflow-attachments-dialog .launch-workflow-empty-attachments-list .launch-workflow-empty-add-attachments:active {
+    background: url("../images/add_md48.svg") no-repeat;
+    background-size: contain;
+}

@@ -1,0 +1,30 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-stepper-wizard.d2-task-add-note-dialog.binf-modal.binf-fade .binf-modal-dialog {
+  width: 448px;
+  min-width: 448px;
+}
+
+.d2-task-add-note {
+  height: 100%;
+  width: 100%;
+}
+
+.d2-task-add-note .textarea-container {
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+}
+
+.d2-task-add-note .d2-task-note-textarea {
+  resize: none;
+  min-height: 52px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  overflow: hidden;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-sizing: border-box;
+}

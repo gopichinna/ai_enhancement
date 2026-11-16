@@ -1,0 +1,17 @@
+<div class="d2-markup-header binf-panel-heading {{#if expand}}open-content{{/if}}" {{#unless index}}tabindex="-1"{{/unless}} data-view-id="{{viewId}}" aria-label="{{ariaName}}">
+  <div class="main-checkbox"></div>
+  <div class="cs-title" title="{{#if tooltip}}{{tooltip}}{{else}}{{name}}{{/if}}"></div>
+  <div class="child-items-selected-count {{#unless selectedCount}}binf-hidden{{/unless}}">{{selectedCount}}</div>
+  {{#if showDropDownIcon}}
+    {{#if expand}}
+      <div class="csui-button-icon dropdown-icon icon-expandArrowUp" title="{{collapseLabel}}" role="button"></div>
+    {{else}}
+      <div class="csui-button-icon dropdown-icon icon-expandArrowDown" title="{{expandLabel}}" role="button"></div>
+    {{/if}}
+  {{/if}}
+</div>
+
+<div class="d2-markup-content {{#unless expand}} binf-hidden{{/unless}} {{#if flatten}} binf-hidden{{/if}}">
+  <div role="group" class="cs-list-group"></div>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

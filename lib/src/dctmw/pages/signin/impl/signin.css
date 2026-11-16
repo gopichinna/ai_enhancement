@@ -1,0 +1,246 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets * {
+  margin: 0;
+}
+
+html {
+  background:no-repeat !important;
+}
+
+html, body.binf-widgets {
+  height: 100%;
+}
+
+.binf-widgets .signin-header {
+  padding-top: 6em;
+}
+
+.signin-header h1 {
+  height: 108px;
+}
+
+.signin-header .d2-logo {
+  display: inline-block;
+  background-image: url('image/header_d2_li.svg');
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 400px;
+}
+
+.binf-widgets .siginin-footer {
+  height: 50px;
+}
+
+.binf-widgets .signin-copyright {
+  display: table;
+  font-size: 0.8em;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+
+.binf-widgets.d2mob-saf-ios .signin-copyright {
+  padding-top: 0;
+  padding-bottom: 2em;
+}
+
+.binf-widgets.d2mob-saf-ios .signin-header,
+.binf-widgets.d2mob-gc-android .signin-header {
+  padding-top: 0;
+}
+
+
+
+body.binf-widgets.d2mob-gc-android {
+  overflow: scroll;
+}
+
+
+
+.binf-widgets.d2mob-saf-ios .signin-header h1,
+.binf-widgets.d2mob-gc-android .signin-header h1 {
+  height: 24px;
+}
+
+
+
+.binf-widgets.d2mob-saf-ios .d2-signin .login-panel .login-error.error-image,
+.binf-widgets.d2mob-gc-android .d2-signin .login-panel .login-error.error-image {
+  background: rgba(255, 255, 255, 0.1) none no-repeat;
+  background-size: auto;
+  color: #FFFFFF;
+  height: 51px;
+  width: 311px;
+  display: inline-table;
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.125em;
+  text-align: left;
+  margin: 0 auto 0 auto;
+  max-width: 311px;
+  min-height: 4em;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+.binf-widgets.d2mob-saf-ios .binf-has-error .binf-form-control,
+.binf-widgets.d2mob-gc-android .binf-has-error .binf-form-control,
+.binf-widgets.d2mob-saf-ios .binf-has-error .binf-form-control:focus,
+.binf-widgets.d2mob-gc-android .binf-has-error .binf-form-control:focus {
+  border: 0 solid #df3626;
+  border-bottom-width: 1px;
+}
+
+.binf-widgets.d2mob-saf-ios .binf-has-feedback .binf-form-control,
+.binf-widgets.d2mob-gc-android .binf-has-feedback .binf-form-control {
+  padding-right: 0;
+}
+
+.binf-widgets.d2mob-saf-ios .binf-has-feedback,
+.binf-widgets.d2mob-gc-android .binf-has-feedback {
+  position: unset;
+}
+
+.binf-widgets.d2mob-saf-ios .d2-signin .binf-form-group,
+.binf-widgets.d2mob-gc-android .d2-signin .binf-form-group {
+  width: auto;
+  margin: auto;
+  height: auto;
+}
+
+.binf-widgets.d2mob-saf-ios .d2-signin .login-form-wrapper .binf-form-group.error-icon,
+.binf-widgets.d2mob-gc-android .d2-signin .login-form-wrapper .binf-form-group.error-icon {
+  background-position: calc(100% - 3.75em);
+}
+
+.binf-widgets.d2mob-saf-ios .signin-header .d2-logo,
+.binf-widgets.d2mob-gc-android .signin-header .d2-logo {
+  margin: 64px auto 59px auto;
+  height: 48px;
+  width: 304px;
+  background-size: contain !important;
+  display: block;
+}
+
+.binf-widgets.d2mob-saf-ios .signin-header .d2-logo.d2mob-err-logo,
+.binf-widgets.d2mob-gc-android .signin-header .d2-logo.d2mob-err-logo {
+  margin: 48px auto 39px auto;
+}
+
+.binf-widgets.d2mob-saf-ios .d2-signin .textbox,
+.binf-widgets.d2mob-gc-android .d2-signin .textbox,
+.binf-widgets.d2mob-saf-ios .d2-signin select,
+.binf-widgets.d2mob-gc-android .d2-signin select {
+  width: 311px;
+  height: 32px;
+  margin: 0 auto 12px auto;
+  border-radius: 3px 3px 0 0;
+  padding: 0 8px 2px 8px;
+}
+
+.binf-widgets.d2mob-saf-ios .d2-signin .error-icon,
+.binf-widgets.d2mob-gc-android .d2-signin .error-icon {
+  background: none;
+}
+
+.binf-widgets.d2mob-saf-ios .d2-signin .login-btn,
+.binf-widgets.d2mob-gc-android .d2-signin .login-btn {
+  height: 2.5em;
+  border-radius: 1.25em;
+  border: 1px solid #5864AD;
+  background: transparent;
+  font-size: 1.125em;
+  color: #5864AD;
+  margin: 0 auto 0 auto;
+  padding: 0 2.25em 0 2.25em;
+}
+
+.binf-widgets.d2mob-saf-ios .d2-signin .login-btn-enabled,
+.binf-widgets.d2mob-gc-android .d2-signin .login-btn-enabled {
+  border: 1px solid #FFFFFF;
+  background: #FFFFFF;
+  color: #232E72;
+}
+
+.binf-widgets.d2mob-saf-ios .d2-signin .login-btn:active,
+.binf-widgets.d2mob-gc-android .d2-signin .login-btn:active {
+  background: #171F4C;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.binf-widgets.d2mob-saf-ios .signin-footer,
+.binf-widgets.d2mob-gc-android .signin-footer {
+  position: fixed;
+  left: 2.25em;
+  right: 2.25em;
+  top: calc(100% - 46px);
+}
+
+.binf-widgets.d2mob-gc-android .signin-footer {
+  position: sticky;
+}
+
+.binf-widgets.d2mob-saf-ios .signin-footer .signin-copyright,
+.binf-widgets.d2mob-gc-android .signin-footer .signin-copyright {
+  width: 303px;
+  height: 30px;
+  margin: 0 auto 16px auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.binf-widgets.d2-mobile.csui-on-ipad .d2-signin input.input-password {
+  font-weight: normal;
+}
+
+.binf-widgets.d2mob-saf-ios .d2-signin .login-form-wrapper .binf-form-group.error-icon input,
+.binf-widgets.d2mob-gc-android .d2-signin .login-form-wrapper .binf-form-group.error-icon input {
+  background: rgba(255, 255, 255, .1) url(image/form-validation-error.svg) no-repeat calc(100% - .5em);
+  background-size: 18px;
+}
+
+.binf-widgets.d2mob-saf-ios .d2-signin .textbox-empty,
+.binf-widgets.d2mob-gc-android .d2-signin .textbox-empty,
+.binf-widgets.d2mob-saf-ios .d2-signin select:invalid,
+.binf-widgets.d2mob-gc-android .d2-signin select:invalid {
+  font-style: normal;
+}
+
+.binf-widgets.d2mob-saf-ios .d2-signin .login-form-wrapper,
+.binf-widgets.d2mob-gc-android .d2-signin .login-form-wrapper {
+  margin-bottom: 0;
+}
+
+.binf-widgets.d2mob-saf-ios .d2-signin .separator.separator1,
+.binf-widgets.d2mob-gc-android .d2-signin .separator.separator1,
+.binf-widgets.d2mob-saf-ios .d2-signin .separator.separator2,
+.binf-widgets.d2mob-gc-android .d2-signin .separator.separator2 {
+  height: 0;
+}
+
+.separator.d2mobile-input-separator {
+  height: 1.5em;
+}
+
+.separator.d2mobile-signin-separator {
+  height: 0.75em;
+}
+

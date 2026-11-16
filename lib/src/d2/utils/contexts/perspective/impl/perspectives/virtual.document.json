@@ -1,0 +1,10 @@
+{
+  "type": "left-center-right",
+  "options": {
+    "center": {
+      "type": "d2/widgets/virtual.document",
+      "className": "d2-vdoc-perspective-container",
+      "options": {}
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<div class='vd-replace-dialog'>
+    <div class="vd-replace-dialog--query">{{vdReplaceQuery}}</div>
+    <div class="file-label">{{sourceFileLabel}}</div>
+    <div class="vd-replace-selected--node-container">
+        <div class="doc-icon"></div>
+        <div class="doc-metadata">
+            <div class="doc-name" title="{{srcDocTitle}}">{{srcDocTitle}}</div>
+            <div class="doc-modified-data">{{srcDocModifyDate}}</div>
+        </div>
+    </div>
+    <div class="file-label">{{destinationFileLabel}}</div>
+    <div class="vd-replace-target--node-container">
+        <div class="doc-icon"></div>
+        <div class="doc-metadata">
+            <div class="doc-name" title="{{trgtDocTitle}}">{{trgtDocTitle}}</div>
+            <div class="doc-modified-data">{{targetDocModifyDate}}</div>
+        </div>
+    </div>
+
+    <form class="AddReplaceForm">
+        <div class="option-block">
+            <div class="radio-block">
+                <input type="radio" name="AddReplace" value="Add" checked>
+            </div>
+            <div    class="title-block">
+                <span class="title">{{addAsAChildRadioLabel}}</span>
+                <span class="title-desc">{{addAsAChildRadioDesc}}</span>
+            </div>
+        </div>
+        <div class="option-block">
+            <div class="radio-block">
+                <input type="radio" name="AddReplace" value="Replace">
+            </div>
+            <div    class="title-block">
+                <span class="title">{{replaceFileRadioLabel}}</span>
+                <span class="title-desc">{{replaceFileRadioDesc}}</span>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

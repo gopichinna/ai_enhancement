@@ -1,0 +1,18 @@
+{{#if is_shortcut}}
+  <div class="binf-row shortcut-div">
+    <a href="#" class="shortcut-switch" title="{{right_label}}">{{right_label}}</a>
+  </div>
+{{/if}}
+{{#if is_generation}}
+  <div class="binf-row generation-div">
+    <a href="#" class="generation-switch" title="{{right_label}}">{{right_label}}</a>
+  </div>
+{{/if}}
+<div class="csui-extra-header-wrapper"></div>
+{{#if show_close_icon}}
+  <div class="metadata-header-floating-rightbar">
+    <span class="icon close cs-metadata-close" title="{{close_metadata_button_tooltip}}"></span>
+  </div>
+{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

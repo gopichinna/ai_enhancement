@@ -1,0 +1,38 @@
+<div role="alertdialog"
+    {{#if dialogSize}}
+      class="binf-modal-dialog binf-modal-{{dialogSize}}"
+    {{else}}
+      class="binf-modal-dialog"
+    {{/if}}
+
+    {{#if showHeader}}
+      aria-labelledby="{{dlgTitleId}}"
+    {{/if}}
+    aria-describedby="{{dlgMsgId}}"      
+>
+  <div class="binf-modal-content">
+    {{#if showHeader}}
+      <div class="binf-modal-header {{headerClass}}">
+        {{#if showTitleCloseButton}}
+          <button type="button" class="binf-close" data-binf-dismiss="modal"
+                  aria-label="{{closeButtonAria}}" title="{{closeButtonTooltip}}" tabindex="0">
+            <span class="icon {{titleCloseIcon}}"></span>
+          </button>
+        {{/if}}
+        <h4 class="binf-modal-title">
+          {{#if showTitleIcon}}
+            <span class="icon {{titleIcon}}"></span>
+          {{/if}}
+          <span class="title-text" id="{{dlgTitleId}}">{{title}}</span>
+        </h4>
+      </div>
+    {{/if}}
+
+    <div class="binf-modal-body" id="{{dlgMsgId}}"></div>
+
+    <div class="binf-modal-footer"></div>
+  </div>
+  </div>
+
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

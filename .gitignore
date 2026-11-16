@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+target/
+**/target/
+out-debug/
+**/out-debug/
+out-release/
+**/out-release/
+
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Local Dev Tools (platform-specific binaries)
+.dev-tools/
+
+# Files exceeding GitHub 100MB hard limit
+tools/d2sdk-maven-plugin-*.jar
+
+# Logs and temp files
+*.log
+.npm/

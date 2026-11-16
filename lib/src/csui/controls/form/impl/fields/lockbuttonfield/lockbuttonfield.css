@@ -1,0 +1,45 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-btn-lock-status {
+  background: transparent no-repeat;
+  background-size: contain;
+  padding: 0;
+  margin: 0;
+  border: 0 none;
+}
+
+.binf-widgets .csui-btn-lock-status > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.binf-widgets .csui-btn-lock-status .csui-icon{
+  min-width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.csui-btn-lock-status-action {
+  cursor: pointer;
+}
+
+.binf-widgets .csui-btn-lock-status .csui-lockby-status {
+  width: auto;
+  max-width:70%;
+  height: 24px;
+}
+
+.binf-widgets .csui-btn-lock-status .csui-lockby-status .esoc-user-profile-link:focus {
+  text-decoration: none;
+  outline: 1px dotted #333333;
+}
+
+.binf-widgets .csui-btn-lock-no-action,
+.binf-widgets .csui-btn-lock-status.csui-btn-lock-no-action .csui-icon {
+  cursor: default;
+}
+
+.binf-widgets button .csui-btn-lock-no-action{
+  cursor: pointer;
+}

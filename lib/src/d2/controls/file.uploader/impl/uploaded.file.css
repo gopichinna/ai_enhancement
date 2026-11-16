@@ -1,0 +1,89 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .uploaded-file {
+  display: flex;
+  margin: 8px 0 8px 0;
+}
+
+.binf-widgets .uploaded-file .file-icon {
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  margin-top: 5px;
+}
+
+.binf-widgets .uploaded-file .file-details {
+  width: calc(100% - 50px);
+  margin-left: 12px;
+}
+
+.binf-widgets .uploaded-file .file-details .file-name {
+  line-height: 22px;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: calc(100% - 30px);
+}
+
+.binf-widgets .uploaded-file .file-details .file-size,
+.binf-widgets .uploaded-file .file-details .file-format {
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.binf-widgets .uploaded-file .file-details .file-size .size-lable,
+.binf-widgets .uploaded-file .file-details .file-format .format-lable {
+  font-weight: bold;
+}
+
+.binf-widgets .uploaded-file .file-details .file-format .selected-format {
+  margin-left: 10px;
+}
+
+.binf-widgets .uploaded-file .file-details .file-format {
+  display: flex;
+  width: 100%;
+}
+
+.binf-widgets .uploaded-file .file-details .file-format .format-menu,
+.binf-widgets .file-details .file-format .format-value {
+  margin-left: 4px;
+}
+
+.binf-widgets .uploaded-file .file-details .file-format .format-menu .d2-select {
+  width: inherit;
+  border: 0;
+  background: none;
+}
+
+
+.binf-widgets .uploaded-file .file-details .file-format .format-menu .d2-select:focus {
+  outline: 1px dotted #333333;
+}
+
+.binf-widgets .uploaded-file .file-details .file-format .format-menu .d2-select .cs-field-write button > .cs-label {
+  max-width: inherit;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.binf-widgets .uploaded-file .file-details .file-format .format-menu .d2-select .cs-field-write button {
+  padding: 0;
+  height: 16px;
+}
+
+.binf-widgets .uploaded-file .file-details .file-format .format-menu .d2-select .cs-field-write button .cs-icon {
+  width: 12px;
+  height: 12px;
+  margin: 1px 2px 0 2px;
+}
+
+.binf-widgets .uploaded-file .file-details .file-format .format-menu .d2-select.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a {
+  padding: 0 0 0 5px;
+  font-size: 10px;
+  height: 20px;
+  line-height: 20px;
+}

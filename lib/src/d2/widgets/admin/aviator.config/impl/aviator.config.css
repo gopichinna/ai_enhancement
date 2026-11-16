@@ -1,0 +1,24 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .cs-perspective-panel .cs-perspective.cs-zone-perspective .av4r-admin-widget-container {
+    padding-top: 32px;
+    padding-left: 24px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.binf-widgets .av4r-config-view {
+    width: 100%;
+    height: 100%;
+}
+
+.av4r-config-view .rgn-av4r-config-header {
+    width: 60%;
+    min-width: 624px;
+}
+
+.av4r-config-view .rgn-av4r-config-content {
+    width: inherit;
+    height: calc(100% - 48px);
+}

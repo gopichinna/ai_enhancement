@@ -1,0 +1,27 @@
+{{#if writeonlyMode}}
+<div class="cs-field-write">
+  <div class="cs-field-write-inner">
+      <div class="file-select-area">
+       <input type="text"  id="{{id}}" name="{{name}}" placeholder="{{alpacaPlaceholderFile}}"  readonly value="{{data}}" title="{{data}}">
+         <span title="{{iconclasstitle}}" id="openfilebtn" class="{{iconclass}}" tabindex="0"></span>
+      </div>
+  </div>
+</div>
+{{/if}}
+<div class="cs-field-read">
+  <div class="cs-field-read-inner">
+    <div class="btn-container">
+       <button {{#if this.hasData}} title="{{data.name}}"{{else}} title="{{emptyLabel}}"{{/if}} {{#if
+                 schema.readonly}} tabindex="-1" data-cstabindex="-1"{{/if}}>
+          {{#if this.hasData}}
+            <span class="selected-file">{{data.name}}</span>
+          {{else}}
+            <span class="selected-file placeholder">{{emptyLabel}}</span>
+          {{/if}}
+        </button>
+    </div>
+  </div>
+</div>
+
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

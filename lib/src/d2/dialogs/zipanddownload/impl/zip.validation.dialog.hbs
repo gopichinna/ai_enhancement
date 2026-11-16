@@ -1,0 +1,51 @@
+<div class="d2-zip-dialog-body-wrapper">
+  <div class="d2-zip-form-wrapper"></div>
+  <div class="enable-sub-folder toggle-switch-container">
+    <div class="toggle-switch">
+      <div class="enable-sub-folder-label toggle-switch-label">{{includeSubFolderLabel}}</div>
+      <div class="enable-sub-folder-switch"></div>
+    </div>
+    <div class="error-panel binf-hidden">
+      <div class="error-message"></div>
+    </div>
+    <div class="show-file-Info">
+      <div class="info-icon"></div>
+      <div class="files-info-message">{{folderInfoMessage}}</div>
+    </div>
+  </div>
+
+  <span class="separator"></span>
+  <div class="d2-zip-validation-progress-container">
+    <div class="processing-icon"></div>
+    <div class="processing-label">{{labelProcessing}}</div>
+    <div class="d2-zip-validation-progress">
+      <div class="dots-loader">
+        <span class="csui-loading-dots-wrapper">
+            <span class="csui-loading-dot"></span>
+            <span class="csui-loading-dot"></span>
+            <span class="csui-loading-dot"></span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="d2-zip-error-list-container"></div>
+  <div class="d2-zip-validation-download-container">
+    <div class="download-icon"></div>
+    <div class="d2-zip-validation-download-wrapper">
+      <span class="download-text">{{allFilesDownloaded}}</span>
+    </div>
+    <div class="d2-zip-validation-download-wrapper">
+      <div class="button-wrapper">
+        <button type="button" class="binf-btn d2-zip-validation-download-btn" title="{{download}}" aria-label="{{download}}"
+                tabindex="0">{{download}}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="d2-zip-generic-error-container">
+    <div class="generic-status-icon"></div>
+    <div class="generic-error-message"></div>
+  </div>
+</div>
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

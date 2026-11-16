@@ -1,0 +1,186 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.d2-nodepicker-field .node-selection-area {
+  position: relative;
+  width: 100%;
+}
+
+.d2-nodepicker-field .node-selection-area input {
+  width: 100%;
+  height: 28px;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 32px;
+  border: 1px solid #a7a9ac;
+  border-radius: 3px;
+  
+}
+
+.d2-nodepicker-field .node-selection-area input:focus {
+  outline: none;
+}
+
+.d2-nodepicker-field .node-selection-area input:not(.csui-formfield-disabled):focus {
+  border: 2px solid #666666;
+}
+
+.d2-nodepicker-field .node-selection-area input + span {
+  display: block;
+  position: absolute;
+  right: 8px;
+  top: 0;
+  height: 100%;
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  width: 18px;
+}
+
+.d2-nodepicker-field .node-selection-area input + span.icon-browse {
+  background-image: url("images/action_browse20.svg");
+  width: 18px;
+}
+
+.d2-nodepicker-field .node-selection-area input + span.icon-browse:hover {
+  background-image: url("images/action_browse20_mo.svg");
+}
+
+.d2-nodepicker-field .node-selection-area input + span.icon-browse:active {
+  background-image: url("images/action_browse20_md.svg");
+}
+
+.d2-nodepicker-field .node-selection-area input + span.icon-clear {
+  background-image: url("images/delete-item16.svg");
+  width: 16px;
+}
+
+.d2-nodepicker-field .node-selection-area input + span.icon-clear:active {
+  background-image: url("images/delete-item16_md.svg");
+}
+
+.d2-nodepicker-field .node-selection-area input + span.icon-clear:hover {
+  background-image: url("images/delete-item16_mo.svg");
+}
+
+.d2-nodepicker-field .multi-node-selection {
+  width: 100%;
+}
+
+.d2-nodepicker-field .multi-node-selection .d2-nodes-selction-wrapper {
+  border: 1px solid #a7a9ac;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 100%;
+  margin-top: 5px;
+  min-height: 24px;
+}
+
+.d2-nodepicker-field .d2-nodes-selectedvalues {
+  max-height: 140px;
+}
+
+.d2-nodepicker-field .d2-nodes-selectedvalues li {
+  color: #333333;
+  min-height: 20px;
+}
+
+.d2-nodepicker-field .d2-nodes-selectedvalues:not(.d2-formfield-disabled) > li:hover, .binf-widgets .d2-nodes-selectedvalues > li.active {
+  background: #B9C4CB;
+  box-shadow: inset 0 -1px 0 #FFFFFF, inset 0 1px 0 #FFFFFF;
+}
+
+.d2-nodepicker-field .d2-nodes-selectedvalues > li > a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 3px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.d2-nodepicker-field .d2-nodes-selectedvalues > li:hover > a {
+  color: inherit;
+}
+
+.d2-nodepicker-field .d2-nodes-selectedvalues > li > a > span.d2-listfield-selectedlabel {
+  display: inline-block;
+  width: calc(100% - 20px);
+  overflow: hidden;
+  vertical-align: bottom;
+  text-overflow: ellipsis;
+}
+
+.d2-nodepicker-field .d2-nodes-selectedvalues > li > a > span.d2-listfield-icon-container {
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.d2-nodepicker-field .d2-nodes-selectedvalues .d2-listfield-icon-container.d2-icon-drag{
+  display: none;
+}
+
+.d2-nodepicker-field .d2-nodes-selectedvalues:not(.d2-formfield-disabled) > li > a > span.d2-icon-selected-close {
+  background: url(../d2list/images/close.svg) no-repeat center;
+}
+
+.d2-nodepicker-field .d2-nodes-selected-progress {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  display: none;
+}
+.d2-nodepicker-field .d2-nodes-selction-wrapper.node-processing .d2-nodes-selectedvalues{
+  display: none;
+}
+
+.d2-nodepicker-field .d2-nodes-selction-wrapper.node-processing .d2-nodes-selected-progress {
+  display: block;
+}
+
+.d2-nodepicker-field.d2-nodepicker-multi-select .node-selection-area input:disabled {
+  background-color: #FFFFFF;
+}
+
+.d2-nodepicker-field .cs-field-read .d2-list-toolbar > a::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  float: right;
+  margin-top: 8px;
+  margin-left: 3px;
+}
+
+.d2-nodepicker-field .cs-field-read .d2-list-toolbar > a[data-d2-list-toolbar-action="showLess"]::after {
+  background: url('../d2list/images/show-less.svg') no-repeat;
+  background-size: contain;
+}
+
+.d2-nodepicker-field .cs-field-read .d2-list-toolbar > a[data-d2-list-toolbar-action="showMore"]::after {
+  background: url('../d2list/images/show-more.svg') no-repeat;
+  background-size: contain;
+}
+
+.d2-nodepicker-field .cs-field-read .d2-list-toolbar {
+  display: flex;
+}
+
+.d2-nodepicker-field.d2-nodepicker-multi-select .cs-field-write.d2-field-disabled .multi-node-selection .d2-nodes-selectedvalues {
+  background-color: #eeeeee;
+  color: #666666;
+  cursor: default;
+}
+
+.d2-nodepicker-field.d2-nodepicker-multi-select .cs-field-write.d2-field-disabled .multi-node-selection .d2-nodes-selectedvalues .d2-remove-selectedValue{
+  visibility: hidden;
+}
+
+.d2-nodepicker-field.d2-nodepicker-multi-select .cs-field-write.d2-field-disabled .node-selection-area{
+  display:none;
+  visibility: hidden;
+}

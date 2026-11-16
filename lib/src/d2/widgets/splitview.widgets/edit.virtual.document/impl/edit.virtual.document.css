@@ -1,0 +1,6 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .csui-perspective-view .d2-vdoc-perspective-container[data-csui-widget_type="edit.virtual.document"] {
+    height: calc(100vh - 64px);
+}

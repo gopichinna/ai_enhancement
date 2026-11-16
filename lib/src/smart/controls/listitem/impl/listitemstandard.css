@@ -1,0 +1,148 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item {
+  font-size: 14px;
+  margin: 0px;
+  min-height: 40px;
+  height: auto;
+}
+
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item.inactive,
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item.inactive .csui-icon,
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item.inactive .list-item-title {
+  cursor: default;
+}
+
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item.inactive .csui-icon {
+  opacity: 0.5;
+}
+
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item.inactive .list-item-title {
+  color: #717171;
+}
+
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:hover,
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:active,
+.binf-widgets:not(.csui-on-ipad) .cs-list .csui-item-standard.smart-item-standard.csui-tile-with-more-btn {
+  background-color: #B2BEC5;
+}
+
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:active {
+  background-color: #98A8B2;
+}
+
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:not(.inactive) {
+  cursor: pointer;
+}
+
+.cs-list.binf-panel .binf-list-group-item {
+  border-top: 1px solid transparent;
+}
+
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item .smart-list-item-sec-text {
+  padding: 0 4px;
+  overflow: hidden;   
+  text-overflow: ellipsis;
+  width: 100%; 
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: normal;
+  color: #666666;
+}
+
+.binf-widgets .binf-list-group-item {
+  border: none;
+  background-color: transparent;
+  padding: 4px 16px;
+}
+
+.binf-list-group-item.binf-active {
+  border-radius: 0;
+}
+
+.binf-list-group-item .icon {
+  margin-right: 5px;
+}
+
+.binf-list-group-item .icon.icon-folder {
+  color: #7b9bb0;
+}
+
+.binf-widgets .cs-list .csui-item-standard.smart-item-standard .list-item-title {
+  max-width: calc(100% - 32px);
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 2px 0 2px 8px;
+  font-family: OpenText Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+}
+
+.binf-widgets .cs-list .csui-item-standard.smart-item-standard.csui-tile-with-more-btn.csui-item-standard.smart-item-standard-without-icon .csui-tileview-contains-more-btn .list-item-title {
+  width: calc(100% - 32px);
+  
+}
+
+.binf-widgets .cs-list .csui-item-standard.smart-item-standard.csui-tile-with-more-btn .csui-tileview-contains-more-btn .list-item-title {
+  width: calc(100% - 64px);
+  
+}
+
+.binf-widgets .cs-list.tile.content-tile .csui-tileview-contains-no-more-btn.csui-item-standard.smart-item-standard-without-icon {
+  height: 40px;
+}
+
+.binf-widgets .cs-list.smart-cs-list.tile.content-tile .csui-tileview-contains-no-more-btn,
+.binf-widgets .cs-list.smart-cs-list.tile.content-tile .csui-tileview-contains-more-btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  outline-style: none;
+  height: 100%;
+}
+
+
+
+.binf-widgets .csui-item-standard.smart-item-standard .csui-tileview-more-btn span {
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+
+.binf-widgets .csui-item-standard.smart-item-standard.csui-tile-with-more-btn .csui-tileview-more-btn {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+
+
+
+@media(forced-colors:active) {
+
+  .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:hover,
+  .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:active,
+  .binf-widgets:not(.csui-on-ipad) .cs-list .csui-item-standard.smart-item-standard.csui-tile-with-more-btn {
+    outline: 1px solid black;
+    outline-offset: -3px;
+  }
+
+  .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:focus-visible {
+    outline: 1px solid black;
+    outline-offset: -3px;
+  }
+
+}

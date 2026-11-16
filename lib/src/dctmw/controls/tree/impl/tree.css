@@ -1,0 +1,184 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+
+.d2-tree .fancytree-helper-hidden {
+  display: none;
+}
+
+
+.d2-tree .fancytree-container.fancytree-treefocus {
+  outline: none;
+}
+
+
+.d2-tree .fancytree-empty,
+.d2-tree .fancytree-expander,
+.d2-tree .fancytree-icon,
+.d2-tree .fancytree-custom-icon {
+  width: 20px;
+  min-width: 20px;
+  background-size: 16px 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+
+.d2-tree .fancytree-node {
+  display: flex;
+  width: 100%;
+}
+.d2-tree .fancytree-node:not(.fancytree-disabled):hover {
+  background-color: #B2BEC5;
+}
+.d2-tree .fancytree-title {
+  color: #333;
+  font-size: 13px;
+  padding: 0 8px 0 4px;
+  line-height: 32px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.d2-tree .fancytree-node {
+  cursor: pointer;
+}
+.d2-tree .fancytree-disabled {
+  cursor: default;
+}
+.d2-tree .fancytree-node.fancytree-error,
+.d2-tree .fancytree-node.fancytree-error ~ ul,
+.d2-tree > ul > li > .fancytree-node.fancytree-statusnode-error {
+  background-color: #FDF5F4;
+}
+.d2-tree .fancytree-node.fancytree-error:only-child,
+.d2-tree .fancytree-node.fancytree-error ~ ul,
+.d2-tree > ul > li > .fancytree-node.fancytree-statusnode-error {
+  border-bottom: 1px solid #DF3324;
+}
+.d2-tree .fancytree-node.fancytree-error ~ ul .fancytree-title,
+.d2-tree > ul > li > .fancytree-node.fancytree-statusnode-error .fancytree-title {
+  color: #DF3324;
+}
+.d2-tree .fancytree-node.fancytree-active {
+  font-weight: bold;
+  background-color: #CBD3D9;
+}
+.d2-tree .fancytree-node.fancytree-focused {
+  outline: 1px dotted gray;
+  outline-offset: -1px;
+}
+.d2-tree .fancytree-level-2[aria-expanded=true] {
+  background-color: #EDF0F2;
+  border-bottom: 1px solid white;
+}
+.d2-tree .fancytree-statusnode-paging .fancytree-icon {
+  display: none;
+}
+.d2-tree .fancytree-statusnode-paging .fancytree-title {
+  color: #232E72;
+}
+.d2-tree .fancytree-paging-icon {
+  display: inline-block;
+  margin-left: 4px;
+  width: 8px;
+  height: 8px;
+  background-size: 8px 8px;
+  background-repeat: no-repeat;
+}
+.d2-tree .fancytree-paging-icon.show-more {
+  background-image: url(images/show-more.svg);
+}
+.d2-tree .fancytree-paging-icon.show-less {
+  background-image: url(images/show-less.svg);
+}
+
+
+.d2-tree.fancytree-ext-filter-hide tr.fancytree-hide,
+.d2-tree.fancytree-ext-filter-hide span.fancytree-node.fancytree-hide {
+  display: none;
+}
+
+.d2-tree.fancytree-ext-filter-dimm tr.fancytree-hide .fancytree-title,
+.d2-tree.fancytree-ext-filter-dimm span.fancytree-node.fancytree-hide .fancytree-title {
+  color: #aaa; 
+}
+
+.d2-tree.fancytree-ext-filter .fancytree-title mark {
+  font-weight: bold;
+  background: initial;
+}
+
+
+
+.d2-tree .fancytree-exp-n .fancytree-expander,
+.d2-tree .fancytree-exp-nl .fancytree-expander {
+  background-image: none;
+}
+.d2-tree .fancytree-exp-c .fancytree-expander,
+.d2-tree .fancytree-exp-cl .fancytree-expander,
+.d2-tree .fancytree-exp-cd .fancytree-expander,
+.d2-tree .fancytree-exp-cdl .fancytree-expander {
+  background-image: url(images/expander-collapsed.svg);
+}
+.d2-tree .fancytree-exp-e .fancytree-expander,
+.d2-tree .fancytree-exp-el .fancytree-expander,
+.d2-tree .fancytree-exp-ed .fancytree-expander,
+.d2-tree .fancytree-exp-edl .fancytree-expander {
+  background-image: url(images/expander-expanded.svg);
+}
+
+.d2-tree .fancytree-loading .fancytree-expander {
+  background-image: none;
+  vertical-align: middle;
+}
+.d2-tree .fancytree-loader,
+.d2-tree .fancytree-loader:after {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+.d2-tree .fancytree-loader {
+  position: relative;
+  margin: 8px 0;
+  border: 2px solid #2E3D98;
+  border-left: 2px solid #d8f4fd;
+  transform: translateZ(0);
+  animation: load8 1.1s infinite linear;
+}
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.d2-tree .fancytree-custom-icon.d2-tree-icon-repository {
+  background-image: url(images/node-repository.svg);
+}
+.d2-tree .fancytree-custom-icon.d2-tree-icon-cabinet {
+  background-image: url(images/node-cabinet.svg);
+}
+.d2-tree .fancytree-custom-icon.d2-tree-icon-home-cabinet {
+  background-image: url(images/node-home-cabinet.svg);
+}
+.d2-tree .fancytree-custom-icon.d2-tree-icon-folder {
+  background-image: url(images/node-folder.svg);
+}
+.d2-tree .fancytree-custom-icon.d2-tree-icon-favorites {
+  background-image: url(images/node-favorites.svg);
+}
+.d2-tree .fancytree-custom-icon.d2-tree-icon-error {
+  background-image: url(images/node-error.svg);
+}
+
+
+.rtl .d2-tree .fancytree-exp-c .fancytree-expander,
+.rtl .d2-tree .fancytree-exp-cl .fancytree-expander,
+.rtl .d2-tree .fancytree-exp-cd .fancytree-expander,
+.rtl .d2-tree .fancytree-exp-cdl .fancytree-expander {
+  background-image: url(images/expander-collapsed-rtl.svg);
+}

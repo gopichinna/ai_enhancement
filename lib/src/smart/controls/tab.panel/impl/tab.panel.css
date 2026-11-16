@@ -1,0 +1,295 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .smart-tab-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.binf-widgets .smart-tab-panel .tab-links-bar.smart-tab-links-bar {
+  width: 100%;
+  height: 48px;
+  vertical-align: top;  
+  flex-grow: 1;
+  white-space: nowrap;
+  
+  overflow: hidden;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links,
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .smart-tab-links-bar-toolbar-wrapper {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .smart-tab-links-bar-toolbar-wrapper {
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .smart-tab-links-bar-toolbar-wrapper {
+  overflow: hidden;
+}
+
+.binf-widgets .tab-links-bar.smart-tab-links-bar .smart-tab-panel-item {
+  display: flex;
+}
+
+.binf-widgets .smart-tab-panel-item>a {
+  position: relative;
+}
+
+.binf-widgets .smart-tab-panel-item .cs-tablink-delete.smart-tablink-delete {
+  margin-top: 11px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  margin-right: -8px;
+  right: 0;
+  opacity: 0;
+  padding: 6px 4px 2px 4px;
+}
+
+.binf-widgets .smart-tab-panel-item:last-child .cs-tablink-delete.smart-tablink-delete {
+  position: relative;  
+}
+
+.binf-widgets .smart-tab-panel .tab-links-bar.smart-tab-links-bar .binf-nav-tabs > li:hover .cs-tablink-delete.smart-tablink-delete,
+.binf-widgets .smart-tab-panel .tab-links-bar.smart-tab-links-bar .binf-nav-tabs > li:focus-visible .cs-tablink-delete.smart-tablink-delete {
+  opacity: 1;
+}
+
+.binf-widgets .smart-tab-panel .left-toolbar.smart-left-toolbar,
+.binf-widgets .smart-tab-panel .right-toolbar.smart-right-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.binf-widgets .smart-tab-panel .binf-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.binf-widgets .smart-tab-panel .binf-nav-tabs {
+  padding: 0;
+  position: relative;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .left-toolbar.smart-left-toolbar{
+  width: 48px;
+  height: 3em;
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .right-toolbar.smart-right-toolbar {
+  width: 54px;
+  height: 3em;
+  cursor: pointer;
+  display: inline-flex;
+  position: relative;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .goto_next_div {
+  border-left: 1px solid #ccc;
+  height: 28px;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .goto_previous_div {
+  border-right: 1px solid #ccc;
+  height: 28px;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .smart-goto-next-page,
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .smart-goto-previous-page {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: -2px 8px;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .binf-nav {
+  
+  
+  
+  height: 48px;
+  
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .binf-nav.binf-nav-tabs.smart-with-overflowing-children {
+  left: -40px;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .binf-nav-tabs {
+  position: relative;
+  z-index: 0;
+  border-bottom: 0;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links {
+  border-bottom: 1px solid #cccccc;
+  order: 1;
+  flex: 1 1 0;
+}
+
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .binf-nav.binf-nav-tabs > li {
+  font-size: 14px;
+  padding: 0 16px;
+  max-width: 100%;
+  
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .binf-nav.binf-nav-tabs > li:last-child,
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .binf-nav.binf-nav-tabs > li.binf-active:last-child {
+  padding-right: 0;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .binf-nav.binf-nav-tabs>li:focus-visible {
+  box-shadow: inset 0px 0px 0px 2px #FFFFFF, inset 0px 0px 0px 3px #2E3D98;
+  outline: 0;
+}
+
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .binf-nav.binf-nav-tabs > li.binf-active {
+  padding: 0 16px;
+  
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .cs-icon-required {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  vertical-align: top;
+  position: relative;
+  top: 16px;
+  -webkit-flex: 0 0 auto;
+}
+
+.binf-widgets .smart-tab-panel .tab-links-bar.with-left-toolbar {
+  padding-left: 0;
+  width: calc(100% - (54px + 48px));
+}
+
+.smart-tab-panel .binf-tab-content > div.binf-tab-content-item.smart-tab-content-item {
+  min-height: 64px;
+}
+
+.smart-tab-panel .binf-tab-content > div.binf-active {
+  display: block;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .binf-nav.binf-nav-tabs > li > a {
+  position: relative;
+  margin-right: 0;
+  display: flex;
+  line-height: 32px;
+  border: 0;
+  border-radius: 0;
+  padding: 0px 0px 8px 0px;
+  height: 48px;
+  color: #333333;
+  font-weight: normal;
+  background: transparent;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .binf-nav.binf-nav-tabs > li > a:focus-visible {
+  box-shadow: none;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .binf-nav.binf-nav-tabs > li > a span {
+  position: relative;
+  color: #666666;
+  display: block;
+  height: 48px;
+  padding-top: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index: -1;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .binf-nav.binf-nav-tabs > li > a .smart-tab-contents-count {
+  padding-top: 8px;
+  cursor: default;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .binf-nav.binf-nav-tabs > li .smart-category-required {
+  width: 9px;
+  left: 0px;
+  position: absolute;
+  margin-left: 8px;
+}
+
+.binf-widgets .smart-tab-panel .tab-links-bar .binf-nav-tabs > li a:hover span,
+.binf-widgets .smart-tab-panel .tab-links-bar .binf-nav-tabs > li:focus-visible span:not(.cs-icon-required),
+.binf-widgets .smart-tab-panel .tab-links-bar .binf-nav-tabs > li.binf-active > a span:not(.cs-icon-required):hover{
+  border-bottom: 4px solid #1A6AFF;
+}
+
+.binf-widgets .smart-tab-panel .tab-links-bar .binf-nav-tabs > li > a:active span {
+  border-bottom: 4px solid #2F4ED1;
+}
+
+.binf-widgets .smart-tab-panel .tab-links-bar .binf-nav-tabs > li.binf-active > a span:not(.cs-icon-required),
+.binf-widgets .smart-tab-panel .tab-links-bar .binf-nav-tabs > li.binf-active > a span:not(.cs-icon-required):active{
+  color: #000000;
+  border-bottom: 4px solid #232E72;
+}
+
+.binf-widgets .smart-tab-contents-wrapper {
+  position: relative;
+  order: 2;
+  flex: 1 1 auto;
+}
+
+.binf-widgets .smart-tab-panel .smart-tab-contents-wrapper .binf-tab-content {
+  position: relative;
+  overflow-y: auto;
+  height: calc(100vh - 100px);
+}
+
+.binf-widgets .binf-modal-body .smart-tab-contents-wrapper {
+  height: calc(100% - 46px);
+}
+
+.binf-widgets .binf-modal-body .smart-tab-panel .smart-tab-contents-wrapper .binf-tab-content {
+  height: 100%;
+}
+
+.binf-widgets .smart-tab-panel .smart-tab-contents-wrapper .binf-tab-content > .last-tab-panel {
+  min-height: 100%;
+}
+
+
+
+.binf-widgets .smart-tab-panel .smart-tab-contents-wrapper .smart-tab-contents-header-wrapper {
+  position: absolute;
+  top: 0;
+  padding-top: 16px;
+  background-color: white;
+  width: calc(100% - 17px);
+}
+
+.binf-widgets .smart-tab-panel .smart-tab-contents-wrapper .smart-tab-contents-header {
+  line-height: 18px;
+}
+
+.binf-widgets .smart-tab-contents-header-wrapper .smart-tab-contents-header-content {
+  display: flex;
+}
+
+.binf-widgets .smart-tab-contents-header-wrapper .smart-tab-contents-header-content h4 {
+  order: 1;
+}
+.binf-widgets .smart-tab-contents-header-wrapper .smart-tab-contents-header-content .smart-tab-contents-header-right {
+  order: 2;
+}

@@ -1,0 +1,43 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-inline-mass-update-actions .csui-focusable-table-column-header {
+    width: 46px;
+    height: 32px;
+}
+
+.binf-widgets .d2-inline-mass-update-actions .csui-focusable-table-column-header .csui-icon-v2,
+.binf-widgets .d2-inline-mass-update-actions .d2-inline-mass-update-row-action {
+    cursor: pointer;
+}
+
+.binf-widgets .d2-inline-mass-update-actions .csui-focusable-table-column-header .csui-icon-v2-view.disabled .csui-icon-v2{
+    cursor: default;
+}
+
+.binf-widgets .d2-inline-mass-update-actions .csui-focusable-table-column-header .csui-icon-v2-view {
+    margin-left: 20px;
+}
+
+.binf-widgets .d2-inline-mass-update-actions .d2-inline-mass-update-row-action .csui-menu-btn {
+    margin-top: 3px;
+}
+
+.binf-widgets .d2-inline-mass-update-actions .d2-inline-mass-update-row-action .csui-menu-btn,
+.binf-widgets .d2-inline-mass-update-actions .d2-inline-mass-update-row-action .csui-menu-btn .csui-icon-v2 {
+    height: 32px;
+    width: 32px;
+}
+
+.binf-widgets .d2-inline-mass-update-actions .d2-inline-mass-update-row-action .csui-inline-menu .csui-menu-btn-region {
+    margin-top: -16px;
+}
+
+.binf-widgets .d2-inline-mass-update-actions .d2-inline-mass-update-row-action .csui-inline-menu .csui-menu-btn-region .binf-dropdown .binf-dropdown-menu {
+    margin-top: 2px;
+}
+
+.csui-nodetable.csui-table-spacing-medium .binf-table tr:not(.csui-details-row) > * > .d2-inline-mass-update-row-action {
+    padding-left: 0;
+    padding-right: 0;
+}

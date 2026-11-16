@@ -1,0 +1,6 @@
+{
+  "bundle": [
+    "dialogs/d2fs/context.less.d2fs.state.method",
+    "extensions/dialog.state.methods"
+  ]
+}

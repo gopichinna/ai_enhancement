@@ -1,0 +1,42 @@
+{
+  "id": "/repositories/d2repo/d2-objects-lifecycle-configs",
+  "title": "Apply Lifecycle status",
+  "author": [
+    {
+      "name": "Open Text Documentum"
+    }
+  ],
+  "links": [
+    {
+      "rel": "self",
+      "href": "/repositories/d2repo/d2-objects-lifecycle-configs?object-ids={0}&object-ids={0}&target-state=draft&inline=true"
+    }
+  ],
+  "entries": [
+    {
+      "id": "{0}_LCConfigs",
+      "content": {
+        "r_object_id": "{0}",
+        "signoff_required": true,
+        "transition_type": "",
+        "action_to_perform": "",
+        "is_intention_required": true,
+        "signoff_each_document": false,
+        "skip_ui_processing": false,
+        "allow_bulk_processing": false,
+        "confirmation_message": "click on continue to start state transition",
+        "links": [
+          {
+            "rel": "http://identifiers.emc.com/linkrel/d2-creation-properties-page",
+            "href": "/repositories/d2repo/d2-creation-properties-page"
+          },
+          {
+            "href": "/repositories/d2repo/signoff-intentions-dictionary?dictionary_name=Intention",
+            "rel": "http://identifiers.emc.com/linkrel/d2-intention-dictionary"
+          }
+
+        ]
+      }
+    }
+  ]
+}

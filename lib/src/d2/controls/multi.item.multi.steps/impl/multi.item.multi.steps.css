@@ -1,0 +1,103 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .list-selection {
+    background: #FFFFFF;
+}
+
+.binf-widgets .list-selection {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+}
+
+.binf-widgets .list-selection .list-region {
+    width: 240px;
+}
+
+.binf-widgets .list-selection .list-region .list {
+    position: inherit;
+    height: 100%;
+}
+
+.binf-widgets .list-selection .list-region .list-container {
+    height: calc(100% - 10px);
+}
+
+.binf-widgets .list-selection .item-details {
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+    position: inherit;
+    height: 100%;
+    width: 450px;
+}
+
+.binf-widgets .list-selection .item-details .item-details-region {
+    position: inherit;
+    height: calc(100% - 30px);
+}
+
+.binf-widgets .list-selection .item-details .item-details-header .toggle > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.binf-widgets .list-selection .item-details .item-details-header {
+    height: 30px;
+}
+
+.binf-widgets .list-selection .item-details .item-details-header .toggle .toggle-region {
+    width: 48px;
+}
+
+
+.binf-widgets .list-selection .item-details .item-details-header .toggle .apply-to-remaining-message {
+    font-size: 14px;
+    padding: 8px;
+    height: 30px;
+}
+
+.binf-widgets .list-selection .item-details .item-details-header .header-message {
+    font-size: 11px;
+    margin-left: 32px;
+    line-height: 40px;
+}
+
+.binf-widgets .list-selection .item-details .item-details-header .header-message .file-name {
+    font-weight: bold;
+}
+
+
+.binf-widgets .list-selection .item-details.right-pane .item-details-header .toggle .toggle-region .cs-booleanfield {
+    min-width: 0;
+    min-height: 0;
+}
+
+.binf-widgets .list-selection .list.disabled {
+    pointer-events: none;
+}
+
+.binf-widgets .list-selection .list-region .d2-sortable-list .sub-item:hover, .d2-sortable-list .sub-item.select {
+    background: transparent;
+}
+
+.binf-widgets .list-selection .list-region .sortable-list .d2-sortable-list .sub-item:hover, .d2-sortable-list .sub-item.select {
+    background: #B2BEC5;
+}
+
+.binf-widgets .list-selection .list-region .d2-sortable-list .sub-item {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.binf-widgets .list-selection .list-region .d2-sortable-list {
+    height: 100%;
+}
+
+.binf-widgets .d2-stepper-wizard.wizard-medium .list-selection .item-details,
+.binf-widgets .d2-stepper-wizard.wizard-large .list-selection .item-details,
+.binf-widgets .d2-stepper-wizard.wizard-x-large .list-selection .item-details{
+    width: 100%;
+}

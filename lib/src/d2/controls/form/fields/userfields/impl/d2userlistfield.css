@@ -1,0 +1,71 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-user-list-field .d2-user-listfield-options-wrapper .d2-user-list-option .user-options-item,
+.binf-widgets .d2-user-list-field .d2-user-listfield-selection-wrapper .d2-user-list-selection .user-selection-item {
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .d2-user-list-field .d2-user-listfield-options-wrapper .d2-user-list-option .user-options-item .d2-listfield-icon-container {
+  height: 12px;
+  width: 12px;
+  margin: 0;
+}
+
+.binf-widgets .d2-user-list-field .d2-user-listfield-options-wrapper .d2-user-list-option .user-options-item .user-info-container {
+  overflow: hidden;
+  width: 100%;
+  margin: 4px 0 4px 6px;
+}
+
+.binf-widgets .d2-user-list-field .d2-user-listfield-options-wrapper .d2-user-list-option .user-options-item .user-info {
+  padding: 0;
+}
+
+.binf-widgets .d2-user-list-field .d2-user-listfield-options-wrapper .d2-user-list-option .user-options-item .user-info .esoc-user-container {
+  padding: 0;
+}
+
+.binf-widgets .d2-user-list-field .d2-user-listfield-selection-wrapper .d2-user-list-selection .user-selection-item .user-info-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.binf-widgets .d2-listfield.d2-user-list-field .d2-listfield-options-wrapper .d2-listfield-options > li.d2-none-item > a {
+  padding: 15px 10px;
+}
+
+.binf-widgets .d2-listfield.d2-user-list-field .d2-add-new-option {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.binf-widgets .d2-listfield.d2-user-list-field .d2-add-new-option .d2-select-add-new-option > a {
+  color: #333;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.binf-widgets .alpaca-field-d2userlist .d2-listfield.d2-user-list-field .cs-field-write .binf-help-block.alpaca-message.d2-user-error-message {
+  margin-left: 0;
+  width: 100%;
+}
+
+.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .d2-listfield-selectedvalues > li > a > span.d2-listfield-icon-container.d2-icon-drag {
+  height: 24px;
+  margin: 0;
+}
+
+.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .d2-listfield-selectedvalues > li > a > span.d2-listfield-icon-container.d2-icon-selected-close{
+  margin: 0 5px;
+}
+
+.binf-widgets .d2-listfield.d2-user-list-field .d2-listfield-options-wrapper .binf-widgets .d2-listfield-options li.d2-invalid-option .user-info .info-text,
+.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .d2-listfield-selectedvalues li.d2-invalid-option .user-info .info-text{
+  color: #df3526;
+}
+
+.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .d2-listfield-selectedvalues > li > a > span.pre-user-info {
+  margin-right: 10px;
+}

@@ -1,0 +1,52 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-mass-update-summary {
+    height: 100%;
+    width: 100%;
+}
+
+.d2-mass-update-summary .d2-mass-update-summary-region1 {
+    padding-top: 17px;
+}
+
+.d2-mass-update-summary .d2-mass-update-summary-title {
+    position: absolute;
+    font-size: 13px;
+    padding: 13px 0 0 64px;
+}
+
+.d2-mass-update-summary .d2-mass-update-table .binf-table.dataTable > thead {
+    height: 29px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333333;
+}
+
+.d2-mass-update-summary .d2-mass-update-summary-show-toggle1,
+.d2-mass-update-summary .d2-mass-update-summary-show-toggle2 {
+    height: 42px;
+    line-height: 42px;
+    margin: 0 64px 0 64px;
+    padding-left: 12px;
+    font-size: 14px;
+    color: #232E72;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-top: 1px solid #E6E6E6;
+    position: relative;
+}
+
+.d2-mass-update-summary .toggle-icon {
+    background: url('../../impl/images/caret-down.svg') no-repeat center;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(calc(-50% + 2px));
+}
+
+.d2-mass-update-summary .toggle-icon.less {
+    transform: rotateX(180deg) translateY(6px);
+}

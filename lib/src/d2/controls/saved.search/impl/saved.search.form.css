@@ -1,0 +1,84 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-query-form-view.d2-saved-search-form-view .queryformview {
+  height: calc(100% - 72px);
+}
+
+.binf-widgets .csui-search-left-panel .d2-query-form-view.d2-saved-search-form-view .queryformheaderview{
+  height: 32px !important;
+}
+
+.binf-widgets .csui-search-left-panel .d2-query-form-view.d2-saved-search-form-view .queryformheaderview .title {
+  height: 32px;
+  line-height: 32px;
+  top: 0;
+  left: 16px;
+}
+
+.binf-widgets  .csui-search-left-panel .d2-query-form-view.d2-saved-search-form-view .d2-advanced-search-dialog{
+  padding: 0;
+  height: 100%;
+  background-color: #FFF;
+}
+
+.d2-query-form-view.d2-saved-search-form-view .d2-advanced-search-form.csui-top-align-label .cs-form .binf-form-group.alpaca-field-d2checkbox{
+  margin-top: 8px;
+}
+
+.d2-query-form-view.d2-saved-search-form-view  .d2-advanced-search-dialog .d2-advanced-search-form{
+  padding: 0 16px 16px 16px;
+}
+
+.d2-query-form-view.d2-saved-search-form-view .cs-form-doublecolumn{
+  width: 100% !important;
+}
+
+.d2-query-form-view.d2-saved-search-form-view .d2-advanced-search-header-message-container{
+  min-width: 270px;
+}
+.d2-query-form-view.d2-saved-search-form-view .d2-advanced-search-header-message-container .d2-header-message-container .d2-header-message .header-message-icon{
+  margin-left: 16px;
+}
+
+.d2-query-form-view.d2-saved-search-form-view .csui-top-align-label .cs-form .binf-help-block.alpaca-message{
+  margin-left: 0;
+}
+
+.d2-query-form-view.d2-saved-search-form-view .d2-advanced-search-form .cs-form-doublecolumn .alpaca-container-item{
+  margin-top: 4px;
+}
+
+.d2-query-form-view.d2-saved-search-form-view  .d2-advanced-search-dialog .d2-group-content {
+  min-width: 298px;
+}
+.d2-query-form-view.d2-saved-search-form-view  .d2-advanced-search-dialog .csui-top-align-label .cs-form .binf-col-md-6{
+  min-width: 270px;
+}
+
+.d2-query-form-view.d2-saved-search-form-view .d2-advanced-search-header-message-container .d2-header-message {
+  font-size: 14px;
+}
+
+.d2-query-form-view.d2-saved-search-form-view .d2-advanced-search-form.csui-top-align-label .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label{
+  padding: 8px 0 4px 0;
+}
+
+.d2-query-form-view.d2-saved-search-form-view .d2-group-content-header-view .d2-group-name{
+  padding: 12px 0 6px 16px;
+}
+
+.d2-query-form-view.d2-saved-search-form-view .d2-advanced-search-form.d2-advance-search-display.d2-form .cs-form .alpaca-container-item[data-alpaca-container-item-name=order_direction] .binf-form-group.alpaca-field-d2checkbox {
+  margin-top: -28px;
+  margin-left: calc(100% - 20px);
+}
+
+.d2-query-form-view.d2-saved-search-form-view  .d2-advanced-search-form.cs-form.csui-general-form.d2-form .binf-help-block.alpaca-message {
+  width: 100%;
+  max-width: none;
+}
+
+.binf-widgets .d2-query-form-view.d2-saved-search-form-view .d2-advanced-search-form.cs-form.csui-general-form.d2-form .alpaca-container-item[data-alpaca-container-item-name="property_search"] .alpaca-field-d2querybuilder .typeahead.scroll-container,
+.binf-widgets .d2-query-form-view.d2-saved-search-form-view .d2-advanced-search-form.cs-form.csui-general-form.d2-form .alpaca-container-item[data-alpaca-container-item-name="property_search"] .alpaca-field-d2querybuilder .binf-help-block.alpaca-message{
+  width: calc(100% - 28px);
+}

@@ -1,0 +1,30 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-updated-field-message {
+    height: 32px;
+    width: calc(100% - 65px);
+    margin-left: 16px;
+    display: flex;
+    margin-top: 12px;
+    border-bottom: 1px solid #067D14;
+    background-color: rgba(6, 125, 20, 0.05);
+}
+
+.binf-widgets .d2-updated-field-message .d2-notification-icon {
+    height: 32px;
+    width: 18px;
+    background: url('../../impl/images/success.svg') no-repeat center;
+    margin-left: 14px;
+}
+
+.binf-widgets .d2-updated-field-message .d2-updated-message {
+    flex: 1;
+    line-height: 32px;
+    margin-left: 12px;
+    color: #333333;
+}
+
+.binf-widgets .d2-updated-field-message .d2-undo-icon {
+    cursor: pointer;
+}

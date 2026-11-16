@@ -1,0 +1,106 @@
+{
+  "csui/models/server.module/server.module.collection": {
+    "modules": {
+      "d2": {
+        "title": "D2 Smart View - Smart UI for D2",
+        "version": "1.0",
+        "helpDocId": "edccl-h-ugd",
+        "helpVersion": "v240400",
+        "helpTopic": "top-of-doc"
+      },
+      "iv": {
+        "title": "D2 Smart View - Intelligent viewing",
+        "version": "1.0",
+        "helpDocId": "clivcs-h-udm",
+        "helpVersion": "v240400",
+        "helpTopic": "top-of-doc"
+      }
+    }
+  },
+  "dctmw/models/module.collection": {
+    "modules": {
+      "d2": {
+        "title": "D2 Smart View - Smart UI for D2",
+        "version": "1.0"
+      }
+    }
+  },
+  "dctmw/pages/app/modules": {
+    "extensions": {
+      "d2": [
+        "d2/extensions/app.module"
+      ]
+    }
+  },
+  "csui/utils/commands": {
+    "extensions": {
+      "d2": [
+        "d2/commands/paste",
+        "d2/commands/paste.as.link",
+        "d2/commands/goto.location",
+        "d2/commands/open.url",
+        "d2/commands/edit",
+        "d2/commands/print",
+        "d2/commands/call.service",
+        "d2/commands/execute.saved.search",
+        "d2/commands/execute.query.form.search",
+        "d2/commands/workflow/open.task",
+        "d2/commands/workflow/acquire.task",
+        "d2/commands/workflow/add.task.attachments",
+        "d2/commands/workflow/add.file.relations.as.attachments",
+        "d2/commands/workflow/manage.attachments",
+        "d2/commands/workflow/remove.task.attachments",
+        "d2/commands/workflow/forward.task",
+        "d2/commands/workflow/reject.task",
+        "d2/commands/workflow/read.task",
+        "d2/commands/workflow/unread.task",
+        "d2/commands/workflow/pause.task",
+        "d2/commands/workflow/rerun.task",
+        "d2/commands/workflow/complete.task",
+        "d2/commands/workflow/resume.task",
+        "d2/commands/workflow/add.task.note",
+        "d2/commands/workflow/abort.workflow",
+        "d2/commands/workflow/launch.workflow",
+        "d2/commands/workflow/open.workflow",
+        "d2/commands/relationdelete",
+        "d2/commands/d2.lifecycle.state.change",
+        "d2/commands/dctm.lifecycle.state.action",
+        "d2/commands/permission",
+        "d2/commands/csv.export",
+        "d2/commands/add.rendition",
+        "d2/commands/d2-locations",
+        "d2/commands/d2-audits",
+        "d2/commands/d2-renditions",
+        "d2/commands/d2collections/goto.d2collections"
+      ]
+    }
+  },
+  "csui/utils/node.links/node.links": {
+    "extensions": {
+      "d2": [
+        "d2/extensions/node.links"
+      ]
+    }
+  },
+  "csui/utils/defaultactionitems": {
+    "extensions": {
+      "d2": [
+        "d2/extensions/core.default.action.items"
+      ]
+    }
+  },
+  "csui/utils/versions.default.action.items": {
+    "extensions": {
+      "d2": [
+        "d2/extensions/versions.default.action.items"
+      ]
+    }
+  },
+  "csui/utils/nodesprites": {
+    "extensions": {
+      "d2": [
+        "d2/utils/icons/icons"
+      ]
+    }
+  }
+}

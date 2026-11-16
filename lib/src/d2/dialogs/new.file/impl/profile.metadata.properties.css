@@ -1,0 +1,51 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-stepper-wizard .cs-metadata-properties .binf-nav-pills > li.binf-active > a > .cs-tablink-text,
+.binf-widgets .d2-stepper-wizard .cs-metadata-properties .binf-nav-pills > li.binf-active > a:hover > .cs-tablink-text {
+  border-bottom: 4px solid #232E72;
+}
+
+.binf-widgets .d2-stepper-wizard .cs-metadata-properties .binf-nav-pills > li {
+  padding: 0 14px 0 14px;
+}
+
+.binf-widgets .d2-stepper-wizard .cs-metadata-properties .binf-nav > li > a > .cs-tablink-text {
+  color: #333333;
+  font-size: 14px;
+}
+
+.binf-widgets .d2-stepper-wizard .cs-metadata-properties .binf-nav-pills > li.binf-active > a,
+.binf-widgets .d2-stepper-wizard .cs-metadata-properties .binf-nav-pills > li.binf-active > a:hover {
+  color: #333333;
+  font-weight: bold;
+}
+
+.binf-widgets .d2-stepper-wizard .cs-metadata-properties > .binf-tab-content > [role="tabpanel"]:not(.binf-hidden) ~ [role="tabpanel"]:not(:first-child),
+.binf-widgets .d2-stepper-wizard .cs-metadata-properties > .binf-tab-content > .binf-active[role="tabpanel"] {
+  border-top: 1px solid #CCCCCC;
+}
+
+.binf-widgets .d2-stepper-wizard .cs-metadata-properties .csui-tab-contents-header-content h4,
+.binf-widgets .d2-stepper-wizard .cs-metadata-properties .cs-form .alpaca-container-label > h4 {
+  color: #5F6E77;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.binf-widgets .d2-stepper-wizard .cs-metadata-properties .tab-links .tab-links-bar ul.binf-nav {
+  margin-left: 18px;
+  height: 48px;
+}
+
+.binf-widgets .d2-create-file-wizard.d2-stepper-wizard .cs-metadata-properties .csui-tab-contents-header-wrapper,
+.binf-widgets .d2-import-folder-wizard.d2-stepper-wizard .cs-metadata-properties .csui-tab-contents-header-wrapper {
+  padding-left: 32px;
+  width: calc(100% - 32px);
+}
+
+.binf-widgets .d2-create-file-wizard.d2-stepper-wizard .cs-metadata-properties .tab-links.scrollspy,
+.binf-widgets .d2-import-folder-wizard.d2-stepper-wizard .cs-metadata-properties .tab-links.scrollspy {
+  padding-left: 24px;
+}

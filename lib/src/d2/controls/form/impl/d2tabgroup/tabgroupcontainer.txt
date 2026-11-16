@@ -1,0 +1,17 @@
+<div id="{{options.uniqueId}}" class="d2tabgroupcontainer d2-container binf-col-md-12 {{#xif "this.options.layoutMode == 'singleCol'" }}single-mode{{/xif}}">
+            <div class="d2tabgroupheader">
+                <ul role="tablist" class="d2tabgroup binf-nav binf-nav-pills ">
+                    {{#each options.fields}}
+                        <li id="d2tabgroupli_{{this.uniqueId}}" role="tab" aria-label="{{this.containerLabel}}"" title="{{this.containerLabel}}"" aria-selected="true">
+                            <a href="#{{this.uniqueId}}" class="cs-tablink d2tabgroupalink" data-binf-toggle="tab" ">
+                                <span class="cs-icon-required category_required" aria-label="{{required_tooltip}}"></span>
+                                <span class="cs-tablink-text">{{this.containerLabel}}</span>
+                            </a>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        {{#each items}}
+            {{#item}}{{/item}}
+        {{/each}}
+</div>

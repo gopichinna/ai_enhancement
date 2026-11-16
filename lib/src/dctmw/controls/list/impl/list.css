@@ -1,0 +1,116 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-listview {
+  width: 100%;
+  height: 100%;
+  min-width: initial;
+  display: block;
+  overflow: hidden;
+}
+
+.binf-widgets .d2-listview.cs-simplelist > .cs-content {
+  width: inherit;
+  height: inherit;
+  z-index: auto;
+}
+
+.binf-widgets .d2-listview > .cs-content.csui-perfect-scrolling > .ps-scrollbar-y-rail {
+  right: 6px;
+  font-size: 14px;
+}
+
+.binf-widgets .d2-listview .cs-content .cs-list-group {
+  height: auto;
+  width: calc(100% - 1px);
+  margin-left: 1px;
+}
+
+.binf-widgets .d2-listview .cs-list-group .binf-list-group-item {
+  width: 100%;
+  height: 48px;
+  padding: 0 0 0 12px;
+  border: none;
+  border-left: 4px solid transparent;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+.binf-widgets .d2-listview .cs-list-group .binf-list-group-item:hover {
+  background-color: #bac9ce;
+}
+
+.binf-widgets .d2-listview .cs-list-group .binf-list-group-item.binf-active {
+  border-left-color: #7B9AB0;
+  background-color: #DFE7EA;
+  color: #333333;
+  z-index: auto;
+  border-top: none;
+  border-bottom: none;
+}
+
+.binf-widgets .d2-listview .cs-list-group .binf-list-group-item.binf-active:focus {
+  border-left: 4px solid #7B9AB0;
+}
+
+.binf-widgets .d2-listview .cs-list-group a:focus,
+.binf-widgets .d2-listview .cs-list-group a.binf-active:focus {
+  outline: 1px dotted;
+  border: none;
+  border-left: 4px solid transparent;
+}
+
+.binf-widgets .d2-listview .cs-list-group .binf-list-group-item .arrow-overlay {
+  display: none;
+}
+
+.binf-widgets .d2-listview .cs-list-group .csui-icon-group,
+.binf-widgets .d2-listview .cs-list-group .csui-type-icon {
+  flex: 0 0 32px;
+}
+
+.binf-widgets .d2-listview .cs-list-group .csui-icon {
+  margin-top: 2px;
+}
+
+.binf-widgets .d2-listview .cs-list-group .list-item-title {
+  height: 42px;
+  top: 0;
+  width: calc(100% - 38px); 
+  position: relative;
+  left: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  display: inline;
+}
+
+.binf-widgets .d2-listview.fix-msie .cs-list-group .list-item-title {
+  width: calc(100% - 54px); 
+}
+
+.binf-widgets .d2-listview .csui-perfect-scrolling .cs-list-group .list-item-title {
+  width: calc(100% - 50px); 
+}
+
+.binf-widgets .d2-listview.empty-state .cs-content .cs-list-group {
+  height: inherit;
+  overflow: hidden;
+}
+
+.binf-widgets .d2-listview.empty-state .cs-content .cs-list-group .cs-emptylist-container {
+  top: calc(50% - 96px);
+  position: relative;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.binf-widgets .d2-listview.empty-state .cs-content .cs-list-group .cs-emptylist-container.csui-state-empty {
+  background-image: url("images/empty_list_splash.svg");
+}

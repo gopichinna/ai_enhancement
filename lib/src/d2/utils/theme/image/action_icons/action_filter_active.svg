@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.8.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#333333;}
+	.st2{fill:none;stroke:#2E3D98;}
+</style>
+<circle id="state" class="st0" cx="16" cy="16" r="14"/>
+<g id="metaphor">
+	<path class="st1" d="M15.928,16.94c0.048,0.043,0.089,0.085,0.119,0.117l1.221,1.148l4.034-3.981l1.34-1.579
+		c0.552-0.649,0.09-1.647-0.763-1.646H8.202c-0.852,0-1.314,0.997-0.762,1.647l4.931,5.807c0.016-0.491,0.19-0.981,0.545-1.372
+		l0-0.001C13.708,16.214,15.059,16.151,15.928,16.94z"/>
+	<path class="st1" d="M13.405,23.364c0,0.992,0.894,1.785,1.916,1.613c0.682-0.114,1.178-0.679,1.315-1.345l-3.231-3.191V23.364z"/>
+	<path class="st1" d="M24.434,14.101c-0.488-0.488-1.279-0.488-1.768,0l-5.475,5.476l-1.783-1.783c-0.488-0.488-1.279-0.488-1.768,0
+		s-0.488,1.279,0,1.768l3.551,3.551l7.242-7.243C24.922,15.38,24.922,14.589,24.434,14.101z"/>
+</g>
+<circle id="focus" class="st2" cx="16" cy="16" r="15.5"/>
+</svg>

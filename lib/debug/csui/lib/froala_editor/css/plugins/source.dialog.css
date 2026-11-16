@@ -1,0 +1,8 @@
+.binf-widgets .fr-toolbar .fr-source {
+    background: url(../../icons/sourcedialog.png) no-repeat;
+    background-size: contain;
+}
+
+.binf-widgets .fr-toolbar.fr-rtl .fr-source {
+    background-image: url(../../icons/sourcedialog-rtl.png);
+}

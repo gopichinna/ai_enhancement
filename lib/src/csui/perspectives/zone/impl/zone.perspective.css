@@ -1,0 +1,16 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+
+
+.binf-widgets .cs-perspective-panel .cs-perspective.cs-zone-perspective > .binf-row {
+}
+
+
+.binf-widgets .cs-perspective-panel .cs-perspective.cs-zone-perspective > .binf-row > * {
+}
+
+.binf-widgets.csui-folderbrowser-strechable .cs-perspective-panel .cs-perspective.cs-zone-perspective > .binf-row > * {
+    height: 100%;
+}

@@ -1,0 +1,20 @@
+.d2-tile-admingroups .tile-header {
+  cursor: pointer;
+}
+
+.d2-tile-admingroups .binf-list-group .binf-list-group-item.binf-active {
+  background-color: #DFE7EA;
+}
+
+.cs-left-center-right-perspective .d2-tile-admingroups .tile-header {
+  cursor: default;
+}
+
+.cs-left-center-right-perspective .d2-tile-admingroups .tile-header .search-box .icon-search-placeholder {
+  left: 16px;
+}
+
+.d2-tile-admingroups .tile-header .d2-icon-tile-admingroups {
+  background-image: url('images/group-svgrepo-com.svg');
+}
+

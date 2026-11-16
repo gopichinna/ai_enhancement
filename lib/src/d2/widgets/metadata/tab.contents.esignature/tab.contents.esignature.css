@@ -1,0 +1,111 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.cs-metadata-properties .d2-tab-content-esignature {
+    border-bottom: 4px solid #121212;
+    padding: 0 0 18px 0;
+    width: 100%;
+}
+
+.d2-stepper-wizard .cs-metadata-properties .d2-tab-content-esignature {
+    border-bottom: none;
+    background: #F3F6FB;
+}
+
+.cs-metadata-properties .d2-tab-contents-esignature-content h4 {
+    color: #0072aa;
+    font-size: 1.25rem;
+    line-height: 1.35rem;
+}
+
+.d2-stepper-wizard .cs-metadata-properties .d2-tab-contents-esignature-content h4 {
+    padding-left: 9px;
+    color: #5F6E77;
+}
+
+.cs-metadata-properties .d2-tab-contents-esignature-content {
+    padding: 0 0 0 32px;
+    overflow: auto;
+}
+
+.d2-stepper-wizard .cs-metadata-properties .d2-tab-contents-esignature-content {
+    padding: 0 0 0 48px;
+}
+
+.cs-metadata-properties .d2-tab-contents-esignature-content .d2-tab-contents-esignature-message-wrapper .esignature-message {
+  height: 21px;
+  line-height: normal;
+  font-size: 16px;
+  color: #333333;
+}
+
+.cs-metadata-properties .d2-tab-contents-esignature-content .d2-tab-contents-esignature-content-form .d2-properties-form .binf-row.alpaca-field {
+  margin-bottom: 0;
+}
+
+.cs-metadata-properties .d2-tab-contents-esignature-content .d2-tab-contents-esignature-content-form,
+.cs-metadata-properties .d2-tab-contents-esignature-content .d2-tab-contents-esignature-message-wrapper {
+    width: 100%;
+}
+
+.d2-stepper-wizard .cs-metadata-properties .d2-tab-contents-esignature-content .d2-tab-contents-esignature-content-form,
+.d2-stepper-wizard .cs-metadata-properties .d2-tab-contents-esignature-content .d2-tab-contents-esignature-message-wrapper {
+    padding-left: 16px;
+}
+
+.cs-metadata-properties .d2-tab-contents-esignature-content .esignature-container-label {
+    padding: 0;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    float: unset;
+}
+
+.d2-stepper-wizard .cs-metadata-properties .d2-tab-contents-esignature-content .esignature-container-label {
+    padding: 0 0 0 7px;
+}
+
+.metadata-inner-wrapper .cs-metadata-properties .d2-esignature-contents-wrapper .d2-tab-contents-esignature-content-form.ps-container > div {
+  padding: 0;
+}
+
+.cs-metadata-properties .d2-tab-contents-esignature-content .d2-tab-contents-esignature-content-form .d2-properties-form {
+    height: auto;
+}
+
+.d2-stepper-wizard .cs-metadata-properties .d2-tab-contents-esignature-content .d2-tab-contents-esignature-content-form .d2-properties-form {
+    background: #F3F6FB;
+}
+
+.cs-metadata-properties .d2-tab-contents-esignature-content .d2-tab-contents-esignature-expand {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    background: url('caret_expand.svg') no-repeat center;
+    cursor: pointer;
+    left: 0;
+    margin-top: 14px;
+    margin-left: 24px;
+}
+
+.cs-metadata-properties .d2-tab-contents-esignature-content .d2-tab-contents-esignature-expand.expand {
+    background: url('caret_collapse.svg') no-repeat center;
+}
+
+.rtl .cs-metadata-properties .d2-tab-contents-esignature-content .d2-tab-contents-esignature-expand.expand {
+    rotate: 180deg;
+}
+
+.cs-metadata-properties .d2-tab-contents-esignature-content .esignature-container-label.required:before {
+    content: '';
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    background: url('required.svg');
+}
+
+.cs-metadata-properties .d2-tab-contents-esignature-content .d2-tab-contents-esignature-expand.required.expand:after {
+  top: 23px;
+  right: 6px;
+  bottom: 0;
+}

@@ -1,0 +1,39 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-alert.d2-confirm-cancel-checkout .binf-modal-dialog {
+  width: 600px;
+}
+
+.binf-widgets .csui-alert.d2-confirm-cancel-checkout .binf-modal-dialog .binf-modal-body .custom-content-container {
+  height: auto;
+}
+
+.binf-widgets .csui-alert.d2-confirm-cancel-checkout .custom-content-container .d2-checkbox-message-container .d2-checkbox-confirmation-message {
+  margin: 0 10px 15px;
+  white-space: pre-wrap;
+  font-size: 16px;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.binf-widgets .csui-alert.d2-confirm-cancel-checkout .custom-content-container .d2-checkbox-wrapper{
+  display: flex;
+  margin: 30px 0 0 10px;
+}
+
+.binf-widgets .csui-alert.d2-confirm-cancel-checkout .custom-content-container .d2-checkbox-message-container .d2-checkbox-caption {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.binf-widgets .csui-alert.abort-workflow-dialog.dctm-alert-custom-content .custom-content-container .d2-checkbox-message-container .d2-checkbox-caption,
+.binf-widgets .csui-alert.abort-workflow-dialog.dctm-alert-custom-content .custom-content-container .d2-checkbox-message-container .d2-checkbox-confirmation-message{
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.binf-widgets .csui-alert.abort-workflow-dialog.dctm-alert-custom-content .custom-content-container .d2-checkbox-wrapper{
+  margin-top: 16px;
+}

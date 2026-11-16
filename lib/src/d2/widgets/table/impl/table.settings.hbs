@@ -1,0 +1,44 @@
+<div class="d2-table-settings">
+  <div class="container-main">
+
+    {{#if showInitialCard}}
+      <div class="card card-initial" tabindex="0">
+        <div class="binf-list-group" role="menu">
+          {{#each supportedTableModes}}
+            <div class="table-mode-item binf-list-group-item" tabindex="-1" id="o_{{this.id}}" role="menuitem" aria-label="{{{this.ariaLabel}}}">
+              <input id="{{this.id}}" class="table-mode" type="radio" name="table-mode" data-id="{{this.id}}" tabindex="-1">
+              <span class="tick-icon-container">{{{icon-v2 iconName=../checkboxIconName}}}</span>
+              <label for="{{this.id}}">{{{this.name}}}</label>
+            </div>
+          {{/each}}
+          <a class="columns-settings binf-list-group-item has-next" tabindex="0"
+             data-clickbehavior="ColumnsSettings" role="menuitem">{{labels.columns_settings}}</a>
+          
+          {{#if manageVersions}}
+            <div class="binf-list-group-item all-version-column-toggle" role="menuitem">
+              <label class="binf-control-label alpaca-control-label binf-col-sm-10"
+                     title="{{labels.allVersionColumnToggle}}"
+                     aria-label="{{labels.allVersionColumnToggle}}">{{labels.allVersionColumnToggle}}</label>
+              <div class="all-version-column-toggle-switch"></div>
+            </div>
+          {{/if}}
+          {{#if manageMarkupStatus}}
+              <div class="binf-list-group-item markup-status-column-toggle" role="menuitem">
+                <label class="binf-control-label alpaca-control-label binf-col-sm-10"
+                       title="{{labels.markupStatusColumnToggle}}"
+                       aria-label="{{labels.markupStatusColumnToggle}}">{{labels.markupStatusColumnToggle}}</label>
+                <div class="markup-status-column-toggle-switch"></div>
+              </div>
+          {{/if}}
+        </div>
+      </div>
+    {{/if}}
+
+    <div class="card card-columns-settings" style="display:none"></div>
+    <div class="card card-columns-list card-add-columns" style="display:none"></div>
+    <div class="card card-columns-list card-add-columns-type" style="display:none"></div>
+    
+
+  </div>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

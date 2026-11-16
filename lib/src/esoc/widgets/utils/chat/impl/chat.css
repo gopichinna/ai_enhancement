@@ -1,0 +1,18 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.esoc-social-chat-icon {
+  background: url("../../../common/images/chat_on.svg") 0px 0px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.esoc-social-chat-icon:hover {
+  background: url("../../../common/images/chat_on_mo.svg") 0px 0px;
+}
+
+.esoc-social-chat-icon:active {
+  background: url("../../../common/images/chat_on_md.svg") 0px 0px;
+}

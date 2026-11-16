@@ -1,0 +1,110 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-publish-dialog.cs-dialog .binf-modal-dialog {
+  top: 0;
+}
+
+.binf-widgets .d2-publish-dialog .binf-modal-content {
+  border-bottom: 0 none;
+  border-radius: 3px;
+}
+
+.d2-publish-dialog .binf-modal-header {
+  height: 64px;
+  border-radius: 3px;
+}
+
+.binf-widgets .d2-publish-dialog .binf-modal-header .binf-modal-title {
+  font-weight: 500;
+}
+
+.binf-widgets .d2-publish-dialog .tile-header .tile-type-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.binf-widgets .d2-publish-dialog.cs-dialog .binf-modal-dialog .tile-header.binf-modal-header {
+  padding: 8px 10px;
+  border-bottom: 0;
+  background-color: transparent;
+}
+
+.binf-widgets .d2-publish-dialog.cs-dialog .binf-modal-title {
+  padding-left: 10px;
+}
+
+.d2-publish-dialog .cs-form.csui-general-form.d2-publish-dialog-body {
+  padding: 8px 16px 16px 6px;
+}
+
+.d2-publish-dialog .binf-modal-header .cs-close,
+.binf-widgets .cs-form.csui-general-form.d2-form.d2-publish-dialog-body .alpaca-container-label {
+  display: none;
+}
+
+.d2-publish-dialog .d2-publish-dialog-body .binf-col-md-6.cs-form-leftcolumn{
+  width: 75%;
+}
+
+.d2-publish-dialog .d2-publish-dialog-body .binf-col-md-6.cs-form-rightcolumn{
+  width: 25%;
+}
+
+.binf-widgets .cs-form.csui-general-form.d2-form.d2-publish-dialog-body .alpaca-field .binf-form-group.alpaca-field-richtext div.binf-col-sm-9,
+.binf-widgets .cs-form.csui-general-form.d2-form.d2-publish-dialog-body .alpaca-field .binf-form-group .binf-control-label + div.binf-col-sm-9 {
+  display: block;
+  width: 100%;
+}
+
+.d2-publish-dialog-body.csui-top-align-label .cs-formfield .cs-field-read .cs-field-read-inner {
+  padding-left: 0;
+}
+
+.binf-widgets .cs-form.csui-general-form.d2-form.d2-publish-dialog-body .cs-form-doublecolumn {
+  padding: 0;
+}
+
+.binf-widgets .cs-form.csui-general-form.d2-form.d2-publish-dialog-body .alpaca-container-item:not(:first-child) {
+  padding-top: 16px;
+}
+
+.binf-widgets .cs-form.csui-general-form.d2-form.d2-publish-dialog-body .alpaca-field .binf-form-group {
+  margin-top: 0;
+}
+
+.binf-widgets .cs-form.csui-general-form.d2-form.d2-publish-dialog-body .alpaca-field .binf-form-group .binf-control-label,
+.binf-widgets .cs-form.csui-general-form.d2-form.d2-publish-dialog-body .alpaca-field .binf-form-group .cs-richtextfield,
+.binf-widgets .cs-form.csui-general-form.d2-form.d2-publish-dialog-body .alpaca-field .binf-form-group .cs-field-write {
+  padding-left: 16px;
+}
+
+.binf-widgets .cs-form.csui-general-form.d2-form.d2-publish-dialog-body .alpaca-field .binf-form-group .cs-richtextfield {
+  color: #DF3324;
+}
+
+.binf-widgets .d2-publish-dialog .cs-formfield.d2-radio-group div.d2-radio-item-container {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.binf-widgets .cs-form.csui-general-form.d2-form.d2-publish-dialog-body .alpaca-field .binf-form-group .binf-control-label {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 12px;
+}
+
+.cs-form.d2-publish-dialog-body .alpaca-container-item > .binf-form-group.alpaca-field.alpaca-field-d2radio .alpaca-control-label {
+  height: 22px;
+}
+
+.binf-widgets .d2-publish-dialog .binf-modal-footer {
+  border-top: 0;
+  border-bottom: 4px solid #111B57;
+  border-radius: 3px;
+}
+
+.d2-publish-dialog .cs-form .binf-help-block.alpaca-message {
+  margin-left: 5%;
+}

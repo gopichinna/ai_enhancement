@@ -1,0 +1,24 @@
+<div class="csui-search-widget-content">
+    <div class="cs-content csui-list-pannel">
+        <div class="cs-list-group">
+            {{#each widgets}}
+                <div class="{{#if attributes.draggable}}{{else}} binf-hidden {{/if}}"
+                     data-widget-type="{{attributes.dataAttr}}"
+                     data-widget-allow-multiple="{{attributes.allowMultiple}}">
+                    <div class="csui-widget-item csui-search-widget-item icon-draggable-handle csui-draggable-widget-item"
+                         data-widget-index="{{attributes.index}}" draggable="true" title="{{attributes.title}}">
+                        <div class="csui-search-result-widget">
+                            <div>
+                                {{splitTitle attributes.title ../query}}
+                            </div>
+                            <span class="csui-search-result-group-title">{{attributes.widgetGroupTitle}}</span>
+                        </div>
+                        <div class="csui-layout-icon {{attributes.icon}}"></div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

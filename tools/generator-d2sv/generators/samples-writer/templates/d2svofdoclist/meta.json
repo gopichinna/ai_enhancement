@@ -1,0 +1,17 @@
+{
+  "id": "d2svofdoclist",
+  "name": "Open a cabinet/folder in Doclist",
+  "descriptors": [
+    {
+      "name": "app",
+      "properties": {
+        "pluginsGroupId": "com.opentext.d2.smartview",
+        "pluginArtifactId": "D2SV-OpenFolder-Doclist",
+        "pluginVersion": "1.0.0",
+        "pluginDesc": "D2SV-OpenFolder-Doclist",
+        "pluginPackage": "D2SVOFDoclist",
+        "includeSVSupport": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-nodetable .binf-table .av4r-assignment-children-count {
+    display: flex;
+    align-items: center;
+    color: #1a6aff;
+}
+.csui-nodetable .binf-table .av4r-assignment-children-count .av4r-progress-track {
+    flex: 1 0 50%;
+    height: 4px;
+    padding: 0;
+    background-color: #ccc;
+    overflow: hidden;
+}
+
+.csui-nodetable .binf-table .av4r-assignment-children-count .av4r-progress-track > .av4r-progress-state {
+    height: inherit;
+    display: block;
+    background-color: #111fb0;
+}
+
+.csui-nodetable .binf-table .av4r-assignment-children-count .count-value {
+    flex: 0 1 50px;
+    padding-left: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.csui-nodetable .binf-table .av4r-assignment-children-count.overflow {
+    color: #F05822;
+}
+
+.csui-nodetable .binf-table .av4r-assignment-children-count.overflow .av4r-progress-track > .av4r-progress-state {
+    background-color: #F05822;
+}
+
+.binf-popover.av4r-children-count-popover .binf-popover-content b {
+    font-weight: bold;
+}

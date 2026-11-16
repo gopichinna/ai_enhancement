@@ -1,0 +1,35 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-parent-location {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+}
+
+.csui-parent-location .csui-parent-name {
+  display: inline-block;
+  text-overflow: ellipsis;
+  min-width: 5em;
+  overflow-x: hidden;
+  padding-left: 8px;
+}
+
+.csui-parent-location .csui-parent-text {
+  display: inline-block;
+  text-overflow: ellipsis;
+  min-width: 5em;
+  overflow-x: hidden;
+}
+
+.csui-parent-location .csui-icon-group {
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.csui-parent-location.csui-inactive a,
+.csui-parent-location.csui-inactive .csui-icon-group {
+  pointer-events: none;
+  cursor: default;
+}

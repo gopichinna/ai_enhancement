@@ -1,0 +1,227 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-signature-signee-form {
+  height: 210px;
+  width: 400px;
+  background-color: #F3F6FB;
+}
+
+.d2-signature-signee-form.error-form {
+  height: 234px;
+}
+
+.d2-signature-signee-form .d2-signature-signee-label,
+.d2-signature-signee-form .d2-signature-signee-email-label {
+  padding: 16px 0 8px 24px;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgb(117, 117, 117);
+  position: relative;
+}
+
+.d2-signature-signee-form .d2-signature-signee-label::before,
+.d2-signature-signee-form .d2-signature-signee-email-label::before {
+  content: url('images/required.svg');
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  left: 15px;
+  top: 14px;
+}
+
+.d2-signature-signee-form .d2-signature-signee-email-label::before {
+  top: 25px;
+}
+
+.d2-signature-signee-form .d2-signature-signee-email-label {
+  padding-top: 28px;
+}
+
+.d2-signature-signee-form .d2-signature-signee-container,
+.d2-signature-signee-form .d2-signature-signee-email-container {
+  padding: 0 24px;
+  position: relative;
+}
+
+.d2-signature-signee-form .d2-signature-signee-container .d2-signature-signee,
+.d2-signature-signee-form .d2-signature-signee-email-container .d2-signature-signee-email {
+  border: 1px solid #757575;
+  border-radius: 3px;
+  width: 100%;
+  height: 28px;
+  font-size: 14px;
+  padding-right: 22px;
+  padding-left: 0.5em;
+}
+
+.d2-signature-signee-form .d2-signature-signee-container .d2-signature-signee:focus,
+.d2-signature-signee-form .d2-signature-signee-email-container .d2-signature-signee-email:focus {
+  border: 2px solid #666666;
+  outline: none;
+}
+
+.d2-signature-signee-form .d2-signature-signee-container .typeahead.scroll-container,
+.d2-signature-signee-form .d2-signature-signee-email-container .typeahead.scroll-container {
+  position: absolute;
+  width: 352px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.d2-signature-signee-form .d2-signature-signee-container .typeahead.scroll-container .ps-scrollbar-y-rail,
+.d2-signature-signee-form .d2-signature-signee-email-container .typeahead.scroll-container .ps-scrollbar-y-rail {
+  z-index: 1001;
+}
+
+.binf-widgets .d2-signature-signee-form .d2-signature-signee-container .typeahead.scroll-container .typeahead.binf-dropdown-menu,
+.binf-widgets .d2-signature-signee-form .d2-signature-signee-email-container .typeahead.scroll-container .typeahead.binf-dropdown-menu {
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: none;
+}
+
+.d2-signature-signee-form .d2-signature-signee-container .user-container,
+.d2-signature-signee-form .d2-signature-signee-email-container .user-container {
+  height: 48px;
+}
+
+.d2-signature-signee-form .d2-signature-signee-container .d2-signature-caret-down,
+.d2-signature-signee-form .d2-signature-signee-email-container .d2-signature-caret-down {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  top: 5px;
+  right: 29px;
+  height: 18px;
+  width: 18px;
+  display: block;
+  background: url('images/caret_down.svg') no-repeat center;
+}
+
+.binf-widgets .d2-signature-signee-form .binf-dropdown-menu > .binf-active > a,
+.binf-widgets .d2-signature-signee-form .binf-dropdown-menu > .binf-active > a:hover,
+.binf-widgets .d2-signature-signee-form .binf-dropdown-menu > .binf-active > a:focus {
+  background: transparent;
+}
+
+.d2-signature-signee-form .d2-signature-signee-container .typeahead.binf-dropdown-menu > li.binf-active,
+.d2-signature-signee-form .d2-signature-signee-email-container .typeahead.binf-dropdown-menu > li.binf-active {
+  background: #B9C4CB;
+  box-shadow: inset 0 -1px 0 #FFFFFF, inset 0 1px 0 #FFFFFF;
+}
+
+.d2-signature-signee-form .d2-signature-signee-container .typeahead.binf-dropdown-menu > li.selected,
+.d2-signature-signee-form .d2-signature-signee-email-container .typeahead.binf-dropdown-menu > li.selected {
+  background: #1074bc;
+  color: #ffffff;
+  box-shadow: inset 0 -1px 0 #FFFFFF, inset 0 1px 0 #FFFFFF;
+}
+
+.binf-widgets .d2-signature-signee-form .d2-signature-signee-container .typeahead.binf-dropdown-menu > li,
+.binf-widgets .d2-signature-signee-form .d2-signature-signee-email-container .typeahead.binf-dropdown-menu > li {
+  height: 48px;
+  margin: 0;
+}
+
+.d2-signature-signee-form .d2-signature-signee-container .typeahead.binf-dropdown-menu > li > a,
+.d2-signature-signee-form .d2-signature-signee-email-container .typeahead.binf-dropdown-menu > li > a {
+  padding: 0 4px;
+}
+
+.d2-signature-signee-form .d2-signature-signee-form-buttons {
+  float: right;
+  margin-top: 22px;
+  margin-right: 30px;
+}
+
+.d2-signature-signee-form.error-form .d2-signature-signee-form-buttons {
+  margin-top: 46px;
+}
+
+.d2-signature-signee-form .d2-signature-signee-form-buttons .d2-signature-signee-add {
+  background: url(images/add.svg) no-repeat center;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.d2-signature-signee-form .d2-signature-signee-form-buttons .d2-signature-signee-add[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.d2-signature-signee-form .d2-signature-signee-form-buttons .d2-signature-signee-cancel {
+  background: url(images/cancel.svg) no-repeat center;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+.d2-signature-signee-form .d2-signature-signee-no-results {
+  padding: 3px 10px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #757575;
+  cursor: text;
+  font-weight: bolder;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.binf-widgets .d2-signature-signee-form .d2-signature-signee-container .typeahead.binf-dropdown-menu > li.d2-signature-signee-no-results,
+.binf-widgets .d2-signature-signee-form .d2-signature-signee-email-container .typeahead.binf-dropdown-menu > li.d2-signature-signee-no-results {
+  height: 30px;
+}
+
+.d2-signature-signee-form .d2-signature-signee-inline-error {
+  width: 352px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+  border-left: 2px solid #df3324;
+  margin: 5px 0 0 24px;
+  font-size: 10px;
+  line-height: 16px;
+  white-space: normal;
+  word-wrap: break-word;
+  background: #ffffff;
+  color: #DF3324;
+  border-radius: 2px;
+  padding: 0 8px;
+  position: absolute;
+}
+
+.binf-widgets .d2-signature-signee-form .d2-signature-signee-container .typeahead.binf-dropdown-menu > li.d2-signature-signee-result-message,
+.binf-widgets .d2-signature-signee-form .d2-signature-signee-email-container .typeahead.binf-dropdown-menu > li.d2-signature-signee-result-message {
+  height: auto;
+  line-height: 24px;
+  pointer-events: none;
+  font-size: 14px;
+  color: #757575;
+  padding-left: 10px;
+}
+
+.d2-signature-signee-form .d2-lazy-loading {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  background: #fff;
+  z-index: 1;
+  position: absolute;
+  top: 28px;
+  width: calc(100% - 48px);
+}
+
+.d2-signature-signee-form .d2-lazy-loading > li {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.d2-signature-signee-form .d2-signature-signee-email-container .d2-signature-signee-email.error {
+  color: #000000;
+  background-color: #fae9ea;
+  border: 1px solid #df3324;
+}

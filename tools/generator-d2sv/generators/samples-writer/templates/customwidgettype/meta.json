@@ -1,0 +1,17 @@
+{
+  "id": "customwidgettype",
+  "name": "D2SV Custom custom widget type sample",
+  "descriptors": [
+    {
+      "name": "app",
+      "properties": {
+        "pluginsGroupId": "com.opentext.d2.smartview",
+        "pluginArtifactId": "D2SV-Custom-Widget-Type",
+        "pluginVersion": "1.0.0",
+        "pluginDesc": "D2SV-Custom-Widget-Type",
+        "pluginPackage": "CustomWidgetType",
+        "includeSVSupport": true
+      }
+    }
+  ]
+}

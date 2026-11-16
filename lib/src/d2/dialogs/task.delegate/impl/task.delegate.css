@@ -1,0 +1,54 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model.csui-alert .binf-modal-dialog {
+  width: 360px;
+}
+
+.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model .binf-modal-dialog .binf-modal-body .custom-content-container {
+  height: 230px;
+  max-height: 230px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.d2-task-delegate-model.d2-wf-comment-model .binf-modal-dialog .binf-modal-body .custom-content-container {
+  height: 245px;
+  max-height: 245px;
+}
+
+.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model .cs-form.task-delegate-form .alpaca-field > div {
+  width: 100%;
+  padding: 0;
+}
+
+.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model .cs-form.task-delegate-form .alpaca-container-label {
+  display: none;
+}
+
+.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model .cs-form.task-delegate-form .alpaca-field .binf-form-group .binf-control-label {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model .cs-form.task-delegate-form .cs-formfield .cs-field-write {
+  padding: 0;
+}
+
+.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model .cs-form.task-delegate-form .alpaca-field  .binf-help-block {
+  margin-left: 0;
+  padding-left: 8px;
+  width: calc(100% - 1px);
+  max-width: calc(100% - 1px);
+}
+
+.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model .cs-form.task-delegate-form .cs-formfield .cs-field-write .d2-combofield-options-container .d2-combofield-options .d2-none-item {
+  display: none;
+}
+
+.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model .csui-top-align-label .binf-glyphicon-star:before{
+  position: fixed;
+}
+
+.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model .cs-form.task-delegate-form .alpaca-field .alpaca-control {
+  padding-left: 0;
+}

@@ -1,0 +1,42 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-vdoc-table-dialog.binf-modal {
+  padding: 0;
+  z-index: 1;
+}
+
+.binf-widgets .d2-vdoc-table-dialog.binf-modal.binf-fade .binf-modal-dialog {
+  transform: translateX(-25%);
+}
+
+.binf-widgets .d2-vdoc-table-dialog.binf-modal.binf-fade.binf-in .binf-modal-dialog {
+  transform: translateX(0);
+}
+
+.binf-widgets .d2-vdoc-table-dialog.binf-modal .binf-modal-dialog {
+  height: 100%;
+  margin: 0;
+  transition: transform 0.3s ease-out;
+  max-height: initial !important;
+  animation: none !important;
+  top: 62px !important;
+}
+
+.binf-widgets .d2-vdoc-table-dialog .binf-modal-content {
+  height: calc(100% - 64px);
+}
+
+.binf-widgets .d2-vdoc-table-dialog .binf-modal-content .binf-modal-body,
+.binf-widgets .d2-vdoc-table-dialog .binf-modal-content .binf-modal-body .d2-widgettable {
+  height: 100%;
+}
+
+.binf-widgets .d2-vdoc-table .csui-table-tabletoolbar .csui-tabletoolbar .csui-item-title .csui-item-title-name ~ div {
+  display: none;
+}
+
+.binf-widgets .d2-vdoc-table .csui-nodetable .csui-table-actionbar-bubble > ul {
+  height: 32px;
+}
+

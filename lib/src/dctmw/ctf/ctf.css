@@ -1,0 +1,79 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.ctfmain .note {
+  position: absolute;
+  z-index: 200000;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #FEF4C3;
+  height: 48px;
+  display: flex;
+  border-bottom: 1px solid #F3794E;
+}
+
+.ctfmain .note > .messageLabel > a {
+  text-decoration: underline;
+  color: #337ab7;
+  cursor: pointer;
+}
+
+.binf-widgets.pushBodyDown,
+.binf-widgets.pushBodyDown .d2-wizard-step-view {
+  margin-top: 48px !important;
+}
+
+.ctfmain .messageLabel {
+  float: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+  margin: 12px 15px 12px 15px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.ctfmain .note .buttonContainer {
+  margin-right: 15px;
+  position: absolute;
+  right: 0;
+}
+
+.ctfmain .note .buttonContainer .buttonCaption {
+  line-height: 47px;
+}
+
+.ctfmain .note .buttonContainer .button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #232E72;
+  padding: 15px 14px 15px 14px;
+  cursor: pointer;
+}
+
+.ctfmain .note .buttonContainer .button:hover,
+.ctfmain .note .buttonContainer .button:focus {
+  background: #D5C67C;
+  text-decoration: none;
+}
+
+.ctfmain .note .buttonContainer .button:active {
+  background: #D5C67C;
+}
+
+.ctfmain .note .buttonContainer .button.yesButton {
+  font-weight: bold;
+}
+
+
+#protocolCheckerIFrame {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+

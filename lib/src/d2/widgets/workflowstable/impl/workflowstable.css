@@ -1,0 +1,7 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-nodestable.d2-widget-table-view.d2-workflows-table-view .csui-table-empty-default.csui-table-empty:not(.csui-state-loading),
+.binf-widgets .csui-nodestable.d2-widget-table-view.d2-workflows-table-view .csui-table-empty-default.csui-table-empty.d2-search-request-aborted:not(.csui-state-loading) {
+  background-image: url(../../workflow.summary/impl/images/no-wf-summary-illustration.svg);
+}

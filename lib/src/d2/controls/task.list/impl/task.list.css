@@ -1,0 +1,126 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-task-simple-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.binf-widgets .d2-task-simple-list > div {
+  width: 100%;
+  flex: 0 0 48px;
+  overflow: hidden;
+}
+
+.binf-widgets .d2-task-simple-list .d2-task-simple-list-header,
+.binf-widgets .d2-task-simple-list .d2-task-simple-list-footer {
+  height: 48px;
+}
+
+.binf-widgets .d2-task-simple-list .d2-task-simple-list-container {
+  flex: 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-height: calc(100% - 96px);
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.binf-widgets .d2-task-simple-list.no-footer .d2-task-simple-list-container {
+  max-height: calc(100% - 48px);
+  border-bottom: none;
+}
+
+.binf-widgets .d2-task-simple-list .d2-task-simple-list-container > .d2-listview {
+  flex: 1 1 auto;
+}
+
+.binf-widgets .d2-task-simple-list .d2-task-simple-list-container > .d2-listview .csui-perfect-scrolling .cs-list-group .list-item-title {
+  width: calc(100% - 52px); 
+}
+
+.binf-widgets .d2-task-simple-list .d2-task-simple-list-container > .d2-listview .list-item-title.unread {
+  font-weight: bold;
+}
+
+.binf-widgets .d2-task-simple-list .d2-task-simple-list-header .d2-button-toolbar {
+  width: inherit;
+}
+
+.binf-widgets .d2-task-simple-list .d2-task-simple-list-header .d2-button-toolbar .icon {
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.binf-widgets .d2-task-simple-list .d2-task-simple-list-header .d2-button-toolbar .icon:active {
+  box-shadow: none;
+}
+
+.binf-widgets .d2-task-simple-list .d2-task-simple-list-header .d2-button-toolbar .region-left .icon-task-go-back {
+  flex: 0 0 32px;
+  width: 32px;
+  margin-right: 6px;
+  background-size: 18px;
+  background-position-x: 5px;
+}
+
+.binf-widgets .d2-task-simple-list .d2-task-simple-list-header .d2-button-toolbar .region-left {
+  padding: 0 0 0 16px;
+}
+
+.binf-widgets .d2-task-simple-list .d2-task-simple-list-header .d2-button-toolbar .region-left .d2-task-simple-list-header-label {
+  flex: 1 1 32px;
+  display: inline;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  position: relative;
+  top: 5px;
+  cursor: default;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  box-shadow: none;
+  background-image: none;
+  border: none;
+  margin-right: 4px;
+}
+
+.binf-widgets .d2-task-simple-list .d2-task-simple-list-header .d2-button-toolbar .region-right {
+  flex: 0 0 44px;
+  width: 44px;
+  padding: 0 16px 0 0;
+}
+
+.binf-widgets .d2-task-simple-list .d2-task-simple-list-footer {
+  background-color: #E8E8E8;
+}
+
+.binf-widgets .d2-task-simple-list.no-footer .d2-task-simple-list-footer {
+  display: none;
+}
+
+.binf-widgets .d2-task-simple-list .d2-task-simple-list-footer .page-info {
+  font-size: 12px;
+  line-height: 32px;
+  color: #232E72;
+  height: 100%;
+  padding: 8px 0 8px 20px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.binf-widgets.rtl .d2-task-simple-list-header .icon-task-go-back{
+  transform: scaleX(-1);
+}
+
+.binf-widgets .d2-task-simple-list-container .d2-listview.cs-simplelist.binf-panel.binf-panel-default {
+  overflow-y: auto;
+}

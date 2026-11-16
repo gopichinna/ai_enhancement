@@ -1,0 +1,17 @@
+{
+  "d2/sdk/models/module.collection": {
+    "modules": {
+      "d2svaisummary": {
+        "title": "D2SV-AI-Summary",
+        "version": "1.0.0"
+      }
+    }
+  },
+  "csui/utils/commands": {
+    "extensions": {
+      "d2svaisummary": [
+        "d2svaisummary/commands/ai.summary.command"
+      ]
+    }
+  }
+}

@@ -1,0 +1,359 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets.csui-sidebar-enabled .cs-perspective-with-breadcrumb-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.binf-widgets.csui-sidebar-enabled .csui-perspective-view-container {
+  display: flex;
+  width: calc(100% - 0px);
+}
+
+.binf-widgets.perspective-editing.csui-sidebar-enabled:not(.csui-pman-header-config) .pman-container.pman-mode-edit .pman-left-tools .pman-toolitem {
+  visibility: hidden;
+}
+
+.binf-widgets.perspective-editing.csui-sidebar-enabled .cs-perspective-panel .csui-perspective-view-container .cs-perspective,
+.binf-widgets.perspective-editing.csui-sidebar-enabled .cs-perspective-panel .cs_perspective_no_left_right_margin  .csui-perspective-view-container .cs-perspective {
+  margin-top: 0;
+}
+
+.binf-widgets.perspective-editing .csui-sidebar+.csui-perspective-view {
+  width: calc(100% - 60px);
+  transition: width 0.3s ease;  
+  padding: 32px 10px 0 0;
+}
+
+.binf-widgets.perspective-editing .csui-sidebar.csui-sidebar-open+.csui-perspective-view {
+  width: calc(100% - 306px);
+}
+
+.binf-widgets.perspective-editing .csui-sidebar{
+  height: calc(100vh - 64px);
+  margin-right: 15px;
+}
+
+.binf-widgets.perspective-editing.csui-top-ribbon-enabled .csui-sidebar {
+  height: calc(100vh - 180px);
+  margin-right: 15px;
+}
+
+.binf-widgets .csui-pman-sidebar-ribbon {
+  margin-top: 4px;
+}
+
+.binf-widgets .csui-pman-sidebar-ribbon .csui-sidebar-item {
+  border: none;
+  background: transparent;
+  margin: 4px 8px;
+}
+
+.binf-widgets .csui-pman-sidebar-ribbon .csui-sidebar-item.binf-active {
+  background-color: #c0d7e4;
+}
+
+.binf-widgets .csui-pman-sidebar-ribbon .csui-sidebar-item:hover {
+  background-color: #a2d6f4;
+}
+
+.binf-widgets .csui-pman-sidebar-ribbon .csui-sidebar-layouts-btn {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/action_layouts32.svg');
+  width: 32px;
+  height: 32px;
+}
+
+.binf-widgets .csui-pman-sidebar-ribbon .csui-sidebar-widget-btn {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/action_widgets32.svg');
+  width: 32px;
+  height: 32px;
+}
+
+.binf-widgets .csui-pman-sidebar-ribbon .cssv-sidebar-settings-btn {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/action_rule_settings32.svg');
+  width: 32px;
+  height: 32px;
+}
+
+.binf-widgets .csui-pman-sidebar-ribbon .csui-sidebar-layouts-btn.binf-active,
+.binf-widgets .csui-pman-sidebar-ribbon .csui-sidebar-layouts-btn.binf-active:hover {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/action_layouts32_sel.svg');
+}
+
+.binf-widgets .csui-pman-sidebar-ribbon .csui-sidebar-layouts-btn:hover {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/action_layouts32_mo.svg');
+}
+
+.binf-widgets .csui-pman-sidebar-ribbon .csui-sidebar-widget-btn.binf-active,
+.binf-widgets .csui-pman-sidebar-ribbon .csui-sidebar-widget-btn.binf-active:hover {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/action_widgets32_sel.svg');
+}
+
+.binf-widgets .csui-pman-sidebar-ribbon .csui-sidebar-widget-btn:hover {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/action_widgets32_mo.svg');
+}
+
+.binf-widgets .csui-pman-sidebar-ribbon .cssv-sidebar-settings-btn.binf-active,
+.binf-widgets .csui-pman-sidebar-ribbon .cssv-sidebar-settings-btn.binf-active:hover {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/action_rule_settings32_sel.svg');
+}
+
+.binf-widgets .csui-pman-sidebar-ribbon .cssv-sidebar-settings-btn:hover {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/action_rule_settings32_mo.svg');
+}
+
+
+.binf-widgets .csui-sidebar-slide-body {
+  border-top: 1px solid #DCE4E8;
+}
+
+.binf-widgets .csui-sidebar-slide-body .csui-pman-list {
+  margin-top: 32px;
+  height: calc(100vh - 195px);
+}
+
+.binf-widgets .csui-sidebar-slide-body .csui-new-widget-panel .csui-widget-list-panel {
+  height: calc(100vh - 200px);
+}
+
+.binf-widgets.csui-top-ribbon-enabled .csui-sidebar-slide-body .csui-pman-list {
+  margin-top: 32px;
+  height: calc(100vh - 300px);
+}
+
+.binf-widgets.csui-top-ribbon-enabled .csui-sidebar-slide-body .csui-new-widget-panel .csui-widget-list-panel {
+  height: calc(100vh - 330px);
+}
+
+.binf-widgets .csui-sidebar-panel {
+  display: flex;
+  background-color: #DCE4E8;
+  height: 96%;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.binf-widgets .csui-sidebar-panel .csui-ribbon-panel {
+  width: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.binf-widgets .csui-sidebar-slide-container {
+  background-color: #fff;
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.binf-widgets .csui-sidebar-open .csui-sidebar-panel {
+  width: 305px;
+}
+
+.binf-widgets .csui-sidebar-open .csui-sidebar-slide-container {
+  width: 240px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
+.csui-sidebar-slide-container .csui-sidebar-slide-header {
+  align-self: center;
+}
+
+.binf-widgets .csui-sidebar-slide-header {
+  font-size: 18px;
+  line-height: normal;
+  width: 212px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  margin: 8px 10px 7px 20px;
+}
+
+.binf-widgets .csui-sidebar-slide-header .csui-sidebar-slide-title {
+  align-self: center;
+  width: 104px;
+  height: 19px;
+  text-align: left;
+  margin-right: 76px;
+  margin-bottom: 5px;
+}
+
+.binf-widgets .csui-sidebar-slide-header .csui-sidebar-slide-close {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/action_close32.svg');
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.binf-widgets .csui-sidebar-slide-header .csui-sidebar-slide-close:hover,
+.binf-widgets .csui-sidebar-slide-header .csui-sidebar-slide-close:focus {
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item {
+  padding: 0 30px 32px 32px;
+  cursor: pointer;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 3px;
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active {
+  padding: 0px 18px 20px 20px;
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active > span{
+  padding-left: 10px;  
+  font-weight: 700;
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item .csui-layout-icon {
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 180px;
+  height: 90px;
+}
+
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active .csui-layout-lcr,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:active .csui-layout-lcr,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active .csui-layout-lcr:active,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover .csui-layout-lcr,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover:active .csui-layout-lcr,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover .csui-layout-lcr:active,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover:focus .csui-layout-lcr {
+  width: 204px;
+  height: 114px;
+  margin-top: 8px;
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_lcr_sel.svg');
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active .csui-layout-flow,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:active .csui-layout-flow,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active .csui-layout-flow:active,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover .csui-layout-flow,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover:active .csui-layout-flow,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover .csui-layout-flow:active,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover:focus .csui-layout-flow {
+  width: 204px;
+  height: 114px;
+  margin-top: 8px;
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_flow_sel.svg');
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active .csui-layout-sidepanel-right,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:active .csui-layout-sidepanel-right,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active .csui-layout-sidepanel-right:active,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover .csui-layout-sidepanel-right,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover:active .csui-layout-sidepanel-right,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover .csui-layout-sidepanel-right:active,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover:focus .csui-layout-sidepanel-right {
+  width: 204px;
+  height: 114px;
+  margin-top: 8px;
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_right_sidepanel_sel.svg');
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active .csui-layout-sidepanel-left,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:active .csui-layout-sidepanel-left,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active .csui-layout-sidepanel-left:active,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover .csui-layout-sidepanel-left,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover:active .csui-layout-sidepanel-left,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover .csui-layout-sidepanel-left:active,
+.binf-widgets .csui-sidebar-panel .csui-layout-item.binf-active:hover:focus .csui-layout-sidepanel-left {
+  width: 204px;
+  height: 114px;
+  margin-top: 8px;
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_left_sidepanel_sel.svg');
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item > span {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.binf-widgets .csui-ribbon-panel .icon-help {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/action_help32.svg');
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  margin: 8px;
+  border: none;
+}
+
+.binf-widgets .csui-ribbon-panel .icon-help:hover {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/action_help32_mo.svg');
+}
+
+.binf-widgets .csui-ribbon-panel .icon-help:active {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/action_help32_md.svg');
+}
+
+.csui-sidebar-panel .csui-layout-lcr {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_lcr.svg');
+  background-position: 0 0;
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item:hover .csui-layout-lcr,
+.binf-widgets .csui-sidebar-panel .csui-layout-item:hover:focus .csui-layout-lcr {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_lcr_mo.svg');
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item:hover:active .csui-layout-lcr,
+.binf-widgets .csui-sidebar-panel .csui-layout-item:active .csui-layout-lcr {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_lcr_md.svg');
+}
+
+.csui-sidebar-panel .csui-layout-flow {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_flow.svg');
+  background-position: 0 0;
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item:hover .csui-layout-flow {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_flow_mo.svg');
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item:hover:active .csui-layout-flow,
+.binf-widgets .csui-sidebar-panel .csui-layout-item:active .csui-layout-flow {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_flow_md.svg');
+}
+
+.csui-sidebar-panel .csui-layout-sidepanel-right {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_right_sidepanel.svg');
+  background-position: 0 0;
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item:hover .csui-layout-sidepanel-right {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_right_sidepanel_mo.svg');
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item:hover:active .csui-layout-sidepanel-right,
+.binf-widgets .csui-sidebar-panel .csui-layout-item:active .csui-layout-sidepanel-right {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_right_sidepanel_md.svg');
+}
+
+.csui-sidebar-panel .csui-layout-sidepanel-left {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_left_sidepanel.svg');
+  background-position: 0 0;
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item:hover .csui-layout-sidepanel-left {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_left_sidepanel_mo.svg');
+}
+
+.binf-widgets .csui-sidebar-panel .csui-layout-item:hover:active .csui-layout-sidepanel-left,
+.binf-widgets .csui-sidebar-panel .csui-layout-item:active .csui-layout-sidepanel-left {
+  background: url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_left_sidepanel_md.svg');
+}

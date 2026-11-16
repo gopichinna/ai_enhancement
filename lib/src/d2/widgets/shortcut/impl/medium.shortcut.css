@@ -1,0 +1,73 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-medium {
+  margin-top: 8px;
+}
+.binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-medium:first-child {
+  margin-top: 0;
+}
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-medium {
+  display: flex;
+  flex-direction: column;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-medium .tile-title {
+  height: 100%;
+  width: 100%;
+  margin-top: 0.50em;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-medium .tile-title .csui-heading {
+  font-family: inherit;
+  font-size: 1.225em;
+  line-height: 1.25em;
+  text-align: center;
+  color: #FFFFFF;
+  white-space: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-medium .tile-title .tile-overflow {
+  height: 1em;
+  width: 100%;
+  background: transparent;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-medium:hover {
+  text-decoration: none;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-medium .tile-icon {
+  justify-content: center;
+  padding-top: 10.75%;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-medium .tile-icon .icon {
+  width: 3em;
+  height: 3em;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-medium .csui-error {
+  padding: 10.75% 1em 1em 1em;
+  justify-content: flex-start;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-medium .csui-error .csui-error-icon-parent {
+  height: 48px;
+  width: 48px;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-medium .csui-error .csui-error-icon {
+  width: 28px;
+  height: 28px;
+  margin: 10px;
+}
+
+.binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-medium .csui-error .csui-message {
+  font-size: 18px;
+}

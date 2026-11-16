@@ -1,0 +1,136 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.d2-embedded-search {
+  position: absolute;
+  width: 400px;
+  right: -40px;
+  top: 4px;
+}
+
+.d2-embedded-search .icon-search-placeholder {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 6px;
+  left: 48px;
+  z-index: 10;
+  cursor: default;
+}
+
+.d2-embedded-search .clearer {
+  color: #d3d3d3;
+  position: relative;
+  top: 13px;
+  margin-right: 40px;
+  pointer-events: auto;
+  width: 15px;
+  height: 15px;
+  z-index: 10 !important;
+  float: right;
+  right: 0;
+  left: 0;
+}
+
+.d2-embedded-search .fadeout {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  cursor: text;
+  width: 35px;
+  height: 20px;
+  z-index: 9;
+  display: none;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 100%);
+}
+
+.d2-embedded-search .search {
+  position: absolute;
+  left: 45px;
+  z-index: 9;
+  outline: 0;
+  border: 1px solid #a7a9ac;
+  border-radius: 5px;
+  right: 34px;
+  height: 28px;
+  line-height: 28px;
+  width: calc(100% - 80px);
+  top: 6px;
+  font-weight: 300;
+  padding-left: 30px;
+  padding-right: 1.75em;
+  font-size: 0.875em;
+  text-indent: 2px; 
+}
+
+.d2-embedded-search .search::-ms-clear {
+  display: none;
+}
+
+.binf-widgets .csui-leftToolbar .csui-toolitem.csui-toolitem-icononly .icon.csui-icon-go-previous-node {
+  background-size: 18px 18px;
+  height: 32px;
+  width: 32px;
+}
+
+body.d2-embed:not(.csui-on-ipad) .csui-search-results .csui-result-list {
+  height: 100%;
+}
+
+.d2-embedded-search .scope-dropdown-menu{
+  position: absolute;
+  z-index: 1000;
+  top: 36px;
+  left: 46px;
+  width: calc(100% - 82px);
+  background-color: #fff;
+  float: left;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
+  border: none;
+}
+
+.binf-widgets .csui-tabletoolbar .d2-embedded-search .scope-dropdown-menu,
+.binf-widgets .csui-tabletoolbar .d2-embedded-search .scope-dropdown-menu .search-scope-option{
+  max-width: initial;
+}
+
+.binf-widgets .csui-tabletoolbar .d2-embedded-search .scope-dropdown-menu .tick-icon-container{
+  background-position: 50%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 32px;
+  left: -6px;
+  position: relative;
+  width: 18px;
+  cursor: pointer;
+}
+
+.binf-widgets .csui-tabletoolbar .d2-embedded-search .scope-dropdown-menu li.search-scope-option{
+  display: flex;
+  width: 100%;
+}
+
+.binf-widgets .csui-tabletoolbar .d2-embedded-search .scope-dropdown-menu li.search-scope-option:hover{
+  background-color: #b1bdc4;
+}
+
+.binf-widgets .csui-tabletoolbar .d2-embedded-search .scope-dropdown-menu input[type="radio"]{
+  margin: 0;
+  opacity: 0;
+}
+
+.binf-widgets .csui-tabletoolbar .d2-embedded-search .scope-dropdown-menu input[type="radio"]:checked ~ span {
+  background-image: url("../../../widgets/navigation.header/controls/search/impl/images/checkmark_cerulean16.svg");
+}
+
+.binf-widgets .csui-tabletoolbar .d2-embedded-search .scope-dropdown-menu input[type="radio"]:checked ~ label {
+  font-weight: bold;
+}
+
+.binf-widgets .csui-tabletoolbar .d2-embedded-search .scope-dropdown-menu .search-scope-option label {
+  width: 100%;
+  line-height: 32px;
+  font-size: 14px;
+  cursor: pointer;
+}

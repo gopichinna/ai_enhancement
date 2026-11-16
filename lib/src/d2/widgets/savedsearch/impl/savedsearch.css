@@ -1,0 +1,79 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.cs-savedsearch .tile-header {
+  cursor: pointer;
+}
+
+.cs-savedsearch .tile-content .binf-list-group .csui-item-standard.binf-list-group-item {
+  height: 48px;
+  padding: 0 16px 0 16px;
+  margin: 1px 0 0 0;
+  background-color: #f7f7f7;
+  border: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cs-savedsearch .tile-content .binf-list-group .csui-item-standard.binf-list-group-item span:focus,
+.cs-savedsearch .tile-content .binf-list-group .csui-item-standard.binf-list-group-item span:active {
+  outline-style: none;
+}
+
+.cs-savedsearch .tile-content .binf-list-group > a.csui-item-standard:hover {
+  background-color: #d7d7d7;
+}
+
+.cs-savedsearch .tile-content .binf-list-group a.csui-item-standard:focus,
+.cs-savedsearch .tile-content .binf-list-group a.csui-item-standard.binf-active:focus {
+  outline: 1px dotted #333333;
+}
+
+.cs-savedsearch .tile-content .binf-list-group .csui-item-standard.binf-list-group-item .csui-icon-group,
+.cs-savedsearch .tile-content .binf-list-group .csui-item-standard.binf-list-group-item .csui-icon-group .csui-icon {
+  height: 32px;
+  width: 32px;
+  margin: 8px 8px 0 0;
+  background-repeat: no-repeat;
+}
+
+.cs-savedsearch .tile-content .binf-list-group .csui-item-standard.binf-list-group-item .csui-icon-group .csui-icon {
+  margin: 0;
+}
+
+.cs-savedsearch .tile-content .csui-item-standard.binf-list-group-item .list-item-title {
+  font-size: 14px;
+  margin: 17px 0 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.cs-savedsearch .tile-content .binf-list-group .cs-content .cs-list-group .cs-emptylist-container {
+  height: 48px;
+  margin: 0;
+  padding: 0 16px 0 56px;
+}
+
+.cs-savedsearch .tile-content .binf-list-group .cs-content .cs-list-group .cs-emptylist-container .cs-emptylist-placeholder {
+  display: none;
+}
+
+.cs-savedsearch .tile-content .binf-list-group .cs-content .cs-list-group .cs-emptylist-container .cs-emptylist-text {
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 48px;
+  text-align: left;
+}
+
+.cs-savedsearch .tile-content .binf-list-group .cs-content .cs-list-group .cs-emptylist-container .cs-emptylist-text p {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: left;
+}

@@ -1,0 +1,26 @@
+{{#each items}}
+  {{#xif " this.type === 'option' "}}
+    <li id="{{optionId}}" role="menuitem" class="{{styleClass}}" tabindex="-1">
+      <div class="csui-toolitem">
+        <input id="{{id}}" type="radio" name="header-search-location" data-id="{{id}}" {{#if isDefault}}data-default="true"{{/if}}>
+        <span class="tick-icon-container"></span>
+        <label for="{{id}}">{{{labelContent}}}</label>
+      </div>
+    </li>
+  {{/xif}}
+
+  {{#xif " this.type === 'command' "}}
+    <li role="menuitem" data-command="{{command}}" class="{{styleClass}}" tabindex="-1">
+      <div class="csui-toolitem">
+        <label for="{{id}}">{{{labelContent}}}</label>
+      </div>
+    </li>
+  {{/xif}}
+
+  {{#xif " this.type === 'separator' "}}
+    {{#unless @first}}{{#unless @last}}
+      <li role="separator"></li>
+    {{/unless}}{{/unless}}
+  {{/xif}}
+{{/each}}
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

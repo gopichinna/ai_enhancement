@@ -1,0 +1,65 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-global-warning .csui-header .csui-progressrow .csui-title:before {
+    content: "";
+    background-image: url('../images/notification/notification_warning.svg');
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    padding-left: 14px;
+    padding-right: 10px;
+    margin-right: 10px;
+    padding-bottom: 4px;
+}
+
+.binf-widgets .csui-progresspanel.csui-global-message.csui-global-warning.csui-collapsed .csui-header {
+    border-bottom: 4px solid #F05822;
+    border-radius: 3px;
+    transition: border-bottom 0.4s ease-in;
+}
+
+.binf-widgets .csui-progresspanel.csui-global-message.csui-global-warning.csui-expanded .csui-items-wrapper {
+    border-top: 1px solid #F05822;
+    border-bottom: 4px solid #F05822;
+    border-radius: 3px;
+}
+
+.binf-widgets .csui-progresspanel.csui-global-message.csui-global-warning {
+    height: auto;
+}
+
+.binf-widgets .csui-progresspanel.csui-global-message.csui-global-warning .csui-items::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.binf-widgets .csui-progresspanel.csui-global-message.csui-global-warning .csui-items .csui-progressrow.focused-row .csui-name-status,
+.binf-widgets .csui-progresspanel.csui-global-message.csui-global-warning .csui-items .csui-progressrow .csui-name-status:hover,
+.binf-widgets .csui-progresspanel.csui-global-message.csui-global-warning .csui-items .csui-progressrow .csui-name-status:focus {
+    background-color: transparent;
+}
+
+.binf-widgets .csui-progresspanel.csui-global-message.csui-global-warning.csui-collapsed .csui-header {
+    border-radius: 3px 3px 0 0;
+}
+
+.binf-widgets .csui-progresspanel.csui-global-message.csui-global-warning .csui-header .csui-progressrow .csui-names-progress .csui-title:before {
+    position: absolute;
+    left: 0;
+    height: 24px;
+    width: 24px;
+}
+
+.binf-widgets .csui-progresspanel.csui-global-message.csui-global-warning .csui-header .csui-progressrow .csui-names-progress .csui-title {
+    padding-left: 38px;
+    position: relative;
+}
+
+.csui-global-warning .csui-progressrow .csui-title {
+    text-align: left;
+}

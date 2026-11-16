@@ -1,0 +1,196 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-zip-errorlist-layout-view {
+  padding-left: 64px;
+  padding-right: 49px;
+}
+
+.binf-widgets .d2-zip-errorlist-layout-view .show-file-Info {
+  background: #E7EDF8;
+  height: 35px;
+  display: flex;
+}
+
+.binf-widgets .d2-zip-errorlist-layout-view .show-file-Info .files-info-message {
+  height: 18px;
+  font-size: 12px;
+  line-height: 32px;
+  color: #333333;
+  margin-left: 8px;
+  padding-top: 0;
+}
+
+.binf-widgets .d2-zip-errorlist-layout-view .show-file-Info .info-icon {
+  background-image: url(../../impl/images/information.svg);
+  width: 18px;
+  height: 18px;
+  margin-left: 16px;
+  margin-top: 8px;
+  margin-bottom: 9px;
+}
+
+.d2-zip-errorlist-layout-view .d2-validation-copy {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  background: url('../../impl/images/copy.svg') no-repeat center;
+}
+
+.d2-zip-errorlist-layout-view .d2-validation-copy.copied {
+  cursor: default;
+  background: url('../../impl/images/copied_check.svg') no-repeat center;
+}
+
+.d2-zip-errorlist-layout-view .table-header {
+  margin-top: 18px;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: top;
+  display: flex;
+  border-bottom: 1px solid #B2BEC5;
+  font-weight: bold;
+  align-items: center;
+  height:32px;
+}
+
+.d2-mass-update-wizard .d2-zip-errorlist-layout-view {
+  height: 100%;
+}
+
+.d2-zip-errorlist-layout-view table.error-items {
+  height: 340px;
+  display: block;
+}
+
+.d2-zip-errorlist-layout-view table.error-items tr {
+  height: 64px;
+  border-bottom: 1px solid #eee;
+  display: inline-table;
+  margin: 1px;
+  width:100%;
+}
+
+.d2-zip-errorlist-layout-view table.error-items tr:focus {
+  outline: 1px dotted #333333;
+}
+
+.d2-zip-errorlist-layout-view table.error-items .status-icon {
+  background-image: url('../../impl/images/status-icon.svg');
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.binf-widgets .d2-zip-errorlist-layout-view .binf-modal-header {
+  border: 0 none;
+  padding: 0 16px 0 16px;
+  height: 100px;
+}
+
+.d2-zip-errorlist-layout-view .binf-modal-content {
+  border-radius: 3px;
+  border: 0 none;
+  border-bottom: 4px solid #00639B;
+  overflow: hidden;
+  width: 720px;
+  padding: 0;
+}
+
+.binf-widgets .d2-zip-errorlist-layout-view .binf-modal-body {
+  margin: 0;
+  padding: 0 16px 0 16px;
+}
+
+.binf-widgets .d2-zip-errorlist-layout-view .binf-modal-dialog .binf-modal-content .binf-modal-body > div {
+  max-height: inherit;
+}
+
+.d2-zip-errorlist-layout-view table.error-items td.type,
+.d2-zip-errorlist-layout-view table.error-items .status,
+.d2-zip-errorlist-layout-view table.error-items td.remove {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.d2-zip-errorlist-layout-view table.error-items td.type {
+  width: 32px;
+  vertical-align: middle;
+}
+
+.d2-zip-errorlist-layout-view table.error-items td.name {
+  position: relative;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 14px;
+  line-height: 16px;
+  width: 320px;
+  max-width: 320px;
+  vertical-align: middle;
+  overflow-wrap: break-word;
+}
+
+.d2-zip-errorlist-layout-view table.error-items td.name > .fadeout {
+  position: absolute;
+  width: 35px;
+  top: 0;
+  right: 0;
+  height: 99%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 100%);
+}
+
+.d2-zip-errorlist-layout-view table.error-items .status {
+  width: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.d2-zip-errorlist-layout-view table.error-items .message {
+  padding-left: 8px;
+  padding-right: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  width: 220px;
+  color: #DF3324;
+  overflow-wrap: break-word;
+}
+
+.d2-zip-errorlist-layout-view .binf-modal-header .table-header {
+  left: calc(50% - 546px / 2 - 71px);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  color: #333333;
+  height: 20px;
+}
+
+.d2-zip-errorlist-layout-view .error-data .each-error {
+  display: flex;
+}
+
+.d2-zip-errorlist-layout-view .error-data {
+  vertical-align: middle;
+}
+
+.d2-zip-errorlist-layout-view .error-data .each-error:nth-child(n+2) {
+  padding-top: 0;
+}
+
+.d2-zip-errorlist-layout-view .error-data .each-error:first-child {
+  padding-top: 0;
+}
+
+.d2-zip-errorlist-layout-view .error-data .each-error {
+  display: flex;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  vertical-align: middle;
+}
+
+.d2-zip-errorlist-layout-view .error-data .each-error:last-child {
+  padding-bottom: 0;
+}

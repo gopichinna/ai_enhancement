@@ -1,0 +1,138 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .cs-simplelist.smart-simplelist {
+  min-width: 15.4em;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+
+
+.binf-widgets .cs-simplelist.smart-simplelist .binf-panel-heading {
+  height: calc(48px - 1px);
+  background: #ffffff;
+  font-weight: 400;
+  border: 0;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  table-layout: fixed;
+}
+
+.binf-widgets .smart-empty-list .cs-content .cs-list-group {
+  height: 100%;
+}
+
+.binf-widgets .cs-simplelist.smart-simplelist .cs-header-with-go-back {
+  cursor: pointer;
+}
+
+.binf-widgets .cs-simplelist.smart-simplelist .cs-simplelist.smart-simplelist-icon {
+  width: 32px;
+  height: 32px;
+  min-width: 18px;
+  display: table-cell;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  float: none;
+  vertical-align: middle;
+  margin: 0 0 0 1px;
+  cursor: pointer;
+}
+
+.binf-widgets .cs-simplelist.smart-simplelist .cs-title {
+  font-size: 20px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding: 2px 0;
+}
+
+.binf-widgets .cs-simplelist.smart-simplelist .cs-title-with-go-back {
+  cursor: pointer;
+  width: calc(100% - 30px);
+  
+  margin-left: 12px;  
+  line-height: 24px;
+}
+
+.binf-widgets .cs-simplelist.smart-simplelist .cs-simplelist.smart-simplelist-icon-wrapper{
+  justify-content: center;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+}
+
+
+
+.binf-widgets .cs-simplelist.smart-simplelist .cs-content {
+  position: relative;
+  height: calc(100% - 46px);
+  
+  z-index: 5;
+  background: #f7f7f7;
+}
+
+.binf-widgets .cs-simplelist.smart-simplelist .cs-content.csui-normal-scrolling {
+  width: 100%;
+}
+
+.binf-widgets .cs-simplelist.smart-simplelist .binf-list-group-item {
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 4px 16px 4px 16px;
+  background: none;
+}
+
+.binf-widgets .cs-simplelist.smart-simplelist .binf-list-group-item:hover {
+  background: #B2BEC5;
+}
+
+.binf-widgets .cs-simplelist.smart-simplelist .cs-list-group div.binf-list-group-item span.csui-type-icon.csui-icon {
+  height: 46px;
+}
+
+.binf-widgets .cs-simplelist.smart-simplelist .binf-active .binf-list-group-item,
+.binf-widgets .cs-simplelist.smart-simplelist .binf-list-group-item:active,
+.binf-widgets .cs-simplelist.smart-simplelist .binf-list-group-item:focus {
+  background: #98A8B2;
+}
+
+.binf-widgets .cs-simplelist.smart-simplelist .cs-list-group .cs-simplelist.smart-simplelist-item {
+  height: 40px;
+  cursor: pointer;
+}
+
+.cs-simplelist.smart-simplelist .cs-list-group a:focus,
+.binf-widgets .cs-simplelist.smart-simplelist .cs-list-group a.binf-active:focus {}
+
+.binf-widgets .cs-simplelist.smart-simplelist .cs-list-group a.binf-active {}
+
+.binf-widgets .cs-simplelist.smart-simplelist .cs-list-group a.binf-active.active-item-disable {
+  pointer-events: none;
+  cursor: default;
+}
+
+.binf-widgets .cs-simplelist.smart-simplelist .cs-list-group .list-item-title {
+  font-style: normal;
+  padding: 2px 0 2px 8px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 32px);
+}
+
+.binf-widgets .cs-simplelist.smart-simplelist .cs-list-group li:hover {
+  background-color: #bac9ce;
+}

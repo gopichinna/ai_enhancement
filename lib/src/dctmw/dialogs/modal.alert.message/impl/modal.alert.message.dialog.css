@@ -1,0 +1,31 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .custom-message-body #message-body {
+  max-height: 400px;
+  font-weight: 300;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.confirmation-message-dialog .binf-modal-dialog .binf-modal-body {
+  padding-right: 0;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.confirmation-message-dialog .binf-modal-dialog .binf-modal-body #message-body-container {
+  padding-right: 18px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.confirmation-message-dialog .binf-modal-dialog {
+  width: 600px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.confirmation-message-dialog .binf-modal-dialog .binf-modal-body .custom-content-container {
+  height: auto;
+  max-height: 400px;
+}
+
+.binf-widgets .csui-alert.dctm-alert-custom-content.confirmation-message-dialog .binf-modal-dialog .binf-modal-body {
+  margin: 0 0 16px 15px;
+}

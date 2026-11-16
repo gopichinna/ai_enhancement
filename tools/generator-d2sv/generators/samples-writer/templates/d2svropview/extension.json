@@ -1,0 +1,8 @@
+{
+  "d2/sdk/commands/node.actions.rules": [
+    "commands/node.actions.rules"
+  ],
+  "d2/sdk/utils/commands": [
+    "commands/view.permission"
+  ]
+}

@@ -1,0 +1,68 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.d2-dump .binf-row > .alpaca-container-label {
+  display: none;
+}
+
+.d2-dump .d2tabgroupcontainer {
+  outline: none;
+}
+
+.d2-dump.cs-metadata-properties .binf-nav-pills > li > a {
+  max-width: 11em;
+}
+
+.d2-dump .d2tabgroup {
+  padding: 0 15px;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+}
+
+.d2-dump .d2tabcontainer {
+  min-height: 304px;
+  max-height: calc(100vh - 180px);
+}
+
+.d2-dump .d2-dump-no-object .d2-set-container {
+  padding-left: 15px;
+}
+
+.d2-dump .cs-form .binf-col-md-6 {
+  float: left;
+  width: 100%;
+}
+
+.binf-widgets .d2-dump .binf-col-md-12{
+  float: none;
+}
+
+.d2-dump .alpaca-field-object.alpaca-top .d2-container .d2-fieldset-layout.d2-nested-fieldset-layout {
+  background-color: transparent;
+  border: 0;
+}
+
+.d2-dump .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+  width: 30%;
+}
+
+.d2-dump .cs-form .alpaca-container-item > .binf-form-group.alpaca-field > .binf-col-sm-9 {
+  width: 70%;
+}
+
+.d2-dump .cs-form .alpaca-container-item > .binf-form-group.alpaca-field > .binf-col-sm-9 .cs-field-richtext-data {
+  line-height: 28px;
+}
+
+.binf-widgets .d2-dump .binf-col-md-6.d2-control .alpaca-field {
+  min-height: 28px;
+}
+
+.d2-dump .d2tabcontaineritemwrapper.binf-col-md-6.d2tabtopfieldpadding {
+  padding-top: 0;
+}
+
+.binf-widgets .d2-stepper-wizard .cs-form.csui-general-form.d2-dump-no-object{
+  overflow-y: auto;
+}

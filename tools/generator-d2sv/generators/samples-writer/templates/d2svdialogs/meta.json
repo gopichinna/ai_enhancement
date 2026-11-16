@@ -1,0 +1,17 @@
+{
+  "id": "d2svdialogs",
+  "name": "D2SV Custom Dialogs(D2FS) sample",
+  "descriptors": [
+    {
+      "name": "app",
+      "properties": {
+        "pluginsGroupId": "com.opentext.d2.smartview",
+        "pluginArtifactId": "D2SV-Custom-Dialogs",
+        "pluginVersion": "1.0.0",
+        "pluginDesc": "D2SV-Custom-Dialogs",
+        "pluginPackage": "D2SVDialogs",
+        "includeSVSupport": true
+      }
+    }
+  ]
+}

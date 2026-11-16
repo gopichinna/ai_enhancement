@@ -1,0 +1,32 @@
+<span class="smart-grid csui-item-standard csui-list-group-item {{#if hasTableToolbarView}}smart-custom-item-wrapper{{/if}}{{#if inlineForm}} csui-inlineform-row {{/if}}">
+  {{#if inlineForm}}
+  {{#if hasTableToolbarView}}
+  <span class="smart-type-icon" aria-hidden="true" title="{{iconTitle}}"></span>
+  {{/if}}
+  <div class="csui-inlineform-container"></div>
+  {{else}}
+  <span class="smart-target-browse-checkbox csui-selectable {{selected}}">
+    {{#if isSingleSelect}}
+    {{{icon-v2 iconName="csui_smart_utility_checkmark16" states="false" size="xsmall"}}}
+    {{else}}
+    <otc-checkbox class="smart-np-list-checkbox" {{#if disableCheckbox}}disabled{{/if}}
+      interactiveonly="true" tabindex="-1"></otc-checkbox>
+    {{/if}}
+  </span>
+  <span class="csui-browsable">
+    <span class="csui-type-icon smart-np-thumbnail-icon" aria-hidden="true" title="{{iconTitle}}">
+       <span class="smart-type-icon smart-np-thumbnail-icon" aria-hidden="true"></span>
+       <div class="smart-np-thumb-info binf-hidden"></div>
+    </span>
+    <span class="smart-list-title ">
+      <span class="smart-flex-guard">
+        <span title="{{name}}" class="csui-list-item-title" {{#if notBrowsable}}disabled{{/if}} tabindex="-1">
+          {{name}}
+        </span>
+        <span class="binf-hidden smart-indicator-wrapper"></span>
+      </span>
+    </span>
+  </span>
+  {{/if}}
+</span>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

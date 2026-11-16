@@ -1,0 +1,35 @@
+{{#if showHeader}}
+    <div>
+        <div class="csui-global-message"></div>
+        <nav class="d2-navbar signout-page-navbar">
+            <div class="binf-container-fluid" role="menubar">
+                <div class="binf-navbar-nav">
+                    <div class="d2-branding">
+                        <div class="d2-brand-container">
+                            <span class="d2-brand-logo"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+{{/if}}
+<div class="main-area">
+    <div class="message-wrapper">
+        {{#each messages}}
+            <p>{{{this}}}</p>
+        {{/each}}
+    </div>
+
+    <div class="buttons-container">
+        {{#if showSignout}}
+            <div class="button-container">
+                <span class="signout-user img-button signout-img" title="{{signOut}}" aria-label="{{signOut}}" tabindex="0"></span>
+                <div>
+                    <span class="signout-user img-button-text" title="{{signOut}}">{{signOut}}</span>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

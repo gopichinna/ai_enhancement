@@ -1,0 +1,186 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .smart-side-panel-table-settings.csui-sidepanel-custom .csui-sidepanel-container {
+  width: 512px;
+  max-width: 512px;
+  min-width: 512px;
+}
+
+ol.smart-table-settings-columns-view {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: -32px -48px;
+  padding-top: 16px;
+  height: calc(100% + 32px);
+}
+
+li.smart-table-settings-column-view {
+  font-size: 14px;
+  height: auto;
+  min-height: 44px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+li.smart-table-settings-column-view.smart-table-settings-column--is-with-label {
+  height: auto;
+  min-height: 50px;
+}
+
+li.smart-table-settings-column-view.smart-table-settings-column--is-fixed.smart-table-settings-column--is-not-movable {
+  opacity: 0.75;
+}
+
+.smart-table-settings-column-view > .smart-table-settings-column {
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 16px;
+}
+
+.smart-table-settings-column-view > .smart-table-settings-column > .smart-table-settings-column-region.smart-table-settings-column-region-name {
+  pointer-events: none; 
+}
+
+.smart-table-settings-column-view.smart-table-settings-column--is-dragstart {
+  background-color: #cccccc;
+  opacity: 0.75;
+}
+
+.smart-table-settings-column-view.smart-table-settings-column--is-dragover.smart-table-settings-column--is-dragover-top {
+  border-top-color: #3b57ff;
+}
+
+.smart-table-settings-column-view.smart-table-settings-column--is-dragover.smart-table-settings-column--is-dragover-bottom {
+  border-bottom-color: #3b57ff;
+}
+
+.smart-table-settings-column-view.smart-table-settings-column--is-dragging {
+  background-color: #cbd3d9;
+}
+
+.smart-table-settings-column-view:hover {
+}
+
+.smart-table-settings-column-view.smart-table-settings-column--is-dragstart,
+.smart-table-settings-column-view.smart-table-settings-column--is-dragover {
+  cursor: grabbing;
+}
+
+.smart-table-settings-column-view.smart-table-settings-column--is-movable:hover {
+  background-color: #b2bec5;
+  cursor: pointer;
+}
+
+.smart-table-settings-column-view:focus {
+  outline: none;
+}
+
+.smart-table-settings-column-view:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 1px #2e3d98, inset 0 0 0 2px #ffffff;
+}
+
+.smart-table-settings-columns-view > div,
+.smart-table-settings-column-region,
+.smart-table-settings-column-region > div {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.smart-table-settings-column-region > div > * {
+  align-items: center;
+}
+
+.smart-table-settings-column-region-drag-handle {
+  justify-content: center;
+  width: 24px;
+}
+
+.smart-table-settings-column-drag-handle {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+}
+
+div.smart-table-settings-column-region-name {
+  flex: 0 1 calc(100% - 56px);
+  overflow-x: hidden;
+}
+
+div.smart-table-settings-column-label-name {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 3px;
+  width: 100%;
+}
+
+.smart-table-settings-column-label-name > div {
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  white-space: normal;
+  display: block;
+  font-weight: 400;
+  width: 100%;
+  height: auto;
+}
+
+.smart-table-settings-column-label-name > .smart-table-settings-column-label {
+  line-height: normal;
+  font-size: 10px;
+  color: #666;
+}
+
+.smart-table-settings-column-view.smart-table-settings-column--is-fixed .smart-table-settings-column-label {
+  color: #4a4a4a;
+}
+
+.smart-table-settings-column-label-name > .smart-table-settings-column-name {
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.smart-table-settings-column-view .smart-table-settings-column-name {
+  color: black;
+}
+
+.smart-table-settings-column-view.smart-table-settings-column--is-fixed.smart-table-settings-column--is-not-movable .smart-table-settings-column-name {
+  color: #333333;
+}
+
+.smart-table-settings-column-drag-handle {
+  visibility: hidden;
+}
+
+.smart-table-settings-column-view.smart-table-settings-column--is-movable:focus-visible .smart-table-settings-column-drag-handle,
+.smart-table-settings-column-view.smart-table-settings-column--is-movable:hover .smart-table-settings-column-drag-handle {
+  visibility: initial;
+}
+
+.smart-table-settings-column-btnUp,
+.smart-table-settings-column-btnDown,
+.smart-table-settings-column-btnRemove {
+  display: none;
+}
+
+.smart-table-settings-column--is-active.smart-table-settings-column--is-movable .smart-table-settings-column-btnUp,
+.smart-table-settings-column--is-active.smart-table-settings-column--is-movable .smart-table-settings-column-btnDown,
+.smart-table-settings-column--is-active.smart-table-settings-column--is-removable .smart-table-settings-column-btnRemove {
+  display: flex;
+}
+
+.smart-table-settings-column-view.smart-table-settings-column--is-removable:focus-visible .smart-table-settings-column-btnRemove,
+.smart-table-settings-column-view.smart-table-settings-column--is-removable:hover .smart-table-settings-column-btnRemove {
+  display: flex;
+}

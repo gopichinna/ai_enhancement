@@ -1,0 +1,31 @@
+<div class="csui-facet-header">
+  <div class="header-label" title="{{name}}">{{name}}</div>
+  <div class="header-count" title="{{count}}"> ({{count}})</div>
+  <span class="smart-indicator-dot binf-hidden"></span>  
+  <div class="cs-icon csui-button-icon smart-icon-expanded smart-v2-icon-parent" role="button" title="{{showFacetAria}}" aria-label="{{showFacetAria}}" tabindex="-1">
+    {{{icon-v2 iconName='csui_smart_ot_action_caret_up32' states=true size='contain'}}}
+    {{{icon-v2 iconName='csui_smart_ot_action_caret_down32' states=true size='contain'}}}
+  </div>
+</div>
+<div class="csui-facet-content {{show-content-and-footer}}" role="presentation">
+  <div class="cs-filter-group" role="presentation"></div>
+</div>
+<div class="csui-facet-footer {{show-content-and-footer}}">
+{{#if more}}
+    <div class="csui-filter-more" tabindex="-1" title="{{moreFiltersAria}}">
+      <button class="binf-btn binf-btn-default" aria-label="{{more}}" tabindex="-1">
+        <span class="csui-more-text">{{more}}</span>
+        <span class="smart-show-more cs-icon smart-v2-icon-parent">
+          {{{icon-v2 iconName='csui_smart_ot_action_caret_up32' states=false size='xsmall'}}}
+          {{{icon-v2 iconName='csui_smart_ot_action_caret_down32' states=false size='xsmall'}}}
+        </span>
+      </button>
+    </div>
+  {{/if}}
+  <div class="csui-facet-controls {{show-controls}}">
+      <otc-button type="primary" size="micro" class="csui-apply" arialabel="{{applyFiltersAria}}">{{apply}}</otc-button>
+      <otc-button type="secondary" size="micro" class="csui-clear" arialabel="{{clearFiltersAria}}">{{clear}}</otc-button>
+  </div>
+</div>
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

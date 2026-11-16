@@ -1,0 +1,10 @@
+{{#if showInlineActionBar}}<a class="csui-tileview-contains-more-btn {{#if isSharedIconEnable}} tileview-with-shareicon {{/if}} {{#if showInlineActionBar}} tileview-with-morebtn {{/if}}" tabindex="-1"> {{/if}}
+<div title="{{name}}" class="list-item-title" role="link" aria-label="{{itemLabel}}">{{name}}</div>
+{{#if showInlineActionBar}}
+<div class="csui-icon-group" style="visibility:{{#if isSharedIconEnable}} visible {{else}} hidden {{/if}}">
+    <span class="shared-icon icon-share csui-icon"></span>
+</div>
+{{/if}}
+{{#if showInlineActionBar}}<div class="csui-tileview-more-btn"></div>{{/if}}
+{{#if showInlineActionBar}}</a>{{/if}}
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

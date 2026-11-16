@@ -1,0 +1,14 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1370_14657)">
+<rect width="32" height="32" rx="4" fill="#627783"/>
+<rect x="7" y="17.0735" width="7.92661" height="7.92661" rx="1" fill="white"/>
+<rect x="7" y="7" width="7.92661" height="7.92661" rx="1" fill="white"/>
+<rect x="17.5734" y="7.5" width="6.92661" height="6.92661" rx="0.5" stroke="white"/>
+<rect x="17.0734" y="17.0735" width="7.92661" height="7.92661" rx="1" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_1370_14657">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>

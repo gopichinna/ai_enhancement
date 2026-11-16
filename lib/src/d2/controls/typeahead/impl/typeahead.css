@@ -1,0 +1,234 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-typeahead {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  min-height: 36px;
+}
+
+.binf-widgets .d2-typeahead ul {
+  padding: 0;
+}
+
+.binf-widgets .d2-typeahead .typeahead-options-container {
+  display: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 1002;
+  background: #ffffff;
+}
+
+.binf-widgets .d2-typeahead .typeahead-options li {
+  color: #333333;
+}
+
+.binf-widgets .d2-typeahead .typeahead-options > li:hover,
+.binf-widgets .d2-typeahead .typeahead-options > li.active {
+  background: #B9C4CB;
+}
+
+.binf-widgets .d2-typeahead .typeahead-options .typeahead-option .typeahead-option-item {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 3px 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.binf-widgets .d2-typeahead .typeahead-options .typeahead-option .typeahead-option-item span.typeahead-icon-container {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-right: 4px;
+}
+
+.binf-widgets .d2-typeahead .typeahead-options > li:hover a {
+  color: inherit;
+}
+
+.binf-widgets .d2-typeahead .typeahead-options .typeahead-option .typeahead-option-item .typeahead-text-container b.d2-highlight-options {
+  font-weight: bolder;
+}
+
+.binf-widgets .d2-typeahead .typeahead-options > .d2-select-add-new,
+.binf-widgets .d2-typeahead .typeahead-options > .d2-select-add-new-option {
+  border-top: 1px solid #DCDCDC;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container {
+  background: #FFFFFF;
+  border: 1px solid #757575;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 5px 1px 1px 5px;
+  min-height: 28px;
+}
+
+.binf-widgets .d2-typeahead.focused .typeahead-chicklets-container {
+  border: 2px solid #666666;
+  padding: 4px 0 0 4px;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container.empty-list {
+  padding: 2px 4px 1px 4px;
+}
+
+.binf-widgets .d2-typeahead.focused .typeahead-chicklets-container.empty-list {
+  padding: 1px 4px 1px 3px;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-placeholder {
+  font-size: 14px;
+  line-height: 23px;
+  align-items: center;
+  color: #666666;
+  position: absolute;
+  padding-left: 4px;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-search .typeahead-search-text-field {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container.empty-list .typeahead-search .typeahead-search-text-field {
+  margin-top: 1px;
+  margin-left: 4px;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-search .typeahead-search-text-field:focus {
+  outline: none;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-search .typeahead-search-text-field::-ms-clear {
+  display: none;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typed-character {
+  font-size: 14px;
+  display: none;
+  position: absolute;
+  max-width: calc(100% - 25px);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-chicklet-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-chicklet-items .typeahead-chicklet-item {
+  background: #E7F8F8;
+  border: 1px solid #33C6C8;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  display: flex;
+  height: 24px;
+  cursor: pointer;
+  max-width: calc(100% - 14px);
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-chicklet-items .typeahead-chicklet-item:focus {
+  outline: 1px dotted #333333;
+  outline-offset: -1px;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-chicklet-items .typeahead-chicklet-item[chicklet-selected='true'] {
+  background: #66D4D6;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-chicklet-items .chicklet-drag-line {
+  height: 22px;
+  box-shadow: -1px 1px 2px 1px #33C6C8;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-chicklet-items .typeahead-chicklet-item:hover {
+  background: #66D4D6;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-chicklet-items .typeahead-chicklet-item.reorder-select {
+  background: #66D4D6;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-chicklet-items .typeahead-chicklet-item.error-item {
+  border: 1px solid #DF3324;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-chicklet-items .typeahead-chicklet-item.error-item .chicklet-text {
+  color: #DF3324;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-chicklet-items .typeahead-chicklet-item.chicklet-cut {
+  opacity: 0.3;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-chicklet-items .typeahead-chicklet-item .chicklet-text {
+  font-size: 11px;
+  line-height: 22px;
+  color: #333333;
+  margin-left: 8px;
+  cursor: pointer;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-chicklet-items .typeahead-chicklet-item .chicklet-remove {
+  height: 15px;
+  width: 15px;
+  background-size: 7px 7px;
+  background-image: url(images/delete-item9.svg);
+  background-repeat: no-repeat;
+  padding: 0;
+  background-position: center;
+  margin: 4px;
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-chicklet-items .typeahead-chicklet-item .chicklet-remove:hover {
+  background-image: url(images/delete-item_mo9.svg);
+}
+
+.binf-widgets .d2-typeahead .typeahead-chicklets-container .typeahead-chicklet-items .typeahead-chicklet-item .chicklet-remove:active {
+  background-image: url(images/delete-item_md9.svg);
+}
+
+.binf-widgets .d2-typeahead .typeahead-options .typeahead-option-item {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 3px 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.binf-widgets .d2-typeahead .typeahead-options > li:hover .typeahead-option-item {
+  color: inherit;
+}
+
+.binf-widgets .d2-typeahead .typeahead-options-container .typeahead-options .option-selected {
+  display: none;
+}
+
+.binf-widgets .d2-typeahead .typeahead-options-container .typeahead-options .typeahead-option:focus {
+  outline: 1px dotted #333333;
+  outline-offset: -1px;
+}
+
+.binf-widgets .d2-typeahead .typeahead-options-container .d2-scrollable-options {
+  max-height: 256px;
+}

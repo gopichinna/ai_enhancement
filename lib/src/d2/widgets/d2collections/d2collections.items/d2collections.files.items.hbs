@@ -1,0 +1,19 @@
+{{#if showInlineActionBar}}<a class="csui-tileview-contains-more-btn" tabindex="-1"> {{/if}}
+    {{#if enableIcon}}
+    <div class="csui-type-icon {{icon}}"></div>{{/if}}
+    <div title="{{name}}" class="list-item-title" role="link" aria-label="{{itemLabel}}">{{name}}
+        {{#if versionNo}}
+        <span class="d2-version-container">{{versionNo}}</span>
+        {{/if}}
+        {{#if reserved}}
+        <span class="d2-collections-reserve icon icon-reserved_{{#if isReservedByOther}}other{{else}}self{{/if}}"
+            title="{{reservedTooltip}}"></span>
+        {{/if}}
+    </div>
+    {{#if end-icon}}
+    <div class="{{end-icon-class}}"></div>{{/if}}
+    {{#if showInlineActionBar}}
+    <div class="csui-tileview-more-btn"></div>{{/if}}
+    {{#if showInlineActionBar}}
+</a>{{/if}}
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

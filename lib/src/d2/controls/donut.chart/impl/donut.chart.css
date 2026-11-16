@@ -1,0 +1,107 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-donut-chart-tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  background: 0 0 #fff;
+  border: 0 none;
+  padding: 8px;
+  text-align: left;
+  visibility: hidden;
+}
+
+.binf-widgets .d2-donut-chart-tooltip:after,
+.binf-widgets .d2-donut-chart-tooltip::before{
+  top: 38%;
+  left: 5px;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  margin-left: -1.25rem;
+  border: 8px solid transparent;
+  border-right-color: #fff;
+}
+
+.binf-widgets .d2-donut-chart-tooltip::before {
+  left: 4px;
+}
+
+.binf-widgets .d2-donut-chart-tooltip.scheduled::before{
+  border-right-color: #7E929F;
+}
+
+.binf-widgets .d2-donut-chart-tooltip.running::before{
+  border-right-color: #2E3D98;
+}
+
+.binf-widgets .d2-donut-chart-tooltip.paused::before{
+  border-right-color: #EEB111;
+}
+
+.binf-widgets .d2-donut-chart-tooltip p{
+  color: #333;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.binf-widgets .d2-donut-chart-tooltip p.catergory-name{
+  margin-bottom: 2px;
+}
+
+.binf-widgets .d2-donut-chart-tooltip .catergory-count{
+  font-weight: bold;
+}
+
+.move-tooltip-rtl{
+  transform: translate(10px);
+}
+
+.binf-widgets .d2-donut-chart .donut-total-container .total-text{
+  font-size: 14px;
+}
+
+.binf-widgets .d2-donut-chart .donut-total-container .total-count {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.binf-widgets .d2-donut-chart .chart-legends .legend-value{
+  font-weight: bold;
+}
+
+.binf-widgets .d2-donut-chart .chart-legends .legend:hover .legend-rect{
+  fill: #CBD3D9;
+}
+
+.binf-widgets .d2-donut-chart .vis-wrapper path:focus {
+  outline: 0;
+}
+.binf-widgets .hidden-elem-container .hidden-elem{
+  font-size: 12px;
+}
+.rtl.binf-widgets .d2-my-wfsummary.wf-wfstatus .d2-donut-chart svg{
+  transform: scale(-1,1);
+}
+
+.binf-widgets .d2-donut-chart-tooltip{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.binf-widgets .donut-total-container .total-count:focus,
+.binf-widgets .chart-legends .legend:focus{
+  outline: 1px dotted;
+  outline-offset: -1px;
+}
+
+.binf-widgets .d2-donut-chart .donut-total-container {
+    cursor: pointer;
+}
+
+.binf-widgets .d2-donut-chart-view {
+  overflow: hidden;
+}

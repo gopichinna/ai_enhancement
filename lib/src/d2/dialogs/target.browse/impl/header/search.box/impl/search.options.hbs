@@ -1,0 +1,11 @@
+{{#each items}}
+  <li id="{{optionId}}" role="menuitem" class="{{styleClass}}">
+    <a class="csui-toolitem">
+      <input id="{{id}}-{{../cid}}" type="radio" name="contentassist-search-location" data-id="{{id}}" {{#if isDefault}}data-default="true"{{/if}}>
+      <span class="tick-icon-container icon checkmark_icon_target_browse"></span>
+      <label for="{{id}}-{{../cid}}">{{{labelContent}}}</label>
+    </a>
+  </li>
+{{/each}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,164 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .smart-facet-panel {
+  height: 100%;
+  background-color: #ffffff;
+  border: 0;
+  box-shadow: inset -2px 0px 0px rgba(0, 0, 0, 0.1);
+  min-width: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 208px;
+  max-width: 400px;
+}
+
+.binf-widgets .smart-facet-panel .cs-content {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.binf-widgets .csui-facetview .smart-facet-panel .cs-content {
+  z-index: 0; 
+}
+
+.binf-widgets .smart-facet-panel .cs-content .csui-collection-state {
+  padding: 16px;
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 300;
+  color: #666666;
+}
+
+.binf-widgets .smart-facet-panel .cs-content .csui-collection-state.csui-state-empty {
+  white-space: pre-wrap;
+}
+
+.binf-widgets .smart-facet-panel .cs-content .csui-collection-state.csui-state-loading {
+  animation: smart-facet-panel-state-fade-in-and-out 1.5s ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 1
+}
+
+.binf-widgets  .cs-content.csui-facet-empty {
+  background-color: #ffffff;
+}
+
+.binf-widgets .smart-facet-panel .csui-facet-empty.facet-noresults-panel .facet-noresults-icon {
+  min-height: 136px;
+  background-image: url(../../../themes/carbonfiber/image/icons/smart_ill_list220.svg);
+  background-repeat: no-repeat;
+  background-position: center 16px;
+  background-size: 124px 124px;
+}
+
+.binf-widgets .smart-facet-panel .csui-facet-empty.facet-noresults-panel .facet-noresults-txt {
+  width: auto;
+  font-family: 'OpenText Sans';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #666666;
+  padding: 12px;
+}
+
+
+@keyframes smart-facet-panel-state-fade-in-and-out {
+  from {
+    opacity: .5;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: .5;
+  }
+}
+
+.binf-widgets .smart-facet-panel .cs-header .cs-title {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 8px;
+  padding-left: 0;
+  line-height: 24px;
+}
+
+.binf-widgets .smart-facet-panel .binf-panel-heading {
+  font-size: 16px;
+  height: 40px;
+  line-height: 20px;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  background-color: #EEF2F4;
+  border-bottom: 0;
+  padding: 0 10px 0 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.binf-widgets .smart-facet-panel .cs-header .smart-all-facet-toggler {
+  padding: 4px 0;
+}
+
+.binf-widgets .smart-facet-panel .csui-horizontal-separator {
+  height: 2px;
+  background-color: #dcdcdc;
+  padding: 0;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+
+.binf-widgets .ui-clear-facet {
+  padding: 0.5em;
+  margin-top: 3px;
+}
+
+.csui-facetpanel #facetheader {
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+button.ui-clear-facet-button {
+  height: 20px;
+  width: 20px;
+  margin-right: 0.4em;
+  font-size: 0.875em;
+}
+
+.ui-clear-facet-button .ui-icon {
+  margin-left: 1px;
+}
+
+.binf-widgets .ui-clear-facet-text {
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.smart-facet-panel:after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  right: 0;
+  width: 16px;
+  top: 0;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(65, 64, 55, 0), rgba(65, 64, 55, 0.2)); 
+  background: -o-linear-gradient(right, rgba(65, 64, 55, 0), rgba(65, 64, 55, 0.2)); 
+  background: -moz-linear-gradient(right, rgba(65, 64, 55, 0), rgba(65, 64, 55, 0.2)); 
+  background: linear-gradient(to right, rgba(65, 64, 55, 0), rgba(65, 64, 55, 0.2)); 
+}
+
+.binf-widgets .smart-facet-loading-panel {
+  animation: smart-facet-panel-state-fade-in-and-out 1.5s ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 1;
+  padding: 16px;
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 300;
+  color: #666666;
+}

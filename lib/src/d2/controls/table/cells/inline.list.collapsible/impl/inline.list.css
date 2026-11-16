@@ -1,0 +1,34 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-table-view tr.row-expanded .d2-table-cell-inline-list-collapsible .inline-list .inline-list-expand {
+  margin-left: 0;
+}
+
+.binf-widgets .csui-table-view .d2-table-cell-inline-list-collapsible .inline-list .inline-list-expand {
+  display: inline-block;
+  cursor: pointer;
+  margin: 4px 4px 0 8px;
+}
+
+.binf-widgets .csui-table-view .d2-table-cell-inline-list-collapsible .inline-list .inline-list-expand,
+.binf-widgets .csui-table-view .d2-table-cell-inline-list-collapsible .inline-list .inline-list-expand:hover {
+  color: #232e72;
+  text-decoration: none;
+}
+
+.binf-widgets .csui-table-view .d2-table-cell-inline-list-collapsible .inline-list {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.binf-widgets .csui-table-view tr.row-expanded .d2-table-cell-inline-list-collapsible .inline-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  padding: 8px 8px 8px 8px;
+}
+
+.binf-widgets .csui-table-view tr.row-expanded .d2-table-cell-inline-list-collapsible .inline-list .inline-list-value {
+  white-space: normal;
+}

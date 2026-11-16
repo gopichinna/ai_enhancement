@@ -1,0 +1,1 @@
+{"modules":["json!dctmw/test/startup.data.json","dctmw/test/common.mock","dctmw/test/test.default.widget.types.data","dctmw/test/test.app.scope.perspectives.data","bundles/dctmw-test"]}

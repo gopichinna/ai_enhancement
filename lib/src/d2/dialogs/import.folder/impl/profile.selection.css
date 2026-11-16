@@ -1,0 +1,47 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-import-folder-profile-selection {
+  position: relative;
+  height: 100%;
+}
+
+.d2-import-folder-profile-selection .profile-scroll-container {
+  height: 100%;
+  position: relative;
+}
+
+.d2-stepper-wizard .d2-import-folder-profile-selection .cs-form.csui-general-form.category_selection_section {
+  height: auto;
+  margin-top: 20px;
+}
+
+.d2-stepper-wizard .d2-import-folder-profile-selection .cs-form.csui-general-form.d2-form.folder_structure_selection_section {
+  margin-bottom: 0;
+}
+
+.d2-import-folder-profile-selection .separator {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.d2-stepper-wizard .d2-import-folder-profile-selection .cs-form.csui-general-form.d2-form .binf-help-block.d2-vdoc-message {
+  margin-left: 0;
+  padding-left: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+  border-left: 2px solid #2E3D98;
+  margin-top: 8px;
+  padding-top: 0;
+  padding-right: 8px;
+  font-size: 10px;
+  line-height: 16px;
+  display: block;
+}
+
+.d2-stepper-wizard .d2-import-folder-profile-selection .cs-form.csui-general-form.d2-form .binf-help-block.d2-vdoc-message {
+  margin-left: 16px;
+}
+
+.cs-form .binf-help-block.d2-vdoc-message .binf-glyphicon {
+  display: none;
+}

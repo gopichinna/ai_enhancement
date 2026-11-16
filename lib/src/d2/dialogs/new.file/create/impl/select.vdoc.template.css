@@ -1,0 +1,90 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-stepper-wizard .d2-wizard-step-view .d2-vdoc-templates-wrapper,
+.binf-widgets .d2-stepper-wizard .d2-wizard-step-view .d2-vdoc-templates-wrapper .d2-vdoc-templates {
+  height: 100%;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-wizard-step-view .d2-vdoc-templates-wrapper .d2-vdoc-templates .d2-vdoc-template-header {
+  height: 30px;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-wizard-step-view .d2-vdoc-templates-wrapper .d2-vdoc-templates .d2-vdoc-template-body {
+  height: calc(100% - 30px);
+}
+
+.binf-widgets .d2-stepper-wizard .d2-vdoc-templates .d2-vdoc-template-container .template-title {
+  height: 24px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  padding-bottom: 3px;
+  font-weight: bold;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-vdoc-templates .d2-vdoc-template-body {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-vdoc-templates .d2-vdoc-template-container .binf-table.dataTable > thead {
+  background-color: #ffffff;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-vdoc-templates .binf-table > tbody > tr {
+  font-size: 14px;
+  line-height: 16px;
+  height: 40px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-vdoc-templates .binf-table.dataTable tr td {
+  border-top: none;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-vdoc-templates .d2-table .csui-table-view .csui-nodetable .binf-table > thead > tr > th {
+  border-bottom: 1px solid #CCCCCC;
+  height: 48px;
+  padding-bottom: 4px;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-vdoc-templates .csui-table-column-search .csui-table-search-input {
+  height: 100%;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-vdoc-templates .binf-table > tbody > tr.binf-active > td {
+  background-color: transparent;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-vdoc-templates .binf-table.dataTable tr > :first-child {
+  margin: 0;
+  padding: 0;
+  min-width: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-vdoc-templates .binf-table.dataTable tr > .csui-table-cell-_select:first-child .csui-checkbox {
+  padding-left: 0;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-vdoc-templates .csui-table-cell-name-value.csui-table-cell-no-default-action {
+  color: inherit;
+  cursor: inherit;
+  font-style: inherit;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-vdoc-templates .csui-table-column-search .icon-search-placeholder {
+  top: 0;
+}
+
+.binf-widgets .d2-stepper-wizard .d2-vdoc-templates .csui-nodetable.csui-table-empty tbody {
+  border-top: none;
+  display: none;
+}
+
+.binf-widgets .d2-vdoc-template-container.d2-preset-vdoc-templates .d2-table .csui-table-empty {
+  position: initial;
+}

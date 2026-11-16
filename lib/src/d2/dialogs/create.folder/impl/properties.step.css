@@ -1,0 +1,72 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-create-folder-dialog .folder-type-area .alpaca-container-label {
+  display: none;
+}
+
+.binf-widgets .d2-create-folder-dialog .folder-type-area .d2-form {
+  width: 100%;
+  margin: 0 0 0 48px !important;
+}
+
+.binf-widgets .d2-create-folder-dialog .folder-type-area .d2-form .cs-form-leftcolumn {
+  width: 464px;
+}
+
+.binf-widgets .d2-create-folder-dialog .folder-type-area .d2-form .cs-form-rightcolumn {
+  display: none;
+}
+
+.d2-stepper-wizard .d2-create-folder-dialog .cs-form.csui-general-form.d2-form .alpaca-container-item {
+  margin-bottom: 0;
+}
+
+.binf-widgets .d2-create-folder-dialog .folder-type-area .d2-form .binf-row.alpaca-field {
+  margin-bottom: 0;
+}
+
+.d2-stepper-wizard .d2-create-folder-dialog .cs-form.csui-general-form.d2-form .alpaca-field .binf-form-group .binf-control-label {
+  width: calc(100% - 49px);
+  padding-left: 16px;
+}
+
+.d2-stepper-wizard .d2-create-folder-dialog .cs-form.csui-general-form.d2-form .alpaca-field .binf-form-group .binf-control-label + div.binf-col-sm-9 {
+  width: calc(100% - 49px);
+}
+
+.binf-widgets .d2-create-folder-dialog .property-page-area {
+  position: relative;
+}
+
+.d2-stepper-wizard .d2-create-folder-dialog {
+  position: relative;
+  height: 100%;
+}
+
+.d2-stepper-wizard .d2-create-folder-dialog .property-page-area {
+  height: 100%;
+}
+
+.d2-stepper-wizard .d2-create-folder-dialog .folder-type-area:not(.binf-hidden) + .property-page-area {
+  height: calc(100% - 99px);
+}
+
+.binf-widgets .d2-create-folder-wizard.d2-stepper-wizard .cs-metadata-properties .csui-tab-contents-header-wrapper {
+  padding-left: 32px;
+  width: calc(100% - 32px);
+}
+
+.binf-widgets .d2-create-folder-wizard.d2-stepper-wizard .cs-metadata-properties .tab-links.scrollspy {
+  padding-left: 24px;
+}
+
+.binf-widgets .d2-stepper-wizard.d2-create-folder-wizard .cs-metadata-properties > .binf-tab-content > [role="tabpanel"] {
+  padding-left: 48px;
+}
+
+.d2-stepper-wizard .d2-create-folder-dialog .cs-form.csui-general-form.d2-form .alpaca-field .binf-form-group .binf-help-block.alpaca-message {
+  width: calc(100% - 65px);
+  margin-left: 16px;
+}

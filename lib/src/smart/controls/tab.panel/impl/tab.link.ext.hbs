@@ -1,0 +1,21 @@
+<a href="#{{uniqueTabId}}" id="{{linkId}}" aria-controls="{{uniqueTabId}}"
+  class="cs-tablink smart-tablink" tabindex="-1" data-binf-toggle="tab" title="{{tabTitle}}">
+  <span class="cs-tablink-text smart-tablink-text">{{tabTitle}}</span>
+  {{#if badgeEnabled}}
+    <div class="smart-tab-contents-count">
+      <otc-badge type="toolbar" value="{{badgeValue}}"></otc-badge>
+    </div>
+  {{/if}}
+</a>
+<div class="smart-category-required">
+    {{#if required}}
+    <span class="cs-icon-required category_required"></span>
+    {{/if}}
+</div>
+<div class="cs-tablink-delete smart-tablink-delete">
+  {{#if allow_delete}}
+  <otc-button class="cs-delete-icon" title="{{delete_tooltip}}" arialabel="{{deleteTabAria}}"
+    icon="smart_action_16:action_close16"></otc-button>
+  {{/if}}
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,66 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-table-cell-note-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+.binf-widgets .d2-table-cell-note-container:hover {
+  cursor: pointer;
+}
+
+.binf-widgets .d2-table-cell-note-container .icon {
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+  margin-top: 2px;
+}
+.binf-widgets .d2-table-cell-note-container .d2-icon-wf-add-note{
+  margin-left: 2px;
+}
+.rtl.binf-widgets .d2-table-cell-note-container .d2-icon-wf-add-note{
+  margin-left: -2px;
+}
+.d2-workflow-item-notes-popup .d2-workflow-notes-popover .d2-task-note .d2-task-note-content{
+  -webkit-line-clamp: unset;
+  font-size: 12px;
+  line-height: 24px;
+  padding-top: 0;
+  display: block;
+  white-space: nowrap;
+}
+.binf-widgets .d2-workflow-item-notes-popup .d2-workflow-notes-popover .d2-task-note{
+  line-height: 14px;
+  padding: 0 16px 0 16px;
+}
+.d2-workflow-item-notes-popup .d2-workflow-notes-popover .d2-workflow-notes-popover-container .d2-task-note-header .note-author-name-email{
+  padding-top: 4px;
+}
+.d2-workflow-item-notes-popup .d2-workflow-notes-popover .d2-workflow-notes-popover-container .d2-task-note-header .note-date-container{
+  padding-top: 3px;
+}
+.binf-widgets .binf-popover.binf-left.d2-workflow-item-notes-popup .binf-arrow{
+  right: -15px;
+}
+.binf-widgets .binf-popover.binf-left.d2-workflow-item-notes-popup .binf-arrow:after{
+  border-left-color: #0084CE;
+}
+.binf-widgets .d2-workflow-item-notes-popup{
+  min-width: 284px;
+  max-width: 284px;
+  border-right: 4px solid #0084CE;
+  padding: 0;
+}
+.d2-workflow-item-notes-popup .d2-workflow-notes-popover .d2-workflow-notes-popover-container .d2-task-note:last-child hr{
+  border-top: none;
+  margin: 5px;
+}
+.d2-workflow-item-notes-popup .d2-workflow-notes-popover .d2-workflow-notes-popover-container .d2-task-note hr {
+  margin: 5px 0 0 0;
+}
+.binf-widgets .d2-workflow-item-notes-popup .binf-popover-content{
+  padding: 0;
+}

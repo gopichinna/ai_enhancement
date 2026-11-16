@@ -1,0 +1,24 @@
+<table class="checkout-items">
+  {{#each checkoutItems}}
+    <tr data-cs-id="{{id}}" data-cs-status="{{status}}">
+      <td class="type"><span class="{{iconClass}}"></span></td>
+      <td class="name" title="{{name}}">{{name}}<span class="fadeout"></span></td>
+      <td class="status">
+        <div class="status-icon {{#xif "this.status !== 'ERROR'"}}checkout-allowed{{/xif}}{{#xif
+            "this.status === 'ERROR'"}}checkout-blocked{{/xif}}"></div>
+      </td>
+      <td class="message" title="{{message}}">
+        <div>{{message}}<span class="fadeout"></span></div></td>
+      <td class="remove">
+      {{#if ../moreThanOneItem}}
+        {{#xif "this.status !== 'ERROR'"}}
+          <button type="button" class="remove-item csui-icon binf-btn binf-btn-default"
+                  aria-label="{{lang.RemoveItem}}" title="{{lang.RemoveItem}}"></button>
+        {{/xif}}
+      {{/if}}
+      </td>
+    </tr>
+  {{/each}}
+</table>
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,61 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .add-category-form.d2-form{
+  background-color: transparent;
+}
+
+.binf-widgets .add-category-form.d2-form .alpaca-container-label {
+  display: none;
+}
+
+.binf-widgets .add-category-form.d2-form .binf-help-block.alpaca-message {
+  margin-left: 10px;
+  padding-left: 4px;
+  box-shadow: 0 0 4px rgb(0 0 0 / 30%);
+  border-left: 2px solid #df3324;
+  margin-top: 8px;
+  padding-top: 0;
+  padding-right: 8px;
+  font-size: 10px;
+  line-height: 16px;
+  display: block;
+  width: calc(100% - 10px);
+}
+
+.binf-widgets .add-category-form.d2-form .alpaca-field .binf-form-group .binf-control-label {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.binf-widgets .add-category-form.d2-form .alpaca-field .binf-form-group .binf-control-label + div.binf-col-sm-9 {
+  display: block;
+  width: 100%;
+}
+
+.binf-widgets .add-category-form.d2-form .cs-formfield .cs-field-write {
+  padding-left: 10px;
+}
+
+.binf-widgets .add-category-form.d2-form.cs-form .binf-col-md-6 {
+  width: 100%;
+  max-width: none;
+}
+
+.binf-widgets .add-category-form.d2-form .binf-col-md-6 {
+  padding: 0;
+}
+
+
+.binf-widgets .add-category-model.public-category.dctm-alert-custom-content .binf-modal-dialog .binf-modal-body .custom-content-container {
+  height: 300px;
+  max-height: 300px;
+}
+
+.binf-widgets .add-category-model.public-category.dctm-alert-custom-content .binf-modal-dialog .binf-modal-body {
+  padding-right: 24px;
+  margin-left: -1px;
+}

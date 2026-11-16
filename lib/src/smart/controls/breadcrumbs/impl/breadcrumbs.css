@@ -1,0 +1,201 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .binf-breadcrumb {
+  background-color: transparent;
+  padding: 8px 32px;
+  border-radius: 0;
+  margin: 0;
+  display: flex;
+}
+
+.binf-widgets .binf-breadcrumb a {
+  text-decoration: none;
+  color: #7AA7FF;
+}
+
+.binf-widgets .binf-breadcrumb a:hover {
+  color: #94BBEA;
+  text-decoration: underline;
+  text-underline-offset: 20%;
+}
+
+.binf-widgets .binf-breadcrumb a:active {
+  text-decoration: none;
+  color: #EDF1FA;
+}
+
+.binf-widgets .binf-breadcrumb.binf-breadcrumb-dark a:focus-visible {
+  box-shadow: 0px 0px 0px 1px #FFFFFF;
+  outline: none;
+}
+
+.binf-widgets .binf-breadcrumb.binf-breadcrumb-light a:focus-visible {
+  box-shadow: 0px 0px 0px 1px #2E3D98;
+  outline: none;
+}
+
+.binf-widgets .binf-breadcrumb otc-button.csui-subcrumb {
+  vertical-align: bottom;
+}
+
+.binf-widgets .binf-breadcrumb .binf-open > .binf-dropdown-menu {
+  max-height: 50vh;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 70%);
+  margin-top: 8px;
+  left: 20px;
+}
+
+.binf-widgets .binf-breadcrumb .binf-dropdown-menu > li  {
+  margin: 0;
+}
+
+.binf-widgets .binf-breadcrumb .binf-dropdown-menu > li:last-child {
+  padding: 0;
+}
+
+.binf-widgets .binf-breadcrumb .binf-dropdown-menu > li > a {
+  line-height: 24px;
+  padding: 5px 16px;
+  border-radius: 0;
+  font-size: 14px;
+  color: #333333;
+}
+
+.binf-widgets .binf-breadcrumb .binf-dropdown-menu > li > a:focus {
+  background-color: transparent;
+}
+
+.binf-widgets .binf-breadcrumb .binf-dropdown-menu > li > a:hover {
+  outline: none;
+}
+
+.binf-widgets .binf-breadcrumb.binf-breadcrumb-light .binf-dropdown-menu > li a:hover {
+  color: #23527c;
+}
+
+.binf-widgets .binf-breadcrumb,
+.binf-widgets .binf-breadcrumb > li.tail,
+.binf-widgets .binf-breadcrumb > li.binf-active {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .binf-breadcrumb otc-menuitem.csui-breadcrumb {
+  white-space: normal;
+  text-overflow: clip;
+}
+
+.binf-widgets .binf-breadcrumb.binf-breadcrumb-dark > li.binf-active,
+.binf-widgets .binf-breadcrumb.binf-breadcrumb-light > li.binf-active {
+  font-weight: 700;
+}
+
+.binf-widgets .binf-breadcrumb > li > a:disabled,
+.binf-widgets .binf-breadcrumb:not(.smart-loading-breadcrumbs) > li.binf-active {
+  display: block;
+  overflow: hidden;
+  color: #CCCCCC;
+}
+
+.binf-widgets .binf-breadcrumb > li:not(.binf-hidden) + li::before,
+.binf-widgets .csui-search-results .csui-search-item-breadcrumb .binf-breadcrumb > li+li::before {
+  content: "/\00a0";
+  color: #666666;
+  display: inline-table;
+  width: 16px;
+  padding: 0;
+  line-height: 16px;
+  text-align: center;
+}
+
+.binf-widgets .binf-breadcrumb.binf-breadcrumb-dark > li:not(.binf-hidden) + li::before,
+.binf-widgets .csui-search-results .csui-search-item-breadcrumb .binf-breadcrumb.binf-breadcrumb-dark > li + li::before {
+  color: #CCCCCC;
+}
+
+
+.binf-widgets .binf-breadcrumb > li.csui-custom-breadcrumb + li::before {
+  background-image: none;
+  content: '|';
+}
+
+
+html[dir="rtl"] .binf-widgets .binf-breadcrumb > li:not(.binf-hidden) + li::before,
+html[dir="rtl"] .binf-widgets .binf-breadcrumb > li.binf-search-breadcrumb-ddmenu.binf-dropdown:not(.binf-hidden)::after {
+  transform: scaleX(-1);
+  filter: 'FlipH';
+}
+
+
+.binf-widgets .binf-breadcrumb {
+  height: 32px;
+  font-size: 0;  
+  align-items: center;
+}
+
+@media only screen and (max-height: 400px) {
+  .binf-widgets .binf-breadcrumb {
+    height: 18px;
+    padding: 0 0 0 4px;
+  }
+}
+
+.binf-widgets .binf-breadcrumb li a,
+.binf-widgets .binf-breadcrumb li:last-child,
+.binf-widgets .binf-breadcrumb li::before {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.binf-widgets .binf-breadcrumb li a svg {
+  vertical-align: middle;
+}
+
+.binf-widgets .binf-breadcrumb li:last-child::before {
+  float: left;
+}
+
+.binf-widgets .binf-breadcrumb.binf-breadcrumb-dark {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.binf-widgets .binf-breadcrumb > li.tail {
+  flex-shrink: 0;
+  padding: 4px 0;
+}
+
+
+.binf-widgets .binf-breadcrumb.binf-breadcrumb-light {
+  background: #ffffff;
+}
+
+.binf-widgets .binf-breadcrumb.binf-breadcrumb-light a {
+  color: #1A6AFF;
+}
+
+.binf-widgets .binf-breadcrumb.binf-breadcrumb-light a:hover {
+  color: #2F4ED1;
+}
+.binf-widgets .binf-breadcrumb.binf-breadcrumb-light li a:active {
+  color: #111B58;
+}
+
+.binf-widgets .binf-breadcrumb.binf-breadcrumb-light > li a:disabled,
+.binf-widgets .binf-breadcrumb.binf-breadcrumb-light > li.binf-active {
+  color: #666666;
+}
+
+.binf-widgets .binf-breadcrumb.binf-breadcrumb-light li a:focus {
+  
+  text-decoration: none;
+}
+
+.binf-widgets .csui-breadcrumb.csui-home-breadcrumb {
+  display: flex;
+}

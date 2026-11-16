@@ -1,0 +1,23 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.module-error {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 50px 20px 0 20px;
+  text-align: center;
+}
+
+.module-error .error-img {
+  width: 100%;
+  height: 220px;
+  background: transparent url(images/error.svg) center no-repeat;
+  background-size: 220px;
+}
+
+.module-error .error-message {
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+}

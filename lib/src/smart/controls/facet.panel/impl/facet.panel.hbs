@@ -1,0 +1,26 @@
+
+{{#if showTitle}}
+  <div class="cs-header binf-panel-heading">
+    <span class="cs-title">{{title}}</span>
+    <span class="smart-all-facet-toggler">
+        <otc-button class="smart-all-facet-open binf-hidden" icon="smart_action:action_caret_open_all32" arialabel="{{showAllAria}}" title="{{showAllAria}}"></otc-button>
+        <otc-button class="smart-all-facet-close binf-hidden"  icon="smart_action:action_caret_close_all32" arialabel="{{hideAllAria}}" title="{{hideAllAria}}"></otc-button>
+    </span>
+  </div>
+{{/if}}
+
+<div class="cs-content csui-normal-scrolling" tabindex="-1">
+  <div class="smart-facet-list-panel cs-list-group" role="region" aria-label="{{regionAria}}"></div>
+  <div class="facet-noresults-panel smart-facet-noresults-panel csui-facet-empty binf-hidden">
+       <div class="facet-noresults-icon"></div>
+       <div class="facet-noresults-txt">{{noResultsFound}}</div>
+  </div>
+</div>
+
+<div class="smart-facet-loading-panel">
+  <p>{{loadingFacetMessage}}</p>
+</div>
+
+
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

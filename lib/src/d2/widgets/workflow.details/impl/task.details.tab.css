@@ -1,0 +1,107 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-wf-task-details-tab {
+  height: 100%;
+  width: 100%;
+}
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content {
+  width: inherit;
+  height: inherit;
+}
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content > div,
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .metadata-content-wrapper {
+  height: 100%;
+}
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .d2-empty-task-details .d2-task-notes-empty-list {
+  width: 100%;
+}
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .d2-empty-task-details .d2-empty-task-details-splash {
+  background: url(../impl/images/splash-empty-task-details.svg) center bottom no-repeat;
+  height: 220px;
+  width: 100%;
+  margin-top: 134px;
+}
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .d2-empty-task-details.error-view .d2-empty-task-details-splash {
+  background: url(../impl/images/task-details-tab-server-error.svg) center bottom no-repeat;
+}
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .d2-empty-task-details .d2-empty-task-details-text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 24px;
+}
+
+.binf-widgets .d2-wf-task-details-tab .metadata-content-header.extended-headers,
+.binf-widgets .d2-wf-task-details-tab .metadata-content-wrapper .csui-metadata-tab-bar,
+.binf-widgets .d2-wf-task-details-tab .metadata-content-wrapper .binf-dropdown.tile-nav,
+.binf-widgets .d2-wf-task-details-tab .metadata-content-wrapper .binf-tab-content .d2-set-container .tab-links.scrollspy,
+.binf-widgets .d2-wf-task-details-tab .metadata-content-wrapper .metadata-inner-wrapper .csui-tab-contents-header-wrapper,
+.binf-widgets .d2-wf-task-details-tab .metadata-content-wrapper .metadata-inner-wrapper .alpaca-container-label,
+.binf-widgets .d2-wf-task-details-tab .d2-listfield-sortable .d2-icon-drag {
+  display: none;
+}
+
+.binf-widgets .d2-wf-task-details-tab .d2-listfield-sortable .user-info.only-id,
+.binf-widgets .d2-wf-task-details-tab .d2-listfield-sortable .user-selection-item {
+  padding-left: 0;
+}
+
+.binf-widgets .d2-wf-task-details-tab .metadata-inner-wrapper .cs-metadata-properties .ps-container .binf-row.alpaca-field.alpaca-field-object.alpaca-top,
+.binf-widgets .d2-wf-task-details-tab .user-info-container .user-info {
+  padding: 0;
+}
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .d2-empty-task-details.error-view .d2-empty-task-details-text {
+  margin-top: 0;
+}
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .d2-empty-task-details.error-view .try-again-btn-cont {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .d2-empty-task-details.error-view .try-again-btn-cont .try-again-task-details-btn {
+  background: #232E72;
+  height: 32px;
+  border-radius: 16px;
+  padding: 0 25px;
+}
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .metadata-content-wrapper .alpaca-control .cs-formfield.cs-richtextfield .cs-field-richtext-data {
+  white-space: pre-wrap;
+}
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .metadata-content-wrapper .csui-top-align-label .cs-form .binf-col-md-6 {
+    width: calc(100% - 10px);
+    max-width: none;
+}
+
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .cs-metadata .cs-tab-links.binf-dropdown {
+  height: auto;
+  border: none;
+}
+
+
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .cs-metadata .metadata-content-wrapper > .binf-tab-content::before {
+  border: none;
+  background-color: #fff;
+}
+
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .cs-metadata .d2-metadata-properties.smart-tab-panel .tab-links.smart-tab-links {
+  border: none;
+}
+
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .cs-metadata .d2-metadata-properties.smart-tab-panel .smart-tab-contents-header-wrapper {
+  display: none;
+}

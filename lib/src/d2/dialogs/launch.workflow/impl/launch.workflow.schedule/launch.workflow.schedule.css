@@ -1,0 +1,70 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-launch-workflow-schedule.cs-metadata-properties .tab-links.scrollspy,
+.binf-widgets .d2-launch-workflow-schedule.cs-metadata-properties .csui-tab-contents-header-wrapper {
+  display: none;
+}
+
+.binf-widgets .d2-launch-workflow-schedule.cs-metadata-properties > .binf-tab-content > .last-tab-panel {
+  min-height: 0;
+}
+
+.d2-launch-workflow-schedule.cs-metadata-properties.d2-metadata-properties .binf-tab-content > div,
+.d2-launch-workflow-schedule.cs-metadata-properties.d2-metadata-properties .binf-tab-content.ps-container > div {
+  padding: 0 0 0 48px;
+}
+
+.d2-launch-workflow-schedule.cs-metadata-properties > .binf-tab-content > [role="tabpanel"] {
+  margin-bottom: 12px;
+}
+
+.d2-launch-workflow-schedule.cs-metadata-properties > .binf-tab-content > [role="tabpanel"]:not(.binf-hidden) ~ [role="tabpanel"]:not(:first-child) {
+  border-top: 1px solid #CCCCCC;
+}
+
+.d2-launch-workflow-schedule .cs-form > .binf-row > .alpaca-container-label:first-child {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.d2-launch-workflow-schedule.csui-top-align-label .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
+  line-height: 24px;
+  color: #666666;
+}
+
+.d2-launch-workflow-schedule .cs-form .alpaca-container-label > h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #5F6E77;
+}
+
+.d2-launch-workflow-schedule .cs-form .binf-form-group {
+  margin-top: 12px;
+}
+
+.d2-launch-workflow-schedule .cs-form .d2tabcontaineritem.alpaca-container-item-last:not(.alpaca-container-item-first) .binf-form-group {
+  margin-top: 0;
+}
+
+.d2-launch-workflow-schedule .cs-formfield.d2-checkbox-group .d2-cb-container-parent li {
+  padding: 0;
+}
+
+.d2-launch-workflow-schedule .cs-form .d2-checkbox-group .d2-checkbox-container label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 18px;
+}
+
+.binf-widgets .d2-launch-workflow-schedule .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container:after {
+  content: none;
+}
+
+.d2-launch-workflow-schedule .cs-field-write-inner .binf-input-group.csui-datefield-input,
+.d2-stepper-wizard .d2-launch-workflow-schedule.cs-metadata-properties.d2-metadata-properties .cs-form .binf-help-block.alpaca-message {
+  width: 240px;
+}

@@ -1,0 +1,179 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-task-additional-panels {
+  width: 100%;
+  height: 100%;
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links {
+  display: flex;
+  padding: 0 8px;
+  height: 48px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid #CCCCCC;
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links .tab-links-bar {
+  display: inline-block;
+  height: inherit;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links .tab-links-bar ul.binf-nav {
+  overflow: hidden;
+  white-space: nowrap;
+  height: inherit;
+  width: 500%;
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links .tab-links-bar .binf-nav-pills > li {
+  width: auto;
+  margin: 0;
+  padding: 0 0.8em;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links .tab-links-bar .binf-nav-pills > li > a {
+  width: auto;
+  max-width: 16em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  color: #333333;
+  padding: 0 2px 0 2px;
+  vertical-align: baseline;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  height: calc(48px - 1px);
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links .tab-links-bar .binf-nav-pills > li > a:hover,
+.binf-widgets .d2-task-additional-panels .tab-links .tab-links-bar .binf-nav-pills > li > a:focus {
+  background-color: transparent;
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links .tab-links-bar .binf-nav-pills > li.binf-active > a,
+.binf-widgets .d2-task-additional-panels .tab-links .tab-links-bar .binf-nav-pills > li.binf-active > a:hover {
+  background-color: transparent;
+  color: #333333;
+  font-weight: bold;
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links .tab-links-bar .binf-nav-pills > li > a > .cs-tablink-text {
+  flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-top: 16px;
+  pointer-events: none;
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links .tab-links-bar .binf-nav-pills > li.binf-active > a > .cs-tablink-text,
+.binf-widgets .d2-task-additional-panels .tab-links .tab-links-bar .binf-nav-pills > li.binf-active > a:hover > .cs-tablink-text {
+  border-bottom: 4px solid #232E72;
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links .tab-links-bar .binf-nav-pills > li:only-child > a,
+.binf-widgets .d2-task-additional-panels .tab-links .tab-links-bar .binf-nav-pills > li:only-child > a:hover {
+  cursor: default;
+}
+
+
+
+.binf-widgets .d2-task-additional-panels .tab-links + .binf-tab-content {
+  height: calc(100% - 48px);
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links + .binf-tab-content > .binf-tab-pane > div {
+  position: relative;
+}
+
+
+
+.binf-widgets .d2-task-additional-panels .tab-links .left-toolbar {
+  float: left;
+  display: inline-block;
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links .left-toolbar .goto_previous_div {
+  height: 48px;
+  position: relative;
+  z-index: 2;
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links .left-toolbar .goto_previous_div .goto_previous_page {
+  position: relative;
+  z-index: 2;
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links .right-toolbar {
+  float: right;
+  display: inline-block;
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links .right-toolbar .goto_next_div {
+  float: left;
+  position: relative;
+  height: 48px;
+  z-index: 2;
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links .right-toolbar .goto_next_div .goto_next_page {
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+
+.binf-widgets .d2-task-additional-panels .tab-links .left-toolbar .goto_previous_div .goto_previous_page,
+.binf-widgets .d2-task-additional-panels .tab-links .right-toolbar .goto_next_div .goto_next_page {
+  display: inline-block;
+  margin-top: calc((48px - 14px) / 2);
+  width: 14px;
+  height: 14px;
+}
+
+.binf-widgets .d2-task-additional-panels .d2-button-toolbar .region-left {
+  padding: 0 16px;
+}
+
+.binf-widgets .d2-task-additional-panels .d2-button-toolbar .region-right {
+  padding: 0 18px;
+}
+
+.d2-task-additional-panels .tab-links .tab-links-bar .fadeout {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 35px;
+  height: 44px;
+  z-index: 2;
+  pointer-events: none;
+  display: inline-block;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 100%);
+}
+
+.csui-rightToolbar .task-panel-close-icon{
+  transform: scaleX(-1);
+}
+
+.binf-widgets.rtl .csui-rightToolbar .task-panel-close-icon{
+  transform: scaleX(1);
+}

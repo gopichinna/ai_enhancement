@@ -1,0 +1,118 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-select-markup.d2-stepper-wizard .binf-modal-dialog .binf-modal-header .cs-close {
+  margin: 16px 0 0 0;
+}
+
+.binf-widgets .d2-markup-treelistitem.binf-panel {
+  width: 100%;
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+  margin: 0;
+  outline: none;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.binf-widgets .d2-markup-treelistitem.binf-panel:first-child {
+  border-top: 1px solid #E6E6E6;
+}
+
+.binf-widgets .d2-markup-treelistitem.binf-panel:focus .d2-markup-header {
+  outline: 1px dotted #333333;
+  outline-offset: -1px;
+}
+
+.binf-widgets .d2-markup-treelistitem .arrow-overlay {
+  display: none;
+}
+
+.binf-widgets .d2-markup-treelistitem .binf-panel-heading {
+  height: 42px;
+  padding: 0 16px 0 16px;
+  background-color: #ffffff;
+  color: #333333;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.binf-widgets .d2-markup-treelistitem .binf-panel-heading.open-content {
+  background-color: #CBD3D9;
+}
+
+.binf-widgets .d2-markup-treelistitem .binf-panel-heading span:focus,
+.binf-widgets .d2-markup-treelistitem .binf-panel-heading span:active {
+  outline-style: none;
+}
+
+.binf-widgets .d2-markup-treelistitem .binf-panel-heading:hover{
+  background-color: #bac9ce;
+}
+
+.binf-widgets .d2-markup-treelistitem .d2-markup-content {
+  background-color: #EDF0F2;
+}
+
+.binf-widgets .d2-markup-treelistitem .binf-panel-heading:focus,
+.binf-widgets .d2-markup-treelistitem .binf-panel-heading.binf-active:focus{
+  outline: 1px dotted #333333;
+}
+
+.binf-widgets .d2-markup-treelistitem .binf-panel-heading .cs-title {
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+.binf-widgets .d2-markup-treelistitem .binf-panel-heading .dropdown-icon {
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+
+.binf-widgets .d2-markup-treelistitem .d2-markup-content .cs-list-group {
+  padding: 0;
+}
+
+.d2-markup-treelistitem .csui-checkbox-icon-container {
+  margin-right: 8px;
+}
+
+.d2-markup-treelistitem .d2-markup-content .csui-checkbox-view {
+  height: 42px;
+}
+
+.d2-markup-treelistitem .d2-markup-content .csui-checkbox-icon-container {
+  padding-left: 38px;
+}
+
+.binf-widgets .d2-markup-treelistitem .d2-markup-content .csui-checkbox {
+  justify-content: normal;
+  line-height: 1px;
+}
+
+.d2-markup-treelistitem .d2-markup-content .csui-checkbox-view:hover {
+  background-color: #f7f7f7;
+}
+
+.d2-markup-treelistitem .dropdown-icon {
+  cursor: pointer;
+}
+
+.d2-markup-treelistitem .child-items-selected-count {
+  height: 24px;
+  min-width: 24px;
+  background-color: #CCEAE8;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0 12px 0 8px;
+  text-align: center;
+  line-height: 23px;
+  box-sizing: border-box;
+}

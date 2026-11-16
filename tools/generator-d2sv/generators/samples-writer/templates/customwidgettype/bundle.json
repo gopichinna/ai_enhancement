@@ -1,0 +1,6 @@
+{
+  "bundle": [
+    "extensions/custom.type.tiles",
+    "extensions/custom.type.tile.behaviors"
+  ]
+}

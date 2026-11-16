@@ -1,0 +1,21 @@
+<div class="d2-workflow-timeline-item d2-wf-timeline-event">
+  <div class="item-summary-container">
+    <div class="summary-icon d2-icon-status-{{summaryIconSuffix}}"></div>
+    <div class="linkage"></div>
+    <span class="summary-text d2-overflow-tooltip">{{event_name}}</span>
+  </div>
+  <div class="item-details-container">
+    <div class="item-details">
+      <div class="performer-container"></div>
+      <div class="item-property-list">
+        {{#each itemProperties}}
+          <div class="item-property" aria-label="{{ariaLabel}}">
+            <span class="property-label">{{label}}</span>
+            <span class="property-value">{{value}}</span>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

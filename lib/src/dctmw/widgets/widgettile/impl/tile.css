@@ -1,0 +1,22 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-tile .tile-header {
+  cursor: pointer;
+}
+
+.d2-tile .tile-header .tile-controls {
+  flex-grow: 0;
+}
+
+.d2-tile .tile-header .tile-controls.search-enabled {
+  flex-grow: 1;
+}
+
+.d2-tile .tile-footer {
+  display: none;
+}
+
+.d2-tile .csui-tileview-more-btn .csui-toolbar-state {
+  visibility: hidden;
+}

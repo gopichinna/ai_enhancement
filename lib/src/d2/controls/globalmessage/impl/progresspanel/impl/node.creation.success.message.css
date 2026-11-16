@@ -1,0 +1,26 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.csui-messagepanel.d2-node-create-success-message .csui-header .node-name {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.csui-messagepanel.d2-node-create-success-message .csui-header .node-name.link-active {
+  line-height: 1rem;
+}
+
+.csui-messagepanel.d2-node-create-success-message .csui-header .node-name .node-done-command-link {
+  display: none;
+  font-size: 14px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.csui-messagepanel.d2-node-create-success-message .csui-header .node-name.link-active .node-done-command-link {
+  display: block;
+}
+

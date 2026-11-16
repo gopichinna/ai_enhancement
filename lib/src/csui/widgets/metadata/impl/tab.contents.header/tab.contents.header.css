@@ -1,0 +1,109 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+
+
+.cs-metadata-properties .smart-tab-contents-header {
+  display: block;
+
+  height: 32px;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+
+  padding-top: 1px;
+  background-color: #ffffff;
+}
+
+.cs-metadata-properties .csui-tab-contents-header-content h4 {
+  color: #00498f;
+  font-size: 20px;
+  line-height: 23px;
+  width: calc(100% - 222px);
+  float: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+.cs-metadata-properties .csui-tab-contents-header-content {
+  float: left;
+  padding-right: 32px;
+  width: 100%;
+}
+@media only screen and (max-height: 400px) {
+  .cs-metadata-properties .csui-tab-contents-header-content {
+    padding: 0 8px;
+  }
+  .cs-metadata-properties .smart-tab-contents-header {
+    padding-top: 0;
+  }
+}
+
+.binf-modal-dialog .cs-metadata-properties .csui-tab-contents-header-content {
+  float: left;
+  padding: 0 0 0 32px;
+}
+
+.cs-metadata-properties .csui-tab-contents-header-right {
+  float: right;
+  max-width: 222px;
+  padding-top: calc((43px - 31px) / 2);    
+}
+
+.cs-metadata-properties .smart-tab-contents-header:after {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); 
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); 
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+  content: "\00a0";
+  width: 100%;
+  float: left;
+
+  max-height: 8px; 
+}
+
+.cs-metadata-properties .smart-tab-contents-header .required-field-switch > span.only-required-fields-label {
+  vertical-align: middle;
+  font-size: 14px;
+  max-width: 170px;
+  float: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 31px;
+}
+
+.cs-metadata-properties .smart-tab-contents-header .required-fields-switch {
+  display: inline-flex;
+  vertical-align: middle;
+  padding: 0 3px 0 3px;
+}
+
+.cs-metadata-properties .smart-tab-contents-header .required-fields-switch:focus {
+  outline: 1px dotted #333333;
+  outline-offset: -2px;
+}
+
+.cs-metadata-properties .smart-tab-contents-header .required-fields-switch .cs-booleanfield {
+  min-width: 0;
+  min-height: 24px;
+}
+
+.cs-metadata-properties .smart-tab-contents-header .required-fields-switch .cs-booleanfield .control-area {
+  padding: 0;
+}
+
+.cs-metadata-properties .smart-tab-contents-header .required-fields-switch .cs-formfield .icon-container {
+  width: 0;
+}
+
+.cs-metadata-properties .smart-tab-contents-header .required-fields-switch .cs-booleanfield .binf-switch:focus {
+  outline-width: 0;
+}
+
+.cs-metadata-properties .smart-tab-contents-header .csui-tab-contents-header-title-full-width {
+  width: 100%;
+}

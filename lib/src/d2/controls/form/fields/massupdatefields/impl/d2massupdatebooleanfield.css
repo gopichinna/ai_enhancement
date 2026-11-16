@@ -1,0 +1,27 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.cs-formfield.cs-booleanfield.d2-massupdatebooleanfield .cs-field-inner {
+    display: block;
+}
+
+.cs-formfield.cs-booleanfield.d2-massupdatebooleanfield .control-area:last-child {
+    margin-top: 12px;
+}
+
+.cs-formfield.cs-booleanfield.d2-massupdatebooleanfield .control-area {
+    position: relative;
+}
+
+.cs-formfield.cs-booleanfield.d2-massupdatebooleanfield .control-area .count-region,
+.cs-formfield.cs-booleanfield.d2-massupdatebooleanfield .control-area .multiple-values {
+    position: absolute;
+    top: 3px;
+    margin-left: calc(100% + 16px);
+}
+
+.cs-formfield.cs-booleanfield.d2-massupdatebooleanfield .control-area .multiple-values {
+    width: 200px;
+    top: -4px;
+    color: #333;
+}

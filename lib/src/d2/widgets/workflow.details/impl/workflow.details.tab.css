@@ -1,0 +1,35 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-workflow-details-tab {
+    height: 100%;
+    width: 100%;
+}
+
+.binf-widgets .d2-workflow-details-tab .d2-workflow-details-tab-content {
+  width: inherit;
+  height: inherit;
+  padding: 16px;
+}
+
+.binf-widgets .d2-workflow-details-tab-content .cs-form .alpaca-container-label,
+.binf-widgets .d2-workflow-details-tab-content .cs-form .d2-user-list-field .user-selection-item .d2-icon-drag {
+  display: none;
+}
+
+.binf-widgets .d2-workflow-details-tab-content .cs-form .binf-col-md-6.cs-form-doublecolumn {
+  width: 70%;
+  max-width: initial;
+}
+
+.binf-widgets .d2-workflow-details-tab-content .cs-form .d2-user-list-field .user-selection-item {
+  padding: 0;
+}
+
+.binf-widgets .d2-workflow-details-tab-content .cs-form .d2-user-list-field .user-selection-item .user-info {
+  padding-left: 0;
+}
+
+.binf-widgets .d2-workflow-details-tab-content .cs-form .d2-user-list-field .user-selection-item .user-info-container {
+  cursor: default;
+}

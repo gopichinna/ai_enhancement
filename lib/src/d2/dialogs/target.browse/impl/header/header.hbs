@@ -1,0 +1,14 @@
+{{#if locationSelector}}
+    <h2 id="nodePickerHeader" class="csui-title" title="{{title}}">{{title}}</h2>
+{{else}}
+    <h2 id="nodePickerHeader" class="csui-title-search-config" title="{{title}}">{{title}}</h2>
+{{/if}}
+<div class="d2-target-controls">
+  {{#if locationSelector}}
+    <div class="csui-start-locations binf-dropdown" ></div>
+  {{/if}}
+</div>
+<div class="d2-target-search-property-container">
+</div>
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,389 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.validation-dialog-header .icon{
+  display: inline-block;
+  width: 24px;
+  height: 64px;
+  background-image: url(../impl/images/header-icon.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.binf-widgets .validation-dialog-header .title{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  line-height: 64px;
+  margin-left: 10px;
+  position: absolute;
+}
+.validation-dialog-header .message {
+  height: 41px;
+}
+.validation-dialog-header{
+  height: inherit;
+}
+.validation-dialog-header .header-section{
+  height: 60px;
+}
+.documents-validation-dialog table.error-items tr{
+  height: 64px;
+  border-top: 1px solid #eee;
+  display: inline-table;
+  margin: 1px;
+}
+
+.documents-validation-dialog table.error-items tr:first-child{
+  border-top: none;
+}
+
+.documents-validation-dialog table.error-items .status-icon{
+  background-image: url(../impl/images/status-icon.svg);
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.binf-widgets .documents-validation-dialog .binf-modal-header {
+  border: 0 none;
+  padding: 0 16px 0 16px;
+  height: 100px;
+}
+
+.documents-validation-dialog .binf-modal-content {
+  border-radius: 3px;
+  border: 0 none;
+  border-bottom: 4px solid #DF6800;
+  overflow: hidden;
+  width: 720px;
+  padding: 0;
+}
+
+.binf-widgets .documents-validation-dialog .binf-modal-body {
+  margin: 0;
+  padding: 0 16px 0 16px;
+}
+
+.binf-widgets .documents-validation-dialog .binf-modal-dialog .binf-modal-content .binf-modal-body > div {
+  max-height: inherit;
+}
+
+.documents-validation-dialog table.error-items td.type,
+.documents-validation-dialog table.error-items .status,
+.documents-validation-dialog table.error-items td.remove {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.documents-validation-dialog table.error-items td.type {
+  width: 32px;
+  padding-top: 16px;
+}
+.documents-validation-dialog table.error-items td.name{
+  position: relative;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 14px;
+  line-height: 16px;
+  width: 320px;
+  max-width: 320px;
+  vertical-align: top;
+  padding-top: 25px;
+  overflow-wrap: break-word;
+}
+.documents-validation-dialog table.error-items td.name > .fadeout{
+  position: absolute;
+  width: 35px;
+  top: 0;
+  right: 0;
+  height: 99%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 75%,rgba(255,255,255,1) 100%);
+}
+.documents-validation-dialog table.error-items .status{
+  width: 16px;
+}
+
+.documents-validation-dialog table.error-items .message {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  width: 310px;
+  color: #DF3324;
+  overflow-wrap: break-word;
+}
+
+.documents-validation-dialog .binf-modal-header .table-header {
+  left: calc(50% - 546px / 2 - 71px);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  color: #333333;
+  height: 20px;
+  padding-top: 8px;
+}
+
+.documents-validation-dialog .error-data .each-error {
+  display: flex;
+}
+.documents-validation-dialog .error-data{
+  vertical-align: middle;
+}
+.documents-validation-dialog .error-data .each-error:nth-child(n+2){
+  padding-top: 0;
+}
+.documents-validation-dialog .error-data .each-error:first-child{
+  padding-top: 24px;
+}
+.documents-validation-dialog .error-data .each-error{
+  display: flex;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  vertical-align: middle;
+}
+.documents-validation-dialog .error-data .each-error:last-child{
+  padding-bottom: 24px;
+}
+.binf-widgets .documents-validation-dialog .binf-modal-dialog .binf-modal-body{
+  max-height: 300px;
+}
+.binf-widgets .documents-validation-dialog .binf-modal-dialog{
+  width: 720px;
+}
+.binf-widgets .documents-validation-dialog .binf-modal-body tr:focus{
+  outline: 1px dotted #333333;
+}
+
+.binf-widgets .documents-validation-dialog.binf-modal .binf-modal-dialog .tile-header.binf-modal-header{
+  background-color: inherit;
+}
+
+.binf-widgets .documents-validation-dialog.binf-modal .binf-modal-dialog .binf-modal-footer{
+  background-color: inherit;
+}
+
+
+.binf-widgets.d2-mobile .documents-validation-dialog .binf-modal-body {
+  padding: 0 6px 0 16px;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .binf-modal-content {
+  width: auto;
+  word-break: normal;
+  overflow-wrap: break-word;
+  max-width: 32rem;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .binf-modal-header .table-header {
+  height: auto;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .binf-modal-header {
+  height: auto;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog.binf-modal  .binf-modal-dialog .binf-modal-footer {
+  padding: 0;
+  border-top: 2px solid #DF6800;
+  display: flex;
+  height: calc(3em + 2px);
+  margin: 0.5px 0 0 0;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog.cs-dialog .binf-modal-footer .binf-btn {
+  flex: 1 1 auto;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.25em;
+  font-size: 1.25em;
+  border: none;
+  border-radius: 0;
+  color: #232e72;
+  height: inherit;
+  padding: 0;
+  background-color: #ffffff;
+  margin: 0;
+  width: 50%;
+}
+
+.binf-widgets .cs-dialog.binf-modal:not(.csui-alert).documents-validation-dialog .binf-modal-dialog {
+  top: auto;
+}
+
+.binf-widgets .documents-validation-dialog.dialog-hidden {
+  visibility: hidden;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog.cs-dialog .binf-modal-footer .binf-btn.binf-btn-primary {
+  font-weight: bold;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .binf-modal-content {
+  border-bottom: none;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .binf-modal-dialog .error-items {
+  width: 100%;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog div.error-items div:focus,
+.binf-widgets.d2-mobile .documents-validation-dialog.cs-dialog .binf-modal-footer .binf-btn:focus,
+.binf-widgets.d2-mobile .documents-validation-dialog.cs-dialog .binf-modal-footer .binf-btn:active,
+.binf-widgets.d2-mobile .cs-dialog .binf-modal-footer .binf-btn-default:hover, .esoc-user-text-edit-buttons .binf-btn-default:hover {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .binf-modal-dialog {
+  width: 100%;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog.cs-dialog.binf-modal:not(.csui-alert) .binf-modal-dialog {
+  top: 0;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog.cs-dialog .binf-modal-footer .binf-btn:active {
+  background-color: #dfe7ea;
+  border-radius: 0;
+}
+
+.binf-widgets.d2-mobile .validation-dialog-header .title {
+  font-size: 1.125em;
+  font-weight: normal;
+  padding-top: 1px;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .csui-icon.mime_folder {
+  margin-top: 4px;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog div.names {
+  display: flex;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog div.name {
+  max-height: 25px;
+  overflow: hidden;
+  padding-top: 4px;
+  padding-left: 8px;
+  font-weight: normal;
+  line-height: 20px;
+  width: 100%;
+  -webkit-mask-image: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 42px);
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .error-data .each-error {
+  padding-left: 34px;
+  font-size: 14px;
+  line-height: 17px;
+  padding-top: 0;
+  display: block;
+  padding-bottom: 12px;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .error-detail-row:not(:last-of-type) .error-data {
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .error-data .each-error:before {
+  width: 4px;
+  height: 4px;
+  content: ' ';
+  background: #333333;
+  margin-right: 6px;
+  margin-top: 6px;
+  display: flex;
+  float: left;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .error-data {
+  padding-top: 12px;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .error-data .each-error .message {
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+.binf-widgets.csui-mobile .documents-validation-dialog .error-items .csui-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .error-items .error-detail-row {
+  padding-bottom: 16px;
+  padding-right: 10px;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .error-items .error-detail-row:last-of-type {
+  padding-bottom: 8px;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .description-text {
+  height: auto;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 24px;
+  padding-right: 10px;
+  font-weight: normal;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .only-one-file .description-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .failed-nodes-container.only-one-file .names {
+  display: none;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .failed-nodes-container.only-one-file .error-data {
+  padding-top: 0;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .failed-nodes-container.only-one-file .error-data .each-error {
+  padding-left: 0;
+}
+
+.binf-widgets.csui-mobile.d2-mobile .documents-validation-dialog .binf-modal-dialog .tile-header.binf-modal-header {
+  display: block;
+  height: auto;
+  border-bottom: none;
+  padding: 0 16px 8px 16px;
+  background-color: #ffffff;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .binf-modal-dialog .binf-modal-body .error-items.fade-last-item::after,
+.binf-widgets.d2-mobile .documents-validation-dialog .binf-modal-dialog .binf-modal-body .failed-nodes-container.fade-first-item::before {
+  content: '';
+  height: 40px;
+  width: calc(100% - 30px);
+  position: absolute;
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .binf-modal-dialog .binf-modal-body .error-items.fade-last-item::after {
+  bottom: 0;
+}
+
+.binf-widgets.d2-mobile .documents-validation-dialog .binf-modal-dialog .binf-modal-body .failed-nodes-container.fade-first-item::before {
+  z-index: 6;
+  background: linear-gradient(0, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.85) 70%, rgb(255, 255, 255));;
+}
+
+.binf-widgets.d2-mobile .cs-dialog.binf-modal:not(.csui-alert) .binf-modal-dialog:not(.binf-modal-full) {
+  min-width: 0;
+  max-height: none;
+}
+
+

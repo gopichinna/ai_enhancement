@@ -1,0 +1,32 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-stepper-wizard .d2-import-file-o2-processing {
+  position: relative;
+  height: 100%;
+}
+
+.d2-stepper-wizard .d2-import-file-o2-processing .o2-processing-view-container {
+  margin: auto;
+  width: 50%;
+  height: auto;
+  position: relative;
+  top: 128px;
+}
+
+.d2-stepper-wizard .d2-import-file-o2-processing .o2-processing-view-container .d2-progresspanel {
+  box-shadow: none;
+}
+
+.d2-stepper-wizard .d2-import-file-o2-processing .o2-processing-view-container .processing-icon {
+  background: transparent url("images/o2-processing-background.svg") no-repeat center;
+  background-size: contain;
+  height: 152px;
+}
+
+.d2-stepper-wizard .d2-import-file-o2-processing .o2-processing-view-container .processing-label {
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  height: 36px;
+}

@@ -1,0 +1,29 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-lifecycle-confirmation .d2-lifecycle-confirmation-image {
+    height: 220px;
+    width: 220px;
+    background: url('../impl/images/confirm.svg');
+    margin-left: calc(50% - 110px);
+    margin-top: calc(50% - 110px);
+}
+
+.binf-widgets .d2-lifecycle-confirmation .d2-lifecycle-no-input-required-image {
+    height: 155px;
+    width: 168.68px;
+    background: url(../impl/images/noInputRequired.svg);
+    margin-left: calc(50% - 84px);
+    margin-top: calc(50% - 77px);
+    margin-bottom: 20px;
+}
+
+.binf-widgets .d2-lifecycle-confirmation .d2-lifecycle-confirmation-text .csui-no-result-message {
+    color: #666666;
+    line-height: 19px;
+    font-size: 16px;
+}
+
+.binf-widgets .d2-lifecycle-confirmation {
+    height: 100%;
+}

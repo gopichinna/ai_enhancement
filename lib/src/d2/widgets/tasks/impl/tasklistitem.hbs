@@ -1,0 +1,11 @@
+{{#if showInlineActionBar}}<a class="csui-tileview-contains-more-btn" tabindex="-1">{{/if}}
+  {{#if enableIcon}}<span class="csui-type-icon {{icon}}"></span>{{/if}}
+  <span title="{{name}}" class="list-item-title{{#if unread}} unread{{/if}}" role="link" aria-label="{{name}}">
+    <span class="list-item-title-content">{{name}}</span>
+    {{#if dueDate}}<span class="list-item-duedate{{#if overdue}} overdue{{/if}}">{{dueDate}}</span>{{/if}}
+  </span>
+  {{#if end-icon}}<span class="{{end-icon-class}}"></span>{{/if}}
+  {{#if showInlineActionBar}}<span class="csui-tileview-more-btn"></span>{{/if}}
+{{#if showInlineActionBar}}</a>{{/if}}
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,31 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-stepper-wizard .d2-task-update-process-variables-form.cs-form.csui-general-form.d2-form {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 220px;
+  }
+  
+  .binf-widgets .d2-stepper-wizard .d2-task-update-process-variables-form.cs-form.csui-top-align-label .binf-col-md-6 {
+    width: 100%;
+  }
+  
+  .binf-widgets .d2-stepper-wizard .d2-task-update-process-variables-form.cs-form.csui-top-align-label .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label{
+    padding-left: 16px;
+  }
+  
+  .binf-widgets .d2-stepper-wizard .d2-task-update-process-variables-form.cs-form.csui-top-align-label .cs-formfield .cs-field-write {
+    padding-left: 16px;
+  }
+  
+  .binf-widgets .d2-stepper-wizard .d2-task-update-process-variables-form.cs-form.csui-top-align-label .binf-help-block.alpaca-message{
+    margin-left: 16px;
+    width: calc(100% - 16px);
+  }
+  
+  .binf-widgets .d2-stepper-wizard .d2-task-update-process-variables-form.cs-form.csui-top-align-label .alpaca-container-label {
+    display: none;
+  }

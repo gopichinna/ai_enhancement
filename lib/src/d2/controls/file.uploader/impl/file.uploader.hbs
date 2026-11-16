@@ -1,0 +1,21 @@
+<div class="upload-drop-zone">
+    <div class="header">
+      <div class="title">
+        <span class="title-text">{{filesTitle}}</span>
+        <span class="item-count"></span>
+      </div>
+      <div class="uploader">
+        <div class="add-file" title="{{addFileToolTip}}" aria-label="{{addFileAria}}" tabindex="0" role="button">{{{icon-v2 iconName=iconName theme=iconTheme states='true'}}}</div>
+        <input type="file" class="file-browser" multiple style="display:none"/>
+      </div>
+    </div>
+    <div class="upload-file-container"></div>
+    <div class="drop-file-message-container" style="display:none">
+        <div class="drop-file">
+            <div class="icon"></div>
+            <div class="drop-file-message">{{dropFileMessage}}</div>
+        </div>
+    </div>
+</div>
+
+<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

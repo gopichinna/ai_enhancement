@@ -1,0 +1,524 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .smart-target-browse .cs-list .binf-list-group {
+  margin: 0;
+  padding: 1px 0;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group.csui-no-results {
+  
+  height: calc(100% - 5px);
+}
+
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group .cs-emptylist-container {
+  display: none;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group.csui-no-results .cs-emptylist-container {
+  display: inline-block;
+  background-color: unset;
+  box-shadow: none;
+  width: 100%;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group > div {
+  height: calc(100%);
+}
+
+.binf-widgets .smart-target-browse .cs-list .smart-item-standard.binf-list-group-item {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  align-items: center;
+  -ms-flex-align: center;
+  border-radius: 0;
+  border-bottom: 1px solid #ffffff;
+  background-color: #ffffff;
+  padding: 0;
+  padding-left: 5px;
+  height: auto;
+  cursor: pointer;  
+  margin: 0;
+}
+
+@media only screen and (max-height: 400px) {
+  .binf-widgets .smart-target-browse .cs-list .binf-list-group .binf-list-group-item {
+    min-height: 34px;
+    max-height: 56px;
+  }
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item .csui-list-group-item {
+  cursor: pointer;
+}
+
+.binf-widgets .smart-target-browse .cs-list .csui-disabled.binf-list-group-item .csui-list-group-item {
+  cursor: default;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .binf-widgets .smart-target-browse .cs-list .binf-list-group-item:focus {
+    margin: 1px;
+  }
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item:focus-visible {
+  box-shadow: rgb(255 255 255) 0px 0px 0px 2px inset, rgb(46 61 152) 0px 0px 0px 3px inset;
+}
+
+.binf-widgets .smart-target-browse .cs-list .csui-has-grid-inlineform:focus-visible {
+  box-shadow: rgb(255 255 255) 0px 0px 0px 2px inset, rgb(46 61 152) 0px 0px 0px 3px inset !important;
+}
+
+.binf-widgets .smart-target-browse .cs-list span.csui-list-group-item:focus {
+  border: none;
+}
+
+.binf-widgets .smart-target-browse .cs-list .csui-has-error span.csui-icon-group {
+  vertical-align: top;
+  padding-top: 5px;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-has-error {
+  height: auto;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-has-error:hover {
+  border: none;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-has-inlineform {
+  background: #DCE4E8;
+}
+
+
+.binf-widgets .smart-target-browse .csui-slideMidLeft .cs-list .binf-list-group-item .binf-text-danger {
+  max-width: calc(100% - 44px);
+}
+
+.binf-widgets .smart-target-browse .csui-np-content .cs-list span.csui-list-group-item,
+.binf-widgets .smart-target-browse .csui-np-content .cs-list span.csui-list-group-item:hover {
+  width: 100%;
+  text-decoration: none;
+  color: #333333;
+}
+
+.binf-widgets .smart-target-browse span.csui-list-group-item.smart-custom-item-wrapper {
+  display: flex;
+  align-items: center;
+} 
+
+.binf-widgets .smart-target-browse span.csui-list-group-item.smart-custom-item-wrapper.csui-inlineform-row {
+  margin-left: 56px;
+} 
+
+.binf-widgets span.csui-list-group-item.smart-custom-item-wrapper .csui-icon-group .csui-icon-v2 {
+  width: 24px;
+  height: 24px;
+}
+
+.binf-widgets span.csui-list-group-item.smart-custom-item-wrapper .csui-inlineform-container {
+  margin-left: 14px;
+}
+
+.binf-widgets .smart-target-browse .csui-np-content .binf-list-group-item .csui-start-icon {
+  margin: 0 6px 0 0;
+  width: 12px;
+  height: 12px;
+}
+
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item .csui-list-item-title,
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item .smart-location-title {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 4px;
+  line-height: 24px;
+}
+
+
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item .smart-location-title { 
+  width: auto;
+}
+
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .search-left-item .binf-list-group-item .smart-location-title:hover,
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item:not(.csui-disabled) .csui-list-item-title:not([disabled]):hover {
+background: #F3FBFF;
+box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
+border-radius: 3px;
+color: #5C707D;
+line-height: 24px;
+padding: 0 4px;
+}
+
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .search-left-item .binf-list-group-item .smart-location-title {
+  margin-left: -7.5px;
+}
+
+.binf-widgets .smart-target-browse .search-location-name:not(.csui-disabled) .csui-list-item-title:active,
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item:not(.csui-disabled) .csui-list-item-title:not([disabled]):active {
+	background: #CCCCCC;
+  box-shadow: none;
+  border-radius: 3px;
+  color: #666666;
+  line-height: 24px;
+  padding: 0 4px;
+  }
+
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item.csui-disabled .csui-list-item-title,
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item.csui-disabled .smart-list-item-sec-text,
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item.csui-disabled .csui-icon,
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item.csui-browse-disabled .csui-browsable {
+  color: #999999;
+}
+
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item.csui-disabled .smart-location-title {
+  color: #333333;
+  cursor: pointer;
+}
+
+.binf-widgets .smart-target-browse .csui-np-content .cs-list .binf-list-group-item .csui-icon.csui-end-icon {
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  margin-right: 16px;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 8px);
+  left: auto;  
+  opacity: 0;
+  animation: iconOpacity 300ms ease-in forwards;
+  animation-iteration-count: 1;
+  animation-fill-mode: ease-in forwards;
+  -webkit-animation: iconOpacity 300ms ease-in forwards;
+  -moz-animation: iconOpacity 300ms ease-in forwards;
+  -moz-animation-fill-mode: ease-in forwards;
+  -o-animation: iconOpacity 300ms;
+  -o-animation-fill-mode: ease-in forwards;
+}
+
+@keyframes iconOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes iconOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes iconOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes iconOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+html[dir="rtl"] .binf-widgets .smart-target-browse .csui-targetbrowse-history .csui-targetbrowse-arrow-back,
+html[dir="rtl"] .binf-widgets .smart-target-browse .cs-list .binf-list-group-item .csui-icon.csui-end-icon {
+  transform: scaleX(-1);
+  filter: 'FlipH';
+  -ms-filter: 'FlipH';
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item:not(.csui-disabled):hover,
+.binf-widgets .smart-target-browse .cs-list .binf-search-location-group .search-location-name:hover,
+.binf-widgets .smart-target-browse .cs-list .binf-search-location-group .search-location-name:focus {
+  background-color: #B2BEC5;
+  border-bottom: 1px solid #ffffff;
+  text-decoration: none;
+  transition: none;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-disabled:hover {
+  background-color: transparent;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-search-location-group .search-location-name:hover,
+.binf-widgets .smart-target-browse .cs-list .binf-search-location-group .search-location-name:focus {
+  cursor: pointer;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.smart-new-item {
+  background: #E7EFDA;
+  border-bottom: 1px solid #ffffff;
+  border-color: #ffffff;
+  font-weight: normal;
+  color: #333333;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.select {
+  font-weight: bold;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.select,
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item:active {
+  background-color: #98A8B2;
+  border-bottom: 1px solid #ffffff;
+  border-color: #ffffff;
+  color: #333333;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.select {
+  transition: background-color 300ms linear;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.browse {
+  background-color: #d6e1ed;
+  border-bottom: 1px solid #ffffff;
+  border-color: #ffffff;
+  color: #333333;
+  transition: background-color 300ms linear;
+}
+
+.binf-widgets .smart-target-browse .list-content {
+  height: 100%;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.binf-widgets .smart-target-browse .binf-list-group-item {
+  margin: 0;
+}
+
+.binf-widgets .smart-target-browse .search-location-name {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  align-items: center;
+  -ms-flex-align: center;
+  border-radius: 0;
+  height: 42px;
+  margin-right: 4px;
+  padding-top: 5px;
+  text-decoration: none;
+}
+
+.binf-widgets .smart-target-browse .binf-search-location-group .search-location-name {
+  padding: 0;
+}
+
+.binf-widgets .smart-target-browse .search-location-name a:focus {
+  text-decoration: none;
+}
+
+.binf-widgets .smart-target-browse .search-location-name .csui-list-item-title {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 9px;
+  max-width: 65%;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.binf-widgets .smart-target-browse .search-location-name .csui-icon-group {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  margin-right: 5px;
+}
+
+.binf-widgets .smart-target-browse .cs-list .list-group-item .left-item.csui-disabled .csui-list-item-title,
+.binf-widgets .smart-target-browse .cs-list .list-group-item .left-item.csui-disabled .csui-icon {
+  opacity: .5;
+}
+
+.binf-widgets .smart-target-browse .binf-search-location-group {
+  display: inline-block;
+  width: 50%;
+  padding: 2px 0;
+}
+
+.binf-widgets .smart-target-browse .search-left-item {
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+
+.binf-widgets .smart-target-browse .search-left-folder-right {
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+
+.binf-widgets .smart-target-browse .cs-start-locations .csui-np-content .cs-list .binf-list-group.search-left-folder-right {
+  padding-left: 26px;
+}
+
+.binf-widgets .smart-target-browse .csui-search-to-back-padding {
+  padding-left: 26px;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group .csui-no-result-wrapper {
+  height: 100%;
+  display: table;
+  width: 100%;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-disabled,
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-disabled a,
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-disabled span.smart-target-browse-checkbox > input,
+.binf-widgets .smart-target-browse .cs-list .csui-item-standard.binf-list-group-item.csui-disabled .csui-browsable,
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-disabled .csui-browsable,
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-disabled .csui-browsable span,
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-browse-disabled .csui-browsable,
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-browse-disabled .csui-browsable span,
+.binf-widgets .smart-target-browse .cs-list .csui-item-standard.binf-list-group-item.csui-browse-disabled span.csui-browsable {
+  cursor: default;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-disabled .csui-type-icon .csui-icon-group {
+  opacity: 0.4;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item span.smart-target-browse-checkbox > input {
+  
+  display: block;
+  height: inherit;
+  width: inherit;
+  cursor: pointer;
+  opacity: 0;
+  margin: 0;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item span.smart-target-browse-checkbox {
+  opacity: 0;
+  margin: 0;
+  height: 18px;
+  width: 18px;
+  min-width: 18px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 19px;
+  margin-left: 19px;
+  visibility: hidden;
+}
+
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.select span.smart-target-browse-checkbox,
+.binf-widgets .smart-target-browse .cs-list .binf-list-group[aria-multiselectable="true"] .binf-list-group-item span.csui-selectable,
+.binf-widgets .smart-target-browse .cs-list span.csui-selectable.csui-show-checkbox,
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item:not(.csui-disabled):hover span.csui-selectable,
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item:focus-visible span.csui-selectable,
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item span.smart-target-browse-checkbox-selected {
+  opacity: 1;
+  visibility: visible;
+}
+
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-select-disabled:hover span.csui-selectable > svg,
+.binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-select-disabled:focus span.csui-selectable > svg {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+.binf-widgets .smart-target-browse .cs-list .csui-item-standard.binf-list-group-item span.csui-type-icon { 
+  margin-right: 12px;
+  width: 24px;
+}
+
+.binf-widgets .smart-target-browse .cs-list .csui-item-standard.binf-list-group-item .smart-location-group .csui-type-location-icon { 
+  margin-right: 8px;
+  margin-left: 16px;
+  width: 16px;
+}
+
+
+.binf-widgets .smart-target-browse .cs-list .csui-item-standard.binf-list-group-item span.csui-browsable {
+  width: calc(100% - 66px);
+  display: inline-block;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+
+
+.binf-widgets .smart-target-browse .cs-list .search-left-item .csui-item-standard.binf-list-group-item span.smart-location-group .csui-icon-v2 {
+  width: 16px;
+  height: 16px;
+}
+
+.binf-widgets .smart-target-browse .cs-list .search-left-item .csui-item-standard.binf-list-group-item span.csui-browsable,
+.binf-widgets .smart-target-browse .cs-list .search-left-item .csui-item-standard.binf-list-group-item span.smart-location-group {
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.binf-widgets .csui-node-picker .cs-breadcrumb .csui-selected-count-parent .csui-selected-counter-region button {
+  margin: 2px 0;
+}
+
+.binf-widgets .smart-target-browse .csui-selected-count li.csui-selected-item:active,
+.binf-widgets .smart-target-browse .csui-selected-count li.csui-selected-item:focus {
+  outline: none;
+}
+
+.binf-widgets .csui-node-picker .csui-inlineform-container {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.binf-widgets .csui-node-picker .csui-inlineform .csui-btn-metadata {
+  display: none; 
+}
+
+.binf-widgets .csui-node-picker .csui-inlineform-container .cancel-edit {
+  padding: 0;
+  margin-left: 12px;
+  border: none;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+}
+
+.binf-widgets .csui-node-picker .csui-inlineform-container .cancel-edit:focus {
+  outline: 1px dotted #333333;
+}
+
+.binf-widgets .csui-node-picker .csui-np-content .csui-inlineform-row .csui-browsable {
+  margin-left: 58px; 
+}
+
+@media (forced-colors: active) {
+  
+  .binf-widgets .smart-target-browse .cs-list .binf-list-group-item:focus, .binf-widgets .smart-target-browse .cs-list .binf-list-group-item:hover {
+    outline: 1px solid black;
+    outline-offset: -1px;
+  }
+ 
+ 
+}

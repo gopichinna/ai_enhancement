@@ -1,0 +1,69 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets.csui-folderbrowser-strechable,
+.binf-widgets .csui-folderbrowser-strechable {
+    position: relative;
+}
+
+.binf-widgets.csui-folderbrowser-strechable .cs-perspective-panel {
+    position: relative;
+    height: 100%;
+}
+
+.binf-widgets .csui-folderbrowser-strechable .cs-perspective-panel>div.load-container.csui-global,
+.binf-widgets.csui-folderbrowser-strechable .cs-perspective-panel>div.load-container.csui-global {
+    position: absolute;
+}
+
+.binf-widgets.csui-folderbrowser-strechable .cs-perspective-with-breadcrumb-view .grid-rows.cs-zone-perspective>.binf-row>.row-xs-full,
+.binf-widgets .csui-folderbrowser-strechable .cs-perspective-with-breadcrumb-view .grid-rows.cs-zone-perspective>.binf-row>.row-xs-full,
+.binf-widgets.csui-folderbrowser-strechable .cs-perspective-with-breadcrumb-view .grid-rows.cs-grid-perspective>.binf-row>.row-xs-full,
+.binf-widgets .csui-folderbrowser-strechable .cs-perspective-with-breadcrumb-view .grid-rows.cs-grid-perspective>.binf-row>.row-xs-full {
+    height: 100%;
+}
+.binf-widgets.csui-folderbrowser-strechable .cs-perspective-with-breadcrumb-view .grid-rows.cs-zone-perspective>.binf-row>.search-results-container{
+    height: 100% !important;
+}
+
+.binf-widgets.csui-folderbrowser-strechable .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .grid-rows.cs-zone-perspective>.binf-row>.row-xs-full,
+.binf-widgets.csui-folderbrowser-strechable .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .grid-rows.cs-grid-perspective>.binf-row>.row-xs-full {
+    height: 100%;
+}
+
+.binf-widgets.csui-folderbrowser-strechable .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .csui-perspective-view {
+    height: calc(100% - 32px);
+}
+
+.binf-widgets.csui-folderbrowser-strechable .cs-perspective-with-breadcrumb-view:not(.csui-breadcrumbs-visible) .csui-perspective-view,
+.binf-widgets .csui-folderbrowser-strechable .cs-perspective-with-breadcrumb-view:not(.csui-breadcrumbs-visible) .csui-perspective-view {
+    height: 100%;
+}
+
+.binf-widgets.csui-folderbrowser-strechable .csui-breadcrumbs-visible .csui-perspective-view,
+.binf-widgets .csui-folderbrowser-strechable .csui-breadcrumbs-visible .csui-perspective-view {
+    height: calc(100% - 32px);
+}
+
+.binf-widgets.csui-folderbrowser-strechable .cs-perspective-with-breadcrumb-view .csui-perspective-view>div {
+    height: 100%;
+}
+
+.binf-widgets.csui-folderbrowser-strechable .cs-perspective-panel .cs-left-center-right-perspective.cs-perspective>div {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+@media (max-width: 767px) {
+
+    .binf-widgets.csui-folderbrowser-strechable .cs-perspective-panel .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .csui-perspective-view,
+    .binf-widgets .csui-folderbrowser-strechable .cs-perspective-panel .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .csui-perspective-view {
+        height: calc(100% - 32px);
+    }
+
+    .binf-widgets.csui-folderbrowser-strechable .cs-perspective-panel,
+    .binf-widgets .csui-folderbrowser-strechable .cs-perspective-panel {
+        height: 100%;
+    }
+}

@@ -1,0 +1,26 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-tasks-table-view .d2-table-view tr.task-unread td.csui-table-cell-name .csui-table-cell-name-link-text {
+  font-weight: bold;
+}
+
+.binf-widgets .d2-tasks-table-view .d2-table-view .csui-nodetable .csui-table-cell-type:first-child {
+  width: 80px;
+  min-width: 80px;
+}
+
+.binf-widgets .d2-tasks-table-view .d2-table-view .csui-nodetable .csui-table-cell-type .csui-table-cell-default-action {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.binf-widgets .d2-tasks-table-view .csui-tabletoolbar .csui-filterToolbar .csui-toolitem.csui-toolitem-icononly .icon.csui-icon-go-previous-node {
+  background-size: 18px 18px;
+  width: 32px;
+  height: 32px;
+}
+
+.binf-widgets .csui-nodestable.d2-widget-table-view.d2-tasks-table-view .csui-table-empty-default.csui-table-empty:not(.csui-state-loading){
+  background-image: url(../../tasks/impl/images/no-assignment-illustration.svg);
+}

@@ -1,0 +1,103 @@
+/**
+ * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.binf-widgets .d2-vdoc-perspective-container .d2-vdoc-widget-container {
+  height: 100%;
+  width: 100%;
+}
+
+.binf-widgets .d2-vdoc-perspective-container .binf-dropdown-menu {
+  overflow: hidden;
+}
+
+.binf-widgets .d2-vdoc-widget-container .d2-vdoc-widget {
+  height: inherit;
+  width: inherit;
+  position: relative;
+}
+
+.binf-widgets .d2-vdoc-widget-container .d2-vdoc-widget .primary-pane.ui-resizable > .d2-property-page-mask ~ .ui-resizable-handle {
+  display: none;
+}
+
+.binf-widgets .d2-vdoc-widget-container .d2-vdoc-widget .cs-metadata .metadata-header-right-bar .csui-extra-header-wrapper {
+  margin: 16px 6px;
+}
+
+.binf-widgets .d2-vdoc-widget-container .d2-vdoc-widget .cs-metadata .metadata-header-right-bar .csui-tabletoolbar {
+  height: 32px;
+  padding-right: 20px;
+}
+
+.binf-widgets .d2-vdoc-widget-container .d2-vdoc-widget .cs-metadata .metadata-header-right-bar .csui-tabletoolbar .csui-rightToolbar [data-csui-command="d2-restoreminiviewer"],
+.binf-widgets .d2-vdoc-widget-container .d2-vdoc-widget .cs-metadata .metadata-header-right-bar .csui-tabletoolbar .csui-rightToolbar [data-csui-command="d2-restoreminiviewer"]:hover {
+  width: 32px;
+  border: none;
+  border-radius: 50%;
+}
+
+.binf-widgets .d2-vdoc-widget-container .d2-vdoc-widget .cs-metadata .metadata-header-right-bar .csui-tabletoolbar .csui-rightToolbar [data-csui-command="d2-restoreminiviewer"] > .csui-toolitem {
+  margin: 0;
+}
+
+.binf-widgets .d2-vdoc-widget-container .d2-vdoc-widget .cs-metadata .metadata-header-right-bar .csui-tabletoolbar .csui-rightToolbar [data-csui-command="d2-restoreminiviewer"] > .csui-toolitem > .icon {
+  background-size: 28px;
+}
+
+.binf-widgets .d2-vdoc-widget-container .d2-vdoc-widget .cs-metadata.d2-vd-metadata-rightbar-active .metadata-content-header .metadata-header.with-right-bar > .d2-property-page-mask {
+  width: calc(100% + 7px);
+}
+
+.binf-widgets .d2-vdoc-widget-container .d2-vdoc-widget .cs-metadata .metadata-content-header .metadata-header.with-right-bar > .d2-property-page-mask {
+  width: calc(100% + 60px);
+  height: calc(100% + 3px);
+}
+
+.binf-widgets .d2-vdoc-widget-container:not(.vdoc-metadata-edit) .d2-vdoc-widget {
+  position: relative;
+}
+
+.binf-widgets .d2-vdoc-widget-container:not(.vdoc-metadata-edit) .d2-vdoc-widget .d2-split-panel-container,
+.binf-widgets .d2-vdoc-widget-container:not(.vdoc-metadata-edit) .d2-split-panel-content.secondary-pane,
+.binf-widgets .d2-vdoc-widget-container:not(.vdoc-metadata-edit) .secondary-pane .metadata-content-header.extended-headers,
+.binf-widgets .d2-vdoc-widget-container:not(.vdoc-metadata-edit) .secondary-pane .metadata-header {
+  position: initial;
+  position: static;
+}
+
+.binf-widgets .d2-vdoc-widget-container:not(.vdoc-metadata-edit) .secondary-pane .binf-dropdown {
+  position: absolute;
+}
+
+.binf-widgets .d2-vdoc-widget-container .d2-vdoc-widget .d2-split-panel-container.d2-lowest-resolution-split-panel .tertiary-pane,
+.binf-widgets .d2-vdoc-widget-container .d2-vdoc-widget .d2-split-panel-container.d2-low-resolution-split-panel .tertiary-pane,
+.binf-widgets .d2-vdoc-widget-container .d2-vdoc-widget .d2-split-panel-container.d2-medium-resolution-split-panel .tertiary-pane,
+.binf-widgets .d2-vdoc-widget-container .d2-vdoc-widget .d2-split-panel-container.d2-above-medium-resolution-split-panel .tertiary-pane {
+  min-width: 350px;
+  max-width: calc(100% - 864px);
+}
+
+.binf-widgets .d2-vdoc-widget-container .d2-vdoc-widget .d2-split-panel-container.d2-high-resolution-split-panel .tertiary-pane {
+  max-width: calc(100% - 924px);
+}
+
+.binf-widgets .d2-vdoc-accessibility {
+  margin-left: 6px;
+}
+
+.binf-widgets .vdoc-edit-view .d2-split-panel-container.d2-high-resolution-split-panel .d2-split-panel .primary-pane,
+.d2-edit-vdoc .d2-split-panel-container .d2-split-panel .d2-split-panel-content.primary-pane {
+  min-width: 450px;
+  max-width: 60%;
+  width: 60%;
+}
+
+.d2-edit-vdoc .d2-split-panel-container .csui-start-locations.binf-dropdown > div.dropdown-locations {
+  z-index: unset;
+}
+
+.d2-edit-vdoc .d2-split-panel-container .d2-target-browse .d2-search-box .d2-input {
+  opacity: 1;
+  
+}
