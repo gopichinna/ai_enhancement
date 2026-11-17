@@ -669,8 +669,14 @@ if (-not $SkipBuild) {
         Write-Host "    [OK] npm install completed." -ForegroundColor Green
         
         # 3. Maven Package (with Windows TrustStore enabled to pass corporate proxies)
-        Write-Host "    Compiling and packaging plugin (mvn clean package)..." -ForegroundColor Cyan
-        & "$MavenBinPath\mvn.cmd" -Djavax.net.ssl.trustStoreType=WINDOWS-ROOT clean package
+        Write-Host "    Purging any stale failed download markers (*.lastUpdated) from Maven cache..." -ForegroundColor Cyan
+        $m2Repo = Join-Path $env:USERPROFILE ".m2\repository"
+        if (Test-Path $m2Repo) {
+            Get-ChildItem -Path $m2Repo -Filter "*.lastUpdated" -Recurse -ErrorAction SilentlyContinue | Remove-Item -Force -ErrorAction SilentlyContinue
+        }
+
+        Write-Host "    Compiling and packaging plugin (mvn -U clean package)..." -ForegroundColor Cyan
+        & "$MavenBinPath\mvn.cmd" -U -Djavax.net.ssl.trustStoreType=WINDOWS-ROOT clean package
         
         $DistJar = Join-Path $WorkspaceRoot "dist\D2SV-AI-Summary-1.0.0.jar"
         if (Test-Path $DistJar) {
