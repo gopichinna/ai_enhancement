@@ -1,7 +1,5 @@
-define([
-  'nuc/lib/underscore',
-  'nuc/lib/jquery'
-], function (_, $) {
+(function () {
   'use strict';
-  return {};
-});
+  // D2SV-AI-Summary initialization hook
+})();
+
