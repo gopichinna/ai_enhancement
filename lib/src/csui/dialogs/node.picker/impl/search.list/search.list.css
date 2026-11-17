@@ -1,13 +1,13 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .searchheader-inner .csui-search-data-header {
-  margin: 0px;
+  margin: 0;
   padding-top: 5px;
 }
 
 .binf-widgets .searchheader-inner.csui-non-container-padding {
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .csui-node-picker .searchheader-inner .csui-search-header .headerCount {
@@ -25,14 +25,14 @@
   display: inline-block;
   font-weight: inherit;
   font-size: 16px;
-  margin-left: 0px;
+  margin-left: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   -webkit-flex: 0 1 auto;
-  margin-right: 0px;
+  margin-right: 0;
   width: auto;
   padding: 0;
 }
@@ -42,7 +42,7 @@
 }
 
 .binf-widgets .searchheader-inner .csui-search-header {
-  padding: 0px;
+  padding: 0;
   line-height: 16px;
 }
 

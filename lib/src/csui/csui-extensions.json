@@ -76,7 +76,7 @@
       "modules": {
         "csui": {
           "version": "1.0",
-          "helpDocId": "cssui240400-h-ugd",
+          "helpDocId": "cssui250400-h-ugd",
           "contextualHelp" : {
             "search" : "csui-search-so",
             "properties" : "csui-metadata-bg",
@@ -215,8 +215,11 @@
           "csui/utils/commands/reserve",
           "csui/utils/commands/request.reservation",
           "csui/utils/commands/run.livereport",
-          "csui/utils/commands/sign.out",
+          "csui/utils/commands/sign.out",       
           "csui/utils/commands/switch.to.classic",
+          "csui/utils/commands/switch.to.jato",
+          "csui/utils/commands/switch.to.smartview",
+          "csui/utils/commands/switch.to.theme",
           "csui/utils/commands/unreserve",
           "csui/utils/commands/unrequest.reservation",
           "csui/utils/commands/user.profile",
@@ -250,6 +253,7 @@
           "csui/utils/commands/collection/collect",
           "csui/utils/commands/edit.perspective",
           "csui/utils/commands/edit.multiple.perspectives",
+          "csui/utils/commands/manage.branding",
           "csui/utils/commands/create.perspective",
           "csui/utils/commands/personalize.page",
           "csui/utils/commands/version.settings",
@@ -258,7 +262,14 @@
           "csui/utils/commands/restructure.command",
           "csui/utils/commands/recycle.bin/navigate.to.recyclebin",
           "csui/utils/commands/recycle.bin/purge",
-          "csui/utils/commands/recycle.bin/restore"
+          "csui/utils/commands/recycle.bin/restore",
+          "csui/utils/commands/perspective.delete",
+          "csui/utils/commands/perspective.duplicate",
+          "csui/utils/commands/perspective.rename",
+          "csui/utils/commands/perspective.admin.default",
+          "csui/utils/commands/perspective.reset",
+          "csui/utils/commands/perspective.enable",
+          "csui/utils/commands/perspective.disable"
         ],
         "cop-temporary": [
           "csui/temporary/cop/commands/open.blog",
@@ -268,9 +279,6 @@
           "csui/temporary/cop/commands/open.mailstore"
         ]
       }
-    },
-    "csui/utils/commands/table.settings.description": {
-      "enabled": false
     },
     "csui/utils/commands/open.plugins/open.plugins": {
       "extensions": {

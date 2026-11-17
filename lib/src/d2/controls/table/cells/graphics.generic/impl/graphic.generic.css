@@ -1,0 +1,59 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-nodetable .binf-table tr:not(.csui-details-row) .d2-graphic-generic-cell .d2-graphic-icon,
+.binf-widgets .csui-nodetable .binf-table tr.csui-details-row .d2-graphic-generic-cell .d2-graphic-icon,
+.binf-widgets .csui-thumbnail-item-container .d2-graphic-generic-cell .d2-graphic-icon {
+    height: 22px;
+    width: 22px;
+    padding: 0;
+    margin-top: 8px;
+    display: inline-flex;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr:not(.csui-details-row) .d2-graphic-generic-cell .d2-table-cell-text,
+.binf-widgets .csui-nodetable .binf-table tr.csui-details-row .d2-graphic-generic-cell .d2-table-cell-text,
+.binf-widgets .csui-thumbnail-item-container .d2-graphic-generic-cell .d2-table-cell-text {
+    width:calc(100% - 30px);
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr:not(.csui-details-row) .d2-graphic-generic-cell .d2-graphic-column-container,
+.binf-widgets .csui-nodetable .binf-table tr.csui-details-row .d2-graphic-generic-cell .d2-graphic-column-container,
+.binf-widgets .csui-thumbnail-item-container .d2-graphic-generic-cell .d2-graphic-column-container {
+    padding-left: 0;
+    display: flex;
+    height: 100%;
+}
+
+
+.binf-widgets .csui-nodetable .binf-table tr.csui-state-hover:not(.binf-active) .d2-graphic-generic-cell {
+    color: #333333 !important;
+    background-color: #BAC9CE !important;
+}
+
+.binf-widgets .csui-nodetable .binf-table.csui-nowrap-table tr.csui-state-hover:not(.binf-active) .d2-graphic-generic-cell {
+    background-color: #B2BEC5 !important;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr.binf-active .d2-graphic-generic-cell {
+    color: #333333 !important;
+    background-color: #CBD3D9 !important;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr:not(.binf-active):active .d2-graphic-generic-cell,
+.binf-widgets .csui-nodetable .binf-table tr.binf-active:active .d2-graphic-generic-cell,
+.binf-widgets .csui-nodetable .binf-table.csui-nowrap-table tr:not(.binf-active):active .d2-graphic-generic-cell,
+.binf-widgets .csui-nodetable .binf-table.csui-nowrap-table tr.binf-active:active .d2-graphic-generic-cell {
+    background-color: #98A8B2 !important;
+}
+
+.csui-nodetable .binf-table.csui-nowrap-table > tbody > tr > td.csui-column-highlight.d2-graphic-generic-cell {
+    background-color: #E1E8f6 !important;
+    color: #333333 !important;
+}

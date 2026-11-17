@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-body .d2-wizard-step-view .d2-templates {
   height: 100%;
   min-width: 200px;
@@ -28,9 +27,7 @@
 }
 
 .binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-body .d2-wizard-step-view .d2-templates .d2-template-container {
-  margin-bottom: 16px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 8px 8px 16px 8px;
 }
 
 .d2-templates .d2-preset-templates .d2-table tbody {
@@ -458,10 +455,6 @@
   flex: 0 0 auto;
 }
 
-.d2-templates .template-title.d2-grid-border {
-  border-bottom: 1px solid #CCCCCC;
-}
-
 .binf-widgets .d2-templates .binf-table > tbody > tr.binf-active > td {
   background-color: unset;
 }
@@ -521,9 +514,12 @@
   background-position: center 16px;
 }
 
+
+
 .d2-templates .binf-table.dataTable  >  thead  >  tr  >  th {
   height: 3em;
 }
+
 
 .binf-widgets .d2-templates .binf-table.dataTable tr td {
   border-top: none;
@@ -662,4 +658,12 @@
 
 .binf-widgets .d2-templates .search-box.csui-table-searchbox .csui-table-search-input{
   border-radius: 3px;
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-body .d2-wizard-step-view .d2-templates .otc-collapsible-group {
+  margin-bottom: 16px
+}
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-body .d2-wizard-step-view .d2-templates .otc-collapsible-group:focus {
+  outline: none;
 }

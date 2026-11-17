@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .icon-settings-view {
     display: flex;
@@ -32,7 +32,7 @@
 }
 
 .binf-widgets .icon-settings-view .icon-them-container:focus-within {
-    -webkit-box-shadow: inset 0 0 0 1px #2e3d98, inset 0 0 0 2px #fff;
-    box-shadow: inset 0 0 0 1px #2e3d98, inset 0 0 0 2px #fff;
+    -webkit-box-shadow: inset 0 0 0 1px #2e3d98, inset 0 0 0 2px #ffffff;
+    box-shadow: inset 0 0 0 1px #2e3d98, inset 0 0 0 2px #ffffff;
     outline: 0;
 }

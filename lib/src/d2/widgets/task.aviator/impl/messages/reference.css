@@ -1,0 +1,123 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 4px;
+
+  
+  overflow: hidden;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel li:not(.aie-workspace) > .aie-chat-reference {
+  flex-basis: 100%;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference .aie-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-workspace .aie-chat-reference {
+  color: #1A6AFF;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-workspace .aie-chat-reference:hover,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-workspace .aie-chat-reference:active,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-workspace .aie-chat-reference:focus,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-workspace .aie-chat-reference:focus-visible {
+  color: #2F4ED1;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-workspace .aie-chat-reference .aie-title:visited,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-workspace .aie-chat-reference .aie-title:hover,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-workspace .aie-chat-reference .aie-title:active,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-workspace .aie-chat-reference .aie-title:focus,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-workspace .aie-chat-reference .aie-title:focus-visible {
+  border-bottom: 1px solid var(--brand-text-hyperlink-on-light-hover, #2F4ED1);
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel li:not(.aie-workspace) > .aie-chat-reference,
+.binf-widgets .aie-chat-panel.task-aviator-panel li:not(.aie-workspace) > .aie-chat-reference:visited,
+.binf-widgets .aie-chat-panel.task-aviator-panel li:not(.aie-workspace) > .aie-chat-reference:hover,
+.binf-widgets .aie-chat-panel.task-aviator-panel li:not(.aie-workspace) > .aie-chat-reference:active,
+.binf-widgets .aie-chat-panel.task-aviator-panel li:not(.aie-workspace) > .aie-chat-reference:focus,
+.binf-widgets .aie-chat-panel.task-aviator-panel li:not(.aie-workspace) > .aie-chat-reference:focus-visible {
+  color: #333333;
+  text-decoration: none;
+  align-items: flex-start;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list li:not(.aie-workspace):hover .aie-title,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list li:not(.aie-workspace):focus-within .aie-title {
+  color: #5C707D;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference:hover,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference:focus-visible,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference:active {
+  color: #5c707d;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-workspace .aie-chat-reference .aie-title {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference .csui-icon-group,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference .csui-icon-group .csui-node-type-icon,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference .csui-icon-group .csui-node-type-image {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-workspace .aie-chat-reference .csui-icon-group {
+  display: none;
+}
+
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list li .aie-actions {
+  display: none;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list li:hover .aie-actions,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list li:focus-within .aie-actions {
+  display: flex;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel ul.aie-chat-reference-list li otc-overflow-container {
+  display: none;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list li:not(.aie-workspace) {
+  height: 36px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-workspace {
+  height: 32px;
+  border-bottom: 1px solid white;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel ul.aie-chat-reference-list li.aie-workspace:hover otc-overflow-container,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list li.aie-workspace:focus-within otc-overflow-container {
+  display: flex;
+  padding-right: 14px;
+  width: auto;
+
+  
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel ul.aie-chat-reference-list li:not(.aie-workspace):hover otc-overflow-container,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list li:not(.aie-workspace):focus-within otc-overflow-container {
+  display: flex;
+  padding-right: 14px;
+  width: auto;
+}
+

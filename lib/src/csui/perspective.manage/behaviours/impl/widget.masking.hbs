@@ -6,30 +6,45 @@
     <div class="csui-pman-widget-error">
       <div class="csui-pman-widget-error-heading"> {{widgetTitle}}</div>
       <div class="csui-pman-widget-error-body">
-        <div class="csui-pman-widget-error-icon"></div>
+        {{#if isJATO}}
+          <otc-icon class="csui-pman-widget-error-jato-icon" type="raw" svg="{{errorIconSVG}}"></otc-icon>
+        {{else}}
+          <div class="csui-pman-widget-error-icon"></div>
+        {{/if}}
         <div class="csui-pman-widget-error-message"> {{configNeeded}}</div>
       </div>
     </div>
     <div class="csui-pman-perspective-actions">
-      <button class="csui-pman-perspective-btn csui-pman-widget-edit icon-edit"
+      {{#if isJATO}}
+        <otc-button class="csui-pman-perspective-btn csui-pman-widget-edit"
+                title="{{editWidget}}" size="small">
+                <otc-icon svg="{{informationIconSVG}}" ispresentation></otc-icon>
+        </otc-button>
+        <otc-button class="csui-pman-perspective-btn csui-pman-widget-close"
+                title="{{removeWidget}}" size="small">
+                  <otc-icon class="csui-pman-widget-close-icon" svg="{{closeIconSVG}}" ispresentation></otc-icon>
+        </otc-button>
+      {{else}}
+        <button class="csui-pman-perspective-btn csui-pman-widget-edit icon-edit"
               title="{{editWidget}}"></button>
-      <button class="csui-pman-perspective-btn csui-pman-widget-close clear-icon"
-              title="{{removeWidget}}"></button>
+        <button class="csui-pman-perspective-btn csui-pman-widget-close clear-icon"
+                title="{{removeWidget}}"></button>
+      {{/if}}
     </div>
   {{else}}
     <div class="csui-pman-widget-personalize-mask text-center">
-      <button class="binf-btn csui-pman-personalize-btn csui-pman-hide-show-toggle"
+      <otc-button class="csui-pman-personalize-btn csui-pman-hide-show-toggle" type="primary"
               title="{{hideShowToggle}}"
         {{#if isWidgetHidden}}
-              aria-label="{{showWidgetriaLabel}}"
+              arialabel="{{showWidgetriaLabel}}"
         {{else}}
-              aria-label="{{hideWidgetAriaLabel}}"
+              arialabel="{{hideWidgetAriaLabel}}"
         {{/if}}
       >{{hideShowToggle}}
-      </button>
+      </otc-button>
     </div>
   {{/if}}
 </div>
 
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

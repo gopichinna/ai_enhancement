@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .cs-dialog.csui-conflict-dialog {
   overflow: auto;
@@ -8,7 +8,7 @@
 .cs-dialog.csui-conflict-dialog.csui-individual .binf-modal-content {
   font-size: 14px;
   line-height: 16px;
-  color: #333333;
+  color: var(--jato-typography-text-color-primary, #333333);
   border: 1px solid #a9a9a9;
 }
 
@@ -23,17 +23,17 @@
 }
 
 .cs-dialog.csui-conflict-dialog.csui-individual .binf-modal-header > div.csui-numConflicts {
-  color: #df3324;
+  color: var(--jato-color-firebrick-1725, #df3324);
   font-size: 14px;
 }
 
 .cs-dialog.csui-conflict-dialog.csui-individual .binf-modal-body {
   font-style: oblique;
-  padding: 0px;
+  padding: 0;
   word-wrap: break-word;
   line-height: 1.1em;
   background-color: #ffffff;
-  margin: 0px
+  margin: 0
 }
 
 .cs-dialog.csui-conflict-dialog.csui-individual button {
@@ -43,19 +43,19 @@
   margin-left: 16px;
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .cs-dialog.csui-conflict-dialog.csui-individual .binf-modal-dialog {
     width: 600px;
   }
 }
 
-@media (max-width: 640px) {
+@media (width <= 640px) {
   .cs-dialog.csui-conflict-dialog.csui-individual .binf-modal-dialog {
     width: 90%;
   }
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .cs-dialog.csui-conflict-dialog.csui-individual .binf-modal-dialog {
     width: 72%;
     max-width: 1088px;

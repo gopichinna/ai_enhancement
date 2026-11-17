@@ -1,6 +1,11 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme='cf']) {
+  --jatx-csui-menuitem-font-size: 13px;
+  --jatx-csui-menuitem-line-height: 18px;
+}
+
 .binf-widgets .csui-control-userpicker {
   position: relative;
   width: 100%;
@@ -22,6 +27,7 @@
   width: 1em;
   right: 2.5em;
   top: 0.5625em;
+  cursor: pointer;
 }
 
 .csui-control-userpicker .cs-search-icon {
@@ -34,27 +40,48 @@
 
 .csui-control-userpicker .binf-dropdown-menu {
   font-size: 16px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .csui-control-userpicker .binf-dropdown-menu > li {
   margin: 0;
-  padding: 1em;
-  border-bottom: 0.063em solid #e6e6e6;
+  padding: var(--jato-padding-lrg, 6px) var(--jato-padding-xxl, 16px);
+  border-bottom: var(--jatx-const-none, 0.063em solid #e6e6e6);
   overflow: auto;
   height: auto;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
+[data-smart-theme]:not([data-smart-theme=cf]) .csui-control-userpicker .binf-dropdown-menu > li {
+  color: var(--jato-cta-content-color-tertiary, #333333);
+  gap: 8px;
+  padding: 8px 16px 8px 8px; 
+  align-items: center;
+  border-radius: 6px;
+  cursor: default;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+
 .csui-control-userpicker .binf-dropdown-menu > li.binf-active {
-  color: #333333;
-  background-color: #b2bec5;
-  border: 1px solid #556771;
+  color: var(--jato-cta-content-color-tertiary, #333333);
+  background-color: var(--jato-background-rows-hover,#b2bec5);
+  border: var(--jatx-const-none, 1px solid #556771);
   cursor: pointer;
 }
 
 .csui-control-userpicker .binf-dropdown-menu > li > a {
-  padding: 0px 0px;
+  padding: 0 0;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .csui-control-userpicker .binf-dropdown-menu > li > a {
+  color: var(--jato-cta-content-color-tertiary, #333333);
+  font-size: var(--jatx-csui-menuitem-font-size, 14px);
+  gap: var(--jato-margin-med, 8px);
+  line-height: var(--jatx-csui-menuitem-line-height, 20px);
 }
 
 .csui-control-userpicker .scroll-container {
@@ -63,17 +90,25 @@
   z-index: 1002;
   border: 1px solid rgba(0, 0, 0, .15);
   border-radius: 4px;
-  background-color: #fff;
+  background-color: var(--jato-background-elevation-level-4, #ffffff);
 }
 
 .csui-control-userpicker .scroll-container .binf-dropdown-menu {
   position: static;
-  border: 0px;
-  border-radius: 0px;
-  padding: 0px;
-  margin: 0px;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
   width: 100%;
   max-width:100%;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .csui-control-userpicker .scroll-container .binf-dropdown-menu {
+  animation: 0.3s ease-in-out 0s 1 normal none running fade-in-and-slide-down;
+  background: var(--jato-background-elevation-level-4);
+  border-radius: 0 0 var(--jato-radii-lrg, 0) var(--jato-radii-lrg, 0);
+  box-shadow: var(--jato-elevation-shadow-level-4);
+  padding: 2px;
 }
 
 .csui-userpicker-item .member-picture.binf-disabled {
@@ -97,7 +132,7 @@
 }
 
 .csui-userpicker-item .member-info > span {
-  color: #414042;
+  color: var(--jato-typography-text-color-secondary, #414042);
 }
 
 .csui-userpicker-item .member-info.binf-disabled > span {
@@ -105,7 +140,7 @@
 }
 
 .csui-userpicker-item .member-info .name {
-  font-size: 1em;
+  font-size: var(--jatx-csui-input-font-size, 1em);
   line-height: normal;
   width: 100%;
   overflow: hidden;
@@ -113,13 +148,20 @@
 }
 
 .csui-userpicker-item .member-info .email,
+.binf-widgets .csui-permissions-list-container .csui-inline-owner-change .csui-userpicker-item .member-info .email,
 .csui-userpicker-item .member-info .title,
+.binf-widgets .csui-permissions-list-container .csui-inline-owner-change .csui-userpicker-item .member-info .title,
 .csui-userpicker-item .member-info .department,
+.binf-widgets .csui-permissions-list-container .csui-inline-owner-change .csui-userpicker-item .member-info .department,
 .csui-userpicker-item .member-info .office,
+.binf-widgets .csui-permissions-list-container .csui-inline-owner-change .csui-userpicker-item .member-info .office,
 .csui-userpicker-item .member-info .group-title,
+.binf-widgets .csui-permissions-list-container .csui-inline-owner-change .csui-userpicker-item .member-info .group-title,
 .csui-userpicker-item .member-info .leader,
-.csui-userpicker-item .member-info .leader-title {
-  font-size: 0.75em;
+.binf-widgets .csui-permissions-list-container .csui-inline-owner-change .csui-userpicker-item .member-info .leader,
+.csui-userpicker-item .member-info .leader-title
+.binf-widgets .csui-permissions-list-container .csui-inline-owner-change .csui-userpicker-item .member-info .leader-title {
+  font-size: var(--jato-measure-12, 0.75em);
   line-height: 1.175em;
   clear: both;
   width: 100%;
@@ -136,7 +178,7 @@
 
 .csui-userpicker-item .member-info.binf-disabled .message {
   color: #df3324;
-  font-size: 0.75em;
+  font-size: var(--jato-measure-12, 0.75em);
   line-height: 0.875em;
   clear: both;
   margin-top: 0.75em;
@@ -145,7 +187,7 @@
 .csui-control-userpicker .binf-dropdown-menu .csui-user-picker-no-results,
 .csui-control-userpicker .binf-dropdown-menu .csui-user-picker-no-results:hover {
   padding: 10px;
-  background-color: #3b73af;
+  background-color: var(--jato-background-elevation-level-4, #3b73af);
   color: #ffffff;
 }
 

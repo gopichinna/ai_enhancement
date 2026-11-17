@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 "use strict";
 
@@ -85,7 +85,7 @@ async function updateSmartView(pluginPath) {
   updateTemplateFile(join(svAppTemplatePath, "namespace.setup.js"), join(smartviewPath, `${pluginNameSpace}.setup.js`), {
     relativeWorkspacePath: relativeWorkspacePath
   });
-  copySync(join(svAppTemplatePath, ".csslintrc"), join(smartviewPath, ".csslintrc"), {
+  copySync(join(svAppTemplatePath, ".stylelintrc.yml"), join(smartviewPath, ".stylelintrc.yml"), {
     overwrite: true
   });
   copySync(join(svAppTemplatePath, ".eslintrc.yml"), join(smartviewPath, ".eslintrc.yml"), {

@@ -2,9 +2,7 @@
 
 **Module: csui/controls/checkbox/checkbox.view**
 
-The checkbox.view.js implements a marionette.js view that renders a checkbox but without using a 
-native html input type="checkbox" element. Instead it is displaying a custom styled checkbox 
-depending on the checkbox state.
+The checkbox.view.js implements a marionette.js view that renders a checkbox throught the otc-checkbox webcomponent.
 
 The checkbox.view creates a model in its constructor to store view state.
 
@@ -28,17 +26,8 @@ checked
 ariaLabel
 : aria-label attribute set on the HTML markup of the control.
 
-ariaLabelledBy
-: aria-labelledBy attribute set on the HTML markup of the control. When this is present a ariaLabel value will be ignored.
-
-titleForCheckedFalse
-: title attribute set on the HTML markup of the control for the checked=false state.
-
-titleForCheckedTrue
-: title attribute set on the HTML markup of the control for the checked=true state.
-
-titleForCheckedMixed
-: title attribute set on the HTML markup of the control for the checked=mixed state.
+infoMessage
+: additional message providing more information.
 
 title
 : title attribute set on the HTML markup of the control. Default is ''.
@@ -49,7 +38,7 @@ model
 
 ## Public Methods
 
-The checkbox view has a backbone model for the state and aria-label text and is accessible via 
+The checkbox view has a backbone model for the state and aria-label text and is accessible via
 the view.
 
 Additionally there are the following methods:
@@ -58,7 +47,7 @@ setDisabled(bool: disabled)
 : render the checkbox as disabled and don't fire the clicked event
 
 setChecked(string: checked)
-: set the checked attribute in the view model and render the checkbox depending on its new 
+: set the checked attribute in the view model and render the checkbox depending on its new
 checked value. See above for valid checked values.
 
 ## Events

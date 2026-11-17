@@ -1,0 +1,228 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .smart-inlinepanel-siblings {
+  
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
+}
+
+.binf-widgets.smart-inlinepanel-open .smart-inlinepanel-wrapper {
+  display: flex;
+}
+
+.binf-widgets.smart-inlinepanel-open .smart-inlinepanel-wrapper:has(.cs-flow-perspective) {
+ margin-top: 7.5px;
+}
+
+.binf-widgets .smart-content-sm {
+  .binf-col-xl-12 {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .binf-col-xl-9 {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .binf-col-xl-6 {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .binf-col-xl-3 {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}
+
+.binf-widgets .smart-content-md {
+  .binf-col-xl-12 {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .binf-col-xl-9 {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .binf-col-xl-6 {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .binf-col-xl-3 {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+}
+
+.binf-widgets .smart-content-lg {
+  .binf-col-xl-12 {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .binf-col-xl-9 {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .binf-col-xl-6 {
+    flex: 0 0 66.67%;
+    width: 66.67%;
+  }
+
+  .binf-col-xl-3 {
+    flex: 0 0 33.33%;
+    width: 33.33%;
+  }
+}
+
+
+.binf-widgets .cs-left-center-right-perspective.smart-content-lg {
+  .binf-col-xl-6 {
+    width: 50%;
+  }
+
+  .binf-col-xl-3 {
+    width: 25%;
+  }
+
+  .binf-col-xl-3.binf-col-lg-pull-6 {
+    right: 50%;
+  }
+}
+
+.binf-widgets .cs-left-center-right-perspective.smart-content-md,
+.binf-widgets .cs-left-center-right-perspective.smart-content-sm {
+  .binf-col-xl-push-3 {
+    left: 0;
+  }
+
+  .binf-col-xl-pull-6 {
+    right: 0%;
+  }
+}
+
+.binf-widgets .smart-content-xl {
+  .binf-col-xl-12 {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .binf-col-xl-9 {
+    flex: 0 0 75%;
+    width: 75%;
+  }
+
+  .binf-col-xl-6 {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+
+  .binf-col-xl-3 {
+    flex: 0 0 25%;
+    width: 25%;
+  }
+}
+
+.binf-widgets .smart-inlinepanel {
+  background-color: var(--jato-background-elevation-level-2, #fff);
+  padding: 15px;
+}
+
+.binf-widgets .smart-inlinepanel {
+  height: 100%;
+  width: 100%;
+}
+
+.binf-widgets.smart-inlinepanel-open .cs-perspective-with-breadcrumb-view {
+  padding-right: 0;
+}
+
+.binf-widgets.smart-inlinepanel-open .cs-perspective-with-breadcrumb-view .grid-rows.cs-zone-perspective > .binf-row > .row-xs-full {
+  padding-left: 0;
+  padding-right: 7.5px;
+  padding-bottom: 7.5px;
+
+}
+.binf-widgets.smart-inlinepanel-open .cs-perspective-with-breadcrumb-view .grid-rows.cs-zone-perspective.smart-content-lg > .binf-row > .row-xs-full {
+  padding-bottom: 0;
+}
+
+
+
+@keyframes panelAnimation {
+  from {
+    flex-basis: var(--panel-start);
+    width: var(--panel-start);
+  }
+
+  to {
+    flex-basis: var(--panel-end);
+    width: var(--panel-end);
+  }
+}
+
+
+.binf-widgets.smart-inlinepanel-open .smart-inlinepanel-siblings {
+  border-radius: var(--jato-radii-xl, 0);
+}
+
+.binf-widgets.smart-inlinepanel-open .smart-inlinepanel-left-column {
+  --panel-start: 100%;
+  --panel-end: 70%;
+  flex-basis: var(--panel-end);
+  width: var(--panel-end);
+  border: none;
+  overflow-x: hidden;
+  animation: panelAnimation 0.3s ease-in-out;
+}
+
+.binf-widgets .smart-inlinepanel-left-column,
+.binf-widgets.smart-inlinepanel-close .smart-inlinepanel-siblings.smart-inlinepanel-left-column {
+  --panel-start: 70%;
+  --panel-end: 100%;
+  flex-basis: var(--panel-end);
+  width: var(--panel-end);
+  animation: panelAnimation 0.3s ease-in-out;
+}
+
+.binf-widgets .smart-inlinepanel-wrapper div.smart-inlinepanel,
+.binf-widgets.smart-inlinepanel-close .smart-inlinepanel-wrapper div.smart-inlinepanel-siblings.smart-inlinepanel {
+  --panel-start: 30%;
+  --panel-end: 0%;
+  flex-basis: var(--panel-end);
+  width: var(--panel-end);
+  animation: panelAnimation 0.3s ease-in-out;
+}
+
+.binf-widgets.smart-inlinepanel-open .smart-inlinepanel-wrapper div.smart-inlinepanel {
+  background-color: var(--jato-background-elevation-level-2, #fff);
+  border: 1px solid var(--jato-border-color-primary, 0);
+  margin-left: 7px;
+
+  --panel-start: 0%;
+  --panel-end: 30%;
+
+  flex-basis: var(--panel-end);
+  width: var(--panel-end);
+  animation: panelAnimation 0.3s ease-in-out;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.binf-widgets.smart-inlinepanel-close .smart-inlinepanel-siblings {
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.binf-widgets.smart-inlinepanel-open .smart-inlinepanel-wrapper .cs-flow-perspective.smart-inlinepanel-left-column {
+  margin-top: -7.5px;
+}
+

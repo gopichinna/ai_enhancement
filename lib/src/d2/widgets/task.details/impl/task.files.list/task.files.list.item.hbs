@@ -1,9 +1,39 @@
+
+{{#if multipackage}}
+  {{#if pckName}}
+    <div class="pck-name">
+      {{pckName}}
+      {{#if ismandatory}}
+          <span class="mandatory">*</span>
+      {{/if}}
+    </div>
+  {{/if}} 
+{{/if}}
+
 <div class="d2-icon-checkbox">
-  <div class="selection-cb-container"></div>
-  {{#if enableIcon}}<span class="csui-type-icon {{icon}}"></span>{{/if}}
-  <span title="{{name}}" class="list-item-title" role="link" aria-label="{{itemLabel}}">{{name}}</span>
+     <div class="selection-cb-container"></div>    
+    {{#if enableIcon}}<span class="csui-type-icon {{icon}}"></span>{{/if}}    
+    {{#if name}}
+    <span title="{{name}}" class="list-item-title" role="link" aria-label="{{itemLabel}}">
+    {{name}}
+    </span>
+    {{/if}} 
+     {{#if pckNode}}
+     <span title="{{packageName}}" class="list-item-pck" role="link" aria-label="{{packageName}}">
+      {{packageName}}
+       {{#if ismandatory}}
+        <span class="mandatory">*</span>
+       {{/if}}
+
+      </span>
+     {{/if}}
+ 
 </div>
+
+
+<div class="inline-action-bar-containerpck binf-hidden"></div>
 <div class="inline-action-bar-container binf-hidden"></div>
+
 {{#if showRelationCount}}
 <div class="d2-task-file-relation">
   <span class="d2-task-file-relation-icon"></span>
@@ -14,4 +44,4 @@
 </div>
 {{/if}}
 <hr />
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .list-selection {
     background: #FFFFFF;
@@ -100,4 +100,5 @@
 .binf-widgets .d2-stepper-wizard.wizard-large .list-selection .item-details,
 .binf-widgets .d2-stepper-wizard.wizard-x-large .list-selection .item-details{
     width: 100%;
+    min-width: 0; 
 }

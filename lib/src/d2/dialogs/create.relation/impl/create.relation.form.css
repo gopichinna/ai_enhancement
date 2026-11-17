@@ -1,12 +1,12 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-create-relation-form{
   padding-left: 50px;
 }
 
 .binf-modal-dialog .binf-modal-body .d2-wizard-step-view .d2-create-relation{
-  padding: 25px 40px;
+  padding: 32px 64px 0 64px;
   height: 100%;
 }
 
@@ -18,39 +18,59 @@
   color: #333333;
   border-bottom: 1px solid #CCCCCC;
 }
-.binf-widgets .d2-create-relations-wizard .d2-wizard-step-view .relation-parent .cs-simplelist .cs-list-group span.csui-type-icon.csui-icon{
-  height: 28px;
-  margin-right: 8px;
+
+.binf-widgets .d2-create-relations-wizard .d2-wizard-step-view .relation-parent .cs-simplelist .cs-list-group .d2-create-relations-item-icon{
+  height: 32px;
+  width: 32px;
+  margin-right: 13px;
+  margin-left: 13px;
 }
+
 .d2-create-relations-wizard .d2-wizard-step-view .relation-parent{
   padding-top: 10px;
-  width: 608px;
-}
-.binf-widgets .d2-create-relations-wizard .binf-modal-dialog .parent-section .relation-parent .cs-content{
   width: 100%;
 }
+
+.binf-widgets .d2-create-relations-wizard .binf-modal-dialog .parent-section .relation-parent .cs-content{
+  background: none;
+  height: 47px;
+}
+
+.binf-widgets .d2-create-relations-wizard .binf-modal-dialog .parent-section .relation-parent
+.cs-content:has(.binf-help-block.alpaca-message:not(.binf-hidden)) {
+  height: auto;
+}
+
 .d2-create-relations-wizard .d2-wizard-step-view .relation-direction{
   height: 48px;
   width: 48px;
-  margin: 16px calc(50% - 24px);
+  margin: 24px calc(50% - 24px);
+  margin-bottom: 13px;
   background: url(images/relation_direction_48.svg);
 }
+
 .d2-create-relations-wizard .d2-wizard-step-view .relation-direction.reverse{
   transform: rotate(180deg);
 }
+
 .d2-create-relations-wizard .d2-wizard-step-view .relation-child-section{
   height: 60%;
 }
+
 .binf-widgets .d2-create-relations-wizard.d2-stepper-wizard .relation-toolbar-panel{
   border-bottom: 1px solid #CCCCCC;
   width: 100%;
+  max-height: calc(100% - 40px);
 }
+
 .binf-widgets .d2-create-relations-wizard.d2-stepper-wizard .relation-toolbar-panel .relation-sub-toolbar{
   display: flex;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-create-relation-form .csui-field-select>button{
   border: none;
 }
+
 .binf-widgets .d2-create-relations-wizard.d2-stepper-wizard .relation-toolbar-panel .relation-add-child-button{
   width: 16px;
   height: 16px;
@@ -61,18 +81,20 @@
   margin-top: 3px;
   cursor: pointer;
 }
+
 .binf-widgets .d2-create-relations-wizard.d2-stepper-wizard .relation-toolbar-panel .relation-add-child-button.disabled{
   background: url(images/add_button_dis.svg);
   cursor: default;
 }
+
 .child-list-view .cs-list-group > div{
   border-bottom: 1px solid #E6E6E6;
 }
+
 .binf-widgets .d2-create-relations-wizard .parent-section .relation-parent .list-item-title{
-  font-size: 14px;
-  color: #333333;
-  line-height: 2em;
+  padding: 0;
 }
+
 .child-list-view .cs-list-group .binf-list-group-item:hover .remove-button,
 .child-list-view .cs-list-group .binf-list-group-item.active .remove-button{
   background: url('images/close_button.svg');
@@ -82,54 +104,74 @@
   align-self: center;
   cursor: pointer;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .cs-list-group .binf-list-group-item.active,
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .cs-list-group .binf-list-group-item:hover{
   background: #B2BEC5;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .cs-list-group .binf-list-group-item{
-  border-left: none;
-  height: 100%;
   background-color: white;
   display: flex;
-  width: 610px;
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px solid #E6E6E6;
 }
- .binf-widgets .child-list-view .cs-simplelist .cs-list-group .binf-list-group-item .csui-type-icon.csui-icon{
-  height: 28px;
-  margin-top: -3px;
-  margin-right: 8px;
+
+.binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .cs-list-group .binf-list-group-item > * {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
+
+ .binf-widgets .child-list-view .cs-simplelist .cs-list-group .binf-list-group-item .d2-create-relations-item-icon{
+  height: 32px;
+  width: 32px;
+  margin-right: 13px;
+  margin-left: 13px;
+}
+
 .binf-widgets .d2-create-relations-wizard .parent-section .relation-parent .cs-list-group .binf-list-group-item{
-  width: 608px;
-  height: 42px;
+  width: 100%;
   background: #EDF0F2;
-  padding-top: 7px;
-  border-left: none;
+  padding: 0;
   display: flex;
 }
-.binf-widgets .d2-create-relations-wizard .child-list-view .cs-list-group span.list-item-title{
-  font-size: 14px;
-  line-height: 22px;
-  width: calc(100% - 42px);
+
+.binf-widgets .d2-create-relations-wizard .parent-section .relation-parent .cs-list-group .binf-list-group-item > *{
+  margin-top: 8px;
+  margin-bottom: 7px;
 }
+
+.binf-widgets .d2-create-relations-wizard .child-list-view .cs-list-group span.list-item-title{
+  padding: 0;
+  width: calc(100% - 79px);
+}
+
 .binf-widgets .d2-create-relations-wizard .parent-section .relation-parent .cs-list-group > div:hover{
 cursor: unset;
 }
+
 .child-list-view .cs-list-group > a:hover{
   cursor: unset;
   background: #B2BEC5;
 }
+
 .d2-create-relation-form .alpaca-field .csui-field-select .alpaca-control .cs-field-write .cs-field-write-inner>button{
   border: none;
 }
+
 .binf-widgets .d2-create-relations-wizard .binf-modal-content .binf-modal-body .empty-relations-view .d2-empty-relations-image{
-  background: url('images/relations_empty_image.svg');
+  background-image: url('images/relations_empty_image.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 98.5px;
   width: 220px;
-  height: 98.4px;
-  margin-top: 88px;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .cs-emptylist-text{
   top: 16px;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection.dropdown-button{
   height: 48px;
   width: 48px;
@@ -138,17 +180,21 @@ cursor: unset;
   margin-left: 291px;
   padding: 0;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection{
   align-self: center;
-  margin-top: 20px;
+  margin-top: 34.5px;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-create-relation-form .binf-row > div{
   width: 100%;
   padding: 0;
 }
+
 .d2-create-relations-wizard .d2-wizard-step-view .relation-child-section .relations-description-box{
-  width: 609px;
+  width: 100%;
 }
+
 .d2-create-relations-wizard .d2-wizard-step-view .relation-direction:hover,
 .child-list-view .cs-list-group .binf-list-group-item:hover .remove-button:hover,
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection.dropdown-button:hover,
@@ -156,45 +202,53 @@ cursor: unset;
 .binf-widgets .d2-create-relations-wizard.d2-stepper-wizard .relation-toolbar-panel > div.relation-add-child-button:hover{
   cursor: pointer;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view{
   height: auto;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-create-relation-form .binf-row > div{
   width: 80%;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-create-relation-form .binf-row .binf-col-sm-9{
   width: 100%;
 }
+
 .binf-widgets .d2-create-relations-wizard  .relation-child-section .child-list-view .cs-list-group > div{
   border-bottom: 1px solid #E6E6E6;
-  width: 608px;
+  width: 100%;
 }
-.binf-widgets .d2-create-relations-wizard .empty-view-area .empty-relations-view{
-  height: 200px;
-}
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .relations-description-box .binf-row > div{
   width: 100%;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .relations-description-box .binf-row .csui-field-textarea .binf-form-group > div{
   width: 100%;
   padding: 0;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .d2-empty-child-image{
-  height: 129px;
-  background: url(images/empty_child_image.svg);
+  height: 220px;
   width: 220px;
-  margin-top: 28px;
-  margin-bottom: 20px;
+  background-image: url(images/empty_child_image.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 34px;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .d2-add-button{
   background: url(images/add_48.svg);
   height: 48px;
   width: 48px;
 }
+
 .d2-create-relation-form .alpaca-field .csui-field-select .alpaca-control .cs-field-write .cs-field-write-inner>button:focus{
-  outline: 1px dotted #333;
+  outline: 1px dotted #333333;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .binf-row .csui-field-select .binf-form-group .binf-help-block.alpaca-message{
   margin-left: 16px;
 }
@@ -203,68 +257,86 @@ cursor: unset;
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .cs-simplelist .cs-content{
   overflow: visible;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .cs-empty-child-text{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-create-relation-form .binf-col-sm-9{
   width: 100%;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-create-relation-form{
   width: 100%;
   margin: 0;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .empty-relations-view .cs-emptylist-container{
   align-items: center;
+  background: none;
+  margin-top: 108px;
+  min-height: 0;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-create-relation-form{
   margin: 0;
   height: 0;
   width: 100%;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-create-relation-form .binf-row{
   margin-top: -6px;
   margin-left: 0;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner > button{
   border: none;
   display: flex;
   font-weight: bold;
   height: auto;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner > button{
   border: none;
   display: flex;
   justify-content: center;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner > button .icon-caret-down{
   margin-left: 5px;
   height: 12px;
   width: 12px;
   margin-top: 2px;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection{
   max-width: calc(100% - 30px);
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner > button{
   max-width: inherit;
   font-weight: bold;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner > button .icon-caret-down{
   margin-left: 5px;
   height: 12px;
   width: 12px;
   margin-top: 2px;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .cs-empty-child-text .csui-no-result-message{
   color: #333333;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner .binf-dropdown-menu .cs-label,
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner .cs-label,
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner .binf-dropdown-menu .cs-label,
@@ -273,27 +345,33 @@ cursor: unset;
   text-align: justify;
   white-space: pre-line;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection > button,
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-select.binf-dropdown{
   height: auto;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .binf-dropdown-menu > li > a,
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner .binf-dropdown-menu > li >a{
   height: auto;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner .binf-dropdown-menu{
   min-width: 50%;
   left: calc(50% - 171px);
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .binf-dropdown-menu{
   min-width: 50%;
 }
+
 .binf-widgets .d2-create-relations-wizard .d2-select.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a{
   line-height: 21px;
   min-height: 33px;
   display: flex;
   align-items: center;
 }
+
 .binf-widgets .d2-create-relations-wizard .binf-help-block{
   padding-left: 4px;
   box-shadow: 0 0 4px rgba(0, 0, 0, .3);
@@ -306,4 +384,10 @@ cursor: unset;
   color: red;
   margin-left: 4px;
   margin-bottom: 10px;
+}
+
+.binf-widgets .d2-create-relations-wizard .binf-modal-dialog .binf-modal-footer .binf-btn.applyToRemainingBtn{
+    float: left;
+    margin-left: 16px;
+    margin-top: 6px;
 }

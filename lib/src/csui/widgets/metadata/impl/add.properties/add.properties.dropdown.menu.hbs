@@ -1,11 +1,8 @@
-<div class="binf-dropdown">
-  <button id="{{btnId}}" type="button" class="binf-btn binf-dropdown-toggle"
-          data-binf-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-          aria-label="{{addTitleTooltip}}" title="{{addTitleTooltip}}">
-    <span class="csui-button-icon icon-toolbarAdd" title="{{addTitleTooltip}}"></span>
-  </button>
-  <ul class="binf-dropdown-menu" role="menu"></ul>
-</div>
+<otc-button type='subtle' arialabel='{{addTitleTooltip}}' title='{{addTitleTooltip}}'
+  {{#if isJATO}} size="small" {{else}} icon='{{iconName}}' {{/if}}>
+  {{#if isJATO}}<otc-icon svg='{{iconSVG}}' type='subtle'></otc-icon>{{/if}}
+</otc-button>
+<otc-menu role='menu' ariarole='menu' scrollable></otc-menu>
 <div class="csui-loading-parent-wrapper binf-disabled binf-hidden">
   <span class="csui-loading-dots-wrapper">
     <span class="csui-loading-dot"></span>
@@ -13,5 +10,4 @@
     <span class="csui-loading-dot"></span>
   </span>
 </div>
-
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

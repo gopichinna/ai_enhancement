@@ -1,5 +1,5 @@
 {{#if searchForms.recent_search_forms}}
-  <div aria-labelledby='recent_search_forms_header_{{cId}}' {{#if fromSearchBox}} role="navigation" {{/if}}>
+  <div {{#if fromSearchBox}} role="navigation" {{/if}}>
     <h2 id='recent_search_forms_header_{{cId}}'
         class='csui-search-label {{#if skipHeading}} binf-hidden {{/if}}'>
       {{labels.recentSearchFormsLabel}}
@@ -7,7 +7,7 @@
     <div id='recent_search_forms' class="csui-recent-search-form-container"></div>
   </div>
 {{/if}}
-
+  
 {{#if showMore}}
   <div class="csui-more-forms">
     <a href="javascript:void(0)" role="button" class="csui-searchforms-show-more"
@@ -17,7 +17,7 @@
 {{/if}}
 
 {{#if searchForms.personal_search_forms}}
-  <div aria-labelledby='personal_search_forms_header'>
+  <div>
     <h2 id='personal_search_forms_header'
         class='csui-search-label'>{{labels.personalSearchFormsLabel}}</h2>
     <div id='personal_search_forms' class="csui-personal-search-form-container"></div>
@@ -25,11 +25,11 @@
 {{/if}}
 
 {{#if searchForms.system_search_forms}}
-  <div aria-labelledby='system_search_forms_header'>
+  <div>
     <h2 id='system_search_forms_header'
         class='csui-search-label'>{{labels.systemSearchFormsLabel}}</h2>
     <div id='system_search_forms' class="csui-system-search-form-container"></div>
   </div>
 {{/if}}
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

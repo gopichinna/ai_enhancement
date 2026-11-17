@@ -1,12 +1,24 @@
 {{#if options.canWrite}}
   {{#if options.isMultiRowSetEnabled}}
     <div class="icon-container csui-array-bulk-edit csui-array-bulk-edit-set binf-hidden">
-      <div class="csui-icon-edit inline-edit-icon icon-edit csui-bulk-edit csui-bulk-edit-{{options
-      .uniqueId}}" title="{{options.messages.editFields}}" aria-label="{{options.messages.editFields}}" tabindex="0" data-cstabindex="0"></div>
+      {{#if options.isJATO}}
+        <otc-button  class="csui-icon-edit inline-edit-icon csui-bulk-edit csui-bulk-edit-{{options.uniqueId}}" arialabel="{{options.messages.editFields}}" type="subtle" size="small" tabindex="-1" data-cstabindex="-1" title="{{options.messages.editFields}}">
+          <otc-icon class="csui-bulk-edit-icon" svg="{{options.editIconSVG}}" type="subtle" isPresentation></otc-icon>
+        </otc-button>
+      {{else}}
+        <div class="csui-icon-edit inline-edit-icon icon-edit csui-bulk-edit csui-bulk-edit-{{options
+        .uniqueId}}" title="{{options.messages.editFields}}" aria-label="{{options.messages.editFields}}" tabindex="0" data-cstabindex="0"></div>
+      {{/if}}
       <div>
+      {{#if options.isJATO}}
+        <otc-button  class="csui-bulk-edit-cancel-{{options.uniqueId}} csui-icon-edit inline-edit-icon csui-bulk-edit-cancel binf-hidden" arialabel="{{options.messages.cancel}}" type="subtle" size="small" tabindex="-1" data-cstabindex="-1" title="{{options.messages.cancel}}">
+          <otc-icon class="csui-bulk-edit-cancel-icon" svg="{{options.editCancelIconSVG}}" type="subtle" isPresentation></otc-icon>
+        </otc-button>
+      {{else}}
         <span class="csui-bulk-edit-cancel-{{options.uniqueId}} csui-icon-edit inline-edit-icon
         edit-cancel csui-bulk-edit-cancel binf-hidden" title="{{options.messages.cancel}}" aria-label="{{options.messages.cancel}}"
         tabindex="-1" data-cstabindex="-1"></span>
+      {{/if}}
       </div>
     </div>
   {{else}}
@@ -24,9 +36,16 @@ data-alpaca-container-item-name="{{options.uniqueId}}">
   {{#if options.isMultiRowSetEnabled}}
    {{#if options.applyFlag}}
       <div class="icon-container apply-set binf-hidden">
+      {{#if options.isJATO}}
+          <otc-button class="csui-icon apply-all block binf-hidden" title="{{options.messages.titleApplyAll}}"
+              arialabel="{{options.messages.titleApplyAll}}" tabindex="0" size="small" type="subtle">
+              <otc-icon svg="{{options.actionApplyToAll}}"></otc-icon>
+          </otc-button>
+      {{else}}
          <button class="csui-icon apply-all block binf-hidden" title="{{options.messages.titleApplyAll}}"
          aria-label="{{options.messages.titleApplyAll}}" tabindex="0" data-cstabindex="0">
          </button>
+      {{/if}}
       </div>
    {{/if}}
   {{else}}
@@ -34,19 +53,38 @@ data-alpaca-container-item-name="{{options.uniqueId}}">
     {{else}}
       {{#if options.applyFlag}}
         <div class="icon-container apply-mv binf-hidden">
+        {{#if options.isJATO}}
+          <otc-button class="csui-icon apply-all block binf-hidden" title="{{options.messages.titleApplyAll}}"
+              arialabel="{{options.messages.titleApplyAll}}" tabindex="0" size="small" type="subtle">
+              <otc-icon svg="{{options.actionApplyToAll}}"></otc-icon>
+          </otc-button>
+        {{else}}
            <button class="csui-icon apply-all block binf-hidden" title="{{options.messages.titleApplyAll}}"
            aria-label="{{options.messages.titleApplyAll}}" tabindex="0" data-cstabindex="0">
            </button>
+        {{/if}}
         </div>
       {{/if}}
 
       <div class="icon-container csui-array-bulk-edit binf-hidden csui-array-bulk-edit-noset">
+      {{#if options.isJATO}}
+        <otc-button  class="csui-icon-edit inline-edit-icon csui-bulk-edit csui-bulk-edit-{{options.uniqueId}}" arialabel="{{options.messages.editFields}}" type="subtle" size="small" tabindex="-1" data-cstabindex="-1" title="{{options.messages.editFields}}">
+          <otc-icon class="csui-bulk-edit-icon" svg="{{options.editIconSVG}}" type="subtle"></otc-icon>
+        </otc-button>
+      {{else}}
         <div class="csui-icon-edit inline-edit-icon icon-edit csui-bulk-edit csui-bulk-edit-{{options
         .uniqueId}}" title="{{options.messages.editFields}}" aria-label="{{options.messages.editFields}}"></div>
-        <div>
+      {{/if}}
+      <div>
+      {{#if options.isJATO}}
+        <otc-button  class="csui-bulk-edit-cancel-{{options.uniqueId}} csui-icon-edit inline-edit-icon csui-bulk-edit-cancel binf-hidden" arialabel="{{options.messages.cancel}}" type="subtle" size="small" tabindex="-1" data-cstabindex="-1" title="{{options.messages.cancel}}">
+          <otc-icon class="csui-bulk-edit-cancel-icon" svg="{{options.editCancelIconSVG}}" type="subtle"></otc-icon>
+        </otc-button>
+      {{else}}
           <span class="csui-bulk-edit-cancel-{{options.uniqueId}} csui-icon-edit inline-edit-icon
           edit-cancel csui-bulk-edit-cancel binf-hidden" title="{{options.messages.cancel}}"
           aria-label="{{options.messages.cancel}}" tabindex="-1" data-cstabindex="-1"></span>
+      {{/if}}
         </div>
       </div>
     {{/if}}

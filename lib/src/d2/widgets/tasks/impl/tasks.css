@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-tasks .tile-header {
   cursor: pointer;
@@ -11,7 +11,7 @@
   font-weight: normal;
   line-height: 14px;
   padding-top: 3px;
-  color: #666;
+  color: #666666;
 }
 
 .binf-widgets .d2-tasks.cs-list .csui-item-standard .list-item-duedate.overdue {
@@ -48,6 +48,7 @@
   margin-top: 2px;
   margin-bottom: 2px;
 }
+
 
 
 

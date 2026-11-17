@@ -1,20 +1,20 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-navbar-nav .binf-open > .binf-dropdown-menu.csui-profile-dropdown {
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
-  border: 0px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+  border: 0;
   border-radius: 0;
-  margin-top: 0px;
-  margin-right: 0px;
+  margin-top: 0;
+  margin-right: 0;
 }
 
 .binf-nav > li > * > ul.csui-profile-dropdown > li {
-  border: 0px;
+  border: 0;
 }
 
 .binf-nav > li > * > a.csui-navbar-icons {
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .binf-nav > li > * > a.csui-navbar-icons.notification {
@@ -27,7 +27,7 @@
   height: 60px;
   float: left;
   padding: 7px 10px 6px;
-  margin: 0px 0px;
+  margin: 0 0;
 }
 
 .binf-widgets .csui-profile li {
@@ -49,7 +49,7 @@
 }
 
 .binf-widgets .csui-profile > .binf-open {
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
   background-color: #ffffff;
 }
 
@@ -98,8 +98,8 @@
 }
 
 .csui-profile div.binf-open a.nav-profile:focus {
-  border: 0px;
-  border-radius: 0px;
+  border: 0;
+  border-radius: 0;
 }
 
 .csui-profile .csui-profile-default-image:hover,

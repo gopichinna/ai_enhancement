@@ -1,0 +1,22 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-table-actionbar .csui-inline-actions .csui-toolitem-v1-container {
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    margin: 2px;
+}
+
+.binf-widgets .csui-table-actionbar .csui-inline-actions .csui-toolitem-v1-container:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 50%;
+    background-color: rgb(243, 251, 255);
+    margin: 1px;
+}
+
+.binf-widgets .csui-table-actionbar .csui-inline-actions .csui-toolitem-v1-container .csui-toolitem-v1-icon {
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+}

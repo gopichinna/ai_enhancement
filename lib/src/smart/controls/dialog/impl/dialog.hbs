@@ -1,8 +1,8 @@
-<div class="binf-modal-dialog {{binfDialogSizeClassName}}" role="dialog" aria-modal="true" aria-label="{{title}}" aria-hidden="false">
+<div class="binf-modal-dialog {{binfDialogSizeClassName}}" role="dialog" aria-modal="true" aria-label="{{title}}">
   <div class="binf-modal-content" >
-    <div class="tile-header binf-modal-header"></div>
+     <div class="binf-modal-header-control"><div class="tile-header binf-modal-header"></div></div>
     {{#if bodyMessage}}
-      <div class="binf-modal-body cs-dialog cs-dialog-bodymessage">{{bodyMessage}}</div>
+      <div class="binf-modal-body cs-dialog cs-dialog-bodymessage" tabindex="-1">{{bodyMessage}}</div>
     {{else}}
       <div class="binf-modal-body"></div>
     {{/if}}
@@ -10,4 +10,4 @@
   </div>
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

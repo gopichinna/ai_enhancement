@@ -1,9 +1,9 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d4-simple-table-toolbar .csui-tabletoolbar {
     height: 32px;
-    padding: 4px 15px !important;
+    padding: 4px 15px 4px 4px !important;
     background-color: rgb(249, 249, 249);
     border-bottom: none;
 }
@@ -33,7 +33,7 @@
 }
 
 .binf-widgets .d4-simple-table-view .csui-table-view {
-    height: 402px;
+    height: 420px;
 }
 
 .binf-widgets .d4-simple-table-view .csui-table-view thead {

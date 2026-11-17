@@ -1,0 +1,32 @@
+<input type="text" placeholder="{{emptyLabel}}" value="{{data}}"
+       {{#if idBtnLabel}}aria-labelledby="{{idBtnLabel}}"{{/if}}
+  {{#if ariaRequired}}aria-required="{{ariaRequired}}"{{/if}} id="{{id}}" aria-autocomplete="list" autocomplete="off"
+       role="combobox">
+<div class="dctmwlist-search-toolbar">
+    {{#if allowDirectAddition}}
+        {{#if isJato}}
+            <otc-button class="icon direct-addition-view-button" type="subtle" size="small" tabindex="0" title="{{lang.select}}"
+                aria-label="{{lang.select}}">
+                <otc-icon svg="{{addActionSVG}}" type="subtle"></otc-icon>
+            </otc-button>
+        {{else}}
+            <a class="direct-addition-view-button" tabindex="0"></a>
+        {{/if}}
+    {{else}}
+        {{#if isJato}}
+        <otc-button class="icon options-view-button" type="subtle" size="small" tabindex="0" title="{{lang.select}}"
+            aria-label="{{lang.select}}">
+            <otc-icon svg="{{arrowDownSVG}}" type="subtle"></otc-icon>
+        </otc-button>
+        <otc-button class="icon consolidated-view-button" type="subtle" size="small" tabindex="0" title="{{lang.select}}"
+            aria-label="{{lang.select}}">
+            <otc-icon svg="{{actionListSVG}}" type="subtle"></otc-icon>
+        </otc-button>
+        {{else}}
+            <a class="options-view-button" tabindex="0" title="{{lang.select}}" aria-label="{{lang.select}}"></a>
+            <a class="consolidated-view-button" tabindex="0"></a>
+        {{/if}}
+    {{/if}}
+</div>
+
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

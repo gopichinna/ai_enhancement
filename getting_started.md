@@ -1,6 +1,6 @@
 <!--- Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. --->
 
-Getting started with the D2SV-SDK-24.4.0
+Getting started with the SV-SDK-25.4.0
 =======================================================================
 Prepare the development environment
 ------------------------------------------

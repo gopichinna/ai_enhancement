@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .csui-select-lists > div.cs-start-locations.csui-slideLeft {
   left:50%;
@@ -13,6 +13,7 @@
   -o-animation: slideFarLeft 400ms;
   -o-animation-fill-mode: forwards;
 }
+
 .csui-select-lists > div.cs-pane-view.csui-slideMidLeft {
   left:110%;
   animation: slideMidLeft 400ms forwards;
@@ -42,6 +43,7 @@
   0% {
     left: 50%;
   }
+
   100% {
     left: 0;
   }
@@ -51,6 +53,7 @@
   0% {
     left: 50%;
   }
+
   100% {
     left: 0;
   }
@@ -60,6 +63,7 @@
   0% {
     left: 50%;
   }
+
   100% {
     left: 0;
   }
@@ -69,6 +73,7 @@
   from {
     left: 50%;
   }
+
   to {
     left: 0;
   }
@@ -78,6 +83,7 @@
   0% {
     left: 50%;
   }
+
   100% {
     left: 0;
   }
@@ -87,6 +93,7 @@
   0% {
     left: 100%;
   }
+
   100% {
     left: 50%;
   }
@@ -96,6 +103,7 @@
   0% {
     left: 100%;
   }
+
   100% {
     left: 50%;
   }
@@ -105,6 +113,7 @@
   0% {
     left: 100%;
   }
+
   100% {
     left: 50%;
   }
@@ -114,6 +123,7 @@
   from {
     left: 100%;
   }
+
   to {
     left: 50%;
   }
@@ -123,6 +133,7 @@
   0% {
     left: 100%;
   }
+
   100% {
     left: 50%;
   }
@@ -132,6 +143,7 @@
   0% {
     left: 0;
   }
+
   100% {
     left: 50%;
   }
@@ -141,6 +153,7 @@
   0% {
     left: 0;
   }
+
   100% {
     left: 50%;
   }
@@ -150,6 +163,7 @@
   0% {
     left: 0;
   }
+
   100% {
     left: 50%;
   }
@@ -159,6 +173,7 @@
   0% {
     left: 0;
   }
+
   100% {
     left: 50%;
   }

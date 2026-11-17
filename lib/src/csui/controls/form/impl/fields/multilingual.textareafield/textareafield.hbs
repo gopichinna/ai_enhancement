@@ -13,18 +13,37 @@
       {{#if idBtnDescription}}aria-describedby="{{idBtnDescription}}" {{/if}}
       {{#if multiFieldLabel}} aria-label="{{multiFieldLabel}}" {{/if}}>{{data}}</textarea>
     {{#if isGlobeRequired}}
-      <button type="button" tabindex="0" class="icon csui-multilingual-icon">
-        {{{icon-v2 iconName="csui_action_language_switcher24" size='small' states='true'}}}
-      </button>
+      {{#if isJATO}}
+        <otc-button  class="icon csui-multilingual-icon" type="subtle" size="small">
+          <otc-icon svg="{{globeIconSVG}}" type="subtle"></otc-icon>
+        </otc-button>
+      {{else}}
+        <button type="button" tabindex="0" class="icon csui-multilingual-icon">
+          {{{icon-v2 iconName="csui_action_language_switcher24" size='small' states='true'}}}
+        </button>
+      {{/if}}
     {{/if}}
     {{#xif "this.mode !== 'writeonly'"}}
       <div class="icon-container">
+        {{#if isJATO}}
+        <otc-button  class="inline-edit-icon csui-jato-edit-cancel" arialabel="{{cancel}}" type="subtle" size="small" tabindex="-1" data-cstabindex="-1" title="{{cancel}}">
+        <otc-icon svg="{{editCancelIconSVG}}" type="subtle"></otc-icon>
+        </otc-button>
+        {{else}}
         <div class="csui-icon-edit inline-edit-icon edit-cancel" title="{{cancel}}"></div>
+        {{/if}}
       </div>
     {{else}}
       {{#if options.applyFlag}}
         <div class="icon-container binf-hidden">
+        {{#if isJATO}}
+          <otc-button class="csui-icon apply-all block binf-hidden" title="{{titleApplyAll}}"
+              arialabel="{{titleApplyAll}}" tabindex="0" size="small" type="subtle">
+              <otc-icon svg="{{actionApplyToAll}}"></otc-icon>
+          </otc-button>
+        {{else}}
           <div class="csui-icon apply-all binf-hidden" title="{{titleApplyAll}}" tabindex="0"></div>
+        {{/if}}
         </div>
       {{/if}}
     {{/xif}}
@@ -58,12 +77,18 @@
 
     </div>
     <div class="icon-container">
+      {{#if isJATO}}
+      <otc-button  class="csui-jato-icon-edit inline-edit-icon binf-hidden" arialabel="{{edit}}" type="subtle" size="small" tabindex="-1" data-cstabindex="-1" title="{{edit}}">
+        <otc-icon svg="{{editIconSVG}}" type="subtle"></otc-icon>
+      </otc-button>
+      {{else}}
       <div title="{{edit}}" aria-label="{{edit}}" role="button"
            class="csui-icon-edit inline-edit-icon icon-edit"></div>
+      {{/if}}
     </div>
     <div tabindex="0" class="cs-icon icon-expandArrowDown binf-hidden cs-icon-exp-col"
          aria-label="{{seeMore}}" role="button"></div>
   </div>
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

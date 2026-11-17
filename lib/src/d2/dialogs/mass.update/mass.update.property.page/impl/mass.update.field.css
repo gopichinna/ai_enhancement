@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-mass-update-field {
     height: 100%;
@@ -28,7 +28,7 @@
 .d2-mass-update-field .d2-mass-update-update-form-wrapper {
     width: 100%;
     outline: 1px solid #CCCCCC;
-    box-shadow: 0 -2px 4px 0 #CCC;
+    box-shadow: 0 -2px 4px 0 #CCCCCC;
     z-index: 1;
 }
 

@@ -1,12 +1,22 @@
 <div class="cs-item-picker {{classItemPicker}}" role="combobox"
-     aria-expanded="false" aria-haspopup="listbox">
+     aria-expanded="false" aria-haspopup="listbox" {{#if ariaLabel}} aria-label="{{ariaLabel}}"{{/if}}>
   <input id="{{id_input}}" type="text" class="typeahead binf-form-control cs-search" autocomplete="off"
          aria-autocomplete="list"{{#if ariaLabel}} aria-label="{{ariaLabel}}"{{/if}}
     {{#if idBtnDescription}} aria-describedby="{{idBtnDescription}}" {{/if}}
     {{#if isRequired}} aria-required="{{isRequired}}"{{/if}} placeholder="{{placeholder}}">
+      {{#if svgCloseIcon}}
+      <otc-icon size="16" class="typeahead cs-search-clear" role="button" ariaexpanded="false"
+        title="{{titleClearIcon}}"  arialabel="{{titleClearIcon}}"
+        tabindex="0" svg='{{svgCloseIcon}}'></otc-icon>
+    {{else}}
   <div class="typeahead cs-search-clear csui-icon formfield_clear" title="{{titleClearIcon}}"
        role="button" aria-label="{{titleClearIcon}}" style="" tabindex="0"></div>
+       {{/if}}
+       {{#if svgSearchIcon}}
+       <otc-icon size="16" class="typeahead cs-search-icon" title="{{titleSearchIcon}}" svg='{{svgSearchIcon}}'></otc-icon>
+{{else}}
   <div class="typeahead cs-search-icon icon-sv-search" title="{{titleSearchIcon}}"
        role="button" aria-label="{{titleSearchIcon}}"></div>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+{{/if}}
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

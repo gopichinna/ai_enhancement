@@ -1,7 +1,13 @@
-<a class="binf-dropdown-toggle smart-v2-icon-parent" data-binf-toggle="dropdown" role="button"
-    tabindex="-1" aria-label="{{moreButtonsAria}}" title="{{moreButtonsAria}}" aria-expanded="false">
-</a>
+{{#if isJATO}}
+  <otc-button class="binf-dropdown-toggle facetbarMoreButton" tabindex="-1" arialabel="{{moreButtonsAria}}" title="{{moreButtonsAria}}" size="small" ariaexpanded="false" >
+    <otc-icon svg="{{jatoMoreFacetIconSvg}}"></otc-icon>
+  </otc-button>
+{{else}}
+  <otc-button class="binf-dropdown-toggle facetbarMoreButton" tabindex="-1" arialabel="{{moreButtonsAria}}" title="{{moreButtonsAria}}"  
+    icon="smart_action:action_more32" ariaexpanded="false" >
+  </otc-button>
+{{/if}}
 <ul class="binf-dropdown-menu csui-dropdown-list csui-facet-bar-dropdown csui-normal-scrolling" aria-label="{{overflowMenuAria}}">
     {{#each collection}}{{/each}}
 </ul>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

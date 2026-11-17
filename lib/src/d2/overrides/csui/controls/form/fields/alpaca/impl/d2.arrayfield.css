@@ -1,0 +1,189 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.cs-form .cs-form-set .d2-resizable-array-field.csui-field-array .cs-single-field {
+    max-width: calc(100% - 36px);
+}
+
+.cs-form .cs-form-set .d2-resizable-array-field.csui-field-array .cs-single-field .cs-form-set.cs-form-set-container {
+    width: auto;
+}
+
+
+.cs-form .cs-form-set .d2-resizable-array-field.csui-field-array .cs-form-set.alpaca-container .alpaca-field-object .alpaca-container .alpaca-container-item:not(.d2-default-size-col) {
+    flex: 0 0 auto;
+    min-width: 100px;
+}
+
+.cs-form .cs-form-set .d2-resizable-array-field .alpaca-field-array.d2-custom-width-grid.d2-stretch-default-cols>.cs-form-set {
+    max-width: calc(100% - 40px);
+    width: 100%;
+}
+
+.cs-form .cs-form-set .d2-resizable-array-field .alpaca-field-array.d2-custom-width-grid:not(.d2-stretch-default-cols)>.cs-form-set,
+.cs-form .cs-form-set .d2-resizable-array-field .d2-custom-width-grid:not(.d2-stretch-default-cols) .cs-array.alpaca-container-item>.cs-pull-left {
+    width: fit-content;
+    max-width: 100%;
+}
+
+.cs-form .cs-form-set .d2-resizable-array-field .alpaca-field-array.d2-custom-width-grid:not(.d2-stretch-default-cols)>.cs-form-set {
+    max-width: calc(100% - 40px);
+}
+
+.cs-form .cs-form-set .d2-resizable-array-field .alpaca-field-array.d2-custom-width-grid.csui-set-locked-container.alpaca-field-array>.cs-form-set {
+    max-width: calc(100% - 40px);
+}
+
+.cs-form .d2-resizable-array-field .cs-form-set-container .csui-lockedcols {
+    max-width: calc(90% + 24px);
+}
+
+.cs-form .cs-form-set .d2-resizable-array-field.csui-field-array .alpaca-field-array .cs-form-set-container .cs-array.alpaca-container-item>.cs-pull-left .csui-lockedcols .alpaca-container-item.d2-default-size-col {
+    max-width: 200px;
+}
+
+.cs-form .cs-form-set .alpaca-container .alpaca-container-item .alpaca-field-object .alpaca-container .csui-scrollablecols,
+.cs-form .cs-form-set .d2-resizable-array-field .d2-stretch-default-cols:not(.csui-set-locked-container) .alpaca-container>.alpaca-container-item.d2-default-size-col {
+    width: 100%;
+}
+
+.cs-form .cs-form-set .d2-resizable-array-field .d2-stretch-default-cols:not(.csui-set-locked-container) .alpaca-container>.alpaca-container-item.d2-default-size-col,
+.cs-form .cs-form-set .d2-resizable-array-field.csui-field-array .cs-form-set.alpaca-container .alpaca-container-item .alpaca-field-object .alpaca-container .alpaca-container-item {
+    max-width: 100%;
+}
+
+.cs-form .cs-form-set .d2-resizable-array-field .cs-form-set.alpaca-container .alpaca-container-item .alpaca-field-object .alpaca-container .csui-scrollablecols .alpaca-container-item {
+    max-width: none;
+}
+
+
+.d2-resizable-array-field .cs-array .cs-booleanfield {
+    min-width: 100%;
+}
+
+
+
+
+
+.d2-resizable-array-field .cs-array .cs-array-item-field-wrapper .alpaca-field-object .alpaca-container .alpaca-container-item {
+    position: relative;
+}
+
+.d2-resizable-array-field .d2-custom-drag-helper {
+    position: absolute;
+    width: 24px;
+    height: 100%;
+    top: 0;
+    right: -12px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    cursor: col-resize;
+}
+
+.d2-resizable-array-field .cs-array .alpaca-container .alpaca-container-item-last .d2-custom-drag-helper {
+    justify-content: flex-end;
+    width: 12px;
+    right: 0;
+}
+
+.d2-resizable-array-field .d2-custom-drag-helper .d2-custom-drag-indicator {
+    width: 1px;
+    background: #d3d3d3;
+    height: 100%;
+}
+
+.d2-resizable-array-field .cs-array .alpaca-container .alpaca-container-item-last .d2-custom-drag-helper .d2-custom-drag-indicator {
+    margin-right: 0;
+}
+
+.d2-resizable-array-field .alpaca-field-array:not(.d2-grid-resizing) .d2-custom-drag-helper.active .d2-custom-drag-indicator {
+    background-color: #3b57ff;
+    width: 3px;
+}
+
+.d2-resizable-array-field .alpaca-field-array:not(.d2-grid-resizing) .d2-custom-drag-helper.active .d2-custom-drag-indicator:before {
+    content: ' ';
+    width: 3px;
+    height: 2px;
+    background-color: #3b57ff;
+    position: absolute;
+    right: 10.5px;
+    top: -2px;
+}
+
+.d2-resizable-array-field .alpaca-field-array:not(.d2-grid-resizing) .cs-pull-left .alpaca-container-item-last .d2-custom-drag-helper.active .d2-custom-drag-indicator:before {
+    right: 0;
+}
+
+
+.d2-resizable-array-field .d2-drag-helper-follower {
+    width: 2px;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+
+    
+    top: 0 !important;
+    background-color: #232E72;
+}
+
+body:not(.rtl) .d2-resizable-array-field .d2-drag-helper-follower {
+    margin-left: 12px;
+}
+
+.rtl .d2-resizable-array-field .d2-drag-helper-follower:not(.d2-last-column) {
+    
+    margin-right: 12px;
+}
+
+.rtl .d2-resizable-array-field .alpaca-container-item-last .d2-drag-helper-follower.d2-last-column {
+    margin-right: 0;
+}
+
+.d2-resizable-array-field .d2-drag-helper-follower.d2-grid-no-wrap-mode {
+    height: 100%;
+
+    
+    top: 0 !important;
+}
+
+.d2-resizable-array-field .d2-drag-helper-follower.d2-helper-limited {
+    height: calc(100% - 48px);
+}
+
+
+
+
+.cs-form .cs-form-set .d2-resizable-array-field.csui-field-array .alpaca-field-array .cs-form-set-container .cs-array.alpaca-container-item.alpaca-container-item-first>.cs-pull-left,
+.cs-form .cs-form-set .d2-resizable-array-field.csui-field-array .alpaca-field-array .cs-form-set-container .cs-array.alpaca-container-item>.cs-pull-left {
+    border: none;
+}
+
+.cs-form .cs-form-set .d2-resizable-array-field.csui-field-array .alpaca-field-array .cs-form-set-container .cs-array.alpaca-container-item>.cs-pull-left .alpaca-container-item.alpaca-container-item-first {
+    border-left: 1px solid #d3d3d3;
+}
+
+.cs-form .cs-form-set .d2-resizable-array-field.csui-field-array .alpaca-field-array .cs-form-set-container .cs-array.alpaca-container-item>.cs-pull-left .alpaca-container-item {
+    border-top: 1px solid #d3d3d3;
+}
+
+.cs-form .cs-form-set .d2-resizable-array-field.csui-field-array .alpaca-field-array .cs-form-set-container .cs-array.alpaca-container-item.alpaca-container-item-last>.cs-pull-left {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+
+
+
+
+
+
+.cs-form .cs-form-set .d2-resizable-array-field .csui-container-lockedcols .cs-array.alpaca-container-item:not(.alpaca-container-item-last) .alpaca-container .csui-scrollablecols {
+    scrollbar-width: none;
+    overflow: auto;
+}
+
+.cs-form .csui-field-array .csui-array-bulk-edit{
+    display: none;
+}
+

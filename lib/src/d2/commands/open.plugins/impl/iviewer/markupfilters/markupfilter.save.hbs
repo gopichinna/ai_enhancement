@@ -1,0 +1,29 @@
+<div class="binf-modal binf-fade save-markupfilter-dialog" tabindex="-1" role="dialog">
+  <div class="binf-modal-dialog binf-modal-sm">
+    <div class="binf-modal-content">
+      <div class="binf-modal-header save-markupfilter-dialog question-header">
+        <h4 class="binf-modal-title">
+          <otc-icon class="smart-notification-icon" icon="smart_notification:notification_question24"></otc-icon>
+          <span class="title-text">{{saveFilterTitle}}</span>
+        </h4>
+      </div>
+      <div class="binf-modal-body">
+        <div class="csui-simple-message-view">{{filterLabel}}</div>
+        <input type="text" id="markup-filter-name-input" placeholder="{{filterTextPlaceholder}}" class="csui-input">
+        <div id="markup-filter-error" class="csui-error"></div>
+
+        
+        <div class="default-filter-checkbox">
+          <input type="checkbox" id="set-default-filter" />
+          <label for="set-default-filter">{{saveFilterMessage}}</label>
+        </div>
+      </div>
+      <div class="binf-modal-footer save-markupfilter-dialog">
+        <otc-button id="saveMarkupFilterBtn" type="primary" class="csui-yes csui-default csui-acc-tab-region" size="regular" style="border-radius:16px;">{{saveFilter}}</otc-button>
+        <otc-button id="cancelMarkupFilterBtn" type="secondary" class="csui-no csui-acc-tab-region" size="regular" style="border-radius:16px;">{{cancelCreation}}</otc-button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,6 +1,11 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme=cf]) {
+  --jatx-csui-icon-required-upload-left: 35px;
+}
+
+
 .binf-widgets .cs-metadata-add-items {
   
   height: 100%;
@@ -12,7 +17,7 @@
   -ms-flex-direction: column;
   -webkit-flex-direction: column;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: var(--jato-background-elevation-level-2,  #ffffff );
 }
 
 .cs-metadata-add-items .cs-metadata {
@@ -37,6 +42,11 @@
   height: 100%;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .cs-metadata-add-items .metadata-navigation {
+  display: flex;
+}
+
+
 .cs-metadata-add-items .metadata-sidebar {
   height: 100%;
   min-height: 100%;
@@ -44,7 +54,9 @@
   min-width: 15.5em;
   float: left;
   border-right: 1px solid #999999;
+  padding-top: var(--jato-padding-xl, unset);
 }
+
 
 
 
@@ -61,7 +73,7 @@
 }
 
 
-.cs-metadata-add-items .metadata-sidebar .cs-simplelist.binf-panel {
+[data-smart-theme="cf"] .cs-metadata-add-items .metadata-sidebar .cs-simplelist.binf-panel {
   border-left: 1px solid white;
 }
 
@@ -70,41 +82,122 @@
 }
 
 
-.cs-metadata-add-items .cs-simplelist .binf-list-group-item .csui-icon-group,
-.cs-metadata-add-items .cs-simplelist .binf-list-group-item .csui-icon-group .csui-icon {
+[data-smart-theme="cf"] .cs-metadata-add-items .cs-simplelist .binf-list-group-item .csui-icon-group,
+[data-smart-theme="cf"] .cs-metadata-add-items .cs-simplelist .binf-list-group-item .csui-icon-group .csui-icon {
   width: 28px;
   height: 28px;
 }
 
-.cs-metadata-add-items .cs-simplelist .binf-list-group-item .csui-icon-group {
+[data-smart-theme="cf"] .cs-metadata-add-items .cs-simplelist .binf-list-group-item .csui-icon-group {
   margin-top: calc((48px - 28px) / 2);
 }
 
 
-.cs-metadata-add-items .metadata-sidebar .cs-simplelist a.binf-active > .binf-list-group-item {
-  background-color: #dfe7ea;
+[data-smart-theme="cf"] .binf-widgets .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active > a.binf-list-group-item {
   color: #333333;
   border-top: 0;
   border-bottom: 0;
+  background-color: #dce4e8;
+  border-left: 4px solid #7b9ab0;
+  border-radius: 0;
+  color: #333333;
+  padding-left: 12px;
+  position: relative;
+}
+
+[data-smart-theme="cf"] .binf-widgets .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active.active-item-disable > a.binf-list-group-item {
+  background-color: #f5f5f5;
 }
 
 
-.cs-metadata-add-items .metadata-sidebar .cs-simplelist a > .binf-list-group-item {
+[data-smart-theme="cf"] .binf-widgets .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item > a.binf-list-group-item {
   background-color: transparent;
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-left: 4px solid transparent;
+  border-radius: 0;
+  height: 46px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 
-
-.cs-metadata-add-items .metadata-sidebar .cs-simplelist .binf-list-group-item:hover {
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+[data-smart-theme="cf"] .binf-widgets .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item > a.binf-list-group-item:hover {
   background-color: #bac9ce;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
   color: #333333;
 }
 
+[data-smart-theme="cf"] .binf-widgets .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item {
+  border: 1px dotted transparent;
+  color: #323232;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100%;
+}
 
-.cs-metadata-add-items .metadata-sidebar .cs-simplelist .list-item-title {
+[data-smart-theme="cf"] .binf-widgets .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active {
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  z-index: 9;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item > a.binf-list-group-item  {
+  height: inherit;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item  {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: transparent;
+  margin: 0 6px;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active:before {
+  background-color: var(--jato-cta-links-text-color-neutral);
+  border-radius: 4px 0 0 4px;
+  content: "";
+  height: 40px;
+  left: 0;
+  position: absolute;
+  width: 4px;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item a:hover,
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item:hover {
+  background-color: var(--jato-background-rows-selected);
+  width: 100%;
+  width: -webkit-fill-available;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active {
+  background: var(--jato-background-rows-selected);
+  color: var(--jato-cta-content-color-tertiary);
+  font-weight: 700;
+  position: relative;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active a {
+  background-color: transparent;
+}
+
+
+.cs-metadata-add-items .metadata-sidebar .csui-metadata-navigation-thumbnail.cs-simplelist .binf-list-group-item:hover {
+  border-bottom: none;
+  border-top: none;
+}
+
+
+[data-smart-theme="cf"] .cs-metadata-add-items .metadata-sidebar .cs-simplelist .list-item-title {
   font-weight: 500;
   line-height: 48px;
   height: 48px;
@@ -115,9 +208,10 @@
   width: 6px;
   height: 6px;
   position: absolute;
-  left: 43px;
-  top: 16px;
+  left: var(--jatx-csui-icon-required-upload-left, 43px);
+  top: var(--jato-measure-8, 16px);
 }
+
 
 
 

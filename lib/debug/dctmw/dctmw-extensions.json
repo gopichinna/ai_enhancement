@@ -3,7 +3,8 @@
     "modules": {
       "dctmw": {
         "title": "Documentum-Web-Core",
-        "version": "1.0"
+        "productName":"Documentum Smart View",
+        "version": "25.4"
       }
     }
   },
@@ -21,11 +22,54 @@
       ]
     }
   },
+"dctmw/utils/icons/dctmw.jato.action.icons": {
+  "extensions": {
+    "dctmw": [
+      "dctmw/utils/theme/jato_action_icons"
+    ]
+  }
+},
+"dctmw/utils/icons/dctmw.jato.branding": {
+  "extensions": {
+    "dctmw": [
+      "dctmw/utils/theme/jato_branding"
+    ]
+  }
+},
+"dctmw/utils/icons/dctmw.jato.illustrations": {
+  "extensions": {
+    "dctmw": [
+      "dctmw/utils/theme/jato_illustrations"
+    ]
+  }
+},
+"dctmw/utils/icons/dctmw.jato.mime.icons": {
+  "extensions": {
+    "dctmw": [
+      "dctmw/utils/theme/jato_mime_icons"
+    ]
+  }
+},
+"dctmw/utils/icons/dctmw.jato.other.icons": {
+  "extensions": {
+    "dctmw": [
+      "dctmw/utils/theme/jato_other_icons"
+    ]
+  }
+},
+"dctmw/utils/icons/dctmw.jato.status.icons": {
+  "extensions": {
+    "dctmw": [
+      "dctmw/utils/theme/jato_status_icons"
+    ]
+  }
+},
   "csui/utils/commands": {
     "extensions": {
       "dctmw": [
         "dctmw/commands/open",
-        "dctmw/commands/refresh.list"
+        "dctmw/commands/refresh.list",
+        "dctmw/commands/reset.user.personalizations"
       ]
     }
   },

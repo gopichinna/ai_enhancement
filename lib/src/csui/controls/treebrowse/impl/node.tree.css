@@ -1,8 +1,8 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .csui-nodestable .csui-table-treeview {
-  background-color: #fff;
+  background-color: var(--jatx-const-transparent, #ffffff);
 }
 
 .binf-widgets .csui-facet-table-container .csui-table-facetview.csui-facetview-hidden,
@@ -13,6 +13,9 @@
 .csui-nodestable .csui-table-treeview .csui-tree-browse-panel {
   display: flex;
   height: 100%;
+  border-radius: var(--jato-radii-lrg, 0);
+  margin: 0 var(--jato-padding-xxl, 0) var(--jato-padding-lrg, 0) var(--jato-padding-lrg, 0);
+  background: var(--jato-background-elevation-inline-content, transparent);
 }
 
 .csui-nodestable .csui-table-treeview .csui-tree-browse-panel .csui-tree-browse-container{
@@ -49,11 +52,6 @@ html[dir="rtl"] .binf-widgets .csui-nodestable .ui-resizable-w {
   left: 100%;
 }
 
-.binf-widgets .csui-nodestable .ui-resizable-e:hover,
-.binf-widgets .csui-nodestable .ui-resizable-w:hover {
-  background-color: #232E72;
-}
-
 .binf-widgets .csui-nodestable .ui-resizable-e::before,
 .binf-widgets .csui-nodestable .ui-resizable-w::before {
   content: '';
@@ -65,9 +63,9 @@ html[dir="rtl"] .binf-widgets .csui-nodestable .ui-resizable-w {
   height: 100%;
 }
 
-.binf-widgets .csui-nodestable .ui-resizable .csui-table-facetview.csui-facetview-hidden, 
+.binf-widgets .csui-nodestable .ui-resizable .csui-table-facetview.csui-facetview-hidden,
 .binf-widgets .csui-nodestable .ui-resizable .csui-table-treeview.csui-treeview-hidden {
-     max-width: 0; 
+     max-width: 0;
     max-height: 0;
 }
 
@@ -81,6 +79,7 @@ html[dir="rtl"] .binf-widgets .csui-nodestable .ui-resizable-w {
 
 .binf-widgets .csui-nodestable .ui-resizable.csui-side-panel {
   max-width: 50%;
+
  
 }
 

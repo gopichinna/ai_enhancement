@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .csui-color-picker-ctrl {
     display: flex;
@@ -8,18 +8,36 @@
 .csui-color-picker-ctrl .csui-color-picker-wrapper {
     width: 18px;
     height: 18px;
-    border: 1px solid #757575;
+    border: 1px solid var(--jato-control-border-primary-neutral, #757575);
     border-radius: 14px;
-    margin-top: 5px;
+    margin-top: var(--jato-measure-0, 5px);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .csui-color-picker-ctrl .csui-color-picker-wrapper {
+    width: 32px;
+    height: 16px;
+    border-width: var(--jato-border-weight-1);
+    border-radius: var(--jato-radii-sm);
 }
 
 .csui-color-picker-ctrl .csui-color-picker-wrapper.no-color-overlay {
-    background: url(./images/colour-swatch.svg) no-repeat center;
+    background: url(./images/default-image.svg) no-repeat left;
     width:24px;
     height: 24px;
     border: none;
     margin-top: 2px;
+    background-size: 18px;
 }
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .csui-color-picker-ctrl .csui-color-picker-wrapper.no-color-overlay {
+    margin: var(--jato-padding-xxs) var(--jato-padding-xs);
+    background-image: unset;
+    border: 1px solid var(--jato-control-border-primary-neutral, #757575);
+    width: 32px;
+    height: 16px;
+    margin-right: 8px;
+}
+
 .csui-color-picker-ctrl div.csui-color-picker-wrapper.no-color-overlay + label{
    margin: 0;
 }
@@ -36,4 +54,12 @@
     white-space: nowrap;
     overflow: hidden;
     min-width: 183px;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-color-picker-ctrl .csui-color-label {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    vertical-align: middle;
+    color: var(--jato-typography-text-color-primary);
 }

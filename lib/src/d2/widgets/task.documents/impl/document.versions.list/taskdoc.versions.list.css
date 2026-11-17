@@ -1,0 +1,10 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .task-version-list .csui-icon {
+    height: unset;
+}
+
+.binf-widgets .task-version-list .smart-simplelist-item.task-version-list-seperator {
+    border-bottom: 1px solid #bebebe;
+}

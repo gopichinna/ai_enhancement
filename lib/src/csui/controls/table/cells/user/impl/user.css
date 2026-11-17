@@ -1,0 +1,11 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-table-control-user-cell-img {
+    width: 24px;
+    height: 24px;
+}
+
+.binf-widgets .csui-profile-img.cf-csui-profile-img {
+    transform: scale(0.6);
+}

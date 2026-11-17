@@ -1,6 +1,14 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-favorite-groups-footer-display: flex;
+  --jatx-csui-favorite-groups-footer-font-size: 12px;
+  --jatx-csui-favorite-groups-footer-padding-top: 0px;
+  --jatx-csui-favorite-groups-footer-border-top: none;
+  --jatx-csui-favorite-groups-footer-wrapper-font-size: normal;
+}
+
 .binf-widgets .csui-favorite-groups-footer {
   display: flex;
   flex: 1 1 auto;
@@ -9,18 +17,21 @@
 }
 
 .binf-widgets .csui-favorite-groups-footer > .csui-groups-footer-wrapper {
-  font-size: 16px;
-  padding-top: 1em;
-  border-top: 1px solid #dddddd;
+  display: var(--jatx-csui-favorite-groups-footer-display, block);
+  flex-direction: column;
+  gap: var(--jato-margin-med, 0);
+  padding: var(--jatx-const-0, 1em) var(--jato-padding-xl, 0.5em) 0 var(--jato-padding-xl, 0.5em);
+  border-top: var(--jatx-csui-favorite-groups-footer-border-top, 1px solid #dddddd);
+  font-size: var(--jatx-csui-favorite-groups-footer-wrapper-font-size, 16px);
 }
 
 .binf-widgets .csui-favorite-groups-footer .csui-groups-footer-text {
-  text-align: center;
-  font-size: 0.75em;
-  color: #666666;
+  font-weight: 425;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-top: 0.75em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  font-size: var(--jatx-csui-favorite-groups-footer-font-size, 0.75em);
+  text-align: center;
+  line-height: 16px;
+  color: var(--jato-typography-text-color-secondary, #666666);
+  padding-top: var(--jatx-csui-favorite-groups-footer-padding-top, 0.75em);
 }

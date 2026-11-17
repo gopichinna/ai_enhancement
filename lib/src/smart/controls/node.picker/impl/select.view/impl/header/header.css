@@ -1,6 +1,28 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+:root {
+  --jatx-target-browse-arrow-back-width: unset;
+  --jatx-target-browse-search-item-location-font-size: 12px;
+  --jatx-target-browse-search-item-location-font-weight: 500;
+  --jatx-target-browse-search-item-line-height: 16px;
+  --jatx-target-browse-search-item-type-height: unset;
+  --jatx-target-browse-folder-name-width: 48px;
+  --jatx-target-browse-search-item-margin-left: -3px;
+  --jatx-target-browse-search-item-height: unset;
+}
+
+[data-smart-theme='cf'] {
+  --jatx-target-browse-arrow-back-width: 32px;
+  --jatx-target-browse-search-item-location-font-size: inherit;
+  --jatx-target-browse-search-item-location-font-weight: inherit;
+  --jatx-target-browse-search-item-line-height: 2em;
+  --jatx-target-browse-search-item-type-height: 32px;
+  --jatx-target-browse-folder-name-width: 49px;
+  --jatx-target-browse-search-item-margin-left: 12px;
+  --jatx-target-browse-search-item-height: 2em;
+}
+
 
 .binf-widgets .smart-target-browse .csui-np-header .csui-folder-name,
 .binf-widgets .smart-target-browse .csui-np-header > div,
@@ -17,14 +39,20 @@
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+  padding: 0px;
+  gap: var(--jato-margin-xs, 6px);
   flex-direction: row;
   -ms-flex-direction: row;
   -webkit-flex-direction: row;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  width: calc(100% - 48px);
+  width: calc(100% - var(--jatx-target-browse-folder-name-width));
   z-index: 1;
+}
+
+.binf-widgets .smart-target-browse .csui-np-header .csui-folder-name.smart-search-input-expanded {
+  padding: 0 var(--jato-padding-xxl, 24px) var(--jato-padding-xs, 3px) var(--jatx-const-0, 18px);
 }
 
 .binf-widgets .smart-target-browse .csui-np-header .binf-form-group > input::-ms-clear,
@@ -35,17 +63,24 @@
 .binf-widgets .smart-target-browse .csui-np-header .csui-search-item{
   display: inline-block;
   margin: 0;
-  margin-left: 12px;
-  line-height: 2em;
+  margin-left: var(--jatx-target-browse-search-item-margin-left);
+  line-height: var(--jatx-target-browse-search-item-line-height);
   width: calc(100% - 48px);
+  height: var(--jatx-target-browse-search-item-height);
   float: none;
+  padding: 0 var(--jato-padding-lrg, 0px);
 }
 
 .binf-widgets .smart-target-browse .csui-np-header .csui-search-item-type {
   display: inline-block;
-  height: 32px;
+  height: var(--jatx-target-browse-search-item-type-height);   
   float: none;
   margin: 0;
+  padding: var(--jato-padding-sm, 0px) var(--jato-padding-lrg, 0px) var(--jato-padding-sm, 0px) var(--jato-padding-lrg, 0px);
+}
+
+.binf-widgets .smart-target-browse .csui-np-header .csui-search-item-type .smart-jato-item-type {
+  padding: var(--jato-padding-sm, 0px);
 }
 
 .binf-widgets .smart-target-browse .csui-np-header .csui-np-header .csui-search-item-left-panel {
@@ -60,10 +95,12 @@
 
 .binf-widgets .smart-target-browse .csui-np-header .csui-search-item-location,
 .binf-widgets .smart-target-browse .csui-np-header .csui-search-item-location-disabled {
-  height: 2em;
-  line-height: 2em;
+  height: var(--jatx-target-browse-search-item-height);
   width: 100%;
   margin: 0px;
+  font-size: var(--jatx-target-browse-search-item-location-font-size);
+  font-weight: var(--jatx-target-browse-search-item-location-font-weight);
+  line-height: var(--jatx-target-browse-search-item-line-height);
 }
 
 .binf-widgets .smart-target-browse .csui-search-item .csui-np-header .csui-search-item-name,
@@ -97,10 +134,16 @@
   border: none;
 }
 .binf-widgets .csui-node-picker .csui-np-header .smart-header-tools .smart-addable-types {
-  padding: 0 24px 0 0;
+  padding: var(--jato-padding-sm, 0px) var(--jato-padding-lrg, 24px) var(--jato-padding-sm, 0px) var(--jato-padding-lrg, 0px);
   height: 32px;
 }
 
 .binf-widgets .smart-target-browse .csui-slideMidLeft .csui-np-header .smart-header-tools, .binf-widgets .smart-target-browse .left-only .csui-np-header .smart-header-tools {
   display: block;
+}
+
+.binf-widgets .smart-target-browse .csui-targetbrowse-history .csui-targetbrowse-arrow-back {
+  padding: var(--jato-padding-sm, 0px) var(--jato-padding-lrg, 0px) var(--jato-padding-sm, 0px) var(--jato-padding-lrg, 0px);
+  height: 32px;
+  width: var(--jatx-target-browse-arrow-back-width);
 }

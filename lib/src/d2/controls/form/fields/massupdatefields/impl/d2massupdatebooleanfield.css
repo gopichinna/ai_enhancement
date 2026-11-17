@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .cs-formfield.cs-booleanfield.d2-massupdatebooleanfield .cs-field-inner {
     display: block;
@@ -23,5 +23,5 @@
 .cs-formfield.cs-booleanfield.d2-massupdatebooleanfield .control-area .multiple-values {
     width: 200px;
     top: -4px;
-    color: #333;
+    color: #333333;
 }

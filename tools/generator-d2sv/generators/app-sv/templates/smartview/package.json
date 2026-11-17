@@ -8,7 +8,9 @@
     "build": "grunt package",
     "compile": "grunt compile",
     "test": "grunt test",
-    "start": "dctmw-serve"
+    "start": "dctmw-serve",
+    "stylelint-fix": "stylelint \"src/**/*.css\" --fix",
+    "fix-css": "npm run stylelint-fix"
   },
   "svf": {
     "name": "<%= namespace %>",

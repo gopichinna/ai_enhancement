@@ -1,10 +1,12 @@
+/* css!csui/widgets/error.global/impl/error.global */
+
 .binf-widgets .csui-global-error {
   width: 100%;
   height: 100%;
 }
 
 .csui-global-error {
-  color: #ffffff;
+  color: var(--jato-typography-text-color-primary, #ffffff);
 }
 
 .csui-global-error .main-area-container {
@@ -91,7 +93,7 @@
   width: 96px;
   height: 96px;
   display: block;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--jato-control-border-primary-neutral, #ffffff);
   border-radius: 50%;
   padding: 16px;
   margin: 0 0 24px 0;  /* UXD: 1.5em = 24px */
@@ -109,6 +111,11 @@
   background-repeat: no-repeat;
 }
 
+/* TODO: This is a workaround, icons should be handled properly as part of VE #4445414. */
+[data-smart-theme="light"] .csui-global-error .main-area-container .main-area-group .navigation-area .navigation-control-container .icon {
+  filter: invert(0.75);
+}
+
 .csui-global-error .main-area-container .main-area-group .navigation-area .navigation-control-container span {
   font-weight: 200;  /* UXD: light */
   font-size: 24px;  /* UXD: 1.5em = 24px */
@@ -118,6 +125,9 @@
 .csui-global-error .main-area-container .main-area-group .navigation-area .navigation-control-container .circle-border:focus {
   outline: 1px dotted #ffffff;
 }
+
+/* css!csui/pages/error.page/impl/error.page */
+
 .binf-widgets.csui-error-page-container {
   width: 100vw;
   height: 100vh;

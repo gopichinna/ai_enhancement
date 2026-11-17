@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 
 
@@ -150,7 +150,7 @@
 .esoc-activityfeed-list-item .esoc-social-comment-data {
   word-wrap: break-word;
   font-size: 14px;
-  color: #333333;
+  color: var(--jato-typography-text-color-primary, #333333);
   white-space: pre-wrap;
   line-height: 17px;
   display: inline-block;
@@ -283,9 +283,12 @@
   display: inline-block;
 }
 
+[data-smart-theme="cf"] .binf-widgets .esoc-acitivityfeed-collection {
+  background-color: #ffffff;
+}
+
 .binf-widgets .esoc-acitivityfeed-collection {
   padding: 0px 15px 0px 0px;
-  background-color: #ffffff;
   height: calc(100% - 10px);
 }
 
@@ -445,7 +448,7 @@
   color: #333333;
 }
 
-.esoc-activityfeed-list-item .esoc-social-comment-data .esoc-social-mime-icon {
+[data-smart-theme=cf] .esoc-activityfeed-list-item .esoc-social-comment-data .esoc-social-mime-icon {
   vertical-align: bottom;
 }
 
@@ -459,7 +462,7 @@
 
 .esoc-activityfeed-list-item .esoc-social-comment-data .esoc-description {
   font-size: 14px;
-  color: #333333;
+  color: var(--jato-typography-text-color-primary, #333333);
   white-space: pre-wrap;
   line-height: 17px;
   display: inline-block;
@@ -472,7 +475,7 @@
 }
 
 .esoc-activityfeed-list-item .esoc-comment-list-divider {
-  border-bottom: 1px solid #cbcbcb;
+  border-bottom: 1px solid var(--jato-divider-primary, #cbcbcb);
   height: 0px;
   margin: 0.5em 0 0.5em 2em;
   width: calc(100% - 2em);
@@ -655,26 +658,25 @@
 }
 
 .binf-widgets .esoc-activityfeed-list-item .esoc-activityfeed-actiontype {
-  
-  color: #333333;
+  color: var(--jato-typography-text-color-primary, #333333);
   font-size: 12px;
   position: relative;
   right: 0;
   display: inline-block;
   margin-bottom: 2px;
-  vertical-align: bottom;
+  vertical-align: text-bottom;
 }
 
 .esoc-activityfeed-list-item .esoc-activity-object-info .esoc-social-version,
 .esoc-activityfeed-list-item .esoc-activity-object-info .esoc-version-number,
 .esoc-activityfeed-list-item .esoc-social-comment-timestamp {
   margin-left: 0px;
-  color: #333333;
+  color: var(--jato-typography-text-color-primary, #333333);
   font-size: 12px;
 }
 
 .esoc-activityfeed-list-item .esoc-social-comment-data .esoc-activity-object-info .esoc-social-version {
-  margin-left: 0px;
+  margin-left: var(--jato-measure-4, 0px);
 }
 
 .esoc-activityfeed-list-item .esoc-user-display-name {
@@ -1008,15 +1010,4 @@ button.esoc-socialactions-comment-button > * {
 
 .esoc-activityfeed-list-item .esoc-social-attachment .esoc-social-no-link-mime-icon .csui-icon {
   cursor: unset;
-}
-
-.esoc-activityfeed-list-item .csui-icon-group img {
-  width: 16px;
-  height: 16px;
-}
-
-.esoc-activityfeed-list-item .esoc-activity-object-information,
-.esoc-activityfeed-list-item .esoc-activity-object-info {
-  display: flex;
-  align-items: center;
 }

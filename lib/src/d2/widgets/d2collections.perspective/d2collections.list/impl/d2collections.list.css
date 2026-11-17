@@ -1,10 +1,8 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .d2-collection-simple-list {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -35,6 +33,8 @@
 .binf-widgets .d2-collection-simple-list .d2-collection-simple-list-header .d2-collections-simple-list-header-label{
   cursor: unset;
 }
+
+
 .binf-widgets .d2-collection-simple-list .d2-collection-simple-list-container {
   flex: 1 0;
   display: flex;
@@ -45,13 +45,19 @@
 
 .binf-widgets .d2-collection-simple-list.no-footer .d2-collection-simple-list-container {
   border-bottom: none;
-  background-color: #FFF;
-  height: calc(100% - 48px);
+  background-color: #FFFFFF;  
 }
 
 .binf-widgets .d2-collection-simple-list .d2-collection-simple-list-container > .d2-listview {
   flex: 1 1 auto;
   overflow: auto;
+  max-height: calc(100vh - 208px);
+}
+
+.binf-widgets .d2-both-d2collections-exist .d2-collection-simple-list .d2-collection-simple-list-container > .d2-listview {
+  flex: 1 1 auto;
+  overflow: auto;
+  max-height: calc(100vh - 256px);
 }
 
 .binf-widgets .d2-collection-simple-list .d2-collection-simple-list-container > .d2-listview .csui-perfect-scrolling .cs-list-group .list-item-title {
@@ -83,34 +89,6 @@
   margin-right: 6px;
   background-size: 18px;
   background-position-x: 5px;
-}
-
-.binf-widgets .d2-collection-simple-list .d2-collection-simple-list-header .d2-button-toolbar .region-left .binf-btn{
-  font-weight: bold;
-}
-
-.binf-widgets .d2-collection-simple-list .d2-collection-simple-list-header .d2-button-toolbar .region-left .d2-collection-simple-list-header-label {
-  flex: 1 1 32px;
-  display: inline;
-  text-align: left;
-  text-overflow: ellipsis;
-  overflow-x: hidden;
-  position: relative;
-  top: 5px;
-  cursor: default;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-  box-shadow: none;
-  background-image: none;
-  border: none;
-  margin-right: 4px;
-}
-
-.binf-widgets .d2-collection-simple-list .d2-collection-simple-list-header .d2-button-toolbar .region-right {
-  flex: 0 0 44px;
-  width: 44px;
-  padding: 0;
 }
 
 .binf-widgets .d2-collection-simple-list .d2-collection-simple-list-footer {
@@ -157,6 +135,61 @@
   padding: 0;
 }
 
+.binf-widgets .d2-collection-simple-list  .d2-collection-simple-list-header .icon-add {
+  background-image: url('./images/add32.svg');
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+}
+
+.binf-widgets .d2-collection-simple-list  .d2-collection-simple-list-header .d2-collection-simple-header-wrapper{
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+
+.binf-widgets .d2-collection-simple-list  .d2-collection-simple-list-header .d2-collection-simple-header-wrapper .region-left{
+  flex-grow: 1;
+}
+
+.binf-widgets .d2-collection-simple-list  .d2-collection-simple-list-header .d2-collection-simple-header-wrapper .region-right{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.binf-widgets .d2-collection-simple-list  .d2-collection-simple-list-header .d2-collection-simple-header-wrapper .region-left h3{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+.binf-widgets .d2-collection-simple-list  .d2-collection-simple-list-header .d2-collection-simple-header-wrapper .region-right .binf-btn-add{
+  padding: 0;
+}
+
+.binf-widgets .d2-collection-simple-list  .d2-collection-simple-list-header .d2-collection-simple-header-wrapper .binf-btn{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.binf-widgets .d2-collection-simple-list  .d2-collection-simple-list-header .d2-collection-simple-header-wrapper .binf-btn.binf-btn-expand,
+.binf-widgets .d2-collection-simple-list  .d2-collection-simple-list-header .d2-collection-simple-header-wrapper .binf-btn.binf-btn-collapse{
+  width: 32px;
+  height: 32px; 
+  padding: 6px;
+}
+
+.binf-widgets .d2-collection-simple-list  .d2-collection-simple-list-header .d2-collection-simple-header-wrapper .binf-btn:hover{
+  background-color: #f3fbff;
+}
+
+.binf-widgets .d2-collection-simple-list  .d2-collection-simple-list-header .d2-collection-simple-header-wrapper .binf-btn:active{
+  background-color: #cccccc;
+}
+
 .binf-widgets .d2-collections-list-view .d2-listview.empty-state .cs-content .cs-list-group .cs-emptylist-container {
   top: initial;
 }
@@ -170,7 +203,7 @@
 
 .d2-listview .cs-emptylist-container:not(.csui-state-loading) {
   min-height: 190px;
-  background-color: #Ffff;
+  background-color: #FFffffff;
 }
 
 .binf-widgets .d2-collections-list-view .cs-emptylist-text {
@@ -179,7 +212,9 @@
 
 .binf-widgets .d2-collection-simple-list-container .d2-listview .cs-list-group .list-item-title{
  left: 0;
- width: 100%
+ width: calc(100% - 64px);
+ height: unset;
+ padding: 0;
 }
 
 .binf-widgets .d2-collection-simple-list-container .d2-listview .cs-list-group a.csui-tileview-contains-more-btn.tileview-with-shareicon .list-item-title{
@@ -191,6 +226,7 @@
   display: flex;
   align-items: center;
 }
+
 .csui-tileview-more-btn{
   width: 32px;
   height: 32px;
@@ -199,22 +235,57 @@
 .binf-widgets .d2-mycollections-list-view, .binf-widgets .d2-sharedcollections-list-view {
   transition: max-width 0.3s ease-in;
   width: 260px; 
-  height: calc(100% - 48px);
 }
 
-.binf-widgets .d2-collections-list-wrapper.d2-both-d2collections-exist .d2-mycollections-list-view,
-.binf-widgets .d2-collections-list-wrapper.d2-both-d2collections-exist .d2-sharedcollections-list-view{
-  height: calc(50% - 24px);
-}
 
 .binf-widgets .d2-collection-simple-list-container .d2-listview .cs-content .cs-list-group {
-  height: 100%;
   overflow: auto;
-  padding-bottom: 48px;
+  padding-bottom: 16px;
 }
 
 .binf-widgets .d2-collection-simple-list-container .d2-listview .csui-icon-group .icon-share{
   height: 18px;
   width: 18px;
   margin: 7px 5px 5px 5px;
+}
+
+.binf-widgets .d2-listview .cs-list-group .d2-listitem.binf-active {
+  background-color: #dfe7ea;
+  border-bottom: none;
+  border-left-color: #7b9ab0;
+  border-top: none;
+  color: #333333;
+  z-index: auto;
+}
+
+.binf-widgets .d2-collection-simple-list .d2-collection-simple-list-container .d2-listitem {
+  cursor: pointer;
+  padding: 0 0 0 12px;
+}
+
+.binf-widgets .cs-simplelist .cs-list-group .d2-listitem a.csui-tileview-contains-more-btn {
+  display: flex;
+  align-items: center;
+  border: 1px dotted transparent;
+  color: #323232;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100%;
+  padding: 4.2px 0 4.2px 0;
+}
+
+.binf-widgets .d2-collection-simple-list.accordion-expand .d2-collection-simple-list-header .d2-collection-simple-header-wrapper .binf-btn-collapse,
+.binf-widgets .d2-collection-simple-list .d2-collection-simple-list-header .d2-collection-simple-header-wrapper .binf-btn-expand,
+.binf-widgets .d2-collection-simple-list .d2-collection-simple-list-container{
+  display: none;
+}
+
+.binf-widgets .d2-collection-simple-list.accordion-expand .d2-collection-simple-list-container{
+  display: flex;
+}
+
+.binf-widgets .d2-collection-simple-list.accordion-expand .d2-collection-simple-list-header .d2-collection-simple-header-wrapper .binf-btn-expand,
+.binf-widgets .d2-collection-simple-list .d2-collection-simple-list-header .d2-collection-simple-header-wrapper .binf-btn-collapse{
+  display: inline-block;
 }

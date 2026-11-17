@@ -1,6 +1,7 @@
-<a tabindex="-1" class="user-options-item {{#xif selected}} d2-field-selected{{/xif}}">
-  <div class="d2-listfield-icon-container {{#xif selected}} d2-icon-checkmark{{/xif}}"></div>
-  <div class="user-info-container"></div>
+<a tabindex="-1" class="user-options-item">
+    <otc-checkbox class="dctmw-list-option-item" {{#if selected}}checked=""{{/if}} {{#if
+            options.disabled}}readonly=""{{/if}} name="{{name}}" arialabel="{{name}}">
+        <div class="user-info-container"></div>
+    </otc-checkbox>
 </a>
-
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

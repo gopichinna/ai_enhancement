@@ -1,0 +1,56 @@
+{{#if writeonlyMode}}
+  <div class="cs-field-write">
+    <div class="cs-field-write-inner">
+      {{#if isJATO}}
+        <otc-checkboxgroup columns="{{columns}}">
+          {{#each items}}
+            <otc-checkbox value="{{id}}"id="{{renderId}}" readonly="false" name="{{name}}" {{#if isChecked}}checked=""{{/if}}>{{name}}</otc-checkbox>
+          {{/each}}
+        </otc-checkboxgroup>
+      {{else}}
+        <ul class="dctmw-cb-container-parent" id="{{checkboxGroupName}}">
+          {{#each items}}
+            <li>
+              <div class="dctmw-checkbox-container {{clazz}} {{#if showOnHover}}show-on-hover{{/if}}">
+                <input type="checkbox" class="checkbox-item" value="{{id}}" id="{{renderId}}" name="{{name}}" {{{checked}}}
+                       tabindex="0"/>
+                <div class="dctmw-checkbox-icon-container"></div>
+                <div class="dctmw-checkbox-item-container">
+                  <label for="{{renderId}}">{{name}}</label>
+                </div>
+                <span class="dctmw-text-overflow dctmw-more-text"></span>
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+        <span class="validation-error-message {{#if
+            validationErrorMsg}}{{else}}binf-hidden{{/if}}">{{validationErrorMsg}}</span>
+      {{/if}}
+    </div>
+  </div>
+{{/if}}
+<div class="cs-field-read">
+  <div class="cs-field-read-inner">
+    {{#if isJATO}}
+      <otc-checkboxgroup columns="{{columns}}">
+        {{#each items}}
+          <otc-checkbox id="{{renderId}}" name="{{name}}" readonly="" {{#if isChecked}}checked=""{{/if}}>{{name}}</otc-checkbox>
+        {{/each}}
+      </otc-checkboxgroup>
+    {{else}}
+      <div class="btn-container">
+        <button {{#if this.hasData}} title="{{name}}"{{else}} title="{{noValue}}"{{/if}} {{#if
+            schema.readonly}}tabindex="-1" data-cstabindex="-1"{{/if}}>
+          {{#if this.hasData}}
+            <span class="selected-label">{{name}}</span>
+          {{else}}
+            <span class="selected-label placeholder">
+              {{emptyLabel}}</span>
+          {{/if}}
+        </button>
+      </div>
+    {{/if}}
+  </div>
+</div>
+
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

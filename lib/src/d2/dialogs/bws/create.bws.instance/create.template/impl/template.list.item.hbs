@@ -1,0 +1,29 @@
+<div class="sub-item {{#if is_new_entry}}sub-item-new{{/if}}">
+    <div class="sub-item-container">
+        <div class="ws-item-container">
+            <div class="ws-icon"></div>
+            <div class="ws-details">
+                <div class="ws-name {{#if isSaved}}{{else}}binf-hidden {{/if}}" title="{{name}}"
+                     aria-label="{{name}}">{{name}}
+                </div>
+                <div class="rename-container {{#if isSaved}}binf-hidden{{/if}}">
+                    <input class="binf-form-control cs-input rename-input" placeholder="Enter workspace name" value="{{name}}">
+                    <div class="edit-cancel-icons">
+                        <button class="icon-approve" title="Save"></button>
+                        {{#if canCancel}}
+                        <button class="icon-cancel" title="Cancel"></button>
+                        {{/if}}
+                    </div>
+                </div>
+                <div class="csui-inlineform-group-error binf-hidden" role="alert">
+                    <div class="binf-text-danger" role="alert" title="{{errorMessage}}"><span class="csui-text-danger">{{errorMessage}}</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icon-rename template-icons {{#if isSaved}}{{else}}binf-hidden {{/if}}" tabindex="0" title="{{renameLabel}}" aria-label="{{renameLabel}}" role="button"></div>
+    {{#if removable}}
+    <div class="icon-delete template-icons {{#if isSaved}}{{else}}binf-hidden {{/if}}" tabindex="0" title="{{removeLabel}}" aria-label="{{removeLabel}}" role="button"></div>
+    {{/if}}
+</div>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

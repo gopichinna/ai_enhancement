@@ -1,18 +1,926 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-.binf-widgets .csui-top-ribbon {
-    background-color: #EEF2F4;
-    display: inline-flex;
-    height: 116px;
-    width: 100%;
+[data-smart-theme]:not([data-smart-theme="cf"])  {
+  --jatx-csui-perspective-actions-dropdown-view-hyperlink-meas: 22px;
+  --jatx-csui-perspective-actions-dropdown-view-border: 1px solid var(--jato-border-color-primary);
+  --jatx-csui-perspective-input-meas: 3px;
+  --jatx-csui-perspective-input-icon-container-meas: -5px;
+  --jatx-csui-edit-draft-icon-padding: 5px; 
 }
 
-.binf-widgets .csui-top-ribbon .csui-top-ribbon-item {
-    margin: 20px;
-    
+
+.binf-widgets .csui-top-ribbon .csui-perspective-layout {
+    padding: 14px 12px 10px 12px;
+    width: 145px;
+    background-color: var(--jato-background-elevation-base,#EEF2F4);
+    float: left;
+    position: relative;
+  }
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout {
+    width: 124px;
+    height: 64px;
+    border-radius: 3px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-top-ribbon-name:has(.cs-form .cs-formfield .cs-field-read.binf-hidden) {
+  margin: 0;
+}
+ 
+.binf-widgets .csui-top-ribbon-name {
+    color: #000000;    
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    margin: 6px 0 0 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 20px;
+}
+
+.binf-widgets .csui-top-ribbon-item.binf-active .csui-top-ribbon-name {
+        font-weight: 700;
+    }
 
 .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout:hover {
     cursor: pointer;
+}
+
+.binf-widgets .csui-top-ribbon-item.binf-active .csui-top-ribbon-layout{
+    outline: 4px solid #627783;
+    outline-offset: -1px;
+}
+
+.binf-widgets .csui-perspective-action {
+    position: absolute;
+    z-index: 9999;
+    top: 18px;
+    right: 13px;   
+}
+
+.binf-widgets .csui-top-ribbon .csui-perspective-layout .csui-perspective-actions-dropdown-view a {
+  display: block;
+  background-color: var(--jato-background-elevation-level-4, #f3fbff);
+  border-radius: 50%;
+  height: var(--jatx-csui-perspective-actions-dropdown-view-hyperlink-meas, 24px);
+  width: var(--jatx-csui-perspective-actions-dropdown-view-hyperlink-meas, 24px);
+  opacity: 0;
+}
+
+.binf-widgets .csui-top-ribbon .csui-perspective-layout .csui-perspective-actions-dropdown-view a .csui-topribbon-actions-dropdowns-jatoicon {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.binf-widgets .csui-top-ribbon .csui-perspective-layout:hover .csui-perspective-action .csui-perspective-actions-dropdown-view a,
+.binf-widgets .csui-top-ribbon .csui-perspective-layout .csui-perspective-action .csui-perspective-actions-dropdown-view a:focus,
+.binf-widgets .csui-top-ribbon .csui-perspective-layout .csui-perspective-actions-dropdown-view.binf-open a,
+.binf-widgets .csui-top-ribbon .csui-perspective-layout .csui-top-ribbon-layout:focus + .csui-perspective-action .csui-top-ribbon-actions-dropdown-toggle {
+  opacity: 1;
+}
+
+.binf-widgets .csui-top-ribbon .csui-perspective-action .csui-top-ribbon-actions-dropdown-menu {
+    position: absolute;
+    top: 26px;
+    left: auto;
+    right: auto;
+    display: none;
+    overflow: auto;
+    min-width: 158px;
+    max-height: 140px;
+    width: max-content;
+    padding: var(--jato-padding-xxs, 3px 0);
+    font-size: 14px;
+    text-align: left;
+    border: var(--jatx-csui-perspective-actions-dropdown-view-border, unset);
+    border-radius: var(--jato-radii-lrg, unset);
+    background-color: var(--jato-background-elevation-level-4, #ffffff);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.binf-widgets .csui-top-ribbon .csui-perspective-action .binf-open > .csui-top-ribbon-actions-dropdown-menu {
+    display: block;
+}
+
+.binf-widgets .pman-top-ribbon .csui-top-ribbon .csui-top-ribbon-item:last-child .csui-perspective-action .csui-top-ribbon-actions-dropdown-menu {
+  right: 0;
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout .csui-top-ribbon-layout {
+    position: relative;
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout .csui-top-ribbon-edit {
+  display: none;
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-edited-perspective .csui-top-ribbon-layout .csui-jato-top-ribbon-edit-container {
+  background: var(--jato-background-elevation-level-4);
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 0;
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-edited-perspective .csui-top-ribbon-layout .csui-top-ribbon-edit {
+    background-image: var(--jatx-const-none, url('../../../themes/carbonfiber/image/perspective_manage/layouts/layout_edit.svg'));
+    position: absolute;
+    bottom: 0;
+    width: 24px;
+    height: 24px;
+    display: block;
+    top: var(--jatx-csui-edit-draft-icon-padding, unset);
+    left: var(--jatx-csui-edit-draft-icon-padding, unset);
+}
+
+
+.binf-widgets .csui-top-ribbon-item .csui-top-ribbon-name .cs-form {
+  background-color: transparent;
+}
+
+.binf-widgets .csui-top-ribbon-item .csui-top-ribbon-name .cs-form .binf-form-group {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.binf-widgets .csui-top-ribbon-item.binf-active .csui-top-ribbon-name .cs-form .binf-form-group {
+  font-weight: 700;
+}
+
+.binf-widgets .csui-top-ribbon-item .csui-top-ribbon-name .cs-form .cs-formfield {
+  line-height: 16px;
+}
+
+.binf-widgets .csui-top-ribbon-item .csui-top-ribbon-name .cs-form .alpaca-container-item > .binf-form-group.alpaca-field > .binf-col-sm-9,
+.binf-widgets .csui-top-ribbon-item .csui-top-ribbon-name .cs-form .cs-formfield .cs-field-read {
+    width: 100%;
+}
+
+.binf-widgets .csui-top-ribbon-item .csui-top-ribbon-name .cs-form .cs-form-doublecolumn {
+    padding: 0;
+}
+
+.binf-widgets .csui-top-ribbon-item .csui-top-ribbon-name .cs-form .cs-formfield .cs-field-read .icon-container {
+    display: none;
+}
+
+.binf-widgets .csui-top-ribbon-item .csui-top-ribbon-name .cs-form .cs-formfield .cs-field-write .icon-container {
+    right: var(--jatx-csui-perspective-input-meas, 0);
+    margin: 0;
+    top: var(--jatx-csui-perspective-input-icon-container-meas, 0);
+}
+
+.binf-widgets .csui-top-ribbon-item .csui-top-ribbon-name .cs-form .cs-formfield.cs-formfield-readonly .cs-field-read button:focus {
+  outline:none;
+}
+
+.binf-widgets .csui-top-ribbon-item .csui-top-ribbon-name .cs-form .cs-formfield .cs-field-write .icon-container .csui-icon-edit.edit-cancel {
+    background-image: url('../../../themes/carbonfiber/image/icons/formfield_clear24.svg');
+    background-size: 16px;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0; 
+}
+
+.binf-widgets .csui-top-ribbon-item .csui-top-ribbon-name .cs-form .cs-formfield .cs-field-write-inner input {
+ border: 1px solid var(--jato-input-border-container-neutral, #7E929F);
+ height: var(--jato-measure-24, 20px);
+ border-radius: var(--jato-radii-med, 2px) var(--jato-radii-med, 2px) var(--jatx-const-0, 2px) var(--jatx-const-0, 2px);;
+ padding-right: 20px;
+ line-height: 16px;
+ font-size: 13px;
+ font-weight: var(--jatx-csui-const-font-weight-400, 700);
+ overflow: hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-name:has(.cs-form .cs-formfield .cs-field-read.binf-hidden) {
+  background-color: unset;
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-name{
+    background-color: var(--jato-color-navy-1170, #2B4D5F);
+    margin-top: var(--jatx-const-0, -2px);
+    padding-top: var(--jatx-csui-perspective-input-meas, 1px);
+    width: 124px;
+    height: var(--jato-measure-24, 20px);
+    border-radius: var(--jatx-csui-perspective-input-meas,0) var(--jatx-csui-perspective-input-meas,0) 3px 3px;                                    
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-name .cs-form .cs-formfield .cs-field-read button { 
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-name .cs-form {
+  color: #ffffff;
+}
+
+.binf-widgets .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-name .cs-form .cs-formfield .cs-field-write-inner input {
+    background-color: var(--jato-background-elevation-level-1, #042E44);
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-name .cs-form .cs-field-read .btn-container {
+    padding-left: var(--jato-measure-2, 5px);
+    padding-top: 2px;
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout .csui-top-ribbon-layout:focus{
+  -webkit-box-shadow: inset 0 0 0 1px #2E3D98, inset 0 0 0 2px #FFFFFF;
+  box-shadow: inset 0 0 0 1px #2E3D98, inset 0 0 0 2px #FFFFFF;
+  outline: 0;
+}
+
+
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-left-center-right {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_lcr.svg');
+  background-position: 0 0;
+}
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-left-center-right {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_lcr_mo.svg');
+}
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-left-center-right {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_lcr_md.svg');
+}
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-left-center-right {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_lcr_sel.svg');
+}
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-flow {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_flow.svg');
+  background-position: center;
+}
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-flow {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_flow_mo.svg');
+}
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-flow {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_flow_md.svg');
+}
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-flow {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_flow_sel.svg');
+}
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_right_sidepanel.svg');
+  background-position: center;
+}
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-right{
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_right_sidepanel_mo.svg');
+}
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_right_sidepanel_md.svg');
+}
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_right_sidepanel_sel.svg');
+}
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-sidepanel-left {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_left_sidepanel.svg');
+  background-position: center;
+}
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-left {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_left_sidepanel_mo.svg');
+}
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-left {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_left_sidepanel_md.svg');
+}
+
+[data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-left {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/top_ribbon_perspective/top_layout_left_sidepanel_sel.svg');
+}
+  
+  
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-flow {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_flow.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-flow {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_flow_sel.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-flow {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_flow_mo.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-flow {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_flow_md.svg');
+  }
+  
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-left-center-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_lcr.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-left-center-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_lcr_sel.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-left-center-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_flow_mo.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-left-center-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_flow_md.svg');
+  }
+  
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_right_side.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_right_side_sel.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_right_side_mo.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_right_side_md.svg');
+  }
+  
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective  .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-left{
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_left_side.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective.binf-active  .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-left{
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_left_side_sel.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective  .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-left{
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_left_side_mo.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective  .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-left{
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/default_perspective/default_layout_left_side_mo.svg');
+  }
+
+  
+  
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-left-center-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_lcr_dis.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-left-center-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_lcr_dis_sel.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-left-center-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_lcr_dis_mo.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-left-center-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_lcr_dis_md.svg');
+  }
+  
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-flow.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_flow_dis.svg')
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-flow.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_flow_dis_sel.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-flow.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_flow_dis_mo.svg')
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-flow.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_flow_dis_md.svg')
+  }
+  
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-sidepanel-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_right_sidepanel_dis.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_right_sidepanel_dis_sel.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_right_sidepanel_dis_mo.svg')
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_right_sidepanel_dis_md.svg')
+  }
+  
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-sidepanel-left.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_left_sidepanel_dis.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-left.csui-perspective-disabled {
+    background-image: url('../../../themes/themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_left_sidepanel_dis_sel.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-left.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_left_sidepanel_dis_mo.svg');
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-left.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_left_sidepanel_dis_md.svg');
+  }
+
+  
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-layout.csui-layout-flow.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_flow_dis.svg')
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-layout.csui-layout-sidepanel-left.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_left_sidepanel_dis.svg')
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-layout.csui-layout-sidepanel-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_right_sidepanel_dis.svg')
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-layout.csui-layout-left-center-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/dark_theme/disabled_perspective/top_layout_lcr_dis.svg')
+  }
+
+
+
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-left-center-right {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_lcr.svg');
+  background-position: 0 0;
+}
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-left-center-right {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_lcr_mo.svg');
+}
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-left-center-right {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_lcr_md.svg');
+}
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-left-center-right {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_lcr_sel.svg');
+}
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-flow {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_flow.svg');
+  background-position: center;
+}
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-flow {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_flow_mo.svg');
+}
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-flow {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_flow_md.svg');
+}
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-flow {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_flow_sel.svg');
+}
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_right_sidepanel.svg');
+  background-position: center;
+}
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-right{
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_right_sidepanel_mo.svg');
+}
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_right_sidepanel_md.svg');
+}
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_right_sidepanel_sel.svg');
+}
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-sidepanel-left {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_left_sidepanel.svg');
+  background-position: center;
+}
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-left {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_left_sidepanel_mo.svg');
+}
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-left {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_left_sidepanel_md.svg');
+}
+
+[data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-left {
+  background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/top_ribbon_perspective/top_layout_left_sidepanel_sel.svg');
+}
+  
+  
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-flow {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_flow.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-flow {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_flow_sel.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-flow {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_flow_mo.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-flow {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_flow_md.svg');
+  }
+  
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-left-center-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_lcr.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-left-center-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_lcr_sel.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-left-center-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_flow_mo.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-left-center-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_flow_md.svg');
+  }
+  
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_right_side.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_right_side_sel.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_right_side_mo.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_right_side_md.svg');
+  }
+  
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective  .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-left{
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_left_side.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective.binf-active  .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-left{
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_left_side_sel.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective  .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-left{
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_left_side_mo.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective  .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-left{
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/default_perspective/default_layout_left_side_mo.svg');
+  }
+
+  
+  
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-left-center-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_lcr_dis.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-left-center-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_lcr_dis_sel.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-left-center-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_lcr_dis_mo.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-left-center-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_lcr_dis_md.svg');
+  }
+  
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-flow.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_flow_dis.svg')
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-flow.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_flow_dis_sel.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-flow.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_flow_dis_mo.svg')
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-flow.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_flow_dis_md.svg')
+  }
+  
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-sidepanel-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_right_sidepanel_dis.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_right_sidepanel_dis_sel.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_right_sidepanel_dis_mo.svg')
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_right_sidepanel_dis_md.svg')
+  }
+  
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-sidepanel-left.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_left_sidepanel_dis.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-left.csui-perspective-disabled {
+    background-image: url('../../../themes/themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_left_sidepanel_dis_sel.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-left.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_left_sidepanel_dis_mo.svg');
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-left.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_left_sidepanel_dis_md.svg');
+  }
+
+  
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-layout.csui-layout-flow.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_flow_dis.svg')
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-layout.csui-layout-sidepanel-left.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_left_sidepanel_dis.svg')
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-layout.csui-layout-sidepanel-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_right_sidepanel_dis.svg')
+  }
+
+  [data-smart-theme="light"] .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-layout.csui-layout-left-center-right.csui-perspective-disabled {
+    background-image: url('../../../themes/jato/image/perspective_manage/layouts/light_theme/disabled_perspective/top_layout_lcr_dis.svg')
+  }
+
+
+
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-left-center-right {
+  background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_lcr.svg');
+  background-position: 0 0;
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-left-center-right {
+  background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_lcr_mo.svg');
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-left-center-right {
+  background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_lcr_md.svg');
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-left-center-right {
+  background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_lcr_sel.svg');
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-flow {
+  background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_flow.svg');
+  background-position: center;
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-flow {
+  background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_flow_mo.svg');
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-flow {
+  background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_flow_md.svg');
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-flow {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_flow_sel.svg');
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+  background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_right_sidepanel.svg');
+  background-position: center;
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-right{
+  background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_right_sidepanel_mo.svg');
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+  background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_right_sidepanel_md.svg');
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+  background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_right_sidepanel_sel.svg');
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-sidepanel-left {
+  background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_left_sidepanel.svg');
+  background-position: center;
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-left {
+  background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_left_sidepanel_mo.svg');
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-left {
+  background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_left_sidepanel_md.svg');
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-left {
+  background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/top_ribbon_perspective/top_layout_left_sidepanel_sel.svg');
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-layout-icon{
+    outline: 0;
+}
+  
+  
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-flow {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_flow.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-flow {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_flow_sel.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-flow {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_flow_mo.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-flow {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_flow_md.svg');
+  }
+  
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-left-center-right {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_lcr.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-left-center-right {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_lcr_sel.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-left-center-right {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_flow_mo.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-left-center-right {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_flow_md.svg');
+  }
+  
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_right_side.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_right_side_sel.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_right_side_mo.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-right {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_right_side_md.svg');
+  }
+  
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective  .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-left{
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_left_side.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective.binf-active  .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-left{
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_left_side_sel.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective  .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-left{
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_left_side_mo.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective  .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-left{
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/default_perspective/default_layout_left_side_mo.svg');
+  }
+
+  
+  
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-left-center-right.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_lcr_dis.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-left-center-right.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_lcr_dis_sel.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-left-center-right.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_lcr_dis_mo.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-left-center-right.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_lcr_dis_md.svg');
+  }
+  
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-flow.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_flow_dis.svg')
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-flow.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_flow_dis_sel.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-flow.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_flow_dis_mo.svg')
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-flow.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_flow_dis_md.svg')
+  }
+  
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-sidepanel-right.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_right_sidepanel_dis.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-right.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_right_sidepanel_dis_sel.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-right.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_right_sidepanel_dis_mo.svg')
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-right.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_right_sidepanel_dis_md.svg')
+  }
+  
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-top-ribbon-layout.csui-layout-sidepanel-left.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_left_sidepanel_dis.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.binf-active .csui-perspective-layout .csui-top-ribbon-layout.csui-layout-sidepanel-left.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_left_sidepanel_dis_sel.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:hover .csui-top-ribbon-layout.csui-layout-sidepanel-left.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_left_sidepanel_dis_mo.svg');
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item .csui-perspective-layout:active .csui-top-ribbon-layout.csui-layout-sidepanel-left.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_left_sidepanel_dis_md.svg');
+  }
+
+  
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-layout.csui-layout-flow.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_flow_dis.svg')
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-layout.csui-layout-sidepanel-left.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_left_sidepanel_dis.svg')
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-layout.csui-layout-sidepanel-right.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_right_sidepanel_dis.svg')
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-layout.csui-layout-left-center-right.csui-perspective-disabled {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/layouts/disabled_perspective/top_layout_lcr_dis.svg')
+  }
+
+  
+  .binf-widgets .csui-top-ribbon-item.csui-default-perspective .csui-top-ribbon-name .cs-form .cs-formfield .cs-field-write .icon-container .csui-icon-edit.edit-cancel {
+    background-image: url('../../../themes/carbonfiber/image/perspective_manage/white_form_field_clear.svg');
+    width: 20px;
+    height: 20px;
+  }
+
+  .binf-widgets .csui-top-ribbon .csui-perspective-action a:focus:not(:focus-visible) {
+    -webkit-box-shadow: inset 0 0 0 1px #2E3D98, inset 0 0 0 2px #FFFFFF;
+    box-shadow: inset 0 0 0 1px #2E3D98, inset 0 0 0 2px #FFFFFF;
+    outline: 0;
 }

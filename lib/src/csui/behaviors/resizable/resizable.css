@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-resizable .ui-resizable-e,
 .binf-widgets .csui-resizable .ui-resizable-w {
@@ -9,6 +9,7 @@
     top: 0;
     height: 100%;
     margin-right: -1px;
+    border-radius: var(--jato-radii-xs, unset);
 }
 
 html[dir="rtl"] .binf-widgets .csui-resizable .ui-resizable-w {
@@ -19,7 +20,7 @@ html[dir="rtl"] .binf-widgets .csui-resizable .ui-resizable-w {
 
 .binf-widgets .csui-resizable .ui-resizable-e:hover,
 .binf-widgets .csui-resizable .ui-resizable-w:hover {
-    background-color: #232E72;
+    background-color:  var(--jato-control-toggle-border-neutral, #232E72);
 }
 
 .binf-widgets .csui-resizable .ui-resizable-e::before,
@@ -35,6 +36,10 @@ html[dir="rtl"] .binf-widgets .csui-resizable .ui-resizable-w {
 
 .binf-widgets .csui-resizable .ui-resizable.csui-no-transition {
     transition: none;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-resizable .ui-resizable-resizing  .ui-resizable-handle {
+    background-color: var(--jato-control-toggle-border-selected);
 }
 
 
@@ -72,6 +77,7 @@ html[dir="rtl"] .binf-widgets .csui-resizable .ui-resizable.metadata-sidebar {
 .binf-widgets .csui-search-results .csui-resizable .ui-resizable .csui-search-results-custom {
     width: inherit;
     max-width: inherit;
+
     
 }
 
@@ -92,8 +98,8 @@ html[dir="rtl"] .binf-widgets .csui-resizable .ui-resizable.metadata-sidebar {
 
 
 .binf-widgets .csui-nodestable .csui-resizable .ui-resizable.csui-side-panel.csui-sidepanel-hidden {
-    width: 0px !important;
-    min-width: 0px;
+    width: 0 !important;
+    min-width: 0;
 }
 
 

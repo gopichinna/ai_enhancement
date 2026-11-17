@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .d2-task-external-esign-dialog .d2-task-external-esign-dialog-container {
   padding-top: 24px;
   padding-right: 64px;
@@ -77,6 +76,7 @@
   height:28px;
 }
 
+.d2-task-external-esign-dialog .d2-task-esignature-doc-container .d2-task-esign-file-item-container .d2-task-esign-file-item-icon,
 .d2-task-external-esign-dialog .d2-task-esignature-doc-container .d2-task-esign-file-item-container .csui-icon {
   display: inline-block;
   width: 28px;

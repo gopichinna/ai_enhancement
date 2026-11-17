@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-spy-container {
   padding: 0;
@@ -29,3 +29,25 @@
 .cs-form .cs-form-set .alpaca-field.alpaca-field-array .cs-form-set-container.alpaca-container-has-items {
   float: none;
 }
+
+.binf-widgets .cs-form .binf-col-md-12.alpaca-container-label {
+  display: flex;
+}
+
+.cs-form .binf-col-md-12.alpaca-container-label .d2-alpaca-container-label.d2-properties-form-expand-collapse.icon-expandArrowDown {
+  background-repeat: no-repeat;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.cs-form .binf-col-md-12.alpaca-container-label .d2-alpaca-container-label.d2-properties-form-expand-collapse.icon-expandArrowRight {
+  background-repeat: no-repeat;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.binf-widgets .binf-modal-content .binf-modal-body .custom-content-container .cs-form.csui-general-form.d2-form .binf-col-md-12.alpaca-container-label {
+  display: none;
+}
+
+

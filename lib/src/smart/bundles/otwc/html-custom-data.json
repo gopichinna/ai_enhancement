@@ -3,71 +3,25 @@
   "tags": [
     {
       "name": "otc-avatar",
-      "description": "The Avatar component is a round element that displays either an image, an icon from one of the icon bundles, or user initials.\n\nAttributes:\n\n  * `ariaLabel` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `icon` {`string`} - \n\n  * `image` {`string`} - \n\n  * `initials` {`string`} - \n\n  * `interactive` {`boolean`} - \n\nProperties:\n\n  * `ariaLabel` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `icon` {`string`} - \n\n  * `image` {`string`} - \n\n  * `initials` {`string`} - \n\n  * `interactive` {`boolean`} - ",
-      "attributes": [
-        {
-          "name": "ariaLabel",
-          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
-        },
-        {
-          "name": "iconAppearance",
-          "description": "`iconAppearance` {`string`} - \n\nProperty: iconAppearance\n\nDefault: "
-        },
-        {
-          "name": "icon",
-          "description": "`icon` {`string`} - \n\nProperty: icon\n\nDefault: "
-        },
-        {
-          "name": "image",
-          "description": "`image` {`string`} - \n\nProperty: image\n\nDefault: "
-        },
-        {
-          "name": "initials",
-          "description": "`initials` {`string`} - \n\nProperty: initials\n\nDefault: "
-        },
-        {
-          "name": "interactive",
-          "description": "`interactive` {`boolean`} - \n\nProperty: interactive\n\nDefault: false",
-          "valueSet": "v"
-        }
-      ]
+      "description": "The Avatar component is a round element that displays either an image, an icon from one of the icon bundles, or user initials.\n\nProperties:\n\n  * `ariaLabel` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `image` {`string`} - \n\n  * `initials` {`string`} - \n\n  * `interactive` {`boolean`} - \n\n  * `size` {`string`} - ",
+      "attributes": []
     },
     {
       "name": "otc-badge",
-      "description": "The Badge component is a small round element containing text, usually used to indicate the count of an associated element.\n\nAttributes:\n\n  * `isActive` {`boolean`} - \n\n  * `forToolbar` {`boolean`} - \n\n  * `secondary` {`boolean`} - \n\n  * `type` {`string`} - \n\n  * `value` {`string`} - \n\nProperties:\n\n  * `isActive` {`boolean`} - \n\n  * `forToolbar` {`boolean`} - \n\n  * `secondary` {`boolean`} - \n\n  * `type` {`string`} - \n\n  * `value` {`string`} - ",
-      "attributes": [
-        {
-          "name": "isActive",
-          "description": "`isActive` {`boolean`} - \n\nProperty: isActive\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "forToolbar",
-          "description": "`forToolbar` {`boolean`} - \n\nProperty: forToolbar\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "secondary",
-          "description": "`secondary` {`boolean`} - \n\nProperty: secondary\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "type",
-          "description": "`type` {`string`} - \n\nProperty: type\n\nDefault: "
-        },
-        {
-          "name": "value",
-          "description": "`value` {`string`} - \n\nProperty: value\n\nDefault: null"
-        }
-      ]
+      "description": "The Badge component is a small round element containing text, usually used to indicate the count of an associated element.\n\nProperties:\n\n  * `disabled` {`boolean`} - \n\n  * `isActive` {`boolean`} - \n\n  * `type` {`string`} - \n\n  * `size` {`string`} - \n\n  * `value` - ",
+      "attributes": []
     },
     {
       "name": "otc-brand",
-      "description": "The Brand component consists of an image of the logo, vertical splitter and Primary product name.\nAdditionally, users can add some secondary text such as CE.\n\nAttributes:\n\n  * `align` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `hidePrimaryText` {`boolean`} - \n\n  * `hideSecondaryText` {`boolean`} - \n\n  * `hideVersionText` {`boolean`} - \n\n  * `large` {`boolean`} - \n\n  * `logoAltText` {`string`} - \n\n  * `logoSrc` {`string`} - \n\n  * `logoUrl` {`string`} - \n\n  * `logoUrlTarget` {`string`} - \n\n  * `primaryText` {`string`} - \n\n  * `secondaryText` {`string`} - \n\n  * `tooltipBrand` {`string`} - \n\n  * `versionText` {`string`} - \n\nProperties:\n\n  * `imageComplete` {`Promise<any>`} - A promise that resolves when the logo specified in `logoSrc` has finished loading.\n\n  * `align` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `hidePrimaryText` {`boolean`} - \n\n  * `hideSecondaryText` {`boolean`} - \n\n  * `hideVersionText` {`boolean`} - \n\n  * `large` {`boolean`} - \n\n  * `logoAltText` {`string`} - \n\n  * `logoSrc` {`string`} - \n\n  * `logoUrl` {`string`} - \n\n  * `logoUrlTarget` {`string`} - \n\n  * `primaryText` {`string`} - \n\n  * `secondaryText` {`string`} - \n\n  * `tooltipBrand` {`string`} - \n\n  * `versionText` {`string`} - ",
+      "description": "The Brand component consists of an image of the logo, the vertical splitter and the Primary product name.\nAdditionally, users can add some secondary text and the version number.\n\nAttributes:\n\n  * `align` {`string`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `hidePrimaryText` {`boolean`} - \n\n  * `hideSecondaryText` {`boolean`} - \n\n  * `hideVersionText` {`boolean`} - \n\n  * `large` {`boolean`} - \n\n  * `logoAltText` {`string`} - \n\n  * `logoSrc` {`string`} - \n\n  * `logoUrl` {`string`} - \n\n  * `logoUrlTarget` {`string`} - \n\n  * `noBrandText` {`boolean`} - \n\n  * `primaryText` {`string`} - \n\n  * `secondaryText` {`string`} - \n\n  * `tooltipBrand` {`string`} - \n\n  * `versionText` {`string`} - \n\nProperties:\n\n  * `imageComplete` {`Promise<any>`} - A promise that resolves when the logo specified in `logoSrc` has finished loading.\n\n  * `align` {`string`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `hidePrimaryText` {`boolean`} - \n\n  * `hideSecondaryText` {`boolean`} - \n\n  * `hideVersionText` {`boolean`} - \n\n  * `large` {`boolean`} - \n\n  * `logoAltText` {`string`} - \n\n  * `logoSrc` {`string`} - \n\n  * `logoUrl` {`string`} - \n\n  * `logoUrlTarget` {`string`} - \n\n  * `noBrandText` {`boolean`} - \n\n  * `primaryText` {`string`} - \n\n  * `secondaryText` {`string`} - \n\n  * `tooltipBrand` {`string`} - \n\n  * `versionText` {`string`} - ",
       "attributes": [
         {
           "name": "align",
           "description": "`align` {`string`} - \n\nProperty: align\n\nDefault: "
+        },
+        {
+          "name": "ariaLabel",
+          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
         },
         {
           "name": "dark",
@@ -116,6 +70,11 @@
           "description": "`logoUrlTarget` {`string`} - \n\nProperty: logoUrlTarget\n\nDefault: "
         },
         {
+          "name": "noBrandText",
+          "description": "`noBrandText` {`boolean`} - \n\nProperty: noBrandText\n\nDefault: false",
+          "valueSet": "v"
+        },
+        {
           "name": "primaryText",
           "description": "`primaryText` {`string`} - \n\nProperty: primaryText\n\nDefault: "
         },
@@ -135,67 +94,8 @@
     },
     {
       "name": "otc-button",
-      "description": "The Button component represents a clickable button.\nThe otc-button might need additional aria attributes to implement correct a11y in some usecases.\nTo facilitate this we observe the otc-button for attributes starting with \"aria\" (without the -, so eg. \"ariahaspopup\") and map these\ninto the shadow-dom with corrected names. Not having the actual aria attributes on the host avoids issues with a11y checkers and tools.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the label of the button.<br>**Note:** It is strongly recommended that you only use text or \\`otc-icon\\` in order to\npreserve the intended design.\n\nAttributes:\n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `emphasis` {`boolean`} - \n\n  * `headerItem` {`boolean`} - \n\n  * `icon` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `image` {`string`} - \n\n  * `menuOpen` {`boolean`} - \n\n  * `signIn` {`boolean`} - \n\n  * `size` {`string`} - \n\n  * `toggled` {`boolean`} - \n\n  * `type` {`string`} - \n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `innerInteractiveElement` - Get the native button element. This method is used by the interactive interface.\n\n  * `_button` - \n\n  * `_slottedNodes` - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `emphasis` {`boolean`} - \n\n  * `headerItem` {`boolean`} - \n\n  * `icon` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `image` {`string`} - \n\n  * `menuOpen` {`boolean`} - \n\n  * `signIn` {`boolean`} - \n\n  * `size` {`string`} - \n\n  * `toggled` {`boolean`} - \n\n  * `type` {`string`} - \n\n  * `tabIndex` {`string`} - ",
+      "description": "The Button component represents a clickable button.\nThe otc-button might need additional aria attributes to implement correct a11y in some use cases.\nTo facilitate this we observe the otc-button for attributes starting with \"aria\" (without the -, so eg. \"ariahaspopup\") and map these\ninto the shadow-dom with corrected names. Not having the actual aria attributes on the host avoids issues with a11y checkers and tools.\n\nSlots:\n\n  * ` ` {} - count Defines an `otc-badge` that will be overlaid onto the button icon.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `innerInteractiveElement` - Get the native button element. This method is used by the interactive interface.\n\n  * `_button` - \n\n  * `_slottedNodes` - \n\n  * `_childNodes` {`any[]`} - \n\n  * `#haveOtcIconAddedToSlot` {`boolean`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `disabled` {`boolean`} - \n\n  * `emphasis` {`boolean`} - \n\n  * `toggled` {`boolean`} - \n\n  * `menuOpen` - \n\n  * `size` {`string`} - \n\n  * `type` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `headerItem` {`boolean`} - \n\n  * `icon` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `image` {`string`} - \n\n  * `signIn` {`boolean`} - \n\n  * `mirrorIconIfRtl` {`boolean`} - \n\n  * `tabIndex` {`string`} - ",
       "attributes": [
-        {
-          "name": "ariaLabel",
-          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
-        },
-        {
-          "name": "dark",
-          "description": "`dark` {`boolean`} - \n\nProperty: dark\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "disabled",
-          "description": "`disabled` {`boolean`} - \n\nProperty: disabled\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "emphasis",
-          "description": "`emphasis` {`boolean`} - \n\nProperty: emphasis\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "headerItem",
-          "description": "`headerItem` {`boolean`} - \n\nProperty: headerItem\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "icon",
-          "description": "`icon` {`string`} - \n\nProperty: icon\n\nDefault: "
-        },
-        {
-          "name": "iconAppearance",
-          "description": "`iconAppearance` {`string`} - \n\nProperty: iconAppearance\n\nDefault: "
-        },
-        {
-          "name": "image",
-          "description": "`image` {`string`} - \n\nProperty: image\n\nDefault: "
-        },
-        {
-          "name": "menuOpen",
-          "description": "`menuOpen` {`boolean`} - \n\nProperty: menuOpen\n\nDefault: null",
-          "valueSet": "v"
-        },
-        {
-          "name": "signIn",
-          "description": "`signIn` {`boolean`} - \n\nProperty: signIn\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "size",
-          "description": "`size` {`string`} - \n\nProperty: size\n\nDefault: "
-        },
-        {
-          "name": "toggled",
-          "description": "`toggled` {`boolean`} - \n\nProperty: toggled\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "type",
-          "description": "`type` {`string`} - \n\nProperty: type\n\nDefault: "
-        },
         {
           "name": "tabIndex",
           "description": "`tabIndex` {`string`} - \n\nProperty: tabIndex"
@@ -208,7 +108,7 @@
     },
     {
       "name": "otc-checkbox",
-      "description": "The Checkbox component is similar to a standard checkbox element with a state of checked, unchecked, or indeterminate.\nIt also supports readonly and disabled states but these just differ in styling.\nEach checkbox is independent and does not interact with other controls or settings.\n\nEvents:\n\n  * `change` {`CustomEvent<any>`} - Fired when the state of the checkbox has changed.\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the label of the checkbox.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `altStyle` {`boolean`} - \n\n  * `checked` {`boolean`} - \n\n  * `indeterminate` {`boolean`} - \n\n  * `name` {`string`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the interactive element (the native input or textarea).\nThis method is used also by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
+      "description": "The Checkbox component is similar to a standard checkbox element with a state of checked, unchecked, or indeterminate.\nIt also supports readonly and disabled states. The readonly state might not be read by some screenreaders.\nEach checkbox is independent and does not interact with other controls or settings.\n\nEvents:\n\n  * `change` - Fired when the state of the checkbox has changed.\n\n  * `input` {} - Fired when the state of the checkbox has changed.\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the label of the checkbox.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `altStyle` {`boolean`} - \n\n  * `checked` {`boolean`} - \n\n  * `indeterminate` {`boolean`} - \n\n  * `hideRequiredIndicator` {`boolean`} - \n\n  * `name` {`string`} - \n\n  * `_isUsedInGroup` {`boolean`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the interactive element (the native input or textarea).\nThis method is used also by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
       "attributes": [
         {
           "name": "tabIndex",
@@ -216,7 +116,11 @@
         },
         {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<any>`} - Fired when the state of the checkbox has changed."
+          "description": "`change` - Fired when the state of the checkbox has changed."
+        },
+        {
+          "name": "oninput",
+          "description": "`input` {} - Fired when the state of the checkbox has changed."
         },
         {
           "name": "oninvalid",
@@ -226,7 +130,7 @@
     },
     {
       "name": "otc-tristatecheckbox",
-      "description": "Events:\n\n  * `change` {`CustomEvent<any>`} - Fired when the state of the checkbox has changed.\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the label of the checkbox.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `altStyle` {`boolean`} - \n\n  * `checked` {`boolean`} - \n\n  * `indeterminate` {`boolean`} - \n\n  * `name` {`string`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the interactive element (the native input or textarea).\nThis method is used also by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
+      "description": "Events:\n\n  * `change` - Fired when the state of the checkbox has changed.\n\n  * `input` {} - Fired when the state of the checkbox has changed.\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the label of the checkbox.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `altStyle` {`boolean`} - \n\n  * `checked` {`boolean`} - \n\n  * `indeterminate` {`boolean`} - \n\n  * `hideRequiredIndicator` {`boolean`} - \n\n  * `name` {`string`} - \n\n  * `_isUsedInGroup` {`boolean`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the interactive element (the native input or textarea).\nThis method is used also by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
       "attributes": [
         {
           "name": "tabIndex",
@@ -234,7 +138,11 @@
         },
         {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<any>`} - Fired when the state of the checkbox has changed."
+          "description": "`change` - Fired when the state of the checkbox has changed."
+        },
+        {
+          "name": "oninput",
+          "description": "`input` {} - Fired when the state of the checkbox has changed."
         },
         {
           "name": "oninvalid",
@@ -244,7 +152,7 @@
     },
     {
       "name": "otc-checkboxgroup",
-      "description": "The Checkbox Group component allows multiple selections from a set of options.\nThis type of group can not be set to required and thus has no livevalidation or error state.\n\nEvents:\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the group has been checked for validity and fails to satisfy its constraints.\n\n  * `change` {`CustomEvent<null>`} - Fired when the state of the form element changes.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the `otc-checkbox` elements that are contained in the group.\n\nProperties:\n\n  * `columns` {`number`} - \n\n  * `horizontal` {`boolean`} - \n\n  * `value` - \n\n  * `validity` {`{ valid: boolean; valueMissing: boolean; } | null`} - ValidationAPI.\n\nReturns the group's current validity state.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `errorMessage` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
+      "description": "The Checkbox Group component allows multiple selections from a set of options.\nThis type of group can not be set to required and thus has no livevalidation or error state.\n\nEvents:\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the group has been checked for validity and fails to satisfy its constraints.\n\n  * `change` {} - Fired when the state of the form element changes.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the `otc-checkbox` elements that are contained in the group.\n\nProperties:\n\n  * `columns` {`number`} - \n\n  * `horizontal` {`boolean`} - \n\n  * `value` - \n\n  * `validity` {`{ valid: boolean; valueMissing: boolean; } | null`} - ValidationAPI.\n\nReturns the group's current validity state.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `errorMessage` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
       "attributes": [
         {
           "name": "oninvalid",
@@ -252,36 +160,78 @@
         },
         {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<null>`} - Fired when the state of the form element changes."
+          "description": "`change` {} - Fired when the state of the form element changes."
         }
       ]
     },
     {
       "name": "otc-collapsible-group",
-      "description": "The collapsible group component can be used to display a list of items that belong to a group, which can be expanded or collapsed.\n\nSlots:\n\n  * ` ` {} - header Defines the html elements rendered in the collapsible group header area (left from the toggle button)\n\nAttributes:\n\n  * `ariaLabel` {string} - Defines the aria label associated with the whole collapsible group region.\n\n  * `toggleAriaLabel` {string} - Defines the aria label associated with the expand/collapse toggle button.\n\n  * `listAriaLabel` {string} - Defines the aria-label of the element that wraps all list items from the default slot to\ndescribe the\nlist.\n\n  * `expanded` {`boolean`} - \n\nProperties:\n\n  * `ariaLabel` {string} - Defines the aria label associated with the whole collapsible group region.\n\n  * `toggleAriaLabel` {string} - Defines the aria label associated with the expand/collapse toggle button.\n\n  * `listAriaLabel` {string} - Defines the aria-label of the element that wraps all list items from the default slot to\ndescribe the\nlist.\n\n  * `expanded` {`boolean`} - ",
+      "description": "The collapsible group component can be used to display a list of items that belong to a group, which can be expanded or collapsed.\n\nSlots:\n\n  * ` ` {} - header Defines the html elements rendered in the collapsible group header area (left of the toggle button)\n\nProperties:\n\n  * `ariaLabel` {string} - Defines the aria label associated with the whole collapsible group region.\n\n  * `showToggleMode` {string} - Defines the behavior of the expand/collapse toggle button. If set to `auto`, the\nexpand/collapse toggle is shown automatically if child items are detected in the `unnamed` slot and not shown it no items\nare in the `unnamed` slot.\nIf set to 'visible' the expand/collapse toggle button is always shown and if set to `hidden` it will never be shown.\n\n  * `toggleAriaLabel` {string} - Defines the aria label associated with the expand/collapse toggle button.\n\n  * `toggleExpandTitle` {string} - Defines the title for the collapsed state of the toggle button.\n\n  * `toggleCollapseTitle` {string} - Defines the title for the expanded state of the toggle button.\n\n  * `listAriaLabel` {string} - Defines the aria-label of the element that wraps all list items from the default slot to\ndescribe the list.\n\n  * `expanded` {`boolean`} - \n\n  * `#haveItemsInUnnamedSlot` {`boolean`} - ",
+      "attributes": []
+    },
+    {
+      "name": "otc-data-grid",
+      "description": "Attributes:\n\n  * `tableAriaLabel` {`string`} - \n\n  * `schema` {`string`} - \n\n  * `mode` {`string`} - \n\n  * `editLabel` {`string`} - \n\n  * `cancelLabel` {`string`} - \n\n  * `saveLabel` {`string`} - \n\n  * `addLabel` {`string`} - \n\n  * `removeLabel` {`string`} - \n\n  * `actionColumnLabel` {`string`} - \n\nProperties:\n\n  * `tableAriaLabel` {`string`} - \n\n  * `schema` {`string`} - \n\n  * `mode` {`string`} - \n\n  * `tabelAriaLabel` {`string`} - \n\n  * `editLabel` {`string`} - \n\n  * `cancelLabel` {`string`} - \n\n  * `saveLabel` {`string`} - \n\n  * `addLabel` {`string`} - \n\n  * `removeLabel` {`string`} - \n\n  * `actionColumnLabel` {`string`} - ",
       "attributes": [
         {
-          "name": "ariaLabel",
-          "description": "`ariaLabel` {string} - Defines the aria label associated with the whole collapsible group region.\n\nProperty: ariaLabel\n\nDefault: "
+          "name": "tableAriaLabel",
+          "description": "`tableAriaLabel` {`string`} - \n\nProperty: tableAriaLabel"
         },
         {
-          "name": "toggleAriaLabel",
-          "description": "`toggleAriaLabel` {string} - Defines the aria label associated with the expand/collapse toggle button.\n\nProperty: toggleAriaLabel\n\nDefault: Details"
+          "name": "schema",
+          "description": "`schema` {`string`} - \n\nProperty: schema\n\nDefault: "
         },
         {
-          "name": "listAriaLabel",
-          "description": "`listAriaLabel` {string} - Defines the aria-label of the element that wraps all list items from the default slot to\ndescribe the\nlist.\n\nProperty: listAriaLabel\n\nDefault: Items"
+          "name": "mode",
+          "description": "`mode` {`string`} - \n\nProperty: mode\n\nDefault: read"
         },
         {
-          "name": "expanded",
-          "description": "`expanded` {`boolean`} - \n\nProperty: expanded\n\nDefault: false",
-          "valueSet": "v"
+          "name": "editLabel",
+          "description": "`editLabel` {`string`} - \n\nProperty: editLabel\n\nDefault: Edit"
+        },
+        {
+          "name": "cancelLabel",
+          "description": "`cancelLabel` {`string`} - \n\nProperty: cancelLabel\n\nDefault: Cancel"
+        },
+        {
+          "name": "saveLabel",
+          "description": "`saveLabel` {`string`} - \n\nProperty: saveLabel\n\nDefault: Save"
+        },
+        {
+          "name": "addLabel",
+          "description": "`addLabel` {`string`} - \n\nProperty: addLabel\n\nDefault: Add"
+        },
+        {
+          "name": "removeLabel",
+          "description": "`removeLabel` {`string`} - \n\nProperty: removeLabel\n\nDefault: Remove"
+        },
+        {
+          "name": "actionColumnLabel",
+          "description": "`actionColumnLabel` {`string`} - \n\nProperty: actionColumnLabel\n\nDefault: "
+        }
+      ]
+    },
+    {
+      "name": "otc-flyout",
+      "description": "The flyout component represents a non modal dialog element for lightweight dialog content\nusually closed automatically.\n\nEvents:\n\n  * `beforeClose` {`CustomEvent<any>`} - Fired before the flyout gets closed, to give the application a hook to prevent closing.\nCan be reject via event.preventDefault()\n\n  * `close` {`CustomEvent<any>`} - Fired when the flyout gets closed.\n\n  * `open` {`CustomEvent<any>`} - Fired when the flyout is opened.\n\nSlots:\n\n  * ` ` {} - head Defines the header of the flyout.\n\nProperties:\n\n  * `ariaLabel` {`string`} - \n\n  * `isOpen` {`boolean`} - \n\n  * `openingDirection` {`string`} - ",
+      "attributes": [
+        {
+          "name": "onbeforeClose",
+          "description": "`beforeClose` {`CustomEvent<any>`} - Fired before the flyout gets closed, to give the application a hook to prevent closing.\nCan be reject via event.preventDefault()"
+        },
+        {
+          "name": "onclose",
+          "description": "`close` {`CustomEvent<any>`} - Fired when the flyout gets closed."
+        },
+        {
+          "name": "onopen",
+          "description": "`open` {`CustomEvent<any>`} - Fired when the flyout is opened."
         }
       ]
     },
     {
       "name": "otc-form",
-      "description": "Events:\n\n  * `change` {`CustomEvent<{ value: {}; }>`} - Fired when the user modifies the element's value in the form.\n\nAttributes:\n\n  * `schema` {`string`} - \n\n  * `mode` {`string`} - \n\n  * `columns` {`number`} - \n\nProperties:\n\n  * `form` {`HTMLFormElement`} - \n\n  * `data` {`FormData`} - \n\n  * `schema` {`string`} - \n\n  * `mode` {`string`} - \n\n  * `columns` {`number`} - ",
+      "description": "Events:\n\n  * `change` {`CustomEvent<{ value: {}; target: any; }>`} - Fired when the user modifies the element's value in the form.\nThe detail Object contains the actual form data and the instant of the element, which triggers the change event.\n\n  * `update-completed` {`CustomEvent<null>`} - \n\nAttributes:\n\n  * `schema` {`string`} - \n\n  * `mode` {`string`} - \n\n  * `columns` {`number`} - \n\n  * `responsiveColumnWidth` {`number`} - \n\nProperties:\n\n  * `form` {`HTMLFormElement`} - API method. Do not rename or delete!\n\n  * `data` {`FormData`} - API method. Do not rename or delete!\n\n  * `elements` {`any[]`} - API method. Do not rename or delete!\n\nReturn all supported elements inside the otc-form.\n\n  * `schema` {`string`} - \n\n  * `mode` {`string`} - \n\n  * `columns` {`number`} - \n\n  * `responsiveColumnWidth` {`number`} - ",
       "attributes": [
         {
           "name": "schema",
@@ -296,52 +246,36 @@
           "description": "`columns` {`number`} - \n\nProperty: columns\n\nDefault: "
         },
         {
+          "name": "responsiveColumnWidth",
+          "description": "`responsiveColumnWidth` {`number`} - \n\nProperty: responsiveColumnWidth\n\nDefault: 0"
+        },
+        {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<{ value: {}; }>`} - Fired when the user modifies the element's value in the form."
+          "description": "`change` {`CustomEvent<{ value: {}; target: any; }>`} - Fired when the user modifies the element's value in the form.\nThe detail Object contains the actual form data and the instant of the element, which triggers the change event."
+        },
+        {
+          "name": "onupdate-completed",
+          "description": "`update-completed` {`CustomEvent<null>`} - "
         }
       ]
     },
     {
       "name": "otc-header-bar",
-      "description": "The Header Bar component is a common horizontal element which is placed at the top of a page. It includes page action buttons such as\nprofile, search field etc., and might provide access to a page menu.\nThe Header Bar supports a Search Field as its member, such as `otc-search-slidein` or `otc-search-persistent`.\n\nSlots:\n\n  * ` ` {} - hamburger Defines an optional hamburger menu. **Note:** It is strongly recommended that you only use one `otc-button` element\nin order to preserve the intended design.\n\nAttributes:\n\n  * `ariaLabel` {`string`} - \n\n  * `measure` {`boolean`} - \n\n  * `stacked` {`boolean`} - \n\n  * `transparent` {`boolean`} - \n\n  * `_slotChangeHandler` - \n\n  * `_renderOffscreenState` - \n\n  * `_oneLine` - \n\nProperties:\n\n  * `measureComplete` {`undefined`} - A promise that resolves when this component and its child search field have finished rendering.\n\n  * `_slotHamburger` {`Element | null`} - \n\n  * `_slotBrand` {`Element | null`} - \n\n  * `_slotRightToolbar` {`Element | null`} - \n\n  * `_slotEnd` {`Element | null`} - \n\n  * `_searchfield` {`Element | null`} - \n\n  * `allElements` {`any[]`} - Get all elements, including slotted elements.\n\n  * `ariaLabel` {`string`} - \n\n  * `measure` {`boolean`} - \n\n  * `stacked` {`boolean`} - \n\n  * `transparent` {`boolean`} - \n\n  * `_boundResizeHandler` - \n\n  * `_boundUpdateSlotted` - \n\n  * `_debouncedSlottedHandler` - \n\n  * `_disabledSlottedHandler` - \n\n  * `_slotChangeHandler` - \n\n  * `_brandEl` - \n\n  * `_overflowContainerEl` - \n\n  * `_searchfieldEl` - \n\n  * `_renderOffscreenState` - \n\n  * `_initialSearchfieldExpanded` {`boolean`} - \n\n  * `_searchfieldTagName` {`string`} - \n\n  * `_searchfieldDomLocation` - \n\n  * `_oneLine` - \n\n  * `_previousStacked` {`boolean`} - \n\n  * `_previousSearchfield` - \n\n  * `_measureInProgress` {`boolean`} - \n\n  * `_measureOnceMore` {`boolean`} - ",
-      "attributes": [
-        {
-          "name": "ariaLabel",
-          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: Application header"
-        },
-        {
-          "name": "measure",
-          "description": "`measure` {`boolean`} - \n\nProperty: measure\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "stacked",
-          "description": "`stacked` {`boolean`} - \n\nProperty: stacked\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "transparent",
-          "description": "`transparent` {`boolean`} - \n\nProperty: transparent\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "_slotChangeHandler",
-          "description": "`_slotChangeHandler` - \n\nProperty: _slotChangeHandler\n\nDefault: _debouncedSlottedHandler"
-        },
-        {
-          "name": "_renderOffscreenState",
-          "description": "`_renderOffscreenState` - \n\nProperty: _renderOffscreenState\n\nDefault: RENDER_STATE_INITIAL"
-        },
-        {
-          "name": "_oneLine",
-          "description": "`_oneLine` - \n\nProperty: _oneLine\n\nDefault: false"
-        }
-      ]
+      "description": "The Header Bar component is a common horizontal element which is placed at the top of a page. It includes page action buttons such as\nprofile, search field etc., and might provide access to a page menu.\nThe Header Bar supports a Search Field as its member, such as `otc-search-slidein` or `otc-search-persistent`.\n\nSlots:\n\n  * ` ` {} - hamburger Defines an optional hamburger menu. **Note:** It is strongly recommended that you only use one `otc-button` element\nin order to preserve the intended design.\n\nProperties:\n\n  * `measureComplete` {`undefined`} - A promise that resolves when this component and its child search field have finished rendering.\n\n  * `_slotHamburger` {`Element | null`} - \n\n  * `_slotBrand` {`Element | null`} - \n\n  * `_slotRightToolbar` {`Element | null`} - \n\n  * `_slotEnd` {`Element | null`} - \n\n  * `_searchfield` {`Element | null`} - \n\n  * `allElements` {`any[]`} - Get all elements, including slotted elements.\n\n  * `ariaLabel` {`string`} - \n\n  * `measure` {`boolean`} - \n\n  * `stacked` {`boolean`} - \n\n  * `transparent` {`boolean`} - \n\n  * `_boundResizeHandler` - \n\n  * `_boundUpdateSlotted` - \n\n  * `_debouncedSlottedHandler` - \n\n  * `_disabledSlottedHandler` - \n\n  * `_slotChangeHandler` - \n\n  * `_brandEl` - \n\n  * `_hamburgerEl` - \n\n  * `_overflowContainerEl` - \n\n  * `_searchfieldEl` - \n\n  * `_renderOffscreenState` {`string`} - \n\n  * `_initialSearchfieldExpanded` {`boolean`} - \n\n  * `_searchfieldTagName` {`string`} - \n\n  * `_searchfieldDomLocation` - \n\n  * `_oneLine` {`boolean`} - \n\n  * `_previousStacked` {`boolean`} - \n\n  * `_previousSearchfield` - \n\n  * `_measureInProgress` {`boolean`} - \n\n  * `_measureOnceMore` {`boolean`} - ",
+      "attributes": []
     },
     {
       "name": "otc-icon",
-      "description": "The Icon component is a small graphical element.\n\nAttributes:\n\n  * `ariaLabel` {`string`} - \n\n  * `disabled` {`boolean`} - \n\n  * `disableEffects` {`boolean`} - \n\n  * `emphasis` {`boolean`} - \n\n  * `icon` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `image` {`string`} - \n\n  * `isPresentation` {`boolean`} - \n\n  * `menuOpen` {`boolean`} - \n\n  * `toggled` {`boolean`} - \n\nProperties:\n\n  * `ariaLabel` {`string`} - \n\n  * `disabled` {`boolean`} - \n\n  * `disableEffects` {`boolean`} - \n\n  * `emphasis` {`boolean`} - \n\n  * `icon` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `image` {`string`} - \n\n  * `isPresentation` {`boolean`} - \n\n  * `menuOpen` {`boolean`} - \n\n  * `toggled` {`boolean`} - ",
+      "description": "The Icon component is a small graphical element.\n\nAttributes:\n\n  * `viewBox` {`string`} - \n\n  * `svg` {`string`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `disabled` {`boolean`} - \n\n  * `disableEffects` {`boolean`} - \n\n  * `size` {`string`} - \n\n  * `type` {`string`} - \n\n  * `emphasis` {`boolean`} - \n\n  * `icon` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `image` {`string`} - \n\n  * `isPresentation` {`boolean`} - \n\n  * `menuOpen` {`boolean`} - \n\n  * `toggled` {`boolean`} - \n\n  * `mirrorIfRtl` {`boolean`} - \n\nProperties:\n\n  * `viewBox` {`string`} - \n\n  * `svg` {`string`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `disabled` {`boolean`} - \n\n  * `disableEffects` {`boolean`} - \n\n  * `size` {`string`} - \n\n  * `type` {`string`} - \n\n  * `emphasis` {`boolean`} - \n\n  * `icon` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `image` {`string`} - \n\n  * `isPresentation` {`boolean`} - \n\n  * `menuOpen` {`boolean`} - \n\n  * `toggled` {`boolean`} - \n\n  * `mirrorIfRtl` {`boolean`} - ",
       "attributes": [
+        {
+          "name": "viewBox",
+          "description": "`viewBox` {`string`} - \n\nProperty: viewBox"
+        },
+        {
+          "name": "svg",
+          "description": "`svg` {`string`} - \n\nProperty: svg\n\nDefault: "
+        },
         {
           "name": "ariaLabel",
           "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
@@ -355,6 +289,14 @@
           "name": "disableEffects",
           "description": "`disableEffects` {`boolean`} - \n\nProperty: disableEffects\n\nDefault: false",
           "valueSet": "v"
+        },
+        {
+          "name": "size",
+          "description": "`size` {`string`} - \n\nProperty: size\n\nDefault: "
+        },
+        {
+          "name": "type",
+          "description": "`type` {`string`} - \n\nProperty: type\n\nDefault: subtle"
         },
         {
           "name": "emphasis",
@@ -387,12 +329,40 @@
           "name": "toggled",
           "description": "`toggled` {`boolean`} - \n\nProperty: toggled\n\nDefault: false",
           "valueSet": "v"
+        },
+        {
+          "name": "mirrorIfRtl",
+          "description": "`mirrorIfRtl` {`boolean`} - \n\nProperty: mirrorIfRtl\n\nDefault: false",
+          "valueSet": "v"
+        }
+      ]
+    },
+    {
+      "name": "otc-info-tip",
+      "description": "The Infotip component is a clickable button used for displaying additional information.<br>\nNote: The infotip component is still in experimental state and not ready for productive use. <br>\n\nSlots:\n\n  * ` ` {} - infotext This defines the content of the additional information being displayed.\n\nAttributes:\n\n  * `ariaLabel` {`string`} - \n\n  * `isOpen` {`boolean`} - \n\n  * `openingDirection` {`string`} - \n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `innerInteractiveElement` - Get the native button element. This method is used by the interactive interface.\n\n  * `ariaLabel` {`string`} - \n\n  * `isOpen` {`boolean`} - \n\n  * `openingDirection` {`string`} - \n\n  * `tabIndex` {`string`} - ",
+      "attributes": [
+        {
+          "name": "ariaLabel",
+          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
+        },
+        {
+          "name": "isOpen",
+          "description": "`isOpen` {`boolean`} - \n\nProperty: isOpen\n\nDefault: false",
+          "valueSet": "v"
+        },
+        {
+          "name": "openingDirection",
+          "description": "`openingDirection` {`string`} - \n\nProperty: openingDirection\n\nDefault: "
+        },
+        {
+          "name": "tabIndex",
+          "description": "`tabIndex` {`string`} - \n\nProperty: tabIndex"
         }
       ]
     },
     {
       "name": "otc-inline-edit-container",
-      "description": "The Inline Edit Container component is a common container element that provides the possibility to toggle the containing form fields\nbetween a read-only and a read-write state.\n\nEvents:\n\n  * `saved` {`CustomEvent<{ value: string; }>`} - Fired when in edit state the save icon-button is activated either with a mouse/tap or by using the **Enter** key.\nThe values of the element inside the container will be served as data as String in the event.`,\n\n  * `cancelled` {`CustomEvent<{ value: {}; }>`} - Fired when in edit state the cancel icon-button is activated either with a mouse/tap or by using the **Escape** key.\nAn empty data object will be served in the event.\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\n  * `change` {`CustomEvent<null>`} - Fired when the state of the form element changes.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the inline edit container's content.\n**Note: ** Although this slot accepts HTML Elements, it is strongly recommended\nthat you only use OT Web Component from **Form elements** to preserve the intended design.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `cancelLabel` {`string`} - \n\n  * `edit` {`boolean`} - \n\n  * `editLabel` {`string`} - \n\n  * `placeholder` {`string`} - \n\n  * `saveLabel` {`string`} - \n\n  * `title` {`string`} - \n\n  * `value` {`string`} - \n\n  * `_isButtonTextFocused` {`boolean`} - \n\n  * `_isEditMode` {`boolean`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the interactive element (the native input or textarea).\nThis method is used also by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
+      "description": "The Inline Edit Container component is a common container element that provides the possibility to toggle the containing form fields\nbetween a read-only and a read-write state.\n\nEvents:\n\n  * `saved` {`CustomEvent<{ value: string; }>`} - Fired when in edit state the save icon-button is activated either with a mouse/tap or by using the **Enter** key.\nThe values of the element inside the container will be served as data as String in the event.`,\n\n  * `cancelled` {`CustomEvent<{ value: {}; }>`} - Fired when in edit state the cancel icon-button is activated either with a mouse/tap or by using the **Escape** key.\nAn empty data object will be served in the event.\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\n  * `change` {} - Fired when the state of the form element changes.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the inline edit container's content.\n**Note: ** Although this slot accepts HTML Elements, it is strongly recommended\nthat you only use OT Web Component from **Form elements** to preserve the intended design.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `cancelLabel` {`string`} - \n\n  * `edit` {`boolean`} - \n\n  * `editLabel` {`string`} - \n\n  * `placeholder` {`string`} - \n\n  * `saveLabel` {`string`} - \n\n  * `title` {`string`} - \n\n  * `value` {`string`} - \n\n  * `validation` {`string`} - \n\n  * `showActionButtonsUnderInput` {`boolean`} - \n\n  * `_isEditMode` {`boolean`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the interactive element (the native input or textarea).\nThis method is used also by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
       "attributes": [
         {
           "name": "tabIndex",
@@ -412,7 +382,7 @@
         },
         {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<null>`} - Fired when the state of the form element changes."
+          "description": "`change` {} - Fired when the state of the form element changes."
         }
       ]
     },
@@ -451,7 +421,7 @@
     },
     {
       "name": "otc-input-date",
-      "description": "The Input Date component is date type input with date picker.\n\nEvents:\n\n  * `change` {`CustomEvent<null>`} - Fired when a date is selected.\n\n  * `value-changed` {`CustomEvent<null>`} - \n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `dateTime` {`boolean`} - \n\n  * `displayValue` {`string`} - \n\n  * `format` {`string`} - \n\n  * `invalidDateErrorMessage` {`string`} - \n\n  * `lang` {`string`} - \n\n  * `placeholder` {`string`} - \n\n  * `value` {`string`} - \n\n  * `_datePicker` {DatePicker} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the interactive element (the native input or textarea).\nThis method is used also by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
+      "description": "The Input Date component is date type input with date picker.\n\nEvents:\n\n  * `change` - Fired when a date is selected.\n\n  * `value-changed` {`CustomEvent<null>`} - **DEPRECATED: ** Fired every time value of the selected date has changed.\n\n  * `valueChanged` {`CustomEvent<null>`} - Fired every time value of the selected date has changed.\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `dateTime` {`boolean`} - \n\n  * `displayValue` {`string`} - \n\n  * `format` {`string`} - \n\n  * `invalidDateErrorMessage` {`string`} - \n\n  * `lang` {`string`} - \n\n  * `placeholder` {`string`} - \n\n  * `value` {`string`} - \n\n  * `_programmaticOpen` {`boolean`} - \n\n  * `_datePicker` {DatePicker} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the interactive element (the native input or textarea).\nThis method is used also by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
       "attributes": [
         {
           "name": "tabIndex",
@@ -459,11 +429,15 @@
         },
         {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<null>`} - Fired when a date is selected."
+          "description": "`change` - Fired when a date is selected."
         },
         {
           "name": "onvalue-changed",
-          "description": "`value-changed` {`CustomEvent<null>`} - "
+          "description": "`value-changed` {`CustomEvent<null>`} - **DEPRECATED: ** Fired every time value of the selected date has changed."
+        },
+        {
+          "name": "onvalueChanged",
+          "description": "`valueChanged` {`CustomEvent<null>`} - Fired every time value of the selected date has changed."
         },
         {
           "name": "oninvalid",
@@ -473,27 +447,47 @@
     },
     {
       "name": "otc-input",
-      "description": "The Input component is similar to a standard input element and allows the user to enter and edit text values in one line.\n\nEvents:\n\n  * `change` {`CustomEvent<null>`} - Fired when the input operation has finished by pressing Enter or on focusout.\n\n  * `input` {} - Fired when the value of the input changes at each keystroke and when a suggestion item has been selected.\n\n  * `action-icon-clicked` {`CustomEvent<null>`} - Fired when the action icon is clicked.\n\n  * `value-changed` {`CustomEvent<null>`} - \n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `max` {`string`} - \n\n  * `maxLength` {`number`} - \n\n  * `min` {`string`} - \n\n  * `minLength` {`number`} - \n\n  * `placeholder` {`string`} - \n\n  * `secondary` {`boolean`} - \n\n  * `step` {`string`} - \n\n  * `type` {`string`} - \n\n  * `title` {`string`} - \n\n  * `value` {`string`} - \n\n  * `whiteBackground` {`boolean`} - \n\n  * `showArrowsForInputNumber` {`boolean`} - \n\n  * `actionIcon` {`string`} - \n\n  * `actionIconAriaLabel` {`string`} - \n\n  * `actionIconTitle` {`string`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the interactive element (the native input or textarea).\nThis method is used also by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
+      "description": "The Input component is similar to a standard input element and allows the user to enter and edit text values in one line.\n\nEvents:\n\n  * `action-icon-clicked` {`CustomEvent<null>`} - **DEPRECATED:** Fired when the action icon button is clicked.\n\n  * `actionIconClicked` {`CustomEvent<null>`} - Fired when the action icon button is clicked.\n\n  * `closing` {`CustomEvent<null>`} - Fired when in the input search field the close button is clicked.\n\n  * `change` - Fired when the input operation has finished by pressing Enter or on focusout.\n\n  * `input` {`CustomEvent<null>`} - Fired when the value of the input changes at each keystroke and when a suggestion item has been selected.\n\n  * `close` {} - Fired when input search field is fully closed.\n\n  * `open` {} - Fired when the input search field is fully opened.\n\n  * `value-changed` {`CustomEvent<null>`} - **DEPRECATED:** Fired every time value of the input has changed, including programmatically.\n\n  * `valueChanged` {`CustomEvent<null>`} - Fired every time value of the input has changed, including programmatically.\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `actionIcon` {`string`} - \n\n  * `actionIconAriaLabel` {`string`} - \n\n  * `actionIconTitle` {`string`} - \n\n  * `autocomplete` - \n\n  * `clearIcon` {`string`} - \n\n  * `clearIconAriaLabel` {`string`} - \n\n  * `clearIconTitle` {`string`} - \n\n  * `closeIcon` {`string`} - \n\n  * `closeIconAriaLabel` {`string`} - \n\n  * `closeIconTitle` {`string`} - \n\n  * `floatingLabel` {`boolean`} - \n\n  * `hideDecorativeIcon` {`boolean`} - \n\n  * `isOpen` {`boolean`} - \n\n  * `max` {`string`} - \n\n  * `maxLength` {`number`} - \n\n  * `min` {`string`} - \n\n  * `minLength` {`number`} - \n\n  * `placeholder` {`string`} - \n\n  * `secondary` {`boolean`} - \n\n  * `showArrowsForInputNumber` {`boolean`} - \n\n  * `slidein` {`boolean`} - \n\n  * `step` {`string`} - \n\n  * `title` {`string`} - \n\n  * `type` {`string`} - \n\n  * `value` {`string`} - \n\n  * `whiteBackground` {`boolean`} - \n\n  * `_doAnimations` {`boolean`} - \n\n  * `_hideDecoIcon` {`boolean`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the interactive element (the native input or textarea).\nThis method is used also by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
       "attributes": [
         {
           "name": "tabIndex",
           "description": "`tabIndex` {`string`} - \n\nProperty: tabIndex"
         },
         {
+          "name": "onaction-icon-clicked",
+          "description": "`action-icon-clicked` {`CustomEvent<null>`} - **DEPRECATED:** Fired when the action icon button is clicked."
+        },
+        {
+          "name": "onactionIconClicked",
+          "description": "`actionIconClicked` {`CustomEvent<null>`} - Fired when the action icon button is clicked."
+        },
+        {
+          "name": "onclosing",
+          "description": "`closing` {`CustomEvent<null>`} - Fired when in the input search field the close button is clicked."
+        },
+        {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<null>`} - Fired when the input operation has finished by pressing Enter or on focusout."
+          "description": "`change` - Fired when the input operation has finished by pressing Enter or on focusout."
         },
         {
           "name": "oninput",
-          "description": "`input` {} - Fired when the value of the input changes at each keystroke and when a suggestion item has been selected."
+          "description": "`input` {`CustomEvent<null>`} - Fired when the value of the input changes at each keystroke and when a suggestion item has been selected."
         },
         {
-          "name": "onaction-icon-clicked",
-          "description": "`action-icon-clicked` {`CustomEvent<null>`} - Fired when the action icon is clicked."
+          "name": "onclose",
+          "description": "`close` {} - Fired when input search field is fully closed."
+        },
+        {
+          "name": "onopen",
+          "description": "`open` {} - Fired when the input search field is fully opened."
         },
         {
           "name": "onvalue-changed",
-          "description": "`value-changed` {`CustomEvent<null>`} - "
+          "description": "`value-changed` {`CustomEvent<null>`} - **DEPRECATED:** Fired every time value of the input has changed, including programmatically."
+        },
+        {
+          "name": "onvalueChanged",
+          "description": "`valueChanged` {`CustomEvent<null>`} - Fired every time value of the input has changed, including programmatically."
         },
         {
           "name": "oninvalid",
@@ -503,66 +497,8 @@
     },
     {
       "name": "otc-link",
-      "description": "The Link component is a clickable text element used for navigation.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the display name of the link.\n\nAttributes:\n\n  * `ariaLabel` {`string`} - \n\n  * `disabled` {`boolean`} - \n\n  * `emphasis` {`boolean`} - \n\n  * `headerItem` {`boolean`} - \n\n  * `href` {`string`} - \n\n  * `icon` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `image` {`string`} - \n\n  * `menuOpen` {`boolean`} - \n\n  * `skipLink` {`boolean`} - \n\n  * `target` {`string`} - \n\n  * `toggled` {`boolean`} - \n\n  * `type` {`string`} - \n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `innerInteractiveElement` - Get the native anchor element. This method is used by the interactive interface.\n\n  * `ariaLabel` {`string`} - \n\n  * `disabled` {`boolean`} - \n\n  * `emphasis` {`boolean`} - \n\n  * `headerItem` {`boolean`} - \n\n  * `href` {`string`} - \n\n  * `icon` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `image` {`string`} - \n\n  * `menuOpen` {`boolean`} - \n\n  * `skipLink` {`boolean`} - \n\n  * `target` {`string`} - \n\n  * `toggled` {`boolean`} - \n\n  * `type` {`string`} - \n\n  * `tabIndex` {`string`} - ",
+      "description": "The Link component is a clickable text element used for navigation.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the display name of the link.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `innerInteractiveElement` - Get the native anchor element. This method is used by the interactive interface.\n\n  * `ariaLabel` {`string`} - \n\n  * `href` {`string`} - \n\n  * `target` {`string`} - \n\n  * `type` {`string`} - \n\n  * `size` {`string`} - \n\n  * `disabled` {`boolean`} - \n\n  * `ignoreVisited` {`boolean`} - \n\n  * `lighter` {`boolean`} - \n\n  * `emphasis` {`boolean`} - \n\n  * `toggled` {`boolean`} - \n\n  * `menuOpen` {`boolean`} - \n\n  * `headerItem` {`boolean`} - \n\n  * `skipLink` {`boolean`} - \n\n  * `icon` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `image` {`string`} - \n\n  * `tabIndex` {`string`} - ",
       "attributes": [
-        {
-          "name": "ariaLabel",
-          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
-        },
-        {
-          "name": "disabled",
-          "description": "`disabled` {`boolean`} - \n\nProperty: disabled\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "emphasis",
-          "description": "`emphasis` {`boolean`} - \n\nProperty: emphasis\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "headerItem",
-          "description": "`headerItem` {`boolean`} - \n\nProperty: headerItem\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "href",
-          "description": "`href` {`string`} - \n\nProperty: href\n\nDefault: "
-        },
-        {
-          "name": "icon",
-          "description": "`icon` {`string`} - \n\nProperty: icon\n\nDefault: "
-        },
-        {
-          "name": "iconAppearance",
-          "description": "`iconAppearance` {`string`} - \n\nProperty: iconAppearance\n\nDefault: "
-        },
-        {
-          "name": "image",
-          "description": "`image` {`string`} - \n\nProperty: image\n\nDefault: "
-        },
-        {
-          "name": "menuOpen",
-          "description": "`menuOpen` {`boolean`} - \n\nProperty: menuOpen\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "skipLink",
-          "description": "`skipLink` {`boolean`} - \n\nProperty: skipLink\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "target",
-          "description": "`target` {`string`} - \n\nProperty: target\n\nDefault: "
-        },
-        {
-          "name": "toggled",
-          "description": "`toggled` {`boolean`} - \n\nProperty: toggled\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "type",
-          "description": "`type` {`string`} - \n\nProperty: type\n\nDefault: "
-        },
         {
           "name": "tabIndex",
           "description": "`tabIndex` {`string`} - \n\nProperty: tabIndex"
@@ -571,91 +507,19 @@
     },
     {
       "name": "otc-menu",
-      "description": "The Menu component represents a dropdown list of items that a user can activate to perform actions.\n\nEvents:\n\n  * `change` {} - Fired when the checked value of an `otc-menucheckbox` is changed.\n\n  * `clear-all` {`CustomEvent<any>`} - Fired when the \"Clear all\" menu action item is clicked.\n\n  * `close` {`CustomEvent<any>`} - Fired when the menu gets closed.\n\n  * `item-click` {} - Fired when an `otc-menuitem` is activated through either the mouse or keyboard.\n\n  * `item-remove` {} - Fired when clicking the \"X\" icon on an `otc-menuitem` with the `isDeletable` property.\n\n  * `open` {`CustomEvent<any>`} - Fired when the animation of the main menu has finished.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the content of the menu.\n**Note: ** It is strongly recommended that you only use `otc-menucheckbox`, `otc-menudivider`, `otc-menugroup`, `otc-menuitem`,\n`otc-menuradio`, or `otc-submenu` components in order to preserve the intended design.\n\nAttributes:\n\n  * `ariaRole` {`string`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `buttonAlignment` {`string`} - \n\n  * `buttonId` {`string`} - \n\n  * `clearAll` {`boolean`} - \n\n  * `clearAllText` {`string`} - \n\n  * `forceOpenDown` {`boolean`} - \n\n  * `forceOpenUp` {`boolean`} - \n\n  * `isOpen` {`boolean`} - \n\n  * `isSearch` {`boolean`} - \n\n  * `isSubmenu` {`boolean`} - \n\n  * `isWide` {`boolean`} - \n\n  * `maxItems` {`number`} - \n\n  * `scrollable` {`boolean`} - \n\n  * `showMoreText` {`string`} - \n\n  * `_dropdownMenuHeight` - \n\n  * `_showShowMoreItem` - \n\nProperties:\n\n  * `ariaRole` {`string`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `buttonAlignment` {`string`} - \n\n  * `buttonId` {`string`} - \n\n  * `clearAll` {`boolean`} - \n\n  * `clearAllText` {`string`} - \n\n  * `forceOpenDown` {`boolean`} - \n\n  * `forceOpenUp` {`boolean`} - \n\n  * `isOpen` {`boolean`} - \n\n  * `isSearch` {`boolean`} - \n\n  * `isSubmenu` {`boolean`} - \n\n  * `isWide` {`boolean`} - \n\n  * `maxItems` {`number`} - \n\n  * `scrollable` {`boolean`} - \n\n  * `showMoreText` {`string`} - \n\n  * `_dropdownMenuHeight` - \n\n  * `_showShowMoreItem` - ",
+      "description": "The Menu component represents a dropdown list of items that a user can activate to perform actions.\n\nEvents:\n\n  * `change` {} - Fired when the checked value of an `otc-menucheckbox` is changed.\n\n  * `clear-all` {} - **DEPRECATED:** Fired when the \"Clear all\" menu action item is clicked.\n\n  * `clearAll` {} - Fired when the \"Clear all\" menu action item is clicked.\n\n  * `close` {`CustomEvent<any>`} - Fired when the menu gets closed.\n\n  * `item-click` {} - **DEPRECATED:** Fired when an `otc-menuitem` is activated through either the mouse or keyboard.\n\n  * `itemClick` {} - Fired when an `otc-menuitem` is activated through either the mouse or keyboard.\n\n  * `item-remove` {} - **DEPRECATED:** Fired when attempting to remove an `otc-menuitem` with the `isDeletable` property.\n\n  * `itemRemove` {} - Fired when attempting to remove an `otc-menuitem` with the `isDeletable` property.\n\n  * `open` {`CustomEvent<any>`} - Fired when the animation of the main menu has finished.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the content of the menu.\n**Note: ** It is strongly recommended that you only use `otc-menucheckbox`, `otc-menudivider`, `otc-menugroup`, `otc-menuitem`,\n`otc-menuradio`, or `otc-submenu` components in order to preserve the intended design.\n\nProperties:\n\n  * `ariaRole` {`string`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `buttonAlignment` {`string`} - \n\n  * `buttonId` {`string`} - \n\n  * `clearAll` {`boolean`} - \n\n  * `clearAllText` {`string`} - \n\n  * `disableAnimation` {`boolean`} - \n\n  * `disablePlaceholder` {`boolean`} - \n\n  * `forceOpenDown` {`boolean`} - \n\n  * `forceOpenUp` {`boolean`} - \n\n  * `isOpen` {`boolean`} - \n\n  * `isSearch` {`boolean`} - \n\n  * `isSelect` {`boolean`} - \n\n  * `isSubmenu` {`boolean`} - \n\n  * `isWide` {`boolean`} - \n\n  * `maxItems` {`number`} - \n\n  * `scrollable` {`boolean`} - \n\n  * `showMoreText` {`string`} - \n\n  * `usePopover` {`boolean`} - \n\n  * `_dropdownMenuHeight` {`number`} - \n\n  * `_showShowMoreItem` {`boolean`} - ",
       "attributes": [
-        {
-          "name": "ariaRole",
-          "description": "`ariaRole` {`string`} - \n\nProperty: ariaRole\n\nDefault: menu"
-        },
-        {
-          "name": "ariaLabel",
-          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
-        },
-        {
-          "name": "buttonAlignment",
-          "description": "`buttonAlignment` {`string`} - \n\nProperty: buttonAlignment\n\nDefault: start"
-        },
-        {
-          "name": "buttonId",
-          "description": "`buttonId` {`string`} - \n\nProperty: buttonId\n\nDefault: "
-        },
-        {
-          "name": "clearAll",
-          "description": "`clearAll` {`boolean`} - \n\nProperty: clearAll\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "clearAllText",
-          "description": "`clearAllText` {`string`} - \n\nProperty: clearAllText\n\nDefault: Clear all"
-        },
-        {
-          "name": "forceOpenDown",
-          "description": "`forceOpenDown` {`boolean`} - \n\nProperty: forceOpenDown\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "forceOpenUp",
-          "description": "`forceOpenUp` {`boolean`} - \n\nProperty: forceOpenUp\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "isOpen",
-          "description": "`isOpen` {`boolean`} - \n\nProperty: isOpen\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "isSearch",
-          "description": "`isSearch` {`boolean`} - \n\nProperty: isSearch\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "isSubmenu",
-          "description": "`isSubmenu` {`boolean`} - \n\nProperty: isSubmenu\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "isWide",
-          "description": "`isWide` {`boolean`} - \n\nProperty: isWide\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "maxItems",
-          "description": "`maxItems` {`number`} - \n\nProperty: maxItems\n\nDefault: 0"
-        },
-        {
-          "name": "scrollable",
-          "description": "`scrollable` {`boolean`} - \n\nProperty: scrollable\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "showMoreText",
-          "description": "`showMoreText` {`string`} - \n\nProperty: showMoreText\n\nDefault: Show more"
-        },
-        {
-          "name": "_dropdownMenuHeight",
-          "description": "`_dropdownMenuHeight` - \n\nProperty: _dropdownMenuHeight\n\nDefault: 0"
-        },
-        {
-          "name": "_showShowMoreItem",
-          "description": "`_showShowMoreItem` - \n\nProperty: _showShowMoreItem\n\nDefault: false"
-        },
         {
           "name": "onchange",
           "description": "`change` {} - Fired when the checked value of an `otc-menucheckbox` is changed."
         },
         {
           "name": "onclear-all",
-          "description": "`clear-all` {`CustomEvent<any>`} - Fired when the \"Clear all\" menu action item is clicked."
+          "description": "`clear-all` {} - **DEPRECATED:** Fired when the \"Clear all\" menu action item is clicked."
+        },
+        {
+          "name": "onclearAll",
+          "description": "`clearAll` {} - Fired when the \"Clear all\" menu action item is clicked."
         },
         {
           "name": "onclose",
@@ -663,11 +527,19 @@
         },
         {
           "name": "onitem-click",
-          "description": "`item-click` {} - Fired when an `otc-menuitem` is activated through either the mouse or keyboard."
+          "description": "`item-click` {} - **DEPRECATED:** Fired when an `otc-menuitem` is activated through either the mouse or keyboard."
+        },
+        {
+          "name": "onitemClick",
+          "description": "`itemClick` {} - Fired when an `otc-menuitem` is activated through either the mouse or keyboard."
         },
         {
           "name": "onitem-remove",
-          "description": "`item-remove` {} - Fired when clicking the \"X\" icon on an `otc-menuitem` with the `isDeletable` property."
+          "description": "`item-remove` {} - **DEPRECATED:** Fired when attempting to remove an `otc-menuitem` with the `isDeletable` property."
+        },
+        {
+          "name": "onitemRemove",
+          "description": "`itemRemove` {} - Fired when attempting to remove an `otc-menuitem` with the `isDeletable` property."
         },
         {
           "name": "onopen",
@@ -677,8 +549,12 @@
     },
     {
       "name": "otc-menuactionitem",
-      "description": "Attributes:\n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `_showAnimation` {`boolean`} - ",
+      "description": "Attributes:\n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - ",
       "attributes": [
+        {
+          "name": "ariaLabel",
+          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
+        },
         {
           "name": "_showAnimation",
           "description": "`_showAnimation` {`boolean`} - \n\nProperty: _showAnimation\n\nDefault: false",
@@ -688,17 +564,11 @@
     },
     {
       "name": "otc-menucheckbox",
-      "description": "The Menu Checkbox component represents a dropdown menu checkbox.\n\nEvents:\n\n  * `change` {`CustomEvent<{ checked: any; name: string | null; }>`} - \n\nSlots:\n\n  * ` ` {} - unnamed Defines the text of the menu checkbox item.\n\nAttributes:\n\n  * `altStyle` {`boolean`} - \n\n  * `checked` {`boolean`} - \n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `altStyle` {`boolean`} - \n\n  * `checked` {`boolean`} - \n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `_showAnimation` {`boolean`} - ",
+      "description": "The Menu Checkbox component represents a dropdown menu checkbox.\n\nEvents:\n\n  * `change` {} - Fired when the state of the menu checkbox has changed.\n\n  * `input` {} - Fired when the state of the menu checkbox has changed.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the text of the menu checkbox item.\n\nAttributes:\n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `altStyle` {`boolean`} - \n\n  * `checked` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `selectableStyle` {`boolean`} - \n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - ",
       "attributes": [
         {
-          "name": "altStyle",
-          "description": "`altStyle` {`boolean`} - \n\nProperty: altStyle\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "checked",
-          "description": "`checked` {`boolean`} - \n\nProperty: checked\n\nDefault: false",
-          "valueSet": "v"
+          "name": "ariaLabel",
+          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
         },
         {
           "name": "_showAnimation",
@@ -707,14 +577,22 @@
         },
         {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<{ checked: any; name: string | null; }>`} - "
+          "description": "`change` {} - Fired when the state of the menu checkbox has changed."
+        },
+        {
+          "name": "oninput",
+          "description": "`input` {} - Fired when the state of the menu checkbox has changed."
         }
       ]
     },
     {
       "name": "otc-menudivider",
-      "description": "Attributes:\n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `_showAnimation` {`boolean`} - ",
+      "description": "Attributes:\n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - ",
       "attributes": [
+        {
+          "name": "ariaLabel",
+          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
+        },
         {
           "name": "_showAnimation",
           "description": "`_showAnimation` {`boolean`} - \n\nProperty: _showAnimation\n\nDefault: false",
@@ -724,7 +602,7 @@
     },
     {
       "name": "otc-menugroup",
-      "description": "The Menu Group component represents a dropdown menu group.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the content of the menu group.\n**Note:** It is strongly recommended that you only use `otc-menucheckbox`, `otc-menudivider`, `otc-menuitem`, `otc-menuradio`, or\n`otc-submenu` components in order to preserve the intended design.\n\nAttributes:\n\n  * `allowDeselection` {`boolean`} - \n\n  * `name` {`string`} - \n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `allowDeselection` {`boolean`} - \n\n  * `name` {`string`} - \n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `_showAnimation` {`boolean`} - ",
+      "description": "The Menu Group component represents a dropdown menu group.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the content of the menu group.\n**Note:** It is strongly recommended that you only use `otc-menucheckbox`, `otc-menudivider`, `otc-menuitem`, `otc-menuradio`, or\n`otc-submenu` components in order to preserve the intended design.\n\nAttributes:\n\n  * `allowDeselection` {`boolean`} - \n\n  * `name` {`string`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `allowDeselection` {`boolean`} - \n\n  * `name` {`string`} - \n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - ",
       "attributes": [
         {
           "name": "allowDeselection",
@@ -736,6 +614,10 @@
           "description": "`name` {`string`} - \n\nProperty: name\n\nDefault: "
         },
         {
+          "name": "ariaLabel",
+          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
+        },
+        {
           "name": "_showAnimation",
           "description": "`_showAnimation` {`boolean`} - \n\nProperty: _showAnimation\n\nDefault: false",
           "valueSet": "v"
@@ -744,8 +626,12 @@
     },
     {
       "name": "otc-menuitem",
-      "description": "The Menu Item component represents a dropdown menu item.\n\nEvents:\n\n  * `item-click` {`CustomEvent<any>`} - \n\n  * `item-remove` {`CustomEvent<any>`} - \n\nSlots:\n\n  * ` ` {} - unnamed Defines the text/icons displayed in the menu item.\n\nAttributes:\n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `_dropdownItem` {`HTMLElement | null`} - \n\n  * `disabled` {`boolean`} - \n\n  * `icon` {`string`} - \n\n  * `isDeletable` {`boolean`} - \n\n  * `isSubmenu` {`boolean`} - \n\n  * `menuOpen` {`boolean`} - \n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `_showAnimation` {`boolean`} - ",
+      "description": "The Menu Item component represents a dropdown menu item.\n\nEvents:\n\n  * `item-click` {`CustomEvent<any>`} - \n\n  * `itemClick` {`CustomEvent<any>`} - \n\n  * `item-remove` {`CustomEvent<any>`} - \n\n  * `itemRemove` {`CustomEvent<any>`} - \n\nSlots:\n\n  * ` ` {} - unnamed Defines the text/icons displayed in the menu item.\n\nAttributes:\n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `deletableIconTitle` {`string`} - \n\n  * `disabled` {`boolean`} - \n\n  * `icon` {`string`} - \n\n  * `isDeletable` {`boolean`} - \n\n  * `isSubmenu` {`boolean`} - \n\n  * `menuOpen` {`boolean`} - \n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - ",
       "attributes": [
+        {
+          "name": "ariaLabel",
+          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
+        },
         {
           "name": "_showAnimation",
           "description": "`_showAnimation` {`boolean`} - \n\nProperty: _showAnimation\n\nDefault: false",
@@ -756,38 +642,26 @@
           "description": "`item-click` {`CustomEvent<any>`} - "
         },
         {
+          "name": "onitemClick",
+          "description": "`itemClick` {`CustomEvent<any>`} - "
+        },
+        {
           "name": "onitem-remove",
           "description": "`item-remove` {`CustomEvent<any>`} - "
-        }
-      ]
-    },
-    {
-      "name": "otc-menulabel",
-      "description": "Attributes:\n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `_showAnimation` {`boolean`} - ",
-      "attributes": [
+        },
         {
-          "name": "_showAnimation",
-          "description": "`_showAnimation` {`boolean`} - \n\nProperty: _showAnimation\n\nDefault: false",
-          "valueSet": "v"
+          "name": "onitemRemove",
+          "description": "`itemRemove` {`CustomEvent<any>`} - "
         }
       ]
     },
     {
       "name": "otc-menuplaceholder",
-      "description": "The Menu Placeholder component can be used to display a progress indicator or error message when a menu is displayed before the menu\nitems have been loaded.\n\nSlots:\n\n  * ` ` {} - errorButton An `otc-button` component that is displayed on the error screen.\n\nAttributes:\n\n  * `errorText` {`string`} - \n\n  * `loadingText` {`string`} - \n\n  * `showError` {`boolean`} - \n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `errorText` {`string`} - \n\n  * `loadingText` {`string`} - \n\n  * `showError` {`boolean`} - \n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `_showAnimation` {`boolean`} - ",
+      "description": "The Menu Placeholder component can be used to display a progress indicator or error message when a menu is displayed before the menu\nitems have been loaded.\n\nSlots:\n\n  * ` ` {} - errorButton An `otc-button` component that is displayed on the error screen.\n\nAttributes:\n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `errorText` {`string`} - \n\n  * `loadingText` {`string`} - \n\n  * `showError` {`boolean`} - \n\n  * `simple` {`boolean`} - \n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - ",
       "attributes": [
         {
-          "name": "errorText",
-          "description": "`errorText` {`string`} - \n\nProperty: errorText\n\nDefault: Unable to load the content."
-        },
-        {
-          "name": "loadingText",
-          "description": "`loadingText` {`string`} - \n\nProperty: loadingText\n\nDefault: This might take a moment..."
-        },
-        {
-          "name": "showError",
-          "description": "`showError` {`boolean`} - \n\nProperty: showError\n\nDefault: false",
-          "valueSet": "v"
+          "name": "ariaLabel",
+          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
         },
         {
           "name": "_showAnimation",
@@ -798,17 +672,11 @@
     },
     {
       "name": "otc-menuradio",
-      "description": "The Menu Radio component represents a dropdown menu radio item.\nIt must be contained within an `otc-menugroup` component for proper radio functionality.\n\nEvents:\n\n  * `change` {`CustomEvent<{ checked: any; name: string | null; }>`} - \n\nSlots:\n\n  * ` ` {} - unnamed Defines the text of the menu radio item.\n\nAttributes:\n\n  * `altStyle` {`boolean`} - \n\n  * `checked` {`boolean`} - \n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `altStyle` {`boolean`} - \n\n  * `checked` {`boolean`} - \n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `_showAnimation` {`boolean`} - ",
+      "description": "The Menu Radio component represents a dropdown menu radio item.\nIt must be contained within an `otc-menugroup` component for proper radio functionality.\n\nEvents:\n\n  * `change` - Fired when the state of the radio has changed.\n\n  * `input` - Fired when the state of the radio has changed.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the text of the menu radio item.\n\nAttributes:\n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `altStyle` {`boolean`} - \n\n  * `checked` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `selectableStyle` {`boolean`} - \n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - ",
       "attributes": [
         {
-          "name": "altStyle",
-          "description": "`altStyle` {`boolean`} - \n\nProperty: altStyle\n\nDefault: false",
-          "valueSet": "v"
-        },
-        {
-          "name": "checked",
-          "description": "`checked` {`boolean`} - \n\nProperty: checked\n\nDefault: false",
-          "valueSet": "v"
+          "name": "ariaLabel",
+          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
         },
         {
           "name": "_showAnimation",
@@ -817,14 +685,23 @@
         },
         {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<{ checked: any; name: string | null; }>`} - "
+          "description": "`change` - Fired when the state of the radio has changed."
+        },
+        {
+          "name": "oninput",
+          "description": "`input` - Fired when the state of the radio has changed."
         }
       ]
     },
     {
       "name": "otc-submenu",
-      "description": "The Submenu component represents a dropdown submenu.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the content of the submenu.\n**Note:** It is strongly recommended that you only use `otc-menucheckbox`, `otc-menudivider`, `otc-menuitem`, `otc-menugroup`,\n`otc-menuradio`, or `otc-submenu` components in order to preserve the intended design.\n\nAttributes:\n\n  * `isOpen` {`boolean`} - \n\n  * `name` {`string`} - \n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `isOpen` {`boolean`} - \n\n  * `name` {`string`} - \n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `_showAnimation` {`boolean`} - ",
+      "description": "The Submenu component represents a dropdown submenu.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the content of the submenu.\n**Note:** It is strongly recommended that you only use `otc-menucheckbox`, `otc-menudivider`, `otc-menuitem`, `otc-menugroup`,\n`otc-menuradio`, or `otc-submenu` components in order to preserve the intended design.\n\nAttributes:\n\n  * `disableAnimation` {`boolean`} - \n\n  * `isOpen` {`boolean`} - \n\n  * `name` {`string`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - \n\nProperties:\n\n  * `disableAnimation` {`boolean`} - \n\n  * `isOpen` {`boolean`} - \n\n  * `name` {`string`} - \n\n  * `baseClasses` {`{ 'otc-dropdown__item--fade-in-anim': boolean; }`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `_showAnimation` {`boolean`} - ",
       "attributes": [
+        {
+          "name": "disableAnimation",
+          "description": "`disableAnimation` {`boolean`} - \n\nProperty: disableAnimation\n\nDefault: false",
+          "valueSet": "v"
+        },
         {
           "name": "isOpen",
           "description": "`isOpen` {`boolean`} - \n\nProperty: isOpen\n\nDefault: false",
@@ -835,6 +712,10 @@
           "description": "`name` {`string`} - \n\nProperty: name\n\nDefault: "
         },
         {
+          "name": "ariaLabel",
+          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
+        },
+        {
           "name": "_showAnimation",
           "description": "`_showAnimation` {`boolean`} - \n\nProperty: _showAnimation\n\nDefault: false",
           "valueSet": "v"
@@ -843,21 +724,29 @@
     },
     {
       "name": "otc-multivalue",
-      "description": "The Multi Value component is a specific form element that provides the possibility to have multi items of a specific otc form elements\nsuch as `otc-input`, `otc-textarea`, `otc-select` and `otc-input-date`.\n\nEvents:\n\n  * `value-changed` {`CustomEvent<null>`} - \n\n  * `change` {`CustomEvent<null>`} - Fired when the state of the form element changes.\n\nSlots:\n\n  * ` ` {} - template Defines the template that will be used for rendering the content of the multi value. **Note:** The attributes of the multi\nvalue component will be propagated and overwrite the attribute of the input component. So you should define only those attributes, that\nare not supported by the component such as `minlength` or `maxlength`.\n\nProperties:\n\n  * `firstChildElement` {`Element | null`} - Returns the first child element. It's used in `otc-inline-edit-container` to set focus on the first element.\n\n  * `validity` - Validation API\n\n  * `addLabel` {`string`} - \n\n  * `displayValue` {`string[]`} - \n\n  * `maxItems` {`string`} - \n\n  * `placeholder` {`string`} - \n\n  * `removeAriaLabel` {`string`} - \n\n  * `removeLabel` {`string`} - \n\n  * `value` {`string[]`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
+      "description": "The Multi Value component is a specific form element that provides the possibility to have multi items of a specific otc form elements\nsuch as `otc-input`, `otc-textarea`, `otc-select` and `otc-input-date`.\n\nEvents:\n\n  * `input` {`CustomEvent<{ target: any; }>`} - Fired when the value of the input changes at each keystroke and when a suggestion item has been selected.\n\n  * `value-changed` {`CustomEvent<null>`} - **DEPRECATED:** Fired every time value of the form element has changed.\n\n  * `valueChanged` {`CustomEvent<null>`} - Fired every time value of the for element has changed.\n\n  * `change` {} - Fired when the state of the form element changes.\n\nSlots:\n\n  * ` ` {} - template Defines the template that will be used for rendering the content of the multi value. **Note:** The attributes of the multi\nvalue component will be propagated and overwrite the attribute of the input component. So you should define only those attributes, that\nare not supported by the component such as `minlength` or `maxlength`.\n\nProperties:\n\n  * `firstChildElement` {`Element | null`} - API method. Do not rename or delete!\n\nReturns the first child element. It's used in `otc-inline-edit-container` to set focus on the first element.\n\n  * `validity` - Validation API method. Do not rename or delete!\n\n  * `addLabel` {`string`} - \n\n  * `displayValue` {`string[]`} - \n\n  * `maxItems` {`string`} - \n\n  * `placeholder` {`string`} - \n\n  * `removeAriaLabel` {`string`} - \n\n  * `removeLabel` {`string`} - \n\n  * `value` {`string[]`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
       "attributes": [
         {
+          "name": "oninput",
+          "description": "`input` {`CustomEvent<{ target: any; }>`} - Fired when the value of the input changes at each keystroke and when a suggestion item has been selected."
+        },
+        {
           "name": "onvalue-changed",
-          "description": "`value-changed` {`CustomEvent<null>`} - "
+          "description": "`value-changed` {`CustomEvent<null>`} - **DEPRECATED:** Fired every time value of the form element has changed."
+        },
+        {
+          "name": "onvalueChanged",
+          "description": "`valueChanged` {`CustomEvent<null>`} - Fired every time value of the for element has changed."
         },
         {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<null>`} - Fired when the state of the form element changes."
+          "description": "`change` {} - Fired when the state of the form element changes."
         }
       ]
     },
     {
       "name": "otc-overflow-container",
-      "description": "The Overflow Container component can be used for layout of a horizontal row of `otc-toolbaritem` items.  It has properties for\ncontrolling when items are automatically moved into an overflow menu.\n\nEvents:\n\n  * `contents-changed` {} - Fired when the contents of the container changes.\n\nSlots:\n\n  * ` ` {} - beforeOverflow Defines the items that will be displayed at the start of the container and will never be moved into the overflow\nmenu.\n\nAttributes:\n\n  * `maxItems` {number} - The maximum number of items to display, including the overflow menu button.\n\n  * `overflowMenuAriaLabel` {string} - Defines the aria label associated with the overflow menu button.\n\n  * `overflowMenuIconAppearance` {string} - Defines the icon appearance of the overflow menu button.\n\n  * `overflowMenuTitle` {string} - Defines the title of the overflow menu button.\n\n  * `wrapWideItems` {boolean} - Automatically display items in an overflow menu when they would exceed the width of the container.\n\n  * `_hasOverflow` - \n\nProperties:\n\n  * `overflowSlotName` {`string`} - \n\n  * `overflowButtonRef` - \n\n  * `childElements` {`any[]`} - Get an array of all child elements, flattened to directly include all child elements, elements in slots, elements in our group-type\ncomponents, etc.\n\n  * `allElements` {`any[]`} - Get all elements, including slotted elements and the overflow button.\n\n  * `overflowableElements` {`any[]`} - Get the slotted elements that are able to be placed in the overflow menu.\n\n  * `nonOverflowableElements` {`any[]`} - Get the slotted elements that are not able to be placed in the overflow menu.\n\n  * `overflowSlotElements` - \n\n  * `maxItems` {number} - The maximum number of items to display, including the overflow menu button.\n\n  * `overflowMenuAriaLabel` {string} - Defines the aria label associated with the overflow menu button.\n\n  * `overflowMenuIconAppearance` {string} - Defines the icon appearance of the overflow menu button.\n\n  * `overflowMenuTitle` {string} - Defines the title of the overflow menu button.\n\n  * `wrapWideItems` {boolean} - Automatically display items in an overflow menu when they would exceed the width of the container.\n\n  * `_hasOverflow` - ",
+      "description": "The Overflow Container component can be used for layout of a horizontal row of `otc-toolbaritem` items.  It has properties for\ncontrolling when items are automatically moved into an overflow menu.\n\nEvents:\n\n  * `contents-changed` {} - **DEPRECATED:** Fired when the contents of the container changes.\n\n  * `contentsChanged` {} - Fired when the contents of the container changes.\n\nSlots:\n\n  * ` ` {} - beforeOverflow Defines the items that will be displayed at the start of the container and will never be moved into the overflow\nmenu.\n\nAttributes:\n\n  * `maxItems` {number} - The maximum number of items to display, including the overflow menu button.\n\n  * `overflowMenuAriaLabel` {string} - Defines the aria label associated with the overflow menu button.\n\n  * `overflowMenuIconAppearance` {string} - Defines the icon appearance of the overflow menu button.\n\n  * `overflowMenuIsOpen` {boolean} - The open state of the overflow menu dropdown.\n\n  * `overflowMenuTitle` {string} - Defines the title of the overflow menu button.\n\n  * `usePopover` {`boolean`} - \n\n  * `wrapWideItems` {boolean} - Automatically display items in an overflow menu when they would exceed the width of the container.\n\n  * `_hasOverflow` - \n\nProperties:\n\n  * `overflowSlotName` {`string`} - \n\n  * `overflowButtonRef` {`Ref<Element>`} - \n\n  * `childElements` {`any[]`} - Get an array of all child elements, flattened to directly include all child elements, elements in slots, elements in our group-type\ncomponents, etc.\n\n  * `allElements` {`any[]`} - Get all elements, including slotted elements and the overflow button.\n\n  * `visibleElements` {`any[]`} - Get all visible elements.\n\n  * `overflowableElements` {`any[]`} - Get the slotted elements that are able to be placed in the overflow menu\nand also those already placed there.\n\n  * `nonOverflowableElements` {`any[]`} - Get the slotted elements that are not able to be placed in the overflow menu.\n\n  * `overflowSlotElements` {`any[]`} - Get the slotted elements that are currently in the overflow menu.\n\n  * `maxItems` {number} - The maximum number of items to display, including the overflow menu button.\n\n  * `overflowMenuAriaLabel` {string} - Defines the aria label associated with the overflow menu button.\n\n  * `overflowMenuIconAppearance` {string} - Defines the icon appearance of the overflow menu button.\n\n  * `overflowMenuIsOpen` {boolean} - The open state of the overflow menu dropdown.\n\n  * `overflowMenuTitle` {string} - Defines the title of the overflow menu button.\n\n  * `usePopover` {`boolean`} - \n\n  * `wrapWideItems` {boolean} - Automatically display items in an overflow menu when they would exceed the width of the container.\n\n  * `_hasOverflow` - ",
       "attributes": [
         {
           "name": "maxItems",
@@ -872,8 +761,18 @@
           "description": "`overflowMenuIconAppearance` {string} - Defines the icon appearance of the overflow menu button.\n\nProperty: overflowMenuIconAppearance\n\nDefault: "
         },
         {
+          "name": "overflowMenuIsOpen",
+          "description": "`overflowMenuIsOpen` {boolean} - The open state of the overflow menu dropdown.\n\nProperty: overflowMenuIsOpen\n\nDefault: false",
+          "valueSet": "v"
+        },
+        {
           "name": "overflowMenuTitle",
           "description": "`overflowMenuTitle` {string} - Defines the title of the overflow menu button.\n\nProperty: overflowMenuTitle\n\nDefault: More actions"
+        },
+        {
+          "name": "usePopover",
+          "description": "`usePopover` {`boolean`} - \n\nProperty: usePopover\n\nDefault: false",
+          "valueSet": "v"
         },
         {
           "name": "wrapWideItems",
@@ -886,55 +785,18 @@
         },
         {
           "name": "oncontents-changed",
-          "description": "`contents-changed` {} - Fired when the contents of the container changes."
+          "description": "`contents-changed` {} - **DEPRECATED:** Fired when the contents of the container changes."
+        },
+        {
+          "name": "oncontentsChanged",
+          "description": "`contentsChanged` {} - Fired when the contents of the container changes."
         }
       ]
     },
     {
       "name": "otc-progress-icon",
-      "description": "The Otc Progress Icon component is used for progress indication.\n\nAttributes:\n\n  * `mode` {`string`} - \n\n  * `state` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `from` {`number`} - \n\n  * `to` {`number`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `ariaExpanded` {`string`} - \n\n  * `ariaValueText` {`string`} - \n\n  * `_ariaValueNow` {`string`} - \n\n  * `_a11yName` {`string`} - \n\nProperties:\n\n  * `mode` {`string`} - \n\n  * `state` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `from` {`number`} - \n\n  * `to` {`number`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `ariaExpanded` {`string`} - \n\n  * `ariaValueText` {`string`} - \n\n  * `_ariaValueNow` {`string`} - \n\n  * `_a11yName` {`string`} - ",
-      "attributes": [
-        {
-          "name": "mode",
-          "description": "`mode` {`string`} - \n\nProperty: mode\n\nDefault: "
-        },
-        {
-          "name": "state",
-          "description": "`state` {`string`} - \n\nProperty: state\n\nDefault: "
-        },
-        {
-          "name": "iconAppearance",
-          "description": "`iconAppearance` {`string`} - \n\nProperty: iconAppearance\n\nDefault: "
-        },
-        {
-          "name": "from",
-          "description": "`from` {`number`} - \n\nProperty: from\n\nDefault: 0"
-        },
-        {
-          "name": "to",
-          "description": "`to` {`number`} - \n\nProperty: to\n\nDefault: 100"
-        },
-        {
-          "name": "ariaLabel",
-          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: Progress Icon"
-        },
-        {
-          "name": "ariaExpanded",
-          "description": "`ariaExpanded` {`string`} - \n\nProperty: ariaExpanded\n\nDefault: "
-        },
-        {
-          "name": "ariaValueText",
-          "description": "`ariaValueText` {`string`} - \n\nProperty: ariaValueText\n\nDefault: "
-        },
-        {
-          "name": "_ariaValueNow",
-          "description": "`_ariaValueNow` {`string`} - \n\nProperty: _ariaValueNow\n\nDefault: "
-        },
-        {
-          "name": "_a11yName",
-          "description": "`_a11yName` {`string`} - \n\nProperty: _a11yName\n\nDefault: "
-        }
-      ]
+      "description": "The Otc Progress Icon component is used for progress indication.\n\nProperties:\n\n  * `mode` {`string`} - \n\n  * `state` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `from` {`number`} - \n\n  * `to` {`number`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `ariaExpanded` {`string`} - \n\n  * `ariaValueText` {`string`} - \n\n  * `_ariaValueNow` {`string`} - \n\n  * `_a11yName` {`string`} - ",
+      "attributes": []
     },
     {
       "name": "otc-radio",
@@ -956,7 +818,7 @@
     },
     {
       "name": "otc-radiogroup",
-      "description": "The Radio Group component is a container holding `otc-radio` components, while allowing only a single option to be selected at a time.\n\nEvents:\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the group has been checked for validity and fails to satisfy its constraints.\n\n  * `change` {`CustomEvent<null>`} - Fired when the state of the form element changes.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the `otc-radio` elements that are contained in the group.\n\nProperties:\n\n  * `columns` {`number`} - \n\n  * `name` {`string`} - \n\n  * `value` {`string`} - \n\n  * `validity` {`{ valid: boolean; valueMissing: boolean; } | null`} - ValidationAPI.\n\nReturns the group's current validity state.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `errorMessage` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
+      "description": "The Radio Group component is a container holding `otc-radio` components, while allowing only a single option to be selected at a time.\n\nEvents:\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the group has been checked for validity and fails to satisfy its constraints.\n\n  * `change` {} - Fired when the state of the form element changes.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the `otc-radio` elements that are contained in the group.\n\nProperties:\n\n  * `columns` {`number`} - \n\n  * `name` {`string`} - \n\n  * `value` {`string`} - \n\n  * `validity` {`{ valid: boolean; valueMissing: boolean; } | null`} - ValidationAPI.\n\nReturns the group's current validity state.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `errorMessage` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
       "attributes": [
         {
           "name": "oninvalid",
@@ -964,17 +826,17 @@
         },
         {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<null>`} - Fired when the state of the form element changes."
+          "description": "`change` {} - Fired when the state of the form element changes."
         }
       ]
     },
     {
       "name": "otc-search-persistent",
-      "description": "The Search Persistent component is a sub-component of the Header Bar.\nIt offers n always open search input field including search options. It is placed inside the global Header Bar or a\nsurrounding `flex`-container.  It offers the functionality to specify a search term, including selecting the offered search options.\n\nEvents:\n\n  * `change` {`CustomEvent<null>`} - Fired when the input operation has finished by submitting search or by pressing clear keywords or on focusout.\n\n  * `click` {`Event`} - Fired when clicking the brand banner, an action icon or inside the searchfield with the mouse/tap. Doing the same through\nkeyboard navigation may also result in a `click` event. **Note:** The event will not be fired if the `disabled` property is set\nto `true`.\n\n  * `input` {`InputEvent`} - Fired when the value of the input changes at each keystroke.\n\n  * `search` {`CustomEvent<{ options: { searchWithin: any; }; searchstring: string; message: string; }>`} - Fired when the search query is submitted by clicking on the Search button or pressing enter key. The custom event contains\nan `event.detail` property which contains an `options` and a `searchstring` object. For each selectable menuitem in the search options\nyou must provide an `id` attribute on the menuitem with an unique internal id. The search options use the `id` attribute to identify\nthe selection.\nThe `detail.options` in the search event contains for each selected item:\n+ itemid: the given unique internal id of the menuitem\n+ checked: true\n+ name: deprecated, contains also the given internal id; replaced by itemid\n**Note:** The event will not be fired if the `disabled` property is set to `true`.\n\n  * `open` {} - Fired when the Search Slidein is opened. **Note:** The event will not be fired if the `disabled` property is set to `true`.\n\n  * `close` {} - Fired when the Search Slidein is closed by clicking outside of the Search Slidein. **Note:** The event will not be fired if\nthe `disabled` property is set to `true`.\n\n  * `keydown` {`KeyboardEvent`} - \n\n  * `localfocus` {`CustomEvent<{ direction: string; orgevent: KeyboardEvent; }>`} - \n\nSlots:\n\n  * ` ` {} - unnamed Defines further content of the Header Bar.\n\nProperties:\n\n  * `_boundOutsideClickHandler` - \n\n  * `_boundClickAlwaysOpenHandler` - \n\n  * `inputFieldTransparent` {`boolean`} - \n\n  * `_hideSearchButton` {`boolean`} - \n\n  * `_inputPlaceholderText` {`string`} - \n\n  * `_partRefs` {`{ searchBox: Ref<Element>; searchButton: Ref<Element>; searchInputContainer: Ref<Element>; searchMenuSurrogate: Ref<Element>; searchOptionsDropdownSlot: Ref<...>; searchTermInput: Ref<...>; }`} - \n\n  * `_rootMenuItems` - \n\n  * `_searchBox` {`Element | undefined`} - \n\n  * `_searchButton` {`Element | undefined`} - \n\n  * `_searchInputContainer` {`Element | undefined`} - \n\n  * `_searchMenuSurrogate` {`Element | undefined`} - \n\n  * `_searchTermInput` {`Element | undefined`} - \n\n  * `ariaLabelClearKeywords` {`string`} - \n\n  * `ariaLabelSearchButtonOpen` {`string`} - \n\n  * `ariaLabelStartSearch` {`string`} - \n\n  * `ariaLabelSearchBox` {`string`} - \n\n  * `ariaLabelInputDescription` {`string`} - \n\n  * `ariaLabelInputField` {`string`} - \n\n  * `expanded` {`boolean`} - \n\n  * `headerItem` {`boolean`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `labelText` {`string`} - \n\n  * `measure` {`boolean`} - \n\n  * `searchPlaceholder` {`string`} - \n\n  * `size` {`string`} - \n\n  * `tooltipClearKeywords` {`string`} - \n\n  * `tooltipSearchButtonOpen` {`string`} - \n\n  * `tooltipStartSearch` {`string`} - \n\n  * `noautoclose` {`boolean`} - \n\n  * `value` {`string`} - \n\n  * `_doHideSearchfieldBox` {`boolean`} - \n\n  * `_isActive` {`boolean`} - \n\n  * `_expandedMenu` {`boolean`} - \n\n  * `_focusinActive` {`boolean`} - \n\n  * `_initialRun` {`boolean`} - \n\n  * `_isAlwaysOpen` {`boolean`} - \n\n  * `_size` {`string`} - ",
+      "description": "The Search Persistent component provides an always open search field. Usually it is used in the Header Bar.\nThe always open search input field can have optional search options. It is placed inside the global Header Bar or a\nsurrounding `flex`-container.  It offers the functionality to specify a search term, including selecting the offered search options.\n\nEvents:\n\n  * `change` {`CustomEvent<any>`} - Fired when the input operation has finished by submitting search or by pressing clear keywords or on focusout.\n\n  * `click` {`Event`} - Fired when clicking the brand banner, an action icon or inside the searchfield with the mouse/tap. Doing the same through\nkeyboard navigation may also result in a `click` event. **Note:** The event will not be fired if the `disabled` property is set\nto `true`.\n\n  * `input` {`InputEvent`} - Fired when the value of the input changes at each keystroke.\n\n  * `search` {`CustomEvent<{ options: { searchWithin: any; }; searchstring: string; message: string; }>`} - Fired when the search query is submitted by clicking on the Search button or pressing enter key. The custom event contains\nan `event.detail` property which contains an `options` and a `searchstring` object. For each selectable menuitem in the search options\nyou must provide an `id` attribute on the menuitem with an unique internal id. The search options use the `id` attribute to identify\nthe selection.\nThe `detail.options` in the search event contains for each selected item:\n+ itemid: the given unique internal id of the menuitem\n+ checked: true\n+ name: deprecated, contains also the given internal id; replaced by itemid\n**Note:** The event will not be fired if the `disabled` property is set to `true`.\n\n  * `open` {} - Fired when the Search Slidein is opened. **Note:** The event will not be fired if the `disabled` property is set to `true`.\n\n  * `close` {} - Fired when the Search Slidein is closed by clicking outside of the Search Slidein. **Note:** The event will not be fired if\nthe `disabled` property is set to `true`.\n\n  * `keydown` {`KeyboardEvent`} - \n\n  * `localfocus` {`CustomEvent<{ direction: string; orgevent: KeyboardEvent; }>`} - \n\nSlots:\n\n  * ` ` {} - unnamed Defines further content of the Header Bar.\n\nProperties:\n\n  * `_boundOutsideClickHandler` - \n\n  * `_boundClickAlwaysOpenHandler` - \n\n  * `inputFieldTransparent` {`boolean`} - \n\n  * `_hideSearchButton` {`boolean`} - \n\n  * `_inputPlaceholderText` {`string`} - \n\n  * `_partRefs` {`{ searchBox: Ref<Element>; searchButton: Ref<Element>; searchInputContainer: Ref<Element>; searchMenuSurrogate: Ref<Element>; searchOptionsDropdownSlot: Ref<...>; searchTermInput: Ref<...>; }`} - \n\n  * `_rootMenuItems` - \n\n  * `_searchBox` {`Element | undefined`} - \n\n  * `_searchButton` {`Element | undefined`} - \n\n  * `_searchInputContainer` {`Element | undefined`} - \n\n  * `_searchMenuSurrogate` {`Element | undefined`} - \n\n  * `_searchTermInput` {`Element | undefined`} - \n\n  * `ariaLabelClearKeywords` {`string`} - \n\n  * `ariaLabelSearchButtonOpen` {`string`} - \n\n  * `ariaLabelStartSearch` {`string`} - \n\n  * `ariaLabelSearchBox` {`string`} - \n\n  * `ariaLabelInputDescription` {`string`} - \n\n  * `ariaLabelInputField` {`string`} - \n\n  * `expanded` {`boolean`} - \n\n  * `headerItem` {`boolean`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `labelText` {`string`} - \n\n  * `measure` {`boolean`} - \n\n  * `searchPlaceholder` {`string`} - \n\n  * `size` {`string`} - \n\n  * `tooltipClearKeywords` {`string`} - \n\n  * `tooltipSearchButtonOpen` {`string`} - \n\n  * `tooltipStartSearch` {`string`} - \n\n  * `noautoclose` {`boolean`} - \n\n  * `value` {`string`} - \n\n  * `_doHideSearchfieldBox` {`boolean`} - \n\n  * `_isActive` {`boolean`} - \n\n  * `_doHideInputFieldActions` {`boolean`} - \n\n  * `_selfIsFocused` {`boolean`} - \n\n  * `_expandedMenu` {`boolean`} - \n\n  * `_focusinActive` {`boolean`} - \n\n  * `_initialRun` {`boolean`} - \n\n  * `_isAlwaysOpen` {`boolean`} - \n\n  * `_size` {`string`} - ",
       "attributes": [
         {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<null>`} - Fired when the input operation has finished by submitting search or by pressing clear keywords or on focusout."
+          "description": "`change` {`CustomEvent<any>`} - Fired when the input operation has finished by submitting search or by pressing clear keywords or on focusout."
         },
         {
           "name": "onclick",
@@ -1008,7 +870,7 @@
     },
     {
       "name": "otc-search-slidein",
-      "description": "The Search Slidein component is a sub-component of the Header Bar.\nIt offers a search button and, if expanded, a search input field including search options. It is placed inside the global Header Bar or\na surrounding `flex`-container. It offers the functionality to specify a search term, including selecting the offered search options.\n\nEvents:\n\n  * `open` {`CustomEvent<any>`} - Fired when the Search Slidein is opened. **Note:** The event will not be fired if the `disabled` property is set to `true`.\n\n  * `close` {`CustomEvent<any>`} - Fired when the Search Slidein is closed by clicking outside of the Search Slidein. **Note:** The event will not be fired if\nthe `disabled` property is set to `true`.\n\n  * `change` {`CustomEvent<null>`} - Fired when the input operation has finished by submitting search or by pressing clear keywords or on focusout.\n\n  * `click` {`Event`} - Fired when clicking the brand banner, an action icon or inside the searchfield with the mouse/tap. Doing the same through\nkeyboard navigation may also result in a `click` event. **Note:** The event will not be fired if the `disabled` property is set\nto `true`.\n\n  * `input` {`InputEvent`} - Fired when the value of the input changes at each keystroke.\n\n  * `search` {`CustomEvent<{ options: { searchWithin: any; }; searchstring: string; message: string; }>`} - Fired when the search query is submitted by clicking on the Search button or pressing enter key. The custom event contains\nan `event.detail` property which contains an `options` and a `searchstring` object. For each selectable menuitem in the search options\nyou must provide an `id` attribute on the menuitem with an unique internal id. The search options use the `id` attribute to identify\nthe selection.\nThe `detail.options` in the search event contains for each selected item:\n+ itemid: the given unique internal id of the menuitem\n+ checked: true\n+ name: deprecated, contains also the given internal id; replaced by itemid\n**Note:** The event will not be fired if the `disabled` property is set to `true`.\n\n  * `keydown` {`KeyboardEvent`} - \n\n  * `localfocus` {`CustomEvent<{ direction: string; orgevent: KeyboardEvent; }>`} - \n\nSlots:\n\n  * ` ` {} - unnamed Defines further content of the Header Bar.\n\nProperties:\n\n  * `_boundOutsideClickHandler` - \n\n  * `ariaLabelSearchButton` {`string`} - \n\n  * `icon` {`string`} - \n\n  * `label` {`boolean`} - \n\n  * `tooltipSearchButton` {`string`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_handleAnimations` {`boolean`} - \n\n  * `_partRefs` {`{ searchBox: Ref<Element>; searchButton: Ref<Element>; searchInputContainer: Ref<Element>; searchMenuSurrogate: Ref<Element>; searchOptionsDropdownSlot: Ref<...>; searchTermInput: Ref<...>; }`} - \n\n  * `_rootMenuItems` - \n\n  * `_searchBox` {`Element | undefined`} - \n\n  * `_searchButton` {`Element | undefined`} - \n\n  * `_searchInputContainer` {`Element | undefined`} - \n\n  * `_searchMenuSurrogate` {`Element | undefined`} - \n\n  * `_searchTermInput` {`Element | undefined`} - \n\n  * `ariaLabelClearKeywords` {`string`} - \n\n  * `ariaLabelSearchButtonOpen` {`string`} - \n\n  * `ariaLabelStartSearch` {`string`} - \n\n  * `ariaLabelSearchBox` {`string`} - \n\n  * `ariaLabelInputDescription` {`string`} - \n\n  * `ariaLabelInputField` {`string`} - \n\n  * `expanded` {`boolean`} - \n\n  * `headerItem` {`boolean`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `labelText` {`string`} - \n\n  * `measure` {`boolean`} - \n\n  * `searchPlaceholder` {`string`} - \n\n  * `size` {`string`} - \n\n  * `tooltipClearKeywords` {`string`} - \n\n  * `tooltipSearchButtonOpen` {`string`} - \n\n  * `tooltipStartSearch` {`string`} - \n\n  * `noautoclose` {`boolean`} - \n\n  * `value` {`string`} - \n\n  * `_doHideSearchfieldBox` {`boolean`} - \n\n  * `_isActive` {`boolean`} - \n\n  * `_expandedMenu` {`boolean`} - \n\n  * `_focusinActive` {`boolean`} - \n\n  * `_initialRun` {`boolean`} - \n\n  * `_isAlwaysOpen` {`boolean`} - \n\n  * `_size` {`string`} - ",
+      "description": "The Search Slidein component provides an open or closed search field. Usually it is used in the Header Bar.\nIt offers a search button and, if expanded, a search input field including search options. It is placed inside the global Header Bar or\na surrounding `flex`-container. It offers the functionality to specify a search term, including selecting the offered search options.\n\nEvents:\n\n  * `open` {`CustomEvent<any>`} - Fired when the Search Slidein is opened. **Note:** The event will not be fired if the `disabled` property is set to `true`.\n\n  * `close` {`CustomEvent<any>`} - Fired when the Search Slidein is closed by clicking outside of the Search Slidein. **Note:** The event will not be fired if\nthe `disabled` property is set to `true`.\n\n  * `change` {`CustomEvent<any>`} - Fired when the input operation has finished by submitting search or by pressing clear keywords or on focusout.\n\n  * `click` {`Event`} - Fired when clicking the brand banner, an action icon or inside the searchfield with the mouse/tap. Doing the same through\nkeyboard navigation may also result in a `click` event. **Note:** The event will not be fired if the `disabled` property is set\nto `true`.\n\n  * `input` {`InputEvent`} - Fired when the value of the input changes at each keystroke.\n\n  * `search` {`CustomEvent<{ options: { searchWithin: any; }; searchstring: string; message: string; }>`} - Fired when the search query is submitted by clicking on the Search button or pressing enter key. The custom event contains\nan `event.detail` property which contains an `options` and a `searchstring` object. For each selectable menuitem in the search options\nyou must provide an `id` attribute on the menuitem with an unique internal id. The search options use the `id` attribute to identify\nthe selection.\nThe `detail.options` in the search event contains for each selected item:\n+ itemid: the given unique internal id of the menuitem\n+ checked: true\n+ name: deprecated, contains also the given internal id; replaced by itemid\n**Note:** The event will not be fired if the `disabled` property is set to `true`.\n\n  * `keydown` {`KeyboardEvent`} - \n\n  * `localfocus` {`CustomEvent<{ direction: string; orgevent: KeyboardEvent; }>`} - \n\nSlots:\n\n  * ` ` {} - unnamed Defines further content of the Header Bar.\n\nProperties:\n\n  * `_boundOutsideClickHandler` - \n\n  * `ariaLabelSearchButton` {`string`} - \n\n  * `icon` {`string`} - \n\n  * `label` {`boolean`} - \n\n  * `tooltipSearchButton` {`string`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_handleAnimations` {`boolean`} - \n\n  * `_partRefs` {`{ searchBox: Ref<Element>; searchButton: Ref<Element>; searchInputContainer: Ref<Element>; searchMenuSurrogate: Ref<Element>; searchOptionsDropdownSlot: Ref<...>; searchTermInput: Ref<...>; }`} - \n\n  * `_rootMenuItems` - \n\n  * `_searchBox` {`Element | undefined`} - \n\n  * `_searchButton` {`Element | undefined`} - \n\n  * `_searchInputContainer` {`Element | undefined`} - \n\n  * `_searchMenuSurrogate` {`Element | undefined`} - \n\n  * `_searchTermInput` {`Element | undefined`} - \n\n  * `ariaLabelClearKeywords` {`string`} - \n\n  * `ariaLabelSearchButtonOpen` {`string`} - \n\n  * `ariaLabelStartSearch` {`string`} - \n\n  * `ariaLabelSearchBox` {`string`} - \n\n  * `ariaLabelInputDescription` {`string`} - \n\n  * `ariaLabelInputField` {`string`} - \n\n  * `expanded` {`boolean`} - \n\n  * `headerItem` {`boolean`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `labelText` {`string`} - \n\n  * `measure` {`boolean`} - \n\n  * `searchPlaceholder` {`string`} - \n\n  * `size` {`string`} - \n\n  * `tooltipClearKeywords` {`string`} - \n\n  * `tooltipSearchButtonOpen` {`string`} - \n\n  * `tooltipStartSearch` {`string`} - \n\n  * `noautoclose` {`boolean`} - \n\n  * `value` {`string`} - \n\n  * `_doHideSearchfieldBox` {`boolean`} - \n\n  * `_isActive` {`boolean`} - \n\n  * `_doHideInputFieldActions` {`boolean`} - \n\n  * `_selfIsFocused` {`boolean`} - \n\n  * `_expandedMenu` {`boolean`} - \n\n  * `_focusinActive` {`boolean`} - \n\n  * `_initialRun` {`boolean`} - \n\n  * `_isAlwaysOpen` {`boolean`} - \n\n  * `_size` {`string`} - ",
       "attributes": [
         {
           "name": "onopen",
@@ -1020,7 +882,7 @@
         },
         {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<null>`} - Fired when the input operation has finished by submitting search or by pressing clear keywords or on focusout."
+          "description": "`change` {`CustomEvent<any>`} - Fired when the input operation has finished by submitting search or by pressing clear keywords or on focusout."
         },
         {
           "name": "onclick",
@@ -1046,7 +908,7 @@
     },
     {
       "name": "otc-search-field",
-      "description": "Events:\n\n  * `open` {`CustomEvent<any>`} - \n\n  * `close` {`CustomEvent<any>`} - \n\n  * `search` {`CustomEvent<{ options: { searchWithin: any; }; searchstring: string; message: string; }>`} - \n\nAttributes:\n\n  * `headerItem` {`boolean`} - \n\n  * `searchPlaceholder` {`string`} - \n\n  * `ariaLabelSearchButton` {`string`} - \n\n  * `ariaLabelSearchButtonOpen` {`string`} - \n\n  * `ariaLabelClearKeywords` {`string`} - \n\n  * `ariaLabelStartSearch` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `tooltipSearchButton` {`string`} - \n\n  * `tooltipSearchButtonOpen` {`string`} - \n\n  * `tooltipClearKeywords` {`string`} - \n\n  * `tooltipStartSearch` {`string`} - \n\n  * `expanded` {`boolean`} - \n\n  * `_doHideSearchfieldBox` {`boolean`} - \n\n  * `_doCloseSearchAnimation` {`boolean`} - \n\nProperties:\n\n  * `_boundOutsideClickHandler` - \n\n  * `headerItem` {`boolean`} - \n\n  * `searchPlaceholder` {`string`} - \n\n  * `ariaLabelSearchButton` {`string`} - \n\n  * `ariaLabelSearchButtonOpen` {`string`} - \n\n  * `ariaLabelClearKeywords` {`string`} - \n\n  * `ariaLabelStartSearch` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `tooltipSearchButton` {`string`} - \n\n  * `tooltipSearchButtonOpen` {`string`} - \n\n  * `tooltipClearKeywords` {`string`} - \n\n  * `tooltipStartSearch` {`string`} - \n\n  * `expanded` {`boolean`} - \n\n  * `_expandedMenu` {`boolean`} - \n\n  * `_menuElements` {`never[]`} - \n\n  * `_doHideSearchfieldBox` {`boolean`} - \n\n  * `_doCloseSearchAnimation` {`boolean`} - \n\n  * `_initialRun` {`boolean`} - ",
+      "description": "Events:\n\n  * `open` {`CustomEvent<any>`} - \n\n  * `close` {`CustomEvent<any>`} - \n\n  * `search` {`CustomEvent<{ options: { searchWithin: any; }; searchstring: string; message: string; }>`} - \n\nAttributes:\n\n  * `headerItem` {`boolean`} - \n\n  * `searchPlaceholder` {`string`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `ariaLabelSearchButton` {`string`} - \n\n  * `ariaLabelSearchButtonOpen` {`string`} - \n\n  * `ariaLabelClearKeywords` {`string`} - \n\n  * `ariaLabelStartSearch` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `tooltipSearchButton` {`string`} - \n\n  * `tooltipSearchButtonOpen` {`string`} - \n\n  * `tooltipClearKeywords` {`string`} - \n\n  * `tooltipStartSearch` {`string`} - \n\n  * `expanded` {`boolean`} - \n\n  * `_doHideSearchfieldBox` {`boolean`} - \n\n  * `_doCloseSearchAnimation` {`boolean`} - \n\nProperties:\n\n  * `_boundOutsideClickHandler` - \n\n  * `headerItem` {`boolean`} - \n\n  * `searchPlaceholder` {`string`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `ariaLabelSearchButton` {`string`} - \n\n  * `ariaLabelSearchButtonOpen` {`string`} - \n\n  * `ariaLabelClearKeywords` {`string`} - \n\n  * `ariaLabelStartSearch` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `tooltipSearchButton` {`string`} - \n\n  * `tooltipSearchButtonOpen` {`string`} - \n\n  * `tooltipClearKeywords` {`string`} - \n\n  * `tooltipStartSearch` {`string`} - \n\n  * `expanded` {`boolean`} - \n\n  * `_expandedMenu` {`boolean`} - \n\n  * `_menuElements` {`never[]`} - \n\n  * `_doHideSearchfieldBox` {`boolean`} - \n\n  * `_doCloseSearchAnimation` {`boolean`} - \n\n  * `_initialRun` {`boolean`} - ",
       "attributes": [
         {
           "name": "headerItem",
@@ -1056,6 +918,10 @@
         {
           "name": "searchPlaceholder",
           "description": "`searchPlaceholder` {`string`} - \n\nProperty: searchPlaceholder\n\nDefault: Search"
+        },
+        {
+          "name": "ariaLabel",
+          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: Global content search"
         },
         {
           "name": "ariaLabelSearchButton",
@@ -1128,26 +994,26 @@
       "attributes": []
     },
     {
-      "name": "otc-select",
-      "description": "The Select component represents a dropdown list of items for the user to choose from.\n\nEvents:\n\n  * `change` {`CustomEvent<null>`} - Fired when the value of the select has changed.\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the content of the menu.\n**Note:** It is strongly recommended that you only use `otc-selectitem` or `otc-selectuseritem` components in order to preserve the\nintended design.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `_selectCombobox` - \n\n  * `_selectInput` - \n\n  * `_dropdownMenu` - \n\n  * `_resetSelectionItem` - \n\n  * `caretRightSpacingLarge` {`boolean`} - \n\n  * `checkSelected` {`boolean`} - \n\n  * `displayValue` {`string`} - \n\n  * `maxItems` {`number`} - \n\n  * `menuOpen` {`boolean`} - \n\n  * `noneAriaLabel` {`string`} - \n\n  * `noneLabel` {`string`} - \n\n  * `placeholder` {`string`} - \n\n  * `showNone` {`boolean`} - \n\n  * `value` {`string`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the interactive element (the native input or textarea).\nThis method is used also by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
+      "name": "otc-selectitem",
+      "description": "The Select Item component represents an item to be displayed in an `otc-select` component.\n\nEvents:\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\n  * `change` {} - Fired when the state of the form element changes.\n\nSlots:\n\n  * ` ` {} - unnamed The text of the item.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `_dropdownItem` - \n\n  * `displayValue` {`string`} - \n\n  * `isResetSelectionItem` {`boolean`} - \n\n  * `selected` {`boolean`} - \n\n  * `value` {`string`} - \n\n  * `_filteredText` {`string`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the native option element. This method is used by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
       "attributes": [
         {
           "name": "tabIndex",
           "description": "`tabIndex` {`string`} - \n\nProperty: tabIndex"
         },
         {
-          "name": "onchange",
-          "description": "`change` {`CustomEvent<null>`} - Fired when the value of the select has changed."
-        },
-        {
           "name": "oninvalid",
           "description": "`invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints."
+        },
+        {
+          "name": "onchange",
+          "description": "`change` {} - Fired when the state of the form element changes."
         }
       ]
     },
     {
-      "name": "otc-selectitem",
-      "description": "The Select Item component represents an item to be displayed in an `otc-select` component.\n\nEvents:\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\n  * `change` {`CustomEvent<null>`} - Fired when the state of the form element changes.\n\nSlots:\n\n  * ` ` {} - unnamed The text of the item.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `_dropdownItem` - \n\n  * `displayValue` {`string`} - \n\n  * `isResetSelectionItem` {`boolean`} - \n\n  * `selected` {`boolean`} - \n\n  * `value` {`string`} - \n\n  * `_filteredText` {`string`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the native option element. This method is used by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
+      "name": "otc-selectextensibleitem",
+      "description": "The Select Extensible Item is an extension for the Select Item component and can be used in `otc-select` component.\nThe difference is that the select item extend component can take the content of the slot as display.\nAnd so the user has more flexibility to design the item.\n\nEvents:\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\n  * `change` {} - Fired when the state of the form element changes.\n\nSlots:\n\n  * ` ` {} - unnamed The content of the item.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `_dropdownItem` - \n\n  * `displayValue` {`string`} - \n\n  * `isResetSelectionItem` {`boolean`} - \n\n  * `selected` {`boolean`} - \n\n  * `value` {`string`} - \n\n  * `_filteredText` {`string`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the native option element. This method is used by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
       "attributes": [
         {
           "name": "tabIndex",
@@ -1159,18 +1025,14 @@
         },
         {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<null>`} - Fired when the state of the form element changes."
+          "description": "`change` {} - Fired when the state of the form element changes."
         }
       ]
     },
     {
       "name": "otc-selectuseritem",
-      "description": "The Select User Item component is used to display user information and can also be used in an `otc-select` to select a user.\n\nEvents:\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\n  * `change` {`CustomEvent<null>`} - Fired when the state of the form element changes.\n\nSlots:\n\n  * ` ` {} - unnamed User name for the select user item.\n\nAttributes:\n\n  * `icon` {`string`} - \n\n  * `image` {`string`} - \n\n  * `initials` {`string`} - \n\n  * `value` {`string`} - \n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `icon` {`string`} - \n\n  * `image` {`string`} - \n\n  * `initials` {`string`} - \n\n  * `_dropdownItem` - \n\n  * `displayValue` {`string`} - \n\n  * `isResetSelectionItem` {`boolean`} - \n\n  * `selected` {`boolean`} - \n\n  * `value` {`string`} - \n\n  * `_filteredText` {`string`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the native option element. This method is used by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
+      "description": "The Select User Item component is used to display user information and can also be used in an `otc-select` to select a user.\n\nEvents:\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\n  * `change` {} - Fired when the state of the form element changes.\n\nSlots:\n\n  * ` ` {} - unnamed User name for the select user item.\n\nAttributes:\n\n  * `image` {`string`} - \n\n  * `initials` {`string`} - \n\n  * `value` {`string`} - \n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `image` {`string`} - \n\n  * `initials` {`string`} - \n\n  * `_dropdownItem` - \n\n  * `displayValue` {`string`} - \n\n  * `isResetSelectionItem` {`boolean`} - \n\n  * `selected` {`boolean`} - \n\n  * `value` {`string`} - \n\n  * `_filteredText` {`string`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the native option element. This method is used by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
       "attributes": [
-        {
-          "name": "icon",
-          "description": "`icon` {`string`} - \n\nProperty: icon\n\nDefault: "
-        },
         {
           "name": "image",
           "description": "`image` {`string`} - \n\nProperty: image\n\nDefault: "
@@ -1193,7 +1055,33 @@
         },
         {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<null>`} - Fired when the state of the form element changes."
+          "description": "`change` {} - Fired when the state of the form element changes."
+        }
+      ]
+    },
+    {
+      "name": "otc-select",
+      "description": "The Select component represents a dropdown list of items for the user to choose from.\n\nEvents:\n\n  * `change` - Fired when the value of the select has changed.  This follows the same rules as the native element, where this event is\nonly fired when the value is changed interactively.\n\n  * `value-changed` {} - **DEPRECATED:** Fired every time value of the select has changed.\n\n  * `valueChanged` {} - Fired every time value of the select has changed.\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the content of the menu.\n**Note: ** It is strongly recommended that you only use `otc-selectitem`, `otc-selectextensibleitem or `otc-selectuseritem` components\nin order to preserve the intended design.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `selectInputValue` {`string`} - An API, which allows getting the select input value from outside the select component.\n\n  * `autocomplete` - \n\n  * `caretRightSpacingLarge` {`boolean`} - \n\n  * `checkSelected` {`boolean`} - \n\n  * `disableAnimation` {`boolean`} - \n\n  * `disableFiltering` {`boolean`} - \n\n  * `disableInputReset` {`boolean`} - \n\n  * `disableNoneOption` {`boolean`} - \n\n  * `displayValue` {`string`} - \n\n  * `isTypeaheadSearch` {`boolean`} - \n\n  * `maxItems` {`number`} - \n\n  * `menuOpen` {`boolean`} - \n\n  * `noneAriaLabel` {`string`} - \n\n  * `noneLabel` {`string`} - \n\n  * `placeholder` {`string`} - \n\n  * `usePopover` {`boolean`} - \n\n  * `value` {`string`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the native input element. This method is used by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
+      "attributes": [
+        {
+          "name": "tabIndex",
+          "description": "`tabIndex` {`string`} - \n\nProperty: tabIndex"
+        },
+        {
+          "name": "onchange",
+          "description": "`change` - Fired when the value of the select has changed.  This follows the same rules as the native element, where this event is\nonly fired when the value is changed interactively."
+        },
+        {
+          "name": "onvalue-changed",
+          "description": "`value-changed` {} - **DEPRECATED:** Fired every time value of the select has changed."
+        },
+        {
+          "name": "onvalueChanged",
+          "description": "`valueChanged` {} - Fired every time value of the select has changed."
+        },
+        {
+          "name": "oninvalid",
+          "description": "`invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints."
         }
       ]
     },
@@ -1203,8 +1091,18 @@
       "attributes": []
     },
     {
+      "name": "otc-text",
+      "description": "The Text component supports text truncation when there isn't enough space to display the full content. A common use case is placing\nit inside a flex container, allowing the text to be truncated with an ellipsis.\n\nSlots:\n\n  * ` ` {} - unnamed The text content, which will be rendered in a span with appropriate styles set.  **Note:** Only text content is expected.\n\nAttributes:\n\n  * `overflowMode` {`string`} - \n\nProperties:\n\n  * `overflowMode` {`string`} - ",
+      "attributes": [
+        {
+          "name": "overflowMode",
+          "description": "`overflowMode` {`string`} - \n\nProperty: overflowMode\n\nDefault: ellipsis"
+        }
+      ]
+    },
+    {
       "name": "otc-textarea",
-      "description": "The Text Area component allows the user to enter and edit textual values.\n\nEvents:\n\n  * `input` {} - Fired when the value of the textarea changes at each keystroke.\n\n  * `change` {`CustomEvent<null>`} - Fired when the value of the textarea changes and looses focus.\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\nSlots:\n\n  * ` ` {} - unnamed The text content of the text area.  **Note:** Only text content will be rendered.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `autoresize` {`boolean`} - \n\n  * `maxLength` {`number`} - \n\n  * `maxRows` {`number`} - \n\n  * `minLength` {`number`} - \n\n  * `name` {`string`} - \n\n  * `placeholder` {`string`} - \n\n  * `rows` {`number`} - \n\n  * `secondary` {`boolean`} - \n\n  * `title` {`string`} - \n\n  * `value` {`string`} - \n\n  * `_textareaRows` {`number`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the interactive element (the native input or textarea).\nThis method is used also by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
+      "description": "The Text Area component allows the user to enter and edit textual values. An initial value should be provided as textContent.\n\nEvents:\n\n  * `input` {} - Fired when the value of the textarea changes at each keystroke.\n\n  * `change` - Fired when the value of the textarea changes and looses focus.\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\nSlots:\n\n  * ` ` {} - unnamed The text content of the text area.  **Note:** Only text content will be rendered.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `autocomplete` - \n\n  * `autoresize` {`boolean`} - \n\n  * `maxLength` {`number`} - \n\n  * `maxRows` {`number`} - \n\n  * `minLength` {`number`} - \n\n  * `name` {`string`} - \n\n  * `placeholder` {`string`} - \n\n  * `rows` {`number`} - \n\n  * `secondary` {`boolean`} - \n\n  * `title` {`string`} - \n\n  * `value` {`string`} - \n\n  * `_textareaRows` {`number`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the interactive element (the native input or textarea).\nThis method is used also by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
       "attributes": [
         {
           "name": "tabIndex",
@@ -1216,7 +1114,7 @@
         },
         {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<null>`} - Fired when the value of the textarea changes and looses focus."
+          "description": "`change` - Fired when the value of the textarea changes and looses focus."
         },
         {
           "name": "oninvalid",
@@ -1226,7 +1124,7 @@
     },
     {
       "name": "otc-toggle",
-      "description": "The Toggle component sets a single value to a state of on or off.\nEach toggle is independent; it does not interact with other controls or settings.\n\nEvents:\n\n  * `change` {`CustomEvent<null>`} - Fired when the state of the toggle has changed.\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `checked` {`boolean`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the interactive element (the native input or textarea).\nThis method is used also by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
+      "description": "The Toggle component sets a single value to a state of on or off.\nEach toggle is independent; it does not interact with other controls or settings.\n\nEvents:\n\n  * `change` - Fired when the state of the toggle has changed.\n\n  * `invalid` {`CustomEvent<any>`} - Fired when the component has been checked for validity and fails to satisfy its constraints.\n\nAttributes:\n\n  * `tabIndex` {`string`} - \n\nProperties:\n\n  * `altLabelPosition` {`boolean`} - \n\n  * `checked` {`boolean`} - \n\n  * `validity` - ValidationAPI.\n\nReturns the element's current validity state.\n\n  * `willValidate` - ValidationAPI.\n\nReturns whether the element is a candidate for constraint validation.\n\n  * `validationMessage` - ValidationAPI.\n\nReturns a message that describes the validation constraints\nthat the control does not satisfy (if any).\n\n  * `innerInteractiveElement` - Get the interactive element (the native input or textarea).\nThis method is used also by the interactive interface.\n\n  * `tabIndex` {`string`} - \n\n  * `internals` - \n\n  * `ariaLabel` {`string`} - \n\n  * `dark` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `infoMessage` {`string`} - \n\n  * `interactiveOnly` {`boolean`} - \n\n  * `label` {`string`} - \n\n  * `liveValidation` {`boolean`} - \n\n  * `noValueText` {`string`} - \n\n  * `readonly` {`boolean`} - \n\n  * `required` {`boolean`} - \n\n  * `id` {`string`} - \n\n  * `_labelId` {`string`} - \n\n  * `_infoMessageId` {`string`} - \n\n  * `_errorMessageId` {`string`} - ",
       "attributes": [
         {
           "name": "tabIndex",
@@ -1234,7 +1132,7 @@
         },
         {
           "name": "onchange",
-          "description": "`change` {`CustomEvent<null>`} - Fired when the state of the toggle has changed."
+          "description": "`change` - Fired when the state of the toggle has changed."
         },
         {
           "name": "oninvalid",
@@ -1244,7 +1142,7 @@
     },
     {
       "name": "otc-toolbar",
-      "description": "The Toolbar component can be used for layout of a horizontal row of actions, usually represented as `otc-toolbaritem` components.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the contents of the toolbar.  For best results, use `otc-toolbaritem` components.\n\nAttributes:\n\n  * `maxItems` {number} - The maximum number of items to display, including the overflow menu button.\n\n  * `overflowMenuAriaLabel` {string} - Defines the aria label associated with the overflow menu button.\n\n  * `overflowMenuIconAppearance` {string} - Defines the icon appearance of the overflow menu button.\n\n  * `overflowMenuTitle` {string} - Defines the title of the overflow menu button.\n\n  * `wrapWideItems` {boolean} - Automatically display items in an overflow menu when they would exceed the width of the container.\n\n  * `_hasOverflow` - \n\nProperties:\n\n  * `ariaLabel` {`string`} - \n\n  * `tabIndex` {`number`} - \n\n  * `overflowSlotName` {`string`} - \n\n  * `overflowButtonRef` - \n\n  * `childElements` {`any[]`} - Get an array of all child elements, flattened to directly include all child elements, elements in slots, elements in our group-type\ncomponents, etc.\n\n  * `allElements` {`any[]`} - Get all elements, including slotted elements and the overflow button.\n\n  * `overflowableElements` {`any[]`} - Get the slotted elements that are able to be placed in the overflow menu.\n\n  * `nonOverflowableElements` {`any[]`} - Get the slotted elements that are not able to be placed in the overflow menu.\n\n  * `overflowSlotElements` - \n\n  * `maxItems` {number} - The maximum number of items to display, including the overflow menu button.\n\n  * `overflowMenuAriaLabel` {string} - Defines the aria label associated with the overflow menu button.\n\n  * `overflowMenuIconAppearance` {string} - Defines the icon appearance of the overflow menu button.\n\n  * `overflowMenuTitle` {string} - Defines the title of the overflow menu button.\n\n  * `wrapWideItems` {boolean} - Automatically display items in an overflow menu when they would exceed the width of the container.\n\n  * `_hasOverflow` - ",
+      "description": "The Toolbar component can be used for layout of a horizontal row of actions, usually represented as `otc-toolbaritem` components.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the contents of the toolbar.  For best results, use `otc-toolbaritem` components.\n\nAttributes:\n\n  * `maxItems` {number} - The maximum number of items to display, including the overflow menu button.\n\n  * `overflowMenuAriaLabel` {string} - Defines the aria label associated with the overflow menu button.\n\n  * `overflowMenuIconAppearance` {string} - Defines the icon appearance of the overflow menu button.\n\n  * `overflowMenuIsOpen` {boolean} - The open state of the overflow menu dropdown.\n\n  * `overflowMenuTitle` {string} - Defines the title of the overflow menu button.\n\n  * `usePopover` {boolean} - Uses the Popover API to display the menu.\n\n  * `wrapWideItems` {boolean} - Automatically display items in an overflow menu when they would exceed the width of the container.\n\n  * `_hasOverflow` - \n\nProperties:\n\n  * `ariaLabel` {`string`} - \n\n  * `disabled` {`boolean`} - \n\n  * `size` {`string`} - \n\n  * `type` {`string`} - \n\n  * `tabIndex` {`number`} - \n\n  * `overflowSlotName` {`string`} - \n\n  * `overflowButtonRef` {`Ref<Element>`} - \n\n  * `childElements` {`any[]`} - Get an array of all child elements, flattened to directly include all child elements, elements in slots, elements in our group-type\ncomponents, etc.\n\n  * `allElements` {`any[]`} - Get all elements, including slotted elements and the overflow button.\n\n  * `visibleElements` {`any[]`} - Get all visible elements.\n\n  * `overflowableElements` {`any[]`} - Get the slotted elements that are able to be placed in the overflow menu\nand also those already placed there.\n\n  * `nonOverflowableElements` {`any[]`} - Get the slotted elements that are not able to be placed in the overflow menu.\n\n  * `overflowSlotElements` {`any[]`} - Get the slotted elements that are currently in the overflow menu.\n\n  * `maxItems` {number} - The maximum number of items to display, including the overflow menu button.\n\n  * `overflowMenuAriaLabel` {string} - Defines the aria label associated with the overflow menu button.\n\n  * `overflowMenuIconAppearance` {string} - Defines the icon appearance of the overflow menu button.\n\n  * `overflowMenuIsOpen` {boolean} - The open state of the overflow menu dropdown.\n\n  * `overflowMenuTitle` {string} - Defines the title of the overflow menu button.\n\n  * `usePopover` {boolean} - Uses the Popover API to display the menu.\n\n  * `wrapWideItems` {boolean} - Automatically display items in an overflow menu when they would exceed the width of the container.\n\n  * `_hasOverflow` - ",
       "attributes": [
         {
           "name": "maxItems",
@@ -1259,8 +1157,18 @@
           "description": "`overflowMenuIconAppearance` {string} - Defines the icon appearance of the overflow menu button.\n\nProperty: overflowMenuIconAppearance\n\nDefault: "
         },
         {
+          "name": "overflowMenuIsOpen",
+          "description": "`overflowMenuIsOpen` {boolean} - The open state of the overflow menu dropdown.\n\nProperty: overflowMenuIsOpen\n\nDefault: false",
+          "valueSet": "v"
+        },
+        {
           "name": "overflowMenuTitle",
           "description": "`overflowMenuTitle` {string} - Defines the title of the overflow menu button.\n\nProperty: overflowMenuTitle\n\nDefault: More actions"
+        },
+        {
+          "name": "usePopover",
+          "description": "`usePopover` {boolean} - Uses the Popover API to display the menu.\n\nProperty: usePopover\n\nDefault: false",
+          "valueSet": "v"
         },
         {
           "name": "wrapWideItems",
@@ -1275,36 +1183,57 @@
     },
     {
       "name": "otc-toolbaritem",
-      "description": "The Toolbar Item component can be used inside an `otc-toolbar` as a text button, an icon button, a menu item, or a submenu, depending on\ncontext.  When placed directly inside an `otc-toolbar`, it will be rendered as an `otc-button`.  If this Toolbar Item contains children,\nthen an `otc-menu` will be created automatically and associated with this `otc-button`.  Toolbar Items that are the child of another\nToolbar Item will be rendered as an `otc-menuitem`, so that they are properly displayed in the aforementioned `otc-menu`.  If this\nToolbar Item also contains children, then it will instead be rendered as an `otc-submenu`.\n\nSlots:\n\n  * ` ` {} - unnamed Defines the children of this toolbar item, which will be wrapped in an `otc-menu`.\n\nAttributes:\n\n  * `ariaLabel` {`string`} - \n\n  * `buttonSize` {`string`} - \n\n  * `buttonType` {`string`} - \n\n  * `headerItem` {`boolean`} - \n\n  * `icon` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `value` {`string`} - \n\nProperties:\n\n  * `ariaLabel` {`string`} - \n\n  * `buttonSize` {`string`} - \n\n  * `buttonType` {`string`} - \n\n  * `headerItem` {`boolean`} - \n\n  * `icon` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `value` {`string`} - ",
+      "description": "The Toolbar Item component can be used inside an `otc-toolbar` as a text button, an icon button, a menu item, or a submenu, depending on\ncontext.  When placed directly inside an `otc-toolbar`, it will be rendered as an `otc-button`.  If this Toolbar Item contains children,\nthen an `otc-menu` will be created automatically and associated with this `otc-button`.  Toolbar Items that are the child of another\nToolbar Item will be rendered as an `otc-menuitem`, so that they are properly displayed in the aforementioned `otc-menu`.  If this\nToolbar Item also contains children, then it will instead be rendered as an `otc-submenu`.\n\nSlots:\n\n  * ` ` {} - badge Defines an `otc-badge` element that should be placed beside the `value` text when rendered as a button.\n\nProperties:\n\n  * `ariaLabel` {`string`} - \n\n  * `ariaExpanded` {`string`} - \n\n  * `clearAll` {`boolean`} - \n\n  * `disabled` {`boolean`} - \n\n  * `headerItem` {`boolean`} - \n\n  * `icon` {`string`} - \n\n  * `iconAppearance` {`string`} - \n\n  * `menuOpen` {`boolean`} - \n\n  * `toggled` {`boolean`} - \n\n  * `scrollable` {`boolean`} - \n\n  * `size` {`string`} - \n\n  * `svg` {`string`} - \n\n  * `usePopover` {`boolean`} - \n\n  * `value` {`string`} - ",
+      "attributes": []
+    },
+    {
+      "name": "otc-toolbarplaceholder",
+      "description": "The toolbar placeholder item can be used inside otc-toolbar to display an animated three dot icon.\n\nProperties:\n\n  * `ariaLabel` {`string`} - \n\n  * `size` {`string`} - ",
+      "attributes": []
+    },
+    {
+      "name": "otc-typeahead-search",
+      "description": "The Typeahead Search component provides a button to open a provided `otc-input` element of type `search` and allows the user to enter\nand edit text values for searching or filtering.\n\nEvents:\n\n  * `action-icon-clicked` {} - **DEPRECATED:** Fired when the action icon button is clicked.\n\n  * `actionIconClicked` {} - Fired when the action icon button is clicked.\n\n  * `change` {} - Fired when the input operation has finished by pressing Enter or on focusout.\n\n  * `close` {} - Fired when the typeahead search field is fully closed.\n\n  * `closing` {} - Fired when the close input search field button is clicked.\n\n  * `input` {} - Fired when the value of the input changes at each keystroke and when a suggestion item has been selected.\n\n  * `open` {} - Fired when the typeahead search field is fully opened.\n\n  * `opening` {`CustomEvent<any>`} - Fired when the open typeahead search field button is clicked.\n\n  * `value-changed` {} - **DEPRECATED:** Fired every time value of the input has changed, including programmatically.\n\n  * `valueChanged` {} - Fired every time value of the input has changed, including programmatically.\n\nSlots:\n\n  * ` ` {} - unnamed Default slot which should contain the `otc-input` of type `search` to use.\n\nProperties:\n\n  * `inputField` {`Element | null`} - \n\n  * `openSearchButton` {`Element | null | undefined`} - \n\n  * `innerInputField` {`Element | null | undefined`} - \n\n  * `ariaLabel` {`string`} - \n\n  * `disabled` {`boolean`} - \n\n  * `iconSearch` {`string`} - \n\n  * `isOpen` {`boolean`} - \n\n  * `searchButtonSize` {`string`} - \n\n  * `title` {`string`} - \n\n  * `_showOpenButton` {`boolean`} - ",
       "attributes": [
         {
-          "name": "ariaLabel",
-          "description": "`ariaLabel` {`string`} - \n\nProperty: ariaLabel\n\nDefault: "
+          "name": "onaction-icon-clicked",
+          "description": "`action-icon-clicked` {} - **DEPRECATED:** Fired when the action icon button is clicked."
         },
         {
-          "name": "buttonSize",
-          "description": "`buttonSize` {`string`} - \n\nProperty: buttonSize\n\nDefault: "
+          "name": "onactionIconClicked",
+          "description": "`actionIconClicked` {} - Fired when the action icon button is clicked."
         },
         {
-          "name": "buttonType",
-          "description": "`buttonType` {`string`} - \n\nProperty: buttonType\n\nDefault: inline"
+          "name": "onchange",
+          "description": "`change` {} - Fired when the input operation has finished by pressing Enter or on focusout."
         },
         {
-          "name": "headerItem",
-          "description": "`headerItem` {`boolean`} - \n\nProperty: headerItem\n\nDefault: false",
-          "valueSet": "v"
+          "name": "onclose",
+          "description": "`close` {} - Fired when the typeahead search field is fully closed."
         },
         {
-          "name": "icon",
-          "description": "`icon` {`string`} - \n\nProperty: icon\n\nDefault: "
+          "name": "onclosing",
+          "description": "`closing` {} - Fired when the close input search field button is clicked."
         },
         {
-          "name": "iconAppearance",
-          "description": "`iconAppearance` {`string`} - \n\nProperty: iconAppearance\n\nDefault: "
+          "name": "oninput",
+          "description": "`input` {} - Fired when the value of the input changes at each keystroke and when a suggestion item has been selected."
         },
         {
-          "name": "value",
-          "description": "`value` {`string`} - \n\nProperty: value\n\nDefault: "
+          "name": "onopen",
+          "description": "`open` {} - Fired when the typeahead search field is fully opened."
+        },
+        {
+          "name": "onopening",
+          "description": "`opening` {`CustomEvent<any>`} - Fired when the open typeahead search field button is clicked."
+        },
+        {
+          "name": "onvalue-changed",
+          "description": "`value-changed` {} - **DEPRECATED:** Fired every time value of the input has changed, including programmatically."
+        },
+        {
+          "name": "onvalueChanged",
+          "description": "`valueChanged` {} - Fired every time value of the input has changed, including programmatically."
         }
       ]
     },

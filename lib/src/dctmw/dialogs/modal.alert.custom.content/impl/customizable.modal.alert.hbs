@@ -14,20 +14,24 @@
 >
   <div class="binf-modal-content">
     {{#if showHeader}}
-      <div class="binf-modal-header {{headerClass}}">
-        {{#if showTitleCloseButton}}
-          <button type="button" class="binf-close" data-binf-dismiss="modal"
-                  aria-label="{{closeButtonAria}}" tabindex="0">
-            <span class="icon {{titleCloseIcon}}"></span>
-          </button>
-        {{/if}}
-        <h4 class="binf-modal-title">
-          {{#if showTitleIcon}}
-            <span class="icon {{titleIcon}}"></span>
-          {{/if}}
-          <span class="title-text" title="{{title}}" id="{{dlgTitleId}}">{{title}}</span>
-        </h4>
-      </div>
+        <div class="binf-modal-header {{headerClass}}">
+            {{#if showTitleCloseButton}}
+                <button type="button" class="binf-close" data-binf-dismiss="modal"
+                        aria-label="{{closeButtonAria}}" title="{{closeButtonTooltip}}" tabindex="0">
+                    <span class="icon {{titleCloseIcon}}"></span>
+                </button>
+            {{/if}}
+            <h4 class="binf-modal-title">
+                {{#if showTitleIcon}}
+                {{#if isJATO}}
+                    <span class="smart-notification-icon">{{{jatoTitleIcon}}}</span>
+                {{else}}
+                   <otc-icon class="smart-notification-icon" icon="smart_notification:{{titleIcon}}" isPresentation></otc-icon>
+                {{/if}}
+                {{/if}}
+                <span class="title-text" id="{{dlgTitleId}}">{{title}}</span>
+            </h4>
+        </div>
     {{/if}}
 
     <div class="binf-modal-body">
@@ -63,4 +67,4 @@
   </div>
   </div>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

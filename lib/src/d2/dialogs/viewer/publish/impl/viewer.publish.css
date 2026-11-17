@@ -1,0 +1,24 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-stepper-wizard.binf-modal.d2-iv-publish{
+    z-index: 1050;
+}
+
+.d2-stepper-wizard .d2-publish-dialog-body.cs-form.csui-general-form.d2-form {
+    width: 60%;
+    margin: 8px 0 32px 24px;
+}
+
+.d2-publish-dialog-body .d2-set-container.d2-container.d2-fieldset-layout > .binf-col-md-12:nth-child(2),
+.d2-publish-dialog-body .d2-set-container.d2-container.d2-fieldset-layout > .binf-col-md-12:nth-child(3) {
+    margin-left: 38px;
+}
+
+.d2-stepper-wizard .d2-publish-dialog-body.cs-form.csui-general-form.d2-form .alpaca-container-item {
+    margin-bottom: 0;
+}
+
+.d2-stepper-wizard .d2-publish-dialog-body .csui-field-d2nodepicker .alpaca-field-d2nodepicker {
+    margin-top: 0;
+}

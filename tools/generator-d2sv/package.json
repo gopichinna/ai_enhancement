@@ -1,11 +1,11 @@
 {
   "name": "generator-d2sv",
-  "version": "24.4.0",
+  "version": "25.4.0",
   "description": "Yeoman generator for D2 Smartview plugin projects",
   "private": true,
   "copyright": "Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text.",
   "meta": {
-    "build": "24.4.0000.0143"
+    "build": "25.4.0001.0153"
   },
   "files": [
     "generators"

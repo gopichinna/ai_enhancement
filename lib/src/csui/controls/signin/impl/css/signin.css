@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .cs-signin.cs-signin {
   padding-top: 100px;
@@ -14,12 +14,10 @@
   margin: 0 auto;
 }
 
-.cs-signin .branding {
-}
-
 .cs-signin .login-form-wrapper {
   margin-bottom: 20px;
 }
+
 .cs-signin .binf-form-group {
   width: 395px;
   margin: 0 auto;
@@ -32,6 +30,7 @@
 .cs-signin .textbox {
   width: 395px;
   margin-bottom: 20px;
+
   
 }
 
@@ -76,7 +75,7 @@
 }
 
 .cs-signin .forgot-password a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -141,5 +140,5 @@
 
 #inputUsername:-webkit-autofill,
 #inputPassword:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
 }

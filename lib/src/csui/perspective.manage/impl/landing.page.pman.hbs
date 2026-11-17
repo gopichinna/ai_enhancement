@@ -1,0 +1,51 @@
+<div class="pman-backdrop"></div>
+<div class="pman-header">
+  <div class="pman-header-backdrop"></div>
+  <div class="pman-tools-container">
+  {{#if personalizeMode}}
+      <div class="pman-left-tools">
+        <ul>
+          <li class="pman-toolitem icon-help-container">
+                <otc-button class="icon-help"  type="subtle" title="{{this.help}}" arialabel="{{this.help}}" {{#if isJATO}} size="regular" {{else}}  icon="csui_action:action_help32"  {{/if}}>
+                  {{#if isJATO}}<otc-icon mirrorIfRtl size="20" svg="{{helpSVG}}" ispresentation></otc-icon>{{/if}}
+                </otc-button>
+          </li>
+        </ul>
+        <div class="pman-pannel-wrapper"></div>
+      </div>
+    {{/if}}
+    <div class="pman-right-tools">
+      <ul>
+        <li>
+          <otc-button class="pman-right-tools-button pman-icon-save" disabled type="primary" title="{{this.save}}" arialabel="{{this.saveAriaLabel}}">{{this.save}}</otc-button>
+        </li>
+        <li>
+          <otc-button class="pman-right-tools-button pman-cancel-edit" type="secondary" title="{{this.cancel}}" arialabel="{{this.cancelAriaLabel}}">{{this.cancel}}</otc-button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="csui-top-ribbon-container {{#unless personalizeMode}}csui-has-actions {{/unless}}">
+  <div class="csui-top-ribbon-carousel">
+    <div class="csui-top-ribbon-carousel-icons">
+      <otc-button  id="left"  class="csui-prev-button csui-carousel-control"  type="subtle" title="{{previousTitle}}" arialabel="{{previousTitle}}" {{#if isJATO}} size="small" {{else}}  icon="csui_action:action_caret_left32"  {{/if}} disabled>
+      {{#if isJATO}}<otc-icon mirrorIfRtl size="16" svg="{{carouselLeftSVG}}" ispresentation></otc-icon>{{/if}}
+      </otc-button>
+    </div>
+    <div class="pman-top-ribbon" role="listbox"></div>
+    <div class="csui-top-ribbon-carousel-icons">
+      <otc-button  id="right"  class="csui-next-button csui-carousel-control" type="subtle" title="{{nextTitle}}" arialabel="{{nextTitle}}" {{#if isJATO}} size="small" {{else}} icon="csui_action:action_caret_right32" {{/if}}>
+      {{#if isJATO}}<otc-icon mirrorIfRtl size="16" svg="{{carouselRightSVG}}" ispresentation></otc-icon>{{/if}}
+      </otc-button>
+    </div>
+</div>
+    {{#unless personalizeMode}}
+    <div class="csui-top-ribbon-actions">
+      <otc-button class="csui-add-new-page" type="subtle" title="{{addPageTitle}}" arialabel="{{addPageTitle}}" {{#if isJATO}} size="small" {{else}} icon="csui_action:action_add32" {{/if}}>
+      {{#if isJATO}}<otc-icon size="16" svg="{{iconActionAdd}}" ispresentation></otc-icon>{{/if}}
+      </otc-button>
+    </div>
+    {{/unless}}
+  </div>
+</div>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

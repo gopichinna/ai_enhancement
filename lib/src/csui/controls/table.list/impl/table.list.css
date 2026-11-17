@@ -1,12 +1,12 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-table-list {
   height: 100%;
   width: 100%;
   display: block;
   padding: 0;
-  border: 1px solid #cccccc;
+  border: 1px solid var(--jato-divider-color-primary, #cccccc);
   border-bottom: 0;
 }
 
@@ -21,13 +21,13 @@
 }
 
 .csui-table-list-header {
-  background-color: #f1f1f1;
+  background-color: var(--jato-background-elevation-inline-content, #f1f1f1);
   min-height: 3em;
 }
 
 .csui-table-list-header .csui-table-header,
 .csui-table-list-body .csui-table-row {
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid var(--jato-color-charcoal-3805, #cccccc);
   width: 100%;
   display: inline-block;
 }
@@ -63,5 +63,5 @@
 }
 
 .binf-widgets .csui-table-list .csui-table-row.active-row {
-  background-color: #dfe7ea;
+  background-color: var(--jato-background-rows-new, #dfe7ea);
 }

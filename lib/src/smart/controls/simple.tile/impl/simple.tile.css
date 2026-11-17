@@ -1,0 +1,33 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+    --jatx-smart-simple-tile-header-height: 56px;
+
+}
+
+.binf-widgets .smart-simple-tile {
+    background-color: var(--jato-background-elevation-level-2, #ffffff);
+    border: 1px solid var(--jato-border-color-primary, transparent);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--jato-radii-lrg, 0);
+}
+
+.binf-widgets .smart-simple-tile .smart-simple-tile-content-region {
+    gap: var(--jato-margin-xxs, 0);
+    margin: 0;
+    min-height: calc(100% - var(--jatx-smart-simple-tile-header-height, 48px));
+    border-radius: 0 0 var(--jato-radii-lrg, 0) var(--jato-radii-lrg, 0);
+}
+
+.binf-widgets .smart-simple-tile.smart-simple-tile-no-header .smart-simple-tile-header-region{
+    display: none;
+}
+
+
+.binf-widgets .smart-simple-tile-header-region {
+    min-height: var(--jatx-smart-simple-tile-header-height, 48px);
+}

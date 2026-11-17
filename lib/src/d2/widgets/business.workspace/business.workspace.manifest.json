@@ -1,0 +1,14 @@
+{
+  "$schema": "http://opentext.com/cs/json-schema/draft-04/schema#",
+  "title": "{{tileTitle}}",
+  "description": "{{tileDescription}}",
+  "supportedKinds": ["header", "fullpage"],
+  "schema": {
+    "type": "object"
+  },
+  "options": {
+    "fields": {
+
+    }
+  }
+}

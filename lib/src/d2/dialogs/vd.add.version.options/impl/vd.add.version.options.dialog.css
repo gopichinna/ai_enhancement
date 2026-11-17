@@ -1,37 +1,45 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-add-version-form .binf-modal-dialog .binf-modal-body .custom-content-container{
     height: auto;
 }
+
 .binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-add-version-form .binf-modal-footer {
     margin-top: 0;
 }
+
 .binf-widgets .csui-top-align-label .d2-add-version-type-selection .binf-row .binf-col-md-6{
     padding: 0;
 }
+
 .binf-widgets .csui-top-align-label .d2-add-version-type-selection .binf-row .binf-col-md-6 > .binf-col-md-6{
     padding: 0;
 }
+
 .binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-add-version-form .binf-modal-dialog{
     width: 600px;
 }
+
 .binf-widgets .d2-add-version-selection .d2-add-version-type-selection .binf-row.alpaca-field > div{
     width: 90%;
 }
+
 .binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-add-version-form .custom-content-container{
     height: auto;
 }
+
 .binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-add-version-form .binf-modal-footer {
     margin-top: 0;
 }
+
 .binf-widgets .d2-add-version-selection.csui-top-align-label .d2-add-version-type-selection .binf-row .binf-col-md-6{
     width: 100%;
     min-width: auto;
     max-width: fit-content;
 }
-.d2-add-version-type-selection .csui-field-d2label .cs-formfield.cs-textfield .cs-field-read button > span{
+
+.d2-add-version-type-selection .csui-field-dctmwlabel .cs-formfield.cs-textfield .cs-field-read button > span{
     overflow-wrap: break-word;
     white-space: break-spaces;
 }

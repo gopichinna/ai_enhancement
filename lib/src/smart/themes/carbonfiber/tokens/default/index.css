@@ -1,0 +1,12 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+:root {
+  --jatx-background-elevation-base: linear-gradient(61deg, rgb(9, 14, 44) 0%, rgb(18, 44, 105) 59%, rgb(7, 141, 179) 100%);
+  --jatx-cta-links-text-color-neutral:  var(--jato-cta-links-text-color-neutral);
+  --jatx-cta-links-text-color-hover:  var(--jato-cta-links-text-color-hover);
+  --jatx-cta-links-text-color-active:  var(--jato-cta-links-text-color-active);
+  --jatx-cta-links-text-color-disabled:  var(--jato-cta-links-text-color-disabled);  
+  --jatx-typography-text-color-disabled: var(--jato-typography-text-color-disabled);
+}

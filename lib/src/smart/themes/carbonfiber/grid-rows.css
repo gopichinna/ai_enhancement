@@ -1,6 +1,16 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+:root {
+  --jatx-navigation-header-height: 58px;
+  --jatx-breadcrumb-bar-height: 40px;
+}
+
+[data-smart-theme="cf"] {
+  --jatx-navigation-header-height: 62px;
+  --jatx-breadcrumb-bar-height: 32px;
+}
+
 .grid-rows > .binf-row > * {
   height: calc(100vh);
   min-height: 90px;
@@ -63,7 +73,7 @@
 .cs-perspective-with-breadcrumb-view .grid-rows.csui-breadcrumbs-visible > .binf-row > .row-xs-full {
   
   
-  height: calc(100vh - 62px - 32px);
+  height: calc(100vh - var(--jatx-navigation-header-height) - var(--jatx-breadcrumb-bar-height));
 }
 
 .cs-perspective-with-breadcrumb-view .binf-row > .row-xs-full .workitem-view {

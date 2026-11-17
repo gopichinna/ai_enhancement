@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .csui-icon-group.csui-icon-v2-size-normal {
     width: 32px;
@@ -19,6 +19,7 @@
 .csui-icon-group.csui-icon-v2-size-small {
     width: 24px;
     height: 24px;
+    min-width: 24px;
 }
 
 .csui-icon-group.csui-icon-v2-size-xsmall {

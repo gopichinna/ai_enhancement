@@ -1,7 +1,14 @@
 {{#if value}}
-  <div class="csui-permission-level-container csui-fadeout">
-    <span class="csui-permission-level" aria-label="{{permissionLevelAria}}">{{value}}</span>
+  <div class="csui-permission-level-container {{#if isCFTheme}} csui-fadeout {{/if}}">
+    {{#if isCFTheme}}
+    <span class="csui-permission-level {{# if noEditPermissions }}csui-simple-permissions{{/if}}" aria-label="{{permissionLevelAria}}">{{value}}</span>
+    {{else}}
+    <otc-button type="subtle"  class="csui-permission-level {{# if noEditPermissions }}csui-simple-permissions{{/if}}" size="small"
+                  arialabel="{{permissionLevelAria}}" title="{{value}}">
+                    {{value}}
+            </otc-button>
+    {{/if}}
     <div class="csui-tree"></div>
   </div>
 {{/if}}
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,43 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-disclaimer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  overflow-y: auto;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-disclaimer-body {
+  flex: 1 1 100%;
+  padding: 24px 60px;
+  overflow-y: auto;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-disclaimer h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-disclaimer p {
+  margin: 24px 0 24px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-disclaimer otc-checkbox {
+  margin-top: 8px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-disclaimer-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 16px;
+  background-color: #f4f4f4;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-disclaimer-footer.aie-chat-disclaimer-footer > otc-button {
+  margin-left: 0; 
+  margin-inline-start: 16px;
+}

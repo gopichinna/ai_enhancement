@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets.d2-embed .d2-embed-error,
 .binf-widgets.d2-embed h3.d2-startup-error {
   position: absolute;
@@ -10,14 +9,14 @@
   height: 100%;
   padding: 50px 20px 0 20px;
   text-align: center;
-  background-color: #fff;
+  background-color: #ffffff;
   font-size: 24px;
   line-height: 36px;
-  color: #333;
+  color: #333333;
 }
 
 .binf-widgets.d2-embed.only-dialog .d2-embed-error {
-  color: #fff;
+  color: #ffffff;
   background-color: transparent;
 }
 

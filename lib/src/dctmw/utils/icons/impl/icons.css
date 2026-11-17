@@ -1,190 +1,253 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .d2-icon-type-access {
   background-image: url('./mime_accesss.svg');
 }
+
 .d2-icon-type-acrobatRM {
   background-image: url('./mime_acrobat_RM.svg');
 }
+
 .d2-icon-type-ai {
   background-image: url('./mime_adobe_illustrator.svg');
 }
+
 .d2-icon-type-adobePhotoshop {
   background-image: url('./mime_adobe_photoshop.svg');
 }
+
 .d2-icon-type-audio {
   background-image: url('./mime_audio.svg');
 }
+
 .d2-icon-type-cabinet {
   background-image: url('./mime_cabinet.svg');
 }
+
 .d2-icon-type-contentless {
   background-image: url('./mime_contentless_object.svg');
 }
+
 .d2-icon-type-virtualDoc {
   background-image: url('./mime_d2_virtual_document.svg');
 }
+
 .d2-icon-type-virtualDoc-blank {
   background-image: url('./mime_d2_virtual_document_blank.svg');
 }
+
 .d2-icon-type-virtualDoc-snapshot {
   background-image: url('./mime_d2_virtual_document_snapshot.svg');
 }
+
 .d2-icon-type-document {
   background-image: url('./mime_document.svg');
 }
+
 .d2-icon-type-excel {
   background-image: url('./mime_excel.svg');
 }
+
 .d2-icon-type-excelME {
   background-image: url('./mime_excel_ME.svg');
 }
+
 .d2-icon-type-excelRM {
   background-image: url('./mime_excel_RM.svg');
 }
+
 .d2-icon-type-excel-template {
   background-image: url('./mime_excel_template.svg');
 }
+
 .d2-icon-type-excel-templateME {
   background-image: url('./mime_excel_template_ME.svg');
 }
+
 .d2-icon-type-excel-templateRM {
   background-image: url('./mime_excel_template_RM.svg');
 }
+
 .d2-icon-type-html {
   background-image: url('./mime_html.svg');
 }
+
 .d2-icon-type-infopath {
   background-image: url('./mime_infopath.svg');
 }
+
 .d2-icon-type-jpeg {
   background-image: url('./mime_jpeg.svg');
 }
+
 .d2-icon-type-mail {
   background-image: url('./mime_mail.svg');
 }
+
 .d2-icon-type-node-admin-template {
   background-image: url('./mime_node_admin_template.svg');
 }
+
 .d2-icon-type-oneNote {
   background-image: url('./mime_onenote.svg');
 }
+
 .d2-icon-type-paper {
   background-image: url('./mime_paper.svg');
 }
+
 .d2-icon-type-pdf {
   background-image: url('./mime_pdf.svg');
 }
+
 .d2-icon-type-powerpoint {
   background-image: url('./mime_powerpoint.svg');
 }
+
 .d2-icon-type-powerpointME {
   background-image: url('./mime_powerpoint_ME.svg');
 }
+
 .d2-icon-type-powerpointRM {
   background-image: url('./mime_powerpoint_RM.svg');
 }
+
 .d2-icon-type-powerpoint-slideshow {
   background-image: url('./mime_powerpoint_slideshow.svg');
 }
+
 .d2-icon-type-powerpoint-slideshowME {
   background-image: url('./mime_powerpoint_slideshow_ME.svg');
 }
+
 .d2-icon-type-powerpoint-template {
   background-image: url('./mime_powerpoint_template.svg');
 }
+
 .d2-icon-type-powerpoint-templateME {
   background-image: url('./mime_powerpoint_template_ME.svg');
 }
+
 .d2-icon-type-powerpoint-templateRM {
   background-image: url('./mime_powerpoint_template_RM.svg');
 }
+
 .d2-icon-type-projects {
   background-image: url('./mime_projects .svg');
 }
+
 .d2-icon-type-repo {
   background-image: url('./mime_repository.svg');
 }
+
 .d2-icon-type-video {
   background-image: url('./mime_video.svg');
 }
+
 .d2-icon-type-visio {
   background-image: url('./mime_visio.svg');
 }
+
 .d2-icon-type-word {
   background-image: url('./mime_word.svg');
 }
+
 .d2-icon-type-wordME {
   background-image: url('./mime_word_ME.svg');
 }
+
 .d2-icon-type-wordRM {
   background-image: url('./mime_word_RM.svg');
 }
+
 .d2-icon-type-word-template {
   background-image: url('./mime_word_template.svg');
 }
+
 .d2-icon-type-word-templateME {
   background-image: url('./mime_word_template_ME.svg');
 }
+
 .d2-icon-type-word-templateRM {
   background-image: url('./mime_word_template_RM.svg');
 }
+
 .d2-icon-type-xml {
   background-image: url('./mime_xml.svg');
 }
+
 .d2-icon-type-zip {
   background-image: url('./mime_zip.svg');
 }
+
 .d2-icon-type-task {
   background-image: url('./node_task.svg');
 }
+
 .d2-icon-type-task-acquired {
   background-image: url('./node_task_acquired.svg');
 }
+
 .d2-icon-type-task-rejected {
   background-image: url('./node_task_rejected.svg');
 }
+
 .d2-icon-type-task-delegated {
   background-image: url('./node_task_delegated.svg');
 }
+
 .d2-icon-type-workflow {
   background-image: url('./node_workflow.svg');
 }
+
 .d2-icon-type-favorites-node {
   background-image: url('./mime_favorites.svg');
 }
+
 .d2-icon-type-home-cabinet {
   background-image: url('./mime_home_cabinet.svg');
 }
+
+.d2-icon-type-empty-folder {
+  background-image: url('./mime_empty_folder.svg');
+}
+
 .d2-icon-search-group {
   background-image: url('./mime_search_group.svg');
 }
+
 .d2-icon-search-queryform {
   background-image: url('./mime_search_queryform.svg');
 }
+
 .d2-icon-saved-search-query {
   background-image: url('./mime_saved_search.svg');
 }
+
 .d2-icon-saved-search-query-wizard{
   background-image: url("./mime_advanced_search.svg");
 }
+
 .d2-tile .icon.title-checkout,
 .d2-icon-type-widget-checkout {
   background-image: url('./title_checkout.svg');
 }
+
 .d2-icon-type-widget-favorite {
   background-image: url('./title_favorite.svg');
 }
+
 .d2-tile .icon.title-myshares,
 .d2-icon-type-widget-myshares {
   background-image: url('./title_myshares.svg');
 }
+
 .d2-tile .icon.title-recentlyaccessed,
 .d2-icon-type-widget-recentlyaccessed {
   background-image: url('./title_recentlyaccessed.svg');
 }
+
 .d2-tile .icon.title-assignments,
 .d2-icon-type-widget-assignments {
   background-image: url('./title_assignments.svg');
@@ -206,15 +269,19 @@
 .d2-icon-priority-lowest {
   background-image: url('./status_lowest.svg');
 }
+
 .d2-icon-priority-low {
   background-image: url('./status_low.svg');
 }
+
 .d2-icon-priority-medium {
   background-image: url('./status_medium.svg');
 }
+
 .d2-icon-priority-high {
   background-image: url('./status_high.svg');
 }
+
 .d2-icon-priority-highest {
   background-image: url('./status_highest.svg');
 }
@@ -222,69 +289,90 @@
 .d2-icon-status-scheduled {
   background-image: url('./status_scheduled.svg');
 }
+
 .d2-icon-status-running {
   background-image: url('./status_running.svg');
 }
+
 .d2-icon-status-finished {
   background-image: url('./status_finished.svg');
 }
+
 .d2-icon-status-halted,
 .d2-icon-status-paused {
   background-image: url('./status_paused.svg');
 }
+
 .d2-icon-status-aborted,
 .d2-icon-status-terminated,
 .d2-icon-status-dormant {
   background-image: url('./status_aborted.svg');
 }
+
 .d2-icon-status-future {
   background-image: url('./status_future.svg');
 }
+
 .d2-icon-status-pending {
   background-image: url('./status_pending.svg');
 }
+
 .d2-icon-status-acquired {
   background-image: url('./status_acquired.svg');
 }
+
 .d2-icon-status-faulted {
   background-image: url('./status_faulted.svg');
 }
+
 .d2-icon-status-d-paused {
   background-image: url('./status_pending_paused.svg');
 }
+
 .d2-icon-status-a-paused {
   background-image: url('./status_acquired_paused.svg');
 }
+
 .d2-icon-status-p-paused {
   background-image: url('./status_paused_paused.svg');
 }
+
 .d2-icon-status-created {
   background-image: url('./status_created.svg');
 }
+
 .d2-icon-status-resumed {
   background-image: url('./status_resumed.svg');
 }
+
 .d2-icon-status-supervisor_changed {
   background-image: url('./status_supervisor_changed.svg');
 }
+
 .d2-icon-status-performer_updated {
   background-image: url('./status_performers_updated.svg');
 }
+
 .d2-icon-status-event_completed {
   background-image: url('./status_event_completed.svg');
 }
+
 .d2-icon-wf-performer-system {
   background-image: url('./workflow_performer_system.svg');
 }
+
 .d2-icon-wf-performer-tracker {
   background-image: url('./workflow_performer_tracker.svg');
 }
+
 .d2-icon-wf-performer-group {
   background-image: url('./workflow_performer_group.svg');
 }
+
 .d2-icon-wf-performer-user {
   background-image: url('./workflow_performer_user.svg');
 }
+
 .d2-icon-wf-performer-signature {
   background-image: url('./workflow_performer_signature.svg');
 }
@@ -292,27 +380,35 @@
 .arrow_back_target_browse {
   background-image: url('./arrow_back.svg');
 }
+
 .close_icon_target_browse {
   background-image: url('./close.svg');
 }
+
 .checkmark_icon_target_browse {
   background-image: url('./checkmark_cerulean16.svg');
 }
+
 .d2-icon-type-emcmf {
   background-image: url('./mime_d2_emcmf.svg');
 }
+
 .d2-icon-type-emcmf-converted {
   background-image: url('./mime_d2_emcmf_converted.svg');
 }
+
 .d2-icon-type-group-user {
   background-image: url('./mime_team.svg');
 }
+
 .d2-icon-type-single-user {
   background-image: url('./mime_person.svg');
 }
+
 .d2-icon-type-accessor-role {
   background-image: url('./mime_role.svg');
 }
+
 .title-icon.d2_workflow_status{
   background-image: url('./workflow_status.svg');
 }

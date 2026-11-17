@@ -1,0 +1,17 @@
+<div class="aie-top">
+  {{#if enableTellMore}}
+  <otc-button type="secondary" size="mini" style="display: none"
+              class="aie-tell-more">{{lang.tellMoreLabel}}</otc-button>
+  {{/if}}
+
+</div>
+<otc-button class="aie-clear" icon="aie_action:action_new_chat32" style="display: none"
+            title="{{lang.clearButtonTitle}}" arialabel="{{lang.clearButtonLabel}}"></otc-button>
+<otc-textarea maxlength="{{maxQuestionLength}}" rows="1" autoresize
+              arialabel="{{lang.promptLabel}}" interactiveonly
+              placeholder="{{promptPlaceholder}}"></otc-textarea>
+<otc-button class="aie-ask" icon="aie_action:action_send32" style="display: none"
+            title="{{lang.askButtonTitle}}" arialabel="{{lang.askButtonLabel}}"></otc-button>
+<div class="aie-limit"><span class="aie-typed">0</span>/{{maxQuestionLength}}</div>
+
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

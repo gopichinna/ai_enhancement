@@ -1,11 +1,32 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+:root {
+  --jatx-facet-panel-header-border-bottom: 1px;
+  --jatx-facet-panel-header-text-line-height: 22px;
+  --jatx-facet-panel-header-text-font-weight: 600;
+  --jatx-facet-panel-header-text-padding: 0;
+  --jatx-facet-panel-header-text-padding-top: var(--jato-padding-xs);
+  --jatx-facet-panel-header-text-padding-bottom: var(--jato-padding-micro);
+  --jatx-facet-panel-header-toggler-padding: 0;
+  --jatx-facet-panel-box-shadow: none;
+}
+
+[data-smart-theme="cf"] {
+  --jatx-facet-panel-header-border-bottom: 0;
+  --jatx-facet-panel-header-text-line-height: 24px;
+  --jatx-facet-panel-header-text-font-weight: 300;
+  --jatx-facet-panel-header-text-padding: 8px;
+  --jatx-facet-panel-header-text-padding-top: 8px;
+  --jatx-facet-panel-header-text-padding-bottom: 8px;
+  --jatx-facet-panel-header-toggler-padding: 4px;
+  --jatx-facet-panel-box-shadow: inset -2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
 .binf-widgets .smart-facet-panel {
   height: 100%;
-  background-color: #ffffff;
   border: 0;
-  box-shadow: inset -2px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--jatx-facet-panel-box-shadow);
   min-width: 0;
   overflow-x: hidden;
   display: flex;
@@ -13,12 +34,18 @@
   flex-direction: column;
   min-width: 208px;
   max-width: 400px;
+  margin: 0 var(--jato-padding-xxl, 0) var(--jato-padding-lrg, 0) var(--jato-padding-lrg, 0);
+  border-radius: var(--jato-radii-lrg, 0px);
+}
+
+.binf-widgets .smart-facet-panel {
+  background: var(--jato-background-elevation-inline-content, #ffffff);
 }
 
 .binf-widgets .smart-facet-panel .cs-content {
   width: 100%;
   height: auto;
-  background-color: #ffffff;
+  margin-bottom: 8px;
 }
 
 .binf-widgets .csui-facetview .smart-facet-panel .cs-content {
@@ -57,7 +84,6 @@
 
 .binf-widgets .smart-facet-panel .csui-facet-empty.facet-noresults-panel .facet-noresults-txt {
   width: auto;
-  font-family: 'OpenText Sans';
   font-style: normal;
   font-size: 14px;
   line-height: 22px;
@@ -68,23 +94,24 @@
 
 
 @keyframes smart-facet-panel-state-fade-in-and-out {
-  from {
+  0% {
     opacity: .5;
   }
   50% {
     opacity: 1;
   }
-  to {
+  100% {
     opacity: .5;
   }
 }
 
 .binf-widgets .smart-facet-panel .cs-header .cs-title {
   font-size: 16px;
-  font-weight: 300;
-  padding: 8px;
+  font-weight: var(--jatx-facet-panel-header-text-font-weight);
+  padding: var(--jatx-facet-panel-header-text-padding-top) var(--jatx-facet-panel-header-text-padding) var(--jatx-facet-panel-header-text-padding-bottom) var(--jatx-facet-panel-header-text-padding);
   padding-left: 0;
-  line-height: 24px;
+  line-height: var(--jatx-facet-panel-header-text-line-height);
+  color: var(--jato-typography-text-color-secondary, #333);
 }
 
 .binf-widgets .smart-facet-panel .binf-panel-heading {
@@ -93,15 +120,15 @@
   line-height: 20px;
   flex: 0 0 auto;
   -webkit-flex: 0 0 auto;
-  background-color: #EEF2F4;
-  border-bottom: 0;
-  padding: 0 10px 0 16px;
+  background-color: var(--jatx-const-transparent, #EEF2F4);
+  border-bottom: var(--jatx-facet-panel-header-border-bottom);
+  padding: var(--jato-padding-lrg, 0px) var(--jato-padding-lrg, 10px) var(--jato-padding-lrg, 0px) var(--jato-padding-xxl, 16px);
   display: flex;
   justify-content: space-between;
 }
 
 .binf-widgets .smart-facet-panel .cs-header .smart-all-facet-toggler {
-  padding: 4px 0;
+  padding: var(--jatx-facet-panel-header-toggler-padding) 0;
 }
 
 .binf-widgets .smart-facet-panel .csui-horizontal-separator {
@@ -138,7 +165,7 @@ button.ui-clear-facet-button {
   vertical-align: middle;
 }
 
-.smart-facet-panel:after {
+[data-smart-theme='cf'] .smart-facet-panel::after {
   content: '';
   position: absolute;
   pointer-events: none;

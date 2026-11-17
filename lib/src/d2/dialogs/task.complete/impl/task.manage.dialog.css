@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-task-manage-dialog,
 .d2-task-manage-dialog-tabs-container {
@@ -28,46 +28,46 @@
   padding: 0;
 }
 
-.d2-task-manage-dialog .d2-next-tasks-form.cs-form .d2-checkbox-group .d2-checkbox-container label {
+.d2-task-manage-dialog .d2-next-tasks-form.cs-form .dctmw-checkbox-group .dctmw-checkbox-container label {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 17px;
 }
 
-.binf-widgets .d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container:after {
+.binf-widgets .d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.dctmw-checkbox-group div.dctmw-checkbox-item-container:after {
   content: none;
 }
 
 
-.binf-widgets .d2-task-manage-dialog .d2-next-tasks-form .d2-listfield .cs-field-read .d2-list-toolbar {
+.binf-widgets .d2-task-manage-dialog .d2-next-tasks-form .d2-listfield .cs-field-read .dctmw-list-toolbar {
   display: none;
 }
 
-.binf-widgets .d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container {
+.binf-widgets .d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.dctmw-checkbox-group div.dctmw-checkbox-item-container {
   padding-bottom: 0;
 }
 
-.d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.d2-checkbox-group .d2-cb-container-parent li {
+.d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.dctmw-checkbox-group .dctmw-cb-container-parent li {
   padding-left: 0;
 }
 
-.d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.d2-checkbox-group .d2-checkbox-container {
+.d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.dctmw-checkbox-group .dctmw-checkbox-container {
   margin-bottom: 0;
 }
 
-.binf-widgets .d2-task-manage-dialog .alpaca-field-d2label .cs-formfield .cs-field-read,
-.d2-task-manage-dialog .alpaca-field-d2label .cs-formfield.cs-formfield-readonly .cs-field-read .btn-container {
+.binf-widgets .d2-task-manage-dialog .alpaca-field-dctmwlabel .cs-formfield .cs-field-read,
+.d2-task-manage-dialog .alpaca-field-dctmwlabel .cs-formfield.cs-formfield-readonly .cs-field-read .btn-container {
   width: 100%;
 }
 
-.d2-task-manage-dialog .d2-next-tasks-form .alpaca-field-d2label .cs-formfield.cs-formfield-readonly .cs-field-read button {
+.d2-task-manage-dialog .d2-next-tasks-form .alpaca-field-dctmwlabel .cs-formfield.cs-formfield-readonly .cs-field-read button {
   background: #EEEEEE;
   border-radius: 3px;
   padding-left: 8px;
 }
 
-.d2-task-manage-dialog .d2-next-tasks-form .alpaca-field-d2label .cs-formfield.cs-formfield-readonly .cs-field-read button:focus {
+.d2-task-manage-dialog .d2-next-tasks-form .alpaca-field-dctmwlabel .cs-formfield.cs-formfield-readonly .cs-field-read button:focus {
   border: 1px dotted #666666;
   outline: none;
   line-height: 28px;

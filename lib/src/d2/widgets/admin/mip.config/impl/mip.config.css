@@ -1,10 +1,10 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .cs-perspective-panel .cs-perspective.cs-zone-perspective .mip-admin-widget-container {
     padding-top: 32px;
     padding-left: 24px;
-    background: #fff;
+    background: #ffffff;
     overflow: hidden;
 }
 

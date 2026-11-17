@@ -1,30 +1,56 @@
 
-<span class="csui-icon csui-status-icon {{status-icon}} " aria-hidden="true"></span>
 
-      {{#if isBWS}}
-      <div class="csui-icon csui-conflict-item-view-{{item-id}}" aria-hidden="true"></div>
-      {{else}}
+{{#if isJATO}}
+  <span class="csui-icon csui-status-icon">{{{jatoStatusIcon}}}</span>
+{{else}}
+  <span class="csui-icon csui-status-icon {{status-icon}} " aria-hidden="true"></span>
+{{/if}}
+
+  {{#if isBWS}}
+    <div class="csui-icon csui-conflict-item-view-{{item-id}}" aria-hidden="true"></div>
+  {{else}}
+    {{#if _jatoIcons}}
+      <span class="csui-icon csui-status-icon jato-mime-wrapper">
+        <otc-icon type="raw" size="24" svg="{{file-icon}}"></otc-icon>
+      </span>
+    {{else}}
       <div class="csui-icon {{file-icon}}" aria-hidden="true"></div>
-      {{/if}}
-
-
+    {{/if}}
+  {{/if}}
       <div class="csui-description">
         <div class="csui-name">
           <span class="folder-name conflict-field {{status-ok}}" title="{{name}}">{{name}}</span>
           <input class="binf-form-control cs-input rename-field binf-hidden" placeholder="{{inputPlaceHolder}}" tabindex="-1">
          {{#if mlDataEnabled}}
             <span class="csui-multilingual-icon-label binf-hidden">
+              {{#if isJATO}}
+                <otc-button  class="icon csui-multilingual-icon" type="subtle" size="small">
+                  <otc-icon svg="{{globeIconSVG}}" type="subtle"></otc-icon>
+                </otc-button>
+              {{else}}
               <button  class="icon csui-multilingual-icon">
                 {{{icon-v2 iconName="csui_action_language_switcher24" size='small' states='true'}}}
               </button>
+              {{/if}}
             </span>
           {{/if}}
+          {{#if isJATO}}
+            <otc-button type="subtle" disabled class="csui-undo csui-edit-save csui-btn-save inline-edit-icon rename-field binf-hidden" size="small"
+                  arialabel="{{save}}" title="{{save}}">
+                    <otc-icon svg="{{checkmarkSVG}}" type="subtle"></otc-icon>
+            </otc-button>
+            <otc-button type="subtle" class="csui-undo csui-edit-cancel csui-btn-cancel inline-edit-icon rename-field binf-hidden"
+                  arialabel="{{cancel}}" title="{{cancel}}" size="small">
+                    <otc-icon svg="{{closeSmallSVG}}" type="subtle"></otc-icon>
+            </otc-button>
+          {{else}}
           <button type="button" class="csui-undo csui-edit-save csui-btn-save inline-edit-icon rename-field binf-hidden" disabled title="{{save}}" aria-label="{{save}}">
             {{{icon-v2 iconName="csui_action_confirm32" size='normal' states='true'}}}
           </button>
           <button type="button" class="csui-undo csui-edit-cancel csui-btn-cancel inline-edit-icon rename-field binf-hidden" title="{{cancel}}" aria-label="{{cancel}}">
             {{{icon-v2 iconName="csui_action_cancel32" size='normal' states='true'}}}
           </button>
+          {{/if}}
         </div>
         {{#if conflict}}
           <div class="csui-msg" title="{{conflict-error-msg}}">{{conflict-error-msg}}</div>
@@ -38,14 +64,32 @@
 <div class="csui-button-container" style="{{resolvedStyle}}">
 {{#if conflict}}
   {{# unless excludeAddVersion}}
+  {{#if isJATO}}
+  <otc-button type="secondary" size="small" class="btn-version conflict-field"
+        arialabel="{{versionAria}}" title="{{version}}" data-cs-id="version">{{version}}
+  </otc-button>
+  {{else}}
       <button type="button" class="binf-btn btn-version conflict-field" aria-label="{{versionAria}}" tabindex="0" title="{{version}}"
             data-cs-id="version">{{version}}</button>
+  {{/if}}
   {{/unless}}
+  {{#if isJATO}}
+  <otc-button type="secondary" size="small" class="btn-rename conflict-field {{multiRowClass}}"
+        arialabel="{{renameAria}}" title="{{rename}}" data-cs-id="rename">{{rename}}
+  </otc-button>
+  {{else}}
     <button type="button" class="binf-btn btn-rename conflict-field {{multiRowClass}}" aria-label="{{renameAria}}" tabindex="0"
             title="{{rename}}" data-cs-id="rename">{{rename}}</button>
+    {{/if}}
 {{else}}
   {{#if noServerError}}
+  {{#if isJATO}}
+  <otc-button type="secondary" size="small" class="btn-undo {{multiRowClass}}"
+        arialabel="{{undoAria}}" title="{{undo}}">{{undo}}
+  </otc-button>
+  {{else}}
       <button type="button" class="binf-btn btn-undo {{multiRowClass}}" aria-label="{{undoAria}}" tabindex="0" title="{{undo}}">{{undo}}</button>
+  {{/if}}
   {{/if}}
 {{/if}}
 
@@ -53,7 +97,14 @@
 {{#if noServerError}}
 {{#if notSingleUpload}}
   {{#if statusNotSkip}}
+        {{#if isJATO}}
+            <otc-button type="subtle" class="jato_remove_item conflict-field"
+                  arialabel="{{skipAria}}" title="{{skip}}">
+                    <otc-icon svg="{{closeSmallSVG}}" type="subtle"></otc-icon>
+            </otc-button>
+        {{else}}
         <span class="cs-icon circle_delete conflict-field" tabindex="0" title="{{skip}}" aria-label="{{skipAria}}" role="button"></span>
+        {{/if}}
   {{/if}}
 {{/if}}
 {{/if}}
@@ -67,4 +118,4 @@
 
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

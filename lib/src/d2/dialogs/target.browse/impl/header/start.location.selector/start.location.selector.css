@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .csui-start-locations > .binf-dropdown-toggle .cs-label,
 .csui-start-locations > .binf-dropdown-menu .cs-label {
@@ -23,6 +23,7 @@
   background-repeat: no-repeat;
   display: inline-block;
   background-position: 50% 50%;
+
   
 }
 
@@ -43,6 +44,7 @@
   bottom: 0;
   width: 100%;
 }
+
 .d2-target-controls .csui-start-locations .dropdown-locations .dropdown-single-select,
 .d2-target-controls .csui-start-locations .dropdown-locations .binf-btn.binf-dropdown-toggle {
   white-space: nowrap;
@@ -51,6 +53,7 @@
   height: 32px;
   line-height: 1.42857143;
 }
+
 .binf-widgets .cs-dialog .binf-modal-header .csui-start-locations .dropdown-single-select .cs-icon {
   margin-bottom: 2px;
 }

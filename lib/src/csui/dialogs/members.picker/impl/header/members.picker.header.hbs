@@ -1,5 +1,6 @@
 {{#if adduserorgroup}}
-  <h2 class="member-title">{{title}}</h2><span class="csui-separator"></span>
+  <h2 class="member-title">{{title}}</h2>
+  {{#unless isJATO}}<span class="csui-separator"></span>{{/unless}}
   <div class="csui-target-controls">
     {{#if locationSelector}}
       <div class="csui-start-locations binf-dropdown {{#if
@@ -10,18 +11,23 @@
     </div>
   </div>
 {{else}}
-  <h2 class="member-title member-picker-view-header">{{title}}</h2><span
-      class="csui-view-separator csui-separator binf-hidden"></span>
+  <h2 class="member-title member-picker-view-header">{{title}}</h2>
+  {{#unless isJATO}}<span class="csui-view-separator csui-separator binf-hidden"></span>{{/unless}}
   <div class="csui-target-controls">
-    {{#if isNotDeleted}}
-      <div class="csui-member-picker-container">
-        <span class="csui-member-picker"></span>
-        <span tabindex="-1" class="csui-add-member binf-hidden"
-              title="{{addMemberTitle}}">
-          {{{icon-v2 iconName='csui_action_add32' states='true' size='large'}}}
-        </span>
-      </div>
+  {{#if isNotDeleted}}
+  <div class="csui-member-picker-container">
+    <span class="csui-member-picker"></span>
+    {{#if isJATO}}
+    <otc-button class="csui-add-member binf-hidden" title="{{addMemberTitle}}" size="large">
+      <otc-icon svg="{{jatoAddIcon}}" size="24" isPresentation></otc-icon>
+    </otc-button>
+    {{else}}
+    <span tabindex="-1" class="csui-add-member binf-hidden" title="{{addMemberTitle}}">
+      {{{icon-v2 iconName='csui_action_add32' states='true' size='large'}}}
+    </span>
     {{/if}}
   </div>
+  {{/if}}
+  </div>
 {{/if}}
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

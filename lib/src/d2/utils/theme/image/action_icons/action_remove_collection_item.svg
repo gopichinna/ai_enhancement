@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.8.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{clip-path:url(#SVGID_00000037690140956094943800000009463434824007016108_);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;}
+	.st3{opacity:0.75;fill-rule:evenodd;clip-rule:evenodd;fill:#333333;enable-background:new    ;}
+	.st4{fill:none;stroke:#2E3D98;}
+	.st5{clip-path:url(#SVGID_00000015348520418305789280000010923288000947156891_);}
+	.st6{overflow:visible;}
+</style>
+<rect id="state" y="0" class="st0" width="32" height="32"/>
+<g id="metaphor">
+	<defs>
+		<rect id="SVGID_1_" x="6" y="6" width="20" height="20"/>
+	</defs>
+	<clipPath id="SVGID_00000015348520418305789280000010923288000947156891_">
+		<use xlink:href="#SVGID_1_" class="st6"/>
+	</clipPath>
+	<g class="st5">
+		<path class="st2" d="M12,7c-0.6,0-1.2,0.5-1.2,1.2v1.2h-0.4c-0.6,0-1.2,0.5-1.2,1.2v1.5l-2.1,1.6C7.1,13.7,7,13.8,7,14v7.7
+			C7,21.8,7.2,22,7.4,22h6c-0.1-0.2-0.1-0.5-0.2-0.7H7.7v-7h8.1c0.4-0.3,0.8-0.5,1.2-0.7h-6.9v-3.1c0-0.1,0.1-0.3,0.3-0.3h5.2
+			c0.1,0,0.1,0,0.2,0.1l1.3,1c0.1,0.1,0.1,0.1,0.1,0.2v2c0.3-0.1,0.6-0.2,0.9-0.3v-1.7c0-0.4-0.2-0.7-0.5-0.9l-1.3-1
+			c-0.2-0.2-0.5-0.2-0.7-0.2h-3.9V8.2c0-0.1,0.1-0.3,0.3-0.3h5.2c0.1,0,0.1,0,0.2,0.1l1.3,1.1c0.1,0.1,0.1,0.1,0.1,0.2v3.6l-0.4,0.3
+			c0.5-0.1,1-0.2,1.6-0.2c0.7,0,1.4,0.1,2,0.3v-1.9c0-0.2-0.2-0.4-0.4-0.4h-1.9V9.3c0-0.3-0.2-0.7-0.4-0.9L18,7.3
+			C17.8,7.1,17.5,7,17.2,7H12z M13.6,17c-0.1-0.2-0.3-0.3-0.6-0.3h-1.5c-0.4,0-0.7,0.3-0.7,0.7c0,0.4,0.3,0.7,0.7,0.7h1.5
+			c0.1,0,0.1,0,0.2,0C13.3,17.7,13.5,17.4,13.6,17z M19.7,11.7v0.5l0.8-0.5H19.7z M9.3,13.6V13l-0.8,0.6H9.3z M11.3,12
+			c0-0.2,0.2-0.4,0.4-0.4h3.6c0.2,0,0.4,0.2,0.4,0.4c0,0.2-0.2,0.4-0.4,0.4h-3.6C11.4,12.4,11.3,12.2,11.3,12z"/>
+		<path class="st3" d="M26,20c0,3.3-2.7,6-6,6s-6-2.7-6-6s2.7-6,6-6S26,16.7,26,20z M23.2,19.8c0-0.4-0.3-0.7-0.7-0.7h-5.1
+			c-0.4,0-0.7,0.3-0.7,0.7c0,0.4,0.3,0.7,0.7,0.7h5.1C22.9,20.5,23.2,20.2,23.2,19.8z"/>
+	</g>
+</g>
+<circle id="focus" class="st4" cx="16" cy="16" r="15.5"/>
+</svg>

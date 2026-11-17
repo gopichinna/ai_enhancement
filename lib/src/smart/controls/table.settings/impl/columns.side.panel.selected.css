@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .smart-side-panel-table-settings.csui-sidepanel-custom .csui-sidepanel-container {
   width: 512px;
@@ -7,27 +7,38 @@
   min-width: 512px;
 }
 
+.binf-widgets .csui-sidepanel.smart-side-panel-table-settings.csui-sidepanel-custom .csui-sidepanel-body {
+  padding: var(--jato-padding-xxl, 0);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
 ol.smart-table-settings-columns-view {
   display: flex;
   flex-direction: column;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  margin: -32px -48px;
-  padding-top: 16px;
-  height: calc(100% + 32px);
+  gap: 1px;
+  padding-block-start: var(--jatx-smart-sidepanel-column-customization-list-padding-top, 16px);
 }
 
 li.smart-table-settings-column-view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 14px;
   height: auto;
-  min-height: 44px;
+  min-height: var(--jatx-smart-sidepanel-column-customization-list-item-height, 44px);
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
+  border-radius: var(--jato-radii-med, 0);
 }
 
 li.smart-table-settings-column-view.smart-table-settings-column--is-with-label {
   height: auto;
-  min-height: 50px;
+  min-height: var(--jatx-smart-sidepanel-column-customization-list-item-with-label-height, 50px);
 }
 
 li.smart-table-settings-column-view.smart-table-settings-column--is-fixed.smart-table-settings-column--is-not-movable {
@@ -36,11 +47,13 @@ li.smart-table-settings-column-view.smart-table-settings-column--is-fixed.smart-
 
 .smart-table-settings-column-view > .smart-table-settings-column {
   display: flex;
+  flex-grow: 1;
   max-width: 100%;
   height: 100%;
   align-items: center;
-  padding-left: 24px;
-  padding-right: 16px;
+  padding-left: var(--jato-padding-med, 24px);
+  padding-right: var(--jato-padding-sm, 16px);
+  gap: var(--jato-padding-sm, 0);
 }
 
 .smart-table-settings-column-view > .smart-table-settings-column > .smart-table-settings-column-region.smart-table-settings-column-region-name {
@@ -53,15 +66,15 @@ li.smart-table-settings-column-view.smart-table-settings-column--is-fixed.smart-
 }
 
 .smart-table-settings-column-view.smart-table-settings-column--is-dragover.smart-table-settings-column--is-dragover-top {
-  border-top-color: #3b57ff;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top-color: var(--jato-border-color-primary-selected, #3b57ff);
 }
 
 .smart-table-settings-column-view.smart-table-settings-column--is-dragover.smart-table-settings-column--is-dragover-bottom {
-  border-bottom-color: #3b57ff;
-}
-
-.smart-table-settings-column-view.smart-table-settings-column--is-dragging {
-  background-color: #cbd3d9;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-color: var(--jato-border-color-primary-selected, #3b57ff);
 }
 
 .smart-table-settings-column-view:hover {
@@ -73,7 +86,7 @@ li.smart-table-settings-column-view.smart-table-settings-column--is-fixed.smart-
 }
 
 .smart-table-settings-column-view.smart-table-settings-column--is-movable:hover {
-  background-color: #b2bec5;
+  background-color: var(--jato-background-rows-hover, #b2bec5);
   cursor: pointer;
 }
 
@@ -82,8 +95,9 @@ li.smart-table-settings-column-view.smart-table-settings-column--is-fixed.smart-
 }
 
 .smart-table-settings-column-view:focus-visible {
-  outline: none;
-  box-shadow: inset 0 0 0 1px #2e3d98, inset 0 0 0 2px #ffffff;
+  outline-offset: var(--jatx-smart-sidepanel-column-customization-list-item-outline-offset, unset);
+  outline: var(--jatx-smart-sidepanel-column-customization-list-item-outline, none);
+  box-shadow: var(--jatx-smart-sidepanel-column-customization-list-item-box-shadow, inset 0 0 0 1px #2e3d98, inset 0 0 0 2px #ffffff);
 }
 
 .smart-table-settings-columns-view > div,
@@ -100,20 +114,23 @@ li.smart-table-settings-column-view.smart-table-settings-column--is-fixed.smart-
 
 .smart-table-settings-column-region-drag-handle {
   justify-content: center;
-  width: 24px;
+  width: var(--jatx-smart-sidepanel-column-customization-list-item-drag-handle-size, 24px);
 }
 
 .smart-table-settings-column-drag-handle {
   display: flex;
   flex: 1 1 auto;
   align-items: center;
-  width: 18px;
-  height: 18px;
+  width: var(--jatx-smart-sidepanel-column-customization-list-item-drag-handle-size, 18px);
+  height: var(--jatx-smart-sidepanel-column-customization-list-item-drag-handle-size, 18px);
 }
 
 div.smart-table-settings-column-region-name {
-  flex: 0 1 calc(100% - 56px);
+  flex: 1 1 auto;
   overflow-x: hidden;
+  display: flex;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 div.smart-table-settings-column-label-name {
@@ -121,7 +138,6 @@ div.smart-table-settings-column-label-name {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 3px;
   width: 100%;
 }
 
@@ -131,32 +147,34 @@ div.smart-table-settings-column-label-name {
   hyphens: auto;
   white-space: normal;
   display: block;
-  font-weight: 400;
   width: 100%;
   height: auto;
 }
 
 .smart-table-settings-column-label-name > .smart-table-settings-column-label {
-  line-height: normal;
-  font-size: 10px;
-  color: #666;
+  line-height: var(--jatx-smart-sidepanel-column-customization-list-item-label-line-height, normal);
+  font-weight: var(--jatx-smart-sidepanel-column-customization-list-item-label-font-weight, normal);
+  font-size: var(--jatx-smart-sidepanel-column-customization-list-item-label-font-size, 10px);
+  color: var(--jato-typography-text-color-tertiary, #666);
 }
 
 .smart-table-settings-column-view.smart-table-settings-column--is-fixed .smart-table-settings-column-label {
-  color: #4a4a4a;
+  color: var(--jato-typography-text-color-tertiary, #4a4a4a);
 }
 
 .smart-table-settings-column-label-name > .smart-table-settings-column-name {
-  line-height: 18px;
-  font-size: 14px;
+  line-height: var(--jatx-smart-sidepanel-column-customization-list-item-name-line-height, 18px);
+  font-weight: var(--jatx-smart-sidepanel-column-customization-list-item-name-font-weight, 400);
+  font-size: var(--jatx-smart-sidepanel-column-customization-list-item-name-font-size, 14px);
+  color: var(--jato-typography-text-color-primary, black);
 }
 
 .smart-table-settings-column-view .smart-table-settings-column-name {
-  color: black;
+  
 }
 
-.smart-table-settings-column-view.smart-table-settings-column--is-fixed.smart-table-settings-column--is-not-movable .smart-table-settings-column-name {
-  color: #333333;
+.smart-table-settings-column-view.smart-table-settings-column--is-fixed.smart-table-settings-column--is-not-movable .smart-table-settings-column-label-name > * {
+  color: var(--jato-cta-content-color-tertiary-disabled, #333333);
 }
 
 .smart-table-settings-column-drag-handle {

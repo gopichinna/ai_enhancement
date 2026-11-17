@@ -1,0 +1,44 @@
+{{#if text1}}
+<otc-avatar image="{{image}}"></otc-avatar>
+{{/if}}
+<div class="aie-chat-entry">
+  <div class="aie-chat-text">
+     {{#if text1}}
+      <span class="aie-qs-text">{{{text1}}}</span>
+     {{/if}}
+
+    {{#if qs}}
+     <div class="aie-qs-section">
+       {{#each qs}}
+         <div class="aie-qs-item">
+           <span class="aie-qs-icon">{{{this.qsimage}}}</span>
+           <span class="aie-qs">{{this.name}}</span>
+         </div>
+       {{/each}}
+     </div>
+    {{/if}}
+
+     {{#if text2}}
+     <span class="aie-qs-text">{{{text2}}}</span>
+     {{/if}}
+
+    {{#if selection}}
+    <span class="aie-selection" role="list" id="{{selectionId}}">
+    {{#each selection}}
+      {{#if this.more}}
+      <span class="aie-before-more">{{../lang.twoNamesDivider}}</span>
+      <a class="aie-selection-more" role="button" href="javascript:void(0)" tabindex="0" aria-expanded="false" aria-controls="{{selectionId}}" aria-label="{{../lang.expandNamesAria}}">{{this.name}}</a>
+      {{else if this.less}}
+      <a class="aie-selection-less binf-hidden" role="button" href="javascript:void(0)" tabindex="0" aria-expanded="true" aria-controls="{{selectionId}}" aria-label="{{../lang.collapseNamesAria}}">{{this.name}}</a>
+      {{else}}
+      <span class="{{#if this.extra}}aie-extra binf-hidden{{/if}}" role="listitem">{{this.name}}</span>{{#unless this.last}}<span class="{{#if this.beforeRest}}aie-before-rest binf-hidden{{else if this.extra}}aie-extra binf-hidden{{/if}}">{{#if this.oneButLast}}{{../lang.twoNamesDivider}}{{else}}{{../lang.severalNamesDivider}}{{/if}}</span>{{/unless}}
+      {{/if}}
+    {{/each}}
+    </span>
+    {{/if}}
+  </div>
+  {{#if openViewer}}
+  <button type="button" class="aie-open">{{openViewer}}</button>
+  {{/if}}
+</div>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

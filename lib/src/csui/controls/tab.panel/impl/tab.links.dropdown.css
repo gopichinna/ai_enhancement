@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .cs-tab-links.binf-dropdown .cs-label {
   font-size: 18px;
@@ -28,10 +28,6 @@
 
 .cs-tab-links.binf-dropdown .binf-dropdown-menu li a {
   margin: 1px 0;
-}
-
-.cs-tab-links.binf-dropdown .binf-dropdown-menu li a:focus {
-  outline: 1px dotted #333333;
 }
 
 .cs-tab-links.binf-dropdown .binf-dropdown-menu li:first-child a {

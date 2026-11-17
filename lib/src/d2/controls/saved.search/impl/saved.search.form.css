@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-query-form-view.d2-saved-search-form-view .queryformview {
   height: calc(100% - 72px);
@@ -19,7 +19,7 @@
 .binf-widgets  .csui-search-left-panel .d2-query-form-view.d2-saved-search-form-view .d2-advanced-search-dialog{
   padding: 0;
   height: 100%;
-  background-color: #FFF;
+  background-color: #FFFFFF;
 }
 
 .d2-query-form-view.d2-saved-search-form-view .d2-advanced-search-form.csui-top-align-label .cs-form .binf-form-group.alpaca-field-d2checkbox{
@@ -37,6 +37,7 @@
 .d2-query-form-view.d2-saved-search-form-view .d2-advanced-search-header-message-container{
   min-width: 270px;
 }
+
 .d2-query-form-view.d2-saved-search-form-view .d2-advanced-search-header-message-container .d2-header-message-container .d2-header-message .header-message-icon{
   margin-left: 16px;
 }
@@ -52,6 +53,7 @@
 .d2-query-form-view.d2-saved-search-form-view  .d2-advanced-search-dialog .d2-group-content {
   min-width: 298px;
 }
+
 .d2-query-form-view.d2-saved-search-form-view  .d2-advanced-search-dialog .csui-top-align-label .cs-form .binf-col-md-6{
   min-width: 270px;
 }

@@ -1,7 +1,7 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-footer {
+.binf-widgets .binf-modal.d2-stepper-wizard .binf-modal-dialog .binf-modal-content .binf-modal-footer {
   background-color: #F4F4F4;
   padding: 0 24px 0 8px!important;
   max-height: 48px;

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .csui-facet-panel .d2-facet {
   border-top: 1px solid #CBF7F3;
@@ -137,9 +137,11 @@ border: 1px solid #2E3D98;
 .binf-widgets .csui-facet-panel .d2-filter-more .cs-icon.icon-expandArrowDown:active {
   background: url('../images/caret_down.svg') no-repeat;
 }
+
 .binf-widgets .csui-facet-panel .last-limited-item .cs-icon.icon-expandArrowDown {
   display: none;
 }
+
 .csui-facet-panel .d2-filter-more .cs-icon.icon-expandArrowUp {
   margin-top: 2px;
 }
@@ -313,7 +315,7 @@ border: 1px solid #2E3D98;
 }
 
 .d2-facet-search > .d2-facet-search-icon.csui-focus {
-  outline: 1px dotted #333;
+  outline: 1px dotted #333333;
 }
 
 .d2-facet-search > .d2-facet-search-icon.searchmoveleft {

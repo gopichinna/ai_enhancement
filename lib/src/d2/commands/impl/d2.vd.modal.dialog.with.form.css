@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-dialog {
   width: 356px;
@@ -49,12 +49,6 @@
 .binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-body .cs-form .binf-form-group.alpaca-field > .binf-control-label,
 .binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-body .cs-form .binf-form-group.alpaca-field > .binf-control-label + div{
   width: 100%;
-}
-
-.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-body .cs-form .binf-form-group.alpaca-field > .binf-control-label,
-.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-body .cs-form .binf-form-group.alpaca-field .cs-formfield .cs-field-read-inner,
-.binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-body .cs-form .binf-form-group.alpaca-field .cs-formfield .cs-field-write {
-  padding-left: 0;
 }
 
 .binf-widgets .csui-alert.dctm-alert-custom-content.d2-vd-modal-dialog-with-form .binf-modal-body .cs-form .binf-form-group {

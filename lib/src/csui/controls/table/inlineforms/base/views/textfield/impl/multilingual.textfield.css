@@ -1,20 +1,25 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field.csui-multilingual-input{
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field.csui-multilingual-input {
     position: relative;
 }
-.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field.csui-multilingual-input .csui-multilingual-icon-label{
+
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field.csui-multilingual-input .csui-multilingual-icon-label {
+    display: flex;
+    align-items: center;
+    height: 100%;
     position: absolute;
-    right:3px;
-    top:2px;
+    right: 3px;
+    top: 0;
     margin-right: 0;
 }
+
 .binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field.csui-multilingual-input > input,
 .binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field.csui-multilingual-input > input.binf-form-control.csui-inlineform-error {
     padding-right: 27px;
 }
 
-.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field.csui-multilingual-input .csui-multilingual-icon{
+.binf-widgets .csui-inlineform-field-container .csui-inlineform-text-field.csui-multilingual-input .csui-multilingual-icon {
     margin-right: 0;
 }

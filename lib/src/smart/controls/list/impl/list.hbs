@@ -1,9 +1,15 @@
+{{#unless noHeader}}
 <div class="tile-header">
-
   {{#if icon}}
-  <div class="tile-type-icon">
-    <span class="icon {{icon}}"></span>
-  </div>
+    <div class="tile-type-icon">
+      {{#if smartTileHeaderJatoIcon}}
+        <span class="smart-tile-header-jato-icon">
+          <otc-icon type="raw" size="24" svg="{{smartTileHeaderJatoIcon}}"></otc-icon>
+        </span>
+      {{else}}
+        <span class="icon {{icon}}"></span>
+      {{/if}}
+    </div>
   {{else}}
   {{#if imageUrl}}
   <div class="tile-type-image {{imageClass}}">
@@ -14,43 +20,38 @@
 
   <div class="tile-title" title="{{title}}">
     <h2 class="csui-heading">{{title}}</h2>
+    {{#if enableSubtitle}}
+    <div class="smart-list-header-subtitle">{{listHeaderSubtitle}}</div>
+    {{/if}}
   </div>
 
   <div class="tile-controls">
-    <div class="search-box">
-      {{^if hideSearch}}
-      <span class="icon-search-placeholder">{{{icon-v2 iconName='csui_smart_action_search32'}}}</span>
-      <input class="search" type="search" placeholder="{{searchPlaceholder}}" title="{{searchTitle}}">
-      <span class="clearer csui-icon formfield_clear" title="{{clearAll}}" aria-label="{{clearAllAria}}"
-        role="button"></span>
-      <span class="fadeout csui-icon" title="{{searchTitle}}"></span>
-      {{/if}}
-    </div>
-
     <div class="tile-icons">
       {{^if hideSearch}}
-      <otc-button icon="smart_action:action_search32" class="cs-icon cs-search-button"
-      title="{{searchAria}}"  arialabel="{{searchAria}}"></otc-button>
-      
+      <otc-typeahead-search class="smart-list-search" title="{{searchAria}}" arialabel="{{searchAria}}">
+        <otc-input type="search" slidein="" class="smart-list-search-input" placeholder="{{searchPlaceholder}}" title="{{searchTitle}}" arialabel="{{searchAria}}" autocomplete="off" cleariconarialabel="{{clearAll}}" clearicontitle="{{clearAllAria}}" closeiconarialabel="{{searchCloseAria}}" closeicontitle="{{searchCloseAria}}"></otc-input>
+      </otc-typeahead-search>
       {{/if}}
-      {{#if enableOpenPerspective}}
+      {{#if enableExpand}}
+      {{#if isJato}}
+      <otc-button class="cs-icon cs-open-perspective-button" title="{{openPerspectiveAria}}"
+        arialabel="{{openPerspectiveAria}}">
+        <otc-icon type="secondary" svg="{{tileHeaderExapandSVGContent}}"></otc-icon>
+      </otc-button>
+      {{else}}
       <otc-button icon="smart_action:action_expand32" class="cs-icon cs-open-perspective-button"
-      title="{{openPerspectiveAria}}"  arialabel="{{openPerspectiveAria}}"></otc-button>
+        title="{{openPerspectiveAria}}" arialabel="{{openPerspectiveAria}}"></otc-button>
       {{/if}}
-    </div>
-
-    <div class="close-search-icon">
-      {{^if hideSearch}}
-      <otc-button icon="smart_action:action_close_mid32" class="cs-icon cs-search-close-button"
-       title="{{searchCloseAria}}" aria-label="{{searchCloseAria}}" aria-haspopup="true"></otc-button>
       {{/if}}
-    </div>
+      </div>
   </div>
 
 </div>
+{{/unless}}
 
-<div class="tile-content csui-normal-scrolling" role='{{listRole}}'>
-  <div class="binf-list-group"></div>
+<div class="tile-content csui-normal-scrolling">
+  <div class="binf-list-group" role='{{listRole}}'></div>
   <div class="binf-sr-only" aria-live="off"></div>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

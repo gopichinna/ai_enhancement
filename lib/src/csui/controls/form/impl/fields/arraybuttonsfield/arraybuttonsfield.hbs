@@ -1,6 +1,11 @@
+{{#if isJATO}}
+<otc-button title="{{title}}" class="removebtn binf-hidden" type="subtle" size="small">
+  <otc-icon svg="{{removeButtonSVG}}" type="subtle"></otc-icon>
+</otc-button>
+{{else}}
 <button title="{{title}}" class="binf-btn binf-btn-default binf-btn-sm removebtn binf-hidden">
   <i class="csui-icon circle_delete"></i>
 </button>
+{{/if}}
 
-
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

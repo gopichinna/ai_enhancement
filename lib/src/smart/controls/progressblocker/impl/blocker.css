@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .load-container .csui-common-loading-parent-wrapper {
   position: relative;
   padding: 0;
@@ -41,8 +40,6 @@
   margin: auto;
   padding: 16px 16px 0 16px;
   text-align: center;
-    
-  
   opacity: 1;
   color: #666666;
   font-size: 18px;
@@ -73,16 +70,4 @@
 
 .binf-widgets .load-container .csui-common-loading-parent-wrapper .csui-loading-dots-wrapper .csui-loading-dot:nth-child(3) {
   left: 28px;
-}
-
-@keyframes csui-loading-fade-in-and-out {
-  from {
-    opacity: .5;
-  }
-  50% {
-    opacity: 1;
-  }
-  to {
-    opacity: .5;
-  }
 }

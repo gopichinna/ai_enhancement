@@ -1,0 +1,28 @@
+<div class="footer-text">{{{copyrightMessage}}}</div>
+<div class="footer-links">
+    <div class="footer-link">
+        <div>
+            <otc-button size="small" type="subtleDropdown" title="{{langPreference}}" id="dctm-signin-lang-btn">
+                <otc-icon svg="{{syncSVG}}"></otc-icon>
+                <span class="lang-label">{{langPreference}}</span>
+            </otc-button>
+            <otc-menu id="signin-lang-menu" class="dctm-sigin-lang-dropdown" buttonId="dctm-signin-lang-btn"
+                ariarole="menu" scrollable="">
+            </otc-menu>
+        </div>
+    </div>
+    
+    <div class="footer-bar"></div>
+    <div class="footer-link">
+        <otc-link class="footer-text-small footer-link" style="width:unset" arialabel="navigate" ignoreVisited="true"
+            href="https://www.opentext.com/about/privacy" target="_blank"
+            title="{{privacyPolicy}}">{{privacyPolicy}}</otc-link>
+    </div>
+
+    <div class="footer-bar"></div>
+    <div class="footer-link">
+        <otc-link class="footer-text-small footer-link" style="width:unset" arialabel="navigate" ignoreVisited="true"
+            href="https://support.opentext.com" target="_blank" title="{{helpAndSupport}}">{{helpAndSupport}}</otc-link>
+    </div>
+</div>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

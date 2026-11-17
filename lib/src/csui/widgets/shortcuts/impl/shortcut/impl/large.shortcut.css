@@ -1,6 +1,25 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+:root {
+    --jatx-large-shortcut-tile-title-text-font-weight: 425;
+    --jatx-large-shortcut-tile-title-text-line-height: 24px;
+    --jatx-large-shortcut-tile-title-letter-spacing: -0.01em;
+    --jatx-large-shortcut-tile-title-text-pading-top: 0;
+}
+
+[data-smart-theme="cf"] {
+    --jatx-large-shortcut-tile-title-text-font-weight: normal;
+    --jatx-large-shortcut-tile-title-text-line-height: normal;
+    --jatx-large-shortcut-tile-title-letter-spacing: 0;
+    --jatx-large-shortcut-tile-title-text-pading-top: 12px;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+    --jatx-csui-large-shortcut-tile-justify-content: center;
+    --jatx-csui-large-shortcut-tile-top: 0px;
+  }
+
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large {
     display: flex;
     flex-direction: column;
@@ -8,11 +27,11 @@
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .tile-group {
-    padding: 0px 16px;
+    padding: 0 16px;
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .tile-header {
-    border-width: 0px;
+    border-width: 0;
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .tile-header .tile-title {
@@ -36,79 +55,105 @@
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-grey,
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-grey {
-    background: #767676;
+    padding: 0 var(--jato-padding-xxl, 0);
+        background-color: var(--jato-background-elevation-level-2, #767676);
+        box-shadow: 0 var(--jato-elevation-y-axis-level-2, 0) var(--jato-elevation-blur-level-2, 5px) 0 var(--jato-elevation-shadow-color-level-2, rgb(0 0 0 / 30%))
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-green,
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-green {
-    background: #2c8464;
+    background: var(--jato-background-elevation-level-2, #2c8464);
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-purple,
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-purple {
-    background: #b51cb5;
+    background: var(--jato-background-elevation-level-2, #b51cb5);
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-orange,
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-orange {
-    background: #b15d07;
+    background: var(--jato-background-elevation-level-2, #b15d07);
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-stone1,
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-stone1 {
-    background: #5f6e77;
+    background: var(--jato-background-elevation-level-2, #5f6e77);
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-stone2,
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-stone2 {
-    background: #008485;
+    background: var(--jato-background-elevation-level-2, #008485);
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-teal1,
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-teal1 {
-    background: #0680A2;
+    background: var(--jato-background-elevation-level-2, #0680A2);
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-teal2,
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-teal2 {
-    background: #00639b;
+    background: var(--jato-background-elevation-level-2, #00639b);
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-pink1,
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-pink1 {
-    background: #d23d31;
+    background: var(--jato-background-elevation-level-2, #d23d31);
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-pink2,
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-pink2 {
-    background: #8c1464;
+    background: var(--jato-background-elevation-level-2, #8c1464);
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-indigo1,
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-indigo1 {
-    background: #2e3d98;
+    background: var(--jato-background-elevation-level-2, #2e3d98);
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.csui-shortcut-theme-indigo2,
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.csui-shortcut-theme-indigo2 {
-    background: #4f3690;
+    background: var(--jato-background-elevation-level-2, #4f3690);
 }
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.smart-shortcut-theme ,
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium.smart-shortcut-theme {
+ padding: 0 var(--jato-padding-xxl, 0);
+ box-shadow: 0 var(--jato-elevation-y-axis-level-2, 0) var(--jato-elevation-blur-level-2, 5px) 0 var(--jato-elevation-shadow-color-level-2, rgb(0 0 0 / 30%));
+ justify-content: var(--jatx-csui-large-shortcut-tile-justify-content, initial);
+}
+
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .tile-group {
     position: relative;
-    top: 27%;
+    top: var(--jatx-csui-large-shortcut-tile-top, 27%);
     width: 100%;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .csui-icon-group {
+    width: 72px;
+    height: 72px;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .csui-icon-group> * {
+    width: 100%;
+    height: 100%;
 }
 
 .binf-widgets .csui-shortcut-container:not(.csui-pman-editable-widget) .csui-shortcut-item.csui-large.cs-background-image .tile-group {
     position: absolute;
-    bottom: 0;
-    top: unset;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    background: rgba(0,0,0,0.6);
+        bottom: 0;
+        top: unset;
+        left: 0;
+        right: 0;
+        padding: var(--jato-padding-xxl, 10px) var(--jato-padding-content-xs, 10px) var(--jato-padding-xxl, 10px) var(--jato-padding-content-xs, 10px);
+        background: var(--jato-background-mask-area, rgba(0, 0, 0, 0.6));
+        backdrop-filter: blur(24px);
 }
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .csui-shortcut-container:not(.csui-pman-editable-widget) .csui-shortcut-item.csui-large.cs-background-image .tile-group {
+border-radius: 0 0 8px 8px;
+}
+
 @media only screen and (max-height: 240px) {
     .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .tile-group {
         top: 10%;
@@ -120,10 +165,32 @@
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .tile-title {
+    margin-top: var(--jato-margin-xl, 0);
     text-align: center;
-    padding-top: 12px;
+    padding-top: var(--jatx-large-shortcut-tile-title-text-pading-top);
     width: 100%;
-    color: #ffffff;
     font-size: 20px;
     line-height: 26px;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.cs-background-image .tile-title {
+    margin-top: 0;
+}
+
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large .tile-title .csui-heading.binf-line-clamp {
+    font-weight: var(--jatx-large-shortcut-tile-title-text-font-weight);
+    line-height: var(--jatx-large-shortcut-tile-title-text-line-height);
+    letter-spacing: var(--jatx-large-shortcut-tile-title-letter-spacing);
+    white-space: normal;
+    color: var(--jato-typography-text-color-primary, #ffffff);
+    font-size: 20px;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-large.cs-background-image .tile-title .csui-heading.binf-line-clamp {
+    font-weight: 450;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    white-space: normal;
+    color: var(--jato-typography-text-color-primary, #ffffff);
+    font-size: 16px;
 }

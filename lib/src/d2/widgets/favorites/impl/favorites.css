@@ -1,7 +1,23 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-favorites-view .csui-favorites-view-container .tile-controls .search-box .clearer,
 .binf-widgets .csui-favorites-view .csui-favorites-view-container .tile-controls .search-box .fadeout {
   top: 4px;
+}
+
+.binf-widgets .d2-navbar .binf-container-fluid .binf-navbar-right .csui-favorites .csui-favorites-icon-container {
+    height: 64px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 11px 12px;
+}
+
+.binf-widgets .csui-navbar .csui-favorites-view .csui-favorites-icon-container {
+    height: 64px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 11px 12px;
 }

@@ -1,12 +1,14 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-medium {
   margin-top: 8px;
 }
+
 .binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-medium:first-child {
   margin-top: 0;
 }
+
 .binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-medium {
   display: flex;
   flex-direction: column;
@@ -53,7 +55,7 @@
 }
 
 .binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-medium .csui-error {
-  padding: 10.75% 1em 1em 1em;
+  padding: 7% 1em 1em 1em;
   justify-content: flex-start;
 }
 

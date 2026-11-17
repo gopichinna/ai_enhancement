@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-newfile-custom_profile {
   position: relative;
@@ -16,6 +16,36 @@
 }
 
 .d2-newfile-custom_profile .separator {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
   position: relative;
+}
+
+
+.d2-newfile-custom_profile .custom-profile-view-error-banner .d2-value-config-form-error{
+  width: 100%;
+  height: 68px;
+  display:flex;
+  align-items: center;
+  background: #FDF7F2;
+}
+
+.d2-newfile-custom_profile .custom-profile-view-error-banner .d2-value-config-form-error .generic-status-icon {
+  background-image: url('images/node-processing-warning.svg');
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 32px;
+}
+
+.d2-newfile-custom_profile .custom-profile-view-error-banner .d2-value-config-form-error .custom-profile-error-message {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  padding-left:16px;
 }

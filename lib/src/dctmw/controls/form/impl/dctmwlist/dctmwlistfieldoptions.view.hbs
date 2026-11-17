@@ -1,0 +1,33 @@
+<ul class='dctmw-lazy-loading'>
+  <li role="menuitem" class="csui-loading-parent-wrapper binf-disabled csui-disbaled">
+    <span class="csui-loading-dots-wrapper"><span class="csui-loading-dot"></span><span
+        class="csui-loading-dot"></span><span class="csui-loading-dot"></span></span>
+  </li>
+</ul>
+<ul class='dctmw-listfield-options-static {{#if applyBorderBottom}}apply-border-bottom{{/if}}' role="listbox">
+    <li class="dctmw-searchResultCountDetails dctmw-list-results-message" tabindex="0"
+        aria-label="{{dropDownSearchResultCount}}">{{dropDownSearchResultCount}}</li>
+    <li class="dctmw-select-all-item">
+        <a tabindex="-1" title="{{selectAllLabel}}">
+            <otc-checkbox class="select-all-item-option" name="{{selectAllLabel}}" arialabel="{{selectAllLabel}}">
+                {{selectAllLabel}}
+            </otc-checkbox>
+        </a>
+    </li>
+    <li class="dctmw-none-item">
+        <a tabindex="-1" title="{noneLabel}}">
+            <otc-checkbox class="none-item-option" name="{{noneLabel}}" arialabel="{{noneLabel}}">
+                {{noneLabel}}
+            </otc-checkbox>
+        </a>
+    </li>
+</ul>
+<ul class='dctmw-listfield-options'>
+</ul>
+{{#if isEditableList}}
+<ul class="dctmw-add-new-option" role="listbox">
+  <li id="{{addNewId}}" role="option" class="dctmw-select-add-new-option"><a tabindex="-1" title="{{addNewLabel}}">
+      <span class="dctmw-listfield-icon-container"></span> {{addNewLabel}}</a></li>
+</ul>
+{{/if}}
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

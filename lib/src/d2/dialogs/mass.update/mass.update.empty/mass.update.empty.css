@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-mass-update-wizard .d2-mass-update-no-files-text .d2-no-files-image{
     height: 220px;
@@ -8,6 +8,7 @@
     margin-left: calc(50% - 110px);
     margin-top: 170px;
 }
+
 .binf-widgets .d2-mass-update-wizard .d2-mass-update-no-files-text .d2-mass-update-no-files-text .csui-no-result-message{
     color: #666666;
     line-height: 19px;

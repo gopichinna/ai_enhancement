@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-shortcut-container .csui-shortcut-item {
   position: relative;
@@ -118,9 +118,11 @@
   background-image: url('icons/tile_aviator.svg');
 }
 
+
 .binf-widgets .d2-shortcut-container .csui-shortcut-item .tile-icon .icon-mip-administration {
   background-image: url('icons/tile_mip.svg');
 }
+
 
 .binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-shortcut-theme-stone1-shade1 {
   background: #5f6e77;

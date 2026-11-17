@@ -1,9 +1,18 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"])  {
+  --jatx-csui-metadata-item-name-error-border: 1px solid var(--jato-messages-inline-border-error);
+  --jatx-rename-conflict-border-bottom: var(--jato-measure-1) solid var(--jato-border-color-primary);
+  --jatx-mime-folder-name-gap: 18px;
+  --jatx-folder-warning-gap: 20px;
+  --jatx-csui-multilingual-conflict-margin-left: -36px;
+}
+
 .cs-dialog.csui-conflict-dialog.csui-individual .cs-simplelist {
   height: 100%;
-  min-width: 0px;
+  min-width: 0;
+  margin: 0;
 }
 
 .cs-dialog.csui-conflict-dialog.csui-individual .cs-content {
@@ -11,11 +20,19 @@
   width: 100%;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .cs-dialog.csui-conflict-dialog.csui-individual .cs-content .cs-list-group {
+  padding: 0 16px;
+}
+
 .csui-conflict-dialog.csui-individual .csui-icon.csui-status-icon {
   width: 16px;
   height: 28px;
   border-radius: 1em;
-  margin-left: 24px;
+  margin-left: var(--jatx-folder-warning-gap, 24px);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .csui-conflict-dialog.csui-individual .csui-icon.csui-status-icon {
+  height:  unset;
 }
 
 .csui-conflict-dialog.csui-individual .csui-icon {
@@ -24,11 +41,11 @@
 }
 
 .csui-conflict-dialog.csui-individual .csui-icon.csui-node-type-image {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .csui-conflict-dialog.csui-individual div.binf-list-group-item.no-border {
-  border: 0px;
+  border: 0;
 }
 
 .csui-conflict-dialog.csui-individual div.binf-list-group-item {
@@ -38,16 +55,20 @@
   -webkit-align-items: initial;
   -ms-flex-align: initial;
   align-items: initial;
-  border-radius: 0px;
+  border-radius: 0;
   border-top: 1px solid #f5f5f5;
   background-color: #ffffff;
   padding: 0;
   padding-top: 16px;
   padding-bottom: 16px;
-  margin: 0px;
+  margin: 0;
   width: 100%;
   font-style: normal;
   height: inherit;
+}
+
+.binf-widgets .csui-conflict-dialog.csui-individual div.binf-list-group-item {
+  border-bottom: var(--jatx-rename-conflict-border-bottom, none);
 }
 
 .csui-conflict-dialog.csui-individual div.binf-list-group-item:hover {
@@ -70,7 +91,7 @@
   text-overflow: ellipsis;
   font-size: 14px;
   line-height: 16px;
-  margin-left: 8px;
+  margin-left: var(--jatx-mime-folder-name-gap, 8px);
   width: 40%;
   display: flex;
   display: -ms-flexbox;
@@ -81,6 +102,7 @@
   flex: 1 3000 auto;
 }
 
+
 .csui-conflict-dialog.csui-individual div.csui-description.sm {
   flex: 1 1000 auto;
 }
@@ -88,16 +110,17 @@
 .csui-conflict-dialog.csui-individual .csui-msg {
   white-space: normal;
   word-break: break-word;
-  background: #ffffff;
-  color: #df3324;
+  background: var(--jato-background-error-neutral, #ffffff);
+  color: var(--jato-typography-text-color-secondary, #df3324);
   font-size: 11px;
   line-height: 14px;
-  border-radius: 2px;
-  border-left: 2px solid #df3324;
+  border-radius: var(--jato-radii-sm, 2px);
+  border-left: var(--jatx-const-none, 2px solid #df3324);
+  border: var(--jatx-csui-metadata-item-name-error-border, none);
   padding: 0 6px;
   margin: 8px 2px 2px 0;
   width: fit-content;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 .csui-conflict-dialog.csui-individual span.folder-name {
@@ -111,12 +134,31 @@
   width: calc(100% - 80px);
   margin-right: 4px;
   float: left;
-  height: 28px;
-  border: 1px solid #a7a9ac;
+  height: var(--jato-measure-32, 28px);
+  border: 1px solid var(--jato-input-border-container-neutral, #a7a9ac);
   max-width: 400px;
   padding: 2px 12px 3px 12px;
   position: relative;
   top: 3px;
+  background-color: var(--jato-background-elevation-level-1, #ffffff);
+  color: var(--jato-typography-text-color-primary, #333333);
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) var(--jatx-const-0, 3px) var(--jatx-const-0, 3px);
+  border-block-end: solid 1px var(--jato-input-border-container-neutral, #757575);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .csui-conflict-dialog.csui-individual input:hover {
+  background-color: var(--jato-background-elevation-level-2-hover);
+  border: 1px solid var(--jato-input-border-container-hover);
+  border-block-end: 1px solid var(--jato-input-border-focus-hover);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .csui-conflict-dialog.csui-individual input:focus-within {
+  border-block-end: 1px solid var(--jato-input-border-focus-enabled);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled);
+  outline: none;
+  -webkit-box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled);
+  border: var(--jato-measure-1, 2px) solid var(--jato-input-border-container-neutral);
 }
 
 .csui-conflict-dialog.csui-individual input:focus {
@@ -127,7 +169,7 @@
 
   font-size: 12px;
   line-height: 16px;
-  color: #df3324;
+  color: var(--jato-color-firebrick-1725, #df3324);
   float: left;
   margin-left: 32px;
   margin-top: 1px;
@@ -146,13 +188,13 @@
 }
 
 .csui-conflict-dialog.csui-individual .csui-status.sm {
-  left: 0px;
+  left: 0;
   margin-left: 32px;
   bottom: 16px;
 }
 
 .csui-conflict-dialog.csui-individual .csui-status.ok {
-  color: #146634;
+  color: var(--jato-color-hunter-1635, #146634);
   padding-top: 2px;
   width: 100%;
   line-height: 24px;
@@ -192,7 +234,7 @@
 }
 
 .csui-conflict-dialog.csui-individual .binf-modal-body .no-cancel-icon {
-  margin-right: 60px;
+  margin-right: var(--jato-measure-8, 60px);
 }
 
 .csui-conflict-dialog.csui-individual .binf-modal-body .binf-btn:hover {
@@ -211,10 +253,14 @@
 
 .csui-conflict-dialog.csui-individual .cs-icon.circle_delete {
   width: 24px;
-  height: 0px;
+  height: 0;
   margin-right: 20px;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.csui-conflict-dialog.csui-individual .jato_remove_item.conflict-field {
+  margin-right: 12px;
 }
 
 .csui-conflict-dialog.csui-individual .csui-focus .cs-icon.circle_delete,
@@ -238,16 +284,22 @@
 
 
 .csui-conflict-dialog.csui-individual .csui-multilingual-icon-label {
-  margin-right: 0px;
-  margin-left: -48px;
-  margin-top: 4px;
+  margin-right: 0;
+  margin-left: var(--jatx-csui-multilingual-conflict-margin-left, -48px);
+  margin-top: var(--jato-measure-6, 4px);
   position: absolute;
 }
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .csui-conflict-dialog.csui-individual .csui-multilingual-icon-label {
+  padding-top: 1px;
+}
+
 .csui-conflict-dialog.csui-individual .csui-multilingual-icon-label button{
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0;
+  margin-right: 0;
   vertical-align: baseline;
 }
+
 .binf-widgets .cs-ml-form-container .csui-footer-buttons a.binf-btn{
   height: 32px;
   padding: 6px 17px;
@@ -258,16 +310,22 @@
 .binf-widgets .csui-name .csui-btn-cancel.inline-edit-icon.rename-field {
   background-color: transparent;
   border: none;
-  padding: 0px;
+  padding: 0;
   height: 32px;
   width: 32px;
   margin-left: 4px;
-  margin-top: 0px;
+  margin-top: 0;
   display: inline-flex;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-name .csui-btn-save.inline-edit-icon.rename-field,
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-name .csui-btn-cancel.inline-edit-icon.rename-field {
+  margin-left: 4px;
+  margin-top: 6px;
+}
+
 .binf-widgets .csui-name .csui-btn-cancel.inline-edit-icon.rename-field {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .binf-widgets .csui-name .csui-btn-save.inline-edit-icon.rename-field:focus,

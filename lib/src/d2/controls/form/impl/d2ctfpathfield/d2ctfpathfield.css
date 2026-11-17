@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .d2-ctf-path-field .cs-field-read .cs-field-read-inner,
 .d2-ctf-path-field .cs-field-write .cs-field-write-inner {
   display: flex;
@@ -60,7 +59,7 @@
   box-shadow: none;
   border-radius: 3px;
   padding: 1px;
-  border: 1px dotted #666;
+  border: 1px dotted #666666;
   cursor: default;
 }
 

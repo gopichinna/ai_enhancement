@@ -1,0 +1,14 @@
+<a class="aie-chat-reference" href="{{this.url}}" target="_blank">
+  <span class="aie-icon"></span><span class="aie-title">{{this.name}}</span>
+</a>
+{{#if referenceActions}}
+<otc-overflow-container maxitems="3">
+  {{#if enableOpenAction}}
+  <otc-toolbaritem data-aie-action="open" title="{{actionsMenuOpen}}" href=""
+    icon="aie_action:action_go_to_location32"></otc-toolbaritem>
+  {{/if}}
+  <otc-toolbaritem data-aie-action="aviator" title="{{lang.actionsMenuAviator}}" href=""
+    icon="aie_action:otc_action_aviator32"></otc-toolbaritem>
+</otc-overflow-container>
+{{/if}}
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

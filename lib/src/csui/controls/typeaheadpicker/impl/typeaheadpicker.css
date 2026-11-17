@@ -1,16 +1,49 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme='cf']) {
+  --jatx-csui-menuitem-font-size: 13px;
+  --jatx-csui-menuitem-line-height: 18px;
+}
+
 .binf-widgets .csui-control-typeaheadpicker {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.csui-control-typeaheadpicker .cs-search {
+.binf-widgets .cs-typeaheadfield .csui-control-typeaheadpicker .cs-search {
   position: absolute;
   width: 100%;
+  height: var(--jato-measure-32, 28px);
+  background-color: var(--jato-background-elevation-level-1, rgb(255, 255, 255));
+  border: 1px solid var(--jato-input-border-container-neutral, #a7a9ac);
+  border-block-end: 1px solid var(--jato-input-border-focus-neutral, #a7a9ac);
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) 0 0;
+  box-shadow: inset 0 -1px 0 0 transparent;
+  color: var(--jato-typography-text-color-primary, #333333);
+  font-size: var(--jatx-input-font-size, 14px);
+  line-height: 18px;
+  padding: 0 var(--jato-measure-8, 8px);
+  padding-left: 0.5em;
   padding-right: 50px;
+}
+
+
+.binf-widgets .cs-typeaheadfield .csui-control-typeaheadpicker .cs-search:focus {
+  border-block-end: 1px solid var(--jato-input-border-focus-enabled, #666666);
+  box-shadow: inset 0 -1px 0 0 var(--jato-input-border-focus-enabled, none);
+  outline: none;
+  -webkit-box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled, none);
+  border: var(--jato-measure-1, 2px) solid var(--jato-input-border-container-neutral, #666666);
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) 0 0;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .cs-typeaheadfield .csui-control-typeaheadpicker .cs-search:hover {
+  background-color: var(--jato-background-elevation-level-2-hover, #efefef);
+  border: 1px solid var(--jato-input-border-container-hover, transparent);
+  border-block-end: 1px solid var(--jato-input-border-focus-hover, #666666);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-hover, transparent);
 }
 
 .csui-control-typeaheadpicker .cs-search::-ms-clear {
@@ -19,26 +52,27 @@
 
 .csui-control-typeaheadpicker .cs-search-clear {
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: var(--jato-measure-16, 18px);
+  height: var(--jato-measure-16, 18px);
   right: 32px;
-  top: 5px;
+  top: var(--jato-measure-8, 5px);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .csui-control-typeaheadpicker .cs-search-icon {
   position: absolute;
-  width: 18px;
-  height: 18px;
-  right: 12px;
-  top: 5px;
+  width: var(--jato-measure-16, 18px);
+  height: var(--jato-measure-16, 18px);
+  right: var(--jato-measure-8, 12px);
+  top: var(--jato-measure-8, 5px);
   background-repeat: no-repeat;
 }
 
 .csui-control-typeaheadpicker .binf-dropdown-menu {
   font-size: 16px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .csui-control-typeaheadpicker .binf-dropdown-menu > li {
@@ -56,7 +90,7 @@
 }
 
 .csui-control-typeaheadpicker .binf-dropdown-menu > li > a {
-  padding: 0px 0px;
+  padding: 0 0;
 }
 
 .csui-control-typeaheadpicker .scroll-container {
@@ -70,10 +104,10 @@
 
 .csui-control-typeaheadpicker .scroll-container .binf-dropdown-menu {
   position: static;
-  border: 0px;
-  border-radius: 0px;
-  padding: 0px;
-  margin: 0px;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
   width: 100%;
   max-width:100%;
 }
@@ -106,7 +140,7 @@
 }
 
 .csui-typeaheadpicker-item .item-info > span {
-  color: #414042;
+  color: var(--jato-cta-content-color-tertiary, #414042);
 }
 
 .csui-typeaheadpicker-item .item-info.binf-disabled > span {
@@ -114,11 +148,12 @@
 }
 
 .csui-typeaheadpicker-item .item-info .name {
-  font-size: 1em;
-  line-height: normal;
+  font-size: var(--jatx-csui-menuitem-font-size, 1em);
+  line-height: var(--jatx-csui-menuitem-line-height, normal);
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: var(--jato-cta-content-color-tertiary, #414042);
 }
 
 .csui-typeaheadpicker-item .item-info .more {
@@ -155,4 +190,43 @@
 
 .csui-control-typeaheadpicker .picker-spacer{
   height:500px;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .typeahead.scroll-container ul.typeahead.binf-dropdown-menu{
+  background: var(--jato-background-elevation-level-4);
+  border-radius: 0 0 8px 8px;
+  box-shadow: var(--jato-elevation-shadow-level-4);
+  padding: 2px;
+}
+
+ [data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .typeahead.scroll-container ul.typeahead.binf-dropdown-menu >li {
+  align-items: center;
+  border-radius: 6px;
+  color: var(--jato-cta-content-color-tertiary);
+  cursor: default;
+  font-size: 13px;
+  gap: 8px;
+  line-height: 18px;
+  padding: 8px 16px 8px 8px;
+  border: none;
+  border-bottom: none;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .typeahead.scroll-container ul.typeahead.binf-dropdown-menu >li.binf-active {
+  color: var(--jato-cta-content-color-tertiary);
+  border: var(--jatx-const-none);
+  background: var(--jato-background-rows-hover);
+  cursor: pointer;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .typeahead.scroll-container ul.typeahead.binf-dropdown-menu > li > a {
+  color: var(--jato-cta-content-color-tertiary);
+  font-size: 13px;
+  gap: var(--jato-margin-med);
+  line-height: 18px;
+  background: transparent;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .typeahead.scroll-container ul.typeahead.binf-dropdown-menu > li.csui-typeahead-no-results {
+  background: var(--jato-background-rows-hover);
 }

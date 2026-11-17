@@ -1,20 +1,22 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 
 .binf-widgets .csui-action-fields {
     width: 100%;
     float: left;
-    margin: 8px 0px 12px 0px;
+    margin: 8px 0 12px 0;
 }
 
 .binf-widgets .csui-action-fields .cs-form.csui-general-form {
     width: 100%;
     min-height: auto !important;
 }
+
 .binf-widgets .csui-action-fields .general-information {
     text-align: left;
 }
+
 .binf-widgets .csui-action-fields .action-field-label-container {
     display: inline-block;
     vertical-align: top;
@@ -31,7 +33,7 @@
 }
 
 .binf-widgets .csui-action-fields label {
-    padding: 0px;
+    padding: 0;
     text-align: right;
 
 }
@@ -41,6 +43,7 @@
     width: calc(60% - 40px);
     padding: 0;
 }
+
 .binf-widgets .csui-action-fields .action-with-icon .csui-action-icon-container {
     float: left;
     margin-right: 6px;
@@ -63,6 +66,7 @@
     margin-right: 13px;
     margin-left: 1px;
 }
+
 .binf-widgets .csui-action-fields .action-with-icon span.csui-action-link {
     line-height: 25px;
     color: #1377bd;

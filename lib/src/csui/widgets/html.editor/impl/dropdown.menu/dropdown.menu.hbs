@@ -1,17 +1,26 @@
 {{#if haveEditPermission}}
-  <div class="binf-dropdown">
-    <a title="{{tooltip}}" class="binf-dropdown-toggle csui-html-editor-control"
-       href="#" data-binf-toggle="dropdown" role="button" aria-label="{{moreActionsAria}}"
-       aria-expanded="false">
+<div {{#unless isJATO}} class="binf-dropdown" {{/unless}}>
+  {{#if isJATO}}
+  <otc-button class="csui-html-editor-control" {{#if reserved}} type="status" {{/if}} id="{{buttonID}}" title="{{tooltip}}" arialabel="{{moreActionsAria}}" size="small">
+    <otc-icon {{#if reserved}} svg="{{reservedIconSVG}}" type="status" {{else}} svg="{{moreIconSVG}}" {{/if}} ispresentation></otc-icon>
+  </otc-button>
+  {{else}}
+    <button id="{{buttonID}}" title="{{tooltip}}" class="csui-html-editor-control"
+      role="button" aria-label="{{moreActionsAria}}" aria-expanded="false">
       <span class="csui-icon {{#if reserved}} csui-html-editor-reserved-icon {{/if}} {{iconClass}}">
       </span>
-    </a>
-    <ul class="binf-dropdown-menu" role="menu"></ul>
-  </div>
+    </button>
+  {{/if}}
+    <otc-menu buttonid="{{buttonID}}"  ariarole="menu"></otc-menu>
+  <div>
 {{else}}
   {{#if reserved}}
-    <span class="csui-icon csui-html-editor-reserved-readonly {{iconClass}}" title="{{tooltip}}">
-    </span>
+    {{#if isJATO}}
+      <otc-icon class="csui-html-editor-reserved-readonly" svg="{{reservedIconSVG}}" type="status" title="{{tooltip}}" ispresentation></otc-icon>
+    {{else}} 
+      <span class="csui-icon csui-html-editor-reserved-readonly {{iconClass}}" title="{{tooltip}}">
+      </span>
+    {{/if}}
   {{/if}}
 {{/if}}
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

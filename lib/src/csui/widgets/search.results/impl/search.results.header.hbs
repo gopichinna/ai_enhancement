@@ -1,26 +1,48 @@
 <div class="csui-search-header" aria-label= "{{messages.searchResultsHeaderAria}}" role="toolbar">
   <span class="csui-search-arrow-back-parent">
-    <span class="cs-go-back" tabindex="0" aria-label="{{messages.searchBackTooltip}}"
-      title="{{messages.searchBackTooltip}}" role="button"></span>
+      <otc-button class="cs-go-back" iconAppearance="{{iconTheme}}" tabindex="0"
+        {{#if isJATO}} size="small" {{else}} icon="csui_action:action_back32"mirrorIconIfRtl {{/if}} arialabel="{{messages.searchBackTooltip}}" title="{{messages.searchBackTooltip}}">
+        {{#if isJATO}}<otc-icon svg="{{backButtonIconSVG}}" type="subtle" mirrorIfRtl></otc-icon>{{/if}}
+      </otc-button>
   </span>
   {{#if messages.enableSearchFilter}}
     <span class="csui-search-facet-filter-parent binf-hidden">
-    <span class="csui-search-filter" role="button" aria-label="{{messages.filterLabelAria}}"
-       aria-expanded="{{messages.filterExpandedAria}}" title="{{messages.searchFilterTooltip}}" tabindex="0">
-    </span>
+      <otc-button class="csui-search-filter" iconAppearance="{{iconTheme}}" tabindex="0"
+        {{#if isJATO}} size="small" {{else}} icon="csui_action:action_filter32"{{/if}} arialabel="{{messages.filterLabelAria}}" title="{{messages.searchFilterTooltip}}">
+        {{#if isJATO}}<otc-icon svg="{{filterIconSVG}}" type="subtle"></otc-icon>{{/if}}
+      </otc-button>
     </span>
   {{/if}}
   {{#if enableCustomSearch}}
   <span class="csui-search-filter-parent binf-hidden">
-    <span class="csui-search-form-filter" role="button" aria-label="{{messages.searchFormLabelAria}}"
-       aria-expanded="{{messages.searchFormExpandedAria}}" title="{{messages.searchFormTooltip}}" tabindex="0">
-    </span>
+    <otc-button class="csui-search-form-filter" iconAppearance="{{iconTheme}}" tabindex="0"
+      {{#if isJATO}} size="small" {{else}} icon="csui_action:action_search32"{{/if}} arialabel="{{messages.searchFormLabelAria}}" title="{{messages.searchFormTooltip}}">
+      {{#if isJATO}}<otc-icon svg="{{searchIconSVG}}" type="subtle"></otc-icon>{{/if}}
+    </otc-button>
   </span>
   {{/if}}
   <div class="csui-search-header-title"></div>
   <div class="csui-search-right-header-container binf-hidden">
     {{#if showSaveSearch}}
     <div class="csui-save-search-tools">
+      {{#if isJATO}}
+      <otc-button class="csui-query-save" ariaHaspopup="true" type="primary" size="small"
+         ariaExpanded="false" ariaLabel="{{messages.saveAsAria}}" tabindex="0">{{messages.saveas}}</otc-button>
+      <div class="csui-segemented-save-tools binf-hidden">
+        <otc-button class="csui-segmented-save csui-segmented-update-button" size="mini" type="primary"
+        ariaLabel="{{messages.updateSavedQueryAria}}" tabindex="0">{{messages.updateSavedQuery}}</otc-button>
+        <div class="csui-segmented-dropdown">
+          <otc-button id="{{splitButtonID}}" class="csui-segmented-save csui-segmented-dropdown-button" size="mini" type="primary"
+          tabindex="0" ariaLabel="{{messages.saveOptionsAria}}">
+             <otc-icon svg="{{chevronDownSVG}}" type="subtle" isPresentation></otc-icon>
+          </otc-button>
+          <otc-menu buttonid="{{splitButtonID}}" class="csui-segmented-dropdown-menu" role="menu">
+              <otc-menuitem  class="csui-update-query">{{messages.updateSavedQuery}}</otc-menuitem>
+              <otc-menuitem class="csui-create-query">{{messages.saveas}}</otc-menuitem>
+          </otc-menu>
+        </div>
+      </div>
+      {{else}}
       <button class="binf-btn binf-btn-primary csui-query-save" aria-haspopup="true"
          aria-expanded="false" aria-label="{{messages.saveAsAria}}" tabindex="0">{{messages.saveas}}</button>
       <div class="csui-segemented-save-tools binf-hidden">
@@ -42,30 +64,45 @@
           </ul>
         </div>
       </div>
+      {{/if}}
     </div>
     {{/if}}
     <div class="csui-search-export" id="csui-search-export"></div>
     <div class="csui-search-header-action csui-search-sorting" id="csui-search-sorting"></div>
-    <span class="csui-search-header-action csui-description-toggle binf-hidden"
-          aria-label="{{messages.descriptionTitle}}" title="{{messages.descriptionTitle}}"
-          role="button" tabindex="0"></span>
+    <otc-button class="csui-search-header-action csui-description-toggle binf-hidden" iconAppearance="{{iconTheme}}"
+      arialabel="{{messages.descriptionTitle}}" title="{{messages.descriptionTitle}}" tabindex="0"
+      {{#if isJATO}} size="small" {{else}} icon="csui_action:action_reveal_description32"{{/if}}>
+      {{#if isJATO}} <otc-icon svg="{{descriptionIconSVG}}"></otc-icon> {{/if}}
+    </otc-button>
     {{#unless enablePinnedColumns}}
+    {{#if isJATO}}
+          <otc-button class="csui-search-header-action csui-tabular-view"
+        arialabel="{{messages.tabularViewIconTitle}}" title="{{messages.tabularViewIconTitle}}" tabindex="0"
+        size="small">
+        <otc-icon ispresentation></otc-icon>
+    </otc-button>
+    {{else}}
       <div class="csui-search-header-action csui-tabular-view"
           aria-label="{{messages.tabularViewIconTitle}}"
           role="button" title="{{messages.tabularViewIconTitle}}" tabindex="0">
       </div>
+     {{/if}} 
     {{/unless}}
-    {{#if messages.showSettings}}
-      <div class="csui-search-header-action csui-search-settings">
-        <div class="csui-setting-icon" title="{{messages.settingsLabel}}"
-             aria-label="{{messages.settingsLabel}}" tabindex="0"
-             role="button" aria-haspopup="true" aria-expanded="false">
-        </div>
-        <div class="csui-settings-dropdown" role='application'></div>
-      </div>
-
+    {{#if messages.showSettings}}    
+    <otc-button class="csui-search-setting csui-acc-focusable"
+      id="csui-search-setting-id"
+      title="{{messages.settingsLabel}}"
+      arialabel="{{messages.settingsLabel}}"
+      {{#if isJATO}} size="small" {{else}}
+      iconOnly icon="csui_action:action_settings32"
+      {{/if}}>
+          {{#if isJATO}}
+          <otc-icon svg="{{searchSettingsIconSVG}}"></otc-icon>
+          {{/if}}
+      </otc-button>
+      <div class="otc-settings-dropdown-view"></div>
     {{/if}}
   </div>
 </div>
 <div class="csui-table-rowselection-toolbar"></div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

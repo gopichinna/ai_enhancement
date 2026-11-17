@@ -1,0 +1,15 @@
+<div class="region-left"><h3>{{listTitle}} ({{collectionLength}})</h3></div>
+<div class="region-right">
+    {{#if isAddButtonEnabled}}
+    <div type="button" tabindex="0" class="binf-btn binf-btn-add" title="{{createCollectionTooltip}}" aria-hidden="false">
+        <span class="csui-button-icon icon-add"></span>
+    </div>
+    {{/if}}
+    <div type="button" tabindex="0" class="binf-btn binf-btn-expand"  title="{{collapseTooltip}}" aria-hidden="false"> 
+        <span class="csui-button-icon icon-expandArrowUp"></span>
+    </div>
+    <div type="button" tabindex="0" class="binf-btn binf-btn-collapse" title="{{expandTooltip}}" aria-hidden="false"> 
+        <span class="csui-button-icon icon-expandArrowDown"></span>
+    </div>
+</div>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,15 @@
+{{#if jatoIcon}}
+    <otc-icon svg="{{jatoIcon}}" size="16" type="" ispresentation="" class="smart-icon-label-icon"></otc-icon>
+{{else}}
+  {{#if iconText}}
+    <div class="smart-cf-icon-svg-text">{{{iconText}}}</div>
+  {{else}}
+    <otc-icon icon="{{icon}}" ispresentation="" disableEffects="" class="smart-icon-label-icon"></otc-icon>
+  {{/if}}
+{{/if}}
+{{#if title}}
+    <div class="smart-icon-label-label">
+        {{title}}
+    </div>
+{{/if}}
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

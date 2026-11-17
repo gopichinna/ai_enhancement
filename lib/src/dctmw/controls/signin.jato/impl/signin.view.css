@@ -1,0 +1,294 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.dctm-signin-view .opentext-logo {
+    color: var(--jato-typography-text-color-product-name);
+    background-image: url(images/opentextlogo.svg);
+    background-repeat: no-repeat;
+    height: 47.25px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .dctm-signin-view .opentext-logo {
+        background-image: url(images/opentextlogo-dark.svg);
+    }
+}
+
+[data-smart-theme="dark"] {
+    .dctm-signin-view .opentext-logo {
+        background-image: url(images/opentextlogo-dark.svg);
+    }
+}
+
+[data-smart-theme="light"] {
+    .dctm-signin-view .opentext-logo {
+        background-image: url(images/opentextlogo.svg);
+    }
+}
+
+
+
+.dctm-signin-view {
+    & {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        font-family: var(--jato-font-family-default);
+    }
+
+    .signin-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: var(--jato-padding-content-med);
+        background: var(--jato-signin-modal-background);
+        box-shadow: 0 12px 24px 0 #0000001F;
+        backdrop-filter: blur(90px);
+        border-radius: var(--jato-radii-xxl);
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 1;
+    }
+
+    .signin-frame,
+    .inputs-and-buttons>form,
+    .inputs-frame {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signin-frame {
+        width: 384px;
+        gap: 10px;
+    }
+
+    .signin-container-wrapper {
+        z-index: 1;
+    }
+
+    .branding-header {
+        .primary-name,
+        .secondary-name,
+        .version-name {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: var(--jato-line-height-3xl);
+            letter-spacing: -0.02em;
+            color: var(--jato-typography-text-color-product-name);
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
+        }
+
+        .secondary-name {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .version-name {
+            height: var(--jato-size-height-24);
+            font-size: 14px;
+            line-height: 24px;
+            opacity: 0.65;
+        }
+    }
+
+    .inputs-and-buttons>form {
+        gap: 16px;
+    }
+
+    .inputs-and-buttons {
+        padding-top: 10px;
+    }
+
+    .inputs-frame {
+        & {
+            gap: 12px;
+        }
+
+        .dctmw-repositories,
+        .dctmw-application,
+        .dctmw-location {
+            background: var(--jato-background-elevation-level-1);
+            border-width: 1px 1px 0 1px;
+            border-radius: 6px 6px 0 0;
+            border-style: solid;
+            border-color: var(--jato-input-border-container-neutral);
+        }
+
+        select {
+            border-color: var(--jato-cta-links-text-color-neutral);
+            border-style: solid;
+            border-width: 0;
+            border-bottom: 1px solid var(--jato-input-border-focus-neutral, #707275);
+            border-radius: var(--jato-radii-med) var(--jato-radii-med) 0 0;
+            width: 100%;
+            height: var(--jato-size-height-40);
+            background-color: inherit;
+            font-style: normal;
+            font-weight: 400;
+            font-size: var(--jato-font-size-reg);
+            padding-left: 4px;
+        }
+
+        select:hover:enabled {
+            background: var(--jato-cta-background-secondary-hover);
+            color: var(--jato-cta-links-text-color-hover);
+            border-color: var(--jato-cta-links-text-color-hover);
+        }
+
+        select:active:enabled {
+            background: var(--jato-cta-background-secondary-active);
+            color: var(--jato-cta-links-text-color-active);
+            border-color: var(--jato-cta-links-text-color-active);
+        }
+
+        select option {
+            color: var(--jato-typography-text-color-primary);
+            background-color: var(--jato-background-elevation-level-1);
+        }
+    }
+
+    .buttons-frame {
+        .button {
+            width: 100%;
+            height: var(--jato-size-height-48);
+            gap: 6px;
+            border-radius: var(--jato-radii-med);
+            border: 2px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            align-items: center;
+            border: none;
+            background: linear-gradient(143.99deg, var(--jato-signin-cta-background-primary-neutral-00) 7.96%, var(--jato-signin-cta-background-primary-neutral-01) 100%);
+            color: var(--jato-cta-content-color-primary, #FFFFFF);
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .button:disabled {
+            color: var(--jato-color-navy-2570);
+            border: var(--jato-border-weight-2) solid var(--jato-signin-cta-border-color-disabled, #A9BDF5);
+            background: none;
+        }
+
+        .button:hover:enabled {
+            color: var(--jato-cta-content-color-primary);
+            background: linear-gradient(143.99deg, var(--jato-signin-cta-background-primary-hover-00) 7.96%, var(--jato-signin-cta-background-primary-hover-01) 100%);
+        }
+
+        .button:active:enabled {
+            color: var(--jato-cta-content-color-primary);
+            border: 1px solid var(--signin-cta-border-color-active, #FFFFFF);
+            background: var(--signin-cta-background-primary-active, #0029BF);
+        }
+    }
+}
+
+.dctm-signin-view {
+    & {
+        overflow: auto;
+    }
+
+    .message-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        isolation: isolate;
+        width: 384px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        border-width: 1px 1px 2px 1px;
+
+        .message-box-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: var(--jato-padding-med);
+            gap: 24px;
+            isolation: isolate;
+            border-width: 1px 1px 2px 1px;
+            border-style: solid;
+            border-radius: var(--jato-radii-sm);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            flex: none;
+            order: 1;
+            flex-grow: 1;
+            z-index: 1;
+        }
+
+        .message-icon-and-text {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 3px 0;
+            gap: 8px;
+            width: 370px;
+            font-size: 13px;
+            font-weight: 600;
+            flex: none;
+            order: 0;
+            flex-grow: 1;
+            z-index: 0;
+        }
+
+        
+        .info-box-container {
+            border-color: var(--jato-messages-inline-border-information);
+            background: var(--jato-messages-inline-background-information);
+        }
+
+        .warning-box-container {
+            border-color: var(--jato-messages-inline-border-warning);
+            background: var(--jato-messages-inline-background-warning);
+        }
+
+        .error-box-container {
+            border-color: var(--jato-messages-inline-border-error);
+            background: var(--jato-messages-inline-background-error);
+        }
+    }
+}
+
+
+@media screen and (width <=527px) {
+    .dctm-signin-view {
+        & {
+            align-items: start;
+        }
+
+        .signin-container {
+            background: var(--jato-signin-background);
+            box-shadow: none;
+            border: none;
+            border-radius: 0;
+        }
+    }
+}
+
+@media screen and (width < 1000px) {
+    .dctm-signin-view {
+        .signin-frame {
+            width: 304px;
+        }
+
+        .message-box {
+            width: 304px;
+
+            .message-icon-and-text {
+                width: 290px;
+            }
+        }
+    }
+}

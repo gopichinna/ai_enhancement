@@ -1,6 +1,14 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) { 
+  --jatx-csui-const-transparent: transparent;
+  --jatx-csui-const-auto: auto;
+  --jatx-csui-const-normal: normal;
+  --jatx-csui-const-font-weight-400: 400;
+  --jatx-csui-const-font-size-14: 14px;
+}
+
 
 body.binf-widgets {
   
@@ -15,6 +23,7 @@ body.binf-widgets.binf-modal-open {
 
 
 
+
 body.binf-widgets .binf-modal {
   min-width: 320px;
 }
@@ -26,4 +35,86 @@ body.bin-widgets .binf-modal-backdrop {
 
 .mouse-blocked {
   pointer-events: none;
+}
+
+:root {
+    
+    --csui-custom-branding-text-color: var(--jato-brand-product-name);
+    --csui-custom-branding-otc-icon-content-color-tertiary: var(--jatx-otc-icon-content-color-tertiary);
+    --csui-custom-cta-background-tertiary-hover: var(--jato-cta-background-tertiary-hover);
+    --csui-custom-jato-cta-background-tertiary-active: var(--jato-cta-background-tertiary-active);
+
+    
+    --temp-otc-icon-content-color-tertiary: var(--jatx-otc-icon-content-color-tertiary);
+    --temp-cta-background-tertiary-hover: var(--jato-cta-background-tertiary-hover);
+    --temp-jato-cta-background-tertiary-active: var(--jato-cta-background-tertiary-active);
+}
+
+.pman-dark-header-container.csui-app-header-invert[data-smart-theme=dark] .smart-app-header-wrapper .smart-application-header  {
+    --csui-custom-branding-text-color: var(--jato-color-black-0000);
+    --csui-custom-branding-otc-icon-content-color-tertiary: var(--jato-color-charcoal-0315);
+}
+
+.pman-light-header-container.csui-app-header-invert[data-smart-theme=light]  .smart-app-header-wrapper .smart-application-header  {
+  --csui-custom-branding-text-color: var(--jato-color-white-10000);  
+  --csui-custom-branding-otc-icon-content-color-tertiary: var(--jato-color-charcoal-7365);
+}
+
+div.pman-dark-header-container[data-smart-theme=dark] .smart-app-header-wrapper .smart-application-header {
+  --csui-custom-branding-text-color: var(--jato-color-white-10000);  
+  --csui-custom-branding-otc-icon-content-color-tertiary: var(--jato-color-charcoal-7365);
+  --csui-custom-cta-background-tertiary-hover: var(--jato-color-white-10000-a010);
+  --csui-custom-jato-cta-background-tertiary-active: var(--jato-color-white-10000-a015);
+}
+
+div.pman-light-header-container[data-smart-theme=light]  .smart-app-header-wrapper .smart-application-header {
+    --csui-custom-branding-text-color: var(--jato-color-black-0000);
+    --csui-custom-branding-otc-icon-content-color-tertiary: var(--jato-color-charcoal-0315);
+    --csui-custom-cta-background-tertiary-hover: var(--jato-color-black-0000-a010);
+    --csui-custom-jato-cta-background-tertiary-active:var(--jato-color-black-0000-a015);
+}
+
+[data-smart-theme=dark] .smart-app-header-wrapper.csui-app-header-invert .smart-application-header  {
+    --csui-custom-branding-text-color: var(--jato-color-black-0000);
+    --csui-custom-branding-otc-icon-content-color-tertiary: var(--jato-color-charcoal-0315);
+    --csui-custom-cta-background-tertiary-hover: var(--jato-color-black-0000-a010);
+    --csui-custom-jato-cta-background-tertiary-active:var(--jato-color-black-0000-a015);
+}
+
+[data-smart-theme=light] .smart-app-header-wrapper.csui-app-header-invert .smart-application-header  {
+  --csui-custom-branding-text-color: var(--jato-color-white-10000);  
+  --csui-custom-branding-otc-icon-content-color-tertiary: var(--jato-color-charcoal-7365);
+  --csui-custom-cta-background-tertiary-hover: var(--jato-color-white-10000-a010);
+  --csui-custom-jato-cta-background-tertiary-active: var(--jato-color-white-10000-a015);
+}
+
+
+
+
+
+
+.smart-application-header otc-search-slidein[expanded], 
+.smart-application-header .csui-favorites otc-typeahead-search,
+.smart-application-header .csui-favorites otc-button,
+.smart-application-header .csui-favorites otc-button otc-icon,
+.smart-application-header .csui-favorites otc-icon {
+    --jatx-otc-icon-content-color-tertiary: var(--temp-otc-icon-content-color-tertiary);
+    --jatx-otc-icon-content-color-tertiary-hover: var(--temp-otc-icon-content-color-tertiary);
+    --jato-cta-background-tertiary-hover: var(--temp-cta-background-tertiary-hover);
+    --jato-cta-background-tertiary-active: var(--temp-jato-cta-background-tertiary-active)
+}
+
+
+
+.smart-application-header{
+    
+
+    
+    --jato-brand-product-name: var(--csui-custom-branding-text-color);
+
+    
+    --jatx-otc-icon-content-color-tertiary: var(--csui-custom-branding-otc-icon-content-color-tertiary);
+    --jatx-otc-icon-content-color-tertiary-hover: var(--csui-custom-branding-otc-icon-content-color-tertiary);
+    --jato-cta-background-tertiary-hover: var(--csui-custom-cta-background-tertiary-hover);
+    --jato-cta-background-tertiary-active: var(--csui-custom-jato-cta-background-tertiary-active);
 }

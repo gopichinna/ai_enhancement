@@ -1,0 +1,51 @@
+#customized configuration
+extends: stylelint-config-standard
+rules:
+  at-rule-no-unknown:
+    -
+  color-hex-length: long
+  unit-no-unknown:
+  declaration-block-no-duplicate-properties:
+    -
+    - ignore:
+        - consecutive-duplicates-with-different-values
+  declaration-empty-line-before:
+  declaration-property-unit-allowed-list:
+  no-duplicate-selectors:
+  selector-id-pattern:
+  media-feature-name-no-vendor-prefix:
+  selector-class-pattern:
+  selector-max-compound-selectors:
+  selector-max-id:
+  selector-attribute-quotes:
+  function-url-quotes:
+  selector-not-notation:
+  declaration-block-single-line-max-declarations:
+  font-family-no-duplicate-names:
+  font-family-name-quotes:
+  selector-pseudo-element-colon-notation:
+  media-feature-name-no-unknown:
+  at-rule-no-vendor-prefix:
+  declaration-block-no-shorthand-property-overrides:
+  value-no-vendor-prefix:
+  font-family-no-missing-generic-family-keyword:
+  no-descending-specificity:
+  selector-pseudo-class-no-unknown:
+    -
+    - ignorePseudoClasses:
+        - global
+  no-invalid-position-at-import-rule:
+  selector-no-vendor-prefix:
+  alpha-value-notation:
+  color-function-notation:
+  value-keyword-case:
+  shorthand-property-no-redundant-values:
+  declaration-block-no-redundant-longhand-properties:
+  keyframes-name-pattern:
+  number-max-precision:
+  property-no-vendor-prefix:
+  no-empty-source:
+  function-linear-gradient-no-nonstandard-direction:
+  function-no-unknown:
+  selector-type-no-unknown:
+  selector-type-case:

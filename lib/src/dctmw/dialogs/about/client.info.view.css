@@ -1,0 +1,42 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.dctmw-about-dialog .client-info {
+    font-family: var(--jato-font-family-default), Arial, sans-serif;
+    max-width: 97%;
+}
+
+[data-smart-theme=cf] .dctmw-about-dialog .client-info {
+    padding: 16px 32px 32px 32px;
+}
+
+.client-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.client-info li {
+    margin-bottom: 5px;
+}
+
+.client-info .category {
+    font-size: var(--jato-font-size-sm, 12px);
+    color: var(--jato-typography-text-color-tertiary, #4A4A4A);
+    display: block;
+    line-height: 28px;
+}
+
+.client-info .version,
+.client-info .plugin {
+    font-size: 14px;
+    color: var(--jato-typography-text-color-primary, #000000);
+    display: block;
+    padding: 0 0 0 16px;
+    line-height: 28px;
+}
+
+.client-info .plugin {
+    max-width: 97%;
+    padding-right: var(--jato-padding-content-sm, 32px);
+}

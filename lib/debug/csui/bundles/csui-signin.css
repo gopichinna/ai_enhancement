@@ -1,3 +1,5 @@
+/* css!csui/controls/signin/impl/css/signin */
+
 .cs-signin.cs-signin {
   padding-top: 100px;
   width: 100%;
@@ -11,12 +13,10 @@
   margin: 0 auto;
 }
 
-.cs-signin .branding {
-}
-
 .cs-signin .login-form-wrapper {
   margin-bottom: 20px;
 }
+
 .cs-signin .binf-form-group {
   width: 395px;
   margin: 0 auto;
@@ -29,7 +29,8 @@
 .cs-signin .textbox {
   width: 395px;
   margin-bottom: 20px;
-  /*background-color: #E5F0F4;*/
+
+  /* background-color: #E5F0F4; */
 }
 
 .cs-signin ::-webkit-input-placeholder{
@@ -73,7 +74,7 @@
 }
 
 .cs-signin .forgot-password a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -139,8 +140,11 @@
    element id to override the Chrome user stylesheet, which uses tag name */
 #inputUsername:-webkit-autofill,
 #inputPassword:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
 }
+
+/* css!csui/pages/signin/impl/signin.page */
+
 .binf-widgets * {
   margin: 0;
 }
@@ -165,6 +169,9 @@ html, body.binf-widgets {
   color: #ffffff;
   margin: 0 auto;
 }
+
+/* css!csui/utils/authenticators/impl/redirecting.form.authenticator */
+
 .csui-signin-close.csui-with-iframe {
   position: absolute;
   right: 0;

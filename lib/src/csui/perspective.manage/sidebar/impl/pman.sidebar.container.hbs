@@ -1,16 +1,28 @@
 <div class="csui-ribbon-panel csui-normal-scrolling">
     <ul class="csui-pman-sidebar-ribbon"></ul>
-    <button class="icon icon-help" title="Help"></button>
+	{{#if isJato}}
+		<otc-button class="icon otIcon-help" size="regular" type="subtle" title="{{this.help}}">
+			<otc-icon svg="{{jatoIconHelp}}" ispresentation></otc-icon>
+		</otc-button>
+	{{else}}
+    	<button class="icon icon-help" title="{{this.help}}"></button>
+	{{/if}}
 </div>
 
 <div class="csui-sidebar-slide-container">
     <div class="csui-sidebar-slide-main">
         <div class="csui-sidebar-slide-header">
 			<h3 class="csui-sidebar-slide-title">{{title}}</h3>
-			<div class="csui-sidebar-slide-close" title="{{this.sideBarCloseIcon}}" aria-label="{{this.sideBarCloseIcon}}"> 
+			{{#if isJato}}
+				<otc-button class="csui-sidebar-slide-close" size="small" type="subtle" title="{{this.sideBarCloseIcon}}" id="{{this.title}}" tabindex='0' ariaLabel="{{this.sideBarCloseIcon}}">
+					<otc-icon svg="{{jatoIconClose}}" ispresentation></otc-icon>
+				</otc-button>
+			{{else}}
+    			<div class="csui-sidebar-slide-close" title="{{this.sideBarCloseIcon}}" aria-label="{{this.sideBarCloseIcon}}" tabindex='0' id="{{this.title}}"> 
 			</div>
+			{{/if}}
 		</div>
 		<div class="csui-sidebar-slide-body"></div>
 	</div>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,12 +1,20 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) { 
+  --jatx-csui-const-unset: unset;
+}
+
 .binf-widgets .csui-search-expandall-text {
-  padding-right: 5px;
+  padding-right: var(--jatx-csui-const-unset, 5px);
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
+  width: calc(100% - 14px);
+  line-height: var(--jato-measure-16, normal);
+  font-size: var(--jato-measure-12, 100%);
+  font-weight: 400;
 }
 
 .binf-widgets .csui-search-header-expand-all {
@@ -14,7 +22,6 @@
   border: none;
   background-color: transparent;
   padding: 0;
-  height: calc(100% - 2px);
 }
 
 .binf-widgets .csui-search-header-expand-all > .icon {
@@ -24,8 +31,4 @@
 
 .binf-widgets .csui-search-header-expand-all.icon-expandArrowUp {
   position: inherit;
-}
-
-.binf-widgets .csui-search-header-expand-all:focus {
-  outline: 1px dotted black;
 }

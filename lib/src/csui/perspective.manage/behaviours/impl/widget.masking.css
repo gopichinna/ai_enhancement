@@ -1,6 +1,14 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-pman-widget-error-heading-height: 56px;
+  --jatx-csui-pman-widget-error-heading-font-size: 18px;
+  --jatx-csui-pman-widget-error-heading-font-weight: 600;
+  --jatx-csui-pman-widget-personalize-mask-border: 2px solid var(--jato-border-color-primary);
+}
+
+
 .perspective-editing .csui-configure-perspective-widget {
   position: absolute;
   top: 0;
@@ -30,15 +38,15 @@
 }
 
 .binf-widgets .csui-perspective-placeholder.csui-widget-drop, .binf-widgets .pman-dnd-hover-placeholder .csui-perspective-placeholder {
-  border: 2px solid #09bcef;
-  background-color: rgba(157, 228, 249, 0.2);
+  border: 2px solid var(--jato-border-color-primary-selected, #09bcef);
+  background-color: var(--jato-background-mask-page, rgba(157, 228, 249, 0.2));
 }
 
 .binf-widgets .csui-configure-perspective-widget .csui-pman-perspective-actions {
   display: none;
   position: absolute;
   right: -8px;
-  top: -8px;
+  top: calc(-1 * var(--jato-measure-12, 8px));
   justify-content: space-between;
 }
 
@@ -46,7 +54,7 @@
   width: 24px;
   height: 24px;
   border: none;
-  background-color: transparent;
+  background-color: var( --jato-background-elevation-level-4, transparent);
   margin-left: 10px;
 }
 
@@ -54,11 +62,19 @@
   width: 24px;
   height: 24px;
   border: 0 none;
+  background-color: var( --jato-background-elevation-level-4, initial);
 }
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-configure-perspective-widget .csui-pman-widget-edit,
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-configure-perspective-widget .csui-pman-widget-close {
+  --jatx-otc-button-small-border-radius: 50%;
+  background-color: var( --jato-background-elevation-level-4); 
+}
+
 
 .binf-widgets .cs-zone-perspective .csui-pman-perspective-actions,
 .binf-widgets .cs-grid-perspective .csui-pman-perspective-actions {
-  top: -16px;
+  top: calc(-1 * var(--jato-measure-12, 16px));
 }
 
 .binf-widgets .csui-shortcut-container .csui-pman-perspective-actions {
@@ -137,36 +153,36 @@
   width: -moz-min-content;
 }
 
-.perspective-editing .binf-popover {
+[data-smart-theme="cf"] .perspective-editing .binf-popover {
   background-color: #f7f7f7;
-  border-radius: 0px;
+  border-radius: 0;
   border: 0 none;
-  padding: 0px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  padding: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 
 .perspective-editing .binf-popover .binf-popover-content {
-  padding: 0px 0px;
+  padding: 0 0;
   min-width: inherit;
   max-width: inherit;
 }
 
-.perspective-editing .binf-popover.binf-right .binf-popover-content {
+[data-smart-theme="cf"] .perspective-editing .binf-popover.binf-right .binf-popover-content {
   border-left: 4px solid #09bcef;
 }
 
-.perspective-editing .binf-popover.binf-left .binf-popover-content {
+[data-smart-theme="cf"] .perspective-editing .binf-popover.binf-left .binf-popover-content {
   border-right: 4px solid #09bcef;
 }
 
-html[dir="rtl"] .perspective-editing .binf-popover.binf-right .binf-popover-content {
+html[dir="rtl"][data-smart-theme="cf"] .perspective-editing .binf-popover.binf-right .binf-popover-content {
   border-right: 4px solid #09bcef;
-  border-left: 0px;
+  border-left: 0;
 }
 
-html[dir="rtl"] .perspective-editing .binf-popover.binf-left .binf-popover-content {
+html[dir="rtl"][data-smart-theme="cf"] .perspective-editing .binf-popover.binf-left .binf-popover-content {
   border-left: 4px solid #09bcef;
-  border-right: 0px;
+  border-right: 0;
 }
 
 .perspective-editing .binf-arrow:after {
@@ -200,17 +216,25 @@ html[dir="rtl"] .perspective-editing .binf-popover.binf-left > .binf-arrow:after
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: #f7f7f7;
+  background-color: var(--jato-background-elevation-level-2, #f7f7f7);
   display: none;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .perspective-editing .csui-pman-widget-error {
+  border: 1px solid var(--jato-border-color-primary);
+  border-radius: var(--jato-radii-lrg);
+  box-shadow: var(--jato-elevation-shadow-level-2);
+}
+
 .perspective-editing .csui-pman-widget-error .csui-pman-widget-error-heading {
-  height: 48px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #cbd3d9;
-  font-size: 20px;
+  height: var(--jatx-csui-pman-widget-error-heading-height, 48px);
+  background-color: var(--jato-background-elevation-level-2, #ffffff);
+  border-bottom: var(--jatx-const-0, 1px) solid #cbd3d9;
+  border-radius: var(--jato-radii-lrg, initial);
+  font-size: var(--jatx-csui-pman-widget-error-heading-font-size, 20px);
+  font-weight: var(--jatx-csui-pman-widget-error-heading-font-weight, initial);
   line-height: 48px;
-  color: #00639b;
+  color: var(--jato-typography-text-color-primary, #00639b);
   padding: 0 16px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -231,15 +255,20 @@ html[dir="rtl"] .perspective-editing .binf-popover.binf-left > .binf-arrow:after
   height: 80px;
 }
 
+.perspective-editing .csui-pman-widget-error .csui-pman-widget-error-body .csui-pman-widget-error-jato-icon {
+  width: var(--jato-measure-72);
+  height: var(--jato-measure-72);
+}
+
 .perspective-editing .csui-pman-widget-error .csui-pman-widget-error-body .csui-pman-widget-error-message {
   margin-top: 12px;
   font-size: 18px;
   line-height: 20px;
-  color: #666666;
+  color: var(--jato-typography-text-color-primary, #666666);
   text-align: center;
 }
 
-.perspective-editing .binf-row > .csui-pman-editable-widget .csui-configure-perspective-widget.binf-perspective-has-error {
+[data-smart-theme="cf"] .perspective-editing .binf-row > .csui-pman-editable-widget .csui-configure-perspective-widget.binf-perspective-has-error {
   border-bottom: 4px solid #df3324;
 }
 
@@ -264,18 +293,20 @@ html[dir="rtl"] .perspective-editing .binf-popover.binf-left > .binf-arrow:after
 .perspective-editing .csui-configure-perspective-widget.csui-pman-widget-mode-personalize:hover .csui-pman-widget-personalize-mask,
 .perspective-editing .csui-configure-perspective-widget.csui-pman-widget-mode-personalize .wrapper-button:focus + .csui-pman-widget-masking .csui-pman-widget-personalize-mask,
 .perspective-editing .csui-configure-perspective-widget.csui-pman-widget-mode-personalize.csui-pman-widget-active .csui-pman-widget-personalize-mask {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, #ffffff 100%);
+  background: var(--jato-background-mask-page, linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, #ffffff 100%));
   display: flex;
+  border: var(--jatx-csui-pman-widget-personalize-mask-border, unset);
 }
 
 .perspective-editing .csui-configure-perspective-widget.csui-pman-widget-mode-personalize.csui-pman-widget-state-hidden .csui-pman-widget-personalize-mask {
-  background: linear-gradient(180deg, rgba(130, 139, 193, 0.4) 0%, #828bc1 100%);
+  background: var(--jato-background-mask-page, linear-gradient(180deg, rgba(130, 139, 193, 0.4) 0%, #828bc1 100%));
   display: flex;
+  border: var(--jatx-csui-pman-widget-personalize-mask-border, unset);
 }
 
 .perspective-editing .csui-configure-perspective-widget.csui-pman-widget-mode-personalize.csui-pman-widget-state-hidden:hover .csui-pman-widget-personalize-mask,
 .perspective-editing .csui-configure-perspective-widget.csui-pman-widget-mode-personalize.csui-pman-widget-state-hidden.csui-pman-widget-active .csui-pman-widget-personalize-mask {
-  background: linear-gradient(180deg, rgba(130, 139, 193, 0.2) 0%, rgba(130, 139, 193, 0.5) 100%);
+  background: var(--jato-background-mask-page, linear-gradient(180deg, rgba(130, 139, 193, 0.2) 0%, rgba(130, 139, 193, 0.5) 100%));
 }
 
 .perspective-editing .csui-configure-perspective-widget .csui-pman-personalize-btn {
@@ -284,13 +315,14 @@ html[dir="rtl"] .perspective-editing .binf-popover.binf-left > .binf-arrow:after
   display: inline-flex;
   align-items: center;
   text-align: center;
-  padding: 0px 24px;
+  padding: 0 24px;
   border-radius: 16px;
   color: #ffffff;
 }
 
-.perspective-editing .csui-configure-perspective-widget .csui-pman-personalize-btn.csui-pman-hide-show-toggle {
-  background: #171f4c;
+[data-smart-theme]:not([data-smart-theme='cf']) .perspective-editing .csui-configure-perspective-widget .csui-pman-personalize-btn {
+  position: absolute;
+  top: 50%;
 }
 
 .perspective-editing .csui-configure-perspective-widget .csui-pman-personalize-btn.csui-pman-show-widget {

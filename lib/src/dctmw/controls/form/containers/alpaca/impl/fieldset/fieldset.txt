@@ -1,0 +1,12 @@
+<div class="binf-col-md-12 dctm-set-container dctm-container dctm-fieldset-layout dctm-nested-fieldset-layout">
+     <h5 class='dctm-nested-fieldset-layout-heading'>{{options.containerLabel}}</h5>
+
+{{#each items}}
+      <div class='binf-col-md-12'>
+        <div class=' {{#xif "this.options.stretch === true"}}  binf-col-md-12{{else}}binf-col-md-6{{/xif}} dctmw-control cs-form-doublecolumn'>
+          {{#item}}{{/item}}
+        </div>
+      </div>
+{{/each}}
+</div>
+

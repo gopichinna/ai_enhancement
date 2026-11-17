@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 
 .binf-widgets .csui-visual-count-container{
@@ -17,23 +17,23 @@
 }
 
 .binf-widgets .csui-visual-count-chart-container .csui-visual-count-axis text {
-    fill: #000;
+    fill: #000000;
 }
 
 .binf-widgets .csui-visual-count-chart-container .csui-visual-count-value-label {
-    fill: #000;
+    fill: #000000;
     pointer-events: none;
 }
 
 .binf-widgets .csui-visual-count-chart-container .csui-visual-count-value-label.inside {
     font-weight: bold;
-    fill: #fff;
+    fill: #ffffff;
     -webkit-filter: drop-shadow(1px 2px 1px rgba(0,0,0,0.8));
     filter: drop-shadow(1px 2px 1px rgba(0,0,0,0.8));
 }
 
 .binf-widgets .csui-visual-count-chart-container .csui-visual-count-chart-label.outside {
-    fill: #333;
+    fill: currentColor;
     cursor: default;
 }
 
@@ -52,14 +52,18 @@
 
 .binf-widgets .csui-visual-count-chart-container .csui-visual-count-gridline, .csui-visual-count-chart-container .domain {
     pointer-events: none;
-    stroke: #000;
+    stroke: #000000;
     stroke-opacity: 0.05;
     shape-rendering: crispEdges;
 }
 
 .binf-widgets .csui-visual-count-chart-container .csui-visual-count-pie-total-label-disc {
-    fill: #fff;
-    stroke: #eee;
+    fill: #ffffff;
+    stroke: var(--jato-background-elevation-level-3, #eeeeee);
+}
+
+.binf-widgets .csui-visual-count-chart-container .csui-visual-count-pie-total-label-disc>circle {
+    fill: var(--jato-background-elevation-gradient-control-level-0, #f7f7f7);
 }
 
 .binf-widgets .csui-visual-count-container div.csui-visual-count-outer-border {
@@ -75,11 +79,11 @@
 .binf-widgets .csui-visual-count-chart-container .csui-visual-count-zero-line {
     stroke-opacity: 0.4;
     shape-rendering: crispedges;
-    stroke: #000;
+    stroke: #000000;
 }
 
 .binf-widgets .csui-visual-count-chart-container .csui-visual-count-chart-labelline {
-    stroke: #999;
+    stroke: #999999;
     stroke-width: 1px;
 }
 
@@ -98,7 +102,7 @@
 .binf-widgets .csui-visual-count-empty-container .csui-visual-count-nodata-message {
     font-size: 18px;
     margin: 0;
-    color: #333;
+    color: #333333;
     font-style: normal;
     font-weight: 200;
     text-align: center;
@@ -125,7 +129,7 @@
     background-color: #292a2d;
     border: 1px solid #cfd1d4;
     padding: 4px 8px;
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
     max-width: 300px;
     font-size: 12px;
     opacity: 0;
@@ -155,6 +159,7 @@
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }

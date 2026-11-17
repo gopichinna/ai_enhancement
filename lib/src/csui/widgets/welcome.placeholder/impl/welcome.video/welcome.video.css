@@ -1,11 +1,12 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .cs-dialog.welcome-video.binf-modal .binf-modal-backdrop.binf-in{
   background-color: rgba(65, 64, 66, 0.85);
   opacity: 1;
 
   min-width: 640px;
+
   
 }
 
@@ -37,6 +38,7 @@
   min-width: 640px;
   margin: auto;
 }
+
 .cs-dialog.welcome-video.binf-modal .binf-modal-content{
   background-color: transparent;
   box-shadow: none;
@@ -48,15 +50,17 @@
   height: auto !important;
   min-width: 640px;
   background-color: transparent;
-  box-shadow: #000 0px 0px 6px;
+  box-shadow: #000000 0 0 6px;
 }
 
 .cs-dialog.welcome-video.binf-modal.mobile .binf-modal-content{
-  box-shadow: #000 0px 0px 6px;
+  box-shadow: #000000 0 0 6px;
 }
+
 .cs-dialog.welcome-video.binf-modal.mobile .binf-modal-content > video {
   box-shadow: none;
 }
+
 .cs-dialog.welcome-video.binf-modal .binf-modal-content > video::-webkit-media-controls-overlay-enclosure{
   
 }

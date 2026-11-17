@@ -1,0 +1,19 @@
+{{#each items}}
+  {{#if this.isGroupStart}}
+    <otc-menugroup>
+  {{/if}}
+  {{#if this.isGroupEnd}}
+    </otc-menugroup>
+  {{/if}}
+  {{#if this.isDivider}}
+    <otc-menudivider></otc-menudivider>
+  {{/if}}
+  {{#if this.isCheckable}}
+    <otc-menuradio data-csui-command="{{this.signature}}" {{#if this.isChecked}}checked{{/if}}>{{this.name}}</otc-menuradio>
+  {{/if}}
+  {{#if this.isItem}}
+    <otc-menuitem data-csui-command="{{this.signature}}">{{this.name}}</otc-menuitem>
+  {{/if}}
+{{/each}}
+
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

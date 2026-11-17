@@ -1,13 +1,51 @@
 {{#if sortEnable}}
-  <div class="csui-search-sort-options ">
-    <button id="{{id}}" type="button" class="binf-btn binf-btn-default binf-dropdown-toggle"
-            data-binf-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="{{sortButtonAria}}">
-      <span class="cs-label">{{title}}</span>
-      <span class="cs-icon icon-caret-down"></span>
-    </button>
-    <ul class="binf-dropdown-menu csui-normal-scrolling" role="menu" aria-label="{{listAria}}"></ul>
+  <div class="csui-search-sort-options">
+    {{#if isJatoTheme}}
+      <otc-button
+        id="{{id}}"
+        class="cs-dropdown-button open-sort-menu"
+        type="subtleDropdown"
+        title="{{titleVal}}"
+        size="small"
+        arialabel="{{sortButtonAria}}"
+      >
+        {{selectedTitle}}
+      </otc-button>
+    {{else}}
+      <button
+        id="{{id}}"
+        type="button"
+        class="binf-btn binf-btn-default open-sort-menu"
+        aria-haspopup="true"
+        aria-expanded="false"
+        title="{{titleVal}}"
+        tabindex="0"
+        aria-label="{{sortButtonAria}}"
+        >
+        <span class="cs-label">{{selectedTitle}}</span>
+        <span class="cs-icon icon-caret-down"></span>
+      </button>
+    {{/if}}
+    <otc-menu
+      class="csui-table-settings-dropdown"
+      buttonId="{{id}}"
+      ariarole="menu"
+      arialabel="{{listAria}}"
+      maxitems="0"
+      scrollable="">
+    </otc-menu>
   </div>
-  <a href="javascript:void(0);" class="cs-icon search-sort-btn icon-sortArrowDown"></a>
+  {{#if isJatoTheme}}
+    {{#if displaySortArrow}}
+      <a href="#" role="button" class="search-sort-btn" title="{{titleArrow}}" tabindex="0">
+        <otc-icon svg="{{jatoOrderIcon}}" size="18" type="subtle"></otc-icon>
+      </a>
+    {{/if}}
+  {{else}}
+    {{#if displaySortArrow}}
+      <a href="#" role="button" class="cs-icon search-sort-btn {{orderIcon}}" title="{{titleArrow}}" tabindex="0"></a>
+    {{/if}}
+  {{/if}}
 {{/if}}
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,17 +1,30 @@
 <div class="csui-selected-member" id="{{id}}">
   <div class="member-picture binf-pull-left">
-    <span class="csui-icon-paceholder csui-icon image_user_placeholder">{{initials}}</span>
-    <img class="csui-icon-user csui-icon binf-img-circle binf-hidden" alt="{{name}}"
-         src="{{userImgSrc}}">
+    {{#if isGroup}}
+    {{#if svgMimeGroup}}
+    <otc-icon type="raw" size="24" svg="{{svgMimeGroup}}" class="csui-user-default-picture-dlg csui-icon" isPresentation></otc-icon>
+      {{else}}
+      <otc-icon class="csui-user-default-picture-dlg csui-icon" icon="csui_action:mime_group32" isPresentation></otc-icon>
+      {{/if}}
+      {{else}}
+      <otc-avatar class="csui-memberpicker-user-avator" image="" size="32" initials="{{initials}}">{{ initials }}</otc-avatar>
+      {{/if}}
   </div>
   <div class="member-info binf-pull-left">
-    <span class="name binf-pull-left" title="{{name}}">{{name}}</span>
-    <span class="department binf-pull-left" title="{{department}}">{{department}}</span>
+    <span class="name binf-pull-left" title="{{name}}">{{ name }}</span>
+    <span class="department binf-pull-left" title="{{department}}">{{ department }}</span>
 
   </div>
-  <button type="button" class="close notification_error" aria-label="{{removeSelectedUserAria}}"
-          title="{{removeSelectedUser}}"></button>
+  {{#if isJATO}}
+  <otc-button class="csui-selected-member-close" title="{{removeSelectedUser}}"
+    aria-label="{{removeSelectedUserAria}}" size="small">
+    <otc-icon svg="{{svgClose}}" size="16" isPresentation></otc-icon>
+  </otc-button>
+  {{ else}}
+  <button type="button" class="close csui-selected-member-close notification_error" aria-label="{{removeSelectedUserAria}}"
+    title="{{removeSelectedUser}}"></button>
+  {{/if}}
 </div>
- 
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

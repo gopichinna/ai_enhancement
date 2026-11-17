@@ -1,6 +1,11 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme='cf']) {
+  --jatx-csui-radio-field-inner-size: 6px;
+  --jatx-csui-radio-field-outer-size: 12px;
+}
+
 .binf-widgets .cs-formfield.cs-radio-group {
   height: auto;
 }
@@ -22,8 +27,9 @@
   position: relative;
   margin-bottom: 8px;
 }
+
 .binf-widgets .cs-formfield.cs-radio-group li:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .binf-widgets .cs-formfield.cs-radio-group label {
@@ -37,7 +43,15 @@
   user-select: none;
   line-height: normal;
   font-size: 14px;
-  color: #333333;
+  color: var(--jato-typography-text-color-primary, #333333);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .cs-formfield.cs-radio-group label {
+  font-weight: 400;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .cs-formfield.cs-radio-group label:has(input:checked) {
+  font-weight: 500;
 }
 
 .binf-widgets .cs-formfield.cs-radio-group div.cs-radio-item-container {
@@ -84,14 +98,39 @@
 
 .binf-widgets .cs-formfield.cs-radio-group label span.cs-radio-container span.outer {
   position: absolute;
-  width: 18px;
-  height: 18px;
-  left: calc(50% - 18px / 2);
-  top: calc(50% - 18px / 2);
-  border: 1px solid #757575;
+  width: var(--jatx-csui-radio-field-outer-size, 18px);
+  height: var(--jatx-csui-radio-field-outer-size, 18px);
+  left: calc(50% - var(--jatx-csui-radio-field-outer-size, 18px) / 2);
+  top: calc(50% - var(--jatx-csui-radio-field-outer-size, 18px) / 2);
+  border: 1px solid var(--jato-control-border-primary-neutral, #757575);
   box-sizing: border-box;
-  background-color: white;
+  background-color: var(--jato-control-background-primary-neutral, white);
   border-radius: 50%;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .cs-formfield.cs-radio-group:not(.cs-formfield-readonly) label span.cs-radio-container:hover span.outer {
+  border: 1px solid var(--jato-control-border-primary-hover);
+  background-color: var(--jato-control-background-primary-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .cs-formfield.cs-radio-group:not(.cs-formfield-readonly) label span.cs-radio-container:active span.outer {
+  border: 1px solid var(--jato-control-border-primary-active);
+  background-color: var(--jato-control-background-primary-active);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .cs-radio-group:not(.cs-formfield-readonly) label input:checked ~ span.cs-radio-container span.outer {
+  background-color: var(--jato-control-background-primary-selected-neutral);
+  border: 1px solid var(--jato-control-border-primary-selected-neutral);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .cs-radio-group:not(.cs-formfield-readonly) label input:checked ~ span.cs-radio-container:hover span.outer {
+  background-color: var(--jato-control-background-primary-selected-hover);
+  border: 1px solid var(--jato-control-border-primary-selected-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .cs-radio-group:not(.cs-formfield-readonly) label input:checked ~ span.cs-radio-container:active span.outer {
+  background-color: var(--jato-control-background-primary-selected-active);
+  border: 1px solid var(--jato-control-border-primary-selected-active);
 }
 
 .binf-widgets .cs-formfield.cs-radio-group label.radio-item-error span.cs-radio-container span.outer {
@@ -101,16 +140,24 @@
 
 .binf-widgets .cs-formfield.cs-radio-group label span.cs-radio-container span.inner {
   position: absolute;
-  width: 10px;
-  height: 10px;
-  left: calc(50% - 10px / 2);
-  top: calc(50% - 10px / 2);
+  width: var(--jatx-csui-radio-field-inner-size, 10px);
+  height: var(--jatx-csui-radio-field-inner-size, 10px);
+  left: calc(50% - var(--jatx-csui-radio-field-inner-size, 10px) / 2);
+  top: calc(50% - var(--jatx-csui-radio-field-inner-size, 10px) / 2);
   border-radius: 50%;
   background-color: transparent;
 }
 
 .cs-radio-group label input:checked ~ span.cs-radio-container span.outer span.inner {
-  background: #757575;
+  background: var(--jato-control-symbol-color-selected-neutral, #757575);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-radio-group:not(.cs-formfield-readonly) label input:checked ~ span.cs-radio-container:hover span.outer span.inner {
+  background: var(--jato-control-symbol-color-selected-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-radio-group:not(.cs-formfield-readonly) label input:checked ~ span.cs-radio-container:active span.outer span.inner {
+  background: var(--jato-control-symbol-color-selected-active);
 }
 
 .cs-radio-group label.radio-item-error input:checked ~ span.cs-radio-container span.outer span.inner {
@@ -139,21 +186,29 @@
   border: 1px dotted #666666;
 }
 
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .cs-radio-group li.cs-active-radio {
+  border: 2px solid var(--jato-cta-focus-border);
+  width: fit-content;
+  padding-right: 4px;
+  border-radius: var(--jato-radii-med);
+}
+
 .binf-widgets .cs-formfield-readonly.cs-formfield.cs-radio-group label {
-  color: #666666;
+  color: var(--jato-typography-text-color-disabled, #666666);
 }
 
 .binf-widgets .cs-formfield-readonly.cs-formfield.cs-radio-group label span.cs-radio-container span.outer {
-  background-color: #cccccc;
-  border-color: #b8b8b8;
+  background-color: var(--jato-control-background-primary-disabled, #cccccc);
+  border-color: var(--jato-control-border-primary-disabled, #b8b8b8);
   cursor: default;
 }
 
 .binf-widgets .cs-formfield-readonly.cs-radio-group label input:checked ~ span.cs-radio-container span.outer {
-  background-color: transparent;
+  background-color: var(--jato-control-background-primary-selected-disabled, transparent);
+  border-color: var(--jato-control-border-primary-selected-disabled, #b8b8b8);
 }
 
 .binf-widgets .cs-formfield-readonly.cs-radio-group label input:checked ~ span.cs-radio-container span.outer span.inner {
-  background-color: #a9a9a9;
+  background-color: var(--jato-control-symbol-color-selected-disabled, #a9a9a9);
 }
 

@@ -1,0 +1,227 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .cs-formfield.dctmw-checkbox-group {
+  height: auto;
+  padding-left: 1px;
+}
+
+.cs-formfield.dctmw-checkbox-group .dctmw-cb-container-parent {
+  display: block;
+  width: 100%;
+}
+
+.cs-formfield.dctmw-checkbox-group .dctmw-checkbox-container {
+  position: relative;
+  align-items: unset;
+  line-height: initial;
+  display: inline-flex;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.cs-formfield.dctmw-checkbox-group .cs-field-write .csui-formfield-disabled {
+  background-color: unset;
+}
+
+.cs-formfield.dctmw-checkbox-group .dctmw-checkbox-container.cb-item-error {
+  
+  padding: 2px 2px 2px 0;
+}
+
+.cs-form .dctmw-checkbox-group .dctmw-checkbox-container label {
+  color: #333333;
+  text-align: left;
+  border-bottom: 0;
+  display: block;
+  position: relative;
+  cursor: default;
+  padding-left: 8px;
+  left: .1em;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container.cb-item-error label {
+  color: #df3324;
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container label:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container .checkbox-item {
+  opacity: 0;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin: 0;
+  min-width: 18px;
+  min-height: 18px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.binf-widgets .dctmw-checkbox-group li:not(.dctmw-active-checkbox) .dctmw-checkbox-container.show-on-hover:not(:hover) .checkbox-item:not(:checked)~.dctmw-checkbox-icon-container:before {
+  opacity: 0;
+}
+
+.binf-widgets.csui-on-ipad .dctmw-checkbox-group li:not(.dctmw-active-checkbox) .dctmw-checkbox-container.show-on-hover:not(:hover) .checkbox-item:not(:checked)~.dctmw-checkbox-icon-container:before {
+  opacity: 1;
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container .dctmw-checkbox-icon-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container .dctmw-checkbox-icon-container:before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  outline: 0;
+  cursor: pointer;
+  background-image: url('images/checkbox.svg');
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container.cb-item-error .dctmw-checkbox-icon-container:before {
+  background-image: url('images/checkbox_invalid.svg');
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container.cb-item-error .dctmw-checkbox-icon-container:before {
+  top: 2px;
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container .checkbox-item:not([disabled]):hover+.dctmw-checkbox-icon-container:before {
+  border: 1px solid #757575;
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container.cb-item-error .checkbox-item:not([disabled]):hover+.dctmw-checkbox-icon-container:before {
+  border: 1px solid #df3324;
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container .checkbox-item:checked+.dctmw-checkbox-icon-container:before {
+  background-color: #ffffff;
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container .checkbox-item:disabled+.dctmw-checkbox-icon-container:before {
+  content: url('images/checkbox_disabled.svg');
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container.cb-item-error .checkbox-item:disabled+.dctmw-checkbox-icon-container:before {
+  content: url('images/checkbox_disabled_invalid.svg');
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container .dctmw-checkbox-icon-container:after {
+  display: inline-block;
+  position: absolute;
+  color: #ffffff;
+  background-color: #757575;
+  width: 18px;
+  height: 18px;
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container.cb-item-error .dctmw-checkbox-icon-container:after {
+  top: 2px;
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container .checkbox-item:checked+.dctmw-checkbox-icon-container:after {
+  content: " ";
+  content: url('images/checkbox_selected.svg');
+  border-radius: 3px;
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container.cb-item-error .checkbox-item:checked+.dctmw-checkbox-icon-container:after {
+  content: url('images/checkbox_selected_invalid.svg');
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container .checkbox-item:checked:disabled+.dctmw-checkbox-icon-container:after {
+  content: url('images/checkbox_on24_dis.svg');
+}
+
+.dctmw-checkbox-group .dctmw-checkbox-container.cb-item-error .checkbox-item:checked:disabled+.dctmw-checkbox-icon-container:after {
+  content: url('images/checkbox_on24_dis_invalid.svg');
+}
+
+.dctmw-checkbox-group .cs-field-write-inner .validation-error-message {
+  display: block;
+  color: #df3324;
+  font-size: .75rem;
+  margin-top: -6px;
+  line-height: 1.25rem;
+}
+
+.binf-widgets .dctmw-checkbox-group input[type="checkbox"][disabled] {
+  cursor: context-menu;
+}
+
+.binf-widgets .cs-formfield.dctmw-checkbox-group div.dctmw-checkbox-item-container {
+  overflow: hidden;
+  max-height: 32px;
+  padding-bottom: 6px;
+  width: 100%;
+}
+
+.binf-widgets .cs-formfield.dctmw-checkbox-group div.dctmw-full-height {
+  max-height: none;
+}
+
+.binf-widgets .cs-formfield.dctmw-checkbox-group div.dctmw-checkbox-item-container:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: calc(100% - 3em);
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 65%);
+  width: 3em;
+  height: 1.25em;
+}
+
+.binf-widgets .cs-formfield.nested-fieldset-background.dctmw-checkbox-group div.dctmw-checkbox-item-container:after {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), #F5F5F5 65%);
+}
+
+.binf-widgets .cs-formfield.dctmw-checkbox-group span.dctmw-text-overflow {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: calc(100% - 1em);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.binf-widgets .cs-formfield.dctmw-checkbox-group span.dctmw-more-text {
+  background: url("images/caret_down.svg") no-repeat right bottom;
+}
+
+.binf-widgets .cs-formfield.dctmw-checkbox-group span.dctmw-less-text {
+  background: url("images/caret_up.svg") no-repeat right bottom;
+}
+
+.binf-widgets .dctmw-checkbox-group ul.dctmw-cb-container-parent li.dctmw-active-checkbox {
+  border: 1px dotted #666666;
+}
+
+.cs-formfield.dctmw-checkbox-group .dctmw-cb-container-parent li {
+  padding: 6px 0 0 2px;
+  border: 1px solid transparent;
+}
+
+.cs-formfield.dctmw-checkbox-group .cs-field-write .dctmw-checkbox-item-container,
+.cs-formfield.dctmw-checkbox-group .cs-field-write .dctmw-checkbox-item-container>label {
+  cursor: pointer;
+}

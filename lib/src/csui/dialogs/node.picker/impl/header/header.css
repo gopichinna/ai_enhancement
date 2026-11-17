@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .title-section {
   float: left;
@@ -10,10 +10,12 @@
   display: inline-block;
   width: 240px;
 }
-@media only screen and (max-width: 640px) {
+
+@media only screen and (width <= 640px) {
   .binf-widgets .apply-properties-selector {
     width: 200px;
   }
+
   .csui-target-controls .csui-target-search-property-container .csui-global-search {
     width: calc(100% - 257px);
   }
@@ -38,7 +40,7 @@
 }
 
 .target-browse .cs-apply-properties-selector.binf-dropdown {
-  padding: 0px
+  padding: 0
 }
 
 .csui-target-search-property-container {
@@ -74,11 +76,12 @@
 }
 
 @media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px) {
+and (device-width >= 768px)
+and (device-width <= 1024px) {
   .apply-properties-selector {
     min-width: 220px;
   }
+
   .apply-properties-selector .cs-apply-properties-selector button {
     float: left;
   }
@@ -111,6 +114,7 @@ and (max-device-width: 1024px) {
   height: 28px;
   padding: 8px 14px;
 }
+
 .binf-widgets .binf-modal-header .csui-filtername-container .csui-filtername-error-wrapper{
   display: inline-block;
   width: auto;
@@ -129,8 +133,9 @@ and (max-device-width: 1024px) {
   border-radius: 2px;
   border-left: 2px solid #df3324;
   padding: 2px 6px;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
 }
+
   .binf-widgets .csui-filtername-container .csui-filtername-error span.binf-text-danger {
   margin-right: 0;
   line-height: 12px;
@@ -150,8 +155,8 @@ and (max-device-width: 1024px) {
   background-color: transparent;
 }
 
+
 @media (forced-colors: active) {
-  
   .csui-target-search-property-container .binf-dropdown-toggle.binf-btn-default:hover,
    .csui-target-search-property-container .binf-dropdown-toggle.binf-btn-default:focus{
     outline: 1px solid black;

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .csui-details-row > .csui-table-metadata-view {
   padding-bottom: 1em;
@@ -28,6 +28,7 @@
   justify-content: center;
   align-items: center;
   font-size: inherit;
+  font-weight: var(--jatx-csui-table-metadata-font-weight, 500);
   cursor: default;
 }
 

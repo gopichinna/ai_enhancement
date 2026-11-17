@@ -16,10 +16,14 @@
           <button type="button" class="csui-stateaction-processing binf-hidden binf-btn binf-btn-default icon
                                        csui-icon circle_delete" aria-label="{{cancelAria}}" title="{{cancel}}"></button>
           {{/if}}
+          {{#if isJato}}
+          <otc-icon svg="{{actionSuccessCircle}}" size="16" arialabel="{{successIconAria}}" class="csui-stateaction-resolved binf-hidden" type="primary"></otc-icon>
+          <otc-icon class="csui-stateaction-rejected binf-hidden" arialabel="{{errorIconAria}}" svg="{{actionErrorCircle}}" type="primary"></otc-icon>
+          {{else}}
           <div
-               class="csui-stateaction-resolved binf-hidden icon csui-icon csui-icon-like-btn csui-icon-notification-success-hollow" aria-label="{{successIconAria}}"></div>
-          <div
-               class="csui-stateaction-rejected binf-hidden icon csui-icon csui-icon-like-btn csui-icon-notification-error-hollow" aria-label="{{errorIconAria}}"></div>
+            class="csui-stateaction-resolved binf-hidden icon csui-icon csui-icon-like-btn csui-icon-notification-success-hollow" aria-label="{{successIconAria}}"></div>
+            <otc-icon class="csui-stateaction-rejected binf-hidden icon csui-icon" icon="smart_multivalue:mv_delete14" arialabel="{{errorIconAria}}" isPresentation></otc-icon>
+          {{/if}}
           <div class="csui-stateaction-aborted binf-hidden"></div>
         </div>
       </div>
@@ -30,7 +34,7 @@
 {{#if bundleDivider}}
 <div class="csui-progresspanel-divider">
   {{#if location}} <span class="csui-progresspanel-location binf-pull-left" title="{{location}}">{{location}}</span>{{/if}}
-  {{#if targetLocationUrl}}<a class="csui-gotolocation-url binf-hidden binf-pull-right" href="{{targetLocationUrl}}" role="button">{{gotoLocation}}</a>{{/if}} 
+  {{#if targetLocationUrl}}<otc-link class="csui-gotolocation-url binf-hidden binf-pull-right" href="{{targetLocationUrl}}" role="button" ignorevisited="">{{gotoLocation}}</otc-link>{{/if}} 
 </div>
 {{/if}}
 <div class="csui-name-status" role="listitem" tabindex="-1">
@@ -45,8 +49,15 @@
   </div>
   <div class="csui-states-actions">
     <div class="csui-stateaction csui-progresscell {{#if singleItem}}binf-hidden{{/if}}">
-      <div class="csui-stateaction-resolved binf-hidden icon csui-icon csui-icon-like-btn csui-icon-notification-success-hollow" aria-label="{{successIconAria}}"></div>
-      <div class="csui-stateaction-rejected binf-hidden icon csui-icon csui-icon-like-btn csui-icon-notification-error-hollow" aria-label="{{errorIconAria}}"></div>
+        {{#if isJato}}
+        <otc-icon svg="{{actionSuccessCircle}}" size="16" arialabel="{{successIconAria}}" class="csui-stateaction-resolved binf-hidden" type="primary"></otc-icon>
+        <otc-icon class="csui-stateaction-rejected binf-hidden" arialabel="{{errorIconAria}}" svg="{{actionErrorCircle}}" type="primary"></otc-icon>
+        {{else}}
+        <div
+          class="csui-stateaction-resolved binf-hidden icon csui-icon csui-icon-like-btn csui-icon-notification-success-hollow" aria-label="{{successIconAria}}"></div>
+          <otc-icon class="csui-stateaction-rejected binf-hidden icon csui-icon" icon="smart_multivalue:mv_delete14" arialabel="{{errorIconAria}}" isPresentation></otc-icon>
+        {{/if}}
+      <otc-icon class="csui-stateaction-rejected binf-hidden icon csui-icon" icon="smart_multivalue:mv_delete14" arialabel="{{errorIconAria}}" isPresentation></otc-icon>
       <div class="csui-stateaction-aborted binf-hidden" ></div>
     </div>
     <div class="csui-progress csui-progresscell">
@@ -109,4 +120,4 @@
 </div>
 {{/if}}
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

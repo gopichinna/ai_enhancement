@@ -1,12 +1,25 @@
-<div class="cs-back-button-container" title="{{backTitle}}"
-     tabindex="0" aria-label="{{backTitle}}" role="button">
-  <span class="arrow_back cs-go-back"></span>
-</div>
+{{#if canShowJatoIcon}}
+  <div class="cs-back-button-container">
+    <otc-button class="cs-back-button" size="small" type="subtle" arialabel="{{backTitle}}" title="{{backTitle}}">
+      <otc-icon size="16" svg="{{jatoLeftIcon}}" mirrorIfRtl></otc-icon>
+    </otc-button>
+  </div>
+{{else}}
+  <div class="cs-back-button-container cs-back-button" title="{{backTitle}}"
+      tabindex="0" aria-label="{{backTitle}}" role="button">
+    <span class="arrow_back cs-go-back"></span>
+  </div>
+{{/if}}
+
 <div class="cs-title-container">
   <div class="cs-title-inner-container">
-    <span class="title-icon {{icon}}"></span>
+    {{#if canShowJatoIcon}}
+      <otc-icon type="raw" size="24" svg="{{jatoIcon}}"></otc-icon>
+    {{else}}
+      <span class="title-icon {{icon}}"></span>
+    {{/if}}
     <h2 class="title">{{title}}</h2>
   </div>
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

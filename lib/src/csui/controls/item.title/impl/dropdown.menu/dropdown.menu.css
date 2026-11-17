@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-item-title-dropdown-menu {
   display: inline-flex;
@@ -15,7 +15,7 @@
   height: 100%;
 }
 
-.csui-item-title-dropdown-menu > .binf-dropdown > .binf-dropdown-toggle {
+.csui-item-title-dropdown-menu > .binf-dropdown > button {
   padding: 0;
   margin: 0;
   border: none;
@@ -37,10 +37,27 @@
   color: #777777;
 }
 
+.csui-item-title-dropdown-menu > div {
+  display: flex;
+}
+
 
 @media (forced-colors: active) {
   .binf-widgets .tile-nav .binf-dropdown-menu,
   .binf-table.dataTable li.binf-dropdown.binf-open ul {
     border: 1px solid white;
+  }
+
+  .binf-widgets .binf-dropdown-menu>li>a:hover,
+  .binf-widgets .binf-dropdown-menu>li>a:focus-visible,
+  .binf-widgets .binf-dropdown-menu>li>a:focus {
+    outline-offset: -3px;
+    outline: 1px solid;
+  }
+
+  .metadata-header .cs-dropdown-menu .binf-dropdown > .binf-dropdown-toggle:focus,
+  .metadata-header .cs-dropdown-menu .binf-dropdown > .binf-dropdown-toggle:focus-visible {
+    outline: 1px solid;
+    border-radius: 0;
   }
 }

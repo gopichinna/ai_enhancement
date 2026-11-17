@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .cs-form.d2-document-overview-wrapper .cs-userfield.csui-reserveby-status {
   display: inline-block;
@@ -34,6 +34,14 @@
   max-width: 280px;
 }
 
+.cs-form .thumbnail_section .thumbnail_not_loaded .csui-icon {
+  left: -60px;
+}
+
+.binf-widgets .d2-document-overview-wrapper.cs-form.cs-document-overview-wrapper .thumbnail_section .thumbnail_not_loaded .csui-icon {
+  max-width: none;
+}
+
 .cs-form.d2-document-overview-wrapper .cs-form-img-border {
   box-shadow: 1px 1px 1px 0 rgba(51, 51, 51, 0.5);
   border: 1px solid #666666;
@@ -52,4 +60,14 @@
 
 .binf-widgets .cs-document-overview-wrapper .doc-overview-form-group > .binf-col-sm-9.versions-view {
   height:auto;
+}
+
+.d2-document-overview-wrapper .cs-content-header .overview-page-backbutton {
+        background-position: 50%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        height: 18px;
+        justify-content: flex-start;
+        margin: 4px 8px 0 0;
+        width: 18px;
 }

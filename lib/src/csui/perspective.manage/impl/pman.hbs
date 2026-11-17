@@ -5,7 +5,7 @@
     <div class="pman-left-tools">
       <ul>
         <li class="pman-toolitem icon-help-container">
-          <button class="icon icon-help" title="Help"></button>
+          <button class="icon icon-help" title="{{this.help}}"></button>
         </li>
         <li class="pman-toolitem toolbarAddContainer">
           <button class="icon icon-toolbarAdd" title="{{this.addWidget}}"></button>
@@ -17,17 +17,15 @@
       <ul>
         {{#if personalizeMode}}
           <li>
-            <button class="binf-btn icon-reset" title="{{this.reset}}"
-                    aria-label="{{this.resetAriaLabel}}">{{this.reset}}</button>
+            <otc-button type="secondary" class="pman-icon-reset" title="{{this.reset}}"
+                    arialabel="{{this.resetAriaLabel}}">{{this.reset}}</otc-button>
           </li>
         {{/if}}
         <li>
-          <button class="binf-btn icon-save" title="{{this.save}}"
-                  aria-label="{{this.saveAriaLabel}}">{{this.save}}</button>
+          <otc-button class="pman-right-tools-button pman-icon-save" disabled type="primary" title="{{this.save}}" arialabel="{{this.saveAriaLabel}}">{{this.save}}</otc-button>
         </li>
         <li>
-          <button class="binf-btn cancel-edit" title="{{this.cancel}}"
-                  aria-label="{{this.cancelAriaLabel}}">{{this.cancel}}</button>
+          <otc-button class="pman-right-tools-button pman-cancel-edit" type="secondary" title="{{this.cancel}}" arialabel="{{this.cancelAriaLabel}}">{{this.cancel}}</otc-button>
         </li>
       </ul>
     </div>
@@ -36,4 +34,4 @@
     <div class="pman-trash-banner"></div>
   </div>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

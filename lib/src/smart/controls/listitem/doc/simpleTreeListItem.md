@@ -40,7 +40,6 @@ define(['smart/controls/listitem/simpletreelistitem.view'], function (SimpleTree
 
 <ul>
   <li><b>model - `required`</b> Backbone model with item information.</li>
-  <li><b>model.enableIcon - `optional`</b> Flag to decide to show icon or not. Default : false.</li>
   <li><b>model.expand - `optional`</b> Flag to render tree item as expanded. Default : false.</li>
   <li><b>model.flatten - `optional`</b> Flag to decide to render tree as a group or no. Default : false.</li>
   <li><b>model.childrenCollection - `Backbone Collection`</b>Backbone collection of child items with parent id.</li>

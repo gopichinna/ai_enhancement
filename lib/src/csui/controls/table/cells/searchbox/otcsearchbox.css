@@ -1,0 +1,12 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .csui-table-column-otcsearch {
+  display: inline-flex;
+}
+
+
+.binf-widgets .binf-table.dataTable > thead > tr > th > .csui-nowrap-table__cell-wrapper > div:has(.csui-table-otcsearch-box),
+.binf-widgets .binf-table.dataTable > thead > tr > th > div:not(.csui-nowrap-table__cell-wrapper):has(.csui-table-otcsearch-box) {
+  overflow: visible;
+}

@@ -1,7 +1,16 @@
-<div class="csui-accordion-header" title="{{this.title}}">
+<div class="csui-accordion-header" title="{{this.title}}" tabindex="0">
   <div class="csui-accordion-header-title">{{this.title}}</div>
-  <div class="csui-button-icon cs-icon icon-expandArrowDown"></div>
-  <div class="csui-button-icon cs-icon icon-expandArrowUp"></div>
+  {{#if isJato}}
+      <otc-button class="cs-icon icon-expandArrowDown" size="small" type="subtle">
+            <otc-icon svg="{{jatoCaretDownIcon}}" ispresentation></otc-icon>
+      </otc-button>
+      <otc-button class="cs-icon icon-expandArrowUp" size="small" type="subtle">
+            <otc-icon svg="{{jatoCaretUpIcon}}" ispresentation></otc-icon>
+      </otc-button>
+  {{else}}
+      <div class="csui-button-icon cs-icon icon-expandArrowDown"></div>
+      <div class="csui-button-icon cs-icon icon-expandArrowUp"></div>
+  {{/if}}
 </div>
 <div class="csui-accordion-content">
   <div class="cs-content csui-list-pannel">
@@ -13,6 +22,9 @@
              data-widget-allow-multiple="{{attributes.allowMultiple}}">
           <div class="csui-widget-item icon-draggable-handle csui-draggable-widget-item"
                data-widget-index="{{attributes.index}}" draggable="true" title="{{attributes.title}}">
+            {{#if attributes.isJato}}
+                  <otc-icon class="csui-widget-item-drag" size='16' svg="{{attributes.jatoDragHandleIcon}}" ispresentation></otc-icon>
+            {{/if}}
             <span>{{attributes.title}}</span>
             <div class="csui-layout-icon {{attributes.icon}}"></div>
           </div>
@@ -21,6 +33,9 @@
         <div class="{{#if attributes.draggable}} binf-hidden {{else}}{{/if}}" data-widget-type="{{attributes.dataAttr}}"
              data-widget-allow-multiple="{{attributes.allowMultiple}}">
           <div class="csui-widget-item icon-draggable-handle" title="{{attributes.disableTitle}}">
+            {{#if attributes.isJato}}
+                  <otc-icon class="csui-widget-item-drag" size='16' svg="{{attributes.jatoDragHandleIcon}}" ispresentation></otc-icon>
+            {{/if}}
             <span>{{attributes.title}}</span>
             <div class="csui-layout-icon {{attributes.icon}}"></div>
           </div>
@@ -30,4 +45,4 @@
     </div>
   </div>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

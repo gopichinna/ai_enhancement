@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 #breadcrumb-wrap {
   padding: 0;
@@ -49,3 +49,9 @@
   visibility: hidden;
 }
 
+@media (forced-colors: active) {
+  .binf-widgets .breadcrumb-inner .binf-breadcrumb li > a:focus,
+  .binf-widgets .breadcrumb-inner .binf-breadcrumb li > a:focus-visible {
+    outline: 1px solid;
+}
+}

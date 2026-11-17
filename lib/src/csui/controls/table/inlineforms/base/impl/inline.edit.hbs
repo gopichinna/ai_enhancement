@@ -1,20 +1,38 @@
 <form class="csui-inlineform-group  {{#if  haveErrorMessage}}csui-form-error{{/if}}">
   <div class="csui-inlineform-region"></div>
   <div class="csui-inline-action-button-wrapper">
+    {{#if svgCheckmarkIcon}}
+      <otc-button type="subtle" size="small" class="csui-btn-save csui-edit-save" disabled title="{{SaveEditTooltip}}"
+              arialabel="{{SaveEditTooltip}}">
+        <otc-icon svg='{{svgCheckmarkIcon}}'></otc-icon>
+      </otc-button>
+    {{else}}
     <button type="submit" class="csui-btn-save csui-edit-save" disabled title="{{SaveEditTooltip}}"
             aria-label="{{SaveEditTooltip}}">
       {{{icon-v2 iconName="csui_action_confirm32" size='normal' states='true'}}}
     </button>
+    {{/if}}
+    {{#if svgCloseIcon}}
+      <otc-button type="subtle" size="small" class="csui-btn-cancel csui-inline csui-edit-cancel" title="{{EditCancelTooltip}}"
+            arialabel="{{EditCancelTooltip}}">
+        <otc-icon svg='{{svgCloseIcon}}'></otc-icon>
+      </otc-button>
+    {{else}}
     <button type="reset" class="csui-btn-cancel csui-inline csui-edit-cancel" title="{{EditCancelTooltip}}"
             aria-label="{{EditCancelTooltip}}">
       {{{icon-v2 iconName="csui_action_cancel32" size='normal' states='true'}}}
     </button>
+    {{/if}}
   </div>
 </form>
 {{#if haveErrorMessage}}
   <div class="csui-inlineform-group csui-inlineform-group-error" >
     <div class="binf-text-danger" role="alert" title="{{errorMessage}}">
+      {{#if svgErrorIcon}}
+        <otc-icon type="status" svg='{{svgErrorIcon}}'></otc-icon>
+      {{/if}}
       <span class="csui-text-danger"  id="{{errorMsgId}}">{{errorMessage}}</span></div>
   </div>
 {{/if}}
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -2,9 +2,17 @@
     <h1 class="csui-sidepanel-heading">{{title}}</h1>
     <h2 class="csui-sidepanel-subheading">{{subTitle}}</h2>
 </div>
+{{#if isJATO}}
+<otc-button class="csui-sidepanel-close smart-v2-icon-parent"
+            title="{{closeTooltip}}" arialabel="{{closeAria}}" size="small"
+            tabindex="-1">
+            <otc-icon svg="{{closeIconSVGContent}}" isPresentation></otc-icon>
+</otc-button>
+{{else}}
 <otc-button class="csui-sidepanel-close smart-v2-icon-parent"
             title="{{closeTooltip}}" arialabel="{{closeAria}}"
             tabindex="-1" icon="smart_action:action_close_max32">
 </otc-button>
+{{/if}}
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

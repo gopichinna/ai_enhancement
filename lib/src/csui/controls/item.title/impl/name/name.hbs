@@ -9,17 +9,32 @@
           title="{{edit_name_tooltip}}">
   {{#if mlDataEnabled}}
     <span class="csui-multilingual-icon-label">
+    {{#if isJATO}}
+    <otc-button  class="icon csui-multilingual-icon" type="subtle" size="small">
+      <otc-icon svg="{{globeIconSVG}}" type="subtle"></otc-icon>
+    </otc-button>
+    {{else}}
       <button  class="icon csui-multilingual-icon">
         {{{icon-v2 iconName="csui_action_language_switcher24" size='small' states='true'}}}
       </button>
+    {{/if}}
     </span>
   {{/if}}
-  <button type="button" class="csui-undo csui-edit-save inline-edit-icon" disabled title="{{save_edit_name_tooltip}}">
-    {{{icon-v2 iconName="csui_action_confirm32" size='normal' states='true'}}}
-  </button>
-  <button type="button" class="csui-undo csui-edit-cancel inline-edit-icon" title="{{cancel_edit_name_tooltip}}">
-    {{{icon-v2 iconName="csui_action_cancel32" size='normal' states='true'}}}
-  </button>
+  {{#if isJATO}}
+    <otc-button type="subtle" class="csui-undo csui-edit-save inline-edit-icon" disabled title="{{save_edit_name_tooltip}}" size="regular">
+      <otc-icon svg="{{checkmarkSVG}}" type="subtle"></otc-icon>
+    </otc-button>
+    <otc-button type="subtle" class="csui-undo csui-edit-cancel inline-edit-icon" title="{{cancel_edit_name_tooltip}}" size="regular">
+      <otc-icon svg="{{closeSmallSVG}}" type="subtle"></otc-icon>
+    </otc-button>
+  {{else}}
+    <button type="button" class="csui-undo csui-edit-save inline-edit-icon" disabled title="{{save_edit_name_tooltip}}">
+      {{{icon-v2 iconName="csui_action_confirm32" size='normal' states='true'}}}
+    </button>
+    <button type="button" class="csui-undo csui-edit-cancel inline-edit-icon" title="{{cancel_edit_name_tooltip}}">
+      {{{icon-v2 iconName="csui_action_cancel32" size='normal' states='true'}}}
+    </button>
+  {{/if}}
   <div class="csui-item-name-error title-error binf-text-danger" title=""></div>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,19 +1,19 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-table-cell-_select {
-  min-width: 30px; 
-  max-width: 30px; 
+  min-width: var(--jatx-csui-table-icon-cell-width, 30px); 
+  max-width: var(--jatx-csui-table-icon-cell-width, 30px); 
 }
 
 .binf-widgets .csui-table-cell-_select:first-child {
-  min-width: 50px; 
-  max-width: 50px; 
+  min-width: var(--jatx-csui-table-icon-cell-width, 50px); 
+  max-width: var(--jatx-csui-table-icon-cell-width, 50px); 
 }
 
 .binf-widgets .csui-table-cell-_select.csui-table-cell-last-visible {
-  min-width: 44px; 
-  max-width: 44px; 
+  min-width: var(--jatx-csui-table-icon-cell-width, 44px); 
+  max-width: var(--jatx-csui-table-icon-cell-width, 44px); 
 }
 
 .csui-table-cell-_select > .csui-checkbox-view {
@@ -21,27 +21,28 @@
 }
 
 .binf-widgets .csui-nodetable .binf-table tr > .csui-table-cell-_select > .csui-checkbox-view {
-  padding: 0;
+  padding: 0 var(--jato-padding-lrg, 0);
 }
 
 
 .csui-nodetable .binf-table tr > .csui-table-cell-_select .csui-checkbox {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: var(--jato-padding-sm, 8px);
+  padding-right: var(--jato-padding-sm, 8px);
 }
 
 
 .csui-nodetable .binf-table tr > .csui-table-cell-_select:first-child .csui-checkbox {
-  padding-left: 26px;
+  padding-left: var(--jato-padding-sm, 26px);
 }
 
 
 .csui-nodetable .binf-table tr > .csui-table-cell-_select.csui-table-cell-last-visible .csui-checkbox {
-  padding-right: 26px;
+  padding-right: var(--jato-padding-sm, 26px);
 }
 
 .binf-widgets .csui-nodetable.csui-wrap-text .csui-control-view.csui-checkbox-view {
   
+
   
 }
 
@@ -50,10 +51,11 @@
   height: 14px;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (width <= 640px) {
   .csui-nodetable .binf-table tr > .csui-table-cell-_select:first-child .csui-checkbox {
     padding-left: 8px;
   }
+
   .binf-widgets .csui-table-cell-_select:first-child {
     min-width: 32px;
   }

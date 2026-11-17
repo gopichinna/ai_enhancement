@@ -1,6 +1,19 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .csui-perspective-view .d2-vdoc-perspective-container[data-csui-widget_type="edit.virtual.document"] {
     height: calc(100vh - 64px);
+}
+
+.binf-widgets .csui-perspective-view .d2-edit-vdoc .d2-vd-edit-structure .fancytree-node .fancytree-custom-icon {
+    flex-basis: 26px;
+    background-size: 26px;
+}
+
+.binf-widgets .csui-perspective-view .d2-edit-vdoc .d2-vd-edit-structure .d4-tree td .d2-table-cell-version_number .d2-cell-version-wrapper {
+    height: 18px;
+}
+
+.binf-widgets .csui-perspective-view .d2-edit-vdoc .d2-vd-edit-structure .d4-tree td .d2-table-cell-version_number .version-text {
+    font-size: 12px;
 }

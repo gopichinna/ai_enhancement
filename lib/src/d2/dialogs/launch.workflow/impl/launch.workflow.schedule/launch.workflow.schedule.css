@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .d2-launch-workflow-schedule.cs-metadata-properties .tab-links.scrollspy,
 .binf-widgets .d2-launch-workflow-schedule.cs-metadata-properties .csui-tab-contents-header-wrapper {
   display: none;
@@ -49,18 +48,18 @@
   margin-top: 0;
 }
 
-.d2-launch-workflow-schedule .cs-formfield.d2-checkbox-group .d2-cb-container-parent li {
+.d2-launch-workflow-schedule .cs-formfield.dctmw-checkbox-group .dctmw-cb-container-parent li {
   padding: 0;
 }
 
-.d2-launch-workflow-schedule .cs-form .d2-checkbox-group .d2-checkbox-container label {
+.d2-launch-workflow-schedule .cs-form .dctmw-checkbox-group .dctmw-checkbox-container label {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 18px;
 }
 
-.binf-widgets .d2-launch-workflow-schedule .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container:after {
+.binf-widgets .d2-launch-workflow-schedule .cs-formfield.dctmw-checkbox-group div.dctmw-checkbox-item-container:after {
   content: none;
 }
 

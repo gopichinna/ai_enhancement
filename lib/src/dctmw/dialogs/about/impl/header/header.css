@@ -1,0 +1,134 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+@media (prefers-color-scheme: dark) {
+    .dctmw-about-dialog-header .branding-header .opentext-logo {
+        background-image: url(../images/opentextlogo-dark.svg);
+    }
+}
+
+[data-smart-theme="dark"] {
+    .dctmw-about-dialog-header .branding-header .opentext-logo {
+        background-image: url(../images/opentextlogo-dark.svg);
+    }
+}
+
+[data-smart-theme="light"] {
+    .dctmw-about-dialog-header .branding-header .opentext-logo {
+        background-image: url(../images/opentextlogo.svg);
+    }
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) {
+    .dctmw-about-dialog {
+        .binf-modal-content {
+            padding: var(--jato-padding-content-sm);
+            border-radius: var(--jato-radii-xl);
+        }
+
+        .binf-modal-content .binf-modal-header {
+            padding: 0;
+            background-color: transparent;
+        }
+    }
+}
+
+[data-smart-theme=cf] .dctmw-about-dialog-header {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.dctmw-about-dialog-header {
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ot-lockup.flex-column {
+        gap: 8px;
+    }
+
+    .dctmw-version {
+        text-align: right;
+        font-size: 10px;
+    }
+
+    .branding-header .opentext-logo {
+        height: 24px;
+        width: var(--jatx-dctmw-about-dialog-header-logo-size);
+        background-size: var(--jatx-dctmw-about-dialog-header-logo-size);
+        gap: 8px;
+    }
+
+    .product {
+        letter-spacing: var(--jato-tracking-regular);
+
+        .primary-name {
+            font-size: var(--jato-font-size-3xl);
+            line-height: var(--jato-line-height-xxl);
+            letter-spacing: var(--jato-tracking-condensed);
+
+        }
+
+        .secondary-name {
+            font-size: var(--jato-font-size-lrg);
+            line-height: var(--jato-line-height-lrg);
+        }
+
+        .version-name {
+            font-size: var(--jato-font-size-xxs);
+            line-height: var(--jato-line-height-xs);
+        }
+    }
+}
+
+
+
+.binf-widgets .dctmw-about-dialog .binf-modal-header {
+    display: table;
+    width: 100%;
+    padding: 32px 32px 16px 32px;
+    height: 96px;
+    background-color: white;
+    border: 0;
+}
+
+.dctmw-about-dialog .binf-modal-header .about-d2-logo {
+    display: table-cell;
+    background-image: url(../images/about_d2_header.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto 40px;
+    position: relative;
+    width: 70%;
+    height: 100%;
+}
+
+.dctmw-about-dialog .binf-modal-header .dctmw-version {
+    display: table-cell;
+    width: 30%;
+    height: 100%;
+    color: #231f20;
+    font-size: 10px;
+    padding-bottom: 12px;
+    vertical-align: bottom;
+    text-align: right;
+}
+
+.dctmw-about-dialog .binf-modal-header .cs-close {
+    position: absolute;
+    margin: 16px;
+    top: 0;
+    right: 0;
+}
+
+.dctmw-about-dialog .binf-modal-header .cs-close .icon {
+    height: 16px;
+    width: 16px;
+}

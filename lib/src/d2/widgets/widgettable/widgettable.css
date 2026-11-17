@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 
 .binf-widgets .d2-widgettable {
@@ -83,6 +83,7 @@
 .binf-widgets .d2-widget-table-view.csui-nodestable.d2-search-table .csui-tabletoolbar .csui-item-title .csui-item-name .csui-item-name-block {
   font-size: 20px;
 }
+
 .binf-widgets .d2-widget-table-view.csui-nodestable .csui-tabletoolbar .csui-item-title .csui-item-name .csui-item-name-readonly:disabled,
 .binf-widgets .d2-widget-table-view.csui-nodestable .csui-tabletoolbar .csui-item-title .csui-item-name .csui-item-name-readonly:disabled > .csui-item-name-block{
   cursor: default;
@@ -118,7 +119,7 @@
   position: relative;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (width <= 1023px) {
   .binf-widgets .csui-nodestable.d2-widget-table-view .d2-popover-panel {
     z-index: 3;
     position: absolute;

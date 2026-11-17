@@ -1,9 +1,9 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-thumbcarousel-dialog.cs-dialog {
   width: 100%;
-  padding: 0px !important;
+  padding: 0 !important;
 }
 
 .binf-widgets .csui-thumbcarousel-dialog.cs-dialog .binf-modal-backdrop.binf-in {
@@ -11,10 +11,20 @@
   opacity: .9;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-thumbcarousel-dialog.cs-dialog .binf-modal-backdrop.binf-in {
+  opacity: unset;
+  background-color: var(--jato-background-mask-page);
+  backdrop-filter: blur(24px);
+}
+
 .binf-widgets .csui-thumbcarousel-dialog.cs-dialog .binf-modal-dialog.binf-modal-lg {
   width: 100%;
   top: 0;
   margin: 0;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-thumbcarousel-dialog.cs-dialog .binf-modal-dialog .binf-modal-content .binf-modal-header-control::after{
+  background: none;
 }
 
 .binf-widgets .csui-thumbcarousel-dialog.cs-dialog .binf-modal-dialog .binf-modal-content {
@@ -167,7 +177,7 @@
   border-radius: 41px;
   -moz-border-radius: 41px;
   -webkit-border-radius: 41px;
-  padding: 0px;
+  padding: 0;
   white-space: nowrap;
   text-indent: -5000px;
   background: #000000 url(images/play_arrow.svg) no-repeat 11px center/16px;
@@ -202,19 +212,19 @@
 
 .binf-widgets .csui-carousel-film-strip {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   height: auto;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
   padding-top: 30px;
 }
 
 .binf-widgets .csui-carousel-film-strip-inner {
   width: 100%;
   height: auto;
-  margin: 0px;
-  padding: 0px 0px 10px 0px;
+  margin: 0;
+  padding: 0 0 10px 0;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -247,29 +257,38 @@
 
 .binf-widgets .csui-carousel-film-strip-inner .binf-item .binf-thumb-img-container,
 .binf-widgets .csui-carousel-film-strip-inner .binf-item .binf-thumb {
-  border: 1px solid transparent;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
+  border: 1px solid var(--jato-border-color-primary, transparent);
+  border-radius: var(--jato-radii-lrg,3px);
+  -webkit-border-radius: var(--jato-radii-lrg,3px);
+  -moz-border-radius: var(--jato-radii-lrg,3px);
   -webkit-transition: all .2s ease-in-out 0s;
   -o-transition: all .2s ease-in-out 0s;
   transition: all .2s ease-in-out 0s;
 }
 
-.binf-widgets .csui-carousel-film-strip-inner .binf-item.binf-active .binf-thumb-img-container {
+[data-smart-theme="cf"] .binf-widgets .csui-carousel-film-strip-inner .binf-item.binf-active .binf-thumb-img-container {
   border-radius: 1px;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
 }
 
-.binf-widgets .csui-carousel-film-strip-inner .binf-item:hover .binf-thumb-img-container,
-.binf-widgets .csui-carousel-film-strip-inner .binf-item:focus .binf-thumb-img-container {
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .csui-carousel-film-strip-inner .binf-item:hover .binf-thumb-img-container {
+  border: 1px solid var(--jato-border-color-primary-hover);
+  box-shadow: var(--jato-elevation-shadow-level-3);
+}
+
+[data-smart-theme="cf"] .binf-widgets .csui-carousel-film-strip-inner .binf-item:hover .binf-thumb-img-container,
+[data-smart-theme="cf"] .binf-widgets .csui-carousel-film-strip-inner .binf-item:focus .binf-thumb-img-container {
   border: 1px solid #94bbea;
 }
 
 .binf-widgets .csui-carousel-film-strip-inner .binf-item.binf-active .binf-thumb-img-container,
 .binf-widgets .csui-carousel-film-strip-inner .binf-item.binf-active .binf-thumb {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--jato-border-color-primary-selected,#ffffff);
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .csui-carousel-film-strip-inner .binf-item.binf-active .binf-thumb {
+  box-shadow: var(--jato-elevation-shadow-level-2);
 }
 
 .binf-widgets .csui-carousel-film-strip-inner .binf-item .binf-thumb-img {
@@ -284,10 +303,11 @@
   background-position: center center;
   cursor: pointer;
   overflow: hidden;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--jato-radii-lrg,3px);
+  -webkit-border-radius: var(--jato-radii-lrg, 3px);
+  -moz-border-radius: var(--jato-radii-lrg, 3px);
+  background: var(--jato-background-mask-page, rgba(255, 255, 255, 0.1));
+  box-shadow: var(--jato-elevation-shadow-level-2, none);
 }
 
 .binf-widgets .csui-carousel-film-strip-inner .binf-item .binf-thumb-img > div {
@@ -298,8 +318,8 @@
   width: calc(100%);
   height: auto;
   margin: 0;
-  padding: 20px 0px 2px 0px;
-  background-color: rgba(17, 17, 17, 0.95);
+  padding: 20px 0 2px 0;
+  background-color:  var(--jatx-const-transparent, rgba(17, 17, 17, 0.95));
 }
 
 body.binf-widgets.csui-on-ipad .csui-thumbcarousel-dialog.cs-dialog .csui-carousel-film-strip .binf-carousel {
@@ -313,7 +333,7 @@ body.binf-widgets.csui-on-ipad .csui-thumbcarousel-dialog.cs-dialog .csui-carous
   transition: all .2s ease-in-out 0s;
   width: calc(20% - 20px);
   height: 100%;
-  margin: 0px;
+  margin: 0;
   top: 0;
   color: #ffffff;
   display: flex;
@@ -352,9 +372,26 @@ html[dir="rtl"] .binf-widgets .csui-thumbcarousel-dialog .binf-carousel .binf-ca
   padding: 33px;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-thumbcarousel-dialog-close {
+  top: 12px;
+}
+
 .binf-widgets .csui-thumbcarousel-dialog.cs-dialog .binf-modal-dialog .tile-header.binf-modal-header .cs-close:focus,
 .binf-widgets .csui-carousel-film-strip-inner .binf-item:focus {
   outline: 1px solid #2e3d98;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-carousel-film-strip-inner .binf-item:focus {
+  outline: 1px solid #004AF0;
+  border-radius: var(--jato-radii-lrg,3px);
+  -webkit-border-radius: var(--jato-radii-lrg,3px);
+  -moz-border-radius: var(--jato-radii-lrg,3px);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-thumbcarousel-dialog .binf-carousel .binf-carousel-control .jato-slick-button {
+  --jatx-otc-button-large-size: 60px;
+  background-color: var(--jato-background-elevation-level-1);
+  box-shadow: var(--jato-elevation-shadow-level-3);
 }
 
 .binf-widgets .csui-thumbcarousel-dialog .binf-carousel .binf-carousel-control:hover,
@@ -433,7 +470,7 @@ html[dir="rtl"] .binf-widgets .csui-thumbcarousel-dialog .binf-carousel .binf-ca
 
 .binf-widgets .csui-carousel-film-strip .binf-thumb-caption {
   display: none;
-  color: #ffffff;
+  color: var(--jato-typography-text-color-primary,#ffffff);
   position: absolute;
   top: -18px;
   left: 0;
@@ -460,12 +497,21 @@ html[dir="rtl"] .binf-widgets .csui-thumbcarousel-dialog .binf-carousel .binf-ca
   background-color: #000000;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-active-item-name{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .binf-widgets .binf-modal-dialog .csui-active-item-name >otc-button:not(:first-of-type){
+  margin-left: var(--jato-margin-med);
+}
+
 .binf-widgets .csui-current-total-items,
 .binf-widgets .csui-active-item-name {
   position: fixed;
   top: 20px;
   left: 32px;
-  color: #ffffff;
+  color: var(--jato-typography-text-color-primary, #ffffff);
   z-index: 1;
   font-size: 20px;
 }
@@ -495,9 +541,13 @@ html[dir="rtl"] .binf-widgets .csui-thumbcarousel-dialog .binf-carousel .binf-ca
   max-width: calc(100% - 32px);
 }
 
-.binf-widgets .csui-active-item-name .csui-download-gallery,
-.binf-widgets .csui-active-item-name .csui-rotate-gallery,
-.binf-widgets .csui-active-item-name .csui-zoom-gallery {
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-active-item-name .csui-rotate-gallery #rightRotation{
+  transform: rotateY(-180deg);
+}
+
+[data-smart-theme="cf"] .binf-widgets .csui-active-item-name .csui-download-gallery,
+[data-smart-theme="cf"] .binf-widgets .csui-active-item-name .csui-rotate-gallery,
+[data-smart-theme="cf"] .binf-widgets .csui-active-item-name .csui-zoom-gallery {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -511,12 +561,12 @@ html[dir="rtl"] .binf-widgets .csui-thumbcarousel-dialog .binf-carousel .binf-ca
   cursor: pointer;
 }
 
-.binf-widgets .csui-active-item-name .csui-download-gallery:hover,
-.binf-widgets .csui-active-item-name .csui-download-gallery:focus,
-.binf-widgets .csui-active-item-name .csui-rotate-gallery:hover,
-.binf-widgets .csui-active-item-name .csui-rotate-gallery:focus,
-.binf-widgets .csui-active-item-name .csui-zoom-gallery:hover,
-.binf-widgets .csui-active-item-name .csui-zoom-gallery:focus {
+[data-smart-theme="cf"] .binf-widgets .csui-active-item-name .csui-download-gallery:hover,
+[data-smart-theme="cf"] .binf-widgets .csui-active-item-name .csui-download-gallery:focus,
+[data-smart-theme="cf"] .binf-widgets .csui-active-item-name .csui-rotate-gallery:hover,
+[data-smart-theme="cf"] .binf-widgets .csui-active-item-name .csui-rotate-gallery:focus,
+[data-smart-theme="cf"] .binf-widgets .csui-active-item-name .csui-zoom-gallery:hover,
+[data-smart-theme="cf"] .binf-widgets .csui-active-item-name .csui-zoom-gallery:focus {
   background-color: #8597a2;
 }
 

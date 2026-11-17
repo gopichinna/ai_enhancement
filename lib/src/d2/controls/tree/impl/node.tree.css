@@ -1,8 +1,8 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .csui-nodestable .d2-table-treeview {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .binf-widgets .csui-facet-table-container .csui-table-facetview.csui-facetview-hidden,
@@ -61,6 +61,18 @@
   height: 100%;
 }
 
-.d2-tree .fancytree-node .fancytree-title.perspective-load-error {
+.d4-tree .fancytree-node .fancytree-title.perspective-load-error {
     color: #DF3324;
+}
+
+.d2-tree-panel .d4-tree .fancytree-custom-icon.d2-tree-icon-repository {
+  background-image: url(images/node-repository.svg);
+}
+
+.d2-tree-panel .d4-tree .fancytree-custom-icon.d2-tree-icon-favorites {
+  background-image: url(images/node-favorites.svg);
+}
+
+.d2-tree-panel .d4-tree .fancytree-custom-icon.d2-tree-icon-home-cabinet {
+  background-image: url(images/node-home-cabinet.svg);
 }

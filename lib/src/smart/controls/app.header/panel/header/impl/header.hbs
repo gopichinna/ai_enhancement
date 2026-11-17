@@ -1,10 +1,17 @@
 <div class="smart-panel-header-logo">
-  <otc-button title="{{closeTitle}}" class="smart-app-header-burger-close-btn {{rtlClass}}" arialabel="{{closeAriaLabel}}"
-    icon="smart_action:action_hamburger32" iconappearance="{{iconAppearance}}" image="" size="" type=""
-    role="none" slot="hamburger" headeritem="" classname="" value=""></otc-button>
-
-  <otc-brand class="smart-otc-brand" align="" logoalttext="" logosrc="{{logoSrc}}" logourl="" logourltarget="" primarytext="" secondarytext=""
-    versiontext="" slot="brand" dark="" arialabel="" title="">
+  <div class="smart-panel-header-left-area">
+    {{#if isJato}}
+      <otc-button type="subtle" arialabel="{{closeAriaLabel}}" title="{{closeTitle}}" slot="hamburger" 
+        class="smart-app-header-burger-close-btn {{rtlClass}}">
+        <otc-icon size="24" svg="{{actionHamburgerClose}}"></otc-icon>
+      </otc-button>
+    {{else}}
+      <otc-button title="{{closeTitle}}" class="smart-app-header-burger-close-btn {{rtlClass}}"
+        arialabel="{{closeAriaLabel}}" icon="smart_action:action_hamburger32" iconappearance="{{iconAppearance}}" image=""
+        size="" type="" role="none" slot="hamburger" headeritem="" classname="" value=""></otc-button>
+    {{/if}}
+    <otc-brand class="smart-otc-brand" align="" logoalttext="" logosrc="{{logoSrc}}" logourl="" logourltarget=""
+      primarytext="" secondarytext="" versiontext="" slot="brand" dark="" arialabel="" title="">
+  </div>
 </div>
-
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

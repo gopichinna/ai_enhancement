@@ -1,16 +1,19 @@
 {{#if showPageSizeMenu}}
   <div class="expanded-pager pager-filter csui-pagesize-menu">
     <div class="smart-dropdown csui-dropdown">
-      <a id="menuButton" tabindex="0" aria-expanded="false" role="button" class="smart-dropdown-toggle csui-acc-focusable"
-      aria-label="{{pageSizeMenuAria}} {{totalItemsAria}}">
-        <div class="csui-pageSize binf-hidden-xs">{{itemsPerPage}}</div>
-        <div class="csui-icon icon-expandArrowDown" title="{{pageSizeMenuAria}}"></div>
-      </a>
-      <otc-menu buttonId="menuButton" alignment="left" class="smart-dropdown-menu csui-dropdown-list" role="menu">
+      <otc-button type="{{buttonType}}" size="{{buttonSize}}" class="smart-dropdown-toggle" title="{{pageSizeMenuAria}}" id="menuButton" arialabel="{{pageSizeMenuAria}} {{totalItemsAria}}">
+        <span class="csui-pageSize">{{itemsPerPage}}</span>
+        {{#if isJATOTheme}}
+          <otc-icon svg="{{jatoIcons.actionChevronSmallDown}}" isPresentation></otc-icon>
+        {{else}}
+          <otc-icon icon="smart_action_16:action_caret_down16" isPresentation></otc-icon>
+        {{/if}}
+      </otc-button>
+      <otc-menu buttonId="menuButton" alignment="left" class="smart-dropdown-menu csui-dropdown-list" role="none" forceopenup>
         <otc-menugroup class="smart-menu-group">
         {{#each items}}
         <otc-menuradio class="{{className}}" data-pagesize="{{ddListItem}}" {{ariaCurrent}}
-        aria-label="{{ariaTxt}}" {{checked}}>{{txt}}</otc-menuradio>
+        arialabel="{{ariaTxt}}" {{checked}}>{{txt}}</otc-menuradio>
         {{/each}}
         </otc-menugroup>
       </otc-menu>
@@ -25,6 +28,6 @@
       </ul>
     </div>
   </div>
-<div class="csui-total-container-items {{#if checkForPageLinks}}binf-hidden-xs{{/if}}">{{totalItems}}</div>
+<div class="csui-total-container-items">{{totalItems}}</div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

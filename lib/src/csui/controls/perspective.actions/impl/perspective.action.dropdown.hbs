@@ -1,0 +1,25 @@
+
+<a
+  id="{{ButtonId}}"
+  role="button"
+  href="#"
+  class="csui-top-ribbon-actions-dropdown-toggle"
+  data-binf-toggle="dropdown"
+  title="{{perspectiveActionsbarLabel}}"
+  arialabel="{{perspectiveActionsbarLabel}}"
+  aria-expanded="false"
+  aria-controls="{{menuId}}"
+>
+{{#if isJATO}}
+  <otc-icon class="csui-topribbon-actions-dropdowns-jatoicon" size="16" svg="{{iconSVG}}" type="subtle"></otc-icon>
+{{else}}
+  {{{icon-v2 iconName="csui_action_more16" size="small" states="true"}}}
+{{/if}}
+</a>
+<ul
+  id="{{menuId}}"
+  class="csui-top-ribbon-actions-dropdown-menu csui-normal-scrolling"
+  role="menu"
+  aria-labelledby="{{ButtonId}}"
+></ul>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

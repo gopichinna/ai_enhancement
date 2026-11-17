@@ -1,6 +1,26 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+:root {
+  --jatx-node-picker-header-min-height: 24px;
+  --jatx-node-picker-header-margin-top: 7px;
+  --jatx-node-picker-start-locations-height: 24px;
+  --jatx-node-picker-start-locations-margin-left: 0px;
+  --jatx-node-picker-header-toggler-height: 24px;
+  --jatx-target-browse-apply-properties-selector-width: unset;
+  --jatx-node-picker-header-toggler-margin-left: 0px;
+}
+
+[data-smart-theme='cf'] {
+  --jatx-node-picker-header-min-height: 36px;
+  --jatx-node-picker-header-margin-top: 0px;
+  --jatx-node-picker-start-locations-height: none;
+  --jatx-node-picker-start-locations-margin-left: -8px;
+  --jatx-node-picker-header-toggler-height: unset;
+  --jatx-target-browse-apply-properties-selector-width: 240px;
+  --jatx-node-picker-header-toggler-margin-left: 24px;
+}
+
 .binf-widgets .smart-target-browse .title-section {
   float: left;
 }
@@ -8,7 +28,7 @@
 .binf-widgets .smart-target-browse .apply-properties-selector {
   position: relative;
   
-  width: 240px;
+  width: var(--jatx-target-browse-apply-properties-selector-width);
   float: left;
 }
 @media only screen and (max-width: 640px) {
@@ -51,17 +71,21 @@
   justify-content: flex-start;
   display: flex;
   z-index: 2;
-  min-height: 36px;
+  min-height: var(--jatx-node-picker-header-min-height);
   align-items: center;
-  padding: 0px 24px;
+  padding: 0px var(--jato-padding-content-xs, 24px) 0px var(--jato-padding-xxl, 24px);
+  gap: var(--jato-margin-xl, 0px);
+  margin-top: var(--jatx-node-picker-header-margin-top);
 }
 
 .binf-widgets .smart-target-browse .smart-node-picker .smart-start-locations {
-  margin-left: -8px;
+  margin-left: var(--jatx-node-picker-start-locations-margin-left);
+  height: var(--jatx-node-picker-start-locations-height);
 }
 
 .binf-widgets .smart-target-browse .smart-node-picker .smart-view-toggler {
-  margin-left: 24px;
+  margin-left: var(--jatx-node-picker-header-toggler-margin-left);
+  height: var(--jatx-node-picker-header-toggler-height);
 }
 
 .binf-widgets .smart-target-browse .csui-target-controls .csui-separator {
@@ -125,14 +149,10 @@ and (max-device-width: 1024px) {
   float: left;
 }
 
-.binf-widgets .smart-target-browse .csui-filtername {
-  border-radius: 5px;
-  font-size: 12px;
-  width: calc(100% - 20px);
-  border: 1px solid #757575;
-  height: 32px;
-  padding: 8px 14px;
+.binf-widgets .smart-target-browse .csui-filtername { 
+  width: calc(100% - 20px); 
 }
+
 .binf-widgets .binf-modal-header .csui-filtername-container .csui-filtername-error-wrapper{
   display: inline-block;
   width: auto;

@@ -1,10 +1,17 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-input-font-size: 13px;
+  --jatx-csui-input-line-height: 18px;
+  --jatx-csui-input-placeholder-font-weight: 350;
+}
+
 .binf-widgets .cs-formfield {
   display: block;
   height: auto;
   line-height: 28px;
+  font-size: var(--jatx-csui-input-font-size, inherit);
 }
 
 
@@ -33,33 +40,44 @@
 
 .cs-formfield .cs-field-write-inner {
   display: -webkit-box; 
+
   
   display: -ms-flexbox; 
   display: -webkit-flex; 
+
   
   -webkit-box-orient: horizontal;
   -webkit-flex-direction: row;
   -ms-flexbox-direction: row;
   -ms-flex-direction: row;
+
   
   width: 100%;
   height: 100%;
   line-height: 1.2;
-  font-color: #333333;
   font-size: 14px;
 }
 
 .cs-formfield .cs-field-write .csui-formfield-disabled,
 .cs-formfield .cs-field-write .csui-formfield-disabled:hover{
   background-color: #eeeeee;
+
   
+
   
   color: #666666;
   cursor: default;
+  pointer-events: none;
 }
 
 .cs-formfield .cs-field-write-inner .cs-icon-disabled {
   opacity: 0.4;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .cs-formfield .cs-field-write-inner textarea::placeholder,
+[data-smart-theme]:not([data-smart-theme="cf"]) .cs-formfield .cs-field-write-inner input::placeholder {
+  color: var(--jato-typography-forms-text-color-placeholder-text);
+  font-weight: var(--jatx-csui-input-placeholder-font-weight);
 }
 
 
@@ -117,6 +135,10 @@
   margin-top: 2px;
 }
 
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-formfield .csui-jato-edit-cancel {
+  margin-top: 4px;
+}
+
 
 .cs-formfield .inline-edit-icon.icon-save {
   border: 1px solid #333333;
@@ -143,7 +165,7 @@
   -ms-flex-pack: justify;
   -moz-box-pack: justify;
   justify-content: center;
-  padding: 0px;
+  padding: 0;
   max-width: 100%;
 }
 
@@ -179,6 +201,7 @@
 
 
 .cs-formfield .cs-field-read button {
+  color: var(--jato-typography-text-color-primary, inherit);
   border: none;
   background-color: transparent;
   width: 100%;
@@ -205,6 +228,7 @@
 .cs-formfield .cs-field-read button:focus,
 .cs-formfield .cs-field-read div[data-cstabindex="0"]:focus {
   
+
   
   outline: none;
   -webkit-box-shadow: none;
@@ -222,6 +246,7 @@
   .cs-formfield .cs-field-read div[data-cstabindex="0"]:focus {
     border: 1px solid black;
   }
+
   .cs-formfield .cs-field-read button:hover,
   .cs-formfield .cs-field-read div[data-cstabindex="0"]:hover {
     border: 1px solid black;
@@ -285,7 +310,7 @@
 }
 
 .cs-formfield div.placeholder {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .cs-formfield .cs-field-write-inner {
@@ -295,7 +320,7 @@
 
 .binf-widgets .cs-formfield .cs-field-write-inner.binf-open ul.binf-dropdown-menu {
   max-width: 100%;
-  min-width: 192px;
+  min-width: inherit;
 }
 
 .cs-field-write-inner input {
@@ -444,4 +469,10 @@
   -webkit-flex: 1; 
   -ms-flex: 1 0 auto; 
   flex: 1;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-formfield .cs-field-read:hover a:not(.cs-user-container-no-hover) {
+  color: var(--jato-cta-links-text-color-hover);
+  text-decoration: underline;
+  text-underline-offset: 20%;
 }

@@ -1,0 +1,16 @@
+<div {{#unless isJATO}} class="binf-dropdown" {{/unless}}>
+  {{#if isJATO}}
+    <otc-button id="{{btnId}}" class="item-title-menu-button csui-acc-focusable" type="subtle" size="small" tabindex="-1" ariaLabel="{{showMoreAria}}" title="{{showMoreTooltip}}">
+      <otc-icon svg="{{buttonIcon}}" type="subtle"></otc-icon>
+    </otc-button>
+  {{else}}
+  <button id="{{btnId}}" type="button" class="item-title-menu-button csui-acc-focusable"
+          aria-haspopup="true" aria-expanded="false"
+          aria-label="{{showMoreAria}}" title="{{showMoreTooltip}}">
+    <span class="csui-button-icon icon-expandArrowDown" title="{{showMoreTooltip}}"></span>
+  </button>
+  {{/if}}
+  <otc-menu buttonid="{{btnId}}" ariarole="menu" role="none" scrollable></otc-menu>
+</div>
+
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

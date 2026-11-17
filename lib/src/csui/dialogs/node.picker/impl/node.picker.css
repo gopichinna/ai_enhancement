@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .cs-dialog.target-browse {
   overflow: auto;
@@ -26,7 +26,7 @@
 }
 
 .target-browse .binf-modal-content {
-  border: 0px;
+  border: 0;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
@@ -91,6 +91,16 @@ span.csui-separator {
 
 
 
+
+
+
+
+
+
+
+
+
+
 .cs-header-control .csui-title {
   display: inline-block;
   vertical-align: middle;
@@ -110,7 +120,8 @@ span.csui-separator {
   -ms-flex-align: center;
   -webkit-align-items: center;
 }
-@media only screen and (max-width: 640px) {
+
+@media only screen and (width <= 640px) {
   .binf-widgets .csui-start-locations > div.dropdown-locations > .binf-btn-default {
     padding: 0 4px;
   }
@@ -141,6 +152,7 @@ span.csui-separator {
   width: auto;
   top: 0;
   transform: translateZ(0); 
+
   
 }
 
@@ -170,13 +182,13 @@ span.csui-separator {
 
 .csui-start-locations .binf-dropdown-menu {
   z-index: 1000;
-  border-radius: 0px;
-  margin: 0px;
-  padding: 0.25em 0px;
+  border-radius: 0;
+  margin: 0;
+  padding: 0.25em 0;
   background-clip: border-box;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
 }
 
 .csui-start-locations .binf-dropdown-menu li a {
@@ -191,7 +203,7 @@ span.csui-separator {
 }
 
 .csui-start-locations .binf-dropdown-menu .binf-divider {
-  margin: 0.25em 0px;
+  margin: 0.25em 0;
 }
 
 .csui-start-locations .cs-icon,
@@ -257,10 +269,11 @@ span.csui-separator {
   background-color: #e6e6e6;
 }
 
-@media only screen and (max-height: 400px) {
+@media only screen and (height <= 400px) {
   .target-browse .cs-folder-name {
     height: 34px;
   }
+
   .target-browse .csui-node-picker .cs-breadcrumb {
     height: 1.2em;
   }
@@ -314,7 +327,7 @@ span.csui-separator {
 .cs-modal-filter .binf-form-group {
   position: relative;
   height: 100%;
-  margin: 0px;
+  margin: 0;
   margin-left: 24px;
   display: inline-flex;
   flex-direction: row;
@@ -383,6 +396,7 @@ span.csui-separator {
   z-index: 10 !important;
   pointer-events: auto;
 }
+
 .cs-modal-filter .binf-form-control-feedback {
   margin-right: .5em;
   margin-left: .5em;
@@ -394,12 +408,15 @@ span.csui-separator {
   z-index: 10 !important;
   pointer-events: auto;
 }
+
 .cs-modal-filter .binf-form-control-feedback.cs-icon{ 
   z-index: auto !important;  
 }
+
 .cs-modal-filter .binf-form-control-feedback.icon-formfield-clear {
   margin-right: 0;
 }
+
 .cs-modal-filter .binf-form-control-feedback:hover,
 .cs-modal-filter .binf-form-control-feedback:focus {
   width: 1em;
@@ -459,7 +476,7 @@ span.csui-separator {
 
 .cs-dialog .modal-md .tile-title {
   padding: 0;
-  margin: 0px 0 0 5px;
+  margin: 0 0 0 5px;
 }
 
 .cs-dialog .modal-md .tile-title .csui-heading {
@@ -488,7 +505,7 @@ span.csui-separator {
 
 .csui-node-picker .tile-header {
   height: 27px;
-  border: 0px;
+  border: 0;
 }
 
 .target-browse .tile-title {
@@ -496,6 +513,7 @@ span.csui-separator {
   padding-left: 15px;
   font-size: 20px;
 }
+
 .binf-widgets .cs-dialog.target-browse .cs-header-control {
   margin: 0;
   display: flex;
@@ -544,7 +562,7 @@ html[dir="rtl"] .cs-modal-filter .binf-form-control-feedback{
   right: 58px;
 }
 
-@media all and (max-width: 1023px) {
+@media all and (width <= 1023px) {
   .target-browse .cs-header-control .csui-title {
     min-width: 80px;
     max-width: 370px;
@@ -563,8 +581,7 @@ html[dir="rtl"] .cs-modal-filter .binf-form-control-feedback{
   }
 }
 
-@media all and (max-width: 992px) {
-
+@media all and (width <= 992px) {
   .binf-modal-dialog .metadata-content .metadata-content-header .metadata-header-right-bar-container {
     top: 50px;
     padding-top: 0;
@@ -572,12 +589,12 @@ html[dir="rtl"] .cs-modal-filter .binf-form-control-feedback{
 
   .binf-modal-dialog .metadata-content .metadata-content-header.shortcut-object .metadata-header-right-bar-container,
   .binf-modal-dialog .metadata-content .metadata-content-header.with-close-icon .metadata-header-right-bar-container {
-    top: 0px;
+    top: 0;
     padding-top: 16px;
   }
 
   .binf-widgets .target-browse .metadata-content .cs-metadata-properties {
-    top: 0px;
+    top: 0;
     padding-top: 16px;
   }
 
@@ -610,13 +627,14 @@ html[dir="rtl"] .cs-modal-filter .binf-form-control-feedback{
   }
 }
 
+
 @media (forced-colors: active) {
-  
   .csui-start-locations.binf-dropdown > div .binf-dropdown-toggle:hover,
   .csui-start-locations.binf-dropdown > div .binf-dropdown-toggle:focus {
     outline: 1px solid black;
     outline-offset: -1px;
   }
+
   .target-browse .cs-folder-name .cs-icon:hover,
   .target-browse .cs-folder-name .cs-icon:focus{
     outline: 1px solid black;

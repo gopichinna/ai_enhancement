@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-btn-lock-status {
   background: transparent no-repeat;
@@ -7,6 +7,8 @@
   padding: 0;
   margin: 0;
   border: 0 none;
+  display: flex;
+  align-items: center;
 }
 
 .binf-widgets .csui-btn-lock-status > * {
@@ -22,6 +24,14 @@
 
 .csui-btn-lock-status-action {
   cursor: pointer;
+}
+
+otc-button.csui-btn-lock-status-action {
+  margin-right: 4px;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .csui-btn-lock-status .csui-lockby-status.cs-formfield-readonly {
+  height: 28px;
 }
 
 .binf-widgets .csui-btn-lock-status .csui-lockby-status {

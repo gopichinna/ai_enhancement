@@ -21,6 +21,7 @@
         "d2/commands/about.d2",
         "d2/commands/create.file",
         "d2/commands/import.file",
+        "d2/commands/edit.online",
         "d2/commands/create.linked.doc",
         "d2/commands/create.email.attachments",
         "d2/commands/create.folder",
@@ -86,6 +87,7 @@
         "d2/commands/viewer/compare.with",
         "d2/commands/viewer/document.merge",
         "d2/commands/viewer/direct.view.link",
+        "d2/commands/viewer/publish",
         "d2/commands/advanced.search",
         "d2/commands/show.dialog",
         "d2/commands/d2collections/add.to.d2collections",
@@ -104,6 +106,7 @@
         "d2/commands/aviator/reset.config",
         "d2/commands/aviator/save.config",
         "d2/commands/aviator/launch.aviator.chat",
+        "d2/commands/aviator/launch.aviator.chat.for.vd",
         "d2/commands/mip/reset.config",
         "d2/commands/mip/save.config",
         "d2/commands/d2-locations",
@@ -114,7 +117,14 @@
         "d2/commands/collaborative.edit.consolidated",
         "d2/commands/collaborative.edit.personal",
         "d2/commands/collaborative.checkout.merge",
-        "d2/commands/show.external"
+        "d2/commands/show.external",
+        "d2/commands/bws/create.workspace",
+        "d2/commands/bws/bws.properties",
+        "d2/commands/bws/bws.members",
+        "d2/commands/bws/bws.add.favorite",
+        "d2/commands/bws/bws.remove.favorite",
+        "d2/widgets/task.aviator/commands/launch.task.aviator.chat",
+        "d2/commands/d2-export"
       ]
     }
   },
@@ -197,6 +207,48 @@
       ]
     }
   },
+  "dctmw/utils/icons/dctmw.jato.action.icons": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/utils/theme/jato_action_icons"
+      ]
+    }
+  },
+  "dctmw/utils/icons/dctmw.jato.branding": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/utils/theme/jato_branding"
+      ]
+    }
+  },
+    "dctmw/utils/icons/dctmw.jato.illustrations": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/utils/theme/jato_illustrations"
+      ]
+    }
+  },
+  "dctmw/utils/icons/dctmw.jato.mime.icons": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/utils/theme/jato_mime_icons"
+      ]
+    }
+  },
+  "dctmw/utils/icons/dctmw.jato.other.icons": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/utils/theme/jato_other_icons"
+      ]
+    }
+  },
+  "dctmw/utils/icons/dctmw.jato.status.icons": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/utils/theme/jato_status_icons"
+      ]
+    }
+  },
   "d2/widgets/task.details/task.additional.panels": {
     "extensions": {
       "d2-desktop": [
@@ -216,6 +268,27 @@
     "extensions": {
       "d2-desktop": [
         "d2/extensions/desktop.app.scope.perspectives"
+      ]
+    }
+  },
+  "d2/server.adaptors/state.icon.views/state.icon.view.collection": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/extensions/state.icons"
+      ]
+    }
+  },
+  "csui/controls/node.state/node.state.icons": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/extensions/state.icons.items"
+      ]
+    }
+  },
+  "csui/utils/dragndrop.supported.subtypes": {
+    "extensions": {
+      "d2-desktop": [
+        "d2/extensions/dragndrop.supported.subtypes"
       ]
     }
   }

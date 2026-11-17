@@ -1,0 +1,12 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .aie-chat-panel.task-aviator-panel .csui-sidepanel-container {
+    width: 480px;
+    max-width: 480px;
+    min-width: 480px
+    }
+
+.binf-widgets .aie-chat-panel.task-aviator-panel.csui-sidepanel .csui-sidepanel-container .csui-sidepanel-body {
+    padding: 0
+    }

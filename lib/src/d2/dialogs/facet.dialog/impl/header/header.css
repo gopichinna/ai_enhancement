@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-facet-dialog .tile-header.binf-modal-header>div {
     height: 100%;
@@ -28,7 +28,7 @@
 
 .d2-facet-dialog .d2-search-input-container .d2-text-placeholder {
     align-items: center;
-    color: #666;
+    color: #666666;
     display: flex;
     left: .7em;
     pointer-events: none;
@@ -81,10 +81,10 @@
 
 
 .d2-facet-dialog .d2-search-box .d2-input {
-    background-color: #fff;
-    border: 1px solid #fff !important;
+    background-color: #ffffff;
+    border: 1px solid #ffffff !important;
     border-radius: 3px 3px 0 0;
-    color: #333;
+    color: #333333;
     display: inline-block;
     font-size: 1em;
     font: inherit;

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-metadata-properties .d2-metadata-errors {
   border-radius: 0 0 3px 3px;
@@ -34,7 +34,7 @@
   vertical-align: middle;
   font-size: 18px;
   line-height: 24px;
-  color: #000;
+  color: #000000;
 }
 
 .d2-metadata-properties .d2-metadata-errors .header-icon {
@@ -67,7 +67,7 @@
 }
 
 .d2-metadata-properties .d2-metadata-errors .error-item:not(:last-child) {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .d2-metadata-properties .d2-metadata-errors .error-item .error-text {

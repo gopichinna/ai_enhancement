@@ -1,13 +1,22 @@
 <div id="csui-inline-permissions-user-picker" class="csui-inline-permissions-user-picker"></div>
 <div class="csui-user-picker-buttons csui-inlineform-group">
-  <button type="submit" class="binf-btn csui-btn binf-btn-primary cs-save-button" disabled title="{{SaveButtonLabel}}"
-            aria-label="{{SaveButtonLabel}}">
+
+  {{#if isJATO}}
+    <otc-button type="subtle" size="small" class="cs-save-button" disabled title="{{SaveButtonLabel}}" arialabel="{{SaveButtonLabel}}">
+      <otc-icon svg='{{jatoSaveIcon}}'></otc-icon>
+    </otc-button>
+    <otc-button type="subtle" size="small" class="csui-btn-cancel cs-cancel-button" title="{{CancelButtonLabel}}" arialabel="{{CancelButtonLabel}}">
+      <otc-icon svg='{{jatoCloseIcon}}'></otc-icon>
+    </otc-button>
+  {{else}}
+    <button type="submit" class="binf-btn csui-btn binf-btn-primary cs-save-button" disabled title="{{SaveButtonLabel}}" aria-label="{{SaveButtonLabel}}">
       {{{icon-v2 iconName="csui_action_confirm32" theme=iconTheme size='normal' states='true'}}}
     </button>
-    <button type="reset" class="binf-btn csui-btn binf-btn-default cs-cancel-button" title="{{CancelButtonLabel}}"
-            aria-label="{{CancelButtonLabel}}">
+    <button type="reset" class="binf-btn csui-btn binf-btn-default cs-cancel-button" title="{{CancelButtonLabel}}" aria-label="{{CancelButtonLabel}}">
       {{{icon-v2 iconName="csui_action_cancel32" theme=iconTheme size='normal' states='true'}}}
     </button>
+  {{/if}}
+  
 </div>
 <div class="csui-change-user-error"></div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

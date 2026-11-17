@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-wf-timeline-task-container {
   border-top: 1px solid #cccccc;
@@ -252,20 +252,25 @@
   max-width: 284px;
   border-top: 4px solid #0084CE;
 }
+
 .d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-popover-content{
   padding: 0;
 }
+
 .d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-popover-content .d2-task-note{
   padding: 0 16px 8px 16px;
   cursor: auto;
 }
+
 .d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-popover-content .d2-task-note:hover{
   background-color: unset;
 }
+
 .d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-arrow:after{
   top: -3px;
   border-bottom-color: #0084CE;
 }
+
 .d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-popover-content .d2-workflow-notes-popover .more-link-container{
   height: 28px;
   font-weight: bold;
@@ -277,15 +282,18 @@
   width: 100%;
   padding: 0 16px 0 16px;
 }
+
 .d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-popover-content .d2-workflow-notes-popover .more-link-container .more-link{
   cursor: pointer;
 }
+
 .d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-popover-content .d2-task-note .d2-task-note-content{
   font-size: 14px;
   line-height: 21px;
   padding-top: 0;
   display: -webkit-box;
 }
+
 .d2-workflow-timeline-notes-popup.binf-popover.binf-bottom .binf-popover-content .d2-task-note .d2-task-note-header .note-date-container{
   margin: 0;
 }

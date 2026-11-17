@@ -1,0 +1,94 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.dctm-signin-view .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 0;
+    gap: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: fit-content;
+}
+
+.dctm-signin-view .footer-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--jato-padding-content-sm);
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+@media screen and (width <=1000px) {
+    .dctm-signin-view .footer-frame {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+
+.dctm-signin-view .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 12px;
+    height: auto;
+    flex-wrap: wrap;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.dctm-signin-view .footer-link {
+    height: var(--jato-size-height-24);
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--jato-font-size-sm	);
+    line-height: 16px;
+    color: var(--jato-cta-links-text-color-neutral);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+}
+
+.dctm-signin-view .footer-text {
+    text-align: center;
+    height: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--jato-font-size-sm	);
+    line-height: var(--jato-line-height-sm);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+@media screen and (width <=527px) {
+    .dctm-signin-view .footer-text {
+        width: auto;
+        text-wrap: wrap;
+        text-align: center;
+    }
+}
+
+.dctm-signin-view {
+    .footer-bar {
+        width: 1px;
+        height: 12px;
+        background: #CCCCCC;
+        border-radius: 1px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+}

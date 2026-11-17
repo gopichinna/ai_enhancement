@@ -1,8 +1,12 @@
 <div class="csui-user-container">
 {{#if isPublicPermission}}
   <div class="csui-profileimg binf-pull-left">
+  {{#if jatoIcon}}
+    <otc-icon svg="{{jatoIcon}}" size="24" type="raw" class="csui-table-control-user-cell-img" title="{{publicAccessLabel}}" arialabel="{{publicAccessLabel}}"></otc-icon>
+  {{else}}
     <span class="csui-icon-paceholder csui-icon icon_permmision_public"
           title="{{publicAccessLabel}}" aria-label="{{publicAccessLabel}}"></span>
+  {{/if}}
   </div>
   <div class="member-info{{#if disabled}} binf-disabled{{/if}}">
     <div class="">
@@ -12,16 +16,24 @@
 {{else}}
   {{#if showProfileImg}}
     <div class="csui-profileimg{{#if disabled}} binf-disabled{{/if}} binf-pull-left">
-    <span class="csui-icon {{#if isOwner}} icon_permmision_owner {{else}}
-      {{#if isOwnerGroup}} icon_permmision_owner_group {{else}} csui-icon-paceholder
-      {{#if isGroup}} image_group_placeholder_permission
-      {{else}} image_user_placeholder_permission{{/if}}{{/if}}{{/if}}" title="{{title}}">
-          {{#if isUser}}{{initials}}{{/if}}</span>
-      {{#if isOwner}}
-      {{else}}
-        <img class="csui-icon-user csui-icon binf-img-circle binf-hidden" src="{{usrImgSrc}}"
-             alt="{{name}}" title="{{name}}" aria-label="{{userTypeAria}}">
-      {{/if}}
+    {{#if jatoIcon}}
+      <otc-icon svg="{{jatoIcon}}" size="24" type="raw" class="csui-table-control-user-cell-img" title="{{title}}"></otc-icon>
+    {{else}}
+      <span class="csui-icon {{#if isOwner}} icon_permmision_owner {{else}}
+          {{#if isOwnerGroup}} icon_permmision_owner_group {{else}} csui-icon-paceholder
+          {{#if isGroup}} image_group_placeholder_permission
+          {{else}} image_user_placeholder_permission{{/if}}{{/if}}{{/if}}" title="{{title}}">
+            {{#if isUser}}
+              {{#if isJATO}}
+                <otc-button type="subtle" class="csui-user-icon" size="small" arialabel="{{userTypeAria}}">
+                  <otc-avatar class="csui-profile-img" image="" size="24" initials="{{initials}}"></otc-avatar>
+                </otc-button>
+              {{else}}
+                <otc-avatar class="csui-profile-img cf-csui-profile-img" image="" initials="{{initials}}" arialabel="{{userTypeAria}}" interactive></otc-avatar>
+              {{/if}}
+            {{/if}}
+      </span>
+    {{/if}}
     </div>
   {{/if}}
   <div class="member-info">
@@ -53,4 +65,4 @@
     <span class="csui-selected-username">{{selectedUsername}}</span>
   </div>
 {{/if}}
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

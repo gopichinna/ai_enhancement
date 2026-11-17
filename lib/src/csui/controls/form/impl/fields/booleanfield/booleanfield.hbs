@@ -2,17 +2,26 @@
   <div class="cs-field-inner">
     <div class="control-area">
       <input type="checkbox" name="{{checkboxName}}" aria-labelledby="{{idBtnLabel}}"
-            {{#if idBtnDescription}} aria-describedby="{{idBtnDescription}}" {{/if}}
+        {{#if readonly}} readonly aria-readonly="true" {{/if}}
+        {{#if disabled}} disabled aria-disabled="true" {{/if}}
+        {{#if idBtnDescription}} aria-describedby="{{idBtnDescription}}" {{/if}}
         {{#if value}} aria-checked=true{{else}}
              aria-checked=false{{/if}} id="{{this.id}}">
     </div>
     {{#if this.applyFlag}}
       <div class="icon-container binf-hidden">
+      {{#if isJATO}}
+          <otc-button class="csui-icon apply-all block binf-hidden" title="{{titleApplyAll}}"
+              arialabel="{{titleApplyAll}}" tabindex="0" size="small" type="subtle">
+              <otc-icon svg="{{actionApplyToAll}}"></otc-icon>
+          </otc-button>
+      {{else}}
         <div class="csui-icon apply-all binf-hidden" title="{{titleApplyAll}}" tabindex="0"
              data-cstabindex="0"></div>
+      {{/if}}
       </div>
     {{/if}}
   </div>
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

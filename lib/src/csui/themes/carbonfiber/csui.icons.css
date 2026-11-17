@@ -1,6 +1,10 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-thumbnail-empty-folder-with-perms-svg: url(../jato/image/icons/empty-folder-with-perms.svg);
+}
+
 .csui-tabletoolbar .csui-toolbar-caption .csui-item-title-icon .csui-icon-group .csui-icon,
 .csui-table-cell-no-default-action .csui-icon-group .csui-icon {
   cursor: default;
@@ -8,12 +12,10 @@
 
 .binf-widgets .title-icon {
   display: block;
+  width: var(--jato-size-height-24, 36px);
+  height: var(--jato-size-height-24, 36px);  
   background-repeat: no-repeat;
   background-position: center;
-  width: 1em;
-  height: 1em;
-  line-height: 1em;
-  font-size: 1em;
 }
 
 .binf-widgets .cs-link-popover .cs-link-expand-icon {
@@ -24,6 +26,7 @@
   display: inline-flex;
   background-repeat: no-repeat;
   background-position: center;
+  justify-content: center;
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -155,10 +158,6 @@ button:active .circle_delete_grey {
 
 .collection {
   background-image: url('image/icons/collection.svg');
-}
-
-.compound_document {
-  background-image: url('image/icons/compound_document.svg');
 }
 
 .connected_workspaces {
@@ -555,6 +554,7 @@ html[dir="rtl"] .caret_left16_mo {
 .shortcut1 {
   background-image: url('image/icons/shortcut.svg');
 }
+
 .generation1 {
   background-image: url('image/icons/generation.svg');
 }
@@ -718,14 +718,17 @@ html[dir="rtl"] .caret_left16_mo {
 .csui-icon-home {
   background-image: url('image/icons/home.svg');
 }
+
 .csui-icon-home-black {
   background-image: url('image/icons/home_black.svg');
 }
+
 .csui-icon-home-black:hover {
   background-image: url('image/icons/home_black.svg');
   border: 1px solid black;
   border-radius: 35px;
 }
+
 .csui-icon-home-black:focus {
   background-image: url('image/icons/home_black.svg');
   border: 1px solid black;
@@ -1558,6 +1561,7 @@ button:active .icon-reserved_self, button:focus .icon-reserved_self {
 .icon-help {
   background-image: url('image/icons/help.svg');
 }
+
 .icon-help:hover {
   background-image: url('image/icons/help_mo.svg');
 }
@@ -1565,6 +1569,7 @@ button:active .icon-reserved_self, button:focus .icon-reserved_self {
 .icon-help:active {
   background-image: url('image/icons/help_white.svg');
 }
+
 .icon-help-black {
   background-image: url(image/icons/help_black.svg);
 }
@@ -1576,6 +1581,7 @@ button:active .icon-reserved_self, button:focus .icon-reserved_self {
 .icon-help-black:active {
   background-image: url('image/icons/help_black.svg');
 }
+
 
 
 .icon-pulse-comment {
@@ -1847,7 +1853,7 @@ html[dir="rtl"] .binf-widgets .csui-icon.csui-metadata-listview {
 }
 
 .icon-thumbnail-empty-page {
-  background-image: url('image/icons/empty_thumbnail_light.svg')
+  background-image: var(--jatx-thumbnail-empty-folder-with-perms-svg, url( "image/icons/empty_thumbnail_light.svg"));
 }
 
 .icon-switch_thumbnails32 {
@@ -1959,15 +1965,15 @@ html[dir="rtl"] .binf-dropdown-submenu > a > span.csui-caret {
   margin-left: 2px;
 }
 
-.binf-widgets .icon-settings-view *[data-theme="default"] .icon_theme_preview {
+.binf-widgets .icon-settings-view *[data-smart-theme="default"] .icon_theme_preview {
   background: url(image/branding/icons.setting/images/icon_theme_default.svg) no-repeat left;
 }
 
-.binf-widgets .icon-settings-view [data-theme="dark"] .icon_theme_preview {
+.binf-widgets .icon-settings-view [data-smart-theme="dark"] .icon_theme_preview {
   background: url(image/branding/icons.setting/images/icon_theme_light.svg) no-repeat left;
 }
 
-.binf-widgets .icon-settings-view [data-theme="light"] .icon_theme_preview {
+.binf-widgets .icon-settings-view [data-smart-theme="light"] .icon_theme_preview {
   background: url(image/branding/icons.setting/images/icon_theme_dark.svg) no-repeat left;
 }
 
@@ -2113,9 +2119,21 @@ html[dir="rtl"] .binf-dropdown-submenu > a > span.csui-caret {
     .icon-sortArrowDown,
     .icon-sortArrowUp,
     .mime_type,
-    .binf-dropdown .icon-expandArrowDown,
     .csui-impl-icon-v2__caret_up,
-    .csui-impl-icon-v2__caret_down {
+    .csui-impl-icon-v2__caret_down,
+    .icon-toolbarAdd,
+    .formfield_clear {
       filter: invert(1) brightness(1.5);
+    }
+
+    .arrow_back {
+      background-image: url(image/icons/arrow_back_white.svg);
+    }
+
+    .icon-caret-down,
+    .binf-widgets .icon-expandArrowDown,
+    .binf-widgets .icon-expandArrowDown:focus,
+    .binf-widgets .icon-expandArrowDown:active {
+      background-image: url('image/icons/caret_down_white.svg');
     }
 }

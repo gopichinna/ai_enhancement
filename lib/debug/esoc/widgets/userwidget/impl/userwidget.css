@@ -223,10 +223,13 @@
   margin: 1px 16px 16px 1px;
   padding: 0px;
 }
-.esoc-mini-profile-popover.binf-popover {
-  border-radius: 0px;
-  max-width: 376px;
+[data-smart-theme="cf"] .esoc-mini-profile-popover.binf-popover,
+[data-smart-theme="cf"] .binf-widgets .esoc-simple-mini-profile-popover.binf-popover {
   min-width: 376px;
+}
+.esoc-mini-profile-popover.binf-popover {
+  border-radius: var(--jato-radii-xl, 0px);
+  max-width: 376px;
   height: 134px;
   padding: 0px;
   border: 1px solid #cfcfcf;
@@ -1217,9 +1220,6 @@ a.esoc-user-messages {
 .binf-widgets .esoc-simple-user-widget-dialog .esoc-simple-user-widget-form {
   padding-right: 3em;
 }
-.binf-widgets .esoc-simple-user-widget-body .cs-form {
-  height: auto;
-}
 .binf-widgets .esoc-simple-user-widget-dialog .esoc-user-extended-info-text-field {
   padding: 0;
   margin: 0;
@@ -1238,11 +1238,6 @@ a.esoc-user-messages {
 .binf-widgets .esoc-simple-user-widget-view-form .cs-formfield .cs-field-read {
   padding: 0px;
 }
-.binf-widgets .esoc-simple-user-widget-view-form .cs-formfield.cs-userfield .inline-edit-icon.icon-edit,
-.binf-widgets .esoc-simple-user-widget-view-form .cs-formfield .inline-edit-icon.icon-edit,
-.binf-widgets .esoc-simple-user-widget-view-form .inline-edit-icon {
-  margin-top: 0px;
-}
 .binf-widgets .esoc-simple-user-widget-view-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
   height: 100%;
 }
@@ -1250,12 +1245,6 @@ a.esoc-user-messages {
 .binf-widgets .esoc-simple-user-widget-form .binf-form-group > .binf-col-sm-9 {
   width: 100% !important;
   text-align: left !important;
-}
-.binf-widgets .esoc-simple-user-widget-form .binf-control-label {
-  font-size: 14px;
-  color: #757575;
-  line-height: 18px !important;
-  margin-bottom: -1px;
 }
 .binf-widgets .esoc-simple-user-widget-form .binf-control-label:first-child {
   margin-top: -1px;
@@ -1266,9 +1255,6 @@ a.esoc-user-messages {
   margin: 0px;
   padding: 0px 0px 32px 0px;
   line-height: 16px;
-}
-.binf-widgets .esoc-simple-user-widget-form .binf-form-group.alpaca-field {
-  margin-bottom: 22px;
 }
 .binf-widgets .esoc-simple-user-widget-form-content .cs-form .binf-help-block.alpaca-message {
   margin-left: 0px;
@@ -1324,7 +1310,6 @@ a.esoc-user-messages {
 }
 .binf-widgets .esoc-simple-mini-profile-popover.binf-popover {
   max-width: 448px;
-  min-width: 448px;
   min-height: 132px;
   border: none;
 }
@@ -1336,9 +1321,6 @@ a.esoc-user-messages {
 }
 .binf-widgets .esoc-simple-mini-profile-popover.binf-left > .binf-arrow {
   border-left-color: #33c6c8 !important;
-}
-.binf-widgets .esoc-simple-mini-profile-popover.binf-right > .binf-arrow {
-  border-right-color: #33c6c8 !important;
 }
 .binf-widgets .esoc-simple-mini-profile-popover.binf-top > .binf-arrow {
   border-top-color: #33c6c8 !important;
@@ -1454,14 +1436,6 @@ a.esoc-user-messages {
   top: calc(50% - 24px);
   background: url(../images/right_scroll_caret48.svg) no-repeat center;
   margin-right: 8px;
-}
-.binf-widgets .slick-arrow {
-  position: absolute;
-  z-index: 1;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  cursor: pointer;
 }
 .binf-widgets .slick-disabled {
   opacity: 0;

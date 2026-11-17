@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .target-browse .cs-list .binf-list-group {
   margin: 0;
@@ -33,7 +33,7 @@
   cursor: default;
 }
 
-@media only screen and (max-height: 400px) {
+@media only screen and (height <= 400px) {
   .binf-widgets .target-browse .cs-list .binf-list-group .binf-list-group-item {
     height: 34px;
   }
@@ -163,6 +163,7 @@ html[dir="rtl"] .binf-widgets .target-browse .cs-list .binf-list-group-item .csu
 
 .binf-widgets .target-browse .list-content {
   height: 100%;
+
   
   width: 100%;
 }
@@ -257,6 +258,7 @@ html[dir="rtl"] .binf-widgets .target-browse .cs-list .binf-list-group-item .csu
   vertical-align: middle;
   display: table-cell;
 }
+
 .binf-widgets .target-browse .cs-list .binf-list-group-item.csui-disabled,
 .binf-widgets .target-browse .cs-list .binf-list-group-item.csui-disabled a,
 .binf-widgets .target-browse .cs-list .binf-list-group-item.csui-disabled span.icon-checkbox > input,
@@ -345,8 +347,8 @@ html[dir="rtl"] .binf-widgets .target-browse .cs-list .binf-list-group-item .csu
   margin-left: 58px; 
 }
 
+
 @media (forced-colors: active) {
-  
   .binf-widgets .target-browse .cs-list .binf-list-group-item:focus, .binf-widgets .target-browse .cs-list .binf-list-group-item:hover {
     outline: 1px solid black;
     outline-offset: -1px;

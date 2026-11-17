@@ -1,0 +1,25 @@
+<div class="binf-modal-dialog">
+  <div class="binf-modal-content">
+    <div class="binf-modal-header csui-acc-tab-region">
+      <div class="about-d2-logo"></div>
+      <div class="d2-version">{{version}}</div>
+      <div class="cs-close">
+        <div class="icon circular cs-icon-cross csui-acc-focusable-active" tabindex="0" role="button"
+          title="{{closeTooltip}}" aria-label="{{closeTooltip}}"></div>
+      </div>
+    </div>
+    <div class="binf-modal-body cs-metadata-properties d2-metadata-properties"></div>
+    {{#if isJato}}
+    <div class="product-details-section">
+      <div class="dctmw-version">{{version}}</div>
+    </div>
+    {{/if}}
+  </div>
+  {{#if isJato}}
+  <otc-button type="subtle" class="btn-close cs-close smart-v2-icon-parent" title="{{dialogCloseButtonTooltip}}"
+    tabindex="0" size="small" arialabel="{{dialogCloseAria}}">
+    <otc-icon svg="{{actionCloseSVG}}"></otc-icon>
+  </otc-button>
+  {{/if}}
+</div>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

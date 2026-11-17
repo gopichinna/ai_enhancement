@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-search-box {
   display: inline-block;
@@ -96,13 +96,16 @@
     z-index: 10;
     display: none;
 }
-@media only screen and (max-width: 640px) {
+
+@media only screen and (width <= 640px) {
   .csui-search-box .csui-clearer {
     right: 1.4em;
   }
+
   .csui-search-box span.csui-separator {
     right: 1.8em;
   }
+
   .csui-search-box .csui-formfield-search {
     right: 0.3em;
   }
@@ -514,6 +517,7 @@
   outline-style: none;
   text-decoration: none;
 } 
+
 .csui-search-form-collection .csui-icon-query-form-search,
 .csui-search-form-collection .csui-icon-standard-search {
   display: inline-block;
@@ -570,8 +574,6 @@
 
 
 @media (forced-colors: active) {
-
-  
   .binf-widgets .csui-search-options-dropdown {
     outline: 1px solid black;
   }
@@ -602,11 +604,13 @@
       outline: 1px solid black;
       outline-offset: -3px;
   }
+
   .csui-search-box .csui-formfield-search.formfield_search:focus,
   .csui-search-box .csui-formfield-search.formfield_search:hover{
     outline: 1px solid black;
     outline-offset: 2px;
   }
+
   .binf-navbar-nav .csui-search .csui-search-box .csui-header-search-icon:focus,
   .binf-navbar-nav .csui-search .csui-search-box .csui-header-search-icon:hover{
     outline: 1px solid black;
@@ -620,32 +624,40 @@
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (width <= 640px) {
   .csui-search-box .search-bar {
     width: calc(100% - 45px);
   }
+
   .binf-nav .csui-search-box .csui-input {
     padding: 7px 4px;
   }
+
   .binf-widgets .csui-searchbox-slices-wrapper .csui-search-label {
     padding: 2px 6px;
   }
+
   .binf-widgets .csui-search-popover-row-body {
     padding: 0 0 0 2px;
   }
+
   .binf-widgets .csui-search-popover-checked {
     margin-right: 4px;
   }
+
   .binf-widgets .csui-search-options-dropdown .csui-searchforms-popover-row {
     padding: 0 0 0 8px;
   }
+
   .binf-widgets .csui-search-options-dropdown {
     width: 200px;
   }
+
   .binf-widgets .csui-search-popover-label,
   .binf-widgets .csui-searchforms-popover-row .cs-label {
     line-height: 24px;
   }
+
   .binf-widgets .csui-search-input-container {
     padding-left: 0;
   }

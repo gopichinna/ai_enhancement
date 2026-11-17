@@ -15,10 +15,14 @@
       {{#if skippedTypes}}
         <div class="csui-unprocessed-item-list">
           <div class="csui-info" role="alert" id="{{alertMsgId}}">
-            <span class="notification_warning_orange"></span>
+            {{#if isJATO}}
+              <span class="jato_warning_icon">{{{warningIcon}}}</span>
+            {{else}}
+              <span class="notification_warning_orange"></span>
+            {{/if}}
             <span class="notification_message">{{skippedItemsLabel}}</span>
           </div>
-            <div class="csui-skipped-container-wrapper csui-normal-scrolling">
+            <div class="csui-skipped-container-wrapper">
               <table class="csui-skipped-container" aria-labelledby="{{alertMsgId}}" tabindex="0">
                 <thead class="csui-skipped-item-table csui-download-table-header">
                   <tr class="csui-skipped-item-table csui-download-table-header">
@@ -28,11 +32,17 @@
                     <th class="csui-skipped-item-cell csui-message">{{labelMessage}}</th>
                   </tr>
                 </thead>
-                <tbody class="csui-skipped-item-table csui-download-table-body">
+                <tbody class="csui-skipped-item-table csui-download-table-body csui-normal-scrolling csui-no-scroll-x">
                   {{#each skippedTypes}}
                     <tr class="csui-download-table-row">
                       <td class="csui-skipped-item-cell csui-type">
+                      {{#if this.jatoIcon}}
+                        <span class="csui-icon-group" title="{{this.subtype_name}}">
+                        <otc-icon type="raw" size="24" svg="{{this.mimeIcon}}"></otc-icon>
+                        </span>
+                      {{else}}
                         <span title="{{this.subtype_name}}" class="{{this.mimeIcon}}"></span>
+                      {{/if}}
                       </td>
                       <td role="rowheader" class="csui-skipped-item-cell csui-name">
                         <span title="{{this.name}}">{{this.name}}</span>
@@ -55,4 +65,4 @@
   </div>
   <div class="binf-modal-footer binf-hidden"></div>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

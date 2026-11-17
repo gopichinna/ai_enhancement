@@ -1,0 +1,12 @@
+<otc-avatar image="{{image}}"></otc-avatar>
+<div class="aie-qs-question aie-sel-qs">
+{{{qsimage}}} {{{text}}}: {{{text1}}}
+<div>
+    {{#if faq}}
+    {{#each faq}}
+       <span class="aie-faq" data-query-text="{{this.query_text}}">{{this.label}}</span> 
+    {{/each}}
+    {{/if}}
+</div>
+</div>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

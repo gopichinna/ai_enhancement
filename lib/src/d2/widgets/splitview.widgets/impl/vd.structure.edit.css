@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .vd-edit--header {
     height: 4.5rem;
@@ -14,9 +14,8 @@
     display: flex;
     align-items: center;
     margin-left: .5rem;
-    
+
     gap: .5rem;
-    
 }
 
 .vd-edit--header .vd-edit--close .cs-icon-cross {
@@ -53,13 +52,13 @@
 }
 
 .binf-widgets .vd-structure-edit .vd-structure--container .d2-vd-structure table thead {
-    background-color: #ccc;
+    background-color: #cccccc;
     display: block;
 }
 
 .binf-widgets .vd-structure-edit .vd-structure--container .d2-vd-structure table thead tr{
     height: 2rem;
-    background: #ccc;
+    background: #cccccc;
     font-weight: bold;
 }
 
@@ -68,9 +67,8 @@
     flex: 1 1 auto;
     position: relative;
     overflow-y: overlay !important;
-     
+
      scrollbar-width: thin;
-     
 }
 
 .vd-structure-edit .vd-structure--container .d2-vd-structure table thead tr {

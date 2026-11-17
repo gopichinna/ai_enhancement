@@ -171,6 +171,19 @@ To create a toolitem you have to create an extension for csui/widgets/nodestable
 Declare you toolitems as shown below.
 Note that a wrappable toolitem needs a name.
 
+### isOTWC
+
+Boolean flag to enable OTWC adoption and JATO theme icons. Below properties will be required.
+
+```js
+{
+  isOTWC : true,
+  iconsName: "... OT icon name ...",
+  iconsSVG: "... JATO icon SVG ..."
+}
+```
+Please note that for 'addToolbar' the properties are 'dropDownIconName' and 'dropDownIconSVG'.
+
 ```js
 define([
   'smartsample/controls/toolitems/custom.toolitem.view',
@@ -239,7 +252,7 @@ define([
 ) {
   "use strict";
 
-  var SmartSampleUnwrappableToolItemView = Marionette.View.extend({
+  var SmartSampleToolItemCustomView = Marionette.View.extend({
     // Custom views embedded in csui/controls/toolbar/toolitem.custom.view can be any Backbone.view
     // They are not wrapped into a dropdown.
 
@@ -252,7 +265,7 @@ define([
 
   });
 
-  return SmartSampleUnwrappableToolItemView;
+  return SmartSampleToolItemCustomView;
 });
 ```
 

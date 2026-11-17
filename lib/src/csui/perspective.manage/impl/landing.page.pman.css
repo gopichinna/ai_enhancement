@@ -1,0 +1,119 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets.csui-sidebar-enabled.perspective-editing .pman-container .pman-top-ribbon {
+  width: calc(100% - 90px);
+  padding: 0;
+}
+
+.binf-widgets.csui-sidebar-enabled.perspective-editing.csui-top-ribbon-enabled .csui-perspective-view-container{
+  margin-top: 115px;
+}
+
+.binf-widgets .pman-container.pman-landing-page .pman-tools-container {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.binf-widgets .pman-container.pman-mode-personalize.pman-landing-page .pman-tools-container {
+  justify-content: space-between;
+}
+
+.binf-widgets .pman-top-ribbon .csui-top-ribbon {
+  display: flex;
+  position: relative;
+  transition: all 500ms ease-in-out 0s;
+}
+
+.binf-widgets.csui-top-ribbon-enabled .csui-top-ribbon-container {
+  top: 64px;
+  position: absolute;
+  width: 100%;
+  z-index: 1151;
+  background-color:var(--jato-background-elevation-base,#EEF2F4);
+  border-bottom: 1px solid var(--jato-divider-color-primary, unset);
+  display: flex;
+  align-items: center;
+  height: 116px;
+}
+
+.binf-widgets.csui-top-ribbon-enabled .csui-top-ribbon-container .csui-top-ribbon-actions {
+  z-index: 1200;
+  width: 60px;
+  padding: 0 10px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  background: linear-gradient(to bottom, var(--jato-background-rows-menu-toggled, #B2BEC5), var(--jato-background-rows-menu-toggled,#B2BEC5)), var(--jato-background-elevation-base,#EEF2F4);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1px 24px;
+}
+
+.binf-widgets .pman-container .csui-top-ribbon-carousel.csui-top-ribbon-carousel-disabled + .csui-top-ribbon-actions {
+  z-index: 1150;
+}
+
+.binf-widgets.csui-top-ribbon-enabled .csui-top-ribbon-container .csui-top-ribbon-carousel {
+  position: relative;
+  z-index: 1151;
+  background-color:var(--jato-background-elevation-base,#EEF2F4);
+  border-bottom: 1px solid var(--jato-divider-color-primary, unset);
+  display: flex;
+  align-items: center;
+  height: 116px;
+  width: 100%;
+}
+
+.binf-widgets.csui-top-ribbon-enabled .csui-top-ribbon-container.csui-has-actions .csui-top-ribbon-carousel{
+  width: calc(100vw - 60px);
+}
+
+.binf-widgets .csui-top-ribbon-carousel .csui-prev-button, 
+.binf-widgets .csui-top-ribbon-carousel .csui-next-button{
+  border: none;
+  outline: none;
+  position: absolute;
+  left: 9px;
+  z-index: 1;
+  margin: 0;
+}
+
+.binf-widgets .csui-top-ribbon-carousel .csui-next-button{
+  left: auto;
+  right: 9px;
+}
+
+.binf-widgets .csui-top-ribbon-carousel .csui-prev-button .csui-icon-previous-carousel, 
+.binf-widgets .csui-top-ribbon-carousel .csui-next-button .csui-icon-next-carousel {
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+}
+
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-error-perspective .csui-top-ribbon-layout,
+.binf-widgets .csui-top-ribbon .csui-top-ribbon-item.csui-server-error-perspective .csui-top-ribbon-layout {
+  outline: 2px solid var(--jato-color-firebrick-1440, #DF3324);
+}
+
+.binf-widgets.csui-sidebar-enabled.perspective-editing .pman-container .csui-top-ribbon-carousel-disabled .pman-top-ribbon {
+  margin: 0 8px;
+}
+
+.binf-widgets .pman-container .csui-top-ribbon-carousel.csui-top-ribbon-carousel-disabled .csui-top-ribbon-carousel-icons {
+  display: none;
+}
+
+html[dir=rtl] .binf-widgets .csui-top-ribbon-carousel .csui-prev-button,
+html[dir=rtl] .binf-widgets .csui-top-ribbon-carousel .csui-next-button {
+transform: scaleX(-1);
+}
+
+.binf-widgets.csui-top-ribbon-enabled .csui-top-ribbon-carousel .csui-top-ribbon-carousel-icons {
+  background-color: var(--jato-background-elevation-base,#EEF2F4);
+  height: 100%;
+  display: flex;
+  width: 45px;
+  z-index: 10;
+  align-items: center;
+}

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .cs-dialog.csui-conflict-dialog.csui-batch{
   overflow: auto;
@@ -8,7 +8,7 @@
 .cs-dialog.csui-conflict-dialog.csui-batch .binf-modal-content{
   font-size: 14px;
   line-height: 16px;
-  color: #333333;
+  color: var(--jato-typography-text-color-primary, #333333);
   border: 1px solid #a9a9a9;
 }
 
@@ -28,7 +28,7 @@
 .cs-dialog.csui-conflict-dialog.csui-batch .binf-modal-header  > div.csui-numConflicts
 {
   padding-top: 3px;
-  color: #df3626;
+  color: var(--jato-color-firebrick-1725, #df3626);
 }
 
 .cs-dialog.csui-conflict-dialog.csui-batch .binf-modal-body{
@@ -36,7 +36,7 @@
    padding:16px;
    word-wrap: break-word;
    line-height: 1.1em;
-  background-color: #FFFFFF;
+   background-color: var(--jato-background-elevation-level-3, #ffffff);
  }
 
 .cs-dialog.csui-conflict-dialog.csui-batch  div.csui-dialog-message{

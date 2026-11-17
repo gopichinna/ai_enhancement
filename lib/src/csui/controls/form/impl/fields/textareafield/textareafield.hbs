@@ -13,13 +13,26 @@
       {{#if multiFieldLabel}} aria-label="{{multiFieldLabel}}" {{/if}}>{{data}}</textarea>
 
     {{#xif "this.mode !== 'writeonly'"}}
-      <div class="icon-container">
-        <div class="csui-icon-edit inline-edit-icon edit-cancel" title="{{cancel}}"></div>
-      </div>
+    <div class="icon-container">
+    {{#if isJATO}}
+    <otc-button  class="inline-edit-icon csui-jato-edit-cancel" arialabel="{{cancel}}" type="subtle" size="small" tabindex="-1" data-cstabindex="-1" title="{{cancel}}">
+      <otc-icon svg="{{editCancelIconSVG}}" type="subtle"></otc-icon>
+    </otc-button>
+    {{else}}
+      <div class="csui-icon-edit inline-edit-icon edit-cancel" title="{{cancel}}"></div>
+    {{/if}}
+    </div>
     {{else}}
       {{#if options.applyFlag}}
         <div class="icon-container binf-hidden">
+        {{#if isJATO}}
+          <otc-button class="csui-icon apply-all block binf-hidden" title="{{titleApplyAll}}"
+              arialabel="{{titleApplyAll}}" tabindex="0" size="small" type="subtle">
+              <otc-icon svg="{{actionApplyToAll}}"></otc-icon>
+          </otc-button>
+        {{else}}
           <div class="csui-icon apply-all binf-hidden" title="{{titleApplyAll}}" tabindex="0"></div>
+        {{/if}}
         </div>
       {{/if}}
     {{/xif}}
@@ -55,12 +68,24 @@
 
     </div>
     <div class="icon-container">
-      <div title="{{edit}}" aria-label="{{edit}}" role="button"
+    {{#if isJATO}}
+    <otc-button  class="csui-jato-icon-edit inline-edit-icon binf-hidden" arialabel="{{edit}}" type="subtle" size="small" tabindex="-1" data-cstabindex="-1" title="{{edit}}">
+      <otc-icon svg="{{editIconSVG}}" type="subtle"></otc-icon>
+    </otc-button>
+    {{else}}
+    <div title="{{edit}}" aria-label="{{edit}}" role="button"
            class="csui-icon-edit inline-edit-icon icon-edit"></div>
+    {{/if}}
     </div>
+    {{#if isJATO}}
+    <otc-button size="small" class="csui-jato-button-expandArrowDown cs-button-exp-col binf-hidden">
+       <otc-icon  class="cs-icon-exp-col" svg="{{expandSVGContent}}"></otc-icon>
+    </otc-button>
+    {{else}}
     <div tabindex="0" class="cs-icon icon-expandArrowDown binf-hidden cs-icon-exp-col"
          aria-label="{{seeMore}}" role="button"></div>
   </div>
+  {{/if}}
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

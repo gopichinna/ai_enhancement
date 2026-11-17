@@ -1,0 +1,204 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-task-attachments-table-tree.d4-tree {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    min-height: 0;
+    font-size: 14px;
+    height: 100%;
+}
+
+.d2-task-attachments-table-tree.d4-tree thead {
+    background-color: #cccccc;
+    display: block;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree thead tr {
+    display: flex;
+    height: 2rem;
+    background: #cccccc;
+    font-weight: bold;
+    padding-right: 16px;
+}
+
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tr th, 
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tr td {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree thead tr th:first-child {
+    min-width: 300px;
+    max-width: 300px;
+    flex-grow: 1;
+    padding-left: 1.4rem;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree thead tr.d2-task-attachments-hide-header th:first-child {
+    min-width: auto;
+    max-width: none;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree thead tr th:nth-child(2) {
+    min-width: 9rem;
+    max-width: 9rem;
+    flex-grow: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 1rem;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree thead tr th:nth-child(3) {
+    min-width: 9rem;
+    max-width: 9rem;
+    flex-grow: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree thead tr.d2-task-attachments-hide-header {
+    height: 0;
+    display: none;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tbody {
+    display: block;
+    flex: 1 1 auto;
+    position: relative;
+    height: calc(100% - 32px);
+    overflow: auto;
+    padding-bottom: 2rem;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tbody tr  {
+    display: flex;
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 0;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tbody tr:hover {
+    background-color: #B2BEC5;
+    cursor: pointer;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tbody tr td:first-child {
+    min-width: 300px;
+    max-width: 300px;
+    flex-grow: 1;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tbody.d2-task-attachments-single-col tr td:first-child {
+    min-width: auto;
+    max-width: none;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tbody tr td:nth-child(2) {
+    min-width: 9rem;
+    max-width: 9rem;
+    flex-grow: 1;
+    padding-left: 1rem;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tbody tr td:nth-child(3) {
+    min-width: 9rem;
+    max-width: 9rem;
+    flex-grow: 1;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tbody tr td span.d2-overflow-tooltip {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree td {
+    flex: 0 0 0;
+}
+
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree td .d2-inline-row-action {
+    display: none;
+    padding-left: 2px;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tbody tr td:first-child {
+    display: flex;
+    position: relative;
+}
+
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree td .d2-inline-row-action  {
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree td .d2-inline-row-action .csui-inline-menu .csui-menu-btn {
+    align-items: center;
+  }
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree td .d2-inline-row-action .csui-inline-menu .csui-menu-btn, 
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree td .d2-inline-row-action .csui-inline-menu .binf-dropdown .binf-dropdown-menu a {
+    display: flex;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree td .fancytree-node .fancytree-custom-icon {
+    flex-basis: 26px;
+    background-size: 26px;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree .fancytree-active {
+  font-weight: bold;
+}
+
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree .fancytree-active,
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree .fancytree-selected {
+  background-color: #CBD3D9;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tr.package-row,
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tr.package-row:hover {
+    height: 40px;
+    background-color: #F1F1F1;
+    cursor: pointer;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tr.package-row .package-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 6px;
+    font-weight: 400;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tr.package-row .package-container .package-name {
+    font-weight: 700;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tr.package-row .package-container > .package-name:only-child {
+    padding-left: 6px;
+}
+
+.d2-task-attachments-container .d2-task-attachments-table-tree.d4-tree tr.package-row .package-container .mandatory {
+    padding-left: 6px;
+    color:red;
+    font-size:18px;
+}
+
+.binf-widgets .d2-task-details-panel-content .smart-tab-contents-wrapper {
+    height: calc(100% - 42px);
+}
+
+.binf-widgets .d2-task-details-panel-content .d2-task-attachments .d2-toolbar-task-attachments{
+    height: 48px;
+}
+
+.binf-widgets .d2-task-details-panel-content .d2-task-attachments .d2-task-attachments-container{
+    height: calc(100% - 48px);
+}

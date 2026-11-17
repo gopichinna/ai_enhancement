@@ -1,6 +1,6 @@
 # Architecture, Flow & Implementation Guide: `AI Summary` in D2 SmartView
 
-Welcome to the **D2 SmartView AI Summary Enhancement** project (D2SV 24.4.0).
+Welcome to the **D2 SmartView AI Summary Enhancement** project (D2SV 25.4.1 / 25.4.0).
 
 This document serves as the **master blueprint and runtime guide**. If you are opening this workspace in a new session or handing this off to another engineer, **everything you need to understand, customize, build, deploy, and troubleshoot** this project is detailed here.
 

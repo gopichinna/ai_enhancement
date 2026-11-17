@@ -1,15 +1,25 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 
+
+[data-smart-theme]:not([data-smart-theme='cf']) {
+  --jatx-cssvui-esoc-social-reply-input-holder: calc(100% - 55px);
+}
 .binf-widgets .esoc-social-comment-widget .binf-col-xs-1, .binf-col-sm-1, .esoc-social-comment-widget .binf-col-md-1, .esoc-social-comment-widget .binf-col-lg-1, .esoc-social-comment-widget .binf-col-xs-2, .esoc-social-comment-widget .binf-col-sm-2, .esoc-social-comment-widget .binf-col-md-2, .esoc-social-comment-widget .binf-col-lg-2, .esoc-social-comment-widget .binf-col-xs-3, .esoc-social-comment-widget .binf-col-sm-3, .esoc-social-comment-widget .binf-col-md-3, .esoc-social-comment-widget .binf-col-lg-3, .esoc-social-comment-widget .binf-col-xs-4, .esoc-social-comment-widget .binf-col-sm-4, .esoc-social-comment-widget .binf-col-md-4, .esoc-social-comment-widget .binf-col-lg-4, .esoc-social-comment-widget .binf-col-xs-5, .esoc-social-comment-widget .binf-col-sm-5, .esoc-social-comment-widget .binf-col-md-5, .esoc-social-comment-widget .binf-col-lg-5, .esoc-social-comment-widget .binf-col-xs-6, .esoc-social-comment-widget .binf-col-sm-6, .esoc-social-comment-widget .binf-col-md-6, .esoc-social-comment-widget .binf-col-lg-6, .esoc-social-comment-widget .binf-col-xs-7, .esoc-social-comment-widget .binf-col-sm-7, .esoc-social-comment-widget .binf-col-md-7, .esoc-social-comment-widget .binf-col-lg-7, .esoc-social-comment-widget .binf-col-xs-8, .esoc-social-comment-widget .binf-col-sm-8, .esoc-social-comment-widget .binf-col-md-8, .esoc-social-comment-widget .binf-col-lg-8, .esoc-social-comment-widget .binf-col-xs-9, .esoc-social-comment-widget .binf-col-sm-9, .esoc-social-comment-widget .binf-col-md-9, .esoc-social-comment-widget .binf-col-lg-9, .esoc-social-comment-widget .binf-col-xs-10, .esoc-social-comment-widget .binf-col-sm-10, .esoc-social-comment-widget .binf-col-md-10, .esoc-social-comment-widget .binf-col-lg-10, .esoc-social-comment-widget .binf-col-xs-11, .esoc-social-comment-widget .binf-col-sm-11, .esoc-social-comment-widget .binf-col-md-11, .esoc-social-comment-widget .binf-col-lg-11, .esoc-social-comment-widget .binf-col-xs-12, .esoc-social-comment-widget .binf-col-sm-12, .esoc-social-comment-widget .binf-col-md-12, .esoc-social-comment-widget .binf-col-lg-12 {
   
   padding: 0px;
 }
 
+[id^="esoc-social-comment-widget-mask_"], [data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .esoc-social-comment-widget{
+
+  border-right: 3px solid var(--jato-cta-focus-border, rgba(0, 0, 0, 0.25));
+  border-radius: 6px;
+}
+
 .binf-widgets .esoc-social-comment-widget {
   width: 38.750em;
-  background-color: #ffffff;
+  background-color: var(--jato-background-elevation-level-3, #ffffff);
   box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.15);
   display: none;
 }
@@ -24,10 +34,10 @@
 
 .esoc-social-comment-title-bar .esoc-social-comment-title {
   float: left;
-  font-weight: 300;
+  font-weight: var(--jato-font-weight-600,300);
   font-style: normal;
-  font-size: 1.50em;
-  color: #333333;
+  font-size: var(--jato-font-size-xxl, 1.50em);
+  color: var(--jato-typography-text-color-primary, #333333);
 }
 
 .binf-widgets .esoc-social-comment-title-actions {
@@ -36,7 +46,7 @@
   display: table;
 }
 
-.binf-widgets .esoc-social-comment-close-button {
+[data-smart-theme="cf"] .binf-widgets .esoc-social-comment-close-button {
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -46,6 +56,9 @@
   margin: 16px 0 16px 16px;
   cursor: pointer;
 }
+.binf-widgets .esoc-social-comment-close-button {
+  vertical-align: middle;
+}
 
 .esoc-social-comment-close-button:hover {
   background-position: 0px -24px;
@@ -53,10 +66,10 @@
 
 .binf-widgets .esoc-social-comment-form-container {
   position: relative;
-  border-top: 1px solid #a3a3a3;
-  border-bottom: 1px solid #a3a3a3;
+  border-top: 1px solid var(--jato-divider-color-primary, #a3a3a3);
+  border-bottom: 1px solid var(--jato-divider-color-primary, #a3a3a3);
   border-left: 5px solid #e76f2e;
-  background-color: #fafafa;
+  background-color: var(--jato-background-elevation-level-3, #fafafa);
   width: 100%;
 }
 
@@ -122,7 +135,7 @@
   display: none;
 }
 
-.binf-widgets .esoc-social-comment-attachment {
+[data-smart-theme="cf"] .binf-widgets .esoc-social-comment-attachment {
   width: 24px;
   height: 24px;
   background-image: url("images/paper_clip.png");
@@ -132,6 +145,10 @@
   background-size: 100%;
   margin: 5px 0;
   cursor: pointer;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .esoc-social-comment-emoticon {
+  margin-right: 10px;
 }
 
 .binf-widgets .esoc-social-comment-emoticon {
@@ -170,7 +187,7 @@
   border: 1px solid #a9a9a9;
 }
 
-.binf-widgets .esoc-social-comment-button {
+[data-smart-theme="cf"] .binf-widgets .esoc-social-comment-button {
   margin: 0px;
   padding: 0px;
   background-position: 50%;
@@ -227,7 +244,7 @@
   outline: 0;
   word-wrap: break-word;
   font-size: 14px;
-  color: #333333;
+  color: var(--jato-typography-text-color-primary,#333333);
   white-space: pre-wrap;
   line-height: 15px;
   display: inline-block;
@@ -310,7 +327,7 @@
   right: 0px;
 }
 
-.esoc-social-comment-container ul li .esoc-social-comment-icon-edit {
+[data-smart-theme="cf"] .esoc-social-comment-container ul li .esoc-social-comment-icon-edit {
   width: 16px;
   background-image: url("images/edit.svg");
   background-position: 0px 0px;
@@ -326,7 +343,7 @@
   float: right;
 }
 
-.binf-widgets .esoc-social-comment-container ul li .esoc-social-comment-icon-delete {
+[data-smart-theme="cf"]  .binf-widgets .esoc-social-comment-container ul li .esoc-social-comment-icon-delete {
   width: 16px;
   background-image: url("images/trash.svg");
   background-position: 0px 0px;
@@ -403,9 +420,9 @@
 }
 
 .binf-widgets .esoc-social-comment-timestamp {
-  margin-left: 10px;
+  margin-left: var(--jato-measure-4, 10px);
   font-size: 10px;
-  color: #737373;
+  color: var(--jato-typography-text-color-secondary, #737373);
 }
 
 .binf-widgets .esoc-social-comment-timestamp-ago {
@@ -430,6 +447,10 @@
 
 .binf-widgets .esoc-social-timestamp {
   display: inline-block;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .esoc-comment-list-divider{
+  background: var(--jato-divider-color-primary);
 }
 
 .binf-widgets .esoc-comment-list-divider {
@@ -620,7 +641,7 @@
 
 
 .binf-widgets .esoc-social-attachment {
-  background-color: #f5f5f5;
+  background-color: var(--jato-background-elevation-level-3, #f5f5f5);
   border: 1px #e5e5e5;
   margin-top: 5px;
   padding: 8px 0 !important;
@@ -636,6 +657,10 @@
   margin-right: 8px;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .esoc-social-attachment-icon {
+  width: 16px;
+}
+
 .binf-widgets .esoc-social-attachment-icon {
   text-align: center;
 }
@@ -646,7 +671,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 14px;
+  font-size: var(--jato-font-size-reg, 14px);
   font-weight: normal;
   color: #333333;
   text-decoration: none;
@@ -661,17 +686,17 @@
 .binf-widgets .esoc-social-attachment-icon,
 .binf-widgets .esoc-social-attachment-download:focus {
   cursor: pointer;
-  color: #333333;
+  color: var(--jato-typography-text-color-primary,#333333);
   text-decoration: none;
 }
 
 .binf-widgets .esoc-social-attachment-download:hover {
-  color: #333333;
+  color: var(--jato-cta-links-text-color-hover,#333333);
   text-decoration: underline;
 }
 
 .binf-widgets .esoc-social-attachment-size {
-  font-size: 12px;
+  font-size: var(--jato-font-size-xs, 12px);
   font-weight: normal;
   color: #737373;
   margin-left: 10px;
@@ -692,15 +717,23 @@
 
 .binf-widgets .esoc-social-attachment-label {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: var(--jato-font-weight-500, 300);
   font-style: normal;
+  color: var(--jato-typography-text-color-primary, #333333);
+}
+
+[data-smart-theme="cf"] .binf-widgets .esoc-social-attachment-desktop, 
+[data-smart-theme="cf"] .binf-widgets .esoc-social-attachment-cs {
   color: #333333;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .emoji-menu .myemoji {
+  background: var(--jato-background-elevation-level-3);
 }
 
 .binf-widgets .esoc-social-attachment-desktop, .binf-widgets .esoc-social-attachment-cs {
   font-size: 12px;
   font-weight: normal;
-  color: #333333;
   padding-left: 5px;
   cursor: pointer;
   display: inline-block;
@@ -722,6 +755,11 @@
 .binf-widgets .esoc-social-attachment-row {
   padding: 5px 0px;
 }
+
+[data-smart-theme="dark"] .binf-widgets .esoc-social-attachment-cs-icon,
+[data-smart-theme="dark"] .binf-widgets .esoc-social-attachment-desktop-icon {
+  filter: invert(1);
+} 
 
 .binf-widgets .esoc-social-attachment-cs-icon {
   background: url("images/content_server.svg") 0px 0px no-repeat;
@@ -956,7 +994,7 @@
   word-wrap: break-word;
   white-space: pre-line;
   -ms-overflow-style: none;
-  color: #999999;
+  color:  var(--jato-typography-text-color-primary, #999999);
   margin-top: 0.625em;
 }
 
@@ -998,7 +1036,7 @@
 
 .binf-widgets .esoc-comment-emoji, .binf-widgets .esoc-reply-emoji-comment, .binf-widgets .emoji-wysiwyg-editor-focus, .binf-widgets .emoji-wysiwyg-editor:focus {
   font-size: 14px;
-  color: #333333;
+  color: var(--jato-typography-text-color-secondary, #333333);
   border: 1px solid #004b71 !important;
   resize: none !important;
   outline: none;
@@ -1043,6 +1081,11 @@ li.esoc-social-comment-list-item.esoc-social-status-reply {
 .esoc-social-comment-widget .binf-popover-content,
 .esoc-social-comment-widget .binf-popover-title {
   padding: 5px 10px;
+  background-color: var(--jato-background-elevation-level-3, #f7f7f7);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .esoc-social-comment-widget .binf-popover-title {
+  border-bottom: solid 1px var(--jato-divider-color-primary);
 }
 
 .esoc-social-comment-widget #mdAlert {
@@ -1192,11 +1235,11 @@ li.esoc-social-comment-list-item.esoc-social-status-reply {
 
 
 .binf-widgets .esoc-social-comment-list-item .esoc-social-comment-input-holder {
-  width: calc(100% - 68px);
+  width: var(--jatx-cssvui-esoc-social-reply-input-holder, calc(100% - 68px));
 }
 
 .binf-widgets .esoc-social-comment-list-item .esoc-social-reply-input-holder {
-  width: calc(100% - 67px);
+  width: var(--jatx-cssvui-esoc-social-reply-input-holder, calc(100% - 67px));
 }
 
 .binf-widgets .esoc-social-icons-container,

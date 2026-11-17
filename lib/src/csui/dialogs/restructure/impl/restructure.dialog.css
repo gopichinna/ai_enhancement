@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .cs-dialog.csui-restructure-dialog {
     overflow: auto;
@@ -29,7 +29,7 @@
     padding: 0;
     border: 0;
     border-bottom: 0.063em solid #a9a9a9;
-    background-color: #fff;
+    background-color: #ffffff;
     flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     -webkit-flex: 0 0 auto;

@@ -1,0 +1,28 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-focus-outline: 2px solid var(--jato-cta-focus-border);
+  --jatx-focus-outline-offset: -2px;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) *.binf-widgets *:not(input[type="text"]):not(textarea):not(input[type="email"]):not(input[type="url"]):not(input[type="date"]):not(input[type="datetime-local"]):not(input[type="search"]):not(button.binf-dropdown-toggle):focus-visible {
+  box-shadow: 0px 0px 0px calc(var(--jatx-focus-outline-offset) + 3px) var(--jato-cta-focus-shadow), inset 0px 0px 0px calc(-1 * var(--jatx-focus-outline-offset)) var(--jato-cta-focus-shadow);
+  outline: var(--jatx-focus-outline);
+  outline-offset: var(--jatx-focus-outline-offset);
+}
+
+  [data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets otc-header-bar *:focus,
+  [data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets otc-header-bar *:focus-visible, 
+  [data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-simpletreelistitem:focus,
+  [data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-simpletreelistitem:focus-visible,
+  [data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets :is(otc-link, otc-button, otc-menugroup, otc-menuradio, otc-checkbox, otc-menucheckbox, otc-search-persistent, otc-toolbaritem, otc-menuitem, otc-submenu, otc-select, otc-toolbar, otc-input, otc-radio, otc-icon, otc-inline-edit-container, otc-typeahead-search):focus,
+  [data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets :is(otc-link, otc-button, otc-menugroup, otc-menuradio, otc-checkbox, otc-menucheckbox, otc-search-persistent, otc-toolbaritem, otc-menuitem, otc-submenu, otc-select, otc-toolbar, otc-input, otc-radio, otc-icon, otc-inline-edit-container, otc-typeahead-search):focus-visible  {
+    box-shadow: none;
+    outline: none;
+  } 
+
+
+
+
+

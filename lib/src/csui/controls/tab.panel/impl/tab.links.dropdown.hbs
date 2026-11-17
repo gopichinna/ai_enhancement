@@ -1,17 +1,47 @@
-<span class="dropdown-label">{{title}}</span>
+<div class="csui-meta-data">
 {{#if single_item}}
-  <button id="{{btnId}}" type="button" class="binf-btn binf-btn-default" disabled>
-    <span class="cs-label">{{title}}</span>
-  </button>
+{{#if isJatoTheme}}
+    <otc-button
+      id="{{btnId}}"
+      class="cs-metadata-dropdown-jato"
+      disabled>
+      {{selectedTitle}}
+    </otc-button>
 {{else}}
-  <button id="{{btnId}}" type="button" class="binf-btn binf-btn-default binf-dropdown-toggle"
-          data-binf-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-          aria-label="{{dropdownButtonAria}}" title="{{dropdownButtonTitle}}">
-    <span class="cs-label">{{title}}</span>
-    <span class="cs-icon icon-caret-down"></span>
+  <button id="{{btnId}}" type="button" class="cs-metadata-dropdown" disabled>
+    <span class="cs-label">{{selectedTitle}}</span>
   </button>
-{{/if}}
-<ul class="binf-dropdown-menu" role="menu" aria-labelledby="{{btnId}}">
-</ul>
+{{/if}} 
+{{else}}
+  {{#if isJatoTheme}}
+    <otc-button
+      id="{{btnId}}"
+      class="cs-metadata-dropdown-jato"
+      type="subtleDropdown"
+      title="{{dropdownButtonTitle}}"
+      arialabel="{{dropdownButtonAria}}"
+      tabindex="0"
+    >
+      {{selectedTitle}}
+    </otc-button>
+    {{else}}
+    <button id="{{btnId}}"
+          type="button"
+          class="cs-metadata-dropdown"
+          tabindex="0" aria-haspopup="true" aria-expanded="false"
+          aria-label="{{dropdownButtonAria}}" 
+          title="{{dropdownButtonTitle}}">
+      <span class="cs-label">{{selectedTitle}}</span>
+      <span class="cs-icon icon-caret-down"></span>
+    </button>
+    {{/if}}
+    <otc-menu 
+      class="csui-metadata-dropdown" 
+      buttonId="{{btnId}}" 
+      ariarole="menu"
+      scrollable="">
+    </otc-menu>
+  {{/if}}
+</div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

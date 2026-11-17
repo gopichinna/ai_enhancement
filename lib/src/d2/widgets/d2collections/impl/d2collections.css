@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-tile-collectionwidget .tile-header {
   cursor: pointer;
@@ -29,6 +29,7 @@
 .binf-widgets .content-tile .tile-content .show-all-link-wrapper {
   padding: 0 0 5px 18px;
 }
+
 .show-all-link{
  cursor: pointer;
 }
@@ -36,9 +37,11 @@
 .binf-widgets .content-tile .tile-content .tile-footer-inner {
  padding: 4px 0 4px 18px ;
 }
+
 .show-all-link-inner {
  cursor: pointer;
 }
+
 .d2-widget-tile-group-content .d2-widget-tile-content-header-view .d2-group-panel-container {
   width: 100%;
 }

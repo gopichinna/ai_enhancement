@@ -1,10 +1,16 @@
 {{#if locked}}
-  {{#if canUnlock}}
+  {{#if isJATO}}
+  <otc-button type="status" title="{{lockedTooltip}}" ariaLabel="{{lockedAria}}" class="csui-unlock-cellview" {{#unless canUnlock}}disabled{{/unless}}>
+    <otc-icon svg="{{iconSVG}}"></otc-icon>
+  </otc-button>
+  {{else}}
+    {{#if canUnlock}}
     <button type="button" title="{{lockedTooltip}}" aria-label="{{lockedAria}}" class="csui-unlock-cellview">
-  {{/if}}
+    {{/if}}
       <span title="{{lockedTooltip}}" class="{{noActionCSS}} csui-icon-locked"> {{{icon-v2 iconName="csui_mime_locked24" size='small' states='true'}}} </span>
-  {{#if canUnlock}}
+    {{#if canUnlock}}
     </button>
+    {{/if}}
   {{/if}}
 {{/if}}
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

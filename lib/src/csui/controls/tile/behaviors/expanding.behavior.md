@@ -18,6 +18,7 @@ RecentlyAccessedView = TileView.extend({
       behaviorClass: ExpandingBehavior,
       expandedView: ContentView,
       titleBarIcon: 'title-recentlyaccessed',
+      titleBarJatoIcon: jatoHeaderIcons.recentlyAccessed
       actionTitleBarIconName: 'csui_action_filter32',
       dialogTitle: 'Recently Accessed'
     }
@@ -40,6 +41,7 @@ FavoritesView = TileView.extend({
         };
       },
       titleBarIcon: 'title-favorites',
+      titleBarJatoIcon: jatoHeaderIcons.actionStar
       dialogTitle: 'Favourites'
     }
   }
@@ -61,6 +63,9 @@ FavoritesView = TileView.extend({
 
 `titleBarIcon` (string)
 : CSS class placing an icon to the top-left corner of the modal dialog
+
+`titleBarJatoIcon` (string)
+: Jato icon SVG string for placing an icon to the top-left corner of the modal dialog
 
 `actionTitleBarIcon` (string)
 : CSS class placing an extar-icon to the top-left corner of the modal dialog

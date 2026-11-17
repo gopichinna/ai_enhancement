@@ -1,20 +1,22 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-facet-bar-container-layout {
   display: flex;
   width: 100%;
   align-items: center;
-  border-bottom: 1px solid #D5D5D5;
-  background-color: #f7f7f7;
+  border-bottom: var(--jatx-csui-facet-border-bottom, 1px solid #D5D5D5);
 }
+
 .binf-widgets .csui-facet-bar-container {
   width: 100%;
 }
+
 .binf-widgets .csui-facet-bar-container.with-saveas-btn {
   
   width: calc(100% - (77px + 14px)); 
 }
+
 .binf-widgets .csui-facet-bar-container-layout .csui-filter-save {
   height: 24px;
   line-height: 11px;

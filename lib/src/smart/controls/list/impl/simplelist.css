@@ -1,23 +1,53 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+:root {  
+  --jatx-tile-header-background-neutral: var(--jato-background-elevation-level-2);
+  --jatx-tile-header-border-width-simplelist: 0;
+  --jatx-tile-header-font-weight: 600;
+  --jatx-tile-header-font-size: 18px;
+  --jatx-tile-header-height: 56px;
+  --jatx-tile-header-title-line-height: 20px;
+  --jatx-simpletreelistitem-line-height: 18px;
+  --jatx-simpletreelistitem-font-size: 13px;  
+  --jatx-list-item-padding-right: 0;
+}
+
+[data-smart-theme="cf"] {  
+  --jatx-tile-header-background-neutral: #fff;
+  --jatx-tile-header-border-width-simplelist: 1px;
+  --jatx-tile-header-font-weight: 400;
+  --jatx-tile-header-font-size: 20px;
+  --jatx-tile-header-height: 49px;
+  --jatx-tile-header-title-line-height: 24x;
+  --jatx-simpletreelistitem-line-height: 20px;
+  --jatx-simpletreelistitem-font-size: 14px;  
+  --jatx-list-item-padding-right: 8px;
+}
+
+@media only screen and (max-height: 400px) {
+  [data-smart-theme="cf"] {
+    --jatx-tile-header-height: 42px;
+  }
+}
+
 .binf-widgets .cs-simplelist.smart-simplelist {
   min-width: 15.4em;
   height: 100%;
   width: 100%;
   border: none;
+  background-color: transparent;
 }
 
-
-
 .binf-widgets .cs-simplelist.smart-simplelist .binf-panel-heading {
-  height: calc(48px - 1px);
-  background: #ffffff;
-  font-weight: 400;
+  height: var(--jatx-tile-header-height);
+  background: var(--jatx-tile-header-background-neutral);
+  font-weight: var(--jatx-tile-header-font-weight);  
+  color: var(--jato-cta-content-color-tertiary, #333);
   border: 0;
   width: 100%;
-  border-bottom: 1px solid #cccccc;
-  padding: 8px 16px;
+  border-bottom: var(--jatx-tile-header-border-width-simplelist) solid #ccc;
+  padding: var(--jato-padding-xl, 8px) var(--jato-padding-xl, 16px);
   display: flex;
   align-items: center;
   table-layout: fixed;
@@ -31,9 +61,13 @@
   cursor: pointer;
 }
 
+.binf-widgets .smart-tile-header-back-button {
+  width: var(--jato-size-height-24, 32px);
+  height: var(--jato-size-height-24, 32px);
+}
 .binf-widgets .cs-simplelist.smart-simplelist .cs-simplelist.smart-simplelist-icon {
-  width: 32px;
-  height: 32px;
+  width: var(--jato-size-height-24,32px);
+  height: var(--jato-size-height-24,32px);
   min-width: 18px;
   display: table-cell;
   background-repeat: no-repeat;
@@ -45,13 +79,13 @@
 }
 
 .binf-widgets .cs-simplelist.smart-simplelist .cs-title {
-  font-size: 20px;
+  font-size: var(--jatx-tile-header-font-size);
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 100%;
-  padding: 2px 0;
+  padding: var(--jato-padding-xxs, 2px) 0;
 }
 
 .binf-widgets .cs-simplelist.smart-simplelist .cs-title-with-go-back {
@@ -59,14 +93,14 @@
   width: calc(100% - 30px);
   
   margin-left: 12px;  
-  line-height: 24px;
+  line-height: var(--jatx-tile-header-title-line-height);
 }
 
 .binf-widgets .cs-simplelist.smart-simplelist .cs-simplelist.smart-simplelist-icon-wrapper{
   justify-content: center;
   display: flex;
-  width: 32px;
-  height: 32px;
+  width: var(--jato-size-height-24,32px);
+  height: var(--jato-size-height-24,32px);
   align-items: center;
 }
 
@@ -74,10 +108,11 @@
 
 .binf-widgets .cs-simplelist.smart-simplelist .cs-content {
   position: relative;
-  height: calc(100% - 46px);
+  height: calc(100% - var(--jatx-tile-header-height));
   
   z-index: 5;
-  background: #f7f7f7;
+  background: var(--jato-background-elevation-level-2,#f7f7f7);
+  padding: 0 var(--jato-padding-xxs, 0);
 }
 
 .binf-widgets .cs-simplelist.smart-simplelist .cs-content.csui-normal-scrolling {
@@ -88,12 +123,18 @@
   border: none;
   display: flex;
   align-items: center;
-  padding: 4px 16px 4px 16px;
   background: none;
+  color: var(--jato-cta-content-color-tertiary, #333);
+  gap: var(--jato-margin-med, 0);
+  min-height: var(--jato-size-height-32, 40px);
+}
+
+.binf-widgets .smart-tile-header-jato-icon {
+  display: flex;
 }
 
 .binf-widgets .cs-simplelist.smart-simplelist .binf-list-group-item:hover {
-  background: #B2BEC5;
+  background-color: var(--jato-background-rows-hover, #b2bec5);
 }
 
 .binf-widgets .cs-simplelist.smart-simplelist .cs-list-group div.binf-list-group-item span.csui-type-icon.csui-icon {
@@ -103,7 +144,7 @@
 .binf-widgets .cs-simplelist.smart-simplelist .binf-active .binf-list-group-item,
 .binf-widgets .cs-simplelist.smart-simplelist .binf-list-group-item:active,
 .binf-widgets .cs-simplelist.smart-simplelist .binf-list-group-item:focus {
-  background: #98A8B2;
+  background-color: var(--jato-background-rows-active, #98a8b2);
 }
 
 .binf-widgets .cs-simplelist.smart-simplelist .cs-list-group .cs-simplelist.smart-simplelist-item {
@@ -123,9 +164,9 @@
 
 .binf-widgets .cs-simplelist.smart-simplelist .cs-list-group .list-item-title {
   font-style: normal;
-  padding: 2px 0 2px 8px;
-  font-size: 14px;
-  line-height: 16px;
+  padding: var(--jato-padding-xs, 2px) 0 var(--jato-padding-xs, 2px) var(--jatx-list-item-padding-right);
+  font-size: var(--jatx-simpletreelistitem-font-size);
+  line-height: var(--jatx-simpletreelistitem-line-height);
   font-weight: normal;
   overflow: hidden;
   white-space: nowrap;

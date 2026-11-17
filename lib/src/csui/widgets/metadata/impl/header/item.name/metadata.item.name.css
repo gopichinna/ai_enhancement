@@ -1,11 +1,43 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .title-input {
-  background-color: #ffffff;
-  color: #333333;
-  border-radius: 3px;
-  border: solid 1px #757575;
+  background-color: var(--jato-background-elevation-level-1, #ffffff);
+  color: var(--jato-typography-text-color-primary, #333333);
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) var(--jatx-const-0, 3px) var(--jatx-const-0, 3px);
+  border: solid 1px var(--jato-input-border-container-neutral, #757575);
+  border-block-end: solid 1px var(--jato-input-border-container-neutral, #757575);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .title-input:focus {
+  border-block-end: 1px solid var(--jato-input-border-focus-enabled);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled);
+  border: 1px solid var(--jato-input-border-container-neutral);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .title-input:hover {
+  background-color: var(--jato-background-elevation-level-2-hover);
+  border: 1px solid var(--jato-input-border-container-hover);
+  border-block-end: 1px solid var(--jato-input-border-focus-hover);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .title-input.csui-red-border {
+  background-color:  var(--jato-background-error-neutral);
+  border: 1px solid var(--jato-input-border-container-error-neutral);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .title-input.csui-red-border:hover {
+  background-color: var(--jato-background-error-hover);
+  border: 1px solid var(--jato-input-border-container-error-hover);
+  border-block-end: 1px solid var(--jato-input-border-focus-error-hover);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-error-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .title-input.csui-red-border:focus {
+  background-color: var(--jato-background-elevation-level-1);
+  border-block-end: 1px solid var(--jato-input-border-focus-error-enabled);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-error-enabled);
 }
 
 .title-header {
@@ -41,21 +73,20 @@
   display: flex;
 }
 
-.csui-toggle-wrapper .cs-go-back {
-  width: 18px;
-  height: 18px;
-  margin: 8px 14px 5px 0;
-  cursor: pointer;
-}
 
 .binf-widgets .cs-metadata-item-name {
   display: flex;
   justify-content: flex-start;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .cs-metadata-item-name {
+  height: var(--jato-measure-32);
+}
+
 .binf-widgets .cs-metadata-item-name .csui-toggle-wrapper {
   display: flex;
   flex-shrink: 0;
+  padding-right: var(--jato-measure-8, 14px);
 }
 
 .binf-widgets .cs-metadata-item-name .title-header {
@@ -76,10 +107,16 @@
   flex-shrink: 0;
 }
 
+
 .binf-widgets .title-edit-div .csui-multilingual-icon-label {
-  margin-top: 2px;
-  margin-right: 10px;
+  margin-top: var(--jato-measure-4, 2px);
+  margin-right: var(--jato-measure-2, 10px);
 }
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .title-edit-div .csui-multilingual-icon-label {
+height: var(--jato-measure-24);
+}
+
 .binf-widgets .cs-form.cs-document-overview-wrapper .title-edit-div.csui-multilingual-input input{
   padding-right: 23px;
 }
@@ -87,8 +124,8 @@
 .binf-widgets .cs-form.cs-document-overview-wrapper .title-edit-div .csui-multilingual-icon-label {
   display: inline-flex;
   margin-left: -30px;
-  margin-top: 0;
-  margin-right: 0;
+  margin-top: var(--jato-measure-4, 0);
+  margin-right: var(--jato-measure-4, 0);
 }
 
 .binf-widgets .cs-form.cs-document-overview-wrapper .csui-edit-save {
@@ -96,11 +133,11 @@
 }
 
 .binf-widgets .cs-form.cs-document-overview-wrapper .csui-multilingual-icon-label button {
-  height: 32px;
+  height: var(--jato-measure-24, 32px);
   z-index: 1;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (width <= 640px) {
   .binf-widgets .title-edit-div .csui-multilingual-icon-label {
     margin-right: 0;
   }

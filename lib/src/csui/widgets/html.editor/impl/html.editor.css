@@ -1,10 +1,28 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 
-.binf-widgets .fr-box.fr-basic .fr-element {
+.binf-widgets .fr-box.fr-basic .fr-element,
+.binf-widgets .dark-theme.fr-box.fr-basic .fr-element {
   font-size: 16px;
+  color: inherit;
+  padding: 0;
 }
+
+.binf-widgets .fr-box.fr-basic .fr-wrapper,
+.binf-widgets .dark-theme.fr-box.fr-basic .fr-wrapper {
+  background-color: inherit;
+}
+
+.binf-widgets .fr-box.fr-basic .fr-second-toolbar:empty {
+  display: none;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .fr-toolbar {
+  border: none;
+  border-radius: var(--jato-radii-med) !important;
+}
+
 
 
 .binf-widgets .cui-rich-editor-widget-wrapper .tile-title {
@@ -21,7 +39,7 @@
 .binf-widgets .csui-html-editor-wrapper-parent,
 .binf-widgets .csui-html-editor-grand-parent {
   height: 100%;
-  background-color: #ffffff;
+  background-color: var(--jatx-const-transparent, #ffffff);
 }
 
 .binf-widgets .csui-html-editor-wrapper .cke_editable {
@@ -34,10 +52,10 @@
 }
 
 .binf-widgets .csui-html-editor-wrapper .csui-richtext-message {
-  background-color: #ffffff;
+  background-color: var(--jatx-const-transparent, #ffffff);
   border: none;
   height: calc(100%);
-  margin: 0px;
+  margin: 0;
   word-wrap: break-word;
   line-height: 24px;
   outline: 0 none;
@@ -59,11 +77,11 @@
 .binf-widgets .csui-html-editor-wrapper .csui-richtext-message.cke_editable {
   z-index: 1040;
   padding-right: 15px;
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .binf-widgets .cui-rich-editor-widget-wrapper {
-  background-color: #ffffff;
+  background-color:  var(--jato-background-elevation-level-2, #ffffff);
 }
 
 .binf-widgets .cs-tile.cui-rich-editor-widget-wrapper .tile-content {
@@ -94,11 +112,12 @@
   cursor: pointer;
 }
 
-.binf-widgets .icon.circular.csui-html-edit-icon,
-.binf-widgets .csui-html-editor-grand-parent .tile-controls .csui-html-editor-control {
+[data-smart-theme="cf"] .binf-widgets .icon.circular.csui-html-edit-icon,
+[data-smart-theme="cf"] .binf-widgets .csui-html-editor-grand-parent .tile-controls .csui-html-editor-control {
   display: block;
   width: 30px;
   height: 30px;
+  padding: 0;
   border-radius: 50%;
   background-color: #ffffff;
   background-position: center;
@@ -114,7 +133,7 @@
 
 .binf-widgets .icon.circular.csui-html-edit-icon,
 .binf-widgets .csui-html-editor-grand-parent .tile-controls .icon-html-edit-toolbar-more {
-  margin: 3px auto auto auto;
+  margin: auto;
 }
 
 .binf-widgets .icon.circular.csui-html-edit-icon {
@@ -122,7 +141,7 @@
   width: 28px;
   height: 28px;
   float: left;
-  margin: 0px 0px 0px 8px;
+  margin: 0 0 0 8px;
 }
 
 .binf-widgets .csui-html-editor-action-buttons .csui-html-edit-icon button:focus {
@@ -130,19 +149,24 @@
   outline: 1px dotted #333333;
 }
 
-.binf-widgets .icon.circular.csui-html-edit-icon.csui-html-edit-save:disabled {
+[data-smart-theme="cf"] .binf-widgets .icon.circular.csui-html-edit-icon.csui-html-edit-save:disabled {
   cursor: default;
   pointer-events: none;
 }
 
-.binf-widgets .icon.circular.csui-html-edit-icon:hover,
-.binf-widgets .csui-html-editor-grand-parent .tile-controls .binf-dropdown.binf-open .csui-html-editor-control,
-.binf-widgets .csui-html-editor-grand-parent:hover .tile-controls .binf-dropdown .csui-html-editor-control {
+[data-smart-theme="cf"] .binf-widgets .icon.circular.csui-html-edit-icon:hover,
+[data-smart-theme="cf"] .binf-widgets .csui-html-editor-grand-parent .tile-controls .binf-dropdown.binf-open .csui-html-editor-control,
+[data-smart-theme="cf"] .binf-widgets .csui-html-editor-grand-parent:hover .tile-controls .binf-dropdown .csui-html-editor-control {
   background-color: #ffffff;
   border: 1px solid #ffffff;
-  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
   cursor: pointer;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-html-editor-grand-parent .tile-controls .csui-html-editor-control,
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-html-editor-action-buttons otc-button {
+  background-color: var(--jato-background-elevation-level-1);
 }
 
 .binf-widgets .csui-html-editor-grand-parent .tile-controls .binf-dropdown .binf-dropdown-menu,
@@ -163,7 +187,7 @@
 .binf-widgets .csui-html-editor-action-buttons {
   white-space: nowrap;
   float: left;
-  padding: 0px 8px;
+  padding: 0 8px;
   margin-top: 12px;
 }
 
@@ -175,7 +199,7 @@
 }
 
 .binf-widgets .csui-html-editor-no-header {
-  background-color: #ffffff;
+  background-color: var(--jato-background-elevation-level-2, #ffffff);
 }
 
 .binf-widgets .csui-html-editor-grand-parent .csui-html-editor-tile-controls.tile-controls {
@@ -325,7 +349,6 @@
 
 .binf-widgets .csui-richtext-message .programlisting {
   font-family: "Courier New", Courier, monospace;
-  font-color: #58595b;
 }
 
 .binf-widgets .csui-richtext-message .guilabel {
@@ -497,7 +520,7 @@ html[dir="rtl"] .cke_reset_all.csui-rich-text-editor-toolbar[style*="left"] .cke
 
 
 .csui-html-editor-control .csui-html-editor-reserved-icon {
-  margin: 2px auto auto auto;
+  margin: auto;
 }
 
 #breadcrumb-wrap.csui-html-editor-zero-zindex {
@@ -573,6 +596,7 @@ html[dir="rtl"] .cke_reset_all.csui-rich-text-editor-toolbar[style*="left"] .cke
 
 
 
+
 .binf-widgets .csui-html-editor-wrapper .contact {
   color: #333333;
   margin: 16px 0 32px 0;
@@ -587,7 +611,7 @@ html[dir="rtl"] .cke_reset_all.csui-rich-text-editor-toolbar[style*="left"] .cke
   height: 96px;
   margin-bottom: 8px;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 16px;
   overflow: hidden;
   border-radius: 50%;
@@ -599,8 +623,8 @@ html[dir="rtl"] .cke_reset_all.csui-rich-text-editor-toolbar[style*="left"] .cke
   top: 0;
   left: 0;
   position: relative;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .binf-widgets .csui-html-editor-wrapper .contact h1 {
@@ -652,7 +676,7 @@ html[dir="rtl"] .cke_reset_all.csui-rich-text-editor-toolbar[style*="left"] .cke
 }
 
 .binf-widgets .csui-html-editor-wrapper .contact ul li {
-  padding: 12px 16px 12px 0px;
+  padding: 12px 16px 12px 0;
   margin-left: 16px;
   border-bottom: 1px solid #e2e2e2;
 }
@@ -704,7 +728,7 @@ html[dir="rtl"] .cke_reset_all.csui-rich-text-editor-toolbar[style*="left"] .cke
 .binf-widgets .csui-html-editor-wrapper .linkGroup h2 {
   font-size: 16px;
   font-weight: bold;
-  color: #333;
+  color: #333333;
   margin: 0;
   padding: 0;
 }
@@ -730,6 +754,7 @@ html[dir="rtl"] .cke_reset_all.csui-rich-text-editor-toolbar[style*="left"] .cke
   color: #2f4ed1;
   text-decoration: none;
 }
+
 .binf-widgets .csui-html-editor-wrapper .linkGroup li a:hover,
 .binf-widgets .csui-html-editor-wrapper .linkGroup li a:focus {
   color: #0084ce;
@@ -741,6 +766,7 @@ html[dir="rtl"] .cke_reset_all.csui-rich-text-editor-toolbar[style*="left"] .cke
   font-size: 13px;
   display: block;
 }
+
 .binf-widgets .csui-html-editor-wrapper .iconLinkGroup {
   display: inline-block;
   width: 180px;
@@ -812,7 +838,7 @@ html[dir="rtl"] .cke_reset_all.csui-rich-text-editor-toolbar[style*="left"] .cke
   line-height: 40px;
   font-weight: 300;
   margin-bottom: 4px;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .binf-widgets .csui-html-editor-wrapper .csui-html-editor-wrapper-parent > p {
@@ -834,7 +860,7 @@ html[dir="rtl"] .cke_reset_all.csui-rich-text-editor-toolbar[style*="left"] .cke
   font-size: 20px;
   line-height: 28px;
   font-weight: 400 !important;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .binf-widgets .csui-html-editor-wrapper .csui-html-editor-wrapper-parent > h5 {

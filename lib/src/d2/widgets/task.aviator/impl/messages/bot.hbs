@@ -1,0 +1,23 @@
+<otc-avatar image="{{image}}"></otc-avatar>
+<div class="aie-chat-entry">
+  <div class="aie-chat-text"></div>
+  {{#unless empty}}
+  <div class="aie-chat-copy">
+    <otc-button icon="aie_action:action_copy32" title="{{lang.copyButtonTitle}}"
+                class="aie-copy-button" arialabel="{{lang.copyButtonLabel}}"></otc-button>
+    <div class="aie-chat-copied" style="display: none">{{lang.copiedLabel}}</div>
+  </div>
+  {{/unless}}
+  {{#if referenceCount}}
+  <div class="aie-chat-references">
+    <button class="aie-chat-references-toggle" aria-expanded="false">
+      {{{caretDown}}}
+      {{{caretUp}}}
+      <span>References: <span class="aie-chat-reference-count">{{referenceCount}}</span></span>
+    </button>
+    <ul class="aie-chat-reference-list" style="display: none"></ul>
+  </div>
+  {{/if}}
+</div>
+
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

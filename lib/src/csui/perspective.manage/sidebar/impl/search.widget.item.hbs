@@ -7,8 +7,11 @@
                      data-widget-allow-multiple="{{attributes.allowMultiple}}">
                     <div class="csui-widget-item csui-search-widget-item icon-draggable-handle csui-draggable-widget-item"
                          data-widget-index="{{attributes.index}}" draggable="true" title="{{attributes.title}}">
+                        {{#if attributes.isJato}}
+                            <otc-icon class="csui-widget-item-drag" size='16' svg="{{attributes.jatoDragHandleIcon}}" ispresentation></otc-icon>
+                        {{/if}}
                         <div class="csui-search-result-widget">
-                            <div>
+                            <div class="csui-search-result-widget-list">
                                 {{splitTitle attributes.title ../query}}
                             </div>
                             <span class="csui-search-result-group-title">{{attributes.widgetGroupTitle}}</span>
@@ -21,4 +24,4 @@
     </div>
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

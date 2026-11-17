@@ -11,14 +11,26 @@
     {{#if multiFieldLabel}} aria-label="{{multiFieldLabel}}"{{/if}}
     {{#if ariaRequired}} aria-required="{{ariaRequired}}"{{/if}} {{#if isReadOnly}}
     readonly {{/if}} />
-        {{#if isGlobeRequired}}
-      <button class="icon csui-multilingual-icon">
-        {{{icon-v2 iconName="csui_action_language_switcher24" size='small' states='true'}}}
-      </button>
+    {{#if isGlobeRequired}}
+      {{#if isJATO}}
+        <otc-button  class="icon csui-multilingual-icon" type="subtle" size="small">
+          <otc-icon svg="{{globeIconSVG}}" type="subtle"></otc-icon>
+        </otc-button>
+      {{else}}
+        <button class="icon csui-multilingual-icon">
+          {{{icon-v2 iconName="csui_action_language_switcher24" size='small' states='true'}}}
+        </button>
+      {{/if}}
     {{/if}}
     {{#xif "this.mode !== 'writeonly'"}}
       <div class="icon-container">
+        {{#if isJATO}}
+        <otc-button  class="inline-edit-icon csui-jato-edit-cancel" arialabel="{{cancel}}" type="subtle" size="small" tabindex="-1" data-cstabindex="-1" title="{{cancel}}">
+        <otc-icon svg="{{editCancelIconSVG}}" type="subtle"></otc-icon>
+        </otc-button>
+        {{else}}
         <div class="csui-icon-edit inline-edit-icon edit-cancel" title="{{cancel}}"></div>
+        {{/if}}
       </div>
     {{else}}
       {{#if options.applyFlag}}
@@ -47,9 +59,15 @@
       </button>
     </div>
     <div class="icon-container">
+      {{#if isJATO}}
+      <otc-button  class="csui-jato-icon-edit inline-edit-icon binf-hidden" arialabel="{{edit}}" type="subtle" size="small" tabindex="-1" data-cstabindex="-1" title="{{edit}}">
+        <otc-icon svg="{{editIconSVG}}" type="subtle"></otc-icon>
+      </otc-button>
+      {{else}}
       <div class="csui-icon-edit inline-edit-icon icon-edit" title="{{edit}}"></div>
+      {{/if}}
     </div>
   </div>
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

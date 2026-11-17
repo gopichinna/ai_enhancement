@@ -1,2 +1,8 @@
-<span class="csui-selected-counter-label">{{selectedLabel}}</span><span class="binf-badge binf-badge-light csui-selected-counter-value">{{selectedCount}}</span>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+{{#if isJATO}}
+<otc-badge id="toolbarSelectedBadge" fortoolbar="" value="{{selectedCount}}" type="" role="none"></otc-badge>
+{{selectedLabel}}
+{{else}}
+{{selectedLabel}}
+<otc-badge id="toolbarSelectedBadge" fortoolbar="" value="{{selectedCount}}" type="" role="none"></otc-badge>
+{{/if}}
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,19 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-bws-members .d2-bws-members-search {
+    padding-top: 28px;
+    height: 60px;
+}
+
+.d2-bws-members .d2-bws-members-search otc-input {
+    width: 100%;
+}
+
+.d2-bws-members .d2-bws-members-cards {
+    padding-top: 16px;
+}
+
+.d2-bws-members .d2-bws-members-cards .d2-bws-members-card {
+    padding-bottom: 8px;
+}

@@ -1,8 +1,8 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-table-queryformview {
-  background: #FFF;
+  background: #FFFFFF;
 }
 
 .binf-widgets .d2-table-queryformview.d2-query-form-view .queryformfooterview {
@@ -116,18 +116,18 @@
   width: calc(100% - 16px);
 }
 
-.binf-widgets .cs-form.csui-general-form.d2-form.d2-workflow-query-panel .alpaca-container-item .alpaca-field .d2-checkbox-group .d2-checkbox-container .d2-text-overflow {
+.binf-widgets .cs-form.csui-general-form.d2-form.d2-workflow-query-panel .alpaca-container-item .alpaca-field .dctmw-checkbox-group .dctmw-checkbox-container .dctmw-text-overflow {
   display: none;
 }
 
-.binf-widgets .cs-form.csui-general-form.d2-form.d2-workflow-query-panel .cs-formfield.d2-checkbox-group .d2-cb-container-parent li {
+.binf-widgets .cs-form.csui-general-form.d2-form.d2-workflow-query-panel .cs-formfield.dctmw-checkbox-group .dctmw-cb-container-parent li {
   padding: 6px 0 0 0;
   border-width: 1px 1px 1px 0;
   border-style: solid;
   border-color: #ffffff;
 }
 
-.binf-widgets .cs-form.csui-general-form.d2-form.d2-workflow-query-panel .cs-formfield.d2-checkbox-group .d2-cb-container-parent li.d2-active-checkbox {
+.binf-widgets .cs-form.csui-general-form.d2-form.d2-workflow-query-panel .cs-formfield.dctmw-checkbox-group .dctmw-cb-container-parent li.dctmw-active-checkbox {
   border: 1px dotted #666666;
 }
 

@@ -1,0 +1,46 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .bws-base-content .bws-header-content .bws-basic-info-container .bws-header-info-container .bws-header-info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.binf-widgets .bws-base-content .bws-header-content .bws-basic-info-container .bws-header-info-container .bws-header-info .bws-name-and-icon {
+    display: flex;
+    align-items: center;
+}
+
+.binf-widgets .bws-base-content .bws-header-content .bws-basic-info-container .bws-header-info-container .bws-header-info .bws-name {
+    color: #333333;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 36px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.binf-widgets .bws-base-content .bws-header-content .bws-basic-info-container .bws-header-info-container .bws-header-info .bws-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+    font-weight: 400;
+}
+
+.binf-widgets .bws-base-content .bws-header-content .bws-basic-info-container .bws-header-info-container .bws-header-info .bws-description {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.binf-widgets .bws-base-content .bws-header-content .bws-basic-info-container .bws-header-info-container .bws-header-info .bws-favorite-icon{
+    width:  30px;
+    height: 30px;
+    display : inline-block;
+    flex-shrink: 0;
+    background-image: url('../image/favorite.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    position: relative;
+    top: 5px
+}

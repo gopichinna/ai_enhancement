@@ -1,10 +1,38 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+:root {  
+  --jatx-size-width-icon: 24px;
+  --jatx-list-font-size: 13px;
+  --jatx-list-line-height: 18px;
+  --jatx-list-item-padding-right: 0;
+  --jatx-smart-list-item-sec-text-font-size: 11px;
+  --jatx-smart-list-item-sec-text-font-weight: 500;
+  --jatx-smart-list-item-sec-text-line-height: 14px;
+  --jatx-smart-list-item-sec-text-letter-spacing: 0%;
+}
+
+[data-smart-theme="cf"] {  
+  --jatx-size-width-icon: 32px;
+  --jatx-list-font-size: 14px;
+  --jatx-list-line-height: 16px;
+  --jatx-list-item-padding-right: 8px;
+  --jatx-smart-list-item-sec-text-font-size: 12px;
+  --jatx-smart-list-item-sec-text-font-weight: normal;
+  --jatx-smart-list-item-sec-text-line-height: normal;
+  --jatx-smart-list-item-sec-text-letter-spacing: normal;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-list-item-checkbox-padding-right: 0px;
+}
+
 .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item {
-  font-size: 14px;
+  font-size: var(--jatx-list-font-size);
   margin: 0px;
-  min-height: 40px;
+  min-height: var(--jato-size-height-32, 40px);
+  display: flex;
+  align-items: center;
   height: auto;
 }
 
@@ -14,10 +42,40 @@
   cursor: default;
 }
 
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item .smart-listitem-checkbox-container {
+  padding-right: var(--jatx-list-item-checkbox-padding-right, 8px);
+}
+
+.csui-item-standard.smart-item-standard.binf-list-group-item .smart-list-item-title-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item .smart-single-select {
+  opacity: 0;
+}
+
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:hover .smart-single-select,
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item.smart-item-standard-with-selection:focus-visible .smart-single-select, 
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item .smart-single-select[checked] {
+  opacity: 1;
+}
+
 .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item.inactive .csui-icon {
   opacity: 0.5;
 }
 
+.cs-list .csui-item-standard.smart-item-standard.binf-list-group-item.smart-item-standard-with-selection {
+  border-bottom: 1px solid var(--jatx-const-transparent, transparent);
+}
+
+.binf-widgets .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item.smart-listitem-selected {
+  background-color: var(--jato-background-rows-selected, #98A8B2);
+  border-bottom: 1px solid var(--jato-border-color-difference, #ffffff);
+  border-radius: 0;
+  font-weight: bold;
+  transition: background-color 300ms linear;
+}
 .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item.inactive .list-item-title {
   color: #717171;
 }
@@ -25,11 +83,23 @@
 .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:hover,
 .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:active,
 .binf-widgets:not(.csui-on-ipad) .cs-list .csui-item-standard.smart-item-standard.csui-tile-with-more-btn {
-  background-color: #B2BEC5;
+  background-color: var(--jato-background-rows-hover,#B2BEC5);
 }
 
 .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:active {
-  background-color: #98A8B2;
+  background-color: var(--jato-background-rows-active,#98A8B2);
+}
+
+.binf-widgets .smart-cs-list .binf-list-group-item.binf-active,
+.binf-widgets .smart-cs-list .smart-item-standard.binf-list-group-item.binf-active:hover,
+.binf-widgets .smart-cs-list .smart-item-standard.binf-list-group-item.binf-active:focus {
+  background-color: var(--jato-background-rows-selected,#cbd3d9);
+  border: none;
+}
+
+.binf-widgets .smart-cs-list .binf-list-group-item.binf-active .list-item-title {
+  color: var(--jato-cta-content-color-tertiary, #333);
+  font-weight: 700;
 }
 
 .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:not(.inactive) {
@@ -47,20 +117,23 @@
 }
 
 .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item .smart-list-item-sec-text {
-  padding: 0 4px;
+  padding: 0 var(--jato-padding-lrg, 4px) var(--jato-padding-xxs, 0) var(--jato-padding-xxs, 8px);
   overflow: hidden;   
   text-overflow: ellipsis;
   width: 100%; 
   white-space: nowrap;
-  font-size: 12px;
-  font-weight: normal;
-  color: #666666;
+  font-size: var(--jatx-smart-list-item-sec-text-font-size);
+  font-weight: var(--jatx-smart-list-item-sec-text-font-weight);
+  line-height: var(--jatx-smart-list-item-sec-text-line-height);
+  letter-spacing: var(--jatx-smart-list-item-sec-text-letter-spacing);
+  color: var(--jato-typography-text-color-tertiary, #666666);
 }
 
 .binf-widgets .binf-list-group-item {
   border: none;
   background-color: transparent;
-  padding: 4px 16px;
+  border-radius: var(--jato-radii-med, 0);
+  padding: var(--jato-padding-med, 4px) var(--jato-padding-med, 16px) var(--jato-padding-med, 4px) var(--jato-padding-xl, 16px);
 }
 
 .binf-list-group-item.binf-active {
@@ -76,32 +149,29 @@
 }
 
 .binf-widgets .cs-list .csui-item-standard.smart-item-standard .list-item-title {
-  max-width: calc(100% - 32px);
+  max-width: calc(100% - var(--jatx-size-width-icon));
   
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 2px 0 2px 8px;
-  font-family: OpenText Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #333333;
+  padding: var(--jato-padding-xs, 2px) 0 var(--jato-padding-xs, 2px) var(--jatx-list-item-padding-right);
+  font-size: var(--jatx-list-font-size); 
+  line-height: var(--jatx-list-line-height); 
+  color: var(--jato-cta-content-color-tertiary, #333);
 }
 
+.binf-widgets .cs-list .csui-item-standard.csui-tile-with-more-btn .csui-tileview-contains-more-btn .list-item-title,
 .binf-widgets .cs-list .csui-item-standard.smart-item-standard.csui-tile-with-more-btn.csui-item-standard.smart-item-standard-without-icon .csui-tileview-contains-more-btn .list-item-title {
-  width: calc(100% - 32px);
-  
+  width: calc(100% - var(--jatx-size-width-icon));
 }
 
 .binf-widgets .cs-list .csui-item-standard.smart-item-standard.csui-tile-with-more-btn .csui-tileview-contains-more-btn .list-item-title {
-  width: calc(100% - 64px);
+  width: calc(100% - 2*var(--jatx-size-width-icon));
   
 }
 
 .binf-widgets .cs-list.tile.content-tile .csui-tileview-contains-no-more-btn.csui-item-standard.smart-item-standard-without-icon {
-  height: 40px;
+  height: var(--jato-size-height-32, 40px);
 }
 
 .binf-widgets .cs-list.smart-cs-list.tile.content-tile .csui-tileview-contains-no-more-btn,
@@ -110,7 +180,9 @@
   align-items: center;
   text-decoration: none;
   outline-style: none;
-  height: 100%;
+  height: auto;
+  width: 100%;
+  gap: var(--jato-margin-med, 0);
 }
 
 
@@ -122,25 +194,26 @@
 }
 
 .binf-widgets .csui-item-standard.smart-item-standard.csui-tile-with-more-btn .csui-tileview-more-btn {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  width: 32px;
-  height: 32px;
+  width: var(--jatx-size-width-icon);
+  height: var(--jato-size-height-24, 32px);
+}
+
+.binf-widgets .smart-item-standard .csui-icon-group {
+  min-width: var(--jatx-size-width-icon);
 }
 
 
 
 @media(forced-colors:active) {
 
-  .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:hover,
-  .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:active,
-  .binf-widgets:not(.csui-on-ipad) .cs-list .csui-item-standard.smart-item-standard.csui-tile-with-more-btn {
+  [data-smart-theme="cf"] .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:hover,
+  [data-smart-theme="cf"] .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:active,
+  [data-smart-theme="cf"] .binf-widgets:not(.csui-on-ipad) .cs-list .csui-item-standard.smart-item-standard.csui-tile-with-more-btn {
     outline: 1px solid black;
     outline-offset: -3px;
   }
 
-  .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:focus-visible {
+  [data-smart-theme="cf"] .cs-list .csui-item-standard.smart-item-standard.binf-list-group-item:focus-visible {
     outline: 1px solid black;
     outline-offset: -3px;
   }

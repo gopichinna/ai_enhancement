@@ -1,0 +1,90 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+[data-smart-theme]:not([data-smart-theme='cf']) {
+    --jatx-dctmw-slim-status-icon-margin: var(--jato-padding-xs) var(--jato-padding-med) var(--jato-padding-xs) var(--jato-padding-med);
+    --jatx-dctmw-slim-status-message-border-width: var(--jato-border-weight-1) var(--jato-border-weight-1) var(--jato-border-weight-2) var(--jato-border-weight-1);
+    --jatx-dctmw-slim-status-message-border-style: solid;
+}
+
+.binf-widgets {
+    .dctmw-slim-status-message {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        background-color: var(--jato-messages-inline-background-information, transparent);
+        border-width: var(--jatx-dctmw-slim-status-message-border-width, 0);
+        border-style: var(--jatx-dctmw-slim-status-message-border-style, none);
+        border-color: var(--jato-messages-inline-border-information, transparent);
+        border-radius: var(--jato-radii-sm, 3px);
+        box-shadow: 0 var(--jato-elevation-y-axis-level-3) var(--jato-elevation-blur-level-3) 0 var(--jato-elevation-shadow-color-level-3);
+
+        &.error {
+            background-color: var(--jato-messages-inline-background-error, transparent);
+            border-color: var(--jato-messages-inline-border-error, transparent);
+        }
+
+        &.warning {
+            background-color: var(--jato-messages-inline-background-warning, transparent);
+            border-color: var(--jato-messages-inline-border-warning, transparent);
+        }
+
+        .status-icon {
+            height: 16px;
+            width: 16px;
+            margin: var(--jatx-dctmw-slim-status-icon-margin, 0);
+            background-position: center;
+        }
+
+        .status-message{
+            font-size: var(--jato-font-size-xs, 12px);
+            line-height: var(--jato-line-height-xs, 16px);
+            padding-right: var(--jato-padding-med, 6px);
+            letter-spacing: var(--jato-tracking-regular, 0);
+            color: var(--jato-typography-text-color-secondary, #333333);
+        }
+    }
+}
+
+
+[data-smart-theme='cf'] {
+    .binf-widgets {
+        .dctmw-slim-status-message {
+            .status-icon {
+                border-radius: 3px;
+                background-size: 16px 16px;
+            }
+
+            .status-message {
+                padding-left: 5px;
+            }
+
+            &.info {
+                background-color: rgba(46, 61, 152, 0.05);
+
+                .status-icon {
+                    background-image: url(images/information.svg);
+                    background-color: #2E3D98;
+                }
+            }
+
+            &.warning {
+                background-color: rgba(223, 104, 0, 0.05);
+
+                .status-icon {
+                    background-image: url(images/warning.svg);
+                    background-color: #DF6800;
+                }
+            }
+
+            &.error {
+                background-color: rgba(223, 51, 36, 0.05);
+
+                .status-icon {
+                    background-image: url(images/error.svg);
+                    background-color: #DF3324;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+:root{
+  --jatx-listview-emptylist-placeholder-text-font-size: 16px;
+  --jatx-listview-emptylist-placeholder-text-font-weight: 350;
+  --jatx-listview-emptylist-placeholder-text-letter-spacing: -0.01em;
+  --jatx-listview-emptylist-placeholder-text-padding: 0px;
+  --jatx-listview-emptylist-placeholder-text-top: 0px;
+}
+
+[data-smart-theme="cf"] {
+  --jatx-listview-emptylist-placeholder: url(../../../../themes/carbonfiber/image/icons/smart_ill_list220.svg);
+  --jatx-listview-emptylist-placeholder-text-font-size: 18px;
+  --jatx-listview-emptylist-placeholder-text-font-weight: 400;
+  --jatx-listview-emptylist-placeholder-text-letter-spacing: normal;
+  --jatx-listview-emptylist-placeholder-text-padding: 12px;
+  --jatx-listview-emptylist-placeholder-text-top: 128px;
+}
+.binf-widgets .cs-emptylist-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: var(--jato-padding-xxl, 0px);
+  height: 100%;
+  background-color: var(--jato-background-elevation-gradient-control-level-0, #f7f7f7);
+}
+
+
+.binf-widgets .smart-simpletreelistitem .cs-emptylist-container .smart-emptylist-jato-icon {
+  display: none;
+  visibility: hidden;
+}
+
+.binf-widgets .cs-emptylist-container .smart-emptylist-jato-icon{
+  position: relative;
+  height: 110px;
+}
+
+.binf-widgets .cs-emptylist-container .smart-emptylist-jato-icon > svg,
+.binf-widgets .cs-emptylist-container .smart-emptylist-jato-icon > img {
+  width: 110px;
+  height: 110px;
+}
+
+.binf-widgets .cs-emptylist-placeholder {
+  flex: 0 1 0;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .cs-emptylist-text{
+  margin-top: 8px;
+}
+
+.binf-widgets .cs-emptylist-container .cs-emptylist-text{
+  flex: 0 0 auto;
+  font-size: var(--jatx-listview-emptylist-placeholder-text-font-size);
+  font-style: normal;
+  font-weight: var(--jatx-listview-emptylist-placeholder-text-font-weight);
+  color: var(--jato-typography-text-color-secondary, #666666);
+  text-align: center;
+  text-align: -webkit-center;
+  line-height: 20px;
+  letter-spacing: var(--jatx-listview-emptylist-placeholder-text-letter-spacing);
+  padding: var(--jatx-listview-emptylist-placeholder-text-padding);
+  position: relative;
+  top: var(--jatx-listview-emptylist-placeholder-text-top);   
+  word-break: break-word;  
+  overflow-y: overlay;
+}
+
+.binf-widgets .csui-state-loading .cs-emptylist-text {
+  top: 0px;
+}
+
+.cs-emptylist-container.csui-state-loading .cs-emptylist-text {
+  animation: csui-emptylist-fade-in-and-out 1.5s ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 1
+}
+
+.cs-emptylist-container:not(.csui-state-loading) {
+  min-height: 150px;
+  background-image: var(--jatx-listview-emptylist-placeholder);
+  background-repeat: no-repeat;
+  background-position: center 16px;  
+  background-size: 124px 124px;
+}
+
+
+@keyframes csui-emptylist-fade-in-and-out {
+  0% {
+    opacity: .5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .5;
+  }
+}

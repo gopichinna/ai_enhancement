@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .mass-update-document-validation .d2-validation-copy {
     cursor: pointer;
     height: 32px;
@@ -28,13 +27,15 @@
 
 .mass-update-document-validation table.error-items tr{
     height: 64px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eeeeee;
     display: inline-table;
     margin: 1px;
 }
+
 .mass-update-document-validation table.error-items tr:focus{
     outline: 1px dotted #333333;
 }
+
 .mass-update-document-validation table.error-items .status-icon{
     background-image: url('../../impl/images/status-icon.svg');
     width: 16px;
@@ -43,11 +44,13 @@
     background-position: center;
     background-size: contain;
 }
+
 .binf-widgets .mass-update-document-validation .binf-modal-header{
     border: 0 none;
     padding: 0 16px 0 16px;
     height: 100px;
 }
+
 .mass-update-document-validation .binf-modal-content{
     border-radius: 3px;
     border: 0 none;
@@ -56,23 +59,28 @@
     width: 720px;
     padding: 0;
 }
+
 .binf-widgets .mass-update-document-validation .binf-modal-body{
     margin: 0;
     padding: 0 16px 0 16px;
 }
+
 .binf-widgets .mass-update-document-validation .binf-modal-dialog .binf-modal-content .binf-modal-body > div{
     max-height: inherit;
 }
+
 .mass-update-document-validation table.error-items td.type,
 .mass-update-document-validation table.error-items .status,
 .mass-update-document-validation table.error-items td.remove{
     padding-left: 0;
     padding-right: 0;
 }
+
 .mass-update-document-validation table.error-items td.type{
     width: 32px;
     padding-top: 16px;
 }
+
 .mass-update-document-validation table.error-items td.name{
     position: relative;
     padding-left: 8px;
@@ -85,6 +93,7 @@
     padding-top: 25px;
     overflow-wrap: break-word;
 }
+
 .mass-update-document-validation table.error-items td.name > .fadeout{
     position: absolute;
     width: 35px;
@@ -93,9 +102,11 @@
     height: 99%;
     background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 75%,rgba(255,255,255,1) 100%);
 }
+
 .mass-update-document-validation table.error-items .status{
     width: 16px;
 }
+
 .mass-update-document-validation table.error-items .message{
     padding-left: 8px;
     padding-right: 8px;
@@ -105,6 +116,7 @@
     color: #DF3324;
     overflow-wrap: break-word;
 }
+
 .mass-update-document-validation .binf-modal-header .table-header{
     left: calc(50% - 546px/2 - 71px);
     font-style: normal;
@@ -115,33 +127,42 @@
     color: #333333;
     height: 20px;
 }
+
 .mass-update-document-validation .error-data .each-error{
     display: flex;
 }
+
 .mass-update-document-validation .error-data{
     vertical-align: middle;
 }
+
 .mass-update-document-validation .error-data .each-error:nth-child(n+2){
     padding-top: 0;
 }
+
 .mass-update-document-validation .error-data .each-error:first-child{
     padding-top: 24px;
 }
+
 .mass-update-document-validation .error-data .each-error{
     display: flex;
     padding-bottom: 16px;
     padding-top: 16px;
     vertical-align: middle;
 }
+
 .mass-update-document-validation .error-data .each-error:last-child{
     padding-bottom: 24px;
 }
+
 .binf-widgets .mass-update-document-validation .binf-modal-dialog .binf-modal-body{
     max-height: 300px;
 }
+
 .binf-widgets .mass-update-document-validation .binf-modal-dialog{
     width: 720px;
 }
+
 .binf-widgets .mass-update-document-validation .binf-modal-body tr:focus{
     outline: 1px dotted #333333;
 }
@@ -222,6 +243,7 @@
     max-height: 42px;
     overflow: hidden;
     font-weight: normal;
+
     
 }
 
@@ -318,11 +340,13 @@
 .binf-widgets.d2-mobile .mass-update-document-validation.files-expanded .binf-modal-dialog {
     transition: margin-top 100ms ease;
 }
+
 .binf-widgets .mass-update-document-validation .show-file-Info{
     background: #E7EDF8;
     height: 35px;
     display: flex;
 }
+
 .binf-widgets .mass-update-document-validation .show-file-Info .files-info-message{
     height: 18px;
     font-size: 12px;
@@ -330,6 +354,7 @@
     color: #333333;
     margin-left: 8px;
 }
+
 .binf-widgets .mass-update-document-validation .show-file-Info .info-icon{
     background-image: url(../../impl/images/information.svg);
     width: 18px;
@@ -338,6 +363,7 @@
     margin-top: 8px;
     margin-bottom: 9px;
 }
+
 .binf-widgets .mass-update-document-validation .show-more .show-more-label{
     height: 16px;
     font-size: 14px;
@@ -345,6 +371,7 @@
     display: flex;
     color: #232E72;
 }
+
 .binf-widgets .mass-update-document-validation .show-more .show-more-icon,
 .binf-widgets .mass-update-document-validation .show-more .show-less-icon {
   background-image: url(../../impl/images/caret-menu.svg);
@@ -356,6 +383,7 @@
 .binf-widgets .mass-update-document-validation .show-more .show-less-icon{
     transform: rotate(180deg);
 }
+
 .binf-widgets .mass-update-document-validation .show-more{
     display: flex;
     height: 20px;
@@ -364,10 +392,12 @@
     margin-bottom: 16px;
     width: max-content;
 }
+
 .binf-widgets .mass-update-document-validation .partial-updated-items-view,
 .binf-widgets .mass-update-document-validation .error-items-view{
     padding: 25px 40px;
 }
+
 .mass-update-document-validation .expand-collase-button.icon {
   background-image: url('../../impl/images/caret-section.svg');
   background-position: center center;
@@ -378,9 +408,11 @@
 .mass-update-document-validation .expand-collase-button.icon.expand{
     margin-left: 4px;
 }
+
 .mass-update-document-validation .expand-collase-button.icon.collapse{
     transform: rotate(180deg);
 }
+
 .mass-update-document-validation .expand-collase-button{
     width: 32px;
     height: 32px;
@@ -388,6 +420,7 @@
     margin-right: 4px;
     padding-top: 5px;
 }
+
 .mass-update-document-validation .table-header .body-message{
     width: 100%;
     margin-top: 8px;

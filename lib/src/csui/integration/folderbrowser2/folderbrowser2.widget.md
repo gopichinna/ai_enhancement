@@ -61,6 +61,8 @@ These operations take place when the `show` method is called.
                     property `name` uses the name filtering text box
     clearFilterOnChange - if the filter text should be cleared when another
                           container has been entered
+    context       - an object that provides additional contextual information and 
+                  configuration options specific to the current environment.
 
 
 The parameters `placeholder` and `connection`/`connector` are mandatory,

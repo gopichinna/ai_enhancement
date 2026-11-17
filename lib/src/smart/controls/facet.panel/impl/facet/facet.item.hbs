@@ -1,11 +1,13 @@
 <div class="csui-facet-item-checkbox {{showOnHover}}">
-    <otc-checkbox interactiveonly="" type="checkbox" class="csui-checkbox" title="{{checkboxTitle}}" arialabel="{{checkboxAriaLabel}}" tabindex="-1">{{checkboxTitle}}</otc-checkbox>
+    <otc-checkbox {{#if isChecked}} checked="true" ariachecked="true" {{/if}} interactiveonly="" type="checkbox" class="csui-checkbox" title="{{checkboxTitle}}" arialabel="{{checkboxAriaLabel}}" tabindex="-1">{{checkboxTitle}}</otc-checkbox>
 </div>
 <div class="csui-filter-name" tabindex="-1" title="{{filterTitle}}" role="button">
-  <div class="csui-name">{{name}}</div>
+  <div class="csui-name {{facetNameEleClassName}}">
+    {{#each displayName}}{{#if this.text}}<strong class="smart-search-bold">{{this.text}}</strong>{{else}}{{this}}{{/if}}{{/each}}
+  </div>
   {{#if displayCount}}
     <div class="csui-total">{{count}}</div>
   {{/if}}
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

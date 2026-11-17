@@ -1,13 +1,24 @@
-<div class="csui-brand-image-logo">
-   <div class="csui-default-image-logo"></div>
-   <span class="csui-logo-image"></span>
-   <span class="csui-newLogo-image" height="auto" width="256px"></span>
+<div class="csui-brand-image-logo" {{#if theme}} data-smart-theme="{{theme}}" branding-theme="{{theme}}" {{/if}}>
+   <div class="csui-default-image-logo" ></div>
+   {{#if isJATO}}
+      <span class="csui-logo-image">{{{brandingDefaultLogo}}}</span>
+      <span class="csui-newLogo-image" height="auto" {{#if hideNewImgComponent }} style="display: none;" {{/if}}></span>
+   {{else}}
+      <span class="csui-logo-image"></span>
+      <span class="csui-newLogo-image" height="auto" width="256px"></span>
+   {{/if}}
 </div>
 <span class="csui-help-text" title="{{helpText}}"> {{helpText}}</span>
-<div class="csui-logo-btns" tabindex="0" role="button">
+<div class="csui-logo-btns" {{#unless isJATO}} tabindex="0" role="button" {{/unless}}>
+{{#if isJATO}}
+   <otc-button type="secondary" size='small' arialabel="{{uploadAria}}" class="csui-logo-upload-button">
+   </otc-icon> {{uploadLabel}}
+   </otc-button>
+{{else}}
    <label for="{{logoImageId}}" aria-label="{{uploadAria}}" class="csui-logo-upload-label">
       <span class="csui-logo-upload-icon" aria-hidden="true"></span> {{uploadLabel}}
    </label>
+{{/if}}
    <input id="{{logoImageId}}" class="csui-logo-upload-input" type="file" tabindex="-1"/>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

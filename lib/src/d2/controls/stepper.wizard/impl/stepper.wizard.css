@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-stepper-wizard.binf-modal.binf-fade:not(.dialog-mode) .binf-modal-dialog {
   width: 688px;
@@ -34,7 +34,7 @@
   max-height: 80%;
 }
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   .d2-stepper-wizard.dialog-mode.binf-modal.binf-fade .binf-modal-dialog {
     width: 100%;
     margin: 50px 5px;
@@ -112,7 +112,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   opacity: 1.0;
 }
 
@@ -122,12 +122,4 @@
 
 .binf-widgets .d2-stepper-wizard.binf-modal {
   z-index: 1006;
-}
-
-.d2-wizard-step-view .cs-tabpanel.smart-tab-panel.tab-panel .smart-tab-contents-wrapper {
-  height: 100%;
-}
-
-.d2-wizard-step-view .cs-tabpanel.smart-tab-panel.tab-panel .smart-tab-contents-wrapper .binf-tab-content.smart-tab-content {
-  height: 100%;
 }

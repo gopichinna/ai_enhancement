@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-launch-workflow-attachments-dialog,
 .d2-launch-workflow-attachments-container {
@@ -156,4 +156,9 @@
 .d2-launch-workflow-attachments-dialog .launch-workflow-empty-attachments-list .launch-workflow-empty-add-attachments:active {
     background: url("../images/add_md48.svg") no-repeat;
     background-size: contain;
+}
+
+.d2-launch-workflow-attachments-dialog .mandatory {
+    color:red;
+    font-size:18px;
 }

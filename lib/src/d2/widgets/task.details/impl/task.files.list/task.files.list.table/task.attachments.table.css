@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-task-attachments-table-dialog.binf-modal {
   padding: 0;
@@ -32,7 +32,7 @@
   height: 100%;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (-webkit-min-device-pixel-ratio: 1) {
    .binf-widgets .d2-task-attachments-table-dialog.cs-dialog .binf-modal-lg .binf-modal-body {
     height: 100%;
   }

@@ -1,8 +1,24 @@
-{{#if showInlineActionBar}}<a class="csui-tileview-contains-more-btn" tabindex="-1"> {{/if}}
-    {{#if enableIcon}}<div class="csui-type-icon csui-icon {{icon}}"></div>{{/if}}
-    <div title="{{name}}" class="list-item-title" role="link" aria-label="{{itemLabel}}">{{name}}</div>
-    {{#if end-icon}}<div class="{{end-icon-class}}"></div>{{/if}}
-    {{#if showInlineActionBar}}<div class="csui-tileview-more-btn"></div>{{/if}}
-    {{#if showInlineActionBar}}
+{{#if showInlineActionBar}}<a class="csui-tileview-contains-more-btn" href="#" tabindex="-1"> {{/if}}
+  {{#if enableSelection}}
+  <span class="smart-listitem-checkbox-container">
+    <otc-checkbox
+      class="smart-listitem-checkbox {{#if isSingleSelect}}smart-single-select{{else}}smart-multi-select{{/if}}" {{#if
+      disableCheckbox}}disabled{{/if}} {{#if selected}}checked{{/if}} interactiveonly="true" tabindex="-1"></otc-checkbox>
+  </span>
+  {{/if}}
+  {{#if enableIcon}}
+  <div class="csui-type-icon csui-icon {{#if addIconClass }} {{icon}} {{/if}}"></div>
+  {{/if}}
+  <div class="smart-list-item-title-container">
+  <div title="{{name}}" class="list-item-title" aria-label="{{itemLabel}}">{{name}}</div>
+  {{#if enableSecondaryText}}
+  {{#if enableSecText}}
+  <span title="{{secText}}" id="{{secTextId}}" class="smart-list-item-sec-text">{{secText}}</span>
+  {{/if}}
+  {{/if}}
+  </div>
+  {{#if end-icon}}<div class="{{end-icon-class}}"></div>{{/if}}
+  {{#if showInlineActionBar}}<div class="csui-tileview-more-btn"></div>{{/if}}
+  {{#if showInlineActionBar}}
 </a>{{/if}}
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

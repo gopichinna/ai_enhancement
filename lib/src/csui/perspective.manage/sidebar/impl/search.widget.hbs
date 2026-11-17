@@ -1,13 +1,20 @@
-<div class="cs-item-picker" role="combobox"
+<div class="cs-item-picker" role="combobox" aria-label="{{ariaLabel}}
      aria-expanded="false" aria-haspopup="listbox">
      <input id="search-input" type="text" class="search-widget binf-form-control cs-search" autocomplete="off"
           aria-autocomplete="list" aria-label="{{ariaLabel}}"
-          placeholder="Search widgets" />
-     <div class="search-widget cs-search-clear csui-icon formfield_clear" title="{{this.titleClearIcon}}"
-          role="button" aria-label="{{this.titleClearIcon}}" tabindex="0"></div>
-     <div class="search-widget cs-search-icon" title="{{titleSearchIcon}}"
-          role="button" aria-label="{{titleSearchIcon}}">
-     </div>
+          placeholder="{{widgetSearchPlaceholder}}" />
+
+     {{#if isJato}}
+          <otc-icon class="search-widget cs-search-clear csui-icon" size='16' svg="{{jatoClearIcon}}" ispresentation
+          title="{{this.titleClearIcon}}" arialabel="{{this.titleClearIcon}}"></otc-icon>
+          <otc-icon class="search-widget cs-search-icon" size='16' svg="{{jatoSearchIcon}}" ispresentation 
+          title="{{titleSearchIcon}}" arialabel="{{titleSearchIcon}}"></otc-icon>
+     {{else}}
+          <div class="search-widget cs-search-clear csui-icon formfield_clear" title="{{this.titleClearIcon}}"
+               role="button" aria-label="{{this.titleClearIcon}}" tabindex="0"></div>
+          <div class="search-widget cs-search-icon" title="{{titleSearchIcon}}"
+               role="button" aria-label="{{titleSearchIcon}}"></div>
+     {{/if}}
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

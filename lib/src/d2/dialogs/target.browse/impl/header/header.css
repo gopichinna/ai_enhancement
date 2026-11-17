@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .d2-target-browse .title-section {
   float: left;
 }
@@ -63,11 +62,12 @@
 }
 
 @media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px) {
+and (device-width >= 768px)
+and (device-width <= 1024px) {
   .apply-properties-selector {
     min-width: 220px;
   }
+
   .apply-properties-selector .cs-apply-properties-selector button {
     float: left;
   }
@@ -119,4 +119,23 @@ and (max-device-width: 1024px) {
 .d2-target-browse .csui-target-search-property-container .binf-dropdown-toggle.binf-btn-default.binf-active,
 .d2-target-browse .csui-target-search-property-container .binf-dropdown-toggle.binf-btn-default {
   background-color: transparent;
+}
+
+.d2-split-panel .splitview-doclist.d2-target-browse .d2-target-table-mode{
+  width: 40px; 
+  height: 24px;
+}
+
+.d2-split-panel .splitview-doclist.d2-target-browse .d2-target-table-mode .d2-target-table-settings > a{
+  width: 24px;
+  height: 24px;
+  display: block;
+  cursor: pointer;
+}
+
+.d2-split-panel .splitview-doclist.d2-target-browse .d2-target-table-mode span.icon{
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  display: block;
 }

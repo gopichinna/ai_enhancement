@@ -1,0 +1,63 @@
+{{#if enableBackButton}}
+
+{{#if isJATO}}
+    <otc-button class="smart-simple-tile-header-back-button simple-tile-header-elements" title="{{goBackTooltip}}" arialabel="{{goBackTooltip}}">
+        <otc-icon mirrorifrtl svg="{{smartSimpleTileHeaderBackJatoIcon}}"></otc-icon>
+    </otc-button>
+{{else}}
+<div class="smart-simple-tile-icon-wrapper smart-v2-icon-parent simple-tile-header-elements">
+    <otc-button mirrorIconIfRtl icon="smart_action:action_back32" class="smart-simple-tile-header-back-button"
+        title="{{goBackTooltip}}" arialabel="{{goBackTooltip}}"></otc-button>
+</div>
+{{/if}}
+{{/if}}
+
+
+{{#if enableTileIcon}}
+<span class="smart-tile-type-icon simple-tile-header-elements">
+{{#if isJATO}}
+<span class="smart-simple-tile-header-jato-icon">
+    <otc-icon type="raw" size="24" svg="{{tileJatoIcon}}"></otc-icon>
+</span>
+{{else}}
+    <span class="icon {{tileIcon}}"></span>
+{{/if}}
+</span>
+{{/if}}
+
+<span class="smart-simple-tile-header-title-wrapper simple-tile-header-elements" id="{{headerId}}">
+    <div class="smart-simple-tile-header-title">{{tileTitle}}</div>
+    {{#if enableSubtitle}}
+    <div class="smart-simple-tile-header-subtitle">{{tileSubtitle}}</div>
+    {{/if}}
+</span>
+
+
+
+{{#if enableRightToolbar}}
+<span class="smart-simple-header-right-toolbar smart-hide-right-toolbar">
+
+    {{#if enableSearch}}
+    <otc-typeahead-search class="smart-list-search" title="{{searchAria}}" arialabel="{{searchAria}}" tabindex="0">
+        <otc-input type="search" slidein="" class="smart-list-search-input" placeholder="{{searchPlaceholder}}" title="{{searchAria}}" arialabel="{{searchAria}}" autocomplete="off" cleariconarialabel="{{clearAll}}" clearicontitle="{{clearAllAria}}" closeiconarialabel="{{searchCloseAria}}" closeicontitle="{{searchCloseAria}}"></otc-input>
+      </otc-typeahead-search>
+    {{/if}}
+
+
+
+    {{#if enableExpand}}
+    {{#if isJATO}}
+    <otc-button class="cs-icon cs-open-perspective-button simple-tile-header-elements" title="{{expandAriaText}}" arialabel="{{expandAriaText}}">
+        <otc-icon type="secondary" svg="{{simpleTileHeaderExpandSVGContent}}"></otc-icon>
+    </otc-button>
+    {{else}}
+    <otc-button icon="smart_action:action_expand32" class="cs-icon cs-open-perspective-button simple-tile-header-elements"
+        title="{{expandAriaText}}" arialabel="{{expandAriaText}}"></otc-button>
+    {{/if}}
+    {{/if}}
+
+
+</span>
+
+{{/if}}
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

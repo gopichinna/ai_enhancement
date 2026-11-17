@@ -1,7 +1,7 @@
 <table class="checkout-items">
   {{#each checkoutItems}}
-    <tr data-cs-id="{{id}}" data-cs-status="{{status}}">
-      <td class="type"><span class="{{iconClass}}"></span></td>
+    <tr data-cs-id="{{id}}" data-cs-status="{{status}}" class="checkout-item-detail-row">
+      <td class="type"><span></span></td>
       <td class="name" title="{{name}}">{{name}}<span class="fadeout"></span></td>
       <td class="status">
         <div class="status-icon {{#xif "this.status !== 'ERROR'"}}checkout-allowed{{/xif}}{{#xif
@@ -21,4 +21,4 @@
   {{/each}}
 </table>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,9 +1,14 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme=cf]) {
+    --jatx-csui-edit-branding-settings-width: 399px;    
+}
+
 .pman-container .pman-header .pman-left-tools {
   z-index: 1;
 }
+
 .perspective-editing .branding-pman .csui-navbar,
 .perspective-editing .branding-pman .breadcrumb-wrap-visible {
   visibility: visible;
@@ -33,15 +38,65 @@
   width: 256px;
   height: 64px;
 }
+
 .binf-widgets.csui-pman-header-config .pman-header-preview-panel {
   flex-grow: 1; 
-  width: calc(100% - 320px);
+  width: calc(100% - var(--jatx-csui-edit-branding-settings-width, 320px));
 }
 
+.binf-widgets.csui-pman-header-config .csui-jato-manage-branding .pman-header-preview-panel{
+  margin: 16px 32px 0;
+}
+
+.binf-widgets.csui-pman-header-config .csui-jato-manage-branding .pman-header-preview-panel .pman-header-preview span{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -2%;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--jato-typography-text-color-tertiary);
+}
+
+.binf-widgets.csui-pman-header-config .csui-jato-manage-branding .pman-header-preview-panel .pman-header-preview{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.binf-widgets.csui-pman-header-config .csui-jato-manage-branding .pman-header-preview-panel .pman-header-preview .pman-jato-header-container{
+    width: 100%;
+    box-shadow: 0 var(--jato-elevation-y-axis-level-3) var(--jato-elevation-blur-level-3) 0 var(--jato-elevation-shadow-color-level-3);
+}
+
+.binf-widgets.csui-pman-header-config .csui-jato-manage-branding .pman-header-preview-panel .pman-header-container.pman-container-header-container{
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  width: 100%;
+}
+
+
 .binf-widgets.csui-pman-header-config .pman-header-settings-container {
-  width: 320px;
+  width: var(--jatx-csui-edit-branding-settings-width, 320px);
   overflow: hidden auto;
   background: #fafafa;
+}
+
+.binf-widgets.csui-pman-header-config .pman-header-settings-edit-branding {
+  width: var(--jatx-csui-edit-branding-settings-width, 320px);
+  overflow: none;
+  background: var(--jato-background-elevation-level-3,#fafafa);
+  margin: var(--jato-margin-xl, 0) 0;
+  border-top-left-radius: var(--jato-radii-xl);
+  border-bottom-left-radius: var(--jato-radii-xl);
+  box-shadow: 0 var(--jato-elevation-y-axis-level-3) var(--jato-elevation-blur-level-3) 0 var(--jato-elevation-shadow-color-level-3);
+  border-top-width: var(--jato-measure-1, 0);
+  border-bottom-width: var(--jato-measure-1, 0);
+  border-left-width: var(--jato-measure-1, 0);
+  border-color: var(--jato-border-color-primary);
+  border-style: solid;
 }
 
 .binf-widgets.csui-pman-header-config .pman-header-title {
@@ -53,6 +108,7 @@
 
 .binf-widgets.csui-pman-header-config .pman-container-header-container {
   
+
   
 }
 
@@ -60,8 +116,7 @@
   pointer-events: none;
 }
 
-.binf-widgets.csui-pman-header-config .pman-left-tools .toolbarAddContainer,
-.binf-widgets.csui-pman-header-config .pman-top-ribbon{
+.binf-widgets.csui-pman-header-config .pman-left-tools .toolbarAddContainer{
   visibility: hidden;
 }
 
@@ -89,7 +144,7 @@
 }
 
 .csui-sidebar-enabled .pman-center-tools .pman-tab{
-  color: #000;
+  color: #000000;
 }
 
 .binf-widgets .pman-center-tools .pman-tab:hover {
@@ -116,15 +171,4 @@
   flex-direction: column;
   align-items: center;
   padding: 12px 16px;
-}
-
-.binf-widgets.csui-sidebar-enabled.perspective-editing .pman-container .pman-top-ribbon {
-  top: 64px;
-  position: absolute;
-  width: 100%;
-  z-index: 1151;
-}
-
-.binf-widgets.csui-sidebar-enabled.perspective-editing.csui-top-ribbon-enabled .cs-perspective-with-breadcrumb-view{
-  margin-top: 115px;
 }

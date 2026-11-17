@@ -1,143 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-.binf-widgets .smart-target-browse .csui-search-box {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  right: 0;
-  padding-right: 0;
-}
-
-.binf-widgets .smart-target-browse .csui-search-box .search-bar {
-  max-height: 42px;
-  margin-left: 32px;
-  min-width: 208px;
-  max-width: 340px;
-  flex: 1 1 0%;
-}
-
-.binf-widgets .smart-target-browse .csui-search-box .search-bar-content {
-  position: relative;
-  display: inline-flex;
-  vertical-align: middle;
-  flex-direction: row;
-  width: 100%;
-  margin-top: 0;
-}
-.binf-widgets .smart-target-browse .smart-search-icon {
-  width: 12px;
-  height: 12px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 10px;
-  left: 0px;
-  margin: 0px 8px;
-  z-index: 1;
-  display: none;
-}
-.binf-widgets .smart-target-browse .smart-search-icon.show-icon {
-  display: flex;
-}
-
-
-
-.binf-widgets .smart-target-browse .csui-global-search.for-shortcut .csui-search-box .search-bar-content {
-  padding-left: 0;
-}
-
-.binf-widgets .smart-target-browse .csui-search-box > a {
-  background-position-y: 0px;
-  background-position-x: 0px;
-  padding: 8px;
-  height: 32px;
-  width: 32px;
-  background-repeat: no-repeat;
-  background-size: 32px 32px;
-}
-
-.binf-widgets .smart-target-browse .csui-search-box .csui-input {
-  display: inline-block;
-  vertical-align: middle;
-  outline: 0;
-  border: none;
-  padding: 0px 32px 0px 28px;
-  background-color: #ffffff;
-  height: 32px;
-  line-height: 9px;
-  color: #333333;
-  border-radius: 3px 3px 0px 0px;
-  background-color: #ffffff;
-  font-size: 14px;
-  border-bottom: 1px solid #757575;
-}
-
-.binf-widgets .smart-target-browse .csui-search-box .csui-input.no-smart-search-icon {
-  padding-left: 8px;
-}
-
-.binf-widgets .smart-target-browse .csui-search-box .csui-input:focus {
-  outline: 0;
-  border: none;
-  color: #000000;
-  border-bottom: 2px solid #2e3d98;
-}
-
-.binf-widgets .smart-target-browse .csui-search-box .csui-input::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.binf-widgets .smart-target-browse .csui-search-box .csui-clearer {
-  color: #d3d3d3;
-  position: absolute;
-  right: 0;
-  top: 8px;
-  pointer-events: auto;
-  z-index: 1;
-  display: none;
-  cursor: pointer;
-  width: 16px;
-  height: 16px;
-  margin: 0px 8px;
-  align-items: center;
-  justify-content: center;
-}
-.binf-widgets .smart-target-browse .csui-search-box .csui-clearer.show-icon {
-  display: flex;
-}
-
-.binf-widgets .smart-target-browse .csui-search-box .csui-clearer.formfield_clear {
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 32px;
-  height: 32px;
-}
-
-.binf-widgets .smart-target-browse .csui-search-box a.csui-header-search-icon {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.binf-widgets .smart-target-browse .csui-search-box .csui-header-search-icon {
-  display: inline-block;
-  position: absolute;
-  right: -43.2px;
-  top: 12px;
-}
-
-
-.binf-widgets .smart-target-browse.csui-save-filter-browse .csui-search-box .csui-header-search-icon {
-  top: 12px;
-}
-
-.binf-widgets .smart-target-browse .binf-navbar-nav .csui-search-box .csui-header-search-icon {
-  padding: 10px;
-  margin-right: 8px; 
-}
-
 .binf-widgets .smart-target-browse .csui-search-box .csui-search-box-slice-popover {
   color: #333333;
   border-radius: 5px;
@@ -231,26 +94,6 @@
 
 
 
-.binf-widgets .smart-target-browse .csui-search-box .csui-input::-webkit-input-placeholder {
-  color: #757575;
-  font-size: 12px;
-}
-
-.binf-widgets .smart-target-browse .csui-search-box .csui-input:-moz-placeholder {
-  color: #757575;
-  font-size: 12px;
-}
-
-.binf-widgets .smart-target-browse .csui-search-box .csui-input::-moz-placeholder {
-  color: #757575;
-  font-size: 12px;
-}
-
-.binf-widgets .smart-target-browse .csui-search-box .csui-input:-ms-input-placeholder {
-  color: #757575;
-  font-size: 12px;
-}
-
 .binf-widgets .smart-target-browse .csui-target-controls span.csui-separator {
   margin-top: 16px;
   position: relative;
@@ -271,4 +114,12 @@
 
 .binf-widgets .smart-target-browse span.csui-separator.csui-no-properties-selector {
   display: none;
+}
+
+.binf-widgets .smart-target-browse .smart-otc-search-input {
+  max-height: 42px;
+  margin-left: 32px;
+  min-width: 208px;
+  max-width: 340px;
+  flex: 1 1 0%;
 }

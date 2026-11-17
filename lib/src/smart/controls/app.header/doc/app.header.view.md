@@ -99,7 +99,8 @@ define([], function () {
   <li><b>primaryText - `...` (String)</b> Primary text to show the brand name.</li>
   <li><b>secondaryText - `...` (String)</b> Subtitle to be used beside primary text.</li>
   <li><b>versionText - `...` (String)</b> Text to show the version of the application.</li>
-  <li><b>icons - `required` (List)</b> Action icons to be shown in the header.</li>
+  <li><b>icon - `required` (String)</b> Action icon to be shown in the header for non-JATO theme. This should provide along with otcData.</li>
+  <li><b>jatoIcon - `required` (String)</b> JATO Action icon to be shown in the header for JATO theme.  This should provide along with otcData.</li>
   <li><b>transparent - `required` (Boolean)</b> Default true. When this option is set to true, background of the application header will be transparent.</li>
 </ul>
 

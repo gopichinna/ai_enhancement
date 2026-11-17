@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-signature-signee-form {
   height: 210px;
@@ -208,7 +208,7 @@
 
 .d2-signature-signee-form .d2-lazy-loading {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-  background: #fff;
+  background: #ffffff;
   z-index: 1;
   position: absolute;
   top: 28px;

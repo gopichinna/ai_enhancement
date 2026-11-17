@@ -7,31 +7,35 @@
     <div class="esoc-userprofile-pic-actions">
       {{#if chatSettings.chatEnabled}}
       {{!-- {{#if chatSettings.presenceEnabled}} --}}
-      <div id="esoc-user-profile-presence-indicator" class="esoc-user-profile-presence-indicator binf-hidden binf-col-lg-12 binf-col-md-12 binf-col-sm-12
-    binf-col-xs-12">
+      <div id="esoc-user-profile-presence-indicator" class="esoc-user-profile-presence-indicator binf-hidden">
         <div id="esoc-chat-presence-indicator-{{userid}}" class="esoc-chat-presence-indicator" title="" aria-label=""
           tabindex="0" role="status"></div>
       </div>
       {{!-- {{/if}} --}}
       {{/if}}
-      <span role="button" class="{{^if otherUser}} esoc-full-profile-avatar-cursor {{/if}}
-      image_user_placeholder esoc-userprofile-default-avatar esoc-full-profile-avatar-update
-    esoc-user-default-avatar-{{userid}}" id="esoc-simple-user-default-avatar-{{uniqueId}}" title="{{messages
-      .displayname}}" aria-label="{{simpleUserProfileLabel}}" tabindex="{{#if isEditable}} 0 {{/if}}"
-        data-cstabindex="{{#if isEditable}} 0 {{else}} -1 {{/if}}">{{initials}}</span>
-      <img role="button" class="{{^if otherUser}} esoc-full-profile-avatar-cursor {{/if}}
-      esoc-full-profile-avatar
-    esoc-full-profile-avatar-update binf-img-circle esoc-image
-    esoc-upload-image-style
-    esoc-userprofile-img-{{userid}}" id="esoc-simple-user-image-avatar-{{uniqueId}}" title="{{messages
-      .displayname}}" alt="{{messages.displayname}}" aria-label="{{simpleUserProfileLabel}}"
-        tabindex="{{#if isEditable}} 0 {{else}} -1 {{/if}}" data-cstabindex="{{#if isEditable}}0 {{else}}-1 {{/if}}"
-        src="#" />
+
+      <otc-avatar class="{{^if otherUser}} esoc-full-profile-avatar-cursor {{/if}}
+       esoc-userprofile-default-avatar esoc-full-profile-avatar-update
+    esoc-user-default-avatar-{{userid}} esoc-userprofile-img-{{userid}}" id="esoc-simple-user-default-avatar-{{uniqueId}}" title="{{messages
+      .displayname}}" arialabel="{{simpleUserProfileLabel}}" initials="{{initials}}"></otc-avatar>
 
       {{#if isEditable}}
-      <a class="edit-user-image-placeholder edit-user" title="{{edituserProfileTitle}}" aria-label="{{edituserProfileTitle}}"></a>
+      {{#if isJATO}}
+      <otc-button size="large" class="edit-user-image-placeholder edit-user smart-button-clip" id="edit-esoc-simple-user-default-avatar-{{uniqueId}}" title="{{edituserProfileTitle}}" arialabel="{{edituserProfileTitle}}" tabindex="{{#if isEditable}} 0 {{/if}}">
+        <otc-icon svg="{{editSVGContent}}"></otc-icon>
+      </otc-button>
+      {{else}}
+      <button class="edit-user-image-placeholder edit-user" id="edit-esoc-simple-user-default-avatar-{{uniqueId}}" title="{{edituserProfileTitle}}" aria-label="{{edituserProfileTitle}}" tabindex="{{#if isEditable}} 0 {{/if}}"></button>
+      {{/if}}
       <input type="file" id="esoc-profilepic-desktop-attachment" class="esoc-profilepic-desktop-attachment"
         name="updateProfilePic" accept="image/*" aria-label="{{simpleUserProfileLabel}}" />
+
+      <div class="edit-user-image-options">
+        <otc-menu class="esoc-simple-user-profile-pic-update" buttonid="edit-esoc-simple-user-default-avatar-{{uniqueId}}">
+            <otc-menuitem class="esoc-simple-user-profile-pic-edit esoc-profile-pic-edit" arialabel="{{uploadProfilePicture}}" tabindex="-1">{{uploadProfilePicture}}</otc-menuitem>
+            <otc-menuitem class="esoc-simple-user-profile-pic-delete esoc-profile-pic-edit" arialabel="{{deleteProfilePicture}}" tabindex="-1">{{deleteProfilePicture}}</otc-menuitem>
+        </otc-menu>
+      </div>
 
       <div class="esoc-simple-profile-img-load-container esoc-social-progress-style">
         <div class="esoc-simple-profile-img-loader" id="user_icon">
@@ -45,25 +49,37 @@
       {{/if}}
     </div>
 
-    <div class="esoc-user-name csui-normal-scrolling binf-col-lg-12 binf-col-md-12 binf-col-sm-12 binf-col-xs-12">
-      <span class="smart-user-name">{{display_name}}</span>
-      {{#if showChatIcon}}
-      <div class="esoc-user-profile-chat-comment smart-v2-icon-parent" title="Chat" tabindex="0" role="button">
-        {{{icon-v2 iconName='csui_action_chat24' states='true'}}}
+    <div class="esoc-user-name csui-normal-scrolling">
+      <div class="smart-user-name-wrapper">
+        <span class="smart-user-name">{{display_name}}</span>
+        {{#if showChatIcon}}
+          {{#if isJATO}}
+            <otc-button class="esoc-user-profile-chat-comment" size="small" title="{{chatLabel}}" arialabel="{{chatLabel}}" tabindex="0">
+              <otc-icon svg="{{chatSVGContent}}"></otc-icon>
+            </otc-button>
+          {{else}}
+            <span class="esoc-user-profile-chat-comment smart-v2-icon-parent" title="Chat" tabindex="0" role="button">
+              {{{icon-v2 iconName='csui_action_chat24' states='true'}}}
+            </span>
+          {{/if}}
+        {{/if}}
       </div>
-      {{/if}}
       {{#if title}}
-      <div class="esoc-user-title binf-col-lg-12 binf-col-md-12 binf-col-sm-12 binf-col-xs-12">{{title}}</div>
+      <div class="esoc-user-title">{{title}}</div>
       {{/if}}
     </div>
-    <div class="user-widget-view-close smart-v2-icon-parent" role="button" title="{{closeButtonTooltip}}"
-      aria-label="{{closeLabel}}" tabindex="0" data-cstabindex="0">
-      {{{icon-v2 iconName='csui_action_close32' states="true" }}}
-    </div>
+    {{#if isJATO}}
+      <otc-button class="user-widget-view-close" size="small" title="{{closeButtonTooltip}}" arialabel="{{closeLabel}}">
+        <otc-icon type="secondary" svg="{{closeSVGContent}}"></otc-icon>
+      </otc-button>
+    {{else}}
+      <otc-button icon="smart_action:action_close_max32" class="user-widget-view-close" title="{{closeButtonTooltip}}"
+      arialabel="{{closeLabel}}" tabindex="0"></otc-button>
+    {{/if}}
   </div>
   <div class="esoc-simple-user-widget-body csui-normal-scrolling">
     <div class="esoc-simple-user-widget-tabs"></div>
   </div>
 </div>
 <div class="esoc-simple-user-widget-backdrop"></div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

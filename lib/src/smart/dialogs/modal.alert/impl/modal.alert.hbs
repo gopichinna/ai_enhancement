@@ -21,7 +21,11 @@
         {{/if}}
         <h4 class="binf-modal-title">
           {{#if showTitleIcon}}
-            <span class="icon {{titleIcon}}"></span>
+            {{#if isJATO}}
+              <span class="smart-notification-icon">{{{jatoTitleIcon}}}</span>
+            {{else}}
+              <otc-icon class="smart-notification-icon" icon="smart_notification:{{titleIcon}}" isPresentation></otc-icon>
+            {{/if}}
           {{/if}}
           <span class="title-text" id="{{dlgTitleId}}">{{title}}</span>
         </h4>
@@ -35,4 +39,4 @@
   </div>
 
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

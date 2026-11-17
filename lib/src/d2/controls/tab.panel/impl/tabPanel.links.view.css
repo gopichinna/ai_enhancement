@@ -1,0 +1,28 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.tab-pop-over {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.tab-pop-over hr {
+  margin: 0 4px 8px;
+}
+
+.tab-pop-over .pop-over-title {
+  font-weight: 700;
+  line-height: 24px;
+  height: 34px;
+}
+
+.tab-pop-over p.pop-over-item {
+  font-weight: 400;
+  line-height: 24px;
+  height: 34px;
+}
+
+.tab-pop-over p.pop-over-item:last-of-type {
+  height: 24px;
+}

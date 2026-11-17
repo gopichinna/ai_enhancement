@@ -1,26 +1,26 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
-.d2-tree.d2-single-select-tree .fancytree-title {
+.d4-tree.d2-single-select-tree .fancytree-title {
   font-size: 14px;
   line-height: 42px;
   min-width: 450px;
 }
 
-.d2-tree.d2-single-select-tree .fancytree-title.d2-tree-node-title{
+.d4-tree.d2-single-select-tree .fancytree-title.d2-tree-node-title{
   max-width: 550px;
 }
-.d2-tree.d2-single-select-tree .fancytree-node.fancytree-active {
+
+.d4-tree.d2-single-select-tree .fancytree-node.fancytree-active {
   font-weight: normal;
 }
 
-.d2-tree.d2-single-select-tree tr.fancytree-focused {
+.d4-tree.d2-single-select-tree tr.fancytree-focused {
   box-shadow: inset 0 0 0 1px #2E3D98, inset 0 0 0 2px #FFFFFF;
   outline: 0;
 }
 
-.d2-tree.d2-single-select-tree .fancytree-level-2[aria-expanded=true] {
+.d4-tree.d2-single-select-tree .fancytree-level-2[aria-expanded=true] {
   background-color: unset;
   border-bottom: none;
 }
@@ -44,62 +44,62 @@
   font-weight: bold;
 }
 
-.binf-widgets .d2-single-select-view .d2-tree {
+.binf-widgets .d2-single-select-view .d4-tree {
   width: 100%;
   outline-color: transparent;
 }
 
-.binf-widgets .d2-single-select-view .d2-tree tr {
+.binf-widgets .d2-single-select-view .d4-tree tr {
   width: 100%;
   display: flex;
   padding-left: 12px;
 }
 
-.binf-widgets .d2-single-select-view .d2-tree tr:hover,
-.binf-widgets .d2-single-select-tree.d2-tree tr.fancytree-active:hover {
+.binf-widgets .d2-single-select-view .d4-tree tr:hover,
+.binf-widgets .d2-single-select-tree.d4-tree tr.fancytree-active:hover {
   background-color: #b2bec5;
 }
 
-.binf-widgets .d2-single-select-view .d2-tree td:first-child {
+.binf-widgets .d2-single-select-view .d4-tree td:first-child {
   padding-left: 4px;
   flex: 1 1 auto;
 }
 
-.binf-widgets .d2-single-select-view .d2-tree td {
+.binf-widgets .d2-single-select-view .d4-tree td {
   flex: 0 0 32px;
 }
 
-.binf-widgets .d2-single-select-view .d2-tree .fancytree-node:not(.fancytree-disabled):hover{
+.binf-widgets .d2-single-select-view .d4-tree .fancytree-node:not(.fancytree-disabled):hover{
   background-color: transparent;
 }
 
-.binf-widgets .d2-single-select-view .d2-tree tr[addchildnode="true"]:hover,
-.binf-widgets .d2-single-select-view .d2-tree tr[addchildnode="true"] .fancytree-node:not(.fancytree-disabled):hover {
+.binf-widgets .d2-single-select-view .d4-tree tr[addchildnode="true"]:hover,
+.binf-widgets .d2-single-select-view .d4-tree tr[addchildnode="true"] .fancytree-node:not(.fancytree-disabled):hover {
   background-color: transparent;
 }
 
-.binf-widgets .d2-single-select-view .d2-tree tr[addchildnode="true"] .fancytree-node {
+.binf-widgets .d2-single-select-view .d4-tree tr[addchildnode="true"] .fancytree-node {
   cursor: default;
 }
 
-.binf-widgets .d2-single-select-view .d2-tree tr[addchildnode="true"] .fancytree-node .fancytree-title {
+.binf-widgets .d2-single-select-view .d4-tree tr[addchildnode="true"] .fancytree-node .fancytree-title {
   width: 450px;
 }
 
-.binf-widgets .d2-single-select-view .d2-tree tr .d2-single-select-add-child {
+.binf-widgets .d2-single-select-view .d4-tree tr .d2-single-select-add-child {
   opacity: 0;
   margin-top: 4px;
 }
 
-.binf-widgets .d2-single-select-view .d2-tree tr .d2-single-select-add-child .add-category {
+.binf-widgets .d2-single-select-view .d4-tree tr .d2-single-select-add-child .add-category {
   height: 32px;
   width: 32px;
   margin-right: 5px;
   margin-top: 4px;
 }
 
-.binf-widgets .d2-single-select-view .d2-tree tr:hover .d2-single-select-add-child,
-.binf-widgets .d2-single-select-view .d2-tree tr .d2-single-select-add-child:focus-within {
+.binf-widgets .d2-single-select-view .d4-tree tr:hover .d2-single-select-add-child,
+.binf-widgets .d2-single-select-view .d4-tree tr .d2-single-select-add-child:focus-within {
   opacity: 1;
 }
 
@@ -107,11 +107,11 @@
   width: 680px;
 }
 
-.binf-widgets .d2-single-select-tree.d2-tree tr.fancytree-active {
+.binf-widgets .d2-single-select-tree.d4-tree tr.fancytree-active {
   background-color: #cbd3d9;
 }
 
-.binf-widgets .d2-single-select-view .d2-tree .add-child-column {
+.binf-widgets .d2-single-select-view .d4-tree .add-child-column {
   right: 16px;
   position: sticky;
   width: 0;
@@ -125,8 +125,8 @@
   overflow: hidden;
 }
 
-.binf-widgets .d2-single-select-view .d2-tree tr .d2-single-select-add-child div.d2-add-category:focus,
-.binf-widgets .d2-single-select-view .d2-tree tr .d2-single-select-add-child div.d2-add-category:focus-visible {
+.binf-widgets .d2-single-select-view .d4-tree tr .d2-single-select-add-child div.d2-add-category:focus,
+.binf-widgets .d2-single-select-view .d4-tree tr .d2-single-select-add-child div.d2-add-category:focus-visible {
   -webkit-box-shadow: none;
   box-shadow: none;
 }

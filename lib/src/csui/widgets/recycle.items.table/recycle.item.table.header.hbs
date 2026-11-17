@@ -1,12 +1,18 @@
-<div class="cs-back-button-container" title="{{backTitle}}"
-     tabindex="0" aria-label="{{backTitle}}" role="button">
-  <span class="arrow_back cs-go-back"></span>
+<div class="cs-back-button-container">
+  <otc-button class="cs-back-button"
+    {{#if isJATO}} size="small" {{else}} icon="csui_action:action_back32" mirrorIconIfRtl {{/if}} arialabel="{{backTitle}}" title="{{backTitle}}">
+    {{#if isJATO}}<otc-icon svg="{{backButtonIconSVG}}" type="subtle" mirrorifrtl></otc-icon>{{/if}}
+  </otc-button>
 </div>
 <div class = "csui-filterToolbar"></div>
 <div class="cs-title-container">
   <div class="cs-title-inner-container">
-    <span class="title-icon {{icon}}"></span>
+    {{#if widgetIconSvg}}      
+      <otc-icon type="raw" size="24" svg="{{widgetIconSvg}}"></otc-icon>
+    {{else}}
+      <span class="title-icon {{icon}}"></span>
+    {{/if}}
     <h2 class="title" title="{{title}}">{{title}}</h2>
   </div>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .cs-dropdown-menu .binf-dropdown {
   display: inline-block;
@@ -12,7 +12,7 @@
   height: auto;
 }
 
-.cs-dropdown-menu .binf-dropdown > .binf-dropdown-toggle {
+.cs-dropdown-menu .binf-dropdown > button {
   border: none;
   background: none;
   width: 18px;
@@ -22,7 +22,7 @@
   vertical-align: top;
 }
 
-.metadata-header .cs-dropdown-menu .binf-dropdown > .binf-dropdown-toggle {
+.metadata-header .cs-dropdown-menu .binf-dropdown > button {
   margin-top: 1px;
 }
 

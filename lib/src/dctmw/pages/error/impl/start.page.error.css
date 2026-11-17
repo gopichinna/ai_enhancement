@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .main-area {
   text-align: center;
@@ -46,7 +46,7 @@
 
 .binf-widgets .error-message-wrapper h3 {
   font-size: 24px;
-  color: #fff;
+  color: #ffffff;
   line-height: 32px;
   margin-bottom: 28px;
 }
@@ -88,7 +88,7 @@
   font-size: 20px;
   line-height: 32px;
   font-weight: 300;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -101,7 +101,7 @@
   display: block;
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .binf-widgets .main-area {
     width: 932px;
     margin: 0 auto;

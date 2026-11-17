@@ -1,32 +1,28 @@
 <div class="cs-field-write">
   <div class="cs-field-write-inner">
-    <input class="d2-combofield-search-box-input" type="text" tabindex="0"
-           placeholder="{{emptyLabel}}" value="{{data}}"
-           {{#if idBtnLabel}}aria-labelledby="{{idBtnLabel}}"{{/if}}
-      {{#if ariaRequired}}aria-required="{{ariaRequired}}"{{/if}} id="{{controlId}}" aria-autocomplete="list"
-           role="combobox" name="fsdffsdf" autocomplete="off">
-    <span class="csui-icon icon-sv-search d2-start-icon" title="{{searchText}}"
-          aria-label="{{searchText}}"></span>
+    <input class="dctmw-combofield-search-box-input" type="text" tabindex="0" placeholder="{{emptyLabel}}"
+      value="{{data}}" {{#if idBtnLabel}}aria-labelledby="{{idBtnLabel}}" {{/if}} {{#if
+      ariaRequired}}aria-required="{{ariaRequired}}" {{/if}} id="{{controlId}}" aria-autocomplete="list" role="combobox"
+      name="fsdffsdf" autocomplete="off">
+    <span class="csui-icon icon-sv-search d2-start-icon" title="{{searchText}}" aria-label="{{searchText}}"></span>
     </input>
     <div>
       <a class="csui-icon icon-formfield-clear d2-clear-icon binf-hidden" tabindex="0" title="{{clearSearchText}}"
-         aria-label="{{clearSearchText}}"></a>
+        aria-label="{{clearSearchText}}"></a>
     </div>
-    <div class="d2-combofield-options-container">
-      <ul class='d2-lazy-loading'>
+    <div class="dctmw-combofield-options-container">
+      <ul class='dctmw-lazy-loading'>
         <li role="menuitem" class="csui-loading-parent-wrapper binf-disabled csui-disbaled">
           <span class="csui-loading-dots-wrapper"><span class="csui-loading-dot"></span><span
-              class="csui-loading-dot"></span><span
-              class="csui-loading-dot"></span></span>
+              class="csui-loading-dot"></span><span class="csui-loading-dot"></span></span>
         </li>
       </ul>
-      <div class="d2-scrollable-options">
-        <ul class="d2-combofield-options d2-combofield-options-list" role="listbox">
-          <li class="d2-searchResultCountDetails d2-combo-results-message">{{dropDownSearchResultCount}}</li>
+      <div class="dctmw-scrollable-options">
+        <ul class="dctmw-combofield-options dctmw-combofield-options-list" role="listbox">
+          <li class="dctmw-searchResultCountDetails dctmw-combo-results-message">{{dropDownSearchResultCount}}</li>
         </ul>
       </div>
     </div>
   </div>
 </div>
-
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

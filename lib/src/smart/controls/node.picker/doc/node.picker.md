@@ -164,6 +164,7 @@ in ascending order.</li>
    <li><b>breadcrumb - `optional`</b> Default empty. Options which can be passed to Smartcontrol's Breadcrumb. <br />Eg:  {collection: collection, stop: { 'id': 26841} }</li>
    <li><b>showTargetLocationName - `optional`</b>Default false. Boolean value to show selected target location name in the header.</li>
    <li><b>hasTableToolbarView - `optional`</b>Default false. Boolean value to show custom addabletypes dropdown and tool items.</li>
+   <li><b>headerInputAria - `optional`</b>Screenreader text for the input field in the nodepicker header.</li>
 </ul>
 
 ## Node Indicator icon Extensions Options

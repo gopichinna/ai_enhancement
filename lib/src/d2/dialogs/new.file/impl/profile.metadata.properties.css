@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .d2-stepper-wizard .cs-metadata-properties .binf-nav-pills > li.binf-active > a > .cs-tablink-text,
 .binf-widgets .d2-stepper-wizard .cs-metadata-properties .binf-nav-pills > li.binf-active > a:hover > .cs-tablink-text {
   border-bottom: 4px solid #232E72;

@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .d2-bravaintelligentviewer.d2-embedded-preview .ot-iv-SearchTextInput {
   width: 50%;
 }
@@ -20,6 +19,7 @@
 .ot-iviewer-overflow {
   overflow: hidden;
 }
+
 
 .d2-iv-viewer-div {
   position: absolute;
@@ -102,6 +102,7 @@ ot-u-popoutviewerbutton {
 .binf-widgets .d2-iv-sm-dialog.csui-alert {
   z-index: 10001
 }
+
 .migration-info {
   min-height: 40px;
 }

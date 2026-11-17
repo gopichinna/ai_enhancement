@@ -1,11 +1,13 @@
-<button id="{{id}}" class="binf-btn smart-inline-text-small-btn csui-acc-focusable toggler" aria-haspopup="true"
-  aria-expanded="false" aria-label="{{applyPropertiesAria}}">
-  <span class="cs-label">{{name}}</span>
-  <span class="cs-icon smart-icon-caret-down" title="{{applyPropertiesAria}}">
-    {{{icon-v2 iconName="csui_smart_tree_caret_down16" size="contain"}}}
-  </span>
-</button>
-<otc-menu id="menu-{{id}}" buttonId="{{id}}" aria-labelledby="{{id}}" role="none" iswide forceopenup scrollable>
+<otc-button id="{{id}}" type="inline" size="small" class="smart-inline-text-small-btn csui-acc-focusable toggler" ariahaspopup="true"
+  arialabel="{{applyPropertiesAria}}">
+   <span class="cs-label">{{name}}</span>
+    {{#if isJATO}}
+    <otc-icon svg="{{jatoDownArrowIconSvg}}" class="smart-icon smart-caret-down" isPresentation></otc-icon>
+  {{else}}
+    <otc-icon icon="smart_action_16:action_caret_down16" class="smart-icon smart-caret-down" isPresentation></otc-icon>
+  {{/if}}
+</otc-button>
+<otc-menu id="menu-{{id}}" buttonId="{{id}}" role="none" iswide forceopenup scrollable>
   {{#each applyPropertiesOptions}}
   <otc-menucheckbox data-optionid="{{this.id}}" altStyle="true" role="menuitem">{{this.name}}</otc-menucheckbox>
   {{/each}}
@@ -16,4 +18,4 @@
   <otc-menucheckbox class="open-selected-properties" role="menuitem">{{openSelectedProperties}}</otc-menucheckbox>
   {{/if}}
 </otc-menu>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

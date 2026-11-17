@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .cs-thumbnail-wrapper .csui-thumbnail-collection .csui-thumbnail-content .csui-thumbnail-name-container .csui-thumbnail-overview-icon {
     padding-top: 0;
@@ -10,4 +10,8 @@
     display: flex;
     font-size: inherit;
     padding-top: 6px;
+}
+
+.binf-widgets .cs-thumbnail-wrapper .csui-thumbnail-item .csui-thumbnail-item-container .csui-thumbnail-icon-container .csui-thumbnail-select.csui-checkbox {
+    padding-left: 0;
 }

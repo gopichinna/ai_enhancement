@@ -1,0 +1,35 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-smart-sidepanel-column-customization-list-padding-top: 0px;
+  --jatx-smart-sidepanel-column-customization-list-item-height: 36px;
+  --jatx-smart-sidepanel-column-customization-list-item-with-label-height: 48px;
+  --jatx-smart-sidepanel-column-customization-list-item-outline-offset: -2px;
+  --jatx-smart-sidepanel-column-customization-list-item-outline: var(--jato-cta-focus-border) solid 2px;
+  --jatx-smart-sidepanel-column-customization-list-item-box-shadow: 0 0 0 4px var(--jato-cta-focus-shadow);
+  --jatx-smart-sidepanel-column-customization-list-item-drag-handle-size: 16px;
+  --jatx-smart-sidepanel-column-customization-list-item-name-font-size: 13px;
+  --jatx-smart-sidepanel-column-customization-list-item-name-line-height: 18px;
+  --jatx-smart-sidepanel-column-customization-list-item-name-font-weight: 400;
+  --jatx-smart-sidepanel-column-customization-list-item-label-font-size: 11px;
+  --jatx-smart-sidepanel-column-customization-list-item-label-line-height: 18px;
+  --jatx-smart-sidepanel-column-customization-list-item-label-font-weight: 500;
+  --jatx-smart-sidepanel-column-customization-edit-view-gap: 16px;
+  --jatx-smart-sidepanel-column-customization-edit-view-filter-margin-left-right: 0px;
+  --jatx-smart-sidepanel-column-customization-edit-item-padding-left: 26px;
+  --jatx-smart-sidepanel-column-customization-edit-item-padding-right: 4px;
+  --jatx-smart-sidepanel-column-customization-edit-item-outline-offset: -2px;
+  --jatx-smart-sidepanel-column-customization-edit-item-outline: var(--jato-cta-focus-border) solid 2px;
+  --jatx-smart-sidepanel-column-customization-edit-item-box-shadow: 0 0 0 4px var(--jato-cta-focus-shadow);
+  --jatx-smart-sidepanel-column-customization-edit-icon-margin-left: 4px;
+  --jatx-smart-sidepanel-column-customization-edit-icon-margin-right: 8px;
+  --jatx-smart-sidepanel-column-customization-edit-group-item-padding-left: 22px;
+  --jatx-smart-sidepanel-column-customization-edit-group-padding-left: 16px;
+  --jatx-smart-sidepanel-column-customization-edit-group-padding-right: 13px;
+  --jatx-smart-sidepanel-column-customization-edit-group-font-size: 14px;
+  --jatx-smart-sidepanel-column-customization-edit-group-line-height: 18px;
+  --jatx-smart-sidepanel-column-customization-edit-group-font-weight: 500;
+  --jatx-smart-sidepanel-column-customization-edit-group-expanded-box-shadow: none;
+}

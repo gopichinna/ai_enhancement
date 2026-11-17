@@ -1,0 +1,49 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.system-info {
+    font-family: var(--jato-font-family-default), Arial, sans-serif;
+    padding: 16px 32px 32px 32px;
+    max-width:97%;
+}
+
+.system-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.system-info li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.system-info .category {
+    font-size: 12px;
+    color: var(--jato-typography-text-color-tertiary, #4A4A4A);
+    display: block;
+    line-height:28px;
+}
+
+.system-info .version{
+    color: var(--jato-typography-text-color-primary, #000000);
+}
+
+.system-info .version {
+    font-size: 14px;
+    display: block;
+    padding: 0 0 0 16px;
+    line-height:28px;
+}
+
+.system-info .plugin {
+    font-size: 14px;
+    display: block;
+    padding: 0 0 0 16px;
+    max-width: 97%;
+    padding-right: 32px;
+}
+
+[data-smart-theme=cf] .binf-widgets  .dctmw-about-dialog .binf-modal-dialog .d2-metadata-properties .about-content-view .smart-tab-contents-wrapper .binf-tab-content .binf-tab-content-item .system-info-view .system-info{
+    padding: 6px 32px;
+}

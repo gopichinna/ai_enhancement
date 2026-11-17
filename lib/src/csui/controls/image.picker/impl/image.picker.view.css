@@ -1,11 +1,17 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
- .binf-widgets .csui-image-picker input.csui-logo-upload-input {
+
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+	--jatx-csui-image-picker-help-font-weight: 400;
+}
+
+.binf-widgets .csui-image-picker input.csui-logo-upload-input {
 	opacity: 0;
     width: 1px;
     height: 1px;
 }
+
 .binf-widgets .csui-image-picker .csui-logo-upload-label {
 	border: 0;
 	display: inline-block;
@@ -28,22 +34,32 @@
 
 .binf-widgets .csui-image-picker .csui-logo-btns {
 	float: right;
-	margin-top: 10px;
+	margin-top: var(--jato-measure-8, 10px);
 }
 
 .cs-form .binf-form-group.alpaca-field.alpaca-field-csui-image-picker{
 	width: 256px;
 }
+
+
 .binf-widgets .csui-image-picker .csui-brand-image-logo {
 	height: 65px;
 	width: 100%;
 	overflow: hidden;
-	background-color:#111b58;
+	box-shadow: var(--jato-elevation-shadow-level-1, unset);
+	background-color: var(--jato-background-elevation-level-1, #111b58);
+	border: var(--jato-measure-1, 0) solid var(--jato-border-color-primary, unset);
+	border-radius: var( --jato-radii-med, unset);
+	padding: var(--jato-padding-xxl, unset);
 	display: flex;
     align-items: center;
 }
 
-.binf-widgets .csui-image-picker .csui-brand-image-logo .csui-logo-image {
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-image-picker .csui-brand-image-logo{
+	justify-content: center;
+}
+
+[data-smart-theme="cf"] .binf-widgets .csui-image-picker .csui-brand-image-logo .csui-logo-image {
 	width: 100%;
     height: 100%;
     background-position: center;
@@ -57,6 +73,12 @@
     background-size: contain;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-image-picker .csui-brand-image-logo .csui-logo-image {
+	display: inline-flex;
+	justify-content: center;
+
+}
+
 .binf-widgets .csui-logo-upload-icon{	
 	background-image: url(../../../themes/carbonfiber/image/icons/action_section_upload16.svg);
 	background-repeat: no-repeat;
@@ -68,7 +90,17 @@
 }
 
 .binf-widgets .csui-image-picker .csui-help-text {
-	margin: 10px 0px 0px 0px;
+	margin: var(--jato-measure-8, 10px) 0 0 0;
     display: inline-block;
-    font-size: 12px;
+    font-size: var(--jatx-csui-input-font-size, 12px);
+	line-height: var(--jato-measure-32, inherit);
+	font-weight: var(--jatx-csui-image-picker-help-font-weight, inherit);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-image-picker .csui-help-text{
+    font-weight: 500;
+	font-size: 11px;
+	line-height: var(--jato-line-height-xl, inherit);
+	vertical-align: middle;
+    color: var(--jato-typography-forms-text-color-label);
 }

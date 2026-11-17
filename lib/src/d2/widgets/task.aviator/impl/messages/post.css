@@ -1,0 +1,168 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post {
+  margin-top: 2px;
+  margin-bottom: 32px;
+  display: flex;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post:first-child {
+  padding-top: 22px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-entry {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex-basis: 100%;
+}
+
+
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-entry .aie-chat-text {
+  color: #333333;
+  font-size: 14px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  overflow-x: hidden;
+}
+
+
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text .aie-plain {
+  white-space: pre-line;
+  white-space-collapse: preserve-breaks;
+  background-color: transparent;
+  max-width: calc(480px - 24px - 48px - 16px - 16px - 7px - 16px);
+}
+
+
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text p {
+  margin-block-end: 12px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text p:last-child {
+  margin-block-end: 0;
+}
+
+
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text ol,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text ul {
+  list-style-type: initial;
+  margin-inline-start: 16px;
+  margin-block-end: 12px;
+}
+
+
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text p:last-child,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text ol:last-child,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text ul:last-child,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text table:last-child {
+  margin-block-end: 0;
+}
+
+
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text b,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text strong {
+  font-weight: 700;
+}
+
+
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text a {
+  font-weight: 700;
+  color: #1a6aff;
+  text-decoration: none;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text a:visited {
+  color: #d0008d;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text a:hover {
+  color: #2f4ed1;
+  text-decoration: underline;
+  text-underline-offset: 20%;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text a:active {
+  color: #111b58;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text a:focus {
+  color: #1a6aff;
+  text-decoration: none;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-post .aie-chat-text a:focus-visible {
+  box-shadow: 0 0 0 1px #2e3d98;
+}
+
+
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-text .aie-dyna-table-wrapper {
+  overflow-x: auto;
+  background-image: linear-gradient(to right, #f4f4f4, #f4f4f4),
+                    linear-gradient(to right, #f4f4f4, #f4f4f4),
+                    linear-gradient(to right, #00000040, rgba(255, 255, 255, 0)),
+                    linear-gradient(to left, #00000040, rgba(255, 255, 255, 0));
+  background-position: left, right;
+  background-repeat: no-repeat;
+  background-size: 10px 100%, 20px 100%, 7px 100%, 7px 100%;
+  background-attachment: local, local, scroll, scroll;
+  border-radius: 6px;
+}
+
+.binf-widgets:not(.csui-on-macintosh) .aie-chat-panel.task-aviator-panel .aie-dyna-table-wrapper::-webkit-scrollbar-track,
+.binf-widgets:not(.csui-on-macintosh) .aie-chat-panel.task-aviator-panel .aie-dyna-table-wrapper:hover::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-text > table {
+  background-color: #f4f4f4;
+  border-radius: 6px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-text table {
+  color: #333333;
+  font-family: OpenText Sans;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: start;
+  margin-block-end: 12px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-table-parent {
+  background-color: #f4f4f4;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-text thead {
+  padding: 2px 4px 2px 4px;
+  border-bottom: 1px solid #999999;
+  font-weight: 700;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-text tbody tr {
+  padding: 4px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-text tbody tr:last-child {
+  border-bottom: none;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-text th,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-text td {
+  padding: 8px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-text td:first-child:not(:last-child) {
+  font-weight: 700;
+}

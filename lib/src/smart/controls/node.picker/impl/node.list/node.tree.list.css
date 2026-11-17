@@ -1,18 +1,33 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-.binf-widgets .smart-target-browse .cs-simpletreelistitem .binf-panel-heading {
-    height: 40px;
-    background-color: #F5F9FF;
-    border-top: 1px solid #ffffff;
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+    --jatx-smart-node-tree-list-heading-padding-left: 41px;
+    --jatx-smart-node-tree-list-chekckbox-scale: 1;
+    --jatx-smart-target-browse-checkbox-margin-right: -2.5px;
+    --jatx-smart-node-tree-list-item-end-icon-dimension: 24px;
+    --jatx-smart-node-tree-list-item-end-icon-margin-right: 6px;
+    --jatx-smart-node-tree-list-item-end-icon-margin-top: -5px;
+    --jatx-smart-target-browse-list-browsable-margin-left: -0.5px;
 }
 
+.binf-widgets .smart-target-browse .cs-simpletreelistitem .binf-panel-heading {
+    height: var(--jato-rows-height-md, 40px);
+    background-color: var(--jato-background-elevation-gradient-control-level-0, #F5F9FF);
+    border-top: var(--jatx-const-none, 1px solid #ffffff);
+}
+
+.binf-widgets .smart-target-browse .csui-np-content .cs-simpletreelistitem .binf-panel-heading {
+    padding-left: var(--jatx-smart-node-tree-list-heading-padding-left, 16px);
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem[aria-expanded="true"] .binf-panel-heading:hover,
 .binf-widgets .smart-target-browse .cs-simpletreelistitem .binf-panel-heading:hover {
-    background-color: #b2bec5;
+    background-color: var(--jato-background-rows-hover, #b2bec5);
 }
 
 .binf-widgets .smart-target-browse .cs-simpletreelistitem[aria-expanded="true"] .binf-panel-heading {
-    background-color: #E1E8F6;
+    background-color: var(--jato-background-elevation-gradient-control-level-0, #E1E8F6);
 }
 
 .binf-widgets .smart-target-browse .cs-simpletreelistitem .binf-panel-heading .container-icon {
@@ -29,13 +44,13 @@
 }
 
 .binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content {
-    min-height: 42px;
+    min-height: var(--jato-rows-height-md, 42px);
     padding: 0;
-    background-color: #ffffff;
+    background-color: var(--jato-background-elevation-level-3, #ffffff);
 }
 
 .binf-widgets .smart-target-browse .cs-simpletreelistitem div.cs-content li.binf-list-group-item {
-    height: 42px;
+    height: var(--jato-rows-height-md, 42px);
     padding-left: 41px;
 }
 
@@ -44,7 +59,7 @@
 }
 
 .binf-widgets .smart-target-browse .cs-simpletreelistitem.flatten-tree .cs-content .cs-list-group>li {
-    padding: 0 16px 0 5px;
+    padding: 0 var(--jatx-const-0, 16px) 0 var(--jatx-const-0, 5px);
 }
 
 .binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content .cs-list-group .binf-active {
@@ -65,9 +80,27 @@
     color: #757575;
 }
 
+.binf-widgets .smart-target-browse .cs-simpletreelistitem.smart-simpletreelistitem .smart-tree-list-group-icon {
+    padding: 0 var(--jato-padding-lrg, 0);
+    margin: 0;
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem.smart-simpletreelistitem .binf-panel-heading .cs-title {
+    padding: var(--jato-padding-xs, 0) var(--jato-padding-lrg, 0);
+}
+
+.binf-widgets .smart-target-browse .cs-simpletreelistitem.smart-simpletreelistitem .binf-panel-heading .jatx-caret-icon {
+    padding: var(--jato-padding-sm, 0);
+}
+
 .binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content .cs-list-group .binf-list-group-item .csui-icon.csui-end-icon {
     min-width: 16px;
-    max-width: 16px;
+    max-width: var(--jatx-smart-node-tree-list-item-end-icon-dimension, 16px);
+    padding: var(--jato-padding-sm, 0);
+    width: var(--jatx-smart-node-tree-list-item-end-icon-dimension, 16px);
+    height: var(--jatx-smart-node-tree-list-item-end-icon-dimension, 16px);
+    margin-right: var(--jatx-smart-node-tree-list-item-end-icon-margin-right, 16px);
+    margin-top: var(--jatx-smart-node-tree-list-item-end-icon-margin-top, 0px);
 }
 
 .binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content .cs-list-group .binf-list-group-item .csui-icon.csui-node-type-icon {
@@ -87,7 +120,7 @@
     min-height: 42px;
     overflow: hidden;
     padding-left: 101px;
-    background-color: #ffffff;
+    background-color: var(--jato-background-elevation-base, #ffffff);
 }
 
 .binf-widgets .smart-target-browse .cs-simpletreelistitem .cs-content .cs-list-group .cs-emptylist-container .cs-emptylist-text {
@@ -109,30 +142,35 @@
     vertical-align: middle;
 }
 
+.binf-widgets .smart-target-browse .cs-list .binf-list-group .cs-simpletreelistitem .cs-content .binf-list-group-item .csui-browsable {
+    margin-left: var(--jatx-smart-target-browse-list-browsable-margin-left, 0px);
+}
+
+.binf-widgets .smart-target-browse .cs-list .cs-simpletreelistitem .binf-list-group-item span.smart-target-browse-checkbox otc-icon {
+    scale: var(--jatx-smart-node-tree-list-chekckbox-scale, 0.75);
+    margin-left: var(--jatx-const-0, -8px);
+    margin-top: 5px;
+}
+
 .binf-widgets .smart-target-browse .cs-list .binf-list-group .cs-simpletreelistitem .cs-content .binf-list-group-item .smart-flex-guard {
     margin-right: 0px;
 }
 
 .binf-widgets .smart-target-browse .cs-list .cs-simpletreelistitem .binf-list-group-item .smart-target-browse-checkbox {
     line-height: 24px;
-    margin-left: 16px;
-    margin-right: 12px;
+    margin-left: var(--jatx-const-0, 16px);
+    margin-right: var(--jatx-smart-target-browse-checkbox-margin-right, 12px);
 }
 
 .binf-widgets .smart-target-browse .cs-simpletreelistitem  .cs-content .cs-list-group .binf-list-group-item .csui-list-item-title {
     margin-left: 5px;
 }
 
-.binf-widgets .smart-target-browse .cs-simpletreelistitem  .cs-content .cs-list-group .binf-list-group-item:not(.csui-disabled) .csui-list-item-title:not([disabled]):hover {    
-    margin-left: 1px;
-}
-
-
 .binf-widgets .smart-target-browse .cs-simpletreelistitem.binf-panel:focus .cs-header {
     box-shadow: none;
 }
 
-.binf-widgets .smart-target-browse .cs-simpletreelistitem.binf-panel:focus-visible .cs-header {
+[data-smart-theme = 'cf'] .binf-widgets .smart-target-browse .cs-simpletreelistitem.binf-panel:focus-visible .cs-header {
     box-shadow: inset 0 0 0 1px #2e3d98, inset 0 0 0 2px #fff;
     outline: 0;
 }  

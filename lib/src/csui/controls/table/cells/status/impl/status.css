@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-table-cell-status {
   max-width: 9em;
@@ -10,6 +10,6 @@
   width: 16px;
   height: 16px;
   float: left;
-  margin-right: 8px;
-  margin-left: 8px;
+  margin-right: var(--jato-padding-lrg, 8px);
+  margin-left: var(--jato-padding-lrg, 8px);
 }

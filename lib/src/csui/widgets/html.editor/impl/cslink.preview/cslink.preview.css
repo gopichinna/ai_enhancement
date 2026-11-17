@@ -1,11 +1,11 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .cs-link-popover {
   background-color: #3a3a3a;
   box-shadow: 0 0 4px rgba(0, 0, 0, .25);
-  border-radius: 0px;
-  border: 0px;
+  border-radius: 0;
+  border: 0;
 }
 
 .binf-widgets .cs-link-popover .binf-arrow {
@@ -38,7 +38,7 @@
 }
 
 .binf-widgets .cs-link-popover .binf-popover-content {
-  padding: 0px;
+  padding: 0;
   max-width: 35em;
   max-height: 16em;
   min-width: 25em;
@@ -99,7 +99,7 @@
 }
 
 .binf-widgets .cs-link-preview-img-only {
-  padding-left: 0px !important;
+  padding-left: 0 !important;
   width: 100% !important;
 }
 
@@ -162,12 +162,12 @@
 }
 
 .binf-widgets .cs-link-popover .cs-link-image-only .cs-link-image {
-  padding: 0px !important;
+  padding: 0 !important;
 }
 
 .binf-widgets .cs-link-popover .cs-link-image > img {
   max-width: 9em;
   max-height: 142px;
-  margin: 0px !important;
-  padding: 0px !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }

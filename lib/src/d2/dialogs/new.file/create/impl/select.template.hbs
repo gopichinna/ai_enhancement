@@ -1,25 +1,40 @@
 <div class="d2-templates">
-  <div class="d2-template-header"></div>
-  <div class="d2-template-body">
-  <div class="d2-template-container d2-recent-templates">
-    <div class="template-title">{{recentTitle}}</div>
-    <div class="d2-table">
-              <div class="csui-table-view"></div>
+    <div class="d2-template-header"></div>
+    <div class="d2-template-body">
+        <div class="collapsible-group-story">
+            <otc-collapsible-group class="otc-collapsible-group recent-collapsible-group" listarialabel="{{recentTitleListAriaLabel}}" arialabel="{{recentTitleAriaLabel}}" togglearialabel="{{recentTitleToggleAriaLabel}}" tabindex="0">
+                <span slot="header" class="template-title">{{recentTitle}}</span>
+
+                <div class="collapsible-group-user-item" role="listitem">
+                    <div class="d2-template-container d2-recent-templates">
+                        <div class="d2-table">
+                            <div class="csui-table-view"></div>
+                        </div>
+                        <div class="d2-template-table cs-thumbnail-wrapper">
+                            <div class="csui-table-view"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </otc-collapsible-group>
+
+            <otc-collapsible-group class="otc-collapsible-group preset-collapsible-group" listarialabel="{{presetTitleListAriaLabel}}" arialabel="{{presetTitleAriaLabel}}" togglearialabel="{{presetTitleToggleAriaLabel}}" tabindex="0">
+                <span slot="header" class="template-title">{{presetTitle}}</span>
+
+                <div class="collapsible-group-user-item" role="listitem">
+                    <div class="d2-template-container d2-preset-templates">
+                        <div class="d2-table">
+                            <div class="csui-table-view"></div>
+                        </div>
+                        <div class="d2-template-table cs-thumbnail-wrapper">
+                            <div class="csui-table-view"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </otc-collapsible-group>
         </div>
-    <div class="d2-template-table cs-thumbnail-wrapper">
-      <div class="csui-table-view"></div>
     </div>
-  </div>
-  <div class="d2-template-container d2-preset-templates">
-    <div class="template-title">{{presetTitle}}</div>
-    <div class="d2-table">
-              <div class="csui-table-view"></div>
-        </div>
-    <div class="d2-template-table cs-thumbnail-wrapper">
-      <div class="csui-table-view"></div>
-    </div>
-     </div>
-  </div>
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

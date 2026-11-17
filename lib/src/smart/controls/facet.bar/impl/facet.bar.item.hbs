@@ -15,14 +15,26 @@
     </div>
     <span class="csui-facet-item-overflow-count binf-hidden"></span>
     {{#unless isSingleFacetValue}}
-    <span title="{{expandTitle}}" class="csui-icon binf-caret-down smart-facet-more-dd-expand {{downCaretClasses}}">
-      {{{icon-v2 iconName="csui_smart_ot_action_caret_down32" states="true" size="small"}}}
+    <span title="{{expandTitle}}" class="csui-icon binf-caret-down smart-facet-more-dd-expand {{downCaretClasses}} smart-button-chip">
+      {{#if isJATO}}
+        <otc-button size="small" tabindex="-1" arialabel="{{facetItemAria}}">
+          <otc-icon svg="{{jatoDownArrowIconSvg}}"></otc-icon>
+        </otc-button>
+      {{else}}
+        <otc-button icon="smart_action_16:action_caret_down16" tabindex="-1" arialabel="{{facetItemAria}}" ></otc-button>
+      {{/if}}
     </span>
     {{/unless}}
     {{#if enableCloseIcon}}
-    <span title="{{clearTitle}}" role="button" class="csui-icon binf-caret-down smart-facet-close {{clearIconClasses}}" data-csui-facet="{{facetId}}"
-      data-csui-topic="{{topicId}}" aria-label="{{singleValueFacetClearAria}}">
-      {{{icon-v2 iconName="csui_smart_ot_action_close_mid32" states="true" size="small"}}}
+    <span title="{{clearTitle}}" class="csui-icon binf-caret-down smart-facet-close {{clearIconClasses}} smart-button-chip" data-csui-facet="{{facetId}}"
+      data-csui-topic="{{topicId}}">
+      {{#if isJATO}}
+        <otc-button size="small" tabindex="-1" arialabel="{{singleValueFacetClearAria}}">
+          <otc-icon svg="{{jatoCloseIconSvg}}"></otc-icon>
+        </otc-button>
+      {{else}}
+          <otc-button icon="smart_action_16:action_close16" tabindex="-1" arialabel="{{singleValueFacetClearAria}}"></otc-button>
+      {{/if}}
     </span>
     {{/if}}
   </div>
@@ -34,24 +46,37 @@
 <div class="smart-facet-item-expanded binf-visibility-hidden smart-facet-dd-expanded csui-facet-bar-dropdown {{#if readOnlyFilter}}smart-readonly{{/if}}">
   <div class="csui-facet-item-content {{#if readOnlyFilter}} csui-facet-item-content-readonly {{/if}}" {{#if readOnlyFilter}} aria-readonly="true" {{/if}}>
     <ul class="smart-multi-value-facets csui-normal-scrolling" aria-label="{{facetExpandedItemAria}}" role="menu">
-      <li role="none" aria-hidden="true" class="csui-facet-item-facet-name">{{facetName}}</li>
+      <li class="csui-facet-item-facet-name">{{facetName}}</li>
       {{#each topics}}
       <li class="csui-facet-item-topic {{#if ../readOnlyFilter}}smart-facet-item-topic-readonly{{/if}}" role="menuitem" tabindex="-1" aria-label="{{ariaLabel}}">
         <span class="csui-facet-item-topic-name" aria-hidden="true" title="{{topicName}}">{{topicName}}</span>
         {{#unless ../readOnlyFilter}}
-        <span title="{{clearTitle}}" role="button" class="csui-icon smart-facet-close" data-csui-facet="{{facetId}}" data-csui-topic="{{topicId}}"
+        <span title="{{clearTitle}}" role="button" class="csui-icon smart-facet-close smart-button-chip" data-csui-facet="{{facetId}}" data-csui-topic="{{topicId}}"
           aria-label="{{ariaLabel}}">
-          {{{icon-v2 iconName="csui_smart_ot_action_close_mid32" states="true" size="small"}}}
+          {{#if isJATO}}
+            <otc-button size="small" tabindex="-1" arialabel="{{ariaLabel}}">
+              <otc-icon svg="{{jatoCloseIconSvg}}"></otc-icon>
+            </otc-button>
+          {{else}}
+            <otc-button icon="smart_action_16:action_close16" tabindex="-1" arialabel="{{ariaLabel}}"></otc-button>
+          {{/if}}
         </span>
         {{/unless}}
       </li>
       {{/each}}
     </ul>
-    <div title="{{collapseTitle}}" role="button" class="csui-icon binf-caret-down  smart-facet-more-dd-collapse smart-v2-icon-parent" tabindex="-1"
+    <div title="{{collapseTitle}}" role="button" class="csui-icon binf-caret-down  smart-facet-more-dd-collapse smart-v2-icon-parent smart-button-chip" 
       aria-label="{{collapseFacetBtnAria}}">
-      {{{icon-v2 iconName="csui_smart_ot_action_caret_up32" states="true" size="small"}}}
+     {{!--  {{{icon-v2 iconName="csui_smart_ot_action_caret_up32" states="true" size="small"}}} --}}
+      {{#if isJATO}}
+        <otc-button size="small" tabindex="-1" arialabel="{{collapseFacetBtnAria}}">
+          <otc-icon svg="{{jatoUpArrowIconSvg}}"></otc-icon>
+        </otc-button>
+      {{else}}
+          <otc-button icon="smart_action_16:action_caret_up16" tabindex="-1" arialabel="{{collapseFacetBtnAria}}"></otc-button>
+      {{/if}}
     </div>
   </div>
 </div>
 {{/unless}}
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

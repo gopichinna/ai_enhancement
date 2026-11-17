@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .csui-icon-v2,
 .csui-icon-v2.csui-icon-v2-size-normal {
@@ -43,7 +43,7 @@
 }
 
 .csui-icon-v2 .csui-icon-v2-metaphor0 {
-  fill: #333333;
+  fill: var(--jato-cta-content-color-tertiary, #333);
 }
 
 .csui-icon-v2-state-el:not(.csui-disabled):not(button):hover .csui-icon-v2.csui-icon-v2-with-hover-by-el .csui-icon-v2-state,

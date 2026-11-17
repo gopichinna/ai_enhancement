@@ -16,7 +16,8 @@ define([
         var ungroupedPublicSrch ;
 
         savedsearchCollection.map(function (ss) {
-            var tabid = ss.get('tab_id');
+          var tabid = ss.get('tab_id');
+          const isPrivateCategoryRoot = tabid === lang.privatesearch;
 
             //This is added to flat the list fo public search for the tiles
             /*if(ss.get("search-category")==='public_search'){
@@ -28,7 +29,7 @@ define([
                 var group = {};
                 group['tab_id'] = tabid;
                 group.name = (tabid !== -1)?tabid : ss.get('name');
-                group.tooltip = ss.get('grouptooltip');
+                group.tooltip = isPrivateCategoryRoot ? lang.privatesearch : ss.get('grouptooltip');
                 group.savedsearch = [];
                 group.savedsearch.push(ss);
                 results.push(group);

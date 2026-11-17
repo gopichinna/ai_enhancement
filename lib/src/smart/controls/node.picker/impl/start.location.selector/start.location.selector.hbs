@@ -1,10 +1,12 @@
-<button id="{{id}}" class="binf-btn smart-inline-text-small-btn  csui-acc-focusable toggler" aria-haspopup="true"
-  aria-expanded="false" aria-label="{{labelSelectLocation}}">
-  <span class="cs-label">{{location}}</span>
-  <span class="cs-icon smart-icon-caret-down">
-    {{{icon-v2 iconName="csui_smart_tree_caret_down16" size="contain"}}}
-  </span>
-</button>
-<otc-menu id="menu-{{id}}" buttonId="{{id}}" scrollable aria-labelledby="{{id}}" role="none"></otc-menu>
+<otc-button id="{{id}}" {{#if isJATO}}type="subtle"{{else}}type="inline"{{/if}} size="small" class="smart-inline-text-small-btn  csui-acc-focusable toggler"
+  ariahaspopup="true"  arialabel="{{labelSelectLocation}}">
+  {{location}}
+  {{#if isJATO}}
+    <otc-icon svg="{{jatoDownArrowIconSvg}}" isPresentation class="smart-icon smart-caret-down"></otc-icon>
+  {{else}}
+    <otc-icon icon="smart_action_16:action_caret_down16" isPresentation class="smart-icon smart-caret-down"></otc-icon>
+  {{/if}}
+</otc-button>
+<otc-menu id="menu-{{id}}" buttonId="{{id}}" scrollable arialabel="{{location}}" role="none"></otc-menu>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,10 +1,30 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-.csui-type-icon.smart-bulk-selection > .csui-icon-group {
-	background-repeat: no-repeat;
-	height: 20px;
-	width: 20px;
-	margin-inline-end: 6px;
-	vertical-align: middle;
+[data-smart-theme]:not([data-smart-theme='cf']) {
+    --jatx-smart-bulksel-icon-alignment: text-bottom;
+    --jatx-bulksel-icon-alignment: middle;
+    --jatx-bulksel-icon-height: 26px;
+    --jatx-bulksel-icon-width: 24px;
+}
+
+.csui-type-icon.smart-bulk-selection {
+    line-height: var(--jatx-bulksel-icon-height, 24px);
+}
+
+.csui-type-icon.smart-bulk-selection div {
+    display: inline-block;
+}
+
+.csui-type-icon.smart-bulk-selection .csui-icon-group {
+    background-repeat: no-repeat;
+    height: var(--jatx-bulksel-icon-height, 24px);
+    margin-inline-end: var(--jato-measure-6, 5px);
+    vertical-align: var(--jatx-bulksel-icon-alignment, bottom);
+    width: var(--jatx-bulksel-icon-width, 24px);
+}
+
+.csui-type-icon.smart-bulk-selection .csui-icon-v2.csui-icon-v2-size-normal {
+    height: var(--jatx-bulksel-icon-size, 24px);
+    width: var(--jatx-bulksel-icon-size, 24px);
 }

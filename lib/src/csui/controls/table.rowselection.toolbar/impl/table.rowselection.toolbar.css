@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .csui-table-rowselection-toolbar-view {
   display: flex;
@@ -27,10 +27,17 @@
 .csui-table-rowselection-toolbar-view > .csui-selected-items-counter-region {
   display: flex;
   align-items: center;
-  margin-left: 22px;
+  margin-left: var(--jato-measure-8, 12px);
 }
 
-@media only screen and (max-width: 640px) {
+.csui-metadata-versions-rowselection-toolbar-view .csui-table-rowselection-toolbar-view > .csui-selected-items-counter-region {
+  display: flex;
+  align-items: center;
+  margin-left: var(--jato-measure-8, 22px);
+
+}
+
+@media only screen and (width <= 640px) {
   .csui-table-rowselection-toolbar-view > .csui-selected-items-counter-region {
     margin-left: 0;
   }

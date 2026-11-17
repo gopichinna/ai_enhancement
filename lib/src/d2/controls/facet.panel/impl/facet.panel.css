@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .cs-simplelist.csui-facet-panel {
   height: 100%;
@@ -38,13 +38,15 @@
 }
 
 @keyframes csui-facet-panel-state-fade-in-and-out {
-  from {
+  0% {
     opacity: .5;
   }
+
   50% {
     opacity: 1;
   }
-  to {
+
+  100% {
     opacity: .5;
   }
 }
@@ -61,6 +63,7 @@
   border-bottom: 0;
   padding: 0 16px;
 }
+
 .binf-widgets .cs-simplelist.csui-facet-panel .d2-facet-serverfilter{
   padding: 7px 15px 7px 9px;
   background-color: #FEF4C3;
@@ -222,6 +225,7 @@ button.ui-clear-facet-button {
   width: 250px;
   transition: max-width 0.3s ease-in;
 }
+
 
 .binf-widgets .csui-facet-table-container .csui-table-facetview.csui-facetview-hidden {
   max-width: 0;

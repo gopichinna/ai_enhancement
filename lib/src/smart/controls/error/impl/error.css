@@ -1,12 +1,58 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+:root {
+  --jatx-error-view-bg-color: transparent;
+  --jatx-error-view-border-bottom: 0px;
+  --jatx-error-view-gap: 8px;
+  --jatx-error-view-border-radius: var(--jato-radii-lrg);
+  --jatx-error-view-message-padding: 0px;
+  --jatx-error-view-message-font-size: 16px;
+  --jatx-error-view-message-font-weight: 450;
+  --jatx-error-view-message-line-height: 20px;
+  --jatx-error-view-message-margin-top: 6px;
+  --jatx-error-view-text-display: flex;
+  --jatx-error-view-icon-div-display: flex;
+  --jatx-error-view-with-header-justify-content: normal;
+  --jatx-csui-low-error-icon-div-height: max-height;
+  --jatx-error-view-suggestion-padding: 0em;
+  --jatx-error-view-suggestion-line-height: 18px;
+  --jatx-error-view-suggestion-font-size: 13px;
+  --jatx-error-view-icon-parent-border: none;
+  --jatx-error-view-icon-parent-background: none;
+  --jatx-error-view-message-footer-fadeout-bottom: 16px;
+}
+
+[data-smart-theme="cf"] {
+  --jatx-error-view-bg-color: #edf1fa;
+  --jatx-error-view-border-bottom: 4px;
+  --jatx-error-view-gap: 0px;
+  --jatx-error-view-border-radius: 0px;
+  --jatx-error-view-message-padding: 16px;
+  --jatx-error-view-message-font-size: 20px;
+  --jatx-error-view-message-font-weight: bold;
+  --jatx-error-view-message-line-height: 1.3;
+  --jatx-error-view-message-margin-top: 12px;
+  --jatx-error-view-text-display: block;
+  --jatx-error-view-icon-div-display: inline-block;
+  --jatx-error-view-with-header-justify-content: center;
+  --jatx-csui-low-error-icon-div-height: 100%;
+  --jatx-error-view-suggestion-padding: 1em;
+  --jatx-error-view-suggestion-line-height: 1.3;
+  --jatx-error-view-suggestion-font-size: 14px;
+  --jatx-error-view-icon-parent-border: 1px solid #ffffff;
+  --jatx-error-view-icon-parent-background: rgba(255, 255, 255, 0.4);
+  --jatx-error-view-message-footer-fadeout-bottom: 0px;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) {
+  --jatx-error-view-message-gap: 8px;
+}
+
 .binf-widgets .csui-error {
   margin: auto 0 auto 0;
-  padding: 0;
   width: 100%;
   height: 100%;
-  color: #333333;
   text-align: center;
   word-wrap: break-word;
 }
@@ -20,12 +66,91 @@
 }
 
 .tile .csui-error.content-tile {
-  background-color: #edf1fa;
+  background-color: var(--jatx-error-view-bg-color);
+}
+
+.tile .csui-error.content-tile .csui-error-icon-div::after { 
+  background: linear-gradient(180deg, var(--jato-background-elevation-level-2, #edf1fa) 20%, var(--jato-background-elevation-gradient-control-level-3, #fff0) 90%);
 }
 
 .csui-error .csui-error-icon-div {
-  display: inline-block;
+  position: relative;
+  display: var(--jatx-error-view-icon-div-display);
+  justify-content: center;
   width: 100%;
+}
+
+.csui-error .csui-error-icon-div::after {
+  content: ' ';
+  position: absolute;
+  height: 12px;
+  left: 0;
+  bottom: calc(-1 * var(--jatx-error-view-gap) - 12px); 
+  width: 100%;
+  background: linear-gradient(180deg, var(--jato-background-elevation-level-2, #f7f7f7) 20%, var(--jato-background-elevation-gradient-control-level-3, #fff0) 90%);
+}
+
+.csui-error.csui-error-container .smart-error-message {
+  display: flex;
+  flex-direction: column;
+  min-height: var(--jatx-error-view-message-line-height);
+  gap: var(--jatx-error-view-message-gap, 1em);
+  overflow: hidden;
+}
+
+.csui-error.csui-error-container .smart-error-message .csui-message,
+.csui-error.csui-error-container .smart-error-message .csui-suggestion,
+.csui-error.csui-error-container .smart-error-message .smart-error-detailed-message {
+  padding: 0 var(--jato-padding-xxl, 16px);
+}
+
+.binf-widgets .smart-error-message.csui-normal-scrolling {
+  overflow: auto;
+  padding-bottom: var(--jato-padding-xxl, 16px);
+}
+
+.csui-error.csui-error-container .smart-show-more {
+  position: relative;
+  max-height: 32px;
+}
+
+.csui-error.csui-error-container .smart-show-more::before {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  top: calc(-1 * var(--jatx-error-view-gap) - 8px);
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(0deg, var(--jato-background-elevation-level-2, #f7f7f7) 20%, var(--jato-background-elevation-gradient-control-level-3, #fff0) 90%);
+}
+
+.tile .csui-error.content-tile .smart-show-more::before {
+  background: linear-gradient(0deg, var(--jato-background-elevation-level-2, #edf1fa) 20%, var(--jato-background-elevation-gradient-control-level-3, #fff0) 90%);
+}
+
+.csui-error.csui-error-container .smart-show-more .show-more-btn {
+  padding: 4px 0;
+}
+
+.csui-error .csui-error-icon-div .smart-error-jato-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+}
+
+.csui-error .csui-error-icon-div .smart-error-jato-icon .smart-error-icon {
+  width: 72px;
+  height: 72px;
+  min-width: 32px;
+  min-height: 32px;
+  overflow: visible;
+}
+
+.csui-error .csui-error-icon-div .smart-error-jato-icon .smart-error-icon.smart-error-icon-med {
+  width: 32px;
+  height: 32px;
 }
 
 .csui-custom-view-search .csui-custom-error {
@@ -36,15 +161,16 @@
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  border: 1px solid #ffffff;
-  background-color: rgba(255, 255, 255, 0.4);
+  border: var(--jatx-error-view-icon-parent-border);
+  background-color: var(--jatx-error-view-icon-parent-background);
   display: inline-flex;
   margin: 0 calc(50% - 48px); 
 }
 
 .csui-error.csui-low .csui-error-icon-div {
-  display: inline-block;
-  height: 100%;
+  display: var(--jatx-error-view-icon-div-display);
+  justify-content: center;
+  height: var(--jatx-csui-low-error-icon-div-height);
 }
 
 .csui-error .csui-error-icon-div .csui-error-icon {
@@ -62,14 +188,30 @@
 }
 
 .csui-error .csui-message {
-  margin-top: 12px;
-  padding: 0 16px;
-  font-size: 20px;
-  font-weight: bold;
+  margin-top: var(--jatx-error-view-message-margin-top);
+  padding: 0 var(--jatx-error-view-message-padding);
+  font-size: var(--jatx-error-view-message-font-size);
+  font-weight: var(--jatx-error-view-message-font-weight);
   display: inline-block;
   align-content: center;
-  line-height: 1.3;
+  line-height: var(--jatx-error-view-message-line-height);
   word-break: break-word;
+  color: var(--jato-typography-text-color-primary, inherit);
+}
+
+.csui-error .smart-error-detailed-message {
+  padding: 0 var(--jatx-error-view-message-padding);
+  font-size: var(--jatx-error-view-suggestion-font-size);
+  line-height: var(--jatx-error-view-suggestion-line-height);
+  color: var(--jato-typography-text-color-primary, #333);
+  font-weight: normal;
+}
+
+.csui-error .smart-error-detailed-message.line-clamp-three {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;  
 }
 
 .csui-error-widget.csui-error .csui-message {
@@ -83,45 +225,15 @@
 }
 
 .csui-error .csui-suggestion {
-  padding: 1em 1em 0 1em;
-  font-size: 14px;
-  line-height: 1.3;
+  padding: 0 var(--jatx-error-view-suggestion-padding);
+  font-size: var(--jatx-error-view-suggestion-font-size);
+  line-height: var(--jatx-error-view-suggestion-line-height);
+  color: var(--jato-typography-text-color-primary, #333);
   word-break: break-word;
-}
-
-.csui-error .binf-popover {
-  max-width: 252px;
-  width: fit-content;
-  border: 0 none;
-  padding: 0;
-}
-
-.csui-error .binf-popover .binf-popover-content {
-  font-size: 11px;
-  padding: 16px 24px 18px 44px;
-  min-height: 48px;  
-  align-items: center;
-  display: flex;
-  word-break: break-word;
-}
-
-.csui-error .binf-popover .binf-popover-content::before {  
-  content: '';
-  background-image: url(../../../themes/carbonfiber/image/icons/notification_warning_orange.svg);
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-left: -32px;
-  margin-right: 12px;
-  vertical-align: top;
-  position: absolute;
-  top: 16px;
 }
 
 .binf-widgets .csui-error .binf-popover.binf-right > .binf-arrow,
-.binf-widgets .csui-error .binf-popover.binf-right > .binf-arrow:after {
+.binf-widgets .csui-error .binf-popover.binf-right > .binf-arrow::after {
   border-right-color: #DF6800;
 }
 
@@ -135,11 +247,36 @@
   flex-direction: column;
   flex-grow: 1;
   display: inline-flex;
+  border-radius: var(--jatx-error-view-border-radius);
+  gap: var(--jatx-error-view-gap);
+  border: 1px solid var(--jato-border-color-primary, transparent);
+  box-shadow: 0 var(--jato-elevation-y-axis-level-1, 0) var(--jato-elevation-blur-level-1, 5px) 0 var(--jato-elevation-shadow-color-level-1, rgba(0, 0, 0, .3));
   justify-content: center;
 }
 
-.binf-widgets .csui-error-container.csui-error {
+[data-smart-theme="cf"] .binf-widgets .csui-error-container.csui-error,
+[data-smart-theme="cf"] .binf-widgets .cs-list .csui-error-container.csui-error {
   border-bottom: 4px solid #7E929F;
+}
+
+.binf-widgets .csui-error-container.csui-error {
+  padding-top: var(--jato-padding-xxl, 0px);
+  border-radius: var(--jatx-error-view-border-radius);
+  justify-content: center;
+}
+
+.binf-widgets .csui-error {
+  position: relative;
+}
+
+.tile .csui-error.content-tile .smart-error-message::after { 
+  background: linear-gradient(0deg, var(--jato-background-elevation-level-2, #edf1fa) 20%, var(--jato-background-elevation-gradient-control-level-3, #fff0) 90%);
+}
+
+.binf-widgets .cs-list .csui-error-container.csui-error {
+  border: none;
+  box-shadow: none;
+  justify-content: var(--jatx-error-view-with-header-justify-content);
 }
 
 .binf-widgets .conws-header-childView-container .csui-error-container.csui-error {
@@ -148,9 +285,23 @@
   margin: 16px 0;
 }
 
+.binf-widgets .conws-header-childView-container .csui-error-container.csui-error {
+  box-shadow: none;
+}
+
+.binf-widgets .conws-header-childView-container .csui-error-container.csui-error .csui-error-icon-div::after,
+.binf-widgets .conws-header-childView-container .csui-error-container.csui-error .smart-error-message::after {
+  content: none;
+}
+
+.binf-widgets .tile-content:has(.csui-error) {
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+
 .binf-widgets .conws-header-childView-container .csui-error-container.csui-error .csui-message{
   font-size: 16px;
-  color: #EFEFEF;
+  color: var(--jato-typography-text-color-primary, #EFEFEF);
 }
 
 .binf-widgets .conws-header-childView-container #conws-header-childview .esoc-afw-error {
@@ -180,42 +331,13 @@
   height: 100%;
 }
 
-.csui-error .binf-popover.binf-right .binf-popover-content {
-  border-left: 4px solid #DF6800;
-}
-
-.csui-error .binf-popover.binf-left .binf-popover-content {
-  border-right: 4px solid #DF6800;
-}
-
-.csui-error .binf-arrow:after {
+.csui-error .binf-arrow::after {
   background: inherit;
 }
 
-.csui-error .binf-popover.binf-right > .binf-arrow:after {
-  border-right-color: #DF6800;
-  overflow: hidden;
-}
-
-.csui-error .binf-popover.binf-left > .binf-arrow:after {
-  border-left-color: #DF6800;
-  overflow: hidden;
-}
-
-.csui-error .binf-popover.binf-top .binf-popover-content {
-  border-bottom: 4px solid #DF6800;
-}
-
-.csui-error .binf-popover.binf-bottom .binf-popover-content {
-  border-top: 4px solid #DF6800;
-}
-
-.csui-error .binf-popover.binf-top > .binf-arrow:after {
-  border-top-color: #DF6800;
-  overflow: hidden;
-}
-
-.csui-error .binf-popover.binf-bottom > .binf-arrow:after {
-  border-bottom-color: #DF6800;
-  overflow: hidden;
+ 
+.binf-widgets .csui-shortcut-item .csui-error-container.csui-error, 
+.binf-widgets .csui-shortcut-item .csui-error-widget.csui-error {
+  border: none;
+  box-shadow: none;
 }

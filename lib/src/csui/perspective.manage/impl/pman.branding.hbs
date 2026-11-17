@@ -5,7 +5,9 @@
     <div class="pman-left-tools">
       <ul>
         <li class="pman-toolitem icon-help-container">
-          <button class="icon icon-help" title="Help"></button>
+                <otc-button class="icon-help"  type="subtle" title="{{this.help}}" arialabel="{{this.help}}" {{#if isJATO}} size="regular" {{else}}  icon="csui_action:action_help32"  {{/if}}>
+                  {{#if isJATO}}<otc-icon mirrorIfRtl size="20" svg="{{helpIcon}}" ispresentation></otc-icon>{{/if}}
+                </otc-button>        
         </li>
         <li class="pman-toolitem toolbarAddContainer">
           <button class="icon icon-toolbarAdd" title="{{this.addWidget}}"></button>
@@ -30,18 +32,16 @@
       <ul>
         {{#if personalizeMode}}
           <li>
-            <button class="binf-btn icon-reset" title="{{this.reset}}"
-                    aria-label="{{this.resetAriaLabel}}">{{this.reset}}</button>
+            <otc-button type="secondary" class="pman-icon-reset" title="{{this.reset}}"
+                    arialabel="{{this.resetAriaLabel}}">{{this.reset}}</otc-button>
           </li>
         {{/if}}
         <li>
-          <button class="binf-btn icon-save" title="{{this.save}}"
-                  aria-label="{{this.saveAriaLabel}}">{{this.save}}</button>
+          <otc-button class="pman-right-tools-button pman-icon-save" disabled type="primary" title="{{this.save}}" arialabel="{{this.saveAriaLabel}}">{{this.save}}</otc-button>
         </li>
         <li>
-          <button class="binf-btn cancel-edit" title="{{this.cancel}}"
-                  aria-label="{{this.cancelAriaLabel}}">{{this.cancel}}</button>
-        </li>
+          <otc-button class="pman-right-tools-button pman-cancel-edit" type="secondary" title="{{this.cancel}}" arialabel="{{this.cancelAriaLabel}}">{{this.cancel}}</otc-button>
+          </li>
       </ul>
     </div>
   </div>
@@ -49,9 +49,6 @@
     <div class="pman-trash-banner"></div>
   </div>
 </div>
-{{#if enableTopRibbon}}
-  <div class="pman-top-ribbon"></div>
-{{/if}}
 <div id="breadcrumb-wrap" class="pman-header-config breadcrumb-wrap-visible">
   <div class="pman-header-preview-panel">
     <div class="pman-header-container pman-container-header-container">
@@ -64,4 +61,4 @@
   </div>
 </div>
 <div class="pman-backdrop"></div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

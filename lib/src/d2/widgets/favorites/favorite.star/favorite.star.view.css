@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .csui-favorite-star-view-container .icon {
   height: 1.5em;
   width: 1.5em;
@@ -89,7 +88,7 @@
   color: #666666;
   background-color: #ffffff;
   background-image: none;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 4px;
   display: inline-block;
 }
@@ -129,7 +128,7 @@
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #333;
+  color: #333333;
   text-decoration: none;
   overflow: hidden;
   white-space: nowrap;

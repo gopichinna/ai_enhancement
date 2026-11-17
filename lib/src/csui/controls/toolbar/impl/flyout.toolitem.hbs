@@ -20,7 +20,14 @@
       <span class="csui-caret"></span>
     </a>
   {{else}}
-    <a aria-haspopup="true" href="#" title="{{title}}" {{#if linkRole}}role="{{linkRole}}" {{/if}}
+    {{#if isJATO}}
+    <otc-button title="{{title}}" type="subtle" class="csui-toolitem csui-toolitem-icononly csui-acc-focusable" {{#if disabledClass}} disabled {{/if}} data-cstabindex="-1" {{#if
+      toolItemAria}} arialabel="{{toolItemAria}}" {{else}}
+                     arialabel="{{title}}" {{/if}} size="small" {{#if hasToolItemAriaExpand}} ariaexpanded="{{toolItemAriaExpand}}" toggled="{{toolItemAriaExpand}}" {{/if}}>
+        <otc-icon size="16" svg="{{jatoSVG}}"></otc-icon>
+    </otc-button>
+    {{else}} 
+      <a aria-haspopup="true" href="#" title="{{title}}" {{#if linkRole}}role="{{linkRole}}" {{/if}}
                        class="csui-toolitem {{disabledClass}} csui-toolitem-icononly"
                        data-cstabindex="-1" {{#if
         toolItemAria}}aria-label="{{toolItemAria}}" {{else}}
@@ -31,7 +38,8 @@
       {{else}}
         <span class="{{icon}}"></span>
       {{/if}}
-    </a>
+      </a>
+    {{/if}}
   {{/if}}
 {{/if}}
 {{else}}
@@ -46,4 +54,4 @@
 {{/if}}
 <ul class="binf-dropdown-menu" role="menu"></ul>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,19 +1,19 @@
 {
   "name": "d2sv-sdk",
-  "version": "24.4.0",
+  "version": "25.4.0",
   "description": "D2 Smart View - SDK",
   "private": true,
   "copyright": "Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text.",
   "meta": {
-    "build": "24.4.0000.0143",
+    "build": "25.4.0001.0153",
     "svf": {
-      "csui": "24.4.7",
-      "d2": "24.4.4",
-      "dctmw": "24.4.3",
-      "esoc": "24.4.0.2644",
-      "nuc": "24.4.1",
-      "reports": "24.4.1",
-      "smart": "24.4.3"
+      "csui": "25.4.7",
+      "d2": "25.4.9",
+      "dctmw": "25.4.4",
+      "esoc": "25.4.0.81",
+      "nuc": "25.4.1",
+      "reports": "25.4.2",
+      "smart": "25.4.12"
     }
   },
   "engines": {
@@ -21,8 +21,8 @@
   },
   "scripts": {
     "build": "node ./utils/run-generator-cli.js run-build",
-    "documentation": "node ./utils/doc-server.js",
-    "stop-documentation": "node ./utils/stop-doc-server.js",
+    "documentation": "start node ./utils/doc-server.js",
+    "stop-documentation": "start node ./utils/stop-doc-server.js",
     "postinstall": "node ./utils/postinstall.js",
     "start": "node ./utils/run-generator-cli.js interface",
     "wsupdate": "node ./utils/ws-update.js"
@@ -58,9 +58,11 @@
   "devDependencies": {
     "grunt-contrib-uglify": "5.2.1",
     "underscore": "1.13.3",
-    "@smartui/grunt-support": "file:./tools/node/smartui-grunt-support-6.0.2.tgz",
-    "@dctm/dctm-web-core": "file:./tools/node/dctm-dctm-web-core-24.4.3.tgz",
+    "@smartui/grunt-support": "file:./tools/node/smartui-grunt-support-7.1.1.tgz",
+    "@dctm/dctm-web-core": "file:./tools/node/dctm-dctm-web-core-25.4.4.tgz",
+    "@jato/svgs": "file:./tools/node/jato-svgs-1.67.0.tgz",
     "@smartui/eslint-plugin-checks": "file:./tools/node/smartui-eslint-plugin-checks-4.0.2.tgz",
-    "@dctm/dctm-web-tools": "file:./tools/node/dctm-dctm-web-tools-2.1.0.tgz"
+    "@dctm/dctm-web-tools": "file:./tools/node/dctm-dctm-web-tools-3.1.2.tgz",
+    "@smartui/jato-icons-bundler": "file:./tools/node/smartui-jato-icons-bundler-1.0.8.tgz"
   }
 }

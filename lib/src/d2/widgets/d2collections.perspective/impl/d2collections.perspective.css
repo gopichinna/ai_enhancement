@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-widget-collectionwidget .tile-header {
   cursor: pointer;
@@ -46,7 +46,7 @@
   flex: 1 1 100%;
   width: 100%;
   overflow: hidden;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   justify-content: space-around;
   align-items: center;
 }
@@ -104,8 +104,9 @@
 }
 
 .binf-widgets .d2-collections-wrapper{
-  background: #fff;
+  background: #ffffff;
 }
+
 .binf-widgets .d2-collections-wrapper .d2-collection-simple-list-search{
   height: 48px;
   background: #ffffff;
@@ -119,15 +120,17 @@
 .binf-widgets .d2-collections-wrapper .d2-collection-simple-list-search .search-box .icon-search-placeholder{
   position: absolute;
 }
+
 .binf-widgets .d2-collections-wrapper .d2-collection-simple-list-search .search-box input{
   display: flex;
   width: 100%;
   align-items: center;
   border-radius: 3px;
   border: 1px solid #757575;
-  background: #FFF;
+  background: #FFFFFF;
   padding:4px 28px;
 }
+
 .binf-widgets .d2-collections-wrapper .d2-collection-simple-list-search .search-box .i-close {
   display: none;
   z-index: 1;
@@ -148,6 +151,7 @@
   font-weight: bold;
   color: #333333;
 }
+
 .binf-btn.d2-collections-simple-list-header-label{
   width: auto !important;
 }
@@ -156,3 +160,15 @@
   min-height: 200px;
 }
 
+.binf-widgets .d2-pagination-view .csui-pager .csui-total-container-items {
+  right: 30px;
+  position: absolute;
+}
+
+.binf-widgets .d2-pagination-view .csui-pager .csui-total-container-items-with-no-info {
+  right: 0;
+}
+
+.csui-pager .d2-total-notification-icon .icon {
+ position: relative;
+}

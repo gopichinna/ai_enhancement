@@ -1,14 +1,24 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-binf-arrow-gap: -13px;
+  --jatx-csui-multilingual-field-line-height: 18px;
+}
+
 .binf-widgets .cs-dialog.cs-multilingual-picker .binf-modal-body {
   margin-left: 12px;
   margin-right: 12px;
-  padding: 16px 0px;
+  padding: 16px 0;
 }
 
 .binf-widgets .cs-dialog.cs-multilingual-picker .binf-modal-body .binf-control-label {
-  padding-bottom: 0px;
+  padding-bottom: 0;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .cs-dialog.cs-multilingual-picker .binf-modal-body .binf-control-label {
+  margin-top: 8px;
+  font-size: 14px;
 }
 
 .binf-widgets .csui-multilingual-invisibleOverlay {
@@ -34,7 +44,7 @@
 
 
 .binf-widgets .csui-multilingual-input-wrapper.binf-popover .cs-multilingual-form {
-  padding: 0px;
+  padding: 0;
 }
 
 .binf-widgets .cs-multilingual-form .cs-header {
@@ -51,8 +61,36 @@
 
 .binf-widgets .cs-multilingual-form input {
   width: 100%;
-  height: 28px;
+  height: var(--jato-measure-32, 28px);
   padding: 0 6px;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .cs-multilingual-form input {
+  background-color: var(--jato-background-elevation-level-1);
+  color: var(--jato-typography-text-color-primary);
+  font-size: 13px;
+  border-block-end: 1px solid var(--jato-input-border-focus-neutral);
+  line-height: var(--jatx-csui-multilingual-field-line-height);
+  border: 1px solid var(--jato-input-border-container-neutral);
+  border-radius: var(--jato-radii-med) var(--jato-radii-med) var(--jatx-const-0) var(--jatx-const-0);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .cs-multilingual-form input:hover,
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .binf-popover-content .cs-multilingual-form .cs-ml-form-container textarea:hover {
+  background-color: var(--jato-background-elevation-level-2-hover);
+  border: 1px solid var(--jato-input-border-container-hover);
+  border-block-end: 1px solid var(--jato-input-border-focus-hover);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .cs-multilingual-form input:focus,
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-popover-content .cs-multilingual-form .cs-ml-form-container textarea:focus {
+  outline: none;
+  -webkit-box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled);
+  border-block-end: 1px solid var(--jato-input-border-focus-enabled);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled);
+  border: var(--jato-measure-1, 2px) solid var(--jato-input-border-container-neutral);
+  border-radius: var(--jato-radii-med) var(--jato-radii-med) var(--jatx-const-0) var(--jatx-const-0);
 }
 
 .binf-widgets .cs-multilingual-form .alpaca-container-item:not(:first-child) {
@@ -90,18 +128,20 @@
 }
 
 .binf-widgets .csui-multilingual-input-wrapper.binf-popover.binf-top {
-  left: 0px;
+  left: 0;
 }
 
 .binf-widgets .csui-multilingual-input-wrapper.binf-popover.binf-top > .binf-arrow.csui-remove-arrow-mark-styles,
 .binf-widgets .csui-multilingual-input-wrapper.binf-popover.binf-bottom > .binf-arrow.csui-remove-arrow-mark-styles {
   left: 15px !important;
+
   
 }
 
 .binf-widgets .csui-multilingual-input-wrapper.binf-popover.binf-top > .binf-arrow:not(.csui-remove-arrow-mark-styles),
 .binf-widgets .csui-multilingual-input-wrapper.binf-popover.binf-bottom > .binf-arrow:not(.csui-remove-arrow-mark-styles) {
   left: calc(100% - 15px) !important;
+
   
 }
 
@@ -111,7 +151,7 @@
 }
 
 .binf-widgets .csui-multilingual-input-wrapper.binf-popover.binf-bottom > .binf-arrow {
-  top: -14px;
+  top: var(--jatx-binf-arrow-gap, -14px);
 }
 
 .binf-widgets .csui-multilingual-input-wrapper.binf-popover.binf-bottom > .binf-arrow .globe-icon-mask {
@@ -119,7 +159,7 @@
 }
 
 .binf-widgets .csui-multilingual-input-wrapper.binf-popover.binf-top > .binf-arrow {
-  bottom: -15px;
+  bottom: var(--jatx-binf-arrow-gap, -15px);
 }
 
 .binf-widgets .csui-multilingual-input-wrapper.binf-popover.binf-bottom > .binf-arrow .globe-icon-mask {
@@ -193,16 +233,25 @@
 .binf-widgets .binf-popover-content .cs-multilingual-form .cs-ml-form-container textarea {
   box-shadow: none;
   -webkit-box-shadow: none;
-  border-radius: 3px;
-  padding: 3px;
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) var(--jatx-const-0, 3px) var(--jatx-const-0, 3px);
+  padding: var(--jato-measure-4, 3px) var(--jato-measure-8, 3px);
   width: 100%;
-  height: 28px;
+  height: var(--jato-measure-32, 28px);
   overflow: hidden;
-  line-height: 22px;
+  line-height: var(--jatx-csui-multilingual-field-line-height, 22px);
   resize: none;
 }
 
-.binf-widgets input.csui-multilingual-input,
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .binf-popover-content .cs-multilingual-form .cs-ml-form-container textarea {
+  background-color: var(--jato-background-elevation-level-1);
+  color: var(--jato-typography-text-color-primary);
+  font-size: 13px;
+  border-block-end: 1px solid var(--jato-input-border-focus-neutral);
+  line-height: var(--jatx-csui-multilingual-field-line-height);
+  border: 1px solid var(--jato-input-border-container-neutral);
+}
+
+.binf-widgets .csui-multilingual-input input.csui-multilingual-input,
 .binf-widgets .cs-form.cs-document-overview-wrapper .cs-metadata-item-name .title-edit-div .title-input.csui-multilingual-input,
 .binf-widgets .title-edit-div .title-input.csui-multilingual-input {
   padding-right: 28px;
@@ -212,6 +261,12 @@
   color: #757575;
   cursor: default;
   background-color: #eeeeee;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets input.csui-multilingual-input:disabled {
+  color: var(--jato-typography-text-color-tertiary);
+  background-color: var(--jato-background-elevation-level-2-disabled);
+  border-color: var(--jato-input-border-container-disabled);
 }
 
 .binf-widgets .csui-multilingual-icon-label {

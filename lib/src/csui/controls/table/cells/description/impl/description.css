@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-nodetable .binf-table:not(.csui-nowrap-table) > tbody > tr > .csui-table-cell-description > div,
 .binf-widgets .csui-nodetable .binf-table.csui-nowrap-table > tbody > tr > .csui-table-cell-description.csui-column-sized > div {
@@ -9,4 +9,8 @@
   white-space: normal;
   padding-top: 2px;
   padding-bottom: 4px;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr:not(.csui-details-row) > td.csui-table-cell-description  > * {
+  max-height: unset;
 }

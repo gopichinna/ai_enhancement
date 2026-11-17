@@ -1,0 +1,54 @@
+{{#if writeonlyMode}}
+<div class="cs-field-write">
+  <div class="cs-field-write-inner" {{#if this.disabled}}
+       title="{{#if data}} {{data}} {{else}} {{noValue}} {{/if}}" {{/if}}>
+    <input class="dctmw-combofield-search-box-input" type="text" tabindex="0" placeholder="{{emptyLabel}}"
+      value="{{data}}" {{#if idBtnLabel}}aria-labelledby="{{idBtnLabel}}" {{/if}} {{#if
+      ariaRequired}}aria-required="{{ariaRequired}}" {{/if}} id="{{controlId}}" aria-autocomplete="list" role="combobox"
+      name="" autocomplete="off">
+    <span class="dctmw-icon-caret-down {{#if this.disabled}}dctmw-icon-disabled {{/if}}">{{#if isJATO}}{{{caretIconSVG}}}{{/if}}</span>
+    </input>
+    <div class="dctmw-combofield-options-container">
+      <ul class='dctmw-lazy-loading'>
+        <li role="menuitem" class="csui-loading-parent-wrapper binf-disabled csui-disbaled">
+          <span class="csui-loading-dots-wrapper"><span class="csui-loading-dot"></span><span
+              class="csui-loading-dot"></span><span class="csui-loading-dot"></span></span>
+        </li>
+      </ul>
+      <div class="dctmw-scrollable-options">
+        <ul class="dctmw-combofield-options dctmw-combofield-options-list" role="listbox">
+          <li class="dctmw-searchResultCountDetails dctmw-combo-results-message">{{dropDownSearchResultCount}}</li>
+          <li class="dctmw-none-item"><a tabindex="-1" title="{{name}}">
+              <span class="dctmw-listfield-icon-container"></span>
+              <span class="dctmw-listfield-text-container">{{noneLabel}}</span>
+            </a></li>
+        </ul>
+      </div>
+      {{#if isEditable}}
+      <ul class="dctmw-add-new-option" role="listbox">
+        <li id="{{addNewId}}" role="option" class="dctmw-select-add-new-option"><a tabindex="-1"
+            title="{{addNewLabel}}">
+            <span class="dctmw-listfield-icon-container"></span> {{addNewLabel}}</a></li>
+      </ul>
+      {{/if}}
+    </div>
+  </div>
+</div>
+{{else}}
+<div class="cs-field-read">
+  <div class="cs-field-read-inner">
+    <div class="btn-container">
+      <button {{#if isReadOnly}} aria-disabled="true" {{/if}} aria-label="{{readModeAria}}" {{#if this.hasData}}
+        title="{{name}}" {{else}} title="{{noValue}}" {{/if}}>
+        {{#if this.hasData}}
+        <span class="selected-label" data-id="{{dataId}}">{{data}}</span>
+        {{else}}
+        <span class="selected-label placeholder">
+          {{emptyLabel}}</span>
+        {{/if}}
+      </button>
+    </div>
+  </div>
+</div>
+{{/if}}
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

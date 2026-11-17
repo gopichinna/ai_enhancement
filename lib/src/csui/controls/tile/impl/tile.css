@@ -1,17 +1,40 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 
 
 .cs-tile .tile-content {
   margin: 0;
   padding: 0;
-  height: calc(100% - 64px);
+  height: calc(100% - var(--jatx-tile-header-height, 64px));
 }
 
 .cs-expanded.binf-modal .binf-modal-header .tile-type-icon,
 .cs-expanded.binf-modal .binf-modal-header .tile-type-image {
   width: 1em;
+
   
   line-height: 1em;
+}
+
+.binf-widgets .cs-tile .tile-header {
+  height: var(--jatx-tile-header-height);
+  padding: var(--jato-padding-xl, 0) var(--jato-padding-xl, 8px) var(--jato-padding-xl, 0) var(--jato-padding-xl, 16px);
+}
+
+.binf-widgets .cs-tile .tile-header .tile-type-icon {
+  flex: 0 0 var(--jatx-tile-header-icon-spacing);
+}
+
+.binf-widgets .cs-tile .csui-heading{
+  padding: var(--jato-padding-xxs, 0);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .cs-tile .csui-custom-view-search .csui-saved-search-submit-container {
+  background-color: unset;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--jato-padding-lrg);
+  height: 48px;
 }

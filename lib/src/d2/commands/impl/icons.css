@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-icon-cut {
   background-image: url('icons/toolbar_cut.svg');
@@ -40,6 +40,7 @@
   height: 32px;
   background-size: 20px;
 }
+
 
 
 .binf-widgets .csui-toolbar.binf-nav > li > a > .icon.d2-icon-node-tree {
@@ -407,9 +408,11 @@ html[dir=rtl] .d2-icon-tableview-close{
   height: 32px;
   width: 32px;
 }
+
 .d2-icon-export {
   background-image: url("icons/icon-export.svg");
 }
+
 .d2-icon-refresh {
   background-image: url("icons/icon-refresh.svg");
 }
@@ -417,9 +420,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-acquire-task {
   background-image: url('icons/toolbar_acquire_task.svg');
 }
+
 .d2-icon-acquire-task:hover {
   background-image: url('icons/toolbar_acquire_task_mo.svg');
 }
+
 .d2-icon-acquire-task:active {
   background-image: url('icons/toolbar_acquire_task_md.svg');
 }
@@ -427,9 +432,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-forward-task {
   background-image: url('icons/toolbar_forward_task.svg');
 }
+
 .d2-icon-forward-task:hover {
   background-image: url('icons/toolbar_forward_task_mo.svg');
 }
+
 .d2-icon-forward-task:active {
   background-image: url('icons/toolbar_forward_task_md.svg');
 }
@@ -437,9 +444,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-reject-task {
   background-image: url('icons/toolbar_reject_task.svg');
 }
+
 .d2-icon-reject-task:hover {
   background-image: url('icons/toolbar_reject_task_mo.svg');
 }
+
 .d2-icon-reject-task:active {
   background-image: url('icons/toolbar_reject_task_md.svg');
 }
@@ -447,9 +456,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-delegate-task {
   background-image: url('icons/toolbar_delegate_task.svg');
 }
+
 .d2-icon-delegate-task:hover {
   background-image: url('icons/toolbar_delegate_task_mo.svg');
 }
+
 .d2-icon-delegate-task:active {
   background-image: url('icons/toolbar_delegate_task_md.svg');
 }
@@ -457,9 +468,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-update-performers {
   background-image: url('icons/toolbar_update_performers.svg');
 }
+
 .d2-icon-update-performers:hover {
   background-image: url('icons/toolbar_update_performers_mo.svg');
 }
+
 .d2-icon-update-performers:active {
   background-image: url('icons/toolbar_update_performers_md.svg');
 }
@@ -467,9 +480,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-change-task-priority {
   background-image: url('icons/toolbar_change_task_priority.svg');
 }
+
 .d2-icon-change-task-priority:hover {
   background-image: url('icons/toolbar_change_task_priority_mo.svg');
 }
+
 .d2-icon-change-task-priority:active {
   background-image: url('icons/toolbar_change_task_priority_md.svg');
 }
@@ -477,9 +492,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-read-task {
   background-image: url('icons/toolbar_read_task.svg');
 }
+
 .d2-icon-read-task:hover {
   background-image: url('icons/toolbar_read_task_mo.svg');
 }
+
 .d2-icon-read-task:active {
   background-image: url('icons/toolbar_read_task_md.svg');
 }
@@ -487,9 +504,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-unread-task {
   background-image: url('icons/toolbar_unread_task.svg');
 }
+
 .d2-icon-unread-task:hover {
   background-image: url('icons/toolbar_unread_task_mo.svg');
 }
+
 .d2-icon-unread-task:active {
   background-image: url('icons/toolbar_unread_task_md.svg');
 }
@@ -497,9 +516,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-add-task-note {
   background-image: url('icons/toolbar_add_task_note.svg');
 }
+
 .d2-icon-add-task-note:hover {
   background-image: url('icons/toolbar_add_task_note_mo.svg');
 }
+
 .d2-icon-add-task-note:active {
   background-image: url('icons/toolbar_add_task_note_md.svg');
 }
@@ -507,9 +528,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-abort-workflow {
   background-image: url('icons/toolbar_abort_workflow.svg');
 }
+
 .d2-icon-abort-workflow:hover {
   background-image: url('icons/toolbar_abort_workflow_mo.svg');
 }
+
 .d2-icon-abort-workflow:active {
   background-image: url('icons/toolbar_abort_workflow_md.svg');
 }
@@ -527,15 +550,19 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-abort-workflow {
   background-size: cover !important;
 }
+
 .icon-d2-create-relations{
   background-image: url('icons/toolbar-create-relation32-action.svg');
 }
+
 .icon-d2-create-relations:hover{
   background-image: url('icons/toolbar-create-relation32-action-hover.svg');
 }
+
 .icon-d2-create-relations:active{
   background-image: url('icons/toolbar-create-relation32-action-active.svg');
 }
+
 .binf-widgets.rtl .csui-filterToolbar .task-toolbar-back-button,
 .binf-widgets.rtl .csui-rightToolbar .task-toolbar-open-panel{
   transform: scaleX(-1);

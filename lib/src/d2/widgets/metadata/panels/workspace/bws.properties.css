@@ -1,0 +1,131 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-bws-property-page-panel .cs-tabpanel .tab-links {
+  display: none;
+}
+
+.binf-widgets .d2-metadata-edit-properties {
+  float: right;
+  position: relative;
+  width: auto;
+  height: 3rem;
+  margin-right: 20px;
+}
+
+
+.binf-widgets .d2-metadata-edit-properties .d2-metadata-edit-properties-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.binf-widgets .d2-bws-property-wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  }
+
+.binf-widgets .d2-bws-property-page-edit-button-panel {
+  display: flex; 
+  right: 70px; 
+  align-items: center;
+  cursor: pointer;
+  height: 20px;
+  width: 35px;
+  vertical-align: middle;
+  position: absolute;
+  top: 10px;
+  z-index: 1000;
+}
+
+.binf-widgets .d2-bws-property-page-panel {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding-bottom: 40px;
+}
+
+.binf-widgets .primary-btn {
+  background-color: #1f2660;
+  color: #ffffff;
+  border-radius: 16px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  min-width: 120px;
+  padding: 0 24px;
+  white-space: nowrap;
+}
+
+.binf-widgets .primary-btn:hover {
+  background-color: #1f2660;
+  color: #ffffff;
+}
+
+
+    
+    .binf-widgets .secondary-btn {
+      background-color: transparent;
+      color: #1f2660;
+      border: 2px solid #1f2660;
+      font-weight: normal;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      border-radius: 16px;
+      display: flex;
+      height: 32px;
+      justify-content: center;
+      min-width: 80px;
+      padding: 0 24px;
+      white-space: nowrap;
+      }
+      
+      .binf-widgets .secondary-btn:hover {
+        background-color: #f5f6fa;
+        }
+
+.binf-widgets .d2-bws-property-page-edit-footer-button {
+  padding: 5px 0 5px 0;
+  border-top: 1px solid var(--jato-tabs-navigation-content-color-disabled, #cccccc);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.binf-widgets .d2-bws-property-page-edit-footer-button .d2-metadata-edit-properties-buttons .binf-btn .d2-otc-btn .d2-metadata-edit-properties-save-button .primary-btn {
+  color: #ffffff;
+  width: fit-content;
+}
+
+
+.binf-widgets .d2-bws-property-page-edit-footer-button .binf-btn.d2-otc-btn.d2-metadata-edit-properties-save-button.primary-btn[disabled] {
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: #666666;
+  opacity: 0.65;
+  color: #ffffff;
+}
+
+
+.binf-widgets .d2-bws-property-page-edit-footer-button .binf-btn.d2-otc-btn.d2-metadata-edit-properties-save-button.primary-btn:focus,
+.binf-widgets .d2-bws-property-page-edit-footer-button .binf-btn.d2-otc-btn.d2-metadata-edit-properties-save-button.primary-btn:active { 
+  color: #ffffff;
+}
+
+.binf-widgets .d2-bws-property-page-panel .smart-tab-panel.d2-metadata-properties .smart-tab-contents-wrapper .binf-tab-content {
+    height: 100% !important; 
+}

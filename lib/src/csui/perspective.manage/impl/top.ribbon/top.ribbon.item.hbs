@@ -1,3 +1,15 @@
-<div class="csui-top-ribbon-layout">{{layout}}</div>
-<div class="csui-top-ribbon-name">{{name}}</div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<div class="csui-perspective-layout">
+    <div class="csui-top-ribbon-layout csui-layout-icon csui-layout-{{layout}}" tabindex="0">
+        {{#if isJATO}}
+       <div class="csui-jato-top-ribbon-edit-container">
+            <otc-icon class="csui-top-ribbon-edit" size="16" svg="{{editDraftSVG}}" ispresentation></otc-icon>
+        </div>
+        {{else}}
+        <span class="csui-top-ribbon-edit"></span>
+        {{/if}}
+    </div>
+    <div class="csui-perspective-action"></div>
+    <div class="csui-top-ribbon-name"></div>
+</div>
+
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 
 
@@ -21,6 +21,13 @@
   align-items: center;
   line-height: initial;
   display: inline-flex;
+  justify-content: center;
+}
+
+
+.binf-widgets .cs-thumbnail-wrapper .csui-thumbnail-results .csui-selected-checkbox {
+  width: var(--jato-measure-24, 28px);
+  height: var(--jato-measure-24, 28px);
 }
 
 .binf-widgets .cs-thumbnail-wrapper .csui-selected-checkbox .csui-selectlabel {

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-user-list-field .d2-user-listfield-options-wrapper .d2-user-list-option .user-options-item,
 .binf-widgets .d2-user-list-field .d2-user-listfield-selection-wrapper .d2-user-list-selection .user-selection-item {
@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.binf-widgets .d2-user-list-field .d2-user-listfield-options-wrapper .d2-user-list-option .user-options-item .d2-listfield-icon-container {
+.binf-widgets .d2-user-list-field .d2-user-listfield-options-wrapper .d2-user-list-option .user-options-item .dctmw-listfield-icon-container {
   height: 12px;
   width: 12px;
   margin: 0;
@@ -32,17 +32,17 @@
   width: 100%;
 }
 
-.binf-widgets .d2-listfield.d2-user-list-field .d2-listfield-options-wrapper .d2-listfield-options > li.d2-none-item > a {
+.binf-widgets .d2-listfield.d2-user-list-field .dctmw-listfield-options-wrapper .d2-listfield-options>li.dctmw-none-item>a {
   padding: 15px 10px;
 }
 
-.binf-widgets .d2-listfield.d2-user-list-field .d2-add-new-option {
+.binf-widgets .d2-listfield.d2-user-list-field .dctmw-add-new-option {
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-.binf-widgets .d2-listfield.d2-user-list-field .d2-add-new-option .d2-select-add-new-option > a {
-  color: #333;
+.binf-widgets .d2-listfield.d2-user-list-field .dctmw-add-new-option .dctmw-select-add-new-option>a {
+  color: #333333;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -52,20 +52,37 @@
   width: 100%;
 }
 
-.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .d2-listfield-selectedvalues > li > a > span.d2-listfield-icon-container.d2-icon-drag {
+.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .dctmw-listfield-selectedvalues>li>a>span.dctmw-listfield-icon-container.dctmw-icon-drag {
   height: 24px;
   margin: 0;
 }
 
-.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .d2-listfield-selectedvalues > li > a > span.d2-listfield-icon-container.d2-icon-selected-close{
+.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .dctmw-listfield-selectedvalues>li>a>span.dctmw-listfield-icon-container.dctmw-icon-selected-close {
   margin: 0 5px;
 }
 
-.binf-widgets .d2-listfield.d2-user-list-field .d2-listfield-options-wrapper .binf-widgets .d2-listfield-options li.d2-invalid-option .user-info .info-text,
-.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .d2-listfield-selectedvalues li.d2-invalid-option .user-info .info-text{
+.binf-widgets .d2-listfield.d2-user-list-field .dctmw-listfield-options-wrapper .binf-widgets .d2-listfield-options li.dctmw-invalid-option .user-info .info-text,
+.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .dctmw-listfield-selectedvalues li.dctmw-invalid-option .user-info .info-text {
   color: #df3526;
 }
 
-.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .d2-listfield-selectedvalues > li > a > span.pre-user-info {
+.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .dctmw-listfield-selectedvalues>li>a>span.pre-user-info {
   margin-right: 10px;
+}
+
+.binf-widgets .dctmw-listfield li.dctmw-selectedList.d2-user-list-option {
+  height: 48px;
+}
+
+.binf-widgets .dctmw-listfield li.dctmw-selectedList.d2-user-list-option otc-checkbox.dctmw-list-option-item {
+  height: 48px;
+}
+
+.binf-widgets .dctmw-listfield-options-wrapper li.dctmw-selectedList.d2-user-list-option a {
+  padding: 0 10px;
+}
+
+.binf-widgets .d2-user-list-field .d2-user-listfield-options-wrapper li.dctmw-selectedList.d2-user-list-option .user-options-item otc-checkbox.dctmw-list-option-item .user-info-container {
+  width: 100%;
+  margin: 0 0 0 6px;
 }

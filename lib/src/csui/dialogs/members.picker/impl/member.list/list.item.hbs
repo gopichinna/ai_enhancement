@@ -3,30 +3,32 @@
   <span class="csui-item-standard csui-list-group-item" role="list">
     <div class="user-profile-row">
       <div class="user-profile-img  binf-pull-left">
-        <span class="csui-icon csui-start-icon {{selected}}"></span>
-
-        {{#if isGroup}}
-          <span
-              class="csui-user-default-picture-dlg csui-icon image_group_placeholder_permission"></span>
-        <span><img src="{{imgSrc}}" alt="{{imgAlt}}"
-                   class="binf-hidden csui-user-profile-picture-dlg csui-member-group-icon csui-icon" /></span>
-        <span class="csui-icon csui-end-icon icon-sidebar-expand24 binf-hidden"></span>
+        {{#if isJATO}}
+          <otc-icon class="csui-icon csui-start-icon" svg="{{jatoCheckMarkSelect}}" ispresentation disableeffects></otc-icon>
         {{else}}
-
-          <span
-              class="csui-user-default-picture-dlg csui-icon image_user_placeholder">{{initials}}</span>
-        <span><img src="{{imgSrc}}" alt="{{imgAlt}}"
-                   class="binf-hidden csui-user-profile-picture-dlg csui-member-group-icon csui-icon" /></span>
-
+          <otc-icon class="csui-icon csui-start-icon" icon="csui_action:action_confirm32" ispresentation disableeffects></otc-icon>
+        {{/if}}
+        {{#if isGroup}}
+          {{#if svgMimeGroup}}           
+           <otc-icon type="raw" size="32" svg="{{svgMimeGroup}}" class="csui-user-default-picture-dlg csui-icon" isPresentation></otc-icon>
+           <otc-icon class="csui-icon csui-end-icon binf-hidden" disableEffects="true" size="16px" svg="{{jatoRightCaretIcon}}" isPresentation></otc-icon>
+          {{ else}}
+            <otc-icon class="csui-user-default-picture-dlg csui-icon" icon="csui_action:mime_group32" isPresentation></otc-icon>
+            <otc-icon class="csui-icon csui-end-icon binf-hidden" disableEffects="true" isPresentation icon="csui_action:action_caret_right32"></otc-icon>
+          {{/if}}
+        {{ else}}
+          <otc-avatar class="csui-memberpicker-user-avator" image="" size="32" initials="{{initials}}">{{ initials }}</otc-avatar>
         {{/if}}
       </div>
 
       <div class="user-profile-info  binf-pull-left">
-        <div class="{{#if isGroup}} user-group-name {{/if}}"><span title="{{name}}"
-                                                                   class="binf-pull-left csui-list-item-title">{{name}}</span></div>
+        <div class="{{#if isGroup}} user-group-name {{/if}}">
+          <span title="{{name}}" class="binf-pull-left csui-list-item-title">{{name}}</span>
+        </div>
         {{#unless isGroup}}
-          <div><span class="binf-pull-left csui-list-item-department"
-                     title="{{department}}">{{department}}</span></div>
+          <div>
+            <span class="binf-pull-left csui-list-item-department" title="{{department}}">{{department}}</span>
+          </div>
         {{/unless}}
       </div>
 
@@ -35,4 +37,4 @@
   </span>
 {{/if}}
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,16 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-cell-wf-count-container {
+    height: 18px;
+    width: 18px;
+}
+
+.d2-cell-wf-count-wrapper .d2-cell-wf-count-container .wf-association-status-icon {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-image: url('images/status_workflow24.svg');
+}
+
+

@@ -1,17 +1,30 @@
+/* css!csui/widgets/search.custom/impl/search.custom */
+
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-search-forms-footer-justify-content: flex-start;
+  --jatx-measure-11: 11px;
+  --jatx-measure-18: 18px;
+  --jatx-const-auto: auto;
+}
+
 .binf-widgets .csui-saved-search-submit-container {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 42px;
+  background-color: var(--jato-background-elevation-inline-content, #f7f7f7);
+}
+
+[data-smart-theme="cf"] .binf-widgets .csui-saved-search-submit-container {
   border-top: 1px solid #cfcfcf;
-  background-color: #f7f7f7;
 }
 
 .binf-widgets .csui-search-results-custom .csui-saved-search-submit-container {
   display: flex;
-  justify-content: center;
+  justify-content: var(--jatx-search-forms-footer-justify-content, center);
   align-items: center;
+  padding : var(--jato-padding-xxl, 0)
 }
 
 .csui-saved-search-form, .csui-custom-view-search {
@@ -47,18 +60,20 @@
   left: auto;
 }
 
-.binf-widgets .csui-custom-search-form-submit,
-.binf-widgets .csui-custom-reset-form-submit {
-  bottom: 4px;
-  border-radius: 16px;
-  height: 32px;
-  line-height: 12px;
-  color: #ffffff;
-  min-width: 80px;
-  border: none;
+[data-smart-theme="cf"] {
+  .binf-widgets .csui-custom-search-form-submit,
+  .binf-widgets .csui-custom-reset-form-submit {
+    bottom: 4px;
+    border-radius: 16px;
+    height: 32px;
+    line-height: 12px;
+    color: #ffffff;
+    min-width: 80px;
+    border: none;
+  }
 }
 
-.binf-row .csui-custom-search-form-submit {/*for right alignment of the search button*/
+[data-smart-theme="cf"] .binf-row .csui-custom-search-form-submit {/* for right alignment of the search button */
   right: 23px;
   position: absolute;
 }
@@ -84,7 +99,7 @@
   color: #ffffff;
 }
 
-.csui-custom-view-search .csui-search-form-submit-disabled {
+[data-smart-theme="cf"] .csui-custom-view-search .csui-search-form-submit-disabled {
   background-color: #c7c3c3;
   border-color: #c7c3c3;
 }
@@ -146,6 +161,9 @@
   width: 100%;
   padding-bottom: 0;
   display: initial;
+  font-size: var(--jatx-measure-11, unset);
+  height: var(--jatx-const-auto, 28px);
+  line-height: var(--jatx-measure-18, 28px); 
 }
 
 .customsearch-attr-container .alpaca-container-label {
@@ -153,12 +171,12 @@
 }
 
 .customsearch-attr-container .cs-formfield .icon-container {
-  width: 0px;
+  width: 0;
   z-index: 1000;
 }
 
 .customsearch-attr-container .alpaca-container-item:not(:first-child) {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .customsearch-attr-container .cs-form .cs-form-doublecolumn > div:not(:first-child) {
@@ -166,7 +184,7 @@
 }
 
 .customsearch-attr-container .cs-form .cs-form-doublecolumn > div:nth-child(2) {
-  margin-top: 0em;
+  margin-top: 0;
 }
 
 .customsearch-attr-container .cs-userfield .cs-field-write .csui-control-userpicker .cs-search {
@@ -178,7 +196,7 @@
   height: 1em;
   display: inline-block;
   float: right;
-  margin: -1px 5px 0px 0px;
+  margin: -1px 5px 0 0;
 }
 
 .customsearch-attr-container .cs-userfield {
@@ -209,7 +227,7 @@
 }
 
 .customsearch-attr-container .cs-form-doublecolumn {
-  padding: 0px;
+  padding: 0;
 }
 
 .customsearch-attr-container .cs-form .alpaca-top:not(#generalform) {
@@ -222,7 +240,7 @@
   border-radius: 3px;
   border: 1px solid #757575;
   height: 1.8em;
-  padding: 0px;
+  padding: 0;
 }
 
 .customsearch-attr-container .cs-formfield .cs-field-read button:focus {
@@ -240,7 +258,7 @@
 }
 
 .csui-custom-search-formitems .cs-form .alpaca-field .binf-control-label.alpaca-control-label {
-  color: #717171;
+  color: var(--jato-typography-forms-text-color-label, #717171);
 }
 
 .csui-search-results .csui-popover-panel .customsearch-attr-container .cs-userfield .cs-field-write-inner {
@@ -248,7 +266,7 @@
 }
 
 .tile-content .csui-custom-search-formitems {
-  padding: 0 15px;
+  padding:  0 var(--jato-padding-lrg, 15px) 0 var(--jato-padding-xxl, 15px);
 }
 
 .customsearch-attr-container .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label,
@@ -257,7 +275,7 @@
 }
 
 .customsearch-attr-container .cs-userfield .cs-field-write-inner {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .customsearch-attr-container .cs-formfield.cs-nodepicker .icon-container {
@@ -298,7 +316,7 @@
 
 .csui-custom-view-search .csui-saved-search-form.csui-custom-error .csui-error-icon-div .csui-error-icon {
   background-repeat: no-repeat;
-  margin: 15px;  /*15px + 1 px is given as border for this element*/
+  margin: 15px;  /* 15px + 1 px is given as border for this element */
 }
 
 .csui-custom-view-search .csui-saved-search-form.csui-custom-error .csui-suggestion {
@@ -310,12 +328,24 @@
 .csui-custom-view-search .csui-custom-search-formitems .cs-field-write-inner.cs-drop-down{
   position: relative;
   overflow: hidden;
-}.binf-widgets .csui-search-expandall-text {
-  padding-right: 5px;
+}
+
+/* css!csui/widgets/search.results/controls/expandall/impl/expandall */
+
+[data-smart-theme]:not([data-smart-theme="cf"]) { 
+  --jatx-csui-const-unset: unset;
+}
+
+.binf-widgets .csui-search-expandall-text {
+  padding-right: var(--jatx-csui-const-unset, 5px);
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
+  width: calc(100% - 14px);
+  line-height: var(--jato-measure-16, normal);
+  font-size: var(--jato-measure-12, 100%);
+  font-weight: 400;
 }
 
 .binf-widgets .csui-search-header-expand-all {
@@ -323,7 +353,6 @@
   border: none;
   background-color: transparent;
   padding: 0;
-  height: calc(100% - 2px);
 }
 
 .binf-widgets .csui-search-header-expand-all > .icon {
@@ -333,8 +362,4 @@
 
 .binf-widgets .csui-search-header-expand-all.icon-expandArrowUp {
   position: inherit;
-}
-
-.binf-widgets .csui-search-header-expand-all:focus {
-  outline: 1px dotted black;
 }

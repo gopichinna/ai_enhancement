@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .av4r-config-form {
     padding-bottom: 32px;
 }
@@ -21,8 +20,8 @@
 }
 
 .binf-widgets .av4r-config-form .cs-form .alpaca-container-label,
-.binf-widgets .av4r-config-form .cs-form .d2-user-list-field .user-selection-item .d2-icon-drag,
-.binf-widgets .av4r-config-form .cs-form .d2-user-list-field .d2-list-toolbar {
+.binf-widgets .av4r-config-form .cs-form .d2-user-list-field .user-selection-item .dctmw-icon-drag,
+.binf-widgets .av4r-config-form .cs-form .d2-user-list-field .dctmw-list-toolbar {
     display: none;
 }
 

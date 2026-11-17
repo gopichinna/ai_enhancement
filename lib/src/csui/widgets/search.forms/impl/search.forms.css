@@ -1,11 +1,15 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) { 
+  --jatx-csui-search-form-font-weight: 500;
+}
+
 .binf-widgets .csui-sidepanel .csui-search-form-collection a{
   align-items: center;
   display: flex;
   font-size: 14px;
-  color: #333333;
+  color: var(--jato-typography-text-color-primary, #333333);
   text-decoration: none;
   padding: 1px 0 1px 10px;
 }
@@ -37,7 +41,7 @@
 
 .binf-widgets .csui-sidepanel .csui-search-form-collection a:hover,
 .binf-widgets .csui-sidepanel .csui-search-form-collection a:focus {
-  background-color: #b2bec5;
+  background-color: var(--jato-background-rows-hover, #b2bec5);
   outline-style: none;
 }
 
@@ -48,10 +52,10 @@
 }
 
 .binf-widgets .csui-sidepanel .csui-search-form-collection .csui-search-label {
-  font-weight: bold;
-  font-size: 18px;
-  border-bottom: 1px solid #cccccc;
-  color: #333333;
+  font-weight: var(--jatx-csui-search-form-font-weight, bold);
+  font-size: var(--jato-measure-16, 18px);
+  border-bottom: 1px solid var(--jato-divider-color-primary, #cccccc);
+  color: var(--jato-typography-text-color-primary, #333333);
   width: 100%;
   line-height: 32px;
 }
@@ -69,7 +73,6 @@
 
 
 @media (forced-colors: active) {
-
   .binf-widgets .csui-sidepanel .csui-search-form-collection .csui-search-form-item a:hover,
   .binf-widgets .csui-sidepanel .csui-search-form-collection .csui-search-form-item a:focus {
       outline: 1px solid black;

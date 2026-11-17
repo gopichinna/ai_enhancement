@@ -1,0 +1,44 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .smart-inlinepanel-resizer {
+    width: 11px;
+    margin-right: -8px !important;
+    cursor: col-resize;
+    justify-content: center;
+    display: flex;
+    background-clip: padding-box;
+    background-color: transparent;
+    z-index: 1;
+    border: 0;
+}
+
+[data-smart-theme="cf"] .binf-widgets .smart-inlinepanel-resizer:hover {
+    border-right: 3px solid #2f4ed1;
+}
+
+[data-smart-theme="cf"] .binf-widgets .smart-inlinepanel-resizer:active,
+[data-smart-theme="cf"] .binf-widgets .smart-inlinepanel-resizer:focus {
+    border-right: 3px solid #232E72; 
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-inlinepanel-resizer {
+    border-right: 7px solid transparent;
+    border-radius: var(--jato-radii-xs);
+    margin: 8px 0;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-inlinepanel-resizer:hover .smart-inlinepanel-resizer-content {
+    width: 2px;
+    height: 100%;
+    background: var(--jato-border-color-primary-hover);    
+    border-radius: var(--jato-radii-xs);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-inlinepanel-resizer:active .smart-inlinepanel-resizer-content,
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-inlinepanel-resizer:focus .smart-inlinepanel-resizer-content {
+    width: 3px;
+    height: 100%;
+    background: var(--jato-border-color-primary-selected);    
+    border-radius: var(--jato-radii-xs);
+}

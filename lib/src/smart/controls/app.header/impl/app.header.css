@@ -1,25 +1,28 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-.binf-widgets .smart-app-header-otc-skiplinks {
-  position: relative;
-  z-index: 4; 
+:root {
+  --jatx-smart-app-header-bg-color: var(--jato-background-elevation-level-1, transparent);
 }
 
-.binf-widgets .smart-app-header-wrapper otc-header-bar>otc-button {
+.binf-widgets .smart-app-header-otc-skiplinks {
+  position: relative;
+  
+  z-index: 4;
+}
+
+.binf-widgets .smart-app-header-wrapper otc-header-bar otc-button {
   margin-left: 0;
 }
 
 .binf-widgets .smart-app-header-wrapper otc-header-bar {
-  z-index: 3;
   position: relative;
 }
 
-div.binf-widgets.svf-binf-widgets.svf-app-header{
+div.binf-widgets.svf-binf-widgets.svf-app-header {
   padding: 0 0 32px 0;
 }
 
-otc-avatar{
-  width: 42px;
-  height: 42px;
+.binf-widgets otc-header-bar {
+  background: var(--jatx-smart-app-header-bg-color);
 }

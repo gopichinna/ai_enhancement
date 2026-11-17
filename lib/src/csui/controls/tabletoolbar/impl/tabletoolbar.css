@@ -1,10 +1,9 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-tabletoolbar {
-  background-color: #dce4e8;
   color: #333333;
-  border-bottom: 1px solid #d5d5d5;
+  border-bottom: var(--jatx-const-none, 1px solid #d5d5d5);
   display: flex;
   width: 100%;
   height: 42px;
@@ -12,14 +11,21 @@
   margin-bottom: auto;
 }
 
-.binf-widgets .csui-tabletoolbar:not(.csui-wrap-text) {
-  padding-left: 0.625em; 
-  padding-right: 0.75em; 
-}
-
 .binf-widgets .csui-tabletoolbar > div {
   flex: 1 0 auto;
   display: flex;
+}
+
+.binf-widgets .csui-tabletoolbar > div:first-child {
+  margin-left: var(--jato-measure-4, 0.625em);
+}
+
+.binf-widgets .csui-tabletoolbar > div:last-child {
+  margin-right: var(--jato-measure-4, 0.75em);
+}
+
+.binf-widgets .csui-tabletoolbar > div.csui-addToolbar {
+  margin-left: var(--jato-measure-4, 0);
 }
 
 .csui-tabletoolbar > div > .csui-align-left {
@@ -36,6 +42,7 @@
   flex: 1 1 100%;
   display: flex;
   min-width: 0; 
+  margin: 0 16px;
 }
 
 .csui-tabletoolbar > div.csui-toolbar-caption .csui-item-title {
@@ -43,6 +50,7 @@
 }
 
 .csui-tabletoolbar > div.csui-addToolbar {
+  align-items: center;
   flex: 0 0 auto;
 }
 
@@ -80,13 +88,15 @@
 }
 
 @keyframes csui-tabletoolbar-state-fade-in-and-out {
-  from {
+  0% {
     opacity: .5;
   }
+
   50% {
     opacity: 1;
   }
-  to {
+
+  100% {
     opacity: .5;
   }
 }
@@ -116,7 +126,7 @@
   box-shadow: none;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (width <= 640px) {
   .binf-widgets .csui-tabletoolbar:not(.csui-wrap-text) {
     padding-left: 0;
     padding-right: 0;

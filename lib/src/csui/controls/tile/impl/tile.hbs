@@ -2,7 +2,13 @@
 
   {{#if icon}}
     <div class="tile-type-icon">
-      <span class="icon title-icon {{icon}}" aria-hidden="true"></span>
+    {{#if tileHeaderJatoIcon}}
+        <span class="tile-header-jato-icon">
+          <otc-icon type="raw" size="24" svg="{{tileHeaderJatoIcon}}"></otc-icon>
+        </span>
+      {{else}}
+        <span class="icon title-icon {{icon}}" aria-hidden="true"></span>
+      {{/if}}
     </div>
   {{else}}
     {{#if imageUrl}}
@@ -24,4 +30,4 @@
 
 <div class="tile-footer"></div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

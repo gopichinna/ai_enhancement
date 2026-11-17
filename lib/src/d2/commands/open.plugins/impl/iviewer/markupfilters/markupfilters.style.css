@@ -1,0 +1,169 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+.ot-iv-MarkupList-Row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border: 1px solid #cccccc;
+  margin: 4px 0;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  padding-left: 0.5em;
+}
+
+
+#ot-iv.ot-iv-app .ot-iv-MarkupList-Row input[type="checkbox"],
+#ot-iv.ot-iv-app .ot-iv-MarkupList-Row input[type="radio"],
+body .ot-iv-MarkupList-Row input[type="checkbox"],
+body .ot-iv-MarkupList-Row input[type="radio"] {
+  margin-left: 0.5em;
+}
+
+
+#ot-iv-ButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 0;
+}
+
+#ot-iv.ot-iv-app .ot-iv-MarkupList-Row .markup-delete-icon,
+body .ot-iv-MarkupList-Row .markup-delete-icon {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5em;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='-293 385 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath d='M-277,407h-8c-1.105,0-2-0.895-2-2v-12h12v12C-275,406.105-275.895,407-277,407' stroke-width='0px'/%3E%3Cpath d='M-279,390h-4v-1h4V390z M-279,388h-4c-0.552,0-1,0.448-1,1v1c0,0.552,0.448,1,1,1h4c0.552,0,1-0.448,1-1v-1C-278,388.448-278.448,388-279,388' stroke-width='0px'/%3E%3Cpath d='M-275,390h-12c-0.552,0-1,0.448-1,1v1h14v-1C-274,390.448-274.448,390-275,390' stroke-width='0px'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#ot-iv.ot-iv-app .ot-iv-MarkupList-Row,
+body .ot-iv-MarkupList-Row {
+  justify-content: flex-start !important;
+}
+
+
+
+
+.binf-modal.save-markupfilter-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+
+.save-markupfilter-dialog.question-header .binf-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 12px;
+  padding-left: initial;
+  margin: 0;
+}
+
+.binf-modal .save-markupfilter-dialog.question-header .binf-modal-title {
+  padding-top: 12px !important;
+}
+
+.title-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+#markup-filter-name-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  margin-top: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+#markup-filter-error {
+  color: red;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+
+.binf-modal-footer.save-markupfilter-dialog {
+  border-top: 0 none;
+  margin: 0;
+  border-bottom: 4px solid #111B57;
+  border-radius: 2px;
+}
+
+
+#saveMarkupFilterBtn,
+#cancelMarkupFilterBtn {
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.binf-widgets .binf-modal-header {
+  min-height: 48px;
+  padding: 0 24px;
+  background-color: #dce4e8;
+}
+
+.default-filter-checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #333333;
+  user-select: none;
+}
+
+.default-filter-checkbox input[type="checkbox"] {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.default-filter-checkbox label {
+  cursor: pointer;
+}
+
+#ot-iv.ot-iv-app .ot-iv-MarkupList-Row .markup-update-btn {
+  padding: 2px 6px;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  line-height: 1.2;
+  height: auto;
+}
+
+#ot-iv-ButtonWrapper button:disabled,
+#ot-iv-ButtonWrapper button.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.binf-modal-backdrop.binf-in {
+  display: block;
+  opacity: 0.5;
+}
+
+.markup-delete-icon.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .dctm-alert-custom-content.d2-task-delegate-model.csui-alert .binf-modal-dialog {
   width: 360px;
@@ -41,7 +41,7 @@
   max-width: calc(100% - 1px);
 }
 
-.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model .cs-form.task-delegate-form .cs-formfield .cs-field-write .d2-combofield-options-container .d2-combofield-options .d2-none-item {
+.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model .cs-form.task-delegate-form .cs-formfield .cs-field-write .dctmw-combofield-options-container .dctmw-combofield-options .dctmw-none-item {
   display: none;
 }
 

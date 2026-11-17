@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-split-pane-content.primary-pane-content .d2-target-browse-hide{
   height: 0;
@@ -13,8 +13,16 @@
   height: 100%;
 }
 
-.d2-target-browse .binf-modal-body {
-  height: calc(100% - 56px - 32px);
+.d2-split-panel-container .d2-target-browse .binf-modal-body {
+  height: calc(100% - 56px);
+}
+
+.d2-split-panel-container .d2-target-browse .csui-table-view {
+  height: calc(100% - 32px);
+}
+
+.d2-split-panel-container .d2-target-browse .d2-node-picker #csui-np-selectviews {
+  height: calc(100% - 32px);
 }
 
 .d2-target-browse .splitview-doclist-footer {
@@ -53,9 +61,9 @@ div .splitview-doclist.d2-target-browse.cs-dialog .cs-header-control .d2-target-
   align-items: center;
   justify-content: center;
   flex-direction: column;
-   
+
    gap: 1rem;
-   
+
 }
 
 .d2-target-browse .splitview-doclist-body .d2-node-picker .un-clickable-table-data .csui-table-view .csui-table-cell-name-div{

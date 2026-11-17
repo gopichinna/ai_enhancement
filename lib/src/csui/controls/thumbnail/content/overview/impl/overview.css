@@ -1,6 +1,10 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-binf-arrow-gap: -13px
+}
+
 .binf-widgets .csui-thumbnail-overview .binf-popover {
   width: 248px;
 }
@@ -10,44 +14,44 @@
 }
 
 .binf-widgets .csui-thumbnail-overview .binf-popover.binf-right {
-  border-left: 4px solid #0084ce;
+  border-left: 4px solid var(--jato-cta-focus-border, #0084ce);
   border-right-width: 0;
 }
 
 html[dir="rtl"] .binf-widgets .csui-thumbnail-overview .binf-popover.binf-right {
-  border-right: 4px solid #0084ce;
+  border-right: 4px solid var(--jato-cta-focus-border, #0084ce);
   border-left-width: 0;
 }
 
 html[dir="rtl"] .binf-widgets .csui-thumbnail-overview .binf-popover.binf-left {
-  border-left: 4px solid #0084ce;
+  border-left: 4px solid var(--jato-cta-focus-border, #0084ce);
   border-right-width: 0;
 }
 
 .binf-widgets .csui-thumbnail-overview .binf-popover.binf-right > .binf-arrow:after {
-  border-right-color: #0084ce;
+  border-right-color: var(--jato-cta-focus-border, #0084ce);
 }
 
 .binf-widgets .csui-thumbnail-overview .binf-popover.binf-left > .binf-arrow:after {
-  border-left-color: #0084ce;
+  border-left-color: var(--jato-cta-focus-border, #0084ce);
 }
 
 html[dir="rtl"] .binf-widgets .csui-thumbnail-overview .binf-popover.binf-right > .binf-arrow:after {
-  border-left-color: #0084ce;
+  border-left-color: var(--jato-cta-focus-border, #0084ce);
   left: 4px;
 }
 
 html[dir="rtl"] .binf-widgets .csui-thumbnail-overview .binf-popover.binf-left > .binf-arrow:after {
-  border-right-color: #0084ce;
+  border-right-color: var(--jato-cta-focus-border, #0084ce);
   right: 4px;
 }
 
 .binf-widgets .csui-thumbnail-overview .binf-popover.binf-right > .binf-arrow {
-  left: -14px;
+  left: var(--jatx-binf-arrow-gap, -14px);
 }
 
 .binf-widgets .csui-thumbnail-overview .binf-popover.binf-left > .binf-arrow {
-  right: -14px;
+  right:var(--jatx-binf-arrow-gap, -14px);
 }
 
 .binf-widgets .csui-thumbnail-overview .binf-popover .csui-overview-container {
@@ -61,6 +65,10 @@ html[dir="rtl"] .binf-widgets .csui-thumbnail-overview .binf-popover.binf-left >
   text-overflow: ellipsis;
   display: block;
   line-height: normal;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-thumbnail-overview .binf-popover .csui-overview-container .csui-thumbnail-properties:last-child {
+  padding-bottom: 6px;
 }
 
 .binf-widgets .csui-thumbnail-overview .binf-popover .csui-overview-container .csui-thumbnail-metadata-container .csui-thumbnail-properties .csui-thumbnail-value p.csui-master-order-column {
@@ -102,7 +110,7 @@ html[dir="rtl"] .binf-widgets .csui-thumbnail-overview .binf-popover.binf-left >
 .binf-widgets .csui-thumbnail-overview .binf-popover .csui-overview-container .csui-thumbnail-label {
   font-size: 12px;
   line-height: 14px;
-  color: #757575;
+  color: var(--jato-typography-forms-text-color-label, #757575);
   padding-bottom: 9px;
   white-space: normal;
 }
@@ -111,7 +119,7 @@ html[dir="rtl"] .binf-widgets .csui-thumbnail-overview .binf-popover.binf-left >
 .binf-widgets .csui-thumbnail-overview .binf-popover .csui-overview-container .csui-thumbnail-content-text {
   font-size: 14px;
   line-height: 16px;
-  color: #333333;
+  color: var(--jato-typography-text-color-primary, #333333);
 }
 
 .binf-widgets .csui-thumbnail-overview .binf-popover .csui-overview-container .csui-thumbnail-name .csui-thumbnail-name-justify-div {
@@ -141,10 +149,11 @@ html[dir="rtl"] .binf-widgets .csui-thumbnail-overview .binf-popover.binf-left >
 
 .binf-widgets .csui-thumbnail-overview .binf-popover .csui-overview-container .csui-thumbnail-properties.csui-thumbnail-overview-properties .csui-thumbnail-properties {
   padding: 0;
+  height: var(--jato-measure-24, 32px);
 }
 
 .binf-widgets .csui-thumbnail-overview .binf-popover .csui-overview-container .csui-thumbnail-properties.csui-thumbnail-overview-properties {
-  padding: 0 6px 0 0;
+  padding: 0;
 }
 
 .binf-widgets .csui-thumbnail-overview .binf-popover .csui-overview-container .csui-thumbnail-properties.csui-thumbnail-overview-reserved {
@@ -160,6 +169,7 @@ html[dir="rtl"] .binf-widgets .csui-thumbnail-overview .binf-popover.binf-left >
 
 .binf-widgets .csui-thumbnail-overview .binf-popover .csui-overview-container .csui-thumbnail-properties-actions {
   display: flex;
+  align-items: center;
 }
 
 .binf-widgets .csui-thumbnail-overview .binf-popover .csui-overview-container .csui-thumbnail-name-value.csui-thumbnail-no-default-action {

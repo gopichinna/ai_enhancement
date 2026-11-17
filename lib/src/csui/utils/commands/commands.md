@@ -19,9 +19,10 @@ var SomeCommand = CommandModel.extend({
     scope:       'single|multiple' // command capabilities
   },
 
-  // Optional; if the command_key and scope is not enough to
-  // decide, override this method to apply additional logic
-  enabled: function (status) {
+  /* Optional; enabled method checks if current signature has to be hidden and additionally verifies with
+  the command_key, scope. Incase command_key execution needs to be skipped then supressCommandKeyValidation can set as true from options (Can be used for client-only commands).
+  override this method to apply additional logic*/
+  enabled: function (status, options) {
     return true | false;
   },
 

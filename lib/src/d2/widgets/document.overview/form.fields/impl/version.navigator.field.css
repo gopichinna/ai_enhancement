@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .cs-formfield.d2-version-selector {
   height: auto;
@@ -15,7 +15,7 @@
 }
 
 .binf-widgets .d2-version-selector .link-container a.v-link:focus {
-  outline: 1px dotted #333;
+  outline: 1px dotted #333333;
 }
 
 .binf-widgets .d2-version-selector .link-container a.v-link:not([data-id]) {

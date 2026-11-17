@@ -1,3 +1,9 @@
-<button type="button" class="csui-acc-focusable csui-sidebar-item {{iconClass}}" title="{{tooltip}}"> 
-</button>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+{{#if isJato}}
+    <otc-button class="csui-acc-focusable csui-sidebar-item {{iconClass}}" size="regular" type="subtle" title="{{tooltip}}">
+        <otc-icon svg="{{iconSVG}}" ispresentation></otc-icon>
+    </otc-button>
+{{else}}
+    <otc-button type="button" class="csui-acc-focusable csui-sidebar-item {{iconClass}}" title="{{tooltip}}" icon="{{iconName}}"> 
+    </otc-button>
+{{/if}}
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

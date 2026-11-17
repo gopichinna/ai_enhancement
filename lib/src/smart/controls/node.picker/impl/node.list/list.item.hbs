@@ -7,7 +7,11 @@
   {{else}}
   <span class="smart-target-browse-checkbox csui-selectable {{selected}}">
     {{#if isSingleSelect}}
-    {{{icon-v2 iconName="csui_smart_utility_checkmark16" states="false" size="xsmall"}}}
+      {{#if isJATO}}
+        <otc-icon svg="{{jatoActionCheckmarkSelect}}" class="smart-checkbox-jato-icon" isPresentation disableeffects></otc-icon>
+      {{else}}
+        <otc-icon icon="smart_action:action_confirm32" ispresentation disableeffects></otc-icon>
+      {{/if}}
     {{else}}
     <otc-checkbox class="smart-np-list-checkbox" {{#if disableCheckbox}}disabled{{/if}}
       interactiveonly="true" tabindex="-1"></otc-checkbox>
@@ -19,13 +23,13 @@
     </span>
     <span class="smart-list-title ">
       <span class="smart-flex-guard">
-        <span title="{{name}}" class="csui-list-item-title" {{#if notBrowsable}}disabled{{/if}} tabindex="-1">
+        <span title="{{name}}" class="csui-list-item-title {{#if notBrowsable}}smart-disabled-list-item{{/if}}"  tabindex="-1">
           {{name}}
         </span>
         <span class="binf-hidden smart-indicator-wrapper"></span>
       </span>
       {{#if secText}}
-      <span title="{{secText}}" class="smart-list-item-sec-text" {{#if notBrowsable}}disabled{{/if}} tabindex="-1">
+      <span title="{{secText}}" id="{{secTextId}}" class="smart-list-item-sec-text" tabindex="-1">
         {{secText}}
       </span>
       {{/if}}
@@ -40,11 +44,20 @@
     class="smart-location-title" tabindex="-1">{{locationName}}</span>
     </span>
   {{/if}}
+   {{#unless showInlineActionBar}}
   <span class="csui-icon csui-end-icon smart-v2-icon-parent">
     {{#if isBrowsed}}
-    {{{icon-v2 iconName="csui_smart_utility_caret_right16" size="xsmall"}}}
+      {{#if isJATO}}
+        <otc-icon disableEffects="true" svg="{{jatoCaretIcon}}" isPresentation></otc-icon>
+      {{else}}
+        <otc-icon disableEffects="true" isPresentation icon="smart_action:action_caret_right32"></otc-icon>
+      {{/if}}
     {{/if}}
   </span>
+  {{/unless}}
+  {{/if}}
+  {{#if showInlineActionBar}}
+  <div class="csui-list-inlineactions-btn"></div>
   {{/if}}
 </span>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

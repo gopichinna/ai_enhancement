@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .d2-select-markup.d2-stepper-wizard .binf-modal-dialog .binf-modal-header .cs-close {
   margin: 16px 0 0 0;
 }
@@ -31,7 +30,7 @@
 
 .binf-widgets .d2-markup-treelistitem .binf-panel-heading {
   height: 42px;
-  padding: 0 16px 0 16px;
+  padding: 0 16px 0 8px;
   background-color: #ffffff;
   color: #333333;
   border: 0;
@@ -86,6 +85,7 @@
 
 .d2-markup-treelistitem .d2-markup-content .csui-checkbox-view {
   height: 42px;
+  padding-left: 2em;
 }
 
 .d2-markup-treelistitem .d2-markup-content .csui-checkbox-icon-container {

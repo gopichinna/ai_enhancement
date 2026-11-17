@@ -1,6 +1,10 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme='cf']) {
+  --jatx-csui-boolean-focus-outline: 1px solid var(--jato-cta-focus-border);
+}
+
 .binf-widgets .cs-booleanfield {
   display: inline-flex;
   width: 100%;
@@ -14,8 +18,8 @@
 }
 
 .cs-booleanfield .control-area:focus-within {
-  outline: 1px dotted #333333;
-  outline-offset: -1px;
+  outline: var( --jatx-csui-boolean-focus-outline, 1px dotted #333333);
+  outline-offset: var(--jato-measure-2, -1px);
 }
 
 .cs-booleanfield .cs-field-inner {
@@ -61,9 +65,42 @@
 }
 
 .binf-widgets .binf-switch.binf-switch-wrapper.binf-switch-on .binf-switch-container {
-  background-color: #666666; 
+  background-color: var(--jato-control-toggle-background-neutral, #666666); 
   display: flex;
   align-items: center;
+}
+
+.binf-widgets .binf-switch.binf-switch-wrapper.binf-switch-on .binf-switch-container:hover {
+  background-color: var(--jato-control-background-primary-hover, #666666);
+}
+
+.binf-widgets .binf-switch.binf-switch-wrapper.binf-switch-on .binf-switch-container:active {
+  background-color: var(--jato-control-background-primary-active, #666666);
+}
+
+.binf-widgets .binf-switch.binf-switch-disabled.binf-switch-wrapper.binf-switch-on,
+.binf-widgets .binf-switch.binf-switch-readonly.binf-switch-wrapper.binf-switch-on,
+.binf-widgets .binf-switch.binf-switch-indeterminate.binf-switch-wrapper.binf-switch-on {
+  background-color: var(--jato-control-background-primary-disabled,  #666666);
+}
+
+.binf-widgets .binf-switch.binf-switch-disabled.binf-switch-wrapper.binf-switch-on .binf-switch-container,
+.binf-widgets .binf-switch.binf-switch-readonly.binf-switch-wrapper.binf-switch-on .binf-switch-container,
+.binf-widgets .binf-switch.binf-switch-indeterminate.binf-switch-wrapper.binf-switch-on .binf-switch-container {
+  background-color: var(--jatx-const-transparent, #666666);
+}
+
+.binf-widgets .binf-switch.binf-switch-disabled.binf-switch-wrapper.binf-switch-off,
+.binf-widgets .binf-switch.binf-switch-readonly.binf-switch-wrapper.binf-switch-off,
+.binf-widgets .binf-switch.binf-switch-indeterminate.binf-switch-wrapper.binf-switch-off {
+  background-color: var(--jato-control-toggle-background-selected-disabled, #0072aa);
+}
+
+
+.binf-widgets .binf-switch.binf-switch-disabled.binf-switch-wrapper.binf-switch-off .binf-switch-container,
+.binf-widgets .binf-switch.binf-switch-readonly.binf-switch-wrapper.binf-switch-off .binf-switch-container,
+.binf-widgets .binf-switch.binf-switch-indeterminate.binf-switch-wrapper.binf-switch-off .binf-switch-container {
+  background-color: var(--jatx-const-transparent, #0072aa);
 }
 
 .binf-widgets .binf-switch.binf-switch-wrapper.binf-switch-disabled {
@@ -72,25 +109,51 @@
 }
 
 .binf-widgets .binf-switch.binf-switch-wrapper.binf-switch-off {
-  background-color: #0072aa;
+  background-color: var(--jato-control-background-primary-selected-neutral, #0072aa);
 }
 
 .cs-formfield.cs-booleanfield .binf-switch .binf-switch-handle-on {
-  background-color: #ffffff; 
-  border-radius: 10px;
+  background-color: var(--jato-control-toggle-background-handle, #ffffff); 
+  border-radius:  var(--jato-radii-xl, 10px);
+  border-color: var(--jato-control-border-primary-neutral, unset);
   font-size: 13px;
   width: 16px !important;
-  height: 16px;
+  height: 16px !important;
   color: white;
   font-size: 0;
   margin: 4px 3px 4px 3px;
   padding: 8px;
 }
 
+.cs-formfield.cs-booleanfield .binf-switch.binf-switch-on:active .binf-switch-handle-on,
+.cs-formfield.cs-booleanfield .binf-switch.binf-switch-off:active .binf-switch-handle-off {
+  width: var(--jato-measure-20, 16px);
+  height: var(--jato-measure-20, 16px);
+  padding: var(--jato-measure-10, 8px);
+  margin: var(--jato-measure-1, 0);
+}
+
+.cs-formfield.cs-booleanfield .binf-switch:hover .binf-switch-handle-on {
+  border-color: var(--jato-control-border-primary-hover, unset);
+}
+
+.cs-formfield.cs-booleanfield .binf-switch:active .binf-switch-handle-on {
+  border-color: var(--jato-control-border-primary-active, unset);
+}
+
+.cs-formfield.cs-booleanfield .binf-switch:hover .binf-switch-handle-off {
+  border-color: var(--jato-control-border-primary-hover, unset);
+}
+
+.cs-formfield.cs-booleanfield .binf-switch:active .binf-switch-handle-off {
+  border-color: var(--jato-control-border-primary-active, unset);
+}
+
 .cs-formfield.cs-booleanfield .binf-switch .binf-switch-handle-off {
   
-  background: #ffffff;
-  border-radius: 12px;
+  background: var(--jato-control-toggle-background-handle, #ffffff);
+  border-radius:  var(--jato-radii-xl, 12px);
+  border-color: var(--jato-control-border-primary-neutral, unset);
   color: white;
   font-size: 0;
   padding: 0;
@@ -109,19 +172,34 @@
   margin: -1px 2px 5px -7px;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-switch .binf-switch-label,
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-switch.binf-switch-off .binf-switch-handle-on {
+  visibility: hidden;
+}
+
 .binf-widgets .binf-switch.binf-switch-on,
 .binf-widgets .binf-switch.binf-switch-on .binf-switch-container {
-  background-color: #666666; 
+  background-color: var(--jato-control-toggle-background-neutral, #666666); 
   display: flex;
   align-items: center;
 }
 
 .binf-widgets .binf-switch.binf-switch-off,
 .binf-widgets .binf-switch.binf-switch-off .binf-switch-container {
-  background-color: #0072aa; 
+  background-color: var(--jato-control-background-primary-selected-neutral, #0072aa); 
   display: flex;
   align-items: center;
   width: 61px !important;
+}
+
+.binf-widgets .binf-switch.binf-switch-off:hover,
+.binf-widgets .binf-switch.binf-switch-off .binf-switch-container:hover {
+  background-color: var(--jato-control-background-primary-selected-hover, #0072aa);
+}
+
+.binf-widgets .binf-switch.binf-switch-off:active,
+.binf-widgets .binf-switch.binf-switch-off .binf-switch-container:active {
+  background-color: var(--jato-control-background-primary-selected-active, #0072aa);
 }
 
 .binf-switch.binf-switch-wrapper.binf-switch-mini.binf-switch-on .binf-switch-label {
@@ -135,9 +213,55 @@
   border-radius: 12px;
   width: 46px !important;
   font-size: 13px;
-  border-color: #a9a9a9;
+  border-color: var(--jato-control-border-primary-neutral, #a9a9a9);
   height: 24px !important;
+
   
+}
+
+.cs-formfield.cs-booleanfield .binf-switch:hover {
+  border-color: var(--jato-control-border-primary-hover, #a9a9a9);
+}
+
+.cs-formfield.cs-booleanfield .binf-switch.binf-switch-focused:hover {
+  border-color: var(--jato-control-border-primary-hover, #666666);
+}
+
+.cs-formfield.cs-booleanfield .binf-switch:active {
+  border-color: var(--jato-control-border-primary-active, #a9a9a9);
+}
+
+.cs-formfield.cs-booleanfield .binf-switch.binf-switch-disabled,
+.cs-formfield.cs-booleanfield .binf-switch.binf-switch-readonly,
+.cs-formfield.cs-booleanfield .binf-switch.binf-switch-indeterminate {
+  pointer-events: none;
+  border-color: var(--jato-control-border-primary-disabled, #a9a9a9);
+}
+
+.cs-formfield.cs-booleanfield .binf-switch.binf-switch-disabled .binf-switch-handle-on,
+.cs-formfield.cs-booleanfield .binf-switch.binf-switch-readonly .binf-switch-handle-on,
+.cs-formfield.cs-booleanfield .binf-switch.binf-switch-indeterminate .binf-switch-handle-on {
+  background-color: var(--jato-control-toggle-background-handle-disabled,  #ffffff);
+  border-color: var(--jato-control-border-primary-disabled, unset);
+}
+
+.cs-formfield.cs-booleanfield .binf-switch.binf-switch-disabled .binf-switch-handle-off,
+.cs-formfield.cs-booleanfield .binf-switch.binf-switch-readonly .binf-switch-handle-off,
+.cs-formfield.cs-booleanfield .binf-switch.binf-switch-indeterminate .binf-switch-handle-off {
+  background-color: var(--jato-control-toggle-background-handle-selected-disabled,  #ffffff);
+  border-color: var(--jatx-const-transparent, unset);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .cs-formfield.cs-booleanfield .binf-switch .binf-switch-handle-on,
+[data-smart-theme]:not([data-smart-theme="cf"]) .cs-formfield.cs-booleanfield .binf-switch .binf-switch-handle-off {
+  opacity: var(--jato-measure-1);
+  border-style: solid;
+  border-width: 0.75px;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .cs-formfield.cs-booleanfield .binf-switch {
+  border-style: solid;
+  border-width: var(--jato-measure-1);
 }
 
 .binf-switch.binf-switch-wrapper.binf-switch-mini .binf-switch-label {
@@ -145,7 +269,7 @@
 }
 
 .binf-switch.binf-switch-wrapper.binf-switch-off .binf-switch-label {
-  padding: 0px 9px;
+  padding: 0 9px;
   background-position: 3px 3px;
   background-repeat: no-repeat;
 }
@@ -164,7 +288,7 @@ html[dir="rtl"] .binf-switch.binf-switch-wrapper.binf-switch-off .binf-switch-la
 }
 
 html[dir="rtl"] .cs-formfield.cs-booleanfield .binf-switch-off .binf-switch-handle-off {
-  margin: 2px 0px;
+  margin: 2px 0;
 }
 
 @media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -184,7 +308,7 @@ html[dir="rtl"] .cs-formfield.cs-booleanfield .binf-switch-off .binf-switch-hand
 
   .binf-switch.binf-switch-off .binf-switch-label {
     margin: -1px 2px 4px -9px;
-    padding: 0px 9px 0px 11px !important;
+    padding: 0 9px 0 11px !important;
   }
 
   .cs-formfield.cs-booleanfield .binf-switch .binf-switch-handle-on {
@@ -192,11 +316,11 @@ html[dir="rtl"] .cs-formfield.cs-booleanfield .binf-switch-off .binf-switch-hand
   }
 
   .binf-switch.binf-switch-wrapper.binf-switch-off.binf-switch-mini.binf-switch-readonly .binf-switch-handle-on.binf-switch-primary {
-    padding: 8px 0px 8px 0px;
+    padding: 8px 0 8px 0;
   }
 
   .binf-switch.binf-switch-wrapper.binf-switch-on.binf-switch-mini.binf-switch-readonly .binf-switch-label {
-    margin: 0px 8px 4px 4px;
+    margin: 0 8px 4px 4px;
   }
 
   .binf-switch.binf-switch-wrapper.binf-switch-off.binf-switch-mini.binf-switch-readonly .binf-switch-label {
@@ -208,7 +332,7 @@ html[dir="rtl"] .cs-formfield.cs-booleanfield .binf-switch-off .binf-switch-hand
   }
 
   html[dir="rtl"] .binf-switch.binf-switch-wrapper.binf-switch-off .binf-switch-label {
-    padding: 0px 9px !important;
+    padding: 0 9px !important;
     width : 21px !important;
     margin: -1px 2px 5px 6px;
   }

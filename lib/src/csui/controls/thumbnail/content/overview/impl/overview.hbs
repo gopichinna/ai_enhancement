@@ -1,6 +1,9 @@
-<button type="button" class="csui-thumbnail-overview-icon" title="{{overViewTitle}}"
-        aria-haspopup="dialog" aria-label="{{overViewTitle}}" {{#if focusable}}tabindex="0"
-        {{else}}tabindex="-1"{{/if}}>
-  {{{icon-v2 iconName='csui_action_view_column32' states='true' }}}
-</button>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<otc-button class="csui-thumbnail-overview-icon" title="{{overViewTitle}}" ariahaspopup="dialog" arialabel="{{overViewTitle}}"
+    {{#if focusable}}tabindex="0"
+    {{else}}tabindex="-1"{{/if}}
+    iconAppearance="{{iconAppearance}}"
+    {{#if isJATO}} size="small" {{else}} icon="{{iconName}}"{{/if}}>
+        
+    {{#if isJATO}} <otc-icon svg="{{iconSVG}}"></otc-icon> {{/if}}
+</otc-button>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

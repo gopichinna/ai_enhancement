@@ -1,0 +1,19 @@
+<ul
+  class="{{#if showHorizontal}}dctmw-listfield-chicklets{{/if}} dctmw-listfield-selectedvalues {{#if isSortable}}dctmw-listfield-sortable{{/if}}">
+  {{#if readOnly}}
+  {{#if noData}}
+  <li>
+    <div class="btn-container">
+      <button aria-disabled="true" title="{{noValue}}">
+        <span class="placeholder" title="{{emptyLabel}}">{{emptyLabel}}</span>
+      </button>
+    </div>
+  </li>
+  {{/if}}
+  {{/if}}
+</ul>
+<div class="dctmw-list-toolbar">
+  <a href="#" class="dctmw-list-toolbar-action" data-dctmw-list-toolbar-action="showMore">{{showMoreLabel}}</a>
+  <a href="#" class="dctmw-list-toolbar-action" data-dctmw-list-toolbar-action="showLess">{{showLessLabel}}</a>
+</div>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

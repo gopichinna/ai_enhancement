@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .signout-view {
   display: flex;
@@ -43,7 +43,7 @@
 
 .signout-view .message-wrapper p {
   font-size: 20px;
-  color: #fff;
+  color: #ffffff;
   line-height: 32px;
   margin-bottom: 28px;
 }
@@ -86,6 +86,6 @@
   font-size: 20px;
   line-height: 32px;
   font-weight: 300;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
 }

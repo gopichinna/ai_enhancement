@@ -1,10 +1,15 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme='cf']) {
+    --jatx-dctmw-tab-panel-header-font-weight: 500;
+    --jatx-dctmw-tab-panel-background-color: none;
+}
+
 .binf-widgets .d4-tabpanel-view {
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: var(--jatx-dctmw-tab-panel-background-color, #ffffff);
 }
 
 .d4-tabpanel-view .binf-tab-content {
@@ -20,7 +25,7 @@
     min-width: 624px;
 }
 
-.binf-widgets .d4-tabpanel-view .binf-tab-content > div:not(.binf-hidden):not(:first-child) {
+[data-smart-theme='cf'] .binf-widgets .d4-tabpanel-view .binf-tab-content > div:not(.binf-hidden):not(:first-child) {
     border-top: 1px solid #cccccc;
 }
 
@@ -34,7 +39,6 @@
 }
 
 .binf-widgets .d4-tabpanel-view.smart-tab-panel .tab-links {
-    border: none;
     width: 60%;
     min-width: 624px;
 }
@@ -60,15 +64,15 @@
 }
 
 .binf-widgets .d4-tabpanel-view .d4-tab-content-header {
-    padding-top: 24px;
-    padding-bottom: 16px;
+    padding-top: var(--jato-line-height-lrg, 24px);
+    padding-bottom: var(--jato-padding-xxl, 16px);
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
-    color: #5f6e77;
+    font-weight: var(--jatx-dctmw-tab-panel-header-font-weight, 700);
+    font-size: var(--jato-font-size-xl, 18px);
+    line-height: var(--jato-line-height-lrg, 23px);
+    color: var(--jato-typography-text-color-primary, #5F6E77);
     display: flex;
     width: 60%;
     min-width: 624px;
+    letter-spacing: var(--jato-tracking-condensed-lt, 0);
 }
-

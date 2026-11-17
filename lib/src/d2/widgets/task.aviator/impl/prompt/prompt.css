@@ -1,0 +1,65 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-prompt {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 16px 8px 49px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-prompt otc-textarea {
+  
+
+  
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-prompt .aie-top {
+  display: flex;
+  column-gap: 8px;
+  margin-bottom: 12px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-prompt .aie-top > * {
+  width: fit-content;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-prompt .aie-clear,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-prompt .aie-ask {
+  position: absolute;
+  bottom: 24px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-prompt .aie-clear {
+  inset-inline-start: -33px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-prompt .aie-ask {
+  inset-inline-end: 2px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-prompt .aie-limit {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  margin-inline-start: auto;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-prompt .aie-typed {
+  font-weight: 700;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-prompt::after {
+  content: " ";
+  position: absolute;
+  top: -24px;
+  inset-inline-start: -38px;
+  width: calc(480px - 16px - 49px + 24px + 16px + 3px);
+  height: 24px;
+  background-image: linear-gradient(0deg, #ffffff 15%, transparent);
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-prompt * > otc-button:not(:first-child),
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-prompt > otc-button:not(:first-child) {
+  margin-left: 0; 
+}

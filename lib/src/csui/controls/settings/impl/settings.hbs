@@ -1,10 +1,9 @@
-<div class="settings-dropdown-container csui-settings-show"></div>
-{{#if showDefaults}}
-<div class="selected-columns-container"></div>
-<div class="available-columns-container"></div>
-<div class="summary-description-container" role='dialog' aria-label='summary/description'></div>
-{{/if}}
-{{#each regions}}
-<div id="{{this}}"></div>
-{{/each}}
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<otc-menu 
+    class="csui-search-setting-menu" 
+    buttonId="{{btnId}}" 
+    ariarole="menu" 
+    isopen
+    maxitems="0"
+    scrollable="">
+</otc-menu>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

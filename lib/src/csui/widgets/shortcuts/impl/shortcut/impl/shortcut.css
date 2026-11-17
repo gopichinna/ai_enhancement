@@ -1,6 +1,14 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-add-shortcut-border-style: solid;
+}
+
+.binf-widgets .tile.csui-shortcut-group-container {
+  border: transparent;
+}
+
 .binf-widgets .csui-shortcut-container .csui-shortcut-item {
   flex-grow: 1;
   background-color: rgba(247, 247, 247, 0.82);
@@ -39,6 +47,7 @@
   color: #757575;
 }
 
+.binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-disabled .tile-title .csui-heading.binf-line-clamp,
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-disabled .tile-icon {
   opacity: 0.5;
 }
@@ -63,10 +72,68 @@
   overflow: visible; 
 }
 
-.binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-shortcut-item.csui-pman-shortcut-new {
-  background: rgba(249, 249, 249, 0.2);
-  border: 2px dashed #ffffff;
+.binf-widgets.perspective-editing .csui-pman-editable-widget .tile.csui-shortcut-container.csui-shortcut-group-container .csui-shortcut-item.csui-pman-shortcut-new {
+  background-color: var(--jato-background-elevation-level-0, rgba(249, 249, 249, 0.2));
+  border: 2px var(--jatx-csui-add-shortcut-border-style, dashed) var(--jato-border-color-difference, #ffffff);
   outline: none;
+}
+
+.binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-shortcut-item.csui-large .csui-shortcut-jato-icon {
+  width: 110px;
+  height: 110px;
+}
+
+.binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-shortcut-item.csui-small .csui-shortcut-jato-icon,
+.binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-shortcut-item.csui-medium .csui-shortcut-jato-icon {
+  width: 56px;
+  height: 56px;
+}
+
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-shortcut-item.csui-large .tile-title .csui-heading.binf-line-clamp {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.36px;
+  color: var(--jato-typography-text-color-secondary, #ffffff);
+}
+
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-shortcut-item.csui-pman-shortcut-new.csui-large .tile-title .csui-heading.binf-line-clamp {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-shortcut-item.csui-pman-shortcut-new.csui-small .tile-title .csui-heading.binf-line-clamp,
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-shortcut-item.csui-pman-shortcut-new.csui-medium .tile-title .csui-heading.binf-line-clamp {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0;
+  color: var(--jato-typography-text-color-secondary, #ffffff);
+}
+
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-shortcut-item.csui-small .tile-title .csui-heading.binf-line-clamp,
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-shortcut-item.csui-medium .tile-title .csui-heading.binf-line-clamp {
+  font-weight: 550;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+}
+
+.binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container.csui-shortcut-group-container .csui-shortcut-item.csui-pman-shortcut-new:hover {
+  border: 2px var(--jatx-csui-add-shortcut-border-style, dashed) var(--jato-border-color-primary-hover, #ffffff);
+}
+
+.binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container.csui-shortcut-group-container .csui-shortcut-item.csui-pman-shortcut-new:active {
+  border: 2px var(--jatx-csui-add-shortcut-border-style, dashed) var(--jato-border-color-primary-active, #ffffff);
+}
+
+.binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container.csui-shortcut-group-container .csui-shortcut-item.csui-pman-shortcut-new.csui-add-shortcut-widget-selected {
+  border: 2px var(--jatx-csui-add-shortcut-border-style, dashed) var(--jato-border-color-primary-selected, #ffffff);
 }
 
 .binf-widgets.perspective-editing .csui-pman-editable-widget .csui-shortcut-container .csui-pman-shortcut-new.csui-pman-shortcut-error {
@@ -100,14 +167,57 @@
    display: none;
  }
 
+ [data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .csui-shortcut-container:not(.csui-pman-editable-widget) .csui-shortcut-item.cs-background-image .smart-tile-group {
+  position: absolute;
+  bottom: 0;
+  top: unset;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 var(--jato-radii-lrg) var(--jato-radii-lrg);
+  padding: var(--jato-padding-xxl, 10px);
+  background: var(--jato-background-mask-area, #FFFFFF);
+  backdrop-filter: blur(24px);
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .csui-shortcut-container .csui-shortcut-item.cs-background-image .tile-title {
+    margin-top: 0;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .csui-shortcut-container .csui-shortcut-item.cs-background-image .tile-title .csui-heading.binf-line-clamp {
+  text-align: center;
+  vertical-align: middle;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .csui-shortcut-container:not(.csui-pman-editable-widget) .csui-shortcut-item.cs-background-image .smart-tile-group .tile-icon {
+  display: none;
+}
+
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets {
+.tile.csui-shortcut-group-container.csui-shortcut-container .csui-shortcut-item {
+    background-color: var(--jato-background-elevation-level-2);
+    box-shadow: 0 var(--jato-elevation-y-axis-level-2) var(--jato-elevation-blur-level-2) 0 var(--jato-elevation-shadow-color-level-2);
+    padding: var(--jato-padding-xl) var(--jato-padding-xxl) var(--jato-padding-xl) var(--jato-padding-xxl);
+    justify-content: center;    
+    border: 1px solid var(--jato-border-color-primary);
+  }
+
+.tile.csui-shortcut-group-container.csui-shortcut-container .csui-shortcut-item:focus,
+.tile.csui-shortcut-group-container.csui-shortcut-container .csui-shortcut-item:focus-visible {
+  box-shadow: 0 0 0 4px var(--jato-cta-focus-shadow);
+  outline-offset: 1px;
+  outline: 2px solid var(--jato-cta-focus-border);
+  }
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .binf-widgets .csui-shortcut-container .csui-shortcut-item:hover {
     outline: 2px solid #111b58;
-    box-shadow: 0px 0px 0px 3px #94bbea;
+    box-shadow: 0 0 0 3px #94bbea;
   }
 
   .binf-widgets .csui-shortcut-container .csui-shortcut-item:active {
     outline: 2px solid #111b58 !important;
-    box-shadow: 0px 0px 0px 4px #ffffff;
+    box-shadow: 0 0 0 4px #ffffff;
   }
 }

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .vd-replace-doc--dialog .binf-modal-header, .vd-replace-doc--dialog .binf-modal-footer {
     background-color: #DCE4E8;
@@ -54,7 +54,7 @@
 .vd-replace-doc--dialog .AddReplaceForm .option-block {
     display: flex;
     align-items: center;
-    border: 2px solid #ccc;
+    border: 2px solid #cccccc;
     border-radius: 5px;
     margin: .5rem 0;
     padding: .5rem;

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ns1="http://ns.adobe.com/SaveForWeb/1.0/" version="1.1" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve" class="ot-svg ot-svg--action">
+<circle class="ot-state" fill="none" stroke="none" cx="16" cy="16" r="14.0" /><style type="text/css">
+.st1--action-action_widgets32{fill-rule:evenodd;clip-rule:evenodd;fill:#333333;}
+</style>
+<metadata>
+	<ns1:sfw>
+		<ns1:slices />
+		<ns1:sliceSourceBounds bottomLeftOrigin="true" height="32" width="32" x="0" y="0" />
+	</ns1:sfw>
+</metadata>
+<path class="st1--action-action_widgets32 ot-metaphor" d="M8,7C7.448,7,7,7.448,7,8v5.927c0,0.552,0.448,1,1,1h5.927c0.552,0,1-0.448,1-1V8  c0-0.552-0.448-1-1-1H8z M8,17.073c-0.552,0-1,0.448-1,1V24c0,0.552,0.448,1,1,1h5.927c0.552,0,1-0.448,1-1v-5.927  c0-0.552-0.448-1-1-1H8z M24,8h-5.927v5.927H24V8z M18.073,7c-0.552,0-1,0.448-1,1v5.927c0,0.552,0.448,1,1,1H24  c0.552,0,1-0.448,1-1V8c0-0.552-0.448-1-1-1H18.073z M18.073,17.073c-0.552,0-1,0.448-1,1V24c0,0.552,0.448,1,1,1H24  c0.552,0,1-0.448,1-1v-5.927c0-0.552-0.448-1-1-1H18.073z" />
+<circle class="ot-focus" fill="none" stroke="none" cx="16" cy="16" r="15.5" /></svg>

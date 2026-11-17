@@ -1,13 +1,27 @@
-<div class="smart-group-card-header smart-card-visible" tabindex="0" role="button" aria-label="{{name}}" aria-expanded="true" aria-haspopup="menu">
+<div class="smart-group-card-header smart-card-visible" tabindex="0" role="button" aria-label="{{name}}" aria-expanded="false" aria-haspopup="menu">
     <div class="smart-group-card-header-toggle-btn">
-        <otc-icon icon="smart_action_16:action_caret_down16" iconAppearance="{{iconAppearance}}"
-            class="smart-left-panel-group-icon smart-left-panel-group-icon-up" title="{{collapseTooltip}}" arialabel=""></otc-icon>
-        <otc-icon icon="smart_action_16:action_caret_right16" iconAppearance="{{iconAppearance}}"
-            class="smart-left-panel-group-icon smart-left-panel-group-icon-down binf-hidden {{rtlClass}}" title="{{expandTooltip}}"
+        {{#if isJATO}}
+        <otc-icon svg="{{jatoRightArrowIconSvg}}" iconAppearance="{{iconAppearance}}"
+            class="smart-left-panel-group-icon smart-left-panel-group-icon-down"  title="{{expandTooltip}}" arialabel=""></otc-icon>
+        {{else}}
+        <otc-icon icon="smart_action_16:action_caret_right16" iconAppearance="{{caretIconAppearance}}"
+            class="smart-left-panel-group-icon smart-left-panel-group-icon-down" ispresentation  title="{{expandTooltip}}" arialabel=""></otc-icon>
+        {{/if}}
+
+        {{#if isJATO}}
+        <otc-icon svg="{{jatoDownArrowIconSvg}}" iconAppearance="{{iconAppearance}}"
+            class="smart-left-panel-group-icon smart-left-panel-group-icon-up binf-hidden {{rtlClass}}" title="{{collapseTooltip}}"
             arialabel=""></otc-icon>
+        {{else}}
+        <otc-icon icon="smart_action_16:action_caret_down16" iconAppearance="{{caretIconAppearance}}"
+            class="smart-left-panel-group-icon smart-left-panel-group-icon-up binf-hidden {{rtlClass}}" ispresentation title="{{collapseTooltip}}"
+            arialabel=""></otc-icon>
+        {{/if}}
     </div>
-    <div class="smart-group-card-header-icon"></div>
-    <div class="smart-group-card-header-title">{{name}}</div>
+    <div class="smart-group-card-header-content">
+        <div class="smart-group-card-header-icon {{#if hideGroupIcon}}binf-hidden{{/if}}"></div>
+        <div class="smart-group-card-header-title">{{name}}</div>
+    </div>
 </div>
-<div class="smart-group-card-list binf-collapse binf-in"></div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<div class="smart-group-card-list binf-collapse"></div>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

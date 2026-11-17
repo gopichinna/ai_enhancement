@@ -1,11 +1,11 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .esoc-simple-user-widget-form-body .csui-userprofilesessions{
   height: 100%;
 }
 
-.ups-conianter{
+.ups-container{
   overflow:auto;
   padding-bottom: 32px !important;
 }
@@ -14,13 +14,13 @@
 .binf-col-md-12 .ups-title {
   margin-top: 18px;
   margin-bottom: 18px;
-  padding: 0px;
+  padding: 0;
   display: block;
 }
 
 
 .binf-col-md-12.ups-title > h4 {
-  color: #00498f;
+  color: var(--jato-typography-text-color-primary, #00498f);
   font-size: 18px;
   line-height: 1.3;         
   text-overflow: ellipsis;
@@ -48,12 +48,13 @@
 }
 
 .ups-info-table > thead > tr > th {
-  background-color: rgba(226, 226, 226, 1);
-  border: solid 1px rgba(226, 226, 226, 1);
+  background-color: var(--jatx-const-transparent, rgba(226, 226, 226, 1));
+  border: solid 1px var(--jato-divider-color-primary, rgba(226, 226, 226, 1));
 }
 
 .ups-info-table > tbody > tr > td {
-  border-bottom: solid 1px rgba(221, 221, 221, 1);
+  border-bottom: solid 1px var(--jato-divider-color-primary, rgba(221, 221, 221, 1));
+  font-size:var(--jatx-list-font-size);
 }
 
 .ups-empty {

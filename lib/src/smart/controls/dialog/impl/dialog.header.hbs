@@ -1,65 +1,84 @@
 {{#if expandedHeader}}
-  {{#if actionIconNameLeft}}
-    <span class="tile-type-action-icon cs-icon-left" tabindex="0">
-      {{{icon-v2 iconName=actionIconNameLeft states='true'}}}
-    </span>
+  {{#if isJatoActionIcon}}
+    <otc-button class="tile-type-action-icon tile-type-jato-action-icon cs-icon-left">
+      <otc-icon svg="{{actionJatoIconSVG}}" ispresentation></otc-icon>
+    </otc-button>
   {{else}}
-    {{#if actionIconLeft}}
-      <span class="tile-type-action-icon cs-icon-left {{actionIconLeft}}" tabindex="0"></span>
-    {{/if}}
-  {{/if}}
-
-  {{#if iconNameLeft}}
-    <span class="tile-type-icon">
-      {{{icon-v2 iconName=iconNameLeft states='true'}}}
-    </span>
-    <div class="tile-title">
-  {{else}}
-    {{#if iconLeft}}
-        <span class="tile-type-icon cs-icon-left {{iconLeft}}"></span>
-      <div class="tile-title">
+    {{#if actionIconNameLeft}}
+      <span class="tile-type-action-icon cs-icon-left" tabindex="0">
+        {{{icon-v2 iconName=actionIconNameLeft states='true'}}}
+      </span>
     {{else}}
-      {{#if imageLeftUrl}}
-          <div class="tile-type-image {{imageLeftClass}}">
-            <span class="tile-type-icon tile-type-icon-img">
-              <img src="{{imageLeftUrl}}" alt="" aria-hidden="true">
-            </span>
-          </div>
-        <div class="tile-title">
-      {{else}}
-        <div class="tile-title cs-text-only">
+      {{#if actionIconLeft}}
+        <span class="tile-type-action-icon cs-icon-left {{actionIconLeft}}" tabindex="0"></span>
       {{/if}}
     {{/if}}
   {{/if}}
 
+  {{#if isJatoIcon}}
+    <span class="smart-header-jato-icon">{{{jatoHeaderIconSVG}}}</span>
+  {{else}}
+    {{#if iconNameLeft}}
+      <span class="tile-type-icon">
+        {{{icon-v2 iconName=iconNameLeft states='true'}}}
+      </span>
+    {{else}}
+      {{#if iconLeft}}
+        <span class="tile-type-icon cs-icon-left {{iconLeft}}"></span>
+      {{else}}
+        {{#if imageLeftUrl}}
+          <div class="tile-type-image {{imageLeftClass}}">
+            <span class="tile-type-icon tile-type-icon-img">
+              <img src="{{imageLeftUrl}}" alt="">
+            </span>
+          </div>
+        {{/if}}
+      {{/if}}
+    {{/if}}
+  {{/if}}
 
+  <div class="tile-title {{#if noHeaderIcon}}cs-text-only{{/if}}">
     <h2 class="tile-title binf-modal-title csui-heading">{{title}}</h2>
   </div>
 
-    <div class="cs-header-control"></div>
+  <div class="cs-header-control"></div>
 
   {{#if showCloseIcon}}
 
     {{#if embedExternalIcon}}
+
+      {{#if isJATOcustomIconRight}}
+        <otc-button type="subtle" class="cs-close smart-jato-icon-parent" title="{{dialogCloseButtonTooltip}}" tabindex="0"
+          size="small" arialabel="{{dialogCloseAria}}">
+            <otc-icon svg="{{jatoIconRight}}"></otc-icon>
+        </otc-button>
+      {{else}}
       {{!-- <button class="binf-btn" title="{{dialogCloseButtonTooltip}}" tabindex="0" aria-label="{{dialogCloseAria}}"> --}}
       <div class="cs-close smart-v2-icon-parent" title="{{dialogCloseButtonTooltip}}" tabindex="0" aria-label="{{dialogCloseAria}}" role="button">
         {{#if iconNameRight}}
           {{{icon-v2 iconName=iconNameRight states='true'}}}
-        {{else}} 
+        {{else}}
           {{#if iconRight}}
             
             <div class="icon circular {{iconRight}}"></div>
           {{/if}}
         {{/if}}
       </div>
+      {{/if}}
     {{else}}
-      <otc-button type="secondary" class="cs-close smart-v2-icon-parent" title="{{dialogCloseButtonTooltip}}" tabindex="0"
-        arialabel="{{dialogCloseAria}}" {{#if defaultCloseIcon}}icon="{{defaultCloseIcon}}" {{/if}}>    
-      </otc-button>
+      {{#if isJATO}}
+        <otc-button type="subtle" class="cs-close smart-v2-icon-parent" title="{{dialogCloseButtonTooltip}}" tabindex="0"
+          size="small" arialabel="{{dialogCloseAria}}" >
+            <otc-icon {{#if defaultCloseIcon}}svg="{{closeIconSVGContent}}"{{/if}} ></otc-icon>
+        </otc-button>
+      {{else}}
+        <otc-button type="secondary" class="cs-close smart-v2-icon-parent" title="{{dialogCloseButtonTooltip}}" tabindex="0"
+          arialabel="{{dialogCloseAria}}" {{#if defaultCloseIcon}}icon="{{defaultCloseIcon}}" {{/if}}>
+        </otc-button>
+      {{/if}}
     {{/if}}
 
   {{/if}}
 
-
 {{/if}}
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

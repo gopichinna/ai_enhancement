@@ -1,0 +1,27 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+[data-smart-theme]:not([data-smart-theme='cf']) {
+    --jatx-dctmw-textareafield-min-height: 68px;
+}
+
+.csui-field-textarea .control-area.cs-field-write.dctmw-textareafield .cs-field-write-inner.dctmw-textareafield .editable.dctmw-textareafield {
+    resize: vertical;
+    min-height: var(--jatx-dctmw-textareafield-min-height, 100px);
+    max-height: initial;
+    min-width: 50px;
+    max-width: 100%;
+}
+
+
+.csui-field-textarea .cs-textareafield .cs-field-write-inner {
+    display: block;
+}
+
+.alpaca-field-textarea .alpaca-control>.cs-formfield.cs-textareafield {
+    max-height: none;
+}
+
+.cs-formfield .cs-field-write.dctmw-textareafield .cs-field-write-inner.dctmw-textareafield .dctmw-textareafield.csui-formfield-disabled {
+    pointer-events: all;
+}

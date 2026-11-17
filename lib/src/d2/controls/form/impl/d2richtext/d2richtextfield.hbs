@@ -1,6 +1,21 @@
-<div class="cs-field-read">
-  <div class="cs-field-read-inner">
-    <div tabindex="0" class="btn-container cs-field-richtext-data" aria-label="{{readModeAria}}" role="button">{{#xif "this.data !== '' && this.data !== null"}}{{{data}}}{{else}}<span class="placeholder" title="{{noValue}}">{{#if schema.readonly}}{{else}}{{emptyLabel}}{{/if}}</span>{{/xif}}</div>
+{{#if writeonlyMode}}
+ <div class="cs-field-write">
+    <div class="cs-field-write-inner">
+        <otc-button class="expand-field" arialabel="{{expand}}" title="{{expand}}" icon="action:action_expand32"></otc-button>
+        <textarea class="rich-text-field binf-hidden">{{data}}</textarea>
+        <div class="rich-text-content-length" ></div>
+    </div>
   </div>
-</div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+{{else}}
+    <div class="cs-field-read">
+      <div class="cs-field-read-inner">
+      {{#if this.hasData}}
+        <div tabindex="0" class="btn-container cs-field-richtext-data" aria-label="{{readModeAria}}" role="button">{{#xif "this.data !== '' && this.data !== null"}}{{{data}}}{{else}}<span class="placeholder" title="{{noValue}}">{{#if schema.readonly}}{{else}}{{emptyLabel}}{{/if}}</span>{{/xif}}</div>
+        <otc-button class="expand-field" arialabel="{{expand}}" title="{{expand}}" icon="action:action_expand32"></otc-button>
+      {{else}}
+        <div tabindex="0" class="placeholder" title="{{emptyLabel}}">{{emptyLabel}}</span>
+      {{/if}}
+      </div>
+    </div>
+{{/if}}
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

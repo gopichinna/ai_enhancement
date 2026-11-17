@@ -1,3 +1,13 @@
+{{#if isJatoTheme}}
+<otc-button type="subtle" size="small" class="csui-control csui-disclosure" ariaexpanded="{{ariaExpanded}}"
+        arialabel="{{ariaLabel}}" {{disabled}} title="{{title}}">
+  {{#if ariaExpanded}}
+      <otc-icon svg='{{svgCaretUpIcon}}'></otc-icon>
+  {{else}}
+      <otc-icon svg='{{svgCaretDownIcon}}'></otc-icon>
+  {{/if}}
+</otc-button>
+{{else}}
 <button class="csui-control csui-disclosure" aria-expanded="{{ariaExpanded}}"
         aria-label="{{ariaLabel}}" {{disabled}} title="{{title}}">
   {{#if ariaExpanded}}
@@ -6,4 +16,5 @@
     {{{icon-v2 iconName='csui_caret_down' size='xsmall'}}}
   {{/if}}
 </button>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+{{/if}}
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,11 +1,21 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+
+
+[data-smart-theme]:not([data-smart-theme='cf']) {
+  --jatx-toolbar-zero-margin: 0px
+}
+
 .binf-widgets .csui-toolbar {
   font-size: inherit;
   flex: 1 1 auto;
   display: flex;
   height: inherit;
+  width: 100%;
+}
+
+.binf-widgets .csui-toolbar otc-toolbar{
   width: 100%;
 }
 
@@ -15,6 +25,7 @@
 
 .binf-widgets .csui-item-name > .csui-item-name-readonly > .csui-item-name-block {
   
+
   
 }
 
@@ -65,7 +76,10 @@
 
 .binf-widgets .csui-tabletoolbar .csui-toolbar.binf-nav > li > .custom-view-region {
   padding: 0;
-  margin: 0 6px;
+  margin-top: 0;
+  margin-right: var(--jatx-toolbar-zero-margin,6px);
+  margin-bottom: 0;
+  margin-left: var(--jatx-toolbar-zero-margin,6px);  
   cursor: pointer;
 }
 
@@ -84,6 +98,11 @@
   flex: 0 0 auto;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding-top: 0;
+  padding-right: var(--jato-measure-4, 0);
+  padding-bottom: 0;
+  padding-left: var(--jato-measure-4, 0);
 }
 
 .binf-widgets .csui-toolbar.binf-nav > li.binf-disabled {
@@ -94,14 +113,12 @@
 .binf-widgets .csui-toolbar.binf-nav > li > .custom-view-region {
   display: flex;
   height: auto;
-  min-width: 32px;
-  min-height: 32px;
   align-items: center;
   margin: auto 0;
 }
 
 .binf-widgets .metadata-content .metadata-inner-wrapper .csui-table-rowselection-toolbar-view {
-  background-color: #dce4e8;
+  background-color: var(--jatx-const-transparent, #dce4e8);
 }
 
 .binf-widgets .csui-table-rowselection-toolbar .binf-nav.binf-nav-pills > li > a,
@@ -165,6 +182,7 @@
   outline: none;
   box-shadow: none;
 }
+
 .binf-widgets .csui-table-rowselection-toolbar-view .binf-nav.binf-nav-pills .csui-toolitem.csui-toolitem-icononly {
   padding: 0;
   margin-right: 4px;
@@ -296,7 +314,10 @@
 .binf-widgets .csui-toolbar.binf-nav .csui-toolitem-icononly,
 .binf-widgets .csui-toolbar.binf-nav.binf-nav-pills > li.csui-more-dropdown-wrapper > a.binf-dropdown-toggle {
   padding: 0;
-  margin: 0 6px;
+  margin-top: 0;
+  margin-right: var(--jatx-toolbar-zero-margin,6px);
+  margin-bottom: 0;
+  margin-left: var(--jatx-toolbar-zero-margin,6px);
   border-radius: 50%;
 }
 
@@ -358,6 +379,10 @@
   align-self: flex-start;
 }
 
+.binf-widgets .csui-item-standard .csui-tileview-more-btn span.csui-caret {
+  vertical-align: middle;
+}
+
 .binf-widgets .binf-dropdown-submenu.binf-open > .binf-dropdown-menu.csui-fixed-submenu,
 .binf-widgets .binf-dropdown-submenu.binf-open.binf-dropdown > .binf-dropdown-menu.csui-fixed-submenu,
 .binf-widgets .binf-dropdown-submenu.binf-pull-down.binf-open.binf-dropup > .binf-dropdown-menu.csui-fixed-submenu {
@@ -375,7 +400,6 @@
 
 
 @media(forced-colors:active) {
-
   .binf-widgets .csui-table-rowselection-toolbar .csui-toolbar.binf-nav.binf-nav-pills > li > a.csui-toolitem:focus, .binf-widgets .csui-table-rowselection-toolbar-view .binf-nav.binf-nav-pills > li > a.csui-toolitem:focus {
     outline: 1px solid black;
     outline-offset: -2px;
@@ -391,6 +415,7 @@
       outline: 1px solid black;
       outline-offset: -2px;
   }
+
   .binf-widgets .csui-toolbar.binf-nav a.csui-toolitem.csui-toolitem-icononly:focus,
   .binf-widgets .csui-toolbar.binf-nav a.csui-toolitem.csui-toolitem-icononly:hover {
     outline: 1px solid black;
@@ -398,16 +423,19 @@
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (width <= 640px) {
   .binf-widgets .csui-tabletoolbar .csui-toolbar.binf-nav > li > .custom-view-region {
     margin: 0;
   }
+
   .binf-widgets .csui-toolbar.binf-nav .csui-toolitem-icononly {
     margin: 0;
   }
+
   .binf-widgets .csui-table-rowselection-toolbar .csui-selected-counter-region {
     padding-right: 0;
   }
+
   .binf-widgets .csui-table-rowselection-toolbar .binf-nav.binf-nav-pills > li > a,
   .binf-widgets .csui-table-rowselection-toolbar-view .binf-nav.binf-nav-pills > li > a,
   .binf-widgets .csui-table-rowselection-toolbar .binf-nav.binf-nav-pills > li > .custom-view-region {

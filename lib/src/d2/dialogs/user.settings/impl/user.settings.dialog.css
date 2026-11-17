@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .cs-dialog.d2-stepper-wizard.d2-user-settings .binf-modal-dialog {
   width: 448px;
   min-width: 448px;
@@ -125,6 +124,10 @@
 }
 
 .binf-widgets .d2-user-settings .d2-user-settings-dialog .default-language-container {
+  margin-top: 24px;
+}
+
+.binf-widgets .d2-user-settings .d2-user-settings-dialog .task-attachments-container .task-attachments {
   margin-top: 24px;
 }
 
@@ -274,10 +277,6 @@
   flex-direction: column;
 }
 
-.binf-widgets .d2-user-settings .settings-container.dateformat-settings-container {
-  border-bottom: 0;
-}
-
 .binf-widgets .d2-user-settings .user-settings-ctf .binf-popover {
   border: 0;
   padding: 0;
@@ -313,7 +312,7 @@
 
 .binf-widgets .d2-user-settings .cs-formfield.binf-has-error .cs-field-write input,
 .binf-widgets .d2-user-settings .cs-formfield.binf-has-error .cs-field-write button {
-  color: #000;
+  color: #000000;
   background-color: #fae9ea;
   border: 1px solid #df3324;
 }
@@ -333,24 +332,9 @@
   padding-top: 32px;
 }
 
-.binf-widgets .d2-user-settings .user-settings-profile .esoc-user-container.d2-userinfo-profile-pic,
-.binf-widgets .d2-user-settings .user-settings-profile .esoc-user-container.d2-userinfo-profile-pic:hover,
-.binf-widgets .d2-user-settings .user-settings-profile .esoc-user-container.d2-userinfo-profile-pic:focus,
-.binf-widgets .d2-user-settings .user-settings-profile .esoc-user-container.d2-userinfo-profile-pic:active {
-  text-decoration: none;
-}
-
-.binf-widgets .d2-user-settings .user-settings-profile .esoc-user-widget-avatar,
-.binf-widgets .d2-user-settings .user-settings-profile .esoc-userwidget-default-avatar {
+.binf-widgets .d2-user-settings .user-settings-profile .dctm-user-avatar {
   height: 112px;
   width: 112px;
-}
-
-.binf-widgets .d2-user-settings .user-settings-profile .esoc-userwidget-default-avatar {
-  display: inline-flex;
-  font-size: 56px;
-  font-weight: 300;
-  line-height: 72px;
 }
 
 .binf-widgets .d2-user-settings .user-settings-profile .user-profile{
@@ -393,14 +377,6 @@
   cursor: pointer;
 }
 
-.binf-widgets .d2-user-settings .user-settings-profile .user-avatar.disabled .esoc-user-container{
-  cursor: default;
-}
-
-.binf-widgets .d2-user-settings .user-settings-profile .user-avatar.disabled .esoc-user-container:focus{
-  outline: 0;
-}
-
 .binf-widgets .d2-user-settings .user-settings-profile .user-avatar.disabled .edit-user.edititable {
   opacity: 0;
 }
@@ -420,7 +396,7 @@
 
 .binf-widgets .d2-user-settings .user-settings-profile .user-avatar .user-avatar-action {
   padding: 6px 16px;
-  color: #333;
+  color: #333333;
   cursor: pointer;
   white-space: nowrap;
 }

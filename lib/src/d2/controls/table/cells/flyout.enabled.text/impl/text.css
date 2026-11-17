@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-table-cell-with-flyout .csui-table-cell-text .binf-popover {
   padding: 0;
@@ -92,7 +92,7 @@
   border-left: 4px solid #09bcef;
 }
 
-@media (min-width: 1581px) {
+@media (width >= 1581px) {
   .rtl.binf-widgets .d2-table-cell-with-flyout .csui-table-cell-text .span-text {
     padding-right: 16px;
   }

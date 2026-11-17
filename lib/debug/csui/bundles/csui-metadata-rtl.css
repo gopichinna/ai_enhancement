@@ -1,3 +1,5 @@
+/* css!csui/widgets/metadata/impl/header/dropdown.menu/dropdown.menu */
+
 .cs-dropdown-menu .binf-dropdown {
   display: inline-block;
   flex: 0 0 auto;
@@ -9,7 +11,7 @@
   height: auto;
 }
 
-.cs-dropdown-menu .binf-dropdown > .binf-dropdown-toggle {
+.cs-dropdown-menu .binf-dropdown > button {
   border: none;
   background: none;
   width: 18px;
@@ -19,7 +21,7 @@
   vertical-align: top;
 }
 
-.metadata-header .cs-dropdown-menu .binf-dropdown > .binf-dropdown-toggle {
+.metadata-header .cs-dropdown-menu .binf-dropdown > button {
   margin-top: 1px;
 }
 
@@ -39,7 +41,33 @@
 
 .binf-widgets .cs-metadata-item-name .cs-dropdown-menu .binf-open > .binf-dropdown-menu {
   max-height: calc(100vh - 160px);
-}/* Adjustments to dialog container for add item metdata */
+}
+
+/* css!csui/widgets/metadata/impl/metadata */
+
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-metadata-content-wrapper: calc(100% - 34px);
+  --jatx-metadata-border: 1px solid var(--jatx-const-transparent);
+  --jatx-smart-tab-contents-wrapper-height-reduction: 240px;
+  --jatx-csui-metadata-tab-panel-height: 48px;
+
+  .binf-widgets .cs-metadata .csui-icon-group .csui-icon-v2{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+[data-smart-theme="cf"] {
+  .binf-widgets .cs-metadata .cs-tab-links.binf-dropdown {
+    border: 1px solid #cccccc;
+  }
+
+  .binf-widgets .cs-metadata .smart-tab-links{
+    border-top: 1px solid #cccccc;
+  }
+}
+
+/* Adjustments to dialog container for add item metdata */
 .binf-widgets .cs-item-action-metadata {
   overflow: auto;
 }
@@ -54,7 +82,7 @@
   max-height: 672px;
 }
 
-@media (min-width: 1400px) {
+@media (width >= 1400px) {
   .cs-item-action-metadata .binf-modal-lg {
     width: 90%;
   }
@@ -82,7 +110,12 @@
 .binf-widgets .cs-item-action-metadata .cs-properties-wrapper .cs-metadata {
   /* height: calc(100% - 8em); */
   height: calc(100% - 96px);   /* 48(Footer) + 48(Header) = 96px   */
+
   /* subtract header and footer height */
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .cs-item-action-metadata .binf-modal-body {
+  height: calc(100% - 112px);   /* 64(Footer) + 48(Header) = 112px   */
 }
 
 .cs-item-action-metadata .binf-modal-body .cs-add-item-metadata-form {
@@ -120,14 +153,14 @@
   margin-top: 0;
 }
 
-/*added styles for horizontal scrollbar is overlapping with the attributes in ipad
+/* added styles for horizontal scrollbar is overlapping with the attributes in ipad
 @media (max-width: 1024px) {
   .cs-add-item-metadata-form .cs-metadata-properties .binf-tab-content {
     height: calc(100% - 48px);
   }
-}*/
+} */
 
-.cs-add-item-metadata-form .cs-metadata-properties .binf-tab-content.show-validation-error {
+.binf-widgets .cs-add-item-metadata-form .cs-metadata-properties .binf-tab-content.show-validation-error {
   height: calc(100% - 104px);
   margin-top: 1.5em;
 }
@@ -145,6 +178,7 @@
   height: 15px;
   margin: 0 0 0 0.5em;
   vertical-align: bottom;
+  background-color: var(--jato-background-elevation-level-1, #ffffff);
 }
 
 .cs-add-item-metadata-form .cs-metadata-properties .validation-error-message {
@@ -153,7 +187,7 @@
   font-weight: 400;
 }
 
-.cs-item-action-metadata .binf-modal-body .metadata-content-header {
+[data-smart-theme="cf"] .cs-item-action-metadata .binf-modal-body .metadata-content-header {
   background-color: #ffffff;
 }
 
@@ -189,11 +223,22 @@
   height: 100%;
 }
 
+.binf-widgets .cs-metadata-region{
+  border: var(--jato-measure-1, 0) solid var(--jato-border-color-primary, initial);
+  border-radius: var(--jato-radii-xl, unset);
+  background-color:  var(--jato-background-elevation-level-2, unset);
+  padding-bottom: var(--jato-measure-8, unset);
+}
+
 .binf-widgets .metadata-content-wrapper,
 .binf-widgets .cs_perspective_with_left_right_margin .cs-properties-wrapper .metadata-content-wrapper {
-  height: calc(100% - 64px + 2px);
+  height: var(--jatx-metadata-content-wrapper, calc(100% - 64px + 2px));
   width: 100%;
   float: right;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .metadata-content-wrapper {
+  background-color: var(--jato-background-elevation-level-2);
 }
 
 .binf-widgets .cs_perspective_with_left_right_margin .metadata-content-wrapper {
@@ -217,16 +262,18 @@
   border-bottom: 1px solid #cccccc;
 }
 */
-.cs-metadata .metadata-content-wrapper > .binf-tab-content::before {
+
+/* .cs-metadata .metadata-content-wrapper .binf-tab-content::before {
     content: "\00a0";
     width: 100%;
-    float: right;
-    background-color: #f2f2f2;
+    float: left;
+    background-color:  var(--jato-background-elevation-level-2, #f2f2f2);
     height: 50px;
     position: absolute;
-    border-top: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
-}
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid var(--jato-border-color-primary, #ccc);
+    
+} */
 
 .binf-widgets .metadata-inner-wrapper {
   /* Here should be height: 100%.  But the widget is supposed to take
@@ -236,23 +283,37 @@
   height: calc(100vh - 125px - 2em);
 }
 
-/*Tabpanel Overwrites start*/
+.binf-widgets .cs-metadata .cs-tab-links.binf-dropdown .csui-meta-data {
+  height: 100%;
+}
+
+.binf-widgets .cs-metadata .cs-tab-links.binf-dropdown .csui-meta-data .cs-metadata-dropdown {
+  display: inline-block;
+  outline: none;
+}
+
+.binf-widgets .cs-metadata .cs-tab-links.binf-dropdown .csui-meta-data .cs-metadata-dropdown-jato {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  outline: none;
+}
+
+/* Tabpanel Overwrites start */
 .binf-widgets .cs-metadata .cs-tab-links.binf-dropdown {
   padding: 0;
-  height: 50px;
+  padding-right: var(--jato-padding-xl,0);
+  height: var(--jato-size-height-48, 48px);
   width: auto;
   display: inline-block;
-  background: #f2f2f2;
-  border: 1px solid #cccccc;
+  background: var(--jato-background-elevation-level-2, #f2f2f2);
   border-right: 0;
   position: absolute;
   z-index: 3;
+
 /*   display: none; */
 }
-.binf-widgets .cs-metadata .smart-tab-links{
-  /* background: #f2f2f2; */
-  border-top: 1px solid #cccccc;
-}
+
 
 .binf-widgets .add-category .smart-tab-panel .tab-links.smart-tab-links {
   border-bottom: 0 none;
@@ -262,18 +323,25 @@
   z-index: 10;
 }
 
-/*.binf-widgets .smart-tab-panel .smart-tab-contents-wrapper .binf-tab-content,*/
+/* .binf-widgets .smart-tab-panel .smart-tab-contents-wrapper .binf-tab-content, */
 .binf-widgets .metadata-inner-wrapper .smart-tab-panel .smart-tab-contents-wrapper .binf-tab-content {
-  height: calc(100vh - 208px);
+  height: calc(100vh - var(--jatx-smart-tab-contents-wrapper-height-reduction, 208px));
 }
 
-/*Tabpanel Overwrites end*/
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .metadata-inner-wrapper .smart-tab-panel .tab-links.smart-tab-links {
+   border-bottom: unset; 
+}
+
+.binf-widgets .metadata-inner-wrapper .smart-tab-contents-wrapper {
+  border-top: var(--jatx-metadata-border, unset);
+}
+
+/* Tabpanel Overwrites end */
 .binf-widgets .cs-metadata .cs-tab-links.binf-dropdown button {
   border: 0;
-  height: calc(49px - 1px);
+  height: 46px; /* 48px - 2px border */
   background-color: #EEF2F4;
   text-decoration: none;
-  /* border-bottom: 1px solid #cccccc; */
   padding: 0 32px 0 8px;
 }
 
@@ -285,7 +353,6 @@
   outline-offset: 0;
   text-decoration: none;
   box-shadow: none;
-  border-bottom: 1px solid #cccccc;
 }
 
 .binf-widgets .cs-metadata .cs-tab-links.binf-dropdown button:focus,
@@ -293,20 +360,25 @@
   background-color: #e2e2e2;
 }
 
+.binf-widgets .cs-metadata .cs-tab-links.binf-dropdown button:focus-visible {
+  box-shadow: inset 0 0 0 2px #FFFFFF, inset 0 0 0 3px #2E3D98;
+  }
+
 .binf-widgets .cs-metadata .cs-tab-links.binf-dropdown .binf-dropdown-menu {
   margin-right: 2em;
   min-width: 5em;
   padding: 0;
   margin-top: 1px;
   max-height: calc(100vh - 220px);
-  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .binf-widgets .cs-metadata .cs-tab-links.binf-dropdown .binf-dropdown-menu li a:hover {
   background-color: #9ab3c2;
 }
+
 /* 
 .cs-metadata-properties .csui-tab-contents-header-wrapper {
   height: 62px;
@@ -321,6 +393,7 @@
   .cs-metadata .metadata-content-wrapper table > thead th div:focus {
     outline-style: solid;
   }
+
   .cs-metadata .metadata-content-wrapper table > thead th .csui-focusable-table-column-header:hover {
     outline-style: solid;
     outline-offset: -2px;
@@ -384,7 +457,7 @@
   font-size: 14px;
 }
 
-@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) {
+@media screen and (device-width <= 768px) and (device-height <= 1024px) and (-webkit-device-pixel-ratio: 1) {
   .cs-item-action-metadata .tile-footer,
   .cs-item-action-metadata .binf-modal-footer {
     position: absolute;
@@ -394,7 +467,7 @@
 }
 
 
-@media only screen and (min-device-width: 768px)  and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (device-width >= 768px)  and (device-width <= 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   @supports not (-webkit-overflow-scrolling: touch) {
     .binf-widgets .cs-dialog.cs-item-action-metadata .binf-modal-body {
       height: calc(100vh - 8em);
@@ -402,7 +475,7 @@
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   @supports not (-webkit-overflow-scrolling: touch) {
     .binf-widgets .cs-dialog.cs-item-action-metadata .binf-modal-body {
       height: calc(100vh - 8em);
@@ -411,7 +484,7 @@
 }
 
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (orientation:portrait) {
   @supports (-webkit-overflow-scrolling: touch) {
     .binf-widgets .cs-dialog.cs-item-action-metadata .binf-modal-body {
       height: calc(100vh - 311px);
@@ -419,7 +492,7 @@
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (orientation:landscape) {
   @supports (-webkit-overflow-scrolling: touch) {
     .binf-widgets .cs-dialog.cs-item-action-metadata .binf-modal-body {
       height: calc(100vh - 245px);
@@ -427,8 +500,8 @@
   }
 }
 
-/* Added due to LPAD-102104 as modal footer is not visible for dialogs in ipad*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+/* Added due to LPAD-102104 as modal footer is not visible for dialogs in ipad */
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) {
     .binf-widgets .cs-dialog.cs-item-action-metadata .binf-modal-body {
       height: calc(100% - 121px);
     }
@@ -448,10 +521,6 @@
   pointer-events: none;
 }
 
-.binf-widgets .cs-metadata-properties .binf-nav > li > a:hover > .cs-tablink-text {
-  border-bottom: 4px solid #666666;
-}
-
 .cs-add-item-metadata-form.add-category .cs-form .alpaca-top:not(#generalform) {
   border-top: 0;
 }
@@ -465,8 +534,8 @@
   position: relative;
 }
 
-/*added styles for horizontal scrollbar is overlapping with the attributes*/
-.cs-metadata .metadata-content-wrapper > .binf-tab-content {
+/* added styles for horizontal scrollbar is overlapping with the attributes */
+.cs-metadata .metadata-content-wrapper .binf-tab-content {
   overflow: hidden;
 }
 
@@ -474,6 +543,7 @@
   height: calc(100% - 48px);
   width: 100%;
   margin-top: 0;
+
   /* padding-top: 6px; */
 }
 
@@ -482,16 +552,16 @@
 }
 
 .metadata-content .cs-metadata .cs-metadata-properties .binf-tab-content {
-  height: calc(100%  - 49px);
+  height: calc(100% - 49px);
   position: relative;
   width: 100%;
   margin-top: 0;
-  padding-top: 0px;
+  padding-top: 0;
   overflow-x: hidden;
 }
 
-/*added styles for horizontal scrollbar is overlapping with the attributes in ipad*/
-@media (max-width: 1024px) {
+/* added styles for horizontal scrollbar is overlapping with the attributes in ipad */
+@media (width <= 1024px) {
 /*   .binf-widgets.csui-on-ipad .cs-metadata-properties .csui-tab-contents-header-wrapper {
     width: calc(100% - 16px);
   } */
@@ -508,6 +578,10 @@
 .binf-widgets .cs-metadata .cs-metadata-properties .binf-tab-content > div {
   border-top: none;
   padding: 6px 16px 6px 16px;
+}
+
+.binf-widgets .cs-metadata-properties.csui-top-align-label .binf-tab-content > div {
+  height: fit-content;
 }
 
 .binf-widgets .tap-panel {
@@ -531,22 +605,43 @@
   padding-right: 16px;
   position: relative;
 }
+
 .binf-widgets .cs-metadata-properties > .binf-tab-content > [role="tabpanel"] div.load-container .outer-border {
   -webkit-animation: delayWheel 0ms forwards;
   animation: delayWheel 0ms forwards;
 }
+
 .cs-metadata-properties > .binf-tab-content > .binf-active[role="tabpanel"]:first-child {
   border-top: 0 none;
 }
 
 /* only applies to the metadata Properties' last tab; other higher level tabs won't have the effect */
 .cs-metadata-properties > .binf-tab-content > .last-tab-panel {
-  /*min-height: calc(100% + 3px);*/
+  /* min-height: calc(100% + 3px); */
   min-height: 100%;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .cs-metadata .metadata-content-wrapper .binf-tab-content > .binf-tab-pane.binf-active::before {
+  content: '';
+  border-top: 1px solid var(--jato-border-color-primary);
+  width: 100%;
+  z-index: 1;
+  display: block;
+  position: relative;
+  top: calc(var(--jatx-csui-metadata-tab-panel-height) + 1px); 
 }
 
 .binf-widgets .cs-metadata-properties {
   height: 100%;
+}
+
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-sidepanel.template-in-sidepanel .csui-sidepanel-body:has(.title-error.visible) .smart-tab-panel.cs-metadata-properties{
+  height: calc(100% - 76px);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-sidepanel.template-in-sidepanel .csui-sidepanel-body .cs-add-item-metadata-form .smart-tab-panel.cs-metadata-properties{
+  height: calc(100% - 48px);
 }
 
 .binf-widgets .metadata-preview {
@@ -599,7 +694,7 @@ span.label-data {
 
 /* General tab specific content styles */
 .cs-metadata .title {
-  color: #333333;
+  color: var(--jato-cta-content-color-tertiary, #333333);
   font-size: 18px;
 }
 
@@ -671,27 +766,33 @@ span.label-data {
   line-height: initial;
 }
 
-/*.binf-widgets .binf-modal-content .cs-metadata-properties {
+/* .binf-widgets .binf-modal-content .cs-metadata-properties {
   height: calc(100% - 56px);
-}*/
+} */
 
 .binf-widgets .binf-modal-content .cs-add-item-metadata-form.without-header-bar .cs-metadata-properties {
   height: 100%;
 }
 
-/*added styles for horizontal scrollbar is overlapping with the attributes*/
+/* added styles for horizontal scrollbar is overlapping with the attributes */
 .binf-widgets .binf-modal-content .cs-add-item-metadata-form .cs-metadata-properties {
   height: calc(100% - 62px);
   overflow: hidden;
-  display: block;      /* Updated as part of LPAD-102560*/
+  display: block;      /* Updated as part of LPAD-102560 */
 }
 
-/*added styles for horizontal scrollbar is overlapping with the attributes in ipad
+/* to avoid overlapping with gradient in header and footer of modal in JATO themes */
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .binf-modal-content .cs-add-item-metadata-form .cs-metadata-properties {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* added styles for horizontal scrollbar is overlapping with the attributes in ipad
 @media (max-width: 1024px){
   .binf-widgets .binf-modal-content .cs-add-item-metadata-form .cs-metadata-properties {
     height: calc(100% - 62px);
   }
-}*/
+} */
 
 .binf-widgets .metadata-navigation.csui-hide-side-bar .metadata-sidebar,
 .binf-widgets .metadata-navigation.csui-hide-side-bar.csui-toggle-potrait .metadata-sidebar {
@@ -705,7 +806,7 @@ span.label-data {
 }
 
 .binf-widgets .metadata-navigation.csui-toggle-potrait .metadata-sidebar {
-  /*display: block;*/
+  /* display: block; */
   height: 100%;
   min-height: 100%;
   width: 20%;
@@ -714,7 +815,7 @@ span.label-data {
   position: absolute;
   z-index: 901;
   opacity: 1;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* overlay class to override the z-index in metadata page */
@@ -722,7 +823,7 @@ span.label-data {
   z-index: 50;
 }
 
-/* IE10+ : break-word is not working on IE so overriding with break-all*/
+/* IE10+ : break-word is not working on IE so overriding with break-all */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .cs-tab-links.binf-dropdown li a span.cs-label {
     word-break: break-all;
@@ -750,30 +851,75 @@ span.label-data {
   .binf-widgets .cs-metadata .cs-tab-links.binf-dropdown .binf-dropdown-menu {
     outline: 1px solid black;
   }
+
+  .binf-widgets .cs-metadata .cs-tab-links.binf-dropdown button:focus, 
+  .binf-widgets .cs-metadata .cs-tab-links.binf-dropdown button:focus-visible {
+    outline: 1px solid;
+    outline-offset: -3px;
+  }
 }
 
-@media only screen and (max-height: 400px) {
+@media only screen and (height <= 400px) {
   .binf-widgets .metadata-content-wrapper {
     height: auto;
   }
+
   .cs-metadata-properties .smart-tab-contents-header-wrapper {
     display: none;
   }
+
   .metadata-content .cs-metadata .cs-metadata-properties .binf-tab-content > div {
     padding: 0;
   }
+
   .metadata-content .cs-metadata .cs-metadata-properties .binf-tab-content {
     padding-top: 0;
   }
+
   .metadata-content .cs-metadata .metadata-content-wrapper .binf-tab-content .binf-tab-content {
     height: auto;
   }
 }
+
+/* css!csui/widgets/metadata/impl/header/item.name/metadata.item.name */
+
 .binf-widgets .title-input {
-  background-color: #ffffff;
-  color: #333333;
-  border-radius: 3px;
-  border: solid 1px #757575;
+  background-color: var(--jato-background-elevation-level-1, #ffffff);
+  color: var(--jato-typography-text-color-primary, #333333);
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) var(--jatx-const-0, 3px) var(--jatx-const-0, 3px);
+  border: solid 1px var(--jato-input-border-container-neutral, #757575);
+  border-block-end: solid 1px var(--jato-input-border-container-neutral, #757575);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .title-input:focus {
+  border-block-end: 1px solid var(--jato-input-border-focus-enabled);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled);
+  border: 1px solid var(--jato-input-border-container-neutral);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .title-input:hover {
+  background-color: var(--jato-background-elevation-level-2-hover);
+  border: 1px solid var(--jato-input-border-container-hover);
+  border-block-end: 1px solid var(--jato-input-border-focus-hover);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .title-input.csui-red-border {
+  background-color:  var(--jato-background-error-neutral);
+  border: 1px solid var(--jato-input-border-container-error-neutral);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .title-input.csui-red-border:hover {
+  background-color: var(--jato-background-error-hover);
+  border: 1px solid var(--jato-input-border-container-error-hover);
+  border-block-end: 1px solid var(--jato-input-border-focus-error-hover);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-error-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .title-input.csui-red-border:focus {
+  background-color: var(--jato-background-elevation-level-1);
+  border-block-end: 1px solid var(--jato-input-border-focus-error-enabled);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-error-enabled);
 }
 
 .title-header {
@@ -809,21 +955,20 @@ span.label-data {
   display: flex;
 }
 
-.csui-toggle-wrapper .cs-go-back {
-  width: 18px;
-  height: 18px;
-  margin: 8px 0 5px 14px;
-  cursor: pointer;
-}
 
 .binf-widgets .cs-metadata-item-name {
   display: flex;
   justify-content: flex-start;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .cs-metadata-item-name {
+  height: var(--jato-measure-32);
+}
+
 .binf-widgets .cs-metadata-item-name .csui-toggle-wrapper {
   display: flex;
   flex-shrink: 0;
+  padding-left: var(--jato-measure-8, 14px);
 }
 
 .binf-widgets .cs-metadata-item-name .title-header {
@@ -843,11 +988,17 @@ span.label-data {
   display: flex;
   flex-shrink: 0;
 }
-/*MultiLingual related CSS*/
+
+/* MultiLingual related CSS */
 .binf-widgets .title-edit-div .csui-multilingual-icon-label {
-  margin-top: 2px;
-  margin-left: 10px;
+  margin-top: var(--jato-measure-4, 2px);
+  margin-left: var(--jato-measure-2, 10px);
 }
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .title-edit-div .csui-multilingual-icon-label {
+height: var(--jato-measure-24);
+}
+
 .binf-widgets .cs-form.cs-document-overview-wrapper .title-edit-div.csui-multilingual-input input{
   padding-left: 23px;
 }
@@ -855,8 +1006,8 @@ span.label-data {
 .binf-widgets .cs-form.cs-document-overview-wrapper .title-edit-div .csui-multilingual-icon-label {
   display: inline-flex;
   margin-right: -30px;
-  margin-top: 0;
-  margin-left: 0;
+  margin-top: var(--jato-measure-4, 0);
+  margin-left: var(--jato-measure-4, 0);
 }
 
 .binf-widgets .cs-form.cs-document-overview-wrapper .csui-edit-save {
@@ -864,32 +1015,41 @@ span.label-data {
 }
 
 .binf-widgets .cs-form.cs-document-overview-wrapper .csui-multilingual-icon-label button {
-  height: 32px;
+  height: var(--jato-measure-24, 32px);
   z-index: 1;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (width <= 640px) {
   .binf-widgets .title-edit-div .csui-multilingual-icon-label {
     margin-left: 0;
   }
-}.metadata-header-left-bar .cs-go-back {
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-  margin-top: calc((64px - 18px)/2);
-  margin-right: calc((3em - 18px)/2);
-  cursor: pointer;
 }
+
+/* css!csui/widgets/metadata/impl/header/leftbar/header.leftbar */
+
+[data-smart-theme="cf"] .metadata-header-left-bar .cs-go-back {
+  margin-right: calc((3em - 18px)/2);
+}
+
+.metadata-header-left-bar .cs-go-back {
+  vertical-align: top;
+}
+
+@media (forced-colors: active) {
+  .metadata-header-left-bar .cs-go-back:focus,
+  .metadata-header-left-bar .cs-go-back:focus-visible {
+    outline: 1px solid;
+    outline-offset: 3px;
+  }
+}
+
+/* css!csui/widgets/metadata/impl/header/rightbar/header.rightbar */
+
 .binf-widgets .metadata-header-right-bar div {
   padding: 0;
   margin: 0;
 }
 
-.binf-widgets .metadata-header-right-bar .shortcut-div, .binf-widgets .metadata-header-right-bar .generation-div {
-  margin-top: calc((64px - 28px) / 2);
-}
 
 .metadata-header-right-bar > span,
 .metadata-header-right-bar > div > a.shortcut-switch,
@@ -897,7 +1057,7 @@ span.label-data {
   text-decoration: none;
   font-size: 14px;
   line-height: 28px;
-  color: #232e72;
+  color: var(--jato-typography-text-color-primary, #232e72);
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -1014,10 +1174,23 @@ span.label-data {
 .metadata-content-header .metadata-header-right-bar-container .metadata-header-right-bar .csui-extra-header-wrapper .csui-addToolbar {
   min-width: 0;
 }
-.binf-widgets .metadata-content-header {
-  min-height: calc(64px - 2px);
-  background: #dce4e8;
+
+/* css!csui/widgets/metadata/impl/header/metadata.header */
+
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-metadata-header-font-weight: 600;  
+}
+
+.binf-widgets .metadata-content-header { 
+  align-items: center;
+  background: var(--jatx-const-none, #dce4e8);
   display: flex;
+  padding-left: var(--jato-padding-xxl, unset);
+  padding-right: var(--jato-padding-xxl, unset);
+}
+
+[data-smart-theme="cf"] .binf-widgets .metadata-content-header{
+  min-height: calc(64px - 2px);
 }
 
 .metadata-content-header:focus,
@@ -1034,9 +1207,7 @@ span.label-data {
 }
 
 .metadata-content-header .metadata-header-left-bar-container {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
+  align-self: center;
 }
 
 .metadata-content-header .metadata-header-right-bar-container {
@@ -1045,6 +1216,7 @@ span.label-data {
 
 .metadata-content-header .metadata-header-right-bar-container .metadata-header-right-bar {
   display: flex;
+  align-items: center;
 }
 
 .metadata-content-header .metadata-header-right-bar-container .metadata-header-right-bar .csui-extra-header-wrapper {
@@ -1083,7 +1255,8 @@ span.label-data {
 
 .metadata-content-header .metadata-header.with-right-bar,
 .metadata-header.with-back-button {
-  padding-right: 1em;
+  padding-right: var(--jato-padding-sm,1em);
+  align-self: center;
 }
 
 .metadata-header .icon {
@@ -1091,6 +1264,11 @@ span.label-data {
 }
 
 .metadata-header .cs-metadata-item-name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: var(--jato-measure-8, unset);
+  padding-bottom: var(--jato-measure-8, unset);
   width: 100%;
   height: 100%;
 }
@@ -1099,7 +1277,6 @@ span.label-data {
   display: flex;
   align-items: center;
   width: 100%;
-  height: calc(64px - 2px);
 }
 
 .metadata-header .cs-metadata-item-name span.csui-icon-group {
@@ -1121,8 +1298,8 @@ span.label-data {
   position: relative;
   text-align: right;
   font-size: 18px;
-  line-height: 1.3;
-  font-weight: 400;
+  line-height: var(--jato-size-height-24 , 1.3);
+  font-weight: var(--jatx-csui-metadata-header-font-weight, 400);
   padding: 0 6px 0 2px;
   cursor: pointer;
   width: 100%;
@@ -1154,8 +1331,8 @@ span.label-data {
   vertical-align: top;
   margin-top: 0;
   padding-right: 2px;
-  width: 1.5em;
-  height: 1.5em;
+  width: var(--jato-measure-24, 1.5em);
+  height: var(--jato-measure-24, 1.5em);
 }
 
 .binf-widgets .cs-metadata-item-name .csui-metadata-item-name-dropdown .binf-dropdown > .binf-dropdown-menu > li > a.binf-disabled {
@@ -1190,13 +1367,13 @@ span.label-data {
 
 .metadata-header .title-edit-div .title-input {
   text-align: right;
-  height: 25px;
+  height: var(--jato-measure-32, 25px);
   display: inline-block;
   max-width: calc(70% - 1.41em);
   width: 95%;
   float: none;
   vertical-align: top;
-  margin-top: 2px;
+  margin-top: var(--jato-measure-0, 2px);
   padding: 0 0.5em 0 0.5em;
 }
 
@@ -1205,16 +1382,24 @@ span.label-data {
 }
 
 .metadata-header .title-error-div {
-  padding-right: 44px;
+  margin-right: var(--jato-padding-content-sm, 44px);
   vertical-align: top;
-  font-size: 0.75em;
-  color: #bf291c;
-  top: -14px;
-  position: relative;
+  font-size: var(--jato-measure-12, 0.75em);
+  color: var(--jato-typography-text-color-secondary, #bf291c);
   cursor: default;
   line-height: 14px;
 }
 
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .metadata-header .title-error-div:has(.title-error.visible) {
+  margin-top: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  background: var(--jato-background-error-neutral);
+  border-radius: var(--jato-radii-sm);
+  border: 1px solid var(--jato-messages-inline-border-error);
+  padding: 2px 8px;
+  width: fit-content;
+}
 
 .metadata-header .csui-metadata-header-with-toggle .title-error-div {
   padding-right: 0;
@@ -1227,13 +1412,13 @@ span.label-data {
   margin-right: 106px;
 }
 
-.metadata-header .csui-metadata-header-with-toggle .title-error-div span.title-error {
+[data-smart-theme="cf"] .metadata-header .csui-metadata-header-with-toggle .title-error-div span.title-error {
   max-width: calc(70% - 1.41em);
   width: 95%;
   display: block;
 }
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   .metadata-header .title-edit-div .title-input {
     max-width: calc(100% - 1.41em);
   }
@@ -1242,22 +1427,29 @@ span.label-data {
     max-width: calc(100% - 72px);
   }
 }
-@media only screen and (max-height: 400px) {
+
+@media only screen and (height <= 400px) {
   .metadata-header .cs-metadata-item-name {
     height: 32px;
   }
+
   .binf-widgets .metadata-content-header {
     min-height: 32px;
   }
+
   .metadata-content-header .metadata-header.with-right-bar {
     padding-right: 0.4em;
   }
 }
+
 @media only screen and (-webkit-device-pixel-ratio: 2.5) {
   .metadata-header .title-error-div {
-    top: 0px;
+    top: 0;
   }
 }
+
+/* css!csui/widgets/metadata/general.form.fields/impl/general.form.fields.view */
+
 /* Remove outside margin and padding for nexted forms */
 
 .csui-general-form-fields > .cs-form > .alpaca-field-object {
@@ -1267,6 +1459,13 @@ span.label-data {
 .csui-general-form-fields > .cs-form > .alpaca-field-object > * {
   padding: 0;
 }
+
+/* css!csui/widgets/metadata/general.panels/node/impl/node.general.form */
+
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-description-section-line-height: 28px;
+}
+
 .cs-form.csui-general-form {
   margin: 0;
   padding: 0;
@@ -1289,7 +1488,7 @@ span.label-data {
   margin-top: 54px;
 }
 
-@media only screen and (max-height: 400px) {
+@media only screen and (height <= 400px) {
   .cs-form .metadata-pane-container {
     margin-top: 0;
   }
@@ -1310,7 +1509,7 @@ span.label-data {
   margin-bottom: 2em;
 }
 
-@media (min-width: 992px) {
+@media (width >= 992px) {
   .cs-form .description_section {
     margin-bottom: 0;
   }
@@ -1320,7 +1519,7 @@ span.label-data {
   text-align: left;
   margin-bottom: 8px;
   padding: 0 0 0 16px;
-  line-height: 1.5;
+  line-height: var(--jatx-csui-description-section-line-height, 1.5);
 }
 
 .csui-top-align-label .cs-form .description_section .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
@@ -1372,6 +1571,11 @@ span.label-data {
   width: 150px;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .cs-form .thumbnail_section .csui-node-type-icon {
+  height: 100%;
+  width: 100%;
+}
+
 .csui-top-align-label .cs-form .thumbnail_section .default_thumbnail {
   float: right;
 }
@@ -1391,7 +1595,7 @@ span.label-data {
   cursor: pointer;
 }
 
-@media (max-width: 1100px) {
+@media (width <= 1100px) {
   .cs-form .thumbnail_section {
     margin-right: auto;
   }
@@ -1400,14 +1604,18 @@ span.label-data {
 /* ml related css */
 .cs-form .description_section .cs-ml-textareafield .binf-popover .cs-multilingual-form .alpaca-control-label {
   text-align: right;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding-right: 8px;
-}.cs-form img.img-doc-preview {
-  /*width: initial;*/
+}
+
+/* css!csui/widgets/metadata/general.panels/document/impl/document.general.form */
+
+.cs-form img.img-doc-preview {
+  /* width: initial; */
   opacity: 50;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .cs-form img.img-doc-preview:focus {
@@ -1415,9 +1623,11 @@ span.label-data {
 }
 
 .binf-widgets .cs-form-img-border {
-  /*-webkit-box-shadow: 1px 1px 1px 0px rgba(51,51,51,0.5);*/
-  /*-moz-box-shadow: 1px 1px 1px 0px rgba(51,51,51,0.5);*/
-  /*box-shadow: 1px 1px 1px 0px rgba(51,51,51,0.5);*/
+  /* -webkit-box-shadow: 1px 1px 1px 0px rgba(51,51,51,0.5); */
+
+  /* -moz-box-shadow: 1px 1px 1px 0px rgba(51,51,51,0.5); */
+
+  /* box-shadow: 1px 1px 1px 0px rgba(51,51,51,0.5); */
   border: 1px solid #666666;
 }
 
@@ -1436,7 +1646,8 @@ span.label-data {
 .binf-widgets .cs-form-img-horizontal {
   height: auto;
   max-height: 200px;
-  /*width: 100%;*/
+
+  /* width: 100%; */
   max-width: 280px;
 
 }
@@ -1452,10 +1663,11 @@ span.label-data {
   display: inline-block;
   height: 124px;
   width: 150px;
+
   /* Check with UX-Radium team
    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
-   -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);*/
+   -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3); */
 }
 
 .cs-form .thumbnail_section .thumbnail-generation{
@@ -1470,11 +1682,14 @@ span.label-data {
   background-image: url('../widgets/metadata/general.panels/document/impl/images/thumbnail_missing.svg');
 }
 
-@media (max-width: 1100px) {
+@media (width <= 1100px) {
   .cs-form .thumbnail_section {
     margin-right: auto;
   }
 }
+
+/* css!csui/widgets/metadata/general.panels/shortcut/impl/shortcut.general.form */
+
 .cs-form .shortcut_section .binf-control-label {
   text-align: left;
   padding: 0 0 0 1em;
@@ -1497,6 +1712,9 @@ span.label-data {
 .url_section .binf-form-group > div {
   width: 100%;
 }
+
+/* css!csui/widgets/metadata/general.panels/url/impl/url.general.form */
+
 .cs-form .url_section .binf-control-label {
   text-align: left;
   padding: 0 3em 0 1em;
@@ -1505,7 +1723,7 @@ span.label-data {
 .cs-form .url_section .binf-col-sm-9 {
   padding-right: 0;
   padding-top: 0;
-  width: calc(60% - 40px); /*equal to description field*/
+  width: calc(60% - 40px); /* equal to description field */
   text-align: right;
 }
 
@@ -1521,76 +1739,27 @@ span.label-data {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* css!csui/widgets/metadata/impl/add.properties/add.properties.dropdown.menu */
+
 .binf-widgets .metadata-add-properties {
-  width: 60px; /* See UX spec padding-left 16px icon 20px padding right 24px*/
-  height: 48px;
-  cursor: pointer;  
-  left: 0;
-  top: 0;
+  padding-right: 16px;
+  padding-left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.metadata-add-properties .csui-loading-parent-wrapper,
-.metadata-add-properties .binf-dropdown {
-  height: inherit;
-  width: inherit;
-}
-
-.metadata-add-properties .binf-dropdown.binf-disabled {
-  pointer-events: none;
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-
-.metadata-add-properties .binf-dropdown > .binf-dropdown-toggle {
-  float: left;
-  position: relative;
-  margin-top: calc((48px - 32px) / 2);
-  margin-right: 16px;
-  margin-left: 24px;
-  height: 32px;
-  width: 32px;
-  border: none;
-  background: none;
-  padding: 0;
-}
-
-@media only screen and (max-width: 640px) {
+@media only screen and (width <= 640px) {
   .binf-widgets .metadata-add-properties {
-    width: 40px;
-  }
-  .metadata-add-properties .binf-dropdown > .binf-dropdown-toggle {
-    margin-right: 0;
-    margin-left: 0;
+    padding-right: 8px;
+    padding-left: 0;
   }
 }
-.metadata-add-properties .binf-dropdown > .binf-dropdown-toggle > span.icon-toolbarAdd {
-  width: 32px;
-  height: 32px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
-.metadata-add-properties .binf-dropdown.binf-open > ul.binf-dropdown-menu {
-  right: inherit;
-  left: 0;
-  border-radius: 0;
-  max-height: calc(100vh - 270px);
-  overflow: auto;
-}
-/*overwrites from csui to smart for all css classes for tab content header as we are not using csui- anymore. need to revisit this logic*/
+/* css!csui/widgets/metadata/impl/tab.contents.header/tab.contents.header */
 
-
-.cs-metadata-properties .smart-tab-contents-header {
-  display: block;
-/*   height: 54px; */
-  height: 32px;
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-/*   padding-top: 21px; */
-  padding-top: 1px;
-  background-color: #ffffff;
-}
+/* overwrites from csui to smart for all css classes for tab content header as we are not using csui- anymore. need to revisit this logic */
 
 .cs-metadata-properties .csui-tab-contents-header-content h4 {
   color: #00498f;
@@ -1601,19 +1770,26 @@ span.label-data {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+
 /*   padding-top: calc((42px - 21.6px) / 2); 
   padding-bottom: 5px; */
 }
+
+.binf-widgets .smart-tab-contents-header-wrapper .smart-tab-contents-header-content h4 {
+  padding-right: 32px;
+} 
 
 .cs-metadata-properties .csui-tab-contents-header-content {
   float: right;
   padding-left: 32px;
   width: 100%;
 }
-@media only screen and (max-height: 400px) {
+
+@media only screen and (height <= 400px) {
   .cs-metadata-properties .csui-tab-contents-header-content {
     padding: 0 8px;
   }
+
   .cs-metadata-properties .smart-tab-contents-header {
     padding-top: 0;
   }
@@ -1630,16 +1806,15 @@ span.label-data {
   padding-top: calc((43px - 31px) / 2);    /* offset by 1px for IE */
 }
 
-.cs-metadata-properties .smart-tab-contents-header:after {
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
-  content: "\00a0";
-  width: 100%;
-  float: right;
-/*   margin-top: -4px; */
-  max-height: 8px; /*Changing this as per spec - metadata page 18*/
+[data-smart-theme="cf"] {
+  .cs-metadata-properties .smart-tab-contents-header-wrapper:after {
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+    content: "\00a0";
+    float: right;
+    max-height: 8px;
+  }
 }
 
 .cs-metadata-properties .smart-tab-contents-header .required-field-switch > span.only-required-fields-label {
@@ -1684,6 +1859,14 @@ span.label-data {
 .cs-metadata-properties .smart-tab-contents-header .csui-tab-contents-header-title-full-width {
   width: 100%;
 }
+
+/* css!csui/widgets/metadata/impl/versions/metadata.versions */
+
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-metadata-versions-padding: calc(4em - 48px);
+  --jatx-metadata-versions-border: 1px solid var(--jatx-const-transparent);
+}
+
 .binf-widgets .csui-metadata-versions {
   font-size: 16px;
   font-weight: normal;
@@ -1693,6 +1876,11 @@ span.label-data {
   flex-direction: column;
   padding-right: 3em;
   padding-left: 3em;
+  padding-top: var(--jatx-metadata-versions-padding, unset);
+  border-top: var(--jatx-metadata-versions-border, unset);
+}
+
+[data-smart-theme="cf"] .binf-widgets .csui-metadata-versions {
   margin-top: calc(4em - 48px);
 }
 
@@ -1762,6 +1950,13 @@ span.label-data {
   height: auto;
   flex: 0 0 auto;
 }
+
+/* css!csui/widgets/metadata/impl/audit/metadata.audit */
+
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-metadata-audit-border: 1px solid var(--jatx-const-transparent);
+}
+
 .binf-widgets .csui-audit {
   font-size: 16px;
   font-weight: normal;
@@ -1777,7 +1972,9 @@ span.label-data {
   -webkit-flex-direction: column;
   padding-right: 3em;
   padding-left: 3em;
-  margin-top: 64px;
+  margin-top: var(--jato-measure-48, 64px);
+  padding-top: var(--jato-measure-16, unset);
+  border-top: var(--jatx-metadata-audit-border, unset); 
 }
 
 .csui-audit #tabletoolbar {
@@ -1858,7 +2055,7 @@ span.label-data {
 .binf-widgets .csui-audit .search-box.csui-table-searchbox ul#event-picker-ul li:not(.csui-typeahead-no-results) {
   margin-bottom: 2px;
   padding: 4px 16px;
-  border: 0px;
+  border: 0;
   overflow: auto;
   height: auto;
 }
@@ -1873,6 +2070,7 @@ span.label-data {
     outline: 1px solid black;
     outline-offset: -1px;
   }
+
   .csui-audit .csui-audit-table :focus {
     outline: 1px solid black;
     outline-offset: -1px;
@@ -1890,8 +2088,8 @@ span.label-data {
   z-index: 1;
   position: absolute;
   width: 100%;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
-  border-radius: 0px 0px 3px 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 3px 3px;
   max-height: calc(100vh - 300px);
 }
 
@@ -1940,6 +2138,14 @@ span.label-data {
 .csui-audit-table .binf-table.dataTable > thead > tr > th.csui-table-cell-generic-text > div {
   overflow: visible;
 }
+
+/* css!csui/widgets/metadata/impl/common/metadata.action.multiple.items */
+
+[data-smart-theme]:not([data-smart-theme=cf]) {
+  --jatx-csui-icon-required-upload-left: 35px;
+}
+
+
 .binf-widgets .cs-metadata-add-items {
   /* in perspective */
   height: 100%;
@@ -1951,7 +2157,7 @@ span.label-data {
   -ms-flex-direction: column;
   -webkit-flex-direction: column;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: var(--jato-background-elevation-level-2,  #ffffff );
 }
 
 .cs-metadata-add-items .cs-metadata {
@@ -1976,6 +2182,11 @@ span.label-data {
   height: 100%;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .cs-metadata-add-items .metadata-navigation {
+  display: flex;
+}
+
+
 .cs-metadata-add-items .metadata-sidebar {
   height: 100%;
   min-height: 100%;
@@ -1983,9 +2194,11 @@ span.label-data {
   min-width: 15.5em;
   float: right;
   border-left: 1px solid #999999;
+  padding-top: var(--jato-padding-xl, unset);
 }
 
-/*-------------------------------------------*/
+/* ------------------------------------------- */
+
 /* list */
 
 .cs-metadata-add-items .metadata-sidebar .cs-simplelist {
@@ -2000,7 +2213,7 @@ span.label-data {
 }
 
 /* header */
-.cs-metadata-add-items .metadata-sidebar .cs-simplelist.binf-panel {
+[data-smart-theme="cf"] .cs-metadata-add-items .metadata-sidebar .cs-simplelist.binf-panel {
   border-right: 1px solid white;
 }
 
@@ -2009,56 +2222,138 @@ span.label-data {
 }
 
 /* items */
-.cs-metadata-add-items .cs-simplelist .binf-list-group-item .csui-icon-group,
-.cs-metadata-add-items .cs-simplelist .binf-list-group-item .csui-icon-group .csui-icon {
+[data-smart-theme="cf"] .cs-metadata-add-items .cs-simplelist .binf-list-group-item .csui-icon-group,
+[data-smart-theme="cf"] .cs-metadata-add-items .cs-simplelist .binf-list-group-item .csui-icon-group .csui-icon {
   width: 28px;
   height: 28px;
 }
 
-.cs-metadata-add-items .cs-simplelist .binf-list-group-item .csui-icon-group {
+[data-smart-theme="cf"] .cs-metadata-add-items .cs-simplelist .binf-list-group-item .csui-icon-group {
   margin-top: calc((48px - 28px) / 2);
 }
 
 /* active */
-.cs-metadata-add-items .metadata-sidebar .cs-simplelist a.binf-active > .binf-list-group-item {
-  background-color: #dfe7ea;
+[data-smart-theme="cf"] .binf-widgets .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active > a.binf-list-group-item {
   color: #333333;
   border-top: 0;
   border-bottom: 0;
+  background-color: #dce4e8;
+  border-right: 4px solid #7b9ab0;
+  border-radius: 0;
+  color: #333333;
+  padding-right: 12px;
+  position: relative;
+}
+
+[data-smart-theme="cf"] .binf-widgets .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active.active-item-disable > a.binf-list-group-item {
+  background-color: #f5f5f5;
 }
 
 /* normal */
-.cs-metadata-add-items .metadata-sidebar .cs-simplelist a > .binf-list-group-item {
+[data-smart-theme="cf"] .binf-widgets .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item > a.binf-list-group-item {
   background-color: transparent;
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-right: 4px solid transparent;
+  border-radius: 0;
+  height: 46px;
+  padding-right: 12px;
+  padding-left: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 
-/* hover */
-.cs-metadata-add-items .metadata-sidebar .cs-simplelist .binf-list-group-item:hover {
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+[data-smart-theme="cf"] .binf-widgets .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item > a.binf-list-group-item:hover {
   background-color: #bac9ce;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
   color: #333333;
 }
 
+[data-smart-theme="cf"] .binf-widgets .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item {
+  border: 1px dotted transparent;
+  color: #323232;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100%;
+}
+
+[data-smart-theme="cf"] .binf-widgets .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active {
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  z-index: 9;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item > a.binf-list-group-item  {
+  height: inherit;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item  {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: transparent;
+  margin: 0 6px;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active:before {
+  background-color: var(--jato-cta-links-text-color-neutral);
+  border-radius: 0 4px 4px 0;
+  content: "";
+  height: 40px;
+  right: 0;
+  position: absolute;
+  width: 4px;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item a:hover,
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item:hover {
+  background-color: var(--jato-background-rows-selected);
+  width: 100%;
+  width: -webkit-fill-available;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active {
+  background: var(--jato-background-rows-selected);
+  color: var(--jato-cta-content-color-tertiary);
+  font-weight: 700;
+  position: relative;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-metadata-add-items .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active a {
+  background-color: transparent;
+}
+
+/* hover */
+.cs-metadata-add-items .metadata-sidebar .csui-metadata-navigation-thumbnail.cs-simplelist .binf-list-group-item:hover {
+  border-bottom: none;
+  border-top: none;
+}
+
 /* title */
-.cs-metadata-add-items .metadata-sidebar .cs-simplelist .list-item-title {
+[data-smart-theme="cf"] .cs-metadata-add-items .metadata-sidebar .cs-simplelist .list-item-title {
   font-weight: 500;
   line-height: 48px;
   height: 48px;
 }
 
-/* optional required star in front of title and green checkmark when required fields satisfied*/
+/* optional required star in front of title and green checkmark when required fields satisfied */
 .cs-metadata-add-items .cs-simplelist .binf-list-group-item .cs-icon-required {
   width: 6px;
   height: 6px;
   position: absolute;
-  right: 43px;
-  top: 16px;
+  right: var(--jatx-csui-icon-required-upload-left, 43px);
+  top: var(--jato-measure-8, 16px);
 }
 
-/* ---------------------------------------------------------*/
+/* --------------------------------------------------------- */
+
 /* content pane */
 .cs-metadata-add-items .metadata-content {
   height: 100%;
@@ -2070,6 +2365,22 @@ span.label-data {
 .cs-metadata-add-items .metadata-content .cs-metadata {
   width: 100%;
 }
+
+/* css!csui/widgets/metadata/impl/metadatanavigation/impl/metadatanavigation */
+
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-metadata-navigation-header-height: auto;
+}
+
+[data-smart-theme="cf"]{
+  .binf-widgets .cs-properties-wrapper {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+
 /* Adjustments to dialog container */
 
 .cs-properties .binf-modal-lg {
@@ -2095,7 +2406,7 @@ span.label-data {
   position: relative;
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (device-width <= 1024px) {
   .cs-properties.cs-dialog.binf-modal .binf-modal-dialog,
   .cs-properties.cs-dialog.binf-modal .binf-modal-dialog .binf-modal-content {
     height: auto;
@@ -2116,8 +2427,8 @@ span.label-data {
 
 /* Resolution-specific CSS & 2 dpr */
 @media screen and (-webkit-min-device-pixel-ratio: 2), /* Webkit-based browsers */
-(min-resolution: 2dppx),                               /* The standard way */
-(min-resolution: 192dpi) {
+(resolution >= 2dppx),                               /* The standard way */
+(resolution >= 192dpi) {
   /* IE browser */
   .grid-rows > .binf-row > .row-xs-full.csui-node-properties-wrapper {
     height: calc(100vh - 45px) !important;
@@ -2137,10 +2448,7 @@ span.label-data {
   -ms-flex-direction: column;
   -webkit-flex-direction: column;
   overflow: hidden;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  
 }
 
 .cs-properties-wrapper .cs-metadata {
@@ -2178,19 +2486,29 @@ span.label-data {
 
 .binf-widgets .metadata-navigation {
   width: 100%;
-  height: 100%;
+  height: 100%;  
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .metadata-navigation {
+  display: flex;
 }
 
 .binf-widgets .metadata-sidebar {
   height: 100%;
   min-height: 100%;
   width: 20%;
-  min-width: 288px; /* See UX sped min width 288px LPAD-73121*/
+  min-width: 288px; /* See UX sped min width 288px LPAD-73121 */
   float: right;
-  border-left: 2px solid #DCE4E8;
+  background-color: var(--jato-background-elevation-level-2, inherit);
+  border-left: var(--jato-measure-1, 2px) solid var(--jato-border-color-primary, #DCE4E8);
+  border-top: var(--jato-measure-1, 0) solid var(--jato-border-color-primary, initial) ;
+  border-bottom: var(--jato-measure-1, 0) solid var(--jato-border-color-primary, initial);
+  border-radius: var(--jato-radii-xl, 0);
+  box-shadow: var(--jato-elevation-shadow-level-2, none) ;
 }
 
-/*-------------------------------------------*/
+/* ------------------------------------------- */
+
 /* list */
 
 .metadata-sidebar .cs-simplelist {
@@ -2199,9 +2517,19 @@ span.label-data {
   width: 100%;
 }
 
+.binf-widgets .metadata-navigation .metadata-sidebar .cs-header.binf-panel-heading{
+  height: var(--jatx-csui-metadata-navigation-header-height, 63px);
+}
+
+/* To fix the issue of the last item being chippen off, height from smart simple list is 100% - 49px.
+So, using the CF value of navigation panel header height to calculate cs-content height */
+[data-smart-theme="cf"] .binf-widgets .cs-simplelist.smart-simplelist .cs-content {
+  height: calc(100% - 63px);
+}
+
 /* header */
 .metadata-sidebar .cs-simplelist.binf-panel {
-  border-right: 1px solid white;
+  border-right: var(--jato-measure-0, 1px) solid white;
 }
 
 .metadata-sidebar .cs-simplelist .binf-panel-heading {
@@ -2210,56 +2538,149 @@ span.label-data {
   border-bottom: 1px solid #cccccc;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .metadata-sidebar .cs-simplelist .binf-panel-heading {
+  padding-right: 14px;
+  padding-left: 14px;
+  border-top-left-radius: var(--jato-radii-xl);
+  border-top-right-radius: var(--jato-radii-xl);
+}
+
 .metadata-sidebar .cs-simplelist .cs-header span.icon:focus,
 .metadata-sidebar .cs-simplelist .cs-header span.cs-title:focus,
 .metadata-sidebar .cs-simplelist .cs-content:focus,
 .metadata-sidebar .cs-simplelist .cs-content .cs-list-group:focus,
-.metadata-sidebar .cs-simplelist a > .binf-list-group-item span:focus {
+.metadata-sidebar .smart-simplelist-item > a.binf-list-group-item span:focus {
   outline-style: none;
 }
 
-.metadata-sidebar .cs-simplelist .binf-panel-heading:focus {
-  border: 1px dotted transparent;
-  outline: 1px dotted #000000;
-  outline-offset: -3px;
+[data-smart-theme]:not([data-smart-theme="cf"])  .metadata-sidebar .cs-simplelist .cs-header span {
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  padding: 0;
 }
 
-.metadata-sidebar .cs-simplelist a.binf-active:focus {
+[data-smart-theme]:not([data-smart-theme="cf"])  .metadata-sidebar .cs-simplelist.smart-simplelist .cs-title-with-go-back {
+  margin-right: 16px;
+}
+
+[data-smart-theme="cf"] .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active:focus {
   outline-offset: 1px;
 }
 
-/* items */
-
 /* active */
-.metadata-sidebar .cs-simplelist a.binf-active > .binf-list-group-item {
+[data-smart-theme="cf"] .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active > a.binf-list-group-item {
   color: #333333;
   border-top: 0;
   border-bottom: 0;
+  background-color: #dce4e8;
+  border-right: 4px solid #7b9ab0;
+  border-radius: 0;
+  color: #333333;
+  padding-right: 12px;
+  position: relative;
 }
 
-.metadata-sidebar .cs-simplelist a.binf-active.active-item-disable > .binf-list-group-item {
+[data-smart-theme="cf"] .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active.active-item-disable > a.binf-list-group-item {
   background-color: #f5f5f5;
 }
 
 /* normal */
-.metadata-sidebar .cs-simplelist a > .binf-list-group-item {
+[data-smart-theme="cf"] .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item > a.binf-list-group-item {
   background-color: transparent;
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-right: 4px solid transparent;
+  border-radius: 0;
+  height: 46px;
+  padding-right: 12px;
+  padding-left: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 
-.metadata-sidebar .cs-simplelist a > .binf-list-group-item span {
-  pointer-events: none;
-  margin-left: 8px;
-}
-
-/* hover */
-.metadata-sidebar .cs-simplelist .binf-list-group-item:hover {
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+[data-smart-theme="cf"] .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item > a.binf-list-group-item:hover {
   background-color: #bac9ce;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
   color: #333333;
+}
+
+[data-smart-theme="cf"] .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item {
+  border: 1px dotted transparent;
+  color: #323232;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100%;
+}
+
+[data-smart-theme="cf"] .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active {
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  z-index: 9;
+}
+
+[data-smart-theme="cf"] .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item:focus-visible {
+  border: 1px dotted #333333;
+}
+
+[data-smart-theme="cf"] .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item > a.binf-list-group-item span {
+  pointer-events: none;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: transparent;
+    margin: 0 6px;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item > a.binf-list-group-item {
+ height: inherit;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item:hover,
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item a:hover{
+  background-color: var(--jato-background-rows-hover);
+  width: 100%;
+  width: -webkit-fill-available;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active::before {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 4px;
+    background-color: var(--jato-cta-links-text-color-neutral);
+    right: 0;
+    border-radius: 0 4px 4px 0;
+}
+
+/* active */
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active {
+  background: var(--jato-background-rows-selected);
+  font-weight: 700;
+  position: relative;
+  color: var(--jato-cta-content-color-tertiary);
+}
+
+/* TODo-Remove all focus frames related css once below work item is implemented from framework side
+https://ot-internal.saas.microfocus.com/ui/?p=4001/29004#/entity-navigation?entityType=work_item&id=3347340
+*/
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item:focus-visible {
+  outline: 2px solid var(--jato-cta-focus-border);
+  outline-offset: -2px;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .metadata-sidebar .cs-simplelist.smart-simplelist .smart-simplelist-item.binf-active a {
+  background-color: transparent;
 }
 
 /* title */
@@ -2276,7 +2697,8 @@ span.label-data {
   padding-top: 1px;
 }
 
-/* ---------------------------------------------------------*/
+/* --------------------------------------------------------- */
+
 /* content pane */
 .binf-widgets .metadata-content {
   height: 100%;
@@ -2285,11 +2707,15 @@ span.label-data {
   display: inline-block;
 }
 
+.binf-widgets .metadata-navigation .metadata-content {
+  margin-right: var(--jato-margin-xl, unset);
+}
+
 .metadata-content .cs-metadata {
   width: 100%;
 }
 
-/*thumbnail properties view*/
+/* thumbnail properties view */
 .metadata-sidebar .csui-metadata-navigation-thumbnail.cs-simplelist a.binf-active > .binf-list-group-item {
   padding-right: 8px;
 }
@@ -2305,7 +2731,7 @@ span.label-data {
 }
 
 .metadata-sidebar .csui-metadata-navigation-thumbnail.cs-simplelist a > .binf-list-group-item span.csui-icon-group {
-  /*width: 40px;*/
+  /* width: 40px; */
 }
 
 .metadata-sidebar .csui-metadata-navigation-thumbnail.cs-simplelist a > .binf-list-group-item span.csui-icon-group .csui-icon {
@@ -2324,8 +2750,11 @@ span.label-data {
 .metadata-sidebar .csui-metadata-navigation-thumbnail.cs-simplelist .binf-list-group-item:hover span.csui-icon-group .csui-icon.mime_image {
   background-color: #ffffff;
 }
+
+/* css!csui/widgets/metadata.navigation/impl/metadata.navigation */
+
 .binf-widgets .cs-metadata-navigation-wrapper {
-  background-color: #ffffff;
+  background-color: var(--jatx-const-none, #ffffff);
 }
 
 .binf-widgets .cs-metadata-navigation-wrapper.cs-metadata-no-bg-color {
@@ -2338,7 +2767,7 @@ span.label-data {
   height: 100%;
 }
 
-@media only screen and (max-height: 400px) {
+@media only screen and (height <= 400px) {
   .binf-widgets .cs-metadata-navigation-wrapper,
   .binf-widgets .cs-metadata-navigation-wrapper > .cs-metadata,
   .binf-widgets .cs-metadata-navigation-wrapper > .cs-metadata .metadata-navigation > .metadata-content > .cs-metadata {

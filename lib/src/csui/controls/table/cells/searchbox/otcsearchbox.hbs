@@ -1,0 +1,22 @@
+<otc-typeahead-search class="csui-table-otcsearch-box"
+  arialabel="{{search_icon_tooltip}}"
+  title="{{search_icon_tooltip}}"
+  searchButtonSize="small"
+  {{#if isJatoTheme}}
+    iconSearch="{{svgSearchIcon}}"
+  {{else}}
+    iconSearch="{{iconName}}"
+  {{/if}}
+>
+  <otc-input type="search" class="csui-table-otcsearch-input"
+    placeholder="{{search_placeholder}}"
+    label="" slidein="" value="{{search_value}}"
+    arialabel="{{search_input_tooltip}}"
+    title="{{search_input_tooltip}}"
+    cleariconarialabel="{{search_clear_icon_tooltip}}"
+    clearicontitle="{{search_clear_icon_tooltip}}"
+    closeiconarialabel="{{search_close_icon_arialabel}}"
+    closeicontitle="{{search_close_icon_tooltip}}">
+  </otc-input>
+</otc-typeahead-search>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

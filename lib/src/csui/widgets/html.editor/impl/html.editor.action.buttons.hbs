@@ -1,10 +1,20 @@
 <div class="{{#if isFroala}}froala-save-cancel{{/if}} csui-html-editor-action-buttons">
-  <button type="button" title="{{saveLabel}}" role="button" data-cstabindex="-1" tabindex="-1"
-          aria-label="{{saveAria}}"
-          class="icon circular csui-html-edit-icon csui-html-edit-save"></button>
-  <button type="button" title="{{cancelLabel}}" role="button" data-cstabindex="-1" tabindex="-1"
-          aria-label="{{cancelAria}}"
-          class="icon circular csui-html-edit-icon csui-html-edit-cancel"></button>
+{{#if isJATO}}
+        <otc-button title="{{saveLabel}}" data-cstabindex="-1"
+                arialabel="{{saveAria}}" class="csui-html-edit-save-jato" size="small">
+                <otc-icon svg="{{saveIconSVG}}" ispresentation></otc-icon>
+        </otc-button>
+        <otc-button title="{{cancelLabel}}" data-cstabindex="-1"
+                arialabel="{{cancelAria}}" class="csui-html-edit-cancel-jato" size="small">
+                <otc-icon svg="{{cancelIconSVG}}" ispresentation></otc-icon>
+        </otc-button>
+{{else}}
+        <button type="button" title="{{saveLabel}}" role="button" data-cstabindex="-1" tabindex="-1"
+                aria-label="{{saveAria}}"
+                class="icon circular csui-html-edit-icon csui-html-edit-save"></button>
+        <button type="button" title="{{cancelLabel}}" role="button" data-cstabindex="-1" tabindex="-1"
+                aria-label="{{cancelAria}}"
+                class="icon circular csui-html-edit-icon csui-html-edit-cancel"></button>
+{{/if}}
 </div>
-</div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

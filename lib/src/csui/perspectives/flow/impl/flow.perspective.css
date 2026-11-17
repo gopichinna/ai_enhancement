@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 
 
@@ -8,7 +8,7 @@
 
 
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .binf-widgets:not(.csui-mobile) .cs-flow-perspective.grid-rows > .binf-row > *:not(.row-xs-full) {
     height: 44.439vw; 
     min-height: 44.439vw;
@@ -16,14 +16,14 @@
 }
 
 
-@media (min-width: 992px) {
+@media (width >= 992px) {
   .binf-widgets:not(.csui-mobile) .cs-flow-perspective.grid-rows > .binf-row > *:not(.row-xs-full) {
     height: 29.80533vw; 
     min-height: 29.80533vw;
   }
 }
 
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
   .binf-widgets:not(.csui-mobile) .cs-flow-perspective.grid-rows > .binf-row > *:not(.row-xs-full) {
     height: 29.94993vw; 
     min-height: 29.94993vw;
@@ -31,7 +31,7 @@
 }
 
 
-@media (min-width: 1440px) {
+@media (width >= 1440px) {
   .binf-widgets:not(.csui-mobile) .cs-flow-perspective.grid-rows > .binf-row > *:not(.row-xs-full) {
     height: 22.70860vw; 
     min-height: 22.70860vw;

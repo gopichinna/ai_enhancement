@@ -1,8 +1,12 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme=cf]) {
+    --jatx-csui-edit-branding-setting-header-font-size: 18px;
+}
+
 .binf-widgets .pman-header-config .pman-header-settings-panel {
-    background: #fafafa;
+    background: var(--jato-background-elevation-level-3,#fafafa);
     width: 100%;
     height: 100%;
     position: relative;
@@ -12,9 +16,15 @@
     box-shadow: none;
 }
 
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .pman-header-config .pman-header-settings-panel {
+    border-bottom-left-radius: var(--jato-radii-xl, 0);
+    border-left: unset;
+}
+
 .binf-widgets .pman-header-config .pman-header-settings-panel .pman-header-setting-container {
     border-bottom: 1px solid #cccccc;
 }
+
 .binf-widgets .pman-header-config .pman-header-settings-panel .pman-header-setting-container:last-child {
     border-bottom: none;
 }
@@ -30,10 +40,11 @@
     padding: 24px 32px;
     padding-right: 35px;
 }
+
 .binf-widgets .pman-header-config .pman-header-settings-panel .pman-setting-header:hover,
 .binf-widgets .pman-header-config .pman-header-settings-panel .pman-setting-header.csui-accordion-expand:hover
 	{
-	background: #B2BEC5;
+	background: var(--jatx-const-transparent,#B2BEC5);
 }
 
 .binf-widgets .pman-header-config .pman-header-settings-panel .pman-setting-header.csui-accordion-expand {
@@ -51,13 +62,29 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px 16px 0px 0px;
+    padding: 0 16px 0 0;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .pman-header-config .pman-header-settings-panel .pman-setting-header.csui-accordion-header{
+    padding: var(--jato-padding-med) var(--jato-padding-lrg) var(--jato-padding-med) var(--jato-padding-xxl);
+    height: 36px;
+    border-bottom-width: 1px;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .pman-header-config .pman-header-settings-panel .csui-accordion-header .csui-accordion-header-title{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    vertical-align: middle;
+    color: var(--jato-typography-forms-text-color-label);
+    border-bottom-width: 1px;
+    padding: var(--jato-padding-micro), 0;
 }
 
 .binf-widgets .pman-header-config .pman-header-settings-panel .csui-accordion-content {
     max-height: 0;
     transition: max-height 0.5s;
-    padding: 0px 16px;
+    padding: 0 16px;
     overflow: hidden;
 }
 
@@ -69,8 +96,9 @@
     padding-left: 16px;
     padding-right: 16px;
 }
+
 .binf-widgets .pman-header-config .pman-header-settings-panel .pman-setting-content .cs-form {
-    background: #fafafa;
+    background: var(--jato-background-elevation-level-3, #fafafa);
     margin-top: -8px;
     height: auto;
     padding-bottom: 24px;
@@ -84,22 +112,72 @@
     color: #333333;
 }
 
-.binf-widgets .pman-header-config .csui-header-settings-footer {
+[data-smart-theme=cf] .binf-widgets .pman-header-config .csui-header-settings-footer {
 	width: 100%;
 	display: flex;
     align-items: center;
     justify-content: center;
 }
-.binf-widgets .pman-header-config .csui-header-settings-list {
-	width: 100%;
-}
-.binf-widgets .pman-header-config .pman-header-settings-panel{
+
+[data-smart-theme=cf] .binf-widgets .pman-header-config .pman-header-settings-panel{
 	overflow: auto;
 }
 
-.binf-widgets .pman-header-config .csui-header-config-reset-btn {
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .pman-header-config .csui-header-settings-footer{
+	width: 100%;
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 64px;
+    padding: var(--jato-padding-xxl);
+}
+
+.binf-widgets .csui-jato-manage-branding .pman-header-settings-edit-branding .csui-header-settings-list-title{
+    line-height: 22px;
+    height: 48px;
+    padding: var(--jato-padding-xxl);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--jato-typography-text-color-primary);
+}
+
+.binf-widgets .csui-jato-manage-branding .pman-header-settings-edit-branding  .csui-header-settings-list-lg{
+    height: var(--jato-measure-12);
+}
+
+.binf-widgets .csui-jato-manage-branding .pman-header-settings-edit-branding .pman-header-jato-settings-container{
+    height: calc(100vh - 158px);
+}
+
+.binf-widgets .pman-header-config .csui-header-settings-list {
+	width: 100%;
+}
+
+[data-smart-theme=cf] .binf-widgets .pman-header-config .pman-header-settings-panel{
+	overflow: auto;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .pman-header-config .pman-header-settings-panel .csui-header-settings-list>div:not(:last-child){
+    border-bottom: 1px solid var(--jato-border-color-primary);
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .csui-jato-manage-branding  .pman-header-config .pman-header-settings-panel .csui-header-settings-list{
+	height: calc(100vh - 208px);
+    right: 0;
+    top: 0;
+    left: unset;
+    box-shadow: unset;
+    transition: unset;
+    background-color: transparent;
+    border-radius: unset;
+}
+
+[data-smart-theme="cf"] .binf-widgets .pman-header-config .csui-header-config-reset-btn {
 	border-color: #232E72;
-	margin: 64px 0px 32px 0px;
+	margin: 64px 0 32px 0;
 	height: 32px; 
 	padding: 4px 24px;
 	background: #FFFFFF;
@@ -107,13 +185,33 @@
 	color: #232E72;
 }
 
-.binf-widgets .pman-header-config .csui-header-config-reset-btn:focus,
-.binf-widgets .pman-header-config .csui-header-config-reset-btn:hover {
+[data-smart-theme="cf"] .binf-widgets .pman-header-config .csui-header-config-reset-btn:focus,
+[data-smart-theme="cf"] .binf-widgets .pman-header-config .csui-header-config-reset-btn:hover {
 	outline-offset: 2px;
 }
 
 .binf-widgets .pman-header-config .pman-header-settings-panel .pman-setting-content .cs-form .binf-control-label {
-    color: #666666;
+    color: var(--jato-typography-forms-text-color-label, #666666);
+}
+
+.binf-widgets .csui-jato-manage-branding .pman-header-config .pman-header-settings-panel .pman-setting-content .cs-form .binf-control-label,
+.binf-widgets .csui-jato-manage-branding .pman-header-config .pman-header-settings-panel .pman-setting-content .cs-form .binf-control-label> span {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 14px;
+	color: var(--jato-typography-forms-text-color-label);
+    height: auto;
+    padding: var(--jato-margin-med) var(--jato-margin-med) var(--jato-margin-med) 0;
+}
+
+ .binf-widgets .csui-jato-manage-branding .pman-header-config .pman-header-settings-panel .pman-setting-content .csui-checkbox-view otc-checkbox{
+    cursor: pointer;
+ }
+ 
+.binf-widgets .csui-jato-manage-branding .pman-header-config .pman-header-settings-panel .pman-setting-content .cs-form .alpaca-field-checkboxV2 .binf-control-label{
+    font-size: var(--jato-font-size-reg);
+    font-weight: 400;
+    color: var(--jato-typography-text-color-primary);
 }
 
 .binf-widgets .pman-header-config .pman-header-settings-panel .cs-form .alpaca-container-item:not(:first-child) > .alpaca-field.alpaca-field-object {
@@ -121,5 +219,72 @@
 }
 
 .binf-widgets .pman-header-config .pman-header-settings-panel  .perspective-widget-form .binf-row.alpaca-field {
-    padding-right: 0px;
+    padding-right: 0;
+}
+
+.binf-widgets .csui-jato-manage-branding .pman-header-settings-panel .perspective-widget-form .binf-row.alpaca-field, 
+.binf-widgets .csui-jato-manage-branding .pman-header-settings-panel .pman-setting-content .cs-form{
+	padding: 0;
+}
+
+.binf-widgets .csui-jato-manage-branding .pman-header-config .pman-header-settings-panel .csui-accordion-content {
+    padding-top: var(--jato-padding-xxl);
+    padding-right: var(--jato-padding-content-xs);
+    padding-bottom: var(--jato-padding-content-sm);
+    padding-left: var(--jato-padding-content-xs);
+}
+
+
+.binf-widgets .csui-jato-manage-branding .pman-header-config .pman-header-settings-panel .cs-form-doublecolumn .csui-field-checkboxV2.alpaca-container-item {
+    margin-left: -8px;
+}
+
+.binf-widgets .csui-jato-manage-branding .pman-header-config .pman-header-settings-panel .cs-form-doublecolumn .csui-field-checkboxV2.alpaca-container-item .alpaca-field-checkboxV2 {
+    height: var(--jato-size-height-32);
+}
+
+.binf-widgets .csui-jato-manage-branding  .csui-image-picker .csui-logo-btns {
+	float: left;
+}
+
+.binf-widgets .csui-jato-manage-branding .csui-image-picker .csui-help-text {
+	float: right;
+}
+
+.binf-widgets .csui-jato-manage-branding .cs-form .binf-form-group.alpaca-field.alpaca-field-csui-image-picker{
+	width: auto;
+}
+
+.binf-widgets .csui-jato-manage-branding  .csui-color-picker-ctrl{
+    padding-top: var(--jato-padding-micro);
+    margin-top: -1px;
+    padding-right: var(--jato-padding-micro);
+    padding-bottom: var(--jato-padding-micro);
+    margin-bottom: var(--jato-padding-lrg);
+    width: 107px;
+    margin-left: var(--jato-measure-neg3);
+    padding-left: var(--jato-padding-xs);
+    border-radius: var(--jato-radii-sm);
+    align-items: center;
+    height: 22px;
+}
+
+.binf-widgets .csui-jato-manage-branding .csui-field-csui-color-picker .cs-formfield{
+    line-height: 30px;
+}
+
+.binf-widgets .csui-jato-manage-branding  .csui-color-picker-ctrl input.csui-color-picker{
+    cursor: pointer;
+}
+
+.binf-widgets .csui-jato-manage-branding .csui-color-picker-ctrl .csui-color-label{
+    min-width: unset;
+}
+
+.binf-widgets .csui-jato-manage-branding .csui-header-settings-list .csui-settings-panel-branding-product-name  .alpaca-container-item:not(:first-child) .binf-form-group{
+    margin-top: var(--jato-measure-12);
+}
+
+.binf-widgets .csui-jato-manage-branding .csui-header-settings-list .csui-settings-panel-branding-product-name  .alpaca-container-item:first-child .binf-form-group{
+    margin-top: var(--jato-measure-0);
 }

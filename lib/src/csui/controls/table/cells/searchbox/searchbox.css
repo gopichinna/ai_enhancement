@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-table-searchbox {
   display: flex;
@@ -12,6 +12,14 @@
 }
 
 .binf-widgets .csui-table-searchbox .fadeout {
+  
+  position: absolute;
+  cursor: text;
+  width: 35px;
+  height: 20px;
+  background: var(--jatx-const-transparent, linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 100%));
+
+  
   z-index: 1;
   right: calc(3em - 23px);
   top: calc(50% - 10px);
@@ -55,10 +63,13 @@
 }
 
 .binf-widgets .sbclearer {
-  color: #d3d3d3;
   position: absolute;
-  height: 100%;
   right: 6px;
+}
+
+.binf-widgets .sbclearer:not(otc-icon) {
+  color: #d3d3d3;
+  height: 100%;
   line-height: 1.4em;
   font-size: 1.4em;
   pointer-events: auto;
@@ -72,7 +83,12 @@
   z-index: 2;
 }
 
-.csui-table-column-search > .csui-table-search-icon {
+otc-icon.sbclearer {
+  z-index: 2;
+  cursor: pointer;
+}
+
+.csui-table-column-search > .csui-table-search-icon:where(:not(otc-button)) {
   display: inline-flex;
   flex: 0 0 auto;
   flex-direction: column;
@@ -80,6 +96,7 @@
   width: 32px;
   height: inherit;
 }
+
 body.csui-on-ipad .csui-table-column-search > .csui-table-search-icon span {
   display: flex;
   align-items: center;
@@ -96,8 +113,10 @@ body.csui-on-ipad .csui-table-column-search > .csui-table-search-icon span {
   display: none;
 }
 
-.binf-widgets .csui-nowrap-table > thead > tr > th > .csui-nowrap-table__cell-wrapper > div.csui-table-column-search.csui-searchbox-shown,
-.binf-widgets .binf-table.dataTable > thead > tr > th > div.csui-table-column-search.csui-searchbox-shown {
+
+.binf-widgets .csui-accessibility-table > * > thead > tr > th > .csui-accessibility-table__cell-wrapper:has(div.csui-table-column-search.csui-searchbox-shown .typeahead),
+.binf-widgets .csui-nowrap-table > thead > tr > th > .csui-nowrap-table__cell-wrapper > div.csui-table-column-search.csui-searchbox-shown:has(.typeahead),
+.binf-widgets .binf-table.dataTable > thead > tr > th > div.csui-table-column-search.csui-searchbox-shown:has(.typeahead) {
   overflow: visible;
 }
 
@@ -134,15 +153,18 @@ body.csui-on-ipad .csui-table-column-search > .csui-table-search-icon span {
   cursor: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (width <= 640px) {
   .binf-widgets .csui-table-column-search .icon-search-placeholder {
     width: 22px;
   }
+
   .csui-table-column-search .csui-table-search-input {
     padding-left: 16px;
   }
+
   .binf-widgets .csui-table-searchbox {
     margin-right: 0;
   }

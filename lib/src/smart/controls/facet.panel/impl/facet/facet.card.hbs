@@ -1,25 +1,52 @@
 <div class="csui-facet-header">
-  <div class="header-label" title="{{name}}">{{name}}</div>
-  <div class="header-count" title="{{count}}"> ({{count}})</div>
-  <span class="smart-indicator-dot binf-hidden"></span>  
-  <div class="cs-icon csui-button-icon smart-icon-expanded smart-v2-icon-parent" role="button" title="{{showFacetAria}}" aria-label="{{showFacetAria}}" tabindex="-1">
-    {{{icon-v2 iconName='csui_smart_ot_action_caret_up32' states=true size='contain'}}}
-    {{{icon-v2 iconName='csui_smart_ot_action_caret_down32' states=true size='contain'}}}
+  <div class="smart-facet-header-content">
+    <div class="header-label" title="{{name}}">{{name}}</div>
+    <span class="smart-indicator-dot binf-hidden"></span>  
+  </div>
+  <div class="header-count {{#if isJATO}}smart-header-jato-count{{/if}}" title="{{count}}"> ({{count}})</div>
+  <div class="cs-icon csui-button-icon smart-icon-expanded smart-v2-icon-parent">
+    {{#if isJATO}}
+        <otc-button type="subtle" size="small" class="smart-icon smart-expand-collapse smart-caret-down" title="{{showFacetAria}}" arialabel="{{showFacetAria}}" tabindex="-1">
+          <otc-icon svg="{{facetExpandIcon}}"></otc-icon>
+        </otc-button>
+        <otc-button type="subtle" size="small" class="smart-icon smart-expand-collapse smart-caret-up" title="{{hideFacetAria}}" arialabel="{{hideFacetAria}}" tabindex="-1">
+          <otc-icon svg="{{facetCollapseIcon}}"></otc-icon>
+        </otc-button>
+    {{else}}
+      <otc-button icon="smart_action:action_caret_down32" class="smart-icon smart-expand-collapse smart-caret-down" title="{{showFacetAria}}" arialabel="{{showFacetAria}}" tabindex="-1"></otc-button>
+      <otc-button icon="smart_action:action_caret_up32" class="smart-icon smart-expand-collapse smart-caret-up" title="{{hideFacetAria}}" arialabel="{{hideFacetAria}}" tabindex="-1"></otc-button>
+    {{/if}}
   </div>
 </div>
-<div class="csui-facet-content {{show-content-and-footer}}" role="presentation">
-  <div class="cs-filter-group" role="presentation"></div>
+<div class="csui-facet-content {{show-content-and-footer}}" role="menu">
+  {{#if enableSearch}}
+  <otc-search-persistent class="smart-facet-search" arialabelclearkeywords="{{ariaLabelClearKeywords}}" tabindex="-1"
+    arialabelsearchbuttonopen="{{ariaLabelSearchButtonOpen}}" arialabelstartsearch="{{ariaLabelStartSearch}}"
+    arialabelsearchbox="{{ariaLabelSearchBox}}"
+    arialabelinputdescription="{{ariaLabelInputDescription}}"
+    arialabelinputfield="{{ariaLabelInputField}}" id="mediumSizeSearchPersistentId" labeltext="{{labelText}}"
+    searchplaceholder="{{searchPlaceholder}}" tooltipclearkeywords="{{toolTipClearKeywords}}" tooltipsearchbuttonopen="{{toolTipSearchButtonOpen}}"
+    tooltipstartsearch="{{toolTipStartSearch}}" size="sm" value="">
+
+  </otc-search-persistent>
+   {{/if}}
+  <div class="smart-search-result-count-aria-polite" role="presentation" aria-live="polite"></div>
+  <div class="cs-filter-group-list" role="presentation"></div>
 </div>
 <div class="csui-facet-footer {{show-content-and-footer}}">
 {{#if more}}
     <div class="csui-filter-more" tabindex="-1" title="{{moreFiltersAria}}">
-      <button class="binf-btn binf-btn-default" aria-label="{{more}}" tabindex="-1">
-        <span class="csui-more-text">{{more}}</span>
-        <span class="smart-show-more cs-icon smart-v2-icon-parent">
-          {{{icon-v2 iconName='csui_smart_ot_action_caret_up32' states=false size='xsmall'}}}
-          {{{icon-v2 iconName='csui_smart_ot_action_caret_down32' states=false size='xsmall'}}}
-        </span>
-      </button>
+        {{#if isJATO}}
+          <otc-button size="small" type="more" tabindex="-1" class="smart-show-more" arialabel="{{more}}">
+            <span class="smart-show-more-text">{{more}}</span>
+          </otc-button>
+        {{else}}
+          <otc-button class="smart-show-more" size="small" type="inline" tabindex="-1" arialabel="{{more}}">
+            <span class="smart-show-more-text">{{more}}</span>
+            <otc-icon icon="smart_action_16:action_caret_down16" class="smart-icon smart-caret-down" isPresentation disableeffects></otc-icon>
+            <otc-icon icon="smart_action_16:action_caret_up16" class="smart-icon smart-caret-up" isPresentation disableeffects></otc-icon>
+          </otc-button>
+        {{/if}}
     </div>
   {{/if}}
   <div class="csui-facet-controls {{show-controls}}">
@@ -28,4 +55,4 @@
   </div>
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 
 .binf-widgets .csui-control-view {
@@ -26,7 +26,6 @@
 
 
 @media (forced-colors: active) {
-
   .csui-search-results .csui-control:focus,
   .csui-search-results thead .csui-control:hover {
      outline: 1px solid black;

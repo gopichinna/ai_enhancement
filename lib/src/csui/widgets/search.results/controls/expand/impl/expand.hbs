@@ -1,0 +1,16 @@
+<otc-button 
+  class="standard-search-expandArrowDown expand-btn csui-acc-focusable"
+  type="inline"
+  {{#if isJATO}} 
+    size="small" 
+  {{else}}
+    iconOnly 
+    icon="{{iconName}}"
+  {{/if}}>
+      {{#if isJATO}}
+        <otc-icon svg="{{iconSVG}}" class="expand-jato-icon"></otc-icon>
+      {{/if}}
+  </otc-button>
+  
+
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

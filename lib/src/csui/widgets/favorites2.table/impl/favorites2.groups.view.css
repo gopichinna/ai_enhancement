@@ -1,9 +1,19 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-fav-panel-content-min-width: 224px;
+  --jatx-csui-favorite-group-header-height: inherit;
+  --jatx-csui-favorite-group-border: none;
+}
+
 .binf-widgets .csui-favorite-groups {
+  min-width: var(--jatx-csui-fav-panel-content-min-width, 248px);
+  border-radius: var(--jato-radii-lrg, 0);
+  gap: var(--jato-margin-xl, 0);
+  background-color: var(--jato-background-elevation-inline-content, none);
+  border-right: var(--jatx-csui-favorite-group-border, 2px solid #DCE4E8);
   font-size: 14px;
-  border-right: 2px solid #DCE4E8;
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
@@ -13,7 +23,8 @@
 }
 
 .binf-widgets .csui-favorite-groups > .csui-favorite-groups-header-region {
-  height: 3em;
+  padding: var(--jato-padding-med, 0);
+  height: var(--jatx-csui-favorite-group-header-height, 3em);
   min-height: 3em;
   display: flex;
 }
@@ -23,6 +34,7 @@
   flex: 0 1 auto; 
   overflow: hidden;
   width: 100%;
+  gap: var(--jato-margin-lrg, 0);
 }
 
 .binf-widgets .csui-favorite-groups > .csui-favorite-groups-footer-region {

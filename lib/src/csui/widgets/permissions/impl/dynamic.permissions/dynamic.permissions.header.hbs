@@ -1,0 +1,10 @@
+{{#if hasEditDynamicPermission}}
+      <otc-button id="{{buttonID}}" class="csui-add-dynamic-permission" type="subtle" 
+        ariaLabel="{{buttonAriaLabel}}" title="{{buttonTitle}}" tabindex="0"
+        {{#if isJATO}} size="small" {{else}} icon="{{iconName}}" {{/if}}>
+          {{#if isJATO}}<otc-icon svg="{{iconSVG}}" type="subtle"></otc-icon>{{/if}}
+      </otc-button>
+      <otc-menu class="csui-add-dynamic-permission-menu" buttonid="{{buttonID}}" ariarole="menu" role="none" scrollable="">
+      </otc-menu>
+{{/if}}
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

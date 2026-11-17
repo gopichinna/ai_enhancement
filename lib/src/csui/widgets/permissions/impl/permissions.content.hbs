@@ -1,7 +1,14 @@
 <div class="cs-permissions-content-header">
 {{#if isToolbar}}
 <div class="csui-add-permissions-content">
-  <div class="csui-add-permission"></div>
+
+      <otc-button id="{{buttonID}}" class="csui-add-permission" type="subtle" 
+        ariaLabel="{{buttonAriaLabel}}" title="{{buttonTitle}}" tabindex="0"
+        {{#if isJATO}} size="small" {{else}} icon="{{iconName}}" {{/if}}>
+          {{#if isJATO}}<otc-icon svg="{{iconSVG}}" type="subtle"></otc-icon>{{/if}}
+      </otc-button>
+      <otc-menu class="csui-add-permission-menu" buttonid="{{buttonID}}" ariarole="menu" role="none" scrollable="">
+      </otc-menu>
   </div>
   {{/if}}
   <div class="csui-permission-lookup-container"></div>
@@ -9,12 +16,22 @@
   <div class="csui-permissions-list-container"></div>
   <div class="csui-permissions-empty-actions binf-hidden">
     <div class="csui-addMember-container">
+  {{#if isJATO}}
+    <div class="csui-permissions-list-container-suggestion-wrapper">
+      <span class="csui-permissions-list-container-suggestion">{{emptyMessageSuggestion}}</span>
+    <otc-button type="secondary" class="csui-addMemberClick" arialabel="Link" >
+      <otc-icon svg="{{userSVGIcon}}"></otc-icon>
+      <span class="csui-addMember csui-permission-otc-btn-otc-icon"></span>
+    </otc-button>
+    </div>
+  {{else}}
       <span class="csui-icon add_user"></span>
-      <span class="csui-addMember"></span>
+      <span class="csui-addMemberClick csui-addMember"></span>
+  {{/if}}
     </div>
     <div class="csui-grantAccess-container binf-hidden">
       <span class="csui-icon icon_permmision_owner"></span>
       <span class="csui-grantAccess"></span>
     </div>
   </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

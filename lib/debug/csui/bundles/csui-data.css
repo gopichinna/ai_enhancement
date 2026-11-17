@@ -1,13 +1,4 @@
-.csui-global-warning .csui-header .csui-progressrow .csui-title:before {
-    content: "";
-    background-image: url('../controls/globalmessage/impl/images/notification/notification_warning.svg');
-    background-size: 24px 24px;
-    background-repeat: no-repeat;
-    padding-left: 14px;
-    padding-right: 10px;
-    margin-right: 10px;
-    padding-bottom: 4px;
-}
+/* css!csui/controls/globalmessage/impl/progresspanel/progresspanel-warning-styles */
 
 .binf-widgets .csui-progresspanel.csui-global-message.csui-global-warning.csui-collapsed .csui-header {
     border-bottom: 4px solid #F05822;
@@ -53,13 +44,17 @@
 }
 
 .binf-widgets .csui-progresspanel.csui-global-message.csui-global-warning .csui-header .csui-progressrow .csui-names-progress .csui-title {
-    padding-left: 38px;
+    padding-left: 14px;
     position: relative;
 }
 
 .csui-global-warning .csui-progressrow .csui-title {
     text-align: left;
-}.csui-icon-group.csui-icon-v2-size-normal {
+}
+
+/* css!csui/controls/node-type.icon/impl/node-type.icon.view */
+
+.csui-icon-group.csui-icon-v2-size-normal {
     width: 32px;
     height: 32px;
 }
@@ -77,6 +72,7 @@
 .csui-icon-group.csui-icon-v2-size-small {
     width: 24px;
     height: 24px;
+    min-width: 24px;
 }
 
 .csui-icon-group.csui-icon-v2-size-xsmall {
@@ -88,6 +84,8 @@
     width: 100%;
     height: 100%;
 }
+
+/* css!csui/controls/globalmessage/globalmessage_icons */
 
 .binf-widgets .csui-icon-notification-error {
   background-image: url('../controls/globalmessage/impl/images/notification_error.svg');
@@ -132,6 +130,9 @@
 .binf-widgets .csui-icon-dismiss-white {
   background-image: url('../controls/globalmessage/impl/images/dismiss_white.svg');
 }
+
+/* css!csui/controls/doc.preview/impl/doc.preview */
+
 .binf-widgets .csui-sidepanel.csui-sidepanel-doc-preview .csui-sidepanel-body {
   padding: 0;
   margin: 0;
@@ -143,19 +144,20 @@
 
 /* TODO: check how it applies other than table views */
 .binf-widgets .binf-table.dataTable > tbody > tr.csui-doc-preview-state {
-  background-color: #dfe7ea;
+  background-color: var(--jato-background-rows-menu-toggled, #dfe7ea);
 }
 
 .binf-widgets .cs-list  .binf-list-group > div.csui-doc-preview-state,
 .binf-widgets .cs-list  .binf-list-group .cs-list-group > a.csui-doc-preview-state,
 .binf-widgets .cs-list  .binf-list-group .cs-simpletreelistitem .cs-list-group > a.binf-active.csui-doc-preview-state {
-  background-color: #cbd3d9;
+  background-color: var(--jato-background-rows-menu-toggled, #cbd3d9);
 }
 
 .binf-widgets .csui-sidepanel.csui-sidepanel-doc-preview .csui-side-panel-main {
   border-bottom: none;
 }
-/* to allow users to scroll on landing page/flow layout when doc preview is open in side panel*/
+
+/* to allow users to scroll on landing page/flow layout when doc preview is open in side panel */
 .binf-widgets.csui-sidepanel-open.csui-doc-preview {
   overflow-y: auto;
 }
@@ -166,6 +168,9 @@
   max-width: 100%;
   min-width: 400px;
 }
+
+/* css!csui/controls/breadcrumbspanel/impl/breadcrumbspanel */
+
 #breadcrumb-wrap {
   padding: 0;
   min-height: 0;
@@ -214,34 +219,56 @@
   visibility: hidden;
 }
 
+@media (forced-colors: active) {
+  .binf-widgets .breadcrumb-inner .binf-breadcrumb li > a:focus,
+  .binf-widgets .breadcrumb-inner .binf-breadcrumb li > a:focus-visible {
+    outline: 1px solid;
+}
+}
+
+/* css!csui/controls/perspective.panel/impl/perspective.panel */
+
+[data-smart-theme]:not([data-smart-theme='cf']) {
+  --jatx-app-header-height: 66px;
+  --jatx-breadcrumb-height-margin: 40px;
+}
+
 .binf-widgets .cs-perspective-panel {
   position: relative;
+
   /* Synchronize this with the navigation header height */
-  height: calc(100vh - 64px);
+  height: calc(100vh - var(--jatx-app-header-height, 64px));
+
   /* margin: 0; */
-  /*overflow: hidden;*/
-  /*margin-bottom: -7.5px;*/
+
+  /* overflow: hidden; */
+
+  /* margin-bottom: -7.5px; */
 }
+
 .cs-perspective-with-breadcrumb-view .grid-rows.cs-zone-perspective > .binf-row > .row-xs-full,
 .cs-perspective-with-breadcrumb-view .grid-rows.cs-grid-perspective > .binf-row > .row-xs-full {
-  height: calc(100vh - 64px);
+  height: calc(100vh - var(--jatx-app-header-height, 64px));
 }
 
 .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .grid-rows.cs-zone-perspective > .binf-row > .row-xs-full,
 .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .grid-rows.cs-grid-perspective > .binf-row > .row-xs-full {
-  height: calc(100vh - 64px - 32px);
+  height: calc(100vh - var(--jatx-app-header-height, 64px) - var(--jatx-breadcrumb-height-margin, 32px));
+  padding-bottom: var(--jato-padding-xxl, unset);
 }
 
 /* 17px is the height of the horizontal scrollbar which comes when the width is less than 767px */
 @media (max-width: 767px) {
   .binf-widgets .cs-perspective-panel {
-    height: calc(100vh - 64px - 17px);
+    height: calc(100vh - var(--jatx-app-header-height, 64px) - 17px);
   }
+
   .binf-widgets .cs-perspective-panel .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .csui-perspective-view {
-    height: calc(100vh - 96px);
+    height: calc(100vh - (var(--jatx-app-header-height, 64px) + var(--jatx-breadcrumb-height-margin, 32px)));
   }
+
   .binf-widgets .cs-perspective-panel .cs-perspective-with-breadcrumb-view .grid-rows > .binf-row > .row-xs-full {
-    height: calc(100vh - 96px);
+    height: calc(100vh - (var(--jatx-app-header-height, 64px) + var(--jatx-breadcrumb-height-margin, 32px)));
   }
 }
 
@@ -254,6 +281,7 @@
 
 .binf-widgets .cs-perspective-with-breadcrumb-view:not(.csui-fading) {
   position: absolute;
+
   /* The two perspective panels were not shifted next to each other,
      unless both top and left coordinates were set */
   left: 0;
@@ -263,7 +291,8 @@
      transition; it uses GPU on mobile devices and is million
      times faster */
   transform: translateX(0);
-  /*transition: transform 0.3s ease-in-out;*/
+
+  /* transition: transform 0.3s ease-in-out; */
   transition: transform 0.3s;
 }
 
@@ -281,12 +310,20 @@
 }
 
 .binf-widgets .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .csui-perspective-view {
-  height: calc(100vh - 64px - 32px);
+  height: calc(100vh - var(--jatx-app-header-height, 64px) - var(--jatx-breadcrumb-height-margin, 32px));
+}
+
+.binf-widgets .cs-perspective-panel .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .csui-perspective-view {
+  padding: var(--jatx-csui-perspective-view, none);
+}
+
+.binf-widgets .cs-perspective-panel .cs-perspective-with-breadcrumb-view .csui-perspective-view:has(.search-results-container) {
+  padding: var(--jato-padding-xxl, none);
 }
 
 .binf-widgets .cs-perspective-with-breadcrumb-view .csui-perspective-view {
   min-height: 0;
-  height: calc(100vh - 64px);
+  height: calc(100vh - var(--jatx-app-header-height, 64px));
 }
 
 .csui-top-ribbon-enabled .cs-perspective-with-breadcrumb-view .csui-perspective-view {
@@ -331,7 +368,7 @@
 }
 
 .binf-widgets.csui-maximized-widget-mode .cs-perspective-panel .cs-perspective.csui-breadcrumbs-visible .binf-row.csui-maximized-row > .csui-maximized-column {
-  height: calc(100vh - 62px + 15px - 32px);
+  height: calc(100vh - 62px + 15px - var(--jatx-breadcrumb-height-margin, 32px));
 }
 
 .binf-widgets.csui-maximized-widget-mode .cs-perspective-panel .cs-perspective .binf-row.csui-maximized-row > .csui-maximized-column {
@@ -391,13 +428,14 @@ and (orientation: portrait) {
   .binf-widgets:not(.perspective-editing) .cs-perspective-panel {
     height: auto;
   }
+
   .binf-widgets .cs-perspective-panel .cs-perspective-with-breadcrumb-view .grid-rows > .binf-row > .row-xs-full {
     height: auto;
     padding: 1px;
   }
 }
 
-/*In firefox, the widgets are not loading in 200% zoom, fixing as part of LPAD-111058*/
+/* In firefox, the widgets are not loading in 200% zoom, fixing as part of LPAD-111058 */
 @media only screen and (-webkit-device-pixel-ratio: 2.5) {
   .binf-widgets .cs-perspective-panel .cs-perspective-with-breadcrumb-view .grid-rows > .binf-row > .row-xs-full > div > div:nth-child(2) {
     height: auto;
@@ -414,48 +452,21 @@ and (orientation: portrait) {
   transform: translateX(0);
   transition: transform .3s ease-in-out;
 }
-/*overwrites from csui to smart for all css classes for tab content header as we are not using csui- anymore. need to revisit this logic*/
 
+/* css!csui/controls/tab.panel/requiredfield/impl/tab.contents.header.requiredfield */
 
-.cs-metadata-properties .smart-tab-contents-header {
-  display: block;
-  /*   height: 54px; */
-  height: 32px;
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  /*   padding-top: 21px; */
-  padding-top: 1px;
-  background-color: #ffffff;
+/* overwrites from csui to smart for all css classes for tab content header as we are not using csui- anymore. need to revisit this logic */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-tab-sticky-header-content-padding-top: 8px;
 }
 
-.cs-metadata-properties .smart-tab-contents-header-content h4 {
-  color: #00498f;
-  font-size: 20px;
-  line-height: 31px;
-  width: calc(100% - 222px);
-  float: left;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  /*   padding-top: calc((42px - 21.6px) / 2); 
-  padding-bottom: 5px; */
-}
-
-.binf-widgets .smart-tab-contents-header-wrapper .smart-tab-contents-header-content h4 {
-  padding-left: 32px;
-}
 
 .binf-widgets .binf-modal-dialog .smart-tab-contents-header-wrapper .smart-tab-contents-header-content h4 {
   padding-left: 16px;
+  padding-top: var(--jatx-csui-tab-sticky-header-content-padding-top, 12px);   /* Controls the sticky header padding and  on-scroll update */
 }
 
-.cs-metadata-properties .smart-tab-contents-header-content {
-  float: left;
-  width: 100%;
-}
-
-@media only screen and (max-height: 400px) {
+@media only screen and (height <= 400px) {
   .cs-metadata-properties .smart-tab-contents-header-content {
     padding: 0 8px;
   }
@@ -465,32 +476,25 @@ and (orientation: portrait) {
   }
 }
 
-.binf-modal-dialog .cs-metadata-properties .smart-tab-contents-header-content {
-  float: left;
-  padding: 0;
-  justify-content: space-between;
-}
-
 .cs-metadata-properties .csui-tab-contents-header-right {
   float: right;
   max-width: 222px;
   padding-top: calc((43px - 31px) / 2);
+
   /* offset by 1px for IE */
 }
 
-.cs-metadata-properties .smart-tab-contents-header:after {
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
-  content: "\00a0";
-  width: 100%;
-  float: left;
-  max-height: 8px;
-  /*Changing this as per spec - metadata page 18*/
+[data-smart-theme="cf"] {
+  .cs-metadata-properties .smart-tab-contents-header:after {
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+    content: "\00a0";
+    float: left;
+    max-height: 8px;
+
+    /* Changing this as per spec - metadata page 18 */
+  }
 }
 
 .binf-modal-dialog .cs-add-item-metadata-form .cs-metadata-properties .smart-tab-contents-header:after {
@@ -511,8 +515,7 @@ and (orientation: portrait) {
 .binf-widgets .cs-metadata-properties .smart-tab-contents-header .required-fields-switch {
   display: inline-flex;
   vertical-align: middle;
-  padding: 0 3px 0 3px;
-  padding-top: 4px;
+  padding: 4px 3px 4px 3px;
 }
 
 .cs-metadata-properties .smart-tab-contents-header .required-fields-switch:focus {
@@ -539,7 +542,11 @@ and (orientation: portrait) {
 
 .cs-metadata-properties .smart-tab-contents-header .csui-tab-contents-header-title-full-width {
   width: 100%;
-}.cs-tab-links.binf-dropdown .cs-label {
+}
+
+/* css!csui/controls/tab.panel/impl/tab.links.dropdown */
+
+.cs-tab-links.binf-dropdown .cs-label {
   font-size: 18px;
   font-weight: 400;
   display: inline-block;
@@ -568,64 +575,104 @@ and (orientation: portrait) {
   margin: 1px 0;
 }
 
-.cs-tab-links.binf-dropdown .binf-dropdown-menu li a:focus {
-  outline: 1px dotted #333333;
-}
-
 .cs-tab-links.binf-dropdown .binf-dropdown-menu li:first-child a {
   margin-top: 3px;
 }
-.binf-widgets .cs-perspective-panel .csui-perspective-toolbar-container {
-  width:100%;
-  position: relative;
-  height: 100%;
-}
 
-.csui-perspective-toolbar-container .cs-title-inner-container {
-  margin: auto;
-  height: 3em;
+/* css!csui/controls/perspective.header/impl/perspective.header */
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .cs-perspective-panel .csui-expanded-tile-view {
+  height: calc(100% - 24px);
+  min-height: 90px;
+  width: calc(100% - 32px);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  overflow-y: hidden;
+  border-radius: var(--jato-radii-xl);
+  margin: var(--jato-margin-xl);
+  border: 1px solid var(--jato-border-color-primary, none);
+  box-shadow: 0 var(--jato-elevation-y-axis-level-2, 0) var(--jato-elevation-blur-level-2, 0) 0 var(--jato-elevation-shadow-color-level-2, none);
 }
 
-.binf-widgets .csui-perspective-toolbar-container .cs-back-button-container {
-  display: inline-flex;
-  position: absolute;
-  height: 100%;
-  width: 36px;
+/* 
+ Have to increase namespecificity as other CS Ui modules followed some bad practise by simply 
+ copy pasting the same file in their module, hence applying JATO styling in this file 
+ as it is won't gets applied, hence increasing the namespecificity to consider these stylesheet
+ stylings only. Also informed the respective modules (recman and physicalobjects) to remove
+ their duplicate code in the VE ticket #2057133.
+*/
+[data-smart-theme] {
+  .binf-widgets .cs-perspective-panel .csui-perspective-toolbar-container {
+    width: 100%;
+    position: relative;
+    height: 100%;
+  }
+
+  .csui-perspective-toolbar-container .cs-title-inner-container {
+    margin: auto;
+    height: var(--jato-size-height-40, 3em);
+    display: flex;
+    align-items: center;
+  }
+
+  .binf-widgets .csui-perspective-toolbar-container .cs-back-button-container>otc-button {
+    margin: auto;
+  }
+
+  .binf-widgets .csui-perspective-toolbar-container .cs-back-button-container {
+    display: inline-flex;
+    position: absolute;
+    height: 100%;
+    width: 36px;
+  }
+
+  @media (forced-colors: active) {
+    .binf-widgets .csui-perspective-toolbar-container .cs-back-button-container:focus-visible {
+      outline: 1px solid;
+      outline-offset: -1px;
+    }
+  }
+
+  .csui-perspective-toolbar .cs-go-back {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  .binf-widgets .csui-perspective-toolbar-container .title {
+    font-size: var(--jatx-table-header-title-font-size, 1.65em);
+    font-weight: var(--jatx-table-header-title-font-weight, 400);
+    padding-left: 8px;
+    margin: auto;
+  }
+
+  .csui-perspective-toolbar .title-icon {
+    font-size: 2em;
+    float: left;
+    height: 1.5em;
+  }
+
+  .binf-widgets .cs-perspective-panel .csui-perspective-toolbar {
+    flex-basis: var(--jato-size-height-40, 3em);
+    background: var(--jatx-const-transparent, #ffffff);
+  }
+
+  .binf-widgets .cs-perspective-panel .csui-expanded-tile-view {
+    background: var(--jato-background-elevation-level-2, #ffffff);
+  }
+
+  .binf-widgets .csui-nodetable .binf-widgets .cs-perspective-panel .binf-modal-dialog .csui-perspective-toolbar {
+    display: none;
+  }
+
+  .binf-widgets .cs-perspective-panel .cs-title-container {
+    display: flex;
+  }
 }
 
-.csui-perspective-toolbar .cs-go-back {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  margin: auto;
-}
+/* css!csui/controls/tile/behaviors/impl/perfect.scrolling */
 
-.binf-widgets .csui-perspective-toolbar-container .title {
-  font-size: 1.65em;
-  padding-left: 8px;
-  margin: auto;
-}
-
-.csui-perspective-toolbar .title-icon {
-  font-size: 2em;
-  float: left;
-  height: 1.5em;
-}
-
-.binf-widgets .cs-perspective-panel .csui-perspective-toolbar {
-  flex-basis: 3em;
-  background: white;
-}
-
-.binf-widgets .cs-perspective-panel .binf-modal-dialog .csui-perspective-toolbar {
-  display: none;
-}
-
-.binf-widgets .cs-perspective-panel .cs-title-container {
-  display: flex;
-}
 .binf-widgets .csui-perfect-scrolling {
   overflow: hidden;
   position: relative;
@@ -754,11 +801,17 @@ and (orientation: portrait) {
 .csui-perfect-scrolling.ps-container > .ps-scrollbar-x-rail.binf-focus > .ps-scrollbar-x{
   height: .5em;
 }
+
+/* css!csui/perspectives/impl/perspective */
+
 /* Reduced specificity to let the tabbed perspective win. */
-.cs-perspective > .cs-content > .tab-panel > .binf-tab-content > * > .binf-row > * {
+.cs-perspective > .cs-content > .tab-panel > .smart-tab-contents-wrapper > .binf-tab-content > * > .binf-row > * {
   height: 100%;
   min-height: 160px;
 }
+
+/* css!csui/perspectives/flow/impl/flow.perspective */
+
 /* layout for flow perspective */
 
 /* optimized for 767 width
@@ -774,7 +827,7 @@ tiles for < 768. The default height is specified e.g. in grid-rows.css.
 So no other, more specific, definitions are influenced/overwritten. */
 
 /* col-sm-6 and col-sm-12 for video */
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .binf-widgets:not(.csui-mobile) .cs-flow-perspective.grid-rows > .binf-row > *:not(.row-xs-full) {
     height: 44.439vw; /* optimized for 991 width */
     min-height: 44.439vw;
@@ -782,14 +835,14 @@ So no other, more specific, definitions are influenced/overwritten. */
 }
 
 /* col-md-4 and col-md-8 for video */
-@media (min-width: 992px) {
+@media (width >= 992px) {
   .binf-widgets:not(.csui-mobile) .cs-flow-perspective.grid-rows > .binf-row > *:not(.row-xs-full) {
     height: 29.80533vw; /* optimized for 1199 width */
     min-height: 29.80533vw;
   }
 }
 
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
   .binf-widgets:not(.csui-mobile) .cs-flow-perspective.grid-rows > .binf-row > *:not(.row-xs-full) {
     height: 29.94993vw; /* optimized for 1439 width */
     min-height: 29.94993vw;
@@ -797,7 +850,7 @@ So no other, more specific, definitions are influenced/overwritten. */
 }
 
 /* col-xl-3 and col-xl-6 for video */
-@media (min-width: 1440px) {
+@media (width >= 1440px) {
   .binf-widgets:not(.csui-mobile) .cs-flow-perspective.grid-rows > .binf-row > *:not(.row-xs-full) {
     height: 22.70860vw; /* optimized for 1440 and 1919 width */
     min-height: 22.70860vw;
@@ -810,19 +863,18 @@ So no other, more specific, definitions are influenced/overwritten. */
   display: none; /* Hide Pman placeholder when DnD is active */
 }
 
+
+/* css!csui/perspectives/zone/impl/zone.perspective */
+
 /* ZONE PERSPECTIVE */
+
 /* widgets use full remaining page height and wrap with same height */
-
-.binf-widgets .cs-perspective-panel .cs-perspective.cs-zone-perspective > .binf-row {
-}
-
-
-.binf-widgets .cs-perspective-panel .cs-perspective.cs-zone-perspective > .binf-row > * {
-}
-
 .binf-widgets.csui-folderbrowser-strechable .cs-perspective-panel .cs-perspective.cs-zone-perspective > .binf-row > * {
     height: 100%;
 }
+
+/* css!csui/perspectives/banner-content-sidebar/impl/banner-content-sidebar */
+
 .binf-widgets .cs-perspective-panel .cs-perspective.banner-content-sidebar-perspective {
     height: 100%;  
   }
@@ -844,8 +896,9 @@ So no other, more specific, definitions are influenced/overwritten. */
 .binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective.banner-content-sidebar-perspective #main {
     background-color: transparent;
 }
+
 .binf-widgets.perspective-editing .csui-perspective-view .banner-content-sidebar-perspective #main {
-    padding: 0px 8px 8px 8px;
+    padding: 0 8px 8px 8px;
 }
 
 .binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective.banner-content-sidebar-perspective #main{
@@ -863,11 +916,11 @@ So no other, more specific, definitions are influenced/overwritten. */
 }
 
 .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main {
-    padding:0px 25px 25px 25px;
+    padding:0 25px 25px 25px;
     min-height: calc(100% - 0px);
     margin: 0;
     display: flex;
-    background-color: #F3F6FB;
+    background-color: var(--jato-background-elevation-base, #F3F6FB);
 }
 
 .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-banner .cui-rich-editor-widget-wrapper,
@@ -877,7 +930,7 @@ So no other, more specific, definitions are influenced/overwritten. */
 }
 
 .binf-widgets.perspective-editing .csui-perspective-view .banner-content-sidebar-perspective #main {
-    padding: 0px 25px 25px 25px;
+    padding: 0 25px 25px 25px;
 }
 
 .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective > #banner-region + div#main {
@@ -888,17 +941,18 @@ So no other, more specific, definitions are influenced/overwritten. */
 .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #sidebar-region {
     margin: 0;    
     padding-top: 16px;
-    background: #F3F6FB;
+    background: var(--jato-background-elevation-base, #F3F6FB);
 }
 
 .binf-widgets.perspective-editing  .csui-perspective-view .banner-content-sidebar-perspective #content-region,
 .binf-widgets.perspective-editing  .csui-perspective-view .banner-content-sidebar-perspective #sidebar-region {
-    background-color: rgba(249, 249, 249, 0.2);
-    border: 1px solid #ffffff;
+    background-color: var(--jatx-const-transparent, rgba(249, 249, 249, 0.2));
+    border: 1px solid var(--jato-border-color-primary, #ffffff);
+    border-radius: var(--jato-radii-lrg, initial);
     padding: 8px 0 0 0;
 }
 
-@media (min-width: 1920px) {
+@media (width >= 1920px) {
     .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main {
         padding: 0 200px;
     }
@@ -906,6 +960,7 @@ So no other, more specific, definitions are influenced/overwritten. */
 
 .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective > #banner-region {
     min-height: 160px;
+
     /* max-height: 300px; */
     overflow: visible;
     margin: 0;
@@ -914,8 +969,9 @@ So no other, more specific, definitions are influenced/overwritten. */
 }
 
 .binf-widgets.perspective-editing  .csui-perspective-view .banner-content-sidebar-perspective > #banner-region { 
-    background-color: rgba(249, 249, 249, 0.2);
-    border: 1px solid #ffffff;
+    background-color: var(--jato-background-elevation-level-4, rgba(249, 249, 249, 0.2));
+    border: 1px solid var(--jato-border-color-primary, #ffffff);
+    border-radius: var(--jato-radii-lrg, initial);
     margin-bottom: 16px;
     padding: 8px;
 }
@@ -930,9 +986,21 @@ So no other, more specific, definitions are influenced/overwritten. */
     min-height: 200px;
 }
 
+.binf-widgets .csui-pman-widget .csui-pman-widget-jato-icon {
+    width: 110px;
+    height: 110px;
+    margin-bottom: var(--jato-margin-sm);
+}
+
+.binf-widgets .banner-content-sidebar-perspective #banner-region .csui-pman-widget-jato-icon {
+    width: 56px;
+    height: 56px;
+}
+
 .binf-widgets .banner-content-sidebar-perspective #banner-region .csui-html-editor-no-header.csui-html-editor-wrapper .csui-richtext-message-wrapper {
     padding: 0;
 }
+
 .binf-widgets .cs-bcs-perspective.grid-rows .csui-html-editor-wrapper .csui-newlayout-template .contact {
     margin: 0;
 
@@ -943,7 +1011,7 @@ So no other, more specific, definitions are influenced/overwritten. */
 }
 
 #content-region .binf-row div[data-csui-widget_type].csui-heroTile:not(.csui-pman-editable-widget), 
-#sidebar-region .binf-row div.csui-widget:not([data-csui-widget_type='shortcuts']):not([data-csui-widget_type='classificationvolume']):not([data-csui-widget_type='configurationvolume']):not([data-csui-widget_type='xdomea']):not([data-csui-widget_type='info']):not([data-csui-widget_type='conv']):not([data-csui-widget_type='calendar']):not([data-csui-widget_type='onenote']):not(.csui-pman-editable-widget):not(.csui-maximized-column):not(.csui-action-button) {
+#sidebar-region .binf-row div.csui-widget:not([data-csui-widget_type='shortcuts']):not([data-csui-widget_type='shortcut']):not([data-csui-widget_type='classificationvolume']):not([data-csui-widget_type='configurationvolume']):not([data-csui-widget_type='xdomea']):not([data-csui-widget_type='info']):not([data-csui-widget_type='conv']):not([data-csui-widget_type='calendar']):not([data-csui-widget_type='onenote']):not(.csui-pman-editable-widget):not(.csui-maximized-column):not(.csui-action-button):not([data-csui-widget_type='myworkplace']) {
     height: auto;
     margin: 0;
     min-height: calc(50vh - 50px);
@@ -961,6 +1029,7 @@ So no other, more specific, definitions are influenced/overwritten. */
 .binf-widgets #banner-region .binf-row div[data-csui-widget_type='perspective.placeholder'].binf-col-xl-6 {
     width: 100%;
 }
+
 /* Resolution-specific CSS & 0.9 dpr */
 @media screen and (-webkit-max-device-pixel-ratio: 0.99) /* Webkit-based browsers */ {
     #sidebar-region .binf-row div.csui-widget:not([data-csui-widget_type='shortcuts']):not(.csui-pman-editable-widget):not(.csui-maximized-column):not(.csui-action-button) {
@@ -992,12 +1061,16 @@ So no other, more specific, definitions are influenced/overwritten. */
 
 #sidebar-region .binf-row div[data-csui-widget_type] .cs-list .tile-content,
 #sidebar-region .binf-row div[data-csui-widget_type] .cs-list .tile-content .csui-error {
-    min-height: calc(50vh - 120px);
+    min-height: calc(50vh - 102px);
     max-height: calc(600px - 64px);
 }
- 
+
+#sidebar-region .binf-row div[data-csui-widget_type] .cs-list .tile-header + .tile-content .csui-saved-search-form {
+    max-height: calc(600px - 164px - var(--jato-measure-48, 42px)); /* removed title header height from content area, when we have title, substracted footer height to have space for the footer */
+}
+
 #sidebar-region .binf-row div[data-csui-widget_type] .cs-list .tile-header + .tile-content {
-    max-height: calc(600px - 164px); /*removed title header height from content area, when we have title*/
+    max-height: calc(600px - 164px); /* removed title header height from content area, when we have title */
 }
 
 #content-region .binf-row div[data-csui-widget_type].csui-heroTile .cs-list .tile-content {
@@ -1010,7 +1083,7 @@ So no other, more specific, definitions are influenced/overwritten. */
     max-height: 600px;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #ffffff;
     min-height: calc(50vh - 65px);
     padding: 0;
     margin: 0;
@@ -1027,7 +1100,11 @@ So no other, more specific, definitions are influenced/overwritten. */
 .perspective-editing #content-region .csui-pman-editable-widget:not(.csui-pman-placeholder-container) .csui-pman-widget .tile-header,
 .perspective-editing #content-region .csui-pman-editable-widget.csui-heroTile:not(.csui-pman-placeholder-container) .csui-pman-widget .tile-header,
 .perspective-editing #sidebar-region .csui-pman-editable-widget:not(.csui-pman-placeholder-container) .csui-pman-widget .tile-header {
-    border-radius: 6px 6px 0 0;
+    border-radius: var(--jato-radii-lrg, 6px) var(--jato-radii-lrg, 6px) 0 0;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .perspective-editing #sidebar-region .csui-pman-editable-widget:not(.csui-pman-placeholder-container) .csui-pman-widget {
+    min-height: calc(50vh - 50px);
 }
 
 #content-region .binf-row div[data-csui-widget_type].csui-heroTile .csui-html-editor-wrapper-parent,
@@ -1039,13 +1116,18 @@ So no other, more specific, definitions are influenced/overwritten. */
     margin: 0;
     padding: 0;
 }
+
 .perspective-editing #sidebar-region .csui-pman-editable-widget[data-csui-widget_type]:not(.csui-pman-placeholder-container):not(.csui-shortcut-item) {
     margin: 8px;
     width: calc(100% - 16px);
     min-height: calc(50vh - 50px);
-    background-color: #fff;
 }
-.perspective-editing #sidebar-region .csui-pman-editable-widget[data-csui-widget_type]:not(.csui-pman-placeholder-container):not(.csui-shortcut-item):not([data-csui-widget_type='shortcuts']) {
+
+.perspective-editing #sidebar-region .csui-pman-editable-widget[data-csui-widget_type='perspective.widget'] {
+    background-color: var(--jato-background-elevation-level-4, #ffffff);
+}
+
+.perspective-editing #sidebar-region .csui-pman-editable-widget[data-csui-widget_type]:not(.csui-pman-placeholder-container):not(.csui-shortcut-item):not([data-csui-widget_type='shortcuts']):not([data-csui-widget_type='myworkplace']):not([data-csui-widget_type='classificationvolume']):not([data-csui-widget_type='configurationvolume']){
     height: auto;
 }
 
@@ -1094,8 +1176,13 @@ So no other, more specific, definitions are influenced/overwritten. */
     width: calc(100% - 0px);
     min-height: 142px;
 }
+
 .perspective-editing .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-banner .csui-pman-editable-widget:not(.csui-pman-placeholder-container) {
-  background-color: #fff;
+  background-color: var(--jatx-const-transparent, #ffffff);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .perspective-editing .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-banner .csui-pman-editable-widget:not(.csui-pman-placeholder-container) .csui-pman-widget {
+    min-height: 142px;
 }
 
 .perspective-editing .csui-perspective-view .banner-content-sidebar-perspective .csui-pman-editable-widget,
@@ -1122,16 +1209,7 @@ So no other, more specific, definitions are influenced/overwritten. */
 }
 
 .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main .tile {
-    border-radius: 6px;
-    box-shadow: 0px 4px 12px rgb(152 168 178 / 25%);
-}
-
-.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main .tile .tile-header {
-    border-radius: 6px 6px 0 0;
-}
-
-.binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main .tile .tile-content{
-    border-radius:0 0 6px 6px;
+    box-shadow: 0 4px 12px rgb(152 168 178 / 25%);
 }
 
 .banner-content-sidebar-perspective .csui-newlayout-template h2,
@@ -1148,37 +1226,40 @@ So no other, more specific, definitions are influenced/overwritten. */
   font-weight: normal;
 }
 
-/* Banner*/
+/* Banner */
 
 body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template #banner {
   min-height: 160px;
 }
 
 .binf-widgets.perspective-editing  .banner-content-sidebar-perspective .cs-bcs-perspective-banner .csui-html-editor-wrapper .csui-richtext-message {
-    color: #333333;
+    color: var(--jato-typography-text-color-primary, #333333);
 }
 
 .binf-widgets .banner-content-sidebar-perspective .cs-bcs-perspective-banner .csui-html-editor-wrapper .csui-richtext-message {
-    color: #ffffff;
+    color: var(--jato-typography-text-color-primary, #ffffff);
 }
 
 .binf-widgets .banner-content-sidebar-perspective .csui-html-editor-wrapper .csui-richtext-message p.execImage {
     padding: 0;
     margin: 0 16px;
     font-weight: normal;
-    color: #333;
+    color: #333333;
 }
 
 .binf-widgets .banner-content-sidebar-perspective .csui-html-editor-wrapper .csui-newlayout-template #banner #execInfo h2,
 .binf-widgets .banner-content-sidebar-perspective .csui-html-editor-wrapper .csui-newlayout-template #banner #execInfo p {
     margin-bottom: 0;
   }
+
 .binf-widgets .banner-content-sidebar-perspective .csui-html-editor-wrapper .csui-newlayout-template #banner #execInfo p {
     line-height: 18px;
 }   
+
 .binf-widgets .banner-content-sidebar-perspective .csui-html-editor-wrapper .csui-newlayout-template #banner #deptName h3 {
     padding: 0 40px 0 0;
 }
+
 .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-banner .tile:hover {
     outline: none;
 }
@@ -1186,13 +1267,15 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
 .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .cs-bcs-perspective-banner .execImage img {
     margin: 16px;
 }
-/* Banner end*/
+
+/* Banner end */
 
 /* Large Tile */
 #content-region .binf-row div[data-csui-widget_type].csui-heroTile img.logo {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 /* Large Tile end */
 
 /* Quicklink tiles */
@@ -1218,12 +1301,14 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
     margin: 0;
     padding: 0;
 }
+
 /* Quicklink tiles end */
 
 /* QuickIconlinks */
 .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .csui-newlayout-template #LinkContainer {
     padding: 0 13px;
 }
+
 .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective .csui-html-editor-wrapper .csui-newlayout-template .linkGroup {
     width: 100%;
     margin: 16px 0;
@@ -1233,7 +1318,8 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
     border: none;
     padding: 0;
 }
-/* QuickIconlinks end*/
+
+/* QuickIconlinks end */
 
 .banner-content-sidebar-perspective #sidebar-region p {
     margin: 0;
@@ -1249,7 +1335,7 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
 
 .binf-widgets .cs-perspective.banner-content-sidebar-perspective .csui-newlayout-template a.actionButton:hover,
 .binf-widgets .cs-perspective.banner-content-sidebar-perspective .csui-newlayout-template a.actionButton:focus {
-     color: #fff;
+     color: #ffffff;
 }
 
 .binf-widgets .banner-content-sidebar-perspective .csui-html-editor-wrapper .csui-richtext-message,
@@ -1259,13 +1345,14 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
 }
 
 .binf-widgets .banner-content-sidebar-perspective .csui-nodestable {
-    box-shadow: 0px 4px 12px rgb(152 168 178 / 25%);
+    box-shadow: 0 4px 12px rgb(152 168 178 / 25%);
     border-radius: 6px;
 }
 
 .binf-widgets .banner-content-sidebar-perspective .cs-bcs-perspective-sidebar .csui-html-editor-wrapper .csui-richtext-message p {
     margin-bottom: 1em;
 }
+
 .perspective-editing #sidebar-region .csui-pman-editable-widget[data-csui-widget_type='perspective.widget']:not(.csui-pman-placeholder-container) {
     min-height: calc(250px - 46px);
 }
@@ -1306,17 +1393,10 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
     padding: 0;
 }
 
-.binf-widgets .banner-content-sidebar-perspective .csui-shortcut-container .csui-shortcut-item {
-    border-radius: 6px;
-}
-
-#sidebar-region .binf-row div[data-csui-widget_type='myworkplace']:not(.csui-pman-editable-widget),
-#sidebar-region .binf-row div[data-csui-widget_type='myworkplace'].csui-pman-editable-widget,
 #sidebar-region .binf-row div[data-csui-widget_type='transmittal.header'].csui-pman-editable-widget,
 #sidebar-region .binf-row div[data-csui-widget_type='transmittal.header']:not(.csui-pman-editable-widget),
 #sidebar-region .binf-row div[data-csui-widget_type='perspective.placeholder'].csui-pman-placeholder-container:not(.csui-pman-editable-widget),
 .perspective-editing #sidebar-region .binf-row div[data-csui-widget_type='myworkplace']:not(.csui-pman-editable-widget),
-.perspective-editing #sidebar-region .binf-row div[data-csui-widget_type='myworkplace'].csui-pman-editable-widget,
 .perspective-editing #sidebar-region .binf-row div[data-csui-widget_type='transmittal.header'].csui-pman-editable-widget,
 .perspective-editing #sidebar-region .binf-row div[data-csui-widget_type='transmittal.header']:not(.csui-pman-editable-widget) {
     height: calc(100vh - 425px);
@@ -1333,7 +1413,7 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
 }
 
 #sidebar-region .binf-row div[data-csui-widget_type] .cs-list .tile-content .csui-custom-view-search .csui-saved-search-form {
-    padding-bottom: 42px;
+    margin-bottom: var(--jato-measure-48, 42px);
 }
 
 .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main div[data-csui-widget_type='search.custom'] .tile .tile-content {
@@ -1432,8 +1512,8 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
 
 /* Resolution-specific CSS & 1.5 dpr */
 @media screen and (-webkit-min-device-pixel-ratio: 1.5), /* Webkit-based browsers */
-(min-resolution: 1.5dppx),                               /* The standard way */
-(min-resolution: 144dpi) {
+(resolution >= 1.5dppx),                               /* The standard way */
+(resolution >= 144dpi) {
     #sidebar-region .binf-row div[data-csui-widget_type] .cs-list .tile-content,
     #sidebar-region .binf-row div[data-csui-widget_type]:not(.csui-action-button) .csui-html-editor-wrapper-parent.tile,
     .binf-widgets #sidebar-region .binf-row div.csui-widget[data-csui-widget_type='nodestable'] > div,
@@ -1448,25 +1528,34 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
         min-height: 245px;
     }    
 }
+
 /* Resolution-specific CSS & 1.75 dpr */
 @media screen and (-webkit-min-device-pixel-ratio: 1.75), /* Webkit-based browsers */
-(min-resolution: 1.75dppx),                               /* The standard way */
-(min-resolution: 264dpi) { 
+(resolution >= 1.75dppx),                               /* The standard way */
+(resolution >= 264dpi) { 
     .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main {
-        padding: 0px 5px 5px 5px;
+        padding: 0 5px 5px 5px;
     }
+
     .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main .tile-nav .binf-dropdown-menu,
     .binf-widgets .csui-perspective-view .banner-content-sidebar-perspective #main .tile-nav .binf-dropdown-menu li a {
         max-width: 150px;
         min-width: 110px;
     }
-}/* Move the tabs to the right, cancel their underlining and round corners */
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs {
-  border-bottom: none;
 }
 
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a {
-  border-radius: 0;
+/* css!csui/perspectives/tabbed/impl/tabbed.perspective */
+
+:root { 
+  --jatx-tab-panel-tablink-background: transparent;
+  --jatx-tab-panel-tablink-toolbar-hover-background-color: transparent;
+   --jatx-tab-panel-tablink-toolbar-active-background-color: transparent;
+}
+
+[data-smart-theme="cf"] {
+  --jatx-tab-panel-tablink-background: rgba(0, 0, 0, 0.4);
+  --jatx-tab-panel-tablink-toolbar-hover-background-color: rgba(148, 187, 234, 0.25);
+  --jatx-tab-panel-tablink-toolbar-active-background-color:  rgba(51, 51, 51, 0.25)
 }
 
 .cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content {
@@ -1496,51 +1585,14 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
 
 /* Temporarily patch the theme, so that the text is readable when hovered over */
 
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a {
-  color: #ffffff;
-  background-color: inherit;
-  border: none;
-  padding: 0;
-  margin: 0;
-  height: 48px;
-}
+[data-smart-theme="cf"] {
+  .cs-tabbed-perspective>.cs-content>.tab-panel>.tab-links.smart-tab-links .tab-links-bar>.binf-nav-tabs>li>a>span {
+    color: #ffffff;
+  }
 
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a {
-  margin-right: 1px;
-}
-
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li.binf-active > a {
-  font-weight: bold;
-}
-
-
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a:focus {
-  outline: none;
-  background-color: rgba(148, 187, 234, 0.25);
-}
-
-.binf-widgets .cs-tabbed-perspective .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li:first-child span.cs-tablink-text {
-  margin-left: 24px;
-}
-
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a > span.cs-tablink-text {
-  margin: 0 16px;
-  max-width: 300px;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 14px;
-  text-overflow: ellipsis;
-  display: block;
-  padding: 15px 0 11px 0;
-  line-height: 18px;
-}
-
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a > span.cs-tablink-text:focus {
-  outline: none;
-}
-
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li.binf-active > a > span.cs-tablink-text {
-  border-bottom: 4px solid #9de4f9;
+  .binf-widgets .cs-tabbed-perspective .smart-tab-panel .smart-tab-links-bar .binf-nav-tabs>li.binf-active>a.cs-tablink::before {
+    background-color: #9de4f9;
+  }
 }
 
 .binf-widgets.csui-maximized-widget-mode .cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row {
@@ -1549,23 +1601,25 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
 
 /* Shrink the header is other than first tab is activated */
 
-/*.cs-tabbed-perspective.cs-toggling > .cs-header {
+/* .cs-tabbed-perspective.cs-toggling > .cs-header {
   transition: height .3s ease-in-out;
 }
 */
 
 .binf-widgets .cs-tabbed-perspective > .cs-header {
   height: 160px;
-  /*background-color: rgba(65, 64, 66, .85);*/
+
+  /* background-color: rgba(65, 64, 66, .85); */
   background: rgba(0, 0, 0, 0.1);
 }
+
 .binf-widgets:not(.perspective-editing) .cs-tabbed-perspective.csui-no-header > .cs-header {
   height: 0;
 }
 
-/*.cs-tabbed-perspective.cs-toggling.cs-collapse > .cs-header {
+/* .cs-tabbed-perspective.cs-toggling.cs-collapse > .cs-header {
   transition: height .3s ease-in-out;
-}*/
+} */
 
 .cs-tabbed-perspective.cs-collapse > .cs-header {
   height: 64px;
@@ -1582,20 +1636,24 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
   display: inline-flex;
   height: 48px;
   flex: 0 0 auto;
+  order: 2;
+  border-bottom: 1px solid var(--jato-tabs-navigation-content-color-disabled, #cccccc);
+}
+
+.binf-widgets .cs-tabbed-perspective .smart-tab-contents-wrapper {
+  order: 3;
+  width: 100%;
+
 }
 
 .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links {
   height: 48px;
-  background: rgba(0, 0, 0, 0.4);
+  background:var(--jatx-tab-panel-tablink-background);
   display: inline-flex;
   flex: 1 1 1%;
 }
 
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs {
-  margin-bottom: 7.5px;
-}
-
-/*.cs-tabbed-perspective.cs-toggling > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > * {
+/* .cs-tabbed-perspective.cs-toggling > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > * {
   transition: height .3s ease-in-out;
 }
 
@@ -1618,7 +1676,9 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
 }
 
 /* grow/shrink content to fill rest of height below header, when header height changes. */
+
 /* set reasonable height (100% - standard header), which is initial only and adapted by flex. */
+
 /* set min height to sum of min height of elements in cs-content: tab-link, tab-content */
 .binf-widgets .cs-tabbed-perspective > .cs-content {
   flex: 1 1 auto;
@@ -1632,16 +1692,20 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
 }
 
 /* Adjust the row in the pane */
-.cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row {
+.cs-tabbed-perspective > .cs-content > .tab-panel > .smart-tab-contents-wrapper > .binf-tab-content > .binf-tab-pane > .binf-row {
   height: calc(100% + 15px);
   min-height: 160px;
   margin: -15px 0 0 -15px;
 }
 
 /* Adjust the tile in the row */
-.cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > * {
+.cs-tabbed-perspective > .cs-content > .tab-panel > .smart-tab-contents-wrapper > .binf-tab-content > .binf-tab-pane > .binf-row > * {
   min-height: 160px;
   padding: 15px 0 0 15px;
+}
+
+.cs-tabbed-perspective > .cs-content > .smart-tab-panel >  .smart-tab-contents-wrapper .binf-tab-content {
+ height: calc(100vh - 240px);
 }
 
 /* Maximized view */
@@ -1650,6 +1714,7 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .binf-widgets.csui-maximized-widget-mode .cs-perspective-panel .cs-tabbed-perspective .cs-content .binf-row.csui-maximized-row > .csui-maximized-column {
   height: 100%;
   padding-top: 0;
@@ -1673,17 +1738,13 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
   height: 96px;
   background: rgba(0, 0, 0, 0.4);
 }
+
 .binf-widgets:not(.perspective-editing) .cs-perspective-panel .cs-tabbed-perspective.csui-no-header.cs-collapse > .cs-header {
   height: 48px;
 }
 
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective.cs-collapse > .cs-header .conws-header-type {
   display: none;
-}
-
-
-.binf-widgets .cs-perspective-panel .cs-tabbed-perspective.cs-collapse > .cs-content > .tab-panel > .tab-links {
-  background: transparent;
 }
 
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .tab-links-bar {
@@ -1708,12 +1769,12 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
   height: 48px;
 }
 
-.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .tab-links-bar ul.binf-nav {
+/* .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .tab-links-bar ul.binf-nav {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   width: 500%;
-}
+} */
 
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .left-toolbar {
   flex: 0 0 auto;
@@ -1732,13 +1793,7 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
   background-image: url(../perspectives/tabbed/impl/images/next.svg);
 }
 
-.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_next_div,
-.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_previous_div {
-  width: 48px;
-  height: 48px;
-
-}
-
+ 
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_next_div .goto_next_page:hover {
   background-image: url(../perspectives/tabbed/impl/images/next-hover.svg);
 }
@@ -1763,12 +1818,12 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
 
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .left-toolbar:hover,
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .right-toolbar:hover {
-  background-color: rgba(148, 187, 234, 0.25);
+  background-color: var(--jatx-tab-panel-tablink-toolbar-hover-background-color);
 }
 
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .left-toolbar:active,
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .right-toolbar:active {
-  background-color: rgba(51, 51, 51, 0.25);
+  background-color: var(--jatx-tab-panel-tablink-toolbar-active-background-color);
 }
 
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_previous_div .goto_previous_page {
@@ -1783,17 +1838,6 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
   background-image: url(../perspectives/tabbed/impl/images/prev-select.svg);
 }
 
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li:not(.binf-active) > a:hover {
-  border-bottom: none;
-  background-color: rgba(148, 187, 234, 0.25);
-}
-
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li:not(.binf-active) > a:active,
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li.binf-active > a:active {
-  background-color: rgba(51, 51, 51, 0.25);
-}
-
-
 .binf-widgets .xecmpf-businessattachments .xecmpf-attachmentstitlebaricon,
 .binf-widgets .xecmpf-businessattachments .xecmpf-attachmentstitleicon {
   top: 15%;
@@ -1803,7 +1847,10 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
   height: 100%;
 }
 
-/******Header background Change for xECM workspace css Ends here ******/
+/****** Header background Change for xECM workspace css Ends here ******/
+
+/* css!csui/perspectives/tabbed-flow/impl/edit.perspective/tab.link */
+
 .binf-widgets .csui-pman-editinput {
   background: transparent;
 }
@@ -1837,6 +1884,9 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
   display: block;
 }
 
+
+/* css!csui/perspectives/tabbed-flow/impl/edit.perspective/tab.links */
+
 .binf-widgets .csui-pman-add-newtab {
   padding: 8px 24px 8px 8px;
 }
@@ -1856,6 +1906,9 @@ body.binf-widgets  .banner-content-sidebar-perspective .csui-newlayout-template 
   background-color: transparent;
   border: 1px solid transparent;
 }
+
+/* css!csui/temporary/cop/icons/icons */
+
 .csui-temporary-cop-blog {
   background-image: url('../temporary/cop/images/mime_blog.svg');
 }

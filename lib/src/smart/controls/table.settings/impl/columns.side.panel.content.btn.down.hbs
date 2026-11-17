@@ -1,3 +1,9 @@
-<otc-button {{#unless tabstop}}tabindex="-1" {{/unless}}{{#unless canMoveDown}}disabled {{/unless}}class="smart-table-settings-column-btnDown" icon="smart_action:action_caret_down32"></otc-button>
-
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+{{#if isJato}}
+  <otc-button {{#unless tabstop}}tabindex="-1" {{/unless}}{{#unless canMoveDown}}disabled {{/unless}}
+              class="smart-table-settings-column-btnDown" type="subtle" size="small">
+    <otc-icon svg="{{actionChevronSmallDownSvg}}"></otc-icon>
+  </otc-button>
+{{else}}
+  <otc-button {{#unless tabstop}}tabindex="-1" {{/unless}}{{#unless canMoveDown}}disabled {{/unless}}class="smart-table-settings-column-btnDown" icon="smart_action:action_caret_down32"></otc-button>
+{{/if}}
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

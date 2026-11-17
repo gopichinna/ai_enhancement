@@ -3,13 +3,19 @@
     <div class="cs-field-read-inner">
       <div class="btn-container">
         <span class="csui-btn-reserve-status {{noActionCSS}}">
+          {{#if isJATO}}
+          <otc-button type="status" class="csui-btn-reserve-status-action" tabindex="-1"  title="{{tooltip}}" ariaLabel="{{pressToUnreserve}}" {{#if cannotUnreserve}} disabled {{/if}}>
+            <otc-icon svg="{{iconSVG}}"></otc-icon>
+          </otc-button>
+          {{else}}
           <span tabindex="{{tabIndex}}" data-cstabindex="{{tabIndex}}"
                 class="csui-btn-reserve-status-action csui-icon {{icon}}" role="button"
                 {{#if canUnreserve}}title="{{tooltip}}"{{/if}}
                 aria-label="{{pressToUnreserve}}"
                 {{#if cannotUnreserve}} disabled {{/if}}
-                {{#if idBtnLabel}}aria-labelledby="{{idBtnLabel}}"
-          {{/if}}></span>
+                {{#if idBtnLabel}}aria-labelledby="{{idBtnLabel}}" {{/if}}>
+          </span>
+          {{/if}}
           <span
               class="csui-reserveby-status cs-formfield cs-userfield cs-formfield-readonly"></span>
            <input id="{{reserveid}}" class="binf-hidden" value="reserved" type="button">
@@ -19,4 +25,4 @@
   </div>
 {{/if}}
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

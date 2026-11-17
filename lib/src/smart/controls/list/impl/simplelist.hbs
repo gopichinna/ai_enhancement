@@ -1,16 +1,29 @@
 {{#if title}}
-<div
-  class="cs-header binf-panel-heading {{#if leftIcon}} cs-header-with-go-back {{else}} cs-header-without-go-back {{/if}}"
-  role="link" aria-label="{{goBackAria}}">
-  {{#if showBackButton}}
-  <div class="smart-simplelist-icon-wrapper smart-v2-icon-parent" role="button">
-    <otc-button icon="smart_action:action_back32" class="cs-go-back" title="{{goBackTooltip}}" arialabel="{{goBackAria}}"></otc-button>
+  <div
+    class="cs-header binf-panel-heading {{#if leftIcon}} cs-header-with-go-back {{else}} cs-header-without-go-back {{/if}}"
+    role="link" aria-label="{{goBackAria}}">
+    {{#if showBackButton}}
+      {{#if isJato}}
+        <otc-icon mirrorifrtl class="smart-tile-header-back-button" svg="{{smartTileHeaderBackJatoIcon}}"></otc-icon>
+      {{else}}
+        <div class="smart-simplelist-icon-wrapper smart-v2-icon-parent">
+          <otc-button mirrorIconIfRtl icon="smart_action:action_back32" class="cs-go-back" title="{{goBackTooltip}}" arialabel="{{goBackAria}}"></otc-button>
+        </div>
+      {{/if}}
+    {{else}}
+      {{#if smartTileHeaderJatoIcon}}
+        <span class="smart-tile-header-jato-icon" title="{{goBackTooltip}}">
+          <otc-icon size="24" type="raw" svg="{{smartTileHeaderJatoIcon}}"></otc-icon>
+        </span>
+      {{else}}
+        {{#if titleBarIcon}}
+          <span class="icon circular smart-simplelist-icon {{titleBarIcon}}" title="{{goBackTooltip}}"></span>
+        {{/if}}
+      {{/if}}
+    {{/if}}
+
+    <span class="cs-title {{#if leftIcon}} cs-title-with-go-back {{/if}}" title="{{title}}">{{title}}</span>
   </div>
-  {{else if titleBarIcon}}
-  <span class="icon circular smart-simplelist-icon {{titleBarIcon}}" title="{{goBackTooltip}}"></span>
-  {{/if}}
-  <span class="cs-title {{#if leftIcon}} cs-title-with-go-back {{/if}}" title="{{title}}">{{title}}</span>
-</div>
 {{/if}}
 
 <div class="cs-content csui-normal-scrolling">
@@ -18,4 +31,4 @@
     {{/if}}>
   </div>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

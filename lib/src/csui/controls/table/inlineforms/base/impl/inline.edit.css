@@ -1,14 +1,39 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+.binf-widgets .csui-inlineform-group .csui-inlineform-text-field otc-input {
+  width: 100%;
+}
 
 .binf-widgets .csui-inlineform-group .csui-inlineform-text-field:first-child .binf-form-control.csui-inlineform-error,
 .binf-widgets .csui-inlineform-group .csui-inlineform-text-field .csui-inlineform-type-url.csui-inlineform-error  {
   border: 1px solid #df3324;
   width: 100%;
-  padding: 0px 8px;
+  padding: 0 8px;
 }
 
+.binf-widgets .csui-nowrap-table .csui-table-row-shows-inlineform .csui-inlineform-parent:has(.csui-inline-editform .csui-inlineform-group .csui-inlineform-field-container),
+.binf-widgets .csui-nowrap-table .csui-table-row-shows-inlineform .csui-inlineform-parent .csui-inline-editform:has(.csui-inlineform-group .csui-inlineform-field-container) {
+  overflow: visible;
+}
+
+.binf-widgets .csui-nowrap-table .csui-table-row-shows-inlineform .csui-inlineform-parent .csui-inline-editform:has(.csui-inlineform-group .csui-inlineform-field-container) {
+  background-color: inherit;
+}
+
+.binf-widgets .csui-nowrap-table .csui-table-row-shows-inlineform .csui-inlineform-parent .csui-inline-editform:has(.csui-inlineform-group .csui-inlineform-field-container),
+.binf-widgets .csui-nowrap-table .csui-table-row-shows-inlineform .csui-inlineform-parent .csui-inline-editform .csui-inlineform-group:has(.csui-inlineform-field-container) {
+  width: fit-content;
+  max-width: 100%;
+}
+
+.binf-widgets .csui-nowrap-table .csui-table-row-shows-inlineform .csui-inlineform-parent .csui-inline-editform.csui-field-size-1 .csui-inlineform-group .csui-inlineform-field-container {
+  width: 420px;
+}
+
+.binf-widgets .csui-nowrap-table .csui-table-row-shows-inlineform .csui-inlineform-parent .csui-inline-editform.csui-field-size-2 .csui-inlineform-group .csui-inlineform-field-container {
+  width: 854px;
+}
 
 .binf-widgets .csui-field-size-1 .csui-inlineform-group .csui-inlineform-field-container {
   width: 100%;
@@ -60,7 +85,7 @@
   margin-left: 0;
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (device-width <= 1024px) {
     .binf-widgets .csui-inline-editform.csui-field-size-2.csui-invalid-url .csui-form-error + .csui-inlineform-group-error .binf-text-danger {
       margin-left: calc(50% + 7px);
     }

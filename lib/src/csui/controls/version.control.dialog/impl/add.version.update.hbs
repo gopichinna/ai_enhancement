@@ -7,17 +7,20 @@
   <div class="binf-control-label">
   {{selectVersionlabel}}
   </div>
-    <label class="binf-radio-inline">
-      <input type="radio" name="version" value="true" checked aria-label="{{minorVersionlabel}}"> {{minorVersion}} </input>
+    <label class="cs-radio-inline">
+      <input type="radio" name="version" value="true" checked aria-label="{{minorVersionlabel}}">
+      <span class="cs-radio-container"><span class="outer"><span class="inner"></span></span></span>
+      {{minorVersion}}
     </label>
-    <label class="binf-radio-inline">
-      <input type="radio" name="version" value="false" aria-label="{{majorVersionlabel}}"> {{majorVersion}} </input>
+    <label class="cs-radio-inline">
+      <input type="radio" name="version" value="false" aria-label="{{majorVersionlabel}}">
+      <span class="cs-radio-container"><span class="outer"><span class="inner"></span></span></span>
+      {{majorVersion}}
     </label>
   </div>
   <div class="binf-col-sm-12 csui-version-reserve {{#if isNotReserved }} binf-hidden {{/if}}">
-    <label class="binf-checkbox-inline">
-      <input type="checkbox" name="reserve" aria-label="{{unreserve}}"> {{keepDocumentReserved}}
-    </label>
+    <otc-checkbox name="reserve" arialabel="{{unreserve}}" tabindex="-1" interactiveonly=""></otc-checkbox>
+    <label class="binf-checkbox-inline"> {{keepDocumentReserved}} </label>
   </div>
   <div class="binf-col-sm-12 csui-version-description" >
     <label class=" binf-control-label" for="{{descriptionFieldId}}" id = "{{descriptionLabelId}}">{{description}}</label>
@@ -26,4 +29,4 @@
 </div>
 
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

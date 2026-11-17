@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-wf-timeline-event {
   height: 90px;
@@ -92,25 +92,13 @@
   line-height: 24px;
 }
 
-.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .esoc-userwidget-wrapper,
-.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .esoc-user-container {
-  display: flex;
-  height: 24px;
-  pointer-events: none;
-  text-decoration: none;
+.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .user-info {
+  padding: 0;
 }
 
-.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .esoc-user-container .esoc-userwidget-default-avatar,
-.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .esoc-user-container .esoc-user-widget-avatar {
+.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .user-info .user-avatar .dctm-user-avatar {
   width: 24px;
   height: 24px;
-}
-
-.binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .performer-container .esoc-user-container .esoc-user-display-name {
-  margin-left: 8px;
-  height: 24px;
-  line-height: 24px;
-  vertical-align: bottom;
 }
 
 .binf-widgets .d2-wf-timeline-event > .item-details-container .item-details .item-property-list > .item-property:first-child {

@@ -1,9 +1,11 @@
 <div class="cs-metadata-item-name">
 <span class="csui-toggle-wrapper binf-hidden">
-  <span class="icon circular1 arrow_back cs-go-back binf-hidden1" style="display:none;"
-        aria-label="{{goBack}}" title="{{goBack}}" tabindex="0"></span>
-  <span class="csui-icon csui-metadata-listview csui-metadata-listview-expand-icon" role="button" title="{{sidebarToggleTitle}}"
-        aria-label="{{sidebarToggleTitle}}" tabindex="0"></span>
+  <otc-button class="cs-go-back" style="display:none;" {{#if isJATO}} size="small" {{else}} icon="csui_action:action_back32" mirrorIconIfRtl {{/if}} arialabel="{{goBack}}" title="{{goBack}}">
+            {{#if isJATO}}<otc-icon svg="{{backButtonIconSVG}}" type="subtle" mirrorIfRtl></otc-icon>{{/if}}
+  </otc-button>
+  <otc-button class="csui-metadata-listview-toggle" {{#if isJATO}} size="small" {{else}} icon="csui_action:action_panel_close32" mirrorIconIfRtl {{/if}} arialabel="{{sidebarToggleTitle}}" title="{{sidebarToggleTitle}}">
+            {{#if isJATO}}<otc-icon svg="{{panelCloseIconSVG}}" type="subtle" mirrorIfRtl></otc-icon>{{/if}}
+  </otc-button>
 </span><span class="csui-type-icon"></span>
 <div role="heading" aria-level="2" class="title-header">
 <span class="title binf-line-clamp" tabindex="0" title="{{name}}" aria-label="{{nameAria}}" role="button"
@@ -27,23 +29,40 @@
          value="{{edit_name}}" aria-labelledby="{{edit_name_id}}" aria-required="true">
   {{#if mlDataEnabled}}
     <span class="csui-multilingual-icon-label">
+    {{#if isJATO}}
+    <otc-button  class="icon csui-multilingual-icon" type="subtle" size="small">
+      <otc-icon svg="{{globeIconSVG}}" type="subtle"></otc-icon>
+    </otc-button>
+    {{else}}
       <button  class="icon csui-multilingual-icon">
         {{{icon-v2 iconName="csui_action_language_switcher24" size='small' states='true'}}}
       </button>
+    {{/if}}
    </span>
   {{/if}}
   {{#unless hideCancelButton}}
+  {{#if isJATO}}
+    <otc-button type="subtle" class="csui-undo csui-edit-save inline-edit-icon" disabled title="{{save_edit_name_tooltip}}" size="regular">
+      <otc-icon svg="{{checkmarkSVG}}" type="subtle"></otc-icon>
+    </otc-button>
+    <otc-button type="subtle" class="csui-undo csui-edit-cancel inline-edit-icon" title="{{cancel_edit_name_tooltip}}" size="regular">
+      <otc-icon svg="{{closeSmallSVG}}" type="subtle"></otc-icon>
+    </otc-button>
+  {{else}}
     <button type="button" class="csui-undo csui-edit-save inline-edit-icon" disabled title="{{save_edit_name_tooltip}}">
       {{{icon-v2 iconName="csui_action_confirm32" size='normal' states='true'}}}
     </button>
     <button type="button" class="csui-undo csui-edit-cancel inline-edit-icon" title="{{cancel_edit_name_tooltip}}">
       {{{icon-v2 iconName="csui_action_cancel32" size='normal' states='true'}}}
     </button>
+  {{/if}}
   {{/unless}}
 </div>
 </div>
+{{#unless isVersionModel}}
 <div class="title-error-div">
   <span class="title-error"></span>
 </div>
+{{/unless}}
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

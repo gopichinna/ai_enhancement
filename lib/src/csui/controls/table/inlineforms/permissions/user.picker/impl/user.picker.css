@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-inline-owner-change {
   width: auto;
@@ -20,7 +20,7 @@
   float: right;
   width: auto;
   height: 33px;
-  padding: 0px 3px;
+  padding: 0 3px;
 }
 
 .binf-widgets .csui-inline-owner-change .csui-control-userpicker .cs-search-icon {
@@ -32,7 +32,7 @@
   width: 6em;
   padding: 4px 12px;
   height: auto;
-  margin: 0px 7px;
+  margin: 0 7px;
 }
 
 .binf-widgets .csui-inline-owner-change .binf-form-control {
@@ -40,6 +40,35 @@
   width: 100%;
   height: 33px;
   padding-right: 30px;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-inline-owner-change input.binf-form-control {
+  background-color: var(--jato-background-elevation-level-1);
+  border: 1px solid var(--jato-input-border-container-neutral);
+  border-block-end: 1px solid var(--jato-input-border-focus-neutral);
+  border-radius: var(--jato-radii-med) var(--jato-radii-med) var(--jatx-const-0) var(--jatx-const-0);
+  font-size: var(--jatx-csui-input-font-size);
+  line-height: var(--jatx-csui-input-line-height);
+  height: var(--jato-measure-32);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-inline-owner-change input.binf-form-control:hover {
+  background-color: var(--jato-background-elevation-level-2-hover);
+  border: 1px solid var(--jato-input-border-container-hover);
+  border-block-end: 1px solid var(--jato-input-border-focus-hover);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-inline-owner-change input.binf-form-control:focus {
+  border-block-end: 1px solid var(--jato-input-border-focus-enabled);
+  border: 1px solid var(--jato-input-border-container-neutral);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled);
+  outline: none;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-inline-owner-change input.binf-form-control::placeholder{
+  color: var(--jato-typography-forms-text-color-placeholder-text);
+  font-weight: var(--jatx-csui-input-placeholder-font-weight);
 }
 
 .binf-widgets .csui-inline-owner-change .csui-control-userpicker .cs-search-clear {
@@ -66,13 +95,13 @@
 }
 
 .binf-widgets .csui-permissions-list-container .csui-inline-owner-change .csui-userpicker-item .member-info .name {
-  font-size: 1em;
+  font-size: var(--jatx-csui-input-font-size,1em);
   font-weight: normal;
   line-height: 18px;
 }
 
 .binf-widgets .csui-permissions-list-container .csui-inline-owner-change .csui-userpicker-item .member-info span {
-  color: #414042;
+  color: var(--jato-typography-text-color-secondary, #414042);;
   font-weight: normal;
   font-size: 0.75em;
 }
@@ -122,7 +151,7 @@
   outline: none;
   width: 32px;
   min-width: auto;
-  margin: 0px;
+  margin: 0;
   }
 
   .binf-widgets .csui-inline-owner-change .binf-btn.cs-save-button[disabled]:hover {

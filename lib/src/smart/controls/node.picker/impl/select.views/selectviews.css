@@ -1,6 +1,13 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+:root {
+  --jatx-np-select-lists-bg-color: transparent; 
+}
+
+[data-smart-theme="cf"] {
+  --jatx-np-select-lists-bg-color: #fff; 
+}
 
 .smart-target-browse .binf-modal-body .csui-panel {
   border: 0;
@@ -16,11 +23,10 @@
   -webkit-flex-direction: column;
   transition: width 300ms ease-in;
   flex: 1 1 auto;
-
 }
 
 .csui-select-lists > div.cs-pane-view.csui-slideMidLeft .csui-np-content {
-  background-color: #ffffff;
+  background-color: var(--jatx-np-select-lists-bg-color);
 }
 
 .binf-modal-body .cs-start-locations.selected {
@@ -37,7 +43,7 @@
 .binf-widgets .csui-select-lists {
   width: 100%;
   overflow: hidden;
-  background-color: #fff;
+  background-color: var(--jatx-np-select-lists-bg-color);
   opacity: 1;
   transition: opacity 150ms ease-in;
   transition-delay: 150ms;

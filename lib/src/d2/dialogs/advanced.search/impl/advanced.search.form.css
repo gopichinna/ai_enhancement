@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .d2-stepper-wizard .d2-advanced-search-form.cs-form.csui-general-form.d2-form {
   margin: 0;
   width: 100%;
@@ -61,7 +60,7 @@
   margin-bottom: 8px;
 }
 
-.binf-widgets .d2-advanced-search-form .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container:after {
+.binf-widgets .d2-advanced-search-form .cs-formfield.dctmw-checkbox-group div.dctmw-checkbox-item-container:after {
   display: none;
 }
 
@@ -86,33 +85,33 @@
   margin-top: -7px;
 }
 
-.binf-widgets .d2-advanced-search-form .cs-formfield.d2-checkbox-group {
+.binf-widgets .d2-advanced-search-form .cs-formfield.dctmw-checkbox-group {
   padding-left: 0;
 }
 
-.d2-advanced-search-form .cs-formfield.d2-checkbox-group .d2-cb-container-parent li {
+.d2-advanced-search-form .cs-formfield.dctmw-checkbox-group .dctmw-cb-container-parent li {
   padding: 0;
 }
 
-.d2-advanced-search-form .cs-formfield.d2-checkbox-group .d2-checkbox-container {
+.d2-advanced-search-form .cs-formfield.dctmw-checkbox-group .dctmw-checkbox-container {
   margin-bottom: 0;
 }
 
-.binf-widgets .d2-advanced-search-form .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container {
+.binf-widgets .d2-advanced-search-form .cs-formfield.dctmw-checkbox-group div.dctmw-checkbox-item-container {
   padding-bottom: 0;
 }
 
-.d2-advanced-search-form .cs-formfield.d2-checkbox-group .d2-cb-container-parent li:not(:first-child) {
+.d2-advanced-search-form .cs-formfield.dctmw-checkbox-group .dctmw-cb-container-parent li:not(:first-child) {
   padding-top: 14px;
 }
 
-.d2-advanced-search-form .cs-field-write .d2-listfield-selection-wrapper,
-.d2-advanced-search-form .cs-field-write .d2-listfield-options-wrapper,
+.d2-advanced-search-form .cs-field-write .dctmw-listfield-selection-wrapper,
+.d2-advanced-search-form .cs-field-write .dctmw-listfield-options-wrapper,
 .d2-advanced-search-form .cs-field-write .d2-nodes-selction-wrapper {
   background-color: #FFFFFF;
 }
 
-.d2-advanced-search-form .cs-field-read .d2-listfield-selectedvalues:not(.d2-formfield-disabled) > li:hover {
+.d2-advanced-search-form .cs-field-read .dctmw-listfield-selectedvalues:not(.dctmw-formfield-disabled) > li:hover {
   box-shadow: none;
 }
 
@@ -128,7 +127,7 @@
 }
 
 
-.binf-widgets .d2-advanced-search-form .d2-listfield .cs-field-read .d2-list-toolbar {
+.binf-widgets .d2-advanced-search-form .d2-listfield .cs-field-read .dctmw-list-toolbar {
   display: none;
 }
 
@@ -197,6 +196,7 @@
 .binf-widgets .csui-inline-editform.add-public-category .d2-add-category-error-message .add-category-error{
   display: flex;
 }
+
 .binf-widgets .csui-inline-editform.add-public-category .d2-add-category-error-message .error-icon {
   height: 18px;
   width: 18px;
@@ -205,13 +205,13 @@
   flex: 0 0 18px;
 }
 
-.binf-widgets .d2-single-select-view .d2-single-select-tree.d2-tree tr[addchildnodetype="private"],
-.binf-widgets .d2-single-select-view .d2-single-select-tree.d2-tree tr[addchildnodetype="private"]:hover {
+.binf-widgets .d2-single-select-view .d2-single-select-tree.d4-tree tr[addchildnodetype="private"],
+.binf-widgets .d2-single-select-view .d2-single-select-tree.d4-tree tr[addchildnodetype="private"]:hover {
   background-color: #DDE4E7;
 }
 
-.binf-widgets .csui-inline-editform .add-category-form.d2-form .csui-field-d2list .d2-listfield-options-container,
-.binf-widgets .csui-inline-editform .add-category-form.d2-form .csui-field-d2list .d2-listfield-selected-container {
+.binf-widgets .csui-inline-editform .add-category-form.d2-form .csui-field-d2list .dctmw-listfield-options-container,
+.binf-widgets .csui-inline-editform .add-category-form.d2-form .csui-field-d2list .dctmw-listfield-selected-container {
   background-color: #FFFFFF;
 }
 
@@ -232,18 +232,18 @@
 
 
 
-.d2-advance-search-display .d2-checkbox-group .d2-checkbox-container .d2-checkbox-icon-container:before {
+.d2-advance-search-display .dctmw-checkbox-group .dctmw-checkbox-container .dctmw-checkbox-icon-container:before {
   background-image: url("images/sort_down.svg");
   background-color: #EDF0F2;
 }
 
-.d2-advance-search-display .d2-checkbox-group .d2-checkbox-container .d2-checkbox-icon-container:after {
+.d2-advance-search-display .dctmw-checkbox-group .dctmw-checkbox-container .dctmw-checkbox-icon-container:after {
   background-image: url("images/sort_up.svg");
   background-color: #EDF0F2;
 }
 
-.d2-advance-search-display .d2-checkbox-group .d2-checkbox-container .checkbox-item:checked + .d2-checkbox-icon-container:after,
-.d2-advance-search-display .d2-checkbox-group .d2-checkbox-container .checkbox-item:checked:disabled + .d2-checkbox-icon-container:after {
+.d2-advance-search-display .dctmw-checkbox-group .dctmw-checkbox-container .checkbox-item:checked + .dctmw-checkbox-icon-container:after,
+.d2-advance-search-display .dctmw-checkbox-group .dctmw-checkbox-container .checkbox-item:checked:disabled + .dctmw-checkbox-icon-container:after {
   content: url("images/sort_up.svg")
 }
 
@@ -258,15 +258,15 @@
   float: left;
 }
 
-.d2-advance-search-display .d2-checkbox-group .d2-checkbox-container .checkbox-item:not([disabled]):hover + .d2-checkbox-icon-container:before {
+.d2-advance-search-display .dctmw-checkbox-group .dctmw-checkbox-container .checkbox-item:not([disabled]):hover + .dctmw-checkbox-icon-container:before {
   border: none;
 }
 
-.d2-advance-search-display .d2-checkbox-group .d2-checkbox-container .csui-formfield-disabled + .d2-checkbox-icon-container {
+.d2-advance-search-display .dctmw-checkbox-group .dctmw-checkbox-container .csui-formfield-disabled + .dctmw-checkbox-icon-container {
   opacity: 0.5
 }
 
-.d2-advance-search-display .d2-checkbox-group .d2-checkbox-container .checkbox-item:disabled + .d2-checkbox-icon-container:before {
+.d2-advance-search-display .dctmw-checkbox-group .dctmw-checkbox-container .checkbox-item:disabled + .dctmw-checkbox-icon-container:before {
   content: ""
 }
 
@@ -340,30 +340,30 @@
   margin-left: 30px;
 }
 
-.binf-widgets .d2-advanced-search-form .d2-listfield-selectedvalues.d2-ui-touchable > li > a {
+.binf-widgets .d2-advanced-search-form .dctmw-listfield-selectedvalues.d2-ui-touchable > li > a {
   padding-right: 5px;
 }
 
-.binf-widgets .d2-advanced-search-form .d2-listfield-selectedvalues:not(.d2-formfield-disabled).d2-ui-touchable > li > a > span.d2-icon-selected-close {
+.binf-widgets .d2-advanced-search-form .dctmw-listfield-selectedvalues:not(.dctmw-formfield-disabled).d2-ui-touchable > li > a > span.dctmw-icon-selected-close {
   background-size: 12px;
   width: 28px;
   height: 28px;
 }
 
-.binf-widgets .d2-advanced-search-form .alpaca-container-item.csui-field-d2list[data-alpaca-container-item-name=facets] .d2-listfield-selectedvalues > li > a,
+.binf-widgets .d2-advanced-search-form .alpaca-container-item.csui-field-d2list[data-alpaca-container-item-name=facets] .dctmw-listfield-selectedvalues > li > a,
 .binf-widgets .d2-advanced-search-form .alpaca-container-item.csui-field-d2list[data-alpaca-container-item-name=facets] .d2-listfield-options > li > a{
   display: flex;
   min-height: 28px;
 }
 
-.binf-widgets .d2-advanced-search-form .alpaca-container-item.csui-field-d2list[data-alpaca-container-item-name=facets] .d2-listfield-selectedvalues > li > a > span.d2-listfield-selectedlabel,
-.binf-widgets .d2-advanced-search-form .alpaca-container-item.csui-field-d2list[data-alpaca-container-item-name=facets] .d2-listfield-options > li > a > span.d2-listfield-text-container {
+.binf-widgets .d2-advanced-search-form .alpaca-container-item.csui-field-d2list[data-alpaca-container-item-name=facets] .dctmw-listfield-selectedvalues > li > a > span.dctmw-listfield-selectedlabel,
+.binf-widgets .d2-advanced-search-form .alpaca-container-item.csui-field-d2list[data-alpaca-container-item-name=facets] .d2-listfield-options > li > a > span.dctmw-listfield-text-container {
   white-space: normal;
   align-self: center;
 }
 
-.binf-widgets .d2-advanced-search-form .alpaca-container-item.csui-field-d2list[data-alpaca-container-item-name=facets] .d2-listfield-selectedvalues > li > a > span.d2-listfield-icon-container,
-.binf-widgets .d2-advanced-search-form .alpaca-container-item.csui-field-d2list[data-alpaca-container-item-name=facets] .d2-listfield-options > li > a > span.d2-listfield-icon-container {
+.binf-widgets .d2-advanced-search-form .alpaca-container-item.csui-field-d2list[data-alpaca-container-item-name=facets] .dctmw-listfield-selectedvalues > li > a > span.dctmw-listfield-icon-container,
+.binf-widgets .d2-advanced-search-form .alpaca-container-item.csui-field-d2list[data-alpaca-container-item-name=facets] .d2-listfield-options > li > a > span.dctmw-listfield-icon-container {
   flex-shrink: 0;
   align-self: center;
   margin-right: 6px;

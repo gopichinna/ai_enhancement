@@ -1,32 +1,46 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-zip-download-error-padding-left: 90px;
+}
+
 .binf-widgets .cs-dialog.csui-download-dialog .binf-modal-content {
-  border-radius: 3px 3px 0 0;
+  border-radius: 12px 12px 0 0; 
   box-shadow: none;
   border: 0;
 }
 
 .binf-widgets .csui-zipanddownload-filename {
+  height: var(--jato-measure-32, inherit);
   border-bottom: none;
-  padding: 10px 10px 16px 4px;
+  margin: var(--jato-measure-16, 0) 0 var(--jato-measure-8, 0) 0;
+  padding: var(--jatx-const-0, 10px) var(--jatx-const-0, 10px) var(--jatx-const-0, 16px) var(--jatx-const-0, 4px);
 }
 
 .binf-widgets .csui-zipanddownload-filename label {
-  padding: 6px 10px 0px 0px;
-  font-size: 14px;
-  font-weight: 600;
+  padding: var(--jato-measure-10, 6px) 10px 0 0;
+  font-size: var(--jatx-txt-zip-download-font-size, 14px);
+  font-weight: var(--jatx-txt-label-font-weight, 600);
+  color: var(--jato-typography-forms-text-color-label);
 }
 
 .binf-widgets .csui-zipanddownload-filename input {
   width: 285px;
-  height: 27px;
-  background: #ffffff;
-  border: 1px solid #757575;
+  height: var(--jato-measure-32, 27px);
+  background-color: var(--jato-background-elevation-level-1, #ffffff);
+  border: 1px solid var(--jato-input-border-container-neutral, #a7a9ac);
+  border-block-end: 1px solid var(--jato-input-border-focus-neutral, #a7a9ac);
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) 0 0;
   box-sizing: border-box;
-  border-radius: 3px;
   position: absolute;
   padding: 0 8px;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-zipanddownload-filename input {
+  color: var(--jato-typography-text-color-primary);
+  font-size: var(--jatx-csui-item-title-name-font-size);
+  outline: none;
 }
 
 .binf-widgets .csui-zipanddownload-filename input:focus {
@@ -36,10 +50,49 @@
   outline-offset: -1px;
 }
 
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-zipanddownload-filename input:hover {
+  background-color: var(--jato-background-elevation-level-2-hover);
+  border: 1px solid var(--jato-input-border-container-hover);
+  border-block-end: 1px solid var(--jato-input-border-focus-hover);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-zipanddownload-filename input:focus {
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled);
+  border: 1px solid var(--jato-input-border-container-neutral);
+  border-block-end: 1px solid var(--jato-input-border-container-neutral);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-zipanddownload:has(.csui-archive-name-error:not(:empty)) .csui-zipanddownload-filename input {
+  color: var(--jato-typography-text-color-primary);
+  background-color: var(--jato-background-error-hover);
+  border: 1px solid var(--jato-input-border-focus-error-enabled);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-zipanddownload:has(.csui-archive-name-error:not(:empty)) .csui-zipanddownload-filename input:hover {
+  background-color: var(--jato-background-error-hover);
+  border: 1px solid var(--jato-input-border-container-error-hover);
+  border-block-end: 1px solid var(--jato-input-border-focus-error-enabled);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-error-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-zipanddownload:has(.csui-archive-name-error:not(:empty)) .csui-zipanddownload-filename input:focus {
+  background-color: var(--jato-background-elevation-level-1);
+  border-block-end: 1px solid var(--jato-input-border-focus-error-enabled);
+  border: 1px solid var(--jato-input-border-container-error-hover);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-error-enabled);
+}
+
 .binf-widgets .cs-dialog.csui-download-dialog .csui-info {
-  padding: 7px;
+  background:var(--jato-messages-inline-background-warning,rgba(255, 184, 0, 0.2));
+  padding: var(--jatx-warning-padding, 7px);
   display: flex;
   justify-content: center;
+  margin-bottom: var(--jato-measure-16, 0);
+  border-radius: var(--jatx-warning-border-radius, 0);
+  align-items: center;
+  border: 1px solid var(--jato-messages-inline-border-warning);
+  border-bottom-width: var(--jato-measure-2, 1px);
 }
 
 .binf-widgets .cs-dialog.csui-download-dialog .csui-info .notification_warning_orange {
@@ -49,34 +102,43 @@
   background-repeat: no-repeat;
 }
 
+.binf-widgets .cs-dialog.csui-download-dialog .csui-info .jato_warning_icon {
+  padding-right: 0.5rem;
+}
+
 .binf-widgets .cs-dialog.csui-download-dialog .csui-info .notification_message {
   line-height: 24px;
   font-size: 14px;
-  color: #333333;
-  font-weight: 600;
+  color: var(--jato-typography-text-color-secondary, #333333);
+  font-weight: var(--jatx-txt-label-font-weight, 600);
 }
 
 
 .binf-widgets .csui-skipped-item-table {
-  padding: 15px 24px;
   line-height: 30px;
 }
 
 .binf-widgets .csui-download-table-row {
+  display: flex;
   line-height: 32px;
-  padding: 5px 0;
+  border-bottom: var(--jatx-zip-download-border-bottom, none);
+  align-items: var(--jatx-zip-download-table-align-center, unset);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-download-table-row>td {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .binf-widgets .csui-unprocessed-item-list {
-  background: rgba(255, 184, 0, 0.2);
   border-radius: 3px;
 }
 
 .binf-widgets .csui-skipped-container-wrapper {
-  max-height: calc(60vh - 24px);
-  overflow-y: auto;
+  max-height: calc(52vh - 24px);
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  padding-top: var(--jato-measure-12, 0);
 }
 
 .binf-widgets .csui-unprocessed-item-list .csui-info {
@@ -84,25 +146,45 @@
 }
 
 .binf-widgets .csui-skipped-item-table.csui-download-table-header {
-  background: rgba(255, 184, 0, 0.3);
+  background: var(--jato-background-elevation-inline-content, rgba(255, 184, 0, 0.3));
+  border-bottom: var(--jatx-zip-download-border-bottom-header, none);
+}
+
+.binf-widgets tbody.csui-skipped-item-table {
+  background: var(--jatx-const-transparent, rgba(255, 184, 0, 0.2));
+}
+
+.binf-widgets .csui-skipped-item-table.csui-download-table-header>tr {
+  display: flex;
 }
 
 .binf-widgets .csui-skipped-item-table .csui-skipped-item-cell {
-  padding: 12px 0px 12px 20px;
-  line-height: 24px;
+  padding: var(--jatx-zip-download-padding-header, 12px 0 12px 20px);
+  line-height: var(--jato-measure-16, 24px);
   vertical-align: middle;
-  border-top: 1px solid #ccc;
+  border-top: var(--jatx-const-none, 1px solid #cccccc);
   word-break: break-all;
 }
 
-.binf-widgets .csui-skipped-container {
+.binf-widgets .csui-skipped-container {  
+  display: flex;
+  flex-direction: column;
   line-height: normal;
-  font-size: 14px;
+  font-size: var(--jatx-txt-zip-download-font-size, 14px);
   width: 100%;
 }
 
 .binf-widgets .csui-skipped-item-table .csui-skipped-item-cell.csui-type {
-  width: 56px;
+  width: 11%;
+}
+
+.binf-widgets .csui-skipped-item-table .csui-skipped-item-cell.csui-name {
+  width: 15%;
+}
+
+.binf-widgets .csui-skipped-item-table .csui-skipped-item-cell.csui-location,
+.binf-widgets .csui-skipped-item-table .csui-skipped-item-cell.csui-message {
+  width: 37%;
 }
 
 .binf-widgets .csui-download-dialog .binf-modal-dialog {
@@ -117,20 +199,26 @@
 }
 
 .binf-widgets .cs-dialog.csui-download-dialog .csui-archive-name-error-container {
-  padding: 0px 6px 10px 96px;
+  padding: 0 6px var(--jatx-const-0, 10px) var(--jatx-csui-zip-download-error-padding-left, 96px);
   color: red;
   font-size: 12px;
 }
 
-.binf-widgets .cs-dialog.csui-download-dialog .binf-modal-content .binf-modal-body {
-  min-height: 70px;
-  padding: 0 24px 24px;
-  margin-right: 0;
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .cs-dialog.csui-download-dialog .csui-archive-name-error:not(:empty) {
+  padding: 2px 6px;
+  font-size: var(--jato-font-size-xs);
+  background-color: var(--jato-background-error-neutral);
+  color: var(--jato-typography-text-color-secondary);
+  border-radius: var(--jato-radii-sm, 2px);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .3);
+  border: 1px solid var(--jato-messages-inline-border-error);
+  border-left-width: 2px;
 }
 
-.binf-widgets .cs-dialog.csui-download-dialog .binf-modal-content .binf-modal-header {
-  background: #dce4e8;
-  border-radius: 3px 3px 0px 0px;
+.binf-widgets .cs-dialog.csui-download-dialog .binf-modal-content .binf-modal-body {
+  min-height: 70px;
+  padding: 0 var(--jato-measure-16, 24px) 24px var(--jato-measure-16, 24px);
+  margin-right: 0;
 }
 
 .binf-widgets .cs-dialog.csui-download-dialog .binf-modal-content .binf-modal-header .csui-heading {
@@ -139,18 +227,19 @@
   padding-left: 4px;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .binf-widgets .csui-download-dialog .binf-modal-dialog {
     min-width: 726px;
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 2dppx),                               
-(min-resolution: 192dpi) {                                
+(resolution >= 2dppx),                               
+(resolution >= 192dpi) {                                
   .binf-widgets .csui-download-dialog .binf-modal-dialog {
     min-width: 726px;
   }
+
   .binf-widgets .csui-download-dialog .csui-skipped-item-table.csui-download-table-body {
     max-height: calc(28vh - 24px);
   }
@@ -166,6 +255,7 @@
   position: relative;
   top: 5px;
 }
+
 .csui-zipanddownload-count-size .csui-item-size{
   font-weight: 700;
 }

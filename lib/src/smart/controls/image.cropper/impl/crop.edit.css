@@ -1,0 +1,219 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+    --jatx-cropper-box-line-opacity: 1;
+    --jatx-crop-toolbar-border-size: 1px;
+}
+
+[data-smart-theme="cf"] {
+    --jatx-cropper-box-line-opacity: 0.4;
+    --jatx-crop-toolbar-border-size: 0;
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog {
+    height: calc(100% - 64px - 32px - 64px - 2px);
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body {
+    height: calc(100% - 100px);
+    overflow-y: unset;
+    padding: 3px;
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body:has(.smart-crop-width) {
+    display: flex;
+    align-items: center;
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-content {
+    height: 100%;
+    width: 448px;
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-content .smart-crop-canvas.smart-crop-width {
+    height: calc(100% - 100px);
+    width: 100%;
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-content .smart-crop-canvas.smart-crop-height {
+    height: 100%;
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-content .smart-crop-canvas div.smart-crop-body {
+    height: 100%;
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-content .smart-crop-canvas div.preview {
+    height: 100%;
+}
+
+.binf-widgets .smart-crop .smart-crop-body {
+    background-color: var(--jato-background-elevation-level-3, #f7f7f7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.binf-widgets .smart-crop .smart-crop-body .cropper-point {
+    width: 8px;
+    height: 8px;
+    background-color: var(--jato-cta-background-primary-neutral, #39f);
+    border-radius: var(--jato-radii-xs);
+}
+
+.smart-user-profile-crop-dialog .cropper-view-box,
+    .smart-user-profile-crop-dialog .cropper-face {
+      border-radius: 50%;
+    }
+
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-view-box {
+    outline: 0;
+    box-shadow: 0 0 0 1px #39f;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-crop.binf-modal:not(.csui-alert) .binf-modal-dialog .binf-modal-footer::before {
+    top: 0;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-crop.binf-modal:not(.csui-alert) .binf-modal-dialog .binf-modal-content .binf-modal-header-control::after {
+    bottom: 0;
+    height: 0;
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .smart-crop-toolbar-container {
+    position: absolute;
+    display: flex;
+    bottom: 12px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .smart-crop-toolbar {
+    width: fit-content;
+    background: var(--jato-background-elevation-level-3, #dce4e8);
+    border-radius: var(--jato-radii-lrg, 10px);
+    box-shadow: 0px var(--jato-elevation-y-axis-level-3, 0) var(--jato-elevation-blur-level-3, 0) 0px var(--jato-elevation-shadow-color-level-3, 0);
+    border: var(--jatx-crop-toolbar-border-size) solid var(--jato-border-color-primary, #00000026);
+}
+
+[data-smart-theme="cf"] .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .smart-crop-reset {
+    padding-left: 2px;
+}
+
+[data-smart-theme="cf"] .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .smart-crop-zoom-in {
+    padding-right: 2px;
+}
+
+[data-smart-theme="cf"] .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .smart-crop-toolbar-container otc-text {
+    padding: 0 2px;
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .smart-crop-toolbar-container otc-text {
+    font-size: 14px;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-modal {
+    background-color: var(--jato-background-mask-area);
+    opacity: 1;
+    backdrop-filter: blur(8px);
+}
+
+@-moz-document url-prefix() {
+  [data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-modal.cropper-drag-box {
+    backdrop-filter: none;
+  }
+
+  .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-modal::before {
+    content: '';
+    position: absolute;
+    inset: 0%;
+  }
+
+  [data-smart-theme="light"] .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-modal::before {
+    background-color: var(--jato-color-white-10000-a080);
+  }
+
+  [data-smart-theme="dark"] .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-modal::before {
+    background-color: var(--jato-background-mask-area);
+  }
+
+  [data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .smart-crop-toolbar-container {
+    padding-bottom: 12px;
+  }
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-center {
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-center:before {
+    width: 12px;
+    top: 2px;
+    left: -4px;
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-center:after {
+    height: 12px;
+    left: 1px;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-center:before,
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-center:after {
+    background-color: var(--jato-border-color-difference);
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-line {
+    background-color: var(--jato-border-color-primary-selected, #39f);
+    opacity: var(--jatx-cropper-box-line-opacity);
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-line.line-e,
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-line.line-w {
+    width: 2px;
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-line.line-n,
+.binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-line.line-s {
+    height: 1px;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-line.line-n {
+    top: 0;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-line.line-s {
+    bottom: 0;
+}
+
+[dir]:not([dir="rtl"])[data-smart-theme]:not([data-smart-theme="cf"]) {
+    .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-line.line-w {
+        left: 0;
+    }
+    .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-line.line-e {
+        right: 0;
+    }
+}
+
+[dir="rtl"][data-smart-theme]:not([data-smart-theme="cf"]) {
+    .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-line.line-w {
+        right: 0;
+    }
+    .binf-widgets .smart-crop .binf-modal-dialog .binf-modal-body .cropper-line.line-e {
+        left: 0;
+    }
+}
+
+.binf-widgets .smart-crop .binf-modal-dialog .smart-crop-canvas .smart-crop-toolbar-container .smart-crop-toolbar otc-button {
+    margin-left: 0;
+}
+
+[data-smart-theme="cf"] .binf-widgets .smart-crop .binf-modal-dialog .smart-crop-canvas .smart-crop-toolbar-container .smart-crop-toolbar {
+    display: flex;
+    height: 34px;
+    align-items: center;
+}

@@ -1,34 +1,47 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme='cf']) {
+  --jatx-app-header-height: 66px;
+  --jatx-breadcrumb-height-margin: 40px;
+}
+
 .binf-widgets .cs-perspective-panel {
   position: relative;
+
   
-  height: calc(100vh - 64px);
+  height: calc(100vh - var(--jatx-app-header-height, 64px));
+
   
+
   
+
   
 }
+
 .cs-perspective-with-breadcrumb-view .grid-rows.cs-zone-perspective > .binf-row > .row-xs-full,
 .cs-perspective-with-breadcrumb-view .grid-rows.cs-grid-perspective > .binf-row > .row-xs-full {
-  height: calc(100vh - 64px);
+  height: calc(100vh - var(--jatx-app-header-height, 64px));
 }
 
 .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .grid-rows.cs-zone-perspective > .binf-row > .row-xs-full,
 .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .grid-rows.cs-grid-perspective > .binf-row > .row-xs-full {
-  height: calc(100vh - 64px - 32px);
+  height: calc(100vh - var(--jatx-app-header-height, 64px) - var(--jatx-breadcrumb-height-margin, 32px));
+  padding-bottom: var(--jato-padding-xxl, unset);
 }
 
 
 @media (max-width: 767px) {
   .binf-widgets .cs-perspective-panel {
-    height: calc(100vh - 64px - 17px);
+    height: calc(100vh - var(--jatx-app-header-height, 64px) - 17px);
   }
+
   .binf-widgets .cs-perspective-panel .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .csui-perspective-view {
-    height: calc(100vh - 96px);
+    height: calc(100vh - (var(--jatx-app-header-height, 64px) + var(--jatx-breadcrumb-height-margin, 32px)));
   }
+
   .binf-widgets .cs-perspective-panel .cs-perspective-with-breadcrumb-view .grid-rows > .binf-row > .row-xs-full {
-    height: calc(100vh - 96px);
+    height: calc(100vh - (var(--jatx-app-header-height, 64px) + var(--jatx-breadcrumb-height-margin, 32px)));
   }
 }
 
@@ -41,12 +54,14 @@
 
 .binf-widgets .cs-perspective-with-breadcrumb-view:not(.csui-fading) {
   position: absolute;
+
   
   left: 0;
   top: 0;
 
   
   transform: translateX(0);
+
   
   transition: transform 0.3s;
 }
@@ -65,12 +80,20 @@
 }
 
 .binf-widgets .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .csui-perspective-view {
-  height: calc(100vh - 64px - 32px);
+  height: calc(100vh - var(--jatx-app-header-height, 64px) - var(--jatx-breadcrumb-height-margin, 32px));
+}
+
+.binf-widgets .cs-perspective-panel .cs-perspective-with-breadcrumb-view.csui-breadcrumbs-visible .csui-perspective-view {
+  padding: var(--jatx-csui-perspective-view, none);
+}
+
+.binf-widgets .cs-perspective-panel .cs-perspective-with-breadcrumb-view .csui-perspective-view:has(.search-results-container) {
+  padding: var(--jato-padding-xxl, none);
 }
 
 .binf-widgets .cs-perspective-with-breadcrumb-view .csui-perspective-view {
   min-height: 0;
-  height: calc(100vh - 64px);
+  height: calc(100vh - var(--jatx-app-header-height, 64px));
 }
 
 .csui-top-ribbon-enabled .cs-perspective-with-breadcrumb-view .csui-perspective-view {
@@ -115,7 +138,7 @@
 }
 
 .binf-widgets.csui-maximized-widget-mode .cs-perspective-panel .cs-perspective.csui-breadcrumbs-visible .binf-row.csui-maximized-row > .csui-maximized-column {
-  height: calc(100vh - 62px + 15px - 32px);
+  height: calc(100vh - 62px + 15px - var(--jatx-breadcrumb-height-margin, 32px));
 }
 
 .binf-widgets.csui-maximized-widget-mode .cs-perspective-panel .cs-perspective .binf-row.csui-maximized-row > .csui-maximized-column {
@@ -174,6 +197,7 @@ and (orientation: portrait) {
   .binf-widgets:not(.perspective-editing) .cs-perspective-panel {
     height: auto;
   }
+
   .binf-widgets .cs-perspective-panel .cs-perspective-with-breadcrumb-view .grid-rows > .binf-row > .row-xs-full {
     height: auto;
     padding: 1px;

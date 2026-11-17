@@ -1,0 +1,52 @@
+{{#xif "this.mode === 'writeonly'"}}
+<div class="control-area cs-field-write dctmw-textareafield">
+  <div class="cs-field-write-inner dctmw-textareafield" {{#if schema.disabled}}
+       title="{{#if data}} {{data}} {{else}} {{noValue}} {{/if}}" {{/if}}>
+    <textarea id="{{id}}" class="editable cs-no-resize dctmw-textareafield" {{#if
+      options.placeholder}}placeholder="{{options.placeholder}}" {{/if}} {{#if options.rows}}rows="{{options.rows}}"
+      {{/if}} {{#if options.readonly}}readonly{{/if}} {{#if name}}name="{{name}}" {{/if}} {{#if ariaRequired}}
+      aria-required="{{ariaRequired}}" {{/if}} {{#each options.data}}data-{{fieldId}}="{{value}}" {{/each}} {{#if
+      idBtnLabel}} aria-labelledby="{{idBtnLabel}}" {{/if}} {{#if multiFieldLabel}} aria-label="{{multiFieldLabel}}"
+      {{/if}}>{{data}}</textarea>
+  </div>
+</div>
+{{/xif}}
+
+<div class="cs-field-read dctmw-textareafield">
+  <div class="cs-field-read-inner dctmw-textareafield">
+    <div class="btn-container binf-show">
+      <button class="dctmw-readonly-mode" {{#if schema.readonly }} aria-disabled="true" {{/if}} {{#if multiFieldLabel}}
+        aria-label="{{readModeMultiFieldAria}}" data-multi="true" {{else}} aria-label="{{readModeAria}}" {{/if}}>
+        {{#xif "this.data !== '' && this.data !== null"}}
+        <span class="csui-ellipsis-area"><span><span class="cs-field-textarea-data">{{data}}</span></span>
+        </span>
+        {{else}}
+        <span class="placeholder" title="{{noValue}}">{{emptyLabel}}</span>
+        {{/xif}}
+      </button>
+    </div>
+    <div class="btn-container dctmw-textareafield binf-hidden">
+      <button class="csui-textareafield-reset-button" {{#if schema.readonly }} aria-disabled="true" {{/if}} {{#if
+        multiFieldLabel}} aria-label="{{readModeMultiFieldAria}}" data-multi="true" {{else}}
+        aria-label="{{readModeAria}}" {{/if}}>
+        {{#xif "this.data !== '' && this.data !== null"}}
+        <span class="csui-ellipsis-area"><span><span class="cs-field-textarea-data">{{data}}</span></span>
+        </span>
+        {{else}}
+        <span class="placeholder" title="{{noValue}}">{{emptyLabel}}</span>
+        {{/xif}}
+      </button>
+    </div>
+  </div>
+  <div class="memo-show-details-parent binf-hidden">
+    <div class="showMore-text">
+      {{seeMore}}
+    </div>
+    <div class="showLess-text binf-hidden">
+      {{seeLess}}
+    </div>
+    <div class="cs-icon icon-expandArrowDown binf-show cs-icon-exp-col">
+    </div>
+  </div>
+</div>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

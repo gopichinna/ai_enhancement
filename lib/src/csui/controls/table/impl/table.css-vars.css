@@ -1,10 +1,50 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
-
 
 .csui-nodetable .binf-table {
   --csui-table-row-height: 36px;
   --csui-table-row-seperator-width: 1px;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-nodestable-background-image: linear-gradient(0deg, var(--jato-background-elevation-level-2) 0%, var(--jato-background-elevation-level-2) 100%);
+  --jatx-csui-nodestable-border: 1px solid var(--jato-border-color-primary);
+  --jatx-csui-nodestable-rowselectionbar-toolbar-padding: 8px;
+  --jatx-csui-accessibletable-rows-height: 34px;
+  --jatx-csui-table-body-icon-size: 24px;
+  --jatx-csui-table-cell-line-height: 18px;
+  --jatx-csui-table-header-font-size: 12px;
+  --jatx-csui-table-header-font-weight: 500;
+  --jatx-csui-table-header-line-height: 16px;
+  --jatx-csui-table-header-height: 32px;
+  --jatx-csui-table-header-border-horizontal-width: 1px;
+  --jatx-csui-table-header-border-bottom: var(--jatx-csui-table-header-border-horizontal-width, 0px) solid var(--jato-table-divider-header);
+  --jatx-csui-table-header-icon-size: 16px;
+  --jatx-csui-table-header-padding-top: 4px;
+  --jatx-csui-table-header-padding-bottom: 4px;
+  --jatx-csui-table-header-div-overflow: visible;
+  --jatx-csui-table-icon-cell-width: 40px;
+  --jatx-csui-table-metadata-font-weight: normal;
+  --jatx-csui-table-shadow: 0 var(--jato-elevation-y-axis-level-1) var(--jato-elevation-blur-level-1) 0 var(--jato-elevation-shadow-color-level-1);
+  --jatx-csui-wraptexttable-cell-padding-top: 7px;
+  --jatx-csui-wraptexttable-cell-padding-bottom: 7px;
+  --jatx-csui-table-background-rows-alternate-image: linear-gradient(0deg, var(--jato-background-rows-alternate) 0%, var(--jato-background-rows-alternate) 100%);
+  --jatx-csui-table-background-rows-active-image: linear-gradient(0deg, var(--jato-background-rows-active) 0%, var(--jato-background-rows-active) 100%);
+  --jatx-csui-table-background-rows-hover-image: linear-gradient(0deg, var(--jato-background-rows-hover) 0%, var(--jato-background-rows-hover) 100%);
+  --jatx-csui-table-background-rows-selected-image: linear-gradient(0deg, var(--jato-background-rows-selected) 0%, var(--jato-background-rows-selected) 100%);
+  --jatx-csui-table-background-columns-highlight-image: linear-gradient(0deg, var(--jato-background-rows-alternate) 0%, var(--jato-background-rows-alternate) 100%);
+  --jatx-csui-table-empty-folder-no-perms-svg: url("../../../themes/jato/image/icons/empty-folder-no-perms.svg");
+  --jatx-csui-table-empty-folder-with-perms-svg: url("../../../themes/jato/image/icons/empty-folder-with-perms.svg");
+  --jatx-csui-table-favorites-svg: url("../../../themes/jato/image/icons/favorites.svg");
+  --jatx-csui-table-recently-accessed-svg: url("../../../themes/jato/image/icons/recently-accessed.svg");
+  --jatx-csui-table-empty-message-font-size: 16px;
+  --jatx-csui-nowraptable-background-blend-mode: multiply;
+  --jatx-csui-nowraptable-sticky-divider-clip-path: inset(var(--jatx-csui-table-header-height) 0 0 0);
+  --jatx-csui-nowraptable-sticky-divider-display: block;
+  --jatx-csui-nowraptable-sticky-divider-width: 5px;
+  --jatx-csui-nowraptable-sticky-divider-right: -5px;
+  --jatx-csui-search-promoted-label-height: 22px;
+  --jatx-csui-search-best-bet-title-font-weight: 600;
+  --jatx-csui-search-best-bet-border: 1px solid var(--jato-border-color-primary);
 }

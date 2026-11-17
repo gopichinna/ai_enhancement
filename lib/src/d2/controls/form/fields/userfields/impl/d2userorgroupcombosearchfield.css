@@ -1,11 +1,11 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-.binf-widgets .d2-combofield.d2-user-or-group-combo-search-field {
+.binf-widgets .dctmw-combofield.d2-user-or-group-combo-search-field {
   min-width: 216px;
 }
 
-.binf-widgets .d2-combofield.d2-user-or-group-combo-search-field .d2-combofield-search-box-input {
+.binf-widgets .dctmw-combofield.d2-user-or-group-combo-search-field .dctmw-combofield-search-box-input {
   border: 1px solid #a7a9ac;
   border-radius: 3px;
   padding-right: 38px;
@@ -13,7 +13,7 @@
   padding-left: 38px;
 }
 
-.binf-widgets .d2-combofield.d2-user-or-group-combo-search-field .d2-start-icon:not(.d2-icon-disabled) {
+.binf-widgets .dctmw-combofield.d2-user-or-group-combo-search-field .d2-start-icon:not(.dctmw-icon-disabled) {
   content: '';
   position: absolute;
   top: 5px;
@@ -24,7 +24,7 @@
   display: block;
 }
 
-.binf-widgets .d2-combofield.d2-user-or-group-combo-search-field .d2-clear-icon:not(.d2-icon-disabled) {
+.binf-widgets .dctmw-combofield.d2-user-or-group-combo-search-field .d2-clear-icon:not(.dctmw-icon-disabled) {
   content: '';
   position: absolute;
   top: 5px;

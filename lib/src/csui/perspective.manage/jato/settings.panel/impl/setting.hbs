@@ -1,0 +1,18 @@
+<div class="pman-setting-header csui-accordion-header" aria-label="{{expandTab}} {{settingTitle}}" role="tab" tabindex="0">
+    <div class="csui-accordion-header-title" aria-hidden="true">{{settingTitle}}</div>
+{{#if isJatoTheme}}
+    <otc-button type="subtle" size="small" class="icon-expandArrowDown" title="{{expandTab}}  {{settingTitle}}"
+        arialabel="{{expandTab}}  {{settingTitle}}">
+            <otc-icon type="raw" size="16" svg='{{chevoronDown}}'></otc-icon>
+    </otc-button>
+    <otc-button type="subtle" size="small" class="icon-expandArrowUp" title="{{collapseTab}}  {{settingTitle}}"
+        arialabel="{{collapseTab}}  {{settingTitle}}">
+            <otc-icon type="raw"  size="16" svg='{{chevoronUp}}'></otc-icon>
+    </otc-button>
+  {{else}}
+    <span class="csui-button-icon cs-icon icon-expandArrowDown" title="{{expandTab}} {{settingTitle}}"></span>
+    <span class="csui-button-icon cs-icon icon-expandArrowUp" title="{{collapseTab}} {{settingTitle}}"></span>
+    {{/if}}
+</div>
+<div class="pman-setting-content csui-accordion-content perspective-widget-form csui-pman-form-wrapper binf-hidden"></div>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,8 +1,8 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .cs-metadata-navigation-wrapper {
-  background-color: #ffffff;
+  background-color: var(--jatx-const-none, #ffffff);
 }
 
 .binf-widgets .cs-metadata-navigation-wrapper.cs-metadata-no-bg-color {
@@ -15,7 +15,7 @@
   height: 100%;
 }
 
-@media only screen and (max-height: 400px) {
+@media only screen and (height <= 400px) {
   .binf-widgets .cs-metadata-navigation-wrapper,
   .binf-widgets .cs-metadata-navigation-wrapper > .cs-metadata,
   .binf-widgets .cs-metadata-navigation-wrapper > .cs-metadata .metadata-navigation > .metadata-content > .cs-metadata {

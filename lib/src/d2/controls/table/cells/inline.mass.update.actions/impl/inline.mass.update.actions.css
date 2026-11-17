@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-inline-mass-update-actions .csui-focusable-table-column-header {
     width: 46px;
@@ -40,4 +40,18 @@
 .csui-nodetable.csui-table-spacing-medium .binf-table tr:not(.csui-details-row) > * > .d2-inline-mass-update-row-action {
     padding-left: 0;
     padding-right: 0;
+}
+
+
+
+
+
+
+
+.binf-widgets .d2-wizard-step-view .d2-mass-update-field .d2-mass-update-table-wrapper .csui-nodetable.d2-mass-update-table .binf-table.dataTable.no-footer.DTTT_selectable.csui-table-spacing-medium td.d2-inline-mass-update-actions {
+    max-width: 52px !important;
+}
+
+.binf-widgets .d2-wizard-step-view .d2-mass-update-field .d2-mass-update-table-wrapper .csui-nodetable.d2-mass-update-table .binf-table.dataTable.no-footer.csui-table-spacing-medium td.d2-inline-mass-update-actions {
+    max-width: 52px !important;
 }

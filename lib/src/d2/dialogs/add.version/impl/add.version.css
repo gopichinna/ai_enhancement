@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .d2-stepper-wizard.d2-addversion-modal .cs-form.csui-general-form.d2-form {
   height: 100%;
   width: 100%;
@@ -43,7 +42,7 @@
   height: initial;
 }
 
-.d2-addversion-modal  .cs-formfield.d2-radio-group div.d2-radio-item-container {
+.d2-addversion-modal  .cs-formfield.dctmw-radio-group div.dctmw-radio-item-container {
   width:150px;
   display: inline-block;
 }

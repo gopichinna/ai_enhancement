@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-email_attachments-custom-profile .list-selection .list-region .list .list-item .list-item-title,
 .binf-widgets .d2-email_attachments-metadata .list-selection .list-region .list .list-item .list-item-title{
@@ -44,8 +44,8 @@
   margin-bottom: 9px;
 }
 
-.binf-widgets .d2-email_attachments-custom-profile .list-selection .list-region .list .list-item .item-info .csui-type-icon,
-.binf-widgets .d2-email_attachments-metadata .list-selection .list-region .list .list-item .item-info .csui-type-icon{
+.binf-widgets .d2-email_attachments-custom-profile .list-selection .list-region .list .list-item .item-info .cusi-icon,
+.binf-widgets .d2-email_attachments-metadata .list-selection .list-region .list .list-item .item-info .csui-icon{
   flex: 0 0 18px;
   height: 18px;
   margin-top: 6px;

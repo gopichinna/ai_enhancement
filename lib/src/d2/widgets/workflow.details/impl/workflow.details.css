@@ -1,6 +1,28 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-workflow-details-widget .d2-task-simple-list .d2-task-simple-list-container > .d2-listview .list-item-title.unread {
   font-weight: normal;
+}
+
+.binf-widgets .d2-workflow-details-widget .cs-metadata .metadata-content-wrapper>.smart-tab-contents-wrapper>.binf-tab-content:before {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    content: "\00a0";
+    float: left;
+    height: 50px;
+    position: absolute;
+    width: 100%;
+}
+
+.binf-widgets .d2-workflow-details-widget .cs-metadata .cs-tab-links.binf-dropdown button {
+    height: 48px;
+}
+
+.binf-widgets .d2-workflow-timeline .timeline-filter .cs-tab-links.binf-dropdown button.cs-metadata-dropdown {
+    background-color: transparent;
+    border: none;
+    height: inherit;
+    padding: 0 23px;
 }

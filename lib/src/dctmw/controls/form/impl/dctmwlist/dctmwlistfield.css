@@ -1,0 +1,630 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .cs-form .alpaca-container-item>.binf-form-group.alpaca-field-select>.binf-col-sm-9 {
+  overflow: visible;
+
+  
+  padding: 0;
+}
+
+.binf-widgets .dctmw-listfield {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-selected-container {
+  width: 100%;
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-search-box {
+  position: relative;
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-search-box .dctmw-listfield-search {
+  margin-bottom: 5px;
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-search-box input {
+  border: 1px solid var(--jato-input-border-container-neutral, #a7a9ac);
+  padding-right: 30px;
+  height: var(--jato-measure-32, 28px);
+  line-height: var(--jatx-csui-input-line-height, unset);
+  padding-left: 0.5em;
+  color: var(--jato-typography-text-color-primary, #333333);
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) var(--jatx-const-0, 3px) var(--jatx-const-0, 3px);
+  background-color: var(--jato-background-elevation-level-1, #FFFFFF);
+  border-block-end: 1px solid var(--jato-input-border-focus-neutral, #a7a9ac)
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-search-box .dctmwlist-search-toolbar {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  display: block;
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-search-box .dctmwlist-search-toolbar a.options-view-button {
+  background: url('images/caret_down.svg') no-repeat center;
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-search-box .dctmwlist-search-toolbar .options-view-button {
+  float: left;
+  height: 28px;
+  width: 18px;
+  border: none;
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-search-box .dctmwlist-search-toolbar a.consolidated-view-button {
+  float: left;
+  height: 28px;
+  width: 18px;
+  background: url('images/consolidated_view.svg') no-repeat center;
+  border: none;
+  cursor: pointer;
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-search-box .dctmwlist-search-toolbar a.consolidated-view-button.dctmw-active {
+  background: url('images/consolidated_view_ac.svg') no-repeat center;
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-search-box .dctmw-listfield-search-box-disabled .dctmwlist-search-toolbar .options-view-button {
+  background: none;
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-search-box input:focus {
+  border: var(--jato-measure-1, 2px) solid var(--jato-input-border-container-neutral, #a7a9ac);
+  outline: none;
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-search-box .dctmwlist-search-toolbar button:focus {
+  outline: 1px dotted #333333;
+  outline-offset: -2px;
+}
+
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-search-box .csui-icon-tkl-search {
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+
+.binf-widgets .dctmw-listfield ul {
+  padding: 0;
+}
+
+.binf-widgets .dctmw-listfield ul.dctmw-listfield-chicklets {
+  padding-left: 2px;
+  padding-right: 16px;
+  padding-bottom: 4px;
+}
+
+.dctmw-listfield-options li,
+.dctmw-add-new-option li {
+  color: #333333;
+}
+
+.dctmw-listfield-options li:focus,
+.binf-widgets .dctmw-listfield .cs-field-write .cs-field-write-inner .dctmw-listfield-options-container .dctmw-searchResultCountDetails:focus,
+.binf-widgets .dctmw-listfield .cs-field-write .cs-field-write-inner li.dctmw-combo-no-result:focus {
+  outline: 1px dotted #333333;
+  outline-offset: -1px;
+}
+
+.dctmw-listfield-options>li:not(.dctmw-combo-no-result):hover,
+.binf-widgets .dctmw-listfield-options>li.active {
+  background: #B9C4CB;
+  box-shadow: inset 0 -1px 0 #FFFFFF, inset 0 1px 0 #FFFFFF;
+}
+
+.binf-widgets ul.dctmw-listfield-options-selected {
+  border-bottom: 1px solid #a7a9ac;
+}
+
+.binf-widgets .dctmw-listfield-options-wrapper li a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 3px 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.binf-widgets .dctmw-listfield-options-wrapper li a .dctmw-listfield-icon-container {
+  margin-right: 4px;
+  height: var(--jatx-dctmw-form-list-selected-values-remove-size, 12px);
+  width: var(--jatx-dctmw-form-list-selected-values-remove-size, 12px);
+  display: inline-block;
+  margin-top: var(--jatx-dctmw-form-list-selected-values-remove-margin-top, 6px);
+}
+
+.dctmw-icon-checkmark {
+  background: url(images/checkmark16.svg) no-repeat center;
+}
+
+li.dctmw-invalid-option .dctmw-icon-checkmark {
+  background: url(images/checkmark16_error.svg) no-repeat center;
+}
+
+.dctmw-listfield-options>li:hover a {
+  color: inherit;
+}
+
+.binf-widgets .dctmw-listfield-options>.dctmw-combo-no-result>a {
+  cursor: text;
+}
+
+.cs-combo-dropup {
+  top: auto;
+  bottom: 100%;
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-selected-container .dctmw-listfield-selection-wrapper,
+.binf-widgets .dctmw-listfield .dctmw-listfield-options-container .dctmw-listfield-options-wrapper {
+  border: 1px solid #a7a9ac;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.binf-widgets .dctmw-listfield .cs-field-read .dctmw-listfield-selected-container .dctmw-listfield-selection-wrapper {
+  border: none;
+}
+
+.binf-widgets .dctmw-listfield .cs-field-read .dctmw-listfield-selected-container .dctmw-listfield-selection-wrapper ul.dctmw-listfield-chicklets {
+  padding-left: 0;
+}
+
+.binf-widgets .dctmw-listfield .cs-field-read .dctmw-listfield-selected-container .dctmw-listfield-selection-wrapper ul.dctmw-listfield-chicklets li {
+  margin-left: 0;
+}
+
+.binf-widgets .dctmw-listfield .cs-field-read .dctmw-listfield-selected-container .dctmw-listfield-selection-wrapper li:hover {
+  background: none;
+}
+
+.dctmw-listfield-selectedvalues li {
+  color: var(--jato-cta-content-color-tertiary, #333333);
+  min-height: 20px;
+}
+
+.dctmw-listfield-chicklets li {
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 4px;
+  float: left;
+  max-width: 100%;
+}
+
+.dctmw-listfield-selectedvalues:not(.dctmw-formfield-disabled)>li:hover,
+.binf-widgets .dctmw-listfield-selectedvalues>li.active {
+  background: var(--jato-cta-background-tertiary-hover, #B9C4CB);
+}
+
+.binf-widgets .cs-field-write .dctmw-listfield-chicklets.dctmw-listfield-selectedvalues:not(.dctmw-formfield-disabled)>li>a:hover,
+.binf-widgets .cs-field-write .dctmw-listfield-chicklets.dctmw-listfield-selectedvalues>li:active {
+  background: var(--jato-control-background-primary-active, #66D4D6)
+}
+
+.binf-widgets .dctmw-listfield-selectedvalues>li>a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 3px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.binf-widgets .dctmw-listfield-chicklets>li>a {
+  border: 1px solid var(--jato-control-border-primary-neutral-light, #33C6C8);
+  background: var(--jatx-dctmw-form-list-chicklet-background, #E7F8F8);
+  box-sizing: border-box;
+  border-radius: var(--jato-radii-xl, 3px);
+  display: flex;
+  height: 24px;
+  cursor: pointer;
+  padding: var(--jato-padding-xs, 0) var(--jato-padding-xs, 0) var(--jato-padding-xs, 0) var(--jato-padding-lrg, 0);
+}
+
+.dctmw-listfield-selectedvalues>li:hover a {
+  color: inherit;
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-selectedvalues .cs-combo-selected {
+  background: #B9C4CB;
+  box-shadow: inset 0 -1px 0 #FFFFFF, inset 0 1px 0 #FFFFFF;
+  color: #ffffff;
+}
+
+.binf-widgets .dctmw-listfield-selectedvalues>li>a>.dctmw-listfield-icon-container {
+  height: var(--jatx-dctmw-form-list-selected-values-remove-size, 12px);
+  width: var(--jatx-dctmw-form-list-selected-values-remove-size, 12px);
+  display: inline-block;
+  margin-top: var(--jatx-dctmw-form-list-selected-values-remove-margin-top, 6px);
+}
+
+.binf-widgets .dctmw-listfield-selectedvalues>li>a>span.dctmw-listfield-selectedlabel {
+  display: inline-block;
+  width: calc(100% - 42px);
+  overflow: hidden;
+  vertical-align: bottom;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .dctmw-listfield-selectedvalues>li.dctmw-listfield-multivalue-item>a>span.dctmw-listfield-icon-container:first-child {
+  width: 0;
+}
+
+.binf-widgets .dctmw-listfield-selectedvalues>li.dctmw-listfield-multivalue-item:not(.dctmw-invalid-option)>a>span.dctmw-listfield-selectedlabel {
+  width: calc(100% - 30px);
+  color: #757575;
+}
+
+.binf-widgets .dctmw-listfield-sortable.dctmw-listfield-selectedvalues>li.dctmw-listfield-multivalue-item>a>span.dctmw-listfield-selectedlabel {
+  width: calc(100% - 26px);
+}
+
+.binf-widgets .dctmw-listfield-selectedvalues.dctmw-listfield-chicklets>li>a>.dctmw-listfield-selectedlabel {
+  font-size: 11px;
+  line-height: var(--jatx-dctmw-form-list-chicklet-line-height, 22px);
+  color: var(--jato-cta-content-color-tertiary, #333333);
+  max-width: var(--jato-chips-simple-max-width);
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 8px;
+  display: inline-block;
+  width: calc(100% - 20px);
+}
+
+.binf-widgets .dctmw-listfield .cs-field-read .cs-field-read-inner .dctmw-listfield-chicklets>li>a>.dctmw-listfield-selectedlabel {
+  width: 100%;
+  margin-right: var(--jato-margin-xs, 8px);
+  cursor: text;
+}
+
+.binf-widgets .dctmw-listfield-selectedvalues>li>a>.dctmw-icon-selected-close {
+  margin: 0 4px;
+}
+
+.binf-widgets .dctmw-listfield-selectedvalues:not(.dctmw-formfield-disabled)>li>a>span.dctmw-icon-selected-close {
+  background: url(images/close.svg) no-repeat center;
+}
+
+.binf-widgets .dctmw-listfield-selectedvalues:not(.dctmw-formfield-disabled):not(.dctmw-listfield-chicklets).d2-ui-touchable>li>a>.dctmw-icon-selected-close {
+  width: 16px;
+  height: 16px;
+  background-size: 12px;
+}
+
+.binf-widgets .dctmw-listfield-chicklets:not(.dctmw-formfield-disabled)>li>a>.dctmw-icon-selected-close {
+  background-size: 8px 8px;
+  height: 15px;
+  width: 15px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.binf-widgets .dctmw-listfield-selectedvalues:not(.dctmw-formfield-disabled)>li.dctmw-invalid-option>a>span.dctmw-icon-selected-close {
+  background: url(images/close_error.svg) no-repeat center;
+}
+
+.binf-widgets .dctmw-listfield-selectedvalues>li:not(.dctmw-listfield-multivalue-item)>a:active>span.dctmw-icon-selected-close {
+  background: none;
+}
+
+.binf-widgets .dctmw-listfield-chicklets>li>a>.dctmw-icon-selected-close {
+  background-size: 7px 7px;
+  margin: 4px;
+}
+
+.binf-widgets .dctmw-listfield-chicklets>li>a>span.dctmw-listfield-icon-container {
+  width: 8px;
+  height: 8px;
+}
+
+.binf-widgets .dctmw-listfield-sortable>li>a>.dctmw-icon-drag {
+  margin-right: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+.binf-widgets .dctmw-listfield-sortable>li>a>otc-icon.dctmw-icon-drag{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.binf-widgets .dctmw-listfield-selected-container .dctmw-listfield-selection-wrapper ul.dctmw-listfield-selectedvalues.dctmw-listfield-sortable {
+  overflow-y: auto !important;
+}
+
+.binf-widgets .dctmw-listfield-sortable>li>a:hover>span.dctmw-icon-drag,
+.binf-widgets .dctmw-listfield-sortable.d2-ui-touchable>li>a>span.dctmw-icon-drag,
+.binf-widgets .dctmw-listfield-sortable>li.keyboard-reorder-mode>a>span.dctmw-icon-drag {
+  background: url(images/drag_dots21.svg) no-repeat center;
+}
+
+.binf-widgets .dctmw-listfield-sortable>li.dctmw-invalid-option>a:hover>span.dctmw-icon-drag {
+  background: url(images/drag_dots21_error.svg) no-repeat center;
+}
+
+.binf-widgets .dctmw-listfield-sortable>li>a:hover>otc-icon.dctmw-icon-drag,
+.binf-widgets .dctmw-listfield-sortable.d2-ui-touchable>li>a>otc-icon.dctmw-icon-drag,
+.binf-widgets .dctmw-listfield-sortable>li.keyboard-reorder-mode>a>otc-icon.dctmw-icon-drag {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.binf-widgets .dctmw-listfield-selectedvalues>li>a>span.dctmw-listfield-selectedlabel:focus {
+  outline: 1px dotted #333333;
+  outline-offset: -2px;
+}
+
+.binf-widgets .dctmw-listfield-chicklets>li>a:focus {
+  outline: 1px dotted #333333;
+  outline-offset: -2px;
+}
+
+.binf-widgets .cs-field-write .dctmw-listfield-selectedvalues.dctmw-formfield-disabled {
+  background-color: #eeeeee;
+  color: #666666;
+  cursor: default;
+}
+
+.binf-widgets .dctmw-listfield-selectedvalues.dctmw-formfield-disabled>li a {
+  cursor: default;
+}
+
+.binf-widgets .dctmw-listfield .cs-field-write .cs-field-write-inner .dctmw-listfield-options-container .dctmw-searchResultCountDetails {
+  font-size: 90%;
+  padding: 0 2em 0 2em;
+  line-height: 24px;
+  color: #757575;
+}
+
+.binf-widgets .dctmw-listfield .cs-field-write .cs-field-write-inner li.dctmw-combo-no-result {
+  font-weight: bolder;
+  color: black;
+}
+
+.binf-widgets .dctmw-listfield-options>li>a>span.dctmw-listfield-text-container .dctmw-highlight-options {
+  font-weight: bolder;
+}
+
+.binf-widgets .dctmw-listfield .cs-field-write .cs-field-write-inner .dctmw-listfield-selected-container .dctmw-list-options-sort-placeholder {
+  background: #DFE7EA;
+  height: 0.2em;
+  line-height: 0.2em;
+}
+
+.binf-widgets .dctmw-listfield .cs-field-write .cs-field-write-inner .dctmw-listfield-selected-container li.draggedoptions {
+  background: #DFE7EA;
+  opacity: 0.5;
+}
+
+.binf-widgets .dctmw-listfield .cs-field-write .cs-field-write-inner .dctmw-listfield-selected-container ul.dctmw-listfield-chicklets li.dragged-item {
+  background: #99E3E3;
+  border: 1px dashed #008383;
+  box-sizing: border-box;
+  border-radius: 3px;
+  line-height: 22px;
+}
+
+.binf-widgets .dctmw-combofield .dctmw-listfield-options>.dctmw-combo-no-result {
+  left: 16px;
+  right: 16px;
+  top: 0;
+  bottom: 3px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #757575;
+}
+
+.binf-widgets .dctmw-listfield-options>.dctmw-combo-no-result>a {
+  cursor: text;
+  font-weight: bolder;
+}
+
+.dctmw-listfield-options>li:not(.dctmw-combo-no-result):hover,
+.binf-widgets .dctmw-listfield-options>li.active {
+  background: #B9C4CB;
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-options-wrapper>.dctmw-add-new-option {
+  border-top: 1px solid #DCDCDC;
+}
+
+.binf-widgets .dctmw-listfield .dctmw-listfield-options li.csui-loading-parent-wrapper {
+  margin-left: 20px;
+}
+
+.binf-widgets .dctmw-listfield-options li.dctmw-invalid-option {
+  color: #df3526;
+}
+
+.binf-widgets .dctmw-listfield-selectedvalues li.dctmw-invalid-option {
+  color: #df3526;
+}
+
+.binf-widgets .dctmw-listfield .cs-field-read .cs-field-read-inner {
+  width: 100%
+}
+
+.binf-widgets .dctmw-listfield .cs-field-read {
+  display: flex;
+}
+
+.binf-widgets .dctmw-listfield .cs-field-read .dctmw-list-toolbar {
+  display: flex;
+}
+
+.binf-widgets .dctmw-listfield .cs-field-read .dctmw-list-toolbar>a::after {
+  content: '';
+  background: url('images/show-more.svg') no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+  float: right;
+  margin-top: 8px;
+  margin-left: 3px;
+}
+
+.binf-widgets .dctmw-listfield .cs-field-read .dctmw-list-toolbar>a[data-dctmw-list-toolbar-action="showLess"]::after {
+  background: url('images/show-less.svg') no-repeat;
+  background-size: contain;
+}
+
+.binf-widgets .cs-formfield.dctmw-listfield .cs-field-read button,
+.binf-widgets .cs-formfield.dctmw-listfield .cs-field-read button>span {
+  cursor: default;
+}
+
+.dctmw-listfield-selectedvalues:not(.dctmw-formfield-disabled).disable-mouse-events {
+  pointer-events: none;
+}
+
+.dctmw-listfield-selectedvalues:not(.dctmw-formfield-disabled)>li.keyboard-reorder-mode {
+  background: #B9C4CB;
+  box-shadow: inset 0 -1px 0 #FFFFFF, inset 0 1px 0 #FFFFFF;
+}
+
+.binf-widgets .cs-field-write .dctmw-listfield-chicklets.dctmw-listfield-selectedvalues:not(.dctmw-formfield-disabled)>li.ui-sortable-handle.keyboard-reorder-mode>a {
+  background: #66D4D6;
+}
+
+.binf-widgets .dctmw-listfield li.dctmw-select-all-item,
+.binf-widgets .dctmw-listfield li.dctmw-none-item,
+.binf-widgets .dctmw-listfield li.dctmw-select-add-new-option,
+.binf-widgets .dctmw-listfield li.dctmw-selectedList {
+  height: 36px;
+  padding: 2px 18px 6px 16px;
+}
+
+.binf-widgets .dctmw-listfield li.dctmw-select-all-item otc-checkbox.select-all-item-option,
+.binf-widgets .dctmw-listfield li.dctmw-none-item otc-checkbox.none-item-option,
+.binf-widgets .dctmw-listfield li.dctmw-selectedList otc-checkbox.dctmw-list-option-item {
+  width: 100%;
+}
+
+.binf-widgets .dctmw-listfield-options > li.dctmw-selectedList otc-checkbox.dctmw-list-option-item span.dctmw-list-option-item-name span.dctmw-highlight-options {
+  font-weight: bolder;
+}
+
+.binf-widgets .dctmw-listfield ul.dctmw-listfield-options-static {
+  border-bottom: 1px solid #D5D5D5;
+}
+
+.binf-widgets .dctmw-listfield li.dctmw-selectedList span.dctmw-list-option-item-name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.binf-widgets .dctmw-listfield-options-wrapper li.dctmw-select-add-new-option a {
+  padding: 6px 0;
+}
+
+[data-smart-theme='cf'] .binf-widgets .dctmw-listfield .dctmw-listfield-search-box .dctmwlist-search-toolbar .direct-addition-view-button {
+  float: left;
+  height: 28px;
+  width: 18px;
+  background: url('images/add.svg') no-repeat center;
+  border: none;
+  cursor: pointer;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .dctmw-listfield .dctmw-listfield-search-box .dctmwlist-search-toolbar .direct-addition-view-button {
+  cursor: pointer;
+  height: 16px;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .dctmw-listfield .dctmw-listfield-search-box .dctmwlist-search-toolbar {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-smart-theme='cf'] {
+  .dctmw-listfield-selectedvalues:not(.dctmw-formfield-disabled)>li:hover,
+  .binf-widgets .dctmw-listfield-selectedvalues>li.active {
+    box-shadow: inset 0 -1px 0 #FFFFFF, inset 0 1px 0 #FFFFFF;
+  }
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  .binf-widgets .dctmw-listfield .dctmw-listfield-search-box .dctmwlist-search-toolbar {
+    right: 0;
+  }
+
+  .binf-widgets .dctmw-listfield .dctmw-listfield-search-box .dctmwlist-search-toolbar otc-button {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    margin: var(--jato-measure-4, 2px);
+    right: 0;
+  }
+
+  .dctmw-listfield .dctmw-listfield-search-box input:hover {
+    background-color: var(--jato-background-elevation-level-2-hover, #efefef);
+    border: 1px solid var(--jato-input-border-container-hover, #666666);
+    border-block-end: 1px solid var(--jato-input-border-focus-hover, #666666);
+    box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-hover, transparent);
+  }
+
+  .dctmw-listfield .dctmw-listfield-search-box input:focus {
+    border-block-end: 1px solid var(--jato-input-border-focus-enabled, #666666);
+    box-shadow: inset 0 -1px 0 0 var(--jato-input-border-focus-enabled, none);
+    outline: none;
+    border: var(--jato-measure-1, 2px) solid var(--jato-input-border-container-neutral, #666666);
+    border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) var(--jatx-const-0, 3px) var(--jatx-const-0, 3px);
+  }
+
+  .binf-widgets .cs-field-write .dctmw-listfield-chicklets.dctmw-listfield-selectedvalues>li,
+  .binf-widgets .cs-field-write .dctmw-listfield-chicklets.dctmw-listfield-selectedvalues>li:active {
+    background-color: transparent;
+  }
+
+  .binf-widgets .dctmw-listfield-options-wrapper li a .dctmw-listfield-icon-container {
+    margin: 0;
+  }
+
+  
+  .binf-widgets .dctmw-listfield-options li.dctmw-invalid-option,
+  .binf-widgets .dctmw-listfield-selectedvalues.dctmw-listfield-chicklets>li.dctmw-invalid-option,
+  .binf-widgets .dctmw-listfield-selectedvalues.dctmw-listfield-chicklets>li.dctmw-invalid-option>a>.dctmw-listfield-selectedlabel {
+    --jatx-otc-icon-content-color-tertiary: var(--jato-messages-inline-icon-fill-error);
+    --jatx-otc-icon-content-color-tertiary-hover: var(--jato-messages-inline-icon-fill-error);
+  }
+
+  
+  .binf-widgets .dctmw-listfield-options-wrapper li {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .binf-widgets .cs-field-write .dctmw-listfield-chicklets li>a:hover,
+  .binf-widgets .cs-field-write .dctmw-listfield-chicklets li>a:active {
+    border: 1px solid var(--jato-control-border-primary-active, #00087D);
+  }
+
+  .binf-widgets .cs-field-write .dctmw-listfield-chicklets li>a>.dctmw-listfield-icon-container {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+  }
+}

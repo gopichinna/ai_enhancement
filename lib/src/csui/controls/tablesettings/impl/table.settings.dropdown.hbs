@@ -2,12 +2,13 @@
       class="csui-toolbar-table-settings csui-acc-focusable"
       title="{{toolbarButtonLabel}}"
       arialabel="{{toolbarButtonLabel}}"
-      iconOnly
-      icon="{{iconName}}"
-      iconAppearance="{{iconAppearance}}"
+      {{#if isJATO}} size="small" {{else}}
+      iconOnly icon="{{iconName}}" iconAppearance="{{iconAppearance}}"
+      {{/if}}
       id="{{toolbarButtonId}}">
+            {{#if isJATO}}<otc-icon svg="{{iconSVG}}"></otc-icon>{{/if}}
 </otc-button>
 <otc-menu class="csui-table-settings-dropdown" buttonId="{{toolbarButtonId}}">
 </otc-menu>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

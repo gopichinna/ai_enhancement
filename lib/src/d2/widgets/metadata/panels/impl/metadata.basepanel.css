@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .csui-metadata-basepanel {
   font-size: 16px;
   font-weight: normal;
@@ -21,6 +20,10 @@
   overflow: hidden;
   visibility: hidden;
   transition: flex-basis 0.3s; 
+  background-color: #dce4e8;
+}
+
+.binf-widgets .csui-metadata-basepanel .csui-table-tabletoolbar {
   background-color: #dce4e8;
 }
 
@@ -49,6 +52,18 @@
 .csui-metadata-basepanel .csui-table-view > div {
   overflow: hidden;
 }
+
+.csui-metadata-basepanel .csui-table-view .csui-nodetable {
+  background-color: #ffffff;
+  opacity: 1.0;
+  font-weight: normal;
+  flex-direction: column;
+  display: flex;
+  flex: 1 1 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
 
 .csui-metadata-basepanel #paginationview {
   height: auto;

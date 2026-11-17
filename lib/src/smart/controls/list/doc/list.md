@@ -76,7 +76,7 @@ Users need to add the following styling to obtain custom empty list background i
   <li><b>data - `required`</b> Object with information for the list that is to be rendered.</li>
   <li><b>data.title - `required` (String)</b> Title for the list view that is displayed on the header.</li>
   <li><b>data.titleBarIcon - `optional` (String)</b> Icon name for the icon that is to be shown on the header.</li>
-  <li><b>theme - `optional` (String)</b> Theme for the list view 'standard' or 'light'. Default: 'standard'</li>
+  <li><b>data.smartTileHeaderJatoIcon - `optional` (String)</b> JATO SVG Icon for the icon that is to be shown on the header for JATO themes only.</li>
   <li><b>_enableOpenPerspective - `optional` (Boolean)</b> To show expand icon on header pass true. Default: false</li>
   <li><b>hideSearch - `optional` (Boolean)</b>The search icon can be hidden from the view by adding a 'hideSearch: true' parameter to the templateHelpers function. </li>
   <li><b>searchPlaceholder - `optional` (String)</b>Placeholder that is shown in input box.</li>

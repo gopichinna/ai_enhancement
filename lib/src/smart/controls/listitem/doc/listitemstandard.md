@@ -28,6 +28,9 @@ define(['smart/controls/listitem/listitemstandard.view'], function (SmartStandar
          toolbarData: toolbarData,
          getInlinMenuView: function () {
            return ....;
+         },
+         getIconView: function () {
+           return ....;
          }
        };
     }
@@ -45,17 +48,10 @@ define(['smart/controls/listitem/listitemstandard.view'], function (SmartStandar
   <li><b>checkDefaultAction - `optional` (Boolean)</b> To check default action of model.</li>
   <li><b>childRole - `optional` (String)</b> Role for item element.</li>
   <li><b>getInlinMenuView - `optional` (Function)</b>Function that returns inline menu view that is to be shown.</li>
+  <li><b>getIconView - `optional` (Function)</b>Function that returns icon view that is to be shown.</li>
 </ul>
 
 ### Events
-
-<ul>
-<li><b>render:icon</b> An event triggered to render icon view in the element passed.</li>
-</ul>
-
-```js
-this.listenTo(this, "render:icon", this._mycallback);
-```
 
 <ul>
 <li><b>click:item</b> An event triggered when item is clicked.</li>

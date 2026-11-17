@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-table-cell-inline-row-actions > *,
 .binf-widgets .csui-saved-item.csui-state-hover.focused .d2-table-cell-inline-row-actions > * {
@@ -38,7 +38,7 @@
 }
 
 .binf-widgets .csui-nodetable .d2-table-cell-inline-row-actions .d2-inline-row-action .csui-table-actionbar.csui-state-loading .csui-toolbar-state > p {
-  color: #333;
+  color: #333333;
   font-size: 11px;
   white-space: normal;
   text-overflow: ellipsis;

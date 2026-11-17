@@ -2,8 +2,10 @@
 
   <div class="cs-content-header">
     {{#if back_button}}
-      <div class="overview-page-backbutton icon arrow_back cs-go-back csui-acc-focusable-active"
-           aria-label="{{goBackAria}}" title="{{goBackTitle}}" role="link" tabindex="0"></div>
+      <otc-button class="overview-page-backbutton cs-go-back csui-acc-focusable-active"
+            {{#unless isJATO}} icon="csui_action:action_back32" mirrorIconIfRtl{{/unless}} arialabel="{{goBackAria}}" title="{{goBackTitle}}">
+              {{#if isJATO}}<otc-icon svg="{{backButtonIconSVG}}" type="subtle" mirrorIfRtl></otc-icon>{{/if}}
+      </otc-button>
     {{/if}}
     <div class="title-container"></div>
     <div class="overview-page-version-label">
@@ -82,8 +84,7 @@
           <div style="clear:both;"></div>
         </div>
       </div>
-      {{#if locked}}
-      <div class="lock_info  version-overview-general-information">
+      <div class="lock_info  version-overview-general-information binf-hidden">
         <div class="version-overview-form-group">
           <label class="version-overview-control-label" title="{{lockedBy}}">
             {{lockedBy}}
@@ -96,7 +97,6 @@
           </div>
         </div>
       </div>
-      {{/if}}
 
       <div class="location-container version-overview-general-information">
         <div class="version-overview-form-group">
@@ -136,12 +136,14 @@
   </div>
   <div class="cs-fadeout-container"></div>
   <div class="cs-content-footer">
-    <button class="binf-btn primary-btn command-btn open-btn" type="button"
-            data-signature="OpenVersionDelegate">{{lang.ToolbarItemOpen}}</button>
-    <button class="binf-btn default-btn command-btn csui-version-overview-download-btn" type="button"
-            data-signature="VersionDownload">{{lang.ToolbarItemDownload}}</button>
-    <button class="binf-btn default-btn command-btn" type="button"
-            data-signature="VersionProperties">{{lang.ToolbarItemProperties}}</button>
+    <otc-button class="command-btn play-btn binf-hidden" type="primary"
+              data-signature="OpenVideo">{{lang.ToolbarItemPlay}}</otc-button>
+    <otc-button class="command-btn open-btn binf-hidden" type="primary"
+            data-signature="OpenVersionDelegate">{{lang.ToolbarItemOpen}}</otc-button>
+    <otc-button class="command-btn csui-version-overview-download-btn" type="secondary"
+            data-signature="VersionDownload">{{lang.ToolbarItemDownload}}</otc-button>
+    <otc-button class="command-btn" type="secondary"
+            data-signature="VersionProperties">{{lang.ToolbarItemProperties}}</otc-button>
   </div>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

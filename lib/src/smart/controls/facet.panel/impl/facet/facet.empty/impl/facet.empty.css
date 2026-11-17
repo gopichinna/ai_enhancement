@@ -1,0 +1,40 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+:root {
+  --jatx-smart-facvet-empty-container-margin-bottom: 0px;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"])  {
+  --jatx-smart-facvet-empty-container-margin-bottom: 44px;
+}
+
+.smart-facet-panel .smart-facet-empty {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  margin-bottom: var(--jatx-smart-facvet-empty-container-margin-bottom);
+}
+
+.smart-facet-panel .smart-filter-search-empty-list {
+  height: 110px;
+  vertical-align: middle;
+  align-content: center;
+  text-align: center;
+}
+
+.smart-facet-panel .smart-filter-search-empty-list.smart-jato-filter-search-empty-list {
+  position: relative;
+  height: 20px;
+  font-weight: 400;
+  font-size: var(--jato-font-size-xl, 16px);
+  line-height: var(--jato-line-height-lrg, 20px);
+  letter-spacing: var(--jato-tracking-regular, 0px);
+  color: var(--jato-typography-text-color-secondary);
+}
+
+.binf-widgets .smart-facet-panel .smart-filter-search-empty-list-jato-icon {
+  position: relative;
+  text-align: center;
+  height: 110px;
+}

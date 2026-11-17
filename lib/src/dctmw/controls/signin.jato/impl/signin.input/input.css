@@ -1,0 +1,147 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+html[data-smart-theme]:not([data-smart-theme="cf"]) body.application.binf-widgets.app-module-signin.d2-themed .app-module.module-signin .dctmw-signin-shell-view .signin-view-rgn .dctm-signin-view input:focus-visible {
+    outline: none;
+    outline-color: initial;
+    outline-style: none;
+    outline-width: initial;
+}
+
+.signin-input-field {
+    font-family: var(--jato-font-family-default);
+    
+    input {
+        background-color: inherit;
+    }
+
+    input::placeholder {
+        color: var(--jato-typography-forms-text-color-placeholder-text);
+    }
+
+    input::-ms-reveal {
+        display: none;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: var(--jato-typography-text-color-primary);
+        box-shadow: inset 0 0 20px 20px var(--jato-background-elevation-level-1);
+    }
+
+    &.base-input {
+
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+        padding: 0;
+        height: var(--jato-size-height-40);
+        background: var(--jato-background-elevation-level-1);
+        border-width: 1px 1px 0 1px;
+        border-style: solid;
+        border-color: var(--jato-input-border-container-neutral);
+        border-radius: 6px 6px 0 0;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 1;
+    }
+
+    .base-input-input {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: var(--jato-padding-lrg);
+        width: 100%;
+        height: var(--jato-size-height-40);
+        border-bottom: 1px solid #707275;
+        border-radius: 6px 6px 0 0;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .base-input-input:focus-within {
+        border-bottom: 2px solid var(--jato-cta-links-text-color-neutral);
+        border-radius: 6px 6px 0 0;
+    }
+
+    .base-input-input-text {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 3px 0;
+        height: 24px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+
+    .base-input-input-text-text {
+        border: none;
+        height: 18px;
+        font-style: normal;
+        font-weight: 350;
+        font-size: 13px;
+        line-height: 18px;
+        color: var(--jato-typography-text-color-primary);
+        font-variation-settings: 'slnt' 0;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+
+    .input-field {
+        font-size: var(--jato-font-size-reg);
+        font-size: var(--jato-font-size-reg);
+        height: 18px;
+        font-weight: 350;
+        font-family: var(--jato-font-family-default);
+        font-style: normal;
+        border: none;
+        line-height: 18px;
+        color: var(--jato-typography-text-color-primary);
+        font-variation-settings: 'slnt' 0;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+
+
+    .base-input-error {
+        background: var(--jato-background-error-neutral);
+        border-color: var(--jato-input-border-container-error-neutral);
+    }
+
+    .base-input-error .base-input-input {
+        border-bottom: 1px solid var(--jato-input-border-focus-error-neutral);
+    }
+
+    
+    button {
+        width: 32px;
+        height: 32px;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        background: none;
+        margin-top: -4px;
+        user-select: none;
+    }
+
+    button otc-icon {
+        height: 16px;
+        width: 16px;
+    }
+}
+
+[data-smart-theme=dark] {
+    .signin-input-field input {
+        caret-color: var(--jato-color-white-10000);
+    }
+}

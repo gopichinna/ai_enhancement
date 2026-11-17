@@ -1,5 +1,19 @@
 <div class="binf-dropdown csui-dropdown">
+{{#if isJATO}}
   <otc-button
+    class="binf-dropdown-toggle"
+    data-binf-toggle="dropdown"
+    tabindex="0"
+    arialabel="{{moreButtonsAria}}"
+    title="{{moreButtonsAria}}"
+    size="{{size}}"
+    id="dropdownButton",
+    type="secondary"
+  >
+    <otc-icon svg="{{moreHorizontalSVGContent}}" isPresentation></otc-icon>
+  </otc-button>
+{{else}}
+    <otc-button
     class="binf-dropdown-toggle"
     data-binf-toggle="dropdown"
     tabindex="0"
@@ -9,11 +23,12 @@
     id="dropdownButton"
   >
   </otc-button>
+{{/if}}
   <otc-menu
     class="smart-dropdown-menu"
     buttonalignment="right"
     buttonid="dropdownButton"
-    forceopenup=""
+    {{forceOpenDir}}
     role="none"
   >
     {{#each list}}
@@ -36,4 +51,4 @@
     {{/each}}
   </otc-menu>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

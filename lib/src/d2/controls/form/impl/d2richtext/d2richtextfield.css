@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .alpaca-control .cs-formfield.cs-richtextfield {
   height: auto;
@@ -13,53 +13,64 @@
   max-height: none;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read h1 {
+.cs-formfield.cs-richtextfield h1,
+.expanded-html-editor-dialog .expanded-rich-text-editor h1 {
   font-size: 2em;
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read h2 {
+.cs-formfield.cs-richtextfield h2,
+.expanded-html-editor-dialog .expanded-rich-text-editor h2 {
   font-size: 1.5em;
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read h3 {
+.cs-formfield.cs-richtextfield h3,
+.expanded-html-editor-dialog .expanded-rich-text-editor h3 {
   font-size: 1.17em;
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read h4 {
+.cs-formfield.cs-richtextfield h4,
+.expanded-html-editor-dialog .expanded-rich-text-editor h4 {
   font-size: 1em;
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read h5 {
+.cs-formfield.cs-richtextfield h5,
+.expanded-html-editor-dialog .expanded-rich-text-editor h5 {
   font-size: 0.83em;
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read h6 {
+.cs-formfield.cs-richtextfield h6,
+.expanded-html-editor-dialog .expanded-rich-text-editor h6 {
   font-size: .67em;
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read b {
+.cs-formfield.cs-richtextfield b,
+.expanded-html-editor-dialog .expanded-rich-text-editor b {
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read strong {
+.cs-formfield.cs-richtextfield strong,
+.expanded-html-editor-dialog .expanded-rich-text-editor strong {
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read i {
+.cs-formfield.cs-richtextfield i,
+.expanded-html-editor-dialog .expanded-rich-text-editor i {
   font-style: italic;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read em {
+.cs-formfield.cs-richtextfield em,
+.expanded-html-editor-dialog .expanded-rich-text-editor em {
   font-style: italic;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read big {
+.cs-formfield.cs-richtextfield big,
+.expanded-html-editor-dialog .expanded-rich-text-editor big {
   font-size: larger;
 }
 
@@ -103,3 +114,153 @@
   outline-offset: 3px;
 }
 
+.cs-formfield.cs-richtextfield .cs-field-write .fr-box .fr-wrapper,
+.expanded-rich-text-editor .fr-box .fr-wrapper{
+  border: 0;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-write .fr-box div:focus-visible,
+.expanded-rich-text-editor .fr-box div:focus-visible{
+  box-shadow:none;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-write .fr-toolbar .fr-btn-grp{
+  margin:0;
+}
+
+.cs-formfield.cs-richtextfield .expand-field {
+  position: relative;
+  float: right;
+  height: 32px;
+  width: 32px;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-write .expand-field {
+  margin: 8px;
+  z-index: 1;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-read .expand-field {
+  top: -5px;
+  margin: 0;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-write .cs-field-write-inner {
+  border: 1px solid #CFD0D1;
+  border-radius: 3px;
+}
+
+.alpaca-control .cs-formfield.cs-richtextfield.cs-formfield-readonly.fixed-height-content .cs-field-richtext-data {
+  overflow-x: scroll;
+  line-height: 1.6;
+  max-height: 250px;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-write .rich-text-content-length,
+.expanded-rich-text-editor .rich-text-content-length {
+  font-size: 14px;
+  color: #999999;
+  padding: 6px 10px;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-write .rich-text-content-length{
+  float: right;
+}
+
+.expanded-rich-text-editor .error-message{
+  font-size: 14px;
+  color: #DF3324;
+  padding: 2px 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-left: 2px solid #DF3324;
+  margin: 4px;
+}
+
+.expanded-rich-text-editor .rich-text-content-length {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.expanded-rich-text-editor .message-wrapper {
+  display:flex
+}
+
+.expanded-rich-text-editor .editor-wrapper {
+  height: calc(100% - 30px);
+  overflow: auto;
+}
+
+.expanded-rich-text-editor .editor-wrapper > .fr-box{
+  height: calc(100% - 10px);
+}
+
+.expanded-rich-text-editor .editor-wrapper > .fr-box > .fr-wrapper{
+  height: calc(100% - 50px);
+}
+
+.expanded-rich-text-editor .editor-wrapper > .fr-box > .fr-wrapper > .fr-code{
+  height: 100% !important; 
+}
+
+.cs-form .alpaca-field.binf-has-error .cs-richtextfield .cs-field-write .fr-toolbar button {
+  color: initial;
+  background-color: initial;
+  border: initial;
+}
+
+.cs-form .alpaca-field.binf-has-error .cs-formfield.cs-richtextfield .cs-field-write .cs-field-write-inner{
+  border: 1px solid #df3324;
+}
+
+.cs-form .alpaca-field.binf-has-error .cs-field-write .fr-code-view textarea.fr-code {
+  color: initial;
+  background-color: initial;
+  border: initial;
+}
+
+
+.cs-formfield.cs-richtextfield .cs-field-write.d2-field-disabled .cs-field-write-inner {
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+  color: #666666;
+  cursor: default;
+}
+
+
+.cs-formfield.cs-richtextfield .cs-field-write.d2-field-disabled .fr-box .fr-wrapper,
+.cs-formfield.cs-richtextfield .cs-field-write.d2-field-disabled .fr-box .fr-toolbar,
+.cs-formfield.cs-richtextfield .cs-field-write.d2-field-disabled .fr-box .fr-second-toolbar {
+  background: transparent;
+}
+
+.binf-widgets .cs-formfield.cs-richtextfield .cs-field-write .fr-box .fr-wrapper .fr-view ol,
+.binf-widgets .binf-modal-dialog .expanded-rich-text-editor .fr-box .fr-wrapper .fr-view ol{
+  list-style: decimal;
+}
+
+.binf-widgets .cs-formfield.cs-richtextfield .cs-field-write .fr-box .fr-wrapper .fr-view ul,
+.binf-widgets .binf-modal-dialog .expanded-rich-text-editor .fr-box .fr-wrapper .fr-view ul{
+  list-style: disc;
+}
+
+.expanded-html-editor-dialog .binf-modal-body {
+  height: 60vh;
+}
+
+.expanded-html-editor-dialog .expanded-rich-text-editor,
+.expanded-html-editor-dialog .expanded-rich-text-editor .write-mode {
+  height: 100%;
+}
+
+.expanded-html-editor-dialog .expanded-rich-text-editor .read-mode {
+  padding: 20px;
+}
+
+.binf-widgets .cs-formfield.cs-richtextfield .cs-field-write .fr-box.fr-basic .fr-element,
+.binf-widgets .expanded-rich-text-editor .fr-box.fr-basic .fr-element {
+  padding:20px;
+}
+
+.binf-widgets .cs-formfield.cs-richtextfield .cs-field-read .placeholder {
+  color: #666666;
+}

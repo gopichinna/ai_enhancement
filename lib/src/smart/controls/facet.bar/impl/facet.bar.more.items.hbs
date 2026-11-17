@@ -3,13 +3,19 @@
 {{/if}}
 {{#if isTopic}}
 <div class="csui-facet-item-topic {{#if readOnlyFilter}}smart-facet-item-topic-readonly{{/if}}" aria-label="{{ariaLabel}}" tabindex="-1" {{#if readOnlyFilter}} aria-readonly="true" {{/if}}>
-  <span class="csui-facet-item-topic-name" aria-hidden="true" title="{{topicName}}">{{topicName}}</span>
+  <span class="csui-facet-item-topic-name" title="{{topicName}}">{{topicName}}</span>
   {{#if enableCloseIcon}}
-  <span title="{{clearTitle}}" role="button" class="csui-icon smart-facet-close" data-csui-facet="{{facetId}}" data-csui-topic="{{topicId}}" aria-label="{{ariaLabel}}">
-    {{{icon-v2 iconName="csui_smart_ot_action_close_mid32" states="true" size="small"}}}
+  <span title="{{clearTitle}}" class="csui-icon smart-facet-close  smart-button-chip" data-csui-facet="{{facetId}}" data-csui-topic="{{topicId}}">
+      {{#if isJATO}}
+        <otc-button size="small" tabindex="-1" arialabel="{{ariaLabel}}">
+          <otc-icon svg="{{jatoCloseIconSvg}}"></otc-icon>
+        </otc-button>
+      {{else}}
+          <otc-button icon="smart_action_16:action_close16" tabindex="-1" arialabel="{{ariaLabel}}"></otc-button>
+      {{/if}}
   </span>
   {{/if}}
 </div>
 {{/if}}
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

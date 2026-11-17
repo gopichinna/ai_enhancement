@@ -1,12 +1,11 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .d2-donut-chart-tooltip {
   position: absolute;
   width: auto;
   height: auto;
-  background: 0 0 #fff;
+  background: 0 0 #ffffff;
   border: 0 none;
   padding: 8px;
   text-align: left;
@@ -24,7 +23,7 @@
   pointer-events: none;
   margin-left: -1.25rem;
   border: 8px solid transparent;
-  border-right-color: #fff;
+  border-right-color: #ffffff;
 }
 
 .binf-widgets .d2-donut-chart-tooltip::before {
@@ -44,7 +43,7 @@
 }
 
 .binf-widgets .d2-donut-chart-tooltip p{
-  color: #333;
+  color: #333333;
   font-size: 12px;
   line-height: 15px;
 }
@@ -81,9 +80,11 @@
 .binf-widgets .d2-donut-chart .vis-wrapper path:focus {
   outline: 0;
 }
+
 .binf-widgets .hidden-elem-container .hidden-elem{
   font-size: 12px;
 }
+
 .rtl.binf-widgets .d2-my-wfsummary.wf-wfstatus .d2-donut-chart svg{
   transform: scale(-1,1);
 }

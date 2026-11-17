@@ -1,0 +1,46 @@
+<div class="smart-crop-body"></div>
+<div class="smart-crop-toolbar-container">
+    <otc-toolbar class="smart-crop-toolbar">
+        {{#if isJATO}}
+        <otc-button value="{{resetTxt}}" title="{{resetTxt}}" class="smart-crop-reset smart-toolbar-btn"
+            arialabel="{{resetAriaLabel}}">
+            <otc-icon svg="{{resetIcon}}"></otc-icon>
+            {{resetTxt}}
+        </otc-button>
+        <otc-button value="{{rotateTxt}}" title="{{rotateTxt}}" class="smart-crop-rotate smart-toolbar-btn"
+            arialabel="{{rotateAriaLabel}}">
+            <otc-icon svg="{{rotateIcon}}"></otc-icon>
+            {{rotateTxt}}
+        </otc-button>
+        <otc-button class="smart-crop-zoom-out smart-toolbar-btn" title="{{zoomOutTxt}}"
+            arialabel="{{zoomOutAriaLabel}}">
+            <otc-icon svg="{{zoomOutIcon}}"></otc-icon>
+        </otc-button>
+        <otc-text class="smart-zoom-percentage" arialive="polite" id="smart-zoom-txt-id">{{zoomTxt}}:
+            <span class="smart-zoom-percentage-text">100%</span>
+        </otc-text>
+        <otc-button class="smart-crop-zoom-in smart-toolbar-btn" title="{{zoomInTxt}}" arialabel="{{zoomInAriaLabel}}">
+            <otc-icon svg="{{zoomInIcon}}"></otc-icon>
+        </otc-button>
+        {{else}}
+        <otc-button size="" type="inline" value="{{resetTxt}}" title="{{resetTxt}}"
+            class="smart-crop-reset smart-toolbar-btn" arialabel="{{resetAriaLabel}}">
+            <otc-icon icon="smart_action:action_reset32"></otc-icon>
+            {{resetTxt}}
+        </otc-button>
+        <otc-button size="" type="inline" value="{{rotateTxt}}" title="{{rotateTxt}}"
+            class="smart-crop-rotate smart-toolbar-btn" arialabel="{{rotateAriaLabel}}">
+            <otc-icon icon="smart_action:action_rotate_page32"></otc-icon>
+            {{rotateTxt}}
+        </otc-button>
+        <otc-button icon="smart_action:action_zoom_out_page32" class="smart-crop-zoom-out smart-toolbar-btn"
+            title="{{zoomOutTxt}}" arialabel="{{zoomOutAriaLabel}}"></otc-button>
+        <otc-text class="smart-zoom-percentage" arialive="polite" id="smart-zoom-txt-id">{{zoomTxt}}:
+            <span class="smart-zoom-percentage-text">100%</span>
+        </otc-text>
+        <otc-button icon="smart_action:action_zoom_in_page32" class="smart-crop-zoom-in smart-toolbar-btn"
+            title="{{zoomInTxt}}" arialabel="{{zoomInAriaLabel}}"></otc-button>
+        {{/if}}
+    </otc-toolbar>
+</div>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

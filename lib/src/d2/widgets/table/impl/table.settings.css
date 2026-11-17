@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .d2-table-settings {
   position: fixed;
   top: 0;
@@ -18,7 +17,7 @@
 .d2-table-settings .container-main {
   z-index: 1050;
   position: absolute;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
   width: 280px;
   overflow: hidden;
@@ -37,7 +36,7 @@
 
 .binf-widgets .d2-table-settings .binf-list-group-item {
   cursor: default;
-  color: #333;
+  color: #333333;
   background-color: transparent;
   height: 32px;
   line-height: 32px;
@@ -63,7 +62,7 @@
 }
 
 .d2-table-settings .card {
-  background-color: #fff;
+  background-color: #ffffff;
   position: absolute;
   width: inherit;
 }
@@ -166,9 +165,20 @@
   width: 100%;
 }
 
+.d2-table-settings .card-initial .wf-status-toggle {
+  display: inline-flex;
+  padding: 0 10px 0 16px;
+  width: 100%;
+}
+
 .d2-table-settings .card-initial .markup-status-column-toggle label {
   padding: 4px 0;
 }
+
+.d2-table-settings .card-initial .wf-status-toggle label {
+  padding: 4px 0;
+}
+
 
 .d2-table-settings .card-initial .markup-status-column-toggle .all-version-column-toggle-switch {
   float: right;
@@ -179,6 +189,17 @@
 }
 
 .d2-table-settings .card-initial .markup-status-column-toggle .markup-status-column-toggle-switch .cs-booleanfield {
+  display: block;
+  width: auto;
+  min-height: 32px;
+  min-width: auto;
+}
+
+.d2-table-settings .card-initial .wf-status-toggle .wf-association-toggle-switch {
+  margin: auto;
+}
+
+.d2-table-settings .card-initial .wf-status-toggle .wf-association-toggle-switch .cs-booleanfield {
   display: block;
   width: auto;
   min-height: 32px;
@@ -233,7 +254,7 @@
   display: block;
   font-size: 9px;
   line-height: 10px;
-  color: #666;
+  color: #666666;
 }
 
 .d2-table-settings .card-columns-list .add-count {
@@ -242,7 +263,7 @@
   margin: 8px 0 9px 0;
   font-size: 14px;
   font-weight: normal;
-  color: #fff;
+  color: #ffffff;
   line-height: 20px;
   text-align: center;
   float: right;
@@ -261,9 +282,9 @@
   background-size: 16px 16px;
   outline: none;
   border: none;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #666666;
   padding-left: 24px;
-  color: #333;
+  color: #333333;
   height: 30px;
   width: 100%;
   font-size: 14px;

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-task-attachments {
   height: 100%;
@@ -21,6 +21,10 @@
 .d2-task-attachments .d2-toolbar-task-attachments {
   height: 47px;
   border-bottom: 1px solid #CCCCCC;
+}
+
+.d2-task-attachments .d2-toolbar-task-attachments .csui-table-rowselection-toolbar-view {
+  background-color: #dce4e8;
 }
 
 .binf-widgets .d2-task-attachments .d2-toolbar-task-attachments .csui-tabletoolbar {
@@ -82,22 +86,26 @@ html[dir=rtl] .d2-task-attachments .d2-button-toolbar .region-right .icon.icon-s
   max-width: 650px;
 }
 
+.binf-widgets .d2-task-attachments .d2-task-attachments-container .d2-task-files-list.cs-list.tile.content-tile.smart-empty-list .tile-content .binf-list-group {
+  height: auto;
+}
 
-@media (min-width: 768px) and (max-width: 1023px) {
+
+@media (width >= 768px) and (width <= 1023px) {
   .csui-otherToolbar>ul {
     max-width: 500px;
   }
 }
 
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (width >= 480px) and (width <= 767px) {
   .csui-otherToolbar>ul {
     max-width: 350px;
   }
 }
 
 
-@media (max-width: 479px) {
+@media (width <= 479px) {
   .csui-otherToolbar>ul {
     max-width: 300px;
   }

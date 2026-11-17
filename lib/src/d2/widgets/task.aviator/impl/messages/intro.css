@@ -1,0 +1,129 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-intro .aie-chat-text {
+  margin-inline-end: 32px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-intro otc-avatar {
+  width: 18px;
+  height: 18px;
+  margin-inline-end: 8px;
+  margin-top: 8px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-intro .aie-selection {
+  font-size: 14px;
+  line-height: 20px;
+  overflow-wrap: break-word;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-intro .aie-selection .aie-selection-more,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-intro .aie-selection .aie-selection-less {
+  font-weight: 400;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-intro .aie-open,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-more,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-more:visited,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-less,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-less:visited {
+  color: #1a6aff;
+  text-decoration: none;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-intro .aie-open:focus,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-more:focus,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-less:focus {
+  color: #1a6aff;
+  text-decoration: none;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-intro .aie-open:hover,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-intro .aie-open:focus-visible,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-selection-more:hover,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-selection-more:focus-visible,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-selection-less:hover,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-selection-less:focus-visible {
+  color: #2f4ed1;
+  text-decoration: underline;
+  text-underline-offset: 20%;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-intro .aie-open:active,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-selection-more:active,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-selection-less:active {
+  color: #111b58;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-extra,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-selection-less {
+  opacity: 0;
+  transition: opacity 0.2s, width 0.2s ease-in-out;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-shown .aie-extra,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-shown .aie-selection-less {
+  opacity: 1;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-intro .aie-open {
+  width: fit-content;
+  padding: 0;
+  margin-top: 4px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-qs-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0 !important;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-qs-item {
+  display: flex;
+  align-items: center;
+  padding: 4px !important;
+  background: #ffffff;
+  border: 1px solid #E2E7EF !important;
+  border-radius: 8px !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-qs-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  margin-right: 12px !important;
+  color: #666666;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-qs {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  line-height: 16px !important;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-qs-text {
+  display: inline-block !important;
+  margin: 8px 0 !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 16px !important;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}

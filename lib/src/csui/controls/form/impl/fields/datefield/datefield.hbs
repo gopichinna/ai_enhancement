@@ -21,13 +21,26 @@
 
     {{#xif "this.mode !== 'writeonly'"}}
       <div class="icon-container">
-        <div class="csui-icon-edit inline-edit-icon edit-cancel" title="{{cancel}}"></div>
+        {{#if isJATO}}
+        <otc-button  class="inline-edit-icon csui-jato-edit-cancel" arialabel="{{cancel}}" type="subtle" size="small" tabindex="-1" data-cstabindex="-1" title="{{cancel}}">
+          <otc-icon svg="{{editCancelIconSVG}}" type="subtle"></otc-icon>
+        </otc-button>
+        {{else}}
+          <div class="csui-icon-edit inline-edit-icon edit-cancel" title="{{cancel}}"></div>
+        {{/if}}
       </div>
     {{else}}
       {{#if options.applyFlag}}
         <div class="icon-container binf-hidden">
+        {{#if isJATO}}
+          <otc-button class="csui-icon apply-all block binf-hidden" title="{{titleApplyAll}}"
+              arialabel="{{titleApplyAll}}" tabindex="0" size="small" type="subtle">
+              <otc-icon svg="{{actionApplyToAll}}"></otc-icon>
+          </otc-button>
+        {{else}}
           <div class="csui-icon apply-all binf-hidden" title="{{titleApplyAll}}" tabindex="0"
                data-cstabindex="0"></div>
+        {{/if}}
         </div>
       {{/if}}
     {{/xif}}
@@ -59,11 +72,17 @@
     </div>
     {{#if schema.readonly}}
     {{else}}
-      <div class="icon-container">
+    <div class="icon-container">
+      {{#if isJATO}}
+        <otc-button  class="csui-jato-icon-edit inline-edit-icon binf-hidden" arialabel="{{edit}}" type="subtle" size="small" tabindex="-1" data-cstabindex="-1" title="{{edit}}">
+          <otc-icon svg="{{editIconSVG}}" type="subtle"></otc-icon>
+        </otc-button>
+      {{else}}
         <div class="csui-icon-edit inline-edit-icon icon-date_picker1 icon-edit" title="{{edit}}"></div>
-      </div>
+    {{/if}}
+    </div>
     {{/if}}
   </div>
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

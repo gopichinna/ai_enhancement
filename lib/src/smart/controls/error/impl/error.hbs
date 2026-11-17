@@ -1,14 +1,27 @@
 <div class="csui-error-icon-div">
   <div class="csui-error-icon-parent">
-    <div class="csui-error-icon notification_error"></div>
+    {{#if isJATO}}
+      <div class="smart-error-jato-icon">
+        <otc-icon type="raw" svg="{{errorJatoMimeIcon}}" class="smart-error-icon"></otc-icon>
+      </div>
+    {{else}}
+        <div class="csui-error-icon notification_error"></div>
+    {{/if}}
   </div>
-
 </div>
-<div class="csui-normal-scrolling">
-  <div class="csui-message">{{message}}</div>
+
+<div class="smart-error-message">
+  <h2 class="csui-message">{{message}}</h2>
   {{#if suggestion}}
-    <div class="csui-suggestion">{{suggestion}}</div>
+    <p class="csui-suggestion">{{suggestion}}</p>
+  {{/if}}
+  {{#if detailedMessage}}
+    <p class="smart-error-detailed-message">{{detailedMessage}}</p>
   {{/if}}
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<div class="smart-show-more binf-hidden">
+  <otc-button type="{{showMoreBtnType}}" size="{{showMoreBtnSize}}" tabindex="0" 
+  arialabel="{{showMoreErrorText}}" class="show-more-btn">{{showMoreBtn}}</otc-button>
+</div>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

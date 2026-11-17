@@ -1,12 +1,18 @@
 {{#if hasCommands}}
-  <div class="binf-dropdown">
-    <button id="{{btnId}}" type="button" class="binf-btn binf-dropdown-toggle"
-            data-binf-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+<div {{#unless isJATO}} class="binf-dropdown" {{/unless}}>
+{{#if isJATO}}
+<otc-button id="{{buttonID}}" class="cs-dropdown-button" type="subtle" showMoreText="{{showMoreTooltip}}" ariaLabel="{{showMoreAria}}" title="{{showMoreTooltip}}" size="small">
+<otc-icon svg="{{iconSVG}}" type="subtle"></otc-icon>
+</otc-button>
+{{else}}
+<button id="{{buttonID}}" type="button" class="cs-dropdown-button"
+            aria-haspopup="true" aria-expanded="false"
             aria-label="{{showMoreAria}}" title="{{showMoreTooltip}}">
       <span class="csui-button-icon icon-expandArrowDown" title="{{showMoreTooltip}}"></span>
-    </button>
-    <ul class="binf-dropdown-menu csui-normal-scrolling" role="menu"></ul>
-  </div>
+</button>
+{{/if}}
+<otc-menu buttonid="{{buttonID}}" ariarole="menu" role="none" scrollable></otc-menu>
+</div>
 {{else}}
   <div class="csui-loading-parent-wrapper binf-disabled binf-hidden">
   <span class="csui-loading-dots-wrapper">
@@ -18,4 +24,4 @@
 {{/if}}
 
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,181 @@
+{
+  "name": "@smartui/ot-web-components",
+  "description": "Smart View Base Controls Web Components Library",
+  "version": "25.4.7",
+  "homepage": "https://gitlab.otxlab.net/smartui/ot-web-components#opentext-web-components",
+  "repository": "https://gitlab.otxlab.net/smartui/ot-web-components.git",
+  "bugs": "https://gitlab.otxlab.net/smartui/ot-web-components/-/issues",
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": [
+    "dist/all.js"
+  ],
+  "main": "dist/all.js",
+  "module": "dist/src/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/all.js",
+      "import": "./dist/all.js"
+    },
+    "./all.css": {
+      "require": "./dist/all.css",
+      "import": "./dist/all.css"
+    },
+    "./elements": {
+      "import": "./dist/src/index.js"
+    },
+    "./manifest": {
+      "require": "./dist/custom-elements.json",
+      "import": "./dist/custom-elements.json"
+    }
+  },
+  "customElements": "dist/custom-elements.json",
+  "scripts": {
+    "preprepare": "run-p prepare:deps init:husky install:storybook install:e2e install:vis",
+    "init:husky": "husky",
+    "install:storybook": "node scripts/if-var --cwd=storybook !CI npm ci",
+    "install:e2e": "node scripts/if-var --cwd=cypress !CI npm ci",
+    "install:vis": "node scripts/if-var --cwd=screenshots !CI npm ci",
+    "prepare:deps": "run-p copy:fonts bundle:icons",
+    "copy:fonts": "mkdir-j -p dist && cp-j -r src/styles/fonts dist && cp-j node_modules/inter-ui/web/* dist/fonts",
+    "bundle:icons": "run-p bundle:header-icons bundle:action-icons bundle:action_small-icons bundle:title-icons bundle:utility24-icons bundle:mime-icons bundle:action_16-icons bundle:illustrations-icons bundle:utility12-icons bundle:otc-action-icons bundle:otc-action_small-icons bundle:otc-action_16-icons bundle:otc-header-icons bundle:otc-utility-icons bundle:otc-illustrations-icons",
+    "bundle:header-icons": "svgbundler -s \"node_modules/@opentext/ot-icons/dist/icons/header/*.svg\" -b header -c header -d dist",
+    "bundle:action-icons": "svgbundler -s \"node_modules/@opentext/ot-icons/dist/icons/action/*.svg\" -b action -c action -d dist",
+    "bundle:action_small-icons": "svgbundler -s \"node_modules/@opentext/ot-icons/dist/icons/action_small/*.svg\" -b action_small -c action_small -d dist",
+    "bundle:action_16-icons": "svgbundler -s \"node_modules/@opentext/ot-icons/dist/icons/action_16/*.svg\" -b action_16 -c action_16 -d dist",
+    "bundle:title-icons": "svgbundler -s \"node_modules/@opentext/ot-icons/dist/icons/title/*.svg\" -b title -c title -d dist",
+    "bundle:utility24-icons": "svgbundler -s \"node_modules/@opentext/ot-icons/dist/icons/utility/*24.svg\" -b utility24 -c utility -d dist",
+    "bundle:mime-icons": "svgbundler -s \"node_modules/@opentext/ot-icons/dist/icons/mime/*32.svg\" -b mime -c mime -d dist",
+    "bundle:illustrations-icons": "svgbundler -s \"node_modules/@opentext/ot-icons/dist/icons/illustrations/*220.svg\" -b illustrations -c illustrations -d dist",
+    "bundle:utility12-icons": "svgbundler -s \"node_modules/@opentext/ot-icons/dist/icons/utility/*12.svg\" -b utility12 -c utility -d dist",
+    "bundle:otc-action-icons": "svgbundler -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_help32.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_add32.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_caret_up32.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_caret_down32.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_edit32.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_confirm32.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_cancel32.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_caret_right32.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_caret_left32.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_date32.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_search32.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_close_min32.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_more32.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_reveal_header32.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_form_apply32.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action/action_form_cancel32.svg\" -b otc-action -c action -d lib/otc-icons",
+    "bundle:otc-action_small-icons": "svgbundler -s \"node_modules/@opentext/ot-icons/dist/icons/action_small/action_small_add14.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action_small/action_small_delete14.svg\" -b otc-action_small -c action -d lib/otc-icons",
+    "bundle:otc-action_16-icons": "svgbundler -s \"node_modules/@opentext/ot-icons/dist/icons/action_16/action_caret_right16.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action_16/action_caret_left16.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action_16/action_caret_down16.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/action_16/action_close16.svg\" -b otc-action_16 -c action_16 -d lib/otc-icons",
+    "bundle:otc-header-icons": "svgbundler -s \"node_modules/@opentext/ot-icons/dist/icons/header/header_more42.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/header/header_search42.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/header/header_user42.svg\" -s \"node_modules/@opentext/ot-icons/dist/icons/header/header_hamburger42.svg\" -b otc-header -c header -d lib/otc-icons",
+    "bundle:otc-utility-icons": "svgbundler -s \"node_modules/@opentext/ot-icons/dist/icons/utility/utility_search12.svg\" -b otc-utility -c utility -d lib/otc-icons",
+    "bundle:otc-illustrations-icons": "svgbundler -s \"node_modules/@opentext/ot-icons/dist/icons/illustrations/ill_server_error220.svg\" -b otc-illustrations -c illustrations -d lib/otc-icons",
+    "build:all": "run-s build:dist build:storybook",
+    "build:dist": "run-p build build:manifest build:vscode-intellisense",
+    "build:storybook": "cd storybook && npm run build",
+    "build": "rollup -c --environment NODE_ENV:production",
+    "build:manifest": "cem analyze",
+    "build:vscode-intellisense": "wca analyze \"src/components/**/otc!(*.test).js\" --outFile dist/html-custom-data.json --format vscode",
+    "build:dev": "rollup -c",
+    "serve": "http-server -a localhost -gbs -c-5",
+    "watch": "rollup -cw",
+    "start": "rollup -cw --environment ROLLUP_SERVE:true",
+    "storybook": "node storybook/scripts/start-storybook -p 8080",
+    "lint": "npm run lint:js && npm run lint:scss",
+    "lint:js": "eslint --cache --ext .js src",
+    "fix:js": "npm run lint -- --fix",
+    "lint:scss": "stylelint --cache \"src/**/*.scss\"",
+    "fix:scss": "npm run lint:scss -- --fix",
+    "prettify": "prettier --check \"**/*.{json, html, css, scss, md, mdx}\"",
+    "prettify:fix": "prettier --write \"**/*.{json, html, css, scss, md, mdx}\"",
+    "test": "run-s build:all test:unit test:e2e test:a11y test:visualCypress test:vis",
+    "test:unit": "web-test-runner",
+    "test:unit:all": "web-test-runner --playwright --browsers chromium firefox webkit",
+    "test:unit:one": "web-test-runner --playwright --browsers",
+    "open:unit": "web-test-runner --manual",
+    "test:dev": "npm run build:dev && web-test-runner",
+    "test:watch": "npm run build:dev && web-test-runner --watch",
+    "test:coverage": "web-test-runner --coverage",
+    "test:e2e": "cd cypress && npm run test:e2e",
+    "open:e2e": "npm run build:dev && cd cypress && npm run open:e2e",
+    "test:a11y": "cd cypress && npm run test:a11y",
+    "open:a11y": "npm run build:dev && cd cypress && npm run open:a11y",
+    "test:visualCypress": "cd cypress && npm run test:visualCypress",
+    "open:visualCypress": "npm run build:dev && cd cypress && npm run open:visualCypress",
+    "update:visualCypress": "cd cypress && npm run update:visualCypress",
+    "test:vis": "npm run capture:vis && npm run compare:vis",
+    "test:vis:docker": "docker run --rm -it --entrypoint bash -v \"${PWD}:/app\" -w /app artifactory.otxlab.net/smartui-docker/otwc-test:25.3.1 -c \"npm run test:vis\"",
+    "open:vis": "cd screenshots && npm run open:vis",
+    "capture:vis": "cd screenshots && npm run capture:vis",
+    "compare:vis": "cd screenshots && npm run compare:vis",
+    "update:vis": "cd screenshots && npm run update:vis",
+    "download:vis": "node screenshots/scripts/vis-download.mjs"
+  },
+  "dependencies": {
+    "intl-datetimeformat-options": "^1.0.1",
+    "lit": "^3.3.0",
+    "luxon": "^3.6.1"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.10.4",
+    "@floating-ui/dom": "^1.6.13",
+    "@jato/design-tokens": "^1.10.0",
+    "@jato/svgs": "^1.10.0",
+    "@open-wc/eslint-config": "^12.0.3",
+    "@open-wc/testing": "^4.0.0",
+    "@opentext/ot-icons": "^4.18.0",
+    "@playwright/browser-chromium": "1.52.0",
+    "@playwright/browser-firefox": "1.52.0",
+    "@playwright/browser-webkit": "1.52.0",
+    "@playwright/test": "1.52.0",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@smartui/git-hooks": "^5.1.0",
+    "@smartui/ot-icons-bundler": "^1.0.17",
+    "@unixcompat/cp.js": "^3.0.0",
+    "@unixcompat/mkdir.js": "^2.0.0",
+    "@web/test-runner": "^0.20.1",
+    "@web/test-runner-playwright": "^0.11.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.57.0",
+    "eslint-plugin-cypress": "^2.15.1",
+    "eslint-plugin-lit": "^1.11.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "eslint-plugin-wc": "^2.0.4",
+    "http-server": "^14.1.1",
+    "husky": "^9.1.7",
+    "inter-ui": "^4.1.0",
+    "lint-staged": "^16.0.0",
+    "micromatch": "^4.0.8",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.5.3",
+    "rollup": "^4.41.0",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-esbuild-minify": "^1.3.0",
+    "rollup-plugin-html-literals": "^1.1.8",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-scss-lit": "^2.1.0",
+    "rollup-plugin-serve": "2.0.0-beta.0",
+    "rollup-plugin-sourcemaps2": "^0.5.2",
+    "rollup-sourcemap-path-transform": "^1.1.0",
+    "sass": "^1.89.0",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "web-component-analyzer": "2.0.0",
+    "web-optional-dots-reporter": "^2.0.0",
+    "yauzl-promise": "^4.0.0"
+  },
+  "overrides": {
+    "rollup-plugin-serve": {
+      "mime": "1.6.0"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --cache"
+    ],
+    "*.{json,html,css,scss,md,mdx}": [
+      "prettier --write"
+    ],
+    "src/**/*.scss": [
+      "stylelint --cache"
+    ]
+  },
+  "keywords": [
+    "web-components",
+    "custom-elements",
+    "smartui",
+    "ui"
+  ]
+}

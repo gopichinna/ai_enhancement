@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .cs-apply-properties-selector.binf-dropdown {
   padding: 0 0 0 1.5em;
@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (width <= 640px) {
   .binf-widgets .cs-apply-properties-selector button {
     padding: 0 6px;
   }
@@ -57,9 +57,9 @@
 .binf-widgets .cs-apply-properties-selector > .binf-dropdown-menu {
   left: auto;
   right: 0;
-  border-radius: 0px;
-  margin: 0px;
-  padding: 0.25em 0px;
+  border-radius: 0;
+  margin: 0;
+  padding: 0.25em 0;
   background-clip: border-box;
   -webkit-box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.4), -2px 2px 3px -1px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.4), -2px 2px 3px -1px rgba(0, 0, 0, 0.4);
@@ -73,7 +73,7 @@
 }
 
 .binf-widgets .cs-apply-properties-selector .binf-dropdown-menu .binf-divider {
-  margin: 0.25em 0px;
+  margin: 0.25em 0;
 }
 
 .binf-widgets .cs-apply-properties-selector .cs-icon {
@@ -83,6 +83,7 @@
 .binf-widgets .cs-apply-properties-selector > .binf-dropdown-toggle .cs-label,
 .binf-widgets .cs-apply-properties-selector > .binf-dropdown-menu .cs-label {
   vertical-align: middle;
+
   
 }
 

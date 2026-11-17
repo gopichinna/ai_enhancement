@@ -1,10 +1,20 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-.binf-widgets .metadata-content-header {
-  min-height: calc(64px - 2px);
-  background: #dce4e8;
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-metadata-header-font-weight: 600;  
+}
+
+.binf-widgets .metadata-content-header { 
+  align-items: center;
+  background: var(--jatx-const-none, #dce4e8);
   display: flex;
+  padding-right: var(--jato-padding-xxl, unset);
+  padding-left: var(--jato-padding-xxl, unset);
+}
+
+[data-smart-theme="cf"] .binf-widgets .metadata-content-header{
+  min-height: calc(64px - 2px);
 }
 
 .metadata-content-header:focus,
@@ -21,9 +31,7 @@
 }
 
 .metadata-content-header .metadata-header-left-bar-container {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
+  align-self: center;
 }
 
 .metadata-content-header .metadata-header-right-bar-container {
@@ -32,6 +40,7 @@
 
 .metadata-content-header .metadata-header-right-bar-container .metadata-header-right-bar {
   display: flex;
+  align-items: center;
 }
 
 .metadata-content-header .metadata-header-right-bar-container .metadata-header-right-bar .csui-extra-header-wrapper {
@@ -70,7 +79,8 @@
 
 .metadata-content-header .metadata-header.with-right-bar,
 .metadata-header.with-back-button {
-  padding-left: 1em;
+  padding-left: var(--jato-padding-sm,1em);
+  align-self: center;
 }
 
 .metadata-header .icon {
@@ -78,6 +88,11 @@
 }
 
 .metadata-header .cs-metadata-item-name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: var(--jato-measure-8, unset);
+  padding-bottom: var(--jato-measure-8, unset);
   width: 100%;
   height: 100%;
 }
@@ -86,7 +101,6 @@
   display: flex;
   align-items: center;
   width: 100%;
-  height: calc(64px - 2px);
 }
 
 .metadata-header .cs-metadata-item-name span.csui-icon-group {
@@ -108,8 +122,8 @@
   position: relative;
   text-align: left;
   font-size: 18px;
-  line-height: 1.3;
-  font-weight: 400;
+  line-height: var(--jato-size-height-24 , 1.3);
+  font-weight: var(--jatx-csui-metadata-header-font-weight, 400);
   padding: 0 2px 0 6px;
   cursor: pointer;
   width: 100%;
@@ -141,8 +155,8 @@
   vertical-align: top;
   margin-top: 0;
   padding-left: 2px;
-  width: 1.5em;
-  height: 1.5em;
+  width: var(--jato-measure-24, 1.5em);
+  height: var(--jato-measure-24, 1.5em);
 }
 
 .binf-widgets .cs-metadata-item-name .csui-metadata-item-name-dropdown .binf-dropdown > .binf-dropdown-menu > li > a.binf-disabled {
@@ -177,13 +191,13 @@
 
 .metadata-header .title-edit-div .title-input {
   text-align: left;
-  height: 25px;
+  height: var(--jato-measure-32, 25px);
   display: inline-block;
   max-width: calc(70% - 1.41em);
   width: 95%;
   float: none;
   vertical-align: top;
-  margin-top: 2px;
+  margin-top: var(--jato-measure-0, 2px);
   padding: 0 0.5em 0 0.5em;
 }
 
@@ -192,16 +206,24 @@
 }
 
 .metadata-header .title-error-div {
-  padding-left: 44px;
+  margin-left: var(--jato-padding-content-sm, 44px);
   vertical-align: top;
-  font-size: 0.75em;
-  color: #bf291c;
-  top: -14px;
-  position: relative;
+  font-size: var(--jato-measure-12, 0.75em);
+  color: var(--jato-typography-text-color-secondary, #bf291c);
   cursor: default;
   line-height: 14px;
 }
 
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .metadata-header .title-error-div:has(.title-error.visible) {
+  margin-top: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  background: var(--jato-background-error-neutral);
+  border-radius: var(--jato-radii-sm);
+  border: 1px solid var(--jato-messages-inline-border-error);
+  padding: 2px 8px;
+  width: fit-content;
+}
 
 .metadata-header .csui-metadata-header-with-toggle .title-error-div {
   padding-left: 0;
@@ -214,13 +236,13 @@
   margin-left: 106px;
 }
 
-.metadata-header .csui-metadata-header-with-toggle .title-error-div span.title-error {
+[data-smart-theme="cf"] .metadata-header .csui-metadata-header-with-toggle .title-error-div span.title-error {
   max-width: calc(70% - 1.41em);
   width: 95%;
   display: block;
 }
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   .metadata-header .title-edit-div .title-input {
     max-width: calc(100% - 1.41em);
   }
@@ -229,19 +251,23 @@
     max-width: calc(100% - 72px);
   }
 }
-@media only screen and (max-height: 400px) {
+
+@media only screen and (height <= 400px) {
   .metadata-header .cs-metadata-item-name {
     height: 32px;
   }
+
   .binf-widgets .metadata-content-header {
     min-height: 32px;
   }
+
   .metadata-content-header .metadata-header.with-right-bar {
     padding-left: 0.4em;
   }
 }
+
 @media only screen and (-webkit-device-pixel-ratio: 2.5) {
   .metadata-header .title-error-div {
-    top: 0px;
+    top: 0;
   }
 }

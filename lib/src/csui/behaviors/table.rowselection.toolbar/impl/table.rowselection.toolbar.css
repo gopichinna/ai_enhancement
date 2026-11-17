@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-rowselection-toolbar {
   display: flex;
@@ -8,7 +8,7 @@
   width: 100%;
   overflow: hidden;
   transition: flex-basis 0.3s; 
-  background-color: #dce4e8;
+  background-color: var(--jatx-const-transparent, #dce4e8);
 }
 
 .binf-widgets .csui-rowselection-toolbar .csui-toolbar-region {
@@ -24,7 +24,7 @@
   visibility: visible;
   overflow: visible;
   transition: flex-basis 0.3s;
-  background-color: #dce4e8;
+  background-color: var(--jatx-const-transparent, #dce4e8);
 }
 
 .binf-widgets .csui-rowselection-toolbar.csui-no-animation,

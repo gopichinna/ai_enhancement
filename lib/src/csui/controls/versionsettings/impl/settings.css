@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-toolbar-control-settings {
     float: right;
@@ -20,9 +20,11 @@
 .binf-widgets .csui-toolbar-settings-container {
     font-size: 14px;
     overflow: hidden;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .7);
-    background-color: #ffffff;
     cursor: default;
+    background-color: var(--jato-background-elevation-level-4, #ffffff);
+    border: var(--jatx-otc-menu-border, unset);
+    border-radius: var(--jatx-otc-menu-border-radius, unset);
+    box-shadow: var(--jato-elevation-shadow-level-4, 0 0 5px rgba(0, 0, 0, .7));
 }
 
 .binf-widgets .csui-toolbar-control-settings-dropdown {
@@ -40,7 +42,7 @@
 .binf-widgets .csui-toolbar-settings-container .version-control-title {
     display: flex;
     align-items: center;
-    background-color: #eaeff2;
+    background-color: var(--jato-background-elevation-level-2, #eaeff2);
     line-height: 37px;
     padding-left: 12px;
     font-size: 14px;
@@ -49,7 +51,7 @@
 
 .binf-widgets .csui-toolbar-settings-container .required-field-switch {
     display: flex;
-    padding: 12px 12px 0px 12px;
+    padding: 12px 12px 0 12px;
 }
 
 .binf-widgets .csui-toolbar-settings-container .required-field-switch .required-fields-switch {
@@ -60,12 +62,12 @@
 }
 
 span.versioning-example {
-    padding: 0px 12px 12px 12px;
+    padding: 0 12px 12px 12px;
     font-size: 12px;
 }
 
 div.csui-version-folder-permissions {
-    margin: 10px 0px 0px 0px;
+    margin: 10px 0 0 0;
 }
 
 .csui-toolbar-settings-container .csui-folder-permissions li {
@@ -76,14 +78,21 @@ div.csui-version-folder-permissions {
     padding: 10px;
 }
 
-.csui-toolbar-settings-container .csui-folder-permissions li:hover,
-.csui-toolbar-settings-container .csui-folder-permissions li:focus,
-.csui-toolbar-settings-container .csui-folder-permissions li:active {
+[data-smart-theme=cf] .csui-toolbar-settings-container .csui-folder-permissions li:hover,
+[data-smart-theme=cf] .csui-toolbar-settings-container .csui-folder-permissions li:focus,
+[data-smart-theme=cf] .csui-toolbar-settings-container .csui-folder-permissions li:active {
     background: #b9c4cb;
-    outline: 1px dotted #333;
+    outline: 1px dotted #333333;
     outline-offset: -1px;
 }
 
+[data-smart-theme]:not([data-smart-theme=cf]) .csui-toolbar-settings-container .csui-folder-permissions li:hover{
+    background: var(--jato-background-rows-hover,#b9c4cb);
+}
+
+.csui-toolbar-settings .csui-version-settings {
+    display: flex;
+}
 
 .csui-folder-permissions div {
     display: inline-flex;
@@ -94,7 +103,7 @@ div.csui-version-folder-permissions {
     background-repeat: no-repeat;
     min-width: 14px;
     min-height: 14px;
-    margin: 0px 4px 0px 0px;
+    margin: 0 4px 0 0;
     width: auto;
 }
 

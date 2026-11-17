@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .proxy-settings-field-view .cs-form .alpaca-container-item > .binf-form-group.alpaca-field .alpaca-control-label {
   width: 60%;
@@ -42,6 +42,7 @@
   vertical-align: text-top;
   margin-left: 4px;
 }
+
 .proxy-settings-field-view .header-row .icon{
   display: inline-block;
   width: 16px;
@@ -68,11 +69,13 @@
 .proxy-settings-field-view .workflow-proxy-list .proxy-item .user-form .cs-form-doublecolumn{
   padding: 0;
 }
+
 .proxy-settings-field-view .proxy-list .proxy-user,
 .proxy-settings-field-view .workflow-proxy-list .proxy-user{
   display: flex;
   position:relative;
 }
+
 .proxy-settings-field-view .proxy-list .proxy-user .csui-proxy-actions,
 .proxy-settings-field-view .workflow-proxy-list .proxy-user .csui-proxy-actions{
   height: 1.75em;
@@ -117,7 +120,7 @@
   margin-top: 16px;
   margin-bottom: 16px;
   font-size: 14px;
-  color: #999999;
+  color: #767676;
 }
 
 .proxy-settings-field-view .cs-form-read .csui-field-otcs_user .binf-control-label{
@@ -130,9 +133,9 @@
 {
   margin-bottom: 10px;
   border-radius: 4px;
-  border: 1px solid #F4F4F4;
+  border: 1px solid var(--jato-border-color-primary, #F4F4F4);
   padding: 16px;
-  box-shadow: 0 0 4px 1px #CCCCCC;
+  box-shadow: 0 0 4px 1px var(--jato-elevation-shadow-color-level-1, #CCCCCC) ;
 }
 
 .proxy-settings-field-view .proxy-item{
@@ -180,7 +183,7 @@
 .proxy-settings-field-view .add-proxy-button-group a {
   width: auto;
   min-width: 40px;
-  padding: 5px 15px 0px 15px;
+  padding: 5px 15px 0 15px;
   padding-right: 15px;
   height: 24px;
   border: 1px solid #232E72;
@@ -195,12 +198,14 @@
 .proxy-settings-field-view .add-proxy-button-group .btn-save-proxy,
 .proxy-settings-field-view .add-proxy-button-group .btn-update-proxy{
   background: #232E72;
+  border-radius: 16px;
   color: white;
 }
 
 .proxy-settings-field-view .add-proxy-button-group .btn-cancel-proxy,
 .proxy-settings-field-view .add-proxy-button-group .btn-cancel-update-proxy{
   color: #232E72;
+  border-radius: 16px;
   min-width: 59px;
 }
 

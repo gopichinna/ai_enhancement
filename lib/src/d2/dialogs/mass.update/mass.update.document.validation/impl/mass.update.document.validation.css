@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .mass-update-document-validation .copy-section .copy-icon{
     display: inline-block;
@@ -9,6 +9,7 @@
     background-position: center center;
     background-repeat: no-repeat;
 }
+
 .mass-update-document-validation .copy-section .title{
     display: inline-block;
     overflow: hidden;
@@ -19,12 +20,15 @@
     margin-left: 10px;
     position: absolute;
 }
+
 .mass-update-document-validation .copy-section{
     width: 60px;
 }
+
 .mass-update-document-validation .table-header .message {
     height: 41px;
 }
+
 .mass-update-document-validation .table-header{
     height: inherit;
     padding-right: 8px;
@@ -42,10 +46,11 @@
 
 .mass-update-document-validation table.error-items tr{
     height: 64px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eeeeee;
     display: inline-table;
     margin: 1px;
 }
+
 .mass-update-document-validation table.error-items .status-icon{
     background-image: url('../../impl/images/status-icon.svg');
     width: 16px;
@@ -54,11 +59,13 @@
     background-position: center;
     background-size: contain;
 }
+
 .binf-widgets .mass-update-document-validation .binf-modal-header{
     border: 0 none;
     padding: 0 16px 0 16px;
     height: 100px;
 }
+
 .mass-update-document-validation .binf-modal-content{
     border-radius: 3px;
     border: 0 none;
@@ -67,23 +74,28 @@
     width: 720px;
     padding: 0;
 }
+
 .binf-widgets .mass-update-document-validation .binf-modal-body{
     margin: 0;
     padding: 0 16px 0 16px;
 }
+
 .binf-widgets .mass-update-document-validation .binf-modal-dialog .binf-modal-content .binf-modal-body > div{
     max-height: inherit;
 }
+
 .mass-update-document-validation table.error-items td.type,
 .mass-update-document-validation table.error-items .status,
 .mass-update-document-validation table.error-items td.remove{
     padding-left: 0;
     padding-right: 0;
 }
+
 .mass-update-document-validation table.error-items td.type{
     width: 32px;
     padding-top: 16px;
 }
+
 .mass-update-document-validation table.error-items td.name{
     position: relative;
     padding-left: 8px;
@@ -96,6 +108,7 @@
     padding-top: 25px;
     overflow-wrap: break-word;
 }
+
 .mass-update-document-validation table.error-items td.name > .fadeout{
     position: absolute;
     width: 35px;
@@ -104,9 +117,11 @@
     height: 99%;
     background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 75%,rgba(255,255,255,1) 100%);
 }
+
 .mass-update-document-validation table.error-items .status{
     width: 16px;
 }
+
 .mass-update-document-validation table.error-items .message{
     padding-left: 8px;
     padding-right: 8px;
@@ -116,6 +131,7 @@
     color: #DF3324;
     overflow-wrap: break-word;
 }
+
 .mass-update-document-validation .binf-modal-header .table-header{
     left: calc(50% - 546px/2 - 71px);
     font-style: normal;
@@ -126,33 +142,42 @@
     color: #333333;
     height: 20px;
 }
+
 .mass-update-document-validation .error-data .each-error{
     display: flex;
 }
+
 .mass-update-document-validation .error-data{
     vertical-align: middle;
 }
+
 .mass-update-document-validation .error-data .each-error:nth-child(n+2){
     padding-top: 0;
 }
+
 .mass-update-document-validation .error-data .each-error:first-child{
     padding-top: 24px;
 }
+
 .mass-update-document-validation .error-data .each-error{
     display: flex;
     padding-bottom: 16px;
     padding-top: 16px;
     vertical-align: middle;
 }
+
 .mass-update-document-validation .error-data .each-error:last-child{
     padding-bottom: 24px;
 }
+
 .binf-widgets .mass-update-document-validation .binf-modal-dialog .binf-modal-body{
     max-height: 300px;
 }
+
 .binf-widgets .mass-update-document-validation .binf-modal-dialog{
     width: 720px;
 }
+
 .binf-widgets .mass-update-document-validation .binf-modal-body tr:focus{
     outline: 1px dotted #333333;
 }
@@ -234,6 +259,7 @@
     max-height: 42px;
     overflow: hidden;
     font-weight: normal;
+
     
 }
 

@@ -11,8 +11,10 @@
               <label for="{{this.id}}">{{{this.name}}}</label>
             </div>
           {{/each}}
-          <a class="columns-settings binf-list-group-item has-next" tabindex="0"
-             data-clickbehavior="ColumnsSettings" role="menuitem">{{labels.columns_settings}}</a>
+          {{#if manageColumnSettings}}
+            <a class="columns-settings binf-list-group-item has-next" tabindex="0"
+                         data-clickbehavior="ColumnsSettings" role="menuitem">{{labels.columns_settings}}</a>
+          {{/if}}
           
           {{#if manageVersions}}
             <div class="binf-list-group-item all-version-column-toggle" role="menuitem">
@@ -30,6 +32,14 @@
                 <div class="markup-status-column-toggle-switch"></div>
               </div>
           {{/if}}
+          {{#if manageWFAssociationIcon}}
+                        <div class="binf-list-group-item wf-status-toggle" role="menuitem">
+                          <label class="binf-control-label alpaca-control-label binf-col-sm-10"
+                                 title="{{labels.wfAssociationToggle}}"
+                                 aria-label="{{labels.wfAssociationToggle}}">{{labels.wfAssociationToggle}}</label>
+                          <div class="wf-association-toggle-switch"></div>
+                        </div>
+                    {{/if}}
         </div>
       </div>
     {{/if}}
@@ -41,4 +51,4 @@
 
   </div>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

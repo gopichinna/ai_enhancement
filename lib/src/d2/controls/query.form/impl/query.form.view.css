@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-query-form-view {
   width: 398px;
@@ -31,6 +31,24 @@
   color: #003939;
 }
 
+.d2-query-form-view .queryformheaderview .queryform-header-view-new-search{
+  position: absolute;
+  background-image: url('images/action_add.svg');
+  height: 15px;
+  width: 15px;
+  right: 85px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.d2-query-form-view .queryformheaderview .queryform-header-view-new-search .queryform-header-view-new-search-text {
+  margin-left: 20px;
+  font-size: 12px;
+  white-space: nowrap;
+  position:absolute;
+
+}
+
 .csui-search-left-panel .d2-query-form-view .queryformheaderview .title {
   position: absolute;
   height: 19px;
@@ -46,6 +64,7 @@
   margin: 8px 24px 8px 16px;
   justify-content: flex-end;
 }
+
 .d2-query-form-view .queryformfooterview {
   position: absolute;
   bottom: 0;

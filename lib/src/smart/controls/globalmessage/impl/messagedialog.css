@@ -1,6 +1,40 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+:root {
+  --jatx-messagedialog-border: 1px;
+  --jatx-messagedialog-bottom-border: 3px;
+  --jatx-messagedialog-border-color-success: #15B359;
+  --jatx-messagedialog-border-color-warning: #F16E00;
+  --jatx-messagedialog-border-color-info: #0070E0;
+  --jatx-messagedialog-border-color-error: #D41200;
+  --jatx-messagedialog-header-state-measure: 16px;  
+  --jatx-messagedialog-header-state-measure-height: 28px;
+  --jatx-messagedialog-header-title-text-height: 20px;
+  --jatx-messagedialog-header-title-font-size: 16px;
+  --jatx-messagedialog-header-title-font-weight: 500;
+  --jatx-messagedialog-header-title-line-height: 20px;
+  --jatx-messagedialog-header-state-margin-right: 0;
+  --jatx-messagedialog-header-state-icon-display-property: flex;
+}
+
+[data-smart-theme="cf"] {
+  --jatx-messagedialog-border: 0;
+  --jatx-messagedialog-bottom-border: 4px;
+  --jatx-messagedialog-border-color-success: #006353;
+  --jatx-messagedialog-border-color-warning: #F05822;
+  --jatx-messagedialog-border-color-info: #2E3D98;
+  --jatx-messagedialog-border-color-error: #DF3324;
+  --jatx-messagedialog-header-state-measure: 24px;
+  --jatx-messagedialog-header-state-measure-height: 32px;
+  --jatx-messagedialog-header-title-text-height: 24px;
+  --jatx-messagedialog-header-title-font-size: 18px;
+  --jatx-messagedialog-header-title-font-weight: normal;
+  --jatx-messagedialog-header-title-line-height: 24px;
+  --jatx-messagedialog-header-state-margin-right: 4px;
+  --jatx-messagedialog-header-state-icon-display-property: block;
+}
+
 .binf-widgets .csui-global-message.csui-messagepanel {
   position: absolute;
   
@@ -35,7 +69,8 @@
   background: #FFFFFF;
   min-width: 480px;
   max-width: 752px;
-  border-radius: 3px;
+  border-radius: var(--jato-radii-sm, 3px);
+  filter: drop-shadow(0px var(--jato-elevation-y-axis-level-3, 4px) var(--jato-elevation-blur-level-3, 4px) var(--jato-elevation-shadow-color-level-3, rgba(0, 0, 0, 0.25)));
 }
 
 .binf-widgets .csui-messagepanel.csui-error {
@@ -55,8 +90,6 @@
 
 
 
-
-
 .csui-messagepanel .csui-details-wrapper {
   margin: 0 -5px -5px -5px;
   padding: 0 5px 5px 5px;
@@ -69,28 +102,24 @@
 
 
 
-.csui-messagepanel .csui-header,
-.csui-messagepanel .csui-details,
-.csui-messagepanel.csui-success-with-link .csui-message-link-div {  
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+
 
 .csui-messagepanel .csui-header {
-  background-color: #f7f7f7;
+  background-color: var(--jato-background-elevation-level-3, #f7f7f7);
   position: relative;
-  padding: 20px 16px 16px 16px;  
-  border-radius: 3px 3px 0 0;
+  padding: var(--jato-padding-lrg, 16px) var(--jato-padding-lrg, 16px) var(--jato-padding-lrg, 12px) var(--jato-padding-xxl, 16px);
+  border-radius: var(--jato-radii-sm, 3px) var(--jato-radii-sm, 3px) 0 0;
 }
 .csui-messagepanel.csui-collapsed .csui-header,
 .csui-messagepanel.smart-no-details:not(.csui-success-with-link) .csui-header {
-  border-radius: 3px;
+  border-radius: var(--jato-radii-sm, 3px);
 }
 
 .csui-messagepanel .csui-details {
   position: relative;
   min-width: 480px;
-  background-color: #ffffff;
-  border-radius: 0 0px 3px 3px;  
+  background-color: var(--jato-background-elevation-level-3, #f7f7f7);
+  border-radius: 0 0 var(--jato-radii-sm, 3px) var(--jato-radii-sm, 3px);
 }
 
 .csui-messagepanel.csui-none .csui-header {
@@ -101,18 +130,13 @@
   padding-left: 0;
 }
 
-.csui-messagepanel .csui-header .csui-state {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
 .csui-messagepanel .csui-header .csui-text {
   position: relative;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-  font-weight: normal;
-  height: 24px;
+  font-size: var(--jatx-messagedialog-header-title-font-size);
+  line-height: var(--jatx-messagedialog-header-title-line-height);
+  color: var(--jato-typography-text-color-secondary, #000000);
+  font-weight: var(--jatx-messagedialog-header-title-font-weight);
+  height: var(--jatx-messagedialog-header-title-text-height);
   overflow: hidden;
 }
 
@@ -122,6 +146,8 @@
   white-space:normal;
   width: max-content;
   height: auto;
+  display: inline-flex;
+  align-items: center;
 }
 
 
@@ -135,11 +161,10 @@
 }
 
 .csui-messagepanel .csui-details .csui-text {
-  padding-top: 4px;
-  padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: var(--jato-padding-xl, 4px)  var(--jato-padding-xxl, 16px)  var(--jato-padding-xl, 16px) var(--jato-padding-xxl, 16px);
+  border-radius: var(--jato-radii-sm, 3px) var(--jato-radii-sm, 3px) 0 0;
   font-size: 16px;
+  color: var(--jato-typography-text-color-secondary, #333333);
   line-height: 24px;
   text-align: left;
 }
@@ -158,19 +183,6 @@
   float: right;
 }
 
-
-
-.csui-messagepanel.csui-success .csui-header {
-  color: white;
-  background-color: #146634;
-}
-
-.csui-messagepanel.csui-success-with-link .csui-header {
-  color: white;
-  background-color: #146634;
-  height: 4em;
-}
-
 .csui-messagepanel.csui-processing .csui-header {
   color: white;
   background-color: #004b71;
@@ -179,23 +191,6 @@
 .csui-messagepanel.csui-none .csui-header {
   color: #333333;
   background-color: white;
-}
-
-.csui-messagepanel.csui-info .csui-state-icon {
-  color: #0072aa;
-}
-
-.csui-messagepanel.csui-success .csui-state-icon,
-.csui-messagepanel.csui-success-with-link .csui-state-icon {
-  color: #146634;
-}
-
-.csui-messagepanel.csui-error .csui-state-icon {
-  color: #df3324;
-}
-
-.csui-messagepanel.csui-none .csui-state-icon {
-  width: 0;
 }
 
 .csui-messagepanel.csui-info .csui-action-close,
@@ -230,46 +225,32 @@
 .csui-messagepanel.csui-success-with-link .csui-message-link-div {
   height: 48px;
   position: relative;
-  color: #ffffff;
-  background-color: #ffffff;
-  border-bottom: 4px solid green;
-  border-radius: 0 0 3px 3px;
+  background-color: var(--jato-background-elevation-level-3, #f7f7f7);
+  border-left: var(--jatx-messagedialog-border) solid var(--jatx-messagedialog-border-color-success);
+  border-right: var(--jatx-messagedialog-border) solid var(--jatx-messagedialog-border-color-success);
+  border-bottom: 4px solid var(--jatx-messagedialog-border-color-success);
+  border-radius: 0 0 var(--jato-radii-sm, 3px) var(--jato-radii-sm, 3px);
 }
 
-.csui-messagepanel.csui-success-with-link .csui-message-link-div > a {
-  color: #2F4ED1;
+.csui-messagepanel.csui-success-with-link .csui-message-link-div > otc-link {
   font-size: 14px;
   float: right;
-  margin-right: 16px;
   top: calc((48px - 28px) / 2);
   right: 0px;
   position: absolute;
   line-height: 24px;
+  width: 100%;
+  text-align: right;
+  padding: 0 12px 12px 12px;
+}
+
+[data-smart-theme='cf'] .csui-messagepanel.csui-success-with-link .csui-message-link-div > otc-link {
+  padding: 0;
+  margin-right: 16px;
+  width: auto;
 }
 
 
-
-.binf-widgets .csui-icon-notification-success {
-  background-image: url(images/notification/status_completed.svg);
-}
-
-.binf-widgets .circle_delete, .binf-widgets .circle_delete:focus, .binf-widgets .circle_delete:active {
-  background-image: url(images/notification/formfield_clear24.svg);
-}
-
-.binf-widgets .csui-messagepanel .csui-expand .binf-btn,
-.binf-widgets .csui-action-close.csui-icon,
-.binf-widgets .csui-icon.csui-icon-notification-information-white,
-.binf-widgets .csui-icon.csui-icon-notification-warning-white,
-.binf-widgets .csui-icon.csui-icon-notification-success-white,
-.binf-widgets .csui-icon.csui-icon-notification-error-white,
-.binf-widgets .csui-icon.csui-icon-notification-information24,
-.binf-widgets .csui-icon.csui-icon-notification-warning24,
-.binf-widgets .csui-icon.csui-icon-notification-success24,
-.binf-widgets .csui-icon.csui-icon-notification-error24 {
-  width: 24px;
-  height: 24px;
-}
 
 .binf-widgets .csui-messagepanel .csui-expand .binf-btn,
 .binf-widgets .csui-action-close.binf-btn {
@@ -280,13 +261,6 @@
 .binf-navbar .binf-navbar-nav > li:not(.csui-help) > .breadcrumbs-handle > a {
   padding-top: 19px;
   padding-left: 14px;
-}
-
-.csui-messagepanel.csui-error .csui-header {
-  color: #888;
-  background-color: #fff;
-  font-size: 14px;
-  text-align: left;
 }
 
 .binf-widgets .binf-navbar-nav .nav-profile,
@@ -324,8 +298,6 @@
    box-shadow: none;
 }
 
-
-
 .binf-widgets .csui-messagepanel .binf-btn:not(.smart-v2-icon-parent):focus-visible {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -348,86 +320,128 @@
 
 .binf-widgets .csui-messagepanel.csui-success .csui-header,
 .binf-widgets .csui-messagepanel.csui-warning .csui-header,
-.binf-widgets .csui-messagepanel.csui-info .csui-header {
-  border-top: 0 none; 
+.binf-widgets .csui-messagepanel.csui-info .csui-header,
+.csui-messagepanel.csui-error .csui-header {
   min-width: 480px;
   display: block;
-  background-color: #ffffff;
+  background-color: var(--jato-background-elevation-level-3, #f7f7f7);
   min-height: auto;
   height: auto;
 }
 
+.binf-widgets .csui-messagepanel.csui-success .csui-header {
+  border: var(--jatx-messagedialog-border) solid var(--jatx-messagedialog-border-color-success);
+  border-bottom: 0;
+  border-radius: var(--jato-radii-sm, 3px) var(--jato-radii-sm, 3px) 0 0;
+}
+
 .binf-widgets .csui-messagepanel.csui-success .csui-details {
-  border-bottom: 4px solid #006353;
+  border: var(--jatx-messagedialog-border) solid var(--jatx-messagedialog-border-color-success);
+  border-top: 0;
+  border-bottom: var(--jatx-messagedialog-bottom-border) solid var(--jatx-messagedialog-border-color-success);  
+  border-radius: 0 0 var(--jato-radii-sm, 3px) var(--jato-radii-sm, 3px);
 }
 
 .binf-widgets .csui-messagepanel.csui-success.csui-collapsed .csui-header,
 .binf-widgets .csui-messagepanel.csui-success.smart-no-details .csui-header {
-  border-bottom: 4px solid #006353;
+  border: var(--jatx-messagedialog-border) solid var(--jatx-messagedialog-border-color-success);
+  border-bottom: var(--jatx-messagedialog-bottom-border) solid var(--jatx-messagedialog-border-color-success);
+  border-radius: var(--jato-radii-sm, 3px);
 }
 
 .binf-widgets .csui-messagepanel.csui-success.csui-collapsing .csui-details {
   border-bottom: 0;
-  box-shadow: 0 4px 0 0 #006353;
+  box-shadow: 0 4px 0 0 var(--jatx-messagedialog-border-color-success);
+}
+
+.binf-widgets .csui-messagepanel.csui-warning .csui-header {
+  border: var(--jatx-messagedialog-border) solid var(--jatx-messagedialog-border-color-warning);
+  border-bottom: 0;
+  border-radius: var(--jato-radii-sm, 3px) var(--jato-radii-sm, 3px) 0 0;
 }
 
 .binf-widgets .csui-messagepanel.csui-warning .csui-details {
-  border-bottom: 4px solid #F05822;
+  border: var(--jatx-messagedialog-border) solid var(--jatx-messagedialog-border-color-warning);
+  border-top: 0;
+  border-bottom: var(--jatx-messagedialog-bottom-border) solid var(--jatx-messagedialog-border-color-warning);  
+  border-radius: 0 0 var(--jato-radii-sm, 3px) var(--jato-radii-sm, 3px);
 }
 
 .binf-widgets .csui-messagepanel.csui-warning.csui-collapsed .csui-header,
 .binf-widgets .csui-messagepanel.csui-warning.smart-no-details .csui-header {
-  border-bottom: 4px solid #F05822;
+  border: var(--jatx-messagedialog-border) solid var(--jatx-messagedialog-border-color-warning);
+  border-bottom: var(--jatx-messagedialog-bottom-border) solid var(--jatx-messagedialog-border-color-warning);
+  border-radius: var(--jato-radii-sm, 3px);
 }
 
 .binf-widgets .csui-messagepanel.csui-warning.csui-collapsing .csui-details {
   border-bottom: 0;
-  box-shadow: 0 4px 0 0 #F05822;
+  box-shadow: 0 4px 0 0 var(--jatx-messagedialog-border-color-warning);
+}
+
+.binf-widgets .csui-messagepanel.csui-error .csui-header {
+  border: var(--jatx-messagedialog-border) solid var(--jatx-messagedialog-border-color-error);
+  border-bottom: 0;
+  border-radius: var(--jato-radii-sm, 3px) var(--jato-radii-sm, 3px) 0 0;
 }
 
 .binf-widgets .csui-messagepanel.csui-error .csui-details {
-  border-bottom: 4px solid #DF3324;
+  border: var(--jatx-messagedialog-border) solid var(--jatx-messagedialog-border-color-error);
+  border-top: 0;
+  border-bottom: var(--jatx-messagedialog-bottom-border) solid var(--jatx-messagedialog-border-color-error);  
+  border-radius: 0 0 var(--jato-radii-sm, 3px) var(--jato-radii-sm, 3px);
 }
 
 .binf-widgets .csui-messagepanel.csui-error.csui-collapsed .csui-header,
 .binf-widgets .csui-messagepanel.csui-error.smart-no-details .csui-header {
-  border-bottom: 4px solid #DF3324;
+  border: var(--jatx-messagedialog-border) solid var(--jatx-messagedialog-border-color-error);
+  border-bottom: var(--jatx-messagedialog-bottom-border) solid var(--jatx-messagedialog-border-color-error);
+  border-radius: var(--jato-radii-sm, 3px);
 }
 
 .binf-widgets .csui-messagepanel.csui-error.csui-collapsing .csui-details {
   border-bottom: 0;
-  box-shadow: 0 4px 0 0 #DF3324;
+  box-shadow: 0 4px 0 0 var(--jatx-messagedialog-border-color-error);
 }
 
+.binf-widgets .csui-messagepanel.csui-info .csui-header {
+  border: var(--jatx-messagedialog-border) solid var(--jatx-messagedialog-border-color-info);
+  border-bottom: 0;
+  border-radius: var(--jato-radii-sm, 3px) var(--jato-radii-sm, 3px) 0 0;
+}
 
 .binf-widgets .csui-messagepanel.csui-info .csui-details {
-  border-bottom: 4px solid #2E3D98;
+  border: var(--jatx-messagedialog-border) solid var(--jatx-messagedialog-border-color-info);
+  border-top: 0;
+  border-bottom: var(--jatx-messagedialog-bottom-border) solid var(--jatx-messagedialog-border-color-info);  
+  border-radius: 0 0 var(--jato-radii-sm, 3px) var(--jato-radii-sm, 3px);
 }
 
 .binf-widgets .csui-messagepanel.csui-info.csui-collapsed .csui-header,
 .binf-widgets .csui-messagepanel.csui-info.smart-no-details .csui-header {
-  border-bottom: 4px solid #2E3D98;
+  border: var(--jatx-messagedialog-border) solid var(--jatx-messagedialog-border-color-info);
+  border-bottom: var(--jatx-messagedialog-bottom-border) solid var(--jatx-messagedialog-border-color-info);
+  border-radius: var(--jato-radii-sm, 3px);
 }
 
 .binf-widgets .csui-messagepanel.csui-info.csui-collapsing .csui-details {
   border-bottom: 0;
-  box-shadow: 0 4px 0 0 #2E3D98;
+  box-shadow: 0 4px 0 0 var(--jatx-messagedialog-border-color-info);
 }
 
-.binf-widgets .csui-messagepanel.csui-collapsed .csui-details{
+.binf-widgets .csui-messagepanel.csui-collapsed .csui-details {
   border-bottom: 0;
-}
-
-.binf-widgets .csui-icon-notification-success-white {
-  background-image: url(images/notification/notification_success24.svg);
 }
 
 .csui-messagepanel .csui-header-top .csui-text {
   flex-grow: 1;
 }
 
-.csui-messagepanel.csui-success-with-link .csui-header {
-  background-color: #ffffff;
+.binf-widgets .csui-messagepanel.csui-success-with-link .csui-header {
+  background-color: var(--jato-background-elevation-level-3, #f7f7f7);
+  border: var(--jatx-messagedialog-border) solid var(--jatx-messagedialog-border-color-success);
+  border-bottom: 0;
+  border-radius: var(--jato-radii-sm, 3px) var(--jato-radii-sm, 3px) 0 0;
 }
 
 .binf-widgets .csui-messagepanel .csui-header .csui-gotolocation-url, 
@@ -449,16 +463,71 @@
   width: 100%;
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
   height: auto;
+  min-height: 28px;
+  gap: var(--jato-padding-lrg, 12px);
+}
+
+.binf-widgets .csui-messagepanel .csui-header .csui-header-top .csui-state,
+.binf-widgets .csui-messagepanel .csui-header .csui-header-top .csui-text {
+  padding: var(--jato-padding-sm, 4px) 0;
+}
+
+.binf-widgets .csui-messagepanel .csui-header .csui-header-top .csui-state .smart-state-icon {
+  display: var(--jatx-messagedialog-header-state-icon-display-property);
+  padding: var(--jato-padding-xxs, 0) 0;
+}
+
+.binf-widgets .csui-messagepanel .csui-header .csui-header-top .csui-state .smart-state-icon>svg {
+  margin-top: -0.5px;
 }
 
 .binf-widgets .csui-messagepanel .csui-header .csui-state {
   padding-left: 0;
+  width: var(--jatx-messagedialog-header-state-measure);
+  height: var(--jatx-messagedialog-header-state-measure-height);
+  display: flex;
+  align-items: center;
+  margin-right: var(--jatx-messagedialog-header-state-margin-right);
+}
+
+.binf-widgets .csui-messagepanel .csui-header .csui-state otc-icon {
+  width: var(--jatx-messagedialog-header-state-measure);
 }
 
 .binf-widgets .csui-messagepanel .csui-header .csui-action {
+  display: flex;
+  padding: var(--jato-padding-xxs, 2px) 0 0 0;
+  height: 26px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--jato-margin-sm, 6px);
+}
+
+.binf-widgets .csui-messagepanel .csui-header .csui-action otc-button {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+[data-smart-theme="cf"] .binf-widgets .csui-messagepanel .csui-header .csui-action {
   padding-right: 0;
   display: flex;
+  height: auto;
+  max-height: 32px;
+  position: relative;
+  bottom: 2px;
+  gap: 4px;
+}
+
+[data-smart-theme="cf"] .binf-widgets .csui-messagepanel .csui-header .csui-action otc-button {
+  width: 32px;
+  height: 32px;
 }
 
 .binf-widgets .csui-messagepanel .csui-header .csui-gotolocation-label {

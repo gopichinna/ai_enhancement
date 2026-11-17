@@ -1,21 +1,19 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .create-metadata-properties .binf-tab-content.csui-perfect-scrolling,
 .binf-widgets .create-metadata-properties .binf-tab-content.csui-normal-scrolling {
   height: calc(100% - 48px);
 }
 
 .binf-col-md-12> .alpaca-marker-container-field-item-field> .alpaca-field-valid> .d2tabgroupcontainer {
-  outline: 1px solid #FFF;
+  outline: 1px solid #FFFFFF;
 }
 
 .binf-col-md-12> .alpaca-marker-container-field-item-field> .alpaca-field-valid> .d2tabgroupcontainer> .d2tabgroupheader > ul{
-  background:#FFF;
+  background:#FFFFFF;
   border-bottom: 1px solid #D3D3D3;
   border-top: 1px solid #D3D3D3;
-  width: 75vw;
 }
 
 .alpaca-container-item> .alpaca-field-valid> .d2-set-container> .binf-col-md-12{

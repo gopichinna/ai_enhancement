@@ -1,9 +1,15 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-version-dialog-label-height : 28px;
+  --jatx-csui-radio-field-margin-right : 20px;
+  --jatx-csui-radio-field-inner-size: 6px;
+  --jatx-csui-radio-field-outer-size: 12px;
+}
 
 .binf-widgets .cs-dialog.csui-version-control-dialog .binf-modal-content .tile-header {
-  padding: 16px 16px 16px 32px;
+  padding: var(--jato-padding-xxl, 16px) var(--jato-padding-xxl, 16px) var(--jato-padding-lrg, 16px) var(--jato-padding-xxl, 32px);
   height: auto;
   display: inline-block;
 }
@@ -28,12 +34,13 @@
 }
 
 .binf-widgets .cs-dialog.csui-version-control-dialog .binf-modal-content {
-  border-radius: 3px;
+  border-radius: var(--jato-radii-xl, 3px);
 }
 
 .binf-widgets .cs-dialog.csui-version-control-dialog .binf-modal-content .binf-modal-body {
   min-height: 70px;
   padding: 24px 32px;
+  padding: var(--jato-padding-lrg, 24px) var(--jato-padding-xxl, 32px) var(--jato-padding-xxl, 24px) var(--jato-padding-xxl, 32px);
   margin-right: 0;
 }
 
@@ -54,13 +61,24 @@
   margin-bottom: 10px;
 }
 
-.binf-widgets .csui-version-control-dialog.cs-dialog .tile-header .binf-modal-title .icon {
+[data-smart-theme="cf"] .binf-widgets .csui-version-control-dialog.cs-dialog .tile-header .binf-modal-title .icon {
   display: block;
   background-repeat: no-repeat;
   background-position: center;
   height: 32px;
   width: 32px;
   float: left;
+}
+
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-version-control-dialog.cs-dialog .tile-header .binf-modal-title .icon {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  float: left;
+  height: var(--jato-line-height-sm, 32px);
+  padding: var(--jato-padding-xxs, 0) 0;
+  width: 16px;
 }
 
 .binf-widgets .csui-version-control-dialog.cs-dialog .tile-header .binf-modal-title .title-text {
@@ -74,25 +92,126 @@
   font-size: 1.3em;
 }
 
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-version-control-dialog.cs-dialog .tile-header .binf-modal-title .title-text {
+    font-size: var(--jato-font-size-xxl, 1.3em);
+    font-weight: var(--jato-font-weight-600, 400);
+    letter-spacing: -0.02em;
+    line-height: var(--jato-line-height-lrg, 32px);
+    margin-left: var(--jato-measure-0, 15px);
+}
+
 .binf-widgets .csui-version-control-dialog .binf-modal-body .binf-row .csui-version-reserve {
-  display:flex;
+  display: flex;
+  align-items: center;
 }
 
 .binf-widgets .csui-version-control-dialog .binf-modal-body .binf-row .csui-version-reserve .binf-checkbox-inline {
-  padding-left: 0px;
+  padding-left: 0;
 }
 
-.binf-widgets .csui-version-control-dialog .binf-modal-body .binf-row .csui-version-reserve .binf-checkbox-inline input {
-  position: relative;
-  margin-left: 0px;
+.binf-widgets .csui-version-control-dialog .binf-modal-body .binf-row .csui-version-reserve otc-checkbox {
+  margin-right: 8px;
 }
+
 .binf-widgets .csui-version-control-dialog .binf-modal-body .binf-row .version-description textarea {
   min-height: 68px;
   resize: none;
 }
 
-.binf-widgets .csui-version-control-dialog .binf-modal-body .binf-row .csui-version-update .binf-radio-inline  input {
+.binf-widgets .csui-version-control-dialog .binf-modal-body .binf-row .cs-radio-inline  input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+
+.binf-widgets .csui-version-control-dialog .binf-modal-body .binf-row .cs-radio-inline:has(input[type="radio"]:focus-visible) {
+  outline: 1px dotted #666666;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-version-control-dialog .binf-modal-body .binf-row .cs-radio-inline:has(input[type="radio"]:focus-visible) {
+  outline: 2px solid var(--jato-cta-focus-border);
+  border-radius: var(--jato-radii-med);
+  outline-offset: 2px;
+}
+
+.binf-widgets .csui-version-control-dialog .binf-modal-body .cs-radio-inline + .cs-radio-inline {
+  margin-left: 10px;
+}
+
+.binf-widgets .csui-version-control-dialog .binf-modal-body .binf-row .cs-radio-inline .cs-radio-container {
   position: relative;
+  margin-right: var(--jatx-csui-radio-field-margin-right, 20px);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-version-control-dialog .binf-modal-body .binf-row .cs-radio-inline {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-version-control-dialog .binf-modal-body .binf-row .cs-radio-inline:has(input:checked) {
+  font-weight: 500;
+}
+
+.binf-widgets .csui-version-control-dialog .binf-modal-body .binf-row .cs-radio-inline span.outer {
+  position: absolute;
+  width: var(--jatx-csui-radio-field-outer-size, 13px);
+  height: var(--jatx-csui-radio-field-outer-size, 13px);
+  border: 1px solid var(--jato-control-border-primary-neutral, #2675fc);
+  box-sizing: border-box;
+  background-color: var(--jato-control-background-primary-neutral, white);
+  border-radius: 50%;
+  margin-top: 4px
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-version-control-dialog .binf-modal-body .cs-radio-inline:hover span.outer {
+  border: 1px solid var(--jato-control-border-primary-hover);
+  background-color: var(--jato-control-background-primary-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-version-control-dialog .binf-modal-body .cs-radio-inline:active span.outer {
+  border: 1px solid var(--jato-control-border-primary-active);
+  background-color: var(--jato-control-background-primary-active);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-version-control-dialog .cs-radio-inline input:checked ~ span.cs-radio-container span.outer {
+  background-color: var(--jato-control-background-primary-selected-neutral);
+  border: 1px solid var(--jato-control-border-primary-selected-neutral);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-version-control-dialog .cs-radio-inline input:checked ~ span.cs-radio-container:hover span.outer {
+  background-color: var(--jato-control-background-primary-selected-hover);
+  border: 1px solid var(--jato-control-border-primary-selected-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .csui-version-control-dialog .cs-radio-inline input:checked ~ span.cs-radio-container:active span.outer {
+  background-color: var(--jato-control-background-primary-selected-active);
+  border: 1px solid var(--jato-control-border-primary-selected-active);
+}
+
+.binf-widgets .csui-version-control-dialog label span.cs-radio-container span.inner {
+  position: absolute;
+  width: var(--jatx-csui-radio-field-inner-size, 7px);
+  height: var(--jatx-csui-radio-field-inner-size, 7px);
+  margin-left: calc(50% - var(--jatx-csui-radio-field-inner-size, 7px) / 2);
+  margin-top: calc(50% - var(--jatx-csui-radio-field-inner-size, 7px) / 2);
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.csui-version-control-dialog .cs-radio-inline input:checked ~ span.cs-radio-container span.outer span.inner {
+  background: var(--jato-control-symbol-color-selected-neutral, #2675fc);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .csui-version-control-dialog .cs-radio-inline input:checked ~ span.cs-radio-container:hover span.outer span.inner {
+  background: var(--jato-control-symbol-color-selected-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .csui-version-control-dialog .cs-radio-inline input:checked ~ span.cs-radio-container:active span.outer span.inner {
+  background: var(--jato-control-symbol-color-selected-active);
 }
 
 .binf-widgets .csui-version-control-dialog .binf-modal-body .binf-row .csui-version-warning {
@@ -103,8 +222,9 @@
   overflow-wrap: break-word;
   line-height: 20px;
   width: 100%;
-  color: #4a4a4a;
+  color: var(--jato-typography-forms-text-color-label, #4a4a4a);
   font-size: 12px;
+  height: var(--jatx-csui-version-dialog-label-height, inherit);
 }
 
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {

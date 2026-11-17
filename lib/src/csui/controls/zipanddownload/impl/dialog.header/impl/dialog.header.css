@@ -1,9 +1,23 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-dialog-zip-download-font-size: 18px;
+  --jatx-txt-zip-download-font-size: 13px;
+  --jatx-txt-label-font-weight: 500;
+  --jatx-warning-separator: 0.75rem;
+  --jatx-warning-border-radius: 0.375rem;
+  --jatx-warning-padding: 0.75rem;
+  --jatx-zip-download-transparent: rgba(255, 255, 255, 0.1);
+  --jatx-zip-download-border-bottom: var(--jato-measure-1) solid var(--jato-border-color-primary);
+  --jatx-zip-download-border-bottom-header: 1px solid var(--jato-table-divider-header);
+  --jatx-zip-download-padding-header: 10px 0px 10px 16px;
+  --jatx-zip-download-table-align-center: center;
+}
+
 .binf-widgets .cs-dialog.csui-zipanddownload-dialog .binf-modal-content .tile-header .tile-title {
   font-weight: initial;
-  color: #333333;
+  color: var(--jato-typography-text-color-primary, #333333);
 }
 
 .binf-widgets .cs-dialog.csui-zipanddownload-dialog .binf-modal-content .tile-header .tile-title {
@@ -20,10 +34,8 @@
 }
 
 .binf-widgets .cs-dialog.csui-zipanddownload-dialog .binf-modal-content .tile-header {
-  border-radius: 3px 3px 0 0;
-  background-color: #dce4e8;
   height: 48px;
-  padding-left: 24px;
+  padding-left: var(--jato-padding-xxl, 24px);
   display: block;
 }
 
@@ -36,12 +48,22 @@
   float: right;
   margin: 0;
   font-size: 14px;
-  padding-right: 10px;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .cs-dialog.csui-zipanddownload-dialog .binf-modal-content .tile-header .cs-header-control .csui-items {
+  font-weight: 500;
+  size: 13px;
+  color: var(--jato-typography-forms-text-color-label);
 }
 
 .binf-widgets .cs-dialog.csui-zipanddownload-dialog .binf-modal-content .tile-header .cs-header-control .csui-size {
   font-weight: bold;
-  padding-right: 18px;
+  padding-right: var(--jatx-const-0, 18px);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .cs-dialog.csui-zipanddownload-dialog .binf-modal-content .tile-header .cs-header-control .csui-size {
+  font-size: 13px;
+  font-weight: 400;
 }
 
 
@@ -61,6 +83,6 @@
 }
 
 .binf-widgets .cs-dialog.csui-zipanddownload-dialog .binf-modal-content .tile-header .tile-title .csui-heading-v2{
-  font-size: 20px;
+  font-size: var(--jatx-dialog-zip-download-font-size, 20px);
   font-weight: 600;
 }

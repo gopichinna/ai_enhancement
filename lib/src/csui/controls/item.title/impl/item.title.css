@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-item-title {
   display: flex;
@@ -25,26 +25,36 @@
 }
 
 .csui-item-title-icon > .csui-icon-group {
-  width: 32px;
-  height: 32px;
+  width: var(--jato-measure-24, 32px);
+  height: var(--jato-measure-24, 32px);
   flex: 0 0 auto;
   -webkit-flex: 0 0 auto;
 }
 
 .csui-item-title-icon > .csui-icon-group > .csui-icon {
-  width: 32px;
-  height: 32px;
+  width: var(--jato-measure-24, 32px);
+  height: var(--jato-measure-24, 32px);
 }
 
 .csui-item-title > .csui-item-title-version-style {
   flex: 0 1 auto;
   -webkit-flex: 0 1 auto;
-  border: 1px solid #627783;
-  background-color: #FFF;
+  border: 1px solid var(--jato-border-color-primary, #627783);
+  background-color: var(--jato-background-elevation-inline-content, #FFFFFF);
   height: 20px;
   margin: 14px 0;
   font-size: 12px;
   border-radius: 3px;
-  padding: 0px 8px;
+  padding: 0 8px;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .csui-item-title > .csui-item-title-version-style{
+  border-radius: 4px;
+  color: var(--jato-typography-text-color-secondary, #47484A);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 550;
+  margin: 10px 0;
+  line-height: 12px;  
+  padding: var(--jato-padding-sm, 4px) var(--jato-padding-med, 6px);
+}

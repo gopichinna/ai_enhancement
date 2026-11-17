@@ -1,0 +1,52 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+[data-smart-theme]:not([data-smart-theme=cf]) {
+    .dctmw-about-dialog .about-info p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .dctmw-about-dialog .about-info p:not(:first-child) {
+        padding-top: var(--jato-margin-xl);
+        padding-bottom: var(--jato-margin-xxs);
+    }
+
+    .dctmw-about-dialog .about-info strong {
+        font-weight: 600;
+        font-size: var(--jato-font-size-sm);
+        line-height: var(--jato-line-height-sm);
+        letter-spacing: var(--jato-tracking-condensed-lt);
+        vertical-align: middle;
+        color: var(--jato-typography-text-color-tertiary, #707275)
+    }
+}
+
+.dctmw-about-dialog .about-info p {
+    font-size: var(--jato-font-size-reg, 12px);
+    line-height: var(--jato-line-height-reg, 18px);
+    margin-bottom: 16px;
+    padding: 0 32px 0 32px;
+    white-space: normal;
+    width: 97%;
+}
+
+.dctmw-about-dialog .about-info p:first-of-type {
+    padding-top: 16px;
+}
+
+.dctmw-about-dialog .about-info strong {
+    font-weight: bold;
+}
+
+.dctmw-about-dialog .about-info a {
+    color: var(--jato-cta-links-text-color-neutral, #0073e6);
+    font-size: 12px;
+    font-weight: var(--jatx-dctmw-about-h6-font-weight, normal);
+    line-height: 15px;
+    text-decoration: underline;
+}
+
+.dctmw-about-dialog .about-info a:hover {
+    text-decoration: underline;
+}

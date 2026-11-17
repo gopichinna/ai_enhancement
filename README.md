@@ -3,7 +3,7 @@
 > 📖 **Master Blueprint & Architecture Guide:**  
 > For the complete deep-dive documentation, line-by-line file explanations, runtime execution sequences, and troubleshooting, read **[flow.md](flow.md)**!
 
-This workspace contains the complete, isolated setup for the **AI Summary** plugin in OpenText Documentum D2 SmartView (24.4.0).
+This workspace contains the complete, isolated setup for the **AI Summary** plugin in OpenText Documentum D2 SmartView (25.4.1 / 25.4.0).
 
 ---
 

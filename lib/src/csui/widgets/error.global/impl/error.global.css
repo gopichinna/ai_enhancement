@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-global-error {
   width: 100%;
@@ -7,7 +7,7 @@
 }
 
 .csui-global-error {
-  color: #ffffff;
+  color: var(--jato-typography-text-color-primary, #ffffff);
 }
 
 .csui-global-error .main-area-container {
@@ -94,7 +94,7 @@
   width: 96px;
   height: 96px;
   display: block;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--jato-control-border-primary-neutral, #ffffff);
   border-radius: 50%;
   padding: 16px;
   margin: 0 0 24px 0;  
@@ -110,6 +110,11 @@
   height: 64px;  
   display: block;
   background-repeat: no-repeat;
+}
+
+
+[data-smart-theme="light"] .csui-global-error .main-area-container .main-area-group .navigation-area .navigation-control-container .icon {
+  filter: invert(0.75);
 }
 
 .csui-global-error .main-area-container .main-area-group .navigation-area .navigation-control-container span {

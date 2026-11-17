@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets:not(.d2mob) .signin-container .login-panel {
   padding-bottom: 52px;
 }
@@ -10,7 +9,7 @@
   overflow-y: auto;
 }
 
-@media screen and (max-height: 620px) {
+@media screen and (height <= 620px) {
   .binf-widgets:not(.d2mob) .module-signin .signin-header {
     padding-top: 0;
   }
@@ -18,4 +17,8 @@
   .binf-widgets:not(.d2mob) .module-signin .signin-header h1{
     height: 80px;
   }
+}
+
+.binf-widgets .signin-header .d2-logo {
+  background-size: 800px;
 }

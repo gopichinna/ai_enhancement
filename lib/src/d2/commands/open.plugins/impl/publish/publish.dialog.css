@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-publish-dialog.cs-dialog .binf-modal-dialog {
   top: 0;
@@ -83,7 +83,7 @@
   color: #DF3324;
 }
 
-.binf-widgets .d2-publish-dialog .cs-formfield.d2-radio-group div.d2-radio-item-container {
+.binf-widgets .d2-publish-dialog .cs-formfield.dctmw-radio-group div.dctmw-radio-item-container {
   padding-top: 3px;
   padding-bottom: 3px;
 }

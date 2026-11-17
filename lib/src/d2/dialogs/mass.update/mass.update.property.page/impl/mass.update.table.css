@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-mass-update-table {
   padding: 32px 64px 0 64px;
@@ -224,20 +224,20 @@
 }
 
 .d2-mass-update-table .multi-select-switch-area .binf-switch .binf-switch-handle-on {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 10px;
   width: 16px !important;
   height: 16px;
-  color: #fff;
+  color: #ffffff;
   font-size: 0;
   margin: 4px 3px;
   padding: 8px;
 }
 
 .d2-mass-update-table .multi-select-switch-area .binf-switch .binf-switch-handle-off {
-  background: #fff;
+  background: #ffffff;
   border-radius: 12px;
-  color: #fff;
+  color: #ffffff;
   font-size: 0;
   width: 16px !important;
   height: 16px;
@@ -251,7 +251,7 @@
   width: 100%;
   box-sizing: border-box;
   border-bottom: 1px solid #999999;
-  color: #333;
+  color: #333333;
   font-size: 14px;
   text-align: right;
   line-height: 42px;

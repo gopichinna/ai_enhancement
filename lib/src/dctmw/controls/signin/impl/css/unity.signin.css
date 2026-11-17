@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-signin select {
     
@@ -54,7 +54,7 @@
 
 select:-moz-focusring {
     color: transparent;
-    text-shadow: 0 0 0 #000;
+    text-shadow: 0 0 0 #000000;
 }
 
 .separator {
@@ -205,7 +205,7 @@ select:-moz-focusring {
 }
 
 .d2-signin .forgot-password a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -324,6 +324,7 @@ select:-moz-focusring {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }

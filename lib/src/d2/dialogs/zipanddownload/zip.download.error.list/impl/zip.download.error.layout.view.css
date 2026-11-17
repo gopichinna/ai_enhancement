@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-zip-errorlist-layout-view {
   padding-left: 64px;
@@ -65,7 +65,7 @@
 
 .d2-zip-errorlist-layout-view table.error-items tr {
   height: 64px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
   display: inline-table;
   margin: 1px;
   width:100%;

@@ -1,7 +1,7 @@
 <div class="csui-user-search-container">
   <div class="csui-user-search-bar"></div>
-</div><a href="javascript:void(0);" class="icon icon-global-search csui-header-userpicker-icon
-         icon-header-search csui-acc-focusable" title="{{searchIconTitle}}" tabindex="0"
-         data-cstabindex="-1" role="button" aria-expanded="false"
-         aria-label="{{searchIconAria}}"></a>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+</div>
+<otc-button class="csui-header-userpicker-icon csui-acc-focusable" {{#if isJATO}} size="small" {{else}} icon="csui_action:action_search32" {{/if}} arialabel="{{searchIconAria}}" title="{{searchIconTitle}}" data-cstabindex="-1">
+    {{#if isJATO}}<otc-icon svg="{{searchIconSVG}}" type="subtle"></otc-icon>{{/if}}
+</otc-button>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

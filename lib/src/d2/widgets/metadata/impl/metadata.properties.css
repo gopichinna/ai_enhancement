@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .binf-col-md-12 {
   width: 100%;
   float: left;
@@ -76,7 +75,7 @@
   height: 100%;
   z-index: 2;
   opacity: .5;
-  background-color: #000;
+  background-color: #000000;
   position: absolute;
   width: 100%;
 }
@@ -121,6 +120,7 @@
 
 .binf-widgets .cs-metadata .metadata-content-header .metadata-header.with-right-bar > .d2-property-page-mask {
   margin-left: -26px;
+  margin-top: -15px;
   width: calc(100% + 20px);
 }
 
@@ -311,11 +311,14 @@
 
 .binf-widgets .metadata-navigation .metadata-content {
   max-width: none;
+  overflow: hidden;
 }
 
 .binf-widgets .metadata-navigation .metadata-content:not(.d2-content-region) {
   
+
   
+
   
   width: calc(100% - 240px);
 }
@@ -356,9 +359,11 @@
 .metadata-inner-wrapper .d2-metadata-properties.single-tab-hide .csui-tab-contents-header-wrapper{
   display: none;
 }
+
 .metadata-inner-wrapper .d2-metadata-properties.single-tab-hide .right-toolbar .goto_next_div {
   display: none !important; 
 }
+
 .d2-wizard-step-view .d2-metadata-properties.single-tab-hide .tab-links.scrollspy,
 .d2-wizard-step-view .d2-metadata-properties.single-tab-hide .smart-tab-contents-header-wrapper {
   display: none;

@@ -1,2 +1,2 @@
-esocial_javascript_compile	Debug	0	unknown	E:\production\les.social_24.4-branch\les.social\24.4-branch\obj\log\esocial_javascript_compileDebug.log	E:\production\les.social_24.4-branch\les.social\24.4-branch\pkg\LES_SOCIAL_UI\src
-esocial_javascript_compile	Release	0	unknown	E:\production\les.social_24.4-branch\les.social\24.4-branch\obj\log\esocial_javascript_compileRelease.log	E:\production\les.social_24.4-branch\les.social\24.4-branch\pkg\LES_SOCIAL_UI\src
+esocial_javascript_compile	Debug	0	unknown	E:\production\les.social-25.4-branch-28669815\les.social\25.4-branch\obj\log\esocial_javascript_compileDebug.log	E:\production\les.social-25.4-branch-28669815\les.social\25.4-branch\pkg\LES_SOCIAL_UI\src
+esocial_javascript_compile	Release	0	unknown	E:\production\les.social-25.4-branch-28669815\les.social\25.4-branch\obj\log\esocial_javascript_compileRelease.log	E:\production\les.social-25.4-branch-28669815\les.social\25.4-branch\pkg\LES_SOCIAL_UI\src

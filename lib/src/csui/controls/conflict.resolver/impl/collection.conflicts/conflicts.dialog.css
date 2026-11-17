@@ -1,14 +1,14 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 
-.binf-widgets .csui-collection-conflicts-dialog .tile-header .csui-heading.tile-title.binf-modal-title {
+[data-smart-theme="cf"] .binf-widgets .csui-collection-conflicts-dialog .tile-header .csui-heading.tile-title.binf-modal-title {
   margin-left: 15px;
 }
 
 .binf-widgets .csui-collection-conflicts-dialog .binf-modal-body {
-  font-style: oblique;
-  padding: 0;
+  font-style: var(--jatx-csui-const-normal, oblique);
+  padding: var(--jato-padding-lrg, 0) var(--jato-padding-xxl, 0);
   overflow: hidden;
   flex: 1 1000 auto;
   -ms-flex: 1 1000 auto;
@@ -25,17 +25,28 @@
 }
 
 .binf-widgets .csui-collection-conflicts-dialog .binf-modal-body .csui-conflicts-items-data {
-  width: calc(100% - 24px);
-  padding: 10px 0;
-  margin-left: 24px;
+  width: calc(100% - var(--jatx-const-0, 24px));
+  padding: var(--jato-padding-xl, 10px) var(--jato-padding-xxl, 0);
+  margin-left: var(--jatx-const-0, 24px);
   height: 100%;
+  background-color: var(--jato-background-elevation-inline-content, initial);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-collection-conflicts-dialog .binf-modal-body .csui-conflicts-items-data {
+  background-color: var(--jato-background-elevation-inline-content);
+  border-radius: var(--jato-radii-lrg);
 }
 
 .binf-widgets .csui-collection-conflicts-dialog .binf-modal-body .csui-conflicts-items-data .csui-collection-conflicts-title {
-  line-height: 24px;
+  line-height: var(--jato-line-height-xs, 24px);
   font-weight: 500;
   bottom: 5px;
   position: relative;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-collection-conflicts-dialog .binf-modal-body .csui-conflicts-items-data .csui-collection-conflicts-title {
+  font-size: var(--jato-font-size-xs);
+  color: var(--jato-typography-forms-text-color-label);
 }
 
 .binf-widgets .csui-collection-conflicts-dialog .binf-modal-body .csui-conflicts-items-data ul {
@@ -44,7 +55,7 @@
 
 .binf-widgets .csui-collection-conflict-items li {
   vertical-align: middle;
-  color: #323232;
+  color: var(--jato-typography-text-color-primary, #323232);
   text-decoration: none;
 }
 
@@ -52,9 +63,9 @@
   width: calc(100% - 36px);
   font-style: normal;
   border-radius: 0;
-  padding: 6px 0;
+  padding: var(--jato-padding-sm, 6px) 0;
   border-top: 1px none #f5f5f5;
-  background-color: #ffffff;
+  background-color: var(--jatx-const-transparent, #ffffff);
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -62,17 +73,22 @@
 
 .binf-widgets .csui-collection-conflict-items .csui-icon-group {
   float: left;
-  height: 28px;
-  width: 28px;
+  height: var(--jato-measure-24, 28px);
+  width: var(--jato-measure-24, 28px);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-collection-conflict-items .csui-icon-group .csui-icon-v2 {
+  height: auto;
+  width: auto;
 }
 
 .binf-widgets .csui-collection-conflict-items .item-name {
-  font-size: 14px;
-  line-height: 26px;
-  padding-left: 12px;
+  font-size: var(--jato-font-size-reg, 14px);
+  line-height: var(--jato-line-height-reg, 26px);
+  padding-left: var(--jato-padding-sm, 12px);
 }
 
-.binf-widgets .csui-collection-conflicts-dialog .tile-header.binf-modal-header {
+[data-smart-theme="cf"] .binf-widgets .csui-collection-conflicts-dialog .tile-header.binf-modal-header {
   background-color: #f5f5f5;
   border-bottom: 2px solid #cccccc;
   height: 3.5em;

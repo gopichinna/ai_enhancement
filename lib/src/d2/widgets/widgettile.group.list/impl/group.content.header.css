@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-widget-tile-group-content .d2-widget-tile-content-header-view {
   position: relative;
@@ -11,7 +11,7 @@
   display: flex;
 }
 
-.d2-widget-tile-group-content .d2-widget-tile-content-header-view .csui-type-icon {
+.d2-widget-tile-group-content .d2-widget-tile-content-header-view .d2-group-icon {
   display: flex;
   padding: 2.438px 1.625px;
   justify-content: center;
@@ -20,7 +20,7 @@
 
 .d2-widget-tile-group-content .d2-widget-tile-content-header-view .d2-group-name {
   height: 32px;
-  color: #333;
+  color: #333333;
   font-family: OpenText Sans;
   font-size: 14px;
   font-style: normal;

@@ -1,0 +1,26 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.pendoDialog {
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.pendo-config-link {
+    width: fit-content;
+}
+
+.binf-widgets span.csui-pendo-checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.binf-widgets span.csui-pendo-checkbox-container .checkbox-label {
+    font-size: 14px;
+    color: var(--jato-typography-text-color-primary, #333333);
+}
+
+.binf-widgets .csui-pendo-modal .binf-modal-dialog .binf-modal-body {
+    padding-bottom: 0;
+}

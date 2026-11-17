@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-mini {
   margin-top: 5px;
@@ -7,7 +7,6 @@
 
 .binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-mini:first-child {
   margin-top: 0;
-  overflow: auto;
 }
 
 .binf-widgets .d2-shortcut-container .csui-shortcut-item.csui-mini {
@@ -59,7 +58,7 @@
 .binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-mini .csui-error {
   display: flex;
   flex-direction: row;
-  padding: 0.5em 0.5em 0.5em 0.5em;
+  padding: 0.5em 0.5em 0.5em 1em;
   align-items: center;
 }
 
@@ -79,6 +78,7 @@
   margin-top: 0;
   margin-left: 0;
   text-align: left;
+  padding: 0 0 0 16px;
 }
 
 .binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-mini .csui-error .csui-error-icon-div {

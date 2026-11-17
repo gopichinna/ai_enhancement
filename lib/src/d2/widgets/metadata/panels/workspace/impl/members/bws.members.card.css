@@ -1,0 +1,24 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-bws-members-card .d2-bws-members-card-header {
+    height: 38px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.d2-bws-members-card .d2-bws-members-card-header .d2-bws-role-name {
+    flex-grow: 1;
+    line-height: 24px;
+    color: #333333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.d2-bws-members-card .d2-bws-members-list {
+    background-color: #F3F6FB;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .csui-right-toolbar-view {
   height: 100%;
@@ -24,10 +24,19 @@
   outline: none;
 }
 
+.csui-right-toolbar-view .csui-condensed-header-toggle-container otc-button.csui-condensed-header-toggle {
+  height: 24px;
+  width: 100%;
+  margin-right: 8px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
 .csui-right-toolbar-view .csui-condensed-header-toggle-container button.csui-condensed-header-toggle:focus {
   outline: none;
   outline-offset: 0;
-  box-shadow: inset 0px 0px 0px 2px #FFFFFF, inset 0px 0px 0px 3px #2E3D98;
+  box-shadow: inset 0 0 0 2px #FFFFFF, inset 0 0 0 3px #2E3D98;
 }
 
 .csui-right-toolbar-view .csui-condensed-header-toggle-container .icon-condensed-header {
@@ -40,6 +49,20 @@
   transition: transform 0.3s ease-out;
 }
 
+.csui-right-toolbar-view .csui-condensed-header-toggle-container .icon-condensed-header-svg {
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  transition: transform 0.3s ease-out;
+}
+
 .csui-right-toolbar-view .csui-condensed-header-toggle-container .icon-condensed-header.icon-rotate180 {
+  transform: rotate(-180deg);
+}
+
+.csui-right-toolbar-view .csui-condensed-header-toggle-container .icon-condensed-header-svg.icon-rotate180 {
   transform: rotate(-180deg);
 }

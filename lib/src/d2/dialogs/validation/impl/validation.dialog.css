@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .validation-dialog-header .icon{
   display: inline-block;
   width: 24px;
@@ -10,6 +9,7 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 .binf-widgets .validation-dialog-header .title{
   display: inline-block;
   overflow: hidden;
@@ -20,18 +20,22 @@
   margin-left: 10px;
   position: absolute;
 }
+
 .validation-dialog-header .message {
   height: 41px;
 }
+
 .validation-dialog-header{
   height: inherit;
 }
+
 .validation-dialog-header .header-section{
   height: 60px;
 }
+
 .documents-validation-dialog table.error-items tr{
   height: 64px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #eeeeee;
   display: inline-table;
   margin: 1px;
 }
@@ -84,6 +88,7 @@
   width: 32px;
   padding-top: 16px;
 }
+
 .documents-validation-dialog table.error-items td.name{
   position: relative;
   padding-left: 8px;
@@ -96,6 +101,7 @@
   padding-top: 25px;
   overflow-wrap: break-word;
 }
+
 .documents-validation-dialog table.error-items td.name > .fadeout{
   position: absolute;
   width: 35px;
@@ -104,6 +110,7 @@
   height: 99%;
   background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 75%,rgba(255,255,255,1) 100%);
 }
+
 .documents-validation-dialog table.error-items .status{
   width: 16px;
 }
@@ -133,30 +140,38 @@
 .documents-validation-dialog .error-data .each-error {
   display: flex;
 }
+
 .documents-validation-dialog .error-data{
   vertical-align: middle;
 }
+
 .documents-validation-dialog .error-data .each-error:nth-child(n+2){
   padding-top: 0;
 }
+
 .documents-validation-dialog .error-data .each-error:first-child{
   padding-top: 24px;
 }
+
 .documents-validation-dialog .error-data .each-error{
   display: flex;
   padding-bottom: 16px;
   padding-top: 16px;
   vertical-align: middle;
 }
+
 .documents-validation-dialog .error-data .each-error:last-child{
   padding-bottom: 24px;
 }
+
 .binf-widgets .documents-validation-dialog .binf-modal-dialog .binf-modal-body{
   max-height: 300px;
 }
+
 .binf-widgets .documents-validation-dialog .binf-modal-dialog{
   width: 720px;
 }
+
 .binf-widgets .documents-validation-dialog .binf-modal-body tr:focus{
   outline: 1px dotted #333333;
 }

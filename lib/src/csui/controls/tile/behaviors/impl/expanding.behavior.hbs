@@ -1,6 +1,5 @@
-<div class="cs-more tile-expand" title="{{expandIconTitle}}" aria-label="{{expandIconAria}}"
-     role="button">
-  {{{icon-v2 iconName='csui_action_expand32' states='true'}}}
-</div>
-
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<otc-button class="cs-more tile-expand" title="{{expandIconTitle}}" arialabel="{{expandIconAria}}"
+{{#if isJATO}} size="small" {{else}} icon="csui_action:action_expand32"{{/if}}>
+ {{#if isJATO}} <otc-icon svg="{{expandJATOIcon}}" ispresentation></otc-icon> {{/if}}
+</otc-button>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .d2-select {
   width: 100%;
 }
@@ -36,6 +35,7 @@
   overflow: hidden;
   line-height: 20px;
   text-align: left;
+
   
   padding: 5px 4px 5px 4px;
   white-space: normal;
@@ -175,7 +175,7 @@
   box-shadow: none;
   border-radius: 3px;
   padding: 1px;
-  border: 1px dotted #666;
+  border: 1px dotted #666666;
   cursor: default;
 }
 

@@ -1,18 +1,31 @@
 <div class="csui-targetbrowse-history">
+    {{#if isJATO}}
+      <otc-button class="csui-targetbrowse-arrow-back cs-go-back
+      icon smart-v2-icon-parent"
+        title="{{backButtonTooltip}}" arialabel="{{backButtonAria}}" data-cstabindex="-1" size="small">
+        <otc-icon svg="{{jatoActionArrowLeft}}" isPresentation></otc-icon>
+      </otc-button>
+    {{else}}
       <otc-button icon="smart_action:action_back32" class="csui-targetbrowse-arrow-back cs-go-back
       icon smart-v2-icon-parent"
         title="{{backButtonTooltip}}" arialabel="{{backButtonAria}}" data-cstabindex="-1"></otc-button>
+    {{/if}}
 </div>
 {{#if searchView}}
-  <div class="csui-search-item-left-panel">
-    <div class="csui-search-item-type smart-v2-icon-parent">{{{icon-v2 iconName="csui_smart_action_mime32" size="normal"}}}
-    </div>
-    <div class="csui-search-item">
-      <div class="csui-search-item-name">
-        {{name}}
-      </div>
+<div class="csui-search-item-left-panel">
+  <div class="csui-search-item-type smart-v2-icon-parent">
+    {{#if isJATO}}
+      <otc-icon svg="{{jatoActionDocument}}" class="smart-jato-item-type" size="16" isPresentation></otc-icon>
+    {{else}}
+      <otc-icon icon="smart_action:action_mime32" ispresentation disableeffects></otc-icon>
+    {{/if}}
+  </div>
+  <div class="csui-search-item">
+    <div class="csui-search-item-name">
+      {{name}}
     </div>
   </div>
+</div>
   <div class="csui-search-item-right-panel">
     <div class="csui-search-item-location">
       <div class="csui-search-toolbar-container">
@@ -22,28 +35,22 @@
   </div>
 {{else}}
   <div class="csui-folder-name">
-    <h3 class="folder-name" title="{{title}}">{{title}}</h3>
+    <h3 class="folder-name smart-header-container" title="{{title}}">{{title}}</h3>
     {{#if enableSearch}}
-    <otc-button icon="smart_action:action_search32" class="cs-icon icon-sv-search
-    csui-acc-focusable" tabindex="0" data-cstabindex="-1" 
-      title="{{searchInButtonAria}}" arialabel="{{searchInButtonAria}}"></otc-button>
+      <div class="cs-modal-filter">
+          <otc-typeahead-search class="icon-sv-search smart-typeahead-search csui-acc-focusable" arialabel="{{searchInButtonAria}}"
+          title="{{searchInButtonAria}}" tabindex="0" data-cstabindex="-1" >
+            <otc-input class="cs-filter-input smart-typeahead-search-input" title="{{inputTitle}}" arialabel="{{search_aria}}" type="search" placeholder="{{search_placeholder}}" actionicon="" 
+                closeicontitle="{{collapseSearch}}" closeiconarialabel="{{collapseSearch}}" value="" slidein="" autocomplete="off"
+                clearicontitle="{{clearSearchButtonAria}}" cleariconarialabel="{{clearSearchButtonAria}}" tabindex="0" data-cstabindex="-1">
+            </otc-input>
+          </otc-typeahead-search>
+      </div>
     {{/if}}
-    <div class="smart-header-tools"></div>
   </div>
 
-  <form class="cs-modal-filter">
-    <div class="binf-form-group">
-        <span class="icon-search-placeholder">{{{icon-v2 iconName="csui_smart_action_search32" size="normal"}}}</span>
-      <input class="binf-form-control cs-filter-input smart-persistant-search-small" placeholder="{{search_placeholder}}"
-        tabindex="0" data-cstabindex="-1" aria-label="{{search_aria}}">
-      <otc-button icon="smart_action_16:action_close16" class="smart-inline-search-clear"
-        title="{{clearSearchButtonAria}}" arialabel="{{clearSearchButtonAria}}" tabindex="0"
-        data-cstabindex="-1"></otc-button>
-      <otc-button icon="smart_action:action_close_mid32" class="csui-form-control-search
-      icon-sv-search-hide" title="{{collapseSearch}}" arialabel="{{collapseSearch}}"
-         aria-haspopup="true" tabindex="0" data-cstabindex="-1"></otc-button>
-    </div>
-  </form>
+
+  <div class="smart-header-tools smart-header-container"></div>
 {{/if}}
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

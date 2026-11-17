@@ -1,0 +1,103 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.d2-task-details-widget .d2-task-details-panel-content .d2-task-details-header{
+    background: #dce4e8;
+    display: flex;
+    padding-left: 16px;
+    height: 62px;
+}
+
+.d2-task-details-widget .d2-task-details-panel-content .d2-task-details-header .d2-task-details-header-title{
+    padding-left: 8px;
+    flex-grow: 1;
+}
+
+.d2-task-details-widget .d2-task-details-panel-content .d2-task-details-header .d2-task-details-header-actions{
+    margin-left: auto;
+}
+
+.d2-task-details-widget .d2-task-details-panel-content .d2-task-details-header .d2-task-details-header-name{
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 8px;
+    height: 32px;
+}
+
+.d2-task-details-widget .d2-task-details-panel-content .d2-task-details-body,
+.d2-task-details-widget .d2-task-details-panel-content .d2-task-details-header,
+.d2-task-details-widget .d2-task-details-panel-content .d2-task-details-header .d2-task-details-header-title{
+    display: flex;
+    align-items: center;
+}
+
+.d2-task-details-widget .d2-task-details-panel-content .d2-task-details-body{
+    height: calc(100% - 62px);
+}
+
+.d2-task-details-widget .d2-task-details-panel-content .d2-task-details-body .d2-task-details-additional-panels{
+    flex-grow: 1;
+}
+
+.d2-task-details-widget .d2-task-details-panel-content .d2-task-details-body .d2-task-details-content-viewer{
+    min-width: 30%;
+}
+
+.d2-task-details-widget .d2-task-details-panel-content .d2-task-details-header .d2-task-details-actionbar{
+    padding-right: 20px;
+}
+
+.d2-task-details-widget .d2-task-details-panel-content .d2-task-details-header .d2-task-details-actionbar li{
+    align-items: center;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 16px;
+    padding: 0;
+    width: auto;
+} 
+
+.d2-task-details-widget .d2-task-details-panel-content .d2-task-details-header .d2-task-details-actionbar li a{
+    background: #ffffff;
+    color: #232e72;
+    border: 1px solid #232e72;
+    border-radius: 16px;
+    display: inline-block;
+    font-size: 14px;
+    height: 32px;
+    line-height: 30px;
+    margin: 0;
+    max-width: 260px;
+    overflow: hidden;
+    padding: 0 16px;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    width: auto;
+}
+
+.d2-task-details-widget .d2-task-details-panel-content .d2-task-details-header .d2-task-details-actionbar li.binf-btn-primary a{
+    background: #232e72;
+    color: #ffffff;
+}
+
+.binf-widgets .d2-task-details-widget .d2-task-details-panel-content .d2-split-panel-container .d2-split-panel .d2-split-panel-content.tertiary-pane{
+    width: 50%;
+    max-width: 50%;
+}
+
+.binf-widgets .d2-task-details-widget .d2-task-details-panel-content .d2-split-pane-content .tab-panel .csui-metadata-basepanel{
+    margin-top: 1rem;
+}
+
+.binf-widgets .d2-task-details-widget .d2-task-details-panel-content .d2-split-pane-content .tab-panel .csui-metadata-basepanel .csui-table-view .csui-nodetable{
+    overflow: auto;
+}
+
+.binf-widgets .d2-task-details-widget .d2-page-mask {
+    display: none;
+}
+

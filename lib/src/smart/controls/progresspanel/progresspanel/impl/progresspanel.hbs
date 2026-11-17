@@ -3,6 +3,7 @@
     <div class="csui-names-progress">
       <div class="csui-names csui-progresscell">
         <div class="csui-header-icon csui-icon binf-hidden"></div>
+        <otc-icon class="smart-progresspanel-icon binf-hidden" isPresentation></otc-icon>
         <div class="csui-title" id="{{progressTitleId}}">
           {{title}}
         </div>
@@ -55,28 +56,38 @@
         </div>
       {{/if}}
       <div class="csui-expand csui-progresscell {{#if singleItem}}binf-hidden{{/if}}">
-        <button type="button" class="csui-expand-down binf-btn binf-btn-default"
-                aria-label="{{expand}}" title="{{expand}}" aria-haspopup="true" aria-expanded="false">
-          {{{icon-v2 iconName="csui_smart_ot_action_caret_down32" states="true" size="small"}}}
-        </button>
-        <button type="button" class="csui-expand-up binf-hidden binf-btn binf-btn-default"
-                aria-label="{{collapse}}" title="{{collapse}}" aria-haspopup="true" aria-expanded="true">
-          {{{icon-v2 iconName="csui_smart_ot_action_caret_up32" states="true" size="small"}}}
-        </button>
+        {{#if isJato}}
+          <otc-button size="small" class="csui-expand-down smart-collapse-expand" arialabel="{{expandAria}}" title="{{expand}}" tabindex="0">
+            <otc-icon svg="{{expandSVGContent}}"></otc-icon>
+          </otc-button>
+          <otc-button size="small" class="csui-expand-up smart-collapse-expand binf-hidden" arialabel="{{collapseAria}}" title="{{collapse}}" tabindex="0">
+            <otc-icon svg="{{collapseSVGContent}}"></otc-icon>
+          </otc-button>
+        {{else}}
+          <otc-button class="csui-expand-down smart-collapse-expand" icon="smart_action_16:action_caret_down16" arialabel="{{expandAria}}" title="{{expand}}" tabindex="0"></otc-button>
+          <otc-button class="csui-expand-up smart-collapse-expand binf-hidden" icon="smart_action_16:action_caret_up16" arialabel="{{collapseAria}}" title="{{collapse}}" tabindex="0"></otc-button>
+        {{/if}}
       </div>
       <div class="csui-close csui-progresscell binf-hidden">
+        {{#if isJato}}
+          <otc-button size="small" class="csui-action-close csui-icon" arialabel="{{closeAria}}" title="{{close}}" tabindex="-1">
+            <otc-icon svg="{{closeSVGContent}}"></otc-icon>
+          </otc-button>
+        {{else}}
         <button type="button" class="binf-btn binf-btn-default csui-action-close csui-icon"
-                aria-label="{{closeAria}}" title="{{close}}" >
+                aria-label="{{closeAria}}" title="{{close}}" tabindex="-1">
+          {{{icon-v2 iconName="csui_smart_ot_action_close_mid32" states="true" size="small"}}}
         </button>
+        {{/if}}
       </div>
     </div>
   </div>
   {{#if targetLocationUrl}}
-  <a class="csui-gotolocation-url binf-hidden" href="{{targetLocationUrl}}" role="button">{{gotoLocation}}</a>
+  <otc-link class="csui-gotolocation-url binf-hidden" href="{{targetLocationUrl}}" ignorevisited="">{{gotoLocation}}</otc-link>
   {{/if}}
 </div>
 <div class="csui-items-wrapper csui-normal-scrolling">
   <div class="csui-items" role="list" aria-label="{{detailsListAria}}">
   </div>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

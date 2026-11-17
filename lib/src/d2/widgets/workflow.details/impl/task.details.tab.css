@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-wf-task-details-tab {
   height: 100%;
@@ -44,12 +44,12 @@
 .binf-widgets .d2-wf-task-details-tab .metadata-content-wrapper .binf-tab-content .d2-set-container .tab-links.scrollspy,
 .binf-widgets .d2-wf-task-details-tab .metadata-content-wrapper .metadata-inner-wrapper .csui-tab-contents-header-wrapper,
 .binf-widgets .d2-wf-task-details-tab .metadata-content-wrapper .metadata-inner-wrapper .alpaca-container-label,
-.binf-widgets .d2-wf-task-details-tab .d2-listfield-sortable .d2-icon-drag {
+.binf-widgets .d2-wf-task-details-tab .dctmw-listfield-sortable .dctmw-icon-drag {
   display: none;
 }
 
-.binf-widgets .d2-wf-task-details-tab .d2-listfield-sortable .user-info.only-id,
-.binf-widgets .d2-wf-task-details-tab .d2-listfield-sortable .user-selection-item {
+.binf-widgets .d2-wf-task-details-tab .dctmw-listfield-sortable .user-info.only-id,
+.binf-widgets .d2-wf-task-details-tab .dctmw-listfield-sortable .user-selection-item {
   padding-left: 0;
 }
 
@@ -91,9 +91,10 @@
 
 
 
+
 .binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .cs-metadata .metadata-content-wrapper > .binf-tab-content::before {
   border: none;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 
@@ -104,4 +105,9 @@
 
 .binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .cs-metadata .d2-metadata-properties.smart-tab-panel .smart-tab-contents-header-wrapper {
   display: none;
+}
+
+
+.binf-widgets .d2-wf-task-details-tab .d2-wf-task-details-tab-content .smart-tab-content-item .smart-tab-content-item {
+  background: #ffffff;
 }

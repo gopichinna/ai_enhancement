@@ -1,7 +1,8 @@
 {{#if back_button}}
-  <span class="icon arrow_back cs-go-back" aria-label="{{goBackTooltip}}"
-        title="{{goBackTooltip}}"
-        role="link"></span>
+    <otc-button class="cs-go-back"
+      {{#unless isJATO}} icon="csui_action:action_back32" mirrorIconIfRtl {{/unless}} arialabel="{{goBackTooltip}}" title="{{goBackTooltip}}">
+      {{#if isJATO}}<otc-icon svg="{{backButtonIconSVG}}" type="subtle" mirrorIfRtl></otc-icon>{{/if}}
+    </otc-button>
 {{/if}}
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

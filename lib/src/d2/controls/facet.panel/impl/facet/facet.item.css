@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .csui-facet-panel .d2-facet-item {
   position: relative;
   padding: 8px 12px 8px 0;
@@ -24,12 +23,12 @@
 
 .csui-facet-panel .d2-facet-item.csui-focus {
   outline-offset: -3px;
-  outline: 1px dotted #333;
+  outline: 1px dotted #333333;
 }
 
 .csui-facet-panel .d2-filter-more.csui-focus {
   outline-offset: -3px;
-  outline: 1px dotted #333;
+  outline: 1px dotted #333333;
 }
 
 .csui-facet-panel .icon-checkbox input {

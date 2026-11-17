@@ -1,6 +1,17 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-smart-inline-form-focus-box-shadow: inset 0 -1px 0 0 var(--jato-input-border-focus-hover);
+  --jatx-smart-inline-form-error-box-shadow: 0 1px 0 0 var(--jato-input-border-focus-error-enabled);
+  --jatx-smart-inline-form-error-text-font-size: 12px;
+  --jatx-smart-inline-form-error-text-line-height: 18px;
+  --jatx-smart-inline-form-error-text-margin-left: 18px;
+  --jatx-smart-inline-form-smart-inlineform-text-field-padding-top-bottom: 12px;
+  --jatx-smart-inline-form-smart-inline-form-icon-height:56px;
+  --jatx-smart-inline-form-error-message-icon-url: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 12C24 18.6 18.6 24 12 24C5.4 24 0 18.6 0 12C0 5.4 5.4 0 12 0C18.6 0 24 5.4 24 12Z' fill='%23DF3324'%3E%3C/path%3E%3Cpath d='M16.3 17.3C16 17.3 15.8 17.2 15.6 17L12 13.5L8.39995 17C7.99995 17.4 7.39995 17.4 6.99995 17C6.59995 16.6 6.59995 16 6.99995 15.6L10.5 12L6.99995 8.4C6.59995 8.1 6.59995 7.4 6.99995 7C7.39995 6.6 7.99995 6.6 8.39995 7L12 10.5L15.6 7C16 6.6 16.6 6.6 17 7C17.4 7.4 17.4 8 17.1 8.4C17.1 8.4 17.1 8.4 17 8.5L13.5 12L17 15.6C17.4 16 17.4 16.6 17 17C16.8 17.2 16.6 17.3 16.3 17.3Z' fill='white'%3E%3C/path%3E%3C/svg%3E");
+}
+
 
 .binf-widgets .smart-inlineform-group .smart-inlineform-text-field:first-child .binf-form-control.smart-inlineform-error,
 .binf-widgets .smart-inlineform-group .smart-inlineform-text-field .smart-inlineform-type-url.smart-inlineform-error  {
@@ -14,7 +25,7 @@
   display: flex;
 }
 
-.binf-widgets .smart-inline-editform .smart-inline-action-button-wrapper otc-button:not(:first-child) {
+.binf-widgets .smart-target-browse .binf-modal-dialog .smart-inline-editform .smart-inline-action-button-wrapper otc-button:not(:first-child) {
  margin-left: 0;
 }
 
@@ -39,8 +50,8 @@
 
 .binf-widgets .smart-inline-editform .smart-inlineform-field-container .smart-inlineform-text-field {  
   position: relative;
-  padding: 0 8px;  
-  height: 42px;
+  padding: var(--jatx-smart-inline-form-smart-inlineform-text-field-padding-top-bottom, 5px) 8px;  
+ 
   display: flex;
   align-items: center;
 }
@@ -65,6 +76,7 @@
 .binf-widgets .smart-inline-editform .smart-inline-action-button-wrapper {
   height: 42px;
   display: flex;
+  gap: var(--jato-margin-med, 0);
   align-items: center;
 }
 
@@ -77,24 +89,50 @@
 .binf-widgets .smart-inline-editform .smart-inlineform-field-container .smart-list-add-input {
   width: 100%;
   
-  border: none;
-  border-block-end: 1px solid rgb(102, 102, 102);
-  border-radius: 3px 3px 0px 0px;
+  border: 1px solid var(--jato-input-border-container-neutral, none);
+  border-block-end: 1px solid var(--jato-input-border-focus-neutral, rgb(102, 102, 102));
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) 0px 0px;
   font-size: 14px;
   height: 32px;
+  background-color: var(--jato-background-elevation-level-2, #fff);
   padding: 0px 26px 0 8px;
+  transition: 0.1s ease-in-out;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-inline-editform .smart-inlineform-field-container .smart-list-add-input::placeholder {
+  color: var(--jato-typography-forms-text-color-placeholder-text);
+  font-weight: 300;
+}
+
+.binf-widgets .smart-inline-editform .smart-inlineform-field-container .smart-list-add-input:hover {
+  background-color: var(--jato-background-elevation-level-2-hover, #ffffff);
+  border: 1px solid var(--jato-input-border-container-hover, none);
+  border-block-end: 1px solid var(--jato-input-border-focus-hover, rgb(102, 102, 102));
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-hover, transparent);
 }
 
 
 .binf-widgets .smart-inline-editform .smart-inlineform-field-container .smart-list-add-input:focus {
-  border-color: rgb(17, 27, 88);
-  box-shadow: rgb(17 27 88) 0px 1px 0px 0px;
+  border-color: var(--jato-input-border-container-neutral, rgb(17, 27, 88));
+  box-shadow: var(--jatx-smart-inline-form-focus-box-shadow, rgb(17 27 88) 0px 1px 0px 0px);
+  border-block-end: 1px solid var(--jato-input-border-focus-enabled, rgb(102, 102, 102));
   outline: none;
 }
 
 .binf-widgets .smart-inline-editform .smart-inlineform-field-container .smart-list-add-input.smart-inlineform-error {
-  border: 1px solid #df3324;
+  border: 1px solid var(--jato-messages-inline-border-error, #df3324);
+  background-color: var(--jato-background-error-neutral, #fff);
   border-radius: 4px 4px 0 0;
+}
+
+.binf-widgets .smart-inline-editform .smart-inlineform-field-container .smart-list-add-input.smart-inlineform-error:hover {
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-error-hover, transparent);
+}
+
+.binf-widgets .smart-inline-editform .smart-inlineform-field-container .smart-list-add-input.smart-inlineform-error:focus {
+  box-shadow: var(--jatx-smart-inline-form-error-box-shadow, rgb(17 27 88) 0px 1px 0px 0px);
+  background-color: var(--jato-background-elevation-level-1, #fff);
+  border-block-end: 1px solid var(--jato-input-border-focus-error-enabled, #df3324);
 }
 
 .binf-widgets .smart-inline-editform {  
@@ -102,22 +140,10 @@
   align-items: flex-start;
 }
 
-.binf-widgets .csui-item-standard.binf-list-group-item .smart-inline-editform .csui-type-icon{
-  margin-left: 3px;
-  margin-right: 3px;  
-  height: 42px;
+.binf-widgets .smart-target-browse .csui-item-standard.binf-list-group-item .smart-inline-editform .smart-inline-form-icon.csui-type-icon{
+  height:var(--jatx-smart-inline-form-smart-inline-form-icon-height, 42px);
   display: flex;
   align-items: center;
-}
-
-.binf-widgets .smart-inline-editform .smart-inlineform-group-error {
-  padding-bottom: 8px;
-  padding-left: 8px;
-}
-
-.binf-widgets .csui-has-grid-inlineform .smart-inline-editform .smart-inlineform-group-error {
-  padding-top: 8px;
-  padding-left: 0px;
 }
 
 
@@ -126,33 +152,13 @@
   align-items: center;
 }
 
-.binf-widgets .cs-thumbnail-wrapper .smart-thumbnail-item .smart-inlineform-group.smart-inlineform-group-error .binf-text-danger {
-  margin: 0;
-}
-
 .binf-widgets .smart-inlineform-group .smart-inline-action-button-wrapper {
   display: flex;
   align-items: center;
 }
 
-.binf-widgets .smart-inlineform-group-error .binf-text-danger {
-  background: #fff;
-  border-left: 2px solid #df3324;
-  border-radius: 2px;
-  box-shadow: 0 0 4px 0 rgb(0 0 0 / 30%);
-  color: #df3324;
-  font-size: 11px;
-  line-height: 12px;
-  margin-top: 2px;
-  max-width: calc(100% - 8px);
-  
-  padding: 2px 6px;
-  white-space: normal;
-  word-break: break-word;
-}
-
 .binf-widgets .smart-target-browse .cs-list .binf-list-group-item.csui-has-grid-inlineform {
-  background: white;
-  padding: 12px 8px !important;
-  box-shadow:  0px 0px 4px 0px rgba(0, 0, 0, 0.30);
+  background: var(--jato-background-elevation-level-0, white);
+  padding: var(--jato-padding-lrg, 12px) var(--jato-padding-lrg, 8px) !important;
+  box-shadow:  var(--jatx-const-none, 0px 0px 4px 0px rgba(0, 0, 0, 0.30));
 }

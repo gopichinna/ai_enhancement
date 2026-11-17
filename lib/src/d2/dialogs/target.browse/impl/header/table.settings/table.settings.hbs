@@ -1,0 +1,16 @@
+{{#if isListView}}
+  <a
+    title="{{pinnedColumns}}" aria-label="{{pinnedColumns}}" class="d2-header-pin-icon"
+    tabindex="0" data-cstabindex="-1" role="button" aria-haspopup="true" aria-expanded="false">
+      <span class="icon d2-icon-pinned"  role="link" ></span>
+  </a>
+ {{/if}}
+
+ {{#if isPinnedMode}}
+  <a
+    title="{{listView}}" aria-label="{{listView}}" class="d2-header-list-icon"
+    tabindex="0" data-cstabindex="-1" role="button" aria-haspopup="true" aria-expanded="false">
+      <span class="icon d2-icon-list"  role="link" ></span>
+  </a>
+ {{/if}}
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,6 +1,22 @@
 {{#if isRename}}
-  <input type="text" value="{{name}}" placeholder="{{namePlaceholder}}"
-         class="binf-flex-row binf-form-control csui-favorite-group-input-name">
+  {{#if isJATO}}
+    <otc-input type="text" value="{{name}}" placeholder="{{namePlaceholder}}"
+    class="binf-flex-row csui-favorite-group-input-name">
+    </otc-input>
+  {{else}}
+    <input type="text" value="{{name}}" placeholder="{{namePlaceholder}}"
+        class="binf-flex-row binf-form-control csui-favourite-group-input-box csui-favorite-group-input-name">
+  {{/if}}
+  {{#if isJATO}}
+  <otc-button type="subtle" size="small" disabled class="csui-btn-save" title="{{SaveEditTooltip}}"
+              arialabel="{{SaveEditTooltip}}">
+        <otc-icon svg='{{jatoSaveIcon}}'></otc-icon>
+      </otc-button>
+      <otc-button type="subtle" size="small" class="csui-btn-cancel" title="{{EditCancelTooltip}}"
+            arialabel="{{EditCancelTooltip}}">
+        <otc-icon svg='{{jatoEditCancelIcon}}'></otc-icon>
+      </otc-button>
+  {{else}}
   <button type="button" class="csui-btn-save" disabled title="{{SaveEditTooltip}}" aria-label="{{SaveEditTooltip}}">
     {{{icon-v2 iconName="csui_action_confirm32" size='normal' states='true'}}}
   </button>
@@ -8,15 +24,29 @@
           aria-label="{{EditCancelTooltip}}">
     {{{icon-v2 iconName="csui_action_cancel32" size='normal' states='true'}}}
   </button>
+  {{/if}}
 {{else}}
-  <div class="csui-favorite-group-selection-marker"></div>
   <div class="csui-favorite-group-draggable-handle">
-    <span class=" icon icon-draggable-handle"></span>
+    {{#if isJATO}}
+      <otc-icon size="16" svg="{{jatoDragIcon}}" class="csui-favourite-group-draggable-jato-icon"></otc-icon>
+    {{else}}
+      <span class=" icon icon-draggable-handle"></span>
+    {{/if}}
   </div>
   <a role="button" href="#" class="binf-flex-row csui-favorite-group-name-link" aria-label="{{groupNameAria}}" title="{{name}}"
      tabindex="{{tabindex}}">
     <span class="csui-favorite-group-name">{{name}}</span>
   </a>
+  {{#if isJATO}}
+  <otc-button type="subtle" size="small" class="csui-btn-action csui-btn-edit-start" title="{{EditStartTooltip}}"
+              arialabel="{{EditStartAria}}">
+        <otc-icon svg='{{jatoEditIcon}}'></otc-icon>
+      </otc-button>
+      <otc-button type="subtle" size="small" class="csui-btn-action csui-btn-delete" title="{{DeleteTooltip}}"
+            arialabel="{{DeleteAria}}">
+        <otc-icon svg='{{jatoDeleteIcon}}'></otc-icon>
+      </otc-button>
+  {{else}}
   <button type="button" class="binf-btn csui-btn-action csui-btn-edit-start"
           aria-label="{{EditStartAria}}" tabindex="{{tabindex}}">
     <span class="icon icon-edit" title="{{EditStartTooltip}}"></span>
@@ -25,6 +55,8 @@
           aria-label="{{DeleteAria}}" tabindex="{{tabindex}}">
     <span class="icon icon-circle-close" title="{{DeleteTooltip}}"></span>
   </button>
+  {{/if}}
+
 {{/if}}
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .cs-nodepicker {
   height: auto;
@@ -18,6 +18,7 @@
   margin-left: 5px;
   margin-top: 3px;
 }
+
 .binf-widgets .cs-nodepicker  .cs-field-write-inner {
   position: relative;
 }
@@ -26,13 +27,20 @@
   position: absolute;
   display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
   right: 1px;
-  top: 1px;
-  width:25px;
-  height: 23px;
-  border-radius: 0px 4px 4px 0px;
+  top: var(--jato-measure-0, 1px);
+  width:var(--jato-measure-32, 25px);
+  height: var(--jato-measure-32, 23px);
+  border-radius: 0 4px 4px 0;
   overflow: hidden;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .cs-nodepicker .csui-nodepicker-icon-container otc-button {
+  height: 24px;
+  width: 24px;
+  margin-left: 0;
 }
 
 .binf-widgets .cs-form-multi-action-container .cs-nodepicker .csui-nodepicker-icon-container {
@@ -53,24 +61,25 @@
   display:none;
 }
 
-.binf-widgets .cs-nodepicker .csui-nodepicker-icon-container .csui-icon.formfield_clear {
+.binf-widgets .cs-nodepicker .csui-nodepicker-icon-container .csui-icon.cs-clear-icon {
   border-radius: 50%;
   display:none;
 }
 
-.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner .csui-nodepicker-icon-container .csui-icon.formfield_clear {
+.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner .csui-nodepicker-icon-container .csui-icon.cs-clear-icon {
   display: block;
   opacity: 0;
 }
+
 .binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue.csui-nodepicker-required .cs-field-write-inner .csui-nodepicker-icon-container .csui-icon.cs-browse-icon {
   display: block;
   opacity: 0;
 }
 
-.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner input:hover+.csui-nodepicker-icon-container .csui-icon.formfield_clear,
-.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner .csui-nodepicker-icon-container:hover .csui-icon.formfield_clear,
-.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner .csui-nodepicker-icon-container .csui-icon.formfield_clear:hover,
-.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner .csui-nodepicker-icon-container .csui-icon.formfield_clear:focus {
+.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner input:hover+.csui-nodepicker-icon-container .csui-icon.cs-clear-icon,
+.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner .csui-nodepicker-icon-container:hover .csui-icon.cs-clear-icon,
+.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner .csui-nodepicker-icon-container .csui-icon.cs-clear-icon:hover,
+.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner .csui-nodepicker-icon-container .csui-icon.cs-clear-icon:focus {
   opacity: 1;
 }
 
@@ -81,20 +90,46 @@
   opacity: 1;
 }
 
-.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .csui-nodepicker-icon-container:hover .csui-icon.formfield_clear {
+.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .csui-nodepicker-icon-container:hover .csui-icon.cs-clear-icon {
   display: block;
 }
 
 .binf-widgets .csui-sidepanel .csui-sidepanel-body .csui-custom-search-formitems .cs-nodepicker .csui-nodepicker-icon-container{
-  height: 26px;
+  height: var(--jato-measure-32, 26px);
 }
 
 .binf-widgets .cs-nodepicker .cs-field-write-inner input {
+  background-color: var(--jato-background-elevation-level-1, rgb(255, 255, 255));
+  border: 1px solid var(--jato-input-border-container-neutral, #a7a9ac);
+  border-block-end: 1px solid var(--jato-input-border-focus-neutral, #a7a9ac);
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) var(--jatx-const-0, 3px) var(--jatx-const-0, 3px);
+  color: var(--jato-typography-text-color-primary, #333333);
+  font-size: var(--jatx-csui-input-font-size, inherit);
   padding-right: 25px;
   outline: none;
   width: 100%;
-  height: 28px;
+  height: var(--jato-measure-32, 28px);
   padding-left: 0.5em;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .cs-nodepicker:not(.cs-formfield-invalid) .cs-field-write-inner:hover input {
+  background-color: var(--jato-background-elevation-level-2-hover);
+  border: 1px solid var(--jato-input-border-container-hover);
+  border-block-end: 1px solid var(--jato-input-border-focus-hover);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .cs-nodepicker:not(.cs-formfield-invalid) .cs-field-write-inner:focus-within input {
+  border-block-end: 1px solid var(--jato-input-border-focus-enabled);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled);
+  outline: none;
+  -webkit-box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled);
+  border: var(--jato-measure-1, 2px) solid var(--jato-input-border-container-neutral);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue .cs-field-write-inner:focus-within .csui-nodepicker-icon-container .csui-icon.cs-clear-icon,
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue .cs-field-write-inner:focus-within .csui-nodepicker-icon-container .csui-icon.cs-browse-icon {
+  opacity: 1;
 }
 
 .binf-widgets .cs-form-multi-action-container .cs-nodepicker .csui-nodepicker-hasvalue .cs-field-write-inner input:hover,
@@ -102,16 +137,17 @@
   padding-right: 30px;
 }
 
-.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner input:hover+.csui-nodepicker-icon-container .csui-icon.formfield_clear,
-.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner input:focus+.csui-nodepicker-icon-container .csui-icon.formfield_clear,
-.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner input:hover+.csui-nodepicker-icon-container:hover .csui-icon.formfield_clear,
-.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner input:focus+.csui-nodepicker-icon-container:focus .csui-icon.formfield_clear,
-.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner input+.csui-nodepicker-icon-container:hover .csui-icon.formfield_clear,
-.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner input+.csui-nodepicker-icon-container:focus .csui-icon.formfield_clear  
+.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner input:hover+.csui-nodepicker-icon-container .csui-icon.cs-clear-icon,
+.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner input:focus+.csui-nodepicker-icon-container .csui-icon.cs-clear-icon,
+.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner input:hover+.csui-nodepicker-icon-container:hover .csui-icon.cs-clear-icon,
+.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner input:focus+.csui-nodepicker-icon-container:focus .csui-icon.cs-clear-icon,
+.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner input+.csui-nodepicker-icon-container:hover .csui-icon.cs-clear-icon,
+.binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue:not(.csui-nodepicker-required) .cs-field-write-inner input+.csui-nodepicker-icon-container:focus .csui-icon.cs-clear-icon  
 {
   display: block;
   cursor:pointer;
 }
+
 .binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue.csui-nodepicker-required .cs-field-write-inner input:hover+.csui-nodepicker-icon-container .csui-icon.cs-browse-icon,
 .binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue.csui-nodepicker-required .cs-field-write-inner input:focus+.csui-nodepicker-icon-container .csui-icon.cs-browse-icon,
 .binf-widgets .cs-nodepicker .csui-nodepicker-hasvalue.csui-nodepicker-required .cs-field-write-inner input:hover+.csui-nodepicker-icon-container:hover .csui-icon.cs-browse-icon,
@@ -146,6 +182,7 @@
   border-radius: 3px;
   
 }
+
 .cs-nodepicker .cs-field-write-inner input{
   width : 100% ;
 }
@@ -154,6 +191,7 @@
 .cs-nodepicker input:focus {
   outline-color: #666666;
   outline-width: 2px;
+
   
 }
 
@@ -184,7 +222,10 @@
   padding: 0;
   width: calc(100%);
   cursor: pointer;
-  color: #337ab7;
+}
+
+.cs-formfield.cs-nodepicker .cs-field-read a {
+  color: var(--jato-typography-text-color-primary, #337ab7);
 }
 
 .cs-formfield.cs-nodepicker .cs-field-read a[disabled] > span {

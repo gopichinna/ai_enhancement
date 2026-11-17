@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 
 .binf-widgets .permissions-content-header {
@@ -13,7 +13,7 @@
 
 .binf-widgets .permissions-header-left-bar-container {
   width: 100%;
-  padding: 0px 24px;
+  padding: 0 24px;
   display: inline-flex;
   flex: 0 1 auto;
   -webkit-flex: 0 1 auto;
@@ -66,8 +66,8 @@
 }
 
 .binf-widgets .permissions-content-header.permissions-header-right-bar-empty .permissions-header-right-bar-container {
-  width: 0px;
-  padding: 0px;
+  width: 0;
+  padding: 0;
 }
 
 .binf-widgets .permissions-content-header.permissions-header-right-bar-empty .permissions-header-left-bar-container {

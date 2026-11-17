@@ -1,0 +1,124 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-create-template .template-list-container .cs-list{
+    background-color: unset;
+    box-shadow: unset;
+    border: unset;
+    outline: unset;
+    outline-offset: unset;
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item {
+    height: 72px;
+    padding-left: 9px;
+    border-radius: 3px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item.sub-item-new {
+    background-color: #e7efda;
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item:hover{
+    background: #b9c4cb;
+    width: 100%;
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item .sub-item-container{
+    width:100%;
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item .ws-item-container {
+    display: flex;
+    margin: 8px 0 6px;
+    align-items: center;
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item .ws-item-container .ws-icon {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item .ws-item-container .ws-details {
+    width: calc(100% - 50px);
+    margin-left: 12px;
+    margin-top: 0;
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item .ws-item-container .ws-details .ws-name {
+    line-height: 32px;
+    font-size:  14px;
+    color:  #1e1e1e;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: calc(100% - 60px);
+    height:  24px;
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item:hover .icon-delete{
+    background-image: url('./images/delete_24x24.svg');
+    display: block;
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+    width:  22px;
+    height: 22px;
+    margin: 4px;
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item:hover .icon-rename{
+    background-image: url('./images/edit.svg');
+    right: 40px;
+    position: absolute;
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    margin: 3px;
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item .ws-item-container .ws-details .rename-container {
+    display: flex;
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item .ws-item-container .ws-details .rename-container input {
+    width: 72%;
+    height: 32px;
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item .ws-item-container .ws-details .rename-container .edit-cancel-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item .ws-item-container .ws-details .rename-container .edit-cancel-icons button {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    background-color: transparent;
+}
+
+
+
+
+.binf-widgets .d2-create-template .template-list-container .sub-item .ws-item-container .ws-details .rename-container .edit-cancel-icons .icon-cancel {
+    background-image: url('./images/close.svg');
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item .ws-item-container .ws-details .rename-container .edit-cancel-icons .icon-approve {
+    background-image: url('./images/approve.svg');
+}
+
+.binf-widgets .d2-create-template .template-list-container .sub-item .ws-item-container .ws-details .csui-inlineform-group-error{
+    width:72%;
+}

@@ -1,28 +1,15 @@
 <span class="smart-target-browse-checkbox smart-dummy-checkbox"></span>
-<span class="csui-type-icon" aria-hidden="true" title="{{iconTitle}}">
+<span class="csui-type-icon smart-inline-form-icon" aria-hidden="true" title="{{iconTitle}}">
   <span class="smart-type-icon" aria-hidden="true"></span>
 </span>
 <div class="smart-inlineform-field-container">
   <div class="smart-inlineform-text-field smart-inlineform-type-name">
-    <input type="text" value="{{name}}" placeholder="{{enterNamePlaceholder}}" class="smart-edit-input-name smart-list-add-input" aria-label="{{enterNamePlaceholder}}"
-      tabindex="0" />
-    {{#if isMlDataEnabled}}
-      <span class="smart-multilingual-icon-label">
-        <otc-button icon="smart_action:action_localize32" class="icon smart-multilingual-icon" arialabel="{{multilingualTooltip}}"
-          title="{{multilingualTooltip}}" tabindex="0"></otc-button>
-      </span>
-    {{/if}}
-  </div>
-  <div class="smart-inlineform-group smart-inlineform-group-error binf-hidden">
-    <div class="binf-text-danger smart-error-alert" role="alert" title="{{errorMessage}}">
-      <span class="smart-text-danger smart-error-text">{{errorMessage}}</span>
-    </div>
+
+       <otc-inline-edit-container id="{{name_input_id}}" type="text" value="{{name}}" placeholder="{{enterNamePlaceholder}}" arialabel="{{enterNamePlaceholder}}"   edit="true" class="smart-edit-input-name  smart-input-edit-container" cancellabel="{{editCancelArialabel}}"  savelabel="{{saveEditArialabel}}"  tabindex="0">
+          <otc-input class="smart-input-edit-text-box"  {{#if isMlDataEnabled}}     {{#if isJATOTheme}} actionicon="{{jatoActionGlobeicon}}"   {{else}} actionicon="smart_action:action_localize32" {{/if}}
+           actioniconarialabel="{{multilingualTooltip}}" actionicontitle="{{multilingualTooltip}}"   {{/if}} ></otc-input>
+    </otc-inline-edit-container>
   </div>
 </div>
-<div class="smart-inline-action-button-wrapper">
-  <otc-button disabled class="smart-edit-save" icon="smart_action:action_confirm32" arialabel="{{saveEditArialabel}}"
-    title="{{saveEditTooltip}}" tabindex="0"></otc-button>
-  <otc-button icon="smart_action:action_cancel32" class="smart-edit-cancel" arialabel="{{editCancelArialabel}}"
-    title="{{editCancelTooltip}}" tabindex="0"></otc-button>
-</div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

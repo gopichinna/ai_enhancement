@@ -1,14 +1,24 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-selected-count {
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
+.binf-widgets  .csui-standard-header-view .csui-selected-count {
+  height: 100%;
+}
+ 
 .binf-widgets .csui-selected-count .csui-selected-counter-region {
   height: inherit;
   display: flex;
   align-items: center;
+}
+
+.binf-widgets .csui-selected-count .selected-count .selected-counter-region {
+  display: flex;
 }
 
 .binf-widgets .csui-selected-count .csui-selected-counter-region button {
@@ -53,7 +63,7 @@
 .binf-widgets .csui-selected-count .csui-selected-counter-region button:focus {
   outline: none;
   outline-offset: 0;
-  box-shadow: inset 0px 0px 0px 1px #2E3D98, inset 0px 0px 0px 2px #FFFFFF;
+  box-shadow: inset 0 0 0 1px #2E3D98, inset 0 0 0 2px #FFFFFF;
 }
 
 .binf-widgets .csui-selected-count .csui-selected-counter-region button:hover .binf-badge {
@@ -83,9 +93,9 @@
   top: auto;
   left: auto;
   z-index: 1040;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
   min-width: 192px;
 }
 
@@ -128,6 +138,7 @@
 .binf-widgets .csui-selected-count ul li:first-of-type {
   margin-top: 4px;
 }
+
 .binf-widgets .csui-selected-count ul li:last-of-type {
   margin-bottom: 4px;
 }
@@ -199,8 +210,32 @@
 
 
 
-@media(forced-colors:active) {
 
+[data-smart-theme]:not([data-smart-theme='cf']) {
+  --jatx-bulksel-icon-height: 26px;
+}
+
+.csui-selected-count .selected-dropdown .csui-type-icon {
+  line-height: var(--jatx-bulksel-icon-height, 24px);
+}
+
+.csui-selected-count .selected-dropdown .csui-type-icon>.csui-icon-group {
+  background-repeat: no-repeat;
+  vertical-align:  -6px; 
+  height: var(--jatx-bulksel-icon-height, 24px);
+  width:  24px;
+  margin-inline-end: var(--jato-measure-6, 5px);
+}
+
+.csui-selected-count .selected-dropdown .csui-type-icon .csui-icon-v2.csui-icon-v2-size-normal,
+.csui-selected-count .selected-dropdown .csui-type-icon>.csui-icon-group .csui-icon {
+  height: 24px;
+  width: 24px;
+}
+
+
+
+@media(forced-colors:active) {
   .binf-widgets .csui-selected-items-counter-region .csui-selected-count .csui-selected-counter-region button:focus,
   .binf-widgets .csui-selected-items-counter-region .csui-selected-count .csui-selected-counter-region button:hover,
   .binf-widgets .csui-selected-items-counter-region .csui-selected-count .csui-selected-counter-region button:active {

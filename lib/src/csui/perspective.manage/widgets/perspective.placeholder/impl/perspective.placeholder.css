@@ -1,20 +1,40 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme='cf']) {
+ --jatx-csui-perspective-placeholder-top: calc(50% - 68px); 
+}
+
 .binf-widgets .csui-perspective-placeholder {
   height: 100%;
-  background: rgba(249, 249, 249, 0.2);
+  background: var(--jatx-const-transparent, rgba(249, 249, 249, 0.2));
   text-align: center;
-  border: dashed 2px #ffffff;
+  border: dashed 2px var(--jato-border-color-primary, #ffffff);
+  border-radius: var(--jato-radii-lrg, initial);
 }
 
 .binf-widgets .csui-placeholder-title {
   position: relative;
-  top: calc(50% - 50px);
+  top: var(--jatx-csui-perspective-placeholder-top, calc(50% - 50px));
   left: 0;
   right: 0;
   font-size: 18px !important;
   line-height: 20px;
-  color: #ffffff;
+  color: var(--jato-typography-text-color-secondary, #ffffff);
+}
+
+.binf-widgets .csui-placeholder-title .csui-placeholder-jato-icon {
+  height: 110px;
+  width: 110px;
+  margin-bottom: var(--jato-margin-sm);
+}
+
+.binf-widgets #banner-region .csui-placeholder-title .csui-placeholder-jato-icon {
+  height: 56px;
+  width: 56px;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets #banner-region .csui-placeholder-title {
+  top: calc(50% - 41px); 
 }
 

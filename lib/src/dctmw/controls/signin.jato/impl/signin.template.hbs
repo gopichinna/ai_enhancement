@@ -1,0 +1,52 @@
+<div class="signin-container-wrapper">
+    <div class="signin-container">
+        <div class="signin-frame flex-column">
+            <div class="logo branding-header">
+                <div class="ot-lockup">
+                    <div class="opentext-logo"></div>
+                    <div class="product">
+                        <div class="primary-name platform">{{productSuitePlatform}}</div>
+                        {{#if productSuiteCategory}}
+                        <div class="primary-name category">{{productSuiteCategory}}</div>
+                        {{/if}}
+                        <div class="secondary-name">{{productName}}</div>
+                        <div class="version-name">{{versionText}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="message-box">
+                <div class="message-box-container">
+                    <div class="message-icon-and-text">
+                        <span class="rgn-message-icon message-icon"></span>
+                        <span class="message"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="inputs-and-buttons">
+                <form>
+                    <div class="inputs-frame">
+
+                        <div class="text-input-wrapper input-wrapper rgn-username"></div>
+                        <div class="text-input-wrapper input-wrapper rgn-password"></div>
+
+                        <div class="dctmw-repositories"></div>
+
+                        <div class="dctmw-application"></div>
+
+                        <div class="text-input-wrapper input-wrapper rgn-domain"></div>
+
+                        <div class="dctmw-location"></div>
+                    </div>
+                    <div class="buttons-frame">
+                        <button class="button btn-signin" type="button">{{buttontext}}</button>
+                        <button class="button btn-retry" type="button">{{retrytext}}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer rgn-footer"></div>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

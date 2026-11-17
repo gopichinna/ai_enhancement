@@ -1,0 +1,78 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .d2-create-file-wizard.d2-stepper-wizard .d2-wizard-step-view .d2-base-content {
+  height: 100%;
+  width: 100%;
+}
+
+.binf-widgets .d2-create-file-wizard.d2-stepper-wizard .d2-wizard-step-view .d2-base-content .d2-icon-message-container {
+  min-height: 450px;
+}
+
+.binf-widgets .d2-create-file-wizard.d2-stepper-wizard .d2-wizard-step-view .d2-base-content .d2-header-message-container 
++ .d2-icon-message-container {
+  height: calc(100% - 42px);
+}
+
+.binf-widgets .d2-create-file-wizard.d2-stepper-wizard .d2-wizard-step-view .d2-base-content .d2-header-message-container 
++ .d2-header-message-container + .d2-icon-message-container {
+  height: calc(100% - 84px);
+}
+
+.binf-widgets .d2-create-file-wizard.d2-stepper-wizard .d2-wizard-step-view .d2-base-content .d2-icon-message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.binf-widgets .d2-create-file-wizard.d2-stepper-wizard .d2-wizard-step-view .d2-base-content .d2-icon-message-container .message-icon {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 0.5rem;
+}
+
+.binf-widgets .d2-create-file-wizard.d2-stepper-wizard .d2-wizard-step-view .d2-base-content .d2-icon-message-container 
+.message-icon.error {
+  background: url('images/error.svg') no-repeat;
+  background-size: contain;
+}
+
+.binf-widgets .d2-create-file-wizard.d2-stepper-wizard .d2-wizard-step-view .d2-base-content .d2-icon-message-container 
+.message-icon.warning {
+  background: url('images/warning.svg') no-repeat;
+  background-size: contain;
+}
+
+.binf-widgets .d2-create-file-wizard.d2-stepper-wizard .d2-wizard-step-view .d2-base-content .d2-icon-message-container 
+.message-icon.success {
+  background: url('images/success.svg') no-repeat;
+  background-size: contain;
+}
+
+.binf-widgets .d2-create-file-wizard.d2-stepper-wizard .d2-wizard-step-view .d2-base-content .d2-icon-message-container 
+.message-icon.info {
+  background: url('images/information.svg') no-repeat;
+  background-size: contain;
+}
+
+.binf-widgets .d2-create-file-wizard.d2-stepper-wizard .d2-wizard-step-view .d2-base-content .d2-icon-message-container 
+.main-message {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.binf-widgets .d2-create-file-wizard.d2-stepper-wizard .d2-wizard-step-view .d2-base-content .d2-icon-message-container 
+.informational-message {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+}

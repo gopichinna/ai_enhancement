@@ -1,43 +1,65 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+:root {
+  --jatx-csui-shortcut-container-flex-direction: row;
+  --jatx-csui-shortcut-container-flex-wrap: wrap;
+  --jatx-medium-shortcut-tile-width: 100%;
+  --jatx-csui-shortcut-container-element-gap: var(--jato-margin-xl);
+  --jatx-csui-shortcut-theme-config-display: none;
+}
+
+[data-smart-theme="cf"] {
+  --jatx-csui-shortcut-container-flex-direction: column;
+  --jatx-csui-shortcut-container-flex-wrap: nowrap;
+  --jatx-medium-shortcut-tile-width: 100%;
+  --jatx-csui-shortcut-container-element-gap: 8px;
+  --jatx-csui-shortcut-theme-config-display: block;
+}
+
 .binf-widgets .csui-shortcut-container.tile {
-  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+  border-radius: var(--jato-radii-lrg, 0);
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
 }
 
 .binf-widgets .csui-shortcut-group-container.tile:hover {
-  box-shadow: 0px 0px 0px 0px #ffffff;
+  box-shadow: 0 0 0 0 #ffffff;
   outline: none;
 }
 
 .binf-widgets .csui-shortcut-group-container.tile:active {
-  box-shadow: 0px 0px 0px 0px #ffffff;
+  box-shadow: 0 0 0 0 #ffffff;
   outline: none;
 }
 
 .binf-widgets .csui-shortcut-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: var(--jatx-csui-shortcut-container-flex-direction);
+  flex-wrap: var(--jatx-csui-shortcut-container-flex-wrap);
+  gap: var(--jatx-csui-shortcut-container-element-gap)
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item {
+  border-radius: var(--jato-radii-lrg, 0);
   position: relative;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  margin-top: 0.5em;
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item:first-child {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .binf-widgets .csui-shortcut-container .csui-shortcut-item.csui-medium {
   flex-grow: 0;
-  height: calc(50% - 0.25em);
+  width: var(--jatx-medium-shortcut-tile-width);
+  height: calc(50% - (var(--jatx-csui-shortcut-container-element-gap)/2));
 }
+
+
 
 
 
@@ -78,7 +100,6 @@
 
 
 @media(forced-colors:active) {
-
   .binf-widgets .csui-shortcut-container .csui-shortcut-item {
     outline: 1px solid black;
     outline-offset: 3px;
@@ -88,4 +109,10 @@
       outline: 2px solid black;
   }
 
+}
+
+
+
+.binf-widgets .pman-widget-popover div.alpaca-container-item[data-alpaca-container-item-name="shortcutTheme"] {
+  display: var(--jatx-csui-shortcut-theme-config-display);
 }

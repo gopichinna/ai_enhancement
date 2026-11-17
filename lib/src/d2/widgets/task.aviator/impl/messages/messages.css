@@ -1,0 +1,36 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-messages {
+  flex: 1 1 100%;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  padding: 0 calc(23px - var(--aie-scrollbar-width, 16px)) 0 24px;
+  font-size: 13px;
+  line-height: 18px;
+  outline-offset: -4px;
+}
+
+
+@supports (-webkit-hyphens:none) {
+  .binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-messages {
+    overflow-y: scroll;
+    outline-offset: -6px;
+  }
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-messages::before {
+  content: " ";
+  position: absolute;
+  inset-inline-start: 10px;
+  width: calc(480px - 23px + var(--aie-scrollbar-width, 16px) - 24px + 11px);
+  height: 24px;
+  background-image: linear-gradient(#ffffff 15%, transparent);
+}
+
+
+@supports (-moz-appearance:none) {
+  .binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-messages::before {
+    width: calc(480px - 23px + var(--aie-scrollbar-width, 16px) - 24px + 18px);
+  }
+}

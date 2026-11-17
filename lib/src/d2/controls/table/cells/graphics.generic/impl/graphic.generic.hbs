@@ -1,0 +1,18 @@
+{{#if displayLabel}}
+  <div class="csui-thumbnail-label csui-thumbnail-text-label" aria-label="{{label}}">
+    <span>{{label}}</span>
+  </div>
+{{/if}}
+<div class="d2-graphic-column-container">
+    {{#if showIcon}}
+        <img class="d2-graphic-icon" src="{{iconUrl}}"/>
+    {{/if}}
+    {{#if showText}}
+        {{#if isEmpty}}
+            <div class="d2-table-cell-text" aria-label="{{value}}">&nbsp;</div>
+        {{else}}
+            <div class="d2-table-cell-text" title="{{value}}">{{value}}</div>
+        {{/if}}
+    {{/if}}
+</div>
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

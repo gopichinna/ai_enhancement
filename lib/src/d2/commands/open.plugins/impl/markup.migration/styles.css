@@ -1,17 +1,20 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .markup-migration {
   background-color: #ffffff;
 }
+
 .markup-migration .markup-migration-content {
   display: flex;
   padding: 11px 16px 10px 16px;
 }
+
 .markup-migration .markup-migration-content.migration-content-info {
   background-color: #f4f5fa;
   border-bottom: 1px solid #2e3d98;
 }
+
 .markup-migration .markup-migration-content.migration-content-success {
   background-color: #f2f8f3;
   border-bottom: 1px solid #067d14;
@@ -21,6 +24,7 @@
   background-color: rgba(223,51,36,0.05);
   border-bottom: 1px solid #df3324;
 }
+
 .markup-migration .information-icon {
   height: 18px;
   width: 18px;

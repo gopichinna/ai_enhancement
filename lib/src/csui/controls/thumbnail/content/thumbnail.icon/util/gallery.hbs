@@ -1,31 +1,76 @@
 <div class="csui-current-total-items">{{currentItem}} / {{totalItems}}</div>
-<div class="cs-close csui-thumbcarousel-dialog-close smart-v2-icon-parent" title="{{lang.galleryCloseButtonTooltip}}"
-          tabindex="0" aria-label="{{lang.galleryCloseButtonAria}}" role="button">
-    {{{icon-v2 iconName="csui_action_close32" states="true" theme="dark"}}}
+  {{#if isJato}}
+    <otc-button size="regular" class="cs-close csui-thumbcarousel-dialog-close" arialabel="{{lang.galleryCloseButtonAria}}" type="subtle" title="{{lang.galleryCloseButtonTooltip}}" tabindex="0">
+      <otc-icon size="16" svg="{{iconClose}}" ispresentation></otc-icon>
+    </otc-button>
+  {{else}}
+    <div class="cs-close csui-thumbcarousel-dialog-close smart-v2-icon-parent" title="{{lang.galleryCloseButtonTooltip}}"
+              tabindex="0" aria-label="{{lang.galleryCloseButtonAria}}" role="button">
+        {{{icon-v2 iconName="csui_action_close32" states="true" theme="dark"}}}
+  {{/if}}
 </div>
 <div class="csui-active-item-name">
   <span class="item-name">{{currentItemName}}</span>
-  <span title="{{lang.downloadTitle}}" class="icon icon-download-white csui-download-gallery"
+  {{#if enableDownload}}
+    {{#if isJato}}
+      <otc-button size="regular" class="csui-download-gallery" arialabel="{{lang.downloadTitle}}" type="subtle" title="{{lang.downloadTitle}}" tabindex="0">
+            <otc-icon size="16" svg="{{iconDownload}}" ispresentation></otc-icon>
+      </otc-button>
+    {{else}}
+    <span title="{{lang.downloadTitle}}" class="icon icon-download-white csui-download-gallery"
         tabindex="0" aria-label="{{lang.downloadTitle}}" role="button"></span>
+    {{/if}}
+  {{/if}}
   {{#if enableZoomAndRotation}}
-    <span title="{{lang.rotateLeftTitle}}" id="leftRotation"  class="csui-image-icons csui-rotate-gallery icon-rotate-left  csui-left-rotation"tabindex="0" aria-label="{{lang.rotateLeftTitle}}" role="button"></span>
-    <span title="{{lang.rotateRightTitle}}" id="rightRotation"  class="csui-image-icons csui-rotate-gallery icon-rotate-right  csui-right-rotation"tabindex="0" aria-label="{{lang.rotateRightTitle}}" role="button"></span>
-    <span title="{{lang.zoomInTitle}}" id="zoomInButton" class="csui-image-icons csui-zoom-gallery icon-zoom-in"tabindex="0" aria-label="{{lang.zoomInTitle}}" role="button"></span>
-    <span title="{{lang.zoomOutTitle}}"  id="zoomOutButton" class="csui-image-icons csui-zoom-gallery icon-zoom-out"tabindex="0" aria-label="{{lang.zoomOutTitle}}" role="button"></span>
+    {{#if isJato}}
+      <otc-button id="leftRotationOTCButton" class="csui-image-icons csui-rotate-gallery csui-left-rotation" size="regular" arialabel="{{lang.rotateLeftTitle}}" type="subtle" title="{{lang.rotateLeftTitle}}" tabindex="0">
+            <otc-icon id ="leftRotation" size="16" svg="{{iconRotate}}" ispresentation></otc-icon>
+      </otc-button>
+      <otc-button class="csui-image-icons csui-rotate-gallery csui-right-rotation" size="regular" arialabel="{{lang.rotateRightTitle}}" type="subtle" title="{{lang.rotateRightTitle}}" tabindex="0">
+            <otc-icon id="rightRotation" size="16" svg="{{iconRotate}}" ispresentation></otc-icon>
+      </otc-button>
+      <otc-button class="csui-image-icons csui-zoom-gallery" size="regular" arialabel="{{lang.zoomInTitle}}" type="subtle" title="{{lang.zoomInTitle}}" tabindex="0">
+            <otc-icon id="zoomInButton" size="16" svg="{{iconZoomIn}}" ispresentation></otc-icon>
+      </otc-button>
+      <otc-button id="zoomOutOTCButton" class="csui-image-icons csui-zoom-gallery" size="regular" arialabel="{{lang.zoomOutTitle}}" type="subtle" title="{{lang.zoomOutTitle}}" tabindex="0">
+            <otc-icon id="zoomOutButton" size="16" svg="{{iconZoomOut}}" ispresentation></otc-icon>
+      </otc-button>
+    {{else}}
+      <span title="{{lang.rotateLeftTitle}}" id="leftRotation"  class="csui-image-icons csui-rotate-gallery icon-rotate-left  csui-left-rotation"tabindex="0" aria-label="{{lang.rotateLeftTitle}}" role="button"></span>
+      <span title="{{lang.rotateRightTitle}}" id="rightRotation"  class="csui-image-icons csui-rotate-gallery icon-rotate-right  csui-right-rotation"tabindex="0" aria-label="{{lang.rotateRightTitle}}" role="button"></span>
+      <span title="{{lang.zoomInTitle}}" id="zoomInButton" class="csui-image-icons csui-zoom-gallery icon-zoom-in"tabindex="0" aria-label="{{lang.zoomInTitle}}" role="button"></span>
+      <span title="{{lang.zoomOutTitle}}"  id="zoomOutButton" class="csui-image-icons csui-zoom-gallery icon-zoom-out"tabindex="0" aria-label="{{lang.zoomOutTitle}}" role="button"></span>
+    {{/if}}      
   {{/if}}
 </div>
 <div class="csui-carousel-container">
   <div class="csui-preview-carousal-container">
     <div id="binf-carousel" class="binf-carousel binf-slide" data-binf-ride="carousel" {{#if onlyVideos}} data-interval="false"{{/if}}>
-      <a class="binf-left binf-carousel-control" href="#binf-carousel" data-binf-slide="binf-prev"
+    {{#if isJato}}
+      <div class="binf-left binf-carousel-control">
+      <otc-button class="jato-slick-button" data-binf-target="#binf-carousel" data-binf-slide="binf-prev" size="large" arialabel="{{lang.previousTitle}}" type="subtle" title="{{lang.previousTitle}}" tabindex="0">
+            <otc-icon mirrorIfRtl size="24" svg="{{prevArrow}}" ispresentation></otc-icon>
+      </otc-button>
+      </div>
+    {{else}}
+      <a class="binf-left binf-carousel-control" data-binf-target="#binf-carousel" data-binf-slide="binf-prev"
          title="{{lang.previousTitle}}" tabindex="0" aria-label="{{lang.previousTitle}}">
         <span class="icon-previous-gallery" aria-hidden="true"></span>
       </a>
+    {{/if}}
       <div class="csui-preview-carousal"></div>
-      <a class="binf-right binf-carousel-control" href="#binf-carousel" data-binf-slide="binf-next"
+    {{#if isJato}}
+    <div class=" binf-right binf-carousel-control">
+        <otc-button class="jato-slick-button" data-binf-target="#binf-carousel" data-binf-slide="binf-next" size="large" arialabel="{{lang.nextTitle}}" type="subtle" title="{{lang.nextTitle}}" tabindex="0">
+              <otc-icon mirrorIfRtl size="24" svg="{{nextArrow}}" ispresentation></otc-icon>
+        </otc-button>
+    </div>
+    {{else}}
+      <a class="binf-right binf-carousel-control" data-binf-target="#binf-carousel" data-binf-slide="binf-next"
          title="{{lang.nextTitle}}" tabindex="0" aria-label="{{lang.nextTitle}}">
         <span class="icon-next-gallery" aria-hidden="true"></span>
       </a>
+    {{/if}}
     </div>
   </div>
   <div class="csui-carousel-film-strip">
@@ -37,4 +82,4 @@
   </div>
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

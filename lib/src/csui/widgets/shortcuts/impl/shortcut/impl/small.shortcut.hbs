@@ -1,6 +1,10 @@
-<div class="csui-details">
-    <div class="tile-icon">
+<div class="csui-details smart-tile-group">
+    <div class="tile-icon">        
+    {{#if isJATOTheme}}
+        <div class="csui-shortcut-jato-icon"></div>
+    {{else}}
         <div class="icon {{icon}}" title="{{name}}" aria-hidden="true"></div>
+    {{/if}}
     </div>
 
     <div class="tile-title">
@@ -8,4 +12,4 @@
     </div>
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

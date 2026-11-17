@@ -1,9 +1,32 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+:root {
+  --jatx-target-browse-search-item-name-font-size: 12px;
+  --jatx-target-browse-search-item-name-font-weight: 500;
+  --jatx-node-picker-search-results-title-font-size: 13px;
+  --jatx-node-picker-search-results-title-line-height: 18px;
+  --jatx-node-picker-search-results-count-font-weight: 400;
+  --jatx-node-picker-search-header-line-height: 18px;
+  --jatx-node-picker-search-header-padding-top: 4px;
+  --jatx-target-browse-search-item-name-margin-left: 0px;
+}
+
+[data-smart-theme='cf'] {
+  --jatx-target-browse-search-item-name-font-size: 1em;
+  --jatx-target-browse-search-item-name-font-weight: normal;
+  --jatx-node-picker-search-results-title-font-size: 14px;
+  --jatx-node-picker-search-results-title-line-height: 0px;
+  --jatx-node-picker-search-results-count-font-weight: bold;
+  --jatx-node-picker-search-header-line-height: 20px;
+  --jatx-node-picker-search-header-padding-top: 0px;
+  --jatx-target-browse-search-item-name-margin-left: -1.5px;
+}
+
+
 .binf-widgets .searchheader-inner .csui-search-data-header {
   margin: 0px;
-  padding-top: 5px;
+  padding-top: var(--jatx-node-picker-search-header-padding-top);
 }
 
 .binf-widgets .searchheader-inner.csui-non-container-padding {
@@ -12,11 +35,11 @@
 
 .csui-node-picker .searchheader-inner .csui-search-header .headerCount {
   display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: var(--jatx-node-picker-search-results-title-font-size);
+  font-weight: var(--jatx-node-picker-search-results-count-font-weight);
   margin-left: -3px;
   padding-left: 1em;
-  color: #000000;
+  color: var(--jato-typography-text-color-primary, #000000);
 }
 
 .binf-widgets .csui-node-picker .searchheader-inner .csui-search-header {
@@ -40,24 +63,24 @@
 }
 
 .binf-widgets .csui-node-picker .csui-search-header-title .results-title {
-  line-height: 0px;
-  color: #666666;
-  font-size: 14px;
+  line-height: var(--jatx-node-picker-search-results-title-line-height);
+  color: var(--jato-typography-text-color-tertiary, #666666);
+  font-size: var(--jatx-node-picker-search-results-title-font-size);
 }
 
 .binf-widgets .searchheader-inner .csui-search-header {
   padding: 0px;
-  line-height: 20px;
+  line-height: var(--jatx-node-picker-search-header-line-height);
 }
 
 .binf-widgets  .smart-target-browse .csui-node-picker .csui-search-item .csui-search-item-name {
-  font-weight: normal;
+  font-weight: var(--jatx-target-browse-search-item-name-font-weight);
   overflow: hidden;
-  font-size: 1em;
+  font-size: var(--jatx-target-browse-search-item-name-font-size);
   display: inline-block;
-  margin-left: -1.5px;
+  margin-left: var(--jatx-target-browse-search-item-name-margin-left);
 }
 
-.binf-widgets .csui-search-toolbar-container {
+.binf-widgets .smart-target-browse .csui-search-toolbar-container {
   padding-left: 0;
 }

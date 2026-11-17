@@ -1,13 +1,16 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs {
-  border-bottom: none;
+:root { 
+  --jatx-tab-panel-tablink-background: transparent;
+  --jatx-tab-panel-tablink-toolbar-hover-background-color: transparent;
+   --jatx-tab-panel-tablink-toolbar-active-background-color: transparent;
 }
 
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a {
-  border-radius: 0;
+[data-smart-theme="cf"] {
+  --jatx-tab-panel-tablink-background: rgba(0, 0, 0, 0.4);
+  --jatx-tab-panel-tablink-toolbar-hover-background-color: rgba(148, 187, 234, 0.25);
+  --jatx-tab-panel-tablink-toolbar-active-background-color:  rgba(51, 51, 51, 0.25)
 }
 
 .cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content {
@@ -37,51 +40,14 @@
 
 
 
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a {
-  color: #ffffff;
-  background-color: inherit;
-  border: none;
-  padding: 0;
-  margin: 0;
-  height: 48px;
-}
+[data-smart-theme="cf"] {
+  .cs-tabbed-perspective>.cs-content>.tab-panel>.tab-links.smart-tab-links .tab-links-bar>.binf-nav-tabs>li>a>span {
+    color: #ffffff;
+  }
 
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a {
-  margin-right: 1px;
-}
-
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li.binf-active > a {
-  font-weight: bold;
-}
-
-
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a:focus {
-  outline: none;
-  background-color: rgba(148, 187, 234, 0.25);
-}
-
-.binf-widgets .cs-tabbed-perspective .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li:first-child span.cs-tablink-text {
-  margin-left: 24px;
-}
-
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a > span.cs-tablink-text {
-  margin: 0 16px;
-  max-width: 300px;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 14px;
-  text-overflow: ellipsis;
-  display: block;
-  padding: 15px 0 11px 0;
-  line-height: 18px;
-}
-
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li > a > span.cs-tablink-text:focus {
-  outline: none;
-}
-
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li.binf-active > a > span.cs-tablink-text {
-  border-bottom: 4px solid #9de4f9;
+  .binf-widgets .cs-tabbed-perspective .smart-tab-panel .smart-tab-links-bar .binf-nav-tabs>li.binf-active>a.cs-tablink::before {
+    background-color: #9de4f9;
+  }
 }
 
 .binf-widgets.csui-maximized-widget-mode .cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row {
@@ -94,9 +60,11 @@
 
 .binf-widgets .cs-tabbed-perspective > .cs-header {
   height: 160px;
+
   
   background: rgba(0, 0, 0, 0.1);
 }
+
 .binf-widgets:not(.perspective-editing) .cs-tabbed-perspective.csui-no-header > .cs-header {
   height: 0;
 }
@@ -118,17 +86,21 @@
   display: inline-flex;
   height: 48px;
   flex: 0 0 auto;
+  order: 2;
+  border-bottom: 1px solid var(--jato-tabs-navigation-content-color-disabled, #cccccc);
+}
+
+.binf-widgets .cs-tabbed-perspective .smart-tab-contents-wrapper {
+  order: 3;
+  width: 100%;
+
 }
 
 .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links {
   height: 48px;
-  background: rgba(0, 0, 0, 0.4);
+  background:var(--jatx-tab-panel-tablink-background);
   display: inline-flex;
   flex: 1 1 1%;
-}
-
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs {
-  margin-bottom: 7.5px;
 }
 
 
@@ -149,6 +121,8 @@
 
 
 
+
+
 .binf-widgets .cs-tabbed-perspective > .cs-content {
   flex: 1 1 auto;
   height: calc(100% - 160px);
@@ -161,16 +135,20 @@
 }
 
 
-.cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row {
+.cs-tabbed-perspective > .cs-content > .tab-panel > .smart-tab-contents-wrapper > .binf-tab-content > .binf-tab-pane > .binf-row {
   height: calc(100% + 15px);
   min-height: 160px;
   margin: -15px 0 0 -15px;
 }
 
 
-.cs-tabbed-perspective > .cs-content > .tab-panel > .binf-tab-content > .binf-tab-pane > .binf-row > * {
+.cs-tabbed-perspective > .cs-content > .tab-panel > .smart-tab-contents-wrapper > .binf-tab-content > .binf-tab-pane > .binf-row > * {
   min-height: 160px;
   padding: 15px 0 0 15px;
+}
+
+.cs-tabbed-perspective > .cs-content > .smart-tab-panel >  .smart-tab-contents-wrapper .binf-tab-content {
+ height: calc(100vh - 240px);
 }
 
 
@@ -179,6 +157,7 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .binf-widgets.csui-maximized-widget-mode .cs-perspective-panel .cs-tabbed-perspective .cs-content .binf-row.csui-maximized-row > .csui-maximized-column {
   height: 100%;
   padding-top: 0;
@@ -202,17 +181,13 @@
   height: 96px;
   background: rgba(0, 0, 0, 0.4);
 }
+
 .binf-widgets:not(.perspective-editing) .cs-perspective-panel .cs-tabbed-perspective.csui-no-header.cs-collapse > .cs-header {
   height: 48px;
 }
 
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective.cs-collapse > .cs-header .conws-header-type {
   display: none;
-}
-
-
-.binf-widgets .cs-perspective-panel .cs-tabbed-perspective.cs-collapse > .cs-content > .tab-panel > .tab-links {
-  background: transparent;
 }
 
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .tab-links-bar {
@@ -237,12 +212,7 @@
   height: 48px;
 }
 
-.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .tab-links-bar ul.binf-nav {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 500%;
-}
+
 
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .left-toolbar {
   flex: 0 0 auto;
@@ -261,13 +231,7 @@
   background-image: url(../impl/images/next.svg);
 }
 
-.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_next_div,
-.binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_previous_div {
-  width: 48px;
-  height: 48px;
-
-}
-
+ 
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_next_div .goto_next_page:hover {
   background-image: url(../impl/images/next-hover.svg);
 }
@@ -292,12 +256,12 @@
 
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .left-toolbar:hover,
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .right-toolbar:hover {
-  background-color: rgba(148, 187, 234, 0.25);
+  background-color: var(--jatx-tab-panel-tablink-toolbar-hover-background-color);
 }
 
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .left-toolbar:active,
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .right-toolbar:active {
-  background-color: rgba(51, 51, 51, 0.25);
+  background-color: var(--jatx-tab-panel-tablink-toolbar-active-background-color);
 }
 
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_previous_div .goto_previous_page {
@@ -311,17 +275,6 @@
 .binf-widgets .cs-perspective-panel .cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links .goto_previous_div .goto_previous_page:active {
   background-image: url(../impl/images/prev-select.svg);
 }
-
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li:not(.binf-active) > a:hover {
-  border-bottom: none;
-  background-color: rgba(148, 187, 234, 0.25);
-}
-
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li:not(.binf-active) > a:active,
-.cs-tabbed-perspective > .cs-content > .tab-panel > .tab-links > .tab-links-bar > .binf-nav-tabs > li.binf-active > a:active {
-  background-color: rgba(51, 51, 51, 0.25);
-}
-
 
 .binf-widgets .xecmpf-businessattachments .xecmpf-attachmentstitlebaricon,
 .binf-widgets .xecmpf-businessattachments .xecmpf-attachmentstitleicon {

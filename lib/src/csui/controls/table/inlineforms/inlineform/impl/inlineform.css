@@ -1,9 +1,10 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-inlineform-parent {
   height: 100%;
 }
+
 .binf-widgets .csui-inlineform-parent.csui-inline-form-full-width{
   width: 100%;
 }
@@ -114,6 +115,9 @@
   height: 32px;
   width: 32px;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
 }
 
 .csui-inlineform-group .csui-btn-save:focus {
@@ -155,6 +159,9 @@
   border-color: transparent;
   box-shadow: none;
   height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
 }
 
 .csui-inlineform-group .csui-btn-cancel.csui-inline {
@@ -190,18 +197,23 @@
 
 
 .binf-widgets .csui-inlineform-group-error .binf-text-danger {
+  display: flex;
+  align-items: center;
+  gap: var(--jato-margin-sm, 4px);
   max-width: 420px;
   white-space: normal;
   word-break: break-word;
   margin-top: 8px;
-  background: #ffffff;
-  color: #df3324;
+  background-color: var(--jato-messages-inline-background-error, #ffffff);
+  color: var(--jato-typography-text-color-secondary, #df3324);
   font-size: 11px;
   line-height: 12px;
-  border-radius: 2px;
-  border-left: 2px solid #df3324;
+  border-radius: var(--jato-radii-sm, 2px);
+  border: var(--jato-measure-1, 0) solid var(--jato-messages-inline-border-error, #df3324);
+  border-left-width: var(--jato-measure-1, 2px);
+  border-bottom-width: var(--jato-measure-2, 0);
   padding: 2px 6px;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 var(--jato-elevation-y-axis-level-3, 0) var(--jato-elevation-blur-level-3, 4px) 0 var(--jato-elevation-shadow-color-level-3, rgba(0, 0, 0, 0.3));
 }
 
 .binf-widgets .csui-inlineform-group-error .binf-text-danger span {
@@ -241,7 +253,7 @@
   height: 28px;
   border: 1px solid #757575;
   border-radius: 3px;
-  padding: 0px 8px;
+  padding: 0 8px;
 }
 
 .binf-widgets .csui-inlineform-group > input:focus {
@@ -250,7 +262,7 @@
 }
 
 .binf-widgets .csui-inlineform-input-name {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 

@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .cs-apply-properties-selector.binf-dropdown {
   padding: 0 0 0 1.5em;
 }
@@ -76,6 +75,7 @@
 .binf-widgets .cs-apply-properties-selector > .binf-dropdown-toggle .cs-label,
 .binf-widgets .cs-apply-properties-selector > .binf-dropdown-menu .cs-label {
   vertical-align: text-bottom;
+
   
 }
 

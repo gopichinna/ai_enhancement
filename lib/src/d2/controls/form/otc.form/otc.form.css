@@ -1,0 +1,12 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .cs-perspective-panel .form-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.binf-widgets .cs-perspective-panel .otc-form-container {
+    flex: 1 1 auto;
+    min-width: 0;
+}

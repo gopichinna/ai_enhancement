@@ -1,4 +1,16 @@
 {{#if hasMetadataRow}}
+{{#if isJatoTheme}}
+  <otc-button type="subtle" size="small" class="expand-details-row-toggle" title="{{expandToggleTooltip}}"
+     arialabel="{{expandToggleAria}}"
+     data-binf-toggle="collapse" ariaexpanded="{{ariaExpanded}}"
+     ariacontrols="csui-details-row-{{id}}">
+    {{#if ariaExpanded}}
+        <otc-icon size="16" svg='{{svgCaretUpIcon}}'></otc-icon>
+    {{else}}
+        <otc-icon size="16" svg='{{svgCaretDownIcon}}'></otc-icon>
+    {{/if}}
+  </otc-button>
+{{else}}
   <a class="expand-details-row-toggle" title="{{expandToggleTooltip}}"
      aria-label="{{expandToggleAria}}"
      href="#csui-details-row-{{id}}" data-binf-toggle="collapse" aria-expanded="{{ariaExpanded}}"
@@ -10,5 +22,6 @@
     {{/if}}
   </a>
 {{/if}}
+{{/if}}
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

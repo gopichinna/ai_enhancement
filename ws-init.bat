@@ -45,8 +45,8 @@ ECHO Initializing workspace...
 
 CALL mvn -q org.apache.maven.plugins:maven-install-plugin:3.0.0-M1:install-file -Dfile="%DIR%\tools\%TOOL_NAME%" && ^
 CALL mvn -N com.opentext.d2.sdk:d2sdk-maven-plugin:workspace-init %INIT_ARG% && ^
-ECHO Installing NodeJS components... && ^
-CALL npm install --loglevel=error --no-progress --no-audit --no-fund
+:: initialize node components
+CALL build-node-modules.bat
 
 IF %ERRORLEVEL% EQU 0 (
     ECHO:

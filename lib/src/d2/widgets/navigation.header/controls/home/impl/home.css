@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .d2-branding {
   height: 100%;
@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1440px) {
+@media (width <= 1440px) {
   .d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav .d2-branding .d2-brand-container .d2-brand-logo {
     height: 40px;
     background-repeat: no-repeat;

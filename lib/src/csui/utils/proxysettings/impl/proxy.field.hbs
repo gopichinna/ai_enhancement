@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="add-button-group">
-        <a href="#" class="btn-add-workflow-proxy" aria-label="{{addUser}}" tabindex="0">
+        <a href="#" class="btn-add-workflow-proxy" role="button" aria-label="{{addWorkflowUserAria}}" tabindex="0">
             {{{icon-v2 iconName="csui_action_add32" size='small' states='true'}}}
             <span class="add-user-label">{{addUser}}</span>
         </a>
@@ -21,8 +21,8 @@
         </div>
         <div class="footer">
             <div class="add-proxy-button-group">
-                <a href="#" title="{{save}}" aria-label="{{save}}" class="btn-save-proxy disabled" tabindex="0" data-cstabindex="0">{{save}}</a>
-                <a href="#" title="{{cancel}}" aria-label="{{cancel}}" class="btn-cancel-proxy active" tabindex="0" data-cstabindex="0">{{cancel}}</a>
+                <otc-button type="secondary" title="{{save}}" arialabel="{{save}}" class="btn-save-proxy csui-default csui-acc-tab-region" size="small" role="none" >{{save}}</otc-button>
+                <otc-button type="primary" title="{{cancel}}" arialabel="{{cancel}}" class="btn-cancel-proxy csui-default csui-acc-tab-region" size="small" role="none">{{cancel}}</otc-button>
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
 <br><br>
 <div class="proxy-container">
     <div class="header-row">
-        <div class="my-proxies" title="{{fullaccess}}">{{fullaccess}}</div>
+        <div class="my-proxies" title="{{fullAccess}}">{{fullAccess}}</div>
         <span class="icon csui-icon-notification-information-white proxy-tooltip-btn" title="{{proxyInfo}}" tabindex="0"></span>
         <div class="binf-popover binf-fade binf-right binf-in binf-hidden" role="tooltip">
             <div class="binf-arrow"></div>
@@ -44,7 +44,7 @@
         </div>
     </div>
     <div class="add-button-group">
-        <a href="#" class="btn-add-proxy" aria-label="{{addUser}}" tabindex="0">
+        <a href="#" class="btn-add-proxy" role="button" aria-label="{{addFullAccessUserAria}}" tabindex="0">
             {{{icon-v2 iconName="csui_action_add32" size='small' states='true'}}}
             <span class="add-user-label">{{addUser}}</span>
         </a>
@@ -55,8 +55,8 @@
         </div>
         <div class="footer">
             <div class="add-proxy-button-group">
-                <a href="#" title="{{save}}" aria-label="{{save}}" class="btn-save-proxy disabled" tabindex="0" data-cstabindex="0">{{save}}</a>
-                <a href="#" title="{{cancel}}" aria-label="{{cancel}}" class="btn-cancel-proxy active" tabindex="0" data-cstabindex="0">{{cancel}}</a>
+                <otc-button type="secondary" title="{{save}}" arialabel="{{save}}" class="btn-save-proxy csui-default csui-acc-tab-region" size="small" role="none">{{save}}</otc-button>
+                <otc-button type="primary" title="{{cancel}}" arialabel="{{cancel}}" class="btn-cancel-proxy csui-default csui-acc-tab-region" size="small" role="none">{{cancel}}</otc-button>
             </div>
         </div>
     </div>
@@ -65,4 +65,4 @@
 <div class="proxy-list">
 
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

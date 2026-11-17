@@ -22,4 +22,5 @@ tools/d2sdk-maven-plugin-*.jar
 
 # Logs and temp files
 *.log
+*.bak
 .npm/

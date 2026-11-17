@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .pman-container {
   position: absolute;
@@ -89,7 +89,11 @@
 }
 
 .csui-sidebar-enabled .pman-container .pman-header .pman-header-backdrop {
-  background-color: #ffffff;
+  box-shadow: 0 var(--jato-elevation-y-axis-level-1, 0) var(--jato-elevation-blur-level-1, 0) 0 var(--jato-elevation-shadow-color-level-1, 0);
+
+  
+  background-color: var(--jato-background-elevation-level-4, #ffffff);
+  border-bottom: 1px solid var(--jato-divider-color-primary, unset);
 }
 
 .binf-widgets .pman-header .binf-btn {
@@ -104,10 +108,14 @@
   color: #232e72;
 }
 
+.binf-widgets .pman-header .pman-right-tools-button {
+  margin-left: var(--jato-measure-12, 16px);
+}
+
 .csui-sidebar-enabled .pman-header .binf-btn{
   border-radius: 16px;
   border: 1px solid #232E72;
-  background:#FFF;
+  background:#FFFFFF;
 }
 
 .binf-widgets .pman-header .binf-btn:focus {
@@ -152,6 +160,20 @@
   color: #FFFFFF;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .icon-expandArrowDown,
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .icon-expandArrowDown:focus, 
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .icon-expandArrowDown:active,
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .icon-expandArrowUp,
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .icon-expandArrowUp:focus,
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .icon-expandArrowUp:active,
+[data-smart-theme]:not([data-smart-theme="cf"]) .csui-sidebar-enabled .icon-help:hover,
+[data-smart-theme]:not([data-smart-theme="cf"]) .csui-sidebar-enabled .icon-help:disabled,
+[data-smart-theme]:not([data-smart-theme="cf"]) .csui-sidebar-enabled .icon-help:active,
+[data-smart-theme]:not([data-smart-theme="cf"]) .csui-sidebar-enabled .icon-help:focus,
+[data-smart-theme]:not([data-smart-theme="cf"]) .csui-sidebar-enabled .icon-help{
+  background-image: none;
+}
+
 .pman-container .pman-header li {
   display: block;
   float: left;
@@ -194,7 +216,7 @@
 
 .binf-widgets.perspective-editing .cs-perspective-panel .cs-perspective {
   overflow: visible;
-  margin: 32px 0px 8px 0px; 
+  margin: 32px 0 8px 0; 
 }
 
 .binf-widgets.perspective-editing .cs-perspective-panel .cs_perspective_no_left_right_margin .cs-perspective {
@@ -213,14 +235,16 @@
 .binf-widgets.perspective-editing .pman-mode-personalize .pman-left-tools li.toolbarAddContainer {
   visibility: hidden;
 }
+
 .pman-container .pman-header .pman-toolitem.icon-help-container, .pman-container .pman-header .pman-toolitem.icon-help-container:hover{
   background-color: transparent;
 }
+
 .pman-container .pman-header .pman-toolitem.icon-help-container .icon-help, .pman-container .pman-header .pman-toolitem.icon-help-container .icon-help:hover{
   background-color: transparent;
   background-repeat: no-repeat;
 }
 
 .csui-sidebar-enabled .pman-container .pman-header .pman-toolitem .icon, .csui-sidebar-enabled .pman-container .pman-header .pman-toolitem .icon:hover {
-  background-color: #333;
+  background-color: #333333;
 }

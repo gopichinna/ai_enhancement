@@ -1,6 +1,14 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-tree-split-width: 20px;
+  --jatx-csui-tree-splitcontrol-label-line-height: 20px;
+  --jatx-csui-tree-node-name-line-height: 20px;
+  --jatx-csui-tree-node-name-font-weight: 600;
+}
+
 .binf-widgets .csui-permission-level-container .binf-popover-content {
   padding: 16px 16px 13px 16px;
 }
@@ -10,14 +18,15 @@
 }
 
 .binf-widgets .csui-tree-container li ul {
-  padding-left: 34px;
+  padding-left: var(--jato-measure-24, 34px);
 }
 
 .binf-widgets .csui-tree-container span.csui-node-name {
-  padding-left: 14px;
-  line-height: 18px;
+  padding-left: var(--jato-padding-lrg, 14px);
+  line-height: var(--jatx-csui-tree-node-name-line-height, 18px);
   width: 100%;
-  color: #333333;
+  color: var(--jato-typography-text-color-primary, #333333);
+  font-weight: var(--jatx-csui-tree-node-name-font-weight, normal);
 }
 
 .binf-widgets .csui-permissions-level .csui-tree-container span.csui-node-name {
@@ -37,12 +46,12 @@
   line-height: initial;
   display: inline-flex;
   display: -webkit-inline-flex;
-  padding-bottom: 14px;
+  padding-bottom: 8px;
   width: 100%;
 }
 
 .binf-widgets .csui-tree-child.csui-split-fullcontrol {
-  padding-bottom: 0px;
+  padding-bottom: 0;
   padding-right: 16px;
 }
 
@@ -69,7 +78,7 @@
 }
 
 .binf-widgets .csui-tree-child.csui-split-read .csui-separator {
-  border-bottom: 2px solid #008a8b;
+  border-bottom: var(--jato-measure-1, 2px) solid var(--jato-color-teal-3480, #008a8b);
 }
 
 .binf-widgets .csui-tree-child.csui-split-write {
@@ -79,13 +88,16 @@
 }
 
 .binf-widgets .csui-permission-attributes .csui-permission-attribute-tree {
-  padding: 15px 0px 13px 15px;
+  padding: 13px 0 16px 15px;
   overflow: hidden;
   max-height: calc(100vh - 70px);
+
+  
+  background-color: var(--jato-background-elevation-level-3, inherit);
 }
 
 .binf-widgets .binf-modal-content .csui-permission-attributes .csui-permission-attribute-tree {
-  padding: 15px 0px 13px 30px;
+  padding: var(--jato-measure-16, 15px) var(--jato-measure-16, 0) var(--jato-measure-16, 13px) var(--jato-measure-16, 30px);
   overflow: hidden;
 }
 
@@ -99,100 +111,43 @@
 }
 
 .binf-widgets .csui-tree-child.csui-split-write .csui-separator {
-  border-bottom: 2px solid #5864ad;
-  width: calc(100% + 85px);
+  border-bottom: var(--jato-measure-1, 2px) solid var(--jato-color-plum-4590 , #5864ad);
 }
 
-.csui-tree-child label:focus {
-  box-shadow: 0 0 0 1px #333333;
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-tree-child.csui-split-fullcontrol .csui-separator {
+  border-bottom: var(--jato-measure-1) solid var(--jato-color-blue-3365);
+  bottom: -13px;
 }
 
-.csui-tree-child label::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  border-radius: 2px;
-  background-color: #ffffff;
-  outline: 0;
+.csui-tree-child otc-checkbox {
   cursor: pointer;
-  background-image: url('images/checkbox.svg');
-}
-
-.csui-tree-child label::after {
-  display: inline-block;
-  position: absolute;
-  color: #ffffff;
-  background-color: #666666;
-  width: 18px;
-  height: 18px;
-}
-
-.csui-tree-child input[type="checkbox"] {
-  opacity: 0;
-  z-index: 1;
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  margin: 0px;
-  float: left;
-}
-
-.csui-tree-child input[type="checkbox"]:checked + label::after {
-  font-family: "FontAwesome";
-  content: "";
-  background: url('images/checkbox_selected.svg');
-}
-
-.csui-tree-child input[type="checkbox"]:disabled + label::before {
-  background-color: #ffffff;
-  cursor: not-allowed;
-  background: url('images/checkbox_disabled.svg');
-}
-
-.csui-tree-child input[type="checkbox"].icon-checkbox-on_disabled + label::before {
-  background-color: #ffffff;
-  cursor: default;
-  background: url('images/checkbox_on24_dis.svg');
-}
-
-.csui-tree-child input[type="checkbox"].icon-checkbox-disabled + label::before {
-  background-color: #ffffff;
-  cursor: default;
-  background: url('images/checkbox24_dis.svg');
-}
-
-.csui-tree-child input[type="checkbox"].icon-checkbox-disabled,
-.csui-tree-child input[type="checkbox"].icon-checkbox-on_disabled {
-  cursor: default;
 }
 
 .binf-widgets .csui-tree-split.csui-split-read,
 .binf-widgets .csui-tree-split.csui-split-write,
 .binf-widgets .csui-tree-split.csui-split-fullcontrol {
-  width: 32px;
+  width: var(--jatx-csui-tree-split-width, 32px);
   position: absolute;
   bottom: 0;
 }
 
 .binf-widgets .csui-tree-split.csui-split-read,
 .binf-widgets .csui-tree-split.csui-split-read .csui-splitcontrol-label span {
-  background-color: #66d4d6;
+  background-color: var(--jato-color-teal-6455, #66d4d6);
 }
 
 .binf-widgets .csui-tree-split.csui-split-write,
 .binf-widgets .csui-tree-split.csui-split-write .csui-splitcontrol-label span {
-  background-color: #b9afd3;
+  background-color: var(--jato-color-plum-7930, #b9afd3);
 }
 
 .binf-widgets .csui-tree-split.csui-split-fullcontrol,
 .binf-widgets .csui-tree-split.csui-split-fullcontrol .csui-splitcontrol-label span {
-  background-color: #6bd7f5;
+  background-color: var(--jato-color-blue-6305, #6bd7f5);
 }
 
 .binf-widgets .csui-tree-split.csui-split-fullcontrol {
-  bottom: -16px;
+  bottom: -13px;
 }
 
 .binf-widgets .csui-splitcontrol-label {
@@ -213,13 +168,14 @@
   top: 55px;
   text-align: right;
   white-space: nowrap;
-  padding-right: 16px;
-  line-height: 31px;  
+  padding-right: var(--jato-measure-10, 16px);
+  line-height: var(--jatx-csui-tree-splitcontrol-label-line-height, 31px);  
   text-overflow: ellipsis;
   overflow: hidden;
   text-overflow: ellipsis;
   overflow: hidden;
   padding-left: 10px;
+  color: var(--jato-color-charcoal-0125, inherit);
 }
 
 .binf-widgets .csui-permissions-collection .csui-permission-item-permissions .csui-tree-split .csui-splitcontrol-label span {

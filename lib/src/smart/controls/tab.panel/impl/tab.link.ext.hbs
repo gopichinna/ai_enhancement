@@ -14,8 +14,14 @@
 </div>
 <div class="cs-tablink-delete smart-tablink-delete">
   {{#if allow_delete}}
-  <otc-button class="cs-delete-icon" title="{{delete_tooltip}}" arialabel="{{deleteTabAria}}"
-    icon="smart_action_16:action_close16"></otc-button>
+   {{#if isJATO}}
+      <otc-button class="cs-delete-icon jato-smart-delete-icon smart-button-chip" size="small" title="{{delete_tooltip}}" arialabel="{{deleteTabAria}}">
+         <otc-icon svg="{{closeXSSvg}}"></otc-icon>
+      </otc-button>
+    {{else}}
+      <otc-button class="cs-delete-icon" title="{{delete_tooltip}}" arialabel="{{deleteTabAria}}"
+        icon="smart_action_16:action_close16"></otc-button>
+    {{/if}}
   {{/if}}
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

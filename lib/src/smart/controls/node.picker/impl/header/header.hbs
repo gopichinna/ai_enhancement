@@ -1,24 +1,17 @@
 <h2 class="csui-title">{{title}}
-{{#if showTargetLocationName}}
+  {{#if showTargetLocationName}}
   <span class="target-location-name-container binf-hidden">
     '<span class="target-location-name">{{targetLocationName}}</span>'
   </span>
-{{/if}}
+  {{/if}}
 </h2>
 {{#if saveFilter}}
 <div class='csui-filtername-container'>
-  <span class="cs-icon-required category_required" title=""></span>
-  <input type='text' class='csui-filtername' placeholder="{{placeHolderName}}" tabindex="-1" value="{{initialFilter}}"
-    data-cstabindex="-1" required aria-invalid="false" aria-errormessage="csui-filtername-error-id" />
-  {{#if isMlDataEnabled}}
-  <span class="smart-multilingual-icon-label">
-    <otc-button icon="smart_action:action_localize32" class="icon smart-multilingual-icon" arialabel="{{multilingualTooltip}}"
-          title="{{multilingualTooltip}}" tabindex="0"></otc-button>
-  </span>
-  {{/if}}
-  <div class="csui-filtername-error-wrapper binf-hidden">
-    <span class="binf-text-danger csui-filtername-error" id="csui-filtername-error-id"></span>
-  </div>
+   <span class="cs-icon-required category_required" title=""></span>
+  <otc-input class='csui-filtername' arialabel="{{headerInputAria}}" {{#if isJATOTheme}}size="small"{{/if}} {{#unless isJATO}} secondary {{/unless}} required placeholder="{{placeHolderName}}" {{#if
+    isMlDataEnabled}} title="{{headerInputTooltip}}" actionicon="{{saveFilterMLIcon}}" actioniconarialabel="{{multilingualTooltip}}"
+    actionicontitle="{{multilingualTooltip}}" {{/if}} type="text" value="{{initialFilter}}" title="" ariainvalid="false">
+  </otc-input>
 </div>
 {{/if}}
 
@@ -33,4 +26,4 @@
         propertiesSeletor}}{{else}}csui-no-properties-selector{{/if}}"></span>
   </div>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

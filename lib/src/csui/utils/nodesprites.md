@@ -50,6 +50,9 @@ className
   function is specified, it should be called with the node model to get the
   actual value )
 
+jatoIcon
+: Jato svg icon should be passed. (svg content)
+
 sequence
 : Weight of the rule to put it to a sequence with the others; rules with lower
   sequence numbers are processed earlier than rules with higher numbers
@@ -144,10 +147,10 @@ decides
 Add custom icons temporarily by using the `nodeSprites` collection directly:
 
 ```
-define(['csui/utils/nodesprites'], function (nodeSprites) {
+define(['csui/utils/nodesprites', 'csui/icons/jato.mime.icons'], function (nodeSprites, jatoIcons) {
 
   var customIcons = nodeSprites.add([
-        // Show one icon for e=all containers, which are not browsable
+        // Show one icon for all containers, which are not browsable
         {
           equals: {
             container: true,
@@ -155,7 +158,22 @@ define(['csui/utils/nodesprites'], function (nodeSprites) {
           },
           className: 'icon-inaccessible',
           sequence: 60
-        }
+        },
+         // Show Jato icon for nodes of type PDF documents
+        {
+          equalsNoCase: {
+            mime_type: [
+              'application/vnd.pdf',
+              'application/x-pdf',
+              'application/pdf'
+            ]
+          },
+          className: 'csui-icon mime_pdf',
+          iconName: 'csui_mime_pdf',
+          mimeType: lang.NodeTypePDF,
+          jatoIcon: jatoIcons.mimePdf,
+          sequence: 50
+        },
       ]);
 
   // ... render HTML markup with custom icons
@@ -181,7 +199,22 @@ define(function (nodeSprites) {
     {
       equals: {type: 31066},
       className: 'conws-icon-binder'
-    }
+    },
+    {
+      // pdf
+      equalsNoCase: {
+        mime_type: [
+          'application/vnd.pdf',
+          'application/x-pdf',
+          'application/pdf'
+        ]
+      },
+      className: 'csui-icon mime_pdf',
+      iconName: 'csui_mime_pdf',
+      mimeType: lang.NodeTypePDF,
+      jatoIcon: jatoIcons.mimePdf,
+      sequence: 50
+    },
   ];
 
 });

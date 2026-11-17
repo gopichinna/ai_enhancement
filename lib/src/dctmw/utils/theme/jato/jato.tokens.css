@@ -1,0 +1,14 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+[data-smart-theme]:not([data-smart-theme=cf]) {
+    
+    --jatx-dctmw-about-h6-font-weight: 700;
+    --jatx-dctmw-about-dialog-header-logo-size: 150px;
+
+    
+    --jatx-dctmw-form-list-chicklet-background: none;
+    --jatx-dctmw-form-list-chicklet-line-height: 16px;
+    --jatx-dctmw-form-list-selected-values-remove-size: 18px;
+    --jatx-dctmw-form-list-selected-values-remove-margin-top: 0;
+}

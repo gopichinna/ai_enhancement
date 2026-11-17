@@ -4,8 +4,15 @@
 
     <div class="tab-links-header smart-tab-links-bar-toolbar-wrapper">
       <div class="left-toolbar smart-left-toolbar">
-        <div class="goto_previous_div"><otc-icon disableEffects="true" icon="smart_action:action_caret_left32"
-            class="cs-icon smart-goto-previous-page" title="{{previousTooltip}}" arialabel="{{previousTooltip}}"></otc-icon>
+        <div class="goto_previous_div">
+          {{#if isJATO}}
+          <otc-button class="cs-icon smart-goto-previous-page" title="{{gotoPreviousTooltip}}" arialabel="{{gotoPreviousTooltip}}" tabindex="-1">
+            <otc-icon svg="{{jatoLeftArrowIconName}}"></otc-icon>
+          </otc-button>
+          {{else}}
+          <otc-icon disableEffects="true" icon="{{leftArrowIconName}}" class="cs-icon smart-goto-previous-page" 
+              title="{{gotoPreviousTooltip}}" isPresentation arialabel="{{gotoPreviousTooltip}}"></otc-icon>
+          {{/if}}
         </div>
       </div>
 
@@ -15,10 +22,10 @@
         {{#each extraTabs}}
           {{#this}}
             {{#if show}}
-              <li role="presentation" class="esoc-user-profile-tab smart-tab-panel-item"
+              <li role="tab" class="esoc-user-profile-tab smart-tab-panel-item"
                   id="esoc-user-profile-{{tabName}}-tab">
-                <a href="#{{tabName}}" data-binf-toggle="tab" role="tab"
-                        class="esoc-user-profile-{{tabName}}-tab-label cs-tablink"  tabindex="-1" title= {{tabDisplayName}}>
+                <a href="#{{tabName}}" data-binf-toggle="tab"
+                        class="esoc-user-profile-{{tabName}}-tab-label cs-tablink"  tabindex="-1" title= "{{tabDisplayName}}">
               <span class="esoc-user-{{tabName}}-tab-label esoc-user-profile-tab-label"
                     title="{{tabDisplayName}}">{{tabDisplayName}}</span>
                 </a>
@@ -35,20 +42,22 @@
        </div>
       <div class="right-toolbar smart-right-toolbar">
         <div class="goto_next_div">
-          <otc-icon disableEffects="true" icon="smart_action:action_caret_right32" class="cs-icon smart-goto-next-page"
-            title="{{nextTooltip}}" arialabel="{{nextTooltip}}"></otc-icon>
+          {{#if isJATO}}
+          <otc-button class="cs-icon smart-goto-next-page" title="{{gotoNextTooltip}}" arialabel="{{gotoNextTooltip}}" tabindex="-1">
+            <otc-icon svg="{{jatoRightArrowIconName}}"></otc-icon>
+          </otc-button>
+          {{else}}
+          <otc-icon disableEffects="true" icon="{{rightArrowIconName}}" class="cs-icon smart-goto-next-page" 
+              title="{{gotoNextTooltip}}" isPresentation arialabel="{{gotoNextTooltip}}"></otc-icon>
+          {{/if}}
         </div>
-
       </div>
-      </div>
-     
-
-    
+      </div>    
   </div>
    <div id="esoc-simple-user-widget-form-body-{{uniqueId}}"
-      class="esoc-simple-user-widget-form-body" role="tabpanel"></div>
+      class="esoc-simple-user-widget-form-body smart-tab-contents-wrapper csui-normal-scrolling" role="tabpanel"></div>
 {{else}}
-  <div id="esoc-simple-user-widget-form-body-{{uniqueId}}" class="esoc-simple-user-widget-form-body" role="tabpanel"></div>
+  <div id="esoc-simple-user-widget-form-body-{{uniqueId}}" class="esoc-simple-user-widget-form-body smart-tab-contents-wrapper csui-normal-scrolling" role="tabpanel"></div>
 {{/if}}
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

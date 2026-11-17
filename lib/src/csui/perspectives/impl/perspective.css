@@ -1,8 +1,8 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 
-.cs-perspective > .cs-content > .tab-panel > .binf-tab-content > * > .binf-row > * {
+.cs-perspective > .cs-content > .tab-panel > .smart-tab-contents-wrapper > .binf-tab-content > * > .binf-row > * {
   height: 100%;
   min-height: 160px;
 }

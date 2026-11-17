@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .list-selection {
   background: #FFFFFF;
@@ -46,6 +46,10 @@
 
 .binf-widgets .list-selection .item-details .item-details-header {
   height: 30px;
+}
+
+.binf-widgets .list-selection .item-details .item-details-header.single-item {
+  height: 60px;
 }
 
 .binf-widgets .list-selection .item-details .item-details-header .toggle .toggle-region {
@@ -132,4 +136,38 @@
 
 .binf-widgets .list-selection .list-region .d2-sortable-list {
   height: 100%;
+}
+
+.binf-widgets .list-selection .item-details.right-pane .item-details-header .single-item-details-region .list.csui-acc-tab-region .d2-sortable-list .list-item.sub-item{
+  padding: 0;
+}
+
+.binf-widgets .list-selection .item-details.right-pane .item-details-header .single-item-details-region .list.csui-acc-tab-region .d2-sortable-list {
+  display: table;
+  width: 100%;
+}
+
+.binf-widgets .list-selection .item-details.right-pane .item-details-header .single-item-details-region .list.csui-acc-tab-region .d2-sortable-list .list-item.sub-item:hover {
+  background-image: none; 
+  background-size: initial;
+  height: auto;
+}
+
+.binf-widgets .list-selection .item-details.right-pane .item-details-header .single-item-details-region .list.csui-acc-tab-region .d2-sortable-list .binf-list-group {
+  background-color: #CBD3D9;
+  padding: 10px;
+}
+
+.binf-widgets .list-selection .item-details.right-pane .item-details-header .single-item-details-region .list.csui-acc-tab-region .d2-sortable-list .binf-list-group:hover {
+  background-color: #CBD3D9;
+}
+
+.binf-widgets .list-selection .item-details.right-pane .item-details-header .single-item-details-region .list.csui-acc-tab-region .d2-sortable-list .binf-list-group .list-item .item .item-info {
+  display: flex;
+  align-items: center;
+  background-color: #CBD3D9;
+}
+
+.binf-widgets .list-selection .item-details.right-pane .item-details-header .single-item-details-region .list.csui-acc-tab-region .d2-sortable-list .binf-list-group .list-item .item .item-info .list-item-title {
+  padding-left: 18px;
 }

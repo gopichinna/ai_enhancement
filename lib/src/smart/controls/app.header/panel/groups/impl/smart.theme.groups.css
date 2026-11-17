@@ -1,0 +1,56 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.smart-fade-out-and-in-long-time,
+.smart-fade-out-and-in {
+    opacity: 1;
+    animation: fade-out 0.5s ease-in forwards, fade-in 1.5s 1.5s ease-out forwards;
+}
+
+.smart-fade-out-and-in {
+    animation: fade-out 0.5s ease-in forwards, fade-in 1s 1s ease-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.75;
+    }
+
+    50% {
+        opacity: 0.50;
+    }
+
+    75% {
+        opacity: 0.25;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

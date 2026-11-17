@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .target-browse .csui-search-box {
   display: inline-block;
@@ -22,7 +22,7 @@
   vertical-align: middle;
   flex-direction: row;
   width: 100%;
-  padding: 10px 0px 10px 16px;
+  padding: 10px 0 10px 16px;
 }
 
 .target-browse.csui-save-filter-browse .csui-search-box .search-bar-content {
@@ -34,8 +34,8 @@
 }
 
 .target-browse .csui-search-box > a {
-  background-position-y: 0px;
-  background-position-x: 0px;
+  background-position-y: 0;
+  background-position-x: 0;
   padding: 8px;
   height: 32px;
   width: 32px;
@@ -145,7 +145,7 @@
 
 .target-browse .csui-selected-checkbox.csui-slice-checkbox label {
   position: relative;
-  padding: 6px 0px 0px 4px;
+  padding: 6px 0 0 4px;
   word-break: break-all;
   cursor: pointer;
   word-break: break-all;
@@ -169,13 +169,15 @@
 
 
 
+
+
 .target-browse .csui-selected-checkbox.csui-slice-checkbox label::before {
   margin-left: -1.5em;
   top: 2px;
 }
 
 .target-browse .csui-selected-checkbox.csui-slice-checkbox label::after {
-  left: 0px;
+  left: 0;
   margin-left: -20px;
   padding-left: 3px;
   top: 2px;
@@ -240,7 +242,8 @@
   position: relative;
   right: 0;
 }
-@media only screen and (max-width: 640px) {
+
+@media only screen and (width <= 640px) {
   .target-browse .csui-target-controls span.csui-separator {
     margin-left: 4px;
     margin-right: 0;

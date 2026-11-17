@@ -1,0 +1,10 @@
+{{#if isLocallyCreated}}
+    <div class='d2-bws-add-member-search'></div>
+    <otc-button class="d2-bws-icon d2-bws-save-icon" title="{{saveLabel}}" icon="otc-action:action_form_apply32" tabindex="-1" disabled></otc-button>
+    <otc-button class="d2-bws-icon d2-bws-cancel-icon" title="{{cancelLabel}}" icon="otc-action:action_form_cancel32" tabindex="-1"></otc-button>
+{{else}}
+    <div class='d2-bws-member-avatar'></div>
+    <div class='d2-bws-member-name' title='{{name}}'>{{name}}</div>
+    <otc-button class="d2-bws-remove-member {{#if showRemove}}d2-bws-show-remove{{/if}} binf-hidden" title="{{removeLabel}}" icon="otc-action:action_form_cancel32" tabindex="-1"></otc-button>
+{{/if}}
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

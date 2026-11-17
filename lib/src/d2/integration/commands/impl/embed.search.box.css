@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .d2-embedded-search {
   position: absolute;
   width: 400px;
@@ -84,7 +83,7 @@ body.d2-embed:not(.csui-on-ipad) .csui-search-results .csui-result-list {
   top: 36px;
   left: 46px;
   width: calc(100% - 82px);
-  background-color: #fff;
+  background-color: #ffffff;
   float: left;
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
   border: none;

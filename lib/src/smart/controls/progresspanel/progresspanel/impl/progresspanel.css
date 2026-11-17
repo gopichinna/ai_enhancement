@@ -1,31 +1,132 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+:root{
+  --jatx-progresspanel-width: 480px;
+  --jatx-progresspanel-min-width: 480px;
+  --jatx-progresspanel-max-width: 480px;
+  --jatx-progresspanel-status-icon-width: 16px;
+  --jatx-progresspanel-state-action-icon-width: 16px;
+  --jatx-progresspanel-status-icon-height: 20px;
+  --jatx-progresspanel-state-action-icon-height: 16px;
+  --jatx-progresspanel-header-min-height: none;
+  --jatx-progresspanel-container-padding-bottom: 12px;
+  --jatx-progresspanel-border-bottom: 3px;
+  --jatx-progresspanel-border-color-success: #15B359;
+  --jatx-progresspanel-border-color-error: #D41200;
+  --jatx-progresspanel-title-font-weight: 500;
+  --jatx-progresspanel-title-font-size: 16px;
+  --jatx-progresspanel-title-line-height: 20px;
+  --jatx-progresspanel-title-padding-left: 12px;
+  --jatx-progresspanel-expand-padding-left: 0px;
+  --jatx-progresspanel-close-margin-left: 0px;
+  --jatx-progresspanel-box-shadow: 2px;
+  --jatx-progresspanel-items-wrapper-border-top: 0px;
+  --jatx-progresspanel-items-wrapper-old-margin-top: -47px;
+  --jatx-progresspanel-items-wrapper-prev-margin-top: -47px;
+  --jatx-progresspanel-items-wrapper-header-height: 51px; 
+  --jatx-progresspanel-items-wrapper-nth-child-margin-top: -60px;
+  --jatx-progresspanel-expanded-border: 1px;
+  --jatx-progresspanel-expanded-rows-margin-top: 4px;
+  --jatx-progresspanel-progressbar-height: 8px;
+  --jatx-progresspanel-miniprogress-panel-left: 33%;
+  --jatx-progresspanel-minimizebutton-top: 8px;
+  --jatx-progresspanel-progressitem-padding-sides: 0;
+  --jatx-progresspanel-progressitem-border-bottom: 1px;
+  --jatx-progresspanel-header-border: #A5A6A8;
+  --jatx-progresspanel-expanded-header-border: 2px solid transparent;
+  --jatx-progresspanel-progress-bottom: 3px;
+  --jatx-progresspanel-old-progess-bar-ele-padding: 16px;
+  --jatx-progresspanel-prev-progess-bar-ele-padding: 8px;
+  --jatx-progresspanel-content-title-flex-basis: 155px;
+  --jatx-progresspanel-stacked-show-more-padding-top-bottom: 0;
+  --jatx-progresspanel-stacked-show-more-padding-right-left: 0;
+  --jatx-progresspanel-stacked-show-more-top: -8px;
+  --jatx-progresspanel-stacked-show-more-right: 13px;
+  --jatx-progresspanel-stacked-show-less-right: -3px;
+  --jatx-progresspanel-stacked-show-more-right-hidden: 0;
+  --jatx-progresspanel-progress-padding-right: 0;
+  --jatx-progresspanel-progress-padding-left: 0;
+}
+
+[data-smart-theme="cf"] {
+  --jatx-progresspanel-width: 720px;
+  --jatx-progresspanel-min-width: 690px;
+  --jatx-progresspanel-max-width: 720px;
+  --jatx-progresspanel-status-icon-width: 24px;
+  --jatx-progresspanel-state-action-icon-width: 20px;
+  --jatx-progresspanel-status-icon-height: 24px;
+  --jatx-progresspanel-state-action-icon-height: 20px;
+  --jatx-progresspanel-header-min-height: 64px;
+  --jatx-progresspanel-container-padding-bottom: 6px;
+  --jatx-progresspanel-border-bottom: 4px;
+  --jatx-progresspanel-border-color-success: #b2bec5;
+  --jatx-progresspanel-border-color-error: #b2bec5;
+  --jatx-progresspanel-title-font-weight: 400;
+  --jatx-progresspanel-title-font-size: 18px;
+  --jatx-progresspanel-title-line-height: 24px;
+  --jatx-progresspanel-title-padding-left: 14px;
+  --jatx-progresspanel-expand-padding-left: 8px;
+  --jatx-progresspanel-close-margin-left: 15px;
+  --jatx-progresspanel-box-shadow: 4px;
+  --jatx-progresspanel-items-wrapper-border-top: 1px;
+  --jatx-progresspanel-items-wrapper-old-margin-top: -48px;
+  --jatx-progresspanel-items-wrapper-prev-margin-top: -48px;
+  --jatx-progresspanel-items-wrapper-header-height: 64px;
+  --jatx-progresspanel-items-wrapper-nth-child-margin-top: -64px;
+  --jatx-progresspanel-expanded-border: 0px;
+  --jatx-progresspanel-expanded-rows-margin-top: 6px;
+  --jatx-progresspanel-progressbar-height: 10px;
+  --jatx-progresspanel-miniprogress-panel-left: 50%;
+  --jatx-progresspanel-minimizebutton-top: 16px;
+  --jatx-progresspanel-progressitem-padding-sides: 16px;
+  --jatx-progresspanel-progressitem-border-bottom: 0;
+  --jatx-progresspanel-header-border: #b2bec5;
+  --jatx-progresspanel-expanded-header-border: 3px solid #b2bec5;
+  --jatx-progresspanel-progress-bottom: 0px;
+  --jatx-progresspanel-old-progess-bar-ele-padding: 32px;
+  --jatx-progresspanel-prev-progess-bar-ele-padding: 16px;
+  --jatx-progresspanel-content-title-flex-basis: 200px;
+  --jatx-progresspanel-stacked-show-more-padding-top-bottom: 4px;
+  --jatx-progresspanel-stacked-show-more-padding-right-left: 18px;
+  --jatx-progresspanel-stacked-show-more-top: -12px;
+  --jatx-progresspanel-stacked-show-more-right: 8px;
+  --jatx-progresspanel-stacked-show-less-right: 8px;
+  --jatx-progresspanel-stacked-show-more-right-hidden: 44px;
+  --jatx-progresspanel-progress-padding-right: 24px;
+  --jatx-progresspanel-progress-padding-left: 8px;
+}
+
+
 .binf-widgets .csui-global-message.csui-progresspanel {
   position: relative;
   
   z-index: 1040;
   max-height: 97%;
   width: 100%;
-  min-width: 690px;
-  max-width: 720px;
+  min-width: var(--jatx-progresspanel-min-width);
+  max-width: var(--jatx-progresspanel-max-width);
   display: table;
   top: 0;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-  background: #fff;
+  box-shadow: 0px var(--jatx-progresspanel-box-shadow) var(--jatx-progresspanel-box-shadow) rgb(0 0 0 / 25%);
+  background: var(--jato-background-elevation-level-4, #ffffff);
   border-radius: 3px;
   transition: all 0.6s ease-in;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-global-message.csui-progresspanel .smart-progress-wrapper  {
+  border-radius: var(--jato-radii-sm ,3px);
+  border-bottom: var(--jatx-progresspanel-border-bottom) solid var(--jatx-progresspanel-header-border);
+  border-left: 1px solid var(--jatx-progresspanel-header-border);
+  border-right: 1px solid var(--jatx-progresspanel-header-border);
+  border-top: 1px solid var(--jatx-progresspanel-header-border);
 }
 
 .binf-widgets .smart-expanded .csui-global-message.csui-progresspanel {
   transition: all 0.6s ease-in !important;    
 }
 
-.binf-widgets .csui-global-message.csui-progresspanel.csui-collapsed .csui-header {
-  border: 1px solid #b2bec5;
-}
-
-.binf-widgets .smart-expanded .csui-global-message.csui-progresspanel:not(.csui-collapsed) .csui-header {
+[data-smart-theme="cf"] .binf-widgets .smart-expanded .csui-global-message.csui-progresspanel:not(.csui-collapsed) .csui-header {
   border-top: 1px solid #b2bec5;
   border-left: 1px solid #b2bec5;
   border-right: 1px solid #b2bec5;
@@ -42,14 +143,20 @@
 
 
 .binf-widgets .csui-global-message.csui-progresspanel.progressBar-active {
-  width: 720px;
+  min-width: var(--jatx-progresspanel-width);
 }
 
 .binf-widgets .csui-progresspanel.progressBar-active .csui-header .csui-progressrow .csui-progress {
   flex: 1 0 auto;
-  min-width: 208px;
-  max-width: 208px;
+  min-width: var(--jato-menu-min-width, 208px);
+  max-width: var(--jato-menu-min-width, 208px);
   height: 24px;
+  position: relative;
+  bottom: var(--jatx-progresspanel-progress-bottom);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-progresspanel.progressBar-active .csui-header .csui-progressrow .csui-progress:has(.csui-progress-dynamic.binf-hidden) {
+  min-width: 150px;
 }
 
 .binf-widgets .csui-progresspanel {
@@ -79,6 +186,10 @@
   justify-content: space-between;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-progresspanel .csui-progresspanel-divider {
+  display: none;
+}
+
 .binf-widgets .csui-progresspanel .csui-progresspanel-divider .csui-progresspanel-location {
   padding: 12px 16px;
 }
@@ -97,12 +208,21 @@
   border: 0;
 }
 
+.csui-stateaction-resolved {
+  --jatx-otc-icon-content-color-primary: var(--jato-messages-inline-icon-fill-success);
+}
+
+.csui-stateaction-rejected {
+  --jatx-otc-icon-content-color-primary: var(--jato-color-firebrick-1440);
+}
+
 .binf-widgets .csui-progresspanel.csui-expanded .csui-items-wrapper {
   display: block;
   border-radius: 0 0 3px 3px;
   overflow: hidden;  
-  border-top: 1px solid #b2bec5;
-  border-bottom: 1px solid #b2bec5;
+  border-top: var(--jatx-progresspanel-items-wrapper-border-top) solid #b2bec5;
+  border-bottom: var(--jatx-progresspanel-header-border);
+  background: var(--jato-background-elevation-level-4, #ffffff);
 }
 
 
@@ -125,7 +245,7 @@
 }
 
 .binf-widgets .csui-progresspanel.csui-expanded {
-  background-color: #ffffff;
+  background: var(--jato-background-elevation-level-4, #ffffff);
 }
 
 .binf-widgets .csui-progresspanel:not(.csui-collapsing):not(.csui-expanding) {
@@ -142,12 +262,13 @@
 }
 
 .binf-widgets .csui-progresspanel .csui-header {
-  background-color: #FFFFFF;
+  background-color: var(--jato-background-elevation-level-4, #FFFFFF);
   border-radius: 3px 3px 0 0;
-  padding: 19px 16px;
+  justify-content: space-between;
+  padding: var(--jato-padding-lrg, 19px) var(--jato-padding-lrg, 16px) var(--jato-padding-lrg, 19px) var(--jato-padding-xxl, 16px);
 }
 
-.binf-widgets .csui-progresspanel.csui-expanded.csui-expanded-panel .csui-header {
+[data-smart-theme="cf"] .binf-widgets .csui-progresspanel.csui-expanded.csui-expanded-panel .csui-header {
   border-top: 1px solid #b2bec5;
   border-left: 1px solid #b2bec5;
   border-right: 1px solid #b2bec5;
@@ -158,7 +279,11 @@
 }
 
 .binf-widgets .csui-progresspanel.csui-expanded.csui-expanded-panel .csui-items-wrapper {
-  background: #ffffff;
+  background: var(--jato-background-elevation-level-4, #ffffff);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-progresspanel .csui-items-wrapper {
+  background: var(--jato-background-elevation-level-4, #ffffff);
 }
 
 
@@ -177,6 +302,11 @@
   width: auto;
 }
 
+[data-smart-theme="cf"] .binf-widgets .csui-progresspanel .csui-header.smart-singleitem .csui-progressrow .csui-names-progress,
+[data-smart-theme="cf"]  .binf-widgets .csui-progresspanel .csui-header.smart-singleitem .csui-progressrow .csui-states-actions {
+  width: auto;
+}
+
 .binf-widgets .csui-progresspanel.csui-collapsed.csui-global-success .csui-header,
 .binf-widgets .csui-progresspanel.csui-collapsed.csui-global-error .csui-header {
   border-radius: 3px 3px 0 0;
@@ -190,12 +320,21 @@
 .binf-widgets .csui-progresspanel .csui-items .csui-progressrow .csui-name-status .csui-states-actions {
   display: flex;
   align-items: flex-start;
-  flex: 1 1 auto;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-progresspanel .csui-header .csui-progressrow .csui-states-actions {
+  height: 24px;
+  max-width: 150px;
+}
+
+[data-smart-theme="cf"] .binf-widgets .csui-progresspanel .csui-header .csui-progressrow .csui-states-actions {
+  width: 150px;
 }
 
 .binf-widgets .csui-progresspanel .csui-header .csui-progressrow .csui-states-actions {
   justify-content: flex-end;
-  width: 150px;
+  padding-top: var(--jato-padding-xxs, 0px);
+  gap: var(--jato-margin-sm, 0px);
 }
 
 .binf-widgets .csui-progresspanel .csui-items .csui-progressrow .csui-progresscell {
@@ -203,14 +342,19 @@
 }
 
 .binf-widgets .csui-progresspanel .csui-header .csui-progressrow .csui-names {
-  flex: 2 0 200px;
+  display: flex;
   padding: 0;
+  flex: 2 0 var(--jatx-progresspanel-content-title-flex-basis);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-progresspanel.processing-update .csui-header .csui-progressrow .csui-names {
+  max-width: 145px;
 }
 
 .binf-widgets .csui-progresspanel .csui-header .csui-progressrow .csui-progress {
   flex: 1 0 150px;
-  padding-right: 24px;
-  padding-left: 8px;
+  padding-right: var(--jatx-progresspanel-progress-padding-right);
+  padding-left: var(--jatx-progresspanel-progress-padding-left);
 }
 
 .binf-widgets .csui-progresspanel .csui-header .csui-progressrow .csui-progress .csui-loading-dots-wrapper {
@@ -238,7 +382,7 @@
   display: flex;
   justify-content: flex-end;
   font-size: 14px;
-  margin: 13px 0 -5px 0;
+  margin: 14px 4px -5px 0;
   line-height: 24px;
   margin-left: auto;
   width: fit-content;
@@ -249,8 +393,20 @@
   align-self: flex-start;
 }
 
+.binf-widgets .csui-progresspanel .csui-progressrow .csui-names-progress {
+  flex: 1 1 auto;
+}
+
+.binf-widgets .csui-progresspanel .csui-items-wrapper .csui-items .csui-name-status {
+  flex: 1 1 auto;
+}
+
 .binf-widgets .csui-progresspanel .csui-items .csui-progressrow .csui-name-status .csui-states-actions {
   flex: 2 0 0;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-progresspanel .csui-items .csui-progressrow .csui-name-status .csui-states-actions {
+  gap: 6px;
 }
 
 .binf-widgets .csui-progresspanel.csui-no-error-message-panel .csui-items .csui-progressrow .csui-name-status .csui-states-actions {
@@ -258,12 +414,10 @@
 }
 
 .binf-widgets .csui-progresspanel .csui-items .csui-progressrow .csui-name-status {
-  padding: 14px 16px;
+  padding: var(--jato-padding-xxs, 14px) var(--jatx-progresspanel-progressitem-padding-sides);
 }
 
-.binf-widgets .csui-progresspanel .csui-items .csui-progressrow.focused-row .csui-name-status,
-.binf-widgets .csui-progresspanel .csui-items .csui-progressrow .csui-name-status:hover,
-.binf-widgets .csui-progresspanel .csui-items .csui-progressrow .csui-name-status:focus {
+[data-smart-theme="cf"] .binf-widgets .csui-progresspanel .csui-items .csui-progressrow.focused-row .csui-name-status {
   background-color: #B2BEC5;
 }
 
@@ -294,6 +448,8 @@
 
 .csui-header .csui-progressrow .csui-names-progress {
   width: calc(100% - 150px);
+  padding: var(--jato-padding-sm, 0px) 0px;
+  gap: 8px;
 }
 
 .csui-error .csui-progressrow .csui-states-actions {
@@ -309,9 +465,9 @@
   display: block;
   flex-direction: column;
   position: relative;
-  background-color: #ffffff;
-  border-left: 1px solid #B2BEC5;
-  border-right: 1px solid #B2BEC5;
+  background-color: var(--jato-background-elevation-level-4, #ffffff);
+  border-left: var(--jatx-progresspanel-items-wrapper-border-top) solid #B2BEC5;
+  border-right: var(--jatx-progresspanel-items-wrapper-border-top) solid #B2BEC5;
 }
 
 .binf-widgets .csui-progresspanel .csui-items {
@@ -349,6 +505,11 @@
   width: 3em;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .csui-progressrow .csui-expand {
+  position: relative;
+  bottom: 4px;
+}
+
 .csui-progressrow .csui-close {
   padding-left: 0;
   padding-right: 0;
@@ -373,22 +534,34 @@
 }
 
 .csui-progressrow .csui-progresscell {
-  padding-left: 8px;
+  padding-left: var(--jatx-progresspanel-expand-padding-left);
   padding-right: 8px;
   width: auto;
 }
 
 .binf-widgets .csui-global-message .csui-items .csui-progressrow {
-  display: block;
+  display: flex;
+  padding: var(--jato-padding-sm, 0) var(--jato-padding-lrg, 0) var(--jato-padding-sm, 0) var(--jato-padding-xxl, 0);
+  gap: var(--jato-margin-lrg, 0);
+  border-bottom: var(--jatx-progresspanel-progressitem-border-bottom) solid var(--jato-divider-color-primary);
 }
 
-.binf-widgets .csui-global-message .csui-items .csui-progressrow .csui-states-actions .csui-stateaction button {
+.binf-widgets .csui-global-message .csui-items .csui-progressrow:has(.csui-progress-static-rejected.binf-hidden):hover,
+.binf-widgets .csui-global-message .csui-items .csui-progressrow:focus,
+.binf-widgets .csui-global-message .csui-items .csui-progressrow.focused-row {
+  background-color: var(--jato-background-rows-hover, #B2BEC5);
+}
+
+.binf-widgets .csui-global-message .csui-items .csui-progressrow .csui-states-actions .csui-stateaction button, .binf-widgets .csui-global-message .csui-items .csui-progressrow .csui-states-actions .csui-stateaction otc-button {
   display: none;
 }
 
 .binf-widgets .csui-global-message .csui-items .csui-progressrow:hover .csui-states-actions .csui-stateaction button,
 .binf-widgets .csui-global-message .csui-items .csui-progressrow .csui-name-status:focus .csui-states-actions .csui-stateaction button,
-.binf-widgets .csui-global-message .csui-items .csui-progressrow.focused-row .csui-name-status .csui-states-actions .csui-stateaction button {
+.binf-widgets .csui-global-message .csui-items .csui-progressrow.focused-row .csui-name-status .csui-states-actions .csui-stateaction button,
+.binf-widgets .csui-global-message .csui-items .csui-progressrow:hover .csui-states-actions .csui-stateaction otc-button,
+.binf-widgets .csui-global-message .csui-items .csui-progressrow .csui-name-status:focus .csui-states-actions .csui-stateaction otc-button,
+.binf-widgets .csui-global-message .csui-items .csui-progressrow.focused-row .csui-name-status .csui-states-actions .csui-stateaction otc-button {
   display: block;
 }
 
@@ -423,7 +596,7 @@
 .binf-widgets .csui-progresspanel .csui-header .csui-progressrow .csui-states-actions .csui-close.csui-progresscell {
   min-width: 24px;
   text-align: center;
-  margin-left: 15px;
+  margin-left: var(--jatx-progresspanel-close-margin-left);
 }
 
 .binf-widgets .csui-progresspanel .csui-header .csui-progressrow .csui-states-actions .csui-close.csui-progresscell .binf-btn,
@@ -489,7 +662,7 @@
 .csui-progressrow .csui-name {
   font-size: 0.875em;
   line-height: 1.6em;
-  color: #333333;
+  color: var(--jato-typography-text-color-secondary, #333333);
   padding-left: 8px;
   width: auto;
   word-break: break-word;
@@ -584,13 +757,14 @@
   border: none;
 }
 
-.binf-widgets .csui-global-message .csui-items .csui-progressrow .csui-states-actions .csui-progress,
-.binf-widgets .csui-global-message .csui-items .csui-progressrow .csui-states-actions .csui-progress .csui-progress-static {
-  display: inline-block;
-}
-
 .binf-widgets .csui-global-message .csui-items .csui-progressrow .csui-states-actions .csui-progress .csui-progress-static {
   line-height: 32px;
+  margin-top: 3px;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-global-message .csui-items .csui-progressrow .csui-states-actions .csui-progress .csui-progress-static {
+  bottom: 2px;
+  position: relative;
 }
 
 .binf-widgets .csui-global-message .csui-items .csui-progressrow .csui-states-actions .csui-stateaction>div.csui-stateaction-aborted {
@@ -632,11 +806,12 @@
 }
 
 .csui-progressrow .csui-progress-static-rejected {
-  color: #df3324;
+  color: var(--jato-color-firebrick-1440, #df3324);
 }
 
 .csui-progressrow .csui-progress-static .csui-progress-textbar .csui-progress-static-rejected {
-  line-height: 20px;
+  word-break: break-word;
+  line-height: 16px;
 }
 
 .csui-progressrow .csui-stateaction>* {
@@ -667,7 +842,6 @@
   margin-left: 15px;
 }
 
-.csui-progressrow .csui-stateaction-rejected,
 .csui-progressrow .csui-stateaction-aborted {
   color: #df3324;
 }
@@ -679,16 +853,17 @@
   line-height: 0.8em;
   box-shadow: none;
   -webkit-box-shadow: none;
-  border-radius: 4px;
-  height: 8px;
-  background-color: #111fb0;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: var(--jato-loader-indicator-background-neutral, #111fb0);
 }
 
 
 
 .csui-header .csui-progressrow .csui-title {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: var(--jatx-progresspanel-title-font-size);
+  line-height: var(--jatx-progresspanel-title-line-height);
+  font-weight: var(--jatx-progresspanel-title-font-weight);
   font-style: normal;
   padding-left: 0;
 }
@@ -701,10 +876,10 @@
 }
 
 .binf-widgets .binf-progress {
-  background-color: #ffffff;
-  height: 10px;
-  border-radius: 5px;
-  border: 1px solid #111fb0;
+  background-color: var(--jato-background-elevation-level-0, #ffffff);
+  height: var(--jatx-progresspanel-progressbar-height);
+  border-radius: 4px;
+  border: 1px solid var(--jato-border-color-primary, #111fb0);
   padding: 0;
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -715,7 +890,7 @@
   color: #2e3d98;
 }
 
-.csui-progressrow .csui-stateaction-processing:hover {
+[data-smart-theme="cf"] .csui-progressrow .csui-stateaction-processing:hover {
   color: #0084ce;
   text-decoration: underline;
   text-decoration-color: #0084ce;
@@ -747,12 +922,16 @@
 }
 
 .binf-widgets .smart-progresspanel-wrapper:not(.smart-expanded) .csui-progresspanel.csui-collapsed:not(:only-child) .csui-header {
-  border-bottom: 1px solid #b2bec5;
+  border-bottom: var(--jatx-progresspanel-header-border);
+}
+
+[data-smart-theme="cf"] .binf-widgets .smart-progresspanel-wrapper:not(.smart-expanded) .csui-progresspanel.csui-collapsed:not(:only-child) .smart-progress-wrapper {
+  border: 0px solid #b2bec5;
 }
 
 .binf-widgets .smart-progresspanel-wrapper:not(.smart-expanded) .csui-progresspanel.csui-collapsed.prev-progess-bar-ele .csui-header,
 .binf-widgets .smart-progresspanel-wrapper:not(.smart-expanded) .csui-progresspanel.csui-collapsed.old-progess-bar-ele .csui-header {
-  height: 64px;
+  height: var(--jatx-progresspanel-items-wrapper-header-height);
   overflow: hidden;
   border: none;
 }
@@ -768,22 +947,35 @@
   margin-top: 22px;
 }
 
-.binf-widgets .csui-progresspanel.csui-global-message.csui-collapsed .csui-header {
-  padding-bottom: 16px;
-  min-height: 64px;
-  border-bottom: 1px solid #B2BEC5;
+[data-smart-theme] .binf-widgets .csui-progresspanel.csui-global-message.csui-collapsed .csui-header {
+  padding-bottom: var(--jato-padding-lrg, 16px);
+  min-height: var(--jatx-progresspanel-header-min-height);
+  border-bottom: var(--jatx-progresspanel-items-wrapper-border-top) solid #B2BEC5;
 }
 
 .binf-widgets .csui-progresspanel.csui-global-success.csui-collapsed .csui-header {
-  border-bottom: 4px solid #067D14;
-  border-radius: 3px;
   position: relative;
 }
 
+[data-smart-theme] .binf-widgets .csui-progresspanel.csui-global-message.csui-global-success .smart-progress-wrapper {
+  border-bottom: var(--jatx-progresspanel-border-bottom) solid #067D14;
+  border-left: 1px solid var(--jatx-progresspanel-border-color-success);
+  border-right: 1px solid var(--jatx-progresspanel-border-color-success);
+  border-top: 1px solid var(--jatx-progresspanel-border-color-success);
+  border-radius: var(--jato-radii-sm ,3px);
+}
+
 .binf-widgets .csui-progresspanel.csui-global-error.csui-collapsed .csui-header {
-  border-bottom: 4px solid #DF3324;
   border-radius: 3px;
   transition: border-bottom 0.4s ease-in;
+}
+
+[data-smart-theme] .binf-widgets .csui-progresspanel.csui-global-message.csui-global-error .smart-progress-wrapper {
+  border-bottom: var(--jatx-progresspanel-border-bottom) solid #DF3324;
+  border-left: 1px solid var(--jatx-progresspanel-border-color-error);
+  border-right: 1px solid var(--jatx-progresspanel-border-color-error);
+  border-top: 1px solid var(--jatx-progresspanel-border-color-error);
+  border-radius: var(--jato-radii-sm, 3px);
 }
 
 .binf-widgets .smart-expanded .csui-progresspanel.csui-global-success.csui-collapsed .csui-header {
@@ -791,17 +983,15 @@
 }
 
 .binf-widgets .csui-progresspanel.csui-global-success.csui-expanded {
-  border-radius: 3px;
+  border-radius: var(--jato-radii-sm, 3px);
 }
 
 .binf-widgets .csui-progresspanel.csui-global-success .csui-items-wrapper {
-  border-top: 1px solid #067D14;
-  border-bottom: 4px solid #067D14;
+  border-top: var(--jatx-progresspanel-items-wrapper-border-top) solid #067D14;
 }
 
 .binf-widgets .csui-progresspanel.csui-global-error .csui-items-wrapper {
-  border-top: 1px solid #DF3324;
-  border-bottom: 4px solid #DF3324;
+  border-top: var(--jatx-progresspanel-items-wrapper-border-top) solid #DF3324;
 }
 
 .binf-widgets .csui-progresspanel.csui-collapsed .csui-items-wrapper {
@@ -825,16 +1015,20 @@
 
 .csui-progressrow .csui-progress-static .csui-progress-textbar .csui-progress-static-resolved,
 .csui-progressrow .csui-progress-static .csui-progress-textbar .csui-progress-static-finalizing {
-  color: #067d14;
+  color: var(--jato-messages-inline-icon-fill-success, #067d14);
 }
 
 .csui-progressrow .csui-progress-static .csui-progress-textbar .csui-progress-static-aborted,
 .csui-progressrow .csui-progress-static .csui-progress-textbar .csui-progress-static-stopped {
-  color: #666666;
+  color: var(--jato-typography-text-color-tertiary, #666666);
 }
 
 .csui-progressrow .csui-progress-static-pending {
-  color: #333333;
+  color: var(--jato-typography-text-color-tertiary, #333333);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .csui-items-wrapper .csui-progressrow .csui-progress-textbar > *:not(.csui-progress-static-rejected){
+  margin-top: 1px;
 }
 
 .csui-progressrow .csui-progress-static .csui-progress-textbar>* {
@@ -848,26 +1042,30 @@
   float: left;
 }
 
-.csui-global-error .csui-header .csui-progressrow .csui-title:before {
-  content: "";
-  background-image: url('images/notification/notification_error24.svg');
-  background-size: 24px 24px;
-  background-repeat: no-repeat;
-  padding-left: 14px;
-  padding-right: 10px;
-  margin-right: 10px;
-  padding-bottom: 4px;
+.csui-progressbar .csui-stateaction>otc-icon {
+  width: var(--jatx-progresspanel-state-action-icon-width);
+  height: var(--jatx-progresspanel-state-action-icon-height);
+  float: left;
+}
+
+.csui-states-actions .csui-expand .smart-collapse-expand {
+  margin-left: 0;
+  position: relative;
+  top: 5px;
 }
 
 .csui-global-error .csui-progressrow .csui-title {
   text-align: left;
 }
 
-.csui-global-success .csui-header .csui-progressrow .csui-title:before {
-  content: "";
-  background-image: url('images/notification/notification_success24.svg');
-  background-size: 24px 24px;
-  background-repeat: no-repeat;
+.csui-names-progress .smart-progresspanel-icon {
+  width: var(--jatx-progresspanel-status-icon-width);
+  height: var(--jatx-progresspanel-status-icon-height);
+  padding: var(--jato-padding-xxs) 0;
+}
+
+.csui-names-progress .smart-progresspanel-icon>svg {
+  margin-top: -0.5px;
 }
 
 .binf-widgets .csui-items .csui-progresscell .leading-app-custom-mime-icon,
@@ -910,12 +1108,11 @@
 
 .binf-widgets .csui-progresspanel.csui-global-error .csui-header .csui-progressrow .csui-names-progress .csui-title,
 .binf-widgets .csui-progresspanel.csui-global-success .csui-header .csui-progressrow .csui-names-progress .csui-title {
-  padding-left: 38px;
-  position: relative;
+  padding-left: var(--jatx-progresspanel-title-padding-left);
 }
 
-.binf-widgets .csui-progresspanel.csui-global-error .csui-header .csui-progressrow .csui-names-progress .csui-title:before,
-.binf-widgets .csui-progresspanel.csui-global-success .csui-header .csui-progressrow .csui-names-progress .csui-title:before {
+.binf-widgets .csui-progresspanel.csui-global-error .csui-header .csui-progressrow .csui-names-progress .csui-title::before,
+.binf-widgets .csui-progresspanel.csui-global-success .csui-header .csui-progressrow .csui-names-progress .csui-title::before {
   position: absolute;
   left: 0;
   height: 24px;
@@ -994,7 +1191,7 @@
 }
 
 .binf-widgets .smart-progresspanel-wrapper:not(.smart-expanded) .progresspanel-container {
-  padding-bottom: 6px;
+  padding-bottom: var(--jatx-progresspanel-container-padding-bottom);
 }
 
 .binf-widgets .smart-progresspanel-wrapper.smart-expanded {
@@ -1009,31 +1206,39 @@
 
 
 .binf-widgets .smart-progresspanel-wrapper .prev-progess-bar-ele {
-  margin-top: -48px;
-  padding: 0 16px;
+  margin-top: var(--jatx-progresspanel-items-wrapper-prev-margin-top);
+  padding: 0 var(--jatx-progresspanel-prev-progess-bar-ele-padding);
   box-shadow: none;
   background: none;
 }
 
 .binf-widgets .smart-progresspanel-wrapper .prev-progess-bar-ele.csui-progresspanel.csui-collapsed .csui-header {
-  background: #E7EDF8;
+  background: var(--jato-background-elevation-level-4, #E7EDF8);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-progresspanel-wrapper .old-progess-bar-ele.csui-progresspanel.csui-collapsed .csui-header {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-global-message .csui-items .csui-progressbar:last-child {
+  border-bottom: none;
+}
+
 .binf-widgets .smart-progresspanel-wrapper .old-progess-bar-ele {
-  margin-top: -48px;
-  padding: 0 32px;
+  margin-top: var(--jatx-progresspanel-items-wrapper-old-margin-top);
+  padding: 0 var(--jatx-progresspanel-old-progess-bar-ele-padding);
   box-shadow: none;
   background: none;
   transition: all 0.6s ease-in-out;
 }
 
 .binf-widgets .smart-progresspanel-wrapper .csui-progresspanel:not(:nth-last-child(-n+3)) {
-  margin-top: -64px;
+  margin-top: var(--jatx-progresspanel-items-wrapper-nth-child-margin-top);
 }
 
 .binf-widgets .smart-progresspanel-wrapper .csui-collapsed.csui-progresspanel:nth-last-child(3) .csui-header {
-  background: #CBD3D9;
+  background: var(--jato-background-elevation-level-4, #CBD3D9);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -1045,15 +1250,15 @@
 
 .binf-widgets .smart-progresspanel-wrapper.smart-expanded .prev-progess-bar-ele.csui-progresspanel.csui-collapsed .csui-header,
 .binf-widgets .smart-progresspanel-wrapper.smart-expanded .old-progess-bar-ele.csui-progresspanel.csui-collapsed .csui-header {
-  background-color: #ffffff;
-  border-top: 1px solid #B2BEC5;
-  border-left: 1px solid #B2BEC5;
-  border-right: 1px solid #B2BEC5;
+  background-color: var(--jato-background-elevation-level-4, #ffffff);
+  border-top: var(--jatx-progresspanel-header-border);
+  border-left: var(--jatx-progresspanel-header-border);
+  border-right: var(--jatx-progresspanel-header-border);
 }
 
 .binf-widgets .smart-progresspanel-wrapper.smart-expanded .prev-progess-bar-ele,
 .binf-widgets .smart-progresspanel-wrapper.smart-expanded .old-progess-bar-ele {
-  margin-top: 6px;
+  margin-top: var(--jatx-progresspanel-expanded-rows-margin-top);
   padding: 0;
 }
 
@@ -1073,19 +1278,31 @@
   height: 0;
 }
 
+[data-smart-theme="cf"] .binf-widgets .smart-progresspanel-wrapper .showless,
+[data-smart-theme="cf"] .binf-widgets .smart-progresspanel-wrapper .showmore,
+[data-smart-theme="cf"] .binf-widgets .smart-progresspanel-wrapper .closeall {
+  height: 28px;
+  background: #FFFFFF;
+}
+
+.binf-widgets .smart-progresspanel-wrapper .showmore {
+  right: var(--jatx-progresspanel-stacked-show-more-right);
+}
+
+.binf-widgets .smart-progresspanel-wrapper .showless,
+.binf-widgets .smart-progresspanel-wrapper .closeall {
+  right: var(--jatx-progresspanel-stacked-show-less-right);
+}
+
 .binf-widgets .smart-progresspanel-wrapper .showless,
 .binf-widgets .smart-progresspanel-wrapper .showmore,
 .binf-widgets .smart-progresspanel-wrapper .closeall {
   position: absolute;
-  right: 8px;
   top: -6px;
   z-index: 1060;
-  height: 28px;
-  padding: 4px 18px;
-  background: #FFFFFF;
+  padding: var(--jatx-progresspanel-stacked-show-more-padding-top-bottom) var(--jatx-progresspanel-stacked-show-more-padding-right-left);
   border: 1px solid #232E72;
   border-radius: 0px 0px 14px 14px;
-  font-family: 'OpenText Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1096,15 +1313,26 @@
   opacity: 1;
 }
 
-.binf-widgets .smart-progresspanel-wrapper .showmore {
-  top: -12px;  
+.binf-widgets .smart-progresspanel-wrapper .showmore { 
   transition: all 0.5s ease-in;
 }
+
 .binf-widgets .smart-progresspanel-wrapper .showmore.right-x-16 {
   right: calc(16px + 8px);
 }
+
 .binf-widgets .smart-progresspanel-wrapper .showmore.right-x-32 {
   right: calc(32px + 8px);
+} 
+
+.binf-widgets .smart-progresspanel-wrapper .showmore.jato-right-double {
+  right: 6px;
+  top: -14px;
+}
+
+.binf-widgets .smart-progresspanel-wrapper .showmore.jato-right-multiple {
+  right: 13px;
+  top: -8px;
 } 
 
 .binf-widgets .smart-progresspanel-wrapper .showless:not(:focus),
@@ -1119,8 +1347,15 @@
 .binf-widgets .smart-progresspanel-wrapper.hide-all-btns .closeall,
 .binf-widgets .smart-progresspanel-wrapper .closeall.smart-hide-behind  {
   margin-top: -28px;
-  right: 44px;
   opacity: 0;
+}
+
+[data-smart-theme="cf"] .binf-widgets .smart-progresspanel-wrapper .showless.smart-hide-behind,
+[data-smart-theme="cf"] .binf-widgets .smart-progresspanel-wrapper.hide-all-btns .showmore,
+[data-smart-theme="cf"] .binf-widgets .smart-progresspanel-wrapper .showmore.smart-hide-behind,
+[data-smart-theme="cf"] .binf-widgets .smart-progresspanel-wrapper.hide-all-btns .closeall,
+[data-smart-theme="cf"] .binf-widgets .smart-progresspanel-wrapper .closeall.smart-hide-behind {
+  right: 44px;
 }
 
 
@@ -1134,7 +1369,7 @@
   height: 32px;
   width: 32px;
   right: -31px;
-  top: 16px;
+  top: var(--jatx-progresspanel-minimizebutton-top);
   background: #ffffff;
   border-radius: 0 50% 50% 0;
   padding: 2px;
@@ -1157,7 +1392,7 @@
   max-width: 720px;
   position: relative;
   transform: translateX(-50%);
-  left: 50%;
+  left: var(--jatx-progresspanel-miniprogress-panel-left);
 }
 
 .binf-widgets .smart-progresspanel-wrapper .csui-minimize.csui-minimizecell .icon-progresspanel-minimize {
@@ -1170,7 +1405,7 @@
   background-color: transparent;
 }
 
-html[dir=rtl] .binf-widgets .smart-progresspanel-wrapper .csui-minimize.csui-minimizecell .icon-progresspanel-minimize {
+html[dir="rtl"] .binf-widgets .smart-progresspanel-wrapper .csui-minimize.csui-minimizecell .icon-progresspanel-minimize {
   transform: scale(-1);
 }
 
@@ -1217,17 +1452,8 @@ html[dir=rtl] .binf-widgets .smart-progresspanel-wrapper .csui-minimize.csui-min
     display: flex;
   }
 
-  .csui-progressrow .csui-progress {
-    margin-left: 0.325em;
-    margin-right: 0.325em;
-  }
-
   .csui-progressrow .csui-progress-text {
     text-align: left;
-  }
-
-  .csui-progressbar .csui-progress-textbar {
-    margin-top: 0.325em;
   }
 
   .csui-progressrow .csui-name-status .csui-states-actions {

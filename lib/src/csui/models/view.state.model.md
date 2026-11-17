@@ -21,14 +21,14 @@ different navigation modules are tightly coupled.
 The csui application the navigation subsystem consists of instances of VSM, routers, routers context plugins, the perspective context, the 
 perspective routing and the Backbone history. All these instances work very closely together to manage the perspectives loading and restoration. 
 
-#Different conditions when restoring the UI
+# Different conditions when restoring the UI
 There are different conditions happens during the url restoration and the VSM accounts for
 1) The user might have a url and wants to navigate directly to that url. In this case the VSM has nothing saved in the the browser session storage 
 and this will be the first navigation.
 2) The user might be navigating by clicking on different UI controls in the csui application. This is the normal navigation behaviour.
 3) The user might have pressed the browser refresh button. No new history entry gets added to the navigation history.
 
-#Navigation Subsystem consists of
+# Navigation Subsystem consists of
 1) Perspective Context: The perspective context loads the perspective, it initializes the widgets and fetches all the factories if needed. (Note: 
 there are different type of contexts like the PageContext, PortalContext, BrowsingContext. But the VSM does not get used with these contexts)
 
@@ -45,7 +45,7 @@ Routers define the different url patterns that a router can handle, and its main
 
 6) Widgets
 
-#Navigation subsystem Startup
+# Navigation subsystem Startup
 1) During the csui application StartPageView creation, a perspective context instance gets created from the StatePageView and then a singleton 
 of the PerspectiveRouting gets created by passing the perspective context to it. At that time the PerspectiveRouting gets initialized and it all 
 routers that gets created will use that particular context instance to initialize.
@@ -58,77 +58,94 @@ VSM.
 5) Widgets start listening to the state member of the VSM and update those based on the UI state of the widget. The state variables holds the url 
 parameters. The default_state member also holds the url parameters that should not be included in the url initially.
 
-#VSM Members
-##state
+# Local Storage Namespacing
+
+The view state model stores its configuration in session storage using the key `csui/models/view.state.model` for the first perspective, 
+and `csui/models/view.state.model_1` for the second.  You can customize this key by setting a namespace in the module configuration for 
+`csui/models/view.state.model`:
+
+```javascript
+require.config({
+  config: {
+    'csui/models/view.state.model': {
+      viewStateModelNameSpace: 'app2'
+    }
+  }
+});
+```
+This configuration adds the specified namespace (`app2`) to the storage key.
+
+# VSM Members
+## state
 Holds the url parameters included in the url and their values.
-##default_state
+## default_state
 Exclude the url parameters that should not be part of the url. 
-##session_state
+## session_state
 General storage used to store variables needed for the widgets
-##allowWidgetUrlParams
+## allowWidgetUrlParams
 Some perspectives liked the tabbed perspective to stop the VSM to support any widget url parameters.
-##back_to_title:
+## back_to_title:
 Used by the back to button to display where the back button will navigate to.
-##currentRouter
+## currentRouter
 Name of the current router.
-##currentRouterFragment
+## currentRouterFragment
 The current url without url parameters
-##currentRouterScopeId
+## currentRouterScopeId
 The application scope id
-##lastRouter
+## lastRouter
 The previous router name
-##navigationHistoryArray
+## navigationHistoryArray
 Array of the navigation history
-##urlParams
+## urlParams
 Current supported widget url parameters
-##CONSTANTS
+## CONSTANTS
 Constants that can be used to access the different VSM members
 
-##VSM public methods
+## VSM public methods
 
-##setViewState: function (key, value, options) 
+## setViewState: function (key, value, options) 
 Change to the state member
-##getViewState: function (key, decode) 
+## getViewState: function (key, decode) 
 Get to the state member
-##setDefaultViewState: function(key, value, options) 
+## setDefaultViewState: function(key, value, options) 
 Change to the default state member
-##getDefaultViewState: function(key, decode) 
+## getDefaultViewState: function(key, decode) 
 Get to the default state member
-##setSessionViewState: function (key, value, options) 
+## setSessionViewState: function (key, value, options) 
 Change to the session state member
-##getSessionViewState: function (key) 
+## getSessionViewState: function (key) 
 Get to the session state member
-##onNavigationStarted: function(newRouterInfo) 
+## onNavigationStarted: function(newRouterInfo) 
 Called by the router base call to inform the VSM a navigation attempt started
-##onContextFetch: function() 
+## onContextFetch: function() 
 Called by the context that the last navigation attempt finished
-##saveHistory: function() 
+## saveHistory: function() 
 Save all the history so it can be restored later on.
-##clearHistory: function()
+## clearHistory: function()
 After saving the history the caller can clear the history and restore it as needed.
-##restoreHistory: 
+## restoreHistory: 
 Used to restore the saved history.
-##hasRouted: 
+## hasRouted: 
 Check if this is the first navigation or not.
-##isSameRoutingInfo: 
+## isSameRoutingInfo: 
 Checking if multiple calls are being made to the navigation functions.
-##clean: 
+## clean: 
 Clear all the storage entries associated with the VSM
-##getBackToTitle: function () 
+## getBackToTitle: function () 
 Get the back to title
-##clearCurrentHistoryEntry: function ()
+## clearCurrentHistoryEntry: function ()
 Ignore the last navigation attempt 
-##getLastRouterIndex: function () 
+## getLastRouterIndex: function () 
 Search the history and return the last entry that was made by the router
-##getLastHistoryEntry: function () 
+## getLastHistoryEntry: function () 
 Get the last history entry.
-##restoreLastRouter: function () 
+## restoreLastRouter: function () 
 Restore last history entry that was made by previous router
-##restoreLastFragment: function () 
+## restoreLastFragment: function () 
 Restore last history entry regardless of the router name.
-##addUrlParameters: function (urlParameters, context, replace, force) 
+## addUrlParameters: function (urlParameters, context, replace, force) 
 Add the widget or the perspective support url parameters.
-##getPotentialHistoryEntry: function ()
+## getPotentialHistoryEntry: function ()
 Returns a temporary history entry that will be pushed to the permanent history if the context succeeds in switching the perspective.
 ## getHistory: function ()
 Returns an array of history entries.

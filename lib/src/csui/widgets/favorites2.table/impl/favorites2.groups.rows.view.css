@@ -1,11 +1,19 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-fav-panel-content-item-title-font-size: 14px;
+  --jatx-csui-fav-panel-content-item-title-line-height: 18px;
+  --jatx-csui-draggable-handle-flex: 1;
+  --jatx-csui-dragline-box-shadow-spread: 1px;
+}
+
 .binf-widgets .csui-favorite-groups-rows {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid var(--jatx-const-transparent, #dddddd);
   flex: 1 1 auto;
+  padding: 0 var(--jato-padding-med, 0);
 }
 
 .csui-favorite-groups-rows {
@@ -17,12 +25,16 @@
   position: relative;
   display: flex;
   flex: 1 1 auto;
-  max-width: 100%;
-  height: 3em;
-  min-height: 3em;
-  padding-right: 1.25em;
+  gap: var(--jato-margin-med, 0);
   align-items: center;
+  max-width: 100%;
+  min-height: var(--jato-size-height-40, 3em);
   font-size: 14px;
+  margin: 0;
+  border-radius: var(--jato-radii-sm, 0);
+  height: var(--jato-size-height-40, 3em);
+  padding-left: var(--jato-padding-lrg, 4px);
+  padding-right: var(--jato-padding-lrg, 1.25em);
 }
 
 .binf-widgets .csui-favorite-group[role=button] {
@@ -37,17 +49,12 @@
   height: 24px;
 }
 
-.binf-widgets .csui-favorite-group .csui-favorite-group-selection-marker {
-  display: flex;
-  flex: 0 0 4px;
-  height: 100%;
-}
-
 .binf-widgets .csui-favorite-group .csui-favorite-group-draggable-handle {
   display: flex;
-  flex: 0 0 1.5em;
+  flex: 0 0 var(--jatx-csui-draggable-handle-flex, 1.5em);
   visibility: hidden;
   justify-content: center;
+  padding: var(--jato-padding-lrg, 0) 0;
 }
 
 .binf-widgets .csui-favorite-group .csui-favorite-group-draggable-handle .icon {
@@ -71,14 +78,20 @@
   padding-right: 0.5em;
 }
 
-.binf-widgets .csui-favorite-group button.binf-btn.csui-btn-action {
+.binf-widgets .csui-favorite-group button.binf-btn.csui-btn-action,
+.binf-widgets .csui-favorite-group otc-button.csui-btn-action {
   display: none;
 }
 
-.binf-widgets .csui-favorite-group .csui-favorite-group-input-name {
+.binf-widgets .csui-favorite-group otc-button.csui-btn-action.csui-btn-delete,
+.binf-widgets .csui-favorite-group.csui-favorite-group-rename .csui-btn-cancel {
+  margin-left: 0;
+}
+
+.binf-widgets .csui-favorite-group .csui-favorite-group-input-name.csui-favourite-group-input-box {
   height: 1.75em;
   border-radius: 3px;
-  color: #333333;
+  color: var(--jato-typography-text-color-primary, #333333);
   border: 1px solid #757575;
   margin-right: 0;
   padding-left: 0.5em;
@@ -87,23 +100,25 @@
 }
 
 .binf-widgets .csui-favorite-group .csui-favorite-group-name-link {
-  color: #333333;
+  color: var(--jato-typography-text-color-primary, #333333);
   flex: 1 1 auto;
   line-height: normal;
   display: flex;
   white-space: nowrap;
-  height: inherit;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  height: var(--jato-size-height-40, inherit);
+  border-radius: var(--jato-radii-sm, 0);
+  gap: var(--jato-margin-med, 0);
   flex-direction: column;
   justify-content: center;
+  padding-left: var(--jato-padding-sm, 0.5rem);
+  padding-right: var(--jatx-const-0, 0.5rem);
 }
 
 .binf-widgets .csui-favorite-group a:visited,
 .binf-widgets .csui-favorite-group a:hover,
 .binf-widgets .csui-favorite-group a:focus {
   text-decoration: none;
-  color: #333333;
+  color: var(--jato-typography-text-color-primary, #333333);
 }
 
 .binf-widgets .csui-favorite-group .csui-favorite-group-name-link > .csui-favorite-group-name {
@@ -111,16 +126,28 @@
   overflow: hidden;
   display: block; 
   white-space: nowrap;
+  font-weight: 400px;
+  font-size: var(--jatx-csui-fav-panel-content-item-title-font-size, 100%);
+  line-height: var(--jatx-csui-fav-panel-content-item-title-line-height, normal);
+  color: var(--jato-cta-content-color-tertiary, #333333);
+}
+
+.binf-widgets .csui-favorite-group.binf-active .csui-favorite-group-name-link > .csui-favorite-group-name {
+  font-weight: var(--jatx-csui-table-header-title-font-weight, 400);
+}
+
+.binf-widgets .csui-favorite-group.csui-favorite-group-readonly {
+  align-items: normal;
 }
 
 .binf-widgets .csui-favorite-group.csui-favorite-group-readonly .csui-favorite-group-name-link {
-  border-bottom: 1px solid #E6E7E8;
+  border-bottom: 1px solid var(--jatx-const-transparent, #E6E7E8);
 }
 
 
 
 
-.binf-widgets .csui-favorite-group .csui-favorite-group-input-name:focus {
+.binf-widgets .csui-favorite-group .csui-favorite-group-input-name.csui-favourite-group-input-box:focus {
   outline: none;
   outline-offset: initial;
   border: 2px solid #666666;
@@ -143,24 +170,29 @@
 
 .binf-widgets .csui-favorite-groups.csui-favorite-groups-editing .csui-favorite-group .csui-favorite-group-draggable-handle {
   
+
   
 }
 
 
 body.binf-widgets:not(.csui-on-ipad) .csui-favorite-groups.csui-favorite-groups-editing-none .csui-favorite-group[draggable="true"]:hover,
 .binf-widgets .csui-favorite-groups.csui-favorite-groups-editing-none .csui-favorite-group.csui-dragstarted {
-  background-color: #b2bec5;
+  background-color: var(--jato-background-rows-hover, #b2bec5);
 }
 
 
-.binf-widgets .csui-favorite-groups.csui-favorite-groups-editing .csui-favorite-group:not(.csui-favorite-group-readonly) button {
+.binf-widgets .csui-favorite-groups.csui-favorite-groups-editing .csui-favorite-group:not(.csui-favorite-group-readonly) button,
+.binf-widgets .csui-favorite-groups.csui-favorite-groups-editing .csui-favorite-group:not(.csui-favorite-group-readonly) otc-button {
   display: block;
 }
 
 
 
+
 body.binf-widgets:not(.csui-on-ipad) .csui-favorite-groups.csui-favorite-groups-editing-none:not(.csui-favorite-groups-has-group-in-focus) .csui-favorite-group:not(.csui-favorite-group-readonly):hover button,
-.binf-widgets .csui-favorite-groups.csui-favorite-groups-editing-none .csui-favorite-group.csui-in-focus:not(.csui-favorite-group-readonly):not(.csui-dragstarted) button {
+.binf-widgets .csui-favorite-groups.csui-favorite-groups-editing-none .csui-favorite-group.csui-in-focus:not(.csui-favorite-group-readonly):not(.csui-dragstarted) button,
+body.binf-widgets:not(.csui-on-ipad) .csui-favorite-groups.csui-favorite-groups-editing-none:not(.csui-favorite-groups-has-group-in-focus) .csui-favorite-group:not(.csui-favorite-group-readonly):hover otc-button,
+.binf-widgets .csui-favorite-groups.csui-favorite-groups-editing-none .csui-favorite-group.csui-in-focus:not(.csui-favorite-group-readonly):not(.csui-dragstarted) otc-button {
   display: block; 
 }
 
@@ -177,41 +209,54 @@ body.binf-widgets:not(.csui-on-ipad) .csui-favorite-groups.csui-favorite-groups-
 
 
 .binf-widgets .csui-favorite-groups.csui-favorite-groups-editing-none .csui-favorite-group.binf-active {
-  background-color: #dce4e8;
+  background-color: var(--jato-background-rows-selected, #dce4e8);
 }
 
 
-.binf-widgets .csui-favorite-groups.csui-favorite-groups-editing-none .csui-favorite-group.binf-active .csui-favorite-group-selection-marker {
-  background-color: #7b9ab0;
+.binf-widgets .csui-favorite-groups.csui-favorite-groups-editing-none .csui-favorite-group.binf-active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--jato-cta-links-text-color-neutral, #7b9ab0);
+  border-radius: var(--jato-measure-4, 0) 0 0 var(--jato-measure-4, 0);
 }
 
 
 .binf-widgets .csui-favorite-group.csui-favorite-group-rename {
-  padding-left: 1em;
+  padding-left: var(--jato-padding-lrg, 1em);
 }
 
 
-.binf-widgets .csui-favorite-group.csui-favorite-group-rename button {
+.binf-widgets .csui-favorite-group.csui-favorite-group-rename button,
+.binf-widgets .csui-favorite-group.csui-favorite-group-rename otc-button {
   display: block;
 }
 
 .binf-widgets .csui-favorite-group.csui-dragline {
   height: 0;
   min-height: 0;
-  box-shadow: 2px 0 2px 2px #627783;
+  box-shadow: var(--jatx-const-0, 2px) 0 var(--jatx-const-0, 2px) var(--jatx-csui-dragline-box-shadow-spread, 2px) var(--jato-border-color-primary-selected, #627783);
 }
 
 .binf-widgets .csui-favorite-group-rename .csui-btn-save,
 .binf-widgets .csui-favorite-group-rename .csui-btn-cancel {
   background-color: transparent;
   border: none;
-  padding: 0px;
+  padding: 0;
   height: 32px;
   width: 32px;
 }
 
+.binf-widgets .csui-favorite-group-rename otc-button.csui-btn-save,
+.binf-widgets .csui-favorite-group-rename otc-button.csui-btn-cancel {
+  height: 24px;
+  width: 24px;
+}
+
 .binf-widgets .csui-favorite-group-rename .csui-btn-save {
-  margin-left: 8px;
+  margin-left: var(--jatx-const-0, 8px);
 }
 
 .binf-widgets .csui-favorite-group-rename .csui-btn-save:focus,

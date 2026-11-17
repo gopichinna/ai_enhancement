@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .csui-np-header.tile-header {
   height: 30px;
@@ -23,7 +23,8 @@
   float: left;
   margin: 16px 0 0 25px;
 }
-@media only screen and (max-height: 400px) {
+
+@media only screen and (height <= 400px) {
   .binf-widgets .csui-targetbrowse-history {
     margin-top: 8px;
   }
@@ -75,11 +76,11 @@
 }
 
 .binf-widgets .csui-np-header .csui-form-control-search:focus {
-  outline: 1px dotted #333;
+  outline: 1px dotted #333333;
   outline-offset: -1px;
 }
 
-@media only screen and (max-height: 400px) {
+@media only screen and (height <= 400px) {
   .binf-widgets .csui-np-content {
     height: 100% !important;
   }

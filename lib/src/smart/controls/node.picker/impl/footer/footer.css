@@ -1,8 +1,8 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .binf-modal.smart-target-browse .binf-modal-dialog .binf-modal-footer {
-  padding: 0px 24px 0 16px;
+  padding: var(--jato-padding-xxl, 0px) var(--jato-padding-xxl, 24px) var(--jato-padding-xxl, 0px) var(--jato-padding-xxl, 16px);
 }
 
 .binf-widgets .binf-modal.smart-target-browse .binf-modal-dialog .binf-modal-footer .cs-footer-control {
@@ -14,6 +14,10 @@
 .binf-widgets .smart-target-browse .binf-modal-footer .cs-footer-control .csui-selected-items {
   float: left;
   padding: 8px 0;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-target-browse.binf-modal:not(.csui-alert) .binf-modal-dialog .binf-modal-footer::before {
+  z-index: 1;
 }
 
 .binf-widgets .smart-target-browse .binf-modal-footer .cs-footer-control .csui-footer-buttons {

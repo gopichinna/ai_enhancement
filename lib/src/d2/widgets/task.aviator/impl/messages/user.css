@@ -1,0 +1,26 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-user {
+  justify-content: flex-end;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-user .aie-chat-entry {
+  align-items: flex-end;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-user .aie-chat-text {
+  margin-inline-start: 48px;
+  padding: 8px 16px 12px 16px;
+  border-radius: 8px 0 8px 8px;
+  background-color: #dadded;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-user .aie-chat-text.aie-chat-failed {
+  background-color: #e3e3e3;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-text.aie-qs p {
+  display: inline; 
+}
+

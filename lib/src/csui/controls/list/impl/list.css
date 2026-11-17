@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .cs-list {
   position: relative;
@@ -55,8 +55,8 @@ html[dir="rtl"] .cs-list .binf-panel-heading .binf-panel-title .cs-icon {
 
 
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2),
-(min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2),
+(device-width >= 768px) and (device-width <= 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   .binf-widgets .cs-list .tile-content {
     -webkit-overflow-scrolling: auto;
   }
@@ -68,23 +68,11 @@ html[dir="rtl"] .cs-list .binf-panel-heading .binf-panel-title .cs-icon {
   }
 }
 
-.cs-list .tile-content {
-  padding: 0;
-  margin: 0;
-  height: calc(100% - 64px);
-}
-
-@media only screen and (max-height: 400px) {
-  .cs-list .tile-content {
-    height: calc(100% - 42px);
-  }
-}
-
 .cs-list .tile-content .binf-list-group {
   margin-bottom: 0;
 }
 
-.csui-favorites-view-container .cs-list .tile-content .binf-list-group .cs-emptylist-container:not(.csui-state-loading) {
+[data-smart-theme="cf"] .csui-favorites-view-container .cs-list .tile-content .binf-list-group .cs-emptylist-container:not(.csui-state-loading) {
   background-image: none;
 }
 
@@ -178,8 +166,8 @@ html[dir="rtl"] .cs-list .binf-panel-heading .binf-panel-title .cs-icon {
 }
 
 .binf-widgets .csui-list-view-error .tile-header:hover {
-  cursor: default;
-  background-color: #ffffff;
+  cursor: pointer;
+  background-color: var(--jato-background-elevation-level-2, #ffffff);
 }
 
 
@@ -193,10 +181,11 @@ html[dir="rtl"] .cs-list .binf-panel-heading .binf-panel-title .cs-icon {
   font-style: normal;
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (device-width <= 1024px) {
   .binf-widgets.csui-on-ipad .tile-controls .search-box {
     right: 60px;
   }
+
   .binf-widgets.csui-on-ipad .tile-header .tile-controls .search-box .search {
     line-height: 28px;
   }
@@ -213,6 +202,7 @@ html[dir="rtl"] .cs-list .binf-panel-heading .binf-panel-title .cs-icon {
   background-repeat: no-repeat;
   font-size: 1.2em;
   position: relative;
+
   
   float: none;
   transform: none;
@@ -274,7 +264,7 @@ html[dir="rtl"] .cs-list .binf-panel-heading .binf-panel-title .cs-icon {
 }
 
 .binf-widgets input[readonly] {
-  color: #333333;
+  color: var(--jato-typography-text-color-primary, #333333);
 }
 
 .binf-widgets .tile-icons {
@@ -282,10 +272,6 @@ html[dir="rtl"] .cs-list .binf-panel-heading .binf-panel-title .cs-icon {
   margin: auto;
   float: right;
   padding-left: 8px;
-}
-
-.binf-widgets .cs-no-expanding .tile-header {
-  padding-right: 8px;
 }
 
 .binf-widgets .tile-controls .cs-icon-container:focus {
@@ -312,10 +298,11 @@ html[dir="rtl"] .cs-list .binf-panel-heading .binf-panel-title .cs-icon {
 }
 
 
-@media only screen and (max-width: 640px) {
+@media only screen and (width <= 640px) {
   .binf-widgets .tile-controls .search-box .icon-search-placeholder {
     left: 48px;
   }
+
   .binf-widgets .tile-header .tile-controls .search-box .icon-search-placeholder {
     left: 0;
   }

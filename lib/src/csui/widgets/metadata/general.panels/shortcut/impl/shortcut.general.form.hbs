@@ -20,13 +20,17 @@
         <div class="thumbnail_section metadata-preview preview-section" title="\{{options.title}}">
           \{{#if options.generation }}
             {{#with data}}
-            <span class='csui-icon-group csui-icon-v2-size-contain' data-cstabindex="0" role="button" aria-label="\{{options.title}}">
-              
+            \{{#if options.isJATO}}
+               <span class="default_thumbnail thumbnail_empty" data-cstabindex="0" role="button"
+            aria-label="\{{options.title}}"></span>
+            \{{ else}}
+              <span class='csui-icon-group csui-icon-v2-size-contain' data-cstabindex="0" role="button" aria-label="\{{options.title}}">
                 {{#if ClassName}}
                   <span class="thumbnail_not_loaded thumbnail-generation {{ClassName}}" ></span>
                 {{/if}}
               {{{icon-v2 iconName="csui_generation-overlay" theme=IconTheme states='true' size='contain'}}}
-            </span>
+              </span>
+            \{{/if}}
             {{/with}}
           \{{ else}}
           <span class="default_thumbnail thumbnail_empty" data-cstabindex="0" role="button"
@@ -43,4 +47,4 @@
   </div>
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

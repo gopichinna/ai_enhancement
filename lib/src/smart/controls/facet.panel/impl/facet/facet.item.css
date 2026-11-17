@@ -1,12 +1,25 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+:root {
+  --jatx-facet-panel-filter-line-height: 20px;
+  --jatx-facet-panel-checkbox-padding-right: 0;
+}
+
+[data-smart-theme="cf"] {
+  --jatx-facet-panel-filter-line-height: 32px;
+  --jatx-facet-panel-checkbox-padding-right: 16px;
+}
 .smart-facet-panel .csui-facet-item {
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
   flex-direction: row;
   align-items: center;
+  padding: 0px var(--jato-padding-lrg, 0) 0px var(--jato-padding-lrg, 0);
+  height: var(--jato-size-height-32);
+  border-radius: var(--jato-radii-med, 0);
+  gap: var(--jato-margin-med, 0);
 }
 
 .smart-facet-panel .csui-facet-item > .csui-filter-name {
@@ -19,12 +32,20 @@
   flex: 1 1 auto;
 }
 
+.smart-facet-panel .csui-facet-header .smart-caret-down,
+.smart-facet-panel .csui-facet-header .smart-caret-up {
+  position: relative;
+  bottom: 2px;
+  margin-left: 0;
+}
+
 .smart-facet-panel .csui-facet-item > .csui-filter-name > div {
   font-size: 0.75em;
 }
 
 .smart-facet-panel .csui-facet-item > .csui-facet-item-checkbox {
-  padding-right: 16px;
+  padding: 0 var(--jato-padding-med, 0);
+  padding-right: var(--jatx-facet-panel-checkbox-padding-right);
 }
 
 .smart-facet-panel .csui-facet-item > .csui-facet-item-checkbox > .csui-checkbox-view > button {
@@ -32,12 +53,13 @@
 }
 
 .smart-facet-panel .csui-facet-item > .csui-filter-name > .csui-name {
+  font-size: 12px;
   flex: 0 1 auto;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   height: inherit;
-  line-height: 32px;
+  line-height: var(--jatx-facet-panel-filter-line-height);
 }
 
 .smart-facet-panel .csui-facet-item > .csui-filter-name > .csui-name.smart-selected-name {
@@ -52,12 +74,12 @@
   flex: 0 0 auto;
   margin-left: 6px;
   line-height: 16px;
-  background: #CCEAE8;
+  background: var(--jato-tabs-navigation-content-color-counter-background-color-neutral, #CCEAE8);
   border-radius: 8px;
-  padding: 1px 5px;
+  border-radius: var(--jato-radii-xl, 8px);
+  padding: var(--jato-padding-xxs, 1px) var(--jato-padding-med, 5px) var(--jato-padding-xxs, 1px) var(--jato-padding-med, 5px);
   font-size: 11px;
-  color: #000000;
-
+  color: var(--jato-tabs-navigation-content-color-counter-text-color-neutral, #000000);
 }
 
 .smart-facet-panel .csui-facet-item.binf-disabled > .csui-filter-name {
@@ -107,6 +129,9 @@
 
 .smart-facet-panel .csui-filter-name:focus {
   outline-offset: 3px;
+}
+.smart-facet-panel strong.smart-search-bold {
+  font-weight: bold;  
 }
 
 

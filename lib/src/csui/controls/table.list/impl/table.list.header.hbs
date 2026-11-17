@@ -1,13 +1,32 @@
 {{#each columns}}
   {{#if this.noTitleInHeader}}
+    {{#if this.titleIconInHeader}}
+    <div class="csui-table-header-cell {{this.className}}" title="{{this.title}}" tabindex="-1"
+        data-cstabindex="-1" role="columnheader">
+      <div class="csui-table-header-cell-container {{#if ../isCFTheme}} csui-fadeout {{/if}}">
+      {{#if isJATO}}<otc-icon class="csui-table-header-icon" ispresentation size="16" svg="{{iconSVG}}"></otc-icon>
+      {{else}}
+      <span class="csui-icon csui-table-header-icon {{this.titleIconInHeader}}"></span>
+      {{/if}}
+      </div>
+    </div>
+    {{else}}
     <div class="csui-table-header-cell" role="columnheader"></div>
+    {{/if}}
   {{else}}
     <div class="csui-table-header-cell {{this.className}}" title="{{this.title}}" tabindex="-1"
          data-cstabindex="-1" role="columnheader">
-      <div class="csui-table-header-cell-container csui-fadeout">
+      <div class="csui-table-header-cell-container {{#if ../isCFTheme}} csui-fadeout {{/if}}">
+      {{#if this.titleIconInHeader}}
+      {{#if isJATO}}<otc-icon class="csui-table-header-icon" ispresentation size="16" svg="{{iconSVG}}"></otc-icon>
+      {{else}}
+        <span class="csui-icon csui-table-header-icon {{this.titleIconInHeader}}"></span>
+      {{/if}}
+        {{else}}
         <span>
           {{this.title}}
         </span>
+      {{/if}}
       </div>
     </div>
   {{/if}}
@@ -15,4 +34,4 @@
 
 
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

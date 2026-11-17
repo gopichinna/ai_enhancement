@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-small {
   margin-top: 8px;
@@ -58,7 +58,7 @@
 .binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-small .csui-error {
   display: flex;
   flex-direction: row;
-  padding: 1em 1em 1em 0.5em;
+  padding: 1em;
   align-items: center;
 }
 
@@ -76,7 +76,7 @@
 .binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-small .csui-error .csui-message {
   font-size: 20px;
   margin-top: 0;
-  margin-left: 11px;
+  text-align: left;
 }
 
 .binf-widgets .d2-shortcut-container .csui-shortcut-region.csui-region-small .csui-error .csui-error-icon-div {

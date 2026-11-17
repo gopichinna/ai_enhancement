@@ -1,7 +1,6 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .d2-target-browse .d2-search-box .search-bar {
   display: none;
 }
@@ -151,11 +150,12 @@
   opacity: 0.8
 }
 
-@media all and (max-width: 825px) {
+@media all and (width <= 825px) {
   .d2-target-browse .d2-search-box .d2-input {
     width: 315px;
   }
 }
+
 .d2-target-browse .d2-search-box .d2-input:not([data-value=""]) ~ .close-icon {
   display: block;
 }
@@ -321,6 +321,7 @@
 
 .d2-target-browse .transitional-content {
   height: 2px !important;
+
   
   background: #232E72;
 }

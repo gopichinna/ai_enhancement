@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .csui-table-cell-name {
   overflow-x: hidden;
@@ -20,8 +20,8 @@ td > div.csui-table-cell-name-div {
   position: relative;
 }
 
-.csui-nodetable:not(.csui-wrap-text) td > div.csui-table-cell-name-div,
-.csui-nodetable:not(.csui-wrap-text) th > div.csui-table-cell-name-div {
+.csui-nodetable td > div.csui-table-cell-name-div,
+.csui-nodetable th > div.csui-table-cell-name-div {
   height: 100%;
   align-items: center;
 }
@@ -60,8 +60,8 @@ td > div.csui-table-cell-name-div {
 }
 
 .binf-table tr > .csui-table-cell-name .csui-table-cell-name-justify-div {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: var(--jato-padding-lrg, 8px);
+  padding-right: var(--jato-padding-lrg, 8px);
   align-items: flex-start;
   width: 100%;
   overflow: hidden;
@@ -72,17 +72,17 @@ td > div.csui-table-cell-name-div {
 
 
 .csui-nowrap-table tr > .csui-table-cell-name .csui-best-bet {
-  margin: 8px 0px 8px 8px;
+  margin: 8px 0 8px 8px;
 }
 
 
 .binf-table tr > .csui-table-cell-name:first-child .csui-table-cell-name-value {
-  padding-left: 12px; 
+  padding-left: var(--jato-padding-lrg, 12px); 
 }
 
 
 .binf-table tr > .csui-table-cell-name.csui-table-cell-last-visible .csui-table-cell-name-value {
-  padding-right: 12px; 
+  padding-right: var(--jato-padding-lrg, 12px); 
 }
 
 .csui-nodetable:not(.csui-wrap-text) td > div .csui-table-cell-name-value,
@@ -91,7 +91,7 @@ td > div.csui-table-cell-name-div {
   overflow: hidden;
 }
 
-.binf-widgets .csui-nodetable:not(.csui-wrap-text) .csui-table-cell-name-justify-div {
+.binf-widgets .csui-nodetable .csui-table-cell-name-justify-div {
   justify-content: center;
 }
 
@@ -114,17 +114,18 @@ td > div.csui-table-cell-name-div {
 
 .csui-table-cell-name-value.csui-table-cell-no-default-action {
   cursor: auto;
-  color: #666666;
+  color: var(--jato-typography-text-color-primary, #666666);
   width: 100%;
 }
 
 tr.csui-cut-row .csui-table-cell-name-value {
-  color: #a7a7a7;
+  color: var(--jato-typography-text-color-tertiary, #a7a7a7);
 }
 
 td .csui-table-cell-name-appendix {
   display: flex;
   padding-right: 1px;
+  max-height: var(--jato-rows-height-md, var(--csui-table-row-height)); 
 }
 
 .csui-table-cell-name.csui-on-IE11 .csui-table-cell-name-appendix {
@@ -142,14 +143,17 @@ td .csui-table-cell-name-appendix {
 }
 
 .csui-table-cell-name .csui-best-bet {
-  background: #ffffff;
+  background: var(--jato-background-elevation-inline-content, #ffffff);
   border-radius: 2px;
-  border-left: 3px solid #70769b;
+  border: var(--jatx-csui-search-best-bet-border, unset);
+  border-left: 3px solid var(--jato-semantic-normal, #70769b);
   padding: 0 4px;
-  display: inline-block;
-  height: 16px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: var(--jatx-csui-search-promoted-label-height, 16px);
   line-height: 12px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: var(--jato-elevation-shadow-level-2, 0 0 4px rgba(0, 0, 0, 0.3));
   margin: 8px 0;
   max-width: 100%;
   overflow: hidden;
@@ -161,13 +165,27 @@ td .csui-table-cell-name-appendix {
   cursor: default;
   text-decoration: none;
   font-size: 10px;
+  font-weight: var(--jatx-csui-search-best-bet-title-font-weight, inherit);
   line-height: 12px;
-  color: #414979;
+  color: var(--jato-typography-text-color-primary, #414979);
   text-align: center;
 }
 
-.binf-widgets .csui-nodetable:not(.csui-wrap-text) .csui-best-bet-container .csui-table-cell-name-justify-div {
-  padding-top: 10px;
+.binf-widgets .csui-nodetable .csui-best-bet-container .csui-table-cell-name-justify-div {
+  margin-top: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.binf-widgets .csui-nodetable .csui-best-bet-container .csui-best-bet {
+  margin-top: 2px;
+  margin-left: var(--jato-padding-lrg, 8px);
+}
+
+
+.binf-widgets .csui-nodetable .binf-table tr:not(.csui-details-row) > td > :has(.csui-best-bet) {
+  max-height: unset;
+  height: unset;
 }
 
 .binf-widgets .csui-tabular-search-view .binf-table > tbody > tr > .csui-table-cell-_select,
@@ -195,10 +213,10 @@ td .csui-table-cell-name-appendix {
 
 
 .binf-widgets .csui-table-cell-name .csui-best-bet.csui-name-error {
-  border-left: 2px solid #df3324;;
+  border-left: 2px solid var(--jato-messages-inline-border-error, #df3324);
 }
 
 .binf-widgets .csui-table-cell-name .csui-best-bet.csui-name-error > span {
-  color: #df3324;
+  color: var(--jato-typography-text-color-secondary, #df3324);
 }
 

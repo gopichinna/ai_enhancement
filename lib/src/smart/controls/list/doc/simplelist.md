@@ -32,15 +32,16 @@ define(['smart/controls/list/simplelist.view'], function (SmartSimpleListView) {
   <li><b>data - `required`</b> Object with information for the simple list that is to be rendered.</li>
   <li><b>data.title - `required` (String)</b> Title for the simple list view that is displayed on the header.</li>
   <li><b>data.titleBarIcon - `optional` (String)</b> Icon class name for the icon that is to be shown on the header.</li>
+  <li><b>data.smartTileHeaderJatoIcon - `optional` (String)</b> JATO SVG icon for the icon that is to be shown on the header for JATO themes only.</li>
   <li><b>data.back_button - `optional` (Boolean)</b> To show Back button on header. Default: 'false'</li>
   <li><b>data.iconName - `optional` (String)</b> name of V2 to be shown on header.</li>
   <li><b>data.listAria - `required` (String)</b>Aria label for list view. Default: "List View"</li>
-  <li><b>data.listRole - `optional` (String)</b>Role for list view. Deafault: 'list'.</li>
-  <li><b>data.childRole - `optional` (String)</b>Role for list item view. Deafault: 'listitem'.</li>
+  <li><b>data.listRole - `optional` (String)</b>Role for list view. Default: 'list'.</li>
+  <li><b>data.enableIcon - `optional`(Boolean)</b>To show icon for each item in list.</li>
+  <li><b>data.childRole - `optional` (String)</b>Role for list item view. Default: 'listitem'.</li>
   <li><b>data.items - `optional`(Collection)</b>Collection of list item models that is shown within the simple list view. Empty View if shown if collection is given.</li>
    <li><b>items.name - `optional`(String)</b>Name of the item.</li>
   <li><b>items.href - `optional`(Collection)</b>URL for the item.</li>
-   <li><b>items.enableIcon - `optional`(Boolean)</b>To show icon or no.</li>
   <li><b>items.icon - `optional`(String)</b>Icon class name that is displayed before the title of the icon.</li>
   <li><b>items.iconName - `optional`(String)</b>V2 icon name that is displayed before the title of the icon.</li>
 </ul>

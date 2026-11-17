@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .target-browse.cs-permission-group-picker .csui-add-member {
   height: auto;
@@ -13,7 +13,7 @@
   vertical-align: middle;
   flex-direction: row;
   width: 100%;
-  padding: 0px 0 0 16px;
+  padding: 0 0 0 16px;
 }
 
 .binf-widgets .csui-member-picker-container .csui-user-search-bar .csui-control-userpicker .cs-search-icon {

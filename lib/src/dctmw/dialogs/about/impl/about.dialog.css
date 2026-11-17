@@ -1,0 +1,169 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+[data-smart-theme]:not([data-smart-theme=cf]) {
+  .binf-widgets .dctmw-about-dialog .binf-modal-dialog .btn-close {
+    top: 16px;
+  }
+
+  .binf-widgets .dctmw-about-dialog .binf-modal-dialog .binf-modal-content {
+    & {
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+      min-height: 239px;
+      max-height: 700px;
+      height: calc(100vh - 176px);
+      background: var(--jato-background-elevation-level-3, #FFFFFF);
+    }
+
+    & .binf-modal-body {
+      flex: 1;
+      overflow: visible;
+      height: auto;
+      flex: 1;
+      max-height: none;
+      min-height: max-content;
+    }
+
+    .dctmw-version {
+      font-weight: 500;
+      font-size: var(--jato-font-size-xxs);
+      line-height: var(--jato-line-height-sm);
+      padding-top: var(--jato-margin-xxl);
+      color: var(--jato-typography-text-color-secondary, #47484A);
+    }
+
+    .smart-tab-panel {
+      background-color: var(--jato-background-elevation-level-3, transparent);
+    }
+
+    .cs-metadata-properties.d2-metadata-properties .binf-tab-content > div{
+      padding: 0;
+    }
+  }
+
+  @media only screen and (width<=640px) {
+    .binf-widgets .dctmw-about-dialog .binf-modal-dialog .binf-modal-content {
+      height: calc(100vh - 110px);
+    }
+  }
+}
+
+
+[data-smart-theme=cf] .binf-widgets .dctmw-about-dialog {
+  .binf-modal-body .smart-tab-contents-wrapper {
+    overflow: auto;
+  }
+
+  .cs-metadata-properties.d2-metadata-properties .binf-tab-content>div {
+    padding: 0;
+  }
+}
+
+.d2-about-dialog .binf-modal-dialog {
+  top: 65px;
+  width: 600px;
+}
+
+.d2-about-dialog.cs-dialog .binf-modal-body {
+  background: var(--jato-background-elevation-level-3, #FFFFFF);
+  height: calc(100vh - 248px);
+  min-height: 239px;
+  max-height: 700px;
+  overflow: auto;
+  margin: 0;
+}
+
+.d2-about-dialog .cs-form .binf-row.alpaca-field {
+  margin-bottom: 0;
+}
+
+.d2-about-dialog .binf-row>.alpaca-container-label {
+  display: none;
+}
+
+.d2-about-dialog .cs-metadata-properties .binf-nav-pills>li>a {
+  background-color: transparent;
+  color: #333333;
+  max-width: 100%;
+}
+
+.d2-about-dialog .cs-metadata-properties .binf-nav-pills>li>a:hover {
+  color: #333333;
+}
+
+.d2-about-dialog .cs-metadata-properties .binf-nav-pills>li>a:focus {
+  color: #333333;
+  background-color: transparent;
+}
+
+.d2-about-dialog .d2tabgroupcontainer {
+  outline: none;
+}
+
+.d2-about-dialog .d2tabgroup {
+  padding: 0 17px;
+  border-bottom: 1px solid #cccccc;
+  background-color: transparent;
+}
+
+.d2-about-dialog .alpaca-field-d2tabgroup {
+  margin: 0;
+}
+
+.d2-about-dialog .d2-container .d2tabcontainer {
+  padding: 16px 32px 32px 32px;
+  min-height: 175px;
+  max-height: calc(100vh - 312px);
+}
+
+.d2-about-dialog .d2tabcontaineritemwrapper.binf-col-md-6.d2tabtopfieldpadding {
+  padding-top: 0;
+}
+
+.d2-about-dialog .csui-top-align-label .cs-form .alpaca-container-item>.binf-form-group.alpaca-field>.binf-col-sm-9 {
+  width: 100%;
+}
+
+.d2-about-dialog .cs-form .binf-form-group {
+  margin-top: 0;
+}
+
+.d2-about-dialog .csui-top-align-label .cs-form .binf-col-md-6 {
+  max-width: unset;
+}
+
+.d2-about-dialog .csui-top-align-label .cs-formfield .cs-field-read .cs-field-read-inner,
+.d2-about-dialog .csui-top-align-label .cs-form .alpaca-container-item>.binf-form-group.alpaca-field .alpaca-control-label {
+  padding-left: 0;
+}
+
+.d2-about-dialog .d2-about-blurb {
+  font-size: 12px;
+  line-height: 16px;
+  color: #333333;
+  padding-top: 7px;
+}
+
+.d2-about-dialog .d2-about-blurb a:link {
+  color: #232e72;
+}
+
+.d2-about-dialog .d2-about-blurb a:visited {
+  color: #4f3690;
+}
+
+.d2-about-dialog .d2-about-blurb a:hover {
+  color: #0084ce;
+}
+
+.d2-about-dialog .d2-about-blurb a:active {
+  color: #2e3d98;
+}
+
+.d2-about-dialog .cs-formfield.cs-textfield .cs-field-read button>span {
+  white-space: normal;
+  line-height: 1.5;
+}

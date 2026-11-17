@@ -1,7 +1,18 @@
 <div class="csui-search-expandall-wrapper">
   <div class="csui-search-expandall-text" title="{{messages.expandAll}}">{{messages.expandAll}}</div>
-  <button class="csui-search-header-expand-all" aria-label="{{messages.expandAll}}" title="{{messages.expandAll}}">
-    <span class="icon csui-icon icon-expandArrowDown"></span>
-  </button>
+  <otc-button class="csui-search-header-expand-all csui-acc-focusable"
+      type="subtle"
+      title="{{messages.expandAll}}"
+      arialabel="{{messages.expandAll}}"
+      {{#if isJATO}} 
+        size="small" 
+      {{else}}
+        iconOnly 
+        icon="{{iconName}}"
+      {{/if}}>
+          {{#if isJATO}}
+          <otc-icon type="subtle" svg="{{iconSVG}}" class="expand-jato-icon"></otc-icon>
+          {{/if}}
+      </otc-button>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

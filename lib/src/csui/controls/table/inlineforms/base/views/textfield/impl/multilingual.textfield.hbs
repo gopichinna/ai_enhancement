@@ -1,12 +1,16 @@
-<input type="text" value="{{name}}" placeholder="{{namePlaceholder}}"
-       class="binf-form-control csui-inlineform-type-{{prefix}} {{#if
-           haveErrorMessage}}csui-inlineform-error{{/if}}"
-       aria-label="{{#if name}}{{name}}{{else}}{{namePlaceholder}}{{/if}}"
-      {{#if haveErrorMessage}} aria-invalid="true" {{/if}}/>
+<otc-input value="{{name}}" placeholder="{{namePlaceholder}}"
+           ariaLabel="{{#if name}}{{name}}{{else}}{{namePlaceholder}}{{/if}}"
+           actionicon="{{actionIcon}}"
+  {{#if haveErrorMessage}} aria-invalid="true" {{/if}}>
+</otc-input>
 <span class="csui-multilingual-icon-label">
-<button type="button" class="icon csui-multilingual-icon">
-  {{{icon-v2 iconName="csui_action_language_switcher24" size='small' states='true'}}}
-</button>
+  {{#if isJATO}}
+    <otc-button  class="csui-multilingual-icon" type="subtle" size="small">
+      <otc-icon svg="{{globeIconSVG}}"></otc-icon>
+    </otc-button>
+  {{else}}
+    <otc-button class="csui-multilingual-icon" type="inline" icon="action:action_localize32"></otc-button>
+  {{/if}}
 </span>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

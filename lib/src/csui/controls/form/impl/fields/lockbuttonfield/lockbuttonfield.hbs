@@ -3,10 +3,16 @@
   <div class="cs-field-read-inner">
     <div class="btn-container">
       <span class="csui-btn-lock-status {{noActionCSS}}">
+        {{#if isJATO}}
+        <otc-button type="status" title="{{tooltip}}" ariaLabel="{{pressToUnlock}}" class="csui-btn-lock-status-action">
+          <otc-icon svg="{{iconSVG}}"></otc-icon>
+        </otc-button>
+        {{else}}
         <span title="{{tooltip}}" aria-label="{{pressToUnlock}}"
           class="csui-icon csui-icon-locked csui-btn-lock-status-action">
           {{{icon-v2 iconName="csui_mime_locked24" size='small' states='true'}}}
         </span>
+        {{/if}}
         <span class="csui-lockby-status cs-formfield cs-userfield cs-formfield-readonly"></span>
         <input id="{{reserveid}}" class="binf-hidden" value="locked" type="button">
       </span>
@@ -14,4 +20,4 @@
   </div>
 </div>
 {{/if}}
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

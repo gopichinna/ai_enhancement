@@ -1,10 +1,10 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 
 .binf-widgets .cs-typeaheadfield {
   margin-bottom: 0;
-  background-color: white;
+  background: var(--jato-background-elevation-level-4, white);
   display: inline-block;
   width: 100%;
   vertical-align: top;
@@ -47,7 +47,10 @@
 
 .cs-typeaheadfield .cs-field-write-inner {
   display: flex;
-   
+
+  
+
+ 
   height: 100%;
 }
 
@@ -62,19 +65,20 @@
   height: 100%;
 }
 
-.cs-typeaheadfield .cs-field-write-inner input {
+.binf-widgets .cs-form .cs-typeaheadfield .cs-field-write-inner input {
+  position: absolute;
   width: 100%;
-  height: 100%;
-
-  border: 1px solid #a7a9ac;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-
-  padding-top: 0px;
-  padding-bottom: 0px;
+  height: var(--jato-measure-32, 28px);
+  background-color: var(--jato-background-elevation-level-1, rgb(255, 255, 255));
+  border: 1px solid var(--jato-input-border-container-neutral, #a7a9ac);
+  border-block-end: 1px solid var(--jato-input-border-focus-neutral, #a7a9ac);
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) var(--jatx-const-0, 3px) var(--jatx-const-0, 3px);
+  box-shadow: inset 0 -1px 0 0 transparent;
+  color: var(--jato-typography-text-color-primary, #333333);
+  font-size: var(--jatx-input-font-size, 14px);
+  line-height: 18px;
+  padding: 0 var(--jato-measure-8, 8px); 
   padding-left: 0.5em;
-  height: 28px;
 }
 
 .cs-formfield.cs-typeaheadfield .cs-field-read .cs-field-read-inner .cs-left {
@@ -176,7 +180,7 @@
 
 .cs-formfield.cs-typeaheadfield .cs-field-read button {
   height: 100%;
-  padding: 0px 4px 0px 4px;
+  padding: 0 4px 0 4px;
 
 }
 
@@ -204,12 +208,45 @@
   justify-content: center;
 }
 
-.binf-widgets .cs-typeaheadfield .cs-field-write-inner input:focus {
+.binf-widgets .cs-form .cs-typeaheadfield .cs-field-write-inner input:focus {
+  border-block-end: 1px solid var(--jato-input-border-focus-enabled, #666666);
+  box-shadow: inset 0 -1px 0 0 var(--jato-input-border-focus-enabled, none);
   outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: 2px solid #666666;
-  border-radius: 3px;
+  -webkit-box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled, none);
+  border: var(--jato-measure-1, 2px) solid var(--jato-input-border-container-neutral, #666666);
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) var(--jatx-const-0, 3px) var(--jatx-const-0, 3px);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .cs-form .cs-typeaheadfield .cs-field-write-inner .csui-control-typeaheadpicker input:hover {
+  background-color: var(--jato-background-elevation-level-2-hover, #efefef);
+  border: 1px solid var(--jato-input-border-container-hover, transparent);
+  border-block-end: 1px solid var(--jato-input-border-focus-hover, #666666);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-hover, transparent);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-form .alpaca-field.binf-has-error .cs-typeaheadfield .cs-field-write-inner .csui-control-typeaheadpicker input,
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-typeaheadfield.cs-formfield-invalid .cs-field-write-inner .csui-control-typeaheadpicker input {
+  color: var(--jato-typography-text-color-primary, #000000);
+  background-color:  var(--jato-background-error-hover, #fae9ea);
+  border: 1px solid #df3324;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-form .alpaca-field.binf-has-error .cs-typeaheadfield .cs-field-write-inner .csui-control-typeaheadpicker input:hover,
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-typeaheadfield.cs-formfield-invalid .cs-field-write-inner .csui-control-typeaheadpicker input:hover {
+  background-color: var(--jato-background-error-hover, #efefef);
+  border: 1px solid var(--jato-input-border-container-error-hover, transparent);
+  border-block-end: 1px solid var(--jato-input-border-focus-error-enabled, #df3324);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-error-hover, transparent);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-form .alpaca-field.binf-has-error .cs-typeaheadfield .cs-field-write-inner .csui-control-typeaheadpicker input:focus,
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-typeaheadfield.cs-formfield-invalid .cs-field-write-inner .csui-control-typeaheadpicker input:focus {
+  background-color: var(--jato-background-elevation-level-1, #efefef);
+  border-block-end: 1px solid var(--jato-input-border-focus-error-enabled, #df3324);
+  border: 1px solid var(--jato-input-border-container-error-hover, transparent);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-error-enabled, #df3324);
+  outline: none;
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) var(--jatx-const-0, 3px) var(--jatx-const-0, 3px);
 }
 
 .cs-typeaheadfield .cs-field-write .csui-control-typeaheadpicker .cs-search {

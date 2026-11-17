@@ -1,25 +1,38 @@
-<div class="csui-search-sort-options">
-  <button id="{{id}}" type="button" class="binf-btn binf-btn-default binf-dropdown-toggle"
-          title="{{sortByTooltip}}" data-binf-toggle="dropdown" aria-haspopup="true"
-          aria-label="{{sortByAria}}" aria-expanded="false">
+<div class="csui-thumbnail-sort-options">
+  <otc-button
+    id="{{id}}"
+    class="cs-dropdown-button open-sort-menu"
+      type="inline"
+    title="{{sortByTooltip}}"
+  >
     <span class="cs-label">{{selectedValue}}</span>
-    <span class="csui-button-icon icon-caret-down"></span>
-  </button>
-  <span class="csui-sort-arrow {{selectedArrowClass}}" title="{{selectedArrowTooltip}}"
-        aria-label="{{selectedArrowAria}}" role="button" tabindex="0"></span>
-  <ul class="binf-dropdown-menu" role="menu">
-    {{#each sortListArray}}
-      <li role="presentation">
-          <a role="menuitem" href="#" class="csui-sort-option" data-binf-toggle="tab">
-        {{#if this.selected }}
-          <span class="cs-icon icon-listview-checkmark"></span>
-        {{else}}
-          <span class="cs-icon "></span>
-        {{/if}}
-        <span class="cs-label" title="{{this.value}}" data-sortbyid="{{this.key}}">{{this.value}} </span></a>
-      </li>
-    {{/each}}
-  </ul>
+    {{#if isJatoTheme}}
+      <otc-icon svg="{{jatoChevronSmallDown}}" size="24" type="subtle"></otc-icon>
+    {{else}}
+      <otc-icon icon="smart_action:action_caret_down32"></otc-icon>
+    {{/if}}
+  </otc-button>
+  {{#if isJatoTheme}}
+    <otc-button class="csui-sort-arrow" title="{{selectedArrowTooltip}}"
+      arialabel="{{selectedArrowAria}}" type="inline" size="small" tabindex="0">
+      <otc-icon svg="{{jatoOrderIcon}}" size="18" type="subtle"></otc-icon>
+    </otc-button>
+  {{else}}
+    <a href="#"
+      class="csui-sort-arrow {{selectedArrowClass}}"
+      title="{{selectedArrowTooltip}}"
+      aria-label="{{selectedArrowAria}}"
+      role="button"
+      tabindex="0"
+    ></a>
+  {{/if}}
+  <otc-menu
+    class="csui-table-settings-dropdown"
+    buttonId="{{id}}"
+    ariarole="menu"
+    maxitems="0"
+    scrollable=""
+  >
+  </otc-menu>
 </div>
-
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

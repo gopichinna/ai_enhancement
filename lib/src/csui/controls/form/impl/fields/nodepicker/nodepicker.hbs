@@ -12,12 +12,30 @@
     {{#if idBtnDescription}}aria-describedby="{{idBtnDescription}}" {{/if}}
     title="{{options.anchorTitle}}" data-cstabindex="-1" tabindex="-1"/>
     <div class="csui-nodepicker-icon-container">
+    {{#if isJATO}}
+      <otc-button class="csui-icon cs-clear-icon" title="{{clearIconTooltip}}" role="button" arialabel="{{clearIconAriaLabelTooltip}}" size="small" tabindex="0" data-cstabindex="0">
+        <otc-icon svg="{{clearIconSVG}}" type="subtle"></otc-icon>
+      </otc-button>
+      {{else}}
       <span class="csui-icon cs-clear-icon formfield_clear" title="{{clearIconTooltip}}" role="button" aria-label="{{clearIconAriaLabelTooltip}}" tabindex="0" data-cstabindex="0"></span>
+      {{/if}}
+      {{#if isJATO}}
+      <otc-button class="csui-icon cs-browse-icon" title="{{browseIconTooltip}}" role="button" arialabel="{{browseIconAriaLabelTooltip}}" size="small" tabindex="0" data-cstabindex="0">
+        <otc-icon svg="{{browseIconSVG}}" type="subtle"></otc-icon>
+      </otc-button>
+      {{else}}
       <span class="csui-icon cs-browse-icon icon-cs-browse" title="{{browseIconTooltip}}" role="button" {{#if isRequired}} aria-required="{{isRequired}}" {{/if}} aria-label="{{browseIconAriaLabelTooltip}}" tabindex="0" data-cstabindex="0"></span>
+      {{/if}}
     </div>
     {{#xif "this.mode !== 'writeonly'"}}
       <div class="icon-container">
+      {{#if isJATO}}
+        <otc-button  class="inline-edit-icon csui-jato-edit-cancel" arialabel="{{cancel}}" type="subtle" size="small" tabindex="-1" title="{{cancel}}">
+        <otc-icon svg="{{editCancelIconSVG}}" type="subtle"></otc-icon>
+        </otc-button>
+      {{else}}
         <div class="csui-icon-edit inline-edit-icon edit-cancel" title="{{cancel}}"></div>
+      {{/if}}
       </div>
     {{/xif}}
     {{#if options.applyFlag}}
@@ -58,9 +76,15 @@
              {{/if}}       
     </div>
     <div class='icon-container'>
+      {{#if isJATO}}
+      <otc-button  class="csui-jato-icon-edit inline-edit-icon binf-hidden" arialabel="{{edit}}" type="subtle" size="small" tabindex="-1" title="{{edit}}">
+      <otc-icon svg="{{editIconSVG}}" type="subtle"></otc-icon>
+      </otc-button>
+      {{else}}
       <div class='csui-icon-edit inline-edit-icon icon-edit' title='{{edit}}'></div>
+      {{/if}}
     </div>
   </div>
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

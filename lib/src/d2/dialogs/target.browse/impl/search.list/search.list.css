@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .d2-target-browse .searchheader-inner .d2-search-data-header {
   margin: 0;
@@ -90,6 +90,7 @@
   height: 18px;
   width: 18px;
 }
+
 .binf-widgets .d2-target-browse .searchheader-inner .csui-search-header {
   padding: 2px 0;
   line-height: 16px;

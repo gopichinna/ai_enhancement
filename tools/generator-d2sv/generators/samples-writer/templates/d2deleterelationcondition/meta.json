@@ -1,0 +1,17 @@
+{
+  "id": "d2deleterelationcondition",
+  "name": "D2SV Delete Relation Condition",
+  "descriptors": [
+    {
+      "name": "app",
+      "properties": {
+        "pluginsGroupId": "com.opentext.d2.smartview",
+        "pluginArtifactId": "D2-Delete-Relation-Condition",
+        "pluginVersion": "1.0.0",
+        "pluginDesc": "Plugin to Delete Relation Conditionally",
+        "pluginPackage": "D2DELETERELATIONCONDITION",
+        "includeSVSupport": true
+      }
+    }
+  ]
+}

@@ -1,6 +1,11 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme='cf']) {
+  --jatx-csui-menuitem-font-size: 13px;
+  --jatx-csui-menuitem-line-height: 18px;
+}
+
 .binf-widgets .cs-selectfield {
   width: 100%;
 }
@@ -45,6 +50,39 @@
   white-space: nowrap;
 }
 
+
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-selectfield .cs-field-write button { 
+  background-color: var(--jato-background-elevation-level-1);
+  border: 1px solid var(--jato-input-border-container-neutral);
+  border-block-end: 1px solid var(--jato-input-border-focus-neutral);
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) 0 0;
+  box-shadow: inset 0 -1px 0 0 transparent;
+  color: var(--jato-typography-text-color-primary, #333333);
+  font-size: 13px;
+  height: 32px;
+  line-height: 18px;
+  padding-inline-start: 8px;
+  text-overflow: ellipsis;
+  transition: 0.1s ease-in-out;
+  width: 100%;
+  padding-top: 7px;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-selectfield .cs-field-write button:focus {
+  border-block-end: 1px solid var(--jato-input-border-focus-enabled);
+  box-shadow: inset 0 -1px 0 0 var(--jato-input-border-focus-enabled);
+  outline: none;
+  -webkit-box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled);
+  border: var(--jato-measure-1, 2px) solid var(--jato-input-border-container-neutral);
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .cs-selectfield .cs-field-write button:hover {
+  background-color: var(--jato-background-elevation-level-2-hover);
+  border: 1px solid var(--jato-input-border-container-hover);
+  border-block-end: 1px solid var(--jato-input-border-focus-hover);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-hover);
+}
+
 .cs-selectfield .cs-field-write button {
   border: 1px solid #a7a9ac;
   border-radius: 3px;
@@ -68,7 +106,7 @@
   box-shadow: none;
   border: 2px solid #666666;
   border-radius: 3px;
-  margin: 0px;
+  margin: 0;
   padding-top: 5px;
 }
 
@@ -84,6 +122,10 @@
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 3px 0;
+  float: right;
+}
+
+.cs-selectfield .cs-field-write button .csui-icon-expandArrowDown {
   float: right;
 }
 
@@ -134,22 +176,40 @@
 }
 
 
-.cs-form .alpaca-field.binf-has-error .cs-field-write button {
-  color: #000000;
-  background-color: #fae9ea;
+.cs-form .alpaca-field.binf-has-error .cs-field-write button,
+.cs-formfield.cs-selectfield.cs-formfield-invalid  .cs-field-write button{
+  color: var(--jato-typography-text-color-secondary, #000000);
+  background-color: var(--jato-background-error-hover, #fae9ea);
   border: 1px solid #df3324;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-form .alpaca-field.binf-has-error .cs-selectfield .cs-field-write button:hover,
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-formfield.cs-selectfield.cs-formfield-invalid  .cs-field-write button:hover{
+  background-color: var(--jato-background-error-hover);
+  border: 1px solid var(--jato-input-border-container-error-hover);
+  border-block-end: 1px solid var(--jato-input-border-focus-error-enabled);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-error-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-form .alpaca-field.binf-has-error .cs-selectfield .cs-field-write button:focus,
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-formfield.cs-selectfield.cs-formfield-invalid  .cs-field-write button:focus{
+  background-color: var(--jato-background-elevation-level-1);
+  border-block-end: 1px solid var(--jato-input-border-focus-error-enabled);
+  border: 1px solid var(--jato-input-border-container-error-hover);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-error-enabled);
+  outline: none;
 }
 
 .cs-selectfield.binf-dropdown .cs-field-write ul.binf-dropdown-menu {
   width: inherit;
-  border-radius: 0;
+  border-radius: 0 0 var(--jato-radii-lrg, 0) var(--jato-radii-lrg, 0);
   margin: 0;
-  padding: 0;
-  border: 0;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+  padding: var(--jato-padding-xxs, 0);
+  border: var(--jato-border-color-primary, 0);
+  background-color: var(--jato-background-elevation-level-4, #ffffff);
+  -webkit-box-shadow: var(--jato-elevation-shadow-level-4 ,0 0 5px 0 rgba(0, 0, 0, 0.7));
+  -moz-box-shadow:  var(--jato-elevation-shadow-level-4 ,0 0 5px 0 rgba(0, 0, 0, 0.7));
+  box-shadow:  var(--jato-elevation-shadow-level-4 ,0 0 5px 0 rgba(0, 0, 0, 0.7));
   font-size: 14px;
   z-index: 1002;
 }
@@ -169,19 +229,26 @@
 
 .cs-selectfield.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a {
   padding: 3px 16px;
-  color: #333333;
+  color: var(--jato-cta-content-color-tertiary, #333333);
   min-height: 20px;
+  font-size: var(--jatx-csui-menuitem-font-size, 14px);
+  gap: var(--jato-margin-med, 8px);
+  line-height: var(--jatx-csui-menuitem-line-height, 20px);
+  padding-block: var(--jato-padding-lrg, 6px);
+  padding-inline: var(--jato-padding-xxl, 16px);
 }
 
-.cs-selectfield.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a:hover,
-.cs-selectfield.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a:focus {
+.cs-selectfield.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a:hover {
   
-  background-color: #b2bec5;
-  color: #333333;
+  background-color: var(--jato-background-rows-hover, #b2bec5);
+  color: var(--jato-cta-content-color-tertiary, #333333);
+  border-radius: var(--jato-radii-med, 0);
 }
 
-.cs-selectfield.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a:active {
+.cs-selectfield.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a:active,
+  .cs-selectfield.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a:focus {
   
-  background-color: #cbd4d9;
-  color: #333333;
+  background-color: var(--jato-background-rows-selected, #cbd3d9);
+  color: var(--jato-cta-content-color-tertiary, #333333);
+  border-radius: var(--jato-radii-med, 0);
 }

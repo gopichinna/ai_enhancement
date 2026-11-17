@@ -1,3 +1,5 @@
+/* css!d2/commands/impl/icons */
+
 .d2-icon-cut {
   background-image: url('../commands/impl/icons/toolbar_cut.svg');
 }
@@ -37,6 +39,7 @@
   height: 32px;
   background-size: 20px;
 }
+
 /* DTWO-51147 End */
 
 .binf-widgets .csui-toolbar.binf-nav > li > a > .icon.d2-icon-node-tree {
@@ -404,9 +407,11 @@ html[dir=rtl] .d2-icon-tableview-close{
   height: 32px;
   width: 32px;
 }
+
 .d2-icon-export {
   background-image: url("../commands/impl/icons/icon-export.svg");
 }
+
 .d2-icon-refresh {
   background-image: url("../commands/impl/icons/icon-refresh.svg");
 }
@@ -414,9 +419,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-acquire-task {
   background-image: url('../commands/impl/icons/toolbar_acquire_task.svg');
 }
+
 .d2-icon-acquire-task:hover {
   background-image: url('../commands/impl/icons/toolbar_acquire_task_mo.svg');
 }
+
 .d2-icon-acquire-task:active {
   background-image: url('../commands/impl/icons/toolbar_acquire_task_md.svg');
 }
@@ -424,9 +431,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-forward-task {
   background-image: url('../commands/impl/icons/toolbar_forward_task.svg');
 }
+
 .d2-icon-forward-task:hover {
   background-image: url('../commands/impl/icons/toolbar_forward_task_mo.svg');
 }
+
 .d2-icon-forward-task:active {
   background-image: url('../commands/impl/icons/toolbar_forward_task_md.svg');
 }
@@ -434,9 +443,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-reject-task {
   background-image: url('../commands/impl/icons/toolbar_reject_task.svg');
 }
+
 .d2-icon-reject-task:hover {
   background-image: url('../commands/impl/icons/toolbar_reject_task_mo.svg');
 }
+
 .d2-icon-reject-task:active {
   background-image: url('../commands/impl/icons/toolbar_reject_task_md.svg');
 }
@@ -444,9 +455,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-delegate-task {
   background-image: url('../commands/impl/icons/toolbar_delegate_task.svg');
 }
+
 .d2-icon-delegate-task:hover {
   background-image: url('../commands/impl/icons/toolbar_delegate_task_mo.svg');
 }
+
 .d2-icon-delegate-task:active {
   background-image: url('../commands/impl/icons/toolbar_delegate_task_md.svg');
 }
@@ -454,9 +467,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-update-performers {
   background-image: url('../commands/impl/icons/toolbar_update_performers.svg');
 }
+
 .d2-icon-update-performers:hover {
   background-image: url('../commands/impl/icons/toolbar_update_performers_mo.svg');
 }
+
 .d2-icon-update-performers:active {
   background-image: url('../commands/impl/icons/toolbar_update_performers_md.svg');
 }
@@ -464,9 +479,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-change-task-priority {
   background-image: url('../commands/impl/icons/toolbar_change_task_priority.svg');
 }
+
 .d2-icon-change-task-priority:hover {
   background-image: url('../commands/impl/icons/toolbar_change_task_priority_mo.svg');
 }
+
 .d2-icon-change-task-priority:active {
   background-image: url('../commands/impl/icons/toolbar_change_task_priority_md.svg');
 }
@@ -474,9 +491,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-read-task {
   background-image: url('../commands/impl/icons/toolbar_read_task.svg');
 }
+
 .d2-icon-read-task:hover {
   background-image: url('../commands/impl/icons/toolbar_read_task_mo.svg');
 }
+
 .d2-icon-read-task:active {
   background-image: url('../commands/impl/icons/toolbar_read_task_md.svg');
 }
@@ -484,9 +503,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-unread-task {
   background-image: url('../commands/impl/icons/toolbar_unread_task.svg');
 }
+
 .d2-icon-unread-task:hover {
   background-image: url('../commands/impl/icons/toolbar_unread_task_mo.svg');
 }
+
 .d2-icon-unread-task:active {
   background-image: url('../commands/impl/icons/toolbar_unread_task_md.svg');
 }
@@ -494,9 +515,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-add-task-note {
   background-image: url('../commands/impl/icons/toolbar_add_task_note.svg');
 }
+
 .d2-icon-add-task-note:hover {
   background-image: url('../commands/impl/icons/toolbar_add_task_note_mo.svg');
 }
+
 .d2-icon-add-task-note:active {
   background-image: url('../commands/impl/icons/toolbar_add_task_note_md.svg');
 }
@@ -504,9 +527,11 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-abort-workflow {
   background-image: url('../commands/impl/icons/toolbar_abort_workflow.svg');
 }
+
 .d2-icon-abort-workflow:hover {
   background-image: url('../commands/impl/icons/toolbar_abort_workflow_mo.svg');
 }
+
 .d2-icon-abort-workflow:active {
   background-image: url('../commands/impl/icons/toolbar_abort_workflow_md.svg');
 }
@@ -524,48 +549,25 @@ html[dir=rtl] .d2-icon-tableview-close{
 .d2-icon-abort-workflow {
   background-size: cover !important;
 }
+
 .icon-d2-create-relations{
   background-image: url('../commands/impl/icons/toolbar-create-relation32-action.svg');
 }
+
 .icon-d2-create-relations:hover{
   background-image: url('../commands/impl/icons/toolbar-create-relation32-action-hover.svg');
 }
+
 .icon-d2-create-relations:active{
   background-image: url('../commands/impl/icons/toolbar-create-relation32-action-active.svg');
 }
+
 .binf-widgets.rtl .csui-filterToolbar .task-toolbar-back-button,
 .binf-widgets.rtl .csui-rightToolbar .task-toolbar-open-panel{
   transform: scaleX(-1);
-}/*csslint ids:false*/
-.binf-widgets div.outer-border {
-  border: 0;
-  padding: 5px;
-  width: 82px;
-  height: 82px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0) 20px, white 21px);
 }
 
-.binf-widgets.d2-mobile div.outer-border {
-  box-shadow: 0 0 0 8px white inset;
-  width: 50px;
-  height: 50px;
-  padding: 3px;
-}
-
-.binf-widgets div.loader {
-  margin: 0;
-  border: 12px solid #d8f4fd;
-  border-right: 12px solid #2E3D98;
-  width: 72px;
-  height: 72px;
-}
-
-.binf-widgets.d2-mobile div.loader {
-  border: 4px solid #d8f4fd;
-  border-right: 4px solid #2E3D98;
-  width: 44px;
-  height: 44px;
-}
+/* css!d2/overrides/impl/overrides */
 
 /* When search icon is configured, the css classes which we use for logo takes entire width, hence when we toggle the search icon, the logo gets hidden */
 .binf-widgets .perspective-module-view.module-d2-view .binf-navbar-brand > .csui-logo {
@@ -579,7 +581,7 @@ html[dir=rtl] .d2-icon-tableview-close{
   height: 40px;
 }
 
-@media (max-width: 1440px) {
+@media (width <= 1440px) {
   .binf-widgets .perspective-module-view.module-d2-view .binf-navbar-brand > .csui-logo > .csui-logo-image{
     background-image: url('../widgets/navigation.header/controls/home/image/header_d2_li_1.svg');
     width: 100%;
@@ -646,8 +648,8 @@ html[dir=rtl] .d2-icon-tableview-close{
 }
 
 .binf-widgets .csui-navbar .favorite_header_icon {
-  height: 45px;
-  width: 45px;
+  height: 42px;
+  width: 42px;
   background: none;
   border-radius: 50%;
   border: 1px solid #004A70;
@@ -892,13 +894,14 @@ div.dataTables_wrapper table.binf-table.dataTable th div.csui-acc-focusable-acti
   outline-style: dotted;
 }
 
-.cs-metadata-properties.smart-tab-panel .tab-links.smart-tab-links .binf-nav.binf-nav-tabs > li > a span.d2-error-validation {
+.binf-widgets .cs-metadata-properties.smart-tab-panel .tab-links.smart-tab-links .binf-nav.binf-nav-tabs > li > a span.d2-error-validation {
   border-bottom: none;
   width: 12px;
   height: 12px;
   vertical-align: top;
   position: relative;
-  top: 0.5rem;
+  top: 0;
+  right: 2px;
   flex: 0 0 auto;
   pointer-events: none;
   background-image: url('../overrides/impl/image/warning.svg');
@@ -1112,7 +1115,7 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   color: transparent;
 }
 
-@media (max-width: 830px) {
+@media (width <= 830px) {
   .binf-widgets .csui-navbar.zero-gutter .binf-container-fluid .binf-navbar-brand.binf-collapse.binf-navbar-collapse {
     position: absolute;
   }
@@ -1129,7 +1132,7 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
 }
 
 .metadata-header .csui-icon.csui-metadata-listview:focus {
-  outline: 1px dotted #333;
+  outline: 1px dotted #333333;
 }
 
 .binf-widgets .csui-alert .binf-modal-body .csui-simple-message-view {
@@ -1140,7 +1143,7 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   display:none;
 }
 
-.control-area.cs-field-write.d2-textareafield .cs-field-write-inner.d2-textareafield .editable.cs-no-resize.d2-textareafield{
+.control-area.cs-field-write.dctmw-textareafield .cs-field-write-inner.dctmw-textareafield .editable.dctmw-textareafield{
   height : auto;
 }
 
@@ -1154,14 +1157,14 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   max-height : none !important;
 }
 
-.cs-field-read.d2-textareafield .cs-field-read-inner.d2-textareafield .cs-field-textarea-data.d2-textareafield{
+.cs-field-read.dctmw-textareafield .cs-field-read-inner.dctmw-textareafield .cs-field-textarea-data.dctmw-textareafield{
   height : auto !important;
   border : none !important;
   max-height : none !important;
   overflow: hidden !important;
 }
 
-.cs-field-textarea-data.d2-textareafield{
+.cs-field-textarea-data.dctmw-textareafield{
   resize : none;
 }
 
@@ -1169,7 +1172,7 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   width : 100%;
 }
 
-.cs-textareafield.cs-formfield-readonly .cs-field-read.d2-textareafield{
+.cs-textareafield.cs-formfield-readonly .cs-field-read.dctmw-textareafield{
     display: flex;
 }
 
@@ -1197,7 +1200,11 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   background-image: url('../overrides/impl/image/caret_up.svg') !important;
 }
 
-.cs-field-read.d2-textareafield .cs-field-read-inner.d2-textareafield .btn-container .d2-readonly-mode{
+.icon-expandArrowRight {
+  background-image: url('../overrides/impl/image/caret_collapse.svg') !important;
+}
+
+.cs-field-read.dctmw-textareafield .cs-field-read-inner.dctmw-textareafield .btn-container .dctmw-readonly-mode{
   height : auto;
   line-height: 23px;
 }
@@ -1207,7 +1214,7 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   width: 100%;
 }
 
-.cs-formfield.cs-textareafield.cs-formfield-readonly.csui-textareafield-reset .cs-field-read.d2-textareafield .cs-field-read-inner.d2-textareafield .btn-container.d2-textareafield.binf-show .csui-textareafield-reset-button{
+.cs-formfield.cs-textareafield.cs-formfield-readonly.csui-textareafield-reset .cs-field-read.dctmw-textareafield .cs-field-read-inner.dctmw-textareafield .btn-container.dctmw-textareafield.binf-show .csui-textareafield-reset-button{
   margin-left: 10px;
 }
 
@@ -1224,6 +1231,7 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
 .binf-widgets .d2-minimize-progresspanel.csui-progresspanel{
   cursor: pointer;
 }
+
 .csui-favorites .csui-favorites-view.initialLoading.csui-acc-tab-region.showing-favorites-view .csui-favorites-view-container .cs-list.tile.content-tile.initialLoading.d2-tile.d2-favorites.csui-acc-tab-region.csui-acc-tab-region-active .tile-header .tile-controls.search-enabled .search-box .icon-search-placeholder{
   right: 1px;
 }
@@ -1233,7 +1241,7 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   z-index: 1200;
 }
 
-/*disable text selection for ui.draggable/ui.sortable items in touch device*/
+/* disable text selection for ui.draggable/ui.sortable items in touch device */
 .binf-widgets .d2-ui-touchable {
   -webkit-user-select: none;
 }
@@ -1263,15 +1271,16 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   opacity: 0;
 }
 
-/*Added this css for drawing right border for Location Column. As per framework design right border is not drawn for non resizable column after pinned column. */
+/* Added this css for drawing right border for Location Column. As per framework design right border is not drawn for non resizable column after pinned column. */
 .binf-widgets .csui-nodestable.d2-widget-table-view .binf-table.csui-nowrap-table.dataTable th.csui-table-cell-generic-text[data-csui-attribute="parent_id"],
-.binf-widgets .csui-nodestable.d2-widget-table-view .binf-table.csui-nowrap-table.dataTable td.csui-table-cell-generic-text[data-csui-attribute="parent_id"] {
+.binf-widgets .csui-nodestable.d2-widget-table-view .binf-table.csui-nowrap-table.dataTable td.csui-table-cell-generic-text[data-csui-attribute="parent_id"],
+.binf-widgets .csui-metadata-basepanel .csui-nodetable .binf-table.csui-nowrap-table.dataTable th.csui-table-cell-generic-text[data-csui-attribute="parent_id"],
+.binf-widgets .csui-metadata-basepanel .csui-nodetable .binf-table.csui-nowrap-table.dataTable td.csui-table-cell-generic-text[data-csui-attribute="parent_id"] {
   border-left: 1px solid rgba(102, 102, 102, .3);
 }
 
-/*For Aviator chat paner viewer support*/
+/* For Aviator chat paner viewer support */
 .binf-widgets .csui-sidepanel.aie-chat-panel .aie-viewer.d2-aie-viewer{
-  width: 800px;
   transform: translateX(0);
 }
 
@@ -1284,6 +1293,7 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   margin-right: 4px;
   background-position: right;
 }
+
 .binf-widgets .csui-nodestable table.binf-table > thead > tr > th.client-sort-column > div span.csui-sort-arrow::after {
   content: url('../overrides/impl/image/warning.svg');
   top: -9px;
@@ -1299,7 +1309,179 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
 
 .cs-form .cs-form-set .alpaca-field.alpaca-field-array .cs-form-set-container .cs-array > .cs-pull-left{
   overflow: auto !important;
-}.binf-widgets .csui-table-view .csui-nodetable.csui-table-empty,
+}
+
+.binf-widgets .d2-init-loader-container .cs-perspective-panel .cs-perspective-with-breadcrumb-view .csui-perspective-view .cs-perspective .binf-row .cs-list .tile-content .binf-list-group .csui-tileview-contains-more-btn {
+    cursor: pointer;
+    margin: 0;
+    font-size: 14px;
+    color: #555555;
+}
+
+.binf-widgets .d2-init-loader-container .cs-perspective-panel .cs-perspective-with-breadcrumb-view .csui-perspective-view .cs-perspective .binf-row .cs-list .tile-content .binf-list-group .csui-tileview-contains-more-btn a:hover {
+    background-color: #B2BEC5
+}
+
+.binf-widgets .d2-init-loader-container .cs-perspective-panel .cs-perspective-with-breadcrumb-view .csui-perspective-view .cs-perspective .binf-row .cs-list .tile-content .binf-list-group .csui-tileview-contains-more-btn .list-item-title {
+    color: #555555;
+    display: inline-block;
+    padding-right : 10px;
+    width: calc(100% - 57px);
+}
+
+.binf-widgets .d2-init-loader-container .cs-perspective-panel .cs-perspective-with-breadcrumb-view .csui-perspective-view .cs-perspective .binf-row .cs-list .tile-content .binf-list-group .csui-tileview-contains-more-btn .csui-tileview-more-btn {
+    box-sizing: border-box;
+}
+
+/* Graphic name column styling - START */
+.binf-widgets .csui-nodetable .binf-table td.d2-table-cell-graphic-name a.csui-table-cell-name-value,
+.binf-widgets .csui-nodetable .binf-table td.d2-table-cell-graphic-name .csui-table-cell-name-justify-div:not(.csui-table-cell-name-value) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.binf-widgets .csui-nodetable .binf-table td.d2-table-cell-graphic-name .d2-graphic-icon {
+    height: 22px;
+    width: 22px;
+}
+
+.binf-widgets .csui-nodetable .binf-table td.d2-table-cell-graphic-name a.csui-table-cell-name-value .d2-graphic-icon,
+.binf-widgets .csui-nodetable .binf-table td.d2-table-cell-graphic-name .csui-table-cell-name-justify-div:not(.csui-table-cell-name-value) .d2-graphic-icon {
+    margin-top: 8px;
+}
+
+.binf-widgets .csui-nodetable .binf-table td.d2-table-cell-graphic-name a.csui-table-cell-name-value .csui-table-cell-name-link-text,
+.binf-widgets .csui-nodetable .binf-table td.d2-table-cell-graphic-name .csui-table-cell-name-justify-div:not(.csui-table-cell-name-value) .csui-table-cell-name-value {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+/* These need to be set as important since they are going to override styling applied using jquery */
+.binf-widgets .csui-nodetable .binf-table tr.csui-state-hover:not(.binf-active) td.d2-table-cell-graphic-name {
+    color: #333333 !important;
+    background-color: #BAC9CE !important
+}
+
+.binf-widgets .csui-nodetable .binf-table tr.binf-active td.d2-table-cell-graphic-name {
+    color: #333333 !important;
+    background-color: #CBD3D9 !important;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr.csui-state-hover td.d2-table-cell-graphic-name a.csui-table-cell-name-value,
+.binf-widgets .csui-nodetable .binf-table tr.csui-state-hover td.d2-table-cell-graphic-name p.csui-table-cell-name-value,
+.binf-widgets .csui-nodetable .binf-table tr.binf-active td.d2-table-cell-graphic-name a.csui-table-cell-name-value,
+.binf-widgets .csui-nodetable .binf-table tr.binf-active td.d2-table-cell-graphic-name p.csui-table-cell-name-value,
+.csui-nodetable .binf-table.csui-nowrap-table > tbody > tr > td.csui-column-highlight.d2-table-cell-graphic-name a.csui-table-cell-name-value,
+.csui-nodetable .binf-table.csui-nowrap-table > tbody > tr > td.csui-column-highlight.d2-table-cell-graphic-name p.csui-table-cell-name-value {
+    color: #333333 !important;
+}
+
+.binf-widgets .csui-nodetable .binf-table.csui-nowrap-table tr.csui-state-hover:not(.binf-active) td.d2-table-cell-graphic-name {
+    background-color: #B2BEC5 !important;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr:not(.binf-active):active td.d2-table-cell-graphic-name,
+.binf-widgets .csui-nodetable .binf-table tr.binf-active:active td.d2-table-cell-graphic-name,
+.binf-widgets .csui-nodetable .binf-table.csui-nowrap-table tr:not(.binf-active):active td.d2-table-cell-graphic-name,
+.binf-widgets .csui-nodetable .binf-table.csui-nowrap-table tr.binf-active:active td.d2-table-cell-graphic-name {
+    background-color: #98A8B2 !important;
+}
+
+.csui-nodetable .binf-table.csui-nowrap-table > tbody > tr > td.csui-column-highlight.d2-table-cell-graphic-name {
+    color: #333333 !important;
+    background-color: #E1E8F6 !important;
+}
+
+/* Thumbnail name view styling */
+.binf-widgets .cs-thumbnail-wrapper .d2-thumbnail-cell-graphic-name .csui-thumbnail-name .csui-thumbnail-name-justify-div {
+    display: flex;
+}
+
+.binf-widgets .cs-thumbnail-wrapper .d2-thumbnail-cell-graphic-name .csui-thumbnail-name .csui-thumbnail-name-justify-div .d2-graphic-icon {
+    height: 16px;
+    width: 16px;
+}
+
+.binf-widgets .cs-thumbnail-wrapper .d2-thumbnail-cell-graphic-name .csui-thumbnail-name .csui-thumbnail-name-justify-div .csui-thumbnail-name-link-text,
+.binf-widgets .cs-thumbnail-wrapper .d2-thumbnail-cell-graphic-name .csui-thumbnail-name .csui-thumbnail-name-justify-div .csui-thumbnail-name-value {
+    margin-right: 5px;
+}
+
+/* Graphic name column styling - END */
+
+/* Setting higher z-index for froala popup */
+.binf-widgets .fr-popup.fr-desktop.fr-active {
+  z-index: 3000 !important;
+}
+
+.binf-widgets .smart-tab-contents-header-wrapper .smart-tab-contents-header-content .smart-tab-contents-header-right,
+.d2-alpaca-container-label.d2-properties-form-expand-collapse.icon-expandArrowRight {
+  width: 20px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+
+.binf-widgets .smart-tab-contents-header-wrapper .smart-tab-contents-header-content .smart-tab-contents-header-right,
+.d2-alpaca-container-label.d2-properties-form-expand-collapse.icon-expandArrowDown {
+  width: 20px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+
+.binf-widgets .smart-tab-contents-header-wrapper .smart-tab-contents-header-content .smart-tab-contents-header-right,
+.d2-alpaca-container-label.d2-properties-form-expand-collapse.icon-expandArrowRight:hover {
+  cursor: pointer;
+}
+
+.binf-widgets .smart-tab-contents-header-wrapper .smart-tab-contents-header-content .smart-tab-contents-header-right,
+.d2-alpaca-container-label.d2-properties-form-expand-collapse.icon-expandArrowDown:hover {
+  cursor: pointer;
+}
+
+/* VE-OCTCR77IV4834935 - Binf Divider CSS Start - Remove this CSS after CSUI handles separators in inline table action bar */
+.binf-widgets otc-toolbaritem.binf-divider:not(.binf-widgets otc-toolbaritem.binf-divider[slot="otc-overflow-slot"]) {
+  display: none;
+}
+
+.binf-widgets otc-toolbaritem.binf-divider[slot="otc-overflow-slot"] {
+  height: 1px;
+  margin: 0;
+  display: block;
+  background-color: #e5e5e5;
+}
+
+/* VE-OCTCR77IV4834935 - Binf Divider CSS End */
+
+.binf-widgets .d2-task-documents-panel-container .d2-task-documents-panels .d2-split-panel-container .d2-split-panel .d2-split-panel-content .d2-split-pane-content .d2-task-documents-list .cs-tab-links .csui-meta-data{
+  height: 100%;
+}
+
+.binf-widgets .d2-task-documents-panel-container .d2-task-documents-panels .d2-split-panel-container .d2-split-panel .d2-split-panel-content .d2-split-pane-content .d2-task-documents-list .cs-tab-links .csui-meta-data .cs-metadata-dropdown{
+  width: 100%;
+  height: 100%;
+}
+
+.binf-widgets .smart-tab-panel .tab-links.smart-tab-links .binf-nav.binf-nav-tabs > li > a .smart-tab-contents-count {
+    margin-right : 4px;
+}
+
+.binf-widgets .d2-launch-workflow-schedule .smart-tab-contents-header-wrapper .smart-tab-contents-header-content{
+      height: 52px;
+}
+
+.binf-widgets .csui-message-container .csui-messagepanel.csui-success.d2-node-create-success-message .csui-header .csui-text{
+  display: block;
+}
+
+.binf-widgets .dctmw-listfield ul {
+  overflow: hidden;
+}
+
+/* css!d2/overrides/impl/nodestable.view.fix.zero.state.accessible.mode */
+
+.binf-widgets .csui-table-view .csui-nodetable.csui-table-empty,
 .binf-widgets .csui-table-tableview .csui-nodetable.csui-table-empty {
   position: relative;
 }
@@ -1325,6 +1507,132 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   z-index: 0;
 }
 
+
+/* css!d2/controls/table/cells/wf.associations.count/impl/wf.associations.count.view */
+
+.d2-cell-wf-count-container {
+    height: 18px;
+    width: 18px;
+}
+
+.d2-cell-wf-count-wrapper .d2-cell-wf-count-container .wf-association-status-icon {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-image: url('../controls/table/cells/wf.associations.count/impl/images/status_workflow24.svg');
+}
+
+
+
+/* css!d2/controls/table/cells/viewer.markup.count/impl/markups.count.view */
+
+.d2-cell-markup-count-container {
+  height: 18px;
+  width: 18px;
+}
+
+.d2-cell-markup-count-container .markup-status-icon {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background-image: url('../controls/table/cells/viewer.markup.count/impl/images/status_markup_available_24.svg');
+}
+
+.binf-widgets .d2-table-cell-markup-status {
+  min-width: 56px;
+  max-width: 152px;
+}
+
+
+
+
+/* css!d2/controls/table/cells/editing.online/impl/editing.online */
+
+.d2-cell-editing-online {
+    width: 24px;
+}
+
+.d2-cell-editing-online-container {
+    height: 20px;
+    width: 20px;
+}
+
+.d2-cell-editing-online-wrapper .d2-cell-editing-online-container .editing-online-status-icon {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-image: url('../controls/table/cells/editing.online/impl/images/status_available_for_collaboration.svg');
+}
+
+/* css!d2/commands/open.plugins/impl/markup.migration/styles */
+
+.markup-migration {
+  background-color: #ffffff;
+}
+
+.markup-migration .markup-migration-content {
+  display: flex;
+  padding: 11px 16px 10px 16px;
+}
+
+.markup-migration .markup-migration-content.migration-content-info {
+  background-color: #f4f5fa;
+  border-bottom: 1px solid #2e3d98;
+}
+
+.markup-migration .markup-migration-content.migration-content-success {
+  background-color: #f2f8f3;
+  border-bottom: 1px solid #067d14;
+}
+
+.markup-migration .markup-migration-content.migration-content-error {
+  background-color: rgba(223,51,36,0.05);
+  border-bottom: 1px solid #df3324;
+}
+
+.markup-migration .information-icon {
+  height: 18px;
+  width: 18px;
+  background: url('../commands/open.plugins/impl/images/information.svg');
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.markup-migration .success-icon {
+  height: 18px;
+  width: 18px;
+  background: url('../commands/open.plugins/impl/images/success.svg');
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.markup-migration .error-icon {
+  height: 18px;
+  width: 18px;
+  background: url('../commands/open.plugins/impl/images/error.svg');
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.markup-migration .iconBox {
+  width: 30px;
+}
+
+.markup-migration .messageBox {
+  width: calc(100% - 30px);
+}
+
+.binf-widgets .markup-migration .reload {
+  color: #2e3d98;
+  border-bottom: 1px solid #2e3d98;
+}
+
+.migration-info {
+  min-height: 40px;
+}
+
+/* css!d2/integration/commands/impl/embedd.command.dialog */
+
 .binf-widgets.d2-embed.only-dialog,
 .binf-widgets.d2-embed.only-dialog .binf-modal {
   min-width: 688px;
@@ -1343,6 +1651,7 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
 .binf-widgets.d2-embed.only-dialog.d2-responsive-dialog .d2-stepper-wizard.binf-modal .binf-modal-dialog {
   width: 100%;
 }
+
 .binf-widgets.d2-embed.only-dialog.hide-dialog-close .d2-stepper-wizard.binf-modal .binf-modal-dialog .binf-modal-header .cs-close {
   display: none;
 }
@@ -1373,7 +1682,11 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
 .binf-widgets.d2-embed.only-dialog.d2-responsive-dialog.d2-embed-import .d2-import-file-wizard.d2-stepper-wizard .binf-modal-dialog{
   max-width: 100%;
   width: 100%;
-}.binf-widgets .d2-empty-view {
+}
+
+/* css!d2/widgets/miniviewer/impl/emptyview */
+
+.binf-widgets .d2-empty-view {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1400,7 +1713,11 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
 
 .d2-empty-view .no-preview-download {
   padding-top: 16px;
-}.viewer-perspective {
+}
+
+/* css!d2/widgets/viewer.perspective/impl/viewer.perspective */
+
+.viewer-perspective {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -1411,6 +1728,9 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   width: inherit;
   height: inherit;
 }
+
+/* css!d2/integration/metadata/impl/embed.metadata */
+
 .binf-widgets .d2-embed-container .d2-embed-dialog-content .metadata-content-header .metadata-header.with-right-bar > .d2-property-page-mask {
   display: none;
 }
@@ -1429,7 +1749,10 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
 
 .binf-widgets .d2-embed-container .d2-embed-dialog-content .metadata-content-wrapper .binf-tab-content .binf-tab-pane .metadata-inner-wrapper {
   height: calc(100vh - 64px);
-}/*csslint ids:false*/
+}
+
+/* css!d2/integration/impl/embedder */
+
 .binf-widgets.d2-embed .d2-embed-error,
 .binf-widgets.d2-embed h3.d2-startup-error {
   position: absolute;
@@ -1438,14 +1761,14 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   height: 100%;
   padding: 50px 20px 0 20px;
   text-align: center;
-  background-color: #fff;
+  background-color: #ffffff;
   font-size: 24px;
   line-height: 36px;
-  color: #333;
+  color: #333333;
 }
 
 .binf-widgets.d2-embed.only-dialog .d2-embed-error {
-  color: #fff;
+  color: #ffffff;
   background-color: transparent;
 }
 
@@ -1480,7 +1803,10 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
 
 .binf-widgets.d2-embed.only-dialog .d2-embed-error .error-img{
   background-image: url(../pages/error/impl/images/server-error.svg);
-}/*csslint outline-none:false*/
+}
+
+/* css!d2/integration/commands/impl/embed.search.box */
+
 .d2-embedded-search {
   position: absolute;
   width: 400px;
@@ -1540,7 +1866,7 @@ input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   padding-right: 30px;
   padding-left: 1.75em;
   font-size: 0.875em;
-  text-indent: 2px; /* avoid cutoff of cursive letters*/
+  text-indent: 2px; /* avoid cutoff of cursive letters */
 }
 
 .d2-embedded-search .search::-ms-clear {
@@ -1563,7 +1889,7 @@ body.d2-embed:not(.csui-on-ipad) .csui-search-results .csui-result-list {
   top: 36px;
   right: 46px;
   width: calc(100% - 82px);
-  background-color: #fff;
+  background-color: #ffffff;
   float: right;
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
   border: none;
@@ -1612,7 +1938,11 @@ body.d2-embed:not(.csui-on-ipad) .csui-search-results .csui-result-list {
   line-height: 32px;
   font-size: 14px;
   cursor: pointer;
-}.alpaca-control .cs-formfield.cs-richtextfield {
+}
+
+/* css!d2/controls/form/impl/d2richtext/d2richtextfield */
+
+.alpaca-control .cs-formfield.cs-richtextfield {
   height: auto;
   line-height: 1.6em;
   max-height: none;
@@ -1624,53 +1954,64 @@ body.d2-embed:not(.csui-on-ipad) .csui-search-results .csui-result-list {
   max-height: none;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read h1 {
+.cs-formfield.cs-richtextfield h1,
+.expanded-html-editor-dialog .expanded-rich-text-editor h1 {
   font-size: 2em;
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read h2 {
+.cs-formfield.cs-richtextfield h2,
+.expanded-html-editor-dialog .expanded-rich-text-editor h2 {
   font-size: 1.5em;
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read h3 {
+.cs-formfield.cs-richtextfield h3,
+.expanded-html-editor-dialog .expanded-rich-text-editor h3 {
   font-size: 1.17em;
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read h4 {
+.cs-formfield.cs-richtextfield h4,
+.expanded-html-editor-dialog .expanded-rich-text-editor h4 {
   font-size: 1em;
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read h5 {
+.cs-formfield.cs-richtextfield h5,
+.expanded-html-editor-dialog .expanded-rich-text-editor h5 {
   font-size: 0.83em;
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read h6 {
+.cs-formfield.cs-richtextfield h6,
+.expanded-html-editor-dialog .expanded-rich-text-editor h6 {
   font-size: .67em;
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read b {
+.cs-formfield.cs-richtextfield b,
+.expanded-html-editor-dialog .expanded-rich-text-editor b {
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read strong {
+.cs-formfield.cs-richtextfield strong,
+.expanded-html-editor-dialog .expanded-rich-text-editor strong {
   font-weight: bold;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read i {
+.cs-formfield.cs-richtextfield i,
+.expanded-html-editor-dialog .expanded-rich-text-editor i {
   font-style: italic;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read em {
+.cs-formfield.cs-richtextfield em,
+.expanded-html-editor-dialog .expanded-rich-text-editor em {
   font-style: italic;
 }
 
-.cs-formfield.cs-richtextfield .cs-field-read big {
+.cs-formfield.cs-richtextfield big,
+.expanded-html-editor-dialog .expanded-rich-text-editor big {
   font-size: larger;
 }
 
@@ -1714,1249 +2055,158 @@ body.d2-embed:not(.csui-on-ipad) .csui-search-results .csui-result-list {
   outline-offset: 3px;
 }
 
-.binf-widgets .cs-form .alpaca-container-item > .binf-form-group.alpaca-field-select > .binf-col-sm-9 {
-  overflow: visible;
-  /*width: 60%;*/
-  padding: 0;
+.cs-formfield.cs-richtextfield .cs-field-write .fr-box .fr-wrapper,
+.expanded-rich-text-editor .fr-box .fr-wrapper{
+  border: 0;
 }
 
-.binf-widgets .d2-combofield {
-  width: 100%;
+.cs-formfield.cs-richtextfield .cs-field-write .fr-box div:focus-visible,
+.expanded-rich-text-editor .fr-box div:focus-visible{
+  box-shadow:none;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-write .fr-toolbar .fr-btn-grp{
+  margin:0;
+}
+
+.cs-formfield.cs-richtextfield .expand-field {
   position: relative;
+  float: left;
+  height: 32px;
+  width: 32px;
 }
 
-.binf-widgets .d2-combofield .cs-field-write-inner {
-  position: relative;
+.cs-formfield.cs-richtextfield .cs-field-write .expand-field {
+  margin: 8px;
+  z-index: 1;
 }
 
-.binf-widgets .d2-combofield .d2-combofield-search-box-input {
-  border: 1px solid #a7a9ac;
-  /*font-style: italic;*/
+.cs-formfield.cs-richtextfield .cs-field-read .expand-field {
+  top: -5px;
+  margin: 0;
+}
+
+.cs-formfield.cs-richtextfield .cs-field-write .cs-field-write-inner {
+  border: 1px solid #CFD0D1;
   border-radius: 3px;
-  padding-left: 22px;
-  height: 28px;
-  padding-right: 0.5em;
 }
 
-.binf-widgets .d2-combofield .d2-icon-caret-down:not(.d2-icon-disabled) {
-  content: '';
-  position: absolute;
-  pointer-events: none;
-  top: 5px;
-  left: 13px;
-  height: 18px;
-  width: 18px;
-  display: block;
-  background: url('../controls/form/impl/d2combo/images/caret_down.svg') no-repeat center;
+.alpaca-control .cs-formfield.cs-richtextfield.cs-formfield-readonly.fixed-height-content .cs-field-richtext-data {
+  overflow-x: scroll;
+  line-height: 1.6;
+  max-height: 250px;
 }
 
-.binf-widgets .d2-combofield .d2-combofield-search-box-input:focus {
-  border: 2px solid #666666;
-  outline: none;
-}
-
-.binf-widgets .d2-combofield ul {
-  padding: 0;
-}
-
-.d2-combofield-options-container {
-  display: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-  position: absolute;
-  z-index: 1002;
-  background: #ffffff;
-  width: 100%;
-}
-
-
-.d2-combofield-options li {
-  color: #333333;
-}
-
-.binf-widgets .d2-combofield-options > li.active {
-  background: #B9C4CB;
-  box-shadow: inset 0 -1px 0 #FFFFFF, inset 0 1px 0 #FFFFFF;
-}
-
-.d2-combofield-options li.d2-select-add-new {
-  border-top: 1px solid #DCDCDC;
-}
-
-.binf-widgets .d2-combofield-options > li > a,
-.binf-widgets .d2-combofield .d2-combofield-options-container > .d2-add-new-option,
-.binf-widgets .d2-combofield .d2-combofield-options > .d2-combo-no-result {
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
-  color: inherit;
-  padding: 3px 10px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.d2-combofield-options > li:hover a {
-  color: inherit;
-}
-
-.binf-widgets .d2-combofield .d2-combofield-options .d2-combo-selected {
-  background: #1074bc;
-  color: #ffffff;
-}
-
-.binf-widgets .d2-combofield .d2-combofield-options > .d2-combo-no-result {
-  top: 0;
-  bottom: 3px;
-  line-height: 24px;
+.cs-formfield.cs-richtextfield .cs-field-write .rich-text-content-length,
+.expanded-rich-text-editor .rich-text-content-length {
   font-size: 14px;
-  color: #757575;
-  cursor: text;
-  font-weight: bolder;
+  color: #999999;
+  padding: 6px 10px;
 }
 
-.d2-combofield-options > li.d2-combo-results-message {
-  position: relative;
-  padding-right: 10px;
-  top: 0;
-  bottom: 3px;
-  line-height: 24px;
+.cs-formfield.cs-richtextfield .cs-field-write .rich-text-content-length{
+  float: left;
+}
+
+.expanded-rich-text-editor .error-message{
   font-size: 14px;
-  color: #757575;
-}
-
-.binf-widgets .d2-combofield-options > li.d2-combo-no-result > a {
-  cursor: text;
-  font-weight: bolder;
-}
-
-.d2-combo-dropup {
-  top: auto;
-  bottom: 100%;
-}
-
-.binf-widgets .d2-combofield-options > li > a > .d2-highlight-options {
-  font-weight: bolder;
-  color: #333333;
-}
-
-.binf-widgets .d2-combofield .d2-combofield-options > .d2-add-new-option,
-.binf-widgets .d2-combofield .d2-combofield-options > .d2-select-add-new-option {
-  border-top: 1px solid #D5D5D5;
-}
-
-.binf-widgets .d2-combofield .d2-combofield-options li.csui-loading-parent-wrapper {
-  margin-right: 20px;
-}
-
-.binf-widgets .d2-combofield-options > li > a > span.d2-combofield-text-container .d2-highlight-options {
-  font-weight: bolder;
-}
-
-.binf-widgets .d2-combofield .d2-combofield-options-container > .d2-add-new-option {
-  border-top: 1px solid #DCDCDC;
-}
-
-/* Start: Mobile options container css*/
-.binf-widgets.csui-mobile.d2-mobile .d2-combofield .d2-combofield-mobile-options-container {
-  position: fixed !important;
-  top: 0 !important;
-  right: 0 !important;
-  background: #ffffff;
-  width: 100% !important;
-  height: 100%;
-  z-index: 1000;
-}
-
-.binf-widgets .d2-combofield-mobile-options-container li {
-  display: table;
-  width: 100%;
-  list-style: none;
-  padding-right: 14px;
-  cursor: pointer;
-  line-height: 43px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-}
-
-.binf-widgets .d2-combofield .d2-combofield-mobile-options-container .d2-combofield-options li:focus,
-.binf-widgets .d2-combofield .d2-combofield-mobile-options-container .d2-combofield-options li:active {
-  background-color: #b2bec5;
-}
-
-.binf-widgets .d2-combofield-mobile-options-container .d2-combofield-options > li.active {
-  background: #ffffff;
-}
-
-.binf-widgets .d2-combofield .d2-combofield-mobile-options-container .d2-combofield-options .d2-combo-selected {
-  background: #eeeeee;
-  color: #333333;
-}
-
-.binf-widgets.d2-mobile .d2-combofield-mobile-options-container .d2-combofield-options > li.active a {
-  background: none;
-  box-shadow: none;
-}
-
-/* End: Mobile options container css*//*csslint outline-none:false*/
-.binf-widgets .cs-form .alpaca-container-item > .binf-form-group.alpaca-field-select > .binf-col-sm-9 {
-  overflow: visible;
-  /*width: 60%;*/
-  padding: 0;
-}
-
-.binf-widgets .d2-listfield {
-  width: 100%;
-  position: relative;
-  height: 100%;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-selected-container {
-  width: 100%;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-search-box {
-  position: relative;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-search-box .d2-listfield-search {
-  margin-bottom: 5px;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-search-box input {
-  border: 1px solid #a7a9ac;
-  border-radius: 3px;
-  padding-left: 30px;
-  height: 28px;
-  padding-right: 0.5em;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-search-box .d2list-search-toolbar {
-  position: absolute;
-  top: 0;
-  left: 12px;
-  display: block;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-search-box .d2list-search-toolbar .options-view-button,
-.binf-widgets.csui-mobile.d2-mobile .d2-listfield .cs-field-write:not(.d2-field-disabled) .drop-down-button {
-  background: url('../controls/form/impl/d2list/images/caret_down.svg') no-repeat center;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-search-box .d2list-search-toolbar .options-view-button {
-  float: right;
-  height: 28px;
-  width: 18px;
-  border: none;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-search-box .d2list-search-toolbar .consolidated-view-button {
-  float: right;
-  height: 28px;
-  width: 18px;
-  background: url('../controls/form/impl/d2list/images/consolidated_view.svg') no-repeat center;
-  border: none;
-  cursor: pointer;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-search-box .d2list-search-toolbar .consolidated-view-button.d2-active {
-  background: url('../controls/form/impl/d2list/images/consolidated_view_ac.svg') no-repeat center;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-search-box .d2-listfield-search-box-disabled .d2list-search-toolbar .options-view-button {
-  background: none;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-search-box input:focus {
-  border: 2px solid #a7a9ac;
-  outline: none;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-search-box .d2list-search-toolbar button:focus {
-  outline: 1px dotted #333333;
-  outline-offset: -2px;
-}
-
-/*reuse search icon*/
-.binf-widgets .d2-listfield .d2-listfield-search-box .csui-icon-tkl-search {
-  height: 12px;
-  width: 12px;
-  position: absolute;
-  top: 12px;
-  left: 10px;
-}
-
-.binf-widgets .d2-listfield ul {
-  padding: 0;
-}
-
-.binf-widgets .d2-listfield ul.d2-listfield-chicklets {
-  padding-right: 2px;
-  padding-left: 16px;
-  padding-bottom: 4px;
-}
-
-.d2-listfield-options li,
-d2-add-new-option li {
-  color: #333333;
-}
-
-.d2-listfield-options li:focus,
-.binf-widgets .d2-listfield .cs-field-write .cs-field-write-inner .d2-listfield-options-container .d2-searchResultCountDetails:focus,
-.binf-widgets .d2-listfield .cs-field-write .cs-field-write-inner li.d2-combo-no-result:focus {
-  outline: 1px dotted #333;
-  outline-offset: -1px;
-}
-
-.d2-listfield-options > li:not(.d2-combo-no-result):hover, .binf-widgets .d2-listfield-options > li.active {
-  background: #B9C4CB;
-  box-shadow: inset 0 -1px 0 #FFFFFF, inset 0 1px 0 #FFFFFF;
-}
-
-.binf-widgets ul.d2-listfield-options-selected {
-  border-bottom: 1px solid #a7a9ac;
-}
-
-.binf-widgets .d2-listfield-options-wrapper li a {
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
-  color: inherit;
-  padding: 3px 10px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.binf-widgets .d2-listfield-options-wrapper li a span.d2-listfield-icon-container {
-  display: inline-block;
-  height: 12px;
-  width: 12px;
-  margin-left: 4px;
-}
-
-.d2-icon-checkmark {
-  background: url(../controls/form/impl/d2list/images/checkmark16.svg) no-repeat center;
-}
-
-li.d2-invalid-option .d2-icon-checkmark {
-  background: url(../controls/form/impl/d2list/images/checkmark16_error.svg) no-repeat center;
-}
-
-.d2-listfield-options > li:hover a {
-  color: inherit;
-}
-
-.binf-widgets .d2-listfield-options > .d2-combo-no-result > a {
-  cursor: text;
-}
-
-.cs-combo-dropup {
-  top: auto;
-  bottom: 100%;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-selected-container .d2-listfield-selection-wrapper,
-.binf-widgets .d2-listfield .d2-listfield-options-container .d2-listfield-options-wrapper {
-  border: 1px solid #a7a9ac;
-  box-sizing: border-box;
-  border-radius: 3px;
-  width: 100%;
-}
-
-.binf-widgets .d2-listfield .cs-field-read .d2-listfield-selected-container .d2-listfield-selection-wrapper {
-  border: none;
-}
-
-.binf-widgets .d2-listfield .cs-field-read .d2-listfield-selected-container .d2-listfield-selection-wrapper ul.d2-listfield-chicklets {
-  padding-right: 0;
-}
-
-.binf-widgets .d2-listfield .cs-field-read .d2-listfield-selected-container .d2-listfield-selection-wrapper ul.d2-listfield-chicklets li {
-  margin-right: 0;
-}
-
-.binf-widgets .d2-listfield .cs-field-read .d2-listfield-selected-container .d2-listfield-selection-wrapper li:hover {
-  background: none;
-}
-
-.d2-listfield-selectedvalues li {
-  color: #333333;
-  min-height: 20px;
-}
-
-.d2-listfield-chicklets li {
-  margin-right: 2px;
-  margin-left: 2px;
-  margin-top: 4px;
-  float: right;
-  max-width: 100%;
-}
-
-.d2-listfield-selectedvalues:not(.d2-formfield-disabled) > li:hover, .binf-widgets .d2-listfield-selectedvalues > li.active {
-  background: #B9C4CB;
-  box-shadow: inset 0 -1px 0 #FFFFFF, inset 0 1px 0 #FFFFFF;
-}
-
-.binf-widgets .cs-field-write .d2-listfield-chicklets.d2-listfield-selectedvalues:not(.d2-formfield-disabled) > li > a:hover,
-.binf-widgets .cs-field-write .d2-listfield-chicklets.d2-listfield-selectedvalues > li:active {
-  background: #66D4D6;
-}
-
-.binf-widgets .d2-listfield-selectedvalues > li > a {
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
-  color: inherit;
-  padding: 3px 10px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.binf-widgets .d2-listfield-chicklets > li > a {
-  background: #E7F8F8;
-  border: 1px solid #33C6C8;
-  box-sizing: border-box;
-  border-radius: 3px;
-  display: flex;
-  height: 24px;
-  cursor: pointer;
-  padding: 0;
-}
-
-.d2-listfield-selectedvalues > li:hover a {
-  color: inherit;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-selectedvalues .cs-combo-selected {
-  background: #B9C4CB;
-  box-shadow: inset 0 -1px 0 #FFFFFF, inset 0 1px 0 #FFFFFF;
-  color: #ffffff;
-}
-
-.binf-widgets .d2-listfield-selectedvalues > li > a > span.d2-listfield-icon-container {
-  height: 12px;
-  width: 12px;
-  display: inline-block;
-  margin-top: 6px;
-}
-
-.binf-widgets .d2-listfield-selectedvalues > li > a > span.d2-listfield-selectedlabel {
-  display: inline-block;
-  width: calc(100% - 42px);
-  overflow: hidden;
-  vertical-align: bottom;
-  text-overflow: ellipsis;
-}
-
-.binf-widgets .d2-listfield-selectedvalues > li.d2-listfield-multivalue-item > a > span.d2-listfield-icon-container:first-child {
-  width: 0;
-}
-
-.binf-widgets .d2-listfield-selectedvalues > li.d2-listfield-multivalue-item:not(.d2-invalid-option) > a > span.d2-listfield-selectedlabel {
-  width: calc(100% - 30px);
-  color: #757575;
-}
-
-.binf-widgets .d2-listfield-sortable.d2-listfield-selectedvalues > li.d2-listfield-multivalue-item > a > span.d2-listfield-selectedlabel {
-  width: calc(100% - 26px);
-}
-
-.binf-widgets .d2-listfield-chicklets > li > a > span.d2-listfield-selectedlabel {
-  font-size: 11px;
-  line-height: 22px;
-  color: #333333;
-  cursor: pointer;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-right: 8px;
-  display: inline-block;
-  width: calc(100% - 20px);
-}
-
-.binf-widgets .d2-listfield .cs-field-read .cs-field-read-inner .d2-listfield-chicklets > li > a > span.d2-listfield-selectedlabel {
-  width: 100%;
-  margin-left: 8px;
-  cursor: text;
-}
-
-.binf-widgets .d2-listfield-selectedvalues > li > a > span.d2-icon-selected-close {
-  margin: 0 4px;
-}
-
-.binf-widgets .d2-listfield-selectedvalues:not(.d2-formfield-disabled) > li > a > span.d2-icon-selected-close {
-  background: url(../controls/form/impl/d2list/images/close.svg) no-repeat center;
-}
-
-.binf-widgets .d2-listfield-selectedvalues:not(.d2-formfield-disabled):not(.d2-listfield-chicklets).d2-ui-touchable > li > a > span.d2-icon-selected-close {
-  width: 16px;
-  height: 16px;
-  background-size: 12px;
-}
-
-.binf-widgets .d2-listfield-chicklets:not(.d2-formfield-disabled) > li > a > span.d2-icon-selected-close {
-  background-size: 8px 8px;
-  height: 15px;
-  width: 15px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-
-.binf-widgets .d2-listfield-selectedvalues:not(.d2-formfield-disabled) > li.d2-invalid-option > a > span.d2-icon-selected-close {
-  background: url(../controls/form/impl/d2list/images/close_error.svg) no-repeat center;
-}
-
-.binf-widgets .d2-listfield-selectedvalues > li:not(.d2-listfield-multivalue-item) > a:active > span.d2-icon-selected-close {
-  background: none;
-}
-
-.binf-widgets .d2-listfield-chicklets > li > a > span.d2-icon-selected-close {
-  background-size: 7px 7px;
+  color: #DF3324;
+  padding: 2px 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-right: 2px solid #DF3324;
   margin: 4px;
 }
 
-.binf-widgets .d2-listfield-chicklets > li > a > span.d2-listfield-icon-container {
-  width: 8px;
-  height: 8px;
+.expanded-rich-text-editor .rich-text-content-length {
+  flex-grow: 1;
+  text-align: left;
 }
 
-.binf-widgets .d2-listfield-sortable > li > a > span.d2-icon-drag {
-  margin-left: 4px;
+.expanded-rich-text-editor .message-wrapper {
+  display:flex
 }
 
-.binf-widgets .d2-listfield-selected-container .d2-listfield-selection-wrapper ul.d2-listfield-selectedvalues.d2-listfield-sortable {
-  overflow-y: auto !important;
+.expanded-rich-text-editor .editor-wrapper {
+  height: calc(100% - 30px);
+  overflow: auto;
 }
 
-.binf-widgets .d2-listfield-sortable > li > a:hover > span.d2-icon-drag,
-.binf-widgets .d2-listfield-sortable.d2-ui-touchable > li > a > span.d2-icon-drag,
-.binf-widgets .d2-listfield-sortable > li.keyboard-reorder-mode > a > span.d2-icon-drag {
-  background: url(../controls/form/impl/d2list/images/drag_dots21.svg) no-repeat center;
+.expanded-rich-text-editor .editor-wrapper > .fr-box{
+  height: calc(100% - 10px);
 }
 
-.binf-widgets .d2-listfield-sortable > li.d2-invalid-option > a:hover > span.d2-icon-drag {
-  background: url(../controls/form/impl/d2list/images/drag_dots21_error.svg) no-repeat center;
+.expanded-rich-text-editor .editor-wrapper > .fr-box > .fr-wrapper{
+  height: calc(100% - 50px);
 }
 
-.binf-widgets .d2-listfield-selectedvalues > li > a > span.d2-listfield-selectedlabel-focus {
-  outline: 1px dotted #333333;
-  outline-offset: -2px;
+.expanded-rich-text-editor .editor-wrapper > .fr-box > .fr-wrapper > .fr-code{
+  height: 100% !important; /* Overriding froala inline CSS for making to work in 200% zoom level */
 }
 
-.binf-widgets .d2-listfield-chicklets > li > a:focus {
-  outline: 1px dotted #333333;
-  outline-offset: -2px;
+.cs-form .alpaca-field.binf-has-error .cs-richtextfield .cs-field-write .fr-toolbar button {
+  color: initial;
+  background-color: initial;
+  border: initial;
 }
 
-.binf-widgets .cs-field-write .d2-listfield-selectedvalues.d2-formfield-disabled {
+.cs-form .alpaca-field.binf-has-error .cs-formfield.cs-richtextfield .cs-field-write .cs-field-write-inner{
+  border: 1px solid #df3324;
+}
+
+.cs-form .alpaca-field.binf-has-error .cs-field-write .fr-code-view textarea.fr-code {
+  color: initial;
+  background-color: initial;
+  border: initial;
+}
+
+
+.cs-formfield.cs-richtextfield .cs-field-write.d2-field-disabled .cs-field-write-inner {
   background-color: #eeeeee;
+  border: 1px solid #cccccc;
   color: #666666;
   cursor: default;
 }
 
-.binf-widgets .d2-listfield-selectedvalues.d2-formfield-disabled > li a {
-  cursor: default;
+
+.cs-formfield.cs-richtextfield .cs-field-write.d2-field-disabled .fr-box .fr-wrapper,
+.cs-formfield.cs-richtextfield .cs-field-write.d2-field-disabled .fr-box .fr-toolbar,
+.cs-formfield.cs-richtextfield .cs-field-write.d2-field-disabled .fr-box .fr-second-toolbar {
+  background: transparent;
 }
 
-.binf-widgets .d2-listfield .cs-field-write .cs-field-write-inner .d2-listfield-options-container .d2-searchResultCountDetails {
-  font-size: 90%;
-  padding: 0 2em 0 2em;
-  line-height: 24px;
-  color: #757575;
+.binf-widgets .cs-formfield.cs-richtextfield .cs-field-write .fr-box .fr-wrapper .fr-view ol,
+.binf-widgets .binf-modal-dialog .expanded-rich-text-editor .fr-box .fr-wrapper .fr-view ol{
+  list-style: decimal;
 }
 
-.binf-widgets .d2-listfield .cs-field-write .cs-field-write-inner li.d2-combo-no-result {
-  font-weight: bolder;
-  color: black;
+.binf-widgets .cs-formfield.cs-richtextfield .cs-field-write .fr-box .fr-wrapper .fr-view ul,
+.binf-widgets .binf-modal-dialog .expanded-rich-text-editor .fr-box .fr-wrapper .fr-view ul{
+  list-style: disc;
 }
 
-.binf-widgets .d2-listfield-options > li > a > span.d2-listfield-text-container .d2-highlight-options {
-  font-weight: bolder;
+.expanded-html-editor-dialog .binf-modal-body {
+  height: 60vh;
 }
 
-.binf-widgets .d2-listfield .cs-field-write .cs-field-write-inner .d2-listfield-selected-container .d2-list-options-sort-placeholder {
-  background: #DFE7EA;
-  height: 0.2em;
-  line-height: 0.2em;
-}
-
-.binf-widgets .d2-listfield .cs-field-write .cs-field-write-inner .d2-listfield-selected-container li.draggedoptions {
-  background: #DFE7EA;
-  opacity: 0.5;
-}
-
-.binf-widgets .d2-listfield .cs-field-write .cs-field-write-inner .d2-listfield-selected-container ul.d2-listfield-chicklets li.dragged-item {
-  background: #99E3E3;
-  border: 1px dashed #008383;
-  box-sizing: border-box;
-  border-radius: 3px;
-  line-height: 22px;
-}
-
-.binf-widgets .d2-combofield .d2-listfield-options > .d2-combo-no-result {
-  right: 16px;
-  left: 16px;
-  top: 0;
-  bottom: 3px;
-  line-height: 24px;
-  font-size: 14px;
-  color: #757575;
-}
-
-.binf-widgets .d2-listfield-options > .d2-combo-no-result > a {
-  cursor: text;
-  font-weight: bolder;
-}
-
-.d2-listfield-options > li:not(.d2-combo-no-result):hover, .binf-widgets .d2-listfield-options > li.active {
-  background: #B9C4CB;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-options-wrapper > .d2-add-new-option {
-  border-top: 1px solid #DCDCDC;
-}
-
-.binf-widgets .d2-listfield .d2-listfield-options li.csui-loading-parent-wrapper {
-  margin-right: 20px;
-}
-
-.binf-widgets .d2-listfield-options li.d2-invalid-option {
-  color: #df3526;
-}
-
-.binf-widgets .d2-listfield-selectedvalues li.d2-invalid-option {
-  color: #df3526;
-}
-
-.binf-widgets .d2-listfield .cs-field-read .cs-field-read-inner {
-  width: 100%
-}
-
-.binf-widgets .d2-listfield .cs-field-read {
-  display: flex;
-}
-
-.binf-widgets .d2-listfield .cs-field-read .d2-list-toolbar {
-  display: flex;
-}
-
-.binf-widgets .d2-listfield .cs-field-read .d2-list-toolbar > a::after {
-  content: '';
-  background: url('../controls/form/impl/d2list/images/show-more.svg') no-repeat;
-  background-size: contain;
-  width: 12px;
-  height: 12px;
-  float: left;
-  margin-top: 8px;
-  margin-right: 3px;
-}
-
-.binf-widgets .d2-listfield .cs-field-read .d2-list-toolbar > a[data-d2-list-toolbar-action="showLess"]::after {
-  background: url('../controls/form/impl/d2list/images/show-less.svg') no-repeat;
-  background-size: contain;
-}
-
-.binf-widgets .cs-formfield.d2-listfield .cs-field-read button,
-.binf-widgets .cs-formfield.d2-listfield .cs-field-read button > span {
-  cursor: default;
-}
-
-.d2-listfield-selectedvalues:not(.d2-formfield-disabled).disable-mouse-events {
-  pointer-events: none;
-}
-
-.d2-listfield-selectedvalues:not(.d2-formfield-disabled) > li.keyboard-reorder-mode {
-  background: #B9C4CB;
-  box-shadow: inset 0 -1px 0 #FFFFFF, inset 0 1px 0 #FFFFFF;
-}
-
-.binf-widgets .cs-field-write .d2-listfield-chicklets.d2-listfield-selectedvalues:not(.d2-formfield-disabled) > li.ui-sortable-handle.keyboard-reorder-mode > a {
-  background: #66D4D6;
-}
-
-/*start-Mobile specific css changes*/
-.binf-widgets.d2-mobile .d2-listfield .d2-listfield-selected-container .d2-listfield-selection-wrapper,
-.binf-widgets.d2-mobile .d2-listfield .d2-listfield-options-container .d2-listfield-options-wrapper {
-  border: none;
-  width: 100%;
-  margin-top: 0;
-  font-size: 16px;
-}
-
-.binf-widgets.d2-mobile .d2-listfield .d2-listfield-selected-container .d2-listfield-selection-wrapper {
-  margin-top: 3px;
-}
-
-.binf-widgets.d2-mobile .d2-listfield .d2-listfield-selected-container .d2-listfield-selection-wrapper li {
-  touch-action: auto;
-}
-
-.binf-widgets.d2-mobile .d2-listfield .d2-listfield-selected-container .d2-listfield-selection-wrapper li > a {
-  padding-right: 0;
-}
-
-.binf-widgets.csui-mobile.d2-mobile .d2-listfield .d2-listfield-mobile-options-container {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background: #ffffff;
-  height: 100%;
-  z-index: 1000;
-}
-
-.binf-widgets.csui-mobile.d2-mobile .d2-listfield .d2-listfield-selection-wrapper .d2-listfield-selectedvalues {
-  padding-bottom: 4px;
-}
-
-.binf-widgets.csui-mobile.d2-mobile .d2mobile-tabpanel-edit .d2-listfield .d2-listfield-selection-wrapper .d2-listfield-selectedvalues {
-  max-height: none !important;
-  overflow: hidden;
-}
-
-.binf-widgets.csui-mobile.d2-mobile .d2-listfield-mobile-options-container li {
-  display: table;
-  height: 32px;
-  width: 100%;
-  list-style: none;
-  padding-right: 16px;
-  line-height: 43px;
-  font-size: 16px;
-}
-
-.binf-widgets.csui-mobile.d2-mobile .d2-listfield-selection-wrapper li > a,
-.binf-widgets.csui-mobile.d2-mobile .d2-listfield-options-wrapper li > a {
-  font-size: 16px;
-  padding-right: 0;
-}
-
-.binf-widgets.d2-mobile .d2-listfield-selectedvalues > li > a > span.d2-listfield-selectedlabel {
-  width: calc(100% - 18px);
-  white-space: normal;
-  word-break: normal;
-  overflow-wrap: break-word;
-}
-
-.binf-widgets.d2-mobile .d2-listfield .d2-listfield-mobile-options-container .d2-listfield-options li:focus,
-.binf-widgets.d2-mobile .d2-listfield .d2-listfield-mobile-options-container .d2-listfield-options li:active {
-  background-color: #b2bec5;
-}
-
-.binf-widgets.d2-mobile .d2-listfield-mobile-options-container .d2-listfield-options > li.active {
-  background: #ffffff;
-}
-
-.binf-widgets.d2-mobile .d2-listfield-mobile-options-container .d2-listfield-options > li.active a {
-  background: none;
-  box-shadow: none;
-}
-
-.binf-widgets.csui-mobile.d2-mobile .d2-listfield-selectedvalues:not(.d2-formfield-disabled) > li:hover, .binf-widgets .d2-listfield-selectedvalues > li.active {
-  background: none;
-}
-
-.binf-widgets.csui-mobile.d2-mobile .d2-listfield-options {
+.expanded-html-editor-dialog .expanded-rich-text-editor,
+.expanded-html-editor-dialog .expanded-rich-text-editor .write-mode {
   height: 100%;
 }
 
-.binf-widgets.csui-mobile.d2-mobile .d2mobile-properties-wrapper .d2mobile-tabpanel-edit .d2-listfield-selection-wrapper ul.d2-listfield-selectedvalues.d2-formfield-disabled::after {
-  display: none;
+.expanded-html-editor-dialog .expanded-rich-text-editor .read-mode {
+  padding: 20px;
 }
 
-.binf-widgets.csui-mobile.d2-mobile .infoMsgContainer {
-  background-color: #2e3d980d;
-  border-bottom: #2e3d98 1px solid;
-  height: 42px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.binf-widgets .cs-formfield.cs-richtextfield .cs-field-write .fr-box.fr-basic .fr-element,
+.binf-widgets .expanded-rich-text-editor .fr-box.fr-basic .fr-element {
+  padding:20px;
 }
 
-.binf-widgets.csui-mobile.d2-mobile .infoMsgContainer .infoMsg {
-  font-size: 14px;
+.binf-widgets .cs-formfield.cs-richtextfield .cs-field-read .placeholder {
+  color: #666666;
 }
 
-.binf-widgets.csui-mobile.d2-mobile .infoMsgContainer .notification_information {
-  width: 18px;
-  height: 18px;
-  float: right;
-  margin-left: 10px;
-}
-
-.binf-widgets.csui-mobile.d2-mobile .d2-listfield-options-wrapper li a span.d2-listfield-icon-container {
-  margin-left: 10px;
-}
-
-.binf-widgets.csui-mobile.d2-mobile .d2-listfield .d2-listfield-search-box .d2-listfield-search {
-  margin-bottom: 0;
-}
-
-.binf-widgets.csui-mobile.d2-mobile .d2-listfield .d2-listfield-chicklets li {
-  margin: 8px 2px 0 6px;
-}
-
-.binf-widgets.csui-mobile.d2-mobile .d2-listfield .cs-field-write:not(.d2-field-disabled) .drop-down-button {
-  background-size: 18px;
-  bottom: 0;
-  position: absolute;
-  left: 4px;
-  right: auto;
-  height: 41px;
-  width: 41px;
-  display: block;
-}
-
-.binf-widgets.d2-mobile .d2-listfield-selectedvalues:not(.d2-listfield-chicklets) > li > a > span.d2-listfield-icon-container {
-  display: none;
-}
-
-/*end-Mobile specific css changes*/
-/*csslint outline-none:false*/
-
-.cs-passwordfield input {
-  flex: 1 1 0;
-  padding-right: 0.5em;
-  padding-top: 0;
-  padding-bottom: 0;
-  border: 1px solid #a7a9ac;
-  border-radius: 3px;
-  margin: 0;
-  height: 28px;
-}
-
-.cs-form .alpaca-field.has-error .cs-field-write input {
-  color: #000000;
-  background-color: #fae9ea;
-  border: 1px solid #df3324;
-}
-
-.cs-passwordfield input:focus {
-  outline: none;
-  box-shadow: none;
-
-  border: 2px solid #666666;
-  border-radius: 3px;
-}
-
-.cs-passwordfield .cs-field-write-inner {
-  display: flex;
-}
-
-/* mode read */
-
-.cs-formfield.cs-passwordfield.cs-field-read button > span {
-  white-space: nowrap;
-}
-
-.cs-formfield.cs-passwordfield .cs-field-read button a {
-  outline: 0;
-}
-
-/* input readonly */
-
-.cs-passwordfield.readonly input {
-  border: 1px transparent;
-  padding-right: 0;
-}
-
-.cs-passwordfield .d2-icon-password-icon{
-  content: '';
-  position: absolute;
-  cursor: pointer;
-  top: 5px;
-  left: 13px;
-  height: 18px;
-  width: 18px;
-  display: block;
-  background: transparent url('../controls/form/impl/d2password/images/action_preview20.svg') center no-repeat;
-}
-
-.cs-passwordfield .d2-icon-password-icon.d2-icon-password-icon-hide{
-  background: transparent url('../controls/form/impl/d2password/images/action_hide20.svg') center no-repeat;
-}
-.binf-widgets .cs-formfield.d2-radio-group {
-  height: auto;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group ul {
-  width: 100%;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group li.horizontal-radio {
-  margin-left: 85px;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group li {
-  right: 0;
-  left: 0;
-  position: relative;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  border: 1px solid transparent;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group label {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  padding-right: 26px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  line-height: normal;
-  font-size: 14px;
-  color: #333333;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group div.d2-radio-item-container {
-  overflow: hidden;
-  max-height: 40px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group div.d2-full-height {
-  max-height: none;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group div.d2-radio-item-container:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  right: calc(100% - 3em);
-  pointer-events: none;
-  width: 3em;
-  height: 1.25em;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group span.d2-text-overflow {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  right: calc(100% - 1em);
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group span.d2-more-text {
-  background: url("../controls/form/impl/d2radiofield/images/caret_down.svg") no-repeat left bottom;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group span.d2-less-text {
-  background: url("../controls/form/impl/d2radiofield/images/caret_up.svg") no-repeat left bottom;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group label input[type="radio"].radio-item {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0;
-  opacity: 0;
-  height: 24px;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group label.radio-item-error {
-  color: #df3324;
-  display: block;
-  position: relative;
-  cursor: pointer;
-  padding-right: 26px;
-  margin-bottom: 8px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group label span.d2-radio-container {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  right: 0;
-  top: 0;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group label span.d2-radio-container span.outer {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  right: calc(50% - 18px / 2);
-  top: calc(50% - 18px / 2);
-  border: 1px solid #757575;
-  box-sizing: border-box;
-  background-color: white;
-  border-radius: 50%;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group label.radio-item-error span.d2-radio-container span.outer {
-  border-color: #df3324;
-  background-color: #FAE9EA;
-}
-
-.binf-widgets .cs-formfield.d2-radio-group label span.d2-radio-container span.inner {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  right: calc(50% - 10px / 2);
-  top: calc(50% - 10px / 2);
-  border-radius: 50%;
-  background-color: transparent;
-}
-
-.d2-radio-group label input:checked ~ span.d2-radio-container span.outer span.inner {
-  background: #757575;
-}
-
-.d2-radio-group label.radio-item-error input:checked ~ span.d2-radio-container span.outer span.inner {
-  background-color: #df3324;
-}
-
-.d2-radio-group label:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.d2-radio-group .cs-field-write-inner .validation-error-message {
-  display: block;
-  color: #df3324;
-  font-size: .75rem;
-  margin-top: -6px;
-  line-height: 1.25rem;
-}
-
-.binf-widgets .d2-radio-group input[type="radio"][disabled] {
-  cursor: context-menu;
-}
-
-.binf-widgets .d2-radio-group li.d2-active-radio {
-  border: 1px dotted #666666;
-}
-/*csslint outline-none:false*/
-.binf-widgets .cs-formfield.d2-checkbox-group {
-  height: auto;
-  padding-right: 1px;
-}
-
-.cs-formfield.d2-checkbox-group .d2-cb-container-parent {
-  display: block;
-  width: 100%;
-}
-
-.cs-formfield.d2-checkbox-group .d2-checkbox-container {
-  position: relative;
-  align-items: unset;
-  line-height: initial;
-  display: inline-flex;
-  margin-bottom: 8px;
-  width: 100%;
-}
-
-.cs-formfield.d2-checkbox-group .d2-checkbox-container.cb-item-error {
-  /*background-color: red;*/
-  padding: 2px 0 2px 2px;
-}
-
-.cs-form .d2-checkbox-group .d2-checkbox-container label {
-  color: #333333;
-  text-align: right;
-  border-bottom: 0;
-  display: block;
-  position: relative;
-  cursor: default;
-  padding-right: 8px;
-  right: .1em;
-  width: 100%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.d2-checkbox-group .d2-checkbox-container.cb-item-error label {
-  color: #df3324;
-}
-
-.d2-checkbox-group .d2-checkbox-container label:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.d2-checkbox-group .d2-checkbox-container .checkbox-item {
-  opacity: 0;
-  z-index: 1;
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  margin: 0;
-  min-width: 18px;
-  min-height: 18px;
-  position: relative;
-  top: 0;
-  right: 0;
-}
-
-.binf-widgets .d2-checkbox-group li:not(.d2-active-checkbox) .d2-checkbox-container.show-on-hover:not(:hover) .checkbox-item:not(:checked) ~ .d2-checkbox-icon-container:before {
-  opacity: 0;
-}
-
-.binf-widgets.csui-on-ipad .d2-checkbox-group li:not(.d2-active-checkbox) .d2-checkbox-container.show-on-hover:not(:hover) .checkbox-item:not(:checked) ~ .d2-checkbox-icon-container:before {
-  opacity: 1;
-}
-
-.d2-checkbox-group .d2-checkbox-container .d2-checkbox-icon-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.d2-checkbox-group .d2-checkbox-container .d2-checkbox-icon-container:before {
-  content: " ";
-  display: inline-block;
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  border-radius: 2px;
-  background-color: #ffffff;
-  outline: 0;
-  cursor: pointer;
-  background-image: url('../controls/form/impl/d2checkbox/images/checkbox.svg');
-}
-
-.d2-checkbox-group .d2-checkbox-container.cb-item-error .d2-checkbox-icon-container:before {
-  background-image: url('../controls/form/impl/d2checkbox/images/checkbox_invalid.svg');
-}
-
-.d2-checkbox-group .d2-checkbox-container.cb-item-error .d2-checkbox-icon-container:before {
-  top: 2px;
-}
-
-.d2-checkbox-group .d2-checkbox-container .checkbox-item:not([disabled]):hover + .d2-checkbox-icon-container:before {
-  border: 1px solid #757575;
-}
-
-.d2-checkbox-group .d2-checkbox-container.cb-item-error .checkbox-item:not([disabled]):hover + .d2-checkbox-icon-container:before {
-  border: 1px solid #df3324;
-}
-
-.d2-checkbox-group .d2-checkbox-container .checkbox-item:checked + .d2-checkbox-icon-container:before {
-  background-color: #ffffff;
-}
-
-.d2-checkbox-group .d2-checkbox-container .checkbox-item:disabled + .d2-checkbox-icon-container:before {
-  content: url('../controls/form/impl/d2checkbox/images/checkbox_disabled.svg');
-}
-
-.d2-checkbox-group .d2-checkbox-container.cb-item-error .checkbox-item:disabled + .d2-checkbox-icon-container:before {
-  content: url('../controls/form/impl/d2checkbox/images/checkbox_disabled_invalid.svg');
-}
-
-.d2-checkbox-group .d2-checkbox-container .d2-checkbox-icon-container:after {
-  display: inline-block;
-  position: absolute;
-  color: #ffffff;
-  background-color: #757575;
-  width: 18px;
-  height: 18px;
-}
-
-.d2-checkbox-group .d2-checkbox-container.cb-item-error .d2-checkbox-icon-container:after {
-  top: 2px;
-}
-
-.d2-checkbox-group .d2-checkbox-container .checkbox-item:checked + .d2-checkbox-icon-container:after {
-  content: " ";
-  content: url('../controls/form/impl/d2checkbox/images/checkbox_selected.svg');
-  border-radius: 3px;
-}
-
-.d2-checkbox-group .d2-checkbox-container.cb-item-error .checkbox-item:checked + .d2-checkbox-icon-container:after {
-  content: url('../controls/form/impl/d2checkbox/images/checkbox_selected_invalid.svg');
-}
-
-.d2-checkbox-group .d2-checkbox-container .checkbox-item:checked:disabled + .d2-checkbox-icon-container:after {
-  content: url('../controls/form/impl/d2checkbox/images/checkbox_on24_dis.svg');
-}
-
-.d2-checkbox-group .d2-checkbox-container.cb-item-error .checkbox-item:checked:disabled + .d2-checkbox-icon-container:after {
-  content: url('../controls/form/impl/d2checkbox/images/checkbox_on24_dis_invalid.svg');
-}
-
-.d2-checkbox-group .cs-field-write-inner .validation-error-message {
-  display: block;
-  color: #df3324;
-  font-size: .75rem;
-  margin-top: -6px;
-  line-height: 1.25rem;
-}
-
-.binf-widgets .d2-checkbox-group input[type="checkbox"][disabled] {
-  cursor: context-menu;
-}
-
-.binf-widgets .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container {
-  overflow: hidden;
-  max-height: 32px;
-  padding-bottom: 6px;
-  width: 100%;
-}
-
-.binf-widgets .cs-formfield.d2-checkbox-group div.d2-full-height {
-  max-height: none;
-}
-
-.binf-widgets .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  right: calc(100% - 3em);
-  pointer-events: none;
-  background: linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 65%);
-  width: 3em;
-  height: 1.25em;
-}
-
-.binf-widgets .cs-formfield.nested-fieldset-background.d2-checkbox-group div.d2-checkbox-item-container:after {
-  background: linear-gradient(-90deg, rgba(255, 255, 255, 0), #F5F5F5 65%);
-}
-
-.binf-widgets .cs-formfield.d2-checkbox-group span.d2-text-overflow {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  right: calc(100% - 1em);
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-}
-
-.binf-widgets .cs-formfield.d2-checkbox-group span.d2-more-text {
-  background: url("../controls/form/impl/d2checkbox/images/caret_down.svg") no-repeat left bottom;
-}
-
-.binf-widgets .cs-formfield.d2-checkbox-group span.d2-less-text {
-  background: url("../controls/form/impl/d2checkbox/images/caret_up.svg") no-repeat left bottom;
-}
-
-.binf-widgets .d2-checkbox-group ul.d2-cb-container-parent li.d2-active-checkbox {
-  border: 1px dotted #666666;
-}
-
-.cs-formfield.d2-checkbox-group .d2-cb-container-parent li {
-  padding: 6px 2px 0 0;
-  border: 1px solid transparent;
-}
-
-.cs-formfield.d2-checkbox-group .cs-field-write .d2-checkbox-item-container,
-.cs-formfield.d2-checkbox-group .cs-field-write .d2-checkbox-item-container > label {
-  cursor: pointer;
-}
+/* css!d2/controls/form/impl/d2fileupload/d2fileupload */
 
 .d2-fileupload-field .file-select-area {
   position: relative;
@@ -3026,7 +2276,11 @@ li.d2-invalid-option .d2-icon-checkmark {
 
 .d2-fileupload-field .d2-field-disabled .file-select-area .d2-icon-fileupload-clear {
   display: none;
-}.d2-spy-container .d2-column-layout,
+}
+
+/* css!d2/controls/form/impl/d2columnlayout/d2columnlayout */
+
+.d2-spy-container .d2-column-layout,
 .d2-container .d2-column-layout,
 .d2-column-layout .binf-col-md-12,
 .d2-column-layout .binf-col-md-6 {
@@ -3039,6 +2293,9 @@ li.d2-invalid-option .d2-icon-checkmark {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+/* css!d2/controls/form/impl/d2fieldsetcontainer/d2fieldsetcontainer */
+
 .d2-spy-container .d2-fieldset-layout,
 .d2-container .d2-fieldset-layout,
 .d2-fieldset-layout .binf-col-md-12,
@@ -3070,7 +2327,9 @@ li.d2-invalid-option .d2-icon-checkmark {
 }
 
 
-/*csslint outline-none:false*/
+
+/* css!d2/controls/form/impl/d2tabgroup/tabgroupcontainer */
+
 ul.d2tabgroup {
   margin-right: 0;
   background: #F5F5F5;
@@ -3253,6 +2512,9 @@ ul.d2tabgroup {
 
 
 
+
+/* css!d2/controls/form/impl/d2singlelayoutarray/d2singlelayoutarray */
+
 .cs-form .cs-form-set .alpaca-container .d2-single-array.alpaca-container-item .alpaca-field-object .alpaca-container {
   flex-direction: column;
 }
@@ -3361,7 +2623,9 @@ ul.d2tabgroup {
 
 
 
-/*csslint outline-none:false*/
+
+/* css!d2/controls/form/impl/d2nodepicker/d2nodepickerfield */
+
 .d2-nodepicker-field .node-selection-area {
   position: relative;
   width: 100%;
@@ -3447,7 +2711,7 @@ ul.d2tabgroup {
   min-height: 20px;
 }
 
-.d2-nodepicker-field .d2-nodes-selectedvalues:not(.d2-formfield-disabled) > li:hover, .binf-widgets .d2-nodes-selectedvalues > li.active {
+.d2-nodepicker-field .d2-nodes-selectedvalues:not(.dctmw-formfield-disabled) > li:hover, .binf-widgets .d2-nodes-selectedvalues > li.active {
   background: #B9C4CB;
   box-shadow: inset 0 -1px 0 #FFFFFF, inset 0 1px 0 #FFFFFF;
 }
@@ -3466,7 +2730,7 @@ ul.d2tabgroup {
   color: inherit;
 }
 
-.d2-nodepicker-field .d2-nodes-selectedvalues > li > a > span.d2-listfield-selectedlabel {
+.d2-nodepicker-field .d2-nodes-selectedvalues > li > a > span.dctmw-listfield-selectedlabel {
   display: inline-block;
   width: calc(100% - 20px);
   overflow: hidden;
@@ -3474,18 +2738,18 @@ ul.d2tabgroup {
   text-overflow: ellipsis;
 }
 
-.d2-nodepicker-field .d2-nodes-selectedvalues > li > a > span.d2-listfield-icon-container {
+.d2-nodepicker-field .d2-nodes-selectedvalues > li > a > span.dctmw-listfield-icon-container {
   height: 12px;
   width: 12px;
   display: inline-block;
   margin-top: 6px;
 }
 
-.d2-nodepicker-field .d2-nodes-selectedvalues .d2-listfield-icon-container.d2-icon-drag{
+.d2-nodepicker-field .d2-nodes-selectedvalues .dctmw-listfield-icon-container.dctmw-icon-drag{
   display: none;
 }
 
-.d2-nodepicker-field .d2-nodes-selectedvalues:not(.d2-formfield-disabled) > li > a > span.d2-icon-selected-close {
+.d2-nodepicker-field .d2-nodes-selectedvalues:not(.dctmw-formfield-disabled) > li > a > span.dctmw-icon-selected-close {
   background: url(../controls/form/impl/d2list/images/close.svg) no-repeat center;
 }
 
@@ -3495,6 +2759,7 @@ ul.d2tabgroup {
   right: 10px;
   display: none;
 }
+
 .d2-nodepicker-field .d2-nodes-selction-wrapper.node-processing .d2-nodes-selectedvalues{
   display: none;
 }
@@ -3507,7 +2772,7 @@ ul.d2tabgroup {
   background-color: #FFFFFF;
 }
 
-.d2-nodepicker-field .cs-field-read .d2-list-toolbar > a::after {
+.d2-nodepicker-field .cs-field-read .dctmw-list-toolbar > a::after {
   content: '';
   width: 12px;
   height: 12px;
@@ -3516,17 +2781,17 @@ ul.d2tabgroup {
   margin-right: 3px;
 }
 
-.d2-nodepicker-field .cs-field-read .d2-list-toolbar > a[data-d2-list-toolbar-action="showLess"]::after {
+.d2-nodepicker-field .cs-field-read .dctmw-list-toolbar > a[data-dctmw-list-toolbar-action="showLess"]::after {
   background: url('../controls/form/impl/d2list/images/show-less.svg') no-repeat;
   background-size: contain;
 }
 
-.d2-nodepicker-field .cs-field-read .d2-list-toolbar > a[data-d2-list-toolbar-action="showMore"]::after {
+.d2-nodepicker-field .cs-field-read .dctmw-list-toolbar > a[data-dctmw-list-toolbar-action="showMore"]::after {
   background: url('../controls/form/impl/d2list/images/show-more.svg') no-repeat;
   background-size: contain;
 }
 
-.d2-nodepicker-field .cs-field-read .d2-list-toolbar {
+.d2-nodepicker-field .cs-field-read .dctmw-list-toolbar {
   display: flex;
 }
 
@@ -3536,14 +2801,18 @@ ul.d2tabgroup {
   cursor: default;
 }
 
-.d2-nodepicker-field.d2-nodepicker-multi-select .cs-field-write.d2-field-disabled .multi-node-selection .d2-nodes-selectedvalues .d2-remove-selectedValue{
+.d2-nodepicker-field.d2-nodepicker-multi-select .cs-field-write.d2-field-disabled .multi-node-selection .d2-nodes-selectedvalues .dctmw-remove-selectedValue{
   visibility: hidden;
 }
 
 .d2-nodepicker-field.d2-nodepicker-multi-select .cs-field-write.d2-field-disabled .node-selection-area{
   display:none;
   visibility: hidden;
-}.d2-container .d2-singlecolumn-tab-container, .d2-singlecolumn-tab-container .binf-col-md-12, .d2-singlecolumn-tab-container .binf-col-md-6 {
+}
+
+/* css!d2/controls/form/impl/d2tab/singlecoltabcontainer */
+
+.d2-container .d2-singlecolumn-tab-container, .d2-singlecolumn-tab-container .binf-col-md-12, .d2-singlecolumn-tab-container .binf-col-md-6 {
   padding: 0;
 }
 
@@ -3555,7 +2824,8 @@ ul.d2tabgroup {
   background: white;
   position: fixed;
   top: 64px;
-  /*z-index should be greater than the perfect scroll z-index*/
+
+  /* z-index should be greater than the perfect scroll z-index */
   z-index: 1002;
   left: 0;
   height: calc(100% - 112px);
@@ -3578,7 +2848,7 @@ ul.d2tabgroup {
   width: 766px;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .csui-on-ipad .binf-widgets .d2-import-file-wizard.d2-stepper-wizard .binf-modal-dialog.wide-modal-dialog .d2-singlecolumn-tab-section {
     width: 506px;
   }
@@ -3635,186 +2905,78 @@ ul.d2tabgroup {
 
 
 
-/* Popover content style*/
-.binf-widgets .user-info-popover-content .binf-popover {
-  padding: 0;
-  position: fixed;
-  max-width: 270px;
-  min-width: 200px;
-  border: 0;
-}
 
-.binf-widgets .user-info-popover-content .binf-popover .binf-popover-content {
-  padding: 0;
-  background: #f5f5f5;
-  max-height: 300px;
-}
+/* css!d2/controls/form/fields/userfields/impl/d2usercombofield */
 
-.binf-widgets .user-info-popover-content .binf-popover.binf-bottom .binf-arrow {
-  border-bottom-width: 0;
-}
-
-.binf-widgets .user-info-popover-content .binf-popover.binf-top .binf-arrow {
-  border-top-width: 0;
-}
-
-.binf-widgets .user-info-popover-content .binf-popover.binf-bottom .binf-arrow:after {
-  border-bottom-color: #09bcef;
-}
-
-.binf-widgets .user-info-popover-content .binf-popover.binf-top .binf-arrow:after {
-  border-top-color: #09bcef;
-}
-
-.binf-widgets .user-info-popover-content .binf-popover.binf-bottom .binf-popover-content {
-  border-bottom: 0;
-  border-top: 4px solid #09bcef;
-}
-
-.binf-widgets .user-info-popover-content .binf-popover.binf-top .binf-popover-content {
-  border-top: 0;
-  border-bottom: 4px solid #09bcef;
-}
-
-/* User info content style*/
-.binf-widgets .user-info {
-  display: flex;
-  padding: 8px;
-}
-
-.binf-widgets .user-info .user-avatar .esoc-userwidget-wrapper {
-  display: block;
-  height: 32px;
-  width: 32px;
-  min-width: 32px;
-}
-
-.binf-widgets .user-info .user-avatar .esoc-userwidget-wrapper .esoc-user-container {
-  height: inherit;
-  width: inherit;
-}
-
-.binf-widgets .user-info .user-avatar .esoc-userwidget-default-avatar,
-.binf-widgets .user-info .user-avatar .esoc-user-widget-avatar {
-  height: inherit;
-  width: inherit;
-  min-width: inherit;
-}
-
-.binf-widgets .user-info .user-details {
-  margin-right: 6px;
-  width: calc(100% - 38px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.binf-widgets .user-info .info-text {
-  color: #333;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.binf-widgets .user-info .user-id {
-  font-size: 14px;
-  line-height: 18px;
-  margin-top: -2px;
-}
-
-.binf-widgets .user-info .user-address {
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.binf-widgets .user-info.only-id .user-id {
-  word-break: break-all;
-}
-
-.binf-widgets .user-info.only-id .user-address {
-  display: none;
-}
-
-.binf-widgets .user-info .d2-highlight-options {
-  font-weight: bolder;
-}
-
-.binf-widgets .binf-popover .user-info .info-text {
-  white-space: normal;
-}
-
-.binf-widgets .binf-popover .user-info .info-text.user-id {
-  word-break: normal;
-  overflow-wrap: break-word;
-}
-
-.binf-widgets .binf-popover .user-info .info-text.user-address {
-  word-break: break-all;
-}.binf-widgets .d2-combofield.d2-user-combofield .d2-combofield-options > li > a {
+.binf-widgets .dctmw-combofield.d2-user-combofield .dctmw-combofield-options > li > a {
   padding: 0 4px;
 }
 
-.binf-widgets .d2-combofield.d2-user-combofield .d2-combofield-options > li.d2-none-item > a {
+.binf-widgets .dctmw-combofield.d2-user-combofield .dctmw-combofield-options > li.dctmw-none-item > a {
   padding: 16px 14px;
 }
 
-.binf-widgets .d2-combofield.d2-user-combofield .cs-field-write .binf-popover {
+.binf-widgets .dctmw-combofield.d2-user-combofield .cs-field-write .binf-popover {
   position: fixed;
 }
 
-.binf-widgets .d2-combofield.d2-user-combofield .cs-field-write.popover-hidden .binf-popover {
+.binf-widgets .dctmw-combofield.d2-user-combofield .cs-field-write.popover-hidden .binf-popover {
   display: none !important;
 }
 
-.binf-widgets .d2-combofield.d2-user-combofield .d2-combofield-options > li.d2-searchResultCountDetails.active {
+.binf-widgets .dctmw-combofield.d2-user-combofield .dctmw-combofield-options > li.dctmw-searchResultCountDetails.active {
   background: initial;
 }
 
-.binf-widgets .d2-combofield.d2-user-combofield .d2-combofield-options .d2-combo-selected .user-info .info-text {
-  color: #FFF;
+.binf-widgets .dctmw-combofield.d2-user-combofield .dctmw-combofield-options .dctmw-combo-selected .user-info .info-text {
+  color: #FFFFFF;
 }
 
-.binf-widgets .d2-combofield.d2-user-combofield .d2-add-new-option {
+.binf-widgets .dctmw-combofield.d2-user-combofield .dctmw-add-new-option {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-right: 16px;
 }
 
-.binf-widgets .d2-combofield.d2-user-combofield .d2-add-new-option .d2-select-add-new-option > a {
-  color: #333;
+.binf-widgets .dctmw-combofield.d2-user-combofield .dctmw-add-new-option .dctmw-select-add-new-option > a {
+  color: #333333;
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.binf-widgets .alpaca-field-d2usercombo .d2-combofield.d2-user-combofield .cs-field-write .binf-help-block.alpaca-message.d2-user-error-message {
+.binf-widgets .alpaca-field-d2usercombo .dctmw-combofield.d2-user-combofield .cs-field-write .binf-help-block.alpaca-message.d2-user-error-message {
   margin-right: 0;
   width: 100%;
 }
 
-.binf-widgets .alpaca-field-d2usercombo .d2-combofield.d2-user-combofield .cs-field-write > .user-info {
+.binf-widgets .alpaca-field-d2usercombo .dctmw-combofield.d2-user-combofield .cs-field-write > .user-info {
   position: absolute;
   visibility: hidden;
   max-width: 270px;
 }
 
-.binf-widgets .alpaca-field-d2usercombo .d2-combofield.d2-user-combofield .cs-field-write > .user-info .info-text {
+.binf-widgets .alpaca-field-d2usercombo .dctmw-combofield.d2-user-combofield .cs-field-write > .user-info .info-text {
   white-space: normal;
 }
 
-.binf-widgets .alpaca-field-d2usercombo .d2-combofield.d2-user-combofield .cs-field-write > .user-info .info-text.user-id {
+.binf-widgets .alpaca-field-d2usercombo .dctmw-combofield.d2-user-combofield .cs-field-write > .user-info .info-text.user-id {
   word-break: normal;
   overflow-wrap: break-word;
 }
 
-.binf-widgets .alpaca-field-d2usercombo .d2-combofield.d2-user-combofield .cs-field-write > .user-info .info-text.user-address {
+.binf-widgets .alpaca-field-d2usercombo .dctmw-combofield.d2-user-combofield .cs-field-write > .user-info .info-text.user-address {
   word-break: break-all;
-}.binf-widgets .d2-user-list-field .d2-user-listfield-options-wrapper .d2-user-list-option .user-options-item,
+}
+
+/* css!d2/controls/form/fields/userfields/impl/d2userlistfield */
+
+.binf-widgets .d2-user-list-field .d2-user-listfield-options-wrapper .d2-user-list-option .user-options-item,
 .binf-widgets .d2-user-list-field .d2-user-listfield-selection-wrapper .d2-user-list-selection .user-selection-item {
   display: flex;
   align-items: center;
 }
 
-.binf-widgets .d2-user-list-field .d2-user-listfield-options-wrapper .d2-user-list-option .user-options-item .d2-listfield-icon-container {
+.binf-widgets .d2-user-list-field .d2-user-listfield-options-wrapper .d2-user-list-option .user-options-item .dctmw-listfield-icon-container {
   height: 12px;
   width: 12px;
   margin: 0;
@@ -3839,17 +3001,17 @@ ul.d2tabgroup {
   width: 100%;
 }
 
-.binf-widgets .d2-listfield.d2-user-list-field .d2-listfield-options-wrapper .d2-listfield-options > li.d2-none-item > a {
+.binf-widgets .d2-listfield.d2-user-list-field .dctmw-listfield-options-wrapper .d2-listfield-options>li.dctmw-none-item>a {
   padding: 15px 10px;
 }
 
-.binf-widgets .d2-listfield.d2-user-list-field .d2-add-new-option {
+.binf-widgets .d2-listfield.d2-user-list-field .dctmw-add-new-option {
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-.binf-widgets .d2-listfield.d2-user-list-field .d2-add-new-option .d2-select-add-new-option > a {
-  color: #333;
+.binf-widgets .d2-listfield.d2-user-list-field .dctmw-add-new-option .dctmw-select-add-new-option>a {
+  color: #333333;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -3859,23 +3021,44 @@ ul.d2tabgroup {
   width: 100%;
 }
 
-.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .d2-listfield-selectedvalues > li > a > span.d2-listfield-icon-container.d2-icon-drag {
+.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .dctmw-listfield-selectedvalues>li>a>span.dctmw-listfield-icon-container.dctmw-icon-drag {
   height: 24px;
   margin: 0;
 }
 
-.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .d2-listfield-selectedvalues > li > a > span.d2-listfield-icon-container.d2-icon-selected-close{
+.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .dctmw-listfield-selectedvalues>li>a>span.dctmw-listfield-icon-container.dctmw-icon-selected-close {
   margin: 0 5px;
 }
 
-.binf-widgets .d2-listfield.d2-user-list-field .d2-listfield-options-wrapper .binf-widgets .d2-listfield-options li.d2-invalid-option .user-info .info-text,
-.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .d2-listfield-selectedvalues li.d2-invalid-option .user-info .info-text{
+.binf-widgets .d2-listfield.d2-user-list-field .dctmw-listfield-options-wrapper .binf-widgets .d2-listfield-options li.dctmw-invalid-option .user-info .info-text,
+.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .dctmw-listfield-selectedvalues li.dctmw-invalid-option .user-info .info-text {
   color: #df3526;
 }
 
-.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .d2-listfield-selectedvalues > li > a > span.pre-user-info {
+.binf-widgets .d2-listfield.d2-user-list-field .d2-user-listfield-selection-wrapper .dctmw-listfield-selectedvalues>li>a>span.pre-user-info {
   margin-left: 10px;
-}.binf-widgets .alpaca-field-d2querybuilder .editable.cs-no-resize {
+}
+
+.binf-widgets .dctmw-listfield li.dctmw-selectedList.d2-user-list-option {
+  height: 48px;
+}
+
+.binf-widgets .dctmw-listfield li.dctmw-selectedList.d2-user-list-option otc-checkbox.dctmw-list-option-item {
+  height: 48px;
+}
+
+.binf-widgets .dctmw-listfield-options-wrapper li.dctmw-selectedList.d2-user-list-option a {
+  padding: 0 10px;
+}
+
+.binf-widgets .d2-user-list-field .d2-user-listfield-options-wrapper li.dctmw-selectedList.d2-user-list-option .user-options-item otc-checkbox.dctmw-list-option-item .user-info-container {
+  width: 100%;
+  margin: 0 6px 0 0;
+}
+
+/* css!d2/controls/form/impl/d2querybuilder/d2querybuilderfield */
+
+.binf-widgets .alpaca-field-d2querybuilder .editable.dctmw-textareafield {
   resize: none;
   line-height: 20px;
   padding-right: 0.5em;
@@ -3958,7 +3141,9 @@ ul.d2tabgroup {
 .binf-widgets .alpaca-container-item .binf-text-danger, .cs-form .alpaca-container-item .d2-querybuilderfield .d2-query-info-message .d2-highlight-text{
   font-weight: bolder;
 }
-/*csslint outline-none:false*/
+
+/* css!d2/controls/form/impl/d2singleselecttree/d2singleselecttreefield */
+
 .d2-singleselecttreefield input {
   flex: 1 1 auto;
   padding: 0 0.5em 0 30px;
@@ -4027,11 +3212,15 @@ ul.d2tabgroup {
   background-position: center;
   cursor: pointer;
   width: 18px;
-}.binf-widgets .d2-combofield.d2-user-or-group-combo-search-field {
+}
+
+/* css!d2/controls/form/fields/userfields/impl/d2userorgroupcombosearchfield */
+
+.binf-widgets .dctmw-combofield.d2-user-or-group-combo-search-field {
   min-width: 216px;
 }
 
-.binf-widgets .d2-combofield.d2-user-or-group-combo-search-field .d2-combofield-search-box-input {
+.binf-widgets .dctmw-combofield.d2-user-or-group-combo-search-field .dctmw-combofield-search-box-input {
   border: 1px solid #a7a9ac;
   border-radius: 3px;
   padding-left: 38px;
@@ -4039,7 +3228,7 @@ ul.d2tabgroup {
   padding-right: 38px;
 }
 
-.binf-widgets .d2-combofield.d2-user-or-group-combo-search-field .d2-start-icon:not(.d2-icon-disabled) {
+.binf-widgets .dctmw-combofield.d2-user-or-group-combo-search-field .d2-start-icon:not(.dctmw-icon-disabled) {
   content: '';
   position: absolute;
   top: 5px;
@@ -4050,7 +3239,7 @@ ul.d2tabgroup {
   display: block;
 }
 
-.binf-widgets .d2-combofield.d2-user-or-group-combo-search-field .d2-clear-icon:not(.d2-icon-disabled) {
+.binf-widgets .dctmw-combofield.d2-user-or-group-combo-search-field .d2-clear-icon:not(.dctmw-icon-disabled) {
   content: '';
   position: absolute;
   top: 5px;
@@ -4059,7 +3248,11 @@ ul.d2tabgroup {
   width: 16px;
   display: block;
   cursor: pointer;
-}.binf-widgets .d2-spy-container {
+}
+
+/* css!d2/widgets/metadata/general.panels/d2/impl/d2.general.form.ext */
+
+.binf-widgets .d2-spy-container {
   padding: 0;
 }
 
@@ -4086,7 +3279,33 @@ ul.d2tabgroup {
 
 .cs-form .cs-form-set .alpaca-field.alpaca-field-array .cs-form-set-container.alpaca-container-has-items {
   float: none;
-}.d2-stepper-wizard .cs-form.csui-general-form.d2-form {
+}
+
+.binf-widgets .cs-form .binf-col-md-12.alpaca-container-label {
+  display: flex;
+}
+
+.cs-form .binf-col-md-12.alpaca-container-label .d2-alpaca-container-label.d2-properties-form-expand-collapse.icon-expandArrowDown {
+  background-repeat: no-repeat;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.cs-form .binf-col-md-12.alpaca-container-label .d2-alpaca-container-label.d2-properties-form-expand-collapse.icon-expandArrowRight {
+  background-repeat: no-repeat;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.binf-widgets .binf-modal-content .binf-modal-body .custom-content-container .cs-form.csui-general-form.d2-form .binf-col-md-12.alpaca-container-label {
+  display: none;
+}
+
+
+
+/* css!d2/controls/form/impl/d2form/d2.form */
+
+.d2-stepper-wizard .cs-form.csui-general-form.d2-form {
   margin: 32px 64px 32px 0;
   height: auto;
   min-height: 0 !important;
@@ -4128,7 +3347,11 @@ ul.d2tabgroup {
 .d2-stepper-wizard .cs-form.csui-general-form.d2-form .alpaca-field .binf-form-group .binf-control-label + div.binf-col-sm-9 {
   display: block;
   width: 100%;
-}.csui-messagepanel.d2-node-create-success-message .csui-header .node-name {
+}
+
+/* css!d2/controls/globalmessage/impl/progresspanel/impl/node.creation.success.message */
+
+.csui-messagepanel.d2-node-create-success-message .csui-header .node-name {
   font-size: 1.125rem;
   line-height: 1.5rem;
   padding: 0;
@@ -4150,6 +3373,9 @@ ul.d2tabgroup {
 .csui-messagepanel.d2-node-create-success-message .csui-header .node-name.link-active .node-done-command-link {
   display: block;
 }
+
+
+/* css!d2/controls/facet.bar/impl/facet.bar */
 
 .binf-widgets .d2-facet-bar {
   font-size: 0.875em;
@@ -4278,7 +3504,7 @@ ul.d2tabgroup {
   height: 0.714em;
   background-repeat: no-repeat;
   float: right;
-  margin-left: 0.429em; /* 6px at font-size of 14px == 0.375em at font-size of 16px*/
+  margin-left: 0.429em; /* 6px at font-size of 14px == 0.375em at font-size of 16px */
 }
 
 .d2-facet-bar .d2-facet-item {
@@ -4389,7 +3615,9 @@ ul.d2tabgroup {
   margin-right: 0;
 }
 
-/*csslint display-property-grouping:false,ids:false*/
+
+/* css!d2/controls/facet.panel/impl/facet/facet.item */
+
 .csui-facet-panel .d2-facet-item {
   position: relative;
   padding: 8px 0 8px 12px;
@@ -4412,12 +3640,12 @@ ul.d2tabgroup {
 
 .csui-facet-panel .d2-facet-item.csui-focus {
   outline-offset: -3px;
-  outline: 1px dotted #333;
+  outline: 1px dotted #333333;
 }
 
 .csui-facet-panel .d2-filter-more.csui-focus {
   outline-offset: -3px;
-  outline: 1px dotted #333;
+  outline: 1px dotted #333333;
 }
 
 .csui-facet-panel .icon-checkbox input {
@@ -4569,6 +3797,9 @@ ul.d2tabgroup {
 
 }
 
+
+/* css!d2/controls/facet.panel/impl/facet/facet */
+
 .csui-facet-panel .d2-facet {
   border-top: 1px solid #CBF7F3;
 }
@@ -4705,9 +3936,11 @@ border: 1px solid #2E3D98;
 .binf-widgets .csui-facet-panel .d2-filter-more .cs-icon.icon-expandArrowDown:active {
   background: url('../controls/facet.panel/impl/images/caret_down.svg') no-repeat;
 }
+
 .binf-widgets .csui-facet-panel .last-limited-item .cs-icon.icon-expandArrowDown {
   display: none;
 }
+
 .csui-facet-panel .d2-filter-more .cs-icon.icon-expandArrowUp {
   margin-top: 2px;
 }
@@ -4881,7 +4114,7 @@ border: 1px solid #2E3D98;
 }
 
 .d2-facet-search > .d2-facet-search-icon.csui-focus {
-  outline: 1px dotted #333;
+  outline: 1px dotted #333333;
 }
 
 .d2-facet-search > .d2-facet-search-icon.searchmoveleft {
@@ -4943,6 +4176,9 @@ border: 1px solid #2E3D98;
 .d2-icon-noresults {
   background: url('../controls/facet.panel/impl/images/empty-doc.svg') no-repeat;
 }
+
+/* css!d2/controls/facet.panel/impl/facet.panel */
+
 .binf-widgets .cs-simplelist.csui-facet-panel {
   height: 100%;
   background-color: #FFFFFF !important;
@@ -4961,7 +4197,7 @@ border: 1px solid #2E3D98;
 }
 
 .binf-widgets .csui-facetview .cs-simplelist.csui-facet-panel .cs-content {
-  z-index: 0; /* to have right-shadow over facet content also.*/
+  z-index: 0; /* to have right-shadow over facet content also. */
 }
 
 .binf-widgets .csui-facet-panel .cs-content .csui-collection-state {
@@ -4980,13 +4216,15 @@ border: 1px solid #2E3D98;
 }
 
 @keyframes csui-facet-panel-state-fade-in-and-out {
-  from {
+  0% {
     opacity: .5;
   }
+
   50% {
     opacity: 1;
   }
-  to {
+
+  100% {
     opacity: .5;
   }
 }
@@ -5003,6 +4241,7 @@ border: 1px solid #2E3D98;
   border-bottom: 0;
   padding: 0 16px;
 }
+
 .binf-widgets .cs-simplelist.csui-facet-panel .d2-facet-serverfilter{
   padding: 7px 9px 7px 15px;
   background-color: #FEF4C3;
@@ -5164,7 +4403,8 @@ button.ui-clear-facet-button {
   width: 250px;
   transition: max-width 0.3s ease-in;
 }
-/*Transition information copied over from CSUI code thats why different timings for transition*/
+
+/* Transition information copied over from CSUI code thats why different timings for transition */
 .binf-widgets .csui-facet-table-container .csui-table-facetview.csui-facetview-hidden {
   max-width: 0;
   transition: max-width 0.2s ease-out;
@@ -5195,6 +4435,37 @@ button.ui-clear-facet-button {
   background-position: center;
   display: inline-flex;
 }
+
+/* css!d2/controls/tab.panel/impl/tabPanel.links.view */
+
+.tab-pop-over {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.tab-pop-over hr {
+  margin: 0 4px 8px;
+}
+
+.tab-pop-over .pop-over-title {
+  font-weight: 700;
+  line-height: 24px;
+  height: 34px;
+}
+
+.tab-pop-over p.pop-over-item {
+  font-weight: 400;
+  line-height: 24px;
+  height: 34px;
+}
+
+.tab-pop-over p.pop-over-item:last-of-type {
+  height: 24px;
+}
+
+/* css!d2/controls/tab.panel/impl/metadata.edit.view */
+
 .binf-widgets .d2-metadata-edit-properties {
   float: left;
   position: relative;
@@ -5210,7 +4481,9 @@ button.ui-clear-facet-button {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-/*csslint known-properties:false,unique-headings:false*/
+
+/* css!d2/widgets/metadata/tab.contents.esignature/tab.contents.esignature */
+
 .cs-metadata-properties .d2-tab-content-esignature {
     border-bottom: 4px solid #121212;
     padding: 0 0 18px 0;
@@ -5317,7 +4590,11 @@ button.ui-clear-facet-button {
   top: 23px;
   left: 6px;
   bottom: 0;
-}.d2-metadata-properties .d2-metadata-errors {
+}
+
+/* css!d2/widgets/metadata/error.panel/error.panel */
+
+.d2-metadata-properties .d2-metadata-errors {
   border-radius: 0 0 3px 3px;
   border-bottom: 4px solid #DF3324;
 }
@@ -5350,7 +4627,7 @@ button.ui-clear-facet-button {
   vertical-align: middle;
   font-size: 18px;
   line-height: 24px;
-  color: #000;
+  color: #000000;
 }
 
 .d2-metadata-properties .d2-metadata-errors .header-icon {
@@ -5383,7 +4660,7 @@ button.ui-clear-facet-button {
 }
 
 .d2-metadata-properties .d2-metadata-errors .error-item:not(:last-child) {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .d2-metadata-properties .d2-metadata-errors .error-item .error-text {
@@ -5417,7 +4694,9 @@ button.ui-clear-facet-button {
   font-weight: bold;
 }
 
-/*csslint display-property-grouping:false*/
+
+/* css!d2/widgets/metadata/impl/metadata.properties */
+
 .binf-widgets .binf-col-md-12 {
   width: 100%;
   float: right;
@@ -5482,7 +4761,7 @@ button.ui-clear-facet-button {
 }
 
 .d2-metadata-properties .cs-form .cs-form-set .alpaca-container .alpaca-container-item .alpaca-field-object .alpaca-container .alpaca-field .alpaca-control-label {
-  /*padding-right: 10px;*/
+  /* padding-right: 10px; */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -5492,7 +4771,7 @@ button.ui-clear-facet-button {
   height: 100%;
   z-index: 2;
   opacity: .5;
-  background-color: #000;
+  background-color: #000000;
   position: absolute;
   width: 100%;
 }
@@ -5537,6 +4816,7 @@ button.ui-clear-facet-button {
 
 .binf-widgets .cs-metadata .metadata-content-header .metadata-header.with-right-bar > .d2-property-page-mask {
   margin-right: -26px;
+  margin-top: -15px;
   width: calc(100% + 20px);
 }
 
@@ -5727,12 +5007,15 @@ button.ui-clear-facet-button {
 
 .binf-widgets .metadata-navigation .metadata-content {
   max-width: none;
+  overflow: hidden;
 }
 
 .binf-widgets .metadata-navigation .metadata-content:not(.d2-content-region) {
   /* width changed from 100% to 100% - 240px to account for the metadata side bar */
+
   /* width set to 100% if sidebar is hidden */
-  /*width: 100%;*/
+
+  /* width: 100%; */
   width: calc(100% - 240px);
 }
 
@@ -5772,9 +5055,11 @@ button.ui-clear-facet-button {
 .metadata-inner-wrapper .d2-metadata-properties.single-tab-hide .csui-tab-contents-header-wrapper{
   display: none;
 }
+
 .metadata-inner-wrapper .d2-metadata-properties.single-tab-hide .right-toolbar .goto_next_div {
   display: none !important; /* Added !important because of inline style applied */
 }
+
 .d2-wizard-step-view .d2-metadata-properties.single-tab-hide .tab-links.scrollspy,
 .d2-wizard-step-view .d2-metadata-properties.single-tab-hide .smart-tab-contents-header-wrapper {
   display: none;
@@ -5782,7 +5067,70 @@ button.ui-clear-facet-button {
 
 .binf-widgets .metadata-content .d2-metadata-properties.smart-tab-panel .tab-links.smart-tab-links .binf-nav-tabs{
   width: 0;
-}.binf-widgets .d2-task-zero-state-view {
+}
+
+/* css!d2/controls/table/cells/graphics.generic/impl/graphic.generic */
+
+.binf-widgets .csui-nodetable .binf-table tr:not(.csui-details-row) .d2-graphic-generic-cell .d2-graphic-icon,
+.binf-widgets .csui-nodetable .binf-table tr.csui-details-row .d2-graphic-generic-cell .d2-graphic-icon,
+.binf-widgets .csui-thumbnail-item-container .d2-graphic-generic-cell .d2-graphic-icon {
+    height: 22px;
+    width: 22px;
+    padding: 0;
+    margin-top: 8px;
+    display: inline-flex;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr:not(.csui-details-row) .d2-graphic-generic-cell .d2-table-cell-text,
+.binf-widgets .csui-nodetable .binf-table tr.csui-details-row .d2-graphic-generic-cell .d2-table-cell-text,
+.binf-widgets .csui-thumbnail-item-container .d2-graphic-generic-cell .d2-table-cell-text {
+    width:calc(100% - 30px);
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr:not(.csui-details-row) .d2-graphic-generic-cell .d2-graphic-column-container,
+.binf-widgets .csui-nodetable .binf-table tr.csui-details-row .d2-graphic-generic-cell .d2-graphic-column-container,
+.binf-widgets .csui-thumbnail-item-container .d2-graphic-generic-cell .d2-graphic-column-container {
+    padding-right: 0;
+    display: flex;
+    height: 100%;
+}
+
+/* These need to be set as important since they are going to override styling applied using jquery */
+.binf-widgets .csui-nodetable .binf-table tr.csui-state-hover:not(.binf-active) .d2-graphic-generic-cell {
+    color: #333333 !important;
+    background-color: #BAC9CE !important;
+}
+
+.binf-widgets .csui-nodetable .binf-table.csui-nowrap-table tr.csui-state-hover:not(.binf-active) .d2-graphic-generic-cell {
+    background-color: #B2BEC5 !important;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr.binf-active .d2-graphic-generic-cell {
+    color: #333333 !important;
+    background-color: #CBD3D9 !important;
+}
+
+.binf-widgets .csui-nodetable .binf-table tr:not(.binf-active):active .d2-graphic-generic-cell,
+.binf-widgets .csui-nodetable .binf-table tr.binf-active:active .d2-graphic-generic-cell,
+.binf-widgets .csui-nodetable .binf-table.csui-nowrap-table tr:not(.binf-active):active .d2-graphic-generic-cell,
+.binf-widgets .csui-nodetable .binf-table.csui-nowrap-table tr.binf-active:active .d2-graphic-generic-cell {
+    background-color: #98A8B2 !important;
+}
+
+.csui-nodetable .binf-table.csui-nowrap-table > tbody > tr > td.csui-column-highlight.d2-graphic-generic-cell {
+    background-color: #E1E8f6 !important;
+    color: #333333 !important;
+}
+
+/* css!d2/controls/task.zero.state.view/impl/task.zero.state */
+
+.binf-widgets .d2-task-zero-state-view {
   position: absolute;
   top: 0;
   right: 0;
@@ -5845,6 +5193,9 @@ button.ui-clear-facet-button {
   line-height: 24px;
   color: #666666;
 }
+
+/* css!d2/dialogs/reserve/impl/confirm.dialog */
+
 .d2-reserve-confirm-dialog .binf-modal-dialog {
   width: 720px;
 }
@@ -5919,7 +5270,7 @@ button.ui-clear-facet-button {
 
 .d2-reserve-confirm-dialog table.checkout-items tr {
   height: 64px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .d2-reserve-confirm-dialog table.checkout-items td.type,
@@ -6018,7 +5369,9 @@ button.ui-clear-facet-button {
   border: 0;
   background-image: url(../dialogs/reserve/impl/images/remove_item.svg);
 }
-/*csslint font-sizes:false*/
+
+/* css!d2/dialogs/validation/impl/validation.dialog */
+
 .validation-dialog-header .icon{
   display: inline-block;
   width: 24px;
@@ -6027,6 +5380,7 @@ button.ui-clear-facet-button {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 .binf-widgets .validation-dialog-header .title{
   display: inline-block;
   overflow: hidden;
@@ -6037,18 +5391,22 @@ button.ui-clear-facet-button {
   margin-right: 10px;
   position: absolute;
 }
+
 .validation-dialog-header .message {
   height: 41px;
 }
+
 .validation-dialog-header{
   height: inherit;
 }
+
 .validation-dialog-header .header-section{
   height: 60px;
 }
+
 .documents-validation-dialog table.error-items tr{
   height: 64px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #eeeeee;
   display: inline-table;
   margin: 1px;
 }
@@ -6101,6 +5459,7 @@ button.ui-clear-facet-button {
   width: 32px;
   padding-top: 16px;
 }
+
 .documents-validation-dialog table.error-items td.name{
   position: relative;
   padding-right: 8px;
@@ -6113,6 +5472,7 @@ button.ui-clear-facet-button {
   padding-top: 25px;
   overflow-wrap: break-word;
 }
+
 .documents-validation-dialog table.error-items td.name > .fadeout{
   position: absolute;
   width: 35px;
@@ -6121,6 +5481,7 @@ button.ui-clear-facet-button {
   height: 99%;
   background: linear-gradient(to left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 75%,rgba(255,255,255,1) 100%);
 }
+
 .documents-validation-dialog table.error-items .status{
   width: 16px;
 }
@@ -6150,30 +5511,38 @@ button.ui-clear-facet-button {
 .documents-validation-dialog .error-data .each-error {
   display: flex;
 }
+
 .documents-validation-dialog .error-data{
   vertical-align: middle;
 }
+
 .documents-validation-dialog .error-data .each-error:nth-child(n+2){
   padding-top: 0;
 }
+
 .documents-validation-dialog .error-data .each-error:first-child{
   padding-top: 24px;
 }
+
 .documents-validation-dialog .error-data .each-error{
   display: flex;
   padding-bottom: 16px;
   padding-top: 16px;
   vertical-align: middle;
 }
+
 .documents-validation-dialog .error-data .each-error:last-child{
   padding-bottom: 24px;
 }
+
 .binf-widgets .documents-validation-dialog .binf-modal-dialog .binf-modal-body{
   max-height: 300px;
 }
+
 .binf-widgets .documents-validation-dialog .binf-modal-dialog{
   width: 720px;
 }
+
 .binf-widgets .documents-validation-dialog .binf-modal-body tr:focus{
   outline: 1px dotted #333333;
 }
@@ -6186,7 +5555,7 @@ button.ui-clear-facet-button {
   background-color: inherit;
 }
 
-/* start: D2 Mobile specific css*/
+/* start: D2 Mobile specific css */
 .binf-widgets.d2-mobile .documents-validation-dialog .binf-modal-body {
   padding: 0 16px 0 6px;
 }
@@ -6403,7 +5772,10 @@ button.ui-clear-facet-button {
   max-height: none;
 }
 
-/* end: D2 Mobile specific css*/
+/* end: D2 Mobile specific css */
+
+/* css!d2/widgets/d2collections.perspective/impl/d2collections.rename */
+
 .new-collection-input-container {
     display: flex;
     flex-direction: row;
@@ -6432,19 +5804,23 @@ button.ui-clear-facet-button {
     height: 32px;
     cursor: pointer;
     background-image: url("../widgets/d2collections.perspective/impl/images/cross-32.svg");
-}.csui-alert.d2-share-collection-model {
+}
+
+/* css!d2/dialogs/share.collections/impl/share.collection.view */
+
+.csui-alert.d2-share-collection-model {
   display: flex;
 }
 
 .binf-widgets .csui-alert.d2-share-collection-model.dctm-alert-custom-content .binf-modal-dialog {
   width: 720px;
-  height: 460px;
+  height: 520px;
   margin: auto;
 }
 
 .csui-alert.d2-share-collection-model .binf-modal-dialog .binf-modal-content {
   width: 720px;
-  height: 460px;
+  height: 520px;
   margin-top: unset !important;
 }
 
@@ -6459,38 +5835,39 @@ button.ui-clear-facet-button {
   width: 100%;
 }
 
-.share-collection-form .csui-field-d2list .d2-listfield-selected-container .d2-listfield-selection-wrapper {
+.share-collection-form .csui-field-d2list .dctmw-listfield-selected-container .dctmw-listfield-selection-wrapper {
   width: 500px;
 }
 
-.share-collection-form .csui-field-d2list .d2-listfield-selection-wrapper ul.d2-listfield-selectedvalues {
+.share-collection-form .csui-field-d2list .dctmw-listfield-selection-wrapper ul.dctmw-listfield-selectedvalues {
   display: flex;
   flex-wrap: wrap;
-  /* csslint ignore:start */
+
   gap: 0.5rem;
-  /* csslint ignore:end */
+
   padding: 0.25rem;
   max-height: 185px !important;
 }
 
-.share-collection-form .csui-field-d2list ul.d2-add-new-option {
+.share-collection-form .csui-field-d2list ul.dctmw-add-new-option {
   display: none;
 }
 
-.share-collection-form .csui-field-d2list .d2-listfield-selection-wrapper ul.d2-listfield-selectedvalues li.ui-sortable-handle {
+.share-collection-form .csui-field-d2list .dctmw-listfield-selection-wrapper ul.dctmw-listfield-selectedvalues li.ui-sortable-handle {
   width: calc(50% - 0.5rem);
   border: 1px solid #a7a9ac;
   background-color: #D9D9D9;
   border-radius: 3px;
 }
 
-.share-collection-form .csui-field-d2list .d2-listfield-selection-wrapper ul.d2-listfield-selectedvalues li .d2-icon-drag {
+.share-collection-form .csui-field-d2list .dctmw-listfield-selection-wrapper ul.dctmw-listfield-selectedvalues li .dctmw-icon-drag {
   display: none;
 }
 
-.share-collection-form .csui-field-d2list .d2-listfield-selection-wrapper ul.d2-listfield-selectedvalues li .d2-listfield-selectedlabel {
+.share-collection-form .csui-field-d2list .dctmw-listfield-selection-wrapper ul.dctmw-listfield-selectedvalues li .dctmw-listfield-selectedlabel {
   width: calc(100% - 18px);
 }
+
 .share-collection-form .alpaca-container-label {
   display: none;
 }
@@ -6524,6 +5901,9 @@ button.ui-clear-facet-button {
 .d2-share-collection-model .alpaca-container-item .binf-help-block.alpaca-message {
   margin-right: 0;
 }
+
+/* css!d2/dialogs/add.collections/impl/add.to.collection.view */
+
 .add-to-collection-form .alpaca-container-label {
   display: none;
 }
@@ -6562,7 +5942,62 @@ button.ui-clear-facet-button {
 .d2-add-to-collection-model .alpaca-container-item .binf-help-block.alpaca-message {
   margin-right: 0;
 }
-/*csslint unqualified-attributes:false*/
+
+/* css!d2/dialogs/new.file/edit/impl/header.message */
+
+.d2-header-message {
+  width: 100%;
+  height: 41px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.d2-header-message.error {
+  background: rgba(223, 51, 36, 0.05);
+  border-bottom: 1px solid #DF3324;
+}
+
+.d2-header-message.warning {
+  background: rgba(223, 104, 0, 0.05);
+  border-bottom: 1px solid #DF6800;
+}
+
+.d2-header-message.success {
+  background: rgba(6, 125, 20, 0.05);
+  border-bottom: 1px solid #067D14;
+}
+
+.d2-header-message.info {
+  background: #F5F5FA;
+  border-bottom: 1px solid #2E3D98;
+}
+
+.d2-header-message .header-message-icon {
+  height: 18px;
+  width: 18px;
+  margin: 0 32px 0 14px;
+}
+
+.d2-header-message .header-message-icon.error {
+  background: url('../dialogs/new.file/edit/impl/images/error.svg') no-repeat;
+}
+
+.d2-header-message .header-message-icon.warning {
+  background: url('../dialogs/new.file/edit/impl/images/warning.svg') no-repeat;
+}
+
+.d2-header-message .header-message-icon.success {
+  background: url('../dialogs/new.file/edit/impl/images/success.svg') no-repeat;
+}
+
+.d2-header-message .header-message-icon.info {
+  background: url('../dialogs/new.file/edit/impl/images/information.svg') no-repeat;
+  width: 22px;
+}
+
+/* css!d2/dialogs/add.version/impl/add.version */
+
 .d2-stepper-wizard.d2-addversion-modal .cs-form.csui-general-form.d2-form {
   height: 100%;
   width: 100%;
@@ -6604,7 +6039,7 @@ button.ui-clear-facet-button {
   height: initial;
 }
 
-.d2-addversion-modal  .cs-formfield.d2-radio-group div.d2-radio-item-container {
+.d2-addversion-modal  .cs-formfield.dctmw-radio-group div.dctmw-radio-item-container {
   width:150px;
   display: inline-block;
 }
@@ -6667,7 +6102,9 @@ button.ui-clear-facet-button {
 
 
 
-/*csslint known-properties:false,outline-none:false*/
+
+/* css!d2/dialogs/new.file/impl/node.processing.result */
+
 .binf-widgets .d2-node-processing-result {
   position: relative;
   width: 100%;
@@ -6779,6 +6216,9 @@ button.ui-clear-facet-button {
   overflow-wrap: break-word;
   white-space: normal;
 }
+
+/* css!d2/dialogs/new.file/impl/o2.processing */
+
 .d2-stepper-wizard .d2-import-file-o2-processing {
   position: relative;
   height: 100%;
@@ -6807,7 +6247,11 @@ button.ui-clear-facet-button {
   font-size: 18px;
   line-height: 24px;
   height: 36px;
-}.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header {
+}
+
+/* css!d2/controls/stepper.wizard/impl/step.header */
+
+.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header {
   padding: 0 1rem;
   border-bottom: none;
   background: #66D4D6;
@@ -6878,7 +6322,10 @@ button.ui-clear-facet-button {
 .binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-header .icon.d2-stepper-close:active {
   background-image: url('../controls/stepper.wizard/impl/images/close_md16.svg');
 }
-.binf-widgets .d2-stepper-wizard .binf-modal-dialog .binf-modal-footer {
+
+/* css!d2/controls/stepper.wizard/impl/step.footer */
+
+.binf-widgets .binf-modal.d2-stepper-wizard .binf-modal-dialog .binf-modal-content .binf-modal-footer {
   background-color: #F4F4F4;
   padding: 0 8px 0 24px!important;
   max-height: 48px;
@@ -6915,6 +6362,9 @@ button.ui-clear-facet-button {
   background-color: #98A8B2;
   box-shadow: none;
 }
+
+/* css!d2/widgets/navigation.header/controls/background.task.notification/impl/background.task */
+
 .d2-navbar .binf-container-fluid[role="menubar"] .binf-navbar-nav div[role="menuitem"].d2-toolbar-background-task {
   margin-left: .5em;
 }
@@ -6966,10 +6416,14 @@ button.ui-clear-facet-button {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(-359deg);
   }
 }
+
+
+/* css!d2/controls/stepper.wizard/impl/stepper.wizard */
 
 .d2-stepper-wizard.binf-modal.binf-fade:not(.dialog-mode) .binf-modal-dialog {
   width: 688px;
@@ -7004,7 +6458,7 @@ button.ui-clear-facet-button {
   max-height: 80%;
 }
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   .d2-stepper-wizard.dialog-mode.binf-modal.binf-fade .binf-modal-dialog {
     width: 100%;
     margin: 50px 5px;
@@ -7082,7 +6536,7 @@ button.ui-clear-facet-button {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   opacity: 1.0;
 }
 
@@ -7094,13 +6548,9 @@ button.ui-clear-facet-button {
   z-index: 1006;
 }
 
-.d2-wizard-step-view .cs-tabpanel.smart-tab-panel.tab-panel .smart-tab-contents-wrapper {
-  height: 100%;
-}
+/* css!d2/dialogs/ba.actions.comments.dialog/impl/ba.actions.comments */
 
-.d2-wizard-step-view .cs-tabpanel.smart-tab-panel.tab-panel .smart-tab-contents-wrapper .binf-tab-content.smart-tab-content {
-  height: 100%;
-}.binf-widgets .dctm-alert-custom-content .d2-ba-comments-view .ba-comments-form .cs-form .alpaca-field > div {
+.binf-widgets .dctm-alert-custom-content .d2-ba-comments-view .ba-comments-form .cs-form .alpaca-field > div {
     width: 100%;
     padding: 0;
 }
@@ -7139,7 +6589,10 @@ button.ui-clear-facet-button {
 .binf-widgets .csui-alert.dctm-alert-custom-content.ba-comments-dialog .binf-modal-dialog .binf-modal-body {
     padding: 16px 24px 24px 24px;
     overflow:scroll;
-}/*csslint outline-none:false,display-property-grouping:false*/
+}
+
+/* css!d2/controls/form/impl/d2selectfield/d2selectfield */
+
 .binf-widgets .d2-select {
   width: 100%;
 }
@@ -7174,6 +6627,7 @@ button.ui-clear-facet-button {
   overflow: hidden;
   line-height: 20px;
   text-align: right;
+
   /* width: 100%; */
   padding: 5px 4px 5px 4px;
   white-space: normal;
@@ -7241,7 +6695,7 @@ button.ui-clear-facet-button {
   outline: 2px solid #666666;
 }
 
-/*alpaca error*/
+/* alpaca error */
 .cs-form .alpaca-field.binf-has-error .cs-field-write button {
   color: #000000;
   background-color: #fae9ea;
@@ -7286,14 +6740,14 @@ button.ui-clear-facet-button {
 .d2-select.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a:hover,
 .d2-select.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a:focus {
   /*  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;*/
+  border-bottom: 1px solid #ffffff; */
   background-color: #b2bec5;
   color: #333333;
 }
 
 .d2-select.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a:active {
   /*  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;*/
+  border-bottom: 1px solid #ffffff; */
   background-color: #cbd4d9;
   color: #333333;
 }
@@ -7315,7 +6769,7 @@ button.ui-clear-facet-button {
   box-shadow: none;
   border-radius: 3px;
   padding: 1px;
-  border: 1px dotted #666;
+  border: 1px dotted #666666;
   cursor: default;
 }
 
@@ -7349,12 +6803,16 @@ button.ui-clear-facet-button {
   font-size: 14px;
   line-height: 28px;
   color: #333333;
-}.d2-create-relation-form{
+}
+
+/* css!d2/dialogs/create.relation/impl/create.relation.form */
+
+.d2-create-relation-form{
   padding-right: 50px;
 }
 
 .binf-modal-dialog .binf-modal-body .d2-wizard-step-view .d2-create-relation{
-  padding: 25px 40px;
+  padding: 32px 64px 0 64px;
   height: 100%;
 }
 
@@ -7366,39 +6824,59 @@ button.ui-clear-facet-button {
   color: #333333;
   border-bottom: 1px solid #CCCCCC;
 }
-.binf-widgets .d2-create-relations-wizard .d2-wizard-step-view .relation-parent .cs-simplelist .cs-list-group span.csui-type-icon.csui-icon{
-  height: 28px;
-  margin-left: 8px;
+
+.binf-widgets .d2-create-relations-wizard .d2-wizard-step-view .relation-parent .cs-simplelist .cs-list-group .d2-create-relations-item-icon{
+  height: 32px;
+  width: 32px;
+  margin-left: 13px;
+  margin-right: 13px;
 }
+
 .d2-create-relations-wizard .d2-wizard-step-view .relation-parent{
   padding-top: 10px;
-  width: 608px;
-}
-.binf-widgets .d2-create-relations-wizard .binf-modal-dialog .parent-section .relation-parent .cs-content{
   width: 100%;
 }
+
+.binf-widgets .d2-create-relations-wizard .binf-modal-dialog .parent-section .relation-parent .cs-content{
+  background: none;
+  height: 47px;
+}
+
+.binf-widgets .d2-create-relations-wizard .binf-modal-dialog .parent-section .relation-parent
+.cs-content:has(.binf-help-block.alpaca-message:not(.binf-hidden)) {
+  height: auto;
+}
+
 .d2-create-relations-wizard .d2-wizard-step-view .relation-direction{
   height: 48px;
   width: 48px;
-  margin: 16px calc(50% - 24px);
+  margin: 24px calc(50% - 24px);
+  margin-bottom: 13px;
   background: url(../dialogs/create.relation/impl/images/relation_direction_48.svg);
 }
+
 .d2-create-relations-wizard .d2-wizard-step-view .relation-direction.reverse{
   transform: rotate(-180deg);
 }
+
 .d2-create-relations-wizard .d2-wizard-step-view .relation-child-section{
   height: 60%;
 }
+
 .binf-widgets .d2-create-relations-wizard.d2-stepper-wizard .relation-toolbar-panel{
   border-bottom: 1px solid #CCCCCC;
   width: 100%;
+  max-height: calc(100% - 40px);
 }
+
 .binf-widgets .d2-create-relations-wizard.d2-stepper-wizard .relation-toolbar-panel .relation-sub-toolbar{
   display: flex;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-create-relation-form .csui-field-select>button{
   border: none;
 }
+
 .binf-widgets .d2-create-relations-wizard.d2-stepper-wizard .relation-toolbar-panel .relation-add-child-button{
   width: 16px;
   height: 16px;
@@ -7409,18 +6887,20 @@ button.ui-clear-facet-button {
   margin-top: 3px;
   cursor: pointer;
 }
+
 .binf-widgets .d2-create-relations-wizard.d2-stepper-wizard .relation-toolbar-panel .relation-add-child-button.disabled{
   background: url(../dialogs/create.relation/impl/images/add_button_dis.svg);
   cursor: default;
 }
+
 .child-list-view .cs-list-group > div{
   border-bottom: 1px solid #E6E6E6;
 }
+
 .binf-widgets .d2-create-relations-wizard .parent-section .relation-parent .list-item-title{
-  font-size: 14px;
-  color: #333333;
-  line-height: 2em;
+  padding: 0;
 }
+
 .child-list-view .cs-list-group .binf-list-group-item:hover .remove-button,
 .child-list-view .cs-list-group .binf-list-group-item.active .remove-button{
   background: url('../dialogs/create.relation/impl/images/close_button.svg');
@@ -7430,54 +6910,74 @@ button.ui-clear-facet-button {
   align-self: center;
   cursor: pointer;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .cs-list-group .binf-list-group-item.active,
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .cs-list-group .binf-list-group-item:hover{
   background: #B2BEC5;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .cs-list-group .binf-list-group-item{
-  border-right: none;
-  height: 100%;
   background-color: white;
   display: flex;
-  width: 610px;
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px solid #E6E6E6;
 }
- .binf-widgets .child-list-view .cs-simplelist .cs-list-group .binf-list-group-item .csui-type-icon.csui-icon{
-  height: 28px;
-  margin-top: -3px;
-  margin-left: 8px;
+
+.binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .cs-list-group .binf-list-group-item > * {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
+
+ .binf-widgets .child-list-view .cs-simplelist .cs-list-group .binf-list-group-item .d2-create-relations-item-icon{
+  height: 32px;
+  width: 32px;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
 .binf-widgets .d2-create-relations-wizard .parent-section .relation-parent .cs-list-group .binf-list-group-item{
-  width: 608px;
-  height: 42px;
+  width: 100%;
   background: #EDF0F2;
-  padding-top: 7px;
-  border-right: none;
+  padding: 0;
   display: flex;
 }
-.binf-widgets .d2-create-relations-wizard .child-list-view .cs-list-group span.list-item-title{
-  font-size: 14px;
-  line-height: 22px;
-  width: calc(100% - 42px);
+
+.binf-widgets .d2-create-relations-wizard .parent-section .relation-parent .cs-list-group .binf-list-group-item > *{
+  margin-top: 8px;
+  margin-bottom: 7px;
 }
+
+.binf-widgets .d2-create-relations-wizard .child-list-view .cs-list-group span.list-item-title{
+  padding: 0;
+  width: calc(100% - 79px);
+}
+
 .binf-widgets .d2-create-relations-wizard .parent-section .relation-parent .cs-list-group > div:hover{
 cursor: unset;
 }
+
 .child-list-view .cs-list-group > a:hover{
   cursor: unset;
   background: #B2BEC5;
 }
+
 .d2-create-relation-form .alpaca-field .csui-field-select .alpaca-control .cs-field-write .cs-field-write-inner>button{
   border: none;
 }
+
 .binf-widgets .d2-create-relations-wizard .binf-modal-content .binf-modal-body .empty-relations-view .d2-empty-relations-image{
-  background: url('../dialogs/create.relation/impl/images/relations_empty_image.svg');
+  background-image: url('../dialogs/create.relation/impl/images/relations_empty_image.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 98.5px;
   width: 220px;
-  height: 98.4px;
-  margin-top: 88px;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .cs-emptylist-text{
   top: 16px;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection.dropdown-button{
   height: 48px;
   width: 48px;
@@ -7486,17 +6986,21 @@ cursor: unset;
   margin-right: 291px;
   padding: 0;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection{
   align-self: center;
-  margin-top: 20px;
+  margin-top: 34.5px;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-create-relation-form .binf-row > div{
   width: 100%;
   padding: 0;
 }
+
 .d2-create-relations-wizard .d2-wizard-step-view .relation-child-section .relations-description-box{
-  width: 609px;
+  width: 100%;
 }
+
 .d2-create-relations-wizard .d2-wizard-step-view .relation-direction:hover,
 .child-list-view .cs-list-group .binf-list-group-item:hover .remove-button:hover,
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection.dropdown-button:hover,
@@ -7504,45 +7008,53 @@ cursor: unset;
 .binf-widgets .d2-create-relations-wizard.d2-stepper-wizard .relation-toolbar-panel > div.relation-add-child-button:hover{
   cursor: pointer;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view{
   height: auto;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-create-relation-form .binf-row > div{
   width: 80%;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-create-relation-form .binf-row .binf-col-sm-9{
   width: 100%;
 }
+
 .binf-widgets .d2-create-relations-wizard  .relation-child-section .child-list-view .cs-list-group > div{
   border-bottom: 1px solid #E6E6E6;
-  width: 608px;
+  width: 100%;
 }
-.binf-widgets .d2-create-relations-wizard .empty-view-area .empty-relations-view{
-  height: 200px;
-}
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .relations-description-box .binf-row > div{
   width: 100%;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .relations-description-box .binf-row .csui-field-textarea .binf-form-group > div{
   width: 100%;
   padding: 0;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .d2-empty-child-image{
-  height: 129px;
-  background: url(../dialogs/create.relation/impl/images/empty_child_image.svg);
+  height: 220px;
   width: 220px;
-  margin-top: 28px;
-  margin-bottom: 20px;
+  background-image: url(../dialogs/create.relation/impl/images/empty_child_image.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 34px;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .d2-add-button{
   background: url(../dialogs/create.relation/impl/images/add_48.svg);
   height: 48px;
   width: 48px;
 }
+
 .d2-create-relation-form .alpaca-field .csui-field-select .alpaca-control .cs-field-write .cs-field-write-inner>button:focus{
-  outline: 1px dotted #333;
+  outline: 1px dotted #333333;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .binf-row .csui-field-select .binf-form-group .binf-help-block.alpaca-message{
   margin-right: 16px;
 }
@@ -7551,68 +7063,86 @@ cursor: unset;
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .cs-simplelist .cs-content{
   overflow: visible;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .cs-empty-child-text{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-create-relation-form .binf-col-sm-9{
   width: 100%;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-create-relation-form{
   width: 100%;
   margin: 0;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .empty-relations-view .cs-emptylist-container{
   align-items: center;
+  background: none;
+  margin-top: 108px;
+  min-height: 0;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-create-relation-form{
   margin: 0;
   height: 0;
   width: 100%;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-create-relation-form .binf-row{
   margin-top: -6px;
   margin-right: 0;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner > button{
   border: none;
   display: flex;
   font-weight: bold;
   height: auto;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner > button{
   border: none;
   display: flex;
   justify-content: center;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner > button .icon-caret-down{
   margin-right: 5px;
   height: 12px;
   width: 12px;
   margin-top: 2px;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection{
   max-width: calc(100% - 30px);
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner > button{
   max-width: inherit;
   font-weight: bold;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner > button .icon-caret-down{
   margin-right: 5px;
   height: 12px;
   width: 12px;
   margin-top: 2px;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-child-section .child-list-view .cs-empty-child-text .csui-no-result-message{
   color: #333333;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner .binf-dropdown-menu .cs-label,
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner .cs-label,
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner .binf-dropdown-menu .cs-label,
@@ -7621,27 +7151,33 @@ cursor: unset;
   text-align: justify;
   white-space: pre-line;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection > button,
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .d2-select.binf-dropdown{
   height: auto;
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .binf-dropdown-menu > li > a,
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner .binf-dropdown-menu > li >a{
   height: auto;
 }
+
 .binf-widgets .d2-create-relations-wizard .empty-view-area .relation-type-selection .d2-select.binf-dropdown .cs-field-write-inner .binf-dropdown-menu{
   min-width: 50%;
   right: calc(50% - 171px);
 }
+
 .binf-widgets .d2-create-relations-wizard .relation-toolbar-panel .relation-type-selection .binf-dropdown-menu{
   min-width: 50%;
 }
+
 .binf-widgets .d2-create-relations-wizard .d2-select.binf-dropdown .cs-field-write ul.binf-dropdown-menu li a{
   line-height: 21px;
   min-height: 33px;
   display: flex;
   align-items: center;
 }
+
 .binf-widgets .d2-create-relations-wizard .binf-help-block{
   padding-right: 4px;
   box-shadow: 0 0 4px rgba(0, 0, 0, .3);
@@ -7654,7 +7190,16 @@ cursor: unset;
   color: red;
   margin-right: 4px;
   margin-bottom: 10px;
-}/*csslint unqualified-attributes:false,unique-headings:false*/
+}
+
+.binf-widgets .d2-create-relations-wizard .binf-modal-dialog .binf-modal-footer .binf-btn.applyToRemainingBtn{
+    float: right;
+    margin-right: 16px;
+    margin-top: 6px;
+}
+
+/* css!d2/dialogs/new.file/impl/profile.metadata.properties */
+
 .binf-widgets .d2-stepper-wizard .cs-metadata-properties .binf-nav-pills > li.binf-active > a > .cs-tablink-text,
 .binf-widgets .d2-stepper-wizard .cs-metadata-properties .binf-nav-pills > li.binf-active > a:hover > .cs-tablink-text {
   border-bottom: 4px solid #232E72;
@@ -7701,7 +7246,11 @@ cursor: unset;
 .binf-widgets .d2-create-file-wizard.d2-stepper-wizard .cs-metadata-properties .tab-links.scrollspy,
 .binf-widgets .d2-import-folder-wizard.d2-stepper-wizard .cs-metadata-properties .tab-links.scrollspy {
   padding-right: 24px;
-}.binf-widgets .d2-stepper-wizard .d2-task-update-performers-form.cs-form.csui-general-form.d2-form {
+}
+
+/* css!d2/dialogs/task.update.performers/impl/task.update.performer */
+
+.binf-widgets .d2-stepper-wizard .d2-task-update-performers-form.cs-form.csui-general-form.d2-form {
   margin: 0;
   height: 100%;
   width: 100%;
@@ -7724,7 +7273,11 @@ cursor: unset;
 
 .binf-widgets .d2-stepper-wizard .d2-task-update-performers-form.cs-form.csui-top-align-label .alpaca-container-label {
   display: none;
-}.d2-task-manage-tab-panels {
+}
+
+/* css!d2/dialogs/task.complete/impl/task.manage.tab.panels */
+
+.d2-task-manage-tab-panels {
   height: 100%;
 }
 
@@ -7830,7 +7383,11 @@ cursor: unset;
   top: 16px;
   flex: 0 0 auto;
   pointer-events: none;
-}.d2-task-esignature-dialog,
+}
+
+/* css!d2/dialogs/task.complete/impl/task.esignature.dialog */
+
+.d2-task-esignature-dialog,
 .d2-task-esignature-dialog-container {
   height: 100%;
 }
@@ -7875,7 +7432,11 @@ cursor: unset;
 .d2-task-esignature-dialog .csui-metadata-low-resolution .cs-form .binf-col-md-6 {
   width: 100%;
   padding: 0;
-}.cs-metadata-properties.task-metadata-properties .binf-nav-pills > li:first-child{
+}
+
+/* css!d2/dialogs/task.complete/impl/task.metadata.properties */
+
+.cs-metadata-properties.task-metadata-properties .binf-nav-pills > li:first-child{
   padding-right: 64px;
 }
 
@@ -7890,7 +7451,11 @@ cursor: unset;
 .task-metadata-properties.cs-metadata-properties.d2-metadata-properties .binf-tab-content > div:not(.ps-scrollbar-x-rail):not(.ps-scrollbar-y-rail),
 .task-metadata-properties.cs-metadata-properties.d2-metadata-properties .binf-tab-content.ps-container > div:not(.ps-scrollbar-x-rail):not(.ps-scrollbar-y-rail) {
   padding-right: 48px;
-}.binf-widgets .d2-stepper-wizard .d2-task-update-process-variables-form.cs-form.csui-general-form.d2-form {
+}
+
+/* css!d2/dialogs/task.update.process.variables/impl/task.update.process.variables */
+
+.binf-widgets .d2-stepper-wizard .d2-task-update-process-variables-form.cs-form.csui-general-form.d2-form {
     margin: 0;
     height: 100%;
     width: 100%;
@@ -7917,7 +7482,11 @@ cursor: unset;
   
   .binf-widgets .d2-stepper-wizard .d2-task-update-process-variables-form.cs-form.csui-top-align-label .alpaca-container-label {
     display: none;
-  }.d2-task-manage-dialog,
+  }
+
+/* css!d2/dialogs/task.complete/impl/task.manage.dialog */
+
+.d2-task-manage-dialog,
 .d2-task-manage-dialog-tabs-container {
   height: 100%;
 }
@@ -7944,47 +7513,47 @@ cursor: unset;
   padding: 0;
 }
 
-.d2-task-manage-dialog .d2-next-tasks-form.cs-form .d2-checkbox-group .d2-checkbox-container label {
+.d2-task-manage-dialog .d2-next-tasks-form.cs-form .dctmw-checkbox-group .dctmw-checkbox-container label {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 17px;
 }
 
-.binf-widgets .d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container:after {
+.binf-widgets .d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.dctmw-checkbox-group div.dctmw-checkbox-item-container:after {
   content: none;
 }
 
-/*List field in read mode for stepper wizard always shows 'show more'/'show less',
-since the height update is called before the items are actually visible*/
-.binf-widgets .d2-task-manage-dialog .d2-next-tasks-form .d2-listfield .cs-field-read .d2-list-toolbar {
+/* List field in read mode for stepper wizard always shows 'show more'/'show less',
+since the height update is called before the items are actually visible */
+.binf-widgets .d2-task-manage-dialog .d2-next-tasks-form .d2-listfield .cs-field-read .dctmw-list-toolbar {
   display: none;
 }
 
-.binf-widgets .d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container {
+.binf-widgets .d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.dctmw-checkbox-group div.dctmw-checkbox-item-container {
   padding-bottom: 0;
 }
 
-.d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.d2-checkbox-group .d2-cb-container-parent li {
+.d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.dctmw-checkbox-group .dctmw-cb-container-parent li {
   padding-right: 0;
 }
 
-.d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.d2-checkbox-group .d2-checkbox-container {
+.d2-task-manage-dialog .d2-next-tasks-form .cs-formfield.dctmw-checkbox-group .dctmw-checkbox-container {
   margin-bottom: 0;
 }
 
-.binf-widgets .d2-task-manage-dialog .alpaca-field-d2label .cs-formfield .cs-field-read,
-.d2-task-manage-dialog .alpaca-field-d2label .cs-formfield.cs-formfield-readonly .cs-field-read .btn-container {
+.binf-widgets .d2-task-manage-dialog .alpaca-field-dctmwlabel .cs-formfield .cs-field-read,
+.d2-task-manage-dialog .alpaca-field-dctmwlabel .cs-formfield.cs-formfield-readonly .cs-field-read .btn-container {
   width: 100%;
 }
 
-.d2-task-manage-dialog .d2-next-tasks-form .alpaca-field-d2label .cs-formfield.cs-formfield-readonly .cs-field-read button {
+.d2-task-manage-dialog .d2-next-tasks-form .alpaca-field-dctmwlabel .cs-formfield.cs-formfield-readonly .cs-field-read button {
   background: #EEEEEE;
   border-radius: 3px;
   padding-right: 8px;
 }
 
-.d2-task-manage-dialog .d2-next-tasks-form .alpaca-field-d2label .cs-formfield.cs-formfield-readonly .cs-field-read button:focus {
+.d2-task-manage-dialog .d2-next-tasks-form .alpaca-field-dctmwlabel .cs-formfield.cs-formfield-readonly .cs-field-read button:focus {
   border: 1px dotted #666666;
   outline: none;
   line-height: 28px;
@@ -8018,7 +7587,10 @@ since the height update is called before the items are actually visible*/
   word-break: normal;
   overflow-wrap: break-word;
   height: 100%;
-}/*csslint display-property-grouping:false,known-properties:false*/
+}
+
+/* css!d2/dialogs/task.complete/impl/task.external.esign.dialog */
+
 .d2-task-external-esign-dialog .d2-task-external-esign-dialog-container {
   padding-top: 24px;
   padding-left: 64px;
@@ -8094,6 +7666,7 @@ since the height update is called before the items are actually visible*/
   height:28px;
 }
 
+.d2-task-external-esign-dialog .d2-task-esignature-doc-container .d2-task-esign-file-item-container .d2-task-esign-file-item-icon,
 .d2-task-external-esign-dialog .d2-task-esignature-doc-container .d2-task-esign-file-item-container .csui-icon {
   display: inline-block;
   width: 28px;
@@ -8183,7 +7756,11 @@ since the height update is called before the items are actually visible*/
 .d2-stepper-wizard .d2-task-external-esign-dialog .csui-top-align-label .cs-formfield .cs-field-write {
   padding-right: 0;
   margin-right: -16px;
-}.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model.csui-alert .binf-modal-dialog {
+}
+
+/* css!d2/dialogs/task.delegate/impl/task.delegate */
+
+.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model.csui-alert .binf-modal-dialog {
   width: 360px;
 }
 
@@ -8223,7 +7800,7 @@ since the height update is called before the items are actually visible*/
   max-width: calc(100% - 1px);
 }
 
-.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model .cs-form.task-delegate-form .cs-formfield .cs-field-write .d2-combofield-options-container .d2-combofield-options .d2-none-item {
+.binf-widgets .dctm-alert-custom-content.d2-task-delegate-model .cs-form.task-delegate-form .cs-formfield .cs-field-write .dctmw-combofield-options-container .dctmw-combofield-options .dctmw-none-item {
   display: none;
 }
 
@@ -8233,12 +7810,20 @@ since the height update is called before the items are actually visible*/
 
 .binf-widgets .dctm-alert-custom-content.d2-task-delegate-model .cs-form.task-delegate-form .alpaca-field .alpaca-control {
   padding-right: 0;
-}.binf-widgets .d2-launch-workflow-wizard.d2-stepper-wizard .binf-modal-dialog .binf-modal-body {
+}
+
+/* css!d2/dialogs/launch.workflow/impl/launch.workflow.dialog */
+
+.binf-widgets .d2-launch-workflow-wizard.d2-stepper-wizard .binf-modal-dialog .binf-modal-body {
   top: 134px;
   min-height: calc(100% - 182px);
   max-height: calc(100% - 182px);
   height: calc(100% - 182px);
-}.binf-widgets .d2-wizard-flow {
+}
+
+/* css!d2/dialogs/launch.workflow/impl/launch.workflow.dialog.header/step.header */
+
+.binf-widgets .d2-wizard-flow {
   height: 70px;
   background-color: white;
   margin-right: -16px;
@@ -8323,6 +7908,9 @@ since the height update is called before the items are actually visible*/
 .binf-widgets .d2-wizard-flow > .d2-flow-item > .d2-progress-icon-group > .d2-progress-icon.complete {
   background: url(../dialogs/launch.workflow/impl/images/complete.svg) no-repeat;
 }
+
+/* css!d2/dialogs/launch.workflow/impl/launch.workflow.general/launch.workflow.general */
+
 .d2-launch-workflow-general-dialog,
 .d2-launch-workflow-general-dialog-container,
 .d2-launch-workflow-general-form-container {
@@ -8368,7 +7956,11 @@ since the height update is called before the items are actually visible*/
 
     width: 82%;
 
-}.d2-launch-workflow-performers-dialog,
+}
+
+/* css!d2/dialogs/launch.workflow/impl/launch.workflow.performers/launch.workflow.performers */
+
+.d2-launch-workflow-performers-dialog,
 .d2-launch-workflow-performers-dialog-container,
 .d2-launch-workflow-performers-form-container {
     height: 100%;
@@ -8390,7 +7982,10 @@ since the height update is called before the items are actually visible*/
 
 .d2-launch-workflow-performers-dialog .alpaca-field-object.alpaca-top .d2-container .d2-fieldset-layout.d2-nested-fieldset-layout {
     margin-top: 8px;
-}/*csslint unqualified-attributes:false*/
+}
+
+/* css!d2/dialogs/launch.workflow/impl/launch.workflow.schedule/launch.workflow.schedule */
+
 .binf-widgets .d2-launch-workflow-schedule.cs-metadata-properties .tab-links.scrollspy,
 .binf-widgets .d2-launch-workflow-schedule.cs-metadata-properties .csui-tab-contents-header-wrapper {
   display: none;
@@ -8438,25 +8033,29 @@ since the height update is called before the items are actually visible*/
   margin-top: 0;
 }
 
-.d2-launch-workflow-schedule .cs-formfield.d2-checkbox-group .d2-cb-container-parent li {
+.d2-launch-workflow-schedule .cs-formfield.dctmw-checkbox-group .dctmw-cb-container-parent li {
   padding: 0;
 }
 
-.d2-launch-workflow-schedule .cs-form .d2-checkbox-group .d2-checkbox-container label {
+.d2-launch-workflow-schedule .cs-form .dctmw-checkbox-group .dctmw-checkbox-container label {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 18px;
 }
 
-.binf-widgets .d2-launch-workflow-schedule .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container:after {
+.binf-widgets .d2-launch-workflow-schedule .cs-formfield.dctmw-checkbox-group div.dctmw-checkbox-item-container:after {
   content: none;
 }
 
 .d2-launch-workflow-schedule .cs-field-write-inner .binf-input-group.csui-datefield-input,
 .d2-stepper-wizard .d2-launch-workflow-schedule.cs-metadata-properties.d2-metadata-properties .cs-form .binf-help-block.alpaca-message {
   width: 240px;
-}.binf-widgets .signature-signee {
+}
+
+/* css!d2/dialogs/digital.signature/signee.list/impl/signee.item.view */
+
+.binf-widgets .signature-signee {
   cursor: pointer;
 }
 
@@ -8506,7 +8105,11 @@ since the height update is called before the items are actually visible*/
 
 .binf-widgets .signature-signee.dragging {
   opacity: 0.5;
-}.d2-signee-list-empty .d2-signee-list-empty-icon {
+}
+
+/* css!d2/dialogs/digital.signature/signee.list/impl/signee.list.empty.view */
+
+.d2-signee-list-empty .d2-signee-list-empty-icon {
   height: 140px;
   background: url('../dialogs/digital.signature/signee.list/impl/images/ill_nosignature140.svg') no-repeat center;
 }
@@ -8516,7 +8119,11 @@ since the height update is called before the items are actually visible*/
   font-size: 14px;
   text-align: center;
   margin-top: 8px;
-}.d2-signature-signee-form {
+}
+
+/* css!d2/dialogs/digital.signature/signee.form/impl/signee.form */
+
+.d2-signature-signee-form {
   height: 210px;
   width: 400px;
   background-color: #F3F6FB;
@@ -8723,7 +8330,7 @@ since the height update is called before the items are actually visible*/
 
 .d2-signature-signee-form .d2-lazy-loading {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-  background: #fff;
+  background: #ffffff;
   z-index: 1;
   position: absolute;
   top: 28px;
@@ -8739,7 +8346,10 @@ since the height update is called before the items are actually visible*/
   color: #000000;
   background-color: #fae9ea;
   border: 1px solid #df3324;
-}/*csslint outline-none:false*/
+}
+
+/* css!d2/dialogs/digital.signature/signee.groups/impl/signee.group.layout.view */
+
 .binf-widgets .signature-signee-groups .signature-signee-group-layout .signee-group-view {
   width: 400px;
   border: 1px solid #A9AEB9;
@@ -8877,7 +8487,11 @@ since the height update is called before the items are actually visible*/
   margin-top: -4px;
   color: #333333;
   margin-bottom: 16px;
-}.signature-signee-groups-layout .signature-signee-add-group {
+}
+
+/* css!d2/dialogs/digital.signature/signee.groups/impl/signee.groups.view */
+
+.signature-signee-groups-layout .signature-signee-add-group {
   width: 400px;
   text-align: center;
 }
@@ -8936,7 +8550,11 @@ since the height update is called before the items are actually visible*/
   height: 100%;
   border: 1px dashed #98A8B2;
   margin: auto;
-}.document-esignature-dialog,
+}
+
+/* css!d2/dialogs/document.esignature.dialog/impl/document.esignature.dialog */
+
+.document-esignature-dialog,
 .document-esignature-dialog-container {
   height: 100%;
 }
@@ -8982,7 +8600,39 @@ since the height update is called before the items are actually visible*/
 .document-esignature-dialog .csui-metadata-low-resolution .cs-form .binf-col-md-6 {
   width: 100%;
   padding: 0;
-}/*csslint display-property-grouping:false*/
+}
+
+/* css!d2/dialogs/lifecycle/impl/confirmation */
+
+.binf-widgets .d2-lifecycle-confirmation .d2-lifecycle-confirmation-image {
+    height: 220px;
+    width: 220px;
+    background: url('../dialogs/lifecycle/impl/images/confirm.svg');
+    margin-right: calc(50% - 110px);
+    margin-top: calc(50% - 110px);
+}
+
+.binf-widgets .d2-lifecycle-confirmation .d2-lifecycle-no-input-required-image {
+    height: 155px;
+    width: 168.68px;
+    background: url(../dialogs/lifecycle/impl/images/noInputRequired.svg);
+    margin-right: calc(50% - 84px);
+    margin-top: calc(50% - 77px);
+    margin-bottom: 20px;
+}
+
+.binf-widgets .d2-lifecycle-confirmation .d2-lifecycle-confirmation-text .csui-no-result-message {
+    color: #666666;
+    line-height: 19px;
+    font-size: 16px;
+}
+
+.binf-widgets .d2-lifecycle-confirmation {
+    height: 100%;
+}
+
+/* css!d2/dialogs/document.external.esign.dialog/impl/document.external.esign.dialog */
+
 .d2-document-external-esign-dialog .d2-document-external-esign-dialog-container {
   padding-top: 24px;
   padding-left: 64px;
@@ -9146,7 +8796,11 @@ since the height update is called before the items are actually visible*/
 .d2-stepper-wizard .d2-document-external-esign-dialog .csui-top-align-label .cs-formfield .cs-field-write {
   padding-right: 0;
   margin-right: -16px;
-}.cs-metadata-properties.lifecycle-metadata-properties .binf-nav-pills > li:first-child{
+}
+
+/* css!d2/dialogs/lifecycle/impl/metadata.properties/lifecycle.metadata.properties */
+
+.cs-metadata-properties.lifecycle-metadata-properties .binf-nav-pills > li:first-child{
   padding-right: 64px;
 }
 
@@ -9162,6 +8816,9 @@ since the height update is called before the items are actually visible*/
 .lifecycle-metadata-properties.cs-metadata-properties.d2-metadata-properties .binf-tab-content.ps-container > div:not(.ps-scrollbar-x-rail):not(.ps-scrollbar-y-rail) {
   padding-right: 48px;
 }
+
+/* css!d2/dialogs/mass.update/mass.update.flyout/impl/mass.update.flyout */
+
 .binf-popover.d2-mass-update-info-flyout {
     width: 252px;
     max-width: 252px;
@@ -9351,190 +9008,257 @@ since the height update is called before the items are actually visible*/
     height: calc(100% + 10px);
     width: calc(100% + 10px);
     outline: 1px dotted black;
-}/*csslint bulletproof-font-face:false*/
+}
+
+/* css!d2/utils/icons/impl/icons */
+
 .d2-icon-type-access {
   background-image: url('../utils/icons/impl/mime_accesss.svg');
 }
+
 .d2-icon-type-acrobatRM {
   background-image: url('../utils/icons/impl/mime_acrobat_RM.svg');
 }
+
 .d2-icon-type-ai {
   background-image: url('../utils/icons/impl/mime_adobe_illustrator.svg');
 }
+
 .d2-icon-type-adobePhotoshop {
   background-image: url('../utils/icons/impl/mime_adobe_photoshop.svg');
 }
+
 .d2-icon-type-audio {
   background-image: url('../utils/icons/impl/mime_audio.svg');
 }
+
 .d2-icon-type-cabinet {
   background-image: url('../utils/icons/impl/mime_cabinet.svg');
 }
+
+.d2-icon-type-empty-folder {
+  background-image: url('../utils/icons/impl/mime_empty_folder.svg');
+}
+
 .d2-icon-type-contentless {
   background-image: url('../utils/icons/impl/mime_contentless_object.svg');
 }
+
 .d2-icon-type-virtualDoc {
   background-image: url('../utils/icons/impl/mime_d2_virtual_document.svg');
 }
+
 .d2-icon-type-virtualDoc-blank {
   background-image: url('../utils/icons/impl/mime_d2_virtual_document_blank.svg');
 }
+
 .d2-icon-type-virtualDoc-snapshot {
   background-image: url('../utils/icons/impl/mime_d2_virtual_document_snapshot.svg');
 }
+
 .d2-icon-type-document {
   background-image: url('../utils/icons/impl/mime_document.svg');
 }
+
 .d2-icon-type-excel {
   background-image: url('../utils/icons/impl/mime_excel.svg');
 }
+
 .d2-icon-type-excelME {
   background-image: url('../utils/icons/impl/mime_excel_ME.svg');
 }
+
 .d2-icon-type-excelRM {
   background-image: url('../utils/icons/impl/mime_excel_RM.svg');
 }
+
 .d2-icon-type-excel-template {
   background-image: url('../utils/icons/impl/mime_excel_template.svg');
 }
+
 .d2-icon-type-excel-templateME {
   background-image: url('../utils/icons/impl/mime_excel_template_ME.svg');
 }
+
 .d2-icon-type-excel-templateRM {
   background-image: url('../utils/icons/impl/mime_excel_template_RM.svg');
 }
+
 .d2-icon-type-html {
   background-image: url('../utils/icons/impl/mime_html.svg');
 }
+
 .d2-icon-type-infopath {
   background-image: url('../utils/icons/impl/mime_infopath.svg');
 }
+
 .d2-icon-type-jpeg {
   background-image: url('../utils/icons/impl/mime_jpeg.svg');
 }
+
 .d2-icon-type-mail {
   background-image: url('../utils/icons/impl/mime_mail.svg');
 }
+
 .d2-icon-type-node-admin-template {
   background-image: url('../utils/icons/impl/mime_node_admin_template.svg');
 }
+
 .d2-icon-type-oneNote {
   background-image: url('../utils/icons/impl/mime_onenote.svg');
 }
+
 .d2-icon-type-paper {
   background-image: url('../utils/icons/impl/mime_paper.svg');
 }
+
 .d2-icon-type-pdf {
   background-image: url('../utils/icons/impl/mime_pdf.svg');
 }
+
 .d2-icon-type-powerpoint {
   background-image: url('../utils/icons/impl/mime_powerpoint.svg');
 }
+
 .d2-icon-type-powerpointME {
   background-image: url('../utils/icons/impl/mime_powerpoint_ME.svg');
 }
+
 .d2-icon-type-powerpointRM {
   background-image: url('../utils/icons/impl/mime_powerpoint_RM.svg');
 }
+
 .d2-icon-type-powerpoint-slideshow {
   background-image: url('../utils/icons/impl/mime_powerpoint_slideshow.svg');
 }
+
 .d2-icon-type-powerpoint-slideshowME {
   background-image: url('../utils/icons/impl/mime_powerpoint_slideshow_ME.svg');
 }
+
 .d2-icon-type-powerpoint-template {
   background-image: url('../utils/icons/impl/mime_powerpoint_template.svg');
 }
+
 .d2-icon-type-powerpoint-templateME {
   background-image: url('../utils/icons/impl/mime_powerpoint_template_ME.svg');
 }
+
 .d2-icon-type-powerpoint-templateRM {
   background-image: url('../utils/icons/impl/mime_powerpoint_template_RM.svg');
 }
+
 .d2-icon-type-projects {
   background-image: url('../utils/icons/impl/mime_projects .svg');
 }
+
 .d2-icon-type-repo {
   background-image: url('../utils/icons/impl/mime_repository.svg');
 }
+
 .d2-icon-type-video {
   background-image: url('../utils/icons/impl/mime_video.svg');
 }
+
 .d2-icon-type-visio {
   background-image: url('../utils/icons/impl/mime_visio.svg');
 }
+
 .d2-icon-type-word {
   background-image: url('../utils/icons/impl/mime_word.svg');
 }
+
 .d2-icon-type-wordME {
   background-image: url('../utils/icons/impl/mime_word_ME.svg');
 }
+
 .d2-icon-type-wordRM {
   background-image: url('../utils/icons/impl/mime_word_RM.svg');
 }
+
 .d2-icon-type-word-template {
   background-image: url('../utils/icons/impl/mime_word_template.svg');
 }
+
 .d2-icon-type-word-templateME {
   background-image: url('../utils/icons/impl/mime_word_template_ME.svg');
 }
+
 .d2-icon-type-word-templateRM {
   background-image: url('../utils/icons/impl/mime_word_template_RM.svg');
 }
+
 .d2-icon-type-xml {
   background-image: url('../utils/icons/impl/mime_xml.svg');
 }
+
 .d2-icon-type-zip {
   background-image: url('../utils/icons/impl/mime_zip.svg');
 }
+
 .d2-icon-type-task {
   background-image: url('../utils/icons/impl/node_task.svg');
 }
+
 .d2-icon-type-task-acquired {
   background-image: url('../utils/icons/impl/node_task_acquired.svg');
 }
+
 .d2-icon-type-task-rejected {
   background-image: url('../utils/icons/impl/node_task_rejected.svg');
 }
+
 .d2-icon-type-task-delegated {
   background-image: url('../utils/icons/impl/node_task_delegated.svg');
 }
+
 .d2-icon-type-workflow {
   background-image: url('../utils/icons/impl/node_workflow.svg');
 }
+
 .d2-icon-type-favorites-node {
   background-image: url('../utils/icons/impl/mime_favorites.svg');
 }
+
 .d2-icon-type-home-cabinet {
   background-image: url('../utils/icons/impl/mime_home_cabinet.svg');
 }
+
 .d2-icon-search-group {
   background-image: url('../utils/icons/impl/mime_search_group.svg');
 }
+
 .d2-icon-search-queryform {
   background-image: url('../utils/icons/impl/mime_search_queryform.svg');
 }
+
 .d2-icon-saved-search-query {
   background-image: url('../utils/icons/impl/mime_saved_search.svg');
 }
+
 .d2-icon-saved-search-query-wizard{
   background-image: url("../utils/icons/impl/mime_advanced_search.svg");
 }
+
 .d2-tile .icon.title-checkout,
 .d2-icon-type-widget-checkout {
   background-image: url('../utils/icons/impl/title_checkout.svg');
 }
+
 .d2-icon-type-widget-favorite {
   background-image: url('../utils/icons/impl/title_favorite.svg');
 }
+
 .d2-tile .icon.title-myshares,
 .d2-icon-type-widget-myshares {
   background-image: url('../utils/icons/impl/title_myshares.svg');
 }
+
 .d2-tile .icon.title-recentlyaccessed,
 .d2-icon-type-widget-recentlyaccessed {
   background-image: url('../utils/icons/impl/title_recentlyaccessed.svg');
 }
+
 .d2-tile .icon.title-assignments,
 .d2-icon-type-widget-assignments {
   background-image: url('../utils/icons/impl/title_assignments.svg');
@@ -9561,15 +9285,19 @@ since the height update is called before the items are actually visible*/
 .d2-icon-priority-lowest {
   background-image: url('../utils/icons/impl/status_lowest.svg');
 }
+
 .d2-icon-priority-low {
   background-image: url('../utils/icons/impl/status_low.svg');
 }
+
 .d2-icon-priority-medium {
   background-image: url('../utils/icons/impl/status_medium.svg');
 }
+
 .d2-icon-priority-high {
   background-image: url('../utils/icons/impl/status_high.svg');
 }
+
 .d2-icon-priority-highest {
   background-image: url('../utils/icons/impl/status_highest.svg');
 }
@@ -9577,69 +9305,90 @@ since the height update is called before the items are actually visible*/
 .d2-icon-status-scheduled {
   background-image: url('../utils/icons/impl/status_scheduled.svg');
 }
+
 .d2-icon-status-running {
   background-image: url('../utils/icons/impl/status_running.svg');
 }
+
 .d2-icon-status-finished {
   background-image: url('../utils/icons/impl/status_finished.svg');
 }
+
 .d2-icon-status-halted,
 .d2-icon-status-paused {
   background-image: url('../utils/icons/impl/status_paused.svg');
 }
+
 .d2-icon-status-aborted,
 .d2-icon-status-terminated,
 .d2-icon-status-dormant {
   background-image: url('../utils/icons/impl/status_aborted.svg');
 }
+
 .d2-icon-status-future {
   background-image: url('../utils/icons/impl/status_future.svg');
 }
+
 .d2-icon-status-pending {
   background-image: url('../utils/icons/impl/status_pending.svg');
 }
+
 .d2-icon-status-acquired {
   background-image: url('../utils/icons/impl/status_acquired.svg');
 }
+
 .d2-icon-status-faulted {
   background-image: url('../utils/icons/impl/status_faulted.svg');
 }
+
 .d2-icon-status-d-paused {
   background-image: url('../utils/icons/impl/status_pending_paused.svg');
 }
+
 .d2-icon-status-a-paused {
   background-image: url('../utils/icons/impl/status_acquired_paused.svg');
 }
+
 .d2-icon-status-p-paused {
   background-image: url('../utils/icons/impl/status_paused_paused.svg');
 }
+
 .d2-icon-status-created {
   background-image: url('../utils/icons/impl/status_created.svg');
 }
+
 .d2-icon-status-resumed {
   background-image: url('../utils/icons/impl/status_resumed.svg');
 }
+
 .d2-icon-status-supervisor_changed {
   background-image: url('../utils/icons/impl/status_supervisor_changed.svg');
 }
+
 .d2-icon-status-performer_updated {
   background-image: url('../utils/icons/impl/status_performers_updated.svg');
 }
+
 .d2-icon-status-event_completed {
   background-image: url('../utils/icons/impl/status_event_completed.svg');
 }
+
 .d2-icon-wf-performer-system {
   background-image: url('../utils/icons/impl/workflow_performer_system.svg');
 }
+
 .d2-icon-wf-performer-tracker {
   background-image: url('../utils/icons/impl/workflow_performer_tracker.svg');
 }
+
 .d2-icon-wf-performer-group {
   background-image: url('../utils/icons/impl/workflow_performer_group.svg');
 }
+
 .d2-icon-wf-performer-user {
   background-image: url('../utils/icons/impl/workflow_performer_user.svg');
 }
+
 .d2-icon-wf-performer-signature {
   background-image: url('../utils/icons/impl/workflow_performer_signature.svg');
 }
@@ -9651,24 +9400,31 @@ since the height update is called before the items are actually visible*/
 .arrow_back_target_browse {
   background-image: url('../utils/icons/impl/arrow_back.svg');
 }
+
 .close_icon_target_browse {
   background-image: url('../utils/icons/impl/close.svg');
 }
+
 .checkmark_icon_target_browse {
   background-image: url('../utils/icons/impl/checkmark_cerulean16.svg');
 }
+
 .d2-icon-type-emcmf {
   background-image: url('../utils/icons/impl/mime_d2_emcmf.svg');
 }
+
 .d2-icon-type-emcmf-converted {
   background-image: url('../utils/icons/impl/mime_d2_emcmf_converted.svg');
 }
+
 .d2-icon-type-group-user {
   background-image: url('../utils/icons/impl/mime_team.svg');
 }
+
 .d2-icon-type-single-user {
   background-image: url('../utils/icons/impl/mime_person.svg');
 }
+
 .d2-icon-type-accessor-role {
   background-image: url('../utils/icons/impl/mime_role.svg');
 }
@@ -9688,9 +9444,11 @@ since the height update is called before the items are actually visible*/
 .left_panel_open {
   background-image: url("../utils/icons/impl/left_panel_open.svg");
 }
+
 .left_panel_open:hover {
   background-image: url("../utils/icons/impl/left_panel_open_hover.svg");
 }
+
 .left_panel_open:focus {
   background-image: url("../utils/icons/impl/left_panel_open_focus.svg");
 }
@@ -9698,9 +9456,11 @@ since the height update is called before the items are actually visible*/
 .left_panel_close {
   background-image: url("../utils/icons/impl/left_panel_close.svg");
 }
+
 .left_panel_close:hover {
   background-image: url("../utils/icons/impl/left_panel_close_hover.svg");
 }
+
 .left_panel_close:focus {
   background-image: url("../utils/icons/impl/left_panel_close_focus.svg");
 }
@@ -9708,17 +9468,29 @@ since the height update is called before the items are actually visible*/
 .action_filter {
   background-image: url("../utils/icons/impl/action_filter_default.svg");
 }
+
 .action_filter:hover {
   background-image: url("../utils/icons/impl/action_filter_hover.svg");
 }
+
 .action_filter:focus {
   background-image: url("../utils/icons/impl/action_filter_focus.svg");
 }
+
 .action_filter_active {
   background-image: url("../utils/icons/impl/action_filter_active.svg");
 }
+
 .icon-caret-down-vd {
   background-image: url("../utils/icons/impl/caret-down.svg");
+}
+
+.d2-icon-pinned {
+  background-image: url("../utils/icons/impl/icon-pinned.svg");
+}
+
+.d2-icon-list {
+  background-image: url("../utils/icons/impl/icon-list.svg");
 }
 
 @font-face {
@@ -9729,10 +9501,113 @@ since the height update is called before the items are actually visible*/
   url('../utils/icons/impl/smartview-icon/smartview-icon.svg') format('svg');
   font-weight: 100;
   font-style: normal;
-}.app-module .module-d2-view {
+}
+
+.d2-icon-workspace-default{
+  background-image: url("../utils/icons/impl/mime_workspace.svg");
+}
+
+.d2-bws-icons.admin-workspace-icon {
+  background: url("../utils/icons/impl/mime_workspace.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wssales_contract32 {
+  background: url("../utils/icons/impl/bws/mime_wssales_contract32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsapplicant32 {
+  background: url("../utils/icons/impl/bws/mime_wsapplicant32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsmedical32 {
+  background: url("../utils/icons/impl/bws/mime_wsmedical32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsticket32 {
+  background: url("../utils/icons/impl/bws/mime_wsticket32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsmarketing_event32 {
+  background: url("../utils/icons/impl/bws/mime_wsmarketing_event32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsproduct32 {
+  background: url("../utils/icons/impl/bws/mime_wsproduct32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsdelivery32 {
+  background: url("../utils/icons/impl/bws/mime_wsdelivery32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsshipment32 {
+  background: url("../utils/icons/impl/bws/mime_wsshipment32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsmaintenanceorder32 {
+  background: url("../utils/icons/impl/bws/mime_wsmaintenanceorder32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsteam32 {
+  background: url("../utils/icons/impl/bws/mime_wsteam32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wslegal32 {
+  background: url("../utils/icons/impl/bws/mime_wslegal32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wscurrency32 {
+  background: url("../utils/icons/impl/bws/mime_wscurrency32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsincident32 {
+  background: url("../utils/icons/impl/bws/mime_wsincident32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wscampaign32 {
+  background: url("../utils/icons/impl/bws/mime_wscampaign32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsjob_opening32 {
+  background: url("../utils/icons/impl/bws/mime_wsjob_opening32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsopportunity32 {
+  background: url("../utils/icons/impl/bws/mime_wsopportunity32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsvendor32 {
+  background: url("../utils/icons/impl/bws/mime_wsvendor32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsproject32 {
+  background: url("../utils/icons/impl/bws/mime_wsproject32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsproperty32 {
+  background: url("../utils/icons/impl/bws/mime_wsproperty32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsinvoice32 {
+  background: url("../utils/icons/impl/bws/mime_wsinvoice32.svg") no-repeat;
+}
+
+.d2-bws-icons.mime_wsapplication32 {
+  background: url("../utils/icons/impl/bws/mime_wsapplication32.svg") no-repeat;
+}
+
+.d2-relation-object32 {
+  background: url('../utils/icons/impl/mime_relation.svg') no-repeat;
+}
+
+/* css!d2/pages/start/impl/d2 */
+
+.app-module .module-d2-view {
   overflow: auto;
   position: relative;
-}/*csslint known-properties:false,unique-headings:false*/
+}
+
+/* css!d2/pages/signin/style/signin.ext */
+
 .binf-widgets:not(.d2mob) .signin-container .login-panel {
   padding-bottom: 52px;
 }
@@ -9742,11 +9617,11 @@ since the height update is called before the items are actually visible*/
 }
 
 .binf-widgets .signin-header .d2-logo {
-  background-image: url('../pages/signin/image/header_d2_li_desktop.svg');
+  background-image: url('../pages/signin/image/header_d2_li_xl.svg');
   background-size: 800px;
 }
 
-@media screen and (max-height: 620px) {
+@media screen and (height <= 620px) {
   .binf-widgets:not(.d2mob) .module-signin .signin-header {
     padding-top: 0;
   }
@@ -9756,12 +9631,16 @@ since the height update is called before the items are actually visible*/
   }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (width <= 820px) {
   .binf-widgets .signin-header .d2-logo {
-    background-image: url('../pages/signin/image/header_d2_li_mobile.svg');
+    background-image: url('../pages/signin/image/header_d2_li_sm.svg');
     background-size: 350px;
   }
-}.export-data-form .alpaca-container-label {
+}
+
+/* css!d2/dialogs/export.collection/impl/export.to.collection.view */
+
+.export-data-form .alpaca-container-label {
   display: none;
 }
 
@@ -9799,6 +9678,9 @@ since the height update is called before the items are actually visible*/
 .binf-widgets .export-data-form .alpaca-container-item .binf-help-block.alpaca-message {
   margin-right: 0;
 }
+
+/* css!d2/dialogs/vd.replace.doc.dialog/impl/vd.replace.doc.dialog */
+
 .vd-replace-doc--dialog .binf-modal-header, .vd-replace-doc--dialog .binf-modal-footer {
     background-color: #DCE4E8;
 }
@@ -9852,7 +9734,7 @@ since the height update is called before the items are actually visible*/
 .vd-replace-doc--dialog .AddReplaceForm .option-block {
     display: flex;
     align-items: center;
-    border: 2px solid #ccc;
+    border: 2px solid #cccccc;
     border-radius: 5px;
     margin: .5rem 0;
     padding: .5rem;
@@ -9875,6 +9757,9 @@ since the height update is called before the items are actually visible*/
 .vd-replace-doc--dialog .AddReplaceForm .option-block .title-block .title-desc {
     font-size: 0.875rem;
 }
+
+
+/* css!d2/dialogs/add.rendition/impl/add.rendition.view */
 
 .add-rendition-form .alpaca-container-label {
   display: none;
@@ -9907,4 +9792,5 @@ since the height update is called before the items are actually visible*/
   display: block;
   width: 100%;
 }
+
 /*# sourceMappingURL=d2-core-rtl.css.map */

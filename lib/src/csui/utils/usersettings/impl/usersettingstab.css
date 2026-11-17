@@ -1,12 +1,16 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme=cf]) {
+  --jatx-csui-form-base-label-font-weight: 500;
+}
+
 .esoc-simple-user-widget-form-body  .cs-form  .binf-row.alpaca-field .alpaca-container-label  > h4 {
-  font-size: 16px;
-  color: #333;
-  font-weight: 700;
-  margin: 0px;
-  padding: 0px;
+  font-size: var(--jato-measure-12, 16px);
+  font-weight: var(--jatx-csui-form-base-label-font-weight, 700);
+  color: var(--jato-typography-forms-text-color-label, #333333);
+  margin: 0;
+  padding: 0;
 }
 
 .esoc-simple-user-widget-form-body .cs-form .alpaca-field .csui-field-checkbox .alpaca-field-checkbox .binf-control-label.alpaca-control-label {
@@ -42,15 +46,85 @@
   height: 100%;
 }
 
+[data-smart-theme]:not([data-smart-theme='cf']) {
+  .reason-main-container .show-reason-container input {
+    background-color: var(--jato-background-elevation-level-1);
+    border: 1px solid var(--jato-input-border-container-neutral);
+    border-block-end: 1px solid var(--jato-input-border-focus-neutral);
+    border-radius: var(--jato-radii-med) var(--jato-radii-med) 0 0;
+    color: var(--jato-typography-text-color-primary);
+    font-size: var(--jatx-csui-input-font-size);
+    height: var(--jato-measure-32);
+    line-height: var(--jatx-csui-input-line-height);
+    padding-inline-end: var(--jato-measure-8);
+    padding-inline-start: var(--jato-measure-8);
+  }
+
+  .reason-main-container .show-reason-container input:focus {
+    border-block-end: 1px solid var(--jato-input-border-focus-enabled);
+    box-shadow: inset 0 -1px 0 0 var(--jato-input-border-focus-enabled);
+    outline: none;
+    -webkit-box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled);
+    border: var(--jato-measure-1, 2px) solid var(--jato-input-border-container-neutral);
+    border-radius: var(--jato-radii-med) var(--jato-radii-med) 0 0;
+  }
+
+  .reason-main-container .show-reason-container input:hover {   
+    background-color: var(--jato-background-elevation-level-2-hover);
+    border: 1px solid var(--jato-input-border-container-hover);
+    border-block-end: 1px solid var(--jato-input-border-focus-hover);
+    box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-hover);
+  }
+
+  .reason-main-container .show-reason-container input.err-reason-txt {
+    color: var(--jato-typography-text-color-primary);
+    background-color:  var(--jato-background-error-neutral);
+    border: 1px solid var(--jato-input-border-container-error-neutral);
+  }
+
+  .reason-main-container .show-reason-container input.err-reason-txt:hover {   
+    background-color: var(--jato-background-error-hover);
+    border: 1px solid var(--jato-input-border-container-error-hover);
+    border-block-end: 1px solid var(--jato-input-border-focus-error-enabled);
+    box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-error-hover);
+  }
+
+  .reason-main-container .show-reason-container input.err-reason-txt:focus {   
+    background-color: var(--jato-background-elevation-level-1);
+    border-block-end: 1px solid var(--jato-input-border-focus-error-enabled);
+    border: 1px solid var(--jato-input-border-container-error-hover);
+    box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-error-enabled);
+    outline: none;
+  }
+
+  .reason-main-container .show-reason-container .show-error-reason-msg .error-reason-msg-rectangle {
+    display: none;
+  }
+
+  .reason-main-container .show-reason-container .show-error-reason-msg .error-msg-txt {
+    display: inline-block;
+    background-color: var(--jato-background-error-neutral);
+    border: var(--jatx-csui-form-base-error-message-border);
+    border-radius: var(--jato-radii-sm);
+    color: var(--jato-typography-text-color-secondary);
+    line-height: var(--jatx-csui-form-base-error-message-line-height);
+    margin-top: 4px;
+    padding: 0 8px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .3);
+  }
+}
+
 .reason-main-container {
   padding: 8px !important;
 }
+
 .context-mgt-reason {
   padding: 2px 24px 2px 8px;
   width: 70%;
   border-radius: 2px;
   border: 1px solid black;
 }
+
 .context-mgt-reason:focus {
   border-radius: 4px;
   border: 2px solid black;
@@ -67,26 +141,28 @@
 .reason-main-container .show-reason-container {
   width: 100%;
 }
+
 .reason-main-container .lbl-reason {
   padding-bottom: 4px;
   font-size: 12px;
   font-weight: 500;
 }
+
 .show-error-reason {
   display: none;
-  width: 174px;
+  width: fit-content;
   height: 18px;
-  background-color: #ffffff;
+  background-color: var(--jatx-const-transparent, #ffffff);
   margin-bottom: 24px !important;
 }
 
 .show-error-reason-msg{
   height: 18px;
-  padding: 2px 8px 2px 6px !important;
+  padding: 2px 8px 2px var(--jato-measure-0, 6px) !important;
   border-radius: 2px;
-  background-color: #ffffff;
+  background-color: var(--jatx-const-transparent, #ffffff);
   box-sizing: border-box;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--jatx-const-none, 0 0 4px 0 rgba(0, 0, 0, 0.3));
   color: #f3324f;
   text-align: left;
   line-height: normal !important;
@@ -111,6 +187,7 @@
   position: relative;
   top: -6px;
 }
+
 .error-cross-mark:after {
   content: "\d7";
   line-height: 15px;
@@ -121,7 +198,7 @@
   right: 0;
   font-size: 13px;
   text-align: center;
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 .err-reason-txt{
@@ -155,6 +232,7 @@ div.csui-usersettings #responsiveContainerMessageMode,
 div.csui-usersettings #contentMgt {
   margin-top: 18px;
 }
+
 div.csui-usersettings  #accessibleMode .cs-form-doublecolumn,
 div.csui-usersettings  #languageSettings .cs-form-doublecolumn,
 div.csui-usersettings  #metadataLanguageSettings .cs-form-doublecolumn,
@@ -166,6 +244,7 @@ div.csui-usersettings  #reason4ContentMgt .cs-form-doublecolumn {
   margin: 0;
   padding: 0;
 }
+
 div.csui-usersettings  #accessibleMode .alpaca-field-select,
 div.csui-usersettings  #languageSettings .alpaca-field-select,
 div.csui-usersettings  #metadataLanguageSettings .alpaca-field-select,
@@ -176,6 +255,7 @@ div.csui-usersettings  #contentMgtHelperTxt .alpaca-field-select,
 div.csui-usersettings  #reason4ContentMgt .alpaca-field-select  {
   margin-bottom : 8px;
 }
+
 div.csui-usersettings  #accessibleMode  .binf-row > .alpaca-container-label:first-child,
 div.csui-usersettings  #languageSettings  .binf-row > .alpaca-container-label:first-child,
 div.csui-usersettings  #metadataLanguageSettings  .binf-row > .alpaca-container-label:first-child,
@@ -184,7 +264,7 @@ div.csui-usersettings  #responsiveContainerMessageMode  .binf-row > .alpaca-cont
 div.csui-usersettings  #contentMgt .binf-row  > .alpaca-container-label:first-child,
 div.csui-usersettings  #contentMgtHelperTxt  .binf-row > .alpaca-container-label:first-child,
 div.csui-usersettings  #reason4ContentMgt  .binf-row > .alpaca-container-label:first-child {
-  margin : 0px;
+  margin : 0;
 }
 
 #responsiveContainerMode .binf-help-block.binf-help-block-standalone,

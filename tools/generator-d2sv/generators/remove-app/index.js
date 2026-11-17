@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 "use strict";
 
@@ -52,9 +52,12 @@ module.exports = class extends BaseModuleGenerator {
     }
     if (this.prompts["removeCompletely"]) {
       const namespace = this.pluginMap[this.prompts["plugin"]].namespace;
-      [ "src", "debug", "release" ].forEach(d => {
-        rmdirSync(join(process.cwd(), "lib", d, namespace));
-      });
+      let isSVUIPlugin = this._validatePluginSelection(this.prompts["plugin"]);
+      if (isSVUIPlugin) {
+        [ "src", "debug", "release" ].forEach(d => {
+          rmdirSync(join(process.cwd(), "lib", d, namespace));
+        });
+      }
     }
     let module = this.pluginMap[this.prompts["plugin"]].module;
     let options = [ "com.opentext.d2.sdk:d2sdk-maven-plugin:remove-plugin", `-Dmodule=${module}`, `-DremoveCompletely=${this.prompts["removeCompletely"]}` ];

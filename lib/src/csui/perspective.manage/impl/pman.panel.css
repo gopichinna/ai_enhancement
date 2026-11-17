@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-pman-panel {
   position: absolute;
@@ -158,6 +158,7 @@
 
 
 
+
 .binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item.binf-active .csui-layout-icon,
 .binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item.binf-active:active .csui-layout-icon,
 .binf-widgets .csui-pman-panel .csui-list-pannel .csui-layout-item.binf-active .csui-layout-icon:active,
@@ -216,6 +217,7 @@
   z-index: -1;
   background: #ffffff; 
 }
+
 .binf-widgets .csui-template-wrapper {
   cursor: grabbing;
   position: absolute;
@@ -229,19 +231,21 @@
 }
 
 .binf-widgets .csui-template-wrapper .csui-widget-template {
-  border: 3px solid #94bbea;
+  border: var(--jato-measure-0, 3px) solid #94bbea;
+  border-radius: var(--jato-radii-lrg, initial);
   width: 220px;
   height: 220px;
 }
 
 .binf-widgets .csui-widget-template .csui-template-header {
   height: 48px;
-  background-color: #ffffff;
+  background-color: var(--jato-border-color-primary-selected, #ffffff);
+  border-radius: var(--jato-radii-lrg, initial) var(--jato-radii-lrg, initial) 0 0;
   text-align: left;
   padding: 12px 16px;
   font-size: 20px;
   line-height: 23px;
-  color: #7e929f;
+  color: var(--jato-color-white-10000, #7e929f);
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -249,8 +253,9 @@
 
 .binf-widgets .csui-widget-template .csui-template-body {
   height: 166px;
-  background-color: #f9f9f9;
-  color: #3f4950;
+  background-color: var(--jato-border-color-primary-selected, #f9f9f9);
+  border-radius:  0 0 var(--jato-radii-lrg, initial) var(--jato-radii-lrg, initial);
+  color: var(--jato-color-white-10000, #3f4950);
   text-align: center;
   padding: 32px 40px 94px;
   font-size: 18px;

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .csui-table-cell-_toggledetails .expand-details-row-toggle {
   height: 100%;
@@ -7,6 +7,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+
+
+
+:where([data-smart-theme]:not([data-smart-theme="cf"])) .binf-widgets .binf-table .csui-table-cell-_toggledetails {
+  min-width: var(--jatx-csui-table-icon-cell-width);
+  max-width: var(--jatx-csui-table-icon-cell-width);
 }
 
 .binf-widgets .csui-nodetable.csui-table-spacing-narrow .csui-table-cell-_toggledetails {
@@ -66,10 +74,10 @@
 
 
 .binf-widgets .csui-nodetable .binf-table tr > .csui-table-cell-_toggledetails:first-child > * {
-  padding-left: 20px;
+  padding-left: var(--jato-padding-lrg, 20px);
 }
 
 
 .binf-widgets .csui-nodetable .binf-table tr > .csui-table-cell-_toggledetails.csui-table-cell-last-visible > * {
-  padding-right: 20px;
+  padding-right: var(--jato-padding-lrg, 20px);
 }

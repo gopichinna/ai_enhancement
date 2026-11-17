@@ -2,20 +2,24 @@
   <div class="cs-field-write-inner">
     <div class="cs-tklfield-select">
       <div class="cs-tkl-search-box combobox" role='combobox' aria-expanded="false"
-           aria-haspopup="listbox" aria-owns="{{id}}">
+           aria-haspopup="listbox" aria-owns="{{id}}" {{#if idBtnLabel}}aria-labelledby="{{idBtnLabel}}"{{/if}}
+           {{#if multiFieldLabel}} aria-label="{{multiFieldLabel}}"{{/if}}>
         <input type="text" placeholder="{{emptyLabel}}" value="{{data}}"
                {{#if idBtnLabel}}aria-labelledby="{{idBtnLabel}}"{{/if}}
           {{#if idBtnDescription}}aria-describedby="{{idBtnDescription}}" {{/if}}
           {{#if multiFieldLabel}} aria-label="{{multiFieldLabel}}" {{/if}}
           {{#if ariaRequired}}aria-required="{{ariaRequired}}"{{/if}} id="{{id}}"
                aria-autocomplete="list" autocomplete="off" aria-controls="{{id}}">
+                  {{#if this.isJATO}}
+                    <otc-icon size="16" class="cs-tklfield-jato-search" svg="{{actionSearch}}"></otc-icon>
+                  {{/if}}          
       </div>
       <div class="cs-tkl-options-container">
         <div class="csui-normal-scrolling" >
           <ul class="cs-tkl-options" role="listbox" id="{{id}}">
-            <li id="{{noneOptionId}}" role="option"><a tabindex="-1" title="{{emptyLabel}}">{{emptyLabel}}</a></li>
+            <li id="{{noneOptionId}}" role="option" aria-selected="false"><a tabindex="-1" title="{{emptyLabel}}">{{emptyLabel}}</a></li>
             {{#each options}}
-              <li id="{{id}}" role="option"><a tabindex="-1" title="{{name}}">{{name}}</a></li>
+              <li id="{{id}}" role="option" aria-selected="false"><a tabindex="-1" title="{{name}}">{{name}}</a></li>
             {{/each}}
           </ul>
         </div>
@@ -23,13 +27,26 @@
     </div>
     {{#if this.isNotWriteOnly}}
       <div class="icon-container">
+      {{#if isJATO}}
+    <otc-button  class="inline-edit-icon csui-jato-edit-cancel" arialabel="{{cancel}}" type="subtle" size="small" tabindex="-1" data-cstabindex="-1" title="{{cancel}}">
+      <otc-icon svg="{{editCancelIconSVG}}" type="subtle" isPresentation></otc-icon>
+    </otc-button>
+    {{else}}
         <div class="csui-icon-edit inline-edit-icon edit-cancel" title="{{cancel}}"></div>
-      </div>
+      {{/if}}
+    </div>
     {{else}}
       {{#if this.applyFlag}}
         <div class="icon-container">
+        {{#if this.isJATO}}
+          <otc-button class="csui-icon apply-all block binf-hidden" title="{{titleApplyAll}}"
+              arialabel="{{titleApplyAll}}" tabindex="0" size="small" type="subtle">
+              <otc-icon svg="{{actionApplyToAll}}"></otc-icon>
+          </otc-button>
+        {{else}}
           <div class="csui-icon apply-all binf-hidden" title="{{titleApplyAll}}" tabindex="0"
                data-cstabindex="0"></div>
+        {{/if}}
         </div>
       {{/if}}
     {{/if}}
@@ -41,8 +58,8 @@
 <div class="cs-field-read">
   <div class="cs-field-read-inner">
     <div class="btn-container">
-      <button type="button" {{#if schema.readonly}} disabled {{/if}}
-          {{#if multiFieldLabel}}aria-label="{{readModeMultiFieldAria}}"{{else}}aria-label="{{readModeAria}}"{{/if}} 
+      <button type="button" {{#if schema.readonly}} disabled {{else}} aria-haspopup="listbox" aria-expanded="false" {{/if}}
+          {{#if multiFieldLabel}}aria-label="{{readModeMultiFieldAria}}"{{else}}aria-label="{{readModeAria}}"{{/if}}
           {{#if hasData}}
             title="{{data}}"
           {{else}}
@@ -56,9 +73,15 @@
       </button>
     </div>
     <div class="icon-container">
+    {{#if isJATO}}
+    <otc-button  class="csui-jato-icon-edit inline-edit-icon binf-hidden" arialabel="{{edit}}" type="subtle" size="small" tabindex="-1" data-cstabindex="-1" title="{{edit}}">
+      <otc-icon svg="{{editIconSVG}}" type="subtle" isPresentation></otc-icon>
+    </otc-button>
+    {{else}}
       <div class="csui-icon-edit inline-edit-icon icon-edit" title="{{edit}}"></div>
+    {{/if}}
     </div>
   </div>
 </div>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

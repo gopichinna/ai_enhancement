@@ -1,0 +1,214 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+[data-smart-theme]:not([data-smart-theme='cf']) {
+  --jatx-dcmtw-combo-height: 32px;
+}
+
+.binf-widgets .cs-form .alpaca-container-item>.binf-form-group.alpaca-field-select>.binf-col-sm-9 {
+  overflow: visible;
+
+  
+  padding: 0;
+}
+
+.binf-widgets .dctmw-combofield {
+  width: 100%;
+  position: relative;
+}
+
+.binf-widgets .dctmw-combofield .cs-field-write-inner {
+  position: relative;
+}
+
+.binf-widgets .dctmw-combofield .dctmw-combofield-search-box-input {
+  
+  border-radius: 3px;
+  padding-right: 22px;
+  height: var(--jatx-dcmtw-combo-height, 28px);
+  padding-left: 0.5em;
+  text-overflow: ellipsis;
+  background-color: var(--jato-background-elevation-level-1, rgb(255, 255, 255));
+  border: 1px solid var(--jato-input-border-container-neutral, #a7a9ac);
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) var(--jatx-const-0, 3px) var(--jatx-const-0, 3px);
+  font-size: var(--jato-font-size-reg, 14px);
+  letter-spacing: var(--jato-tracking-regular);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .dctmw-combofield .dctmw-combofield-search-box-input:hover,
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .dctmw-combofield .dctmw-combofield-search-box-input:focus:hover {
+  background-color: var(--jato-background-elevation-level-2-hover, #efefef);
+  border: 1px solid var(--jato-input-border-container-hover, transparent);
+  border-block-end: 1px solid var(--jato-input-border-focus-hover, #666666);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-hover, transparent);
+}
+
+.binf-widgets .dctmw-combofield .dctmw-icon-caret-down.dctmw-icon-disabled svg {
+  display: none;
+}
+
+.binf-widgets .dctmw-combofield .dctmw-icon-caret-down:not(.dctmw-icon-disabled) {
+  position: absolute;
+  pointer-events: none;
+  right: var(--jato-margin-xs);
+  top: 0;
+  height: var(--jatx-dcmtw-combo-height);
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-smart-theme='cf'] .binf-widgets .dctmw-combofield .dctmw-icon-caret-down:not(.dctmw-icon-disabled) {
+  content: '';
+  top: 5px;
+  right: 13px;
+  height: 18px;
+  width: 18px;
+  display: block;
+  background: url('images/caret_down.svg') no-repeat center;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .dctmw-combofield .dctmw-combofield-search-box-input:focus {
+  border-block-end: 1px solid var(--jato-input-border-focus-enabled, #666666);
+  box-shadow: inset 0 -1px 0 0 var(--jato-input-border-focus-enabled, none);
+  outline: none;
+  -webkit-box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled, none);
+  border: var(--jato-measure-1, 2px) solid var(--jato-input-border-container-neutral, #666666);
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) var(--jatx-const-0, 3px) var(--jatx-const-0, 3px);
+}
+
+.binf-widgets .dctmw-combofield ul {
+  padding: 0;
+}
+
+.binf-widgets .dctmw-combofield-options-container {
+  display: none;
+  box-shadow: 0 12px 24px 0 var(--jato-elevation-shadow-color-level-4);
+  position: absolute;
+  z-index: 1002;
+  background-color: var(--jato-background-elevation-level-4, #ffffff);
+  width: 100%;
+  border: 1px solid var(--jato-border-color-primary);
+  border-top: 0;
+  padding: var(--jato-padding-xxs);
+}
+
+[data-smart-theme='cf'] .binf-widgets .dctmw-combofield-options-container {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.dctmw-combofield-options li:not(:last-child) {
+  margin-bottom: var(--jato-margin-micro);
+}
+
+.dctmw-combofield-options li {
+  color: var(--jato-cta-content-color-tertiary, #333333);
+  border-radius: var(--jato-radii-med);
+}
+
+.binf-widgets .dctmw-combofield-options>li.active {
+  background-color: var(--jato-background-rows-hover, #B9C4CB);
+}
+
+[data-smart-theme='cf'] .binf-widgets .dctmw-combofield-options > li.active {
+    box-shadow: inset 0 -1px 0 #FFFFFF, inset 0 1px 0 #FFFFFF;
+}
+
+.dctmw-combofield-options li.dctmw-select-add-new {
+  border-top: 1px solid #DCDCDC;
+}
+
+.binf-widgets .dctmw-combofield-options>li>a,
+.binf-widgets .dctmw-combofield .dctmw-combofield-options-container>.dctmw-add-new-option,
+.binf-widgets .dctmw-combofield .dctmw-combofield-options>.dctmw-combo-no-result,
+.binf-widgets .dctmw-combofield .dctmw-combofield-options>.dctmw-combo-results-message {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: var(--jatx-dcmtw-combo-height);
+  padding: var(--jato-padding-med, 3px) var(--jato-padding-xxl, 10px) var(--jato-padding-med, 3px) var(--jato-padding-xxl, 10px);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .dctmw-combofield-options > li > a > span.dctmw-combofield-text-container,
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .dctmw-combofield-options > li.dctmw-none-item > a > span.dctmw-listfield-text-container {
+  padding-top: var(--jato-padding-micro);
+  padding-bottom: var(--jato-padding-micro);
+  font-weight: 400;
+  font-size: var(--jato-font-size-reg);
+  line-height: var(--jato-line-height-reg);
+  letter-spacing: var(--jato-tracking-regular);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .dctmw-combofield-options > li.dctmw-none-item > a > span.dctmw-listfield-text-container {
+  color: var(--jato-typography-text-color-tertiary);
+}
+
+.dctmw-combofield-options>li:hover a {
+  color: inherit;
+}
+
+.binf-widgets .dctmw-combofield .dctmw-combofield-options .dctmw-combo-selected {
+  background-color: var(--jato-background-rows-hover, #1074bc);
+  color: var(--jato-cta-content-color-tertiary, #ffffff);
+}
+
+.binf-widgets .dctmw-combofield .dctmw-combofield-options>.dctmw-combo-no-result {
+  top: 0;
+  bottom: 3px;
+  line-height: var(--jato-line-height-reg, 24px);
+  font-size: var(--jato-font-size-reg, 14px);
+  color: var(--jato-typography-text-color-tertiary, #757575);
+  cursor: text;
+  font-weight: bolder;
+}
+
+.binf-widgets .dctmw-combofield .dctmw-combofield-options>li.dctmw-combo-results-message {
+  position: relative;
+  padding-left: 10px;
+  top: 0;
+  bottom: 3px;
+  line-height: var(--jato-line-height-reg, 24px);
+  font-size: var(--jato-font-size-reg, 14px);
+  color: var(--jato-typography-text-color-tertiary, #757575);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .binf-widgets .dctmw-combofield .dctmw-combofield-options>li.dctmw-combo-results-message {
+  font-weight: bolder;
+}
+
+.binf-widgets .dctmw-combofield-options>li.dctmw-combo-no-result>a {
+  cursor: text;
+  font-weight: bolder;
+}
+
+.d2-combo-dropup {
+  top: auto;
+  bottom: 100%;
+}
+
+.binf-widgets .dctmw-combofield-options>li>a>.dctmw-highlight-options {
+  font-weight: bolder;
+  color: #333333;
+}
+
+.binf-widgets .dctmw-combofield .dctmw-combofield-options>.dctmw-add-new-option,
+.binf-widgets .dctmw-combofield .dctmw-combofield-options>.dctmw-select-add-new-option {
+  border-top: 1px solid #D5D5D5;
+}
+
+.binf-widgets .dctmw-combofield .dctmw-combofield-options li.csui-loading-parent-wrapper {
+  margin-left: 20px;
+}
+
+.binf-widgets .dctmw-combofield-options>li>a>span.dctmw-combofield-text-container .dctmw-highlight-options {
+  font-weight: bolder;
+}
+
+.binf-widgets .dctmw-combofield .dctmw-combofield-options-container>.dctmw-add-new-option {
+  border-top: 1px solid #DCDCDC;
+}

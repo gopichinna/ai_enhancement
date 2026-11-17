@@ -1,0 +1,141 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+[data-smart-theme="light"] {
+  --jato-cta-background-myaviator-active: var(--jato-color-electric-7430);
+  --jato-cta-background-myaviator-hover: var(--jato-color-electric-8645);
+  --jato-cta-background-myaviator-neutral: var(--jato-color-electric-9110);
+  --jato-cta-border-color-myaviator-active: var(--jato-color-electric-0165);
+  --jato-cta-border-color-myaviator-hover: var(--jato-color-electric-0530);
+  --jato-cta-border-color-myaviator-neutral: var(--jato-color-electric-7430);
+  --jato-cta-content-myaviator-active: var(--jato-color-electric-0165);
+  --jato-cta-content-myaviator-hover: var(--jato-color-electric-0530);
+  --jato-cta-content-myaviator-neutral: var(--jato-color-electric-1115);
+  --jatx-smart-otc-icon-content-color-tertiary: var(--jato-cta-content-color-tertiary);
+}
+
+[data-smart-theme="dark"] {
+  --jato-cta-background-myaviator-active: var(--jato-color-white-10000-a015);
+  --jato-cta-background-myaviator-hover: var(--jato-color-white-10000-a010);
+  --jato-cta-background-myaviator-neutral: var(--jato-color-white-10000-a010);
+  --jato-cta-border-color-myaviator-active: var(--jato-color-navy-5140);
+  --jato-cta-border-color-myaviator-hover: var(--jato-color-navy-7145);
+  --jato-cta-border-color-myaviator-neutral: var(--jato-color-white-10000-a025);
+  --jato-cta-content-myaviator-active: var(--jato-color-navy-5140);
+  --jato-cta-content-myaviator-hover: var(--jato-color-navy-7145);
+  --jato-cta-content-myaviator-neutral: var(--jato-color-navy-6385);
+  --jatx-smart-otc-icon-content-color-tertiary: var(--jato-cta-content-color-tertiary);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-icon-label .smart-icon-label-icon {
+  --jatx-otc-icon-content-color-tertiary: var(--jato-cta-content-myaviator-neutral);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-icon-label:hover .smart-icon-label-icon,
+[data-smart-theme]:not([data-smart-theme="cf"]).binf-widgets .smart-icon-label:focus .smart-icon-label-icon {
+  --jatx-otc-icon-content-color-tertiary: var(--jato-cta-content-myaviator-hover);
+  --jatx-otc-icon-content-color-tertiary-hover: var(--jato-cta-content-myaviator-hover);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .smart-icon-label:active .smart-icon-label-icon {
+  --jatx-otc-icon-content-color-tertiary: var(--jato-cta-content-myaviator-active);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-myaviator-height: 32px;
+  --jatx-myaviator-icon-size: 16px;
+  --jatx-myaviator-font-size: 13px;
+  --jatx-myaviator-line-height: 17px;
+}
+
+.binf-widgets .smart-icon-label {
+  display: flex;
+  align-items: center;
+  height: var(--jatx-myaviator-height, 46px);
+  padding-inline: var(--jato-padding-xl, 16px);
+  background-color: var(--jato-cta-background-myaviator-neutral, #edf6ff);
+  color: var(--jato-cta-content-myaviator-neutral, #0059ff);
+  border: 1px solid var(--jato-cta-border-color-myaviator-neutral, #0059ff);
+  border-radius: var(--jato-radii-xxl, 23px);
+  font-family: var(--jatx-font-family, "OpenText Sans", sans-serif);
+  font-size: var(--jatx-myaviator-font-size, 16px);
+  font-weight: 400;
+  line-height: var(--jatx-myaviator-line-height, 22px);
+  margin-left: 8px;
+}
+
+.binf-widgets .smart-icon-label .smart-icon-label-container {
+  display: flex;
+  align-items: center;
+  gap: var(--jato-margin-sm, 8px);
+  height: 100%;
+}
+
+@media (max-width: 520px) {
+  .binf-widgets .smart-icon-label {
+    padding-inline: 0;
+  }
+
+  .binf-widgets .smart-icon-label-container {
+    padding-inline: var(--jato-padding-xxl, 24px);
+  }
+}
+
+.binf-widgets .smart-icon-label .smart-icon-label-label {
+  white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+  .binf-widgets .smart-icon-label .smart-icon-label-label {
+    display: none;
+  }
+}
+
+.binf-widgets .smart-icon-label .smart-icon-label-icon {
+  width: var(--jatx-myaviator-icon-size, 20px);
+  height: var(--jatx-myaviator-icon-size, 20px);
+}
+
+.binf-widgets .smart-icon-label .smart-icon-label-icon  path {
+  fill: var(--jato-cta-content-myaviator-neutral, #0059ff);
+}
+
+.binf-widgets .smart-icon-label:hover,
+.binf-widgets .smart-icon-label:focus {
+  background-color: var(--jato-cta-background-myaviator-hover, #edf1fa);
+  color: var(--jato-cta-content-myaviator-hover, #0029bf);
+  border-color: var(--jato-cta-border-color-myaviator-hover, #0029bf);
+}
+
+.binf-widgets .smart-icon-label:hover .smart-icon-label-icon path {
+  fill: var(--jato-cta-content-myaviator-hover, #0029bf);
+}
+
+.binf-widgets .smart-icon-label:active {
+  background-color: var(--jato-cta-background-myaviator-active, #94bbea);
+  color: var(--jato-cta-content-myaviator-active, #00087d);
+  border-color: var(--jato-cta-border-color-myaviator-active, #94bbea);
+}
+
+.binf-widgets .smart-icon-label:active .smart-icon-label-icon  path {
+  fill: var(--jato-cta-content-myaviator-active, #00087d);
+}
+
+.binf-widgets .smart-icon-label .smart-icon-label-container .smart-cf-icon-svg-text {
+  display: flex;
+  align-items: center;
+}
+
+.binf-widgets .smart-icon-label .smart-icon-label-container .smart-cf-icon-svg-text svg path {
+  fill: #0059FF;
+}
+
+.binf-widgets .smart-icon-label:hover .smart-icon-label-container .smart-cf-icon-svg-text svg path,
+.binf-widgets .smart-icon-label:focus .smart-icon-label-container .smart-cf-icon-svg-text svg path {
+  fill: #0029BF;
+}
+
+.binf-widgets .smart-icon-label:active .smart-icon-label-container .smart-cf-icon-svg-text svg path {
+  fill: #00087D;
+}
+

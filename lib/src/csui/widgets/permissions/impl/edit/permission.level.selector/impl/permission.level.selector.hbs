@@ -2,9 +2,15 @@
   {{#each permissionLevelOptions}}
     <li class="csui-permission-level-item" data-optionid="{{this.id}}" role="option" aria-label="{{this.name}}">
       <a tabindex="-1" href="#">
-        <span class="cs-icon"></span>
+        <span class="cs-icon">
+        {{#if ../isJATO}}
+          <otc-icon class="csui-permission-dialog-checkmark" size="16" svg="{{../jatoCheckMarkSelect}}" ispresentation disableeffects></otc-icon>
+        {{else}}
+          <otc-icon icon="csui_action:action_confirm32" size="18" ispresentation disableeffects></otc-icon>
+        {{/if}}
+        </span>
         <span class="cs-label">{{this.name}}</span>
-        {{#if this.showActionIcon}}
+        {{#if this.showActionIcon}}          
           <span class="csui-icon {{this.actionIcon}}"></span>
         {{/if}}
       </a>
@@ -12,4 +18,4 @@
   {{/each}}
 </ul>
 
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

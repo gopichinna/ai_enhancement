@@ -2,8 +2,10 @@
 
   <div class="cs-content-header">
     {{#if back_button}}
-      <div class="overview-page-backbutton icon arrow_back cs-go-back csui-acc-focusable-active"
-           aria-label="{{goBackAria}}" title="{{goBackTitle}}" role="link" tabindex="0"></div>
+      <otc-button class="overview-page-backbutton cs-go-back csui-acc-focusable-active"
+          {{#if isJATO}} size="small" {{else}}icon="csui_action:action_back32" mirrorIconIfRtl {{/if}} arialabel="{{goBackAria}}" title="{{goBackTitle}}">
+          {{#if isJATO}}<otc-icon svg="{{backButtonIconSVG}}" type="subtle" mirrorIfRtl></otc-icon>{{/if}}
+      </otc-button>
     {{/if}}
     <div class="title-container"></div>
     <div class="actions-container">
@@ -134,14 +136,14 @@
   </div>
   <div class="cs-fadeout-container"></div>
   <div class="cs-content-footer">
-    <button class="binf-btn primary-btn command-btn open-btn" type="button"
-            data-signature="OpenDocument">{{lang.ToolbarItemOpen}}</button>
-    <button class="binf-btn default-btn command-btn csui-doc-overview-download-btn" type="button"
-            data-signature="Download">{{lang.ToolbarItemDownload}}</button>
-    <button class="binf-btn default-btn command-btn edit-btn" type="button"
-            data-signature="Edit">{{lang.ToolbarItemEdit}}</button>
-    <button class="binf-btn default-btn command-btn properties-btn" type="button"
-            data-signature="Properties">{{lang.ToolbarItemProperties}}</button>
+    <otc-button class="command-btn open-btn" type="primary"
+            data-signature="OpenDocument">{{lang.ToolbarItemOpen}}</otc-button>
+    <otc-button class="command-btn csui-doc-overview-download-btn" type="secondary"
+            data-signature="Download">{{lang.ToolbarItemDownload}}</otc-button>
+    <otc-button class="command-btn edit-btn" type="secondary"
+            data-signature="Edit">{{lang.ToolbarItemEdit}}</otc-button>
+    <otc-button class="command-btn properties-btn" type="secondary"
+            data-signature="Properties">{{lang.ToolbarItemProperties}}</otc-button>
   </div>
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

@@ -1,0 +1,23 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-failure .aie-chat-entry {
+  position: relative;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-failure .aie-chat-entry .aie-chat-text {
+  margin-inline-end: 32px;
+  border-inline-start: 16px solid #df3324;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 4px;
+  color: rgb(223, 51, 36);
+  padding: 2px 6px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-failure .aie-chat-text::before {
+  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTguOTMzIDggMTAuOCA2LjEzM2EuNjQ0LjY0NCAwIDAgMCAwLS45MzMuNjQ0LjY0NCAwIDAgMC0uOTMzIDBMOCA3LjA2NyA2LjEzMyA1LjJhLjY0NC42NDQgMCAwIDAtLjkzMyAwIC42NDQuNjQ0IDAgMCAwIDAgLjkzM0w3LjA2NyA4IDUuMiA5Ljg2N2EuNjQ0LjY0NCAwIDAgMCAwIC45MzMuNzIuNzIgMCAwIDAgLjQ2Ny4yYy4yIDAgLjMzMy0uMDY3LjQ2Ni0uMkw4IDguOTMzIDkuODY3IDEwLjhhLjcyLjcyIDAgMCAwIC40NjYuMmMuMiAwIC4zMzQtLjA2Ny40NjctLjJhLjY0NC42NDQgMCAwIDAgMC0uOTMzTDguOTMzIDhaIiBmaWxsPSIjZmZmIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iLjUiLz48L3N2Zz4=);
+  inset-inline-start: 0;
+  inset-block-start: 50%;
+  transform: translate(0, -50%);
+  position: absolute;
+}

@@ -1,9 +1,10 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .mip-config-form-content .cs-form .alpaca-field-checkbox{
     display: inline-flex;
 }
+
 .mip-config-form-content .cs-form .question-info-tip{
     cursor: pointer;
     float: left;
@@ -12,11 +13,13 @@
     margin-top: -25px;
     width: 18px;
 }
+
 .mip-config-form-content .cs-form .alpaca-field-password{
     width: 95%;
     padding-bottom: 10px;
 
 }
+
 .mip-config-form-content .cs-passwordfield .cs-field-write-inner {
     display: inline-block;
     width: 400px;
@@ -24,4 +27,58 @@
 
 .mip-config-form-content .mip-component-button{
     padding-left: 15px;
+    padding-top: 75px;
+}
+
+.mip-config-form-content .cs-form .mip-sync-button{
+    display: inline-flex;
+    font-size: smaller;
+    width: max-content;
+    padding: 10px 0 10px 20px;
+
+}
+
+.mip-config-form-content .cs-form .mip-sync-button .bg-info-icon::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url('./images/information.svg');
+    align-items: center;
+    justify-content: center;
+    background-color: #2E3D98;
+    border-radius: 3px;
+}
+
+.mip-config-form-content .cs-form .mip-sync-button .info-message{
+    background-color: #ECEFFF;
+    margin-left: 1px;
+    height: 18px;
+}
+
+.mip-config-form-content .cs-form .mip-sync-button .relative-container .mip-button-sync-label{
+    margin-left: 120px;
+}
+
+.mip-config-form-content .cs-form .mip-sync-button .relative-container {
+    position: relative;
+    display: flex;
+    margin-top: -35px;
+    width: 325px;
+    margin-left: 20px;
+}
+
+
+.mip-config-form-content .cs-form .mip-sync-button .txtSync {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    color: #005C5D;
+
+}
+
+.mip-config-form-content .cs-form .mip-sync-button .txtSync .txtValue {
+    color: #333333;
 }

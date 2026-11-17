@@ -1,0 +1,44 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+
+otc-button.icon-date_picker {
+    background-image: none;
+    margin-top: 1px;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .cs-datefield .binf-datetimepicker-widget {
+    & {
+        padding: var(--jatx-otc-input-date-picker-padding, 16px);
+        width: var(--jatx-otc-input-date-picker-width, 312px);
+    }
+
+    table th {
+        cursor: default;
+        font-size: var(--jatx-otc-input-date-picker-item-font-size, 12px);
+        font-weight: var(--jatx-otc-input-date-picker-item-font-weight, bold);
+        height: var(--jatx-otc-input-date-picker-item-height, 32px);
+        line-height: var(--jatx-otc-input-date-picker-item-line-height, 32px);
+    }
+
+    td.day {
+        cursor: default;
+        font-size: var(--jatx-otc-input-date-picker-item-font-size, 12px);
+        font-weight: var(--jatx-otc-input-date-picker-item-font-weight, bold);
+        height: var(--jatx-otc-input-date-picker-item-height, 32px);
+        line-height: var(--jatx-otc-input-date-picker-item-line-height, 32px);
+        width: 30px;
+        padding: 7px;
+    }
+
+    .timepicker-picker>table {
+        margin-left: 14px;
+    }
+
+    .binf-glyphicon-chevron-up:before,
+    .binf-glyphicon-chevron-down:before,
+    .binf-glyphicon-chevron-right:before,
+    .binf-glyphicon-chevron-left:before {
+        font-size: 16px;
+    }
+}

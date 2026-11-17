@@ -3,16 +3,16 @@
     "modules": {
       "d2": {
         "title": "D2 Smart View - Smart UI for D2",
-        "version": "24.4.4.241104261",
+        "version": "25.4.9.260114173",
         "helpDocId": "edccl-h-ugd",
-        "helpVersion": "v240400",
+        "helpVersion": "v250400",
         "helpTopic": "top-of-doc"
       },
       "iv": {
         "title": "D2 Smart View - Intelligent viewing",
-        "version": "24.4.4.241104261",
+        "version": "25.4.9.260114173",
         "helpDocId": "clivcs-h-udm",
-        "helpVersion": "v240400",
+        "helpVersion": "v250400",
         "helpTopic": "top-of-doc"
       }
     }
@@ -21,7 +21,7 @@
     "modules": {
       "d2": {
         "title": "D2 Smart View - Smart UI for D2",
-        "version": "24.4.4.241104261"
+        "version": "25.4.9.260114173"
       }
     }
   },
@@ -50,6 +50,8 @@
         "d2/commands/workflow/add.file.relations.as.attachments",
         "d2/commands/workflow/manage.attachments",
         "d2/commands/workflow/remove.task.attachments",
+        "d2/commands/workflow/add.task.workingfiles",
+        "d2/commands/workflow/remove.task.workingfiles",
         "d2/commands/workflow/forward.task",
         "d2/commands/workflow/reject.task",
         "d2/commands/workflow/read.task",
@@ -69,9 +71,13 @@
         "d2/commands/csv.export",
         "d2/commands/add.rendition",
         "d2/commands/d2-locations",
+        "d2/commands/d2-task-document-locations",
+        "d2/commands/d2.task.document.versions",
         "d2/commands/d2-audits",
         "d2/commands/d2-renditions",
-        "d2/commands/d2collections/goto.d2collections"
+        "d2/commands/d2-relations",
+        "d2/commands/d2collections/goto.d2collections",
+        "d2/commands/d2-export"
       ]
     }
   },
@@ -100,6 +106,13 @@
     "extensions": {
       "d2": [
         "d2/utils/icons/icons"
+      ]
+    }
+  },
+  "dctmw/controls/tree/tree.sprites": {
+    "extensions": {
+      "d2": [
+        "d2/extensions/tree.sprites"
       ]
     }
   }

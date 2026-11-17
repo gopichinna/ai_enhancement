@@ -1,0 +1,46 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 6px;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list.aie-shown {
+  opacity: 1;
+}
+
+.binf-widgets .aie-chat-panel .aie-chat-reference-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list li:not(.aie-workspace):hover,
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list li:not(.aie-workspace):focus-within {
+  border-radius: 4px;
+  background-color: #f3fbff;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.70);
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list li.aie-workspace {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list li:first-child {
+  border-top: none;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list li:last-child {
+  margin-bottom: 6px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-reference-list .aie-grouped .aie-chat-reference {
+  margin-inline-start: 20px;
+}

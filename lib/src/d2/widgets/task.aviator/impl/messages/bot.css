@@ -1,0 +1,89 @@
+/**
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ */
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-bot .aie-chat-text {
+  margin-inline-end: 32px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-references {
+  margin-top: 16px;
+  margin-inline-start: -2px;
+  margin-inline-end: 30px;
+  border-top: 1px #cccccc solid;
+  border-bottom: 1px #cccccc solid;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-references-toggle {
+  display: flex;
+  gap: 8px;
+  padding: 8px 6px;
+  font-weight: 700;
+  color: #333333;
+  font-size: 13px;
+  line-height: 18px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-references-toggle:hover {
+  background-color: #b2bec5;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-references-toggle:focus-visible {
+  background-color: #98a8b2;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-references-toggle svg {
+  width: 12px;
+  height: 12px;
+  align-self: center;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-references-toggle[aria-expanded=true] svg:first-of-type {
+  display: none;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-references-toggle[aria-expanded=false] svg:last-of-type {
+  display: none;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-references-toggle .aie-chat-reference-count {
+  font-weight: 400;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-copy {
+  display: flex;
+  margin-top: 12px;
+  align-items: flex-end;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-copied {
+  margin-inline-start: 4px;
+  opacity: 0;
+  transition: opacity 0.2s, width 0.2s ease-in-out;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-copied.aie-shown {
+  opacity: 1;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-bot .aie-copy-button {
+  width: 24px;
+  height: 24px;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-bot.aie-chat-bot otc-button { 
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.binf-widgets .aie-chat-panel.task-aviator-panel .aie-chat-bot otc-avatar {
+  width: 18px;
+  height: 18px;
+  margin-inline-end: 8px;
+  margin-top: 2px;
+}

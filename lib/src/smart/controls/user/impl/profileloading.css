@@ -1,9 +1,17 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+:root {
+	--jatx-userprofile-pic-actions-size: 40px;
+}
+
+[data-smart-theme="cf"] {
+	--jatx-userprofile-pic-actions-size: 64px;
+}
+
 #user_icon{
-  width:64px;
-  height:64px;
+  width:var(--jatx-userprofile-pic-actions-size);
+  height:var(--jatx-userprofile-pic-actions-size);
   background:rgba(0, 0, 0, 0.5);
   margin:auto;
   border-radius:32px;

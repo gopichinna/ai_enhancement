@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .cs-form.cs-datefield div {
   vertical-align: top;
@@ -23,32 +23,61 @@
   -webkit-flex: 1 1 0; 
   -ms-flex: 1 1 100%; 
   flex: 1 1 0; 
-
-  height: 28px;
+  background-color: var(--jato-background-elevation-level-1, unset);
+  border: 1px solid var(--jato-input-border-container-neutral, #a7a9ac);
+  border-block-end: 1px solid var(--jato-input-border-focus-neutral, #a7a9ac);
+  border-radius: var(--jato-radii-med, 3px) var(--jato-radii-med, 3px) var(--jatx-const-0, 3px) var(--jatx-const-0, 3px);
+  height: var(--jato-measure-32, 28px);
+  font-size: var(--jatx-csui-input-font-size, unset);
+  line-height: var(--jatx-csui-input-line-height, unset);
   text-align: left;
-
-  border: 1px solid #a7a9ac;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
 
   
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-.cs-form .alpaca-field.binf-has-error .cs-field-write input {
-  color: #000000;
-  background-color: #fae9ea;
-  border: 1px solid #df3324;
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-datefield input:hover {
+  background-color: var(--jato-background-elevation-level-2-hover);
+  border: 1px solid var(--jato-input-border-container-hover);
+  border-block-end: 1px solid var(--jato-input-border-focus-hover);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-hover);
 }
 
 .cs-datefield input:focus {
+  border-block-end: var(--jato-measure-1, 2px) solid var(--jato-input-border-focus-enabled, #666666);
+  border: var(--jato-measure-1, 2px) solid var(--jato-input-border-container-neutral, #666666);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled, none);
+  -webkit-box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-enabled, none);
   outline: none;
-  -ms-box-shadow: none;
-  box-shadow: none;
-  border: 2px solid #666666;
-  border-radius: 3px;
+}
+
+.cs-datefield.cs-formfield-invalid .cs-field-write input,
+.alpaca-field-datetime.binf-has-error .cs-field-write input,
+.alpaca-field-date.binf-has-error .cs-field-write input {
+  color: var(--jato-typography-text-color-primary, #000000);
+  background-color:  var(--jato-background-error-neutral, #fae9ea);
+  border: 1px solid var(--jato-input-border-container-error-neutral, #df3324);
+  border-block-end: var(--jato-measure-1, 1px) solid var(--jato-input-border-focus-error-neutral,  #df3324);
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-datefield.cs-formfield-invalid .cs-field-write input:focus,
+[data-smart-theme]:not([data-smart-theme='cf']) .alpaca-field-datetime.binf-has-error .cs-field-write input:focus,
+[data-smart-theme]:not([data-smart-theme='cf']) .alpaca-field-date.binf-has-error .cs-field-write input:focus {
+  background-color: var(--jato-elevation-background-level-1);
+  border: 1px solid var(--jato-input-border-container-error-neutral);
+  border-block-end: 1px solid var(--jato-input-border-focus-error-enabled);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-error-enabled);
+  outline: none;
+}
+
+[data-smart-theme]:not([data-smart-theme='cf']) .cs-datefield.cs-formfield-invalid .cs-field-write input:hover,
+[data-smart-theme]:not([data-smart-theme='cf']) .alpaca-field-datetime.binf-has-error .cs-field-write input:hover,
+[data-smart-theme]:not([data-smart-theme='cf']) .alpaca-field-date.binf-has-error .cs-field-write input:hover {
+  background-color: var(--jato-background-error-hover);
+  border: 1px solid var(--jato-input-border-container-error-hover);
+  border-block-end: 1px solid var(--jato-input-border-focus-error-enabled);
+  box-shadow: inset 0 -2px 0 0 var(--jato-input-border-focus-error-hover);
 }
 
 .cs-datefield a:focus {
@@ -64,6 +93,7 @@
 
 .cs-formfield.cs-datefield .cs-field-read button > span {
   white-space: nowrap;
+  font-size: var(--jatx-csui-input-font-size, unset);
 }
 
 .cs-formfield.cs-datefield .cs-field-read button a {
@@ -80,11 +110,26 @@
 
 
 .cs-datefield .binf-datetimepicker-widget {
-  color: black;
+  color: var(--jato-cta-content-color-tertiary, black);
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .cs-datefield .binf-datetimepicker-widget {
+  background-color: var(--jato-background-elevation-level-2);
+  box-shadow: var(--jato-elevation-shadow-level-2);
+  border: 1px solid var(--jato-border-color-primary);
+  border-radius: var(--jato-radii-xl);
+  font-weight: var(--jatx-csui-const-font-weight-400);
+  font-size: var(--jatx-csui-const-font-size-14);
+  padding: var(--jato-padding-xl) var(--jato-padding-content-xs) var(--jato-padding-content-xs) var(--jato-padding-content-xs);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .cs-datefield.cs-datetime .binf-datetimepicker-widget {
+  padding-bottom: 0;
+}
+
+
 .cs-datefield .binf-datetimepicker-widget .picker-switch {
-  font-weight: bold;
+  font-weight: var(--jatx-csui-const-font-weight-400, bold);
 }
 
 .cs-datefield .binf-datetimepicker-widget .timepicker-picker table {
@@ -99,6 +144,8 @@
 .csui-datefield-input input {
   padding-right: 36px;
   padding-left: 8px;
+  padding-top: var(--jato-measure-4, unset);
+  padding-bottom: var(--jato-measure-4, unset);
 }
 
 .csui-datefield-input input::-ms-clear {

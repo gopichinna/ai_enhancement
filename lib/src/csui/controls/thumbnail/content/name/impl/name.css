@@ -1,16 +1,22 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-thumbnail-content-container-font-size: 13px;
+  --jatx-thumbnail-content-container-line-height: 17px;
+}
+
 .csui-thumbnail-name-justify-div.csui-thumbnail-no-default-action {
   cursor: auto;
-  color: #757575;
+  color: var(--jato-typography-text-color-tertiary, #757575);
   white-space: normal;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 100%;
-  line-height: 18px;
+  line-height: var(--jatx-thumbnail-content-container-line-height, 18px);
+  font-size: var(--jatx-thumbnail-content-container-font-size, 14px);
 }
 
 .csui-overview-container .csui-thumbnail-name-justify-div.csui-thumbnail-no-default-action {
-  color: #333;
+  color: var(--jato-typography-text-color-primary, #333333);
 }

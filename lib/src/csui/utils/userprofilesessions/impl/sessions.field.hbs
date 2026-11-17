@@ -1,11 +1,11 @@
-<div class="ups-conianter">
+<div class="ups-container">
     {{#if isBeforeFetch}}
     <div class="ups-empty"></div>
     {{else}}
     <div class="binf-col-md-12 ups-title" title="{{activeSessionsTitle}}">
         <h4>{{activeSessionsTitle}}</h4>
     </div>
-    <table class="ups-info-table">
+    <table class="ups-info-table" aria-label="{{activeSessionsTitle}}">
         <thead>
             <tr>
                 <th title="{{createTime}}">{{createTime}}</th>
@@ -26,12 +26,12 @@
     <br/>
     <br/>
 </div>
-<div class="ups-conianter">
+<div class="ups-container">
     <div class="binf-col-md-12 ups-title" title="{{previousSessionsTitle}}">
         <h4>{{previousSessionsTitle}}</h4>
     </div>
 
-    <table class="ups-info-table">
+    <table class="ups-info-table" aria-label="{{previousSessionsTitle}}">
         <thead>
             <tr>
                 <th>{{lastLogin}}</th>
@@ -47,4 +47,4 @@
     </table>
     {{/if}}
 </div>
-<!-- @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->
+<!-- @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. -->

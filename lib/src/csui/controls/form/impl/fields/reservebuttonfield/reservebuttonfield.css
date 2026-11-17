@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-btn-reserve-status {
   background: transparent no-repeat;
@@ -21,6 +21,19 @@
 
 .csui-btn-reserve-status-action {
   cursor: pointer;
+}
+
+otc-button.csui-btn-reserve-status-action {
+  margin-right: 4px;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .btn-container span.csui-btn-reserve-status {
+  display: flex;
+  align-items: center;
+}
+
+[data-smart-theme]:not([data-smart-theme=cf]) .binf-widgets .csui-btn-reserve-status .csui-reserveby-status.cs-formfield-readonly {
+  height: 28px;
 }
 
 .binf-widgets .csui-btn-reserve-status .csui-reserveby-status {

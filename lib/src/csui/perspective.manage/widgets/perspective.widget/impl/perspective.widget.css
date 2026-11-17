@@ -1,9 +1,20 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
+[data-smart-theme]:not([data-smart-theme="cf"]) {
+  --jatx-csui-pman-widget-heading-font-size: 18px;
+  --jatx-csui-pman-widget-heading-font-weight: 600;
+}
+
 .binf-widgets .csui-pman-widget {
   height: 100%;
-  background: #ffffff;
+  background: var(--jato-background-elevation-level-2, #ffffff);
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-pman-widget {
+  border: 1px solid var(--jato-border-color-primary);
+  border-radius: var(--jato-radii-lrg);
+  box-shadow: var(--jato-elevation-shadow-level-2);
 }
 
 .binf-widgets .binf-has-error .csui-pman-widget {
@@ -16,15 +27,33 @@
   left: 0;
   right: 0;
   text-align: center;
-  color: #666666;
+  color: var(--jato-typography-text-color-primary, #666666);
   line-height: 20px;
   font-size: 18px !important;
 }
 
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-pman-widget-msg {
+  top: calc(50% - 68px); 
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .banner-content-sidebar-perspective #banner-region  .csui-pman-widget-msg {
+   top: calc(50% - 41px); 
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .csui-pman-widget-msg .csui-pman-widget-jato-icon {
+  height: 110px;
+  width: 110px;
+}
+
+[data-smart-theme]:not([data-smart-theme="cf"]) .binf-widgets .banner-content-sidebar-perspective #banner-region  .csui-pman-widget-msg .csui-pman-widget-jato-icon {
+  height: 56px;
+  width: 56px;
+}
+
 .binf-widgets .csui-pman-widget .tile-header {
   padding: 0 12px;
-  background-color: #DCE4E8;
-  height: 48px;
+  background-color: var(--jato-background-elevation-level-2, #DCE4E8);
+  height: var(--jato-measure-56, 48px);
   border: 0 none;
 }
 
@@ -38,6 +67,7 @@
 .binf-widgets .csui-pman-widget .tile-title .csui-heading {
   line-height: 32px;
   vertical-align: middle;
-  color: #00639B;
-  font-weight: normal;
+  color: var(--jato-typography-text-color-primary, #00639B);
+  font-size: var(--jatx-csui-pman-widget-heading-font-size, initial);
+  font-weight: var(--jatx-csui-pman-widget-heading-font-weight, normal);
 }

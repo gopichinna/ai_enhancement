@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-error {
   margin: 0;
@@ -36,4 +36,52 @@
 
 .binf-widgets .csui-error.d2-error-widget .binf-popover-content{
   width:250px;
+}
+
+.binf-popover.d2-error-info-flyout.binf-right,
+.rtl.binf-widgets .binf-popover.d2-error-info-flyout.binf-left{
+    border-left: 4px solid #0084ce;
+}
+
+.binf-popover.d2-error-info-flyout.binf-left,
+.rtl.binf-widgets .binf-popover.d2-error-info-flyout.binf-right{
+    border-right: 4px solid #0084ce;
+}
+
+.rtl.binf-widgets .binf-popover.d2-error-info-flyout.binf-left {
+    border-right: 0;
+}
+
+.rtl.binf-widgets .binf-popover.d2-error-info-flyout.binf-right {
+    border-left: 0;
+}
+
+.rtl.binf-widgets .binf-popover.d2-error-info-flyout.binf-left>.binf-arrow{
+  left: -13px;
+}
+
+.rtl.binf-widgets .binf-popover.d2-error-info-flyout.binf-right>.binf-arrow{
+  right: -4px;
+}
+
+.d2-error-info-flyout.binf-popover.binf-right>.binf-arrow:after,
+.rtl.binf-widgets .d2-error-info-flyout.binf-popover.binf-left > .binf-arrow:after{
+    border-right-color: #0084ce;
+    left: 0;
+}
+
+.d2-error-info-flyout.binf-popover.binf-left>.binf-arrow:after,
+.rtl.binf-widgets .d2-error-info-flyout.binf-popover.binf-right > .binf-arrow:after{
+    border-left-color: #0084ce;
+    right: 0;
+}
+
+.binf-popover.d2-error-info-flyout {
+    max-width: 259px;
+    font-size: 12px;
+    width: 259px;
+}
+
+.d2-error-info-flyout .binf-popover-content {
+  padding: 16px 22px 16px 22px;
 }

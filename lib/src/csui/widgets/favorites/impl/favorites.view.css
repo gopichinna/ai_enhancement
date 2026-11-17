@@ -1,18 +1,11 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .cs-favorites .tile-header {
   cursor: pointer;
 }
 
-.cs-favorites .tile-content .binf-list-group .csui-item-standard.binf-list-group-item {
-  height: 48px;
-  padding: 0 16px 0 16px;
-  margin: 1px 0 0 0;
-  border: 0;
-}
-
-@media only screen and (max-width: 640px) {
+@media only screen and (width <= 640px) {
   .cs-favorites .tile-content .binf-list-group .csui-item-standard.binf-list-group-item {
       padding: 0 6px;
   }
@@ -35,11 +28,10 @@
   height: 100%;
 }
 
-.cs-favorites .tile-content .csui-item-standard .csui-icon-group,
-.cs-favorites .tile-content .csui-item-standard .csui-icon-group .csui-icon {
+[data-smart-theme="cf"] .cs-favorites .tile-content .csui-item-standard .csui-icon-group,
+[data-smart-theme="cf"] .cs-favorites .tile-content .csui-item-standard .csui-icon-group .csui-icon {
   height: 32px;
   width: 32px;
-  margin: 8px 8px 0 0;
   background-repeat: no-repeat;
 }
 
@@ -59,44 +51,22 @@
   display: none;
 }
 
-.cs-favorites .tile-content .binf-list-group .cs-content .cs-list-group .cs-emptylist-container .cs-emptylist-text {
-  height: 22px;
-  margin: 8px 0;
-  padding: 0;
-  font-size: 18px;
-  line-height: 1.2;
+[data-smart-theme="cf"] .csui-favorites-view .csui-favorites-view-container .cs-list .tile-content .binf-list-group .cs-emptylist-container .cs-emptylist-placeholder {
+  flex-basis: 60px;
 }
 
-.cs-favorites .tile-content .binf-list-group .cs-content .cs-list-group .cs-emptylist-container .cs-emptylist-text p {
-  margin: 0;
-  padding: 0;
-  font-size: inherit;
-  line-height: inherit;
+.csui-favorites-view .csui-favorites-view-container .cs-list .tile-content .binf-list-group .cs-emptylist-container .csui-no-result-message {
+  position: inherit;
 }
 
-.binf-widgets .cs-favorites.cs-list .csui-item-standard .csui-tileview-contains-more-btn .csui-tileview-more-btn .csui-inline-menu {
+[data-smart-theme="cf"] .binf-widgets .cs-favorites.cs-list .csui-item-standard .csui-tileview-contains-more-btn .csui-tileview-more-btn .csui-inline-menu {
   padding: 0 0 0 8px;
 }
 
 .binf-widgets .cs-favorites.cs-list .csui-item-standard .csui-tileview-more-btn .csui-inline-menu > span.csui-icon-group {
   margin: 4px 0 0 4px;
 }
+
 .binf-widgets .cs-favorites.cs-list .csui-item-standard .csui-tileview-more-btn .csui-inline-menu > span.csui-icon-group.csui-loading-parent-wrapper {
   margin: 0 0 0 3px;
-}
-
-.binf-widgets .cs-favorites.cs-list .csui-item-standard .csui-tileview-contains-more-btn .csui-tileview-more-btn .csui-inline-menu .csui-menu-btn-region {
-  position: absolute;
-  right: 24px;
-  display: inline;
-}
-
-.binf-widgets .cs-favorites.cs-list .cs-simpletreelistitem .cs-content .cs-list-group .binf-list-group-item .csui-tileview-more-btn {
-  width: auto;
-  height: auto;
-}
-
-.binf-widgets .csui-favorites .cs-favorites.cs-list .cs-simpletreelistitem .cs-content .cs-list-group .binf-list-group-item .csui-tileview-more-btn {
-  width: 32px;
-  height: 32px;
 }

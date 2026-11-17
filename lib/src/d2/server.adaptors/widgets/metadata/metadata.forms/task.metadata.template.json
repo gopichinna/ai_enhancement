@@ -106,7 +106,8 @@
               "property_type": "string",
               "repeating": false,
               "order": 1,
-              "condition_visible": "(getValue(task_subject).notEquals(''))"
+              "condition_visible": "(getValue(task_subject).notEquals(''))",
+              "disable_expand": true
             },
             {
               "id": "task_instructions",
@@ -116,7 +117,8 @@
               "property_type": "string",
               "repeating": false,
               "order": 5,
-              "condition_visible": "(getValue(task_instructions).notEquals(''))"
+              "condition_visible": "(getValue(task_instructions).notEquals(''))",
+              "disable_expand": true
             }
           ]
         }

@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .binf-widgets .csui-fav2-table {
   height: 100%;
@@ -8,19 +8,34 @@
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
+  border: 1px solid var(--jato-border-color-primary, none);
+  box-shadow: 0 var(--jato-elevation-y-axis-level-2, 0) var(--jato-elevation-blur-level-2, 0) 0 var(--jato-elevation-shadow-color-level-2, none);
+}
+
+.binf-widgets .csui-fav2-table .csui-nodetable {
+  box-shadow: none;
 }
 
 .binf-widgets .binf-modal-dialog .csui-fav2-table {
   height: calc(100vh - 183px);
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+.binf-widgets .csui-fav2-table .csui-favorite-masterdetail-view .csui-nodetable .binf-table tr > .csui-table-cell-_select:first-child .csui-checkbox  {
+  padding-left: var(--jato-padding-xl, 26px);
+}
+
+.binf-widgets .csui-fav2-table .csui-favorite-masterdetail-view .csui-nodetable .binf-table tr > .csui-table-cell-_select.csui-table-cell-last-visible .csui-checkbox {
+  padding-right: var(--jato-padding-xl, 26px);
+}
+
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .binf-widgets .csui-fav2-table .csui-favorite-masterdetail-view {
     height: calc(100vh - 315px);
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .binf-widgets .csui-fav2-table .csui-favorite-masterdetail-view {
     height: calc(100vh - 315px);
   }
@@ -42,12 +57,15 @@
 }
 
 .binf-widgets .csui-fav2-table .csui-favorite-groups-view {
-  background-color: #fff;
+  background-color: var(--jatx-const-transparent, #ffffff);
   display: flex;
   flex-direction: column;
   flex: 1 0 248px;
   min-width: 248px;
   width: 20%;
+  padding-right: var(--jato-padding-xxl, 0);
+  padding-bottom: var(--jato-padding-lrg, 0);
+  padding-left: var(--jato-padding-lrg, 0);
 }
 
 .binf-widgets .csui-fav2-table .csui-table-view {

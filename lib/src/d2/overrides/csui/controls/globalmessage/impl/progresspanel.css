@@ -1,5 +1,5 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
 .csui-progressrow .csui-names .csui-name .d2-done-command-link {
   font-size: 0.875em;
@@ -14,9 +14,11 @@
 .csui-progressrow:hover .csui-names .csui-name .d2-done-command-link.link-active {
   display: block;
 }
+
 .binf-widgets div.csui-global-message.csui-progresspanel {
   min-width: 690px;
 }
+
 .binf-widgets .csui-messagepanel.csui-success div.csui-header,
 .binf-widgets .csui-messagepanel.csui-warning div.csui-header,
 .binf-widgets .csui-messagepanel.csui-info div.csui-header{

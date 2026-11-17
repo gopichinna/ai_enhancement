@@ -1,7 +1,7 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-.binf-widgets .alpaca-field-d2querybuilder .editable.cs-no-resize {
+.binf-widgets .alpaca-field-d2querybuilder .editable.dctmw-textareafield {
   resize: none;
   line-height: 20px;
   padding-left: 0.5em;

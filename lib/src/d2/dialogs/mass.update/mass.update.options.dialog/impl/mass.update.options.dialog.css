@@ -1,15 +1,16 @@
 /**
- * @license d2sv-sdk 24.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
+ * @license d2sv-sdk 25.4.0 Copyright © 2023 Open Text. All rights reserved. Trademarks owned by Open Text. 
  */
-
 .binf-widgets .d2-massupdate-dialog-view .cs-form .alpaca-container-item > .binf-form-group.alpaca-field > .binf-col-sm-9{
     width: 100%;
 }
-.binf-widgets .d2-massupdate-dialog-view .d2-mass-update .alpaca-container-item .alpaca-control .d2-cb-container-parent li:nth-child(3){
+
+.binf-widgets .d2-massupdate-dialog-view .d2-mass-update .alpaca-container-item .alpaca-control .dctmw-cb-container-parent li:nth-child(3){
     border-top: 1px solid #E6E6E6;
     padding-top: 14px;
     margin-top: 4px;
 }
+
 .binf-widgets .csui-alert.dctm-alert-custom-content.d2-mass-update-form .binf-modal-dialog {
     width: 356px;
     margin: 30px auto;
@@ -22,6 +23,7 @@
 
 .binf-widgets .csui-alert.dctm-alert-custom-content.d2-mass-update-form .binf-modal-header .binf-modal-title {
     height: 24px;
+    display : flex;
 }
 
 .binf-widgets .csui-alert.dctm-alert-custom-content.d2-mass-update-form .binf-modal-header .binf-modal-title > .icon {
@@ -78,6 +80,7 @@
 .binf-widgets .csui-alert.dctm-alert-custom-content.d2-mass-update-form .binf-modal-body .cs-form .alpaca-container-item:not(.alpaca-container-item-first) .binf-form-group {
     margin-top: -8px;
 }
+
 input[value="virtual_documents"]{
     border-top: 1px solid #E6E6E6;
     padding-top: 14px;
@@ -88,11 +91,11 @@ input[value="virtual_documents"]{
     margin-bottom: 18px;
 }
 
-.binf-widgets .d2-massupdate-dialog-view .d2-mass-update .cs-formfield.d2-checkbox-group .d2-cb-container-parent li {
+.binf-widgets .d2-massupdate-dialog-view .d2-mass-update .cs-formfield.dctmw-checkbox-group .dctmw-cb-container-parent li {
     padding: 6px 16px 0 0;
 }
 
-.binf-widgets .d2-massupdate-dialog-view .d2-mass-update .binf-widgets .cs-formfield.d2-checkbox-group {
+.binf-widgets .d2-massupdate-dialog-view .d2-mass-update .binf-widgets .cs-formfield.dctmw-checkbox-group {
     padding-left: 0;
 }
 
@@ -112,6 +115,6 @@ input[value="virtual_documents"]{
     padding: 0 16px;
 }
 
-.binf-widgets .cs-formfield.d2-checkbox-group div.d2-checkbox-item-container {
+.binf-widgets .cs-formfield.dctmw-checkbox-group div.dctmw-checkbox-item-container {
     max-height: inherit;
 }
