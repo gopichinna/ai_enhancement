@@ -2,8 +2,9 @@
 
 if (-not $env:JAVA_HOME) {
     $candidates = @(
-        "C:\dev-tools\jdk-17",
-        "$env:USERPROFILE\dev-tools\jdk-17"
+        "D:\dev-tools\jdk-17",
+        "$env:USERPROFILE\dev-tools\jdk-17",
+        "C:\dev-tools\jdk-17"
     ) + (Get-Item "C:\Program Files\Eclipse Adoptium\jdk-17*" -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName)
     
     foreach ($c in $candidates) {
@@ -16,8 +17,9 @@ if (-not $env:JAVA_HOME) {
 
 if (-not $env:MAVEN_HOME) {
     $mCandidates = @(
-        "C:\dev-tools\apache-maven-3.8.8",
-        "$env:USERPROFILE\dev-tools\apache-maven-3.8.8"
+        "D:\dev-tools\apache-maven-3.8.8",
+        "$env:USERPROFILE\dev-tools\apache-maven-3.8.8",
+        "C:\dev-tools\apache-maven-3.8.8"
     )
     foreach ($m in $mCandidates) {
         if ($m -and (Test-Path "$m\bin\mvn.cmd")) {
@@ -28,8 +30,9 @@ if (-not $env:MAVEN_HOME) {
 }
 
 $nodeCandidates = @(
-    "C:\dev-tools\node-v20",
-    "$env:USERPROFILE\dev-tools\node-v20"
+    "D:\dev-tools\node-v20",
+    "$env:USERPROFILE\dev-tools\node-v20",
+    "C:\dev-tools\node-v20"
 )
 foreach ($n in $nodeCandidates) {
     if ($n -and (Test-Path "$n\node.exe")) {

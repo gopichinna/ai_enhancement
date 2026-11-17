@@ -253,7 +253,7 @@ When you start work in this workspace, follow this exact checklist:
     setup-windows.bat
     ```
     *(Or in PowerShell: `powershell -ExecutionPolicy Bypass -File .\setup-windows.ps1`)*
-    This one-shot script automatically downloads and installs OpenJDK 17, Node 20, Maven 3.8.8, configures VS Code, and tests the build!
+    This one-shot script automatically installs OpenJDK 17, Node 20, Maven 3.8.8 into `D:\dev-tools` (AWS persistent User Volume), configures VS Code, and tests the build!
     In subsequent VS Code terminal sessions, activate via `.\env.bat` (CMD) or `.\env.ps1` (PowerShell).
   * **On macOS / Linux:**
     ```bash

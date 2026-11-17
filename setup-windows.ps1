@@ -14,7 +14,7 @@
       8. VS Code Java & Maven settings
       9. Full workspace compilation verification (mvn clean package)
 .PARAMETER DevToolsPath
-    Directory where portable tools will be placed. Defaults to "C:\dev-tools" (or "$HOME\dev-tools" if unprivileged).
+    Directory where portable tools will be placed. Defaults to "D:\dev-tools" (persistent AWS WorkSpaces User Volume) or "$HOME\dev-tools".
 .PARAMETER SkipBuild
     Skip running "npm install" and "mvn clean package" after setting up tools.
 .PARAMETER Force
@@ -43,20 +43,23 @@ Write-Host "  Workspace: $WorkspaceRoot" -ForegroundColor Cyan
 Write-Host "=================================================================" -ForegroundColor Cyan
 Write-Host ""
 
-# Determine dev-tools location
+# Determine dev-tools location (prioritizing D:\ drive which is the persistent User Volume on AWS WorkSpaces)
 if (-not $DevToolsPath) {
-    # Check if C:\dev-tools can be written to, otherwise fall back to user profile
-    try {
-        $testDir = "C:\dev-tools"
-        if (-not (Test-Path $testDir)) {
-            New-Item -ItemType Directory -Path $testDir -Force -ErrorAction Stop | Out-Null
+    if (Test-Path "D:\") {
+        try {
+            $testDir = "D:\dev-tools"
+            if (-not (Test-Path $testDir)) {
+                New-Item -ItemType Directory -Path $testDir -Force -ErrorAction Stop | Out-Null
+            }
+            $testFile = "$testDir\.write-test"
+            [IO.File]::WriteAllText($testFile, "test")
+            Remove-Item $testFile -Force -ErrorAction SilentlyContinue
+            $DevToolsPath = "D:\dev-tools"
         }
-        $testFile = "$testDir\.write-test"
-        [IO.File]::WriteAllText($testFile, "test")
-        Remove-Item $testFile -Force -ErrorAction SilentlyContinue
-        $DevToolsPath = "C:\dev-tools"
-    }
-    catch {
+        catch {
+            $DevToolsPath = Join-Path $env:USERPROFILE "dev-tools"
+        }
+    } else {
         $DevToolsPath = Join-Path $env:USERPROFILE "dev-tools"
     }
 }

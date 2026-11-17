@@ -43,7 +43,7 @@ If you are cloning this repository on a Windows Server 2022 Datacenter VM / AWS 
    *(Or in PowerShell: `powershell -ExecutionPolicy Bypass -File .\setup-windows.ps1`)*
 
    **What it does automatically:**
-   - Detects or downloads OpenJDK 17 LTS, Node.js 20 LTS, Apache Maven 3.8.8, and Python 3.
+   - Detects or installs OpenJDK 17 LTS, Node.js 20 LTS, Apache Maven 3.8.8, and Python 3 into `D:\dev-tools` (the persistent AWS WorkSpaces User Volume).
    - Sets persistent user environment variables (`JAVA_HOME`, `MAVEN_HOME`, `PATH`).
    - Updates `pom.xml` paths automatically for Windows.
    - Configures VS Code settings (`.vscode/settings.json`) so Java Language Server and Maven extensions work immediately.
