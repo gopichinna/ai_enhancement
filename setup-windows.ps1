@@ -473,6 +473,9 @@ Write-Host "-----------------------------------------------------------------" -
 $RootPom = Join-Path $WorkspaceRoot "pom.xml"
 $LibDir = Join-Path $WorkspaceRoot "lib"
 
+# Safe fallbacks for paths
+if (-not $NodeDir) { $NodeDir = Join-Path $DevToolsPath "node-v20" }
+
 # Format paths with forward slashes for cross-platform POM stability
 $NodeDirPom = $NodeDir.Replace("\", "/")
 $LibDirPom = $LibDir.Replace("\", "/")
@@ -560,53 +563,63 @@ Write-Host "-----------------------------------------------------------------" -
 $VscodeDir = Join-Path $WorkspaceRoot ".vscode"
 if (-not (Test-Path $VscodeDir)) { New-Item -ItemType Directory -Path $VscodeDir -Force | Out-Null }
 
+# Safe path fallbacks
+if (-not $JavaHomePath) { $JavaHomePath = Join-Path $DevToolsPath "jdk-17" }
+if (-not $MavenHomePath) { $MavenHomePath = Join-Path $DevToolsPath "apache-maven-3.8.8" }
+if (-not $MavenBinPath) { $MavenBinPath = Join-Path $MavenHomePath "bin" }
+
+$JavaHomeFwd = $JavaHomePath.Replace("\", "/")
+$MvnPathFwd = (Join-Path $MavenBinPath "mvn.cmd").Replace("\", "/")
+$JavaHomeEsc = $JavaHomePath.Replace("\", "\\")
+$MavenHomeEsc = $MavenHomePath.Replace("\", "\\")
+$CaBundleEsc = (Join-Path $DevToolsPath "ca-bundle.pem").Replace("\", "\\")
+
 $VscodeSettingsFile = Join-Path $VscodeDir "settings.json"
-$settingsObj = @{}
-if (Test-Path $VscodeSettingsFile) {
-    try {
-        $settingsObj = Get-Content $VscodeSettingsFile -Raw | ConvertFrom-Json -AsHashtable
-    } catch { $settingsObj = @{} }
-}
-
-$settingsObj["java.jdt.ls.java.home"] = $JavaHomePath.Replace("\", "/")
-$settingsObj["java.configuration.runtimes"] = @(
-    @{
-        name = "JavaSE-17"
-        path = $JavaHomePath.Replace("\", "/")
-        default = $true
+$settingsJson = @"
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.jdt.ls.java.home": "$JavaHomeFwd",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "$JavaHomeFwd",
+            "default": true
+        }
+    ],
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Djavax.net.ssl.trustStoreType=WINDOWS-ROOT",
+    "maven.executable.path": "$MvnPathFwd",
+    "maven.terminal.customEnv": [
+        {
+            "environmentVariable": "MAVEN_OPTS",
+            "value": "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
+        }
+    ],
+    "terminal.integrated.env.windows": {
+        "JAVA_HOME": "$JavaHomeEsc",
+        "MAVEN_HOME": "$MavenHomeEsc",
+        "MAVEN_OPTS": "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT",
+        "JAVA_TOOL_OPTIONS": "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT",
+        "NODE_EXTRA_CA_CERTS": "$CaBundleEsc"
     }
-)
-$settingsObj["java.jdt.ls.vmargs"] = "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
-$settingsObj["maven.executable.path"] = (Join-Path $MavenBinPath "mvn.cmd").Replace("\", "/")
-$settingsObj["maven.terminal.customEnv"] = @(
-    @{
-        environmentVariable = "MAVEN_OPTS"
-        value = "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
-    }
-)
-$settingsObj["terminal.integrated.env.windows"] = @{
-    JAVA_HOME = $JavaHomePath
-    MAVEN_HOME = $MavenHomePath
-    MAVEN_OPTS = "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
-    JAVA_TOOL_OPTIONS = "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
-    NODE_EXTRA_CA_CERTS = (Join-Path $DevToolsPath "ca-bundle.pem")
 }
-
-$settingsJson = $settingsObj | ConvertTo-Json -Depth 5
+"@
 [IO.File]::WriteAllText($VscodeSettingsFile, $settingsJson, [System.Text.Encoding]::UTF8)
 Write-Host "[OK] Configured VS Code Java Language Server & Terminal settings." -ForegroundColor Green
 
 # Recommended extensions
 $ExtensionsFile = Join-Path $VscodeDir "extensions.json"
-$extObj = @{
-    recommendations = @(
+$extJson = @"
+{
+    "recommendations": [
         "vscjava.vscode-java-pack",
         "vscjava.vscode-maven",
         "dbaeumer.vscode-eslint",
         "ms-python.python"
-    )
+    ]
 }
-[IO.File]::WriteAllText($ExtensionsFile, ($extObj | ConvertTo-Json), [System.Text.Encoding]::UTF8)
+"@
+[IO.File]::WriteAllText($ExtensionsFile, $extJson, [System.Text.Encoding]::UTF8)
 Write-Host "[OK] Configured .vscode/extensions.json recommendations." -ForegroundColor Green
 
 # -----------------------------------------------------------------------------
