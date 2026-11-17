@@ -44,6 +44,10 @@ foreach ($n in $nodeCandidates) {
 if ($env:JAVA_HOME) { $env:PATH = "$env:JAVA_HOME\bin;$env:PATH" }
 if ($env:MAVEN_HOME) { $env:PATH = "$env:MAVEN_HOME\bin;$env:PATH" }
 
+$env:MAVEN_OPTS = "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
+if (Test-Path "D:\dev-tools\ca-bundle.pem") { $env:NODE_EXTRA_CA_CERTS = "D:\dev-tools\ca-bundle.pem" }
+elseif (Test-Path "$env:USERPROFILE\dev-tools\ca-bundle.pem") { $env:NODE_EXTRA_CA_CERTS = "$env:USERPROFILE\dev-tools\ca-bundle.pem" }
+
 Write-Host "-------------------------------------------------------------" -ForegroundColor Cyan
 Write-Host "D2 SmartView SDK Environment Activated (PowerShell):" -ForegroundColor Cyan
 Write-Host "  JAVA_HOME  : $env:JAVA_HOME"

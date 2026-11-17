@@ -106,6 +106,65 @@ function Extract-ZipArchive {
     Write-Host "    [OK] Extracted to $Destination" -ForegroundColor Green
 }
 
+# Helper function to sync Windows Trusted Root certificates to Java cacerts (for corporate SSL proxies)
+function Sync-WindowsCertsToJava {
+    param(
+        [string]$JavaHome,
+        [string]$JavaBin,
+        [string]$DevToolsRoot
+    )
+    Write-Host "    Syncing Windows Root Certificate Store to Java cacerts and Node.js..." -ForegroundColor Cyan
+    $cacertsPath = Join-Path $JavaHome "lib\security\cacerts"
+    $keytoolPath = Join-Path $JavaBin "keytool.exe"
+    
+    $imported = 0
+    $tempCert = [System.IO.Path]::GetTempFileName()
+    $pemBundle = Join-Path $DevToolsRoot "ca-bundle.pem"
+    $sbPem = [System.Text.StringBuilder]::new()
+    
+    try {
+        $stores = @("Cert:\LocalMachine\Root", "Cert:\LocalMachine\CA", "Cert:\CurrentUser\Root")
+        $certs = Get-ChildItem -Path $stores -ErrorAction SilentlyContinue | Where-Object { $_.Thumbprint }
+        
+        foreach ($c in $certs) {
+            if ($c.NotAfter -and ($c.NotAfter -lt (Get-Date))) { continue }
+            $alias = "win-ca-" + $c.Thumbprint.Substring(0, 10)
+            $certBytes = $c.Export([System.Security.Cryptography.X509Certificates.X509ContentType]::Cert)
+            [System.IO.File]::WriteAllBytes($tempCert, $certBytes)
+            
+            # PEM format for Node / NPM
+            $sbPem.AppendLine("-----BEGIN CERTIFICATE-----") | Out-Null
+            $sbPem.AppendLine([System.Convert]::ToBase64String($certBytes, [System.Base64FormattingOptions]::InsertLineBreaks)) | Out-Null
+            $sbPem.AppendLine("-----END CERTIFICATE-----") | Out-Null
+            
+            if ((Test-Path $cacertsPath) -and (Test-Path $keytoolPath)) {
+                $proc = Start-Process -FilePath $keytoolPath -ArgumentList "-importcert -noprompt -keystore `"$cacertsPath`" -storepass changeit -alias `"$alias`" -file `"$tempCert`"" -NoNewWindow -Wait -PassThru -ErrorAction SilentlyContinue
+                if ($proc.ExitCode -eq 0) {
+                    $imported++
+                }
+            }
+        }
+        
+        # Write CA bundle for Node.js
+        [System.IO.File]::WriteAllText($pemBundle, $sbPem.ToString(), [System.Text.Encoding]::ASCII)
+        $env:NODE_EXTRA_CA_CERTS = $pemBundle
+        [Environment]::SetEnvironmentVariable("NODE_EXTRA_CA_CERTS", $pemBundle, [EnvironmentVariableTarget]::User)
+        
+        if ($imported -gt 0) {
+            Write-Host "    [OK] Synced $imported enterprise certificate(s) into Java truststore." -ForegroundColor Green
+        } else {
+            Write-Host "    [OK] Java truststore already up-to-date with Windows certificates." -ForegroundColor Green
+        }
+        Write-Host "    [OK] Exported corporate CA bundle to $pemBundle (NODE_EXTRA_CA_CERTS configured)." -ForegroundColor Green
+    }
+    catch {
+        Write-Host "    [!] Notice: Certificate sync: $($_.Exception.Message)" -ForegroundColor Yellow
+    }
+    finally {
+        Remove-Item $tempCert -Force -ErrorAction SilentlyContinue
+    }
+}
+
 # -----------------------------------------------------------------------------
 # STEP 1: Java JDK 17 (Eclipse Temurin)
 # -----------------------------------------------------------------------------
@@ -168,6 +227,11 @@ if (-not $JavaInstalled) {
         $JavaBinPath = "$JdkTargetDir\bin"
         Write-Host "[OK] OpenJDK 17 installed to $JavaHomePath" -ForegroundColor Green
     }
+}
+
+# Sync corporate/enterprise root certificates into Java cacerts
+if ($JavaHomePath -and $JavaBinPath) {
+    Sync-WindowsCertsToJava -JavaHome $JavaHomePath -JavaBin $JavaBinPath -DevToolsRoot $DevToolsPath
 }
 
 # -----------------------------------------------------------------------------
@@ -342,6 +406,10 @@ Write-Host "-----------------------------------------------------------------" -
 $env:JAVA_HOME = $JavaHomePath
 $env:MAVEN_HOME = $MavenHomePath
 
+# Configure MAVEN_OPTS to trust Windows Root Certificate Store (fixes corporate SSL/TLS proxy PKIX errors)
+$mavenOpts = "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
+$env:MAVEN_OPTS = $mavenOpts
+
 $prependPaths = @($JavaBinPath, $MavenBinPath, $NodeDir)
 if ($PythonBin) { $prependPaths += $PythonBin }
 
@@ -357,6 +425,8 @@ foreach ($p in ($prependPaths | Where-Object { $_ -and (Test-Path $_) })) {
 try {
     [Environment]::SetEnvironmentVariable("JAVA_HOME", $JavaHomePath, [EnvironmentVariableTarget]::User)
     [Environment]::SetEnvironmentVariable("MAVEN_HOME", $MavenHomePath, [EnvironmentVariableTarget]::User)
+    [Environment]::SetEnvironmentVariable("MAVEN_OPTS", $mavenOpts, [EnvironmentVariableTarget]::User)
+    Write-Host "[OK] Configured MAVEN_OPTS to use Windows Trusted Root Certificate Store." -ForegroundColor Green
     
     $userPath = [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::User)
     $userPathList = ($userPath -split ';') | Where-Object { $_ -ne "" }
@@ -430,17 +500,26 @@ Write-Host "`n-----------------------------------------------------------------"
 Write-Host " STEP 8: Generating Windows Activation Scripts" -ForegroundColor White
 Write-Host "-----------------------------------------------------------------" -ForegroundColor Gray
 
+# Create .mvn/jvm.config so Maven ALWAYS uses Windows Trusted Root Store without manual arguments
+$mvnConfigDir = Join-Path $WorkspaceRoot ".mvn"
+if (-not (Test-Path $mvnConfigDir)) { New-Item -ItemType Directory -Path $mvnConfigDir -Force | Out-Null }
+Set-Content -Path (Join-Path $mvnConfigDir "jvm.config") -Value "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT" -Encoding ASCII
+Write-Host "[OK] Created .mvn\jvm.config (enables Windows TrustStore for all Maven commands)" -ForegroundColor Green
+
 # Generate env.bat
 $EnvBatContent = @"
 @ECHO OFF
 :: Quick Environment Activator for Command Prompt in VS Code
 SET "JAVA_HOME=$JavaHomePath"
 SET "MAVEN_HOME=$MavenHomePath"
+SET "MAVEN_OPTS=-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
+SET "NODE_EXTRA_CA_CERTS=$DevToolsPath\ca-bundle.pem"
 SET "PATH=$JavaBinPath;$MavenBinPath;$NodeDir;%PATH%"
 
 ECHO D2 SmartView SDK Environment Activated:
 ECHO   JAVA_HOME  : %JAVA_HOME%
 ECHO   MAVEN_HOME : %MAVEN_HOME%
+ECHO   MAVEN_OPTS : %MAVEN_OPTS%
 ECHO   Node       : $(& "$NodeDir\node.exe" -v 2>&1)
 ECHO   Maven      : $MavenHomePath
 "@
@@ -452,11 +531,14 @@ $EnvPs1Content = @"
 # Quick Environment Activator for PowerShell in VS Code
 `$env:JAVA_HOME = "$JavaHomePath"
 `$env:MAVEN_HOME = "$MavenHomePath"
+`$env:MAVEN_OPTS = "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
+`$env:NODE_EXTRA_CA_CERTS = "$DevToolsPath\ca-bundle.pem"
 `$env:PATH = "$JavaBinPath;$MavenBinPath;$NodeDir;`$env:PATH"
 
 Write-Host "D2 SmartView SDK Environment Activated:" -ForegroundColor Cyan
 Write-Host "  JAVA_HOME  : `$env:JAVA_HOME"
 Write-Host "  MAVEN_HOME : `$env:MAVEN_HOME"
+Write-Host "  MAVEN_OPTS : `$env:MAVEN_OPTS"
 Write-Host "  Node       : $(& "$NodeDir\node.exe" -v 2>&1)"
 "@
 [IO.File]::WriteAllText((Join-Path $WorkspaceRoot "env.ps1"), $EnvPs1Content, [System.Text.Encoding]::UTF8)
@@ -492,6 +574,8 @@ $settingsObj["maven.executable.path"] = (Join-Path $MavenBinPath "mvn.cmd").Repl
 $settingsObj["terminal.integrated.env.windows"] = @{
     JAVA_HOME = $JavaHomePath
     MAVEN_HOME = $MavenHomePath
+    MAVEN_OPTS = "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
+    NODE_EXTRA_CA_CERTS = (Join-Path $DevToolsPath "ca-bundle.pem")
 }
 
 $settingsJson = $settingsObj | ConvertTo-Json -Depth 5
@@ -523,10 +607,33 @@ if (-not $SkipBuild) {
     try {
         # 1. Register local SDK plugin jar to .m2
         $PluginJar = Join-Path $WorkspaceRoot "tools\d2sdk-maven-plugin-25.4.1.jar"
+        if (-not (Test-Path $PluginJar)) {
+            $searchPaths = @(
+                (Join-Path $WorkspaceRoot "..\sv-sdk-25.4.1\tools\d2sdk-maven-plugin-25.4.1.jar"),
+                (Join-Path $WorkspaceRoot "..\D2SV-SDK-25.4.1\tools\d2sdk-maven-plugin-25.4.1.jar"),
+                (Join-Path $WorkspaceRoot "..\tools\d2sdk-maven-plugin-25.4.1.jar"),
+                "D:\sv-sdk-25.4.1\tools\d2sdk-maven-plugin-25.4.1.jar",
+                "D:\D2SV-SDK-25.4.1\tools\d2sdk-maven-plugin-25.4.1.jar",
+                "C:\sv-sdk-25.4.1\tools\d2sdk-maven-plugin-25.4.1.jar",
+                "C:\D2SV-SDK-25.4.1\tools\d2sdk-maven-plugin-25.4.1.jar"
+            )
+            foreach ($sp in $searchPaths) {
+                if (Test-Path $sp) {
+                    Write-Host "    Found SDK plugin at $sp - copying to tools\..." -ForegroundColor Cyan
+                    if (-not (Test-Path (Join-Path $WorkspaceRoot "tools"))) { New-Item -ItemType Directory -Path (Join-Path $WorkspaceRoot "tools") -Force | Out-Null }
+                    Copy-Item -Path $sp -Destination $PluginJar -Force
+                    break
+                }
+            }
+        }
+        
         if (Test-Path $PluginJar) {
             Write-Host "    Registering d2sdk-maven-plugin-25.4.1.jar in local Maven cache..." -ForegroundColor Cyan
-            & "$MavenBinPath\mvn.cmd" -q org.apache.maven.plugins:maven-install-plugin:3.0.0-M1:install-file -Dfile="$PluginJar"
+            & "$MavenBinPath\mvn.cmd" -Djavax.net.ssl.trustStoreType=WINDOWS-ROOT -q org.apache.maven.plugins:maven-install-plugin:3.0.0-M1:install-file -Dfile="$PluginJar"
             Write-Host "    [OK] Maven SDK plugin registered." -ForegroundColor Green
+        } else {
+            Write-Host "    [!] Notice: tools\d2sdk-maven-plugin-25.4.1.jar not found." -ForegroundColor Yellow
+            Write-Host "        If SDK plugin is not yet in ~/.m2, please copy d2sdk-maven-plugin-25.4.1.jar into $WorkspaceRoot\tools" -ForegroundColor Yellow
         }
         
         # 2. NPM Install
@@ -534,9 +641,9 @@ if (-not $SkipBuild) {
         & "$NodeDir\npm.cmd" install --loglevel=error --no-progress --no-audit --no-fund
         Write-Host "    [OK] npm install completed." -ForegroundColor Green
         
-        # 3. Maven Package
+        # 3. Maven Package (with Windows TrustStore enabled to pass corporate proxies)
         Write-Host "    Compiling and packaging plugin (mvn clean package)..." -ForegroundColor Cyan
-        & "$MavenBinPath\mvn.cmd" clean package
+        & "$MavenBinPath\mvn.cmd" -Djavax.net.ssl.trustStoreType=WINDOWS-ROOT clean package
         
         $DistJar = Join-Path $WorkspaceRoot "dist\D2SV-AI-Summary-1.0.0.jar"
         if (Test-Path $DistJar) {

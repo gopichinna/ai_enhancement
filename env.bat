@@ -26,6 +26,10 @@ IF EXIST "C:\dev-tools\node-v20\node.exe" SET "PATH=C:\dev-tools\node-v20;%PATH%
 IF NOT "%JAVA_HOME%"=="" SET "PATH=%JAVA_HOME%\bin;%PATH%"
 IF NOT "%MAVEN_HOME%"=="" SET "PATH=%MAVEN_HOME%\bin;%PATH%"
 
+SET "MAVEN_OPTS=-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
+IF EXIST "D:\dev-tools\ca-bundle.pem" SET "NODE_EXTRA_CA_CERTS=D:\dev-tools\ca-bundle.pem"
+IF EXIST "%USERPROFILE%\dev-tools\ca-bundle.pem" SET "NODE_EXTRA_CA_CERTS=%USERPROFILE%\dev-tools\ca-bundle.pem"
+
 ECHO -------------------------------------------------------------
 ECHO D2 SmartView SDK Environment Activated (Windows):
 ECHO   JAVA_HOME  : %JAVA_HOME%
