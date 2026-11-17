@@ -9,6 +9,8 @@ define([
 ], function ($, CommandModel, CommandHelper, GlobalMessage, Constants, DialogView, AiSummaryDialogView) {
   'use strict';
 
+  console.log('[D2SV-AI-Summary] >>> ai.summary.command module loaded successfully! <<<');
+
   var AiSummaryCommand = CommandModel.extend({
     defaults: {
       signature: 'AiSummary',
@@ -18,38 +20,47 @@ define([
 
     // 1. Enable ONLY when 1 document is selected (strictly exclude folders & cabinets)
     enabled: function (status) {
+      console.log('[D2SV-AI-Summary] enabled() called with status:', status);
       var nodes = CommandHelper.getAtLeastOneNode(status);
       if (!nodes || nodes.length !== 1) {
+        console.log('[D2SV-AI-Summary] enabled() => false (not exactly 1 node selected)');
         return false;
       }
       var node = nodes.at ? nodes.at(0) : (nodes.models ? nodes.models[0] : nodes[0]);
       if (!node || typeof node.get !== 'function') {
+        console.log('[D2SV-AI-Summary] enabled() => false (invalid node object)');
         return false;
       }
 
       // Exclude if marked as a container
       if (node.get('container') === true || node.get('is_container') === true) {
+        console.log('[D2SV-AI-Summary] enabled() => false (is container)');
         return false;
       }
 
       // Exclude folder/cabinet/repo type codes (0 = FOLDER, 142 = CABINET, 141 = REPO)
       var nodeType = node.get('type');
       if (nodeType === 0 || nodeType === '0' || nodeType === 142 || nodeType === '142' || nodeType === 141 || nodeType === '141') {
+        console.log('[D2SV-AI-Summary] enabled() => false (nodeType is folder/cabinet/repo:', nodeType, ')');
         return false;
       }
 
       // Exclude by type_name
       var typeName = (node.get('type_name') || node.get('typeName') || '').toLowerCase();
       if (typeName === 'dm_folder' || typeName === 'dm_cabinet' || typeName.indexOf('folder') !== -1 || typeName.indexOf('cabinet') !== -1) {
+        console.log('[D2SV-AI-Summary] enabled() => false (typeName indicates folder/cabinet:', typeName, ')');
         return false;
       }
 
       // Accept document types (144 / Constants.Types.DOCUMENT or non-container)
-      return nodeType == 144 || nodeType === Constants.Types.DOCUMENT || node.get('container') === false;
+      var isDoc = (nodeType == 144 || nodeType === Constants.Types.DOCUMENT || node.get('container') === false);
+      console.log('[D2SV-AI-Summary] enabled() =>', isDoc, '(nodeType:', nodeType, 'typeName:', typeName, ')');
+      return isDoc;
     },
 
     // 2. Called when the backend Java action completes
     execute: function (status) {
+      console.log('[D2SV-AI-Summary] >>> execute() called! <<< status:', status);
       var deferred = $.Deferred();
 
       // Extract node flexibly
@@ -65,10 +76,12 @@ define([
       }
 
       var objectName = node && node.get ? node.get('name') : 'Document';
+      console.log('[D2SV-AI-Summary] Target document name:', objectName);
 
       // Extract summary returned by AiSummaryAction.java
       var rawSummary = 'No summary returned.';
       if (status && status.data) {
+        console.log('[D2SV-AI-Summary] Raw status.data:', status.data);
         if (typeof status.data === 'string') {
           rawSummary = status.data;
         } else if (status.data.summary) {
@@ -96,6 +109,9 @@ define([
       } catch (e) {
         // Plain text
       }
+
+      console.log('[D2SV-AI-Summary] Display summary text:', displayText);
+
 
       // Instantiate Marionette body view
       var bodyView = new AiSummaryDialogView({
@@ -143,6 +159,7 @@ define([
 
   // Support both instance and static invocation from D2 CallService
   AiSummaryCommand.execute = function (status) {
+    console.log('[D2SV-AI-Summary] Static AiSummaryCommand.execute invoked! Calling instance.execute...');
     var instance = new AiSummaryCommand();
     return instance.execute(status);
   };
