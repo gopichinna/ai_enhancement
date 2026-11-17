@@ -656,7 +656,7 @@ if (-not $SkipBuild) {
         
         if (Test-Path $PluginJar) {
             Write-Host "    Registering d2sdk-maven-plugin-25.4.1.jar in local Maven cache..." -ForegroundColor Cyan
-            & "$MavenBinPath\mvn.cmd" -Djavax.net.ssl.trustStoreType=WINDOWS-ROOT -q org.apache.maven.plugins:maven-install-plugin:3.0.0-M1:install-file -Dfile="$PluginJar"
+            & "$MavenBinPath\mvn.cmd" -q org.apache.maven.plugins:maven-install-plugin:3.0.0-M1:install-file -Dfile="$PluginJar"
             Write-Host "    [OK] Maven SDK plugin registered." -ForegroundColor Green
         } else {
             Write-Host "    [!] Notice: tools\d2sdk-maven-plugin-25.4.1.jar not found." -ForegroundColor Yellow
@@ -668,23 +668,28 @@ if (-not $SkipBuild) {
         & "$NodeDir\npm.cmd" install --loglevel=error --no-progress --no-audit --no-fund
         Write-Host "    [OK] npm install completed." -ForegroundColor Green
         
-        # 3. Maven Package (with Windows TrustStore enabled to pass corporate proxies)
+        # 3. Maven Package
         Write-Host "    Purging any stale failed download markers (*.lastUpdated) from Maven cache..." -ForegroundColor Cyan
         $m2Repo = Join-Path $env:USERPROFILE ".m2\repository"
         if (Test-Path $m2Repo) {
             Get-ChildItem -Path $m2Repo -Filter "*.lastUpdated" -Recurse -ErrorAction SilentlyContinue | Remove-Item -Force -ErrorAction SilentlyContinue
         }
 
-        Write-Host "    Compiling and packaging plugin (mvn -U clean package)..." -ForegroundColor Cyan
-        & "$MavenBinPath\mvn.cmd" -U -Djavax.net.ssl.trustStoreType=WINDOWS-ROOT clean package
-        
         $DistJar = Join-Path $WorkspaceRoot "dist\D2SV-AI-Summary-1.0.0.jar"
-        if (Test-Path $DistJar) {
+        if (Test-Path $DistJar) { Remove-Item $DistJar -Force -ErrorAction SilentlyContinue }
+
+        Write-Host "    Compiling and packaging plugin (mvn -U clean package)..." -ForegroundColor Cyan
+        & "$MavenBinPath\mvn.cmd" -U clean package
+        
+        if ((Test-Path $DistJar) -and ($LASTEXITCODE -eq 0)) {
             Write-Host "`n=================================================================" -ForegroundColor Green
             Write-Host "  SETUP SUCCESSFUL!                                              " -ForegroundColor Green
             Write-Host "  Built Artifact: dist\D2SV-AI-Summary-1.0.0.jar                 " -ForegroundColor Green
             Write-Host "  All tools configured and ready for VS Code on Windows Server!  " -ForegroundColor Green
             Write-Host "=================================================================" -ForegroundColor Green
+        } else {
+            Write-Host "`n[ERROR] Maven package build did not produce $DistJar (Exit code: $LASTEXITCODE)." -ForegroundColor Red
+            exit 1
         }
     }
     finally {
