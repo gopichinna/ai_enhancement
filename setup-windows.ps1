@@ -426,7 +426,9 @@ try {
     [Environment]::SetEnvironmentVariable("JAVA_HOME", $JavaHomePath, [EnvironmentVariableTarget]::User)
     [Environment]::SetEnvironmentVariable("MAVEN_HOME", $MavenHomePath, [EnvironmentVariableTarget]::User)
     [Environment]::SetEnvironmentVariable("MAVEN_OPTS", $mavenOpts, [EnvironmentVariableTarget]::User)
-    Write-Host "[OK] Configured MAVEN_OPTS to use Windows Trusted Root Certificate Store." -ForegroundColor Green
+    [Environment]::SetEnvironmentVariable("JAVA_TOOL_OPTIONS", "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT", [EnvironmentVariableTarget]::User)
+    $env:JAVA_TOOL_OPTIONS = "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
+    Write-Host "[OK] Configured MAVEN_OPTS & JAVA_TOOL_OPTIONS to use Windows Trusted Root Store." -ForegroundColor Green
     
     $userPath = [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::User)
     $userPathList = ($userPath -split ';') | Where-Object { $_ -ne "" }
@@ -452,6 +454,10 @@ Write-Host "-----------------------------------------------------------------" -
 
 $npmExe = Join-Path $NodeDir "npm.cmd"
 if (-not (Test-Path $npmExe)) { $npmExe = "npm" }
+
+Write-Host "    Configuring npm for corporate SSL proxy..." -ForegroundColor Cyan
+& $npmExe config set strict-ssl false --location=user 2>&1 | Out-Null
+& $npmExe config set strict-ssl false --location=global 2>&1 | Out-Null
 
 Write-Host "    Installing/verifying grunt-cli..." -ForegroundColor Cyan
 & $npmExe install -g grunt-cli --loglevel=error | Out-Null
@@ -570,11 +576,19 @@ $settingsObj["java.configuration.runtimes"] = @(
         default = $true
     }
 )
+$settingsObj["java.jdt.ls.vmargs"] = "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
 $settingsObj["maven.executable.path"] = (Join-Path $MavenBinPath "mvn.cmd").Replace("\", "/")
+$settingsObj["maven.terminal.customEnv"] = @(
+    @{
+        environmentVariable = "MAVEN_OPTS"
+        value = "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
+    }
+)
 $settingsObj["terminal.integrated.env.windows"] = @{
     JAVA_HOME = $JavaHomePath
     MAVEN_HOME = $MavenHomePath
     MAVEN_OPTS = "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
+    JAVA_TOOL_OPTIONS = "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
     NODE_EXTRA_CA_CERTS = (Join-Path $DevToolsPath "ca-bundle.pem")
 }
 

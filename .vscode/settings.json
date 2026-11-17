@@ -1,4 +1,27 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.jdt.ls.java.home": "D:/dev-tools/jdk-17",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "D:/dev-tools/jdk-17",
+            "default": true
+        }
+    ],
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Djavax.net.ssl.trustStoreType=WINDOWS-ROOT",
+    "maven.executable.path": "D:/dev-tools/apache-maven-3.8.8/bin/mvn.cmd",
+    "maven.terminal.customEnv": [
+        {
+            "environmentVariable": "MAVEN_OPTS",
+            "value": "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
+        }
+    ],
+    "terminal.integrated.env.windows": {
+        "JAVA_HOME": "D:\\dev-tools\\jdk-17",
+        "MAVEN_HOME": "D:\\dev-tools\\apache-maven-3.8.8",
+        "MAVEN_OPTS": "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT",
+        "JAVA_TOOL_OPTIONS": "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT",
+        "NODE_EXTRA_CA_CERTS": "D:\\dev-tools\\ca-bundle.pem"
+    }
 }
