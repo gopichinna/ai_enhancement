@@ -599,8 +599,7 @@ $settingsJson = @"
         "JAVA_HOME": "$JavaHomeEsc",
         "MAVEN_HOME": "$MavenHomeEsc",
         "MAVEN_OPTS": "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT",
-        "JAVA_TOOL_OPTIONS": "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT",
-        "NODE_EXTRA_CA_CERTS": "$CaBundleEsc"
+        "JAVA_TOOL_OPTIONS": "-Djavax.net.ssl.trustStoreType=WINDOWS-ROOT"
     }
 }
 "@
