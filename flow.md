@@ -1,8 +1,14 @@
 # Architecture, Flow & Implementation Guide: `AI Summary` in D2 SmartView
 
-Welcome to the **D2 SmartView AI Summary Enhancement** project (D2SV 25.4.1 / 25.4.0).
+Welcome to the **D2 SmartView AI Summary Enhancement** project (**OpenText D2 SmartView SDK 25.4.1 / Runtime 25.4.0**).
 
 This document serves as the **master blueprint and runtime guide**. If you are opening this workspace in a new session or handing this off to another engineer, **everything you need to understand, customize, build, deploy, and troubleshoot** this project is detailed here.
+
+> **SDK & Platform Baseline:**
+> * **D2 SmartView SDK Version:** `25.4.1` ([`pom.xml`](pom.xml) `<d2.version>25.4.1</d2.version>`)
+> * **SmartView Web Core:** `@dctm/dctm-web-core` `25.4.4` / `smartui-grunt-support` `7.1.1`
+> * **Documentum Platform:** DFC `25.4.0`, D2FS `25.4.0`, Spring `6.1.13`, Jakarta EE
+> * **Java & Build Tooling:** OpenJDK 17, Node v20 LTS, Apache Maven 3.8+
 
 ---
 
@@ -342,6 +348,7 @@ mvn clean package
 | **Red Toast Error in UI:**<br>`Cannot read properties of undefined (reading 'apply')` | `rAction` in XML omitted the method name. | Ensure `rAction` ends with `:execute` (`d2svaisummary/commands/ai.summary.command:execute`). |
 | **Changes Don't Show in Browser** | Chrome aggressively caches RequireJS bundles. | Open DevTools (`F12`), check **Disable Cache** under Network tab, and press `Cmd+Shift+R`. |
 | **AI Request Times Out** | LLM inference on large documents exceeds HTTP client timeout. | In `AiSummaryAction.java`, adjust `.timeout(Duration.ofSeconds(120))` as needed. |
+| **CSS/Style Linting Warnings** | D2SV 25.4 replaced legacy `.csslintrc` with Stylelint. | Configuration is defined in `plugins/D2SV-AI-Summary/src/main/smartview/.stylelintrc.yml`. |
 
 ---
 
