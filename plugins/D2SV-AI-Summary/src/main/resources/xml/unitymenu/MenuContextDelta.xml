@@ -8,6 +8,7 @@
                       eMode="SINGLE"
                       rAction="d2svaisummary/commands/ai.summary.command:execute"
                       rType="JS"/>
+      <condition class="com.emc.d2fs.dctm.ui.conditions.typeparts.IsDocument" equals="true" showifinvalid="false"/>
     </menuitem>
   </insert>
 </delta>

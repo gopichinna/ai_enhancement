@@ -13,5 +13,12 @@
         "d2svaisummary/commands/ai.summary.command"
       ]
     }
+  },
+  "d2/sdk/utils/commands": {
+    "extensions": {
+      "d2svaisummary": [
+        "d2svaisummary/commands/ai.summary.command"
+      ]
+    }
   }
 }
