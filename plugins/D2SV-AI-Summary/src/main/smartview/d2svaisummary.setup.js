@@ -6,6 +6,15 @@ const fs = require('fs-extra'),
 ensureDirectoryLink(node_modules_location, 'node_modules');  
 ensureDirectoryLink(libLocaton, 'lib');
 
+// Clean up stale component junctions so Grunt smartuiEnsureDirSymlink does not fail with EEXIST on Windows
+const svfName = 'd2svaisummary';
+['src', 'debug', 'release'].forEach(dir => {
+  const destPath = path.resolve(__dirname, `lib/${dir}/${svfName}`);
+  try {
+    fs.removeSync(destPath);
+  } catch (e) {}
+});
+
 function ensureDirectoryLink(source, target) {
   console.debug(`Ensuring sym-link ${source} => ${target}`);
   try {

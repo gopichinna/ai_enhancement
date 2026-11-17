@@ -4,9 +4,9 @@
   "description": "D2 Smart View plugin - D2SV-AI-Summary",
   "private": true,
   "scripts": {
-    "setup": "node d2svaisummary.setup.js && grunt ensureDirSymlink && grunt generateBuildConfig",
-    "build": "grunt package",
-    "compile": "grunt compile",
+    "setup": "node d2svaisummary.setup.js && grunt ensureDirSymlink --force && grunt generateBuildConfig --force",
+    "build": "grunt package --force",
+    "compile": "grunt compile --force",
     "test": "grunt test",
     "start": "dctmw-serve"
   },
