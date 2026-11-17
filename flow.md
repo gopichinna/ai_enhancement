@@ -247,10 +247,18 @@ POPUP MODAL APPEARS ON SCREEN!
 When you start work in this workspace, follow this exact checklist:
 
 - [ ] **Step 1: Check Environment**
-  Open a terminal in the project root directory and run:
-  ```bash
-  source env.sh
-  ```
+  * **On Windows Server 2022 (AWS WorkSpaces):**
+    Double-click or run:
+    ```cmd
+    setup-windows.bat
+    ```
+    *(Or in PowerShell: `powershell -ExecutionPolicy Bypass -File .\setup-windows.ps1`)*
+    This one-shot script automatically downloads and installs OpenJDK 17, Node 20, Maven 3.8.8, configures VS Code, and tests the build!
+    In subsequent VS Code terminal sessions, activate via `.\env.bat` (CMD) or `.\env.ps1` (PowerShell).
+  * **On macOS / Linux:**
+    ```bash
+    source env.sh
+    ```
   Verify that JDK 17, Node v20, and Maven 3.8 are detected.
 
 - [ ] **Step 2: Align AI Service Contract**
@@ -325,10 +333,21 @@ python3 mock_ai_server.py
 ## 9. Build, Deployment & Verification
 
 ### Build Command:
-```bash
-source env.sh
-mvn clean package
-```
+* **Windows (Command Prompt / VS Code terminal):**
+  ```cmd
+  env.bat
+  mvn clean package
+  ```
+* **Windows (PowerShell / VS Code terminal):**
+  ```powershell
+  .\env.ps1
+  mvn clean package
+  ```
+* **macOS / Linux:**
+  ```bash
+  source env.sh
+  mvn clean package
+  ```
 
 ### What Maven Does Under the Hood:
 1. `init-npm`: Runs `npm run setup` in `src/main/smartview`, ensuring symlinks to `lib` and `node_modules`.

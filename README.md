@@ -31,6 +31,29 @@ This workspace contains the complete, isolated setup for the **AI Summary** plug
 
 ---
 
+## 🚀 Quick Start on Windows Server 2022 (AWS WorkSpaces)
+
+If you are cloning this repository on a Windows Server 2022 Datacenter VM / AWS WorkSpace:
+
+1. **One-Shot Automated Setup (Admin or Standard User):**
+   Open Command Prompt or PowerShell in the cloned folder and run:
+   ```cmd
+   setup-windows.bat
+   ```
+   *(Or in PowerShell: `powershell -ExecutionPolicy Bypass -File .\setup-windows.ps1`)*
+
+   **What it does automatically:**
+   - Detects or downloads OpenJDK 17 LTS, Node.js 20 LTS, Apache Maven 3.8.8, and Python 3.
+   - Sets persistent user environment variables (`JAVA_HOME`, `MAVEN_HOME`, `PATH`).
+   - Updates `pom.xml` paths automatically for Windows.
+   - Configures VS Code settings (`.vscode/settings.json`) so Java Language Server and Maven extensions work immediately.
+   - Verifies the setup by running `mvn clean package` and outputting `dist/D2SV-AI-Summary-1.0.0.jar`.
+
+2. **Opening in VS Code:**
+   Open the folder in VS Code. Open a terminal inside VS Code, run `.\env.bat` (CMD) or `.\env.ps1` (PowerShell) to verify your tools, and run `mvn clean package` anytime.
+
+---
+
 ## 🚀 How to Build and Deploy
 
 ### 1. Configure Your AI Service URL
