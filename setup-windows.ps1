@@ -143,7 +143,7 @@ if (-not $Force) {
 
 if (-not $JavaInstalled) {
     $JdkTargetDir = Join-Path $DevToolsPath "jdk-17"
-    if (Test-Path "$JdkTargetDir\bin\javac.exe" -and -not $Force) {
+    if ((Test-Path "$JdkTargetDir\bin\javac.exe") -and (-not $Force)) {
         Write-Host "[OK] Portable JDK 17 already found at $JdkTargetDir" -ForegroundColor Green
         $JavaHomePath = $JdkTargetDir
         $JavaBinPath = "$JdkTargetDir\bin"
@@ -194,7 +194,7 @@ if (-not $Force) {
 
 if (-not $NodeInstalled) {
     $NodeTargetDir = Join-Path $DevToolsPath "node-v20"
-    if (Test-Path "$NodeTargetDir\node.exe" -and -not $Force) {
+    if ((Test-Path "$NodeTargetDir\node.exe") -and (-not $Force)) {
         Write-Host "[OK] Portable Node.js 20 already found at $NodeTargetDir" -ForegroundColor Green
         $NodeDir = $NodeTargetDir
     } else {
@@ -256,7 +256,7 @@ if (-not $Force) {
 
 if (-not $MavenInstalled) {
     $MvnTargetDir = Join-Path $DevToolsPath "apache-maven-3.8.8"
-    if (Test-Path "$MvnTargetDir\bin\mvn.cmd" -and -not $Force) {
+    if ((Test-Path "$MvnTargetDir\bin\mvn.cmd") -and (-not $Force)) {
         Write-Host "[OK] Portable Maven 3.8.8 already found at $MvnTargetDir" -ForegroundColor Green
         $MavenHomePath = $MvnTargetDir
         $MavenBinPath = "$MvnTargetDir\bin"
