@@ -1,0 +1,22 @@
+const searchParams = new URLSearchParams(
+    window.location.search
+);
+
+const hashQuery = window.location.hash.includes('?')
+    ? window.location.hash.substring(
+        window.location.hash.indexOf('?') + 1
+      )
+    : '';
+
+const hashParams = new URLSearchParams(hashQuery);
+
+const cabinetName =
+    searchParams.get('cabinet') ||
+    hashParams.get('cabinet');
+
+if (cabinetName) {
+    console.log(
+        'Cabinet name received from URL:',
+        cabinetName
+    );
+}
