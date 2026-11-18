@@ -1,0 +1,2 @@
+csui.require.config({bundles:{"d2svaisummary/bundles/d2svaisummary-bundle":["d2svaisummary/commands/ai.summary.command","d2svaisummary/dialogs/ai.summary.dialog.view"]}});
+//# sourceMappingURL=d2svaisummary-index.js.map

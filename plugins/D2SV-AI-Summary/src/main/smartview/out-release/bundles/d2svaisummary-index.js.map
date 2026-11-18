@@ -1,0 +1,1 @@
+{"version":3,"sources":["<stdin>"],"sourcesContent":["csui.require.config({\n  bundles: {\n'd2svaisummary/bundles/d2svaisummary-bundle': [\n'd2svaisummary/commands/ai.summary.command',\n'd2svaisummary/dialogs/ai.summary.dialog.view'\n]\n  }\n});"],"mappings":"AAAA,KAAK,QAAQ,OAAO,CAClB,QAAS,CACX,6CAA8C,CAC9C,4CACA,8CACA,CACE,CACF,CAAC","names":[]}

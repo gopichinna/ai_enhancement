@@ -5,10 +5,6 @@ Thumbs.db
 # Build outputs
 target/
 **/target/
-out-debug/
-**/out-debug/
-out-release/
-**/out-release/
 
 # Node dependencies
 node_modules/
