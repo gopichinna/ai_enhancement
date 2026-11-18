@@ -9,9 +9,7 @@
   <description>D2 Plugin Projects Aggregator</description>
   <properties>
     <d2.version>25.4.1</d2.version>
-    <!-- Do not modify. Changing this property will break runtime compatibility. -->
-    <npm.home>/Users/gopiparthiban/coding_space/ai_enhancement/.dev-tools/node-v20.18.3-darwin-arm64/bin</npm.home>
-    <lib.path>/Users/gopiparthiban/coding_space/ai_enhancement/lib</lib.path>
+    <lib.path>${maven.multiModuleProjectDirectory}/lib</lib.path>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
@@ -610,13 +608,13 @@
                   <echo message="Setting-up npm project ${project.name}" />
                   <exec osfamily="windows" dir="${basedir}/src/main/smartview" executable="cmd" failonerror="true">
                     <arg value="/c" />
-                    <arg value="${npm.home}/npm.cmd" />
+                    <arg value="npm" />
                     <arg value="run" />
                     <arg value="setup" />
                   </exec>
                   <exec osfamily="unix" dir="${basedir}/src/main/smartview" executable="sh" failonerror="true">
                     <arg value="-c" />
-                    <arg value="${npm.home}/npm run setup" />
+                    <arg value="npm run setup" />
                   </exec>
                   <echo message="" />
                 </target>
@@ -634,13 +632,13 @@
                   <echo message="Building SmartView code for ${project.name}" />
                   <exec osfamily="windows" dir="${basedir}/src/main/smartview" executable="cmd" failonerror="true">
                     <arg value="/c" />
-                    <arg value="${npm.home}/npm.cmd" />
+                    <arg value="npm" />
                     <arg value="run" />
                     <arg value="compile" />
                   </exec>
                   <exec osfamily="unix" dir="${basedir}/src/main/smartview" executable="sh" failonerror="true">
                     <arg value="-c" />
-                    <arg value="${npm.home}/npm run compile" />
+                    <arg value="npm run compile" />
                   </exec>
                   <echo message="" />
                 </target>
